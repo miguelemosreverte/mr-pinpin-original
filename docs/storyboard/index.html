@@ -4,11 +4,12 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#fbfcfa">
-  <meta name="description" content="Мистер Пин-Пин. Полная история в иллюстрациях.">
+  <meta name="description" content="Мистер Пин-Пин. Глава первая новой иллюстрированной книги.">
   <title>Мистер Пин-Пин</title>
-  <link rel="stylesheet" href="reader.css?v=chapter-one-v2">
-  <script src="locale.js" defer></script>
-  <script src="reader.js?v=chapter-one-v2" defer></script>
+  <link rel="stylesheet" href="reader.css?v=chapter-one-edition">
+  <link rel="stylesheet" href="print.css?v=chapter-one-edition" media="print">
+  <script src="locale.js?v=chapter-one-edition" defer></script>
+  <script src="reader.js?v=chapter-one-edition" defer></script>
 </head>
 <body>
   <header class="toolbar">
@@ -18,16 +19,11 @@
       <button data-lang="es" title="Español" aria-label="Español" aria-pressed="false"></button>
       <button data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="true"></button>
     </div>
+    <button id="print" class="icon-button" title="Печать / PDF" aria-label="Печать / PDF" disabled><i data-lucide="printer" aria-hidden="true"></i></button>
   </header>
   <div class="reading-progress" aria-hidden="true"><div id="progress"></div></div>
-  <nav class="chapter-strip" aria-label="Главы"><ol id="chapter-list"></ol></nav>
+  <p id="export-status" class="export-status" role="status" aria-live="polite"></p>
   <main id="reader" aria-busy="true"><p class="loading" role="status">Загрузка книги…</p></main>
-  <nav class="chapter-navigation" aria-label="Навигация по главам">
-    <button id="previous" class="icon-button" title="Предыдущая глава" aria-label="Предыдущая глава"><i data-lucide="arrow-left"></i></button>
-    <span id="chapter-counter"></span>
-    <button id="next" class="icon-button" title="Следующая глава" aria-label="Следующая глава"><i data-lucide="arrow-right"></i></button>
-  </nav>
-  <footer><a id="original-link" href="../">Оригинальная книга</a><span id="edition-count"></span></footer>
 
   <script src="icons.js"></script>
 </body>
