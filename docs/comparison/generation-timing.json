@@ -1,0 +1,75 @@
+{
+  "date": "2026-09-15",
+  "tool": "built-in image_gen",
+  "measurement": "Approximate observed tool-call wall time from this conversation. Includes waiting/resuming yielded calls; not server inference timing. Sequential calls, no parallel speedup. Excludes time between calls, prompt preparation, image review, report editing, verification, user feedback and publication.",
+  "scope": "Round 5 and subsequent chapter28 anatomy repair only. Earlier rounds have no reconstructed timing claims.",
+  "newSheets": [
+    {
+      "chapter": 3,
+      "direction": "G",
+      "panels": 5,
+      "seconds": 128.1
+    },
+    {
+      "chapter": 28,
+      "direction": "G",
+      "panels": 5,
+      "seconds": 59.5
+    },
+    {
+      "chapter": 32,
+      "direction": "G",
+      "panels": 5,
+      "seconds": 56.5
+    },
+    {
+      "chapter": 34,
+      "direction": "G",
+      "panels": 6,
+      "seconds": 124.2
+    },
+    {
+      "chapter": 24,
+      "direction": "F",
+      "panels": 6,
+      "seconds": 58.1
+    },
+    {
+      "chapter": 24,
+      "direction": "G",
+      "panels": 6,
+      "seconds": 121.1
+    }
+  ],
+  "anatomyRepair": {
+    "chapter": 28,
+    "direction": "G",
+    "secondsByAttempt": [
+      54.5,
+      57.1,
+      56.9,
+      40.5
+    ],
+    "selectedAttempt": 4,
+    "newStoryPanels": 0,
+    "finalRevisedSheets": 1,
+    "record": "anatomy-repair-chapter-28.json"
+  },
+  "summary": {
+    "newSheets": 6,
+    "newPanels": 33,
+    "generationWaitSeconds": 547.5,
+    "meanWaitSecondsPerSheet": 91.25,
+    "approxNewSheetsPerToolMinute": 0.66,
+    "approxNewPanelsPerToolMinute": 3.62,
+    "repairWaitSeconds": 209,
+    "totalObservedWaitSeconds": 756.5
+  },
+  "limits": [
+    "Panels were generated together on storyboard sheets, not as 33 independent image calls.",
+    "A fast output is not necessarily an acceptable output. The anatomy fix required four attempts and close-up review.",
+    "These are observed samples, not a service-level guarantee or a forecast.",
+    "No monetary cost or model-version claim: neither was exposed by the built-in tool.",
+    "Report totals remain 20 displayed sheets / 106 panels. Corrections replace a displayed sheet and do not increase those totals."
+  ]
+}

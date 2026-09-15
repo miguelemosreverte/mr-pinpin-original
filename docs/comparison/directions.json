@@ -1,0 +1,83 @@
+{
+  "note": "Seven overlapping editorial families; original chapter34's dimensional treatment is separated explicitly after the user's preference. Not an exhaustive list of mutually exclusive styles. Wizard clothing remains separate.",
+  "directions": [
+    {
+      "id": "dimensional",
+      "name": "Soft dimensional storybook / original chapter 34",
+      "src": "../images/image18.png",
+      "reference": "Original chapter34: images18,21 and45.",
+      "observed": "Detailed fine quills, small hedgehogs in substantial wooden rooms, soft rounded volume, textured cloth and light that travels through the scene.",
+      "steer": "Miguel's preferred historical direction. Preserve the dimensional surfaces, natural-looking bodies, room scale and warm/cool light relationships rather than flattening them.",
+      "risk": "A new rendering can drift into oversized animation eyes or glossy toy surfaces. A warm color filter alone does not reproduce these originals.",
+      "tested": "F in chapters3,24,28,32,34. Historical chapter34 remains the user's preferred reference; generated trials are unapproved."
+    },
+    {
+      "id": "miniature",
+      "name": "Tactile miniature / plush-like",
+      "src": "../images/image34.png",
+      "reference": "Original image34, chapter 1; image29, chapter 6, also has a miniature-like quality.",
+      "observed": "Stubby paws, small dark eyes, broad soft muzzle, tactile fur and the sense of a tiny physical object.",
+      "steer": "G tests the tactile finish itself: fabric-like characters in handmade miniature environments. D previously borrowed compactness in flatter paint.",
+      "risk": "Soft fur alone is insufficient. Craft materials must extend into the world, simple faces must support acting, and small adult figures must not be mistaken for children.",
+      "tested": "G in chapters3,24,28,32,34. D borrows compactness, not the photographed surface. G is an unapproved generated interpretation, not a photograph of actual puppets."
+    },
+    {
+      "id": "animal",
+      "name": "Animal-shaped / naturalistic",
+      "src": "../images/image85.png",
+      "reference": "Original image85, chapter 7; image87, chapter 32.",
+      "observed": "Pointed muzzle, low quilled oval, small eyes and four short limbs; the flight image makes the horizontal body especially clear.",
+      "steer": "An animal-first PinPin, using low resting and flying poses with selective upright gestures.",
+      "risk": "Object handling must remain anatomically convincing. Flat rendering is a new translation of these dimensional references.",
+      "tested": "C in chapters3,28,32,34; E used C as control in round3. F tests dimensional rendering and scale using direct original34 references."
+    },
+    {
+      "id": "handdrawn",
+      "name": "Loose hand-drawn / expressive color",
+      "src": "../images/image74.png",
+      "reference": "Original image55, chapter 3; image88, chapter 4; image74, chapter 10.",
+      "observed": "Loose colored strokes and simplified forms. Image55 is a gentle mother-and-child drawing; image74 is a much more saturated, energetic painting. They are related possibilities, not identical techniques.",
+      "steer": "Either an intimate crayon treatment or a bolder, color-led painted book.",
+      "risk": "A trial of soft crayon does not test the full expressive-color range of this family.",
+      "tested": "Homecoming A tests the soft crayon end. E tests the saturated brush-led image74 branch across chapters3,32,34 while borrowing C's animal-shaped anatomy."
+    },
+    {
+      "id": "rounded",
+      "name": "Rounded expressive storybook",
+      "src": "../images/image22.png",
+      "reference": "Original image65 and image22, chapter 16; image63, chapter 35, adds a clothed large-eyed figure.",
+      "observed": "Rounded belly, large dark eyes, tiny paws and clearly readable emotion. The originals often use detailed, dimensional surfaces.",
+      "steer": "Preserve the rounded anatomy and expressive face while simplifying the surface into flat shapes.",
+      "risk": "Too little muzzle or too much eye can make him feel like a generic mascot. The exact flatter finish is proposed, not recovered from every reference.",
+      "tested": "Flight D combines this face language with miniature-like compactness."
+    },
+    {
+      "id": "articulated",
+      "name": "Articulated upright storybook figure",
+      "src": "../images/image75.png",
+      "reference": "Original image75 and image68, both chapter 16.",
+      "observed": "Projecting muzzle, more visible arms and legs, clothes, and deliberate walking or pointing poses. Bare feet and shoes both occur.",
+      "steer": "A more active, upright PinPin with readable stepping and handling poses.",
+      "risk": "The body can become too human-shaped. Coats and boots are separate choices, not mandatory anatomy.",
+      "tested": "Homecoming B combines this anatomy with comic contours; it is not a direct copy of image75."
+    },
+    {
+      "id": "comic",
+      "name": "Outlined comic / sequential storytelling",
+      "src": "farm/mr-pinpin-01.jpeg",
+      "reference": "Existing farm page 01 is the clearest inked example; pages 08, 14 and 15 demonstrate gesture and sequence with more dimensional paint.",
+      "observed": "Strong contours, readable faces and props, multiple sequential moments. The farm collection itself mixes rendering treatments.",
+      "steer": "A flatter, clearly outlined comic using whichever body family we choose.",
+      "risk": "Comic presentation does not require the green costume or human-like legs. Those choices should not be bundled by accident.",
+      "tested": "Homecoming B borrows the contour language. The flatter Flight D is a new synthesis, not an exact farm-page match."
+    }
+  ],
+  "costume": {
+    "name": "Green forest wizard",
+    "references": [
+      "Original image32 and image40, chapter38",
+      "Farm pages01,08,14,15"
+    ],
+    "note": "Leaf hat and green cloak are historical costume evidence, not a seventh body or painting style."
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Unapproved exploratory proposals",
+  "selection": {
+    "eligible": [
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      19,
+      20,
+      21,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      32,
+      33,
+      34,
+      35
+    ],
+    "pick": {
+      "chapter": 32,
+      "id": "chapter-32",
+      "title": "Глава: Полет в Ночном Лесу",
+      "heading": "Глава: Полет в Ночном Лесу",
+      "blocks": [
+        [
+          {
+            "type": "text",
+            "text": "После того как мистер ПинPin продемонстрировал свою способность заставить морковку левитировать, Лилия, волшебная белка, улыбнулась ему еще шире. Она осторожно взяла его лапку и, словно прошептав какое-то древнее заклинание, заставила их обоих подняться в воздух."
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Мистер ПинPin был поражен. Его маленькое тело парило над землей, и ветерок шелестел его иголками. Он чувствовал себя свободным и легким, словно птица."
+          }
+        ],
+        [
+          {
+            "type": "image",
+            "src": "../images/image87.png",
+            "width": 1024,
+            "height": 1024
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Рядом с Лилией в воздухе плавно парила волшебная свеча. Ее мягкий свет освещал окружающий лес, делая каждую снежинку видимой в ночной тишине. Деревья покрывались мерцающим инеем, а их ветви тяжело наклонялись под тяжестью снега."
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Поднявшись выше, они подошли к входу в пещеру. С высоты весь лес выглядел как волшебное царство, полное тайн и чудес."
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "\"Этот лес полон магии,\" — прошептала Лилия, подводя мистера ПинPina к входу в пещеру. — \"Но только те, кто действительно верит в чудеса, могут ее увидеть и почувствовать.\""
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Мистер ПинPin кивнул, глубоко вдыхая прохладный воздух ночи. Он понял, что этот момент изменил его жизнь навсегда."
+          }
+        ]
+      ],
+      "imageCount": 1
+    }
+  },
+  "trials": [
+    {
+      "id": "chapter-03-c",
+      "chapter": 3,
+      "directions": [
+        "animal"
+      ],
+      "file": "chapter-03-natural.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image85.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image87.png"
+      ],
+      "prompt": "Use case: illustration-story. Asset: unapproved visual direction trial for an HTML report. ONE tall storyboard sheet, EXACTLY FIVE equal horizontal panels stacked vertically in ONE column, thin white gutters, target 1536x3840. No text, lettering, speech bubbles, labels, title, watermark. Flat 2D hand-drawn illustration, not 3D or photography. Clear silhouettes at phone size, simplified settings, no sepia wash, no blurry backgrounds. Stable characters across every panel, no duplicate characters, no extra limbs.\nDirection C: animal-shaped woodland illustration. Historical inputs are anatomy/reference images, not edit targets. Borrow the pointed muzzle, small dark bead eyes, low oval quilled back, short clawed paws and horizontal resting/floating silhouette of the original hedgehogs. Translate their dimensional rendering into flat colored-pencil outlines and opaque gouache color planes. NOT a plush toy, not a human child, no neck, no large cartoon irises, no human fingers. Allow brief upright reaching where the story requires it, but keep the body low and animal-like otherwise. Brown-gray quills, pale gray face, black nose, one subtle slender golden spine on upper back, never a feather.\nReferences: image85 supplies hedgehog anatomy; image87 supplies the same animal-shaped body in a magical scene. Do NOT copy berries, squirrel, snow, cave, lantern or flying into this domestic chapter.\nRender all five beats of chapter3 'Home, Sweet Home', with the SAME small young PinPin on left and mother on right, mother roughly twice his size. Her anatomy is also hedgehog-like, not a tall human. Modest woodland home with blue-green round door, gray/white walls, brown table, muted red towel and quilt, orange CUT carrots, green herbs. Gradually move from evening daylight to cool blue night. No hats, cloaks, trousers or wizard props.\n1. Arrival, full body: weary PinPin sits on low threshold. EXACTLY TWO tiny brown boots in entire panel: ONE boot is on his LEFT hind foot. His RIGHT hind foot is clearly BARE. Mother holds the OTHER boot away from his body and wipes it with a cloth. No third boot anywhere, no boots on forepaws. Small muddy prints behind him. Tired eyelids, relieved modest expression.\n2. Supper: barefoot PinPin sits low on stool at table, holding one CUT carrot piece with little paws; mother presents bowl of cut carrot pieces and hums. No whole carrots, no boots visible.\n3. Herbal bath: PinPin immersed in small wooden tub, only head, upper quilled back and forepaws above opaque water with herbs; mother attends beside him. Wholesome animal bath.\n4. Drying: PinPin curled in muted red towel by small enclosed fireplace; mother carefully dries his quills with separate cloth. Bare short paws near body.\n5. Bedtime: mother kisses forehead as PinPin curls low in a bed of moss and dry leaves with small muted quilt. Blue night through window. Closed sleepy eyes.\nSame story and staging as other chapter3 trials; do not add events.",
+      "outputPath": "trials/chapter-03-natural.png"
+    },
+    {
+      "id": "chapter-32-c",
+      "chapter": 32,
+      "directions": [
+        "animal"
+      ],
+      "file": "chapter-32-natural.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image85.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image87.png"
+      ],
+      "prompt": "Use case: illustration-story. Asset: unapproved visual direction trial for an HTML report. ONE tall storyboard sheet, EXACTLY FIVE equal horizontal panels stacked vertically in ONE column, thin white gutters, target 1536x3840. No text, lettering, speech bubbles, labels, title, watermark. Flat 2D hand-drawn illustration, not 3D or photography. Clear silhouettes at phone size, simplified settings, no sepia wash, no blurry backgrounds. Stable characters across every panel, no duplicate characters, no extra limbs.\n\nStory: chapter32 'Flight in the Night Forest'. EXACTLY TWO protagonists: PinPin the hedgehog and Lilia the magical female squirrel with a clearly visible long bushy squirrel tail. Lilia slightly taller, wearing a simple plum cloak, no pointed hat. PinPin has natural fur and quills, no boots, no clothes or wizard accessories. This is before the final chapter's gifts. EXACTLY ONE floating wax candle with an ordinary little flame travels beside Lilia in panels3-5. Candle is an object, no face or eyes. NO lanterns, staffs, birds, wings, extra squirrels or separate fire-creatures.\nReference image87 supplies cast, snowy night setting and floating hedgehog posture, NOT exact action. The prose says Lilia takes his paw, BOTH rise, and a magic candle floats beside them. Correct these details rather than copying the source picture's separate floating flame character.\nSame five beats, PinPin LEFT and Lilia RIGHT, fixed scale and chronology:\n1. Ground-level takeoff: after PinPin's earlier carrot trick, Lilia smiles, holds his small paw, quietly casts a spell. Both hover a few inches off snowy forest floor; faint footprints beneath. No re-enactment of carrot trick.\n2. Wonder: BOTH airborne above snow, PinPin's tiny limbs hang naturally and quills stir in breeze, surprised delighted face; Lilia beside him supporting the same paw. No flight apparatus.\n3. Floating light: same two airborne companions among snow-laden branches, ONE lit wax candle floating beside Lilia at shoulder height; soft gold light makes nearby snowflakes visible.\n4. Ascent: both rise toward a cave entrance higher in a rocky slope, with the snowy forest spread below. Show cliff ledge and scale change, candle still beside Lilia, no dramatic danger.\n5. At the cave mouth: both settle on a safe ledge facing each other, candle beside Lilia. Lilia gestures toward forest as she speaks of magic; PinPin nods with quiet awe. Do not enter cave or add kiss/bedtime; those are not in this chapter.\nUse snowy white, muted teal foliage, dusky violet shadows and small warm candle accents. Maintain legible characters even at night.\nDirection C: animal-shaped woodland illustration. Historical inputs are anatomy/reference images, not edit targets. Borrow the pointed muzzle, small dark bead eyes, low oval quilled back, short clawed paws and horizontal resting/floating silhouette of the original hedgehogs. Translate their dimensional rendering into flat colored-pencil outlines and opaque gouache color planes. NOT a plush toy, not a human child, no neck, no large cartoon irises, no human fingers. Allow brief upright reaching where the story requires it, but keep the body low and animal-like otherwise. Brown-gray quills, pale gray face, black nose, one subtle slender golden spine on upper back, never a feather.Input1 image85: anatomical reference. Input2 image87: cast and setting reference. Flat gouache-and-pencil rendering; small dark eyes, long pointed muzzle, low horizontal floating torso with four short dangling paws. Lilia has a naturalistic squirrel muzzle and long bushy tail. Show trust through posture and paw contact, not giant smiling mouths.",
+      "outputPath": "trials/chapter-32-natural.png"
+    },
+    {
+      "id": "chapter-32-d",
+      "chapter": 32,
+      "directions": [
+        "miniature",
+        "rounded"
+      ],
+      "file": "chapter-32-rounded.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image34.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image22.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image87.png"
+      ],
+      "prompt": "Use case: illustration-story. Asset: unapproved visual direction trial for an HTML report. ONE tall storyboard sheet, EXACTLY FIVE equal horizontal panels stacked vertically in ONE column, thin white gutters, target 1536x3840. No text, lettering, speech bubbles, labels, title, watermark. Flat 2D hand-drawn illustration, not 3D or photography. Clear silhouettes at phone size, simplified settings, no sepia wash, no blurry backgrounds. Stable characters across every panel, no duplicate characters, no extra limbs.\n\nStory: chapter32 'Flight in the Night Forest'. EXACTLY TWO protagonists: PinPin the hedgehog and Lilia the magical female squirrel with a clearly visible long bushy squirrel tail. Lilia slightly taller, wearing a simple plum cloak, no pointed hat. PinPin has natural fur and quills, no boots, no clothes or wizard accessories. This is before the final chapter's gifts. EXACTLY ONE floating wax candle with an ordinary little flame travels beside Lilia in panels3-5. Candle is an object, no face or eyes. NO lanterns, staffs, birds, wings, extra squirrels or separate fire-creatures.\nReference image87 supplies cast, snowy night setting and floating hedgehog posture, NOT exact action. The prose says Lilia takes his paw, BOTH rise, and a magic candle floats beside them. Correct these details rather than copying the source picture's separate floating flame character.\nSame five beats, PinPin LEFT and Lilia RIGHT, fixed scale and chronology:\n1. Ground-level takeoff: after PinPin's earlier carrot trick, Lilia smiles, holds his small paw, quietly casts a spell. Both hover a few inches off snowy forest floor; faint footprints beneath. No re-enactment of carrot trick.\n2. Wonder: BOTH airborne above snow, PinPin's tiny limbs hang naturally and quills stir in breeze, surprised delighted face; Lilia beside him supporting the same paw. No flight apparatus.\n3. Floating light: same two airborne companions among snow-laden branches, ONE lit wax candle floating beside Lilia at shoulder height; soft gold light makes nearby snowflakes visible.\n4. Ascent: both rise toward a cave entrance higher in a rocky slope, with the snowy forest spread below. Show cliff ledge and scale change, candle still beside Lilia, no dramatic danger.\n5. At the cave mouth: both settle on a safe ledge facing each other, candle beside Lilia. Lilia gestures toward forest as she speaks of magic; PinPin nods with quiet awe. Do not enter cave or add kiss/bedtime; those are not in this chapter.\nUse snowy white, muted teal foliage, dusky violet shadows and small warm candle accents. Maintain legible characters even at night.\nDirection D: rounded miniature translated into flat graphic storybook illustration. Input1 image34 supplies plush-like compact body proportions only, NOT photographic surface or books. Input2 image22 supplies rounded upright oval, short muzzle, big dark eyes and tiny paws, NOT 3D texture, snowball or bird. Input3 image87 supplies cast and flight context only.\nPinPin is a compact rounded oval with almost no visible neck, broad pale muzzle, large expressive dark eyes, tiny rounded paws close to the belly, a simple dark quill halo and ONE subtle slender gold spine. Float in a rounded diagonal/upright pose, not a horizontal realistic animal silhouette. Lilia is a slightly larger rounded squirrel with a large curling tail and plum cloak. Medium: FLAT opaque cut-paper-like painted color shapes with fine pencil edges, restrained texture, no fur rendering, no sculptural shading, no gradients. Simplify branches and snow into clean shapes. Tender expressive miniature, not a toy photograph. Keep all five events and props exactly as specified.",
+      "outputPath": "trials/chapter-32-rounded.png"
+    }
+  ]
+}

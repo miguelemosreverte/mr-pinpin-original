@@ -1,0 +1,187 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Unapproved style explorations; local report only",
+  "selection": {
+    "eligible": [
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      19,
+      20,
+      21,
+      24,
+      25,
+      26,
+      27,
+      29,
+      30,
+      33,
+      35
+    ],
+    "chosen": 24,
+    "chapter": {
+      "id": "chapter-24",
+      "title": "Глава: Ночная Смена",
+      "heading": "Глава: Ночная Смена",
+      "blocks": [
+        [
+          {
+            "type": "text",
+            "text": "Когда ночь опускалась на лес, большинство его обитателей отправлялись ко сну. Однако для ежей и белок этот момент дня становился особенно активным. В темноте, освещенной лишь бледным светом луны и звезд, звучали шум тяжелого оборудования и голоса, дающие указания."
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Папа PinPin, вместе со своей командой ежей, работал в упор, извлекая грунт и формируя камеры и коридоры нового убежища. На поверхности, другие ежи и белки загружали грунт в тачки и перевозили его в сторону, чтобы освободить место для новых работ."
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Белки, в свою очередь, были ответственными за инженерные и технические аспекты проекта. Они устанавливали подпорные балки, обеспечивали вентиляцию и контролировали структурную целостность убежища."
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "В то время как большинство было поглощено работой, Старший Орешек и его секретная команда белок продолжали свою ночную миссию. Под покровом темноты они внедряли сложную систему линз и зеркал, которая впоследствии позволила бы направлять свет на растения в подземелье."
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Каждая ночь, когда рассвет начинал освещать горизонт, оба коллектива, уставшие, но довольные своими достижениями, уходили отдыхать. Они знали, что каждый час их усердной работы приближает их к созданию безопасного и уютного дома под землей для всего сообщества на случай долгой и суровой зимы."
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Так, со временем, благодаря объединенным усилиям ежей и белок, под землей начал формироваться целый уютный дом. Уютные камеры для семей, места для отдыха и уникальные солнечные комнаты для выращивания растений, хотя этот последний секрет пока был известен лишь немногим."
+          }
+        ]
+      ],
+      "imageCount": 0
+    }
+  },
+  "method": "Original image34 supplies the G material reference. Earlier F supplies events and comparable framing for each G sheet. New chapter24 F generated first from original chapter34 references, then used for G. Both medium and anatomy change; not a single-variable style transfer.",
+  "trials": [
+    {
+      "id": "chapter-03-g",
+      "chapter": 3,
+      "letter": "g",
+      "panels": 5,
+      "file": "chapter-03-miniature.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image34.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/comparison/trials/chapter-03-dimensional-v2.png"
+      ],
+      "prompt": "Use case: illustration-story. Create a NEW UNAPPROVED style exploration G: handcrafted miniature / plush storybook, photographed as a real handmade stop-motion set. Input 1 original image34 is the PRIMARY material and character reference: pale cream fabric face and belly, small black bead-like eyes, short round plush paws, stubby limbs without long exposed legs, soft brown-gray fiber quills, a compact toy hedgehog. Not glossy CGI, not digital furry animation, not clay, not painterly watercolor. Express emotion through head tilt and body posture, not large eyes or human mouth shapes. Tiny handmade timber, woven fabric and paper/felt plant props, subtle visible craft surfaces, practical warm light balanced by cool blues and greens. Avoid an orange wash. Keep scenes in focus enough to inspect the action; no heavy blur. The book-shaped boat and blue cylindrical prop in the reference are NOT part of these stories: do not copy them. No seams required on faces; no conspicuous puppet joints or rigging.\nOther reference if provided is the previous F exploration, a COMPOSITION/EVENT reference, not an approved design. Retain its panel events and comparable framing, but change characters, props and setting to physical handmade miniature textures. Fix story inaccuracies specified below, rather than blindly copying them. This explores anatomy AND medium; not a controlled pixel-identical recoloring.\nOne tall portrait sheet, 1024x1536, with exactly the specified number of equal horizontal panels stacked vertically in ONE column. Thin white gutters. NO text, panel numbers, speech bubbles, labels or watermarks. Same character models across panels. Fully frame all story-critical bodies and props.\nChapter3 Home, Sweet Home. EXACTLY FIVE equal horizontal panels stacked vertically, one column. The same PinPin left and mother right throughout. Mother a larger hedgehog, PinPin distinctly small. No other characters. Evening moving to night.\n1. Coming home at round doorway: tired PinPin sits low on threshold. TWO small brown boots total: one boot worn on one hind foot, the other hind foot visibly bare; mother wipes the removed second boot with a soft cloth. No boots on forepaws or third boot.\n2. Supper: barefoot PinPin at a low wooden table holds a cut carrot piece; mother places bowl of cut carrots. Gentle conversation, mother humming.\n3. Herbal bath: PinPin immersed in small wooden tub with forest herbs, only head/quilled back and tiny forepaws above opaque water; mother attends. Wholesome nonhuman animal bathing.\n4. Drying: PinPin curled low in a muted red towel by the hearth; mother carefully dries his quills with a second cloth. His compact body should read as an animal curl.\n5. Bed: mother kisses his forehead as he curls into a moss-and-dry-leaf bed with small quilt. Blue night through round window. Quiet end. No wizard props, no clothes except towel, no extra magical events.\nIMPORTANT first panel exactly TWO boots: one on PinPin, one held by mother. Never a third boot on the floor.",
+      "outputPath": "trials/chapter-03-miniature.png",
+      "review": {
+        "title": "G / Handcrafted homecoming",
+        "description": "The same five events and comparable framing as F, translated toward the original plush figure: cream fabric, small dark eyes and stubby paws.",
+        "observed": "PinPin's bead-like eyes, broad fabric muzzle and rounded paws closely recall image 34. The two boots are correct in the first panel, and the towel and patchwork quilt reinforce the tactile direction.",
+        "limits": "Mother still has sharper, more naturalistic quills than the child. His alert arrival does not clearly convey the prose's fatigue; the tiny face communicates less change until the final closed-eye scenes. The craft effect is stronger on PinPin than on the polished room."
+      }
+    },
+    {
+      "id": "chapter-28-g",
+      "chapter": 28,
+      "letter": "g",
+      "panels": 5,
+      "file": "chapter-28-miniature-v2.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image34.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/comparison/trials/chapter-28-dimensional.png"
+      ],
+      "prompt": "Use case: illustration-story. Create a NEW UNAPPROVED style exploration G: handcrafted miniature / plush storybook, photographed as a real handmade stop-motion set. Input 1 original image34 is the PRIMARY material and character reference: pale cream fabric face and belly, small black bead-like eyes, short round plush paws, stubby limbs without long exposed legs, soft brown-gray fiber quills, a compact toy hedgehog. Not glossy CGI, not digital furry animation, not clay, not painterly watercolor. Express emotion through head tilt and body posture, not large eyes or human mouth shapes. Tiny handmade timber, woven fabric and paper/felt plant props, subtle visible craft surfaces, practical warm light balanced by cool blues and greens. Avoid an orange wash. Keep scenes in focus enough to inspect the action; no heavy blur. The book-shaped boat and blue cylindrical prop in the reference are NOT part of these stories: do not copy them. No seams required on faces; no conspicuous puppet joints or rigging.\nOther reference if provided is the previous F exploration, a COMPOSITION/EVENT reference, not an approved design. Retain its panel events and comparable framing, but change characters, props and setting to physical handmade miniature textures. Fix story inaccuracies specified below, rather than blindly copying them. This explores anatomy AND medium; not a controlled pixel-identical recoloring.\nOne tall portrait sheet, 1024x1536, with exactly the specified number of equal horizontal panels stacked vertically in ONE column. Thin white gutters. NO text, panel numbers, speech bubbles, labels or watermarks. Same character models across panels. Fully frame all story-critical bodies and props.\nChapter28 Endless Mysteries of the Underground World. EXACTLY FIVE equal horizontal panels stacked vertically, one column. ONLY ONE living character throughout: small PinPin. No squirrel, birds, insects, other hedgehogs, gardeners or extra shadow characters. PinPin unclothed, no boots or wizard accessories. Morning.\nA vast underground garden chamber with a glass ceiling high overhead, wooden walkways, lush plants. Preserve exactly this itinerary:\n1. Entering from stairs to a CENTRAL landing, PinPin pauses, astonished at the enormous chamber and morning sun through glass roof. Establish a distinctive central circular floor medallion as a readable continuity landmark; that architectural detail is an adaptation choice. Far end lost to distance, not a dark blur.\n2. He walks LEFT from the central landing toward blue flowers growing in darker corners and vivid orange carrots with green tops reaching upward. One PinPin only, side view, low walking animal posture.\n3. He returns along the same walkway to the SAME central medallion, following the roof light. Give the central landmark its same design. No second PinPin to show movement.\n4. He takes the OPPOSITE RIGHT path and finds rectangular WOODEN BOXES full of LETTUCE, suspended at varied heights, cascading green leaves. Use boxes, not exclusively round barrels. Do not reuse the carrot scene as the right path.\n5. He pauses among the hanging lettuce boxes in quiet wonder, savoring the surrounding beauty; tiny forepaws held close, gentle expression. No sleeping, prayer, flight, secret discovery or explanation of the magic. The source ends in appreciation, not a solved mystery.\nDo not add a waterfall. Show the small hedgehog fully in the opening panel. Direction of travel in panel2 leftward, panel4 rightward.",
+      "outputPath": "trials/chapter-28-miniature-v2.png",
+      "review": {
+        "title": "G / Handcrafted garden",
+        "description": "F's five discoveries in a miniature garden, with a soft-fabric PinPin, felt-like plants and the same circular landing as a return marker.",
+        "observed": "The entrance now frames PinPin's whole body and removes F's invented waterfall. Panel 2 faces left and panel 4 faces right, making the route clearer. Flower petals, carrots and hanging leaves acquire a made-by-hand surface.",
+        "limits": "The central floor motif is still an invented continuity aid, not source evidence. The room remains grand and polished, and the far end is visible despite the prose's immense distance. The final upright pose and tiny smile are acting choices, not a discovered mystery."
+      },
+      "originalOutputPath": "trials/chapter-28-miniature.png",
+      "repair": "anatomy-repair-chapter-28.json"
+    },
+    {
+      "id": "chapter-32-g",
+      "chapter": 32,
+      "letter": "g",
+      "panels": 5,
+      "file": "chapter-32-miniature.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image34.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/comparison/trials/chapter-32-dimensional.png"
+      ],
+      "prompt": "Use case: illustration-story. Create a NEW UNAPPROVED style exploration G: handcrafted miniature / plush storybook, photographed as a real handmade stop-motion set. Input 1 original image34 is the PRIMARY material and character reference: pale cream fabric face and belly, small black bead-like eyes, short round plush paws, stubby limbs without long exposed legs, soft brown-gray fiber quills, a compact toy hedgehog. Not glossy CGI, not digital furry animation, not clay, not painterly watercolor. Express emotion through head tilt and body posture, not large eyes or human mouth shapes. Tiny handmade timber, woven fabric and paper/felt plant props, subtle visible craft surfaces, practical warm light balanced by cool blues and greens. Avoid an orange wash. Keep scenes in focus enough to inspect the action; no heavy blur. The book-shaped boat and blue cylindrical prop in the reference are NOT part of these stories: do not copy them. No seams required on faces; no conspicuous puppet joints or rigging.\nOther reference if provided is the previous F exploration, a COMPOSITION/EVENT reference, not an approved design. Retain its panel events and comparable framing, but change characters, props and setting to physical handmade miniature textures. Fix story inaccuracies specified below, rather than blindly copying them. This explores anatomy AND medium; not a controlled pixel-identical recoloring.\nOne tall portrait sheet, 1024x1536, with exactly the specified number of equal horizontal panels stacked vertically in ONE column. Thin white gutters. NO text, panel numbers, speech bubbles, labels or watermarks. Same character models across panels. Fully frame all story-critical bodies and props.\nChapter32 Flight in the Night Forest. EXACTLY FIVE equal horizontal panels stacked vertically, one column. PinPin the small hedgehog on left, Lilia the magical squirrel on right; her long bushy tail and a simple plum cloak, no pointed hat. These are the only characters. PinPin has natural fur, no hat, boots, coat or staff. Snowy night.\n1. Lilia takes his little paw and casts a quiet spell; both rise just above snow. PinPin surprised. No glowing handheld flame or carrot trick reenactment.\n2. Both float higher: PinPin has a horizontal, low oval animal torso and short dangling paws, breeze through his quills; Lilia retains paw contact, trust and wonder.\n3. A single wax candle floats beside Lilia, ordinary flame, no face; its gentle warm light reveals snowflakes. Both companions airborne.\n4. Wider view: both ascend toward cave mouth in rocky slope, forest below, same single candle beside Lilia. No danger, buildings or additional animals.\n5. They reach a safe cave ledge. Lilia gestures to the forest while explaining its magic; PinPin quietly nods. Candle remains. No entering cave, kiss or bedtime.\nDo not crop Lilia's head or tail. No added sparkle trails. Physical miniature suspended flight without visible support wires.",
+      "outputPath": "trials/chapter-32-miniature.png",
+      "review": {
+        "title": "G / Miniature night flight",
+        "description": "The five F flight events with plush bodies, small dark eyes, a woven plum cloak, cool snow and one warm candle.",
+        "observed": "PinPin's broad muzzle and short dangling plush limbs read much more like the historical toy than F's pink-fingered, large-eyed figure. Paw contact is clearer and the takeoff sparkles are gone. The third and fourth panels retain an airborne wax candle.",
+        "limits": "Lilia's ears and tail are still cropped in the opening frames despite the framing instruction. Her face retains more cartoon modeling than PinPin's. At the end the candle rests on a rock instead of remaining airborne; the quieter faces also give limited evidence of surprise changing to trust."
+      }
+    },
+    {
+      "id": "chapter-34-g",
+      "chapter": 34,
+      "letter": "g",
+      "panels": 6,
+      "file": "chapter-34-miniature.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image34.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/comparison/trials/chapter-34-dimensional.png"
+      ],
+      "prompt": "Use case: illustration-story. Create a NEW UNAPPROVED style exploration G: handcrafted miniature / plush storybook, photographed as a real handmade stop-motion set. Input 1 original image34 is the PRIMARY material and character reference: pale cream fabric face and belly, small black bead-like eyes, short round plush paws, stubby limbs without long exposed legs, soft brown-gray fiber quills, a compact toy hedgehog. Not glossy CGI, not digital furry animation, not clay, not painterly watercolor. Express emotion through head tilt and body posture, not large eyes or human mouth shapes. Tiny handmade timber, woven fabric and paper/felt plant props, subtle visible craft surfaces, practical warm light balanced by cool blues and greens. Avoid an orange wash. Keep scenes in focus enough to inspect the action; no heavy blur. The book-shaped boat and blue cylindrical prop in the reference are NOT part of these stories: do not copy them. No seams required on faces; no conspicuous puppet joints or rigging.\nOther reference if provided is the previous F exploration, a COMPOSITION/EVENT reference, not an approved design. Retain its panel events and comparable framing, but change characters, props and setting to physical handmade miniature textures. Fix story inaccuracies specified below, rather than blindly copying them. This explores anatomy AND medium; not a controlled pixel-identical recoloring.\nOne tall portrait sheet, 1024x1536, with exactly the specified number of equal horizontal panels stacked vertically in ONE column. Thin white gutters. NO text, panel numbers, speech bubbles, labels or watermarks. Same character models across panels. Fully frame all story-critical bodies and props.\nChapter34 Mr PinPin's Early Morning. EXACTLY SIX equal horizontal panels stacked vertically, one column. Keep six-hedgehog family cast: PinPin, larger father, larger mother, exactly three cousins. This cousin count is staging, not a claim about the original. Distinguish small PinPin with a slightly darker rounded quill back and consistent pale pointed muzzle. No clothes/hats/boots, no human bodies.\n1. Morning in bedroom: three cousins inspect PinPin's clearly EMPTY bed and exchange worried looks. PinPin absent from this panel. No sleeping adult or extra relatives in bed.\n2. Kitchen: Father hands PinPin a ring doughnut; honey jar and spoon by PinPin, coffee cup by Father. Three cousins peek through doorway. PinPin has started breakfast early.\n3. Father and PinPin prepare vegetable soup together at low worktop; father tends pot, PinPin adds herbs. Readable tiny paws and utensils.\n4. Bedroom: PinPin serves soup from one large bowl to three cousins at a low table. No extra relatives. Recognizable PinPin, not four interchangeable hedgehogs.\n5. The narration returns to PinPin's thoughts DURING cooking: PinPin smiles at chopping board. One small distinctly bounded imagined vignette ABOVE him shows Lilia, a squirrel with long bushy tail and plum cloak, smiling beside imagined PinPin. Lilia exists ONLY within the bounded thought vignette, never actually in the kitchen. No words, hearts, wedding, or new event.\n6. Kitchen: Mother gently touches his ear and kisses his forehead; PinPin blushes, three cousins hug her and laugh, Father watches from table. Exactly six hedgehogs, no Lilia. Warm affectionate ending.\nThe family are plush hedgehog puppets, no human bodies. PinPin has a darker gray-brown quill cap, cousins lighter brown, father distinctly larger, mother a medium size.",
+      "outputPath": "trials/chapter-34-miniature.png",
+      "review": {
+        "title": "G / Handcrafted early morning",
+        "description": "The same six reconstructed events as F, now with plush family figures, smaller eyes and tactile bedding. The original chapter remains the preferred historical reference.",
+        "observed": "Small dark eyes and fabric cheeks reduce the animated facial look. Soup serving is clearer: one figure carries the large bowl while three cousins receive it. Lilia remains inside the thought vignette, not physically in the kitchen.",
+        "limits": "PinPin's darker quill cap is not a reliable identifier in every panel, and the plush shapes still blur family identity. Mother's final touch reads near his cheek rather than distinctly at his ear. Toy animals added to the shelves are new props, not original story evidence. The quills remain more sharp and polished than the source plush."
+      }
+    },
+    {
+      "id": "chapter-24-f",
+      "chapter": 24,
+      "letter": "f",
+      "panels": 6,
+      "file": "chapter-24-dimensional.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image18.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image21.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image45.png"
+      ],
+      "prompt": "Use case: illustration-story. New unapproved direction F based specifically on the ORIGINAL chapter34 images supplied. Historical image18 and image21 are the primary STYLE, LIGHTING and ANATOMY references, not edit targets; image45 (if present) reinforces the group-scale and softly lit wooden-room atmosphere. Follow the story below, do not copy the source pictures' exact cast or events.\nDesired style: soft DIMENSIONAL digital storybook painting like the reference originals. This is deliberately NOT flat gouache, NOT crayon, NOT strong ink contours and NOT a recoloring of earlier trials. Natural-looking tiny hedgehogs with low rounded quilled bodies, delicate short paws, small expressive dark eyes, tapered soft pale muzzles and fine individual quills. Eyes must not be huge cartoon discs; no long human shins, no human torso under fur. Allow upright reach only where needed for the story. PinPin stays small relative to parent animals and furniture, like image18. Warm grazing sunlight or small local lamplight reveals fur, cloth, carved wood and atmospheric depth; rounded windows, deep but readable room space, soft contact shadows. Keep a subtle painted finish, not a literal wildlife photograph or glossy toy render. Room and landscape occupy meaningful space, but faces/actions remain readable on a phone. Do NOT darken everything: preserve detail and clear subjects. Do NOT turn night into sunrise; on the night flight use cool moonlit snow and warm candle highlights. Greens and blues balance wood and light, no uniform orange filter. Underlying body, relative scale and lighting are being explored together here; composition need not be pixel-identical to earlier trials.\nOutput one tall storyboard sheet with the panel count specified below, thin white horizontal gutters. No words, lettering, labels, captions, numbers or watermarks. Keep character identity and time-of-day continuous. Any previous generated art is not an approved model.\n\nChapter24 Night Shift. Exactly SIX equal horizontal panels, one column. An ensemble chapter about ADULT Father PinPin and adult hedgehog and squirrel work crews, not the young protagonist's adventure. Do NOT insert young Mr PinPin into the crew. No child workers, wizard costumes, weapons or text. Father is a larger gray-brown hedgehog with pale muzzle; Elder Nut is an older reddish squirrel with gray cheek fur and bushy tail. Distinguish species and maintain models. Any work tools and local lamps are staging choices. Compact animal/plush bodies as specified by style, no long human legs.\n1. Establishing wide night view: a woodland construction entrance under stars and moon, hedgehogs and squirrels working quietly while the forest sleeps. Small earth-moving equipment, soil piles, adult crew, not a noisy modern city. Let the silhouettes and entrance be readable.\n2. Underground Father PinPin and two adult hedgehogs excavate a chamber and connecting corridor using small spades. On the surface visible through the entrance, an adult hedgehog and squirrel push a soil-filled wheelbarrow away. Readable spatial relation, no impossible transparent ground or duplicate Father.\n3. Adult squirrel engineers install thick timber support beams and a ventilation duct in the underground corridor, one examines the support connection. Show careful deliberate work, not collapsing rubble.\n4. Separately in another unfinished chamber, Elder Nut and two adult squirrel helpers quietly assemble an unlit system of glass LENSES and MIRRORS in angled wooden frames leading up a shaft. Clearly recognizable transparent lenses and reflective mirrors, not crystals, glowing portals or magic beams. No sunlight underground at night; secret preparations, not a reveal to the whole community.\n5. DAWN outside: tired adult hedgehog and squirrel crews put down tools and walk home to rest, pale pink and blue horizon. Work pauses, no celebration, no children or injuries.\n6. A later-in-time wide view of the substantially completed underground home: furnished family chambers and a rest area, a separate empty solar growing room with trays and optical fixtures. No big crop yet. Express gradual construction through this later completed setting. A small number of adult crew inspect quietly; do not show all residents celebrating or imply everybody knows the growing-room secret. No caption or lettering.",
+      "outputPath": "trials/chapter-24-dimensional.png",
+      "review": "Same six narrative events; age ambiguity, revealed growing room, and limited G material differentiation recorded in report."
+    },
+    {
+      "id": "chapter-24-g",
+      "chapter": 24,
+      "letter": "g",
+      "panels": 6,
+      "file": "chapter-24-miniature.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image34.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/comparison/trials/chapter-24-dimensional.png"
+      ],
+      "prompt": "Use case: illustration-story. Create a NEW UNAPPROVED style exploration G: handcrafted miniature / plush storybook, photographed as a real handmade stop-motion set. Input 1 original image34 is the PRIMARY material and character reference: pale cream fabric face and belly, small black bead-like eyes, short round plush paws, stubby limbs without long exposed legs, soft brown-gray fiber quills, a compact toy hedgehog. Not glossy CGI, not digital furry animation, not clay, not painterly watercolor. Express emotion through head tilt and body posture, not large eyes or human mouth shapes. Tiny handmade timber, woven fabric and paper/felt plant props, subtle visible craft surfaces, practical warm light balanced by cool blues and greens. Avoid an orange wash. Keep scenes in focus enough to inspect the action; no heavy blur. The book-shaped boat and blue cylindrical prop in the reference are NOT part of these stories: do not copy them. No seams required on faces; no conspicuous puppet joints or rigging.\nOther reference if provided is the previous F exploration, a COMPOSITION/EVENT reference, not an approved design. Retain its panel events and comparable framing, but change characters, props and setting to physical handmade miniature textures. Fix story inaccuracies specified below, rather than blindly copying them. This explores anatomy AND medium; not a controlled pixel-identical recoloring.\nOne tall portrait sheet, 1024x1536, with exactly the specified number of equal horizontal panels stacked vertically in ONE column. Thin white gutters. NO text, panel numbers, speech bubbles, labels or watermarks. Same character models across panels. Fully frame all story-critical bodies and props.\nChapter24 Night Shift. Exactly SIX equal horizontal panels, one column. An ensemble chapter about ADULT Father PinPin and adult hedgehog and squirrel work crews, not the young protagonist's adventure. Do NOT insert young Mr PinPin into the crew. No child workers, wizard costumes, weapons or text. Father is a larger gray-brown hedgehog with pale muzzle; Elder Nut is an older reddish squirrel with gray cheek fur and bushy tail. Distinguish species and maintain models. Any work tools and local lamps are staging choices. Compact animal/plush bodies as specified by style, no long human legs.\n1. Establishing wide night view: a woodland construction entrance under stars and moon, hedgehogs and squirrels working quietly while the forest sleeps. Small earth-moving equipment, soil piles, adult crew, not a noisy modern city. Let the silhouettes and entrance be readable.\n2. Underground Father PinPin and two adult hedgehogs excavate a chamber and connecting corridor using small spades. On the surface visible through the entrance, an adult hedgehog and squirrel push a soil-filled wheelbarrow away. Readable spatial relation, no impossible transparent ground or duplicate Father.\n3. Adult squirrel engineers install thick timber support beams and a ventilation duct in the underground corridor, one examines the support connection. Show careful deliberate work, not collapsing rubble.\n4. Separately in another unfinished chamber, Elder Nut and two adult squirrel helpers quietly assemble an unlit system of glass LENSES and MIRRORS in angled wooden frames leading up a shaft. Clearly recognizable transparent lenses and reflective mirrors, not crystals, glowing portals or magic beams. No sunlight underground at night; secret preparations, not a reveal to the whole community.\n5. DAWN outside: tired adult hedgehog and squirrel crews put down tools and walk home to rest, pale pink and blue horizon. Work pauses, no celebration, no children or injuries.\n6. A later-in-time wide view of the substantially completed underground home: furnished family chambers and a rest area, a separate empty solar growing room with trays and optical fixtures. No big crop yet. Express gradual construction through this later completed setting. A small number of adult crew inspect quietly; do not show all residents celebrating or imply everybody knows the growing-room secret. No caption or lettering.",
+      "outputPath": "trials/chapter-24-miniature.png",
+      "review": "Same six narrative events; age ambiguity, revealed growing room, and limited G material differentiation recorded in report."
+    }
+  ]
+}

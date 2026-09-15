@@ -1,0 +1,167 @@
+{
+  "tool": "built-in image_gen",
+  "status": "Unapproved trials; user prefers historical chapter34, not yet these outputs",
+  "selection": {
+    "eligible": [
+      2,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      19,
+      20,
+      21,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      33,
+      35
+    ],
+    "pick": {
+      "chapter": 28,
+      "id": "chapter-28",
+      "title": "Глава: Бесконечные Тайны Подземного Мира",
+      "heading": "Глава: Бесконечные Тайны Подземного Мира",
+      "blocks": [
+        [
+          {
+            "type": "text",
+            "text": "На следующее утро, когда мистер ПинПин снова спустился в подземелье, он был поражён его величием. Пространство было настолько огромным, что когда первые лучи утреннего света проникали через стеклянный потолок, они рассеивались внутри, и было невозможно увидеть дальний конец."
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Осторожно, шаг за шагом, он направился влево, каждый его шаг эхом отражаясь от стен. По мере продвижения, он обнаружил множество синих цветов, которые росли из тёмных уголков. Рядом с ними, ярко-оранжевые моркови простиралась к свету, их зелёные верхушки тянулись к потолку."
+          }
+        ],
+        [
+          {
+            "type": "image",
+            "src": "../images/image16.png",
+            "width": 1024,
+            "height": 1024
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "После долгого времени, казалось, что он прошёл мили, мистер ПинПin решил вернуться к центру. Он повернулся и последовал обратным путем, ориентируясь на мягкий свет, который проникал сквозь потолок. Каждый шаг обратно казался долгим, так как он снова и снова удивлялся красоте этого места."
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Дошед до центра, он остановился на мгновение, вздохнул глубоко, пытаясь взять себя в руки, и потом направился в противоположную сторону. Теперь, идя направо, он обнаружил множество подвешенных деревянных ящиков, полных листьев салата. Они висели на разных уровнях, создавая зелёные каскады, которые мерцали под лучами света."
+          }
+        ],
+        [
+          {
+            "type": "image",
+            "src": "../images/image25.png",
+            "width": 1024,
+            "height": 1024
+          }
+        ],
+        [
+          {
+            "type": "text",
+            "text": "Мистер ПинПin был в восторге от этого места, каждое новое открытие казалось ему чудом. Он задумался о том, какое волшебство или тайна может стоять за всем этим, но, в конце концов, он решил просто насладиться моментом и красотой вокруг."
+          }
+        ]
+      ],
+      "imageCount": 2
+    }
+  },
+  "method": "F: return to original chapter34's dimensional rendering, natural body and room scale; not a single-variable style transfer. Added to all existing chapters plus new chapter28 with C control.",
+  "trials": [
+    {
+      "id": "chapter-03-f",
+      "chapter": 3,
+      "letter": "f",
+      "panels": 5,
+      "file": "chapter-03-dimensional-v2.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image18.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image21.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image45.png"
+      ],
+      "prompt": "Use case: illustration-story. New unapproved direction F based specifically on the ORIGINAL chapter34 images supplied. Historical image18 and image21 are the primary STYLE, LIGHTING and ANATOMY references, not edit targets; image45 (if present) reinforces the group-scale and softly lit wooden-room atmosphere. Follow the story below, do not copy the source pictures' exact cast or events.\nDesired style: soft DIMENSIONAL digital storybook painting like the reference originals. This is deliberately NOT flat gouache, NOT crayon, NOT strong ink contours and NOT a recoloring of earlier trials. Natural-looking tiny hedgehogs with low rounded quilled bodies, delicate short paws, small expressive dark eyes, tapered soft pale muzzles and fine individual quills. Eyes must not be huge cartoon discs; no long human shins, no human torso under fur. Allow upright reach only where needed for the story. PinPin stays small relative to parent animals and furniture, like image18. Warm grazing sunlight or small local lamplight reveals fur, cloth, carved wood and atmospheric depth; rounded windows, deep but readable room space, soft contact shadows. Keep a subtle painted finish, not a literal wildlife photograph or glossy toy render. Room and landscape occupy meaningful space, but faces/actions remain readable on a phone. Do NOT darken everything: preserve detail and clear subjects. Do NOT turn night into sunrise; on the night flight use cool moonlit snow and warm candle highlights. Greens and blues balance wood and light, no uniform orange filter. Underlying body, relative scale and lighting are being explored together here; composition need not be pixel-identical to earlier trials.\nOutput one tall storyboard sheet with the panel count specified below, thin white horizontal gutters. No words, lettering, labels, captions, numbers or watermarks. Keep character identity and time-of-day continuous. Any previous generated art is not an approved model.\nChapter3 Home, Sweet Home. EXACTLY FIVE equal horizontal panels stacked vertically, one column. The same PinPin left and mother right throughout. Mother a larger hedgehog, PinPin distinctly small. No other characters. Evening moving to night.\n1. Coming home at round doorway: tired PinPin sits low on threshold. TWO small brown boots total: one boot worn on one hind foot, the other hind foot visibly bare; mother wipes the removed second boot with a soft cloth. No boots on forepaws or third boot.\n2. Supper: barefoot PinPin at a low wooden table holds a cut carrot piece; mother places bowl of cut carrots. Gentle conversation, mother humming.\n3. Herbal bath: PinPin immersed in small wooden tub with forest herbs, only head/quilled back and tiny forepaws above opaque water; mother attends. Wholesome nonhuman animal bathing.\n4. Drying: PinPin curled low in a muted red towel by the hearth; mother carefully dries his quills with a second cloth. His compact body should read as an animal curl.\n5. Bed: mother kisses his forehead as he curls into a moss-and-dry-leaf bed with small quilt. Blue night through round window. Quiet end. No wizard props, no clothes except towel, no extra magical events.",
+      "repair": {
+        "prompt": "Edit only panel 1 of this five-panel storyboard: remove the single freestanding brown boot lying on the floor BETWEEN the child hedgehog and the mother, near horizontal center. Replace it with the exact continuous rug/floor background. Keep the boot worn on the child's foot and the boot held by Mother, so exactly TWO boots remain. Do not remove or alter either character's paws. Preserve every other pixel as closely as possible: all characters, expressions, anatomy, lighting, color, crop, five panel frames, props, all of panels 2-5. Do not add text. This is a local prop continuity repair, not a restyling. Output the same 1024x1536 portrait composition.",
+        "reference": "trials/chapter-03-dimensional.png",
+        "purpose": "Remove extra freestanding boot",
+        "status": "Visually checked: one worn boot plus one held boot remain"
+      },
+      "outputPath": "trials/chapter-03-dimensional-v2.png"
+    },
+    {
+      "id": "chapter-32-f",
+      "chapter": 32,
+      "letter": "f",
+      "panels": 5,
+      "file": "chapter-32-dimensional.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image18.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image21.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image45.png"
+      ],
+      "prompt": "Use case: illustration-story. New unapproved direction F based specifically on the ORIGINAL chapter34 images supplied. Historical image18 and image21 are the primary STYLE, LIGHTING and ANATOMY references, not edit targets; image45 (if present) reinforces the group-scale and softly lit wooden-room atmosphere. Follow the story below, do not copy the source pictures' exact cast or events.\nDesired style: soft DIMENSIONAL digital storybook painting like the reference originals. This is deliberately NOT flat gouache, NOT crayon, NOT strong ink contours and NOT a recoloring of earlier trials. Natural-looking tiny hedgehogs with low rounded quilled bodies, delicate short paws, small expressive dark eyes, tapered soft pale muzzles and fine individual quills. Eyes must not be huge cartoon discs; no long human shins, no human torso under fur. Allow upright reach only where needed for the story. PinPin stays small relative to parent animals and furniture, like image18. Warm grazing sunlight or small local lamplight reveals fur, cloth, carved wood and atmospheric depth; rounded windows, deep but readable room space, soft contact shadows. Keep a subtle painted finish, not a literal wildlife photograph or glossy toy render. Room and landscape occupy meaningful space, but faces/actions remain readable on a phone. Do NOT darken everything: preserve detail and clear subjects. Do NOT turn night into sunrise; on the night flight use cool moonlit snow and warm candle highlights. Greens and blues balance wood and light, no uniform orange filter. Underlying body, relative scale and lighting are being explored together here; composition need not be pixel-identical to earlier trials.\nOutput one tall storyboard sheet with the panel count specified below, thin white horizontal gutters. No words, lettering, labels, captions, numbers or watermarks. Keep character identity and time-of-day continuous. Any previous generated art is not an approved model.\nChapter32 Flight in the Night Forest. EXACTLY FIVE equal horizontal panels stacked vertically, one column. PinPin the small hedgehog on left, Lilia the magical squirrel on right; her long bushy tail and a simple plum cloak, no pointed hat. These are the only characters. PinPin has natural fur, no hat, boots, coat or staff. Snowy night.\n1. Lilia takes his little paw and casts a quiet spell; both rise just above snow. PinPin surprised. No glowing handheld flame or carrot trick reenactment.\n2. Both float higher: PinPin has a horizontal, low oval animal torso and short dangling paws, breeze through his quills; Lilia retains paw contact, trust and wonder.\n3. A single wax candle floats beside Lilia, ordinary flame, no face; its gentle warm light reveals snowflakes. Both companions airborne.\n4. Wider view: both ascend toward cave mouth in rocky slope, forest below, same single candle beside Lilia. No danger, buildings or additional animals.\n5. They reach a safe cave ledge. Lilia gestures to the forest while explaining its magic; PinPin quietly nods. Candle remains. No entering cave, kiss or bedtime.",
+      "outputPath": "trials/chapter-32-dimensional.png"
+    },
+    {
+      "id": "chapter-34-f",
+      "chapter": 34,
+      "letter": "f",
+      "panels": 6,
+      "file": "chapter-34-dimensional.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image18.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image21.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image45.png"
+      ],
+      "prompt": "Use case: illustration-story. New unapproved direction F based specifically on the ORIGINAL chapter34 images supplied. Historical image18 and image21 are the primary STYLE, LIGHTING and ANATOMY references, not edit targets; image45 (if present) reinforces the group-scale and softly lit wooden-room atmosphere. Follow the story below, do not copy the source pictures' exact cast or events.\nDesired style: soft DIMENSIONAL digital storybook painting like the reference originals. This is deliberately NOT flat gouache, NOT crayon, NOT strong ink contours and NOT a recoloring of earlier trials. Natural-looking tiny hedgehogs with low rounded quilled bodies, delicate short paws, small expressive dark eyes, tapered soft pale muzzles and fine individual quills. Eyes must not be huge cartoon discs; no long human shins, no human torso under fur. Allow upright reach only where needed for the story. PinPin stays small relative to parent animals and furniture, like image18. Warm grazing sunlight or small local lamplight reveals fur, cloth, carved wood and atmospheric depth; rounded windows, deep but readable room space, soft contact shadows. Keep a subtle painted finish, not a literal wildlife photograph or glossy toy render. Room and landscape occupy meaningful space, but faces/actions remain readable on a phone. Do NOT darken everything: preserve detail and clear subjects. Do NOT turn night into sunrise; on the night flight use cool moonlit snow and warm candle highlights. Greens and blues balance wood and light, no uniform orange filter. Underlying body, relative scale and lighting are being explored together here; composition need not be pixel-identical to earlier trials.\nOutput one tall storyboard sheet with the panel count specified below, thin white horizontal gutters. No words, lettering, labels, captions, numbers or watermarks. Keep character identity and time-of-day continuous. Any previous generated art is not an approved model.\nChapter34 Mr PinPin's Early Morning. EXACTLY SIX equal horizontal panels stacked vertically, one column. Keep six-hedgehog family cast: PinPin, larger father, larger mother, exactly three cousins. This cousin count is staging, not a claim about the original. Distinguish small PinPin with a slightly darker rounded quill back and consistent pale pointed muzzle. No clothes/hats/boots, no human bodies.\n1. Morning in bedroom: three cousins inspect PinPin's clearly EMPTY bed and exchange worried looks. PinPin absent from this panel. No sleeping adult or extra relatives in bed.\n2. Kitchen: Father hands PinPin a ring doughnut; honey jar and spoon by PinPin, coffee cup by Father. Three cousins peek through doorway. PinPin has started breakfast early.\n3. Father and PinPin prepare vegetable soup together at low worktop; father tends pot, PinPin adds herbs. Readable tiny paws and utensils.\n4. Bedroom: PinPin serves soup from one large bowl to three cousins at a low table. No extra relatives. Recognizable PinPin, not four interchangeable hedgehogs.\n5. The narration returns to PinPin's thoughts DURING cooking: PinPin smiles at chopping board. One small distinctly bounded imagined vignette ABOVE him shows Lilia, a squirrel with long bushy tail and plum cloak, smiling beside imagined PinPin. Lilia exists ONLY within the bounded thought vignette, never actually in the kitchen. No words, hearts, wedding, or new event.\n6. Kitchen: Mother gently touches his ear and kisses his forehead; PinPin blushes, three cousins hug her and laugh, Father watches from table. Exactly six hedgehogs, no Lilia. Warm affectionate ending.",
+      "outputPath": "trials/chapter-34-dimensional.png"
+    },
+    {
+      "id": "chapter-28-c",
+      "chapter": 28,
+      "letter": "c",
+      "panels": 5,
+      "file": "chapter-28-natural.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/comparison/trials/chapter-03-natural.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image16.png"
+      ],
+      "prompt": "Use case: illustration-story. New UNAPPROVED direction C animal-shaped woodland comparison. Input1 is previous unapproved homecoming C, for comparable small dark eyes, tapered muzzle, quill mass and short animal paws, not historical evidence. Input2 original image16 is a setting reference only; do NOT copy its squirrel or extra animals. Use painted gouache-and-pencil drawing with controlled earthy colors and moderate soft modeling, matching C rather than F's more luminous dimensional space. Readable scene actions at phone size. One tall five-panel sheet, thin white horizontal gutters. No lettering, captions or labels.\nChapter28 Endless Mysteries of the Underground World. EXACTLY FIVE equal horizontal panels stacked vertically, one column. ONLY ONE living character throughout: small PinPin. No squirrel, birds, insects, other hedgehogs, gardeners or extra shadow characters. PinPin unclothed, no boots or wizard accessories. Morning.\nA vast underground garden chamber with a glass ceiling high overhead, wooden walkways, lush plants. Preserve exactly this itinerary:\n1. Entering from stairs to a CENTRAL landing, PinPin pauses, astonished at the enormous chamber and morning sun through glass roof. Establish a distinctive central circular floor medallion as a readable continuity landmark; that architectural detail is an adaptation choice. Far end lost to distance, not a dark blur.\n2. He walks LEFT from the central landing toward blue flowers growing in darker corners and vivid orange carrots with green tops reaching upward. One PinPin only, side view, low walking animal posture.\n3. He returns along the same walkway to the SAME central medallion, following the roof light. Give the central landmark its same design. No second PinPin to show movement.\n4. He takes the OPPOSITE RIGHT path and finds rectangular WOODEN BOXES full of LETTUCE, suspended at varied heights, cascading green leaves. Use boxes, not exclusively round barrels. Do not reuse the carrot scene as the right path.\n5. He pauses among the hanging lettuce boxes in quiet wonder, savoring the surrounding beauty; tiny forepaws held close, gentle expression. No sleeping, prayer, flight, secret discovery or explanation of the magic. The source ends in appreciation, not a solved mystery.",
+      "outputPath": "trials/chapter-28-natural.png"
+    },
+    {
+      "id": "chapter-28-f",
+      "chapter": 28,
+      "letter": "f",
+      "panels": 5,
+      "file": "chapter-28-dimensional.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image18.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image21.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image45.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image16.png"
+      ],
+      "prompt": "Use case: illustration-story. New unapproved direction F based specifically on the ORIGINAL chapter34 images supplied. Historical image18 and image21 are the primary STYLE, LIGHTING and ANATOMY references, not edit targets; image45 (if present) reinforces the group-scale and softly lit wooden-room atmosphere. Follow the story below, do not copy the source pictures' exact cast or events.\nDesired style: soft DIMENSIONAL digital storybook painting like the reference originals. This is deliberately NOT flat gouache, NOT crayon, NOT strong ink contours and NOT a recoloring of earlier trials. Natural-looking tiny hedgehogs with low rounded quilled bodies, delicate short paws, small expressive dark eyes, tapered soft pale muzzles and fine individual quills. Eyes must not be huge cartoon discs; no long human shins, no human torso under fur. Allow upright reach only where needed for the story. PinPin stays small relative to parent animals and furniture, like image18. Warm grazing sunlight or small local lamplight reveals fur, cloth, carved wood and atmospheric depth; rounded windows, deep but readable room space, soft contact shadows. Keep a subtle painted finish, not a literal wildlife photograph or glossy toy render. Room and landscape occupy meaningful space, but faces/actions remain readable on a phone. Do NOT darken everything: preserve detail and clear subjects. Do NOT turn night into sunrise; on the night flight use cool moonlit snow and warm candle highlights. Greens and blues balance wood and light, no uniform orange filter. Underlying body, relative scale and lighting are being explored together here; composition need not be pixel-identical to earlier trials.\nOutput one tall storyboard sheet with the panel count specified below, thin white horizontal gutters. No words, lettering, labels, captions, numbers or watermarks. Keep character identity and time-of-day continuous. Any previous generated art is not an approved model.\nInput4 original image16 supplies glass-roof garden plants and structure only. Do not copy its extra squirrel.\nChapter28 Endless Mysteries of the Underground World. EXACTLY FIVE equal horizontal panels stacked vertically, one column. ONLY ONE living character throughout: small PinPin. No squirrel, birds, insects, other hedgehogs, gardeners or extra shadow characters. PinPin unclothed, no boots or wizard accessories. Morning.\nA vast underground garden chamber with a glass ceiling high overhead, wooden walkways, lush plants. Preserve exactly this itinerary:\n1. Entering from stairs to a CENTRAL landing, PinPin pauses, astonished at the enormous chamber and morning sun through glass roof. Establish a distinctive central circular floor medallion as a readable continuity landmark; that architectural detail is an adaptation choice. Far end lost to distance, not a dark blur.\n2. He walks LEFT from the central landing toward blue flowers growing in darker corners and vivid orange carrots with green tops reaching upward. One PinPin only, side view, low walking animal posture.\n3. He returns along the same walkway to the SAME central medallion, following the roof light. Give the central landmark its same design. No second PinPin to show movement.\n4. He takes the OPPOSITE RIGHT path and finds rectangular WOODEN BOXES full of LETTUCE, suspended at varied heights, cascading green leaves. Use boxes, not exclusively round barrels. Do not reuse the carrot scene as the right path.\n5. He pauses among the hanging lettuce boxes in quiet wonder, savoring the surrounding beauty; tiny forepaws held close, gentle expression. No sleeping, prayer, flight, secret discovery or explanation of the magic. The source ends in appreciation, not a solved mystery.",
+      "outputPath": "trials/chapter-28-dimensional.png"
+    }
+  ]
+}
