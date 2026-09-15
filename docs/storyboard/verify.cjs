@@ -10,11 +10,13 @@ async function main() {
   const book = JSON.parse(fs.readFileSync(path.join(__dirname, "book.json")));
   const art = JSON.parse(fs.readFileSync(path.join(__dirname, "illustrations.json")));
   const translations = JSON.parse(fs.readFileSync(path.join(__dirname, "translations.json")));
+  const assets = art.chapters["chapter-01"];
+  const sceneTotal = assets.length;
   const expected = language => (language === "ru" ? art.scenes["chapter-01"] : translations["chapter-01"][language].scenes)
     .flatMap(scene => scene.paragraphs);
   const source = book.chapters[0].blocks.flat().filter(b => b.type === "text" && b.text !== "---").map(b => b.text);
   assert.equal(normalize(source.join(" ")), normalize(expected("ru").join(" ")), "Source words changed");
-  const screenshots = path.join(os.tmpdir(), "pinpin-chapter-one-v2");
+  const screenshots = path.join(os.tmpdir(), "pinpin-chapter-one-direct");
   fs.mkdirSync(screenshots, { recursive: true });
   const browser = await chromium.launch({ channel: "chrome", headless: true });
   try {
@@ -27,18 +29,20 @@ async function main() {
         await page.waitForSelector("#reader[aria-busy=false] article");
         await page.evaluate(() => document.querySelectorAll("img").forEach(i => i.loading = "eager"));
         await page.waitForFunction(() => [...document.images].every(i => i.complete && i.naturalWidth));
-        assert.equal(await page.locator(".scene").count(), 6);
-        assert.equal(await page.locator(".scene-art img").count(), 6);
+        assert.equal(await page.locator(".scene").count(), sceneTotal);
+        assert.equal(await page.locator(".scene-art img").count(), sceneTotal);
         assert.equal(await page.locator("dialog,details").count(), 0, "Reader still hides content");
         assert.equal(await page.locator("#chapter-list a").count(), 38);
         assert.equal(await page.locator("html").getAttribute("lang"), lang);
         const paragraphs = await page.locator(".scene .prose p").allTextContents();
         assert.deepEqual(paragraphs, expected(lang), "Rendered translation mismatch");
         assert(await page.locator("#previous").isDisabled());
-        assert.equal(await page.locator(".scene-number").last().textContent(), "06 / 06");
-        assert(await page.evaluate(() => [...document.querySelectorAll(".scene-art img")].every(i =>
-          i.src.includes("chapter-01-v2") && i.naturalWidth === 1536 && i.naturalHeight === 1024
-        )), "Wrong artwork revision or dimensions");
+        const lastNumber = String(sceneTotal).padStart(2, "0");
+        assert.equal(await page.locator(".scene-number").last().textContent(), lastNumber + " / " + lastNumber);
+        assert(await page.evaluate(expected => [...document.querySelectorAll(".scene-art img")].every((image, index) =>
+          image.getAttribute("src") === expected[index].src &&
+          image.naturalWidth === expected[index].width && image.naturalHeight === expected[index].height
+        ), assets), "Wrong artwork revision or dimensions");
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false, "Horizontal overflow");
         const collisions = await page.evaluate(() => {
           const nodes = [...document.querySelector(".toolbar").children];
@@ -53,7 +57,7 @@ async function main() {
           await page.screenshot({ path: path.join(screenshots, "opening-" + width + ".png") });
           if ([1440, 390].includes(width)) {
             await page.screenshot({ path: path.join(screenshots, "full-" + width + ".png"), fullPage: true });
-            await page.locator("#scene-4").screenshot({ path: path.join(screenshots, "circle-" + width + ".png") });
+            await page.locator("#scene-6").screenshot({ path: path.join(screenshots, "circle-" + width + ".png") });
           }
         }
       }
@@ -78,7 +82,7 @@ async function main() {
       assert.equal(await page.locator("#reader article").getAttribute("lang"), "ru");
       await page.evaluate(() => history.back());
       await page.waitForFunction(() => new URL(location.href).searchParams.get("chapter") === "1");
-      assert.equal(await page.locator(".scene-art img").count(), 6);
+      assert.equal(await page.locator(".scene-art img").count(), sceneTotal);
 
       await page.locator('#chapter-list a').last().click();
       await page.waitForFunction(() => new URL(location.href).searchParams.get("chapter") === "38");
@@ -88,7 +92,7 @@ async function main() {
       assert.equal(new URL(page.url()).searchParams.get("chapter"), "1");
       assert.equal(new URL(page.url()).searchParams.get("lang"), "ru");
       assert.deepEqual(errors, [], "Browser script errors");
-      console.log(JSON.stringify({ width, languages: 3, scenes: 6, source: true, routing: true, passed: true }));
+      console.log(JSON.stringify({ width, languages: 3, scenes: sceneTotal, source: true, routing: true, passed: true }));
       await page.close();
     }
   } finally {

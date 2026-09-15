@@ -1,0 +1,112 @@
+{
+  "status": "complete-review-candidate-not-approved",
+  "date": "2026-09-15",
+  "workflow": "Independent direct character render from each clean landscape plate plus one shared character-design reference. No blocking or finishing pass.",
+  "counts": {
+    "characterScenes": 10,
+    "unchangedClosingScenes": 4,
+    "callsThisRun": 11,
+    "openingDiscardedCandidatesThisRun": 1
+  },
+  "timingNote": "Tool wall times, not billing or parallel throughput. Selected output times exclude the discarded 32.5-second opening attempt and the earlier-turn trial.",
+  "scenes": [
+    {
+      "id": "01a",
+      "plate": "approach-100m.png",
+      "title": "Through the forest",
+      "direction": "PinPin alone walks away from the camera, up the path toward the distant willow and lake. We see his rounded spiny back and small rear feet, a rear three-quarter view following the path. Place him near the middle of the visible trail, about 7 percent of image width, a little 25 cm hedgehog on a metre-wide footpath. The forest dominates.",
+      "prompt": "Keep image 1's landscape, camera, framing and morning exposure unchanged. Image 2 is a character design reference only: soft dimensional storybook rendering, warm expressive eyes and soft cheeks. Add only the characters specified below, all together in one finished render. PinPin is a small 25 cm cream-faced hedgehog with brown quills and four short legs; use believable natural scale against leaves and roots. Landscape 1536x1024. PinPin alone walks away from the camera, up the path toward the distant willow and lake. We see his rounded spiny back and small rear feet, a rear three-quarter view following the path. Place him near the middle of the visible trail, about 7 percent of image width, a little 25 cm hedgehog on a metre-wide footpath. The forest dominates.",
+      "seconds": 30.463,
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-fc050a42-b273-4f82-8514-4a2fb2702460.png"
+    },
+    {
+      "id": "01b",
+      "plate": "approach-50m.png",
+      "title": "Meeting Lulu",
+      "direction": "PinPin pauses on the foreground path, slightly right of centre. Farther up the same path, Lulu sits naturally on her haunches with her forepaws beneath her chest. They look at each other: PinPin curious, Lulu gently worried. Keep their bodies separate and leave the trail visible between them.",
+      "prompt": "Keep image 1's landscape, camera, framing and morning exposure unchanged. Image 2 is a character design reference only: soft dimensional storybook rendering, warm expressive eyes and soft cheeks. Add only the characters specified below, all together in one finished render. PinPin is a small 25 cm cream-faced hedgehog with brown quills and four short legs; use believable natural scale against leaves and roots. Landscape 1536x1024. PinPin pauses on the foreground path, slightly right of centre. Farther up the same path, Lulu sits naturally on her haunches with her forepaws beneath her chest. They look at each other: PinPin curious, Lulu gently worried. Keep their bodies separate and leave the trail visible between them. Lulu is the gray rabbit. PinPin faces up the trail, his back toward us, his body about 7 percent of image width.",
+      "seconds": 30.502,
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-b56f13b1-41b2-4ec2-a4a6-01102f9a1472.png"
+    },
+    {
+      "id": "01c",
+      "plate": "shot-01-camera-02.png",
+      "title": "The worried friends",
+      "direction": "Place the three friends on the path at the right. PinPin is nearest us, looking down-left into the dry lake. Lulu waits just ahead beside the willow, also looking at the lake; the smaller tawny rabbit crouches farther along the trail behind her. Their expressions are quietly concerned. Keep the lake and tree fully recognizable.",
+      "prompt": "Keep image 1's landscape, camera, framing and morning exposure unchanged. Image 2 is a character design reference only: soft dimensional storybook rendering, warm expressive eyes and soft cheeks. Add only the characters specified below, all together in one finished render. PinPin is a small 25 cm cream-faced hedgehog with brown quills and four short legs; use believable natural scale against leaves and roots. Landscape 1536x1024. Place the three friends on the path at the right. PinPin is nearest us, looking down-left into the dry lake. Lulu waits just ahead beside the willow, also looking at the lake; the smaller tawny rabbit crouches farther along the trail behind her. Their expressions are quietly concerned. Keep the lake and tree fully recognizable. Lulu is gray. PinPin's body spans about 6 percent of frame width; the rabbits are similarly small, crouching on four paws.",
+      "seconds": 51.612,
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-8883fbd7-fd8c-427e-85ad-40409c5d11c3.png"
+    },
+    {
+      "id": "02",
+      "plate": "shot-02.png",
+      "title": "Crystal Lake has dried up",
+      "direction": "On the open near-left bank, PinPin faces right across the dry basin. Lulu crouches beside him, looking at his face as she explains what happened. The tawny rabbit waits farther back on the left path. PinPin listens with a worried, attentive expression. Stage the whole group on the bank, with the lake remaining the main view.",
+      "prompt": "Keep image 1's landscape, camera, framing and morning exposure unchanged. Image 2 is a character design reference only: soft dimensional storybook rendering, warm expressive eyes and soft cheeks. Add only the characters specified below, all together in one finished render. PinPin is a small 25 cm cream-faced hedgehog with brown quills and four short legs; use believable natural scale against leaves and roots. Landscape 1536x1024. On the open near-left bank, PinPin faces right across the dry basin. Lulu crouches beside him, looking at his face as she explains what happened. The tawny rabbit waits farther back on the left path. PinPin listens with a worried, attentive expression. Stage the whole group on the bank, with the lake remaining the main view. Lulu is gray. The animals occupy a small part of the bank: PinPin about 90 pixels long in this 1536-pixel wide landscape.",
+      "seconds": 36.552,
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-8d248702-4be9-49ab-bd64-ce5937383d20.png"
+    },
+    {
+      "id": "03",
+      "plate": "shot-03.png",
+      "title": "An idea beside the lake",
+      "direction": "PinPin stands low on the dry near-left ground, looking thoughtfully toward the middle of the empty basin. His curious face is visible in three-quarter view. Lulu waits a little farther back on the left bank, watching him. Keep the foreground cracks and root visible; this is a quiet moment of thinking.",
+      "prompt": "Keep image 1's landscape, camera, framing and morning exposure unchanged. Image 2 is a character design reference only: soft dimensional storybook rendering, warm expressive eyes and soft cheeks. Add only the characters specified below, all together in one finished render. PinPin is a small 25 cm cream-faced hedgehog with brown quills and four short legs; use believable natural scale against leaves and roots. Landscape 1536x1024. PinPin stands low on the dry near-left ground, looking thoughtfully toward the middle of the empty basin. His curious face is visible in three-quarter view. Lulu waits a little farther back on the left bank, watching him. Keep the foreground cracks and root visible; this is a quiet moment of thinking. Lulu is gray. PinPin is about 90 pixels long; his belly stays low over his four small feet.",
+      "seconds": 28.882,
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-dae5ca74-a753-49e0-95d2-e9c700763646.png"
+    },
+    {
+      "id": "04",
+      "plate": "shot-03.png",
+      "title": "Drawing the circle",
+      "direction": "PinPin stands beside a large simple circle scratched into the dry lakebed in the lower centre-right. Leaning low, he uses one forepaw to hold a short slender golden quill whose tip touches the unfinished circle; his other three paws support him. His gaze follows the tip. Lulu watches from the left bank. The ground is still completely dry. The quill is a drawing tool in his paw.",
+      "prompt": "Keep image 1's landscape, camera, framing and morning exposure unchanged. Image 2 is a character design reference only: soft dimensional storybook rendering, warm expressive eyes and soft cheeks. Add only the characters specified below, all together in one finished render. PinPin is a small 25 cm cream-faced hedgehog with brown quills and four short legs; use believable natural scale against leaves and roots. Landscape 1536x1024. PinPin stands beside a large simple circle scratched into the dry lakebed in the lower centre-right. Leaning low, he uses one forepaw to hold a short slender golden quill whose tip touches the unfinished circle; his other three paws support him. His gaze follows the tip. Lulu watches from the left bank. The ground is still completely dry. The quill is a drawing tool in his paw. Lulu is a gray rabbit crouching on four paws. PinPin is small beside the wide circle; the quill is a slender handheld tool.",
+      "seconds": 32.393,
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-aaa40575-272f-40d3-97ff-1e0371e4c9cf.png"
+    },
+    {
+      "id": "05",
+      "plate": "shot-05.png",
+      "title": "The first water",
+      "direction": "PinPin stands on dry ground just left of the existing pool, looking delighted and surprised at the first bubbling water. Lulu watches from a little farther back on the left bank. Keep both faces readable, the tiny spring unobstructed, and their short paws firmly on the dry ground.",
+      "prompt": "Keep image 1's landscape, camera, framing and morning exposure unchanged. Image 2 is a character design reference only: soft dimensional storybook rendering, warm expressive eyes and soft cheeks. Add only the characters specified below, all together in one finished render. PinPin is a small 25 cm cream-faced hedgehog with brown quills and four short legs; use believable natural scale against leaves and roots. Landscape 1536x1024. PinPin stands on dry ground just left of the existing pool, looking delighted and surprised at the first bubbling water. Lulu watches from a little farther back on the left bank. Keep both faces readable, the tiny spring unobstructed, and their short paws firmly on the dry ground. Lulu is a gray rabbit crouched on four paws. Keep PinPin about 100 pixels long, a tiny animal beside the pool.",
+      "seconds": 28.254,
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-672c5990-08c7-4566-8ee9-2675dbeabf7b.png"
+    },
+    {
+      "id": "06",
+      "plate": "shot-06.png",
+      "title": "Water spreading",
+      "direction": "The three friends watch the water spreading. PinPin is nearest us on the dry lower-left ground, looking right toward the ripples. Lulu crouches behind him on the left bank, ears attentive; the tawny rabbit is farther back. Their worried faces are turning to wonder. Keep the broad spreading water visible.",
+      "prompt": "Keep image 1's landscape, camera, framing and morning exposure unchanged. Image 2 is a character design reference only: soft dimensional storybook rendering, warm expressive eyes and soft cheeks. Add only the characters specified below, all together in one finished render. PinPin is a small 25 cm cream-faced hedgehog with brown quills and four short legs; use believable natural scale against leaves and roots. Landscape 1536x1024. The three friends watch the water spreading. PinPin is nearest us on the dry lower-left ground, looking right toward the ripples. Lulu crouches behind him on the left bank, ears attentive; the tawny rabbit is farther back. Their worried faces are turning to wonder. Keep the broad spreading water visible. Lulu is gray. PinPin stays low on four short legs, about 100 pixels long; the rabbits crouch naturally.",
+      "seconds": 29.227,
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-513db0fa-3ed5-4d31-bf05-36a1e3448911.png"
+    },
+    {
+      "id": "07",
+      "plate": "shot-07.png",
+      "title": "At the water's edge",
+      "direction": "PinPin stands at the narrow near-left bank, safely on land, gazing into the clear water. Lulu crouches slightly behind him higher on the same bank, watching with relief. Small natural animals within the landscape, with their faces turned enough toward the camera to read. Preserve the nearly full lake.",
+      "prompt": "Keep image 1's landscape, camera, framing and morning exposure unchanged. Image 2 is a character design reference only: soft dimensional storybook rendering, warm expressive eyes and soft cheeks. Add only the characters specified below, all together in one finished render. PinPin is a small 25 cm cream-faced hedgehog with brown quills and four short legs; use believable natural scale against leaves and roots. Landscape 1536x1024. PinPin stands at the narrow near-left bank, safely on land, gazing into the clear water. Lulu crouches slightly behind him higher on the same bank, watching with relief. Small natural animals within the landscape, with their faces turned enough toward the camera to read. Preserve the nearly full lake. Lulu is gray. Place them farther along the bank, small in frame: PinPin about 80 pixels long and Lulu about 110 pixels long, physically grounded on the existing bank.",
+      "seconds": 29.772,
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-b709e7c4-d8dd-4069-8e12-28b3ccc8a131.png"
+    },
+    {
+      "id": "08",
+      "plate": "shot-08.png",
+      "title": "The lake restored",
+      "direction": "A gentle celebration along the left shoreline. PinPin smiles from the small firm bank. Lulu plays in ankle-deep water beside him, crouched naturally with her body above the surface. Farther up the bank the tawny rabbit lowers its muzzle to drink. They remain small in the scene. Preserve the existing lilies, fresh plants and underwater fish.",
+      "prompt": "Keep image 1's landscape, camera, framing and morning exposure unchanged. Image 2 is a character design reference only: soft dimensional storybook rendering, warm expressive eyes and soft cheeks. Add only the characters specified below, all together in one finished render. PinPin is a small 25 cm cream-faced hedgehog with brown quills and four short legs; use believable natural scale against leaves and roots. Landscape 1536x1024. A gentle celebration along the left shoreline. PinPin smiles from the small firm bank. Lulu plays in ankle-deep water beside him, crouched naturally with her body above the surface. Farther up the bank the tawny rabbit lowers its muzzle to drink. They remain small in the scene. Preserve the existing lilies, fresh plants and underwater fish. Lulu is gray. PinPin is a little 25 cm hedgehog beside the water lilies. Compose this as a wide landscape with small animal figures along its edge.",
+      "seconds": 30.292,
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-a1f07887-f6c9-4723-b8ae-122158278afa.png"
+    }
+  ],
+  "review": {
+    "scale": "Requested natural scale and small frame footprint were not consistently obeyed. Several images remain oversized relative to the requested framing.",
+    "posture": "Opening rear view is correct in direction but remains more upright than a natural walking hedgehog.",
+    "anatomy": "Scene 2 (01b): Lulu appears to have two raised chest paws plus multiple ground paw shapes; not approved as anatomically correct. Scene 4 (02): raised gesture and ground paw shapes also need close review. Other views occlude limbs; absence of an obvious extra paw is not proof of correct anatomy.",
+    "continuity": "Scene 9 includes an unrequested bird and butterfly. The drawing-circle scale and shoreline details vary across independently rendered scenes.",
+    "faces": "Direct outputs have rounded cheeks and more expressive eyes than the blocking finish, a qualitative judgment rather than a controlled comparison.",
+    "text": "Original Russian text and existing EN/ES translations preserved exactly; redistributed over 14 images. Golden quill remains in original prose and as the drawing tool, not as a head ornament."
+  }
+}
