@@ -8,15 +8,16 @@
   <title>Мистер Пин-Пин</title>
   <link rel="stylesheet" href="reader.css?v=editorial-two">
   <link rel="stylesheet" href="editorial.css?v=margin-preview">
-  <link rel="stylesheet" href="edition.css?v=natural-scroll">
+  <link rel="stylesheet" href="edition.css?v=chapter-library">
   <link id="paper-styles" rel="stylesheet" href="paper.css?v=editorial-two" media="print">
-  <link rel="stylesheet" href="print.css?v=margin-preview" media="print">
+  <link rel="stylesheet" href="print.css?v=chapter-library" media="print">
   <script src="locale.js?v=margin-preview" defer></script>
-  <script src="reader.js?v=natural-scroll" defer></script>
+  <script src="reader.js?v=chapter-library" defer></script>
 </head>
 <body>
   <button id="controls-toggle" class="icon-button controls-toggle" aria-label="Book controls" title="Book controls" aria-expanded="false" aria-controls="reader-controls"><i data-lucide="ellipsis" aria-hidden="true"></i></button>
   <aside id="reader-controls" class="toolbar" aria-label="Book controls">
+    <a class="icon-button library-link" href="library.html?lang=en" title="Chapters" aria-label="Chapters"><i data-lucide="library-big" aria-hidden="true"></i></a>
     <div class="language-selector" role="group" aria-label="Language">
       <button data-lang="en" title="English" aria-label="English" aria-pressed="false"></button>
       <button data-lang="es" title="Español" aria-label="Español" aria-pressed="false"></button>
@@ -28,6 +29,7 @@
   <div class="reading-progress" aria-hidden="true"><div id="progress"></div></div>
   <p id="export-status" class="export-status" role="status" aria-live="polite"></p>
   <main id="reader" aria-busy="true"><p class="loading" role="status">Загрузка книги…</p></main>
+  <nav class="reader-footer" aria-label="Book navigation"><a class="library-link" href="library.html?lang=en"><i data-lucide="library-big" aria-hidden="true"></i><span id="library-label">Chapters</span></a></nav>
 
   <script src="icons.js"></script>
 </body>

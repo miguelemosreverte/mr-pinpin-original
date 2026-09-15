@@ -13,11 +13,14 @@
 .chapter-heading .eyebrow::before { content:''; width:24px; height:1px; background:currentColor; }
 .folio { color:var(--accent); }
 .controls-toggle { display:none; }
+.reader-footer { width:min(100%,920px); margin:0 auto; padding:24px; border-top:1px solid var(--line); }
+.reader-footer a { display:inline-flex; align-items:center; gap:10px; min-height:44px; }
+.reader-footer svg { width:20px; height:20px; }
 @media screen and (max-width:600px), screen and (max-width:1000px) and (max-height:500px) {
   body { padding-right:0; }
   main { width:100%; }
   .controls-toggle { display:grid; position:fixed; z-index:8; top:max(8px,env(safe-area-inset-top)); right:max(8px,env(safe-area-inset-right)); background:var(--paper); border-radius:50%; }
-  .toolbar { display:none; top:60px; right:8px; width:60px; padding:8px; background:var(--paper); border:1px solid var(--line); border-radius:6px; }
+  .toolbar { display:none; top:60px; right:8px; width:60px; padding:8px; background:var(--paper); border:1px solid var(--line); border-radius:6px; max-height:calc(100dvh - 68px); overflow-y:auto; flex-wrap:nowrap; }
   .controls-open .toolbar { display:flex; }
   .reading-progress { display:none; }
   html:not(.print-preview) .scene-art img { width:100%; height:auto; }

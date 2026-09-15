@@ -36,6 +36,12 @@
     language = ['ru', 'en', 'es'].includes(requested) ? requested : 'ru';
     history.replaceState(null, '', route(language));
     const ui = window.readerLabels[language];
+    document.querySelectorAll('.library-link').forEach(link => {
+      link.href = 'library.html?lang=' + language;
+      link.title = ui.contents;
+      link.setAttribute('aria-label', ui.contents);
+    });
+    $('library-label').textContent = ui.contents;
     const preview = new URL(location.href).searchParams.get('view') === 'print';
     document.documentElement.classList.toggle('print-preview', preview);
     $('paper-styles').media = preview ? 'all' : 'print';

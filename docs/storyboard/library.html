@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fbfcfa">
+  <title>Mr. PinPin - Chapters</title>
+  <link rel="stylesheet" href="reader.css?v=editorial-two">
+  <link rel="stylesheet" href="library.css?v=1">
+  <script src="locale.js?v=margin-preview" defer></script>
+  <script src="library.js?v=1" defer></script>
+</head>
+<body>
+  <header class="library-heading">
+    <div><p id="library-eyebrow">The illustrated book</p><h1 id="library-title">Mr. PinPin</h1></div>
+    <div class="language-selector" role="group" aria-label="Language">
+      <button data-lang="en" title="English" aria-label="English" aria-pressed="true"></button>
+      <button data-lang="es" title="Español" aria-label="Español" aria-pressed="false"></button>
+      <button data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="false"></button>
+    </div>
+  </header>
+  <main class="library-main">
+    <div class="library-tools">
+      <label class="search"><i data-lucide="search" aria-hidden="true"></i><input id="chapter-search" type="search" placeholder="Find a chapter" aria-label="Find a chapter"></label>
+      <label><select id="chapter-filter" aria-label="Chapter status"><option value="all">All chapters</option><option value="published">Published</option><option value="upcoming">Upcoming</option></select></label>
+    </div>
+    <p id="library-status" role="status">Loading chapters...</p>
+    <div id="chapter-library" class="chapter-library" aria-busy="true"></div>
+  </main>
+  <footer class="library-footer"><a id="original-book" href="../index.html">Original book</a></footer>
+  <script src="icons.js"></script>
+</body>
+</html>
