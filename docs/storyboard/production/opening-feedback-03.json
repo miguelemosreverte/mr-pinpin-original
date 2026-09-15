@@ -1,0 +1,21 @@
+{
+  "status": "awaiting-user-review",
+  "scope": "Opening image only. Main reader remains unchanged.",
+  "supersedes": "opening-feedback-02.json",
+  "reason": "User identified a third front limb originating at the chest. Previous review incorrectly classified it as a hind leg.",
+  "method": "Two independent built-in imagegen edits: remove every limb, then construct four new limbs with a simpler upright pose.",
+  "source": "images/chapter-01-v2/scene-01-feedback-02.png",
+  "passes": [
+    {
+      "image": "images/chapter-01-v2/scene-01-feedback-03-reset.png",
+      "prompt": "Use case: precise-object-edit.\nEdit target: supplied children's book forest illustration. This is an intermediate anatomy construction pass, NOT the finished illustration.\nONLY modify the SMALL BROWN RABBIT on the FAR RIGHT of the scene.\nRemove ALL of that small rabbit's limbs completely: every arm, foreleg, front paw, hind leg, foot and dangling side appendage. Remove the overlapping arm shapes from the front of the chest too. Rebuild its torso as a single smooth continuous rounded furry oval, cream chest and brown sides, hanging in the same position beneath its unchanged head. The torso has ZERO limbs, ZERO paws, ZERO stumps, ZERO knobs, ZERO tail. It is a neutral rounded plush torso blank ready for a later separate limb-addition pass. Restore the forest/path behind all removed parts. Do not add any replacement legs yet.\nPreserve the small rabbit's head, ears, eyes, smile, size and location. Preserve ALL other pixels as closely as possible: large gray rabbit, hedgehog, bird, butterflies, forest and light. The hedgehog keeps ordinary brown spines with NO golden quill, clean cream muzzle, and his four existing limbs untouched. Do not remove limbs from any other character. Keep landscape 1536x1024. No text.",
+      "seconds": 36.2
+    },
+    {
+      "image": "images/chapter-01-v2/scene-01-feedback-03.png",
+      "prompt": "Use case: precise-object-edit.\nEdit target: supplied forest book illustration. The SMALL BROWN RABBIT at the FAR RIGHT currently has a head and rounded LIMBLESS torso. This is the second pass of an anatomy rebuild.\nAdd precisely FOUR anatomically connected limbs to THAT SMALL BROWN RABBIT only. Use a simple upright standing pose, NOT running or hopping.\n- Exactly TWO short forelegs: one attaches to each upper side of the chest just below the neck, bends gently forward, and ends in one little paw held in front of the chest. Each shoulder has only ONE arm connection. Keep the arm shapes separate enough to trace shoulder to elbow to paw. No additional hanging foreleg on either flank.\n- Exactly TWO hind legs: a compact rounded thigh grows from each LOWER side of the pelvis, clearly BELOW the cream belly; each connects to one broad rabbit hind foot resting on the path. Both feet are side by side at approximately the same height, separated by a small gap. No crossed legs, no trailing leg, no fifth appendage, no limb-shaped tail, no duplicated shoulders. He is supported on the two hind feet, with the two forepaws raised at chest height.\nKeep small rabbit head, ears, facial expression, brown and cream fur, size and position. Adapt only the lower torso minimally to fit the pelvis and legs. Preserve every other character and the landscape unchanged. PinPin has NO golden quill and no black speck on muzzle. Preserve soft dimensional storybook rendering, sunny forest, 1536x1024 landscape frame. No text.",
+      "seconds": 45.1
+    }
+  ],
+  "review": "Candidate only. Evaluate shoulder-to-forepaw and hip-to-hind-foot connections, not just the total visible endpoints. Golden quill remains absent."
+}
