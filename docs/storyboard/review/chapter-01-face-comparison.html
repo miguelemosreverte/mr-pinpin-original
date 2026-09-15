@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mr. PinPin / Face Comparison</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#fff;color:#242424;font-family:system-ui,sans-serif;line-height:1.5}
+main{max-width:1280px;margin:auto}
+header,.copy{padding:22px 20px}
+h1{font-size:26px;line-height:1.2;margin:0}
+h2{font-size:21px;line-height:1.3;margin:0 0 12px}
+h3{font-size:17px;line-height:1.35;margin:0 0 6px}
+p{margin:8px 0}
+.muted{color:#5b5b5b;font-size:14px}
+section{border-top:1px solid #ccc}
+.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:#d5d8d5}
+figure{margin:0;min-width:0;background:#fff}
+figcaption{padding:14px 16px}
+img{display:block;width:100%;height:auto}
+.crop{width:100%;aspect-ratio:1;position:relative;overflow:hidden;background:#e6e8e6}
+.crop img{position:absolute;width:var(--image-width);max-width:none;left:var(--image-left);top:var(--image-top)}
+a{color:#246a59;overflow-wrap:anywhere}
+nav{display:flex;gap:20px;flex-wrap:wrap;margin-top:12px}
+.observations{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+ul{padding-left:20px;margin:10px 0}
+li{margin:8px 0}
+.quote{border-left:3px solid #888;padding-left:16px;margin:14px 0;max-width:980px}
+@media(max-width:600px){header,.copy{padding:16px 12px}h1{font-size:23px}h2{font-size:19px}h3{font-size:15px}figcaption{padding:10px 8px}.muted{font-size:12px}.observations{grid-template-columns:1fr;gap:12px}}
+</style>
+</head>
+<body><main>
+<header>
+<h1>Mr. PinPin / Face comparison</h1>
+<p>Last finished image before the blocking pipeline, compared with its first finished output.</p>
+<p class="muted">Existing images only. No regeneration, retouching, sharpening or exposure correction. The close-ups enlarge the original pixels.</p>
+<nav><a href="chapter-01-production.html">Production record</a><a href="chapter-01-landscapes.html">Landscape sequence</a></nav>
+</header>
+
+<section aria-labelledby="faces">
+<div class="copy"><h2 id="faces">The two finished faces</h2><p>Head sizes are approximately matched on screen. They are not matched in source resolution or viewing angle.</p></div>
+<div class="pair">
+<figure><figcaption><h3>Before the pipeline</h3><p class="muted">Final revision 4 / 280 × 280 source-pixel crop</p></figcaption><div class="crop" style="--image-width:548.5714285714286%;--image-left:-192.85714285714286%;--image-top:-132.14285714285714%"><img src="../images/chapter-01-v2/scene-01-feedback-04.png" width="1536" height="1024" alt="Earlier finished PinPin face: rounded cheek, prominent eye, raised muzzle and visible mouth corner."></div></figure>
+<figure><figcaption><h3>After blocking and finish</h3><p class="muted">Scene 1a / 100 × 100 source-pixel crop</p></figcaption><div class="crop" style="--image-width:1536%;--image-left:-817%;--image-top:-602%"><img src="../images/chapter-01-v3/01a-final.png" width="1536" height="1024" alt="Pipeline-finished PinPin face: smaller side-profile eye and a narrow, simply shaped muzzle."></div></figure>
+</div>
+<div class="copy observations">
+<div><h3>Earlier face</h3><ul><li>The eye is larger and more prominent in the face.</li><li>The rounded cheek, raised muzzle and mouth corner give the expression more readable shape.</li><li>The view is closer to three-quarter, with substantially more source pixels available for facial detail.</li></ul></div>
+<div><h3>Pipeline face</h3><ul><li>The eye reads as a narrow vertical oval beneath a simple eyebrow; the muzzle and cheek form a simpler profile.</li><li>The oval eye, eyebrow, projecting snout and smile largely survive from the blocking stage. Finishing added fur and quill detail without substantially redesigning the face.</li><li>The head is much smaller in the full composition. Enlarging it exposes the lower source resolution; it does not recover missing detail.</li></ul></div>
+</div>
+</section>
+
+<section aria-labelledby="handoff">
+<div class="copy"><h2 id="handoff">What passed from blocking into the finish?</h2><p>This pair uses the same 100 × 100 source-pixel window in both stages. It is the closer comparison of the pipeline itself.</p></div>
+<div class="pair">
+<figure><figcaption><h3>Corrected blocking</h3><p class="muted">Matte character / before fur finishing</p></figcaption><div class="crop" style="--image-width:1536%;--image-left:-817%;--image-top:-602%"><img src="../images/chapter-01-v3/01a-block.png" width="1536" height="1024" alt="Corrected blocking face before the finishing pass, with simple eye, muzzle and ear shapes."></div></figure>
+<figure><figcaption><h3>Finished output</h3><p class="muted">After the material and fur pass</p></figcaption><div class="crop" style="--image-width:1536%;--image-left:-817%;--image-top:-602%"><img src="../images/chapter-01-v3/01a-final.png" width="1536" height="1024" alt="Finished face at the same crop coordinates, retaining much of the blocking profile."></div></figure>
+</div>
+<div class="copy">
+<h3>The prompt constrained the face as well as the legs</h3>
+<p>The finishing instructions explicitly locked the character's silhouette, pose and gaze, then asked for a materials-only change:</p>
+<p class="quote">“Input 1 is the inspected color-coded character blocking image and fixes ALL composition, camera, character positions, sizes, silhouettes, poses, gaze directions and limb attachments.”</p>
+<p class="quote">“Preserve background plate framing, vegetation, lighting, water and landscape as closely as possible; change character materials only.”</p>
+<p><strong>My reading:</strong> the finish preserved much of the maquette's facial structure while improving its surface. That is consistent with these constraints. It is not proof that a different prompt would reliably solve the problem.</p>
+<p>Color coding helped expose an anatomy issue during blocking. One finished scene is not enough evidence that the workflow has solved limb consistency across a chapter.</p>
+</div>
+</section>
+
+<section aria-labelledby="context">
+<div class="copy"><h2 id="context">Both complete images</h2><p>These establish how much of each frame was allocated to the character, and how different the two performances are.</p></div>
+<div class="pair">
+<figure><figcaption><h3>Before the pipeline</h3><p class="muted">Close encounter / upright character</p></figcaption><img src="../images/chapter-01-v2/scene-01-feedback-04.png" width="1536" height="1024" alt="The earlier full forest encounter with a large foreground PinPin and two rabbits."><figcaption><a href="../images/chapter-01-v2/scene-01-feedback-04.png">Original PNG</a></figcaption></figure>
+<figure><figcaption><h3>After blocking and finish</h3><p class="muted">Wide approach / low walking character</p></figcaption><img src="../images/chapter-01-v3/01a-final.png" width="1536" height="1024" alt="The new wide forest path with a much smaller walking PinPin in the foreground."><figcaption><a href="../images/chapter-01-v3/01a-final.png">Original PNG</a></figcaption></figure>
+</div>
+<div class="copy">
+<h3>What this comparison cannot establish</h3>
+<ul>
+<li>This is not a controlled before-and-after of the same shot. Camera distance, head angle, pose, lighting and facial pixel budget all differ.</li>
+<li>The earlier image also underwent edits. “Before the pipeline” does not mean “generated in one call.”</li>
+<li>The images alone do not establish a watermarking cause for highlight or texture changes.</li>
+</ul>
+<h3>Next test, after this review</h3>
+<p>A direct character render into each untouched landscape plate would avoid inheriting the clay face from a blocking pass. Each scene would start from its own clean plate, rather than a previously edited character scene. Placement, gaze and action can still be specified precisely without rendering a maquette first.</p>
+<p>That is a testable alternative, not a guarantee of better faces or correct anatomy. The same face, limb and full-scene review would still be needed. No new character generations were made for this comparison.</p>
+</div>
+</section>
+</main></body></html>
