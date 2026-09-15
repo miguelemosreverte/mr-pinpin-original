@@ -2,6 +2,15 @@
 
 [Read the complete illustrated book](https://miguelemosreverte.github.io/mr-pinpin-original/).
 
+[Read the new storyboard edition](https://miguelemosreverte.github.io/mr-pinpin-original/storyboard/?chapter=1&lang=ru).
+Chapter 1 has five new illustrations and complete Russian, English, and Spanish
+text. Later chapters currently show their original Russian text and artwork while
+the new edition is developed. Chapter and language are preserved in the URL.
+
+The new edition lives in `docs/storyboard/`. Run `python3 tools/build_book.py`
+(requires `lxml`) and `python3 tools/prepare_scenes.py` to rebuild source data.
+Both scripts verify that the original narrative is preserved in order.
+
 This repository preserves the original HTML book and all 100 original PNG
 illustrations, without compression, resizing, abridgment, or changes to the story.
 Mr. PinPin and Mr. PomPom are brothers; this book focuses on Mr. PinPin's origin.
