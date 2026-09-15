@@ -29,7 +29,7 @@ async function main() {
               const frame = slot.firstElementChild.getBoundingClientRect();
               const spread = slot.querySelector('.spread').getBoundingClientRect();
               const ratio = slot.dataset.paper === 'landscape' ? 297 / 210 : 210 / 297;
-              return box.right <= rail.left && Math.abs(box.width / box.height - ratio) < 0.01 &&
+              return (!rail.width || box.right <= rail.left) && Math.abs(box.width / box.height - ratio) < 0.01 &&
                 Math.abs(box.width - frame.width) < 1 && Math.abs(box.height - frame.height) < 1 &&
                 spread.bottom <= frame.bottom && [...slot.querySelectorAll('.scene')].every(scene => {
                   const image = scene.querySelector('img').getBoundingClientRect();
@@ -65,8 +65,10 @@ async function main() {
         assert.deepEqual(images(pdf), images(baseline));
         fs.unlinkSync(pdf);
       }
+      if (await page.locator('#controls-toggle').isVisible()) await page.locator('#controls-toggle').click();
       await page.locator('[data-lang="en"]').click();
       assert.equal(new URL(page.url()).searchParams.get('view'), 'print');
+      if (await page.locator('#controls-toggle').isVisible()) await page.locator('#controls-toggle').click();
       await page.locator('#preview').click();
       assert.equal(new URL(page.url()).searchParams.has('view'), false);
       assert.equal(await page.locator('#preview').getAttribute('aria-pressed'), 'false');

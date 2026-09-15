@@ -31,6 +31,7 @@
   }
 
   function render(fraction = 0) {
+    closeControls();
     const requested = new URL(location.href).searchParams.get('lang');
     language = ['ru', 'en', 'es'].includes(requested) ? requested : 'ru';
     history.replaceState(null, '', route(language));
@@ -109,19 +110,32 @@
     $('reader').setAttribute('aria-busy', 'false');
     requestAnimationFrame(() => {
       resizePreview();
-      if (mobilePaging()) $('reader').scrollLeft = ($('reader').scrollWidth - $('reader').clientWidth) * fraction;
-      else window.scrollTo(0, Math.max(0, document.documentElement.scrollHeight - innerHeight) * fraction);
+      window.scrollTo(0, Math.max(0, document.documentElement.scrollHeight - innerHeight) * fraction);
       updateProgress();
     });
   }
 
-  function mobilePaging() {
-    return innerWidth <= 600 && !document.documentElement.classList.contains('print-preview');
-  }
   function position() {
-    const range = mobilePaging() ? $('reader').scrollWidth - $('reader').clientWidth : document.documentElement.scrollHeight - innerHeight;
-    return range > 0 ? (mobilePaging() ? $('reader').scrollLeft : scrollY) / range : 0;
+    const range = document.documentElement.scrollHeight - innerHeight;
+    return range > 0 ? scrollY / range : 0;
   }
+  function closeControls() {
+    document.documentElement.classList.remove('controls-open');
+    $('controls-toggle').setAttribute('aria-expanded', 'false');
+  }
+  $('controls-toggle').onclick = () => {
+    const open = document.documentElement.classList.toggle('controls-open');
+    $('controls-toggle').setAttribute('aria-expanded', String(open));
+  };
+  addEventListener('keydown', event => {
+    if (event.key === 'Escape' && document.documentElement.classList.contains('controls-open')) {
+      closeControls();
+      $('controls-toggle').focus();
+    }
+  });
+  addEventListener('click', event => {
+    if (!event.target.closest('.toolbar,.controls-toggle')) closeControls();
+  });
   function updateProgress() {
     $('progress').style.height = Math.min(100, Math.max(0, position() * 100)) + '%';
   }

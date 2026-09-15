@@ -61,7 +61,7 @@ async function main() {
           const image = scene.querySelector("img").getBoundingClientRect();
           const prose = scene.querySelector(".prose")?.getBoundingClientRect();
           const next = nodes[index + 1]?.getBoundingClientRect();
-          return (!prose || prose.top >= image.bottom - 1) && (innerWidth <= 600 || !next || next.top >= scene.getBoundingClientRect().bottom - 1);
+          return (!prose || prose.top >= image.bottom - 1) && (!next || next.top >= scene.getBoundingClientRect().bottom - 1);
         })), "Image, matching text, next image must read strictly top to bottom");
         assert(await page.evaluate(expected => [...document.querySelectorAll(".scene-art img")].every((i, n) =>
           i.getAttribute("src") === expected[n].src && i.naturalWidth === expected[n].width && i.naturalHeight === expected[n].height
@@ -69,6 +69,7 @@ async function main() {
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth), false);
         assert(await page.evaluate(() => {
           const rail = document.querySelector(".toolbar").getBoundingClientRect();
+          if (!rail.width) return document.querySelector('main').getBoundingClientRect().width === innerWidth;
           return document.querySelector("main").getBoundingClientRect().right <= rail.left;
         }), "Margin controls overlap the reading column");
         assert.equal(await page.evaluate(() => {
@@ -121,13 +122,11 @@ async function main() {
           console.log(JSON.stringify({ pdf, pages: 10, illustrations:15, text: "complete and on matching pages" }));
         }
       }
-      await page.evaluate(() => {
-        if (innerWidth <= 600) document.getElementById('reader').scrollLeft = document.getElementById('reader').clientWidth * 6;
-        else scrollTo(0, (document.documentElement.scrollHeight - innerHeight) * 0.45);
-      });
+      await page.evaluate(() => scrollTo(0, (document.documentElement.scrollHeight - innerHeight) * 0.45));
       await page.waitForTimeout(150);
-      const fraction = () => innerWidth <= 600 ? document.getElementById('reader').scrollLeft / (document.getElementById('reader').scrollWidth - document.getElementById('reader').clientWidth) : scrollY / (document.documentElement.scrollHeight - innerHeight);
+      const fraction = () => scrollY / (document.documentElement.scrollHeight - innerHeight);
       const before = await page.evaluate(fraction);
+      if (await page.locator('#controls-toggle').isVisible()) await page.locator('#controls-toggle').click();
       const flag = await page.locator('[data-lang="en"]').boundingBox();
       await page.mouse.click(flag.x + flag.width / 2, flag.y + flag.height / 2);
       await page.waitForFunction(() => document.documentElement.lang === "en");
@@ -136,6 +135,7 @@ async function main() {
       assert(Math.abs(before - after) < 0.04, "Language switch lost position");
       await page.evaluate(() => history.back());
       await page.waitForFunction(() => document.documentElement.lang === "ru");
+      if (await page.locator('#controls-toggle').isVisible()) await page.locator('#controls-toggle').click();
       await page.evaluate(() => { window.print = () => { window.printCalled = true; }; });
       await page.locator("#print").click();
       await page.waitForFunction(() => window.printCalled);

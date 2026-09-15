@@ -8,14 +8,15 @@
   <title>Мистер Пин-Пин</title>
   <link rel="stylesheet" href="reader.css?v=editorial-two">
   <link rel="stylesheet" href="editorial.css?v=margin-preview">
-  <link rel="stylesheet" href="edition.css?v=editorial-two">
+  <link rel="stylesheet" href="edition.css?v=natural-scroll">
   <link id="paper-styles" rel="stylesheet" href="paper.css?v=editorial-two" media="print">
   <link rel="stylesheet" href="print.css?v=margin-preview" media="print">
   <script src="locale.js?v=margin-preview" defer></script>
-  <script src="reader.js?v=editorial-two" defer></script>
+  <script src="reader.js?v=natural-scroll" defer></script>
 </head>
 <body>
-  <aside class="toolbar" aria-label="Book controls">
+  <button id="controls-toggle" class="icon-button controls-toggle" aria-label="Book controls" title="Book controls" aria-expanded="false" aria-controls="reader-controls"><i data-lucide="ellipsis" aria-hidden="true"></i></button>
+  <aside id="reader-controls" class="toolbar" aria-label="Book controls">
     <div class="language-selector" role="group" aria-label="Language">
       <button data-lang="en" title="English" aria-label="English" aria-pressed="false"></button>
       <button data-lang="es" title="Español" aria-label="Español" aria-pressed="false"></button>

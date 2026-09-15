@@ -4,7 +4,7 @@
   :root { color-scheme:light; }
   html,body { margin:0 !important; padding:0 !important; background:white !important; color:#111; }
   body { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
-  .toolbar,.reading-progress,.export-status { display:none !important; }
+  .toolbar,.controls-toggle,.reading-progress,.export-status { display:none !important; }
   main,.print-preview main { width:100%; max-width:none; min-height:0; padding:0; margin:0; }
   .page-slot,.page-frame,.print-preview .page-slot,.print-preview .page-frame {
     display:contents !important; position:static; transform:none !important; padding:0; margin:0; border:0;
