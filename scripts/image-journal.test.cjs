@@ -2,11 +2,12 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const os = require('node:os');
 const path = require('node:path');
-const {capture,build,esc} = require('./image-journal.cjs');
+const {createHash} = require('node:crypto');
+const {capture,failure,build,esc} = require('./image-journal.cjs');
 const root = path.resolve(__dirname,'..');
 const tmp = fs.mkdtempSync(path.join(os.tmpdir(),'pinpin-journal-test-'));
 try {
-  const plan = JSON.parse(fs.readFileSync(path.join(root,'docs/storyboard/production/chapter-02-landscapes.json')));
+  const plan = JSON.parse(fs.readFileSync(path.join(root,process.env.JOURNAL_PLAN || 'docs/storyboard/production/chapter-02-landscapes.json')));
   const records = plan.shots.map(shot => {
     const image = path.join(root,shot.output);
     const record = JSON.parse(fs.readFileSync(image.replace(/\.png$/,'.json')));
@@ -16,11 +17,13 @@ try {
     assert(md.includes(record.startedAt) && md.includes(record.finishedAt));
     assert(record.seconds > 0 && record.review);
     assert.equal(record.width,1536); assert.equal(record.height,1024);
+    assert.equal(record.sha256,createHash('sha256').update(fs.readFileSync(image)).digest('hex'));
     for (const reference of record.references) assert(fs.existsSync(path.join(root,reference.path)));
     return record;
   });
-  assert.equal(records.length,5);
-  assert.equal(new Set(records.map(record=>record.sha256)).size,5);
+  assert.equal(records.length,plan.shots.length);
+  assert.equal(new Set(records.map(record=>record.sha256)).size,plan.shots.length);
+  records.sort((a,b)=>a.startedAt.localeCompare(b.startedAt));
   for (let i=1;i<records.length;i++) assert(records[i].startedAt >= records[i-1].finishedAt);
   const shot = {...plan.shots[0],id:'test',title:'<Unsafe & "title">',output:path.join(tmp,'test.png')};
   const testPlan = {...plan,shots:[shot],report:path.join(tmp,'report.html')};
@@ -37,5 +40,11 @@ try {
   build(testPlan);
   const chronological = fs.readFileSync(testPlan.report,'utf8');
   assert(chronological.indexOf('<section id="earlier"') < chronological.indexOf('<section id="test"'));
-  console.log('PASS: five PNG/Markdown/JSON records, exact prompts, references, timestamps, unique hashes, overwrite guard, escaping, chronological order.');
+  failure(testPlan,'test','2026-09-15T01:00:00Z','2026-09-15T01:00:05Z','Network <error>');
+  failure(testPlan,'test','2026-09-15T01:01:00Z','2026-09-15T01:01:05Z','Network <error>');
+  assert(fs.existsSync(path.join(tmp,'test-failed-01.md')));
+  assert(fs.existsSync(path.join(tmp,'test-failed-02.json')));
+  build(testPlan);
+  assert(fs.readFileSync(testPlan.report,'utf8').includes('2 failed request(s)'));
+  console.log(`PASS: ${records.length} PNG/Markdown/JSON records, exact prompts, references, timestamps, verified hashes, overwrite guard, escaping, chronology and failed-request records.`);
 } finally { fs.rmSync(tmp,{recursive:true,force:true}); }

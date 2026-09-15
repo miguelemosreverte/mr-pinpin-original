@@ -42,3 +42,18 @@ node scripts/image-journal.cjs build docs/storyboard/production/chapter-02-lands
 Image `shot-01.png` has adjacent `shot-01.md` and `shot-01.json`. Capture refuses to overwrite existing records. The JSON record is the machine-readable snapshot; the Markdown is human-readable. Update review notes through the helper so both stay synchronized. Prompts are snapshots of the actual tool input, not retrospective summaries.
 
 The HTML orders records by actual generation start time, while preserving each shot's reading position. Summed call durations are not total project duration, model-only computation, monetary cost or parallel throughput. Earlier Chapter 1 logs have wall times but not universally complete timestamps; we do not invent missing history.
+
+## Chapter 2 Findings
+
+The completed adaptation uses sixteen reading scenes and eleven deliberately composed print pages. Seven additional camera plates extend the initial five: leaf-level passage, upward canopy, elder-side portrait, overhead clearing, visitor-side portrait, uphill promise and sunset leaf window. Three final reading scenes remain character-free. The empty leaf window and PinPin's peeking face occupy separate final pages.
+
+Solo character scenes should use only the clean environment and that character's established identity reference. The first scene-12 request included the shared two-character reference and unexpectedly added the elder. That output is retained as rejected; scene-12-v2 was generated fresh from the clean plate with only PinPin's reference. Other solo scenes then used the same narrower reference set. A two-character reference is useful for a two-character scene, but is not a neutral identity lookup.
+
+The first hilltop request failed with a network error and produced no image. Its exact start time was not retained, and the failure record says so. Subsequent calls record start time before invoking the tool and can write a failed-request sidecar immediately on error:
+
+```sh
+node scripts/image-journal.cjs failure docs/storyboard/production/chapter-02-completion.json plate-11 START_ISO_UTC FAILURE_ISO_UTC 'Exact tool error'
+JOURNAL_PLAN=docs/storyboard/production/chapter-02-completion.json node scripts/image-journal.test.cjs
+```
+
+Failure records use the intended image basename plus `-failed-01`, `-failed-02`, and so on, with Markdown and JSON but no invented image file. They are listed separately in the report. Successful output durations include rejected images; they exclude failed calls whose model-processing duration is unknown. Do not call a run with a rejected character composition a perfect one-shot chapter.

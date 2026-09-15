@@ -1,0 +1,36 @@
+{
+  "id": "scene-02",
+  "order": 2,
+  "title": "A World Beneath Leaves",
+  "beat": "PinPin's curiosity carries him through the silver-leaf meadow.",
+  "camera": "Low leaf-arch camera, looking through a natural opening at hedgehog height.",
+  "staging": "PinPin passes through the gap in three-quarter side view, nose tilted toward a silver leaf.",
+  "alt": "PinPin sniffs a silver-backed leaf as he passes through a small opening beside the meadow path.",
+  "kind": "characters",
+  "references": [
+    {
+      "path": "docs/storyboard/images/chapter-02-landscapes/shot-06.png",
+      "role": "Clean environment edit target; preserve camera and exposure."
+    },
+    {
+      "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+      "role": "Shared cast identity only, not the scene composition."
+    },
+    {
+      "path": "docs/storyboard/images/chapter-01-direct/03.png",
+      "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+    }
+  ],
+  "prompt": "Keep image 1's low leaf-arch viewpoint, plants and morning light. Image 2 supplies the young PinPin's identity only. Add PinPin alone, halfway THROUGH the natural leaf opening, moving toward the upper right along the trail. We see his low compact body in side three-quarter view, about 25 cm long and naturally fitted beneath the leaves. He pauses with his small nose tilted up toward the edge of a silver leaf, bright-eyed and curious. His two near-side paws stand on the soil, with the far-side pair naturally occluded by his body. Keep the cream face soft and the brown quills finely detailed; an ordinary leaf is an interesting discovery at this scale. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+  "output": "docs/storyboard/images/chapter-02-direct/scene-02.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-d1e4d484-9823-4f1e-a792-7db573db7e32.png",
+  "startedAt": "2026-09-15T16:30:46.269Z",
+  "finishedAt": "2026-09-15T16:31:23.453Z",
+  "seconds": 37.184,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "fb291a687655256d0939e9225c3d44ef70adce798e27e269a5a5f98f410d5922",
+  "review": "PinPin's small nose reaches the curled leaf tip, giving the approach a curious action rather than a static walk. His face is soft and alert. Two forepaws are planted beneath the chest and a near hindfoot is visible at the rear; the far hindlimb is hidden by his low body. No raised extra chest paw is visible. The leaf arch and distant hill remain intact. The arch is generous around him, which keeps the environment dominant even in this closer shot.",
+  "reviewedAt": "2026-09-15T16:31:51.161Z"
+}

@@ -1,0 +1,36 @@
+{
+  "id": "scene-03",
+  "order": 3,
+  "title": "At the Foot of Burrow Hill",
+  "beat": "PinPin spots the elder sitting outside with his bramble staff.",
+  "camera": "Keep the meadow approach wide so the two figures establish scale.",
+  "staging": "PinPin on the near path; elder much smaller in the distance beside the entrance.",
+  "alt": "PinPin approaches Burrow Hill while the grey elder waits outside the small root entrance.",
+  "kind": "characters",
+  "references": [
+    {
+      "path": "docs/storyboard/images/chapter-02-landscapes/shot-02.png",
+      "role": "Clean environment edit target; preserve camera and exposure."
+    },
+    {
+      "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+      "role": "Shared cast identity only, not the scene composition."
+    },
+    {
+      "path": "docs/storyboard/images/chapter-01-direct/03.png",
+      "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+    }
+  ],
+  "prompt": "Keep image 1's broad meadow approach, hill, two oaks and root entrance. Image 2 is the shared character reference: young brown PinPin and the silver-grey elder with round brass spectacles. Add both at their correct distances. PinPin walks away up the centre trail in the lower middle, brown spiny back toward us, body about 8 percent of frame width. Farther away beside the LEFT stone at the small burrow entrance, the grey elder rests low looking outward, his body only about 4 percent of frame width at that distance. His twisted bramble staff leans against the root beside him, not held. Let sunlight edge his grey quills. The meadow and hill remain the main subject. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+  "output": "docs/storyboard/images/chapter-02-direct/scene-03.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-65eba970-b98c-40d5-b164-a234ba6a4d7b.png",
+  "startedAt": "2026-09-15T16:31:51.208Z",
+  "finishedAt": "2026-09-15T16:32:41.439Z",
+  "seconds": 50.231,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "5928f1ed8d76494092917b9e952a5ccd3517bbc3afb113705bf7a315a297e0c5",
+  "review": "The approach direction and relative distance read clearly: PinPin's back is near us on the trail and the elder is much smaller beside the entrance. The staff remains separate. PinPin's visible feet are rear feet; his forelimbs are hidden by the rear view, so they cannot be counted reliably. The upright egg-shaped back is still a stylistic exaggeration, not a verified additional-limb problem. The elder's tiny spectacles and paws are difficult to inspect at this scale; the closer greeting supplies the readable identity.",
+  "reviewedAt": "2026-09-15T16:33:29.178Z"
+}

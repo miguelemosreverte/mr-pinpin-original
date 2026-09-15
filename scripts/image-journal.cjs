@@ -100,4 +100,4 @@ if (require.main === module) {
   } else if (command !== 'build') throw new Error('Use capture, review, or build');
   console.log(JSON.stringify(build(plan)));
 }
-module.exports = {capture, build, esc};
+module.exports = {capture, failure, build, esc};

@@ -1,0 +1,36 @@
+{
+  "id": "scene-09",
+  "order": 9,
+  "title": "The Question in the Quiet",
+  "beat": "The two sit listening; the elder asks where PinPin's golden quill gets its magic.",
+  "camera": "Near-overhead clearing, the dialogue seen as a small sheltered encounter.",
+  "staging": "Elder left, PinPin right; two separate oval bodies oriented toward one another.",
+  "alt": "A high view of the two small hedgehogs resting together in the root clearing amid leaf shadows.",
+  "kind": "characters",
+  "references": [
+    {
+      "path": "docs/storyboard/images/chapter-02-landscapes/shot-09.png",
+      "role": "Clean environment edit target; preserve camera and exposure."
+    },
+    {
+      "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+      "role": "Shared cast identity only, not the scene composition."
+    },
+    {
+      "path": "docs/storyboard/images/chapter-01-direct/03.png",
+      "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+    }
+  ],
+  "prompt": "Keep image 1's overhead camera, clearing geometry and leaf shadows. Image 2 establishes both hedgehogs. Place the silver-grey elder on the LEFT of the open soil by his mossy stone and brown PinPin on the RIGHT, about 40 cm apart. Both rest low, their noses pointing toward one another. From this steep angle their rounded quilled backs are the main shapes, with small cream muzzles and naturally partly hidden short paws. Each body spans only about one sixth of frame width. The elder's bramble staff lies against the root near the stone, away from the animals. This is a quiet shared pause within a much larger pattern of roots, leaves and light. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+  "output": "docs/storyboard/images/chapter-02-direct/scene-09.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-6deb2e6d-0e16-45c2-bb0f-f73b4d5ed405.png",
+  "startedAt": "2026-09-15T16:37:30.694Z",
+  "finishedAt": "2026-09-15T16:38:10.407Z",
+  "seconds": 39.713,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "0c6980bfa7278e8f4402b6526784efde08d8d8904720d1d4794191a79075e2ad",
+  "review": "Both hedgehogs sit separately within the overhead clearing, grey elder left and brown PinPin right, with their noses facing each other. The staff remains by the stone and does not intersect their bodies. Quill backs and a few naturally occluded paw tips are visible; full limb counts cannot be certified from this view. The characters are drawn at a somewhat shallower angle than the steep ground view, but the shared encounter and contact shadows remain readable.",
+  "reviewedAt": "2026-09-15T16:40:08.385Z"
+}
