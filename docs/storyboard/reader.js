@@ -1,23 +1,10 @@
 (() => {
   const $ = id => document.getElementById(id);
-  let artwork, translations, language = 'ru', printing = false;
-  const chapterId = 'chapter-01';
-  const spreads = [
-    { style:'opening', paper:'portrait', scenes:[0] },
-    { style:'walk', paper:'portrait', scenes:[1] },
-    { style:'discovery', paper:'portrait', scenes:[2,3] },
-    { style:'magic', paper:'portrait', scenes:[4,5] },
-    { style:'spring', paper:'portrait', scenes:[6,7] },
-    { style:'return', paper:'portrait', scenes:[8,9] },
-    { style:'dive', paper:'portrait', scenes:[10,11] },
-    { style:'sunlight', paper:'landscape', scenes:[12] },
-    { style:'surface', paper:'landscape', scenes:[13] },
-    { style:'hello', paper:'landscape', scenes:[14] }
-  ];
+  let artwork, translations, book, published, edition, language = 'ru', printing = false;
 
   function route(lang) {
     const url = new URL(location.href);
-    url.searchParams.set('chapter', '1');
+    url.searchParams.set('chapter', String(edition.number));
     url.searchParams.set('lang', lang);
     url.hash = '';
     return url;
@@ -32,6 +19,8 @@
 
   function render(fraction = 0) {
     closeControls();
+    edition = window.chapterEditions.resolve(new URL(location.href).searchParams.get('chapter'), published);
+    const { id:chapterId, number:chapterNumber, spreads } = edition;
     const requested = new URL(location.href).searchParams.get('lang');
     language = ['ru', 'en', 'es'].includes(requested) ? requested : 'ru';
     history.replaceState(null, '', route(language));
@@ -53,7 +42,7 @@
     const scenes = translated?.scenes || artwork.scenes[chapterId];
     const images = artwork.chapters[chapterId];
     document.documentElement.lang = language;
-    document.title = ui.book + ' - ' + ui.chapter + ' 1';
+    document.title = ui.book + ' - ' + ui.chapter + ' ' + chapterNumber;
     $('print').title = ui.print;
     $('print').setAttribute('aria-label', ui.print);
     $('print').disabled = false;
@@ -61,10 +50,12 @@
     document.querySelectorAll('[data-lang]').forEach(button =>
       button.setAttribute('aria-pressed', String(button.dataset.lang === language)));
     const article = element('article');
+    article.dataset.chapter = chapterId;
     article.lang = language;
     const header = element('header', 'chapter-heading');
-    header.append(element('p', 'eyebrow', ui.chapter + ' 1'));
-    header.append(element('h1', '', translated?.title || ui.title));
+    header.append(element('p', 'eyebrow', ui.chapter + ' ' + chapterNumber));
+    header.append(element('h1', '', translated?.title || (chapterNumber === 1 ? ui.title :
+      book.chapters.find(chapter => chapter.id === chapterId).title.replace(/^Глава\s*\d*\s*:\s*/, ''))));
     spreads.forEach((spread, spreadIndex) => {
       const sheet = element('section', 'spread spread-' + spread.style + ' paper-' + spread.paper);
       sheet.id = 'spread-' + (spreadIndex + 1);
@@ -88,9 +79,11 @@
         if (scene.paragraphs.length) {
           const prose = element('div', 'prose');
           if (index === 0) prose.append(header);
-          scene.paragraphs.forEach(paragraph => {
+          scene.paragraphs.forEach((paragraph, paragraphIndex) => {
             const p = element('p');
-            if (index === 0 && typeof Intl.Segmenter === 'function') {
+            if (index === 0 && chapterNumber === 2 && paragraphIndex === 0) {
+              p.append(element('span', 'opening-lead', paragraph));
+            } else if (index === 0 && chapterNumber === 1 && typeof Intl.Segmenter === 'function') {
               const first = new Intl.Segmenter(language, { granularity:'sentence' }).segment(paragraph)[Symbol.iterator]().next().value.segment;
               p.append(element('span', 'opening-lead', first), document.createTextNode(paragraph.slice(first.length)));
             } else p.textContent = paragraph;
@@ -203,19 +196,21 @@
       render(fraction);
     };
   });
-  addEventListener('popstate', () => { if (artwork && !printing) render(); });
+  addEventListener('popstate', () => { if (published && !printing) render(); });
   addEventListener('scroll', updateProgress, { passive: true });
   $('reader').addEventListener('scroll', updateProgress, { passive: true });
   addEventListener('resize', () => { resizePreview(); updateProgress(); });
   new ResizeObserver(() => { resizePreview(); updateProgress(); }).observe($('reader'));
 
-  Promise.all(['illustrations.json', 'translations.json'].map(async path => {
+  Promise.all(['illustrations.json', 'translations.json', 'book.json'].map(async path => {
     const response = await fetch(path, { cache: 'no-cache' });
     if (!response.ok) throw new Error(path + ': ' + response.status);
     return response.json();
-  })).then(([art, text]) => {
+  })).then(async ([art, text, original]) => {
+    published = await window.chapterEditions.available(art, text);
     artwork = art;
     translations = text;
+    book = original;
     render();
     window.lucide?.createIcons();
   }).catch(() => {

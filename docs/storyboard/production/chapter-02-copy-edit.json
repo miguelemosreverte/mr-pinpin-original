@@ -1,0 +1,820 @@
+{
+  "status": "complete",
+  "chapter": "chapter-02",
+  "purpose": "Complete trilingual adaptation of original Chapter 2 into 16 action-aligned scenes, with lightly edited Russian and two silent adaptation-only frames.",
+  "source": {
+    "path": "docs/storyboard/book.json",
+    "chapterPointer": "/chapters/1",
+    "originalBookSha256": "b1499e503613e526ba679ba6c82c59feb1b3319584e3403b0e1abf32659391af",
+    "chapterSha256": "70dabecc65bfd7b49ac91afa63f1b2fd5f2309185f48b5442d1ab301d5a314ec",
+    "chapterSha256Encoding": "UTF-8 JSON.stringify(book.chapters[1]), no whitespace or trailing newline",
+    "title": "Глава 2: Мудрость Старейшины",
+    "heading": "**Глава 2: Мудрость Старейшины**",
+    "proseBlocks": 14,
+    "dialogueTurns": 10,
+    "originalImages": [
+      {
+        "sourceBlockIndex": 0,
+        "type": "image",
+        "src": "../images/image58.png",
+        "width": 1024,
+        "height": 1024
+      },
+      {
+        "sourceBlockIndex": 12,
+        "type": "image",
+        "src": "../images/image96.png",
+        "width": 1024,
+        "height": 1024
+      }
+    ],
+    "note": "Original image references are retained here for provenance; the requested 16 new illustration paths replace their presentation only. The original book file is untouched."
+  },
+  "originalBookSha256": "b1499e503613e526ba679ba6c82c59feb1b3319584e3403b0e1abf32659391af",
+  "namingDecision": {
+    "protagonist": {
+      "en": "Mr. PinPin; PinPin",
+      "es": "señor PinPin; PinPin",
+      "ru": "мистер Пин-Пин; Пин-Пин",
+      "reason": "Use Chapter 1's protagonist and hyphenated Russian spelling. MrPomPom is not this character. Capitalize at sentence starts and inflect Russian names as grammar requires."
+    },
+    "elder": {
+      "en": "Master Shipostav",
+      "es": "maestro Shipostav",
+      "ru": "Мастер Шипостав",
+      "reason": "Use the full established elder name in named references and direct addresses, including the original short 'Master' reply. Spanish uses lowercase maestro except at a sentence start; Russian inflection is retained. Generic 'elder' and 'old hedgehog' remain valid source descriptions."
+    },
+    "places": [
+      {
+        "en": "Whispering Forest",
+        "es": "Bosque Susurrante",
+        "ru": "Шепчущий лес",
+        "basis": "Chapter 1"
+      },
+      {
+        "en": "Crystal Lake",
+        "es": "Lago de Cristal",
+        "ru": "Кристальное озеро",
+        "basis": "Chapter 1; normalize the isolated source 'пруд' reference to this same lake."
+      },
+      {
+        "en": "Silver Leaf Meadow",
+        "es": "Pradera de las Hojas de Plata",
+        "ru": "Луг Серебряных Листьев",
+        "basis": "Chapter 2 source place, translated consistently."
+      },
+      {
+        "en": "Burrow Hill",
+        "es": "Colina de las Madrigueras",
+        "ru": "Холм Нор",
+        "basis": "Chapter 2 source place, translated consistently."
+      }
+    ],
+    "quill": {
+      "en": "golden quill",
+      "es": "púa dorada",
+      "ru": "золотая иголка",
+      "reason": "Match Chapter 1's principal quill terminology; the prose retains the magic, its presence since birth, unknown origin, ancestral history, and potential."
+    }
+  },
+  "artworkPolicy": {
+    "dimensions": {
+      "width": 1536,
+      "height": 1024
+    },
+    "quill": "An ordinary-sized quill/tool if visible. Never a giant quill, golden head ornament, crown, or headpiece. The prose's golden magical quill history remains intact.",
+    "assets": "References only. Assets are being generated separately; no images or placeholders are created by this copy task.",
+    "assetReplacements": [
+      {
+        "scene": 12,
+        "src": "images/chapter-02-direct/scene-12-v2.png",
+        "status": "superseded-by-scene-12-v3",
+        "rejectedSrc": "images/chapter-02-direct/scene-12.png",
+        "reason": "The production review reported an unrequested elder in the original render. The replacement is a solo PinPin render being generated separately.",
+        "auditDisposition": "Retain scene-12.png as the rejected audit asset.",
+        "metadata": "At this earlier replacement, only the scene 12 art src changed; dimensions, EN/ES/RU alt text, prose, and all other asset references remained unchanged."
+      },
+      {
+        "scene": 10,
+        "src": "images/chapter-02-direct/scene-10-v2.png",
+        "rejectedSrc": "images/chapter-02-direct/scene-10.png",
+        "status": "final-asset-reported-ready",
+        "reason": "Independent production review identified gaze continuity: the replacement faces right toward the elder.",
+        "metadata": "EN/ES/RU alt text now explicitly describes the rightward gaze. Dimensions and prose are unchanged; the earlier image remains an audit asset."
+      },
+      {
+        "scene": 12,
+        "src": "images/chapter-02-direct/scene-12-v3.png",
+        "rejectedSrc": "images/chapter-02-direct/scene-12-v2.png",
+        "status": "final-asset-reported-ready",
+        "reason": "Independent production review identified gaze continuity: the final solo PinPin replacement faces right toward the elder.",
+        "metadata": "EN/ES/RU alt text now explicitly describes the rightward gaze. Dimensions and prose are unchanged; earlier images remain audit assets. Scene 14 alt already describes leaving Burrow Hill at sunset and makes no backward-looking claim, so it is unchanged."
+      }
+    ],
+    "altStatus": "EN/ES/RU alt text describes the requested scene staging; final generated pixels have not been reviewed by this copy task.",
+    "scene13": "Unoccupied hilltop framed from below during the elder's present-day promise. Tomorrow at dawn remains future.",
+    "silentScenes": [
+      15,
+      16
+    ]
+  },
+  "coverageConvention": "Source block indices and source string offsets are zero-based. Scene numbers are one-based. Clauses partition each complete original prose block without deleting any source characters; each maps to the same scene in EN, ES, and RU. Complete source turns stay together, except the preceding silence is placed in its own paragraph in scene 9.",
+  "coverage": [
+    {
+      "sourceBlockIndex": 0,
+      "sourcePointer": "/chapters/1/blocks/0/0/text",
+      "sourceText": "Глубоко в сердце Шепчущего леса, за Кристальным озером и за Лугом Серебряных Листьев, возвышался древний Холм Нор. В его основании находился дом старейшего ёжа, известного как Мастер Шипостав. Его имя произносилось с благоговением среди животных леса. Многие верили, что его шипы хранят мудрость веков, и говорили, что Мастер Шипостав обучил многих искусству магии.",
+      "clauses": [
+        {
+          "id": "b01-1",
+          "sourceStart": 0,
+          "sourceEnd": 115,
+          "sourceText": "Глубоко в сердце Шепчущего леса, за Кристальным озером и за Лугом Серебряных Листьев, возвышался древний Холм Нор. ",
+          "scene": 1
+        },
+        {
+          "id": "b01-2",
+          "sourceStart": 115,
+          "sourceEnd": 193,
+          "sourceText": "В его основании находился дом старейшего ёжа, известного как Мастер Шипостав. ",
+          "scene": 1
+        },
+        {
+          "id": "b01-3",
+          "sourceStart": 193,
+          "sourceEnd": 252,
+          "sourceText": "Его имя произносилось с благоговением среди животных леса. ",
+          "scene": 2
+        },
+        {
+          "id": "b01-4",
+          "sourceStart": 252,
+          "sourceEnd": 301,
+          "sourceText": "Многие верили, что его шипы хранят мудрость веков",
+          "scene": 2
+        },
+        {
+          "id": "b01-5",
+          "sourceStart": 301,
+          "sourceEnd": 365,
+          "sourceText": ", и говорили, что Мастер Шипостав обучил многих искусству магии.",
+          "scene": 2
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 1,
+      "sourcePointer": "/chapters/1/blocks/1/0/text",
+      "sourceText": "Мистер ПинПин всегда был любопытен о тайнах, которые хранил Мастер Шипостав. На следующий день после его приключений у пруда, он решил, что пришло время искать наставления у старого мастера. Подойдя к холму, он увидел старого ёжа, сидящего снаружи, его шипы сверкали на солнце, а рядом стоял посох из переплетенных ежевики.",
+      "clauses": [
+        {
+          "id": "b02-1",
+          "sourceStart": 0,
+          "sourceEnd": 77,
+          "sourceText": "Мистер ПинПин всегда был любопытен о тайнах, которые хранил Мастер Шипостав. ",
+          "scene": 2
+        },
+        {
+          "id": "b02-2",
+          "sourceStart": 77,
+          "sourceEnd": 191,
+          "sourceText": "На следующий день после его приключений у пруда, он решил, что пришло время искать наставления у старого мастера. ",
+          "scene": 1
+        },
+        {
+          "id": "b02-3",
+          "sourceStart": 191,
+          "sourceEnd": 247,
+          "sourceText": "Подойдя к холму, он увидел старого ёжа, сидящего снаружи",
+          "scene": 3
+        },
+        {
+          "id": "b02-4",
+          "sourceStart": 247,
+          "sourceEnd": 276,
+          "sourceText": ", его шипы сверкали на солнце",
+          "scene": 3
+        },
+        {
+          "id": "b02-5",
+          "sourceStart": 276,
+          "sourceEnd": 323,
+          "sourceText": ", а рядом стоял посох из переплетенных ежевики.",
+          "scene": 3
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 2,
+      "sourcePointer": "/chapters/1/blocks/2/0/text",
+      "sourceText": "\"Ах, молодой мистер ПинПин,\" приветствовал старый ёж, даже не обернувшись, его голос был глубок и резонансен. \"Я чувствовал, что вы придете сегодня.\"",
+      "clauses": [
+        {
+          "id": "b03-1",
+          "sourceStart": 0,
+          "sourceEnd": 149,
+          "sourceText": "\"Ах, молодой мистер ПинПин,\" приветствовал старый ёж, даже не обернувшись, его голос был глубок и резонансен. \"Я чувствовал, что вы придете сегодня.\"",
+          "scene": 4
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 3,
+      "sourcePointer": "/chapters/1/blocks/3/0/text",
+      "sourceText": "Мистер ПинПин, пораженный, ответил: \"Мастер Шипостав, быть в вашем присутствии - большая честь. Как вы узнали, что я приду?\"",
+      "clauses": [
+        {
+          "id": "b04-1",
+          "sourceStart": 0,
+          "sourceEnd": 124,
+          "sourceText": "Мистер ПинПин, пораженный, ответил: \"Мастер Шипостав, быть в вашем присутствии - большая честь. Как вы узнали, что я приду?\"",
+          "scene": 5
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 4,
+      "sourcePointer": "/chapters/1/blocks/4/0/text",
+      "sourceText": "Шипостав засмеялся: \"Шепот ветра и шорох листьев всегда приносят новости тем, кто слушает.\"",
+      "clauses": [
+        {
+          "id": "b05-1",
+          "sourceStart": 0,
+          "sourceEnd": 91,
+          "sourceText": "Шипостав засмеялся: \"Шепот ветра и шорох листьев всегда приносят новости тем, кто слушает.\"",
+          "scene": 6
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 5,
+      "sourcePointer": "/chapters/1/blocks/5/0/text",
+      "sourceText": "Мистер ПинПин помолчал, прежде чем спросить: \"Я пришел за вашей мудростью. Вчера я смог наполнить Кристальное озеро с помощью магии моего золотого шипа, но я чувствую, что мне еще многое нужно узнать.\"",
+      "clauses": [
+        {
+          "id": "b06-1",
+          "sourceStart": 0,
+          "sourceEnd": 201,
+          "sourceText": "Мистер ПинПин помолчал, прежде чем спросить: \"Я пришел за вашей мудростью. Вчера я смог наполнить Кристальное озеро с помощью магии моего золотого шипа, но я чувствую, что мне еще многое нужно узнать.\"",
+          "scene": 7
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 6,
+      "sourcePointer": "/chapters/1/blocks/6/0/text",
+      "sourceText": "Мастер Шипостав медленно кивнул: \"Истинное мастерство - это не только обладание силой, но и понимание ее источника и ответственности.\"",
+      "clauses": [
+        {
+          "id": "b07-1",
+          "sourceStart": 0,
+          "sourceEnd": 134,
+          "sourceText": "Мастер Шипостав медленно кивнул: \"Истинное мастерство - это не только обладание силой, но и понимание ее источника и ответственности.\"",
+          "scene": 8
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 7,
+      "sourcePointer": "/chapters/1/blocks/7/0/text",
+      "sourceText": "Они сидели в тишине, единственный звук был мягким шелестом деревьев.",
+      "clauses": [
+        {
+          "id": "b08-1",
+          "sourceStart": 0,
+          "sourceEnd": 68,
+          "sourceText": "Они сидели в тишине, единственный звук был мягким шелестом деревьев.",
+          "scene": 9
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 8,
+      "sourcePointer": "/chapters/1/blocks/8/0/text",
+      "sourceText": "\"Скажите мне, мистер ПинПин,\" начал старейшина, \"знаете ли вы, откуда у вашего золотого шипа магия?\"",
+      "clauses": [
+        {
+          "id": "b09-1",
+          "sourceStart": 0,
+          "sourceEnd": 100,
+          "sourceText": "\"Скажите мне, мистер ПинПин,\" начал старейшина, \"знаете ли вы, откуда у вашего золотого шипа магия?\"",
+          "scene": 9
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 9,
+      "sourcePointer": "/chapters/1/blocks/9/0/text",
+      "sourceText": "Мистер ПинПин покачал головой: \"Нет, Мастер. Он был со мной с рождения, но его происхождение остается загадкой.\"",
+      "clauses": [
+        {
+          "id": "b10-1",
+          "sourceStart": 0,
+          "sourceEnd": 112,
+          "sourceText": "Мистер ПинПин покачал головой: \"Нет, Мастер. Он был со мной с рождения, но его происхождение остается загадкой.\"",
+          "scene": 10
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 10,
+      "sourcePointer": "/chapters/1/blocks/10/0/text",
+      "sourceText": "Мастер Шипостав наклонился поближе: \"Каждый шип хранит историю, воспоминание. Ваш золотой шип - проявление древней магии наших предков. Но чтобы освоить его полный потенциал, вы должны понять его прошлое.\"",
+      "clauses": [
+        {
+          "id": "b11-1",
+          "sourceStart": 0,
+          "sourceEnd": 205,
+          "sourceText": "Мастер Шипостав наклонился поближе: \"Каждый шип хранит историю, воспоминание. Ваш золотой шип - проявление древней магии наших предков. Но чтобы освоить его полный потенциал, вы должны понять его прошлое.\"",
+          "scene": 11
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 11,
+      "sourcePointer": "/chapters/1/blocks/11/0/text",
+      "sourceText": "Глаза мистера ПинПина расширились от любопытства. \"Как я могу узнать его историю?\"",
+      "clauses": [
+        {
+          "id": "b12-1",
+          "sourceStart": 0,
+          "sourceEnd": 82,
+          "sourceText": "Глаза мистера ПинПина расширились от любопытства. \"Как я могу узнать его историю?\"",
+          "scene": 12
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 12,
+      "sourcePointer": "/chapters/1/blocks/12/0/text",
+      "sourceText": "Шипостав улыбнулся: \"Сначала вы должны отправиться в путешествие внутрь себя. Только тогда вы будете готовы исследовать мир снаружи. Завтра на рассвете встретимся на вершине Холма Нор. Там вас ждет ваш следующий урок.\"",
+      "clauses": [
+        {
+          "id": "b13-1",
+          "sourceStart": 0,
+          "sourceEnd": 218,
+          "sourceText": "Шипостав улыбнулся: \"Сначала вы должны отправиться в путешествие внутрь себя. Только тогда вы будете готовы исследовать мир снаружи. Завтра на рассвете встретимся на вершине Холма Нор. Там вас ждет ваш следующий урок.\"",
+          "scene": 13
+        }
+      ]
+    },
+    {
+      "sourceBlockIndex": 13,
+      "sourcePointer": "/chapters/1/blocks/13/0/text",
+      "sourceText": "Когда солнце садилось, окрашивая небо в оттенки золота и багрянца, мистер ПинПин чувствовал смесь волнения и тревоги. Он стоял на пороге нового приключения, которое обещало раскрыть тайны его золотого шипа и глубины его собственного потенциала.",
+      "clauses": [
+        {
+          "id": "b14-1",
+          "sourceStart": 0,
+          "sourceEnd": 244,
+          "sourceText": "Когда солнце садилось, окрашивая небо в оттенки золота и багрянца, мистер ПинПин чувствовал смесь волнения и тревоги. Он стоял на пороге нового приключения, которое обещало раскрыть тайны его золотого шипа и глубины его собственного потенциала.",
+          "scene": 14
+        }
+      ]
+    }
+  ],
+  "russianChangeLog": {
+    "global": [
+      {
+        "before": "ПинПин / ПинПина",
+        "after": "Пин-Пин / Пин-Пина",
+        "reason": "Normalize the protagonist to Chapter 1's spelling, with lowercase мистер except at a sentence start."
+      },
+      {
+        "before": "пораженный, Шепот, пришел, еще, ее, остается, ждет, придете, переплетенных",
+        "after": "поражённый, Шёпот, пришёл, ещё, её, остаётся, ждёт, придёте, переплетённых",
+        "reason": "Use ё consistently in edited Chapter 2 only."
+      },
+      {
+        "before": "золотой шип and associated masculine pronouns",
+        "after": "золотая иголка and associated feminine pronouns",
+        "reason": "Match Chapter 1's principal term throughout; generic descriptions of the elder's шипы remain."
+      }
+    ],
+    "changes": [
+      {
+        "language": "ru",
+        "scene": 1,
+        "before": "В его основании",
+        "after": "У его подножия",
+        "reason": "Use the natural geographical expression for a house at the foot of a hill."
+      },
+      {
+        "language": "ru",
+        "scene": 1,
+        "before": "На следующий день после его приключений у пруда, он решил, что пришло время искать наставления у старого мастера.",
+        "after": "На следующий день после приключений у озера мистер Пин-Пин решил, что пришло время обратиться за наставлениями к старому мастеру.",
+        "reason": "Remove the stray comma, make the moved sentence's subject explicit, and use idiomatic wording. Normalize pond to lake to match Crystal Lake in Chapter 1 and this chapter's dialogue."
+      },
+      {
+        "language": "ru",
+        "scene": 2,
+        "before": "Его имя произносилось с благоговением среди животных леса.",
+        "after": "Животные леса произносили имя Мастера Шипостава с благоговением.",
+        "reason": "Use natural active phrasing and replace the pronoun with the name after moving this sentence."
+      },
+      {
+        "language": "ru",
+        "scene": 2,
+        "before": "Мистер ПинПин всегда был любопытен о тайнах, которые хранил Мастер Шипостав.",
+        "after": "Мистер Пин-Пин всегда интересовался тайнами, которые хранил Мастер Шипостав.",
+        "reason": "Correct the calque 'был любопытен о' and normalize the protagonist's name."
+      },
+      {
+        "language": "ru",
+        "scene": 3,
+        "before": "Подойдя к холму, он увидел старого ёжа, сидящего снаружи, его шипы сверкали на солнце, а рядом стоял посох из переплетенных ежевики.",
+        "after": "Подойдя к холму, Пин-Пин увидел старого ёжа, сидящего снаружи. Его шипы сверкали на солнце, а рядом стоял посох из переплетённых ветвей ежевики.",
+        "reason": "Name the subject after the scene break, split the run-on sentence, and supply 'ветвей' to repair the malformed bramble phrase."
+      },
+      {
+        "language": "ru",
+        "scene": 4,
+        "before": "\"Ах, молодой мистер ПинПин,\" приветствовал старый ёж, даже не обернувшись, его голос был глубок и резонансен. \"Я чувствовал, что вы придете сегодня.\"",
+        "after": "\"Ах, молодой мистер Пин-Пин\", - приветствовал его старый ёж, даже не обернувшись. Его голос был глубоким и звучным. \"Я чувствовал, что вы придёте сегодня.\"",
+        "reason": "Repair speech punctuation, add the implied greeting object, split the run-on sentence, and lightly smooth the description of the deep, resonant voice."
+      },
+      {
+        "language": "ru",
+        "scene": 5,
+        "before": "Мистер ПинПин, пораженный, ответил:",
+        "after": "Поражённый мистер Пин-Пин ответил:",
+        "reason": "Smooth modifier placement without losing astonishment."
+      },
+      {
+        "language": "ru",
+        "scene": 6,
+        "before": "Шипостав засмеялся:",
+        "after": "Мастер Шипостав засмеялся:",
+        "reason": "Use the chosen elder name consistently."
+      },
+      {
+        "language": "ru",
+        "scene": 7,
+        "before": "прежде чем спросить",
+        "after": "прежде чем заговорить",
+        "reason": "The following utterance is a statement seeking wisdom, not a question; retain the pause."
+      },
+      {
+        "language": "ru",
+        "scene": 7,
+        "before": "магии моего золотого шипа",
+        "after": "магии своей золотой иголки",
+        "reason": "Use the reflexive possessive and Chapter 1's term for the same magical quill."
+      },
+      {
+        "language": "ru",
+        "scene": 8,
+        "before": "понимание ее источника и ответственности",
+        "after": "понимание её источника и ответственности, которую она налагает",
+        "reason": "Make explicit that the responsibility belongs to possessing the power; do not add a new moral or event."
+      },
+      {
+        "language": "ru",
+        "scene": 9,
+        "before": "Они сидели в тишине, единственный звук был мягким шелестом деревьев.",
+        "after": "Они сидели в тишине; слышался лишь мягкий шелест деревьев.",
+        "reason": "Repair the comma splice and unnatural predicate while retaining the sole sound."
+      },
+      {
+        "language": "ru",
+        "scene": 9,
+        "before": "\"Скажите мне, мистер ПинПин,\" начал старейшина, \"знаете ли вы, откуда у вашего золотого шипа магия?\"",
+        "after": "\"Скажите мне, мистер Пин-Пин, - начал старейшина, - знаете ли вы, откуда у вашей золотой иголки магия?\"",
+        "reason": "Repair interrupted-speech punctuation; normalize the protagonist and quill names with grammatical agreement."
+      },
+      {
+        "language": "ru",
+        "scene": 10,
+        "before": "Нет, Мастер.",
+        "after": "Нет, Мастер Шипостав.",
+        "reason": "Expand the direct address to the consistent elder name; the negative answer is unchanged."
+      },
+      {
+        "language": "ru",
+        "scene": 10,
+        "before": "Он был со мной с рождения, но его происхождение остается загадкой.",
+        "after": "Она была со мной с рождения, но её происхождение остаётся загадкой.",
+        "reason": "Adjust agreement to 'иголка' and normalize ё."
+      },
+      {
+        "language": "ru",
+        "scene": 11,
+        "before": "Каждый шип хранит историю, воспоминание.",
+        "after": "Каждая иголка хранит историю, воспоминание.",
+        "reason": "Use the same word for the general quills and the special quill in this explanation."
+      },
+      {
+        "language": "ru",
+        "scene": 11,
+        "before": "Ваш золотой шип - проявление древней магии наших предков.",
+        "after": "Ваша золотая иголка - проявление древней магии наших предков.",
+        "reason": "Normalize the quill term and agreement; retain the complete ancient ancestral magic claim."
+      },
+      {
+        "language": "ru",
+        "scene": 11,
+        "before": "Но чтобы освоить его полный потенциал, вы должны понять его прошлое.",
+        "after": "Но чтобы раскрыть весь её потенциал, вы должны понять её прошлое.",
+        "reason": "Use an idiomatic verb for potential and adjust agreement; retain the requirement to understand the past."
+      },
+      {
+        "language": "ru",
+        "scene": 12,
+        "before": "Как я могу узнать его историю?",
+        "after": "Как я могу узнать её историю?",
+        "reason": "Adjust the pronoun to 'иголка'; keep the full question."
+      },
+      {
+        "language": "ru",
+        "scene": 13,
+        "before": "Шипостав улыбнулся:",
+        "after": "Мастер Шипостав улыбнулся:",
+        "reason": "Use the chosen elder name consistently; keep all four sentences of the promise."
+      },
+      {
+        "language": "ru",
+        "scene": 14,
+        "before": "тайны его золотого шипа",
+        "after": "тайны его золотой иголки",
+        "reason": "Normalize the quill term while retaining both complete closing sentences."
+      }
+    ]
+  },
+  "editorialAdditions": [
+    {
+      "scenes": [
+        1,
+        2,
+        3
+      ],
+      "type": "redistribution",
+      "detail": "Move the next-day decision from source block 1 to scene 1; place source block 0's reputation and block 1's curiosity in scene 2; keep approach, sunshine, and bramble staff in scene 3. Route ordering is Whispering Forest > Crystal Lake > Silver Leaf Meadow > Burrow Hill. No new journey event is narrated."
+    },
+    {
+      "scenes": [
+        1,
+        2,
+        3,
+        6,
+        9,
+        13,
+        14
+      ],
+      "type": "visual-staging-only",
+      "detail": "The path departure, low leaf arch, meadow approach composition, canopy cutaway, overhead clearing, foliage-framed empty hilltop, and sunset departure are the requested illustration staging. Prose adds no action or plot event; scene 14 preserves the original closing paragraph rather than inventing a farewell."
+    },
+    {
+      "scenes": [
+        2,
+        3,
+        8
+      ],
+      "type": "translation-clarification",
+      "detail": "EN/ES clarify the implied pupils as animals; ES specifies the elder sits outside his home, already established in scene 1; all languages make the power's implied responsibility explicit. These clarify source referents without adding events."
+    },
+    {
+      "scenes": [
+        15,
+        16
+      ],
+      "type": "silent-coda",
+      "detail": "Adaptation-only staging after the original ending: empty sunset gap between silver leaves, then PinPin's playful peek through the same gap. All three languages use paragraphs: []; no new dialogue or plot event is claimed as source material."
+    }
+  ],
+  "sceneTiming": [
+    {
+      "scene": 1,
+      "staging": "Leaving the Crystal Lake path",
+      "retainedContent": "Geography, elder's home, and departure decision the day after the lake adventure.",
+      "pacing": "Read the two complete paragraphs before moving to the approach.",
+      "paragraphCounts": {
+        "en": 2,
+        "es": 2,
+        "ru": 2
+      },
+      "sourceClauseIds": [
+        "b01-1",
+        "b01-2",
+        "b02-2"
+      ]
+    },
+    {
+      "scene": 2,
+      "staging": "Low leaf arch",
+      "retainedContent": "Reputation, ancient wisdom, teaching history, and PinPin's longstanding curiosity.",
+      "pacing": "Keep these thoughts on the approach, before he sees the elder.",
+      "paragraphCounts": {
+        "en": 2,
+        "es": 2,
+        "ru": 2
+      },
+      "sourceClauseIds": [
+        "b01-3",
+        "b01-4",
+        "b01-5",
+        "b02-1"
+      ]
+    },
+    {
+      "scene": 3,
+      "staging": "Hill and meadow approach",
+      "retainedContent": "PinPin sees the seated elder outside, sunlight on his quills, and the bramble staff.",
+      "pacing": "Let the arrival description precede the first greeting.",
+      "paragraphCounts": {
+        "en": 1,
+        "es": 1,
+        "ru": 1
+      },
+      "sourceClauseIds": [
+        "b02-3",
+        "b02-4",
+        "b02-5"
+      ]
+    },
+    {
+      "scene": 4,
+      "staging": "Greeting without turning",
+      "retainedContent": "The elder greets him with a deep, resonant voice and says he sensed today's arrival.",
+      "pacing": "One complete elder turn.",
+      "paragraphCounts": {
+        "en": 1,
+        "es": 1,
+        "ru": 1
+      },
+      "sourceClauseIds": [
+        "b03-1"
+      ]
+    },
+    {
+      "scene": 5,
+      "staging": "PinPin's surprised question",
+      "retainedContent": "Honor at meeting the master, then how he knew.",
+      "pacing": "One complete PinPin turn.",
+      "paragraphCounts": {
+        "en": 1,
+        "es": 1,
+        "ru": 1
+      },
+      "sourceClauseIds": [
+        "b04-1"
+      ]
+    },
+    {
+      "scene": 6,
+      "staging": "Canopy landscape",
+      "retainedContent": "The elder laughs and explains that wind and leaves bring news to listeners.",
+      "pacing": "The elder speaks off-screen; this is the same conversation.",
+      "paragraphCounts": {
+        "en": 1,
+        "es": 1,
+        "ru": 1
+      },
+      "sourceClauseIds": [
+        "b05-1"
+      ]
+    },
+    {
+      "scene": 7,
+      "staging": "Yesterday's magic",
+      "retainedContent": "PinPin pauses, seeks wisdom, recounts filling Crystal Lake with his golden quill, and admits more remains to learn.",
+      "pacing": "Keep the pause and all three spoken sentences together.",
+      "paragraphCounts": {
+        "en": 1,
+        "es": 1,
+        "ru": 1
+      },
+      "sourceClauseIds": [
+        "b06-1"
+      ]
+    },
+    {
+      "scene": 8,
+      "staging": "Power and responsibility",
+      "retainedContent": "The elder slowly nods and explains source and responsibility.",
+      "pacing": "One complete elder turn.",
+      "paragraphCounts": {
+        "en": 1,
+        "es": 1,
+        "ru": 1
+      },
+      "sourceClauseIds": [
+        "b07-1"
+      ]
+    },
+    {
+      "scene": 9,
+      "staging": "Quiet clearing from above",
+      "retainedContent": "Both sit quietly with only the trees rustling, then the elder asks about the magic's origin.",
+      "pacing": "Two paragraphs separate the silence from the question.",
+      "paragraphCounts": {
+        "en": 2,
+        "es": 2,
+        "ru": 2
+      },
+      "sourceClauseIds": [
+        "b08-1",
+        "b09-1"
+      ]
+    },
+    {
+      "scene": 10,
+      "staging": "Mystery since birth",
+      "retainedContent": "PinPin shakes his head and says he has had the quill since birth but does not know its origin.",
+      "pacing": "Keep the negative reply with its complete explanation.",
+      "paragraphCounts": {
+        "en": 1,
+        "es": 1,
+        "ru": 1
+      },
+      "sourceClauseIds": [
+        "b10-1"
+      ]
+    },
+    {
+      "scene": 11,
+      "staging": "Ancestral history",
+      "retainedContent": "The elder leans closer and explains story, memory, ancient ancestral magic, and the need to understand its past.",
+      "pacing": "Keep all three spoken sentences together.",
+      "paragraphCounts": {
+        "en": 1,
+        "es": 1,
+        "ru": 1
+      },
+      "sourceClauseIds": [
+        "b11-1"
+      ]
+    },
+    {
+      "scene": 12,
+      "staging": "How to learn",
+      "retainedContent": "PinPin's eyes widen with curiosity and he asks how to learn its history.",
+      "pacing": "Reaction and question remain together.",
+      "paragraphCounts": {
+        "en": 1,
+        "es": 1,
+        "ru": 1
+      },
+      "sourceClauseIds": [
+        "b12-1"
+      ]
+    },
+    {
+      "scene": 13,
+      "staging": "Unoccupied hilltop from below",
+      "retainedContent": "The elder smiles and promises an inner journey, readiness for the outer world, and tomorrow's dawn meeting and lesson.",
+      "pacing": "A view of the future meeting place during the present conversation. Nobody is on the summit and no lesson happens now.",
+      "paragraphCounts": {
+        "en": 1,
+        "es": 1,
+        "ru": 1
+      },
+      "sourceClauseIds": [
+        "b13-1"
+      ]
+    },
+    {
+      "scene": 14,
+      "staging": "Sunset departure",
+      "retainedContent": "Gold and crimson sky, excitement and anxiety, a new adventure, the quill's secrets, and PinPin's own potential.",
+      "pacing": "Retain the complete two-sentence closing paragraph.",
+      "paragraphCounts": {
+        "en": 1,
+        "es": 1,
+        "ru": 1
+      },
+      "sourceClauseIds": [
+        "b14-1"
+      ]
+    },
+    {
+      "scene": 15,
+      "staging": "Empty sunset gap",
+      "retainedContent": "A silent view through silver leaves.",
+      "pacing": "Empty paragraphs in all languages; a visual pause after the source ending.",
+      "paragraphCounts": {
+        "en": 0,
+        "es": 0,
+        "ru": 0
+      },
+      "sourceClauseIds": []
+    },
+    {
+      "scene": 16,
+      "staging": "Playful peek through the same gap",
+      "retainedContent": "PinPin peeks through the same silver-leaf opening.",
+      "pacing": "Empty paragraphs in all languages; a humorous visual coda.",
+      "paragraphCounts": {
+        "en": 0,
+        "es": 0,
+        "ru": 0
+      },
+      "sourceClauseIds": []
+    }
+  ],
+  "preservation": {
+    "bookSha256Before": "b1499e503613e526ba679ba6c82c59feb1b3319584e3403b0e1abf32659391af",
+    "chapter1": "Existing chapter-01 JSON values and serialized content in translations.json and illustrations.json must remain identical.",
+    "otherChapters": "No other chapters or production plans are edited."
+  }
+}

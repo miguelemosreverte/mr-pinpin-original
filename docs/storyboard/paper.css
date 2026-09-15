@@ -29,3 +29,19 @@ h1 { font-size:20pt; line-height:1.15; }
 .spread-hello .prose { max-width:255mm; }
 .spread-hello .prose { text-align:center; font-size:15pt; }
 .spread-surface,.spread-hello { padding:0 0 8mm; }
+
+/* Chapter two's paired conversations share flexible art space above their own prose. */
+[data-chapter="chapter-02"] .spread { gap:5mm; }
+[data-chapter="chapter-02"] .spread-opening .scene-art { flex:0 0 140mm; }
+[data-chapter="chapter-02"] .spread-opening .scene { gap:6mm; }
+[data-chapter="chapter-02"] .spread-opening .prose { font-size:17pt; line-height:1.45; }
+[data-chapter="chapter-02"] .spread-opening .chapter-heading h1 { font-size:27pt; }
+[data-chapter="chapter-02"] .spread-arrival .scene,
+[data-chapter="chapter-02"] .spread-greeting .scene,
+[data-chapter="chapter-02"] .spread-wisdom .scene,
+[data-chapter="chapter-02"] .spread-memory .scene,
+[data-chapter="chapter-02"] .spread-lesson .scene { flex:1 1 0; gap:2mm; }
+[data-chapter="chapter-02"] .paper-landscape .prose { max-width:255mm; }
+[data-chapter="chapter-02"] .spread-pause,
+[data-chapter="chapter-02"] .spread-reveal { padding:0 0 8mm; }
+[data-chapter="chapter-02"] .spread-reveal .prose { text-align:center; font-size:14pt; }

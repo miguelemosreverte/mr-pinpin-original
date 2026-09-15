@@ -15,6 +15,9 @@ main { width:min(100%,920px); }
 .prose { padding:10px 24px 0; max-width:790px; font-size:19px; line-height:1.7; }
 .prose p { margin:14px 0; }
 #scene-3 .prose p:last-child { font-style:italic; }
+[data-chapter="chapter-02"] #scene-3 .prose p:last-child { font-style:normal; }
+[data-chapter="chapter-02"] .spread-pause .asterism,
+[data-chapter="chapter-02"] .spread-reveal .asterism { visibility:hidden; }
 .folio { display:flex; align-items:center; justify-content:center; position:relative; margin:22px 24px 0; min-height:24px; color:#7e565e; }
 .asterism { font:16px/1 Georgia,serif; }
 .page-number { position:absolute; right:0; font:11px/1.5 system-ui,sans-serif; color:var(--muted); }

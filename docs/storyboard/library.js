@@ -9,7 +9,7 @@
     en:['Mr. PinPin and His Mysterious Forest','The Wisdom of the Elder','Home, Sweet Home','The Forest Academy','Dad and a Game of Chess','Magic Soup for Mum','Berry Picking on a Dewy Morning','A Home for Mr. Pipilini','Exchanging Nature\'s Gifts','Seeking Master Thornstick\'s Wisdom','Battle in the Skies','A Throbbing Nightmare','An Unexpected Transformation','The First Snow','Sudden Snow','A First Snowy Journey and a Warm Welcome Home','The Next Morning','More Breakfasts','Negotiations with the Squirrels','The Hidden Underground Store','Planning an Underground Shelter','The Squirrels\' Secret Plan','The Squirrels\' Secret Plans','The Night Shift','The Squirrels\' Secret Gift','A Mysterious Expansion','Magic Hanging Carrot Buckets','Endless Mysteries of the Underground World','Mr. PinPin\'s Secret Observations','The Magic Squirrel of the Underground World','The Magic Squirrel: Continued','Flight in the Night Forest','A Goodnight Kiss and Magical Dreams','Mr. PinPin\'s Early Morning','Breakfast in the PinPin Home','Morning Chores in the PinPin Household','Morning Chores: Continued','An Important Day'],
     es:['El señor PinPin y su bosque misterioso','La sabiduría del anciano','Hogar, dulce hogar','La academia del bosque','Papá y una partida de ajedrez','Sopa mágica para mamá','Recogiendo bayas una mañana de rocío','Un hogar para el señor Pipilini','Intercambiando regalos de la naturaleza','En busca de la sabiduría del maestro Paloespinoso','Batalla en el cielo','Una pesadilla palpitante','Una transformación inesperada','La primera nieve','Nieve repentina','El primer viaje por la nieve y una cálida bienvenida','La mañana siguiente','Más desayunos','Negociaciones con las ardillas','La reserva subterránea oculta','Planeando un refugio subterráneo','El plan secreto de las ardillas','Los planes secretos de las ardillas','El turno de noche','El regalo secreto de las ardillas','Una expansión misteriosa','Cubos mágicos de zanahorias colgantes','Misterios sin fin del mundo subterráneo','Las observaciones secretas del señor PinPin','La ardilla mágica del mundo subterráneo','La ardilla mágica: continuación','Vuelo por el bosque nocturno','Un beso de buenas noches y sueños mágicos','La madrugada del señor PinPin','El desayuno en casa de los PinPin','Las tareas matutinas de los PinPin','Las tareas matutinas: continuación','Un día importante']
   };
-  let book, art, translations;
+  let book, art, translations, published;
   function render() {
     const url = new URL(location.href);
     const lang = ['en','es','ru'].includes(url.searchParams.get('lang')) ? url.searchParams.get('lang') : 'en';
@@ -30,20 +30,21 @@
     const filter = $('chapter-filter').value;
     const cards = [];
     book.chapters.forEach((chapter,index) => {
-      const ready = index === 0;
-      const study = index === 1;
+      const ready = published.has(String(index + 1));
+      const study = index === 1 && !ready;
       const studyLabel = {en:'Camera study (English) · Landscapes only',es:'Estudio de cámara (inglés) · Solo paisajes',ru:'Исследование камеры (на английском) · Только пейзажи'}[lang];
-      const title = ready ? translations['chapter-01'][lang]?.title || window.readerLabels.ru.title : titles[lang]?.[index] || chapter.title.replace(/^Глава\s*\d*\s*:\s*/, '');
+      const title = index === 0 ? translations['chapter-01'][lang]?.title || window.readerLabels.ru.title :
+        (ready && translations[chapter.id]?.[lang]?.title) || titles[lang]?.[index] || chapter.title.replace(/^Глава\s*\d*\s*:\s*/, '');
       if (filter !== 'all' && filter !== (ready ? 'published' : 'upcoming')) return;
       if (query && !(String(index+1) + ' ' + title + ' ' + chapter.title).toLocaleLowerCase(lang).includes(query)) return;
       const card = document.createElement('article');
       card.className = 'chapter-cover' + (ready ? ' published' : '');
       card.dataset.chapter = index + 1;
       const content = document.createElement(ready || study ? 'a' : 'div');
-      if (ready) content.href = './?chapter=1&lang=' + lang;
+      if (ready) content.href = './?chapter=' + (index + 1) + '&lang=' + lang;
       if (study) content.href = 'review/chapter-02-landscapes.html';
       const original = chapter.blocks.flat().find(block => block.type === 'image');
-      const asset = ready ? art.chapters['chapter-01'][0] : study ? {src:'images/chapter-02-landscapes/shot-01.png',width:1536,height:1024,alt:{en:'The path from Crystal Lake toward Burrow Hill',es:'El sendero del lago Cristal hacia la colina de las madrigueras',ru:'Тропа от Кристального озера к Холму Нор'}} : original;
+      const asset = ready ? art.chapters[chapter.id].find(image => image.scene === 1) : study ? {src:'images/chapter-02-landscapes/shot-01.png',width:1536,height:1024,alt:{en:'The path from Crystal Lake toward Burrow Hill',es:'El sendero del lago Cristal hacia la colina de las madrigueras',ru:'Тропа от Кристального озера к Холму Нор'}} : original;
       if (asset) {
         const figure = document.createElement('figure');
         const image = document.createElement('img');
@@ -64,7 +65,15 @@
         ['h2','',title],
         ['p','availability',ready ? ui.ready : study ? studyLabel : ui.planned + (original ? ' · ' + ui.original : '')]
       ]) { const node = document.createElement(tag); node.className = cls; node.textContent = text; content.append(node); }
-      card.append(content); cards.push(card);
+      card.append(content);
+      if (index === 1 && ready) {
+        const report = document.createElement('a');
+        report.className = 'availability camera-report';
+        report.href = 'review/chapter-02-landscapes.html';
+        report.textContent = studyLabel;
+        card.append(report);
+      }
+      cards.push(card);
     });
     $('chapter-library').replaceChildren(...cards);
     $('chapter-library').setAttribute('aria-busy','false');
@@ -78,7 +87,12 @@
   $('chapter-filter').addEventListener('change',() => { if (book) render(); });
   addEventListener('popstate',() => { if (book) render(); });
   Promise.all(['book.json','illustrations.json','translations.json'].map(async path => {
-    const response = await fetch(path); if (!response.ok) throw new Error(path); return response.json();
-  })).then(data => { [book,art,translations] = data; render(); window.lucide?.createIcons(); })
+    const response = await fetch(path, {cache:'no-cache'}); if (!response.ok) throw new Error(path); return response.json();
+  })).then(async data => {
+    const [original, images, text] = data;
+    published = await window.chapterEditions.available(images, text);
+    [book,art,translations] = [original, images, text];
+    render(); window.lucide?.createIcons();
+  })
     .catch(() => { $('library-status').textContent = labels[document.documentElement.lang]?.error || labels.en.error; $('chapter-library').setAttribute('aria-busy','false'); });
 })();

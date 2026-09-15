@@ -45,9 +45,13 @@ The HTML orders records by actual generation start time, while preserving each s
 
 ## Chapter 2 Findings
 
+The [completion summary](chapter-02-completion-summary.md) records the final edition, request counts, verification results and remaining visual caveats.
+
 The completed adaptation uses sixteen reading scenes and eleven deliberately composed print pages. Seven additional camera plates extend the initial five: leaf-level passage, upward canopy, elder-side portrait, overhead clearing, visitor-side portrait, uphill promise and sunset leaf window. Three final reading scenes remain character-free. The empty leaf window and PinPin's peeking face occupy separate final pages.
 
 Solo character scenes should use only the clean environment and that character's established identity reference. The first scene-12 request included the shared two-character reference and unexpectedly added the elder. That output is retained as rejected; scene-12-v2 was generated fresh from the clean plate with only PinPin's reference. Other solo scenes then used the same narrower reference set. A two-character reference is useful for a two-character scene, but is not a neutral identity lookup.
+
+An independent visual pass then caught an eyeline mismatch: the reverse view in scene 5 establishes the elder at camera-right, but the first solo portraits looked left. Fresh scene-10-v2 and scene-12-v3 correct that direction. Keep a short eyeline note for every camera position, naming where the off-camera partner is; a good-looking face is not enough to establish shot continuity. The final review found no confirmed duplicated foreleg attachments, but hidden limbs remain unverified and there is a small relative-size variation between the two corrected portraits.
 
 The first hilltop request failed with a network error and produced no image. Its exact start time was not retained, and the failure record says so. Subsequent calls record start time before invoking the tool and can write a failed-request sidecar immediately on error:
 
