@@ -1,0 +1,28 @@
+{
+  "date": "2026-09-15",
+  "tool": "built-in image_gen",
+  "scope": "Correct duplicated forelimbs on the gray rabbit in chapter-one scenes 2 and 4. Originals retained; no prose or layout changes.",
+  "edits": [
+    {
+      "scene": 2,
+      "source": "images/chapter-01-direct/01b.png",
+      "replacement": "images/chapter-01-direct/01b-anatomy-v2.png",
+      "prompt": "Use case: precise-object-edit. Edit the supplied full 1536x1024 illustration. Change only the gray rabbit's duplicated front limbs. The rabbit on the path currently has two bent arms tucked against its chest AND two straight front legs reaching the ground. Remove the TWO bent arms and their little paws from the chest, restoring uninterrupted natural chest fur in that area. Keep the existing TWO straight front legs with paws planted on the path, and the TWO hind legs at its sides. The finished rabbit sits naturally on its haunches, with exactly two forelegs extending down from its shoulders and two hind legs, four limbs total. Preserve its face, ears, expression, body size, position and gaze toward the hedgehog. Preserve the hedgehog, the entire woodland background, camera composition, colors, exposure, detail and lighting. Do not crop or zoom. Return the complete same-size landscape illustration, not a close-up or diagram.",
+      "inspection": "Inspected full frame and 2x browser enlargement. Two chest-level tucked arms removed. Two planted forelegs and two lateral hind feet remain visible.",
+      "toolWallSeconds": 46.3
+    },
+    {
+      "scene": 4,
+      "source": "images/chapter-01-direct/02.png",
+      "replacement": "images/chapter-01-direct/02-anatomy-v2.png",
+      "prompt": "Use case: precise-object-edit. Edit the supplied full 1536x1024 landscape illustration. Change only the gray rabbit standing beside the hedgehog near the lower left of the dry lake. It currently has an extra raised gesturing arm as well as two planted front legs. Remove that raised gesturing arm and paw completely, restoring the natural fur and outline of the rabbit's chest and the ground/background behind the removed limb. Keep exactly the two existing front legs extending down from its shoulders, their two paws resting on the ground, and its two hind legs. The rabbit sits naturally on its haunches, four limbs total, with its head turned toward PinPin and mouth open as it speaks. Keep its face, eyes, ears, size and position unchanged. Keep PinPin, the distant brown rabbit, willow, dry lake, all foliage, camera position, colors, exposure and lighting unchanged. No crop or zoom. Return the entire same-size illustration.",
+      "inspection": "Inspected full frame and 2x browser enlargement. Extra raised gesturing arm removed. Two planted forelegs and two hind feet remain visible.",
+      "toolWallSeconds": 40.5
+    }
+  ],
+  "dimensions": {
+    "width": 1536,
+    "height": 1024
+  },
+  "limitations": "Human-style visual review by the assistant, not an automated anatomical guarantee. Generative edits may alter nearby image detail."
+}
