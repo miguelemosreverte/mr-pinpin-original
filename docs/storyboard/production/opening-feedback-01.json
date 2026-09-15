@@ -1,0 +1,15 @@
+{
+  "status": "awaiting-user-review",
+  "scope": "Opening image only. Published reader remains unchanged.",
+  "source": "images/chapter-01-v2/scene-01.png",
+  "candidate": "images/chapter-01-v2/scene-01-feedback-01.png",
+  "tool": "built-in imagegen",
+  "elapsedSeconds": 48.2,
+  "prompt": "Use case: precise-object-edit.\nInput image is the edit target: the opening scene of a children's book, hedgehog Mr. PinPin speaking to rabbit Lulu.\nMake exactly TWO localized corrections, preserving this illustration otherwise.\n1. Remove the tiny isolated black dot on the upper bridge of PinPin's cream muzzle, between his visible eye and black nose (approximately x=716,y=435 in this 1536x1024 image). Fill it seamlessly with cream fur. It must NOT remain as a far-side eye or speck. KEEP the large glossy visible eye at x=682,y=459 and KEEP the black nose at x=779,y=444. Keep his friendly facial expression.\n2. Completely remove the oversized yellow horn-like spike rising behind his head (from around x=585,y=405 toward x=497,y=314). Restore ordinary brown spines and background there. Instead show ONE short, slender, gently tapered golden hedgehog quill nestled on the VISIBLE upper flank of his brown spiny back, BELOW and BEHIND his ear, well away from the head silhouette. Its root must visibly emerge from the brown spine coat, and it must lie backward/downward following the same direction as adjacent ordinary spines. It is about 1.5 times the length of nearby brown spines, with a warm metallic-gold surface and a restrained highlight so its material and shape are readable. It is a special natural hedgehog spine, NOT a horn, yellow feather, crown, leaf, wand, or floating object. No glow or extra gold objects.\nInvariants: preserve landscape 1536x1024 composition, same characters, positions, poses, face proportions, forest, butterflies, robin, rabbits, flowers, lighting, soft dimensional fur and quills. PinPin has EXACTLY FOUR LIMBS: two small forepaws at his chest and two feet on the ground. No extra feet, stumps, arms, or clothes. No text. Do not redesign the rest of the scene.",
+  "inspection": [
+    "Isolated black mark on upper muzzle removed; visible eye and nose preserved.",
+    "Oversized head-adjacent spike removed; shorter golden quill embedded in visible back coat.",
+    "Two chest forepaws and two ground feet remain visible."
+  ],
+  "workflow": "Review one image before propagating character changes to other scenes."
+}
