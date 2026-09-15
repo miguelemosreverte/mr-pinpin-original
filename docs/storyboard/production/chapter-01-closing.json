@@ -1,0 +1,31 @@
+{
+  "status": "candidate",
+  "scope": "Three additional fish-only closing camera frames.",
+  "shots": [
+    {
+      "n": 10,
+      "title": "Looking up through the water",
+      "alt": "A submerged view angled upward past fish and lily stems toward the rippling sunlit surface.",
+      "prompt": "Use case: illustration-story, camera continuation. Reference is the established restored woodland lake at split water level. Create the NEXT frame: camera now FULLY SUBMERGED just below the surface and tilted roughly 40 degrees UPWARD toward the sunlit surface. Landscape 1536x1024.\nShow the UNDERSIDE of the rippling water surface across the upper half, bright refracted daylight and distorted green willow canopy glimpsed through it; no straight above-water horizon strip, no aquarium wall. Lower-left and right edges show rooted aquatic plants and long lily stems rising diagonally toward the surface, undersides of lily pads where appropriate. Camera is still near the same shallow bank, water clear green-blue, sunlight from the same upper-right world direction. Four small natural silver-olive fish with subdued amber fins at different distances swim in the middle water column; one viewed slightly from below, others in side profile, no big faces or cartoon eyes. Fish-only fauna; no main characters, people, mammals, birds, insects, amphibians or diving equipment. Natural caustic illumination, restrained particles, clear view not murky. Preserve the dimensional storybook woodland-water aesthetic. This is a physical camera tilt and immersion, not the previous half-above/half-below composition. No text.",
+      "seconds": 31.3,
+      "tool": "built-in imagegen"
+    },
+    {
+      "n": 11,
+      "title": "Towards the sun",
+      "alt": "The underwater camera looks almost straight upward at sunlight, lily leaves and fish passing overhead.",
+      "prompt": "Use case: illustration-story, next underwater camera angle. Reference is our restored woodland lake viewed underwater at an upward angle. Now tilt that same submerged camera to ALMOST STRAIGHT UP, about 85-90 degrees above horizontal, looking at the SUN through the water surface. Landscape 1536x1024.\nThe entire frame looks toward the underside of the water surface; NO lakebed, no horizon, no above-water landscape strip. The sun appears as a small bright refracted disc just above centre-right, with broken gentle light rays and ripples. The refracted window of pale blue sky and green willow canopy is visible in the central surface area, surrounded by green-gold reflections. Leaf undersides and lily-pad stems enter from the frame edges and converge upward in perspective. Three or four of the same silver-olive natural fish pass between camera and sun, viewed FROM BELOW with bellies and fins visible, slightly darker against the light but not solid unreadable silhouettes. Keep them modest in scale and off the sun so the camera direction is unmistakable. Clear freshwater, tranquil, no murk or bubble curtain. Same soft dimensional children's-book aesthetic and warm morning continuity. Fish only; no other animals or characters, no divers, no text, no equipment.",
+      "seconds": 33,
+      "tool": "built-in imagegen"
+    },
+    {
+      "n": 12,
+      "title": "Back above the surface",
+      "alt": "A low view across the restored lake, with water droplets and a draining streak on the edges of the wet lens.",
+      "prompt": "Use case: illustration-story, closing camera movement. Reference 1 is the restored lake's geography, reference 2 is the preceding straight-up underwater view. New frame: camera rises THROUGH the surface, emerges about 20cm ABOVE the water and levels its gaze across the familiar lake toward the opposite bank. Landscape 1536x1024.\nReturn the familiar leaning willow to left and pale shoreline stones and reeds to right, white water lilies at margins, calm clear water and warm morning woodland light. Low surface-level view, ripples close to lens in lower foreground, the forest beyond in focus. Two or three fish may be faintly visible in the shallows but are not the subject; no other animals or story characters.\nThe camera lens is genuinely WET from emerging: a few irregular transparent water droplets cling at the extreme upper-left and right edges of the optical view, plus one thin draining water streak along the lower-right edge. Each droplet locally refracts/distorts the background, as on a wet camera port. Keep about 85 percent of the image clear and readable, especially the centre. No bubble or bokeh decorations, no uniform blur, no glass frame or visible camera housing, no rainstorm, no fog. This is a peaceful final shot after a small underwater excursion. Preserve reference location and style; no text.",
+      "seconds": 42.9,
+      "tool": "built-in imagegen"
+    }
+  ],
+  "review": "Underwater upward angle, near-vertical sun view, then above-water wet lens. Angles are prompt targets, not camera calibration."
+}
