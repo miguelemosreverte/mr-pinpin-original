@@ -1,0 +1,16 @@
+{
+  "status": "awaiting-director-review",
+  "scope": "One new viewpoint for landscape shot 1, based on lake establishing shot 2. No characters.",
+  "tool": "built-in imagegen",
+  "source": "images/chapter-01-landscapes/shot-02.png",
+  "candidate": "images/chapter-01-landscapes/shot-01-camera-02.png",
+  "previousCandidate": "images/chapter-01-landscapes/shot-01.png",
+  "prompt": "Use case: illustration-story, new camera viewpoint of an existing environment.\nThe input image is a LOCATION REFERENCE, not a composition to copy. It shows a dried woodland lake, an old willow on its LEFT shore and a narrow path beside that willow. We now WALK THE CAMERA onto that left-hand shoreline path, just beyond the willow, and turn to look BACK ALONG the path. As a result of this physical camera move, the SAME lake must now be BELOW US ON THE LEFT of the new frame, beside the willow. This is a real change of viewpoint and parallax, NOT a mirror flip, crop, or replacement of the lake with a road.\nNew composition:\n- We are standing on the narrow elevated woodland footpath, camera roughly 80cm above the path, looking along it, 35mm-equivalent field of view.\n- The path enters from bottom centre/right and recedes ahead through the RIGHT half of the image. It stays on the bank. It is a walking trail, not a broad road.\n- On our LEFT, the ground slopes visibly DOWN from the path, roughly half a metre to the SAME dry cracked lake basin. Show the dry lakebed in the lower-left and left middle distance, clearly a separate low basin, not the path.\n- The old willow trunk is much closer now, beside the path at the left edge/left middle foreground, with roots gripping the slope between path and lake. Its trunk and hanging leaves partly obscure the basin, providing strong foreground parallax. The opposite shore is seen obliquely beyond it, rather than as the old straight-on lake panorama.\n- On our RIGHT, rising forest floor with ferns, grasses and other tree trunks borders the trail. Leave the central walking surface free for future characters.\nKeep the reference's same intimate lake scale, dry state, irregular shoreline, mature willow, mixed green woodland, tiny white flowers and natural soil. Background landmarks may become occluded naturally; do not relocate the pale stones just to keep them visible. Keep morning sun in the same world direction, allowing shadows to appear different relative to this turned camera. Warm dimensional children's-book environment rendering, readable depth, no heavy blur.\nAbsolutely NO animals, birds, fish, insects, butterflies, people, characters, footprints, buildings, signs or props. No water yet. No text. Landscape 1536x1024 single image. The camera move and correct lake-left/path-right spatial relationship are the main requirement.",
+  "seconds": 30.3,
+  "inspection": [
+    "Walking path recedes along right side, distinct from dry basin visible lower on left.",
+    "Willow appears close between path and basin; its roots and sloping bank show elevation difference.",
+    "No animals or characters visible.",
+    "Requested relative composition is achieved visually; this is not a calibrated reconstruction of identical 3D geography."
+  ]
+}
