@@ -1,17 +1,12 @@
-@page { size:A4 portrait; margin:14mm; }
+@page portrait { size:A4 portrait; margin:0; }
+@page landscape { size:A4 landscape; margin:0; }
 @media print {
   :root { color-scheme:light; }
-  html,body { margin:0; padding:0; background:white; color:#111; }
+  html,body { margin:0 !important; padding:0 !important; background:white !important; color:#111; }
   body { print-color-adjust:exact; -webkit-print-color-adjust:exact; }
   .toolbar,.reading-progress,.export-status { display:none !important; }
-  main { width:100%; max-width:none; min-height:0; }
-  .chapter-heading { padding:0 0 6mm; break-after:avoid; }
-  .chapter-heading .eyebrow { font-size:9pt; margin:0 0 2mm; color:#333; }
-  h1 { font-size:20pt; line-height:1.15; }
-  .scene { padding:0; margin:0; break-inside:avoid; break-after:page; }
-  .scene:last-child { break-after:auto; }
-  .scene-art img { width:100%; height:auto; max-height:125mm; object-fit:contain; background:white; }
-  .scene-number { padding:3mm 0 0; font-size:8pt; color:#555; }
-  .prose { max-width:none; padding:1mm 0 0; font:12pt/1.45 Georgia,"Times New Roman",serif; }
-  .prose p { margin:3mm 0; orphans:3; widows:3; }
+  main,.print-preview main { width:100%; max-width:none; min-height:0; padding:0; margin:0; }
+  .page-slot,.page-frame,.print-preview .page-slot,.print-preview .page-frame {
+    display:contents !important; position:static; transform:none !important; padding:0; margin:0; border:0;
+  }
 }

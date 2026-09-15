@@ -10,7 +10,7 @@ button:disabled { opacity:.3; cursor:default; }
 .brand { margin-right:auto; font-family:Georgia,"Times New Roman",serif; font-weight:bold; font-size:24px; text-decoration:none; line-height:1.2; }
 .brand span { display:block; margin-top:5px; font:12px/1.4 system-ui,sans-serif; color:var(--muted); }
 .language-selector { display:flex; gap:8px; flex-shrink:0; }
-.language-selector button { width:44px; height:44px; border:2px solid transparent; border-radius:50%; background-size:cover; background-position:center; opacity:.6; }
+.language-selector button { width:44px; height:44px; border:2px solid transparent; border-radius:50%; background-size:auto 112%; background-position:center; background-repeat:no-repeat; background-origin:border-box; background-clip:border-box; background-color:white; opacity:.8; }
 .language-selector button[aria-pressed="true"] { opacity:1; border-color:#d9ad35; outline:2px solid var(--paper); outline-offset:-4px; }
 .language-selector button:hover { opacity:1; }
 .language-selector button[data-lang="en"] { background-image:url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 30"><rect width="60" height="30" fill="%2300247D"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="white" stroke-width="6"/><path d="M0,0 L60,30 M60,0 L0,30" stroke="%23CF142B" stroke-width="4"/><path d="M30,0 v30 M0,15 h60" stroke="white" stroke-width="10"/><path d="M30,0 v30 M0,15 h60" stroke="%23CF142B" stroke-width="6"/></svg>'); }

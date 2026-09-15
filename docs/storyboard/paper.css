@@ -1,0 +1,31 @@
+.spread { color:#202d27; display:flex; flex-direction:column; gap:3mm; padding:10mm; margin:0; break-inside:avoid; break-after:page; }
+.page-slot:last-child .spread { break-after:auto; }
+.paper-portrait { page:portrait; width:210mm; height:296mm; }
+.paper-landscape { page:landscape; width:297mm; height:209mm; }
+.chapter-heading { flex:0 0 auto; padding:0 0 1mm; }
+.chapter-heading .eyebrow { font-size:9pt; margin:0 0 3mm; color:#805469; }
+h1 { font-size:20pt; line-height:1.15; }
+.scene { display:flex; flex-direction:column; flex:1 1 0; min-height:0; padding:0; margin:0; gap:2mm; break-inside:avoid; }
+.scene + .scene { margin:0; }
+.scene-art { display:flex; flex:1 1 0; min-height:0; margin:0; }
+.scene-art img { display:block; width:100%; height:100%; min-height:0; object-fit:contain; background:transparent; }
+.prose { flex:0 0 auto; width:100%; max-width:175mm; margin:0 auto; padding:0 3mm; font:13pt/1.45 Georgia,"Times New Roman",serif; }
+.prose p { margin:0 0 2mm; orphans:3; widows:3; }
+.prose p:last-child { margin-bottom:0; }
+.folio { flex:0 0 4mm; margin:0; min-height:4mm; }
+.asterism { font-size:10pt; }
+.page-number { font-size:8pt; }
+.spread-opening { padding:0 0 8mm; }
+.spread-opening .scene { gap:6mm; }
+.spread-opening .scene-art { flex:0 0 140mm; }
+.spread-opening .prose { max-width:none; padding:0 16mm; font-size:15pt; line-height:1.45; }
+.spread-opening .chapter-heading { padding:0 0 5mm; }
+.spread-opening .chapter-heading h1 { font-size:27pt; line-height:1.12; }
+.spread-opening .folio { margin:0 16mm; }
+.spread-walk .scene { gap:8mm; }
+.spread-walk .scene-art { flex:0 0 126mm; }
+.spread-walk .prose { font-size:14pt; line-height:1.5; }
+.spread-walk .prose p + p { margin-top:4mm; }
+.spread-hello .prose { max-width:255mm; }
+.spread-hello .prose { text-align:center; font-size:15pt; }
+.spread-surface,.spread-hello { padding:0 0 8mm; }

@@ -6,13 +6,16 @@ window.readerLabels = {
 Object.assign(window.readerLabels.ru, {
   title:'Мистер Пин-Пин и его загадочный лес', print:'Печать / Сохранить PDF',
   preparing:'Подготовка иллюстраций…', printError:'Не удалось подготовить PDF. Попробуйте ещё раз.',
-  loadError:'Не удалось загрузить главу.', retry:'Попробовать снова'
+  loadError:'Не удалось загрузить главу.', retry:'Попробовать снова',
+  preview:'Макет для печати', reading:'Вернуться к чтению'
 });
 Object.assign(window.readerLabels.en, {
   print:'Print / Save PDF', preparing:'Preparing illustrations…',
-  printError:'Could not prepare the PDF. Please try again.', loadError:'Could not load the chapter.', retry:'Try again'
+  printError:'Could not prepare the PDF. Please try again.', loadError:'Could not load the chapter.', retry:'Try again',
+  preview:'Print preview', reading:'Return to reading'
 });
 Object.assign(window.readerLabels.es, {
   print:'Imprimir / Guardar PDF', preparing:'Preparando las ilustraciones…',
-  printError:'No se pudo preparar el PDF. Inténtalo de nuevo.', loadError:'No se pudo cargar el capítulo.', retry:'Intentar de nuevo'
+  printError:'No se pudo preparar el PDF. Inténtalo de nuevo.', loadError:'No se pudo cargar el capítulo.', retry:'Intentar de nuevo',
+  preview:'Vista de impresión', reading:'Volver a la lectura'
 });

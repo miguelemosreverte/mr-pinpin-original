@@ -6,21 +6,24 @@
   <meta name="theme-color" content="#fbfcfa">
   <meta name="description" content="Мистер Пин-Пин. Глава первая новой иллюстрированной книги.">
   <title>Мистер Пин-Пин</title>
-  <link rel="stylesheet" href="reader.css?v=chapter-one-edition">
-  <link rel="stylesheet" href="print.css?v=chapter-one-edition" media="print">
-  <script src="locale.js?v=chapter-one-edition" defer></script>
-  <script src="reader.js?v=chapter-one-edition" defer></script>
+  <link rel="stylesheet" href="reader.css?v=editorial-two">
+  <link rel="stylesheet" href="editorial.css?v=margin-preview">
+  <link rel="stylesheet" href="edition.css?v=editorial-two">
+  <link id="paper-styles" rel="stylesheet" href="paper.css?v=editorial-two" media="print">
+  <link rel="stylesheet" href="print.css?v=margin-preview" media="print">
+  <script src="locale.js?v=margin-preview" defer></script>
+  <script src="reader.js?v=editorial-two" defer></script>
 </head>
 <body>
-  <header class="toolbar">
-    <a class="brand" id="brand" href="?chapter=1&amp;lang=ru">Мистер Пин-Пин<span>Истории Шепчущего леса</span></a>
+  <aside class="toolbar" aria-label="Book controls">
     <div class="language-selector" role="group" aria-label="Language">
       <button data-lang="en" title="English" aria-label="English" aria-pressed="false"></button>
       <button data-lang="es" title="Español" aria-label="Español" aria-pressed="false"></button>
       <button data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="true"></button>
     </div>
+    <button id="preview" class="icon-button" title="Print preview" aria-label="Print preview" aria-pressed="false" disabled><i data-lucide="book-open" aria-hidden="true"></i></button>
     <button id="print" class="icon-button" title="Печать / PDF" aria-label="Печать / PDF" disabled><i data-lucide="printer" aria-hidden="true"></i></button>
-  </header>
+  </aside>
   <div class="reading-progress" aria-hidden="true"><div id="progress"></div></div>
   <p id="export-status" class="export-status" role="status" aria-live="polite"></p>
   <main id="reader" aria-busy="true"><p class="loading" role="status">Загрузка книги…</p></main>
