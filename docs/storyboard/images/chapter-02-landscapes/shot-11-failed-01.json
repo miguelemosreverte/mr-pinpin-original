@@ -1,0 +1,25 @@
+{
+  "id": "plate-11",
+  "order": 13,
+  "title": "The Hill That Waits",
+  "beat": "The elder promises a lesson on the summit tomorrow at dawn; the summit stays unoccupied today.",
+  "camera": "From halfway up the path, look 35 degrees upward toward the forked oak and grassy crown.",
+  "staging": "A finished landscape-only promise, not a scene of the next day's lesson.",
+  "alt": "Looking up a grassy slope toward the ancient forked oak on Burrow Hill against the afternoon sky.",
+  "kind": "landscape",
+  "references": [
+    {
+      "path": "docs/storyboard/images/chapter-02-landscapes/shot-02.png",
+      "role": "Location and framing reference; inspect before generation."
+    }
+  ],
+  "prompt": "Walk the camera to the beginning of the small uphill trail just beyond the burrow in the reference, then aim about 35 degrees UP toward the SAME ancient forked oak crowning Burrow Hill. Lens height 25 cm, 28mm wide view. The near grassy slope, a few pale stones and silver-green leaves lead upward; the old oak's forked trunk and spreading crown fill the upper middle against clear pale blue sky. The root burrow at the foot of the hill is now below and behind the camera. Afternoon sunlight is gentle and still high enough for green grass to retain its color. The summit is empty and welcoming, a place for tomorrow's promised meeting, not dawn and not an occupied lesson. Landscape-only environment plate: plants, soil, stone and sky, with no animals, birds, insects or characters. Warm dimensional children's-book woodland, soft natural highlights and detailed green shadows. Single landscape 1536x1024, no text or panels.",
+  "output": "docs/storyboard/images/chapter-02-landscapes/shot-11.png",
+  "observedAt": "2026-09-15T16:20:25.155Z",
+  "error": "image generation failed: network error: error sending request for url (https://chatgpt.com/backend-api/codex/images/edits)",
+  "startedAt": null,
+  "durationNote": "The failed exec reported 5.7 seconds including the preceding review write. Exact image-call start/end was not retained; no image or model processing time is asserted.",
+  "status": "network-error-no-output",
+  "tool": "built-in imagegen",
+  "result": null
+}

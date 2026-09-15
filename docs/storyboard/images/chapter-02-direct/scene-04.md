@@ -1,0 +1,42 @@
+# The Greeting
+
+Status: review candidate, not approved
+
+- Reading order: 4
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-15T16:25:02.690Z
+- Completed (UTC): 2026-09-15T16:25:38.234Z
+- Wall time: 35.544 seconds
+- Saved image: docs/storyboard/images/chapter-02-direct/scene-04.png
+- Size: 1536 x 1024
+- SHA-256: 6da2507ed872edcb1d06002a225e8e5d7fe0e362813caa5e7ff38c3650c7842e
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-bd577068-19de-4e2a-bb49-c22b3a2d6e23.png
+
+## Source Beat
+
+The elder welcomes PinPin without turning to look at him.
+
+## Camera Direction
+
+Existing low three-quarter clearing view; separate the two silhouettes clearly.
+
+## Future Character Space
+
+Elder low by the left stone, facing left toward the meadow; PinPin arriving lower right, looking toward the elder.
+
+## References
+
+- docs/storyboard/images/chapter-02-landscapes/shot-03.png: Clean environment edit target; preserve camera and exposure.
+- docs/storyboard/images/chapter-01-direct/03.png: Young PinPin design only, not the background or rabbit.
+
+## Exact Tool Prompt
+
+```text
+Image 1 is the clean clearing: keep its camera, roots, stone, fern and light. Image 2 supplies ONLY the young hedgehog's design, not the rabbit or the lake. Place two small natural hedgehogs on the soil in this same scene. At the LEFT stone, Master Shipostav rests low on all four paws, facing LEFT toward the meadow, his face in gentle profile without turning toward the arriving visitor. He is a slightly larger old hedgehog, about 30 cm long, with silver-grey quills, warm ivory face, small rounded ears, calm dark eyes and delicate round brass spectacles. A slender staff made of twisted bramble leans against the root beside him, separate from his paws. On the LOWER RIGHT, Mr. PinPin approaches the elder, showing his brown spiny back in three-quarter rear view and turning his small cream muzzle toward the elder. PinPin is 25 cm long, about 16 percent of frame width, with short grounded legs. Elder about 19 percent of frame width. Leave a clear stretch of earth between them. The 45 cm-high burrow remains larger than either animal. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.
+```
+
+## Visual Review
+
+The elder has silver-grey quills, a soft ivory face and small round brass spectacles. His two front paws are grounded under the chest, with a rear paw visible and the far hindlimb occluded; no extra chest limb is visible. PinPin looks toward him from lower right, with a visible near foreleg and hindfoot; far limbs are occluded. PinPin's rear silhouette is more upright than requested, so subsequent PinPin references also use his published Chapter 1 low-body design. The elder faces outward rather than turning, matching the greeting. The staff is separate from both bodies. Both are somewhat larger than the exact requested percentages, but the doorway still establishes them as small animals.
+
+Reviewed (UTC): 2026-09-15T16:26:59.518Z

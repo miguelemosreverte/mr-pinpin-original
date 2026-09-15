@@ -1,0 +1,478 @@
+{
+  "title": "Chapter 2: From Landscape to Story",
+  "lead": "The complete sixteen-scene camera and character journal.",
+  "statusLabel": "Generated candidates for the Chapter 2 adaptation; visual judgments and caveats are recorded below.",
+  "reviewHeading": "The Completed Adaptation",
+  "scope": "Seven additional clean landscape perspectives and thirteen direct character renders extend the five-shot camera study into a complete sixteen-scene adaptation. Three final scenes remain landscape-only. This journal records production order, not just reading order; each prompt and reference is captured before generation.",
+  "report": "docs/storyboard/review/chapter-02-production.html",
+  "workflow": "docs/storyboard/production/WORKFLOW.md",
+  "sourceNotes": [
+    "The original Russian chapter has fourteen text blocks and two elder portraits. All source dialogue and its meaning are retained in the adapted EN/ES/RU scene text; the original book.json is untouched. The text coverage and light Russian copy-edit are documented separately in chapter-02-copy-edit.json.",
+    "The source specifies a visit the day after Crystal Lake's restoration, a conversation outside Master Shipostav's burrow, a bramble staff, the inherited golden quill's mystery, and a promise to meet on the hilltop tomorrow at dawn. Today's chapter ends at sunset, not during the future lesson.",
+    "The silver-leaf arch, overhead clearing, canopy view, close portrait cameras, root arrangement and silent leaf-window coda are visual staging for this adaptation. The elder's spectacles echo the source portraits; his body is a natural low hedgehog, without the original images' humanlike limbs or costume.",
+    "PinPin uses the published Chapter 1 design: brown quills, cream face, small dark nose and short natural legs. There is no oversized golden head decoration. His magical quill remains in the dialogue; no new spell or magic display is invented here."
+  ],
+  "steps": [
+    "Map all source text to sixteen reading scenes and an eleven-page print edition; reserve separate pages for the empty leaf window and the final face reveal.",
+    "Prepare seven new landscape camera directions from clean location plates: leaf level, canopy-up, elder portrait, overhead, visitor portrait, hilltop-up and sunset leaf window. Save prompts before tool calls.",
+    "Generate each clean environment, register PNG plus adjacent Markdown/JSON immediately, and inspect it before using it as another reference.",
+    "Render the first complete two-character scene as the shared cast reference, then place each scene's entire visible cast together directly on its clean landscape. No colored-limb blocking pass.",
+    "Check image scale, direction, identity, face quality, attachment of forelegs/hindlegs, shadows and source timing. Log any rejected attempt rather than overwriting it.",
+    "Integrate all text and images, preserve chapter/language query parameters, verify full-width native mobile scrolling and deliberately composed PDF pages, and publish the completed chapter."
+  ],
+  "conclusion": "The whole chapter is adapted, including the elder's conversation, the promise of tomorrow and the sunset closing. The last two pages add a silent, playful discovery without changing the plot. The character and spatial checks are visual reviews, not proof of perfect anatomy or exact 3D continuity. Publication and PDF validation are recorded in the completion summary.",
+  "shots": [
+    {
+      "id": "plate-06",
+      "order": 2,
+      "title": "Under the Silver Leaves",
+      "beat": "The meadow becomes an intimate, hedgehog-sized world on the way to the elder.",
+      "camera": "Place the camera 8 cm above the meadow soil beside the trail. Look through a loose arch of silver-backed leaves, with the route and distant knoll beyond.",
+      "staging": "Keep the central opening clear for a small hedgehog walking through later.",
+      "alt": "A low empty gap beneath silver-green leaves beside the woodland trail.",
+      "kind": "landscape",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-02.png",
+          "role": "Location and framing reference; inspect before generation."
+        }
+      ],
+      "prompt": "Move the camera off the reference's meadow path and down to just 8 cm above the soil at its edge, about 30 cm from a loose arch of broad silver-backed leaves. Look THROUGH that natural arch using a close wide 28mm view: detailed leaf veins and fine hairs at the upper edges, dark fresh soil below, a clear empty oval opening in the middle about 25 cm across. Beyond the opening we glimpse the winding trail and the same distant oak-crowned hill softly, without heavy blur. This is a tiny hedgehog-scale passage beside the trail, not a giant cave or a human-sized tunnel. Morning sun touches the translucent silver leaf edges from the right. Keep the middle opening and its ground unoccupied. Landscape-only environment plate: plants, soil, stone and sky, with no animals, birds, insects or characters. Warm dimensional children's-book woodland, soft natural highlights and detailed green shadows. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-landscapes/shot-06.png"
+    },
+    {
+      "id": "plate-07",
+      "order": 6,
+      "title": "Looking Up to Listen",
+      "beat": "The elder says the wind and rustling leaves bring news to those who listen.",
+      "camera": "From beside the burrow, tilt the camera nearly 85 degrees upward through the oak canopy.",
+      "staging": "A finished environment-only scene; the elder's line will sit beside the image.",
+      "alt": "Looking nearly straight up through branching oak limbs, green leaves and patches of blue sky.",
+      "kind": "landscape",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-03.png",
+          "role": "Location and framing reference; inspect before generation."
+        }
+      ],
+      "prompt": "We are still beside the burrow oak in the reference. Put the camera on the ground beside its left root and tilt it almost straight UP, about 85 degrees, with a 24mm view. The same rough oak trunk rises diagonally from lower left and branches overhead into an airy canopy. Silver-green leaf undersides catch the breeze; layered green leaves frame an irregular opening of clear BLUE sky. Individual leaves turn and overlap, making the wind visible without painted motion lines. Let a little warm morning sun slip between leaves from the right, but retain the veins and color in bright foliage. This is the quiet view a listening hedgehog would see above its head. Landscape-only environment plate: plants, soil, stone and sky, with no animals, birds, insects or characters. Warm dimensional children's-book woodland, soft natural highlights and detailed green shadows. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-landscapes/shot-07.png"
+    },
+    {
+      "id": "plate-08",
+      "order": 8,
+      "title": "At the Elder's Eye Line",
+      "beat": "A closer view gives the elder's words about responsibility and ancestry room to breathe.",
+      "camera": "Move to 35 cm in front of the left mossy stone, lens 12 cm above the ground, looking obliquely across the root entrance.",
+      "staging": "An empty low patch of earth in the left-middle foreground is reserved for the elder's face and shoulders.",
+      "alt": "Close earth and moss beside the elder's stone, with the root entrance softly readable beyond.",
+      "kind": "landscape",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-03.png",
+          "role": "Location and framing reference; inspect before generation."
+        }
+      ],
+      "prompt": "Bring the camera close to the LEFT mossy stone beside the burrow in the reference. Lens height 12 cm, roughly 35 cm in front of the place where a small hedgehog could rest. Use a 65mm portrait field of view in a landscape frame, looking slightly diagonally across the burrow face. The moss-edged stone occupies the near left edge; textured open earth spans the lower middle, and the curved oak root and part of the entrance sit behind at upper right. The background is gently softened but still legible. Leave the left-middle foreground empty for a low resting animal about 30 cm long. Keep the scene naturally small, with a few tiny leaves at the ground's edge. Same morning light and colors, calm shaded fur-lighting space rather than a sun glare. Landscape-only environment plate: plants, soil, stone and sky, with no animals, birds, insects or characters. Warm dimensional children's-book woodland, soft natural highlights and detailed green shadows. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-landscapes/shot-08.png"
+    },
+    {
+      "id": "plate-09",
+      "order": 9,
+      "title": "A Quiet Circle",
+      "beat": "The two hedgehogs sit in silence before the elder asks where the quill's magic comes from.",
+      "camera": "Lift the camera 1.8 metres above the clearing and look down at roughly 75 degrees.",
+      "staging": "Two low bodies will later occupy separate left and right patches; roots and leaves surround their conversation.",
+      "alt": "A near-overhead view of the empty root clearing, mossy stone, fern and arriving path.",
+      "kind": "landscape",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-03.png",
+          "role": "Location and framing reference; inspect before generation."
+        }
+      ],
+      "prompt": "Lift the camera to 1.8 metres above the SAME clearing in the reference and look steeply DOWN at about 75 degrees with a 35mm view. Reconstruct the small meeting ground from above: oak trunk and burrow roots along the upper edge, the flat mossy stone to the LEFT of the doorway, the fern clump to its RIGHT, and the narrow arriving path opening at bottom centre. Let leaf shadows make a loose circular pattern around the empty central soil. Keep space for two small hedgehogs to sit 40 cm apart, but the ground is entirely empty. Show the location as intimate and sheltered, not a huge plaza. This is a physical overhead viewpoint with root tops and stone top now visible. Landscape-only environment plate: plants, soil, stone and sky, with no animals, birds, insects or characters. Warm dimensional children's-book woodland, soft natural highlights and detailed green shadows. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-landscapes/shot-09.png"
+    },
+    {
+      "id": "plate-10",
+      "order": 10,
+      "title": "The Visitor's Eye Line",
+      "beat": "PinPin admits that the quill's origin is a mystery, then asks how to learn its history.",
+      "camera": "Move close to the visitor's position from the elder's side, 12 cm high, with the meadow behind.",
+      "staging": "Reserve a low centre-right position for PinPin; the camera meets his eyes without making him stand upright.",
+      "alt": "An intimate empty patch of the clearing with silver leaves, meadow light and a distant lake glimmer.",
+      "kind": "landscape",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-04.png",
+          "role": "Location and framing reference; inspect before generation."
+        }
+      ],
+      "prompt": "In this outward-looking clearing reference, move the camera forward about 60 cm toward the empty place where the visitor would be. Lower it to 12 cm above the ground and use a 65mm portrait field of view in a landscape frame. We look across a little patch of fine soil and fallen oak leaves toward the silver-green meadow; the plants beyond become softly detailed background, with only a tiny blue-green glimmer of lake far to the RIGHT. Keep a small section of the root at the extreme lower right as a continuity cue. The empty centre-right foreground is where a 25 cm hedgehog can rest with its face at lens height. Preserve the morning illumination from the left of this reversed view and gentle shadow detail. Landscape-only environment plate: plants, soil, stone and sky, with no animals, birds, insects or characters. Warm dimensional children's-book woodland, soft natural highlights and detailed green shadows. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-landscapes/shot-10.png"
+    },
+    {
+      "id": "plate-11",
+      "order": 13,
+      "title": "The Hill That Waits",
+      "beat": "The elder promises a lesson on the summit tomorrow at dawn; the summit stays unoccupied today.",
+      "camera": "From halfway up the path, look 35 degrees upward toward the forked oak and grassy crown.",
+      "staging": "A finished landscape-only promise, not a scene of the next day's lesson.",
+      "alt": "Looking up a grassy slope toward the ancient forked oak on Burrow Hill against the afternoon sky.",
+      "kind": "landscape",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-02.png",
+          "role": "Location and framing reference; inspect before generation."
+        }
+      ],
+      "prompt": "Walk the camera to the beginning of the small uphill trail just beyond the burrow in the reference, then aim about 35 degrees UP toward the SAME ancient forked oak crowning Burrow Hill. Lens height 25 cm, 28mm wide view. The near grassy slope, a few pale stones and silver-green leaves lead upward; the old oak's forked trunk and spreading crown fill the upper middle against clear pale blue sky. The root burrow at the foot of the hill is now below and behind the camera. Afternoon sunlight is gentle and still high enough for green grass to retain its color. The summit is empty and welcoming, a place for tomorrow's promised meeting, not dawn and not an occupied lesson. Landscape-only environment plate: plants, soil, stone and sky, with no animals, birds, insects or characters. Warm dimensional children's-book woodland, soft natural highlights and detailed green shadows. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-landscapes/shot-11.png"
+    },
+    {
+      "id": "plate-12",
+      "order": 15,
+      "title": "An Empty Little Window",
+      "beat": "A silent pause in the meadow prepares the playful final reveal.",
+      "camera": "Return to the same low leaf arch at sunset, camera stationary at 8 cm.",
+      "staging": "Keep the oval leaf gap empty; the next separate page will reveal PinPin in this exact opening.",
+      "alt": "An empty opening among silver leaves at sunset, with soft amber edges and a cool green interior.",
+      "kind": "landscape",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-06.png",
+          "role": "Location and framing reference; inspect before generation."
+        }
+      ],
+      "prompt": "Keep this reference's exact low camera position, framing and natural arch of silver-backed leaves. It is now SUNSET after a day at the elder's home. Change only the light and tiny natural movements: a few leaf tips shift gently, shadows lengthen, the leaf edges catch soft amber from the LEFT and the hollow stays cool green. Through the empty central opening, the path recedes into a gentle rose-and-green evening meadow. Keep leaf veins and soft hairs legible without glaring whites. This is a quiet empty little window 25 cm across, ready for a surprise on the next page. The camera stays still and nothing fills the opening yet. Landscape-only environment plate: plants, soil, stone and sky, with no animals, birds, insects or characters. Warm dimensional children's-book woodland, soft natural highlights and detailed green shadows. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-landscapes/shot-12.png"
+    },
+    {
+      "id": "scene-04",
+      "order": 4,
+      "title": "The Greeting",
+      "beat": "The elder welcomes PinPin without turning to look at him.",
+      "camera": "Existing low three-quarter clearing view; separate the two silhouettes clearly.",
+      "staging": "Elder low by the left stone, facing left toward the meadow; PinPin arriving lower right, looking toward the elder.",
+      "alt": "Two small hedgehogs outside a root burrow: a grey elder with round spectacles and a younger brown hedgehog arriving.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-03.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-01-direct/03.png",
+          "role": "Young PinPin design only, not the background or rabbit."
+        }
+      ],
+      "prompt": "Image 1 is the clean clearing: keep its camera, roots, stone, fern and light. Image 2 supplies ONLY the young hedgehog's design, not the rabbit or the lake. Place two small natural hedgehogs on the soil in this same scene. At the LEFT stone, Master Shipostav rests low on all four paws, facing LEFT toward the meadow, his face in gentle profile without turning toward the arriving visitor. He is a slightly larger old hedgehog, about 30 cm long, with silver-grey quills, warm ivory face, small rounded ears, calm dark eyes and delicate round brass spectacles. A slender staff made of twisted bramble leans against the root beside him, separate from his paws. On the LOWER RIGHT, Mr. PinPin approaches the elder, showing his brown spiny back in three-quarter rear view and turning his small cream muzzle toward the elder. PinPin is 25 cm long, about 16 percent of frame width, with short grounded legs. Elder about 19 percent of frame width. Leave a clear stretch of earth between them. The 45 cm-high burrow remains larger than either animal. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-04.png"
+    },
+    {
+      "id": "scene-01",
+      "order": 1,
+      "title": "Away from the Lake",
+      "beat": "The next morning, PinPin leaves the lake to seek the elder.",
+      "camera": "Unchanged low path view with the destination ahead.",
+      "staging": "PinPin is small on the centre path, walking away toward the hill.",
+      "alt": "PinPin walks away along the empty lakeside path toward the silver meadow.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-01.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-01-direct/03.png",
+          "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+        }
+      ],
+      "prompt": "Keep image 1's landscape and camera unchanged. Use only young PinPin from image 2 as character reference. Add PinPin alone on the middle of the trail, walking AWAY FROM US toward the meadow and distant oak-crowned hill. We see his rounded brown spiny back, two small rear feet and a little of the far side of his muzzle pointing forward along the path. His belly stays low as he walks. His body is about 25 cm long, roughly 8 percent of the image width, naturally small beside the roots and leaves. Keep the lake on the left unobstructed. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-01.png"
+    },
+    {
+      "id": "scene-02",
+      "order": 2,
+      "title": "A World Beneath Leaves",
+      "beat": "PinPin's curiosity carries him through the silver-leaf meadow.",
+      "camera": "Low leaf-arch camera, looking through a natural opening at hedgehog height.",
+      "staging": "PinPin passes through the gap in three-quarter side view, nose tilted toward a silver leaf.",
+      "alt": "PinPin sniffs a silver-backed leaf as he passes through a small opening beside the meadow path.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-06.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-01-direct/03.png",
+          "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+        }
+      ],
+      "prompt": "Keep image 1's low leaf-arch viewpoint, plants and morning light. Image 2 supplies the young PinPin's identity only. Add PinPin alone, halfway THROUGH the natural leaf opening, moving toward the upper right along the trail. We see his low compact body in side three-quarter view, about 25 cm long and naturally fitted beneath the leaves. He pauses with his small nose tilted up toward the edge of a silver leaf, bright-eyed and curious. His two near-side paws stand on the soil, with the far-side pair naturally occluded by his body. Keep the cream face soft and the brown quills finely detailed; an ordinary leaf is an interesting discovery at this scale. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-02.png"
+    },
+    {
+      "id": "scene-03",
+      "order": 3,
+      "title": "At the Foot of Burrow Hill",
+      "beat": "PinPin spots the elder sitting outside with his bramble staff.",
+      "camera": "Keep the meadow approach wide so the two figures establish scale.",
+      "staging": "PinPin on the near path; elder much smaller in the distance beside the entrance.",
+      "alt": "PinPin approaches Burrow Hill while the grey elder waits outside the small root entrance.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-02.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-01-direct/03.png",
+          "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+        }
+      ],
+      "prompt": "Keep image 1's broad meadow approach, hill, two oaks and root entrance. Image 2 is the shared character reference: young brown PinPin and the silver-grey elder with round brass spectacles. Add both at their correct distances. PinPin walks away up the centre trail in the lower middle, brown spiny back toward us, body about 8 percent of frame width. Farther away beside the LEFT stone at the small burrow entrance, the grey elder rests low looking outward, his body only about 4 percent of frame width at that distance. His twisted bramble staff leans against the root beside him, not held. Let sunlight edge his grey quills. The meadow and hill remain the main subject. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-03.png"
+    },
+    {
+      "id": "scene-05",
+      "order": 5,
+      "title": "How Did You Know?",
+      "beat": "PinPin wonders how the elder knew he would come.",
+      "camera": "Reverse angle from the elder's side, looking out across the clearing.",
+      "staging": "A little of the elder's grey back in the near right; PinPin facing him from the centre.",
+      "alt": "PinPin looks toward the elder from the open clearing, with the meadow and lake beyond.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-04.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-01-direct/03.png",
+          "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+        }
+      ],
+      "prompt": "Keep image 1's outward-looking clearing camera and background. Image 2 is character identity only: grey bespectacled elder, brown young PinPin. Place PinPin low on the centre-left open earth, facing toward the near RIGHT where the elder sits. His inquisitive cream face is in three-quarter view, eyes lifted toward the elder, body about 22 percent of frame width. At the extreme near RIGHT beside the mossy stone, include the elder's grey quilled shoulder/back and a small side glimpse of his spectacles as foreground framing; his body naturally continues beyond the right edge. PinPin's body stays low with his front pair of paws on the soil beneath his chest and his short hind pair beneath his rounded rear. Keep the distant lake visible. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-05.png"
+    },
+    {
+      "id": "scene-07",
+      "order": 7,
+      "title": "Yesterday's Magic",
+      "beat": "PinPin tells the elder about restoring the lake and wanting to learn.",
+      "camera": "Return to the original clearing two-shot, now with both faces oriented toward each other.",
+      "staging": "Elder by the stone on the left; PinPin on the right, attentive and earnest.",
+      "alt": "PinPin and the elder face one another on the soil outside the root burrow.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-03.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-01-direct/03.png",
+          "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+        }
+      ],
+      "prompt": "Keep image 1's clean clearing, camera and morning light. Match both characters to image 2. The silver-grey elder rests low beside the LEFT mossy stone, now turning his face RIGHT toward young PinPin. His round brass spectacles and gentle expression are clear; the bramble staff rests against the root behind him. PinPin is on the RIGHT, facing left toward the elder with an earnest, slightly open-mouthed expression as he tells his story. Both small bodies rest naturally on four short paws and remain separate, about 20 percent and 17 percent of frame width respectively. Keep the entrance and open ground legible. Their interest is carried by eyes and head angle, not raised arms. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-07.png"
+    },
+    {
+      "id": "scene-08",
+      "order": 8,
+      "title": "The Responsibility of Magic",
+      "beat": "The elder explains that mastery includes understanding the source of one's power and its responsibility.",
+      "camera": "Close low portrait beside the stone, with the root entrance behind.",
+      "staging": "Elder alone, face and shoulders on the left-middle, eyes directed toward PinPin off-camera right.",
+      "alt": "The silver-grey elder looks gently toward PinPin through small round spectacles.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-08.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        }
+      ],
+      "prompt": "Keep image 1's close low camera and mossy-stone/root background. Image 2 establishes the silver-grey elder's identity. Add ONLY Master Shipostav resting low on the empty earth at left-middle, his warm ivory face and small round brass spectacles in a gentle three-quarter view toward the RIGHT, looking at PinPin off-camera. His whole visible body is that of a natural old hedgehog with a compact silver-grey quilled back, small ears and short legs; the portrait emphasizes his calm dark eyes and soft mouth. Two forepaws rest directly below his shoulders, while his rear is naturally tucked behind his body. Place the bramble staff against the blurred root far behind him, clearly separate from his body. His expression is kind and thoughtful, not stern or theatrically magical. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-08.png"
+    },
+    {
+      "id": "scene-09",
+      "order": 9,
+      "title": "The Question in the Quiet",
+      "beat": "The two sit listening; the elder asks where PinPin's golden quill gets its magic.",
+      "camera": "Near-overhead clearing, the dialogue seen as a small sheltered encounter.",
+      "staging": "Elder left, PinPin right; two separate oval bodies oriented toward one another.",
+      "alt": "A high view of the two small hedgehogs resting together in the root clearing amid leaf shadows.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-09.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-01-direct/03.png",
+          "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+        }
+      ],
+      "prompt": "Keep image 1's overhead camera, clearing geometry and leaf shadows. Image 2 establishes both hedgehogs. Place the silver-grey elder on the LEFT of the open soil by his mossy stone and brown PinPin on the RIGHT, about 40 cm apart. Both rest low, their noses pointing toward one another. From this steep angle their rounded quilled backs are the main shapes, with small cream muzzles and naturally partly hidden short paws. Each body spans only about one sixth of frame width. The elder's bramble staff lies against the root near the stone, away from the animals. This is a quiet shared pause within a much larger pattern of roots, leaves and light. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-09.png"
+    },
+    {
+      "id": "scene-10",
+      "order": 10,
+      "title": "A Mystery Since Birth",
+      "beat": "PinPin admits that his quill has been with him since birth, but its origin is a mystery.",
+      "camera": "Close low reverse portrait with soft meadow behind.",
+      "staging": "PinPin alone, facing left toward the unseen elder, head tilted slightly in uncertainty.",
+      "alt": "PinPin tilts his cream muzzle toward the elder, quietly puzzled, with silver leaves behind.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-10.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-01-direct/03.png",
+          "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+        }
+      ],
+      "prompt": "Keep image 1's low close portrait viewpoint and meadow background. Use only young brown PinPin from image 2 as character reference. Place PinPin alone in the centre-right foreground, resting naturally low on the soil, facing LEFT toward the elder off-camera. His small cream muzzle tilts a little sideways as if admitting he does not know; warm curious eyes, soft cheeks, small dark nose only at the tip of the muzzle. His compact brown-quilled back curves behind his head, his front paws lie on the ground directly under his shoulders and his hindfeet remain under the rear. Frame his complete head and most of his small low body, with generous meadow around him. The magic is in the story, not a giant golden head ornament. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-10.png"
+    },
+    {
+      "id": "scene-11",
+      "order": 11,
+      "title": "A Story in Every Quill",
+      "beat": "The elder leans closer and explains the ancient magic of their ancestors.",
+      "camera": "Same elder-side portrait, with a small forward lean that changes the conversation's intimacy.",
+      "staging": "Elder alone, leaning his head slightly right toward the off-camera listener.",
+      "alt": "The elder leans forward a little, sharing the history of the golden quill.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-08.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        }
+      ],
+      "prompt": "Keep image 1's clean close root-and-stone background and low camera. Use the silver-grey elder in image 2 as identity reference. Master Shipostav is alone in the left-middle foreground, resting low with his body on four short paws. Lean his head gently FORWARD toward the RIGHT, as if sharing a treasured story with PinPin just outside the frame. His round brass spectacles sit naturally on his little muzzle; show warm, attentive dark eyes through the lenses and finely textured silver-grey quills. The near front paw stays on the soil under his shoulder rather than becoming a raised gesture. The twisted bramble staff remains against the background root. The expression is affectionate and quietly animated. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-11.png"
+    },
+    {
+      "id": "scene-12",
+      "order": 12,
+      "title": "How Can I Discover It?",
+      "beat": "PinPin's eyes widen with curiosity as he asks how to learn the quill's history.",
+      "camera": "Same low visitor portrait, eyes and ears more alert.",
+      "staging": "PinPin leans his muzzle a little toward the elder while keeping all paws grounded.",
+      "alt": "PinPin looks up with bright, widening eyes, eager to learn the story of his quill.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-10.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-01-direct/03.png",
+          "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+        }
+      ],
+      "prompt": "Keep image 1's low camera, fine soil and soft silver-leaf background. Young PinPin from image 2 is the only character. Place him alone at centre-right, facing LEFT toward the elder, with his little nose leaning forward, ears perked and eyes slightly WIDER with eager curiosity. His expression changes from uncertainty to an excited question, but stays like a gentle natural hedgehog, with cream cheeks, dark eyes, small black nose at the snout tip and brown quills. Keep his compact body low and its four short paws physically supporting it, front paws beneath shoulders and hindfeet beneath rump. No raised hand gestures. Let the silver meadow light reflect softly in his eyes. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-12.png"
+    },
+    {
+      "id": "scene-14",
+      "order": 14,
+      "title": "Tomorrow on the Hill",
+      "beat": "The sun sets as PinPin leaves, excited and a little nervous about the next lesson.",
+      "camera": "Wide sunset view of the familiar hill and trail.",
+      "staging": "PinPin on the returning path, walking toward the foreground while glancing back at the hill.",
+      "alt": "PinPin leaves Burrow Hill at sunset, looking back toward the promised meeting place.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-05.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-01-direct/03.png",
+          "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+        }
+      ],
+      "prompt": "Keep image 1's sunset hill, forked summit oak, root burrow and winding path unchanged. Use young PinPin from image 2 as identity reference. Add PinPin alone on the path in the lower middle, walking DOWN the trail toward the foreground, away from the elder's home. His compact body follows the trail, while his head turns back a little toward the oak-crowned hill behind him, caught between excitement and a small hesitation. He remains a little 25 cm hedgehog, about 10 percent of frame width, with four short naturally walking legs. Warm sunset edges on brown quills, cool cream-fur shadows. Keep the broad quiet sky and destination visible. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-14.png"
+    },
+    {
+      "id": "scene-16",
+      "order": 16,
+      "title": "Someone in the Leaves",
+      "beat": "A silent visual coda: the empty opening from the previous page reveals PinPin's curious face.",
+      "camera": "Keep the previous empty leaf-window camera still; the character comes to the camera.",
+      "staging": "PinPin's face peeks through the opening, body behind the leaves rather than standing upright.",
+      "alt": "PinPin peeks through a gap in silver leaves at sunset, his nose almost touching a leaf tip.",
+      "kind": "characters",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-12.png",
+          "role": "Clean environment edit target; preserve camera and exposure."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-04.png",
+          "role": "Shared cast identity only, not the scene composition."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-01-direct/03.png",
+          "role": "Primary young PinPin body and face identity: low, compact natural hedgehog. Do not copy the rabbit or lake."
+        }
+      ],
+      "prompt": "Keep image 1's EXACT sunset leaf-window camera, composition, leaf arch and exposure. Image 2 gives young PinPin's character identity. Now PinPin himself comes to the empty opening: his small cream face peeks THROUGH the leaves toward our lens, head tipped playfully just a little, one round ear brushing a silver leaf. His small black nose almost touches a curled leaf tip, and his warm dark eyes look straight at us with curiosity. A few brown quills are visible behind his face; the rest of his low quadruped body and its paws remain naturally behind the surrounding leaves. This is a face peeking through a real 25 cm-wide gap, not a face painted on a leaf. Slightly shift the nearby leaf tip as it brushes his ear. Dry soft fur, gentle warm rim light and cool green shadows. The quiet empty opening on the previous page makes this friendly surprise land. Image 3 is the PRIMARY guide for young PinPin's low body, cream face and brown quills; use it for his anatomy and identity, while image 2 keeps the elder consistent. Render the characters with finished soft expressive faces, natural compact hedgehog bodies, two short forelegs beneath the shoulders and two short hindlegs beneath the rear. Paws are part of those four legs. Match the ground contact and exposure. No clothes, boots, head ornaments or extra animals. Single landscape 1536x1024, no text or panels.",
+      "output": "docs/storyboard/images/chapter-02-direct/scene-16.png"
+    }
+  ]
+}
