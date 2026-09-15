@@ -1,0 +1,15 @@
+{
+  "status": "awaiting-user-review",
+  "scope": "Opening image only. Reader and story text unchanged.",
+  "source": "images/chapter-01-v2/scene-01-feedback-01.png",
+  "candidate": "images/chapter-01-v2/scene-01-feedback-02.png",
+  "tool": "built-in imagegen",
+  "elapsedSeconds": 45.2,
+  "prompt": "Use case: precise-object-edit. Edit the provided opening illustration, preserving its composition and style.\nTWO corrections:\n1. Remove the distinct golden/yellow quill on the hedgehog's upper back behind his ear (around x=512,y=476 in this 1536x1024 image). Replace it with ordinary brown-and-cream spines matching all surrounding quills. NO golden quill anywhere, no distinctive yellow spine, no horn or other special ornament. Keep the previously cleaned cream muzzle clear of the tiny isolated black mark between eye and nose. Preserve his actual glossy eye and black nose.\n2. Fix the SMALL TAWNY RABBIT AT THE FAR RIGHT of the scene, not the large gray rabbit. Its running pose currently has two forepaws PLUS three dangling/supporting rear appendages. Rebuild its lower-body silhouette to show EXACTLY FOUR LIMBS TOTAL: two small forepaws bent in front of its chest, and precisely two anatomically connected hind legs, one stretched down onto the path and the other bent behind in mid-hop. Remove the extra dangling leg/stump on the far-left edge of this small rabbit's body, restoring the background naturally there. No third rear foot, no additional paw, no limb-shaped tail. Make the two hind legs clearly distinguishable. Keep same head, ears, expression, fur, body size and scene position.\nPreserve everything else: large gray rabbit Lulu, bird, butterflies, forest flowers, tree, sunlit path, camera and 1536x1024 landscape framing, dimensional children's storybook rendering. Mr PinPin still has exactly two forepaws at his chest and two hind feet on ground. Lulu has two front legs and two hind feet. No text or clothing.",
+  "inspection": [
+    "Distinct golden quill removed; ordinary brown spines remain.",
+    "Small tawny rabbit has two chest forepaws, one grounded hind leg, and one hind leg swept back. No fifth limb visible.",
+    "PinPin muzzle mark remains absent; eye and nose preserved."
+  ],
+  "workflow": "No decorative golden quill for now, per user feedback. Review this opening image before propagating changes. Later story scenes using the quill have not been revised."
+}
