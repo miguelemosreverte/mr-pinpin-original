@@ -1,0 +1,246 @@
+{
+  "status": "in-production",
+  "rules": {
+    "coordinates": "Image pixels in 1536x1024; target boxes are direction, not pixel guarantees.",
+    "blocking": "Matte neutral body, simplified fur/quill mass, distinct full-limb colors from attachment to paw.",
+    "limbColors": {
+      "left foreleg": "coral red",
+      "right foreleg": "cyan blue",
+      "left hindleg": "violet",
+      "right hindleg": "yellow"
+    },
+    "anatomy": "Exactly two shoulder-connected forelegs and two pelvis-connected hindlegs per mammal. Animal-left/right, not screen-left/right. Occlusion is allowed; never invent a limb to expose four endpoints.",
+    "acting": "Natural animal posture; rabbits never run or stand like humans. No clothes, shoes, separate arms or human hands.",
+    "review": "Inspect blocking connections, gaze, overlap, scale and ground contact; only then finish textures. Recheck after finishing.",
+    "render": "Soft dimensional miniature hedgehog and rabbits, cream muzzle/chest, brown quills; small natural eyes and nose; no stray face dot, no golden head/back ornament.",
+    "identity": "PinPin compact low hedgehog; Lulu pale-gray rabbit with white muzzle and pink inner ears; Tawny smaller brown rabbit with cream chest and darker ear tips."
+  },
+  "scenes": [
+    {
+      "id": "01a",
+      "title": "Through the forest",
+      "plate": "images/chapter-01-landscapes/approach-100m.png",
+      "cast": [
+        {
+          "name": "PinPin",
+          "placement": "Bounding box about x=690..990, y=650..875 in the 1536x1024 plate, on the open foreground path.",
+          "pose": "Natural low four-legged walk toward the upper-right path; three-quarter side/rear view, no upright torso.",
+          "gaze": "Along the path toward the distant willow; one near eye and tapered snout readable.",
+          "contact": "Short legs emerge from two shoulders and two hips; small grounded shadows under paws, one forepaw may lift slightly."
+        }
+      ],
+      "action": "A quiet walk through the forest."
+    },
+    {
+      "id": "01b",
+      "title": "Meeting Lulu",
+      "plate": "images/chapter-01-landscapes/approach-50m.png",
+      "cast": [
+        {
+          "name": "PinPin",
+          "placement": "x=650..935, y=670..865, near foreground path.",
+          "pose": "Low quadruped, slowing as he notices Lulu ahead.",
+          "gaze": "Up the path toward Lulu."
+        },
+        {
+          "name": "Lulu",
+          "placement": "x=890..1060, y=405..630, farther along the open path.",
+          "pose": "Natural seated rabbit: horizontal/arched body, broad haunches low, two short front paws grounded beneath chest, ears upright.",
+          "gaze": "Back toward PinPin, worried."
+        }
+      ],
+      "action": "Lulu waits on the approach path."
+    },
+    {
+      "id": "01c",
+      "title": "The worried friends",
+      "plate": "images/chapter-01-landscapes/shot-01-camera-02.png",
+      "cast": [
+        {
+          "name": "PinPin",
+          "placement": "x=910..1165, y=710..885 on the right-hand path, not in the basin.",
+          "pose": "Low quadruped paused side-on, head turned left.",
+          "gaze": "Down-left into the dry lakebed beside the willow."
+        },
+        {
+          "name": "Lulu",
+          "placement": "x=1080..1240, y=455..675 farther up the path.",
+          "pose": "Natural crouched/seated rabbit, front paws grounded.",
+          "gaze": "Down-left toward the lake."
+        },
+        {
+          "name": "Tawny",
+          "placement": "x=1170..1320, y=345..525 farther back on the path.",
+          "pose": "Natural rabbit crouch; not human standing or running.",
+          "gaze": "Toward PinPin and Lulu."
+        }
+      ],
+      "action": "The friends gather and look toward the dry lake."
+    },
+    {
+      "id": "02",
+      "title": "Crystal Lake has dried up",
+      "plate": "images/chapter-01-landscapes/shot-02.png",
+      "cast": [
+        {
+          "name": "PinPin",
+          "placement": "x=325..585, y=680..875 on the open near-left bank.",
+          "pose": "Quadruped in right-facing profile, low horizontal body.",
+          "gaze": "Across the dry basin."
+        },
+        {
+          "name": "Lulu",
+          "placement": "x=80..295, y=530..820, slightly behind PinPin on near bank.",
+          "pose": "Rabbit crouch, haunches on ground, two front paws below shoulders.",
+          "gaze": "PinPin's face, worried."
+        },
+        {
+          "name": "Tawny",
+          "placement": "x=75..220, y=350..540 up the left path, behind Lulu without overlap.",
+          "pose": "Compact rabbit on four feet.",
+          "gaze": "Into the dry lake."
+        }
+      ],
+      "action": "Lulu explains the problem; no pointing hand."
+    },
+    {
+      "id": "03",
+      "title": "An idea beside the lake",
+      "plate": "images/chapter-01-landscapes/shot-03.png",
+      "cast": [
+        {
+          "name": "PinPin",
+          "placement": "x=265..585, y=565..825 in dry near-left staging area, clear of foreground root.",
+          "pose": "Low hedgehog with head thoughtfully raised; one near forepaw slightly lifted from its shoulder, other three paws support body.",
+          "gaze": "Toward the centre-right basin floor."
+        },
+        {
+          "name": "Lulu",
+          "placement": "x=100..260, y=370..585 back on the left bank.",
+          "pose": "Crouched rabbit waiting quietly.",
+          "gaze": "Toward PinPin."
+        }
+      ],
+      "action": "PinPin considers how to refill the lake."
+    },
+    {
+      "id": "04",
+      "title": "Drawing the circle",
+      "plate": "images/chapter-01-landscapes/shot-03.png",
+      "cast": [
+        {
+          "name": "PinPin",
+          "placement": "x=305..600, y=560..820, just left of the circle on the dry ground.",
+          "pose": "Low stable body supported by two hind paws and far forepaw. Near forepaw extends from its shoulder to hold a small slender golden quill against the ground; no added arm.",
+          "gaze": "At the quill tip where it scratches the circle."
+        },
+        {
+          "name": "Lulu",
+          "placement": "x=90..245, y=365..585 back on left bank.",
+          "pose": "Natural rabbit crouch.",
+          "gaze": "At the circle."
+        }
+      ],
+      "action": "Add a plain shallow hand-scratched circular groove roughly x=540..1150, y=560..860. Dry ground only, no water yet. A short gold quill is held ONLY as the drawing tool, never on head or back; no glow."
+    },
+    {
+      "id": "05",
+      "title": "The first water",
+      "plate": "images/chapter-01-landscapes/shot-05.png",
+      "cast": [
+        {
+          "name": "PinPin",
+          "placement": "x=260..560, y=560..795 on dry ground to left of existing pool.",
+          "pose": "Low quadruped, all paws clear of water, head slightly raised in surprise.",
+          "gaze": "At the bubbling centre of the pool."
+        },
+        {
+          "name": "Lulu",
+          "placement": "x=90..250, y=350..590 on left bank.",
+          "pose": "Natural rabbit crouch.",
+          "gaze": "At the returning water."
+        }
+      ],
+      "action": "Watch the first water; no quill displayed or added ornament."
+    },
+    {
+      "id": "06",
+      "title": "Water spreading",
+      "plate": "images/chapter-01-landscapes/shot-06.png",
+      "cast": [
+        {
+          "name": "PinPin",
+          "placement": "x=255..540, y=690..900 on the still dry near-left foreground.",
+          "pose": "Low quadruped stepping back from advancing water; no human stance.",
+          "gaze": "Right toward the spreading pool."
+        },
+        {
+          "name": "Lulu",
+          "placement": "x=75..250, y=505..755 on dry left edge.",
+          "pose": "Natural rabbit crouch, feet on dry bank.",
+          "gaze": "Toward water."
+        },
+        {
+          "name": "Tawny",
+          "placement": "x=70..210, y=315..505 on left bank farther back.",
+          "pose": "Natural rabbit on four feet.",
+          "gaze": "Toward the pool."
+        }
+      ],
+      "action": "The friends stay on dry ground as water expands."
+    },
+    {
+      "id": "07",
+      "title": "At the water's edge",
+      "plate": "images/chapter-01-landscapes/shot-07.png",
+      "cast": [
+        {
+          "name": "PinPin",
+          "placement": "x=120..340, y=600..790 at the narrow left bank, entirely on land.",
+          "pose": "Low quadruped leaning head gently toward the water, feet behind edge.",
+          "gaze": "At the ripples close to shore."
+        },
+        {
+          "name": "Lulu",
+          "placement": "x=30..195, y=390..620 farther up left bank.",
+          "pose": "Crouched rabbit, all feet on land.",
+          "gaze": "Toward PinPin and water."
+        }
+      ],
+      "action": "They watch the lake reach the banks."
+    },
+    {
+      "id": "08",
+      "title": "The lake restored",
+      "plate": "images/chapter-01-landscapes/shot-08.png",
+      "cast": [
+        {
+          "name": "PinPin",
+          "placement": "x=115..325, y=560..745 on firm left bank, do not cover foreground fish.",
+          "pose": "Low hedgehog standing peacefully, relaxed expression.",
+          "gaze": "At Lulu in the shallow margin."
+        },
+        {
+          "name": "Lulu",
+          "placement": "x=280..445, y=440..650 in the shallow left margin beside bank, away from visible fish.",
+          "pose": "Natural rabbit crouch with paws just ankle-deep in clear water; body above water.",
+          "gaze": "Toward PinPin, delighted."
+        },
+        {
+          "name": "Tawny",
+          "placement": "x=40..190, y=325..510 on left bank above them.",
+          "pose": "Natural quadruped rabbit lowering muzzle to drink; four legs remain below body.",
+          "gaze": "At water immediately below nose."
+        }
+      ],
+      "action": "Quiet celebration: Lulu paddles in shallows, tawny rabbit drinks, PinPin watches. Preserve lilies and fish."
+    }
+  ],
+  "closingPlates": [
+    9,
+    10,
+    11,
+    12
+  ],
+  "story": "Keep complete original chapter text and existing EN/ES translations. Add silent visual beats without inventing prose."
+}
