@@ -1,0 +1,41 @@
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const os = require('node:os');
+const path = require('node:path');
+const {capture,build,esc} = require('./image-journal.cjs');
+const root = path.resolve(__dirname,'..');
+const tmp = fs.mkdtempSync(path.join(os.tmpdir(),'pinpin-journal-test-'));
+try {
+  const plan = JSON.parse(fs.readFileSync(path.join(root,'docs/storyboard/production/chapter-02-landscapes.json')));
+  const records = plan.shots.map(shot => {
+    const image = path.join(root,shot.output);
+    const record = JSON.parse(fs.readFileSync(image.replace(/\.png$/,'.json')));
+    const md = fs.readFileSync(image.replace(/\.png$/,'.md'),'utf8');
+    assert.equal(record.prompt,shot.prompt);
+    assert(md.includes('```text\n'+shot.prompt+'\n```'));
+    assert(md.includes(record.startedAt) && md.includes(record.finishedAt));
+    assert(record.seconds > 0 && record.review);
+    assert.equal(record.width,1536); assert.equal(record.height,1024);
+    for (const reference of record.references) assert(fs.existsSync(path.join(root,reference.path)));
+    return record;
+  });
+  assert.equal(records.length,5);
+  assert.equal(new Set(records.map(record=>record.sha256)).size,5);
+  for (let i=1;i<records.length;i++) assert(records[i].startedAt >= records[i-1].finishedAt);
+  const shot = {...plan.shots[0],id:'test',title:'<Unsafe & "title">',output:path.join(tmp,'test.png')};
+  const testPlan = {...plan,shots:[shot],report:path.join(tmp,'report.html')};
+  const source = path.join(root,plan.shots[0].output);
+  assert.throws(()=>capture(testPlan,'test',source,'bad','bad'),/Invalid timestamps/);
+  capture(testPlan,'test',source,'2026-09-15T00:00:00Z','2026-09-15T00:00:01Z');
+  assert.throws(()=>capture(testPlan,'test',source,'2026-09-15T00:00:00Z','2026-09-15T00:00:01Z'),/overwrite/);
+  build(testPlan);
+  const html = fs.readFileSync(testPlan.report,'utf8');
+  assert(html.includes(esc(shot.title)) && !html.includes(shot.title));
+  const second = {...shot,id:'earlier',output:path.join(tmp,'earlier.png')};
+  testPlan.shots.push(second);
+  capture(testPlan,'earlier',source,'2026-09-14T00:00:00Z','2026-09-14T00:00:01Z');
+  build(testPlan);
+  const chronological = fs.readFileSync(testPlan.report,'utf8');
+  assert(chronological.indexOf('<section id="earlier"') < chronological.indexOf('<section id="test"'));
+  console.log('PASS: five PNG/Markdown/JSON records, exact prompts, references, timestamps, unique hashes, overwrite guard, escaping, chronological order.');
+} finally { fs.rmSync(tmp,{recursive:true,force:true}); }

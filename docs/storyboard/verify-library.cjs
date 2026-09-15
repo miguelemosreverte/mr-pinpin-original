@@ -11,7 +11,8 @@ async function main() {
         await page.goto(base + 'library.html?lang=' + lang);
         await page.waitForSelector('#chapter-library[aria-busy=false] .chapter-cover');
         assert.equal(await page.locator('.chapter-cover').count(),38);
-        assert.equal(await page.locator('.chapter-cover a').count(),1);
+        assert.equal(await page.locator('.chapter-cover a').count(),2);
+        assert.equal(await page.locator('.chapter-cover[data-chapter="2"] a').getAttribute('href'),'review/chapter-02-landscapes.html');
         assert.equal(await page.locator('html').getAttribute('lang'),lang);
         assert.equal(await page.evaluate(() => document.documentElement.scrollWidth),width);
         assert(await page.locator('.chapter-cover a').first().getAttribute('href').then(href => href.endsWith('lang=' + lang)));

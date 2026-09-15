@@ -31,22 +31,25 @@
     const cards = [];
     book.chapters.forEach((chapter,index) => {
       const ready = index === 0;
+      const study = index === 1;
+      const studyLabel = {en:'Camera study (English) · Landscapes only',es:'Estudio de cámara (inglés) · Solo paisajes',ru:'Исследование камеры (на английском) · Только пейзажи'}[lang];
       const title = ready ? translations['chapter-01'][lang]?.title || window.readerLabels.ru.title : titles[lang]?.[index] || chapter.title.replace(/^Глава\s*\d*\s*:\s*/, '');
       if (filter !== 'all' && filter !== (ready ? 'published' : 'upcoming')) return;
       if (query && !(String(index+1) + ' ' + title + ' ' + chapter.title).toLocaleLowerCase(lang).includes(query)) return;
       const card = document.createElement('article');
       card.className = 'chapter-cover' + (ready ? ' published' : '');
       card.dataset.chapter = index + 1;
-      const content = document.createElement(ready ? 'a' : 'div');
+      const content = document.createElement(ready || study ? 'a' : 'div');
       if (ready) content.href = './?chapter=1&lang=' + lang;
+      if (study) content.href = 'review/chapter-02-landscapes.html';
       const original = chapter.blocks.flat().find(block => block.type === 'image');
-      const asset = ready ? art.chapters['chapter-01'][0] : original;
+      const asset = ready ? art.chapters['chapter-01'][0] : study ? {src:'images/chapter-02-landscapes/shot-01.png',width:1536,height:1024,alt:{en:'The path from Crystal Lake toward Burrow Hill',es:'El sendero del lago Cristal hacia la colina de las madrigueras',ru:'Тропа от Кристального озера к Холму Нор'}} : original;
       if (asset) {
         const figure = document.createElement('figure');
         const image = document.createElement('img');
         image.src = asset.src;
         image.width = asset.width; image.height = asset.height;
-        image.alt = ready ? asset.alt[lang] : ui.original + ': ' + title;
+        image.alt = ready || study ? asset.alt[lang] : ui.original + ': ' + title;
         image.loading = index < 3 ? 'eager' : 'lazy'; image.decoding = 'async';
         figure.append(image); content.append(figure);
       } else {
@@ -59,7 +62,7 @@
       for (const [tag,cls,text] of [
         ['p','cover-number',window.readerLabels[lang].chapter + ' ' + String(index+1).padStart(2,'0')],
         ['h2','',title],
-        ['p','availability',ready ? ui.ready : (index === 1 ? ui.next : ui.planned) + (original ? ' · ' + ui.original : '')]
+        ['p','availability',ready ? ui.ready : study ? studyLabel : ui.planned + (original ? ' · ' + ui.original : '')]
       ]) { const node = document.createElement(tag); node.className = cls; node.textContent = text; content.append(node); }
       card.append(content); cards.push(card);
     });
