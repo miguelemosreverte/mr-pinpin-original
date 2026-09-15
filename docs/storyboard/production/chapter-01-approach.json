@@ -1,0 +1,39 @@
+{
+  "status": "new-approach-plates-awaiting-review",
+  "approvedDestination": "images/chapter-01-landscapes/shot-01-camera-02.png",
+  "approval": "User approved the lake-side camera view and requested it replace the earlier first image.",
+  "scope": "Two environment-only views preceding the approved lake-side view. No characters and no changes to the approved image.",
+  "tool": "built-in imagegen",
+  "generationOrder": [
+    50,
+    100
+  ],
+  "displayOrder": [
+    "approach-100m",
+    "approach-50m",
+    "shot-1"
+  ],
+  "distanceNote": "50m and 100m are approximate artistic camera-retreat intentions, not verified distances or a calibrated 3D reconstruction.",
+  "plates": [
+    {
+      "distanceBeforeDestination": 50,
+      "image": "images/chapter-01-landscapes/approach-50m.png",
+      "reference": "images/chapter-01-landscapes/shot-01-camera-02.png",
+      "prompt": "Use case: illustration-story. The supplied image is the APPROVED destination viewpoint on a forest path above a dry lake. Create the view from roughly FIFTY METRES EARLIER on that SAME path, looking FORWARD toward this destination. Physically WALK THE CAMERA BACKWARDS along the trail by about 50m. Keep camera height about 80cm and a normal 35mm-equivalent lens. Do NOT merely widen the lens, zoom out, mirror the image, or keep the large foreground willow in place.\nSpatial continuity: in the approved image the path is to the right of a large leaning willow, with the dry lake below to the left. From this earlier position the old willow is now a SMALLER DISTANT LANDMARK ahead, left of the path, partially screened by intervening trees, around the upper middle distance. A modest pale glimpse of the DRY basin appears beyond the left-hand shrubs near that distant willow; the lake itself is small, not stretched alongside the whole 50m trail. The route travels from the open lower-centre/right foreground, gently bending through the forest toward the recognizable willow ahead. We have moved back beyond the lake's near end into the woods.\nNew foreground revealed by the retreat: nearby ordinary deciduous trunks on both sides, a gently rising fern-covered bank to the right, moss and grasses on the left, tiny white woodland flowers, scattered leaf litter and modest roots at the path edges. Keep the WALKING SURFACE continuous, narrow and pleasantly open in the lower half for future characters. Strong parallax: new nearby trunks frame the distant destination. The lake must NOT become a road and the path must NOT cross the lake floor. No extra lake, no new buildings, no fences.\nMatch reference morning light, foliage palette, intimate woodland scale and soft dimensional children's-book landscape treatment. Same morning world light direction; do not change the weather or season. Landscape 1536x1024, single image. Absolutely NO characters, people, mammals, birds, fish, insects, butterflies, faces or footprints. Empty environment only.",
+      "seconds": 32.7
+    },
+    {
+      "distanceBeforeDestination": 100,
+      "image": "images/chapter-01-landscapes/approach-100m.png",
+      "reference": "images/chapter-01-landscapes/approach-50m.png",
+      "prompt": "Use case: illustration-story, continuous woodland camera retreat.\nThe input image is the previous camera position, roughly 50m before an approved willow-and-dry-lake viewpoint. Now WALK THIS CAMERA BACK another roughly FIFTY METRES along the SAME trail, for the EARLIEST opening view, about 100m before the lake-side destination. Continue looking FORWARD in the direction of travel toward that destination. Keep the same normal 35mm-equivalent lens and camera height about 80cm. This is a backward dolly/walk revealing NEW near forest and occlusion, not merely zooming out or widening the lens.\nThe path starts broad enough for future characters in the lower centre, then narrows naturally through a gentle S-bend, turning toward the upper-right middle distance into the location shown in reference. Reveal one additional stretch of forest path before the reference foreground trunks. Keep walkable soil mostly clear, edges with small roots, leaves and modest stones. A fern-covered uphill bank stays on the right; lower wooded terrain stays to the left. New closer deciduous trunks, mossy roots and layered shrubs frame both sides and partly screen the distant path.\nAt this distance the lake and old willow should be ALMOST ENTIRELY HIDDEN by the bend and intervening trees. At most a tiny soft glimpse of hanging willow foliage very far ahead near the bright clearing; do NOT put another large willow near this new camera and do NOT show a broad lake or dry basin alongside the foreground. The growing concealment makes approaching the later lake reveal meaningful. Preserve believable continuous topography, not a new road or different biome.\nMatch the supplied woodland color, species character, tiny white flowers, early-morning warm light filtering through leaves and soft dimensional storybook material rendering. Foreground and middle ground readable with normal perspective, no heavy bokeh, no fisheye, no bird's-eye view, no dramatic mountain terrain. Landscape 1536x1024 single image. No people, animals, birds, fish, insects, butterflies, faces, footprints, buildings, signs or text. Empty background plate reserved for later character placement.",
+      "seconds": 27.1
+    }
+  ],
+  "inspection": [
+    "50m view: willow smaller ahead, foreground trunks intervene, dry basin glimpsed to left.",
+    "100m view: more forest between camera and destination, lake concealed by foreground vegetation, narrow path continues toward distant willow.",
+    "Both have open walking surface and no visible animals or characters.",
+    "Location details are generative approximations; approved destination is retained byte-for-byte."
+  ]
+}
