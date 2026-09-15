@@ -1,8 +1,15 @@
 # Mr. PinPin Design Comparison
 
-A local, scroll-first HTML report examining historical character treatments and
+A scroll-first HTML report examining historical character treatments and
 testing them through complete chapter sequences. Open `index.html` directly in
 a browser; no build or dev server is required.
+
+Published report: https://miguelemosreverte.github.io/mr-pinpin-original/comparison/
+
+The desktop chapter sidebar becomes a horizontal strip on smaller screens.
+All content stays visible in reading order. Native fragment links support
+bookmarks and browser history; `navigation.js` only adds a scroll-following
+highlight. Without JavaScript, the links still work.
 
 ## Contents
 
@@ -42,6 +49,7 @@ Use an existing Playwright installation and installed Google Chrome:
 
 ```sh
 PLAYWRIGHT_MODULE=/absolute/path/to/playwright node docs/comparison/verify.cjs
+PLAYWRIGHT_MODULE=/absolute/path/to/playwright node docs/comparison/verify-navigation.cjs
 ```
 
 Run from the repository root. Checks cover 1440, 1024, 768, 390 and 320px viewports,
@@ -49,6 +57,10 @@ image loading, chapter pairing, preserved source paragraphs, local file links,
 overflow, duplicate IDs and text/image overlap. Screenshots go to the OS temporary
 directory. These automated checks do **not** establish correct illustrated anatomy;
 that requires visual inspection.
+
+The navigation suite also checks direct links, browser Back, manual-scroll
+highlighting, sticky positioning and mobile link visibility. Set `REPORT_URL`
+to the published report URL to run its desktop/mobile deployment checks.
 
 ## Repository Boundary
 
