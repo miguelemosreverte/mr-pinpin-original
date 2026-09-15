@@ -6,9 +6,9 @@
   <meta name="theme-color" content="#fbfcfa">
   <meta name="description" content="Мистер Пин-Пин. Полная история в иллюстрациях.">
   <title>Мистер Пин-Пин</title>
-  <link rel="stylesheet" href="reader.css">
+  <link rel="stylesheet" href="reader.css?v=chapter-one-v2">
   <script src="locale.js" defer></script>
-  <script src="reader.js" defer></script>
+  <script src="reader.js?v=chapter-one-v2" defer></script>
 </head>
 <body>
   <header class="toolbar">
@@ -18,9 +18,9 @@
       <button data-lang="es" title="Español" aria-label="Español" aria-pressed="false"></button>
       <button data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="true"></button>
     </div>
-    <button id="contents-button" class="icon-button" title="Оглавление" aria-label="Оглавление"><i data-lucide="list"></i></button>
   </header>
   <div class="reading-progress" aria-hidden="true"><div id="progress"></div></div>
+  <nav class="chapter-strip" aria-label="Главы"><ol id="chapter-list"></ol></nav>
   <main id="reader" aria-busy="true"><p class="loading" role="status">Загрузка книги…</p></main>
   <nav class="chapter-navigation" aria-label="Навигация по главам">
     <button id="previous" class="icon-button" title="Предыдущая глава" aria-label="Предыдущая глава"><i data-lucide="arrow-left"></i></button>
@@ -28,10 +28,7 @@
     <button id="next" class="icon-button" title="Следующая глава" aria-label="Следующая глава"><i data-lucide="arrow-right"></i></button>
   </nav>
   <footer><a id="original-link" href="../">Оригинальная книга</a><span id="edition-count"></span></footer>
-  <dialog id="contents" aria-labelledby="contents-title">
-    <div class="dialog-header"><h2 id="contents-title">Оглавление</h2><button id="close-contents" class="icon-button" title="Закрыть" aria-label="Закрыть"><i data-lucide="x"></i></button></div>
-    <ol id="chapter-list"></ol>
-  </dialog>
+
   <script src="icons.js"></script>
 </body>
 </html>

@@ -1,11 +1,72 @@
 {
   "chapters": {
     "chapter-01": [
-      {"scene":1,"src":"images/chapter-01/scene-01.png","width":1536,"height":1024,"alt":{"ru":"Мистер Пин-Пин гуляет по Шепчущему лесу среди бабочек и зайцев.","en":"Mr. PinPin walks through the Whispering Forest among butterflies and rabbits.","es":"El señor PinPin pasea por el Bosque Susurrante entre mariposas y conejos."}},
-      {"scene":2,"src":"images/chapter-01/scene-02.png","width":1536,"height":1024,"alt":{"ru":"Лулу и обеспокоенные друзья показывают Пин-Пину высохшее озеро.","en":"Lulu and the worried animals show PinPin the dried-up lake.","es":"Lulú y los animales preocupados muestran a PinPin el lago seco."}},
-      {"scene":3,"src":"images/chapter-01/scene-03.png","width":1536,"height":1024,"alt":{"ru":"Пин-Пин размышляет о магии своей золотой иголки.","en":"PinPin considers the magic of his golden quill.","es":"PinPin reflexiona sobre la magia de su púa dorada."}},
-      {"scene":4,"src":"images/chapter-01/scene-04.png","width":1536,"height":1024,"alt":{"ru":"Пин-Пин рисует золотой круг, и из земли начинает подниматься вода.","en":"PinPin draws a golden circle, and water begins to rise from the earth.","es":"PinPin dibuja un círculo dorado y el agua empieza a brotar de la tierra."}},
-      {"scene":5,"src":"images/chapter-01/scene-05.png","width":1536,"height":1024,"alt":{"ru":"Друзья радуются у вновь наполненного Кристального озера.","en":"The friends celebrate beside the restored Crystal Lake.","es":"Los amigos celebran junto al Lago de Cristal, lleno de agua otra vez."}}
+      {
+        "scene": 1,
+        "src": "images/chapter-01-v2/scene-01.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": {
+          "ru": "Пин-Пин и зайка Лулу встречаются на лесной тропинке среди бабочек; на спине ежика одна золотая иголка.",
+          "en": "PinPin and Lulu meet on a forest path among butterflies; one golden quill stands among his brown quills.",
+          "es": "PinPin y Lulú se encuentran en un sendero entre mariposas; una sola púa dorada destaca en su espalda."
+        }
+      },
+      {
+        "scene": 2,
+        "src": "images/chapter-01-v2/scene-02.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": {
+          "ru": "Лулу показывает Пин-Пину высохшее Кристальное озеро; друзья обеспокоены.",
+          "en": "Lulu shows PinPin the dry Crystal Lake while their friends look worried.",
+          "es": "Lulú muestra a PinPin el Lago de Cristal seco; sus amigos están preocupados."
+        }
+      },
+      {
+        "scene": 3,
+        "src": "images/chapter-01-v2/scene-03.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": {
+          "ru": "Пин-Пин задумчиво стоит у сухого озера, его единственная золотая иголка видна на спине.",
+          "en": "PinPin thinks beside the dry lake, with his single golden quill still on his back.",
+          "es": "PinPin reflexiona junto al lago seco, con su única púa dorada en la espalda."
+        }
+      },
+      {
+        "scene": 4,
+        "src": "images/chapter-01-v2/scene-04.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": {
+          "ru": "Пин-Пин своей золотой иголкой прочерчивает круг на сухом дне озера.",
+          "en": "PinPin scratches a circle into the dry lake bed with his golden quill.",
+          "es": "PinPin traza un círculo en el lecho seco del lago con su púa dorada."
+        }
+      },
+      {
+        "scene": 5,
+        "src": "images/chapter-01-v2/scene-05.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": {
+          "ru": "Из центра круга поднимается чистая вода; Пин-Пин держит золотую иголку в лапке.",
+          "en": "Clear water rises from the center of the circle while PinPin holds the quill in one paw.",
+          "es": "Del centro del círculo brota agua limpia; PinPin sostiene la púa con una patita."
+        }
+      },
+      {
+        "scene": 6,
+        "src": "images/chapter-01-v2/scene-06.png",
+        "width": 1536,
+        "height": 1024,
+        "alt": {
+          "ru": "Кристальное озеро вновь полно воды; друзья купаются и пьют, а Пин-Пин улыбается на берегу.",
+          "en": "Crystal Lake is full again; friends splash and drink while PinPin smiles on the bank.",
+          "es": "El Lago de Cristal vuelve a estar lleno; los amigos juegan y beben mientras PinPin sonríe desde la orilla."
+        }
+      }
     ]
   },
   "scenes": {
@@ -31,7 +92,12 @@
       },
       {
         "paragraphs": [
-          "Подойдя к высохшему озеру и, видя, как его друзья наблюдают за ним, Пин-Пин нарисовал большой круг на дне бывшего озера своей золотой иглой. Вскоре из центра круга начала подниматься вода, наполнив озеро до краев."
+          "Подойдя к высохшему озеру и, видя, как его друзья наблюдают за ним, Пин-Пин нарисовал большой круг на дне бывшего озера своей золотой иглой."
+        ]
+      },
+      {
+        "paragraphs": [
+          "Вскоре из центра круга начала подниматься вода, наполнив озеро до краев."
         ]
       },
       {
