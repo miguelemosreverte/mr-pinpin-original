@@ -1,0 +1,69 @@
+{
+  "status": "awaiting-director-review",
+  "scope": "Four environment-only camera studies for requested shots 1, 2, 3, 5. No characters composited. Published chapter and original text unchanged.",
+  "tool": "built-in imagegen",
+  "generationOrder": [
+    2,
+    1,
+    3,
+    5
+  ],
+  "intendedLocation": {
+    "lake": "Small shallow irregular woodland lake, proposed 18m by 12m; a visual concept, not measured geometry.",
+    "landmarks": "Leaning willow on left; pale stone group and reeds across basin to right.",
+    "light": "Warm early-morning light from upper right."
+  },
+  "shots": [
+    {
+      "n": 1,
+      "title": "Forest approach",
+      "alt": "An empty winding woodland path bordered by ferns and white flowers, leading toward a sunlit willow.",
+      "camera": "Intended low approach viewpoint, 25cm camera height and 35mm equivalent lens.",
+      "staging": "Open central path in the lower half.",
+      "image": "images/chapter-01-landscapes/shot-01.png",
+      "reference": "images/chapter-01-landscapes/shot-02.png",
+      "prompt": "Children's book ENVIRONMENT-ONLY cinematography plate, soft dimensional miniature woodland aesthetic, believable botanical shapes and natural materials, gentle painterly detail rather than hyper-sharpened photography. Landscape 1536x1024 single image, no panels or text. Early morning warm sunlight from upper right, fresh green foliage, cool soft shadows, readable foreground and middle distance, no heavy blur. ABSOLUTELY NO fauna: no characters, people, mammals, birds, insects, butterflies, fish, animal silhouettes, faces, footprints, toys, statues, buildings or props. Leave usable naturally open ground for later character compositing, with no character-shaped shadows.\nSHOT 1: FOREST APPROACH. Reference image establishes the location, morning light, woodland materials and visual treatment; generate a NEW CAMERA POSITION in that same woodland, NOT the same lake view. Move camera several meters BACK along the approach path, before the lake is revealed. 35mm equivalent lens at 25cm above the path, looking forward through ferns and mature deciduous trees. A gently winding earth path fills the lower central half, broad enough in the near foreground for two small woodland characters to meet later. It bends around the large willow ahead on the left toward a brighter clearing in the upper-right middle distance. Hanging willow leaves glimpse that destination, but no full lake reveal yet. Dew on grasses and a few tiny white flowers, roots limited to path edges, mostly smooth usable centre ground, realistic small stones, rich forest depth. Clear unobstructed middle-foreground staging space across the path, no dense flowers across the action area. Same warm morning sunlight from upper right as the reference, same soft dimensional natural woodland style. A calm ground-level entrance into the story. Absolutely no animals, birds, insects, butterflies, figures, footprints, buildings or text. Empty landscape plate only.",
+      "seconds": 37.1
+    },
+    {
+      "n": 2,
+      "title": "Dry lake reveal",
+      "alt": "A shallow dry woodland lake basin, with a leaning willow on the left and pale stones beside reeds on the opposite shore.",
+      "camera": "Intended wide bank viewpoint, 50cm camera height and 28mm equivalent lens.",
+      "staging": "Open near bank at lower left.",
+      "image": "images/chapter-01-landscapes/shot-02.png",
+      "reference": null,
+      "prompt": "Children's book ENVIRONMENT-ONLY cinematography plate, soft dimensional miniature woodland aesthetic, believable botanical shapes and natural materials, gentle painterly detail rather than hyper-sharpened photography. Landscape 1536x1024 single image, no panels or text. Early morning warm sunlight from upper right, fresh green foliage, cool soft shadows, readable foreground and middle distance, no heavy blur. ABSOLUTELY NO fauna: no characters, people, mammals, birds, insects, butterflies, fish, animal silhouettes, faces, footprints, toys, statues, buildings or props. Leave usable naturally open ground for later character compositing, with no character-shaped shadows.\nSHOT 2: THE DRY LAKE REVEAL. Establish the geography of a small intimate woodland lake, roughly 18 meters long and 12 meters across, seen from its near southwestern bank looking northeast. It is entirely dried out: a shallow gently sloping irregular oval basin of pale brown cracked silt, not a deep crater or desert canyon. Whole opposite shore clearly visible. One old willow rooted on the far-left shore leans gently toward the centre, its hanging green branches framing the upper left. A recognizable group of three low rounded pale-gray stones sits at the far-right waterline, with reeds behind. Dense mixed deciduous woodland, ferns, grasses, tiny white flowers around the shoreline. The woodland path enters the near-left bank. Lens equivalent 28mm, camera 50cm above the near bank, not aerial; look slightly downward enough to see the dry floor. Lower-left quarter: a broad uncluttered gently sloped patch of earth reserved for future characters standing together, with a continuous walkable route down to the basin. Sparse foreground vegetation at the edges only; do not block the staging ground. Clearly shallow enclosed woodland geography, no mountains, no enormous body of water, no giant stones. Dry lake floor across centre and lower-right. No drawn circle yet, no water, no magic. Quiet discovery, not horror or ecological apocalypse.",
+      "seconds": 31.3
+    },
+    {
+      "n": 3,
+      "title": "Dry shoreline",
+      "alt": "A low view across cracked lakebed clay, with an exposed root and small stones in the foreground.",
+      "camera": "Intended low shoreline viewpoint, 15cm camera height and 50mm equivalent lens.",
+      "staging": "Dry mid-left foreground beside the cracks.",
+      "image": "images/chapter-01-landscapes/shot-03.png",
+      "reference": "images/chapter-01-landscapes/shot-02.png",
+      "prompt": "Children's book ENVIRONMENT-ONLY cinematography plate, soft dimensional miniature woodland aesthetic, believable botanical shapes and natural materials, gentle painterly detail rather than hyper-sharpened photography. Landscape 1536x1024 single image, no panels or text. Early morning warm sunlight from upper right, fresh green foliage, cool soft shadows, readable foreground and middle distance, no heavy blur. ABSOLUTELY NO fauna: no characters, people, mammals, birds, insects, butterflies, fish, animal silhouettes, faces, footprints, toys, statues, buildings or props. Leave usable naturally open ground for later character compositing, with no character-shaped shadows.\nSHOT 3: AT THE DRY SHORELINE. The supplied reference is the establishing shot of our lake. Photograph/render a genuinely closer, LOWER camera position in that SAME dry basin, not a duplicate wide shot. Camera is 15cm above the ground, 50mm equivalent lens, on the near shore pointed diagonally across a shallow depression toward the opposite woodland bank. Ground textures dominate the lower two thirds: small plates of cracked clay, a few smooth pebbles, one short exposed root at extreme lower left, sparse stranded reeds at the extreme right. Keep the middle-left foreground open and reasonably level for later placement of a small hedgehog pausing to examine the dry ground. Cracks have natural small scale, not huge fissures. Clear foreground and midground, moderate distant softness only. The same leaning willow and three pale stones remain in the distant upper strip, willow on left, stone group on right, matching the reference geography and upper-right morning light. The camera is closer to the silt floor: no panoramic full-lake composition, no aerial view, no changed shore shape. No water and no drawn circle yet. Quiet, intimate, tactile attention to the dry lake bed. No animals or figures of any kind, no insect, bird, butterfly, footprint or hand. Pure empty nature plate.",
+      "seconds": 36.1
+    },
+    {
+      "n": 5,
+      "title": "Water returning",
+      "alt": "A small pool of water wells up inside a circular mark on the dry lakebed, leaving open dry ground to the left.",
+      "camera": "Intended closer water viewpoint, 40cm camera height and 50mm equivalent lens.",
+      "staging": "Dry foreground to the left of the emerging pool.",
+      "image": "images/chapter-01-landscapes/shot-05.png",
+      "reference": "images/chapter-01-landscapes/shot-03.png",
+      "prompt": "Children's book ENVIRONMENT-ONLY cinematography plate, soft dimensional miniature woodland aesthetic, believable botanical shapes and natural materials, gentle painterly detail rather than hyper-sharpened photography. Landscape 1536x1024 single image, no panels or text. Early morning warm sunlight from upper right, fresh green foliage, cool soft shadows, readable foreground and middle distance, no heavy blur. ABSOLUTELY NO fauna: no characters, people, mammals, birds, insects, butterflies, fish, animal silhouettes, faces, footprints, toys, statues, buildings or props. Leave usable naturally open ground for later character compositing, with no character-shaped shadows.\nSHOT 5: THE FIRST WATER RETURNS. Input image is the reference for our low dry-shore camera, geography, vegetation and light. Move a little closer to the basin centre and tilt camera slightly downward: 50mm equivalent lens around 40cm above the ground. Create a closer narrative landscape plate where the FIRST small pool of crystal-clear water is spreading from the centre of a simple circle lightly scratched in the dry silt. Circle is about 1 metre in diameter, a plain imperfect shallow groove, NO symbols, no glowing ring, no golden objects. Circle and new water occupy the lower centre-right. A low gentle bubbling spring, only a few centimetres high, wells up at its centre with modest ripples; NOT a geyser, fountain jet, waterfall or giant splash. A thin advancing irregular water edge darkens the clay. Most of the surrounding basin is STILL DRY. Keep a broad flat dry area at lower-left beside the circle, reserved for future PinPin placement, not blocked by rocks or foliage. Shallow transparent water reveals submerged cracks. Retain the same leaning willow at left, pale stone group at far-right bank, far-bank reeds, dense woods and warm morning light from upper right as reference. These landmarks can remain in the upper background; main attention is the first water and the usable foreground. No new shore geometry, buildings, tools, props or quill. No animals of any kind, no insects, birds, butterflies, fish, people, footprints or character reflections. Pure landscape and water, ready for later compositing.",
+      "seconds": 35.7
+    }
+  ],
+  "reviewNotes": [
+    "No visible fauna or people in the four plates.",
+    "Camera heights, lens lengths, and lake dimensions are prompt intentions, not calibrated measurements.",
+    "Recurring willow and stone-group placement provides approximate continuity, but individual stones and vegetation vary; not a geometrically locked set.",
+    "Shot 5 renders the circle with a raised clay rim rather than only a shallow scratch. Keep this visible for director review; no automatic repair pass.",
+    "No character scale or placement is locked yet. Landscape plates can be retained unchanged as source assets for later compositing."
+  ]
+}
