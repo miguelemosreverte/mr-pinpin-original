@@ -1,0 +1,58 @@
+{
+  "status": "awaiting-director-review",
+  "scope": "Four additional environment plates appended after shot 5. Fish only in shots 8 and 9; no main characters or other fauna.",
+  "tool": "built-in imagegen",
+  "shots": [
+    {
+      "n": 6,
+      "title": "Water spreading",
+      "alt": "Water spreads across the middle of the lakebed, leaving a broad area of dry cracked earth in the foreground.",
+      "state": "Early spreading stage; broad exposed ground remains.",
+      "fish": false,
+      "image": "images/chapter-01-landscapes/shot-06.png",
+      "reference": "images/chapter-01-landscapes/shot-05.png",
+      "prompt": "Use case: precise-object-edit. Children's storybook background plate, landscape 1536x1024. Match supplied reference's soft dimensional woodland rendering, early morning sunlight from upper right, green willow and mixed trees, pale stone group on far right, ferns and reeds. No main characters, no mammals, no birds, no insects, no butterflies, no people or anthropomorphic objects. No text. Only fish may appear when specifically requested.\nSHOT 6: WATER SPREADS. Input is shot 5, the beginning of refilling. LOCK THE CAMERA: same viewpoint, framing, focal length, scale and positions of willow, far bank, stones, roots and foreground rocks. Advance only the water level to the next modest stage. The little circular pool has now overflowed into a much broader irregular shallow sheet covering approximately the middle THIRD of the visible basin, spreading left and toward the far shore. Its former clay ring is fully submerged, no raised circular barrier around the water. A broad band of DRY CRACKED EARTH remains in the lower foreground, along the left staging area and across the far edge. Water is transparent with darkened submerged cracks visible. Low concentric ripples show the spring still working but no vertical fountain or geyser. Visibly more water than reference, but emphatically not yet a full lake. Preserve all plants as they are; no new growth yet. No fish yet. No characters, footprints, or props.",
+      "seconds": 28.5
+    },
+    {
+      "n": 7,
+      "title": "Nearing the banks",
+      "alt": "The rising lake reaches toward the willow roots and pale shoreline stones, leaving a narrow muddy edge.",
+      "state": "Almost full; narrow exposed shoreline remains.",
+      "fish": false,
+      "image": "images/chapter-01-landscapes/shot-07.png",
+      "reference": "images/chapter-01-landscapes/shot-06.png",
+      "prompt": "Use case: precise-object-edit. Children's storybook background plate, landscape 1536x1024. Match supplied reference's soft dimensional woodland rendering, early morning sunlight from upper right, green willow and mixed trees, pale stone group on far right, ferns and reeds. No main characters, no mammals, no birds, no insects, no butterflies, no people or anthropomorphic objects. No text. Only fish may appear when specifically requested.\nSHOT 7: ALMOST TO THE BANKS. Input is shot 6 of this same lake partially refilling. LOCK the camera and all geography: identical framing and positions of willow trunk, hanging branches, far-right stones, background trees and foreground rocks. Increase the water level substantially from the reference. Now almost the entire basin is covered by a continuous calm body of water reaching very near the willow roots and the pale far-bank stones. Leave only a NARROW exposed crescent of wet dark cracked earth in the extreme near-left foreground and narrow mud strips at the far bank. Approximately two-thirds of the final depth, noticeably deeper and broader than previous stage. Submerged pebbles and cracks remain visible only through clear near-shore shallows; the centre has deeper green-gold reflections. Surface gently ripples without a fountain, no circular rim or marked ring. Preserve the same existing vegetation; it can look freshly watered but do not introduce water lilies or new dense plants yet. No fish yet. No animals, birds, insects, figures or props. Keep some usable dry near-left bank for later characters. Match light, color, texture, dimensions and lens of reference. This is rising WATER, not changed terrain or camera zoom.",
+      "seconds": 32.7
+    },
+    {
+      "n": 8,
+      "title": "The lake restored",
+      "alt": "The full woodland lake has fresh shoreline plants, water lilies and four small fish visible through the clear shallows.",
+      "state": "Normal water level, fresh aquatic and marginal growth.",
+      "fish": true,
+      "image": "images/chapter-01-landscapes/shot-08.png",
+      "reference": "images/chapter-01-landscapes/shot-07.png",
+      "prompt": "Use case: precise-object-edit. Children's storybook background plate, landscape 1536x1024. Match supplied reference's soft dimensional woodland rendering, early morning sunlight from upper right, green willow and mixed trees, pale stone group on far right, ferns and reeds. No main characters, no mammals, no birds, no insects, no butterflies, no people or anthropomorphic objects. No text. Only fish may appear when specifically requested.\nSHOT 8: NORMAL WATER LEVEL, LIFE RETURNS. Input shows the same woodland lake almost full. Keep the EXACT CAMERA POSITION, framing, willow, pale far-right stone group and background geography. Bring water to its NORMAL full level, just reaching existing green shoreline vegetation and lower willow roots, without flooding the forest or covering the path. The exposed strip of mud in the foreground becomes much narrower; keep a small firm bank patch at the extreme near left. Water is calm, clear green-blue with warm tree reflections.\nNow show gentle new plant growth: fresh reeds among existing ones at right edge, tender bright-green shoots along the watered bank, several small clusters of rounded water-lily leaves near the right and left shoreline, just two modest white water-lily blossoms. Some slender aquatic stems are visible through the near shallows. Do not make the lake densely overgrown; centre remains open water. Do not alter or enlarge mature trees.\nAdd a FEW SMALL NATURAL FRESHWATER FISH below the clear surface in the near foreground, silver-olive bodies with subtle amber fins, each about 10cm long in scene scale. Four or five at most, modest background wildlife, no oversized koi, no tropical reef species, no cartoon eyes, faces, smiles or clothing. They must be submerged and anatomically recognizable, not floating above water. Arrange them in the lower-left/centre shallows away from strongest reflected glare so they can be noticed without dominating the landscape. Fish are the ONLY animals allowed: no mammals, main characters, birds, insects, butterflies or frogs. Same morning light and rendering style.",
+      "seconds": 34.3
+    },
+    {
+      "n": 9,
+      "title": "Beneath the surface",
+      "alt": "A partly submerged view shows four fish among underwater plants, with the willow and far bank visible above the waterline.",
+      "state": "Same restored lake, new split-level camera position.",
+      "fish": true,
+      "image": "images/chapter-01-landscapes/shot-09.png",
+      "reference": "images/chapter-01-landscapes/shot-08.png",
+      "prompt": "Use case: precise-object-edit. Children's storybook background plate, landscape 1536x1024. Match supplied reference's soft dimensional woodland rendering, early morning sunlight from upper right, green willow and mixed trees, pale stone group on far right, ferns and reeds. No main characters, no mammals, no birds, no insects, no butterflies, no people or anthropomorphic objects. No text. Only fish may appear when specifically requested.\nSHOT 9: CAMERA PARTLY SUBMERGED. Supplied reference is the restored woodland lake with natural fish and new water plants. NEW CAMERA POSITION: move into its near-left shallows and lower a wide-angle dome camera through the surface for a single coherent OVER-UNDER split-level view. This is one continuous scene, NOT two panels or a cutaway diagram. Landscape 1536x1024. Gently rippling waterline crosses around the upper THIRD of frame; lower TWO THIRDS are genuinely UNDERWATER and easy to inspect. Upper third still shows the familiar leaning willow to left, opposite forest bank and pale stones to right, reeds and a few white water lilies near edges, same sun from upper right. Natural small waterline refraction, not heavy distortion, no glass tank edge.\nUnderwater: transparent fresh green-blue water, shallow sloping bed of rounded pebbles and softened clay, delicate caustic sunlight patterns, slender rooted aquatic stems at sides, long lily stems reaching surface. The central viewing corridor stays clear. Show FOUR small natural silver-olive freshwater fish with muted amber fins, matching reference species, swimming horizontally at slightly different depths. Two nearer fish are clearly resolved in three-quarter/side view with believable scales, small natural eyes, gill covers and coherent fins and tails; two smaller fish further back. Natural fish, not characters, no exaggerated eyes or smiles. Fish float within the WATER COLUMN, not on bottom or above surface. Keep full bodies visible, no cropped noses or tails. Quiet peaceful visibility, no murk, no bubble curtain, no aggressive fish, no ocean corals, no aquarium furniture. NO other animals, people, birds, insects, frogs, turtles, or main story characters. Preserve woodland scale and grounded dimensional storybook aesthetic, no text or frame.",
+      "seconds": 28.2
+    }
+  ],
+  "review": [
+    "Visually checked increasing water coverage across shots 5, 6, 7 and 8.",
+    "Willow at left and pale far-bank stone group at right remain recognizable. Exact pixels and geometry are not locked across generative edits.",
+    "New plants and fish appear in restored shots 8 and 9, per user request. Fish are background wildlife, not anthropomorphic characters.",
+    "Shot 9 uses an over-under camera with a visible surface line and four fully visible fish below it.",
+    "Earlier plates, original book text and published chapter reader remain unchanged."
+  ]
+}
