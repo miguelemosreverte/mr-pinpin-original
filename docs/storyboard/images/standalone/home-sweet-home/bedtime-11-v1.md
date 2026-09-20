@@ -1,0 +1,42 @@
+# Warm towels
+
+Status: review candidate, not approved
+
+- Reading order: 11
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T17:39:40.850Z
+- Completed (UTC): 2026-09-20T17:40:17.369Z
+- Wall time: 36.519 seconds
+- Saved image: /Users/miguel_lemos/.codex/tmp/pinpin-bedtime-chapter-03/candidates/bedtime-11-v1.png
+- Size: 1536 x 1024
+- SHA-256: 66a68f0b190c84110359e9becd8d93385445753f4e4fbfaefa8a3c1f38e65e8e
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0bfdf-54d6-7db1-858e-5711007ef7a2/exec-640d90c3-b35c-4b94-adde-671228351fea.png
+
+## Source Beat
+
+Mama wraps baby while older boy waits wrapped
+
+## Camera Direction
+
+Intimate medium at dry mat in front of tub
+
+## Future Character Space
+
+Baby on Mama lap, older boy separately right
+
+## References
+
+- /Users/miguel_lemos/.codex/tmp/pinpin-bedtime-chapter-03/candidates/bedtime-08-v2.png: Established bathing room
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-09-v2.png: Facial identities only
+
+## Exact Tool Prompt
+
+```text
+Use case: illustration-story. One polished 1536x1024 landscape storybook illustration, no text, no collage. Match the references' warm dimensional textured rendering, substantial curved timber architecture, chestnut quills, cream faces, small dark noses and restrained tender expressions. Exactly three hedgehogs: Mama largest; older-boy PinPin 60% Mama height at same depth; tiny baby PomPom only 55% PinPin height. Natural SHORT animal forelegs and paws, two forelimbs and two hindlimbs per animal, no clothes except specified cream towels. No extra animals or Beaver, no duplicate bodies or limbs. Reference image 1 fixes this bathing nook's actual geometry: ONE low oval wooden bath tub on oval woven mat in center, small round blue-dusk window back-left, simple wooden washstand with ceramic basin on far-left wall, cream towels on wooden rail on RIGHT wall, amber light. Preserve these same furnishings and their relations while shifting the camera. Reference image 2 is only for the three characters' facial identities and age difference. Warm towels. Move the camera to an intimate medium view on dry mat in front of the same bath. Mama seated center-left, carefully wrapping TINY baby PomPom in one soft cream towel on her lap; her two short paws cradle the single towel around baby's small body, his little face visible above it. Older boy PinPin sits independently to RIGHT already snug in a separate cream towel, clearly almost twice baby's size, watching sleepily. Both boys are OUT of bath. Same now-empty wooden tub behind them, window back-left and towel rail right remain visible in soft focus. Tender maternal care, recognizable family, anatomically simple relaxed poses. Baby face only about HALF older boy's head size; baby body small enough to cradle easily on ONE of Mama's short forearms. Towel rail right retains two cream towels with green edge stripes; wall lantern right. Bowl washstand left. The tub is empty of animals, behind the family.
+```
+
+## Visual Review
+
+Selected after full inspection. Mama seated left holds tiny sleeping baby in cream striped towel; older boy separately seated right wrapped in own towel. Empty-of-animals same tub behind; established basin/window left and rail/lantern right retained. Two maternal forepaws cradle towel, two maternal hindpaws visible below; older boy has separate short paws and feet. Baby limbs completely wrapped/unverified. Tender quiet framing and correct small infant head.
+
+Reviewed (UTC): 2026-09-20T17:42:20.888Z

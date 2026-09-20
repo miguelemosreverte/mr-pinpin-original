@@ -1,0 +1,41 @@
+# The little evening begins
+
+Status: review candidate, not approved
+
+- Reading order: 2
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T17:34:04.000Z
+- Completed (UTC): 2026-09-20T17:34:47.000Z
+- Wall time: 43 seconds
+- Saved image: /Users/miguel_lemos/.codex/tmp/pinpin-bedtime-chapter-03/candidates/bedtime-02-v2.png
+- Size: 1536 x 1024
+- SHA-256: 1ca11dd88fbbde4b1db46bb03adf28e2c44b066692f0e9b390fb6764cc1d7c2a
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0bfde-cb4b-7281-aba5-c12bc68af0f4/exec-9f77bdad-7c52-4b50-a265-01db479aa3d0.png
+
+## Source Beat
+
+Baby wakes gently from his lap nap.
+
+## Camera Direction
+
+Wider slightly elevated kitchen table view.
+
+## Future Character Space
+
+Exactly three family hedgehogs.
+
+## References
+
+- /Users/miguel_lemos/.codex/tmp/pinpin-bedtime-chapter-03/candidates/bedtime-02-v1.png: Edit target; preserve all except baby size
+
+## Exact Tool Prompt
+
+```text
+Use case: precise-object-edit. Edit only the tiny baby hedgehog PomPom on Mama's lap in this image. Make his entire body, head and quills 25 percent smaller while preserving the sleepy yawn and his placement safely in Mama's encircling forepaw. Baby should be unmistakably a tiny infant, roughly half older boy PinPin's full body height at matching depth; Mama and PinPin keep exactly their current size, anatomy, poses, faces. Keep the room, camera, table, stools, mugs, basket, lighting and every other detail unchanged. Natural continuous Mama forepaw around the now smaller baby, no added limbs. Landscape 1536x1024, no text.
+```
+
+## Visual Review
+
+Selected. Three distinct family hedgehogs; baby head/upper body visibly reduced and sleepy yawn retained. Mama cradles him, PinPin watches. Recognizable same kitchen and larger room framing. Exact ratio cannot be established with seated and partially occluded bodies; no confirmed extra limbs.
+
+Reviewed (UTC): 2026-09-20T17:35:30.762Z

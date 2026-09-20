@@ -1,0 +1,31 @@
+{
+  "id": "bedtime-15-v2",
+  "order": 15,
+  "title": "Turning down the quilt",
+  "beat": "Same bedroom/bed: Mama and PinPin draw back sage quilt while baby waits nearby on mat. Quiet preparation, one physical quilt.",
+  "camera": "Foot-of-bed continuity view",
+  "staging": "Same bedroom/bed: Mama and PinPin draw back sage quilt while baby waits nearby on mat. Quiet preparation, one physical quilt.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/.codex/tmp/pinpin-bedtime-chapter-03/candidates/bedtime-15-v1.png",
+      "role": "EDIT TARGET preserve all except reduce baby at far right"
+    },
+    {
+      "path": "/Users/miguel_lemos/.codex/tmp/pinpin-bedtime-chapter-03/candidates/bedtime-14-v1.png",
+      "role": "REFERENCE baby scale relative older brother"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. Edit image1, output1536x1024 landscape. ONLY reduce the baby hedgehog at far IMAGE RIGHT to about 65% of his current height and width, keeping his feet on the same rug floor plane. His current size is too large: baby PomPom should be just about half the height of older PinPin at image-left. Use image2 for correct tiny baby age and size. Preserve exactly all other pixels visually: Mama and PinPin folding back sage quilt, their anatomy, bed, room window lamp and doorway, lighting and texture. Baby retains his lovely tiny face, looking up, short paws, rounded little quills, no clothing. Exactly three hedgehogs. No text.",
+  "output": "/Users/miguel_lemos/.codex/tmp/pinpin-bedtime-chapter-03/candidates/bedtime-15-v2.png",
+  "alt": "Turning down the quilt",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0bfe0-0db8-7741-9bdf-b4d48e50fc46/exec-9029df96-403e-4f17-abf4-83a2e64f759a.png",
+  "startedAt": "2026-09-20T17:36:29.000Z",
+  "finishedAt": "2026-09-20T17:37:14.000Z",
+  "seconds": 45,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "f8c36c4f307fdb6260b715b4e877b3a6dc1fd31fcc4a2da94324953c771ccb95",
+  "review": "Mama and older PinPin turn back one sage quilt; tiny PomPom waits on rug. Version2 visibly corrects oversized baby from version1 while preserving room and action. No confirmed duplicate visible limbs; hidden attachments remain unverified. User approval pending.",
+  "reviewedAt": "2026-09-20T17:48:36.061Z"
+}

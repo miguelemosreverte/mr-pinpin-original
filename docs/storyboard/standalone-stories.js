@@ -15,6 +15,7 @@
   }
 
   function complete(story, chapter = story?.number ?? 1) {
+    if (story?.id === 'home-sweet-home') return completeBedtime(story);
     const number = chapterNumber(chapter);
     if (!number || story?.id !== 'timber-tractor' ||
         (number === 1 ? story.number !== undefined && story.number !== 1 : story.number !== 2) ||
@@ -62,6 +63,22 @@
       spread.scenes.every(Number.isInteger) && spread.scenes.join(',') === groups[index].join(','));
   }
 
+  function completeBedtime(story) {
+    const bedtimePrefix = 'images/standalone/home-sweet-home/';
+    return story?.id === 'home-sweet-home' && story.number === 3 && localized(story.title) &&
+      localized(story.cover) && languages.every(lang => story.cover[lang] === bedtimePrefix + 'bedtime-01-v1.png') &&
+      Array.isArray(story.scenes) && story.scenes.length === 20 &&
+      story.scenes.every((scene, index) => {
+        const id = 'bedtime-' + String(index + 1).padStart(2, '0');
+        return scene?.id === id && [1, 2].some(v => scene.image === bedtimePrefix + id + '-v' + v + '.png') &&
+          scene.width === 1536 && scene.height === 1024 && localized(scene.alt) &&
+          languages.every(lang => Array.isArray(scene.paragraphs?.[lang]) && scene.paragraphs[lang].length > 0 &&
+            scene.paragraphs[lang].every(p => typeof p === 'string' && p.trim()));
+      }) && Array.isArray(story.spreads) && story.spreads.length === 20 &&
+      story.spreads.every((spread, index) => spread?.style === 'bedtime' && spread.paper === 'landscape' &&
+        Array.isArray(spread.scenes) && spread.scenes.length === 1 && spread.scenes[0] === index);
+  }
+
   // Source parts retain their production IDs; the reader receives one continuous edition.
   function compose(opening, home) {
     if (!complete(opening, 1) || !complete(home, 2)) return null;
@@ -74,6 +91,14 @@
   }
 
   async function load(id, legacyChapter) {
+    if (id === 'home-sweet-home') {
+      try {
+        const response = await fetch('stories/home-sweet-home.json', {cache:'no-cache'});
+        if (!response.ok) return null;
+        const story = await response.json();
+        return completeBedtime(story) ? story : null;
+      } catch { return null; }
+    }
     if (id !== 'timber-tractor' || !chapterNumber(legacyChapter)) return null;
     try {
       const parts = await Promise.all(['', '-chapter-02'].map(async suffix => {
@@ -93,5 +118,5 @@
     };
   }
   window.standaloneStories = {complete, compose, load, edition,
-    available:async () => [await load('timber-tractor')].filter(Boolean)};
+    available:async () => (await Promise.all(['timber-tractor', 'home-sweet-home'].map(id => load(id)))).filter(Boolean)};
 })();
