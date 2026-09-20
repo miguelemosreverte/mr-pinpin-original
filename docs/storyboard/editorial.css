@@ -14,7 +14,7 @@ main { width:min(100%,920px); }
 .scene-art img { width:100%; height:auto; }
 .prose { padding:10px 24px 0; max-width:790px; font-size:19px; line-height:1.7; }
 .prose p { margin:14px 0; }
-#scene-3 .prose p:last-child { font-style:italic; }
+[data-chapter="chapter-01"] #scene-3 .prose p:last-child { font-style:italic; }
 [data-chapter="chapter-02"] #scene-3 .prose p:last-child { font-style:normal; }
 [data-chapter="chapter-02"] .spread-pause .asterism,
 [data-chapter="chapter-02"] .spread-reveal .asterism { visibility:hidden; }

@@ -23,6 +23,15 @@ select { max-width:100%; border-bottom:1px solid #aebdb4; }
 .chapter-cover .availability { font:13px/1.5 system-ui,sans-serif; margin:0; color:#67746e; }
 .chapter-cover.published .availability { color:#26644e; }
 #library-status:empty { display:none; }
+.library-band-title { margin:0 0 20px; font:600 22px/1.3 Georgia,serif; }
+#standalone-adventures { padding:0 0 32px; margin:0 0 32px; border-bottom:1px solid #dce4dd; }
+.adventure-cover { min-width:0; }
+.adventure-cover a { display:block; color:inherit; text-decoration:none; }
+.adventure-cover figure { margin:0 0 14px; aspect-ratio:2 / 3; background:#edf1ed; }
+.adventure-cover img { display:block; width:100%; height:100%; object-fit:contain; }
+.adventure-cover h3 { font:600 23px/1.2 Georgia,serif; margin:0 0 10px; overflow-wrap:anywhere; text-wrap:balance; }
+.adventure-cover a:hover h3 { text-decoration:underline; text-underline-offset:4px; }
+.adventure-cover .availability { font:13px/1.5 system-ui,sans-serif; margin:0; color:#26644e; }
 @media(max-width:850px) { .chapter-library { grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px 20px; } }
 @media(max-width:520px) {
   .library-heading,.library-main { padding:20px 16px; }

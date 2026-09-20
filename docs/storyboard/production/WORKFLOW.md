@@ -61,3 +61,13 @@ JOURNAL_PLAN=docs/storyboard/production/chapter-02-completion.json node scripts/
 ```
 
 Failure records use the intended image basename plus `-failed-01`, `-failed-02`, and so on, with Markdown and JSON but no invented image file. They are listed separately in the report. Successful output durations include rejected images; they exclude failed calls whose model-processing duration is unknown. Do not call a run with a rejected character composition a perfect one-shot chapter.
+
+## Standalone Adventures: Timber Tractor
+
+The timber-tractor story is original fiction, not another numbered chapter or a translation of the original book. It keeps its own trilingual story manifest and appears in a separate library band. Its approved title illustration fixes the visual direction; clean track, cab, loading, bridge and picnic environments then support the scene sequence. The beaver driver and PinPin share a cast reference, with a second reference establishing their separate seats inside the cab.
+
+Review small faces at an enlarged scale. The travel illustration looked convincing as a whole, but Miguel identified PinPin's malformed face inside the windshield. A face-only version corrects that area while keeping the rest of the user-accepted scene. Independent review also caught beaver features becoming less distinct in distant cab portraits and round logs becoming squared timber before the story described sawing. Preserve original candidates, register targeted edits as versioned siblings, and record which improvements are actually visible. Tiny teeth and hidden limbs cannot be certified merely because the prompt requested them.
+
+Track object state as well as character identity: empty trailer, loading, strapped logs with folded crane, travel, empty trailer with round timber on the bank, repaired bridge, and picnic. Narration must match the state in the picture. The tractor remains on the bank; the small footbridge is for paws. The final question and willow-twig answer occupy separate print pages.
+
+The [standalone production journal](../review/timber-tractor-production.html) combines independently generated scenes chronologically without pretending that summed overlapping tool-call times are elapsed project time. Every output and failed request retains its prompt and adjacent records. Publication validates files before an atomic Pages release; the reader does not make a separate HEAD request for every picture before showing the story.
