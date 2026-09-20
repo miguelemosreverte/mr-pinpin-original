@@ -1,0 +1,28 @@
+{
+  "id": "scene-08",
+  "order": 8,
+  "title": "Wooden Passengers",
+  "kind": "machinery",
+  "beat": "The load is securely strapped and the crane folded before travel.",
+  "camera": "Closealongside trailerload at1.2m showing barkstraps stakes, cabnotinframe.",
+  "staging": "Fourlogs lyinglengthwise, twofastenedstraps; crane foldedbackground, nocharactersinframe.",
+  "alt": "Strong straps hold the oak logs securely between the trailer's stakes, with the crane folded away.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/plates/loading.png",
+      "role": "Clean machine and site baseline."
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+      "role": "Approvedloadedtrailertextureandfoldedcrane,machine only."
+    }
+  ],
+  "prompt": "Use case: illustration-story. Show a satisfying close-up of the completed timber load on this tractor's stake-sided trailer before departure. Camera at the height of the trailer bed looking obliquely along the bark-covered oak logs. FOUR short heavy logs lie lengthwise, snugly contained between the steel side stakes. TWO broad dark-orange securing straps run across the whole log bundle and down to visible metal ratchet fasteners anchored to the trailer rails. Show clean cut ends, growth rings, lichen, bark texture and firm strap contact with the wood. Farther back above the front end of the load, the compact yellow loading crane is folded and its empty grapple stowed. Crop away the cab and all characters; this scene is about the timber and its secure fastenings. Soft forest greenery, fern edges and warm late-morning reflected light from the same woodland working site. Detailed dimensional children's-book realism, no oversized white highlights. Landscape1536x1024, one illustration with no title, labels or panels.",
+  "output": "docs/storyboard/images/standalone/timber-tractor/scene-08.png",
+  "status": "tool-error-no-output",
+  "tool": "built-in imagegen",
+  "startedAt": "2026-09-20T10:14:47.940Z",
+  "observedAt": "2026-09-20T10:15:46.137Z",
+  "error": "image generation failed: network error sending request for images/edits; no output",
+  "result": null
+}

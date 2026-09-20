@@ -1,0 +1,73 @@
+{
+  "title": "Mr. PinPin and the Timber Tractor: Targeted Art Corrections",
+  "scope": "Three immutable correction siblings after independent review: small-cab beaver identity in scenes 06/07/11 and delivered cargo form in scene 11. One built-in edit per frame; parent selects reader assets.",
+  "shots": [
+    {
+      "id": "scene-06-v2",
+      "order": 6,
+      "title": "Scene 06: Beaver identity correction",
+      "beat": "The beaver safely operates the crane while PinPin stays in his passenger seat.",
+      "camera": "Preserve the exact original frame, camera, perspective, exposure and composition.",
+      "staging": "Both characters remain seated in the cab, with unchanged bodies, controls and machinery action.",
+      "alt": "The beaver operates a yellow crane lifting a round log while PinPin sits safely inside the tractor cab.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-06.png",
+          "role": "Exact edit target: preserve the entire frame except the specified corrections."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Beaver head identity only: broad muzzle, small paired incisors, fine whiskers, chestnut fur and small round ears; do not copy pose, scale or scene."
+        }
+      ],
+      "prompt": "Use case: identity-preserve.\nMake one restrained edit of reference image 1 (scene 06), preserving its entire landscape frame at 1536 x 1024. Reference image 2 (scene 03) is ONLY the established beaver identity, not a composition or pose reference.\n\nCorrect the small driver's HEAD ONLY, in its existing cab position and at its existing scale and angle. Match scene 03's warm chestnut beaver face: a broad beaver muzzle, two small distinct natural incisors visible just below the upper lip, fine readable whiskers, small round ears, the same gentle capable expression. Keep teeth modest and proportionate, never huge cartoon teeth. Keep the blue work vest, body, paws, controls, seated posture and eyeline unchanged. The driver must read as the established beaver rather than a bear. Do not enlarge his head or move him closer to the camera. Do not add a visible tail through the cab.\n\nOutside the beaver head, preserve reference image 1 as faithfully as possible: PinPin's exact face, quills, body and passenger position; both characters safely inside the cab; red tractor, yellow boom, dark steel jaws, glass, wheels, stakes, existing logs and trailer load state, ground, trees, stream, composition, camera, focus, texture, highlights, shadows, exposure and color. No new characters, no new scene, no clothing or ornament on PinPin, no machinery redesign, no text, no crop and no lighting polish. This is a targeted visual-continuity correction.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-06-v2.png"
+    },
+    {
+      "id": "scene-07-v2",
+      "order": 7,
+      "title": "Scene 07: Beaver identity correction",
+      "beat": "The beaver safely operates the crane while PinPin stays in his passenger seat.",
+      "camera": "Preserve the exact original frame, camera, perspective, exposure and composition.",
+      "staging": "Both characters remain seated in the cab, with unchanged bodies, controls and machinery action.",
+      "alt": "The beaver loads a third round log into the trailer while PinPin remains in his passenger seat.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-07.png",
+          "role": "Exact edit target: preserve the entire frame except the specified corrections."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Beaver head identity only: broad muzzle, small paired incisors, fine whiskers, chestnut fur and small round ears; do not copy pose, scale or scene."
+        }
+      ],
+      "prompt": "Use case: identity-preserve.\nMake one restrained edit of reference image 1 (scene 07), preserving its entire landscape frame at 1536 x 1024. Reference image 2 (scene 03) is ONLY the established beaver identity, not a composition or pose reference.\n\nCorrect the small driver's HEAD ONLY, in its existing cab position and at its existing scale and angle. Match scene 03's warm chestnut beaver face: a broad beaver muzzle, two small distinct natural incisors visible just below the upper lip, fine readable whiskers, small round ears, the same gentle capable expression. Keep teeth modest and proportionate, never huge cartoon teeth. Keep the blue work vest, body, paws, controls, seated posture and eyeline unchanged. The driver must read as the established beaver rather than a bear. Do not enlarge his head or move him closer to the camera. Do not add a visible tail through the cab.\n\nOutside the beaver head, preserve reference image 1 as faithfully as possible: PinPin's exact face, quills, body and passenger position; both characters safely inside the cab; red tractor, yellow boom, dark steel jaws, glass, wheels, stakes, existing logs and trailer load state, ground, trees, stream, composition, camera, focus, texture, highlights, shadows, exposure and color. No new characters, no new scene, no clothing or ornament on PinPin, no machinery redesign, no text, no crop and no lighting polish. This is a targeted visual-continuity correction.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-07-v2.png"
+    },
+    {
+      "id": "scene-11-v2",
+      "order": 11,
+      "title": "Scene 11: Beaver identity and delivered-log continuity",
+      "beat": "Delivered timber remains on the bank beside the broken footbridge, before sawing or fitting.",
+      "camera": "Preserve the exact original frame, camera, perspective, exposure and composition.",
+      "staging": "Both characters remain seated in the cab; tractor stays parked on land, trailer empty, grapple open. Three full-length round oak logs lie entirely on the bank.",
+      "alt": "A beaver and PinPin sit in a parked red tractor beside three delivered oak logs and a broken woodland footbridge.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-11.png",
+          "role": "Exact edit target: preserve the entire frame except the specified corrections."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Beaver head identity only: broad muzzle, small paired incisors, fine whiskers, chestnut fur and small round ears; do not copy pose, scale or scene."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-08.png",
+          "role": "Cargo form only: three full-length round bark-covered oak logs; do not copy the loaded trailer or straps."
+        }
+      ],
+      "prompt": "Use case: identity-preserve and precise-object-edit.\nMake one restrained edit of reference image 1 (scene 11), preserving its entire landscape frame at 1536 x 1024. Reference image 2 (scene 03) is ONLY the established beaver identity, not a composition or pose reference. Reference image 3 (scene 08) is ONLY the delivered cargo form.\n\nCorrect the small driver's HEAD ONLY, in its existing cab position and at its existing scale and angle. Match scene 03's warm chestnut beaver face: a broad beaver muzzle, two small distinct natural incisors visible just below the upper lip, fine readable whiskers, small round ears, the same gentle capable expression. Keep teeth modest and proportionate, never huge cartoon teeth. Keep the blue work vest, body, paws, controls, seated posture and eyeline unchanged. The driver must read as the established beaver rather than a bear. Do not enlarge his head or move him closer to the camera. Do not add a visible tail through the cab.\n\nOnly one additional correction: replace the entire existing mixed bank pile of squared beams, planks and short rounds with EXACTLY THREE full-length cylindrical oak logs matching the large round bark-covered logs in reference image 3. Two logs below and one above, lying together on the same dry bank in the existing pile area; preserve their natural bark, pale round cut ends, moss/lichen and full long length. These are the transported windfallen logs, not yet sawn into bridge boards. All three logs are entirely on land, clear of the stream and bridge. Remove every squared plank, beam and short round from the cargo pile. All delivered cargo must remain on the BANK; the tractor's trailer remains completely EMPTY and the raised grapple remains OPEN and empty. Keep the broken footbridge exactly broken as in image 1, including its missing approach decking; this is before repair. Tractor stays parked on land and never on the footbridge.\n\nOutside the beaver head and the cargo pile, preserve reference image 1 as faithfully as possible: PinPin's exact face, quills, body and passenger position; both characters safely inside the cab; red tractor, yellow boom, dark steel jaws, glass, wheels, stakes, empty trailer, ground, trees, stream, composition, camera, focus, texture, highlights, shadows, exposure and color. No new characters, no new scene, no clothing or ornament on PinPin, no machinery redesign, no text, no crop and no lighting polish. This is a targeted visual-continuity correction.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-11-v2.png"
+    }
+  ]
+}

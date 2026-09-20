@@ -1,0 +1,47 @@
+# PinPin's question
+
+Status: review candidate, not approved
+
+- Reading order: 17
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T10:23:01.019Z
+- Completed (UTC): 2026-09-20T10:23:43.447Z
+- Wall time: 42.428 seconds
+- Saved image: docs/storyboard/images/standalone/timber-tractor/scene-17.png
+- Size: 1536 x 1024
+- SHA-256: 936784e4124c850eea6a8a927805edb499b5a6be0c1d79b6da545c7934eae003
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0be42-cc85-7aa0-91b9-2c09080e629e/exec-5f992d46-22cc-45f7-a95c-134cfd4585bf.png
+
+## Source Beat
+
+PinPin wonders whether that woody crunch is lunch or the bridge.
+
+## Camera Direction
+
+Tight reverse hedgehog portrait at his eye height; eyes and nose point camera LEFT to off-screen Beaver.
+
+## Future Character Space
+
+Tight reverse hedgehog portrait at his eye height; eyes and nose point camera LEFT to off-screen Beaver.
+
+## References
+
+- docs/storyboard/images/standalone/timber-tractor/plates/picnic.png: Same repaired footbridge and picnic bank, late-afternoon light.
+- docs/storyboard/images/chapter-02-direct/scene-10-v2.png: PinPin identity only, not original location.
+
+## Exact Tool Prompt
+
+```text
+Use case: illustration-story.
+Create ONE finished landscape story illustration, exactly 1536 x 1024 pixels. Detailed dimensional woodland picture-book realism, tactile bark, fur, quills, moss and ferns. Keep rich green shade and gentle warm sunlight, no blown highlights. No text, speech bubbles, borders or panels.
+Reference 1 supplies picnic light and bank foliage ONLY. Reference 2 supplies ONLY PinPin identity. SOLO HEDGEHOG portrait, no beaver or other animal.
+Identity: Mr. PinPin is a small natural hedgehog about 25 cm long, compact brown quills, cream muzzle, belly and short paws, glossy dark eyes and a gentle curious face. He has exactly two forelegs below his chest and two hindlegs below his haunches, far limbs may be naturally occluded. No clothes or golden ornament. Beaver has warm chestnut fur, small round ears, two small incisors, broad flat scaly tail emerging once from his rump, a simple blue work vest, natural rounded non-human animal body with two forelimbs and two hindlimbs. Beaver is roughly twice PinPin's body length, not a human in fur. Tail is not an extra leg. Match the cast reference closely. Natural modest expressions, no huge cartoon grin. 
+Cut to a true tight reverse portrait of small PinPin at the picnic. Put camera at his low eye height, with a gentle 75mm portrait lens feel. His head, quill-covered shoulders and upper cream chest fill the frame; lower body and paws remain below lower edge. He tilts his head just a little, eyes and nose pointing clearly toward CAMERA LEFT, where his friend Beaver is OFF SCREEN. Curious affectionate puzzlement, subtle small smile, mouth nearly closed, no theatrical shock or huge grin. Keep compact brown quills, cream muzzle, tiny rounded ears and glossy eyes identical to reference 2, natural small hedgehog proportions, no costume or ornament.
+The reverse background is softly separated fern-and-grass near-bank foliage with the same gentle late-afternoon lighting. It need not show the bridge because this is a close conversation cut. Beaver is entirely outside the picture, and the mysterious food remains hidden. Absolutely no twig, stick, food held up, animal reflection, speech text or lettering. Do not use a wide two-character composition. Eyeline LEFT is essential.
+```
+
+## Visual Review
+
+Inspected full image. Pass: true tight solo PinPin head/shoulders portrait, head gently tilted, nose and eyes directed camera LEFT toward off-screen Beaver. Curious understated smile, natural cream muzzle and brown quills, no costume, no other character or twig visible. Fore/hind limbs intentionally outside frame and cannot be assessed. Highlight texture retained on muzzle and quills. Reverse eyeline pairs correctly with Beaver looking right in scene 16.
+
+Reviewed (UTC): 2026-09-20T10:24:35.907Z

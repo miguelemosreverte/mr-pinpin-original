@@ -1,0 +1,40 @@
+{
+  "title": "Mr. PinPin and the Timber Tractor: Localized Covers",
+  "scope": "Two lettering-only localizations of the approved cover for original standalone fiction, separate from the main book.",
+  "shots": [
+    {
+      "id": "title-es-v1",
+      "order": 1,
+      "title": "Timber Tractor: Spanish cover",
+      "beat": "Localized lettering for the approved standalone story cover.",
+      "camera": "Preserve the approved portrait composition and framing exactly.",
+      "staging": "Preserve PinPin and the stationary tractor exactly; no new characters.",
+      "alt": "El señor PinPin contempla un tractor forestal rojo en un sendero del bosque.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Sole edit target: approved cover artwork, identity, layout, colors and title lettering style."
+        }
+      ],
+      "prompt": "Use case: text-localization.\nEdit the supplied approved portrait cover image. Produce exactly one Spanish localized cover, 1024 x 1536.\nChange ONLY the title lettering in the open sky at the top. Replace the English title with these exact three lines, preserving case, accents and punctuation:\n\"El señor PinPin\"\n\"y el\"\n\"tractor forestal\"\nKeep the same dark forest-green storybook serif lettering, three-line hierarchy and placement: first and third lines large, middle line small. Fit the longer localized words comfortably within the existing title area and margins; preserve the surrounding branches and sky.\nAll non-lettering artwork must stay unchanged: the exact small natural hedgehog PinPin in the foreground, his face, quills, cream fur and paws; the red stationary tractor with empty cab, yellow crane and log trailer; the woodland, ferns, path, flowers, light, colors, texture, perspective and full uncropped framing. PinPin has no costume or golden ornament. Do not add a beaver, driver, any other character, object, subtitle, author name or border. This is only a lettering edit of the approved cover, not a new scene. Preserve the artwork and identity as faithfully as possible.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/title-es-v1.png"
+    },
+    {
+      "id": "title-ru-v1",
+      "order": 1,
+      "title": "Timber Tractor: Russian cover",
+      "beat": "Localized lettering for the approved standalone story cover.",
+      "camera": "Preserve the approved portrait composition and framing exactly.",
+      "staging": "Preserve PinPin and the stationary tractor exactly; no new characters.",
+      "alt": "Мистер Пин-Пин смотрит на красный лесной трактор на лесной тропинке.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Sole edit target: approved cover artwork, identity, layout, colors and title lettering style."
+        }
+      ],
+      "prompt": "Use case: text-localization.\nEdit the supplied approved portrait cover image. Produce exactly one Russian localized cover, 1024 x 1536.\nChange ONLY the title lettering in the open sky at the top. Replace the English title with these exact three lines, preserving case, accents and punctuation:\n\"Мистер Пин-Пин\"\n\"и\"\n\"лесной трактор\"\nKeep the same dark forest-green storybook serif lettering, three-line hierarchy and placement: first and third lines large, middle line small. Fit the longer localized words comfortably within the existing title area and margins; preserve the surrounding branches and sky.\nAll non-lettering artwork must stay unchanged: the exact small natural hedgehog PinPin in the foreground, his face, quills, cream fur and paws; the red stationary tractor with empty cab, yellow crane and log trailer; the woodland, ferns, path, flowers, light, colors, texture, perspective and full uncropped framing. PinPin has no costume or golden ornament. Do not add a beaver, driver, any other character, object, subtitle, author name or border. This is only a lettering edit of the approved cover, not a new scene. Preserve the artwork and identity as faithfully as possible.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/title-ru-v1.png"
+    }
+  ]
+}

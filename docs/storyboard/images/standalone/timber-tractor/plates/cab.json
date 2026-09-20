@@ -1,0 +1,28 @@
+{
+  "id": "cab-plate",
+  "order": 5,
+  "title": "Inside the Cab",
+  "kind": "landscape",
+  "beat": "An empty passenger space and driver seat establish the riding arrangement.",
+  "camera": "View through open right cab door at seatheight looking diagonally toward frontleft windshield.",
+  "staging": "Driverseatleft, smaller fitted passenger seatright; bothbelts; noanimals.",
+  "alt": "The empty tractor cab with a driver's seat and a smaller passenger seat overlooking the forest.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/plates/meeting.png",
+      "role": "Red tractor identity and morning location."
+    }
+  ],
+  "prompt": "Use case: illustration-story. Move the camera from beside this red tractor into its cab, viewing through the open right-hand door at seat height, looking diagonally toward the front windshield. Create a clean empty interior plate. The main dark padded driver's seat is on the LEFT behind the black steering wheel; on the RIGHT is a small properly mounted passenger seat with a cushion and visible lap belt, sized for a little hedgehog. Simple sturdy real tractor interior: rubber floor, red painted door frame, clear windshield, modest dashboard, steering column, two crane-control joysticks beside the main seat, no readable labels. Leave clear seating space for a beaver driver and a much smaller hedgehog passenger to be added later. Through the windshield see the same green sunlit fern-lined forest track and a little red hood below it. Frame both seats fully, close and welcoming, with natural soft reflected light and detailed textured highlights matching the reference's dimensional children's-book style. No animals, people, text or panels. Single landscape1536x1024.",
+  "output": "docs/storyboard/images/standalone/timber-tractor/plates/cab.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-fd682616-3816-4b43-83aa-03f124374214.png",
+  "startedAt": "2026-09-20T10:04:21.203Z",
+  "finishedAt": "2026-09-20T10:04:50.404Z",
+  "seconds": 29.201,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "d83f4dd926b185ee512b14f825bf6236ab809d134169fc05980ccbd3a1fdbeed",
+  "review": "Clean interior accepted: left driver seat/right smaller passenger seat, steering wheel, controls and belts are legible; no animals. Soft textured interior and forest match the machine. Doorway-view camera is plausible, not a calibrated reconstruction. Driver seatback is partly cropped by this intentional close interior view.",
+  "reviewedAt": "2026-09-20T10:05:30.267Z"
+}

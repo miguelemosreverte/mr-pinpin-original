@@ -56,6 +56,23 @@ function failure(plan, id, startedAt, observedAt, error) {
 function build(plan) {
   const report = resolve(plan.report);
   const href = file => esc(path.relative(path.dirname(report), resolve(file)).split(path.sep).join('/'));
+  // Paths are repository-relative; hrefs are report-relative URLs (including queries).
+  const links = items => items.map(item => `<a href="${item.path ? href(item.path) : esc(item.href)}">${esc(item.label)}</a>`).join(' ');
+  const navigation = plan.navigation ?? [
+    {href:'../library.html?lang=en', label:'Chapter library'},
+    {href:'../?chapter=2&lang=en', label:'Chapter 2'},
+    {path:plan.workflow, label:'Workflow / Markdown'}
+  ];
+  const sourceLinks = plan.sourceLinks ?? [
+    {href:'../../images/image58.png', label:'Original illustration 1'},
+    {href:'../../images/image96.png', label:'Original illustration 2'},
+    {href:'../book.json', label:'Original chapter text'}
+  ];
+  const carryForwardNotes = plan.carryForwardNotes ?? [
+    "Miguel's successful camera directions specified physical travel and relationships: the lake below the path, two retreats of 50 metres, underwater views looking up, and a wet return to the surface. This pass reuses that spatial approach, with deliberate foreground parallax and a reverse view.",
+    'The colored-leg blocking experiment did not reliably preserve facial quality or body posture. It is not part of this pass. Future character renders should begin from the clean landscape, place the whole cast together, and receive a separate visual check of faces, scale, gaze and each fore/hind limb attachment.',
+    'Repeated edits appeared to brighten highlights; the cause remains unverified. Short reference chains reduce repeated processing but do not guarantee identical exposure. The later rabbit corrections also show that a convincing image can still contain anatomy errors. Prompt compliance must be inspected, not assumed.'
+  ];
   const records = plan.shots.filter(shot => fs.existsSync(recordPath(shot))).map(shot => read(recordPath(shot)))
     .sort((a,b) => a.startedAt.localeCompare(b.startedAt));
   for (const record of records) writeRecord(record, recordPath(record));
@@ -74,14 +91,14 @@ function build(plan) {
     <p><a href="${href(record.output.replace(/\.png$/, '.md'))}">Markdown record</a> · <a href="${href(record.output)}">Full-resolution image</a></p>
     <h3>Exact Prompt</h3><pre>${esc(record.prompt)}</pre><h3>References</h3><ul>${record.references.map(ref => `<li><a href="${href(ref.path)}">${esc(path.basename(ref.path))}</a>: ${esc(ref.role)}</li>`).join('')}</ul></div></section>`).join('\n');
   const html = `<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>${esc(plan.title)} | Mr. PinPin</title><link rel="stylesheet" href="image-journal.css"></head><body><main>
-    <header class="intro copy"><nav><a href="../library.html?lang=en">Chapter library</a><a href="../?chapter=2&amp;lang=en">Chapter 2</a><a href="${href(plan.workflow)}">Workflow / Markdown</a></nav><p class="eyebrow">Mr. PinPin / Chapter 02 / Camera notebook</p><h1>${esc(plan.title)}</h1><p class="lead">${esc(plan.lead || 'Five landscapes before the characters arrive.')}</p><p class="status">${records.length} of ${plan.shots.length} images generated. ${esc(plan.statusLabel || 'Review candidates, not an approved chapter.')}</p></header>
+    <header class="intro copy">${navigation.length ? `<nav>${links(navigation)}</nav>` : ''}<p class="eyebrow">${esc(plan.eyebrow ?? 'Mr. PinPin / Chapter 02 / Camera notebook')}</p><h1>${esc(plan.title)}</h1><p class="lead">${esc(plan.lead ?? 'Five landscapes before the characters arrive.')}</p><p class="status">${records.length} of ${plan.shots.length} images generated. ${esc(plan.statusLabel ?? 'Review candidates, not an approved chapter.')}</p></header>
     ${sections}
-    <section class="copy context"><h2>Source and Process</h2><p>${esc(plan.scope)}</p><h3>Reading the Original</h3>${plan.sourceNotes.map(note => `<p>${esc(note)}</p>`).join('')}<p><a href="../../images/image58.png">Original illustration 1</a> · <a href="../../images/image96.png">Original illustration 2</a> · <a href="../book.json">Original chapter text</a></p>
-    <h2>The Method, in Order</h2><ol>${plan.steps.map(step => `<li>${esc(step)}</li>`).join('')}</ol>${plan.planAdjustment ? `<h3>A Brief Adjustment</h3><p>${esc(plan.planAdjustment)}</p>` : ''}<h3>The Five-Shot Plan</h3><ol>${plan.shots.map(shot => `<li><a href="#${esc(shot.id)}">${esc(shot.title)}</a> ${esc(shot.camera)}</li>`).join('')}</ol>
+    <section class="copy context"><h2>Source and Process</h2><p>${esc(plan.scope)}</p><h3>${esc(plan.sourceHeading ?? 'Reading the Original')}</h3>${plan.sourceNotes.map(note => `<p>${esc(note)}</p>`).join('')}${sourceLinks.length ? `<p>${links(sourceLinks)}</p>` : ''}
+    <h2>The Method, in Order</h2><ol>${plan.steps.map(step => `<li>${esc(step)}</li>`).join('')}</ol>${plan.planAdjustment ? `<h3>A Brief Adjustment</h3><p>${esc(plan.planAdjustment)}</p>` : ''}<h3>${esc(plan.planHeading ?? 'The Five-Shot Plan')}</h3><ol>${plan.shots.map(shot => `<li><a href="#${esc(shot.id)}">${esc(shot.title)}</a> ${esc(shot.camera)}</li>`).join('')}</ol>
     <h3>Measured, Not Estimated</h3><p>${seconds.toFixed(1)} seconds summed image-call wall time across ${records.length} registered calls. This includes tool waiting, not just model computation. It excludes preparation, review, publishing and any undocumented earlier work. No monetary cost is exposed by these calls.</p><p>Records above follow actual generation time. Reading positions are recorded separately. Every attempt has its own filename and record; a retry is not counted as a successful one-shot.</p>
     ${failures.length ? `<h3>Unsuccessful Requests</h3><p>${failures.length} failed request(s), separate from successful image-call timings above. These requests did not produce an image.</p><ol>${failures.map(failure => `<li>${esc(failure.observedAt)}: ${esc(failure.id)}. ${esc(failure.error)} <a href="${href(failure.file.replace(/\.json$/, '.md'))}">Failure record and exact prompt</a></li>`).join('')}</ol>` : ''}
-    <h3>What Carries Forward from Chapter 1</h3><p>Miguel's successful camera directions specified physical travel and relationships: the lake below the path, two retreats of 50 metres, underwater views looking up, and a wet return to the surface. This pass reuses that spatial approach, with deliberate foreground parallax and a reverse view.</p><p>The colored-leg blocking experiment did not reliably preserve facial quality or body posture. It is not part of this pass. Future character renders should begin from the clean landscape, place the whole cast together, and receive a separate visual check of faces, scale, gaze and each fore/hind limb attachment.</p><p>Repeated edits appeared to brighten highlights; the cause remains unverified. Short reference chains reduce repeated processing but do not guarantee identical exposure. The later rabbit corrections also show that a convincing image can still contain anatomy errors. Prompt compliance must be inspected, not assumed.</p></section>
-    <footer class="copy"><h2>${esc(plan.reviewHeading || 'Review Before Characters')}</h2><p>${esc(plan.conclusion)}</p><p>The camera coordinates and lens values are directions, not measurements recovered from a 3D scene. A plausible new view is not proof of exact geometry.</p><a href="${href(plan.workflow)}">Repeatable workflow and Chapter 1 lessons</a></footer></main></body></html>\n`;
+    ${carryForwardNotes.length ? `<h3>${esc(plan.carryForwardHeading ?? 'What Carries Forward from Chapter 1')}</h3>${carryForwardNotes.map(note => `<p>${esc(note)}</p>`).join('')}` : ''}</section>
+    <footer class="copy"><h2>${esc(plan.reviewHeading ?? 'Review Before Characters')}</h2><p>${esc(plan.conclusion)}</p><p>${esc(plan.footerNote ?? 'The camera coordinates and lens values are directions, not measurements recovered from a 3D scene. A plausible new view is not proof of exact geometry.')}</p><a href="${href(plan.workflow)}">${esc(plan.workflowLabel ?? 'Repeatable workflow and Chapter 1 lessons')}</a></footer></main></body></html>\n`;
   fs.mkdirSync(path.dirname(report), {recursive:true});
   fs.writeFileSync(report, html);
   return {report:plan.report, completed:records.length, imageCallSeconds:seconds};

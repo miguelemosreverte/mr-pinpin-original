@@ -1,0 +1,46 @@
+# One gap for a small paw
+
+Status: review candidate, not approved
+
+- Reading order: 12
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T10:12:26.336Z
+- Completed (UTC): 2026-09-20T10:13:21.234Z
+- Wall time: 54.898 seconds
+- Saved image: docs/storyboard/images/standalone/timber-tractor/scene-12.png
+- Size: 1536 x 1024
+- SHA-256: 4dc43a8a1c31de0337c24011f6795927a02dcf7187048e3ce5cf5487641119f7
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0be42-cc85-7aa0-91b9-2c09080e629e/exec-40fe326e-1a41-4a26-9c2c-bc12d8cc0a92.png
+
+## Source Beat
+
+Repairs are nearly complete; PinPin notices a final short narrow gap at the approach.
+
+## Camera Direction
+
+35 cm camera, close medium view of near-end deck and dry bank; beaver LEFT and PinPin RIGHT.
+
+## Future Character Space
+
+35 cm camera, close medium view of near-end deck and dry bank; beaver LEFT and PinPin RIGHT.
+
+## References
+
+- docs/storyboard/images/standalone/timber-tractor/plates/bridge.png: Bridge location, woodland, rails and stream; apply requested repair state and physical framing.
+- docs/storyboard/images/standalone/timber-tractor/scene-03.png: Shared cast identity, relative scale, blue vest and tractor design.
+
+## Exact Tool Prompt
+
+```text
+Use case: illustration-story.
+Create ONE finished landscape story illustration, exactly 1536 x 1024 pixels. Detailed dimensional woodland picture-book realism, tactile bark, fur, quills, moss and ferns. Keep rich green shade and gentle warm sunlight, no blown highlights. No text, speech bubbles, borders or panels.
+Reference 1 supplies the small bridge location; reference 2 supplies the cast.
+Identity: Mr. PinPin is a small natural hedgehog about 25 cm long, compact brown quills, cream muzzle, belly and short paws, glossy dark eyes and a gentle curious face. He has exactly two forelegs below his chest and two hindlegs below his haunches, far limbs may be naturally occluded. No clothes or golden ornament. Beaver has warm chestnut fur, small round ears, two small incisors, broad flat scaly tail emerging once from his rump, a simple blue work vest, natural rounded non-human animal body with two forelimbs and two hindlimbs. Beaver is roughly twice PinPin's body length, not a human in fur. Tail is not an extra leg. Match the cast reference closely. Natural modest expressions, no huge cartoon grin. 
+Later at the SAME near end of the little bridge, move camera close to the approach at 35 cm height. Most repair is complete: fresh matching wood forms a solid continuous deck except ONE SMALL NARROW rectangular gap at the near threshold, just a short paw-width gap along one approach corner, big enough for tiny PinPin's paw but not a dramatic open hole. Intact simple wooden rails, gentle stream below. Beaver waits on dry bank LEFT, his compact natural body and broad flat tail visible, gazing at the gap. PinPin stands naturally on short legs on dry bank RIGHT, safely back from the gap, nose and curious gaze directed down at this small missed opening. His whole body is much smaller than Beaver. No one stands over an open hole. Beaver's two forepaws rest naturally in front of his body, two hind feet beneath him; tail lies behind. A few neatly arranged spare short boards on the bank, no moving machinery, no tools in motion. Tractor out of frame. Friendly focused expressions, warm daylight, readable modest defect at the near threshold.
+```
+
+## Visual Review
+
+Inspected full image. Pass: bridge deck nearly complete with one small narrow opening at near RIGHT threshold; Beaver left and PinPin right both safely on dry bank looking at it. Two Beaver forelimb attachments, two hind feet and one distinct broad tail visible; no duplicated limbs. PinPin has two visible forepaws and one near hind paw, far hind leg naturally hidden by body, so hidden attachment unverified. Hedgehog remains small, unclothed, and naturally low; scale consistent with cast. No machinery. Repair continuation should preserve the gap at near RIGHT corner.
+
+Reviewed (UTC): 2026-09-20T10:14:52.522Z

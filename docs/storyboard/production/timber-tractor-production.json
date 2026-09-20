@@ -1,0 +1,668 @@
+{
+  "title": "Mr. PinPin and the Timber Tractor: Complete Production Journal",
+  "lead": "A standalone woodland adventure, from clean camera plates to the finished story.",
+  "statusLabel": "Eighteen-scene original adventure. This journal includes intermediate plates and superseded candidates; final reader selections are in the story manifest.",
+  "scope": "Original standalone fiction inspired by the friendly farm story, using the main-book camera-first workflow.",
+  "report": "docs/storyboard/review/timber-tractor-production.html",
+  "workflow": "docs/storyboard/production/WORKFLOW.md",
+  "eyebrow": "Mr. PinPin / Standalone adventures / Camera notebook",
+  "planHeading": "Story, Camera and Correction Plan",
+  "sourceNotes": [
+    "This is new fiction, not a chapter of the original book. The farm story informs the warm friendship and vehicle-discovery rhythm. The beaver replaces the farm bear as the driver for this standalone adventure.",
+    "The approved title image fixes the red tractor, yellow crane and main-book PinPin design. Clean locations branch from that visual anchor. The missing bridge boards, windfallen wood and willow-twig joke are story inventions approved in outline."
+  ],
+  "steps": [
+    "Write the eighteen-scene story in English, Spanish and Russian.",
+    "Generate clean environments using camera position, direction and scene state.",
+    "Establish the beaver and PinPin together, then add each scene's full cast directly without colored-limb blocking.",
+    "Inspect scale, faces, limb attachments, eyelines, crane/load state and bridge continuity.",
+    "Compose vertical reading and explicit print pages, separating joke setup from reveal.",
+    "Verify local and published reader, multilingual text and PDF; preserve prompts and all attempts."
+  ],
+  "conclusion": "Eighteen reading images with localized covers and trilingual narration are assembled. Final PDF and live-reader checks are documented separately before release. Versioned corrections preserve the production history.",
+  "shots": [
+    {
+      "id": "title-v1",
+      "order": 1,
+      "title": "Mr. PinPin and the Timber Tractor",
+      "beat": "A small woodland explorer meets an impressive timber-carrying tractor. Cover concept only; no plot is fixed.",
+      "camera": "20 cm above the trail, moderate 35mm view; PinPin near foreground and parked tractor middle distance, pale upper sky reserved for title.",
+      "staging": "Only PinPin, naturally quadrupedal, looks toward the parked tractor. No driver or second animal.",
+      "alt": "Mr. PinPin looks up at a red timber tractor from a fern-lined woodland path beneath the story title.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-10-v2.png",
+          "role": "PinPin identity and main-book dimensional woodland rendering, not the same scene."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate one polished portrait title illustration for a children's picture book, 1024 x 1536.\nReference image 1 establishes ONLY Mr. PinPin's identity and the main book's detailed dimensional woodland rendering: compact brown quills, cream muzzle and belly, small glossy eyes, short natural paws, curious gentle expression. Reimagine the setting for this new standalone adventure.\n\nA low woodland camera, 20 cm above the ground with a moderately wide 35mm feel, looks along a fern-lined forest track. In the near foreground, Mr. PinPin stands naturally on four short legs in a three-quarter side view, head tilted up with delighted curiosity toward a parked red forestry tractor in the middle distance. His body is about 25 cm long; he stays genuinely hedgehog-sized, with perspective making his face readable. Two forelegs attach below his chest and two hindlegs below his haunches, with far-side legs naturally occluded. Warm, appealing animal face and natural posture.\n\nThe tractor is shown clearly in front three-quarter view: rich red painted hood and cab, chunky dark rubber tires, realistic glass, a coupled timber trailer with a small load of bark-covered logs secured between metal stakes. A compact yellow log-loading crane is folded neatly behind the cab. The machine is stationary with empty cab. Give its shape readable, believable construction, not a vehicle with a face. The track curves into a living green forest. Fine moss, ferns, tiny white wildflowers and wheel impressions give the foreground tactile detail and a playful sense of scale.\n\nBeautiful dimensional storybook realism matching reference 1, detailed fur and quills, tangible bark and painted metal, softly directional morning sunlight with cool green shade. Retain texture in cream fur and bright leaves. A fresh balance of red tractor, yellow crane, green forest and pale blue sky. Keep PinPin and the complete machine clearly legible and in focus.\n\nCompose as a real flat front-cover illustration, not a photographed book mockup: image fills the page, branches frame an open pale sky area in the upper quarter, vehicle occupies the middle, PinPin anchors the lower foreground. Place beautiful readable dark forest-green storybook serif lettering in that open upper area, exact title only:\n\"Mr. PinPin\"\n\"and the\"\n\"Timber Tractor\"\nMr. PinPin and Timber Tractor large, and the smaller. Comfortable outer margins. No subtitle or author name. One continuous illustration, no panels or border. PinPin wears no clothing or golden head ornament. He is the only animal.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/title-v1.png"
+    },
+    {
+      "id": "title-es-v1",
+      "order": 1,
+      "title": "Timber Tractor: Spanish cover",
+      "beat": "Localized lettering for the approved standalone story cover.",
+      "camera": "Preserve the approved portrait composition and framing exactly.",
+      "staging": "Preserve PinPin and the stationary tractor exactly; no new characters.",
+      "alt": "El señor PinPin contempla un tractor forestal rojo en un sendero del bosque.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Sole edit target: approved cover artwork, identity, layout, colors and title lettering style."
+        }
+      ],
+      "prompt": "Use case: text-localization.\nEdit the supplied approved portrait cover image. Produce exactly one Spanish localized cover, 1024 x 1536.\nChange ONLY the title lettering in the open sky at the top. Replace the English title with these exact three lines, preserving case, accents and punctuation:\n\"El señor PinPin\"\n\"y el\"\n\"tractor forestal\"\nKeep the same dark forest-green storybook serif lettering, three-line hierarchy and placement: first and third lines large, middle line small. Fit the longer localized words comfortably within the existing title area and margins; preserve the surrounding branches and sky.\nAll non-lettering artwork must stay unchanged: the exact small natural hedgehog PinPin in the foreground, his face, quills, cream fur and paws; the red stationary tractor with empty cab, yellow crane and log trailer; the woodland, ferns, path, flowers, light, colors, texture, perspective and full uncropped framing. PinPin has no costume or golden ornament. Do not add a beaver, driver, any other character, object, subtitle, author name or border. This is only a lettering edit of the approved cover, not a new scene. Preserve the artwork and identity as faithfully as possible.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/title-es-v1.png"
+    },
+    {
+      "id": "title-ru-v1",
+      "order": 1,
+      "title": "Timber Tractor: Russian cover",
+      "beat": "Localized lettering for the approved standalone story cover.",
+      "camera": "Preserve the approved portrait composition and framing exactly.",
+      "staging": "Preserve PinPin and the stationary tractor exactly; no new characters.",
+      "alt": "Мистер Пин-Пин смотрит на красный лесной трактор на лесной тропинке.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Sole edit target: approved cover artwork, identity, layout, colors and title lettering style."
+        }
+      ],
+      "prompt": "Use case: text-localization.\nEdit the supplied approved portrait cover image. Produce exactly one Russian localized cover, 1024 x 1536.\nChange ONLY the title lettering in the open sky at the top. Replace the English title with these exact three lines, preserving case, accents and punctuation:\n\"Мистер Пин-Пин\"\n\"и\"\n\"лесной трактор\"\nKeep the same dark forest-green storybook serif lettering, three-line hierarchy and placement: first and third lines large, middle line small. Fit the longer localized words comfortably within the existing title area and margins; preserve the surrounding branches and sky.\nAll non-lettering artwork must stay unchanged: the exact small natural hedgehog PinPin in the foreground, his face, quills, cream fur and paws; the red stationary tractor with empty cab, yellow crane and log trailer; the woodland, ferns, path, flowers, light, colors, texture, perspective and full uncropped framing. PinPin has no costume or golden ornament. Do not add a beaver, driver, any other character, object, subtitle, author name or border. This is only a lettering edit of the approved cover, not a new scene. Preserve the artwork and identity as faithfully as possible.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/title-ru-v1.png"
+    },
+    {
+      "id": "meeting-plate",
+      "order": 3,
+      "title": "The Tractor Around the Bend",
+      "kind": "landscape",
+      "beat": "An empty parked tractor waits at the start of the day, before loading timber.",
+      "camera": "30 cm camera, 5 m front-left oftractor; fullmachineatright, emptycharacterpatchleft.",
+      "staging": "Emptycab andemptytrailer; laterbeaverleftoftractor, PinPincloserforeground.",
+      "alt": "An empty red forestry tractor parked beside a mossy woodland track.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Approved machine and woodland rendering reference, not title/cast/loading state."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Create a clean landscape environment plate, 1536x1024, for the same dimensional children's book as the reference cover. Keep the red tractor's design: red hood and enclosed glass cab, big treaded black tires with red hubs, compact yellow folding log crane behind cab, stake-sided logging trailer. Move the camera to 30 cm above the fern-lined forest track, about 5 metres in front-left of the tractor, looking back toward its front three-quarter side. Show the entire parked tractor and its EMPTY trailer in the right two-thirds of the frame, all tires within the frame; the yellow crane is folded. Leave the near-left third as a clear moss-edged earthen patch for characters to meet later, with tiny white flowers and detailed fern fronds at the edges. A mature oak frames the upper left and the trail bends behind the trailer. Soft morning sunlight, lively green forest shadows, pale blue through canopy, textured highlights. This is the beginning of the adventure before timber loading. Landscape and machinery only: cab empty, ground unoccupied, no animals or people. Single continuous illustration without any title, text, border or panels.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/plates/meeting.png"
+    },
+    {
+      "id": "scene-03",
+      "order": 3,
+      "title": "A New Driver",
+      "kind": "character",
+      "beat": "PinPin meets the beaver driver beside his parked empty timber tractor.",
+      "camera": "Same low front-left meeting plate; characters in foregroundleft notundertractor.",
+      "staging": "Beaver sits left, PinPin right looking toward him, beaver 3xPinPinbodylength.",
+      "alt": "A friendly beaver driver and little PinPin meet beside the parked red timber tractor.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/meeting.png",
+          "role": "Exact background camera and empty tractor state."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-10-v2.png",
+          "role": "PinPin identity only."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Add both characters together to reference 1's empty foreground; preserve its camera, forest, parked red tractor with EMPTY trailer, folded yellow crane, and exposure. Reference 2 supplies only PinPin's identity. On the clear earthen patch at lower-left, a friendly chestnut-brown BEAVER sits naturally on his haunches facing right toward PinPin. Beaver has a broad flat paddle tail lying behind him to the left, rounded small ears, wide rounded muzzle, two subtle visible front incisors, and a simple blue canvas work vest without trousers or shoes. His two forepaws rest naturally in front of his belly. He is about 75 cm nose-to-tail-root, a believable animal body rather than a human in costume. PinPin stands just to the beaver's right at about one third the beaver's body length, facing left and looking up at his new friend's face. Compact natural hedgehog: fine brown quills, cream muzzle and belly, short paws, friendly small glossy eyes, four natural limbs with far-side limbs naturally hidden. Both bodies are fully framed and clearly separated, safely away from the stationary wheels. Warm curious greeting through their head tilts. Same detailed dimensional woodland picture-book rendering, soft fur and textured cream highlights. 1536x1024 landscape, one continuous illustration, no text.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-03.png"
+    },
+    {
+      "id": "cab-plate",
+      "order": 5,
+      "title": "Inside the Cab",
+      "kind": "landscape",
+      "beat": "An empty passenger space and driver seat establish the riding arrangement.",
+      "camera": "View through open right cab door at seatheight looking diagonally toward frontleft windshield.",
+      "staging": "Driverseatleft, smaller fitted passenger seatright; bothbelts; noanimals.",
+      "alt": "The empty tractor cab with a driver's seat and a smaller passenger seat overlooking the forest.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/meeting.png",
+          "role": "Red tractor identity and morning location."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Move the camera from beside this red tractor into its cab, viewing through the open right-hand door at seat height, looking diagonally toward the front windshield. Create a clean empty interior plate. The main dark padded driver's seat is on the LEFT behind the black steering wheel; on the RIGHT is a small properly mounted passenger seat with a cushion and visible lap belt, sized for a little hedgehog. Simple sturdy real tractor interior: rubber floor, red painted door frame, clear windshield, modest dashboard, steering column, two crane-control joysticks beside the main seat, no readable labels. Leave clear seating space for a beaver driver and a much smaller hedgehog passenger to be added later. Through the windshield see the same green sunlit fern-lined forest track and a little red hood below it. Frame both seats fully, close and welcoming, with natural soft reflected light and detailed textured highlights matching the reference's dimensional children's-book style. No animals, people, text or panels. Single landscape1536x1024.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/plates/cab.png"
+    },
+    {
+      "id": "scene-05",
+      "order": 5,
+      "title": "A Seat Beside the Driver",
+      "kind": "character",
+      "beat": "PinPin rides safely beside the beaver driver.",
+      "camera": "Same cabplate camera, closer view of passengers fromopenright doorway while parked.",
+      "staging": "Beaverleftbothforepawsonsteeringwheel, PinPinright smallbeltedseat; bothlookahead.",
+      "alt": "The beaver driver and PinPin sit belted in the red tractor's cab.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/cab.png",
+          "role": "Exact empty interior and driver/passenger arrangement."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Both character identities and relative size only."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Add the two friends from reference 2 to the clean tractor cab of reference 1, preserving the camera, seats, controls, lighting and forest outside. The chestnut beaver with small rounded ears, broad muzzle, subtle incisors and blue canvas vest sits properly in the LEFT driver's seat, a lap belt around his middle. His TWO forepaws rest on opposite sides of the steering wheel; his hind feet are below the dashboard, his paddle tail rests naturally behind him beside the seat. Keep his friendly beaver face in three-quarter view, looking ahead toward the path. Tiny Mr. PinPin sits in the RIGHT small passenger seat on its cushion, lap belt fastened low, roughly a third of the beaver's body size. PinPin's two short forepaws rest on the cushion and his hind paws are tucked naturally under him; his delighted face looks up through the windshield, not at the viewer. Preserve soft cream face, fine brown quills and natural compact hedgehog body. The tractor is parked for this boarding moment, and their seats remain distinct. Warm high-detail dimensional children's-book rendering, beautiful faces and clearly attached limbs. Single landscape1536x1024, no text.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-05.png"
+    },
+    {
+      "id": "loading-plate",
+      "order": 6,
+      "title": "The Clearing for the Crane",
+      "kind": "landscape",
+      "beat": "Prepared logs wait beside the stationary timber tractor.",
+      "camera": "Camera1mhighsideviewlookingalongriverbank, entiretractorlefttrailercenter logsright.",
+      "staging": "Samefallenroot atbackgroundleft, removedcentraltrunk nowshortlogs onbank; emptycab/cleararea.",
+      "alt": "The empty tractor and logging trailer parked beside prepared oak logs near the stream.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-04.png",
+          "role": "Windfallen oak clearing, stream and root ball geography."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/meeting.png",
+          "role": "Machine identity, emptytrailer and yellowcrane."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Make a clean machinery-and-landscape plate for the next stage at reference 1's fallen-oak clearing. The fallen trunk has now been prepared into four short bark-covered logs laid neatly on firm ground on the LEFT bank, away from the water. Keep the uprooted root mass behind them to show where the wood came from. Place reference 2's red tractor on the dry access track beside these logs, pointing LEFT; its empty logging trailer extends toward the RIGHT. The same yellow articulated log crane is mounted between cab and trailer and partly raised, its empty grapple hovering over the ground logs. The tractor is parked, wheels still, cab empty. Camera 1 metre high, wide side three-quarter view from across the clear working patch, framing the complete machine and logs with the stream along the lower-right edge. Living trees remain untouched. Detailed fern-rich dimensional woodland children's-book style, soft late-morning sunlight, textured highlights. No animals, people, lettering or panels. Landscape1536x1024.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/plates/loading.png"
+    },
+    {
+      "id": "scene-06",
+      "order": 6,
+      "title": "A Very Useful Yellow Hand",
+      "kind": "character",
+      "beat": "The beaver uses the crane while PinPin watches safely from the cab.",
+      "camera": "Moveclose tologpile at0.6m, grapplingloginforegroundleft, cabbackgroundright.",
+      "staging": "One log securelygripped, raisedlow; bothcharactersinsidecab, cleararea.",
+      "alt": "The tractor's yellow crane gently lifts an oak log while the beaver and PinPin watch from the cab.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/loading.png",
+          "role": "Working clearing andmachine."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-05.png",
+          "role": "Driver/passenger identity and seating only."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Move the camera in reference 1 to log height, 60 cm above the ground close to the timber pile, for an intimate close view of the crane doing its job. The yellow crane's black curved grapple jaws firmly encircle ONE horizontal oak log at its middle and lift it only a short distance above the other logs. Show the bark, clean cut end and well-connected metal joints clearly. Foreground grapple and log are the main subject; the parked red tractor cab is visible farther back at right, with reference 2's chestnut beaver in blue vest operating the control levers from the driver's seat and tiny cream-faced brown-quilled PinPin watching from his separate small passenger seat. Both remain inside the cab, belted. Their faces may be small but recognizable through clear glass. Keep the working area empty around the suspended wood. Same root-ball clearing, fern-rich forest and stream beyond, gently sunlit dimensional children's-book rendering. A real loading crane, not an excavator bucket. Clear continuous composition, landscape1536x1024, no words or panels.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-06.png"
+    },
+    {
+      "id": "scene-07",
+      "order": 7,
+      "title": "One Log, Then Another",
+      "kind": "character",
+      "beat": "The crane lowers wood into the stake trailer.",
+      "camera": "Walkcamera8m torear-right sideoftrailer, slightlyelevated1.5mlookingacrossloadtocab.",
+      "staging": "Two logsintrailerthirdgrippedjustabovebed, crewincabonly.",
+      "alt": "The beaver lowers another log into the trailer while PinPin watches from the tractor cab.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/loading.png",
+          "role": "Sameworkinglocation,machineandemptyloading baseline."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-05.png",
+          "role": "Caboccupantsidentityandseats."
+        }
+      ],
+      "prompt": "Use case: illustration-story. At reference 1's exact woodland logging clearing, walk the camera around to the trailer's REAR-RIGHT corner, 1.5 metres high, looking diagonally along its open bed toward the tractor cab. Show the next loading step clearly: TWO oak logs already lie lengthwise on the trailer bed BETWEEN its stakes, and the yellow crane lowers a THIRD bark-covered log gently beside them, securely held at its middle by the black grapple. This is a deliberate wide view of the whole trailer and articulated crane, with red tractor cab beyond at left, root mass and remaining ground logs farther left, narrow stream beyond right. Both friends from reference 2 remain in their seats inside the parked cab: beaver driver in blue vest at crane controls, small PinPin watching. Small readable faces through glass; nobody outside. Log scale and weight feel substantial, tyres planted on dry bank, no motion blur. Detailed storybook realism, cool green shadows and soft late-morning light, textured bark/steel/rubber. Landscape1536x1024, continuous single scene, no text.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-07.png"
+    },
+    {
+      "id": "scene-08",
+      "order": 8,
+      "title": "Wooden Passengers",
+      "kind": "machinery",
+      "beat": "The load is securely strapped and the crane folded before travel.",
+      "camera": "Closealongside trailerload at1.2m showing barkstraps stakes, cabnotinframe.",
+      "staging": "Fourlogs lyinglengthwise, twofastenedstraps; crane foldedbackground, nocharactersinframe.",
+      "alt": "Strong straps hold the oak logs securely between the trailer's stakes, with the crane folded away.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/loading.png",
+          "role": "Clean machine and site baseline."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Approvedloadedtrailertextureandfoldedcrane,machine only."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Show a satisfying close-up of the completed timber load on this tractor's stake-sided trailer before departure. Camera at the height of the trailer bed looking obliquely along the bark-covered oak logs. FOUR short heavy logs lie lengthwise, snugly contained between the steel side stakes. TWO broad dark-orange securing straps run across the whole log bundle and down to visible metal ratchet fasteners anchored to the trailer rails. Show clean cut ends, growth rings, lichen, bark texture and firm strap contact with the wood. Farther back above the front end of the load, the compact yellow loading crane is folded and its empty grapple stowed. Crop away the cab and all characters; this scene is about the timber and its secure fastenings. Soft forest greenery, fern edges and warm late-morning reflected light from the same woodland working site. Detailed dimensional children's-book realism, no oversized white highlights. Landscape1536x1024, one illustration with no title, labels or panels.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-08.png"
+    },
+    {
+      "id": "scene-09",
+      "order": 9,
+      "title": "The Woods Have Grown Shorter",
+      "kind": "character",
+      "beat": "PinPin enjoys a high view as the timber tractor travels slowly through the forest.",
+      "camera": "Moveofftrack intoferns at0.25m, frontthreequarterviewofapproachingtractor at6m distance.",
+      "staging": "Tractorontrack, foldedcrane,strappedlogs, bothcab, fernforegroundframeswheels.",
+      "alt": "The loaded red tractor rolls gently along a fern-lined track, with Beaver and PinPin in the cab.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-02.png",
+          "role": "Empty foresttrack landscape baseline."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-05.png",
+          "role": "Characters in designated driver/passengerseats."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-08.png",
+          "role": "Strappedloadandfoldedcranestate."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Place the same red timber tractor on reference 1's winding forest track and move our camera safely OFF the track into the ferns, 25 cm above the ground, about six metres in front of the approaching tractor. A wide three-quarter view frames the WHOLE tractor and coupled trailer following the bend. It is rolling slowly, tyres grounded and gently compressing the earth, with no motion blur or flying debris. Reference 2's beaver driver in blue vest and tiny Mr. PinPin ride in their separate belted seats, their curious happy faces visible through the windshield. Reference 3 supplies the travel-ready timber load: three large oak logs held between the trailer stakes with two orange straps, yellow crane fully folded and empty grapple stowed. The friendly red vehicle sits within a much larger living forest, not filling the whole scene. Foreground fern fronds nearly touch the lens, patterned sunlight on hood, leafy canopy overhead, cool green depths, a glimpse of pale blue sky. Same main-book dimensional storybook realism, finely textured highlights and natural facial proportions. Landscape1536x1024, no text, borders or extra animals.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-09.png"
+    },
+    {
+      "id": "scene-10",
+      "order": 10,
+      "title": "A Bridge for Paws",
+      "kind": "character",
+      "beat": "The stream and broken footbridge appear through the windscreen; the tractor stays on land.",
+      "camera": "Insidecabbehindseats, driverleftandPinPinrightforegroundbacks, windshieldtowardstreambridgeoffright.",
+      "staging": "Facespartialprofiles, roadendsinbankparkingLEFTnotbridge, brokennearboardsvisible.",
+      "alt": "From behind the two friends in the cab, the narrow broken footbridge appears beyond the stream bank.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/cab.png",
+          "role": "Cleaninteriorlayoutandredhood."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/bridge.png",
+          "role": "Destinationgeographyandbrokenfootbridge."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-05.png",
+          "role": "Beltedcharactersleftdriver/rightpassengeridentities."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Move the camera INSIDE the red tractor cab to just behind the seats, looking forward through the broad windshield. The lower LEFT foreground shows the back and slight whiskered profile of the chestnut beaver driver in his blue vest, two forepaws at the wheel. The lower RIGHT foreground shows little brown-quilled cream-faced PinPin in his separate small passenger seat, head raised to look out. Keep their lap belts and relative size from reference 3. The windshield view is the destination from reference 2: a gentle narrow forest stream and its SMALL pedestrian wooden footbridge with three missing boards near its entrance. Arrange the bridge ahead to the RIGHT of the red hood; the tractor's dirt access track turns LEFT onto firm open bank, clearly NOT aligned to drive over the footbridge. Give the outside landscape most of the frame: sparkling shallow water, fern edges, willow leaves and the readable gap in the bridge deck. Preserve reference 1's cab materials and steering arrangement while changing camera physically, not just cropping. Midday soft light, detailed dimensional woodland children's-book realism. No extra limbs or characters; whole scene1536x1024, no lettering or panels.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-10.png"
+    },
+    {
+      "id": "scene-09-v2",
+      "order": 9,
+      "title": "Travel Portrait: PinPin Face Correction",
+      "kind": "correction",
+      "beat": "User identified PinPin's malformed small face in the travel frame; preserve all other scene content.",
+      "camera": "Exact original travel framing, no camera changes.",
+      "staging": "Edit only PinPin face throughwindshield, notdriver,machine,forest orlayout.",
+      "alt": "The same forest travel scene with PinPin's small face corrected to match the established cab portrait.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-09.png",
+          "role": "Edit target; everything except PinPin's face must remain unchanged."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-05.png",
+          "role": "PinPin face identity only; do not copy this camera or change beaver."
+        }
+      ],
+      "prompt": "Edit reference 1 only. Correct ONLY the small hedgehog Mr. PinPin's FACE, visible through the windshield to the right of the beaver. Use reference 2's clear PinPin face as the identity reference: soft cream fur, a gently projecting tapered hedgehog muzzle, one small dark nose at the snout tip, two correctly placed glossy dark eyes, small rounded ears, and a subtle friendly closed-mouth expression. His face must read as a coherent miniature version of that hedgehog, not a flat humanlike face or a patch of separate features. Keep his exact head size, head position, gaze direction, quills, body, passenger seat and belt. Preserve the beaver exactly, and preserve the entire tractor, trailer, logs, straps, crane, lighting, colors, camera and forest exactly as in reference 1. This is a localized facial repair, not a redesign or rerender of the scene. Output the complete original landscape1536x1024 with only this small face corrected, no text.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-09-v2.png"
+    },
+    {
+      "id": "scene-02",
+      "order": 2,
+      "title": "Empty forest track",
+      "beat": "Enormous tire impressions suggest the distant tractor rumble.",
+      "camera": "Camera 8 cm above the track, moderate wide view following the curve right. Ferns frame the foreground.",
+      "staging": "Empty landscape final. No fauna or visible tractor.",
+      "alt": "Large tire tracks curve around a quiet fern-lined woodland bend.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Approved dimensional woodland rendering and morning light only."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate one landscape image, exactly 1536 x 1024 pixels, a polished dimensional children's picture-book environment. Match the approved cover's beautiful tangible woodland: detailed bark, moss, ferns and small white flowers, rich natural green shade, warm directional sunlight, realistic miniature-scale textures and readable depth. Preserve highlight detail; no blown-out white light. Landscape only: absolutely no animals, people, machinery, text, lettering, borders or panels.\n\nTransform the reference into a completely empty narrow forest track in bright morning light. Physically put the camera only 8 cm above the ground, with a 28mm lens feel. Huge, sharply readable tractor-tire tread impressions start in the near foreground and lead around a rightward bend, disappearing behind living ferns and trees. The prints feel enormous from a hedgehog's eye height. Include tactile soil, tiny stones, oak leaves, moss and delicate fern fronds close to the lens. Midground and bend remain legible; no fog or heavy blur. The forest is healthy and welcoming. No tractor visible anywhere, no distant vehicle silhouette, no fauna, no sound-effect lettering. One continuous full-bleed illustration.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-02.png"
+    },
+    {
+      "id": "scene-04",
+      "order": 4,
+      "title": "Windfallen oak beside the stream",
+      "beat": "A recent natural windfall will supply the timber for the bridge repair elsewhere downstream.",
+      "camera": "Camera 35 cm above a streamside clearing, moderately wide. Exposed roots left; stream runs foreground-left toward background-right.",
+      "staging": "Empty landscape final, no animals or equipment. Bridge location is about 100 metres downstream and outside this view.",
+      "alt": "An oak blown down by the wind rests beside a gentle forest stream, its roots exposed at the left.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Approved woodland style, texture and morning exposure only."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate one landscape image, exactly 1536 x 1024 pixels, a polished dimensional children's picture-book environment. Match the approved cover's beautiful tangible woodland: detailed bark, moss, ferns and small white flowers, rich natural green shade, warm directional sunlight, realistic miniature-scale textures and readable depth. Preserve highlight detail; no blown-out white light. Landscape only: absolutely no animals, people, machinery, text, lettering, borders or panels.\n\nTransform the reference into a quiet streamside woodland clearing, viewed from a camera 35 cm above the ground with a 35mm lens feel. A single recently windfallen oak lies on the forest bank, clearly naturally uprooted: exposed earth-and-root plate at the LEFT edge, rough bark-covered trunk extending toward centre-right on dry land, a few naturally torn branch ends and leafy branches. Its toppling was caused by wind. No clean saw-cut trunk end, no felled stumps, no logging damage to living trees. The gentle shallow stream travels diagonally from FOREGROUND LEFT toward BACKGROUND RIGHT, curving beyond the clearing. Keep the fallen trunk beside the water rather than spanning it. Show healthy mixed woodland on both banks, mossy stones, lush ferns, small white wildflowers, filtered morning sun and readable shade. This is the windfall clearing, about 100 metres upstream of a different bridge site. There is NO bridge visible, no bridge damage, no animals, no machinery, no text. Keep the whole fallen tree readable and enough clear earth near the trunk for a later conversation, though this image itself stays empty.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-04.png"
+    },
+    {
+      "id": "bridge",
+      "order": 11,
+      "title": "Footbridge before repairs: clean location plate",
+      "beat": "At a separate downstream location, three missing near-end deck boards need replacing.",
+      "camera": "Near-bank approach camera, 45 cm high, 32mm view toward opposite bank. Bridge angles from centre foreground to centre-right background; near-bank dry parking LEFT.",
+      "staging": "Empty banks. Broad dry near-bank apron LEFT of footbridge is suitable for tractor parking and unloading; tractor never crosses.",
+      "alt": "A little wooden footbridge has three missing boards at its near end, with intact supports and rails over a gentle stream.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Woodland rendering and warm morning style only; omit its vehicle, animal and lettering."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate one landscape image, exactly 1536 x 1024 pixels, a polished dimensional children's picture-book environment. Match the approved cover's beautiful tangible woodland: detailed bark, moss, ferns and small white flowers, rich natural green shade, warm directional sunlight, realistic miniature-scale textures and readable depth. Preserve highlight detail; no blown-out white light. Landscape only: absolutely no animals, people, machinery, text, lettering, borders or panels.\n\nTransform the reference into a NEW stream crossing location, about 100 metres downstream from a windfallen-oak clearing (that clearing is out of sight). Physically position the camera on the NEAR BANK'S woodland approach track, 45 cm above ground, 32mm lens feel, looking toward the opposite bank. A modest wooden FOOTBRIDGE, only 2 metres span and 1 metre wide, crosses a narrow shallow gentle stream. Its deck angles from centre foreground to centre-right midground, with low simple natural wooden handrails on BOTH sides. Build it believably: two parallel sturdy natural-timber longitudinal stringers span the stream beneath transverse deck boards. Exactly THREE adjacent transverse deck boards are missing at the NEAR end, making a modest rectangular opening through which the TWO intact sound timber stringers and water are clearly visible. The remaining deck, all railings, posts, and banks are sound; no dramatic collapse or shattered wood. This is a small footbridge, unmistakably too narrow for a tractor.\n\nEstablish continuity landmarks: a broad dry level grass-and-earth apron on the NEAR BANK LEFT of the bridge suitable for later tractor parking and unloading on LAND; a mossy oval boulder beside the far-bank right bridge post; an old oak on the far-bank left with an exposed root beside the path; slender willow foliage behind the far bank on the right. The narrow stream comes from foreground LEFT and flows under the bridge toward background RIGHT. The near-bank grassy edge extends upstream toward the camera-left side and will provide a picnic spot later. Give it welcoming healthy woodland, ferns, small white flowers and clear cool water. Soft warm morning sunlight from upper left, textured leaf highlights and open readable shadows. No animals, machinery, timber piles or picnic objects. No fallen tree at this site. No text. Keep space and construction plainly readable.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/plates/bridge.png"
+    },
+    {
+      "id": "picnic",
+      "order": 15,
+      "title": "Upstream picnic bank: repaired bridge plate",
+      "beat": "The repair is finished; a peaceful bank beside the intact bridge awaits the picnic.",
+      "camera": "Move physically 2 metres upstream along the SAME near bank, lower to 25 cm, turn downstream toward the bridge. Foreground grass left/right, repaired bridge middle background.",
+      "staging": "Clear near-bank grass foreground LEFT for beaver and foreground RIGHT for PinPin; no cast, vehicle or mats yet.",
+      "alt": "An empty grassy bank overlooks a gentle stream and the same small footbridge with its deck fully repaired.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/bridge.png",
+          "role": "Exact bridge design, banks, stream and continuity landmarks; new physical camera view, repaired deck and later light."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Approved dimensional woodland texture and controlled rich color only."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate one landscape image, exactly 1536 x 1024 pixels, a polished dimensional children's picture-book environment. Match the approved cover's beautiful tangible woodland: detailed bark, moss, ferns and small white flowers, rich natural green shade, warm directional sunlight, realistic miniature-scale textures and readable depth. Preserve highlight detail; no blown-out white light. Landscape only: absolutely no animals, people, machinery, text, lettering, borders or panels.\n\nReference image 1 is the SAME bridge location before repair; reference image 2 is only the approved book's rendering style. Make a physically new view of reference 1, not a crop: walk the camera TWO METRES UPSTREAM along the SAME NEAR BANK toward its left grassy edge, lower the camera to 25 cm, and turn to look DOWNSTREAM. The same little wooden footbridge must now appear in the MIDDLE BACKGROUND, viewed more from its side at an oblique angle. Keep its 2 metre span, 1 metre width, simple timber rails on both sides, two longitudinal timber stringers, same posts and construction. The THREE missing near-end deck boards have now been replaced by matching sound boards: its entire deck is continuous, fully repaired and safe. No remaining hole or broken plank.\n\nPreserve the bridge plate's geography, adjusted only by real camera parallax: same gentle narrow stream, same mossy oval boulder at the far-bank right bridge post, same old oak and exposed root on the far-bank left, willow foliage behind the far-bank right. Water flows from near left foreground toward the bridge and downstream right. Let foreground be the SAME near bank's soft grass beside the water: open usable grass foreground LEFT for a future beaver and foreground RIGHT for a future small hedgehog, both on dry land. Show an inviting calm stream bank, detailed ferns, moss and small white flowers. Empty environment only, no characters, tractor, equipment, mats, food, baskets or twigs arranged as props. Soft LATE-AFTERNOON sunlight, warmer and gentler than the bridge plate but retain rich green shade and all highlight detail. The intact bridge remains recognizable and visible behind the picnic space. No text or lettering.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/plates/picnic.png"
+    },
+    {
+      "id": "scene-11",
+      "order": 11,
+      "title": "Unloading on firm ground",
+      "beat": "Beaver parks; PinPin remains in the cab while timber is set on the bank.",
+      "camera": "Retreat 4 metres along near-bank track, 70 cm camera, 32mm wide. Parked tractor LEFT; damaged footbridge RIGHT.",
+      "staging": "Retreat 4 metres along near-bank track, 70 cm camera, 32mm wide. Parked tractor LEFT; damaged footbridge RIGHT.",
+      "alt": "Beaver parks; PinPin remains in the cab while timber is set on the bank.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/bridge.png",
+          "role": "Bridge location, woodland, rails and stream; apply requested repair state and physical framing."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Shared cast identity, relative scale, blue vest and tractor design."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-05.png",
+          "role": "Cab seating: beaver driver LEFT, small PinPin belted passenger RIGHT."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate ONE finished landscape story illustration, exactly 1536 x 1024 pixels. Detailed dimensional woodland picture-book realism, tactile bark, fur, quills, moss and ferns. Keep rich green shade and gentle warm sunlight, no blown highlights. No text, speech bubbles, borders or panels.\nReference 1 establishes bridge location; reference 2 cast and vehicle; reference 3 safe cab seating.\nIdentity: Mr. PinPin is a small natural hedgehog about 25 cm long, compact brown quills, cream muzzle, belly and short paws, glossy dark eyes and a gentle curious face. He has exactly two forelegs below his chest and two hindlegs below his haunches, far limbs may be naturally occluded. No clothes or golden ornament. Beaver has warm chestnut fur, small round ears, two small incisors, broad flat scaly tail emerging once from his rump, a simple blue work vest, natural rounded non-human animal body with two forelimbs and two hindlimbs. Beaver is roughly twice PinPin's body length, not a human in fur. Tail is not an extra leg. Match the cast reference closely. Natural modest expressions, no huge cartoon grin. \nMove the camera FOUR METRES BACK on the approach track to reveal a broad firm dry apron in the near-bank LEFT foreground. The red timber tractor and attached trailer are parked entirely on that LEFT apron, parallel to the stream, all tires clearly on soil, well clear of the water. Bridge sits smaller at RIGHT across the narrow stream, still with the modest missing near-end deck boards and otherwise sound rails. Clarify its support as two sound longitudinal timber stringers, not three.\nShow the END of unloading: a neat little stack of windfallen bark-covered logs and prepared bridge planks lies fully supported on the dry near-bank ground between tractor and bridge, safely beside the track. Trailer is now EMPTY. Yellow crane's open empty grapple has just released the stack and is held above the pile; nothing hangs over any animal. Beaver LEFT and small PinPin RIGHT are both visible through the cab glass, securely seated as in reference 3; beaver works the crane controls and PinPin stays in his fitted passenger seat. No character outside the cab. Entire unloading area is on the same NEAR bank as camera, never the opposite grass clearing. Tractor is much wider than the little pedestrian footbridge and never touches or crosses it. Healthy woodland, warm daytime light. Readable mechanical geometry, empty trailer and grounded timber pile.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-11.png"
+    },
+    {
+      "id": "scene-12",
+      "order": 12,
+      "title": "One gap for a small paw",
+      "beat": "Repairs are nearly complete; PinPin notices a final short narrow gap at the approach.",
+      "camera": "35 cm camera, close medium view of near-end deck and dry bank; beaver LEFT and PinPin RIGHT.",
+      "staging": "35 cm camera, close medium view of near-end deck and dry bank; beaver LEFT and PinPin RIGHT.",
+      "alt": "Repairs are nearly complete; PinPin notices a final short narrow gap at the approach.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/bridge.png",
+          "role": "Bridge location, woodland, rails and stream; apply requested repair state and physical framing."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Shared cast identity, relative scale, blue vest and tractor design."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate ONE finished landscape story illustration, exactly 1536 x 1024 pixels. Detailed dimensional woodland picture-book realism, tactile bark, fur, quills, moss and ferns. Keep rich green shade and gentle warm sunlight, no blown highlights. No text, speech bubbles, borders or panels.\nReference 1 supplies the small bridge location; reference 2 supplies the cast.\nIdentity: Mr. PinPin is a small natural hedgehog about 25 cm long, compact brown quills, cream muzzle, belly and short paws, glossy dark eyes and a gentle curious face. He has exactly two forelegs below his chest and two hindlegs below his haunches, far limbs may be naturally occluded. No clothes or golden ornament. Beaver has warm chestnut fur, small round ears, two small incisors, broad flat scaly tail emerging once from his rump, a simple blue work vest, natural rounded non-human animal body with two forelimbs and two hindlimbs. Beaver is roughly twice PinPin's body length, not a human in fur. Tail is not an extra leg. Match the cast reference closely. Natural modest expressions, no huge cartoon grin. \nLater at the SAME near end of the little bridge, move camera close to the approach at 35 cm height. Most repair is complete: fresh matching wood forms a solid continuous deck except ONE SMALL NARROW rectangular gap at the near threshold, just a short paw-width gap along one approach corner, big enough for tiny PinPin's paw but not a dramatic open hole. Intact simple wooden rails, gentle stream below. Beaver waits on dry bank LEFT, his compact natural body and broad flat tail visible, gazing at the gap. PinPin stands naturally on short legs on dry bank RIGHT, safely back from the gap, nose and curious gaze directed down at this small missed opening. His whole body is much smaller than Beaver. No one stands over an open hole. Beaver's two forepaws rest naturally in front of his body, two hind feet beneath him; tail lies behind. A few neatly arranged spare short boards on the bank, no moving machinery, no tools in motion. Tractor out of frame. Friendly focused expressions, warm daylight, readable modest defect at the near threshold.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-12.png"
+    },
+    {
+      "id": "scene-13",
+      "order": 13,
+      "title": "The short plank",
+      "beat": "Beaver fits the final short plank while PinPin waits clear.",
+      "camera": "45 cm near-bank camera, medium side-oblique shot. Beaver left at threshold, PinPin right behind on bank.",
+      "staging": "45 cm near-bank camera, medium side-oblique shot. Beaver left at threshold, PinPin right behind on bank.",
+      "alt": "Beaver fits the final short plank while PinPin waits clear.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/bridge.png",
+          "role": "Bridge location, woodland, rails and stream; apply requested repair state and physical framing."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Shared cast identity, relative scale, blue vest and tractor design."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate ONE finished landscape story illustration, exactly 1536 x 1024 pixels. Detailed dimensional woodland picture-book realism, tactile bark, fur, quills, moss and ferns. Keep rich green shade and gentle warm sunlight, no blown highlights. No text, speech bubbles, borders or panels.\nReference 1 establishes the bridge location, reference 2 the cast. Apply the nearly complete repair state.\nIdentity: Mr. PinPin is a small natural hedgehog about 25 cm long, compact brown quills, cream muzzle, belly and short paws, glossy dark eyes and a gentle curious face. He has exactly two forelegs below his chest and two hindlegs below his haunches, far limbs may be naturally occluded. No clothes or golden ornament. Beaver has warm chestnut fur, small round ears, two small incisors, broad flat scaly tail emerging once from his rump, a simple blue work vest, natural rounded non-human animal body with two forelimbs and two hindlimbs. Beaver is roughly twice PinPin's body length, not a human in fur. Tail is not an extra leg. Match the cast reference closely. Natural modest expressions, no huge cartoon grin. \nAt the near-bank bridge threshold, all of the repaired deck is already sound except a small SHORT narrow opening at the near RIGHT approach corner, as viewed from the original near-bank track. Beaver at LEFT crouches naturally on his two hind feet on firm dry ground, broad tail resting behind on land. With exactly two short forepaws, he lowers ONE short wooden plank precisely into that small last threshold opening. The plank is a small finishing piece, about 35 cm long, not a whole bridge or long beam. Show both forepaw attachments clearly, two hind feet supporting him, one broad flat tail. Gentle capable concentration. Little PinPin waits at RIGHT on dry grass a safe body-length back from the work, paws on ground, watching Beaver; no paw reaches toward the plank and he is not on the bridge. Close medium side-oblique camera at 45 cm height makes plank, paws and threshold legible, with intact rails and gentle stream establishing the location. No active crane or machinery; tractor outside frame. The rest of the bridge is complete and unchanged. Warm controlled daylight.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-13.png"
+    },
+    {
+      "id": "scene-14",
+      "order": 14,
+      "title": "First crossing",
+      "beat": "Small PinPin crosses the completed footbridge first while Beaver remains on the bank.",
+      "camera": "Low 25 cm camera beside far-bank landing looking along bridge back toward near bank.",
+      "staging": "Low 25 cm camera beside far-bank landing looking along bridge back toward near bank.",
+      "alt": "Small PinPin crosses the completed footbridge first while Beaver remains on the bank.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/bridge.png",
+          "role": "Bridge location, woodland, rails and stream; apply requested repair state and physical framing."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Shared cast identity, relative scale, blue vest and tractor design."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate ONE finished landscape story illustration, exactly 1536 x 1024 pixels. Detailed dimensional woodland picture-book realism, tactile bark, fur, quills, moss and ferns. Keep rich green shade and gentle warm sunlight, no blown highlights. No text, speech bubbles, borders or panels.\nReference 1 is the bridge's geography and design before repair; it is now FULLY REPAIRED. Reference 2 establishes cast identity and scale.\nIdentity: Mr. PinPin is a small natural hedgehog about 25 cm long, compact brown quills, cream muzzle, belly and short paws, glossy dark eyes and a gentle curious face. He has exactly two forelegs below his chest and two hindlegs below his haunches, far limbs may be naturally occluded. No clothes or golden ornament. Beaver has warm chestnut fur, small round ears, two small incisors, broad flat scaly tail emerging once from his rump, a simple blue work vest, natural rounded non-human animal body with two forelimbs and two hindlimbs. Beaver is roughly twice PinPin's body length, not a human in fur. Tail is not an extra leg. Match the cast reference closely. Natural modest expressions, no huge cartoon grin. \nPhysically take camera to just beside the FAR-BANK landing, lower it to 25 cm and look back diagonally along the little bridge toward the original near bank. PinPin goes first: show the small natural hedgehog on all four short legs finishing his crossing on the last intact deck boards by this far landing, turning his head back with a pleased gentle expression toward Beaver. His body remains about 25 cm long compared with the 1 metre-wide footbridge, not filling its width. Full bridge is safe and continuous: fresh matching boards cover EVERY gap, no missing slat anywhere, solid rails on both sides. Beaver stays on the original NEAR bank beyond the opposite end, larger species but naturally smaller through distance, calmly watching PinPin. Beaver must remain on soil beyond the bridge, not walking behind him on its deck. Gentle stream clearly passes beneath. No tractor on or near bridge deck, no machinery in frame. Natural four-leg hedgehog anatomy, no duplicated paws or extra limbs. Warm afternoon light, same oak/willow/mossy-stone woodland, readable complete crossing.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-14.png"
+    },
+    {
+      "id": "scene-15",
+      "order": 15,
+      "title": "Picnic by the stream",
+      "beat": "Beaver and PinPin rest together; the tractor's empty trailer waits in the distance.",
+      "camera": "25 cm upstream near-bank picnic camera looking downstream. Beaver LEFT, PinPin RIGHT.",
+      "staging": "25 cm upstream near-bank picnic camera looking downstream. Beaver LEFT, PinPin RIGHT.",
+      "alt": "Beaver and PinPin rest together; the tractor's empty trailer waits in the distance.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/picnic.png",
+          "role": "Same repaired footbridge and picnic bank, late-afternoon light."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Shared cast identity, relative scale, blue vest and tractor design."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate ONE finished landscape story illustration, exactly 1536 x 1024 pixels. Detailed dimensional woodland picture-book realism, tactile bark, fur, quills, moss and ferns. Keep rich green shade and gentle warm sunlight, no blown highlights. No text, speech bubbles, borders or panels.\nReference 1 is the clean picnic location; preserve its bank and completed bridge in the middle background. Reference 2 supplies the cast and tractor.\nIdentity: Mr. PinPin is a small natural hedgehog about 25 cm long, compact brown quills, cream muzzle, belly and short paws, glossy dark eyes and a gentle curious face. He has exactly two forelegs below his chest and two hindlegs below his haunches, far limbs may be naturally occluded. No clothes or golden ornament. Beaver has warm chestnut fur, small round ears, two small incisors, broad flat scaly tail emerging once from his rump, a simple blue work vest, natural rounded non-human animal body with two forelimbs and two hindlimbs. Beaver is roughly twice PinPin's body length, not a human in fur. Tail is not an extra leg. Match the cast reference closely. Natural modest expressions, no huge cartoon grin. \nPlace the entire cast together on dry soft grass in the foreground: Beaver sits naturally at LEFT, broad flat tail resting behind toward left, and much smaller PinPin sits naturally at RIGHT, looking toward Beaver. A small simple folded picnic cloth between them holds a few berries and apple pieces. Beaver's two short forepaws and two hind feet are readable, not human arms and legs. PinPin's short natural paws attach correctly below chest and haunches. Relaxed, quietly pleased faces. Do not show either animal eating a twig yet; no twig visible anywhere among picnic objects.\nKeep the repaired little bridge intact and visible behind them toward centre-right, with every deck board present. Add the same red tractor with yellow crane folded neatly and coupled completely EMPTY timber trailer, parked far away on dry LEFT-background ground on this SAME bank; it is small in frame, off the bridge, cab unoccupied. No load remaining in trailer, no suspended timber. The stream runs behind the characters below their bank, with fern/moss/oak/willow continuity. Soft late-afternoon light matching plate, rich readable textures. This is a medium-wide picnic establishment, characters are the foreground focus.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-15.png"
+    },
+    {
+      "id": "scene-16",
+      "order": 16,
+      "title": "A mysterious crunch",
+      "beat": "Beaver chews, but the food is hidden below the frame.",
+      "camera": "Tight beaver head portrait at his eye height, looking slightly RIGHT toward off-camera PinPin.",
+      "staging": "Tight beaver head portrait at his eye height, looking slightly RIGHT toward off-camera PinPin.",
+      "alt": "Beaver chews, but the food is hidden below the frame.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/picnic.png",
+          "role": "Same repaired footbridge and picnic bank, late-afternoon light."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Shared cast identity, relative scale, blue vest and tractor design."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate ONE finished landscape story illustration, exactly 1536 x 1024 pixels. Detailed dimensional woodland picture-book realism, tactile bark, fur, quills, moss and ferns. Keep rich green shade and gentle warm sunlight, no blown highlights. No text, speech bubbles, borders or panels.\nReference 1 supplies only picnic light and woodland color; reference 2 supplies ONLY Beaver identity for this image. Do not include PinPin or tractor.\nIdentity: Mr. PinPin is a small natural hedgehog about 25 cm long, compact brown quills, cream muzzle, belly and short paws, glossy dark eyes and a gentle curious face. He has exactly two forelegs below his chest and two hindlegs below his haunches, far limbs may be naturally occluded. No clothes or golden ornament. Beaver has warm chestnut fur, small round ears, two small incisors, broad flat scaly tail emerging once from his rump, a simple blue work vest, natural rounded non-human animal body with two forelimbs and two hindlimbs. Beaver is roughly twice PinPin's body length, not a human in fur. Tail is not an extra leg. Match the cast reference closely. Natural modest expressions, no huge cartoon grin. \nA TRUE TIGHT PORTRAIT of Beaver's head and top of blue vest at the picnic, a 75mm portrait lens feel at beaver eye height. Beaver's face fills most of the frame, top of head comfortably inside upper edge, bottom edge cuts just below the upper vest/chest. He faces gently toward camera-RIGHT where PinPin sits OFF CAMERA. His mouth is nearly closed as he calmly chews, cheeks only subtly rounded, two small incisors just visible. Warm amused eyes, understated expression, no huge teeth or stretched mouth.\nThe food item is completely BELOW the lower image edge, as are both paws. No twig, stick, leaf, food fragment or object appears at the lips or anywhere in frame. No PinPin, animal silhouette, reflection or duplicate character. No hand enters frame. Background is softly separated natural green of the SAME streamside bank with afternoon light, not an identifiable twig reveal. No wide landscape composition; only head, neck and upper vest. No text or crunch lettering.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-16.png"
+    },
+    {
+      "id": "scene-17",
+      "order": 17,
+      "title": "PinPin's question",
+      "beat": "PinPin wonders whether that woody crunch is lunch or the bridge.",
+      "camera": "Tight reverse hedgehog portrait at his eye height; eyes and nose point camera LEFT to off-screen Beaver.",
+      "staging": "Tight reverse hedgehog portrait at his eye height; eyes and nose point camera LEFT to off-screen Beaver.",
+      "alt": "PinPin wonders whether that woody crunch is lunch or the bridge.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/picnic.png",
+          "role": "Same repaired footbridge and picnic bank, late-afternoon light."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-direct/scene-10-v2.png",
+          "role": "PinPin identity only, not original location."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate ONE finished landscape story illustration, exactly 1536 x 1024 pixels. Detailed dimensional woodland picture-book realism, tactile bark, fur, quills, moss and ferns. Keep rich green shade and gentle warm sunlight, no blown highlights. No text, speech bubbles, borders or panels.\nReference 1 supplies picnic light and bank foliage ONLY. Reference 2 supplies ONLY PinPin identity. SOLO HEDGEHOG portrait, no beaver or other animal.\nIdentity: Mr. PinPin is a small natural hedgehog about 25 cm long, compact brown quills, cream muzzle, belly and short paws, glossy dark eyes and a gentle curious face. He has exactly two forelegs below his chest and two hindlegs below his haunches, far limbs may be naturally occluded. No clothes or golden ornament. Beaver has warm chestnut fur, small round ears, two small incisors, broad flat scaly tail emerging once from his rump, a simple blue work vest, natural rounded non-human animal body with two forelimbs and two hindlimbs. Beaver is roughly twice PinPin's body length, not a human in fur. Tail is not an extra leg. Match the cast reference closely. Natural modest expressions, no huge cartoon grin. \nCut to a true tight reverse portrait of small PinPin at the picnic. Put camera at his low eye height, with a gentle 75mm portrait lens feel. His head, quill-covered shoulders and upper cream chest fill the frame; lower body and paws remain below lower edge. He tilts his head just a little, eyes and nose pointing clearly toward CAMERA LEFT, where his friend Beaver is OFF SCREEN. Curious affectionate puzzlement, subtle small smile, mouth nearly closed, no theatrical shock or huge grin. Keep compact brown quills, cream muzzle, tiny rounded ears and glossy eyes identical to reference 2, natural small hedgehog proportions, no costume or ornament.\nThe reverse background is softly separated fern-and-grass near-bank foliage with the same gentle late-afternoon lighting. It need not show the bridge because this is a close conversation cut. Beaver is entirely outside the picture, and the mysterious food remains hidden. Absolutely no twig, stick, food held up, animal reflection, speech text or lettering. Do not use a wide two-character composition. Eyeline LEFT is essential.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-17.png"
+    },
+    {
+      "id": "scene-18",
+      "order": 18,
+      "title": "His own willow twig",
+      "beat": "Beaver reveals his own lunch; the completed bridge remains intact behind them.",
+      "camera": "Medium two-shot back at original picnic orientation, Beaver LEFT and PinPin RIGHT, completed bridge background.",
+      "staging": "Medium two-shot back at original picnic orientation, Beaver LEFT and PinPin RIGHT, completed bridge background.",
+      "alt": "Beaver reveals his own lunch; the completed bridge remains intact behind them.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/plates/picnic.png",
+          "role": "Same repaired footbridge and picnic bank, late-afternoon light."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Shared cast identity, relative scale, blue vest and tractor design."
+        }
+      ],
+      "prompt": "Use case: illustration-story.\nCreate ONE finished landscape story illustration, exactly 1536 x 1024 pixels. Detailed dimensional woodland picture-book realism, tactile bark, fur, quills, moss and ferns. Keep rich green shade and gentle warm sunlight, no blown highlights. No text, speech bubbles, borders or panels.\nReference 1 establishes the repaired bridge picnic location; reference 2 establishes cast identity and scale.\nIdentity: Mr. PinPin is a small natural hedgehog about 25 cm long, compact brown quills, cream muzzle, belly and short paws, glossy dark eyes and a gentle curious face. He has exactly two forelegs below his chest and two hindlegs below his haunches, far limbs may be naturally occluded. No clothes or golden ornament. Beaver has warm chestnut fur, small round ears, two small incisors, broad flat scaly tail emerging once from his rump, a simple blue work vest, natural rounded non-human animal body with two forelimbs and two hindlimbs. Beaver is roughly twice PinPin's body length, not a human in fur. Tail is not an extra leg. Match the cast reference closely. Natural modest expressions, no huge cartoon grin. \nReturn to a MEDIUM TWO-SHOT at the same picnic orientation, camera 30 cm above the grass. Beaver LEFT, small PinPin RIGHT, both naturally seated on dry bank. Beaver holds up his OWN little willow twig in ONE short forepaw in front of his chest, a clearly separate slender 15 cm twig with two small willow leaves at its tip. It came from his picnic lunch, not from the bridge. His other forepaw rests beside the picnic cloth; two hind feet below his rounded body and ONE broad flat tail behind left. Modest friendly knowing smile, two small incisors, natural non-human anatomy. PinPin looks up LEFT toward Beaver and the twig with an affectionate little laugh, mouth only slightly open, eyes warm, no manic expression. His small short paws remain naturally on grass, anatomically attached.\nA simple small red-and-white checked picnic cloth with a few berries and apple pieces sits between them, coherent with a quiet woodland picnic. The SAME completed wooden footbridge remains clearly visible and intact in background centre-right, every board and both rails sound, no chewing damage, no broken or missing timber. Red tractor and completely EMPTY trailer are parked small in far LEFT background on dry near-bank land, crane folded, not on bridge. Soft late-afternoon light, detailed green shade and warm fur, no blown highlights. This is the first and only visible twig reveal. No text, speech balloons or lettering.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-18.png"
+    },
+    {
+      "id": "scene-06-v2",
+      "order": 6,
+      "title": "Scene 06: Beaver identity correction",
+      "beat": "The beaver safely operates the crane while PinPin stays in his passenger seat.",
+      "camera": "Preserve the exact original frame, camera, perspective, exposure and composition.",
+      "staging": "Both characters remain seated in the cab, with unchanged bodies, controls and machinery action.",
+      "alt": "The beaver operates a yellow crane lifting a round log while PinPin sits safely inside the tractor cab.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-06.png",
+          "role": "Exact edit target: preserve the entire frame except the specified corrections."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Beaver head identity only: broad muzzle, small paired incisors, fine whiskers, chestnut fur and small round ears; do not copy pose, scale or scene."
+        }
+      ],
+      "prompt": "Use case: identity-preserve.\nMake one restrained edit of reference image 1 (scene 06), preserving its entire landscape frame at 1536 x 1024. Reference image 2 (scene 03) is ONLY the established beaver identity, not a composition or pose reference.\n\nCorrect the small driver's HEAD ONLY, in its existing cab position and at its existing scale and angle. Match scene 03's warm chestnut beaver face: a broad beaver muzzle, two small distinct natural incisors visible just below the upper lip, fine readable whiskers, small round ears, the same gentle capable expression. Keep teeth modest and proportionate, never huge cartoon teeth. Keep the blue work vest, body, paws, controls, seated posture and eyeline unchanged. The driver must read as the established beaver rather than a bear. Do not enlarge his head or move him closer to the camera. Do not add a visible tail through the cab.\n\nOutside the beaver head, preserve reference image 1 as faithfully as possible: PinPin's exact face, quills, body and passenger position; both characters safely inside the cab; red tractor, yellow boom, dark steel jaws, glass, wheels, stakes, existing logs and trailer load state, ground, trees, stream, composition, camera, focus, texture, highlights, shadows, exposure and color. No new characters, no new scene, no clothing or ornament on PinPin, no machinery redesign, no text, no crop and no lighting polish. This is a targeted visual-continuity correction.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-06-v2.png"
+    },
+    {
+      "id": "scene-07-v2",
+      "order": 7,
+      "title": "Scene 07: Beaver identity correction",
+      "beat": "The beaver safely operates the crane while PinPin stays in his passenger seat.",
+      "camera": "Preserve the exact original frame, camera, perspective, exposure and composition.",
+      "staging": "Both characters remain seated in the cab, with unchanged bodies, controls and machinery action.",
+      "alt": "The beaver loads a third round log into the trailer while PinPin remains in his passenger seat.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-07.png",
+          "role": "Exact edit target: preserve the entire frame except the specified corrections."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Beaver head identity only: broad muzzle, small paired incisors, fine whiskers, chestnut fur and small round ears; do not copy pose, scale or scene."
+        }
+      ],
+      "prompt": "Use case: identity-preserve.\nMake one restrained edit of reference image 1 (scene 07), preserving its entire landscape frame at 1536 x 1024. Reference image 2 (scene 03) is ONLY the established beaver identity, not a composition or pose reference.\n\nCorrect the small driver's HEAD ONLY, in its existing cab position and at its existing scale and angle. Match scene 03's warm chestnut beaver face: a broad beaver muzzle, two small distinct natural incisors visible just below the upper lip, fine readable whiskers, small round ears, the same gentle capable expression. Keep teeth modest and proportionate, never huge cartoon teeth. Keep the blue work vest, body, paws, controls, seated posture and eyeline unchanged. The driver must read as the established beaver rather than a bear. Do not enlarge his head or move him closer to the camera. Do not add a visible tail through the cab.\n\nOutside the beaver head, preserve reference image 1 as faithfully as possible: PinPin's exact face, quills, body and passenger position; both characters safely inside the cab; red tractor, yellow boom, dark steel jaws, glass, wheels, stakes, existing logs and trailer load state, ground, trees, stream, composition, camera, focus, texture, highlights, shadows, exposure and color. No new characters, no new scene, no clothing or ornament on PinPin, no machinery redesign, no text, no crop and no lighting polish. This is a targeted visual-continuity correction.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-07-v2.png"
+    },
+    {
+      "id": "scene-11-v2",
+      "order": 11,
+      "title": "Scene 11: Beaver identity and delivered-log continuity",
+      "beat": "Delivered timber remains on the bank beside the broken footbridge, before sawing or fitting.",
+      "camera": "Preserve the exact original frame, camera, perspective, exposure and composition.",
+      "staging": "Both characters remain seated in the cab; tractor stays parked on land, trailer empty, grapple open. Three full-length round oak logs lie entirely on the bank.",
+      "alt": "A beaver and PinPin sit in a parked red tractor beside three delivered oak logs and a broken woodland footbridge.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-11.png",
+          "role": "Exact edit target: preserve the entire frame except the specified corrections."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Beaver head identity only: broad muzzle, small paired incisors, fine whiskers, chestnut fur and small round ears; do not copy pose, scale or scene."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-08.png",
+          "role": "Cargo form only: three full-length round bark-covered oak logs; do not copy the loaded trailer or straps."
+        }
+      ],
+      "prompt": "Use case: identity-preserve and precise-object-edit.\nMake one restrained edit of reference image 1 (scene 11), preserving its entire landscape frame at 1536 x 1024. Reference image 2 (scene 03) is ONLY the established beaver identity, not a composition or pose reference. Reference image 3 (scene 08) is ONLY the delivered cargo form.\n\nCorrect the small driver's HEAD ONLY, in its existing cab position and at its existing scale and angle. Match scene 03's warm chestnut beaver face: a broad beaver muzzle, two small distinct natural incisors visible just below the upper lip, fine readable whiskers, small round ears, the same gentle capable expression. Keep teeth modest and proportionate, never huge cartoon teeth. Keep the blue work vest, body, paws, controls, seated posture and eyeline unchanged. The driver must read as the established beaver rather than a bear. Do not enlarge his head or move him closer to the camera. Do not add a visible tail through the cab.\n\nOnly one additional correction: replace the entire existing mixed bank pile of squared beams, planks and short rounds with EXACTLY THREE full-length cylindrical oak logs matching the large round bark-covered logs in reference image 3. Two logs below and one above, lying together on the same dry bank in the existing pile area; preserve their natural bark, pale round cut ends, moss/lichen and full long length. These are the transported windfallen logs, not yet sawn into bridge boards. All three logs are entirely on land, clear of the stream and bridge. Remove every squared plank, beam and short round from the cargo pile. All delivered cargo must remain on the BANK; the tractor's trailer remains completely EMPTY and the raised grapple remains OPEN and empty. Keep the broken footbridge exactly broken as in image 1, including its missing approach decking; this is before repair. Tractor stays parked on land and never on the footbridge.\n\nOutside the beaver head and the cargo pile, preserve reference image 1 as faithfully as possible: PinPin's exact face, quills, body and passenger position; both characters safely inside the cab; red tractor, yellow boom, dark steel jaws, glass, wheels, stakes, empty trailer, ground, trees, stream, composition, camera, focus, texture, highlights, shadows, exposure and color. No new characters, no new scene, no clothing or ornament on PinPin, no machinery redesign, no text, no crop and no lighting polish. This is a targeted visual-continuity correction.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-11-v2.png"
+    }
+  ],
+  "navigation": [
+    {
+      "label": "Story library",
+      "href": "../library.html?lang=en"
+    },
+    {
+      "label": "Read the adventure",
+      "href": "../?story=timber-tractor&lang=en"
+    },
+    {
+      "label": "Workflow",
+      "path": "docs/storyboard/production/WORKFLOW.md"
+    }
+  ],
+  "sourceHeading": "Original Story and Visual References",
+  "sourceLinks": [
+    {
+      "label": "Standalone story and translations",
+      "path": "docs/storyboard/stories/timber-tractor.json"
+    },
+    {
+      "label": "Approved cover",
+      "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png"
+    },
+    {
+      "label": "Authorship and pacing notes",
+      "path": "docs/storyboard/production/timber-tractor-story-notes.md"
+    }
+  ],
+  "carryForwardHeading": "What This Run Tests",
+  "carryForwardNotes": [
+    "Clean landscape plates and concise camera direction establish each location before characters enter. Each scene's visible cast is added together from a shared identity reference, without colored-limb blocking.",
+    "Small faces inside a distant cab need enlarged review, not just a whole-image glance. The user identified PinPin's travel face as malformed; a targeted repair was reviewed and selected without redesigning the rest of that image.",
+    "Independent review caught softened beaver identity in cab views and squared timber appearing too early. Corrected versions are kept alongside the original candidates; the reader selects only the reviewed final paths.",
+    "A believable image is not proof of exact anatomy, machinery, load restraint or camera geometry. Hidden limbs stay unverified. Minor grille, hub and botanical variation is documented rather than described as perfect continuity."
+  ],
+  "reviewHeading": "Final Selection and Verification",
+  "workflowLabel": "Repeatable production workflow",
+  "footerNote": "Generation order and reading order are separate. Tool durations may overlap across independent lanes; their sum is not elapsed project time."
+}

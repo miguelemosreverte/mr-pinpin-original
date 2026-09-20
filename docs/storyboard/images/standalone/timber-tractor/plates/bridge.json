@@ -1,0 +1,27 @@
+{
+  "id": "bridge",
+  "order": 11,
+  "title": "Footbridge before repairs: clean location plate",
+  "beat": "At a separate downstream location, three missing near-end deck boards need replacing.",
+  "camera": "Near-bank approach camera, 45 cm high, 32mm view toward opposite bank. Bridge angles from centre foreground to centre-right background; near-bank dry parking LEFT.",
+  "staging": "Empty banks. Broad dry near-bank apron LEFT of footbridge is suitable for tractor parking and unloading; tractor never crosses.",
+  "alt": "A little wooden footbridge has three missing boards at its near end, with intact supports and rails over a gentle stream.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+      "role": "Woodland rendering and warm morning style only; omit its vehicle, animal and lettering."
+    }
+  ],
+  "prompt": "Use case: illustration-story.\nCreate one landscape image, exactly 1536 x 1024 pixels, a polished dimensional children's picture-book environment. Match the approved cover's beautiful tangible woodland: detailed bark, moss, ferns and small white flowers, rich natural green shade, warm directional sunlight, realistic miniature-scale textures and readable depth. Preserve highlight detail; no blown-out white light. Landscape only: absolutely no animals, people, machinery, text, lettering, borders or panels.\n\nTransform the reference into a NEW stream crossing location, about 100 metres downstream from a windfallen-oak clearing (that clearing is out of sight). Physically position the camera on the NEAR BANK'S woodland approach track, 45 cm above ground, 32mm lens feel, looking toward the opposite bank. A modest wooden FOOTBRIDGE, only 2 metres span and 1 metre wide, crosses a narrow shallow gentle stream. Its deck angles from centre foreground to centre-right midground, with low simple natural wooden handrails on BOTH sides. Build it believably: two parallel sturdy natural-timber longitudinal stringers span the stream beneath transverse deck boards. Exactly THREE adjacent transverse deck boards are missing at the NEAR end, making a modest rectangular opening through which the TWO intact sound timber stringers and water are clearly visible. The remaining deck, all railings, posts, and banks are sound; no dramatic collapse or shattered wood. This is a small footbridge, unmistakably too narrow for a tractor.\n\nEstablish continuity landmarks: a broad dry level grass-and-earth apron on the NEAR BANK LEFT of the bridge suitable for later tractor parking and unloading on LAND; a mossy oval boulder beside the far-bank right bridge post; an old oak on the far-bank left with an exposed root beside the path; slender willow foliage behind the far bank on the right. The narrow stream comes from foreground LEFT and flows under the bridge toward background RIGHT. The near-bank grassy edge extends upstream toward the camera-left side and will provide a picnic spot later. Give it welcoming healthy woodland, ferns, small white flowers and clear cool water. Soft warm morning sunlight from upper left, textured leaf highlights and open readable shadows. No animals, machinery, timber piles or picnic objects. No fallen tree at this site. No text. Keep space and construction plainly readable.",
+  "output": "docs/storyboard/images/standalone/timber-tractor/plates/bridge.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be42-cc85-7aa0-91b9-2c09080e629e/exec-e07ec4bd-3b53-4c19-925a-b9f99067a562.png",
+  "startedAt": "2026-09-20T10:02:55.866Z",
+  "finishedAt": "2026-09-20T10:03:28.112Z",
+  "seconds": 32.246,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "ac3a96291f7e2d6f71ee913a235b905e3336db8bca664677a4c0e3167c714bf8",
+  "review": "Inspected full 1536 x 1024 image. Attractive dimensional woodland, readable small footbridge, intact rails, modest near-end deck opening, gentle stream, and no animals or equipment. Warm highlights retain texture. Caveats: three longitudinal members appear visible rather than the requested two; exact count of three missing boards cannot be established from the opening. Boulder reads near-bank right rather than far-bank right. Largest left grass clearing reads across the stream, not a clearly usable near-bank tractor apron. Keep tractor on near-bank land in later framing; never place it on bridge. Plate is a continuity candidate with these explicit corrections for character finishing, not fully compliant approval.",
+  "reviewedAt": "2026-09-20T10:04:09.983Z"
+}

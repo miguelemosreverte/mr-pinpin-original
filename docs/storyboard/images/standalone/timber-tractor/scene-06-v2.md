@@ -1,0 +1,47 @@
+# Scene 06: Beaver identity correction
+
+Status: review candidate, not approved
+
+- Reading order: 6
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T10:23:52.697Z
+- Completed (UTC): 2026-09-20T10:24:54.634Z
+- Wall time: 61.937 seconds
+- Saved image: docs/storyboard/images/standalone/timber-tractor/scene-06-v2.png
+- Size: 1536 x 1024
+- SHA-256: 6fa560eed0544f10150de9b99e2f667dc794b54ec43ed8e084d5c19084bea81b
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0be41-d6d0-7c52-9813-cd04fa822561/exec-96320fe8-8f89-4eb1-8d11-100872884512.png
+
+## Source Beat
+
+The beaver safely operates the crane while PinPin stays in his passenger seat.
+
+## Camera Direction
+
+Preserve the exact original frame, camera, perspective, exposure and composition.
+
+## Future Character Space
+
+Both characters remain seated in the cab, with unchanged bodies, controls and machinery action.
+
+## References
+
+- docs/storyboard/images/standalone/timber-tractor/scene-06.png: Exact edit target: preserve the entire frame except the specified corrections.
+- docs/storyboard/images/standalone/timber-tractor/scene-03.png: Beaver head identity only: broad muzzle, small paired incisors, fine whiskers, chestnut fur and small round ears; do not copy pose, scale or scene.
+
+## Exact Tool Prompt
+
+```text
+Use case: identity-preserve.
+Make one restrained edit of reference image 1 (scene 06), preserving its entire landscape frame at 1536 x 1024. Reference image 2 (scene 03) is ONLY the established beaver identity, not a composition or pose reference.
+
+Correct the small driver's HEAD ONLY, in its existing cab position and at its existing scale and angle. Match scene 03's warm chestnut beaver face: a broad beaver muzzle, two small distinct natural incisors visible just below the upper lip, fine readable whiskers, small round ears, the same gentle capable expression. Keep teeth modest and proportionate, never huge cartoon teeth. Keep the blue work vest, body, paws, controls, seated posture and eyeline unchanged. The driver must read as the established beaver rather than a bear. Do not enlarge his head or move him closer to the camera. Do not add a visible tail through the cab.
+
+Outside the beaver head, preserve reference image 1 as faithfully as possible: PinPin's exact face, quills, body and passenger position; both characters safely inside the cab; red tractor, yellow boom, dark steel jaws, glass, wheels, stakes, existing logs and trailer load state, ground, trees, stream, composition, camera, focus, texture, highlights, shadows, exposure and color. No new characters, no new scene, no clothing or ornament on PinPin, no machinery redesign, no text, no crop and no lighting polish. This is a targeted visual-continuity correction.
+```
+
+## Visual Review
+
+Compared the full 1536 x 1024 edit to scene-06.png and the scene-03 identity reference. The cab driver's muzzle is broader, and small pale incisors are visible below it without exaggerated tooth size. Fine whiskers remain subtle at this distant scale; the portrait is not as unambiguous as the large scene-03 reference. Blue vest, paws at controls, seated body, PinPin's passenger position, lifted round log, dark grapple jaws, yellow boom, empty trailer, camera and woodland composition appear preserved. No new character or visible extra limb attachment. Visual comparison does not certify pixel-identical non-head regions or hidden anatomy. One correction call only; candidate for parent selection.
+
+Reviewed (UTC): 2026-09-20T10:27:01.785Z

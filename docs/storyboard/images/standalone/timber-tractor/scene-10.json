@@ -1,0 +1,36 @@
+{
+  "id": "scene-10",
+  "order": 10,
+  "title": "A Bridge for Paws",
+  "kind": "character",
+  "beat": "The stream and broken footbridge appear through the windscreen; the tractor stays on land.",
+  "camera": "Insidecabbehindseats, driverleftandPinPinrightforegroundbacks, windshieldtowardstreambridgeoffright.",
+  "staging": "Facespartialprofiles, roadendsinbankparkingLEFTnotbridge, brokennearboardsvisible.",
+  "alt": "From behind the two friends in the cab, the narrow broken footbridge appears beyond the stream bank.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/plates/cab.png",
+      "role": "Cleaninteriorlayoutandredhood."
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/plates/bridge.png",
+      "role": "Destinationgeographyandbrokenfootbridge."
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-05.png",
+      "role": "Beltedcharactersleftdriver/rightpassengeridentities."
+    }
+  ],
+  "prompt": "Use case: illustration-story. Move the camera INSIDE the red tractor cab to just behind the seats, looking forward through the broad windshield. The lower LEFT foreground shows the back and slight whiskered profile of the chestnut beaver driver in his blue vest, two forepaws at the wheel. The lower RIGHT foreground shows little brown-quilled cream-faced PinPin in his separate small passenger seat, head raised to look out. Keep their lap belts and relative size from reference 3. The windshield view is the destination from reference 2: a gentle narrow forest stream and its SMALL pedestrian wooden footbridge with three missing boards near its entrance. Arrange the bridge ahead to the RIGHT of the red hood; the tractor's dirt access track turns LEFT onto firm open bank, clearly NOT aligned to drive over the footbridge. Give the outside landscape most of the frame: sparkling shallow water, fern edges, willow leaves and the readable gap in the bridge deck. Preserve reference 1's cab materials and steering arrangement while changing camera physically, not just cropping. Midday soft light, detailed dimensional woodland children's-book realism. No extra limbs or characters; whole scene1536x1024, no lettering or panels.",
+  "output": "docs/storyboard/images/standalone/timber-tractor/scene-10.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-f9f88e46-85ab-4816-9888-a022e3f25b44.png",
+  "startedAt": "2026-09-20T10:26:51.070Z",
+  "finishedAt": "2026-09-20T10:27:59.342Z",
+  "seconds": 68.272,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "11a9068b6c9a58601764740c9c40e1bc3dbe5ad05223492a4c71a9cb44d5e4bf",
+  "review": "Accepted destination viewpoint: camera behind the two separate belted seats, bridge ahead-right with missing boards, access track stays on bank left. PinPin's profile retains a clear pointed muzzle and cream face. Beaver has two forelimbs at controls; lower limbs hidden. PinPin glances toward the driver rather than staring directly at bridge, a reaction within the same discovery beat.",
+  "reviewedAt": "2026-09-20T10:28:35.338Z"
+}

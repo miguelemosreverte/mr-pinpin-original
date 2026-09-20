@@ -1,0 +1,32 @@
+{
+  "id": "scene-06",
+  "order": 6,
+  "title": "A Very Useful Yellow Hand",
+  "kind": "character",
+  "beat": "The beaver uses the crane while PinPin watches safely from the cab.",
+  "camera": "Moveclose tologpile at0.6m, grapplingloginforegroundleft, cabbackgroundright.",
+  "staging": "One log securelygripped, raisedlow; bothcharactersinsidecab, cleararea.",
+  "alt": "The tractor's yellow crane gently lifts an oak log while the beaver and PinPin watch from the cab.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/plates/loading.png",
+      "role": "Working clearing andmachine."
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-05.png",
+      "role": "Driver/passenger identity and seating only."
+    }
+  ],
+  "prompt": "Use case: illustration-story. Move the camera in reference 1 to log height, 60 cm above the ground close to the timber pile, for an intimate close view of the crane doing its job. The yellow crane's black curved grapple jaws firmly encircle ONE horizontal oak log at its middle and lift it only a short distance above the other logs. Show the bark, clean cut end and well-connected metal joints clearly. Foreground grapple and log are the main subject; the parked red tractor cab is visible farther back at right, with reference 2's chestnut beaver in blue vest operating the control levers from the driver's seat and tiny cream-faced brown-quilled PinPin watching from his separate small passenger seat. Both remain inside the cab, belted. Their faces may be small but recognizable through clear glass. Keep the working area empty around the suspended wood. Same root-ball clearing, fern-rich forest and stream beyond, gently sunlit dimensional children's-book rendering. A real loading crane, not an excavator bucket. Clear continuous composition, landscape1536x1024, no words or panels.",
+  "output": "docs/storyboard/images/standalone/timber-tractor/scene-06.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-646663bc-09a8-401e-b784-3df3542f3675.png",
+  "startedAt": "2026-09-20T10:09:48.667Z",
+  "finishedAt": "2026-09-20T10:10:40.385Z",
+  "seconds": 51.718,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "36ce4e1aa3b40d15b9dc2de65c23984d3dacb856887a9ab8d0e72dae8ed9a79a",
+  "review": "Accepted crane close-up: grapple visibly grips one horizontal log, machine parked, both characters inside cab and no one under the load. Character faces are small; beaver's incisors/tail and belts are not fully legible from this external angle, so identity relies partly on blue vest and earlier close view. Crane joints and contact with log are plausible illustration, not a mechanical engineering certification.",
+  "reviewedAt": "2026-09-20T10:11:27.170Z"
+}

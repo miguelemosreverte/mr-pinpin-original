@@ -1,0 +1,31 @@
+{
+  "id": "scene-14",
+  "order": 14,
+  "title": "First crossing",
+  "beat": "Small PinPin crosses the completed footbridge first while Beaver remains on the bank.",
+  "camera": "Low 25 cm camera beside far-bank landing looking along bridge back toward near bank.",
+  "staging": "Low 25 cm camera beside far-bank landing looking along bridge back toward near bank.",
+  "alt": "Small PinPin crosses the completed footbridge first while Beaver remains on the bank.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/plates/bridge.png",
+      "role": "Bridge location, woodland, rails and stream; apply requested repair state and physical framing."
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+      "role": "Shared cast identity, relative scale, blue vest and tractor design."
+    }
+  ],
+  "prompt": "Use case: illustration-story.\nCreate ONE finished landscape story illustration, exactly 1536 x 1024 pixels. Detailed dimensional woodland picture-book realism, tactile bark, fur, quills, moss and ferns. Keep rich green shade and gentle warm sunlight, no blown highlights. No text, speech bubbles, borders or panels.\nReference 1 is the bridge's geography and design before repair; it is now FULLY REPAIRED. Reference 2 establishes cast identity and scale.\nIdentity: Mr. PinPin is a small natural hedgehog about 25 cm long, compact brown quills, cream muzzle, belly and short paws, glossy dark eyes and a gentle curious face. He has exactly two forelegs below his chest and two hindlegs below his haunches, far limbs may be naturally occluded. No clothes or golden ornament. Beaver has warm chestnut fur, small round ears, two small incisors, broad flat scaly tail emerging once from his rump, a simple blue work vest, natural rounded non-human animal body with two forelimbs and two hindlimbs. Beaver is roughly twice PinPin's body length, not a human in fur. Tail is not an extra leg. Match the cast reference closely. Natural modest expressions, no huge cartoon grin. \nPhysically take camera to just beside the FAR-BANK landing, lower it to 25 cm and look back diagonally along the little bridge toward the original near bank. PinPin goes first: show the small natural hedgehog on all four short legs finishing his crossing on the last intact deck boards by this far landing, turning his head back with a pleased gentle expression toward Beaver. His body remains about 25 cm long compared with the 1 metre-wide footbridge, not filling its width. Full bridge is safe and continuous: fresh matching boards cover EVERY gap, no missing slat anywhere, solid rails on both sides. Beaver stays on the original NEAR bank beyond the opposite end, larger species but naturally smaller through distance, calmly watching PinPin. Beaver must remain on soil beyond the bridge, not walking behind him on its deck. Gentle stream clearly passes beneath. No tractor on or near bridge deck, no machinery in frame. Natural four-leg hedgehog anatomy, no duplicated paws or extra limbs. Warm afternoon light, same oak/willow/mossy-stone woodland, readable complete crossing.",
+  "output": "docs/storyboard/images/standalone/timber-tractor/scene-14.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be42-cc85-7aa0-91b9-2c09080e629e/exec-88f54b35-9b3b-4ad3-8177-4a99a5a60323.png",
+  "startedAt": "2026-09-20T10:17:56.111Z",
+  "finishedAt": "2026-09-20T10:18:44.480Z",
+  "seconds": 48.369,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "9fd2f88c8e3838266190392535b69acc5adb5294a1c6e3e47d3639920fea9e98",
+  "review": "Inspected full image. Pass: PinPin first crosses continuous fully repaired deck at foreground landing; Beaver stays on dirt beyond opposite landing, no machinery on bridge. Low reverse viewpoint, small hedgehog relative to deck/rails, natural four-leg posture with two forelegs and two rear paw positions visible, no extra attachments detected. Beaver has two forepaws, two hind feet and separate single flat tail at distance. Friendly understated faces and blue vest consistent. Hedgehog legs look slightly longer than anchor but remain animal-proportioned. Exact reversal of woodland landmark positions is approximate.",
+  "reviewedAt": "2026-09-20T10:19:35.777Z"
+}

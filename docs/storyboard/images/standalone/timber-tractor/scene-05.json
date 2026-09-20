@@ -1,0 +1,32 @@
+{
+  "id": "scene-05",
+  "order": 5,
+  "title": "A Seat Beside the Driver",
+  "kind": "character",
+  "beat": "PinPin rides safely beside the beaver driver.",
+  "camera": "Same cabplate camera, closer view of passengers fromopenright doorway while parked.",
+  "staging": "Beaverleftbothforepawsonsteeringwheel, PinPinright smallbeltedseat; bothlookahead.",
+  "alt": "The beaver driver and PinPin sit belted in the red tractor's cab.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/plates/cab.png",
+      "role": "Exact empty interior and driver/passenger arrangement."
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+      "role": "Both character identities and relative size only."
+    }
+  ],
+  "prompt": "Use case: illustration-story. Add the two friends from reference 2 to the clean tractor cab of reference 1, preserving the camera, seats, controls, lighting and forest outside. The chestnut beaver with small rounded ears, broad muzzle, subtle incisors and blue canvas vest sits properly in the LEFT driver's seat, a lap belt around his middle. His TWO forepaws rest on opposite sides of the steering wheel; his hind feet are below the dashboard, his paddle tail rests naturally behind him beside the seat. Keep his friendly beaver face in three-quarter view, looking ahead toward the path. Tiny Mr. PinPin sits in the RIGHT small passenger seat on its cushion, lap belt fastened low, roughly a third of the beaver's body size. PinPin's two short forepaws rest on the cushion and his hind paws are tucked naturally under him; his delighted face looks up through the windshield, not at the viewer. Preserve soft cream face, fine brown quills and natural compact hedgehog body. The tractor is parked for this boarding moment, and their seats remain distinct. Warm high-detail dimensional children's-book rendering, beautiful faces and clearly attached limbs. Single landscape1536x1024, no text.",
+  "output": "docs/storyboard/images/standalone/timber-tractor/scene-05.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-14a56a3c-0cf1-49ed-bd01-f72a9114f7bb.png",
+  "startedAt": "2026-09-20T10:05:47.372Z",
+  "finishedAt": "2026-09-20T10:06:36.012Z",
+  "seconds": 48.64,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "dfd55d0f5dc38b204bd2ad30819a0dc6400d909295d5491ee1604faee376e26a",
+  "review": "Accepted riding reference: beaver left and much smaller PinPin right, separate seats and fastened lap belts visible, two forepaws on wheel, PinPin two forelegs plus a visible rear paw. Faces retain anchor character. Far hindlimbs and pedal operation are obscured and cannot be verified; beaver's visible hind foot rests near seat edge. PinPin looks up toward driver/windshield, a slightly different gaze from planned straight ahead.",
+  "reviewedAt": "2026-09-20T10:07:02.928Z"
+}
