@@ -14,7 +14,7 @@ const url = lang => base + '?story=timber-tractor&lang=' + lang;
 async function loaded(page) {
   await page.waitForSelector('#reader[aria-busy=false] article[data-story="timber-tractor"]');
   assert.equal(new URL(page.url()).searchParams.get('story'), 'timber-tractor');
-  assert([null, '1'].includes(new URL(page.url()).searchParams.get('chapter')));
+  assert.equal(new URL(page.url()).searchParams.has('chapter'), false);
 }
 
 async function control(page, selector) {
@@ -108,7 +108,7 @@ async function unavailable(browser) {
   assert(await page.locator('#print').isDisabled());
   await page.goto(base + 'library.html?lang=en');
   await page.waitForSelector('#chapter-library[aria-busy=false]');
-  assert.equal(await page.locator('.adventure-cover[data-story-chapter="1"]').count(), 0, 'Unfinished story was published');
+  assert.equal(await page.locator('.adventure-cover').count(), 0, 'Unfinished story was published');
   assert.equal(await page.locator('.chapter-cover').count(), 38);
   await page.close();
   console.log(JSON.stringify({missingStoryHidden:true,mainChapters:38}));
@@ -129,7 +129,7 @@ async function missingImage(browser) {
   assert.equal(await page.locator('.toolbar button:disabled').count(),0);
   await page.goto(base + 'library.html?lang=en');
   await page.waitForSelector('#chapter-library[aria-busy=false]');
-  assert.equal(await page.locator('.adventure-cover[data-story-chapter="1"]').count(),1,'Transient image failure hid a published story');
+  assert.equal(await page.locator('.adventure-cover').count(),1,'Transient image failure hid a published story');
   assert.equal(requests.filter(request => request.method === 'HEAD').length,0,'Runtime asset probing is forbidden');
   assert.equal(requests.filter(request => request.url.endsWith('/stories/timber-tractor.json')).length,2,
     'Each page must fetch story metadata exactly once');
@@ -144,7 +144,7 @@ async function library(browser, story) {
       await page.goto(base + 'library.html?lang=' + lang);
       await page.waitForSelector('#chapter-library[aria-busy=false]');
       assert.equal(await page.locator('.chapter-cover').count(), 38);
-      const firstChapter = page.locator('.adventure-cover[data-story-chapter="1"]');
+      const firstChapter = page.locator('.adventure-cover');
       assert.equal(await firstChapter.count(), 1);
       assert.equal(await firstChapter.locator('img').getAttribute('src'), story.cover[lang]);
       await firstChapter.locator('img').evaluate(image => image.decode());
@@ -243,7 +243,11 @@ function verifyContract() {
       assert(!context.window.standaloneStories.complete(incomplete), 'Incomplete or mistimed edition must stay unpublished');
     }
     console.log(JSON.stringify({storyContract:true,stableSceneOrder:true,scenes:story.scenes.length,printPages:story.spreads.length}));
-    return story;
+    const home = JSON.parse(fs.readFileSync(path.join(__dirname,'stories/timber-tractor-chapter-02.json')));
+    const combined = context.window.standaloneStories.compose(story, home);
+    assert.equal(combined.scenes.length, 30);
+    assert.equal(combined.spreads.length, 22);
+    return JSON.parse(JSON.stringify(combined));
 }
 
 async function main() {

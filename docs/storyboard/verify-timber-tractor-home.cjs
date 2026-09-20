@@ -6,7 +6,7 @@ const vm = require('node:vm');
 const {execFileSync} = require('node:child_process');
 const base = process.env.READER_URL || 'http://127.0.0.1:8767/storyboard/';
 const captures = process.env.CAPTURE_DIR || '/tmp/pinpin-timber-home';
-const output = process.env.EXPORT_DIR || path.join(os.homedir(), 'Downloads/Mr-PinPin-Timber-Tractor-Chapter-2');
+const output = process.env.EXPORT_DIR || path.join(os.homedir(), 'Downloads/Mr-PinPin-Timber-Tractor-Complete');
 const languages = ['en', 'es', 'ru'];
 const groups = [[0,1],[2,3],[4],[5],[6],[7],[8],[9]];
 const prefix = 'images/standalone/timber-tractor/chapter-02/';
@@ -34,10 +34,10 @@ function readStory() {
 
 async function contract(story) {
   const requests = [];
-  let response = story;
+  let responses = {'stories/timber-tractor.json':first, 'stories/timber-tractor-chapter-02.json':story};
   const context = {window:{}, fetch:async file => {
     requests.push(file);
-    return {ok:true, json:async () => response};
+    return {ok:true, json:async () => responses[file]};
   }};
   vm.runInNewContext(fs.readFileSync(path.join(__dirname, 'standalone-stories.js'), 'utf8'), context);
   const adapter = context.window.standaloneStories;
@@ -93,20 +93,36 @@ async function contract(story) {
   }
   assert.equal(await adapter.load('unknown', 2), null);
   assert.deepEqual(requests, [], 'Unsupported routes fetched a fallback');
-  assert.equal(await adapter.load('timber-tractor', '2'), story);
-  assert.equal(requests.at(-1), 'stories/timber-tractor-chapter-02.json');
-  response = first;
-  assert.equal(await adapter.load('timber-tractor', 2), null, 'Chapter 1 accepted in chapter 2 response');
-  assert.equal(await adapter.load('timber-tractor'), first);
-  assert.equal(requests.at(-1), 'stories/timber-tractor.json');
-  response = story;
-  assert.equal(await adapter.load('timber-tractor', 1), null, 'Chapter 2 accepted in chapter 1 response');
-  console.log(JSON.stringify({contract:true,negativeContracts:true,fixture,scenes:10,pages:8}));
+  const combined = adapter.compose(first, story);
+  assert.equal(combined.scenes.length, 30);
+  assert.equal(combined.spreads.length, 22);
+  assert.equal(new Set(combined.scenes.map(scene => scene.id)).size, 30);
+  assert.deepEqual(JSON.parse(JSON.stringify(combined.scenes.slice(0,20))), first.scenes);
+  assert.deepEqual(JSON.parse(JSON.stringify(combined.scenes.slice(20))),
+    story.scenes.map(scene => ({...scene, id:'home-' + scene.id})));
+  assert.deepEqual(JSON.parse(JSON.stringify(combined.spreads.slice(14))),
+    story.spreads.map(spread => ({...spread, scenes:spread.scenes.map(index => index + 20)})));
+  assert.equal(combined.number, undefined);
+  assert.deepEqual(JSON.parse(JSON.stringify(combined.title)), first.title);
+  assert.equal(adapter.compose(story, first), null, 'Reversed parts accepted');
+  assert.equal(adapter.compose(first, {...story, scenes:story.scenes.slice(1)}), null, 'Truncated home accepted');
+  for (const legacy of [undefined, '1', '2']) {
+    requests.length = 0;
+    assert.deepEqual(await adapter.load('timber-tractor', legacy), combined);
+    assert.deepEqual(requests.sort(), Object.keys(responses).sort(), 'Fetch each part once');
+  }
+  assert.equal((await adapter.available()).length, 1, 'Continuation must not become another library card');
+  responses['stories/timber-tractor-chapter-02.json'] = first;
+  assert.equal(await adapter.load('timber-tractor'), null, 'Wrong continuation accepted');
+  console.log(JSON.stringify({contract:true,negativeContracts:true,fixture,scenes:30,pages:22}));
+  return JSON.parse(JSON.stringify(combined));
 }
 
-async function loaded(page, chapter = 2) {
-  await page.waitForSelector(`#reader[aria-busy=false] article[data-story-chapter="${chapter}"]`);
+async function loaded(page) {
+  await page.waitForSelector('#reader[aria-busy=false] article[data-story="timber-tractor"]');
   assert.equal(new URL(page.url()).searchParams.get('story'), 'timber-tractor');
+  assert.equal(new URL(page.url()).searchParams.has('chapter'), false);
+  assert.equal(await page.locator('.scene').count(), 30);
 }
 
 async function control(page, selector) {
@@ -119,14 +135,15 @@ async function layout(page, paper = false) {
   const issues = await page.locator('.spread').evaluateAll((sheets, paper) => sheets.flatMap(sheet => {
     const issues = [];
     const bounds = sheet.getBoundingClientRect();
-    const limit = paper ? sheet.querySelector('.folio').getBoundingClientRect().top : bounds.bottom;
+    const folio = sheet.querySelector('.folio');
+    const limit = paper && getComputedStyle(folio).display !== 'none' ? folio.getBoundingClientRect().top : bounds.bottom;
     let bottom = bounds.top;
     for (const scene of sheet.querySelectorAll('.scene')) {
       const box = scene.getBoundingClientRect();
       const image = scene.querySelector('img').getBoundingClientRect();
-      const prose = scene.querySelector('.prose').getBoundingClientRect();
+      const prose = scene.querySelector('.prose')?.getBoundingClientRect();
       if (box.top < bottom - 1 || box.bottom > limit + 1) issues.push(scene.id + ': scene collision');
-      if (image.width < 20 || image.height < 20 || prose.top < image.bottom - 1 || prose.bottom > box.bottom + 1) issues.push(scene.id + ': art/text collision');
+      if (image.width < 20 || image.height < 20 || (prose && (prose.top < image.bottom - 1 || prose.bottom > box.bottom + 1))) issues.push(scene.id + ': art/text collision');
       for (const node of scene.querySelectorAll('img,.prose,.prose > p,h1')) {
         const rect = node.getBoundingClientRect();
         if (rect.left < bounds.left - 1 || rect.right > bounds.right + 1 || rect.bottom > limit + 1) issues.push(scene.id + ': overflow');
@@ -153,8 +170,7 @@ async function negativeRoutes(browser) {
   await page.waitForSelector('#reader[aria-busy=false] .error');
   await page.goto(base + 'library.html?lang=en');
   await page.waitForSelector('#chapter-library[aria-busy=false]');
-  assert.equal(await page.locator('.adventure-cover[data-story-chapter="2"]').count(), 0);
-  assert.equal(await page.locator('.adventure-cover[data-story-chapter="1"]').count(), 1);
+  assert.equal(await page.locator('.adventure-cover').count(), 0, 'Incomplete continuation must hide the full adventure');
   assert.equal(await page.locator('.chapter-cover').count(), 38);
   await page.route('**/stories/timber-tractor-chapter-02.json', route => route.fulfill({status:404,body:'Unavailable'}));
   await page.goto(url());
@@ -166,33 +182,27 @@ async function libraryAndHistory(page, story, width) {
   await page.goto(base + 'library.html?lang=en&view=print&keep=home');
   await page.waitForSelector('#chapter-library[aria-busy=false]');
   assert.equal(await page.locator('.chapter-cover').count(), 38);
-  assert.equal(await page.locator('.adventure-cover').count(), 2);
-  assert.equal(await page.locator('.chapter-cover[data-chapter="2"] > a').first().getAttribute('href'), './?chapter=2&lang=en');
-  const home = page.locator('.adventure-cover[data-story-chapter="2"]');
-  assert.equal(await home.locator('img').getAttribute('src'), story.cover.en);
-  assert.match(await home.locator('.cover-number').textContent(), /^chapter 2$/i);
-  await page.locator('#chapter-search').fill(first.title.en);
-  assert.equal(await page.locator('.adventure-cover').count(), 2, 'Both chapters searchable by adventure name');
-  await page.locator('#chapter-search').fill(story.title.en);
   assert.equal(await page.locator('.adventure-cover').count(), 1);
+  assert.equal(await page.locator('.chapter-cover[data-chapter="2"] > a').first().getAttribute('href'), './?chapter=2&lang=en');
+  const adventure = page.locator('.adventure-cover');
+  assert.equal(await adventure.locator('img').getAttribute('src'), first.cover.en);
+  assert.equal(await adventure.locator('.cover-number').count(), 0);
+  for (const query of [first.title.en, story.continuationTitles.en]) {
+    await page.locator('#chapter-search').fill(query);
+    assert.equal(await page.locator('.adventure-cover').count(), 1);
+  }
   await page.locator('#chapter-search').fill('');
   await page.locator('#chapter-filter').selectOption('upcoming');
   assert.equal(await page.locator('.adventure-cover').count(), 0);
   await page.locator('#chapter-filter').selectOption('all');
   await page.screenshot({path:path.join(captures, `library-${width}.png`)});
-  await home.locator('a').click(); await loaded(page);
+  await adventure.locator('a').click(); await loaded(page);
   const state = () => new URL(page.url()).searchParams;
   assert.equal(state().get('keep'), 'home');
   assert.equal(state().get('view'), 'print');
+  assert.equal(await page.locator('#story-chapters').count(), 0);
   await control(page, '[data-lang="es"]');
-  assert.equal(state().get('chapter'), '2');
-  assert.equal(state().get('keep'), 'home');
-  await page.locator('#story-chapters [rel=prev]').click(); await loaded(page, 1);
-  assert.equal(state().get('chapter'), '1');
-  assert.equal(state().get('lang'), 'es');
-  assert.equal(state().get('view'), 'print');
-  await page.goBack(); await loaded(page);
-  assert.equal(await page.locator('html').getAttribute('lang'), 'es');
+  assert.equal(state().has('chapter'), false);
   await page.goBack(); await loaded(page);
   assert.equal(await page.locator('html').getAttribute('lang'), 'en');
   await page.goForward(); await loaded(page);
@@ -201,25 +211,21 @@ async function libraryAndHistory(page, story, width) {
   await page.waitForSelector('#chapter-library[aria-busy=false]');
   assert.equal(state().get('keep'), 'home');
   assert.equal(state().get('lang'), 'es');
-  await page.locator('[data-lang="ru"]').click();
-  await page.goBack();
-  assert.equal(await page.locator('html').getAttribute('lang'), 'es');
-  await page.goto(base + '?story=timber-tractor&lang=en&keep=legacy'); await loaded(page, 1);
-  assert.equal(state().has('chapter'), false, 'Legacy URL was changed');
-  await page.locator('#story-chapters [rel=next]').click(); await loaded(page);
-  assert.equal(state().get('chapter'), '2');
-  assert.equal(state().get('keep'), 'legacy');
-  await page.goBack(); await loaded(page, 1);
-  assert.equal(state().has('chapter'), false);
-  // Exercise popstate across series boundaries within the same document.
+  for (const chapter of ['1', '2']) {
+    await page.goto(url(chapter, 'ru', '&keep=legacy')); await loaded(page);
+    assert.equal(state().get('keep'), 'legacy');
+    assert.equal(state().has('chapter'), false);
+    assert.equal(await page.locator('.spread-cover').count(), 1);
+  }
+  // Main-book chapter routes retain their independent reader and history.
   await page.evaluate(() => { history.pushState(null, '', '?chapter=2&lang=ru'); dispatchEvent(new PopStateEvent('popstate')); });
   await page.waitForSelector('article[data-chapter="chapter-02"]');
   assert.equal(await page.locator('.scene').count(), 16);
-  await page.goBack(); await loaded(page, 1);
+  await page.goBack(); await loaded(page);
   await page.evaluate(() => { history.pushState(null, '', '?story=timber-tractor&chapter=3&lang=en'); dispatchEvent(new PopStateEvent('popstate')); });
   await page.waitForSelector('#reader[aria-busy=false] .error');
   assert(await page.locator('#print').isDisabled());
-  await page.goBack(); await loaded(page, 1);
+  await page.goBack(); await loaded(page);
 }
 
 async function delayedNavigation(context, story) {
@@ -254,36 +260,35 @@ async function delayedNavigation(context, story) {
 
 async function pdf(page, story, lang) {
   fs.mkdirSync(output, {recursive:true});
-  const file = path.join(output, 'Mr-PinPin-Timber-Tractor-Chapter-2-' + lang + '.pdf');
+  const file = path.join(output, 'Mr-PinPin-Timber-Tractor-Complete-' + lang + '.pdf');
   await page.pdf({path:file,preferCSSPageSize:true,printBackground:true,displayHeaderFooter:false});
-  const info = execFileSync('pdfinfo', ['-f','1','-l','8',file], {encoding:'utf8'});
-  assert.match(info, /Pages:\s+8\b/);
+  const info = execFileSync('pdfinfo', ['-f','1','-l',String(story.spreads.length),file], {encoding:'utf8'});
+  assert.match(info, /Pages:\s+22\b/);
   const sizes = [...info.matchAll(/Page\s+(\d+) size:\s+([\d.]+) x ([\d.]+)/g)];
-  assert.equal(sizes.length, 8);
-  sizes.forEach((size, index) => assert.equal(Number(size[2]) > Number(size[3]), index >= 2));
-  const imagePages = story.scenes.map((_, index) => groups.findIndex(group => group.includes(index)) + 1);
+  assert.equal(sizes.length, 22);
+  sizes.forEach((size, index) => assert.equal(Number(size[2]) > Number(size[3]), story.spreads[index].paper === 'landscape'));
+  const imagePages = story.scenes.map((_, index) => story.spreads.findIndex(spread => spread.scenes.includes(index)) + 1);
   const rows = execFileSync('pdfimages', ['-list',file], {encoding:'utf8'}).split('\n').filter(line => /^\s*\d+\s+\d+\s+image\s/.test(line));
-  assert.equal(rows.length, 10);
+  assert.equal(rows.length, 30);
   rows.forEach((row, index) => {
     const fields = row.trim().split(/\s+/);
     assert.equal(Number(fields[0]), imagePages[index]);
-    assert.deepEqual(fields.slice(3,5).map(Number), [1536,1024]);
+    assert.deepEqual(fields.slice(3,5).map(Number), [story.scenes[index].width,story.scenes[index].height]);
   });
   const text = execFileSync('pdftotext', ['-layout',file,'-'], {encoding:'utf8'});
   const pages = text.split('\f');
   if (!pages.at(-1).trim()) pages.pop();
-  assert.equal(pages.length, 8);
-  assert(compact(pages[0]).includes(compact(story.title[lang])));
+  assert.equal(pages.length, 22);
   story.scenes.forEach((scene, index) => scene.paragraphs[lang].forEach(paragraph =>
     assert(compact(pages[imagePages[index] - 1]).includes(compact(paragraph)), 'Prose on wrong PDF page: ' + scene.id)));
   assert(!/Previous chapter|Capítulo anterior|Предыдущая глава/.test(text), 'Navigation leaked into print');
   execFileSync('pdftoppm', ['-scale-to','1000','-png',file,path.join(captures,'print-' + lang)], {stdio:'pipe'});
-  console.log(JSON.stringify({pdf:file,pages:8,originalResolutionImages:10,textOnMatchingPages:true}));
+  console.log(JSON.stringify({pdf:file,pages:22,originalResolutionImages:30,textOnMatchingPages:true}));
 }
 
 async function main() {
-  const story = readStory();
-  await contract(story);
+  const home = readStory();
+  const story = await contract(home);
   if (process.env.CONTRACT_ONLY) return;
   assert(!process.env.EXPORT_PDFS || (process.env.ART_READY === '1' && !fixture), 'PDF export requires ART_READY=1 and final artwork');
   fs.mkdirSync(captures, {recursive:true});
@@ -291,7 +296,7 @@ async function main() {
   const browser = await chromium.launch({channel:'chrome',headless:true});
   const context = await browser.newContext();
   if (fixture) {
-    await context.route('**/stories/timber-tractor-chapter-02.json', route => route.fulfill({json:story}));
+    await context.route('**/stories/timber-tractor-chapter-02.json', route => route.fulfill({json:home}));
     await context.route('**/images/standalone/timber-tractor/chapter-02/*.png', route => route.fulfill({
       path:path.join(__dirname, first.scenes[3].image),contentType:'image/png'
     }));
@@ -302,7 +307,7 @@ async function main() {
   context.on('request', request => methods.push(request.method()));
   try {
     await negativeRoutes(context);
-    await delayedNavigation(context, story);
+    await delayedNavigation(context, home);
     for (const width of [1440,390,320]) {
       const page = await context.newPage();
       await page.setViewportSize({width,height:950});
@@ -311,11 +316,13 @@ async function main() {
         await page.goto(url('2', lang)); await loaded(page);
         await page.evaluate(() => window.prepareChapterPrint());
         assert.equal(await page.title(), story.title[lang]);
-        assert.equal(await page.locator('.scene').count(), 10);
-        assert.equal(await page.locator('.spread-cover').count(), 0);
-        assert.equal(await page.locator('#scene-1 h1').textContent(), story.title[lang]);
+        assert.equal(await page.locator('.scene').count(), 30);
+        assert.equal(await page.locator('.spread-cover').count(), 1);
+        assert.equal(await page.locator('article h1,#story-chapters,[data-story-chapter]').count(), 0);
+        assert.deepEqual(await page.locator('.page-number').allTextContents(), Array.from({length:22}, (_, i) => String(i + 1).padStart(2,'0')));
+        assert.deepEqual(await page.locator('.scene').evaluateAll(scenes => scenes.map(scene => scene.dataset.sceneId)), story.scenes.map(scene => scene.id));
         assert.deepEqual(await page.locator('.scene img').evaluateAll(images => images.map(image => ({src:image.getAttribute('src'),width:image.naturalWidth,height:image.naturalHeight}))),
-          story.scenes.map(scene => ({src:scene.image,width:1536,height:1024})));
+          story.scenes.map((scene,index) => ({src:index === 0 ? story.cover[lang] : scene.image,width:scene.width,height:scene.height})));
         assert.deepEqual(await page.locator('.scene').evaluateAll(scenes => scenes.map(scene => [...scene.querySelectorAll('.prose > p')].map(p => p.textContent))),
           story.scenes.map(scene => scene.paragraphs[lang]));
         await layout(page);

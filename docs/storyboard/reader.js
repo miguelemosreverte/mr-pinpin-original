@@ -1,13 +1,13 @@
 (() => {
   const $ = id => document.getElementById(id);
   let artwork, translations, book, published, edition, story, language = 'ru', printing = false;
-  let adjacentStories = [], loadedKey, navigation = 0;
+  let loadedKey, navigation = 0;
 
   function route(lang) {
     const url = new URL(location.href);
     if (story) {
       url.searchParams.set('story', story.id);
-      if (story.number === 2) url.searchParams.set('chapter', '2');
+      url.searchParams.delete('chapter');
     } else {
       url.searchParams.delete('story');
       url.searchParams.set('chapter', String(edition.number));
@@ -59,7 +59,6 @@
     const article = element('article');
     if (story) {
       article.dataset.story = story.id;
-      article.dataset.storyChapter = story.number ?? 1;
       article.setAttribute('aria-label', translated.title);
     } else article.dataset.chapter = chapterId;
     article.lang = language;
@@ -74,6 +73,7 @@
         const scene = scenes[index];
         const section = element('section', 'scene');
         section.id = 'scene-' + (index + 1);
+        if (story) section.dataset.sceneId = story.scenes[index].id;
         section.setAttribute('aria-label', ui.scene + ' ' + (index + 1));
         const asset = images.find(image => image.scene === index + 1);
         const figure = element('figure', 'scene-art');
@@ -118,7 +118,6 @@
     });
     $('reader').replaceChildren(article);
     $('reader').setAttribute('aria-busy', 'false');
-    renderChapterLinks();
     requestAnimationFrame(() => {
       resizePreview();
       window.scrollTo(0, Math.max(0, document.documentElement.scrollHeight - innerHeight) * fraction);
@@ -133,35 +132,6 @@
     url.searchParams.delete('chapter');
     url.searchParams.set('lang', lang);
     return url.href;
-  }
-
-  function renderChapterLinks() {
-    $('story-chapters')?.remove();
-    if (!story || !adjacentStories.length) return;
-    const labels = {
-      en:{previous:'Previous chapter',next:'Next chapter'},
-      es:{previous:'Capítulo anterior',next:'Capítulo siguiente'},
-      ru:{previous:'Предыдущая глава',next:'Следующая глава'}
-    }[language];
-    const links = element('span', 'story-chapters');
-    links.id = 'story-chapters';
-    adjacentStories.forEach(adjacent => {
-      const previous = (adjacent.number ?? 1) < (story.number ?? 1);
-      const url = route(language);
-      url.searchParams.set('chapter', String(adjacent.number ?? 1));
-      const link = element('a', '', labels[previous ? 'previous' : 'next']);
-      link.href = url.href;
-      link.rel = previous ? 'prev' : 'next';
-      link.title = adjacent.title[language];
-      link.onclick = event => {
-        if (event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
-        event.preventDefault();
-        history.pushState(null, '', url);
-        openRoute();
-      };
-      links.append(link);
-    });
-    document.querySelector('.reader-footer').append(links);
   }
 
   function position() {
@@ -257,8 +227,7 @@
     if (requestedStory !== null) {
       const selected = await window.standaloneStories.load(requestedStory, url.searchParams.get('chapter'));
       if (!selected) throw new Error('Story is not available');
-      const adjacent = await window.standaloneStories.load(requestedStory, selected.number === 2 ? 1 : 2);
-      return {story:selected, artwork:{}, published:new Set(), adjacentStories:adjacent ? [adjacent] : []};
+      return {story:selected, artwork:{}, published:new Set()};
     }
     const [art, text, original] = await Promise.all(['illustrations.json', 'translations.json', 'book.json'].map(async path => {
       const response = await fetch(path, { cache: 'no-cache' });
@@ -266,14 +235,13 @@
       return response.json();
     }));
     return {published:await window.chapterEditions.available(art, text), artwork:art,
-      translations:text, book:original, story:null, adjacentStories:[]};
+      translations:text, book:original, story:null};
   }
   function showError() {
     artwork = null;
     loadedKey = null;
     $('print').disabled = true;
     $('preview').disabled = true;
-    $('story-chapters')?.remove();
     $('reader').setAttribute('aria-busy', 'false');
     const requested = new URL(location.href).searchParams.get('lang');
     const lang = ['en','es','ru'].includes(requested) ? requested : 'ru';
@@ -306,7 +274,7 @@
     try {
       const data = await initialize(url);
       if (current !== navigation) return;
-      ({artwork, translations, book, published, story, adjacentStories} = data);
+      ({artwork, translations, book, published, story} = data);
       render();
       const rendered = new URL(location.href);
       loadedKey = JSON.stringify([rendered.searchParams.get('story'), rendered.searchParams.get('chapter')]);

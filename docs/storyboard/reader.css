@@ -50,8 +50,6 @@ footer { width:min(calc(100% - 40px),848px); margin:0 auto; display:flex; flex-w
 .export-status { max-width:920px; margin:0 auto; padding:12px 20px; font-size:14px; }
 .export-status:empty { display:none; }
 .reader-footer { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:12px 24px; }
-.story-chapters { display:flex; flex-wrap:wrap; gap:12px 24px; font-size:14px; }
-.story-chapters a { overflow-wrap:anywhere; }
 @media(max-width:600px) {
  .toolbar { padding:10px 16px; gap:10px; flex-wrap:wrap; }
  .brand { font-size:22px; flex:1 0 100%; }

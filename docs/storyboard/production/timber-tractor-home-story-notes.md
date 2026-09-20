@@ -1,16 +1,16 @@
 # The Way Home
 
-Timber Tractor, Chapter 2. The reader's full chapter heading is the localized title: The Way Home / El camino a casa / Дорога домой. Scene 01 remains the picnic-packing illustration with narration; it does not acquire a separate title card or baked text.
+The Way Home / El camino a casa / Дорога домой is the concluding part of the continuous Timber Tractor adventure. The public reader uses one original title and cover, then continues through all thirty scenes without a new chapter heading, title card or navigation break. The continuation's first image remains the picnic-packing illustration with its narration.
 
 ## Scope and status
 
-Original continuation of the standalone Timber Tractor story, following the picnic and willow-twig joke in `docs/storyboard/stories/timber-tractor.json`. This is chapter 2 of that standalone story, not chapter 2 of the original book. Chapter 1 is untouched by this copy assignment.
+Original continuation of the standalone Timber Tractor story, following the picnic and willow-twig joke in `docs/storyboard/stories/timber-tractor.json`. The internal chapter-02 filenames retain production history. They do not define a separate public chapter or library entry. The opening twenty scenes and all continuation narration remain unchanged.
 
 Read the original story, its existing production notes, `docs/storyboard/production/WORKFLOW.md`, and `docs/storyboard/review/house-of-mr-pinpin.html`. All ten selected scenes, the kitchen plate, and both replacements have been directly inspected. The story now selects scene-08-v2.png and scene-09-v2.png. Narration and alt text are final and ready for PDF composition. The house reference page was read; the referenced original-book source bitmaps have not been independently inspected in this copy pass.
 
 The JSON uses the existing `id`, localized `title` and `cover`, `scenes`, and `spreads` schema, with `number: 2`. Its path is `docs/storyboard/stories/timber-tractor-chapter-02.json`. Each language has one brief readaloud paragraph per scene. Images are 1536 x 1024, with sequential scene-01 through scene-10 IDs and paths under `images/standalone/timber-tractor/chapter-02/`, relative to `docs/storyboard/`.
 
-All three localized cover fields point to scene-05.png for the library thumbnail only. There is no cover scene, silent title page, extra illustration, or baked lettering. Reading begins with packing the picnic. Reader integration and asset generation belong to the other assigned workers.
+All three localized cover fields retain scene-05.png as historical production metadata. The public library and continuous reader use the opening part's original localized cover. The continuation adds no cover scene, silent title page, extra illustration or baked lettering; it begins directly with packing the picnic.
 
 Copy validation passed after the basket-continuity update: English 380 words (36-39 per scene), Spanish 370 (35-40), Russian 334 (32-35), counted as whitespace-separated words. A focused Node assertion pass also checked localized titles, story ID and chapter number, ten sequential unique scene IDs, expected image paths, 1536 x 1024 dimensions, nonempty localized alt text, exactly one paragraph per language per scene, all cover paths, and the exact eight-page spread sequence. This verifies the text contract, not the generated assets or reader integration.
 
@@ -79,3 +79,9 @@ No gross story/cast mismatch was found that requires new artwork for copy alignm
 The final scene 03 wording refers only to PomPom still being very little and taking small steps. The developmental design analogy is confined to these notes. Final validation: EN 378 words (36-39 per paragraph), ES 368 (35-40), RU 337 (32-37). All text-contract assertions pass with the versioned image paths, and all ten selected PNGs are present at 1536 x 1024. The copy is ready for PDFs. No PDF, commit, push, or publication was performed by this copy lane.
 
 Scene 08v2 shows all three entering with lower, four-legged poses, retaining Mama's basket at her mouth and the established room. Its localized alt text now describes that posture. Scene 09v2 has a single visible door knob while preserving the sleeping baby, speaking PinPin and basket on the floor. No narration change was needed for either correction. Original candidates are preserved by the parent; only selected image paths changed. Replacement hashes are in the report.
+
+## Continuous publication
+
+The adapter validates both source manifests before composing one edition. It retains the opening scene IDs and prefixes continuation IDs with `home-`, offsets their spread indices by twenty, and numbers all twenty-two folios in one sequence. The original joke setup and reveal stay on separate pages before the homeward continuation. Legacy `?story=timber-tractor&chapter=2` links load the complete adventure and remove the obsolete chapter parameter. The main thirty-eight-chapter book is unchanged. Future independent adventures can use separate library cards.
+
+Existing downloaded PDFs are historical exports; use Print / Save PDF in the continuous reader for the complete edition.

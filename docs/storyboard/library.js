@@ -36,37 +36,31 @@
     $('adventure-title').textContent = ui.band;
     $('main-book-title').textContent = ui.main;
     const adventures = stories.filter(story => filter !== 'upcoming' && (!query ||
-      [String(story.number ?? 1), ...Object.values(story.title),
-        ...Object.values(stories.find(item => item.id === story.id && (item.number ?? 1) === 1)?.title || {})]
+      [...Object.values(story.title), ...Object.values(story.continuationTitles || {})]
         .join(' ').toLocaleLowerCase(lang).includes(query))).map(story => {
       const card = document.createElement('article');
       card.className = 'adventure-cover published';
       card.dataset.story = story.id;
-      card.dataset.storyChapter = story.number ?? 1;
       const link = document.createElement('a');
       const destination = new URL('./', location.href);
       destination.search = url.search;
       destination.searchParams.set('story', story.id);
-      destination.searchParams.set('chapter', String(story.number ?? 1));
+      destination.searchParams.delete('chapter');
       destination.searchParams.set('lang', lang);
       link.href = destination.href;
       const figure = document.createElement('figure');
       const image = document.createElement('img');
       image.src = story.cover[lang];
-      const cover = story.scenes.find(scene => scene.image === story.cover[lang] ||
-        (story.number === 2 && scene.id === 'scene-05')) || story.scenes[0];
+      const cover = story.scenes[0];
       image.alt = cover.alt[lang];
       image.width = cover.width; image.height = cover.height; image.decoding = 'async';
       figure.style.aspectRatio = cover.width + ' / ' + cover.height;
       figure.append(image);
-      const number = document.createElement('p');
-      number.className = 'cover-number';
-      number.textContent = window.readerLabels[lang].chapter + ' ' + (story.number ?? 1);
       const title = document.createElement('h3');
       title.textContent = story.title[lang];
       const status = document.createElement('p');
       status.className = 'availability'; status.textContent = ui.read;
-      link.append(figure, number, title, status); card.append(link);
+      link.append(figure, title, status); card.append(link);
       return card;
     });
     $('adventure-library').replaceChildren(...adventures);

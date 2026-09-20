@@ -1,6 +1,5 @@
 (() => {
   const languages = ['en', 'es', 'ru'];
-  const chapters = [1, 2];
   const prefix = 'images/standalone/timber-tractor/';
   const sceneIds = [
     'scene-01', 'scene-02', 'scene-03', 'scene-04', 'scene-05', 'scene-06', 'scene-07',
@@ -62,15 +61,26 @@
       spread.scenes.every(Number.isInteger) && spread.scenes.join(',') === groups[index].join(','));
   }
 
-  async function load(id, chapter) {
-    const number = chapterNumber(chapter);
-    if (id !== 'timber-tractor' || !number) return null;
+  // Source parts retain their production IDs; the reader receives one continuous edition.
+  function compose(opening, home) {
+    if (!complete(opening, 1) || !complete(home, 2)) return null;
+    const offset = opening.scenes.length;
+    const {number, ...story} = opening;
+    return {...story, continuationTitles:home.title,
+      scenes:[...opening.scenes, ...home.scenes.map(scene => ({...scene, id:'home-' + scene.id}))],
+      spreads:[...opening.spreads, ...home.spreads.map(spread =>
+        ({...spread, scenes:spread.scenes.map(index => index + offset)}))]};
+  }
+
+  async function load(id, legacyChapter) {
+    if (id !== 'timber-tractor' || !chapterNumber(legacyChapter)) return null;
     try {
-      const suffix = number === 1 ? '' : '-chapter-02';
-      const response = await fetch(`stories/${id}${suffix}.json`, {cache:'no-cache'});
-      if (!response.ok) return null;
-      const story = await response.json();
-      return complete(story, number) ? story : null;
+      const parts = await Promise.all(['', '-chapter-02'].map(async suffix => {
+        const response = await fetch(`stories/${id}${suffix}.json`, {cache:'no-cache'});
+        if (!response.ok) throw new Error('Story part is not available');
+        return response.json();
+      }));
+      return compose(...parts);
     } catch { return null; }
   }
 
@@ -81,6 +91,6 @@
         src:index === 0 && (story.number ?? 1) === 1 ? story.cover[lang] : scene.image}))
     };
   }
-  window.standaloneStories = {complete, load, edition,
-    available:async () => (await Promise.all(chapters.map(chapter => load('timber-tractor', chapter)))).filter(Boolean)};
+  window.standaloneStories = {complete, compose, load, edition,
+    available:async () => [await load('timber-tractor')].filter(Boolean)};
 })();
