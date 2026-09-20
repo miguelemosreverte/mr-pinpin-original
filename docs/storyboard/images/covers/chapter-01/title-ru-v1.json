@@ -1,0 +1,41 @@
+{
+  "id": "title-ru-v1",
+  "order": 1,
+  "title": "Chapter 1 title cover — Russian",
+  "output": "/tmp/pinpin-bedtime-release/docs/storyboard/images/covers/chapter-01/title-ru-v1.png",
+  "beat": "After PinPin draws a circle with his golden quill, Crystal Lake fills again. Cover combines the restored setting and his quill; the solo portrait is cover staging.",
+  "camera": "Portrait low near-bank view, PinPin foreground, lake middle distance, willow/woodland background, upper-third open sky for title.",
+  "staging": "Solo PinPin holding the source golden quill. No additional cast.",
+  "alt": "PinPin holding a golden quill beside the restored woodland lake with the Russian chapter title.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/title-ru-v1.png",
+      "role": "Style and cover-layout reference only: dimensional woodland, large integrated upper-third title; exclude tractor and timber."
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/chapter-01-direct/04.png",
+      "role": "Character identity and golden quill reference only: PinPin cream face, chestnut spines, small animal anatomy, slim golden hedgehog quill; exclude rabbit."
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/chapter-01-direct/08.png",
+      "role": "Restored Crystal Lake and willow environment continuity; exclude all rabbits and extra cast."
+    }
+  ],
+  "prompt": "Use case: illustration-story.\nAsset type: finished illustrated children's chapter cover, portrait 1024 x 1536 PNG, full bleed.\nCreate a new Chapter 1 cover with a large integrated title in the upper third, matching the warm dimensional woodland picture-book finish and confident dark-green display serif lettering of reference 1.\nInput images: Image 1 is STYLE AND COVER LAYOUT ONLY, not its tractor subject. Image 2 is PinPin CHARACTER IDENTITY and his narrow GOLDEN HEDGEHOG QUILL, not its rabbit or dry lake. Image 3 is the restored CRYSTAL LAKE and WILLOW ENVIRONMENT, not its rabbits.\nScene: beautiful clear restored lake among lush woodland, weeping willow canopy along the side, lily pads, tiny white wildflowers and fern-lined mossy bank. Warm morning sunlight and gentle clear-water reflections. A gap of soft bright blue sky above the lake supplies a naturally uncluttered title zone.\nSubject: Mr. PinPin alone in the foreground on the near bank, recognizable cream furry face and belly, chestnut spines, rounded ears, expressive dark eyes and small dark nose, friendly curious expression. His body proportions and facial identity match the references. He holds one slender golden hedgehog spine in one forepaw, like the golden needle shown in reference 2, celebrating the lake he has restored. The quill is a simple slim tapered gold spine, NOT a feather, pen, staff or weapon. No clothes. Keep believable small hedgehog anatomy, two forelimbs and two hindlimbs with natural partial occlusion. Low woodland camera with a clear foreground, lake middle distance and tall forest backdrop.\nText (verbatim, exact Cyrillic): \"Мистер Пин-Пин\" and \"и его загадочный лес\".\nSet \"Мистер Пин-Пин\" as the prominent upper title; below it set \"и его загадочный лес\" over one or two balanced lines as needed, in the same dark forest-green storybook serif. Preserve every word and the hyphen; title should be large and legible as a library thumbnail. It is typography integrated directly into the illustration, no text box or banner. Keep all lettering comfortably inside edges. Do not add chapter numbers, author name, subtitle or other text.\nConstraints: PinPin is the only animal. No rabbit, beaver, vehicle, other cast, invented plot event, clothing, border, watermark or logo. Dimensional tactile fur, quills, moss and foliage; warm detailed woodland atmosphere matching the established book. Maintain clear readable type and softly controlled highlights.",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c050-cfba-77c1-9a42-04d2eaaf0d4d/exec-ed5db705-6055-4148-96cb-9c13a4496792.png",
+  "startedAt": "2026-09-20T19:36:31.754Z",
+  "finishedAt": "2026-09-20T19:37:45.591Z",
+  "seconds": 73.837,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "5f519b21218b7b4d402dc0fd267f4dc75c94a5e0bf06d98d532c473d2cb411b6",
+  "review": "Visually inspected full image: exact Russian wording, clear large dark-green lettering, recognizable solo PinPin with two forelimbs and two hind feet, restored lake and willow setting. Golden quill is long and stylized with a small ridge near the grip; no additional cast. Portrait is deliberate cover staging. Highlights are warm and bright. Proposed, awaiting user approval.",
+  "reviewedAt": "2026-09-20T19:38:37.271Z",
+  "status": "approved",
+  "approval": {
+    "by": "Miguel",
+    "recordedAt": "2026-09-20T19:54:37.730198+00:00",
+    "evidence": "User accepted the presented chapter covers and standardization: perfect. good job."
+  }
+}

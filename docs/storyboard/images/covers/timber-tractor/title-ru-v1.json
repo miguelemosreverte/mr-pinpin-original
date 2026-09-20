@@ -1,0 +1,42 @@
+{
+  "id": "timber-tractor/title-ru-v1",
+  "status": "approved",
+  "language": "ru",
+  "title": "Мистер Пин-Пин и лесной трактор",
+  "width": 1024,
+  "height": 1536,
+  "sha256": "a191c3145352c8415cba67b66b14a2051fdd88fdcb648980085eb23f6579c16b",
+  "provenance": {
+    "operation": "byte-identical copy; normalized filename only",
+    "originalPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/title-ru-v1.png",
+    "legacyURL": "images/standalone/timber-tractor/title-ru-v1.png",
+    "originalSha256": "a191c3145352c8415cba67b66b14a2051fdd88fdcb648980085eb23f6579c16b",
+    "sourceMetadata": {
+      "id": "title-ru-v1",
+      "order": 1,
+      "title": "Timber Tractor: Russian cover",
+      "beat": "Localized lettering for the approved standalone story cover.",
+      "camera": "Preserve the approved portrait composition and framing exactly.",
+      "staging": "Preserve PinPin and the stationary tractor exactly; no new characters.",
+      "alt": "Мистер Пин-Пин смотрит на красный лесной трактор на лесной тропинке.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Sole edit target: approved cover artwork, identity, layout, colors and title lettering style."
+        }
+      ],
+      "prompt": "Use case: text-localization.\nEdit the supplied approved portrait cover image. Produce exactly one Russian localized cover, 1024 x 1536.\nChange ONLY the title lettering in the open sky at the top. Replace the English title with these exact three lines, preserving case, accents and punctuation:\n\"Мистер Пин-Пин\"\n\"и\"\n\"лесной трактор\"\nKeep the same dark forest-green storybook serif lettering, three-line hierarchy and placement: first and third lines large, middle line small. Fit the longer localized words comfortably within the existing title area and margins; preserve the surrounding branches and sky.\nAll non-lettering artwork must stay unchanged: the exact small natural hedgehog PinPin in the foreground, his face, quills, cream fur and paws; the red stationary tractor with empty cab, yellow crane and log trailer; the woodland, ferns, path, flowers, light, colors, texture, perspective and full uncropped framing. PinPin has no costume or golden ornament. Do not add a beaver, driver, any other character, object, subtitle, author name or border. This is only a lettering edit of the approved cover, not a new scene. Preserve the artwork and identity as faithfully as possible.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/title-ru-v1.png",
+      "tool": "built-in imagegen",
+      "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be41-d6d0-7c52-9813-cd04fa822561/exec-8772a2ab-c946-4186-a782-70fcd966c9c9.png",
+      "startedAt": "2026-09-20T10:02:39.630Z",
+      "finishedAt": "2026-09-20T10:03:17.379Z",
+      "seconds": 37.749,
+      "width": 1024,
+      "height": 1536,
+      "sha256": "a191c3145352c8415cba67b66b14a2051fdd88fdcb648980085eb23f6579c16b",
+      "review": "Lettering reads exactly 'Мистер Пин-Пин' / 'и' / 'лесной трактор', including the hyphen, Cyrillic й and requested lowercase third line. The dark-green serif title remains in three clear lines within the original sky area. PinPin's identity and natural anatomy, empty tractor cab, red machine, yellow crane, log trailer, forest, light and full portrait composition appear preserved on visual inspection; no additional character or costume. Visual inspection does not establish pixel-identical preservation outside the lettering.",
+      "reviewedAt": "2026-09-20T10:03:46.288Z"
+    }
+  }
+}

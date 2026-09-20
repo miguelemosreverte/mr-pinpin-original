@@ -1,6 +1,7 @@
 :root { --ink:#22382f; --accent:#805469; }
 .spread { background:#f7f8f5; padding-bottom:20px; }
 .spread-opening { background:#edf4ec; }
+.title-cover-slot .spread-cover { padding:0; background:white; }
 .spread-magic { background:#f3f0f7; }
 .spread-spring,.spread-return,.spread-dive,.spread-sunlight,.spread-surface,.spread-hello { background:#edf5f8; }
 .chapter-heading { padding:20px 0 12px; }

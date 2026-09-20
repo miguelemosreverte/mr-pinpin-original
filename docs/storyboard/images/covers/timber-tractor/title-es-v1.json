@@ -1,0 +1,42 @@
+{
+  "id": "timber-tractor/title-es-v1",
+  "status": "approved",
+  "language": "es",
+  "title": "El señor PinPin y el tractor forestal",
+  "width": 1024,
+  "height": 1536,
+  "sha256": "924f2a721335e4e2b42e73952017a9a546d421952137c7080d80932303573b0d",
+  "provenance": {
+    "operation": "byte-identical copy; normalized filename only",
+    "originalPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/title-es-v1.png",
+    "legacyURL": "images/standalone/timber-tractor/title-es-v1.png",
+    "originalSha256": "924f2a721335e4e2b42e73952017a9a546d421952137c7080d80932303573b0d",
+    "sourceMetadata": {
+      "id": "title-es-v1",
+      "order": 1,
+      "title": "Timber Tractor: Spanish cover",
+      "beat": "Localized lettering for the approved standalone story cover.",
+      "camera": "Preserve the approved portrait composition and framing exactly.",
+      "staging": "Preserve PinPin and the stationary tractor exactly; no new characters.",
+      "alt": "El señor PinPin contempla un tractor forestal rojo en un sendero del bosque.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Sole edit target: approved cover artwork, identity, layout, colors and title lettering style."
+        }
+      ],
+      "prompt": "Use case: text-localization.\nEdit the supplied approved portrait cover image. Produce exactly one Spanish localized cover, 1024 x 1536.\nChange ONLY the title lettering in the open sky at the top. Replace the English title with these exact three lines, preserving case, accents and punctuation:\n\"El señor PinPin\"\n\"y el\"\n\"tractor forestal\"\nKeep the same dark forest-green storybook serif lettering, three-line hierarchy and placement: first and third lines large, middle line small. Fit the longer localized words comfortably within the existing title area and margins; preserve the surrounding branches and sky.\nAll non-lettering artwork must stay unchanged: the exact small natural hedgehog PinPin in the foreground, his face, quills, cream fur and paws; the red stationary tractor with empty cab, yellow crane and log trailer; the woodland, ferns, path, flowers, light, colors, texture, perspective and full uncropped framing. PinPin has no costume or golden ornament. Do not add a beaver, driver, any other character, object, subtitle, author name or border. This is only a lettering edit of the approved cover, not a new scene. Preserve the artwork and identity as faithfully as possible.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/title-es-v1.png",
+      "tool": "built-in imagegen",
+      "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be41-d6d0-7c52-9813-cd04fa822561/exec-fcf82536-1540-44a2-af6f-e24264009da0.png",
+      "startedAt": "2026-09-20T10:00:37.082Z",
+      "finishedAt": "2026-09-20T10:01:21.955Z",
+      "seconds": 44.873,
+      "width": 1024,
+      "height": 1536,
+      "sha256": "924f2a721335e4e2b42e73952017a9a546d421952137c7080d80932303573b0d",
+      "review": "Lettering reads exactly 'El señor PinPin' / 'y el' / 'tractor forestal', with the tilde on señor and the requested lowercase third line. The three-line dark-green serif hierarchy fits the original sky area. PinPin's face, quills, natural paws, tractor, empty cab, crane, loaded trailer, forest and full portrait framing appear preserved on visual inspection; no new characters or costume. This is visual preservation, not a claim of pixel-identical non-text regions.",
+      "reviewedAt": "2026-09-20T10:02:58.393Z"
+    }
+  }
+}

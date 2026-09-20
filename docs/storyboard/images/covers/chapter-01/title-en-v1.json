@@ -1,0 +1,33 @@
+{
+  "id": "title-en-v1",
+  "order": 2,
+  "title": "Chapter 1 title cover — English",
+  "output": "/tmp/pinpin-bedtime-release/docs/storyboard/images/covers/chapter-01/title-en-v1.png",
+  "beat": "After PinPin draws a circle with his golden quill, Crystal Lake fills again. Cover combines the restored setting and his quill; the solo portrait is cover staging.",
+  "camera": "Portrait low near-bank view, PinPin foreground, lake middle distance, willow/woodland background, upper-third open sky for title.",
+  "staging": "Typography-only localization of the Russian master.",
+  "alt": "PinPin holding a golden quill beside the restored lake with the en chapter title.",
+  "references": [
+    {
+      "path": "/tmp/pinpin-bedtime-release/docs/storyboard/images/covers/chapter-01/title-ru-v1.png",
+      "role": "Edit target: approved-for-localization visual master (still pending user approval), preserve the illustration; replace only the lettering."
+    }
+  ],
+  "prompt": "Use case: text-localization.\nAsset type: illustrated children's chapter cover, portrait 1024 x 1536 PNG.\nEdit the supplied Russian cover. Change ONLY its title lettering to English. This is a typography-only localization.\nText (verbatim): \"Mr. PinPin\" and \"and His Mysterious Forest\".\nSet \"Mr. PinPin\" as the prominent top line and \"and His Mysterious Forest\" in balanced lines below, all inside the same upper-third title area. Preserve the warm dark forest-green storybook display serif character, generous scale, graceful arch and comfortable margins. Preserve the exact capitalization, spelling. No Russian text remains. No additional text.\nINVARIANTS: preserve PinPin's exact face, body, size, pose, two forelimbs, two hind feet, golden quill and expression; preserve the lake, lily pads, willow branches, flowers, foreground stones, camera framing, light, exposure, color and all illustration content exactly. No repainting of the scene, no extra animal, no crop, no new border or badge. Change only the upper title letters and their line breaks.",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c050-cfba-77c1-9a42-04d2eaaf0d4d/exec-709a38db-c8b5-41bb-9f9b-c279f26fe4e5.png",
+  "startedAt": "2026-09-20T19:38:37.444Z",
+  "finishedAt": "2026-09-20T19:39:22.512Z",
+  "seconds": 45.068,
+  "width": 1024,
+  "height": 1536,
+  "sha256": "f86d2976933a59ba1dd1a017d3aac3e276d10520a6ed127552a1dbce80f6fb88",
+  "review": "Visually inspected full image: exact English title Mr. PinPin and His Mysterious Forest, prominent and readable in the matching green serif. Lake, willow, PinPin pose, expression, visible limb attachments and golden quill appear consistent with the Russian master. Pixel identity outside text has not been certified. Proposed, awaiting user approval.",
+  "reviewedAt": "2026-09-20T19:39:38.101Z",
+  "status": "approved",
+  "approval": {
+    "by": "Miguel",
+    "recordedAt": "2026-09-20T19:54:37.730198+00:00",
+    "evidence": "User accepted the presented chapter covers and standardization: perfect. good job."
+  }
+}

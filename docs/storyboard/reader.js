@@ -48,6 +48,7 @@
     const translated = story ? window.standaloneStories.edition(story, language) : translations[chapterId]?.[language];
     const scenes = translated?.scenes || artwork.scenes[chapterId];
     const images = story ? translated.images : artwork.chapters[chapterId];
+    const titleCover = window.titleCovers.resolve(chapterId, language);
     document.documentElement.lang = language;
     document.title = story ? translated.title : ui.book + ' - ' + ui.chapter + ' ' + chapterNumber;
     $('print').title = ui.print;
@@ -66,6 +67,19 @@
     if (!story) header.append(element('p', 'eyebrow', ui.chapter + ' ' + chapterNumber));
     header.append(element('h1', '', translated?.title || (chapterNumber === 1 ? ui.title :
       book.chapters.find(chapter => chapter.id === chapterId).title.replace(/^Глава\s*\d*\s*:\s*/, ''))));
+    if (titleCover?.placement === 'prepend') {
+      const slot = element('div', 'page-slot title-cover-slot');
+      slot.dataset.paper = 'portrait';
+      const frame = element('div', 'page-frame');
+      const sheet = element('section', 'spread spread-cover paper-portrait');
+      sheet.id = 'title-cover';
+      sheet.setAttribute('aria-label', titleCover.title[language]);
+      const figure = element('figure', 'scene-art');
+      const image = element('img');
+      image.loading = 'eager'; image.decoding = 'async'; image.fetchPriority = 'high';
+      window.titleCovers.apply(image, titleCover, language, null, () => slot.remove());
+      figure.append(image); sheet.append(figure); frame.append(sheet); slot.append(frame); article.append(slot);
+    }
     spreads.forEach((spread, spreadIndex) => {
       const sheet = element('section', 'spread spread-' + spread.style + ' paper-' + spread.paper);
       sheet.id = 'spread-' + (spreadIndex + 1);
@@ -82,6 +96,9 @@
         image.alt = asset.alt[language] || asset.alt.en;
         image.width = asset.width;
         image.height = asset.height;
+        if (index === 0 && titleCover?.placement === 'replace') {
+          window.titleCovers.apply(image, titleCover, language, asset);
+        }
         image.loading = index === 0 || preview ? 'eager' : 'lazy';
         image.decoding = 'async';
         if (index === 0) image.fetchPriority = 'high';
@@ -223,6 +240,7 @@
   new ResizeObserver(() => { resizePreview(); updateProgress(); }).observe($('reader'));
 
   async function initialize(url) {
+    await window.titleCovers.load();
     const requestedStory = url.searchParams.get('story');
     if (requestedStory !== null) {
       const selected = await window.standaloneStories.load(requestedStory, url.searchParams.get('chapter'));
