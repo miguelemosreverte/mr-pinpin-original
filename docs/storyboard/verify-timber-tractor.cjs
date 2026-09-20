@@ -209,8 +209,8 @@ function verifyContract() {
     assert.equal(story.spreads.length,14);
     assert.deepEqual(story.spreads.map(spread => spread.scenes),
       [[0],[1,2],[3,4],[5,6],[7,8],[9],[10],[11,12],[13],[14],[15],[16],[17,18],[19]]);
-    for (const id of ['scene-09','scene-15','scene-18']) {
-      assert.equal(story.scenes.find(scene => scene.id === id).image, `images/standalone/timber-tractor/${id}-v2.png`);
+    for (const [id, version] of [['scene-06',2],['scene-07',3],['scene-09',3],['scene-11',3],['scene-15',2],['scene-18',3]]) {
+      assert.equal(story.scenes.find(scene => scene.id === id).image, `images/standalone/timber-tractor/${id}-v${version}.png`);
     }
     const revised = structuredClone(story);
     revised.scenes[14].image = 'images/standalone/timber-tractor/scene-19-v2.png';

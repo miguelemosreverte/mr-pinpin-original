@@ -4,7 +4,7 @@ const path = require('node:path');
 const {createHash} = require('node:crypto');
 const vm = require('node:vm');
 
-const PLAN_NAMES = ['title', 'covers', 'story', 'environments', 'corrections', 'family'];
+const PLAN_NAMES = ['title', 'covers', 'story', 'environments', 'corrections', 'family', 'machinery-approved'];
 const LANGUAGES = ['en', 'es', 'ru'];
 const ART = 'docs/storyboard/images/standalone/timber-tractor';
 const KNOWN_FAILURES = ['scene-08-failed-01.json', 'scene-13-failed-01.json', 'scene-18-v2-failed-01.json'];
@@ -165,12 +165,24 @@ function audit(root = path.resolve(__dirname, '..')) {
     return {language: lang, count: selections.length, selections};
   });
 
-  assert.equal(records.length, 33, 'Expected 29 historical outputs plus four family outputs');
+  assert.equal(records.length, 37, 'Expected 29 historical outputs, four family outputs and four approved machinery outputs');
   assert.equal(selected.size, 22, 'Expected 19 shared reading images and three localized covers');
   const aggregate = json('docs/storyboard/production/timber-tractor-production.json');
   assert.equal(aggregate.shots.length, records.length, 'Aggregate journal omits or duplicates commissions');
-  assert.deepEqual(aggregate.shots.slice(-4).map(shot => shot.id),
+  assert.deepEqual(aggregate.shots.slice(29, 33).map(shot => shot.id),
     ['scene-19', 'scene-20', 'scene-15-v2', 'scene-18-v2'], 'Family commissions must append to the historical journal');
+  const machineryIds = ['scene-07', 'scene-09', 'scene-11', 'scene-18'];
+  assert.deepEqual(aggregate.shots.slice(33).map(shot => shot.id),
+    machineryIds.map(id => id + '-v3'), 'Approved machinery commissions must append after the family journal');
+  for (const id of machineryIds) {
+    const image = `images/standalone/timber-tractor/${id}-v3.png`;
+    assert.equal(story.scenes.find(scene => scene.id === id)?.image, image, `${id}: approved image must be selected`);
+    const record = outputs.get(resolve('docs/storyboard/' + image)).record;
+    assert.equal(record.approval?.status, 'approved', `${id}: missing user approval`);
+    assert.equal(record.approval.approvedBy, 'Miguel', `${id}: missing approver`);
+    assert(timestamp(record.approval.recordedAt, id + ' approval') >= timestamp(record.reviewedAt, id + ' review'),
+      `${id}: approval record precedes review`);
+  }
   for (const shot of aggregate.shots) {
     assert.deepEqual(shot, outputs.get(resolve(shot.output))?.shot,
       `${shot.id}: aggregate commission differs from its source plan`);
@@ -179,9 +191,10 @@ function audit(root = path.resolve(__dirname, '..')) {
     'Aggregate journal contains duplicate commissions');
   const familySequence = story.scenes.slice(13).map(scene => path.posix.basename(scene.image, '.png'));
   assert.deepEqual(familySequence,
-    ['scene-14', 'scene-19', 'scene-20', 'scene-15-v2', 'scene-16', 'scene-17', 'scene-18-v2'],
+    ['scene-14', 'scene-19', 'scene-20', 'scene-15-v2', 'scene-16', 'scene-17', 'scene-18-v3'],
     'Expected two family insertions before the picnic and two replacement picnic images');
-  const superseded = ['scene-06', 'scene-07', 'scene-09', 'scene-11', 'scene-15', 'scene-18'];
+  const superseded = ['scene-06', 'scene-07', 'scene-09', 'scene-11', 'scene-15', 'scene-18',
+    ...machineryIds.map(id => id + '-v2')];
   for (const id of superseded) {
     const output = resolve(`${ART}/${id}.png`);
     assert(outputs.has(output) && !selected.has(output), `${id}: retain superseded candidate outside reader selection`);

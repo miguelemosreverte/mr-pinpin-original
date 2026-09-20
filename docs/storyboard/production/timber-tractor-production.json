@@ -710,6 +710,90 @@
       ],
       "prompt": "Use case: compositing. Edit reference 1, the final willow-twig joke, to include Mama PinPin and baby Mr. PomPom in the same places to PinPin's right as in reference 2. Reference 2 is the precise family-cast reference: same Mama face and size, same tiny round baby, same relation to little PinPin. Beaver stays left holding his single leafy willow twig, smiling with his two small incisors. PinPin stays next to him, laughing and looking at Beaver's face. Mama smiles warmly at the joke, both forepaws together in her lap, seated on two hind paws. Baby sits beside her and looks joyfully at his older brother. Keep all FOUR characters readable in the wide picnic scene. Preserve reference 1's whole twig, checked cloth, berries, wooden bowl, apples, repaired intact bridge, stream, red tractor with empty trailer, forest and gentle detailed golden lighting. Baby smaller than PinPin, Mama larger than PinPin; both match reference 2. Keep natural hedgehog faces, compact bodies and detailed brown quills. No lettering, no exposure increase, no added props. Landscape 1536 x 1024.",
       "output": "docs/storyboard/images/standalone/timber-tractor/scene-18-v2.png"
+    },
+    {
+      "id": "scene-07-v3",
+      "order": 7,
+      "title": "Scene 7: trailer-mounted crane clarification — unapproved candidate",
+      "beat": "The grapple lowers the third round oak log onto two already loaded round logs.",
+      "camera": "Same rear three-quarter view toward tractor facing away-left.",
+      "staging": "Preserve beaver and PinPin in cab, with driver looking back toward loading.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-07-v2.png",
+          "role": "Edit target"
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Tractor identity and front-of-trailer crane mounting relationship only"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit.\nAsset type: ONE proposed correction to scene 7 of a children's illustrated story; keep 1536 x 1024 landscape.\nInput image 1 (scene-07-v2.png) is the EDIT TARGET. Preserve its image composition and loading moment.\nInput image 2 (scene-03.png) is reference ONLY for the same red tractor identity and the yellow logging crane's front-of-trailer mounting relationship. Do not copy its empty cargo state, forward camera, foreground characters or landscape.\n\nCorrect the machinery connection in input 1. We are looking from behind the log trailer toward the back of the tractor; the tractor faces AWAY toward the left distance. Place ONE clearly legible yellow rotating crane pedestal bolted to the FRONT structural frame of the LOG TRAILER, directly BEHIND the tractor cab and AHEAD of the cargo headboard and first cargo stakes. Make a visible continuous mechanical path from the bolted pedestal through the yellow articulated boom, its joints, black hydraulic cylinders and hoses to the EXISTING dark grapple holding the SAME third round oak log above the two loaded logs. Let the base and its lower boom connection be readable beside the rear of the cab rather than disappearing behind its roof. The cab roof stays intact, visibly independent and free of any crane mounting. The crane is part of the trailer; the tractor pulls this separate trailer through a drawbar/hitch, visible where the view allows. Do not fuse the trailer frame into the tractor.\n\nKeep the SAME rear three-quarter camera, tractor facing away-left, trailer closest to viewer, same trailer chassis length, EXACTLY TWO trailer axles (the same two near-side trailer wheels), same large rear/small front tractor wheels and red tractor rims. Preserve the two loaded round bark-covered oak logs, the same suspended third log, load heights, stake locations and red-tipped dark steel stakes, rear lights, forest track, uprooted tree at left, stacked timber at left, stream at right, morning light, textures and warm dimensional storybook style. Keep background, framing and exposure as close to image 1 as possible.\n\nKeep the SAME beaver driver in blue denim vest and tiny Mr. PinPin hedgehog inside their separate cab seats, same faces, expressions, relative scale and clothing. This is the BACK window of the cab: occupants look back toward the loading operation; the driver may turn toward crane control levers. No front-facing steering wheel positioned at the rear window, no duplicated faces or limbs, no new characters. Preserve all unrelated parts. No text, labels, borders, panels or watermarks. Render one full-bleed corrected candidate, not a before/after montage.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-07-v3.png"
+    },
+    {
+      "id": "scene-09-v3",
+      "order": 9,
+      "title": "Traveling tractor design consistency, unapproved",
+      "beat": "Beaver and PinPin travel with three secured round logs.",
+      "camera": "Preserve same front three-quarter view.",
+      "staging": "Preserve accepted faces and seats.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-09-v2.png",
+          "role": "Edit target, preserve corrected character faces"
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Established machinery design only"
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/title-v1.png",
+          "role": "Established machinery design only"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit. ONE landscape 1536x1024 children's storybook machinery correction.\nInput 1 scene-09-v2 is the EDIT TARGET; preserve its camera, traveling scene, characters, background and light. Inputs 2 scene03 and 3 cover are machinery DESIGN REFERENCES ONLY. Do not import their characters, lettering, cargo state or camera.\nChange only the tractor machinery in input1 to the established red tractor design from input2 and input3: red metal wheel rims, large rear wheels and smaller front wheels, the same red body/hood/fenders, tall divided dark mesh front grille, low headlights, sturdy dark protective front guard and vertical front weight stack. Roof lighting is two adjacent small rectangular lamps at EACH front roof corner, like the design reference, not one raised spotlight per corner. Mount its single tall dark exhaust on the same actual physical side as the reference: in this shared front three-quarter view it appears at the LEFT edge of the windshield beside the near-side cab pillar, between hood and cab, not on the opposite right side. Match mirrors/cab body construction to the reference while preserving unobstructed faces.\nThe yellow logging crane is mounted on the FRONT OF THE TRAILER immediately behind the tractor cab, ahead of the load, with its base connected to the trailer frame and mechanically separate from the cab roof. Its boom remains compactly FOLDED for travel, with grapple secured at rest; it is not lifting a log. Preserve the same separate dark logging trailer with EXACTLY TWO axles (two near-side trailer wheels), red-tipped stakes, EXACTLY THREE round bark-covered oak logs in the same loaded arrangement and EXACTLY TWO bright ORANGE cargo straps securing them. Trailer rims may retain their existing neutral metal finish; tractor rims must be red.\nABSOLUTELY preserve the already-corrected tiny hedgehog PinPin face from input1: same nose, eyes, ears, muzzle, quills, expression, scale and exact passenger position on camera-right. Preserve the beaver driver face, teeth, expression, body, blue denim vest, hands on steering wheel, seating and camera-left driver position from input1. Keep the characters and cab interior unchanged as closely as possible; do not replace them with reference-image characters. Preserve the woodland track, ruts, streamside plants, trees, flowers, blue sky, mountains, framing, sun direction, exposure and dimensional illustrated style of input1. No added text, watermark, border or montage.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-09-v3.png"
+    },
+    {
+      "id": "scene-11-v3",
+      "order": 11,
+      "title": "Scene 11: restore tandem trailer wheels",
+      "beat": "Unloaded timber rests on bank.",
+      "camera": "Preserve existing full frame.",
+      "staging": "Change trailer wheels only, three to two.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-11-v2.png",
+          "role": "Exact edit target; preserve everything except trailer undercarriage."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Trailer tandem bogie and earthy rim identity only."
+        }
+      ],
+      "prompt": "Use case: precise-object-edit. Make one highly localized correction of IMAGE 1, scene-11-v2: change ONLY the logging TRAILER UNDERCARRIAGE. Preserve the full 1536 by 1024 landscape composition.\nThe empty logging trailer currently has three near-side wheels. Replace that three-wheel row with a TWO-AXLE tandem bogie: exactly TWO visible near-side trailer wheels, naturally spaced together under the existing trailer bed, with the corresponding two axles and opposite-side wheels only if naturally visible. Use dark earthy metal trailer wheel rims like IMAGE 2, scene03, which is ONLY a machinery identity reference. Keep all tractor wheels and their red rims unchanged. Do not change trailer length, bed, stakes, headboard, hitch location or trailer position. Integrate the corrected wheel arrangement with existing perspective, scale, shadows and dry ground.\nKeep everything else from IMAGE 1 unchanged: the entire red tractor; both tiny cab characters' exact faces, bodies, seats and expressions; yellow crane in its exact present behind-cab mounting and active pose; open EMPTY dark grapple; completely EMPTY trailer; exactly THREE full-length round bark-covered logs on the bank; broken footbridge including missing approach boards; trees, stream, foliage, camera, framing, texture, focus, light, color and exposure. Do not import the characters, background or cargo from IMAGE 2. No additional machine, no cargo on trailer, no new stabilizers, no text, no crop, no lighting polish. This is solely a three-axle-to-two-axle trailer continuity correction.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-11-v3.png"
+    },
+    {
+      "id": "scene-18-v3",
+      "order": 18,
+      "title": "Scene 18: tractor pulls trailer from rear",
+      "beat": "Willow twig joke with hedgehog family.",
+      "camera": "Preserve existing full frame and background scale.",
+      "staging": "Change only distant machine orientation, preserve all four animals and twig.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-18-v2.png",
+          "role": "Exact latest published target including Mama and PomPom."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-15-v2.png",
+          "role": "Machinery orientation only; do not import apple or pose."
+        }
+      ],
+      "prompt": "Use case: precise-object-edit. Make one localized correction to IMAGE 1, scene-18-v2, preserving its full 1536 by 1024 landscape frame. Change ONLY the small distant tractor-and-empty-trailer assembly in the upper-left background, keeping its existing background scale and location. IMAGE 2, scene-15-v2, is ONLY a machinery-orientation reference.\nCorrect the machinery to the SAME orientation as IMAGE 2: tractor red bonnet, black front grille and smaller FRONT wheels point to the LEFT; the enclosed cab and larger REAR wheels are immediately to the RIGHT of the bonnet. The logging trailer trails to the RIGHT, coupled by its drawbar to the tractor's REAR, never its bonnet. A yellow folded crane sits directly behind the cab at the FRONT of the empty trailer, connected there and folded compactly. Trailer has two axles/two near-side wheels, dark metal frame, upright dark stakes with red tips and a protective headboard. Keep red tractor wheel rims and earthy dark trailer rims. Match original perspective, natural partly occluded background detail, sunlight and shadows. The machinery remains distant and parked.\nEverything outside that small background vehicle assembly MUST remain unchanged from IMAGE 1: Beaver's exact face, two incisors, blue vest, body, paws and willow twig held upright; PinPin's face, quills, body and laughing expression; Mama hedgehog's exact face, quills, seated posture and paws; baby PomPom's exact face, scale, quills and paws. Preserve all FOUR foreground animals in precisely their original positions. Preserve the twig and its leaves (do not replace it with apple); intact completed bridge, river, picnic cloth and food, trees, grass, foreground plants, camera, framing, focus, texture, color and exposure. Do not import the differing character poses, apple, bridge or background from IMAGE 2. No extra animals, no missing family members, no logs on trailer, no active crane, no text, no crop or lighting polish. This is solely a correction to the tractor/front-versus-rear trailer relationship.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-18-v3.png"
     }
   ],
   "navigation": [
