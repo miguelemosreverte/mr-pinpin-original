@@ -1,0 +1,78 @@
+{
+  "id": "scene-19-v2",
+  "order": 15,
+  "title": "Family reunion across the stream",
+  "beat": "PinPin greets Mama and PomPom while Beaver waits on tractor bank.",
+  "camera": "Preserve scene19 foreground picnic bank and far tractor bank.",
+  "staging": "Add medium PinPin foreground; add Beaver far bank. Exactly four identities.",
+  "alt": "PinPin greets Mama and baby PomPom by picnic basket while Beaver waits across the stream.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-19.png",
+      "role": "Exact reunion environment target; preserve Mama/baby/basket/bridge/tractor location."
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-14.png",
+      "role": "PinPin identity and beaver far-bank geography only."
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-15-v2.png",
+      "role": "Four identities and family size relations only, not picnic staging."
+    }
+  ],
+  "prompt": "Use case: precise-object-edit, children's picture-book story continuity. Edit IMAGE1 scene19, landscape1536x1024, to make a warm reunion with exactly FOUR established characters. Preserve Mama hedgehog and tiny baby PomPom in the foreground, picnic basket with red-white cloth at lower right, repaired wooden bridge, stream, all terrain/trees and the parked red tractor on the OPPOSITE/FAR bank in upper-left background. IMAGE2 scene14 supplies PinPin identity and establishes Beaver remaining on that far tractor bank; IMAGE3 scene15-v2 supplies the FOUR cast identities and relative sizes ONLY, not its picnic poses or food layout.\nADD PinPin, recognizable medium-sized cream-faced brown-quilled child hedgehog, in the FOREGROUND picnic bank space between Mama/baby and basket. He has just come off the repaired bridge and now turns toward Mama, greeting her happily. PinPin must be distinctly larger than baby PomPom and smaller than Mama. Keep his two forepaws/two hind paws anatomically coherent and his entire body grounded on the same foreground bank. Do not replace or duplicate the tiny baby already beside Mama. Preserve Mama's and PomPom's existing facial identity, body proportions and welcoming movement; they look toward returning PinPin.\nADD Beaver in his established blue work vest on the FAR/OPPOSITE bank beyond the stream, beside the far bridge approach near the parked tractor. He is naturally much smaller in the image by distance, comfortably recognizable by chestnut fur, broad muzzle, two small incisors and blue vest. He watches the reunion from that far bank; he has NOT crossed to the picnic bank. Keep him fully on dry land near the far bridge end, not standing on water, inside rails or beside the foreground family. This geographic separation matters.\nExactly THREE hedgehogs total: one Mama, one PinPin, one much smaller baby PomPom; exactly ONE Beaver. No other animals. Preserve original warm dimensional woodland rendering, full frame/camera, sunlight, exposure, texture and bridge architecture. Tractor stays parked on original far bank facing left with empty tandem trailer trailing right and single folded yellow crane directly behind cab at trailer front. No vehicle on bridge. No text, labels, extra food, extra basket, clothing on hedgehogs, scenery replacement or lighting polish.",
+  "output": "docs/storyboard/images/standalone/timber-tractor/scene-19-v2.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be76-1c10-7622-871c-eaaa6c6ed4a7/exec-be990e02-f9c4-4287-870c-ca9d783ca4c2.png",
+  "startedAt": "2026-09-20T15:23:27.247Z",
+  "finishedAt": "2026-09-20T15:24:26.661Z",
+  "seconds": 59.414,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "fdf6ff363728df2aab9944b75a0927d0a23af43a68523edfa17f4e1ecad172d5",
+  "review": "Exactly four identities visible: Mama, tiny baby PomPom, distinctly larger PinPin greeting them on foreground picnic bank, and Beaver in blue vest on far bank beside parked tractor. Basket, repaired bridge and general original geography retained. Beaver is beside tractor rather than immediately at bridge approach, but correct bank separation is clear. No duplicate hedgehogs identified. Fine distant facial and hidden limb details remain unverified. Unpublished proposal.",
+  "reviewedAt": "2026-09-20T15:54:06.386Z",
+  "originalDraftPath": "/Users/miguel_lemos/.codex/tmp/timber-tractor-machinery-review/pacing/candidates/scene-19-v2.json",
+  "originalDraftRecord": {
+    "id": "scene-19-v2",
+    "order": 19,
+    "title": "Family reunion across the stream",
+    "beat": "PinPin greets Mama and PomPom while Beaver waits on tractor bank.",
+    "camera": "Preserve scene19 foreground picnic bank and far tractor bank.",
+    "staging": "Add medium PinPin foreground; add Beaver far bank. Exactly four identities.",
+    "alt": "PinPin greets Mama and baby PomPom by picnic basket while Beaver waits across the stream.",
+    "references": [
+      {
+        "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/scene-19.png",
+        "role": "Exact reunion environment target; preserve Mama/baby/basket/bridge/tractor location."
+      },
+      {
+        "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/scene-14.png",
+        "role": "PinPin identity and beaver far-bank geography only."
+      },
+      {
+        "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/scene-15-v2.png",
+        "role": "Four identities and family size relations only, not picnic staging."
+      }
+    ],
+    "prompt": "Use case: precise-object-edit, children's picture-book story continuity. Edit IMAGE1 scene19, landscape1536x1024, to make a warm reunion with exactly FOUR established characters. Preserve Mama hedgehog and tiny baby PomPom in the foreground, picnic basket with red-white cloth at lower right, repaired wooden bridge, stream, all terrain/trees and the parked red tractor on the OPPOSITE/FAR bank in upper-left background. IMAGE2 scene14 supplies PinPin identity and establishes Beaver remaining on that far tractor bank; IMAGE3 scene15-v2 supplies the FOUR cast identities and relative sizes ONLY, not its picnic poses or food layout.\nADD PinPin, recognizable medium-sized cream-faced brown-quilled child hedgehog, in the FOREGROUND picnic bank space between Mama/baby and basket. He has just come off the repaired bridge and now turns toward Mama, greeting her happily. PinPin must be distinctly larger than baby PomPom and smaller than Mama. Keep his two forepaws/two hind paws anatomically coherent and his entire body grounded on the same foreground bank. Do not replace or duplicate the tiny baby already beside Mama. Preserve Mama's and PomPom's existing facial identity, body proportions and welcoming movement; they look toward returning PinPin.\nADD Beaver in his established blue work vest on the FAR/OPPOSITE bank beyond the stream, beside the far bridge approach near the parked tractor. He is naturally much smaller in the image by distance, comfortably recognizable by chestnut fur, broad muzzle, two small incisors and blue vest. He watches the reunion from that far bank; he has NOT crossed to the picnic bank. Keep him fully on dry land near the far bridge end, not standing on water, inside rails or beside the foreground family. This geographic separation matters.\nExactly THREE hedgehogs total: one Mama, one PinPin, one much smaller baby PomPom; exactly ONE Beaver. No other animals. Preserve original warm dimensional woodland rendering, full frame/camera, sunlight, exposure, texture and bridge architecture. Tractor stays parked on original far bank facing left with empty tandem trailer trailing right and single folded yellow crane directly behind cab at trailer front. No vehicle on bridge. No text, labels, extra food, extra basket, clothing on hedgehogs, scenery replacement or lighting polish.",
+    "output": "/Users/miguel_lemos/.codex/tmp/timber-tractor-machinery-review/pacing/candidates/scene-19-v2.png",
+    "tool": "built-in imagegen",
+    "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be76-1c10-7622-871c-eaaa6c6ed4a7/exec-be990e02-f9c4-4287-870c-ca9d783ca4c2.png",
+    "startedAt": "2026-09-20T15:23:27.247Z",
+    "finishedAt": "2026-09-20T15:24:26.661Z",
+    "seconds": 59.414,
+    "width": 1536,
+    "height": 1024,
+    "sha256": "fdf6ff363728df2aab9944b75a0927d0a23af43a68523edfa17f4e1ecad172d5",
+    "review": "Exactly four identities visible: Mama, tiny baby PomPom, distinctly larger PinPin greeting them on foreground picnic bank, and Beaver in blue vest on far bank beside parked tractor. Basket, repaired bridge and general original geography retained. Beaver is beside tractor rather than immediately at bridge approach, but correct bank separation is clear. No duplicate hedgehogs identified. Fine distant facial and hidden limb details remain unverified. Unpublished proposal.",
+    "reviewedAt": "2026-09-20T15:54:06.386Z"
+  },
+  "provenanceNote": "Original draft record preserved verbatim; published ID/output and reference paths remapped to repository files without changing image bytes, prompt, timing or review.",
+  "approval": {
+    "status": "approved",
+    "approvedBy": "Miguel",
+    "recordedAt": "2026-09-20T16:32:23.350Z",
+    "scope": "Full local pacing preview approved for official publication, including these image bytes and the final trilingual narration in proposed-sequence.json."
+  }
+}

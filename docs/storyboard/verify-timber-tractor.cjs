@@ -205,16 +205,17 @@ function verifyContract() {
     assert(context.window.standaloneStories.complete(story), 'Story contract is incomplete');
     assert.deepEqual(story.scenes.map(scene => scene.id), [
       ...Array.from({length:14}, (_, i) => 'scene-' + String(i + 1).padStart(2, '0')),
-      'scene-19', 'scene-20', 'scene-15', 'scene-16', 'scene-17', 'scene-18'
+      'scene-19', 'scene-21', 'scene-22', 'scene-20', 'scene-23', 'scene-24',
+      'scene-15', 'scene-16', 'scene-17', 'scene-18'
     ], 'Stable scene IDs must retain reading order');
-    assert.equal(story.spreads.length,14);
+    assert.equal(story.spreads.length,18);
     assert.deepEqual(story.spreads.map(spread => spread.scenes),
-      [[0],[1,2],[3,4],[5,6],[7,8],[9],[10],[11,12],[13],[14],[15],[16],[17,18],[19]]);
-    for (const [id, version] of [['scene-05',4],['scene-06',2],['scene-07',4],['scene-08',2],['scene-09',4],['scene-10',3],['scene-11',3],['scene-15',2],['scene-18',3],['scene-20',2]]) {
+      [[0],[1,2],[3,4],[5,6],[7,8],[9],[10],[11,12],[13],[14],[15],[16],[17],[18],[19],[20],[21,22],[23]]);
+    for (const [id, version] of [['scene-05',4],['scene-06',2],['scene-07',4],['scene-08',2],['scene-09',4],['scene-10',3],['scene-11',3],['scene-15',2],['scene-18',3],['scene-19',2],['scene-20',2],['scene-21',1],['scene-22',1],['scene-23',5],['scene-24',1]]) {
       assert.equal(story.scenes.find(scene => scene.id === id).image, `images/standalone/timber-tractor/${id}-v${version}.png`);
     }
     const revised = structuredClone(story);
-    revised.scenes[14].image = 'images/standalone/timber-tractor/scene-19-v2.png';
+    revised.scenes[14].image = 'images/standalone/timber-tractor/scene-19-v3.png';
     assert(context.window.standaloneStories.complete(revised), 'Reviewed versioned images must be supported');
     for (const mutate of [
       data => { delete data.cover.es; },
@@ -242,11 +243,27 @@ function verifyContract() {
       mutate(incomplete);
       assert(!context.window.standaloneStories.complete(incomplete), 'Incomplete or mistimed edition must stay unpublished');
     }
+    for (const id of ['scene-14', 'scene-19', 'scene-21', 'scene-22', 'scene-20', 'scene-23', 'scene-24', 'scene-15']) {
+      const index = story.scenes.findIndex(scene => scene.id === id);
+      const spreadIndex = story.spreads.findIndex(spread => spread.scenes.includes(index));
+      assert.deepEqual(story.spreads[spreadIndex].scenes, [index], id + ' needs its own page turn');
+      assert.equal(story.spreads[spreadIndex].paper, 'landscape');
+      const portrait = structuredClone(story);
+      portrait.spreads[spreadIndex].paper = 'portrait';
+      assert(!context.window.standaloneStories.complete(portrait), id + ' must remain landscape');
+      const merged = structuredClone(story);
+      merged.spreads[spreadIndex].scenes.push(...merged.spreads.splice(spreadIndex + 1, 1)[0].scenes);
+      merged.spreads.splice(1, 1,
+        {style:'arrival', paper:'landscape', scenes:[1]},
+        {style:'meeting', paper:'landscape', scenes:[2]});
+      assert.equal(merged.spreads.length, story.spreads.length);
+      assert(!context.window.standaloneStories.complete(merged), id + ' must not share its page');
+    }
     console.log(JSON.stringify({storyContract:true,stableSceneOrder:true,scenes:story.scenes.length,printPages:story.spreads.length}));
     const home = JSON.parse(fs.readFileSync(path.join(__dirname,'stories/timber-tractor-chapter-02.json')));
     const combined = context.window.standaloneStories.compose(story, home);
-    assert.equal(combined.scenes.length, 30);
-    assert.equal(combined.spreads.length, 22);
+    assert.equal(combined.scenes.length, 34);
+    assert.equal(combined.spreads.length, 26);
     return JSON.parse(JSON.stringify(combined));
 }
 

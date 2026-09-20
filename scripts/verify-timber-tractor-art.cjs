@@ -4,8 +4,9 @@ const path = require('node:path');
 const {createHash} = require('node:crypto');
 const vm = require('node:vm');
 
-const PLAN_NAMES = ['title', 'covers', 'story', 'environments', 'corrections', 'family', 'machinery-approved', 'seating-approved'];
+const PLAN_NAMES = ['title', 'covers', 'story', 'environments', 'corrections', 'family', 'machinery-approved', 'seating-approved', 'pacing-approved'];
 const APPROVED_SIX = ['scene-05-v4', 'scene-07-v4', 'scene-08-v2', 'scene-09-v4', 'scene-10-v3', 'scene-20-v2'];
+const APPROVED_PACING = ['scene-19-v2', 'scene-21-v1', 'scene-22-v1', 'scene-23-v5', 'scene-24-v1'];
 const UNKNOWN_TIMING_IMPORTS = new Set(['scene-07-v4', 'scene-20-v2']);
 const LANGUAGES = ['en', 'es', 'ru'];
 const ART = 'docs/storyboard/images/standalone/timber-tractor';
@@ -79,6 +80,14 @@ function audit(root = path.resolve(__dirname, '..')) {
       assert.deepEqual(record.references, shot.references, `${label}: commission references mismatch`);
       references(record.references, label);
       assert.equal(record.sha256, createHash('sha256').update(bytes).digest('hex'), `${label}: SHA-256 mismatch`);
+      if (name === 'pacing-approved') {
+        const draft = record.originalDraftRecord;
+        assert(draft && record.originalDraftPath, `${label}: missing preserved draft provenance`);
+        for (const field of ['prompt', 'sha256', 'startedAt', 'finishedAt', 'seconds', 'review', 'reviewedAt']) {
+          assert.equal(record[field], draft[field], `${label}: original ${field} changed`);
+        }
+        assert.equal(path.posix.basename(record.originalDraftPath), draft.id + '.json', `${label}: original draft path mismatch`);
+      }
       let start, end;
       const unknownTiming = name === 'seating-approved' && UNKNOWN_TIMING_IMPORTS.has(shot.id);
       if (unknownTiming) {
@@ -162,7 +171,7 @@ function audit(root = path.resolve(__dirname, '..')) {
   const selected = new Set();
   const editions = LANGUAGES.map(lang => {
     const images = reader.edition(story, lang).images;
-    assert.equal(images.length, 20, `${lang}: expected 20 reader images`);
+    assert.equal(images.length, 24, `${lang}: expected 24 reader images`);
     const selections = Array.from(images, (image, index) => {
       const expectedSrc = index === 0 ? story.cover[lang] : story.scenes[index].image;
       assert.equal(image.src, expectedSrc, `${lang}/${index}: reader selection mismatch`);
@@ -179,8 +188,8 @@ function audit(root = path.resolve(__dirname, '..')) {
     return {language: lang, count: selections.length, selections};
   });
 
-  assert.equal(records.length, 43, 'Expected 37 retained historical commissions and six newly approved outputs');
-  assert.equal(selected.size, 22, 'Expected 19 shared reading images and three localized covers');
+  assert.equal(records.length, 48, 'Expected 43 retained historical commissions and five approved pacing outputs');
+  assert.equal(selected.size, 26, 'Expected 23 shared reading images and three localized covers');
   const aggregate = json('docs/storyboard/production/timber-tractor-production.json');
   assert.equal(aggregate.shots.length, records.length, 'Aggregate journal omits or duplicates commissions');
   assert.deepEqual(aggregate.shots.slice(29, 33).map(shot => shot.id),
@@ -188,9 +197,11 @@ function audit(root = path.resolve(__dirname, '..')) {
   const machineryIds = ['scene-07', 'scene-09', 'scene-11', 'scene-18'];
   assert.deepEqual(aggregate.shots.slice(33, 37).map(shot => shot.id),
     machineryIds.map(id => id + '-v3'), 'Approved machinery commissions must append after the family journal');
-  assert.deepEqual(aggregate.shots.slice(37).map(shot => shot.id), APPROVED_SIX,
+  assert.deepEqual(aggregate.shots.slice(37, 43).map(shot => shot.id), APPROVED_SIX,
     'Six approved corrections must append without replacing historical commissions');
-  const approvedSelections = [...APPROVED_SIX, 'scene-11-v3', 'scene-18-v3'];
+  assert.deepEqual(aggregate.shots.slice(43).map(shot => shot.id), APPROVED_PACING,
+    'Five pacing commissions must append without replacing the prior 43 commissions');
+  const approvedSelections = [...APPROVED_SIX, ...APPROVED_PACING, 'scene-11-v3', 'scene-18-v3'];
   for (const selectedId of approvedSelections) {
     const id = selectedId.slice(0, 8);
     const image = `images/standalone/timber-tractor/${selectedId}.png`;
@@ -209,10 +220,10 @@ function audit(root = path.resolve(__dirname, '..')) {
     'Aggregate journal contains duplicate commissions');
   const familySequence = story.scenes.slice(13).map(scene => path.posix.basename(scene.image, '.png'));
   assert.deepEqual(familySequence,
-    ['scene-14', 'scene-19', 'scene-20-v2', 'scene-15-v2', 'scene-16', 'scene-17', 'scene-18-v3'],
-    'Expected two family insertions before the picnic and two replacement picnic images');
+    ['scene-14', 'scene-19-v2', 'scene-21-v1', 'scene-22-v1', 'scene-20-v2', 'scene-23-v5', 'scene-24-v1', 'scene-15-v2', 'scene-16', 'scene-17', 'scene-18-v3'],
+    'Expected the approved reunion, crossings and cab transitions around retained steering and picnic images');
   const superseded = ['scene-06', 'scene-07', 'scene-09', 'scene-11', 'scene-15', 'scene-18',
-    ...machineryIds.map(id => id + '-v2'), 'scene-05', 'scene-08', 'scene-10', 'scene-20', 'scene-07-v3', 'scene-09-v3'];
+    ...machineryIds.map(id => id + '-v2'), 'scene-05', 'scene-08', 'scene-10', 'scene-20', 'scene-07-v3', 'scene-09-v3', 'scene-19'];
   for (const id of superseded) {
     const output = resolve(`${ART}/${id}.png`);
     assert(outputs.has(output) && !selected.has(output), `${id}: retain superseded candidate outside reader selection`);

@@ -4,7 +4,8 @@
   const sceneIds = [
     'scene-01', 'scene-02', 'scene-03', 'scene-04', 'scene-05', 'scene-06', 'scene-07',
     'scene-08', 'scene-09', 'scene-10', 'scene-11', 'scene-12', 'scene-13', 'scene-14',
-    'scene-19', 'scene-20', 'scene-15', 'scene-16', 'scene-17', 'scene-18'
+    'scene-19', 'scene-21', 'scene-22', 'scene-20', 'scene-23', 'scene-24',
+    'scene-15', 'scene-16', 'scene-17', 'scene-18'
   ];
   const localized = value => languages.every(lang => typeof value?.[lang] === 'string' && value[lang].trim());
 
@@ -20,7 +21,7 @@
         !localized(story.title) || !localized(story.cover)) return false;
     if (number === 2) return completeHome(story);
     if (!Array.isArray(story.scenes) || story.scenes.length !== sceneIds.length ||
-        !Array.isArray(story.spreads) || story.spreads.length !== 14) return false;
+        !Array.isArray(story.spreads) || story.spreads.length !== 18) return false;
     if (!languages.every(lang => story.cover[lang] === prefix + (lang === 'en' ? 'title-v1.png' : `title-${lang}-v1.png`))) return false;
     if (!story.scenes.every((scene, index) => scene?.id === sceneIds[index] && typeof scene.image === 'string' &&
         (index === 0 ? scene.image === prefix + 'title-v1.png' :
@@ -35,7 +36,7 @@
         spread.scenes.every(Number.isInteger))) return false;
     if (story.spreads.flatMap(spread => spread.scenes).join(',') !== sceneIds.map((_, i) => i).join(',')) return false;
     if (story.spreads[0].style !== 'cover' || story.spreads[0].paper !== 'portrait' || story.spreads[0].scenes.length !== 1) return false;
-    if (!['scene-19', 'scene-20'].every(id => story.spreads.some(spread =>
+    if (!['scene-14', 'scene-19', 'scene-21', 'scene-22', 'scene-20', 'scene-23', 'scene-24', 'scene-15'].every(id => story.spreads.some(spread =>
         spread.paper === 'landscape' && spread.scenes.length === 1 && spread.scenes[0] === sceneIds.indexOf(id)))) return false;
     // Keep the willow-twig answer behind a page turn after both setup shots.
     return story.spreads.at(-1).scenes.length === 1 && story.spreads.at(-1).scenes[0] === sceneIds.indexOf('scene-18');

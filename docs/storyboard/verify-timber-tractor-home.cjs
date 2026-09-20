@@ -94,14 +94,14 @@ async function contract(story) {
   assert.equal(await adapter.load('unknown', 2), null);
   assert.deepEqual(requests, [], 'Unsupported routes fetched a fallback');
   const combined = adapter.compose(first, story);
-  assert.equal(combined.scenes.length, 30);
-  assert.equal(combined.spreads.length, 22);
-  assert.equal(new Set(combined.scenes.map(scene => scene.id)).size, 30);
-  assert.deepEqual(JSON.parse(JSON.stringify(combined.scenes.slice(0,20))), first.scenes);
-  assert.deepEqual(JSON.parse(JSON.stringify(combined.scenes.slice(20))),
+  assert.equal(combined.scenes.length, 34);
+  assert.equal(combined.spreads.length, 26);
+  assert.equal(new Set(combined.scenes.map(scene => scene.id)).size, 34);
+  assert.deepEqual(JSON.parse(JSON.stringify(combined.scenes.slice(0,24))), first.scenes);
+  assert.deepEqual(JSON.parse(JSON.stringify(combined.scenes.slice(24))),
     story.scenes.map(scene => ({...scene, id:'home-' + scene.id})));
-  assert.deepEqual(JSON.parse(JSON.stringify(combined.spreads.slice(14))),
-    story.spreads.map(spread => ({...spread, scenes:spread.scenes.map(index => index + 20)})));
+  assert.deepEqual(JSON.parse(JSON.stringify(combined.spreads.slice(18))),
+    story.spreads.map(spread => ({...spread, scenes:spread.scenes.map(index => index + 24)})));
   assert.equal(combined.number, undefined);
   assert.deepEqual(JSON.parse(JSON.stringify(combined.title)), first.title);
   assert.equal(adapter.compose(story, first), null, 'Reversed parts accepted');
@@ -114,7 +114,7 @@ async function contract(story) {
   assert.equal((await adapter.available()).length, 1, 'Continuation must not become another library card');
   responses['stories/timber-tractor-chapter-02.json'] = first;
   assert.equal(await adapter.load('timber-tractor'), null, 'Wrong continuation accepted');
-  console.log(JSON.stringify({contract:true,negativeContracts:true,fixture,scenes:30,pages:22}));
+  console.log(JSON.stringify({contract:true,negativeContracts:true,fixture,scenes:34,pages:26}));
   return JSON.parse(JSON.stringify(combined));
 }
 
@@ -122,7 +122,7 @@ async function loaded(page) {
   await page.waitForSelector('#reader[aria-busy=false] article[data-story="timber-tractor"]');
   assert.equal(new URL(page.url()).searchParams.get('story'), 'timber-tractor');
   assert.equal(new URL(page.url()).searchParams.has('chapter'), false);
-  assert.equal(await page.locator('.scene').count(), 30);
+  assert.equal(await page.locator('.scene').count(), 34);
 }
 
 async function control(page, selector) {
@@ -263,13 +263,13 @@ async function pdf(page, story, lang) {
   const file = path.join(output, 'Mr-PinPin-Timber-Tractor-Complete-' + lang + '.pdf');
   await page.pdf({path:file,preferCSSPageSize:true,printBackground:true,displayHeaderFooter:false});
   const info = execFileSync('pdfinfo', ['-f','1','-l',String(story.spreads.length),file], {encoding:'utf8'});
-  assert.match(info, /Pages:\s+22\b/);
+  assert.match(info, /Pages:\s+26\b/);
   const sizes = [...info.matchAll(/Page\s+(\d+) size:\s+([\d.]+) x ([\d.]+)/g)];
-  assert.equal(sizes.length, 22);
+  assert.equal(sizes.length, 26);
   sizes.forEach((size, index) => assert.equal(Number(size[2]) > Number(size[3]), story.spreads[index].paper === 'landscape'));
   const imagePages = story.scenes.map((_, index) => story.spreads.findIndex(spread => spread.scenes.includes(index)) + 1);
   const rows = execFileSync('pdfimages', ['-list',file], {encoding:'utf8'}).split('\n').filter(line => /^\s*\d+\s+\d+\s+image\s/.test(line));
-  assert.equal(rows.length, 30);
+  assert.equal(rows.length, 34);
   rows.forEach((row, index) => {
     const fields = row.trim().split(/\s+/);
     assert.equal(Number(fields[0]), imagePages[index]);
@@ -278,12 +278,12 @@ async function pdf(page, story, lang) {
   const text = execFileSync('pdftotext', ['-layout',file,'-'], {encoding:'utf8'});
   const pages = text.split('\f');
   if (!pages.at(-1).trim()) pages.pop();
-  assert.equal(pages.length, 22);
+  assert.equal(pages.length, 26);
   story.scenes.forEach((scene, index) => scene.paragraphs[lang].forEach(paragraph =>
     assert(compact(pages[imagePages[index] - 1]).includes(compact(paragraph)), 'Prose on wrong PDF page: ' + scene.id)));
   assert(!/Previous chapter|Capítulo anterior|Предыдущая глава/.test(text), 'Navigation leaked into print');
   execFileSync('pdftoppm', ['-scale-to','1000','-png',file,path.join(captures,'print-' + lang)], {stdio:'pipe'});
-  console.log(JSON.stringify({pdf:file,pages:22,originalResolutionImages:30,textOnMatchingPages:true}));
+  console.log(JSON.stringify({pdf:file,pages:26,originalResolutionImages:34,textOnMatchingPages:true}));
 }
 
 async function main() {
@@ -316,10 +316,10 @@ async function main() {
         await page.goto(url('2', lang)); await loaded(page);
         await page.evaluate(() => window.prepareChapterPrint());
         assert.equal(await page.title(), story.title[lang]);
-        assert.equal(await page.locator('.scene').count(), 30);
+        assert.equal(await page.locator('.scene').count(), 34);
         assert.equal(await page.locator('.spread-cover').count(), 1);
         assert.equal(await page.locator('article h1,#story-chapters,[data-story-chapter]').count(), 0);
-        assert.deepEqual(await page.locator('.page-number').allTextContents(), Array.from({length:22}, (_, i) => String(i + 1).padStart(2,'0')));
+        assert.deepEqual(await page.locator('.page-number').allTextContents(), Array.from({length:26}, (_, i) => String(i + 1).padStart(2,'0')));
         assert.deepEqual(await page.locator('.scene').evaluateAll(scenes => scenes.map(scene => scene.dataset.sceneId)), story.scenes.map(scene => scene.id));
         assert.deepEqual(await page.locator('.scene img').evaluateAll(images => images.map(image => ({src:image.getAttribute('src'),width:image.naturalWidth,height:image.naturalHeight}))),
           story.scenes.map((scene,index) => ({src:index === 0 ? story.cover[lang] : scene.image,width:scene.width,height:scene.height})));

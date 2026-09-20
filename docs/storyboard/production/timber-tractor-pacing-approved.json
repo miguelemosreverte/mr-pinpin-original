@@ -1,0 +1,139 @@
+{
+  "title": "Timber Tractor: approved family pacing",
+  "scope": "Five selected commissions from the approved local preview: revised reunion and four new transitions. Exact generation records and historical visual reviews retained; disembarking-v4 is an unselected reference input.",
+  "approvalRecordedAt": "2026-09-20T16:32:23.350Z",
+  "approval": {
+    "status": "approved",
+    "approvedBy": "Miguel",
+    "recordedAt": "2026-09-20T16:32:23.350Z"
+  },
+  "originalProposalPath": "/Users/miguel_lemos/.codex/tmp/timber-tractor-machinery-review/pacing/proposed-sequence.json",
+  "originalProposalStatusNote": "The source file still says draft/pending; approval was subsequently given in the conversation for official publication.",
+  "shots": [
+    {
+      "id": "scene-19-v2",
+      "order": 15,
+      "title": "Family reunion across the stream",
+      "beat": "PinPin greets Mama and PomPom while Beaver waits on tractor bank.",
+      "camera": "Preserve scene19 foreground picnic bank and far tractor bank.",
+      "staging": "Add medium PinPin foreground; add Beaver far bank. Exactly four identities.",
+      "alt": "PinPin greets Mama and baby PomPom by picnic basket while Beaver waits across the stream.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-19.png",
+          "role": "Exact reunion environment target; preserve Mama/baby/basket/bridge/tractor location."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-14.png",
+          "role": "PinPin identity and beaver far-bank geography only."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-15-v2.png",
+          "role": "Four identities and family size relations only, not picnic staging."
+        }
+      ],
+      "prompt": "Use case: precise-object-edit, children's picture-book story continuity. Edit IMAGE1 scene19, landscape1536x1024, to make a warm reunion with exactly FOUR established characters. Preserve Mama hedgehog and tiny baby PomPom in the foreground, picnic basket with red-white cloth at lower right, repaired wooden bridge, stream, all terrain/trees and the parked red tractor on the OPPOSITE/FAR bank in upper-left background. IMAGE2 scene14 supplies PinPin identity and establishes Beaver remaining on that far tractor bank; IMAGE3 scene15-v2 supplies the FOUR cast identities and relative sizes ONLY, not its picnic poses or food layout.\nADD PinPin, recognizable medium-sized cream-faced brown-quilled child hedgehog, in the FOREGROUND picnic bank space between Mama/baby and basket. He has just come off the repaired bridge and now turns toward Mama, greeting her happily. PinPin must be distinctly larger than baby PomPom and smaller than Mama. Keep his two forepaws/two hind paws anatomically coherent and his entire body grounded on the same foreground bank. Do not replace or duplicate the tiny baby already beside Mama. Preserve Mama's and PomPom's existing facial identity, body proportions and welcoming movement; they look toward returning PinPin.\nADD Beaver in his established blue work vest on the FAR/OPPOSITE bank beyond the stream, beside the far bridge approach near the parked tractor. He is naturally much smaller in the image by distance, comfortably recognizable by chestnut fur, broad muzzle, two small incisors and blue vest. He watches the reunion from that far bank; he has NOT crossed to the picnic bank. Keep him fully on dry land near the far bridge end, not standing on water, inside rails or beside the foreground family. This geographic separation matters.\nExactly THREE hedgehogs total: one Mama, one PinPin, one much smaller baby PomPom; exactly ONE Beaver. No other animals. Preserve original warm dimensional woodland rendering, full frame/camera, sunlight, exposure, texture and bridge architecture. Tractor stays parked on original far bank facing left with empty tandem trailer trailing right and single folded yellow crane directly behind cab at trailer front. No vehicle on bridge. No text, labels, extra food, extra basket, clothing on hedgehogs, scenery replacement or lighting polish.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-19-v2.png"
+    },
+    {
+      "id": "scene-21-v1",
+      "order": 16,
+      "title": "Outbound crossing to Beaver",
+      "beat": "Three hedgehogs walk across to Beaver waiting on tractor bank.",
+      "camera": "Low picnic-bank position, looking diagonally along bridge toward tractor bank.",
+      "staging": "Three walking away; Beaver waits far bank; basket remains near bank.",
+      "alt": "Mama, baby PomPom and PinPin cross the repaired bridge away from picnic basket toward Beaver and parked tractor.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-14.png",
+          "role": "Canonical repaired bridge and view from picnic side toward far bank."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-19-v2.png",
+          "role": "Reviewed reunion candidate cast and far-bank tractor geography, not approval."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-15-v2.png",
+          "role": "Character identity/size hierarchy and established bank geography only."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Create a NEW landscape1536x1024 picture-book transition: after greeting Mama and baby PomPom on the picnic bank, PinPin leads his family across the repaired little bridge TOWARD Beaver and the parked tractor. Exact established warm dimensional woodland style and characters.\nREFERENCE ROLES: IMAGE1 scene14 establishes the bridge geometry and bank-to-bank camera from the picnic side, looking across to Beaver's bank. IMAGE2 scene19-v2 establishes the reunion, three hedgehog identities/sizes and the tractor on the FAR bank. IMAGE3 scene15-v2 supplies four-cast identity and picnic-bank/tractor-bank geography only; do NOT copy seated picnic poses/food.\nCAMERA AND GEOGRAPHY: Stand low on the PICNIC bank near the basket, slightly offset from the bridge entrance. Look down the length of the SAME repaired wooden bridge toward the FAR TRACTOR bank. Bridge deck runs diagonally from lower-right/foreground to upper-left/middle distance, with recognisable timber rail posts, two horizontal rails and continuous repaired planks above the stream. The parked red tractor is visible beyond the far bridge end toward upper-left, always fully on dry FAR bank. A corner of the familiar wicker picnic basket/red-white cloth remains at the lower-right on the near picnic bank, clearly left behind. Woodland stream flows beneath, same mature trees/ferns/daisies/golden sunlight. Avoid inventing a second bridge.\nACTION AND EXACT CAST: Show THREE hedgehogs walking AWAY FROM CAMERA across the bridge toward the tractor; their body axes, stepping paws and faces pointed predominantly toward the FAR end make outbound movement unmistakable. PinPin, the middle-sized child, leads near the far half of bridge; much smaller baby PomPom follows in the middle; Mama, largest hedgehog, is close beside/behind baby, keeping pace. Use rear three-quarter views with quill backs and a little natural cheek profile; do not turn them all to pose at camera. All three are already clearly progressing ON the repaired bridge, not stationary together at near entrance. Exactly one Mama, one PinPin, one tiny baby PomPom; no duplicate/extra hedgehog. Preserve normal four-limbed anatomy and believable footprints/paw contact on planks; no paws passing through rails. Their actual size hierarchy remains Mama > PinPin > baby even accounting for distance.\nBeaver is the FOURTH and final character: chestnut fur, broad muzzle, paired small incisors, blue work vest and flat tail. He WAITS on dry FAR bank beside the bridge exit, facing and welcoming approaching family, between bridge exit and tractor path. He has not joined them on bridge or crossed toward picnic yet. His smaller apparent size follows distance, not a shrunken identity.\nTRACTOR INVARIANT: Red tractor nose faces left on its original far bank, EMPTY dark logging trailer trails right, tandem two axles/red-topped stakes. One yellow crane fixed immediately behind cab at FRONT of trailer, folded/stowed. No animals in cab, no vehicle on bridge, no cargo or moving machinery. Bridge is for paws only.\nNatural warm directional sunlight and coherent grounded shadows, clear readable body direction. No text, labels, arrows, collage, extra animals, new props or camera-facing family portrait.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-21-v1.png"
+    },
+    {
+      "id": "scene-22-v1",
+      "order": 17,
+      "title": "PinPin climbs aboard",
+      "beat": "After family crosses to tractor bank, PinPin climbs aboard while Mama and PomPom watch.",
+      "camera": "Same side as scene20-v2, stepped back to reveal external stair action; hood left.",
+      "staging": "Exactly four animals, PinPin on steps, Beaver at door, Mama and baby on grass.",
+      "alt": "PinPin climbs the parked red tractor steps with Beaver helping while Mama and PomPom watch.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-20-v2.png",
+          "role": "Primary parked tractor geometry, open doorway, steps, location and lighting; replace seated action with boarding."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Tractor identity only; do not copy opposite camera or earlier forest location."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-15-v2.png",
+          "role": "Four-character identity and size hierarchy only; do not copy picnic props or picnic-bank position."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Create one finished landscape 1536x1024 children's storybook illustration, the new boarding action immediately BEFORE reference 1's parked steering lesson.\nReference 1 fixes this red tractor, open cab doorway, steps, grass, repaired footbridge behind and warm dimensional woodland style. Reference 2 fixes machine identity only. Reference 3 fixes the four animal identities and relative sizes only. Do not bring picnic props into this picture.\nCamera: step back modestly from reference 1 at the same side, near hedgehog eye height, 35mm feeling. Hood stays LEFT, large red-rimmed rear wheel beside doorway, empty tandem two-axle logging trailer extends RIGHT. Keep folded yellow crane on front of trailer immediately behind cab, ahead of empty stake bed. Engine off, parked, no smoke or motion.\nExactly four characters: small young hedgehog PinPin is visibly climbing the existing exterior metal cab steps toward the open door, body facing into the cab and one hind paw planted on a lower tread, other hind paw on next tread. One forepaw holds fixed grab rail; the other reaches Beaver's helping paw. PinPin turns his head back slightly with an eager smile toward Mama, proudly showing her the tractor. Beaver in his blue denim vest stands just inside the doorway, leaning down with one helping forepaw and the other on the inner grab rail. Adult Mama hedgehog and much smaller baby PomPom stand together on the grass to the right, watching PinPin. Preserve their reference faces, natural fur and brown quills; baby clearly much smaller than PinPin, PinPin much smaller than Mama and Beaver.\nShow genuine ascending action with clearly attached limbs and weight on steps; two forelimbs and two hindlimbs per animal, allow natural occlusion. No duplicate seated PinPin inside cab. Visible operator seat is EMPTY, normal forward orientation; any visible single steering column stays ahead of seat toward hood LEFT, never behind. Keep metal cab steps attached to tractor below doorway and a continuous climb from ground to threshold, no invented free-standing ladder. Preserve red rims, large rear/small front tractor wheels, two near-side trailer wheels where visible, no extra wheel. Warm polished storybook rendering matching references, soft sunlit fur, lush ferns and daisies. No text, labels, watermark or extra animals.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-22-v1.png"
+    },
+    {
+      "id": "scene-23-v5",
+      "order": 19,
+      "title": "PinPin steps down — corrected Beaver and chair",
+      "beat": "After supervised steering, PinPin descends to rejoin Mama and PomPom before everyone walks back to picnic.",
+      "camera": "Same side as boarding, slightly wider to show Beaver on grass; hood left.",
+      "staging": "Exactly four animals; PinPin on exterior steps, Beaver on grass assisting, Mama and baby waiting.",
+      "alt": "PinPin steps down from the parked tractor with Beaver helping from the ground while Mama and PomPom wait.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/references/family-disembarking-v4.png",
+          "role": "Edit target; preserve successful step geometry and descending action."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Beaver species identity only: fur, muzzle, teeth, flat scaled paddle tail."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-22-v1.png",
+          "role": "Original single visible lower operator chair at image right inside cab; remove extra foreground chair added later."
+        }
+      ],
+      "prompt": "Precise correction to image 1, landscape1536x1024. Change ONLY these two errors: (1) The blue-vest animal helping PinPin is BEAVER. Restore his actual beaver identity from image 2: smooth soft chestnut fur on head/back, round ears, broad muzzle, two characteristic front teeth, ONE broad flat dark scaly paddle tail on grass. He must have NO hedgehog quills and NO furry tail. Keep his current body position/size, vest, helping-paw contact, other relaxed paw and feet unchanged. (2) Remove the EXTRA tall upholstered chair on imageLEFT inside cab (the one immediately behind steering column). Restore open dark footwell/dashboard clearance in that space. Keep the ORIGINAL lower gray operator chair on imageRIGHT inside cab unchanged, as in image3; it faces forward toward hood LEFT with steering ahead. Image3 is original chair/cab reference only. Preserve all other image1 content exactly: PinPin's face, limbs, downward pose and paw contacts; Mama and tiny PomPom; the EXISTING stair geometry and heights, red sill, floor, parked machine, wheels, empty tandem trailer, crane, bridge, forest and sunlight. No other changes, no extra characters or limbs, no text.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-23-v5.png"
+    },
+    {
+      "id": "scene-24-v1",
+      "order": 20,
+      "title": "Return crossing with Beaver",
+      "beat": "All four walk from tractor bank back toward picnic basket.",
+      "camera": "Same picnic-bank camera as outbound, landscape unchanged.",
+      "staging": "Four animals walking toward camera; no one remains waiting far bank.",
+      "alt": "Beaver follows Mama, PinPin and baby PomPom back over the repaired bridge toward the picnic basket.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-21-v1.png",
+          "role": "Exact camera/environment/bridge/parked tractor/basket continuity; reverse movement only."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-15-v2.png",
+          "role": "Four cast identities and size hierarchy only."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-14.png",
+          "role": "PinPin identity and bridge details only."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Create the later RETURN crossing for this same story, landscape1536x1024: after visiting the parked tractor, all FOUR friends walk back across the bridge toward their picnic basket. IMAGE1 is the just-established outbound bridge view and is the EXACT camera/environment/bridge/tractor/basket continuity reference. Keep the SAME low camera on the PICNIC bank looking along the wooden bridge toward the far tractor bank, same framing and perspective. Do not mirror or reverse the landscape. IMAGE2 scene15-v2 supplies exact four character identities, facial details and relative sizes ONLY, not seated poses or picnic food. IMAGE3 scene14 supplies PinPin's face/body and repaired bridge details ONLY.\nTIME AND MOVEMENT CHANGE: Reverse the animals' direction compared with IMAGE1, not the camera or geography. Now exactly FOUR animals are visibly stepping TOWARD CAMERA along the bridge, leaving the tractor behind and approaching the picnic bank and wicker basket at lower-right. Their faces/chests, body axes and walking paws point predominantly toward camera/near bank. Show meaningful progress on the planks, not a static greeting/group portrait. PinPin, middle-sized child hedgehog, leads near the foreground end of bridge and glances delightedly toward the basket. Mama, largest hedgehog, follows just behind him, closely beside tiny baby PomPom so his much shorter steps are apparent. Beaver in blue work vest follows behind them on the bridge, also walking toward picnic bank; he has now JOINED the family. Ensure enough unobstructed view to count all FOUR identities: one PinPin, one Mama, one much smaller baby PomPom, one Beaver. Stagger their positions gently along the bridge for visibility, without spreading them through the rails or making bridge wider. There must be NO remaining Beaver waiting on far bank and no duplicate hedgehog.\nCHARACTERS: Match warm chestnut beaver with broad whiskered muzzle, two small incisors, blue vest and flat tail; cream-faced brown-quilled PinPin, round adult Mama, tiny round baby PomPom. Actual size order Mama > PinPin > baby, with perspective consistent. Fore/hind paws anatomically coherent and grounded on deck, natural steps with lifted paws allowed; no floating figures, paws fused to rails or extra limbs. Preserve each familiar facial identity and no hedgehog clothing.\nENVIRONMENT LOCK from IMAGE1: same diagonal repaired footbridge, continuous wooden planks, exact two-rail/post arrangement, stream and rocks below, big far-bank tree, ferns and flowers, familiar basket with red-white cloth on foregroundright picnic bank. Same parked red tractor upper-left on FAR bank, nose left, empty dark tandem trailer right, yellow folded crane fixed immediately behind cab at trailer front. No machinery moving, no vehicle on bridge. The tractor bank remains behind the returning group. No picnic cloth spread or food served yet; the basket waits where they left it.\nWarm coherent sunlight, textured dimensional children's-book illustration matching inputs. No arrows/text/collage, no extra animals, no new bridge, no second basket, no unrelated scenery change. Directional walking and geographic continuity take precedence over showing all faces perfectly frontally.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-24-v1.png"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+# Outbound crossing to Beaver
+
+Status: approved by Miguel for publication
+
+- Reading order: 16
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T15:37:48.615Z
+- Completed (UTC): 2026-09-20T15:38:48.768Z
+- Wall time: 60.153 seconds
+- Saved image: docs/storyboard/images/standalone/timber-tractor/scene-21-v1.png
+- Size: 1536 x 1024
+- SHA-256: ac70c8270a1e606980554a272696f63760c8a22d466063a1756d72520c74873c
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0be76-1c10-7622-871c-eaaa6c6ed4a7/exec-4078d752-fed4-4669-869c-fd2804e937ac.png
+- Original draft record: /Users/miguel_lemos/.codex/tmp/timber-tractor-machinery-review/pacing/candidates/family-crossing-to-tractor-v1.json
+- Approval recorded (UTC): 2026-09-20T16:32:23.350Z
+
+Historical review below is retained verbatim from before approval.
+
+## Source Beat
+
+Three hedgehogs walk across to Beaver waiting on tractor bank.
+
+## Camera Direction
+
+Low picnic-bank position, looking diagonally along bridge toward tractor bank.
+
+## Future Character Space
+
+Three walking away; Beaver waits far bank; basket remains near bank.
+
+## References
+
+- docs/storyboard/images/standalone/timber-tractor/scene-14.png: Canonical repaired bridge and view from picnic side toward far bank.
+- docs/storyboard/images/standalone/timber-tractor/scene-19-v2.png: Reviewed reunion candidate cast and far-bank tractor geography, not approval.
+- docs/storyboard/images/standalone/timber-tractor/scene-15-v2.png: Character identity/size hierarchy and established bank geography only.
+
+## Exact Tool Prompt
+
+```text
+Use case: illustration-story. Create a NEW landscape1536x1024 picture-book transition: after greeting Mama and baby PomPom on the picnic bank, PinPin leads his family across the repaired little bridge TOWARD Beaver and the parked tractor. Exact established warm dimensional woodland style and characters.
+REFERENCE ROLES: IMAGE1 scene14 establishes the bridge geometry and bank-to-bank camera from the picnic side, looking across to Beaver's bank. IMAGE2 scene19-v2 establishes the reunion, three hedgehog identities/sizes and the tractor on the FAR bank. IMAGE3 scene15-v2 supplies four-cast identity and picnic-bank/tractor-bank geography only; do NOT copy seated picnic poses/food.
+CAMERA AND GEOGRAPHY: Stand low on the PICNIC bank near the basket, slightly offset from the bridge entrance. Look down the length of the SAME repaired wooden bridge toward the FAR TRACTOR bank. Bridge deck runs diagonally from lower-right/foreground to upper-left/middle distance, with recognisable timber rail posts, two horizontal rails and continuous repaired planks above the stream. The parked red tractor is visible beyond the far bridge end toward upper-left, always fully on dry FAR bank. A corner of the familiar wicker picnic basket/red-white cloth remains at the lower-right on the near picnic bank, clearly left behind. Woodland stream flows beneath, same mature trees/ferns/daisies/golden sunlight. Avoid inventing a second bridge.
+ACTION AND EXACT CAST: Show THREE hedgehogs walking AWAY FROM CAMERA across the bridge toward the tractor; their body axes, stepping paws and faces pointed predominantly toward the FAR end make outbound movement unmistakable. PinPin, the middle-sized child, leads near the far half of bridge; much smaller baby PomPom follows in the middle; Mama, largest hedgehog, is close beside/behind baby, keeping pace. Use rear three-quarter views with quill backs and a little natural cheek profile; do not turn them all to pose at camera. All three are already clearly progressing ON the repaired bridge, not stationary together at near entrance. Exactly one Mama, one PinPin, one tiny baby PomPom; no duplicate/extra hedgehog. Preserve normal four-limbed anatomy and believable footprints/paw contact on planks; no paws passing through rails. Their actual size hierarchy remains Mama > PinPin > baby even accounting for distance.
+Beaver is the FOURTH and final character: chestnut fur, broad muzzle, paired small incisors, blue work vest and flat tail. He WAITS on dry FAR bank beside the bridge exit, facing and welcoming approaching family, between bridge exit and tractor path. He has not joined them on bridge or crossed toward picnic yet. His smaller apparent size follows distance, not a shrunken identity.
+TRACTOR INVARIANT: Red tractor nose faces left on its original far bank, EMPTY dark logging trailer trails right, tandem two axles/red-topped stakes. One yellow crane fixed immediately behind cab at FRONT of trailer, folded/stowed. No animals in cab, no vehicle on bridge, no cargo or moving machinery. Bridge is for paws only.
+Natural warm directional sunlight and coherent grounded shadows, clear readable body direction. No text, labels, arrows, collage, extra animals, new props or camera-facing family portrait.
+```
+
+## Visual Review
+
+Three hedgehogs visibly walk AWAY on repaired bridge: PinPin leads farthest, baby follows, Mama stays behind/close. Beaver waits on dry far tractor bank facing them. Exactly four cast; basket remains foreground picnic bank, parked tractor far bank with empty trailer and front-mounted folded crane. Direction reads clearly; family hierarchy visible despite perspective. Bridge matches established style with a deliberate longitudinal camera. Hidden limb attachments not certified. Unpublished proposal.
+
+Reviewed (UTC): 2026-09-20T15:54:06.392Z
