@@ -1,0 +1,31 @@
+{
+  "id": "shire-v1",
+  "order": 1,
+  "title": "The Shire",
+  "beat": "A proposed shared geography connecting the main book and standalone timber adventure.",
+  "camera": "High bird's-eye campaign map, around70 degrees downward; no horizon.",
+  "staging": "Four readable landmarks for clickable HTML story markers. No characters.",
+  "alt": "A miniature woodland atlas with the family cottage, Crystal Lake, the Elder's oak hill and the timber bridge.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-05.png",
+      "role": "Family cottage architectural reference."
+    },
+    {
+      "path": "docs/storyboard/images/chapter-02-landscapes/shot-03.png",
+      "role": "Elder oak burrow architectural reference."
+    }
+  ],
+  "prompt": "Use case: stylized-concept.\nAsset type: interactive story atlas background, landscape 1536 x 1024, no lettering or UI.\nCreate a gorgeous, very cute miniature woodland world seen from a high bird's-eye campaign-map camera like a Total War overworld, but peaceful and intimate for a children's book. About 70 degrees looking downward, no horizon, readable terrain and a consistent miniature scale throughout. Rich dimensional physical textures, finely modeled deciduous tree crowns, firs, fern clearings, mossy rocks, footpaths, meadows of tiny flowers, blue-green water, morning sunlight with restrained highlights, broad crisp depth of field. This is a believable connected landscape, not a diagram and not a floating island.\nInput image1 is architectural reference for the PinPin family cottage only: preserve its round green door, two round windows, moss-covered curved roof, left stone chimney and right lantern, miniaturized within the landscape. Input image2 is architectural reference for the Elder's home only: burrow under huge oak roots with a low mossy seat rock nearby. Translate both to the overhead camera.\nComposition supports four clickable landmarks in the app; leave nearby open grassy areas for the HTML labels which will be added later. Family cottage is at x24%, y72% of the image, front facing toward lower right, with a small vegetable patch behind and winding stepping stone approach. Crystal Lake is centered x42%,y35%, a medium clear turquoise lake with organic irregular shore and visible pale shallow edges, water lilies at one end and a large distinctive lakeside tree on the left bank. Elder's oak and burrow sit on a distinct grassy hill at x73%,y22%, reached by a gentle path around the lake and up through a pale silver-leaf meadow. A narrow clear stream flows from the lake southeastward to a little wooden footbridge centered x72%,y66%, then continues toward bottom right. The bridge is for tiny paws, with an adjacent picnic clearing and red-white picnic cloth; farther to its southeast a tiny red timber tractor with folded yellow crane and empty trailer rests on a separate forest vehicle track. A winding pedestrian route connects cottage to lake then Elder's hill; a branching path connects cottage and lake to the footbridge. Terrain elevations and water follow believable geography. Mix generous readable open clearings and textured forest groves, not wall-to-wall trees. Small trees on the distant map are still detailed, not blurred. Landscape continues naturally to all four edges. Green forest, cool turquoise lake, silvery meadow, red tractor and white wildflowers balance the palette. No characters, no labels, no symbols, no map pins, no roads drawn as dotted lines, no borders, no parchment, no text, no game interface. Charming but sophisticated, tangible miniature realism matching our illustrated story world.",
+  "output": "docs/storyboard/images/atlas/shire-v1.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-55c12f95-82e3-473a-8805-27f5b1a36bb6.png",
+  "startedAt": "2026-09-20T14:39:17.208Z",
+  "finishedAt": "2026-09-20T14:40:17.997Z",
+  "seconds": 60.789,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "80af7f9eb7188f0a1f64969a22632d0ef9732284d027042222c1543879f03780",
+  "review": "All four intended landmarks are readable. Cottage green door, two round windows, moss roof and left chimney retained; Elder burrow is beneath oak roots. A lake outlet flows toward the wooden footbridge and picnic clearing, with red tractor beyond. Frame is an oblique bird-eye miniature rather than strictly vertical or a measured 70-degree camera. Actual landmark positions differ from prompted coordinates and were supplied to the UI implementation for alignment. Unexpected small jetty and boat appear at the lake; tractor crane is partly raised rather than folded. No characters or baked-in text. Highlights retain detail, with green foliage and blue-green water dominating. First concept awaiting user approval; not a canonical terrain model.",
+  "reviewedAt": "2026-09-20T14:41:35.817Z"
+}

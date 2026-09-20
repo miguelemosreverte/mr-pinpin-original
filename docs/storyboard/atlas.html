@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fbfcfa">
+  <title>The Shire - Mr. PinPin</title>
+  <link rel="stylesheet" href="reader.css?v=timber-home-1">
+  <link rel="stylesheet" href="atlas.css?v=1">
+  <script src="icons.js" defer></script>
+  <script src="atlas.js?v=1" defer></script>
+</head>
+<body class="atlas">
+  <header class="atlas-heading">
+    <div class="atlas-brand"><h1 id="atlas-title">The Shire</h1><p id="atlas-author">Mr. PinPin</p></div>
+    <nav class="atlas-actions">
+      <div class="language-selector" role="group" aria-label="Language">
+        <button type="button" data-lang="en" title="English" aria-label="English" aria-pressed="true"></button>
+        <button type="button" data-lang="es" title="Español" aria-label="Español" aria-pressed="false"></button>
+        <button type="button" data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="false"></button>
+      </div>
+      <a id="atlas-library" class="icon-button" href="library.html?lang=en" aria-label="Library" title="Library"><i data-lucide="library-big" aria-hidden="true"></i></a>
+    </nav>
+  </header>
+  <main class="atlas-map" aria-labelledby="atlas-title">
+    <div id="map-viewport" tabindex="0" role="region" aria-label="The Shire">
+      <div class="map-stage">
+        <div id="map-scene">
+          <img id="map-art" src="images/atlas/shire-v1.png" width="1536" height="1024" alt="The Shire: Crystal Lake, the Elder's oak, home and the bridge" draggable="false">
+          <div id="map-pins"></div>
+        </div>
+      </div>
+    </div>
+    <div class="map-controls" role="group" aria-label="Map view">
+      <button id="zoom-out" type="button" class="icon-button" aria-label="Zoom out" title="Zoom out"><i data-lucide="minus" aria-hidden="true"></i></button>
+      <button id="zoom-in" type="button" class="icon-button" aria-label="Zoom in" title="Zoom in"><i data-lucide="plus" aria-hidden="true"></i></button>
+      <button id="zoom-fit" type="button" class="icon-button" aria-label="Fit map" title="Fit map"><i data-lucide="scan" aria-hidden="true"></i></button>
+    </div>
+  </main>
+</body>
+</html>

@@ -5,6 +5,7 @@ body { padding:0; background:#fbfcfa; color:#23342e; }
 .library-heading h1 { font-size:36px; }
 .language-selector { margin:0; }
 .library-tools { display:flex; justify-content:space-between; gap:16px; margin-bottom:24px; }
+#library-atlas { color:var(--green); text-decoration:none; }
 .search { display:flex; align-items:center; gap:10px; flex:1; max-width:440px; border-bottom:1px solid #aebdb4; }
 .search svg { width:18px; height:18px; flex-shrink:0; }
 input,select { font:16px/1.4 system-ui,sans-serif; min-height:44px; background:transparent; color:inherit; border:0; }

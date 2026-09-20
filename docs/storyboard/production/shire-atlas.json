@@ -1,0 +1,76 @@
+{
+  "title": "The Shire: first story atlas",
+  "report": "docs/storyboard/review/shire-atlas.html",
+  "workflow": "docs/storyboard/production/WORKFLOW.md",
+  "shots": [
+    {
+      "id": "shire-v1",
+      "order": 1,
+      "title": "The Shire",
+      "beat": "A proposed shared geography connecting the main book and standalone timber adventure.",
+      "camera": "High bird's-eye campaign map, around70 degrees downward; no horizon.",
+      "staging": "Four readable landmarks for clickable HTML story markers. No characters.",
+      "alt": "A miniature woodland atlas with the family cottage, Crystal Lake, the Elder's oak hill and the timber bridge.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-05.png",
+          "role": "Family cottage architectural reference."
+        },
+        {
+          "path": "docs/storyboard/images/chapter-02-landscapes/shot-03.png",
+          "role": "Elder oak burrow architectural reference."
+        }
+      ],
+      "prompt": "Use case: stylized-concept.\nAsset type: interactive story atlas background, landscape 1536 x 1024, no lettering or UI.\nCreate a gorgeous, very cute miniature woodland world seen from a high bird's-eye campaign-map camera like a Total War overworld, but peaceful and intimate for a children's book. About 70 degrees looking downward, no horizon, readable terrain and a consistent miniature scale throughout. Rich dimensional physical textures, finely modeled deciduous tree crowns, firs, fern clearings, mossy rocks, footpaths, meadows of tiny flowers, blue-green water, morning sunlight with restrained highlights, broad crisp depth of field. This is a believable connected landscape, not a diagram and not a floating island.\nInput image1 is architectural reference for the PinPin family cottage only: preserve its round green door, two round windows, moss-covered curved roof, left stone chimney and right lantern, miniaturized within the landscape. Input image2 is architectural reference for the Elder's home only: burrow under huge oak roots with a low mossy seat rock nearby. Translate both to the overhead camera.\nComposition supports four clickable landmarks in the app; leave nearby open grassy areas for the HTML labels which will be added later. Family cottage is at x24%, y72% of the image, front facing toward lower right, with a small vegetable patch behind and winding stepping stone approach. Crystal Lake is centered x42%,y35%, a medium clear turquoise lake with organic irregular shore and visible pale shallow edges, water lilies at one end and a large distinctive lakeside tree on the left bank. Elder's oak and burrow sit on a distinct grassy hill at x73%,y22%, reached by a gentle path around the lake and up through a pale silver-leaf meadow. A narrow clear stream flows from the lake southeastward to a little wooden footbridge centered x72%,y66%, then continues toward bottom right. The bridge is for tiny paws, with an adjacent picnic clearing and red-white picnic cloth; farther to its southeast a tiny red timber tractor with folded yellow crane and empty trailer rests on a separate forest vehicle track. A winding pedestrian route connects cottage to lake then Elder's hill; a branching path connects cottage and lake to the footbridge. Terrain elevations and water follow believable geography. Mix generous readable open clearings and textured forest groves, not wall-to-wall trees. Small trees on the distant map are still detailed, not blurred. Landscape continues naturally to all four edges. Green forest, cool turquoise lake, silvery meadow, red tractor and white wildflowers balance the palette. No characters, no labels, no symbols, no map pins, no roads drawn as dotted lines, no borders, no parchment, no text, no game interface. Charming but sophisticated, tangible miniature realism matching our illustrated story world.",
+      "output": "docs/storyboard/images/atlas/shire-v1.png"
+    }
+  ],
+  "navigation": [
+    {
+      "href": "../atlas.html?lang=en",
+      "label": "The Shire"
+    },
+    {
+      "href": "../library.html?lang=en",
+      "label": "Chapter library"
+    }
+  ],
+  "sourceLinks": [
+    {
+      "href": "../images/standalone/timber-tractor/chapter-02/scene-05.png",
+      "label": "Family cottage reference"
+    },
+    {
+      "href": "../images/chapter-02-landscapes/shot-03.png",
+      "label": "Elder home reference"
+    }
+  ],
+  "carryForwardNotes": [
+    "Geography is a first atlas proposal, not a claim that relative distances were fixed in the original book.",
+    "Opening a story unlocks the next published stop on that trail; opened does not mean finished reading. Existing direct chapter links remain accessible.",
+    "No new character designs or story illustrations are created for this atlas."
+  ],
+  "eyebrow": "Mr. PinPin / Story atlas / First map",
+  "lead": "A shared woodland seen from above, with locations drawn from the existing books.",
+  "statusLabel": "First map candidate, awaiting Miguel's review.",
+  "scope": "One raster world map, with interactive HTML labels added separately. Existing story files and original art remain unchanged.",
+  "sourceHeading": "Architectural References",
+  "sourceNotes": [
+    "The family cottage comes from The Way Home: a moss-covered stone-and-timber home with a green round door and two circular windows.",
+    "The Elder's home comes from the original story's Chapter 2 landscape exploration: an oak-root burrow with a mossy seat rock.",
+    "The lake, stream, repaired footbridge, picnic clearing and tiny red tractor connect the two adventures in a new proposed geography."
+  ],
+  "steps": [
+    "Inspect the existing family cottage and Elder home illustrations.",
+    "Direct one new high bird's-eye image with connected water, trails and four readable landmarks.",
+    "Save the original-resolution PNG with the exact prompt, references, timestamps and hash beside it.",
+    "Inspect the rendered landmark positions and place HTML story markers against the actual image rather than trusting requested coordinates.",
+    "Test the atlas at desktop and phone sizes, including sequential opening, persistence, language switching and native gestures."
+  ],
+  "planHeading": "Map Direction",
+  "carryForwardHeading": "Atlas Decisions",
+  "reviewHeading": "First Map Review",
+  "conclusion": "The four landmarks read clearly in one connected landscape. This first rendering is more oblique than a strict overhead projection. It is suitable for a clickable concept atlas, not an exact survey of canonical geography.",
+  "footerNote": "The model added a small lakeside jetty and boat and left the tractor crane partly raised. These are illustrative details, not new story events. No character artwork was generated.",
+  "workflowLabel": "Existing image workflow"
+}

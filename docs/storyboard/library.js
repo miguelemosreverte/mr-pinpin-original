@@ -22,6 +22,10 @@
     history.replaceState(null,'',url);
     const ui = {...labels[lang], ...standaloneLabels[lang]};
     document.documentElement.lang = lang;
+    const atlasTitle = {en:'The Shire',es:'La Comarca',ru:'Шир'}[lang];
+    $('library-atlas').href = 'atlas.html?lang=' + lang;
+    $('library-atlas').title = atlasTitle;
+    $('library-atlas').setAttribute('aria-label',atlasTitle);
     document.title = window.readerLabels[lang].book + ' - ' + ui.all;
     $('library-title').textContent = window.readerLabels[lang].book;
     $('original-book').textContent = window.readerLabels[lang].original;
