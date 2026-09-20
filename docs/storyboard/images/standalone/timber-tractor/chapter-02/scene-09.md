@@ -1,0 +1,42 @@
+# At their own little table
+
+Status: review candidate, not approved
+
+- Reading order: 9
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T13:45:32.335Z
+- Completed (UTC): 2026-09-20T13:46:06.808Z
+- Wall time: 34.473 seconds
+- Saved image: docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-09.png
+- Size: 1536 x 1024
+- SHA-256: e5a200c0c18ee3d45b2bb7dabbaf8a230191eb324abefadc9c08b2bf89b870c6
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-ad16a981-ac44-43aa-8d52-40ab781c8b9d.png
+
+## Source Beat
+
+Home at last, PinPin tells Mama about the day while PomPom settles beside her.
+
+## Camera Direction
+
+Move closer to tableleftofkitchen keepingfrontdoorbackground andstoveright.
+
+## Future Character Space
+
+Mamasitsatlefttablewithbabynestledagainsther, PinPinopposite smiling, basketsetbesidetable.
+
+## References
+
+- docs/storyboard/images/standalone/timber-tractor/chapter-02/kitchen-plate.png: Exactroomgeometry andmaterials.
+- docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-07.png: Threefamilyfaces, naturalbodies andbabysize.
+
+## Exact Tool Prompt
+
+```text
+Use case: illustration-story. Move the camera nearer the little table on the LEFT of the kitchen inreference1, to a cozy mediumwide view at40cmheight. Same room: curvedwoodbeams, two roundwindows, greenfrontdoor nowCLOSED inbackground, stoveonright, woodenfloor andpotteryshelves. Mama and her two boys fromreference2 are now settledat thisroundtable. Mama sitsnaturally on a lowstool left, smiling at olderbrotherPinPin acrossfromher; tiny babyPomPom nestles sleepily againsther side on thesamewide stool. Her onefrontpawrests gentlyaroundbaby, otherfrontpaw ontableedge. PinPin on hisownlowstool has twofrontpaws ontable and smilesexcitedlyatMama as iftellingher abouttheday. Naturalshorthedgehog bodies, brownquills, softcreamfur, warmclearfacesmatchingreference2; babyHALFPinPinbodylength. Their closedwickerbasket with redwhiteclothcorner rests onfloorbesidethetable, meadowflowervase unchanged. Three smallplaincups ontable, no feast. Cozywarm lamplight withcoolerbluegreen eveningwindows, retainedfurtexture and restrainedexposure. No othercharacters. Landscape1536x1024, nolettering.
+```
+
+## Visual Review
+
+Inspected the actual 1536 x 1024 PNG with view_image against kitchen-plate and scene-08. Exactly three family members gather at the round table: Mama LEFT, sleepy smallest PomPom against her side, PinPin RIGHT gesturing as he talks. Faces are readable, baby eyes intentionally closed; relative ages are clearer here than in the foreshortened puddle view. Mama's embracing foreleg visibly runs from her upper side around baby; her other frontpaw rests on the table. PinPin's two visible forepaws gesture above the tabletop rather than both resting on it; exposed segments join his upper torso plausibly. Table and stools hide some lower-body attachments, which remain unverified. Three cups, meadowflower vase, grounded closed basket with cloth, two windows, right-hand interior hinges and stove RIGHT persist. Continuity concerns: the door appears to carry two brass knobs vertically on its LEFT side instead of the single knob in kitchen-plate; the closer view centers table in front of door and no longer clearly preserves its under-left-window position. Baby occupies the front stool while Mama appears behind on a separate stool rather than sharing one wide seat. Review candidate with door-hardware/furniture staging drift noted; final visual approval remains with Miguel.
+
+Reviewed (UTC): 2026-09-20T13:47:24.352Z

@@ -1,0 +1,42 @@
+# The house at the end of the path
+
+Status: review candidate, not approved
+
+- Reading order: 5
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T13:28:15.360Z
+- Completed (UTC): 2026-09-20T13:28:52.437Z
+- Wall time: 37.077 seconds
+- Saved image: docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-05.png
+- Size: 1536 x 1024
+- SHA-256: e6321575e525f1e111b2756c3a654ba4f1bc1efdeeecc03e8b09809ce5249d99
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-c5b633d3-a82f-4e5d-a383-84476762ba32.png
+
+## Source Beat
+
+The family home appears beyond the trees.
+
+## Camera Direction
+
+Camera30cm above stonepath about10m fromfrontdoor; full unobstructed exterior, slightleftthreequarter.
+
+## Future Character Space
+
+Landscape-only story reveal; space for family onpath in later closer view.
+
+## References
+
+- docs/storyboard/review/house-references/farm-book-cottage.jpeg: Architecture reference only: mossroof, greenroundeddoor, twocircularwindows.
+- docs/images/image18.png: Preferred dimensional timber material and warm domestic style, not camera/composition.
+
+## Exact Tool Prompt
+
+```text
+Use case: illustration-story. One continuous landscape1536x1024 illustration, no panels or lettering. Establish the PinPin family cottage from reference1's exterior in the rich dimensional woodland rendering of reference2. Camera30cm above a winding flagstonepath, about10metres from the house, slightleftthreequarter angle. A small low stone-and-curved-timber cottage nestles among tall living forest trees. Thick green moss covers the undulating roof, a short stonechimney sits at its left end. Central round-topped green wooden door, hinges on its LEFT as seen from outside, brassknob on right, single amberlantern immediately rightofdoor. Exactly two circular six-spoke windows, one eachside, warm light inside. Hedgehog-scale dwelling: doorway roughly70cm high, houseabout3m wide, tallferns bywalls, modest foreground daisies show scale. Stones leadgently uphill to one shallowthresholdstep. Soft lateafternoon becoming evening, coolgreen forestshade and warmwindowlight, detailed moss/bark/stone with retainedhighlights. Empty environment, no characters or vehicles. This exact door/window/roof arrangement anchors subsequent camera moves.
+```
+
+## Visual Review
+
+Inspected the actual 1536 x 1024 PNG with view_image. Empty low-path exterior clearly reveals a moss roof, one green rounded door with two strap hinges on viewer LEFT and brass knob RIGHT, lantern immediately right, exactly two round windows, and chimney at roof LEFT. The curving stone path and large surrounding ferns establish an intentional low woodland camera. Window tracery appears eight-spoked rather than the prompt's six; the interior plate retains this eight-spoke arrangement. Door proportions and material detail read clearly; exact metre dimensions cannot be recovered from the image. No characters, so anatomy, family sizes and basket continuity are not applicable. Review candidate; final visual approval remains with Miguel.
+
+Reviewed (UTC): 2026-09-20T13:36:51.270Z

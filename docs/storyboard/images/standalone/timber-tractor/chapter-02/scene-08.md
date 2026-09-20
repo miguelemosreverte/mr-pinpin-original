@@ -1,0 +1,42 @@
+# Across the threshold
+
+Status: review candidate, not approved
+
+- Reading order: 8
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T13:43:30.149Z
+- Completed (UTC): 2026-09-20T13:44:20.525Z
+- Wall time: 50.376 seconds
+- Saved image: docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-08.png
+- Size: 1536 x 1024
+- SHA-256: 8775d837c5be6302f6031baca4363578af032ce54ecfe768afa796da695932d1
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-372e1735-d2fb-456f-a70d-849c2d71da01.png
+
+## Source Beat
+
+The family enters their home.
+
+## Camera Direction
+
+Insidekitchen30cm high facingfrontdoor, reverse ofexterior; tableleftstoveright.
+
+## Future Character Space
+
+Green dooropeninwardtowardright; Mamacarriesbasketinmouth, PinPinaheadleft, babynexttoMama.
+
+## References
+
+- docs/storyboard/images/standalone/timber-tractor/chapter-02/kitchen-plate.png: Exact interiorlayout, door andwindowgeometry.
+- docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-07.png: Exact threefamilyidentities andthresholdcontinuity.
+
+## Exact Tool Prompt
+
+```text
+Use case: compositing. Use reference1 as the exact kitchen edit target. Keep camera, roomgeometry, lefttablewithflowers, rightstove, timberbeams, twocircularwindows andwoodenfloor. Open its greenfrontdoor INWARD on the RIGHT-hand hinges seenfrominside; the door swings towardthe rightside ofroom, revealing the woodedstonepath beyond. Add the threehedgehogs fromreference2 entering towardcamera throughthisdoor. Mama comes just behindthechildren, carrying the SAMEsmallclosed wickerbasket byhandle in her mouth, foldedredwhiteclothcornervisible. PinPin has crossedthethreshold and looks toward the table onLEFT, tinybabyPomPom takes his little steps immediatelybesideMama. BabyhalfPinPinlength andonethirdMama, exactwarmfaces andbrownquills fromreference2, shortnatural fourlimbed walkingbodies. Wholefamilyis clear and gentlylit, noextracharacters. Preserve the room's warmshadedfurdetail, cooler forest throughdoor, noexposureboost. Landscape1536x1024, nolettering.
+```
+
+## Visual Review
+
+Inspected the actual 1536 x 1024 PNG with view_image against kitchen-plate. Reverse view preserves table/flowers LEFT, stove/kettle/chimney RIGHT, two eight-spoke windows and curved beams. Door is swung into the RIGHT side of the room from the right jamb; visible attachment is consistent with the interior hinge side, though not every hinge is exposed. Mama visibly grips the checked-cloth basket handle in her mouth; basket top still reads open rather than clearly closed. Three clear faces and adult/older-child/baby size hierarchy are readable, and PinPin looks toward the table. Posture concern: Mama and especially PinPin read upright on hind feet, with frontpaws hanging or hidden, rather than clearly continuing the four-paw walking posture of the path scenes. No extra limb attachment is visibly established. PinPin's visible hanging forelimb is plausibly attached to his upper chest, but this does not establish four-paw ground support; Mama's basket hides forelimb attachments, which remain unverified. Mama's facial model appears more compact again than scene-02/07. Review candidate with walking-posture issue requiring parent/Miguel review; no approval claimed.
+
+Reviewed (UTC): 2026-09-20T13:45:31.533Z

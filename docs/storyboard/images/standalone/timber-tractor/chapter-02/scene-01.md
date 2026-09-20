@@ -1,0 +1,41 @@
+# Packing up the picnic
+
+Status: review candidate, not approved
+
+- Reading order: 1
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T13:31:33.365Z
+- Completed (UTC): 2026-09-20T13:32:08.862Z
+- Wall time: 35.497 seconds
+- Saved image: docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-01.png
+- Size: 1536 x 1024
+- SHA-256: 2ddc688505374f005f32a85e03c1d8ce21af871b4ea5fd65765232ebe23b1e83
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-f80a3696-78b0-4667-9945-2a5097d42f32.png
+
+## Source Beat
+
+The family gets ready to go home.
+
+## Camera Direction
+
+Picnic-eye-height, mediumwide slightlycloser than chapter1picnic, clearhandsandfaces.
+
+## Future Character Space
+
+BeaverleftandMamaright foldcloth, PinPinbesidebasketcenter, babynexttoMama; tractorremainsparkedempty.
+
+## References
+
+- docs/storyboard/images/standalone/timber-tractor/scene-15-v2.png: Exact fullcastidentities, picnicsite andparkedtractor.
+
+## Exact Tool Prompt
+
+```text
+Use case: illustration-story. Continue the scene in the reference a few minutes later, new camera a little closer at grass level. Landscape1536x1024, rich dimensional woodland book rendering. The picnic is finished. Beaver onLEFT in his bluecanvasvest and Mama onRIGHT gently lift opposite edges of the same red-and-white checkedcloth to fold it. They each use two clear frontpaws; natural seatedhaunches. Small PinPin waits by a little wickerpicnicbasket between them; baby PomPom sits close to Mama looking curiously at the cloth. Keep the exact warm faces, naturalcreamfur andbrownquills fromreference, but make baby distinctly tiny, about HALF PinPin's bodylength and oneTHIRD Mama's. Onlyfourcharacters. Beaver larger thanMama. Fruit safelypacked, onlybasket andcloth remain. Same intact woodenbridge, shallowstream, ferns anddaisies, empty redtimbertractor parkedfarleft withfoldedyellowcrane. Lateafternoonlight softens, retainfurhighlightdetail. Clear expressive animalfaces, naturalshortlimbs, no clothes onhedgehogs. No lettering.
+```
+
+## Visual Review
+
+Inspected the actual 1536 x 1024 PNG with view_image and compared the supplied scene-15-v2 reference. Exactly four familiar figures are readable: blue-vest Beaver on LEFT is largest, Mama on RIGHT is adult-sized, PinPin is behind the basket, and PomPom is the small baby beside Mama. Beaver and Mama visibly hold opposite cloth edges with two forepaws each; the exposed arms connect plausibly into their upper bodies, while cloth and fur hide some lower-body attachments. PinPin's lower body is hidden by basket/cloth, so his exact size ratio and hidden limbs cannot be verified; baby is clearly smaller but the requested half-bodylength ratio is not measurable here. Faces are clear and engaged. Parked red tractor, empty trailer, folded crane and intact bridge remain in the background. Basket is set on the ground while packing. Review candidate; final visual approval remains with Miguel.
+
+Reviewed (UTC): 2026-09-20T13:36:51.270Z

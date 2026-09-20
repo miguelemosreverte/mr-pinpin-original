@@ -1,0 +1,31 @@
+{
+  "id": "scene-10",
+  "order": 10,
+  "title": "A warm window in the evening",
+  "beat": "The family is safely home; the forest grows quiet outside.",
+  "camera": "OutsidefrontRIGHTwindow, closeatwindowheight lookingtowardbackofkitchen; windowframeforeground.",
+  "staging": "Threefamilymembers insideattable, Mamaholdssleepybaby, PinPintalking; backwallbeyondthem notfacadewall.",
+  "alt": "Through the cottage's round window, Mama and PinPin sit at the table with sleepy baby PomPom, warm light glowing into the evening forest.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-05.png",
+      "role": "Exact front-right circularwindow, moss andstone exterior."
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-09.png",
+      "role": "Familyat-table identities, sleepyPomPom andcup/flower arrangement; move camera tooutside, do notcopyfrontalbackground."
+    }
+  ],
+  "prompt": "Use case: illustration-story. Final landscape1536x1024. Put the camera OUTSIDE the cottage at the front-RIGHT circularwindow ofreference1, about70cm high, looking through its glass toward the BACK of the kitchen. Close intimate view: round wooden spoke-window takes mostofcomposition, moss andstone surroundit, softfernleaves atedges. Inside, the SAMEthreehedgehogs fromreference2 sit at their smallroundtable: Mamawarmlylistens, tiny babyPomPom nestlesasleep againstherside, PinPin facesMama talkingabouttheday. See them in a new threequartersideangle fromthiswindow, withfaces legible in theclear glasspanes, barsnotcoveringeyes. Maintain brownquills, creamfur, babymuchsmallerthanPinPin, threecups andmeadowflowers. Beyondthem is the kitchen's BACK wall with curvedwoodbeams andpotteryshelves; the frontdoor andfrontwindows are onCAMERA'Swall andtherefore NOT behindthefamily. Outside is coolbluegreen evening, interiorsoftamberlight. Faintforestreflection alongglassedges, clearfamilyview throughthecenter. Gentlecontrolledhighlights, noaddedanimals orlettering. A peacefulending at home.",
+  "output": "docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-10.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-067eab20-a0d9-4138-84ba-b73116dc625c.png",
+  "startedAt": "2026-09-20T13:47:28.526Z",
+  "finishedAt": "2026-09-20T13:48:00.965Z",
+  "seconds": 32.439,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "f43f0601ef20791ce84164446a1c0dccf6f5ce3f1e6fd2b5acd66a041290adab",
+  "review": "Inspected the actual 1536 x 1024 PNG with view_image against scene-05 and scene-09. Intentional intimate exterior view through a round spoke-window shows exactly three family members at the table: Mama LEFT, visibly sleeping smallest PomPom against her, and PinPin RIGHT talking with clear eye contact. The clear central pane keeps bars off all faces; faint forest reflections sit mainly in the surrounding panes. Three cups, meadowflower vase and warm timber/pottery setting carry forward. Back wall and shelves appear beyond the family, with no front door or front windows incorrectly placed behind them. The window's central circular opening is substantially enlarged relative to scene-05 to frame the faces; this is architectural detail drift, not proof of exact window geometry. Visible PinPin forepaw gestures and baby's resting forepaws appear connected plausibly, but window bars, table, fur and overlap conceal most full limb attachments; these remain unverified. Basket and most seating are outside/behind the visible framing, so their positions cannot be verified. Family grouping repeats scene-09 closely rather than demonstrating a measured camera reversal. Review candidate with enlarged window ring noted; final visual approval remains with Miguel.",
+  "reviewedAt": "2026-09-20T13:49:54.410Z"
+}

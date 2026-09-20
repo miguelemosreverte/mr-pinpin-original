@@ -32,6 +32,7 @@ select { max-width:100%; border-bottom:1px solid #aebdb4; }
 .adventure-cover h3 { font:600 23px/1.2 Georgia,serif; margin:0 0 10px; overflow-wrap:anywhere; text-wrap:balance; }
 .adventure-cover a:hover h3 { text-decoration:underline; text-underline-offset:4px; }
 .adventure-cover .availability { font:13px/1.5 system-ui,sans-serif; margin:0; color:#26644e; }
+.adventure-cover .cover-number { font:12px/1.5 system-ui,sans-serif; color:#805469; margin:0 0 6px; }
 @media(max-width:850px) { .chapter-library { grid-template-columns:repeat(2,minmax(0,1fr)); gap:30px 20px; } }
 @media(max-width:520px) {
   .library-heading,.library-main { padding:20px 16px; }

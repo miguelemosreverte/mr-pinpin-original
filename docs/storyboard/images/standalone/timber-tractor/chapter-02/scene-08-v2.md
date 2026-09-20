@@ -1,0 +1,42 @@
+# Across the threshold: grounded walking poses
+
+Status: review candidate, not approved
+
+- Reading order: 8
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T13:51:56.955Z
+- Completed (UTC): 2026-09-20T13:52:49.537Z
+- Wall time: 52.582 seconds
+- Saved image: docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-08-v2.png
+- Size: 1536 x 1024
+- SHA-256: 0bce6b2d501bd373c6e4585febf0f827cbc080447c833dec277e254a5de0904d
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-297fda73-092a-4fa8-b061-47ecd43aa73e.png
+
+## Source Beat
+
+Correct the arriving family's gait without redesigning the scene.
+
+## Camera Direction
+
+Preserve original scene08 camera androom exactly.
+
+## Future Character Space
+
+Allthreehedgehogs walkingonfourshortlegs bodieslowforward, Mama basketinmouth.
+
+## References
+
+- docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-08.png: Exact edit target: room, camera, faces, basket anddoor unchanged.
+- docs/storyboard/images/standalone/timber-tractor/chapter-02/scene-02.png: Natural four-legged walking posture only, not scenery or faces.
+
+## Exact Tool Prompt
+
+```text
+Use case: precise-object-edit. Edit reference1 only to correct the three hedgehogs' BODY POSTURES. Keep their exact faces, quills, relative size, existing floor positions and eyelines, basket and allroomdetail. Mama, PinPin and tinybaby should walk naturally on FOUR short legs, bodies tiltedforward and low tofloor, like the walking posture inreference2. Twoforelegs connect underchest and contactfloor ahead ofbody; twohindlegs underhaunches, with farsidelegsnaturallyoccluded. PinPin is currently upright with forepaws hanging: lower hischest andplace bothforepaws onfloor ahead ofhishaunches, looking towardlefttable. Similarlyground Mama'sforepaws while she keeps basketbyhandleinmouth; babyhas acompact lowwalkingbody. Preserve their recognizable headshapes andexpressions, Mama largest, PinPinmedium, babyhalfPinPin. Keep entire kitchen, openright-hingedgreen door, outsidepath, lighting, woodtexture, stool/tablepositions, windows, stoveandbasket unchanged. No added limbs or characters, no lightingpolish. Landscape1536x1024.
+```
+
+## Visual Review
+
+Inspected the actual 1536 x 1024 PNG with view_image against retained scene-08 and the walking reference. The targeted posture correction is visible: Mama, PinPin and baby now have lower forward-leaning bodies and short forelegs reaching the floor ahead of the haunches, replacing the upright entrance poses. Visible exposed leg segments connect plausibly under their chests, with no visible extra attachment. Basket/body overlap still conceals portions of Mama's shoulders and far-side limbs; hidden attachments remain unverified. Mama visibly carries the basket by its handle in her mouth. All three faces remain clear, Mama largest, PinPin medium and PomPom smallest. Left table/flowers, right stove, both circular windows, right-swung door, beams and low interior camera remain recognizable. Exact half-size ratios are not measurable from this view. Reviewed correction resolves the observed upright-posture concern; original scene-08 is retained as a superseded attempt. Final visual approval remains with Miguel.
+
+Reviewed (UTC): 2026-09-20T13:54:05.730Z

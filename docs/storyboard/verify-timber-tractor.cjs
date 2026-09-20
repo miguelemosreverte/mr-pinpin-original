@@ -14,7 +14,7 @@ const url = lang => base + '?story=timber-tractor&lang=' + lang;
 async function loaded(page) {
   await page.waitForSelector('#reader[aria-busy=false] article[data-story="timber-tractor"]');
   assert.equal(new URL(page.url()).searchParams.get('story'), 'timber-tractor');
-  assert.equal(new URL(page.url()).searchParams.has('chapter'), false);
+  assert([null, '1'].includes(new URL(page.url()).searchParams.get('chapter')));
 }
 
 async function control(page, selector) {
@@ -108,7 +108,7 @@ async function unavailable(browser) {
   assert(await page.locator('#print').isDisabled());
   await page.goto(base + 'library.html?lang=en');
   await page.waitForSelector('#chapter-library[aria-busy=false]');
-  assert.equal(await page.locator('.adventure-cover').count(), 0, 'Unfinished story was published');
+  assert.equal(await page.locator('.adventure-cover[data-story-chapter="1"]').count(), 0, 'Unfinished story was published');
   assert.equal(await page.locator('.chapter-cover').count(), 38);
   await page.close();
   console.log(JSON.stringify({missingStoryHidden:true,mainChapters:38}));
@@ -129,7 +129,7 @@ async function missingImage(browser) {
   assert.equal(await page.locator('.toolbar button:disabled').count(),0);
   await page.goto(base + 'library.html?lang=en');
   await page.waitForSelector('#chapter-library[aria-busy=false]');
-  assert.equal(await page.locator('.adventure-cover').count(),1,'Transient image failure hid a published story');
+  assert.equal(await page.locator('.adventure-cover[data-story-chapter="1"]').count(),1,'Transient image failure hid a published story');
   assert.equal(requests.filter(request => request.method === 'HEAD').length,0,'Runtime asset probing is forbidden');
   assert.equal(requests.filter(request => request.url.endsWith('/stories/timber-tractor.json')).length,2,
     'Each page must fetch story metadata exactly once');
@@ -144,16 +144,17 @@ async function library(browser, story) {
       await page.goto(base + 'library.html?lang=' + lang);
       await page.waitForSelector('#chapter-library[aria-busy=false]');
       assert.equal(await page.locator('.chapter-cover').count(), 38);
-      assert.equal(await page.locator('.adventure-cover').count(), 1);
-      assert.equal(await page.locator('.adventure-cover img').getAttribute('src'), story.cover[lang]);
-      await page.locator('.adventure-cover img').evaluate(image => image.decode());
+      const firstChapter = page.locator('.adventure-cover[data-story-chapter="1"]');
+      assert.equal(await firstChapter.count(), 1);
+      assert.equal(await firstChapter.locator('img').getAttribute('src'), story.cover[lang]);
+      await firstChapter.locator('img').evaluate(image => image.decode());
       await page.screenshot({path:path.join(captures,`library-${lang}-${width}.png`)});
       await page.locator('#chapter-filter').selectOption('upcoming');
       assert.equal(await page.locator('.adventure-cover').count(), 0);
       await page.locator('#chapter-filter').selectOption('published');
-      assert.equal(await page.locator('.adventure-cover').count(), 1);
+      assert.equal(await firstChapter.count(), 1);
       await page.locator('#chapter-search').fill(story.title[lang]);
-      assert.equal(await page.locator('.adventure-cover').count(), 1);
+      assert.equal(await firstChapter.count(), 1);
       assert.equal(await page.locator('.chapter-cover').count(), 0);
       assert.equal(await page.locator('#library-status').textContent(), '');
       await page.locator('#chapter-search').fill('zzzzzz');
@@ -161,10 +162,10 @@ async function library(browser, story) {
       assert((await page.locator('#library-status').textContent()).length > 0);
       await page.locator('#chapter-search').fill('');
       assert.equal(await page.evaluate(() => document.documentElement.scrollWidth), width);
-      await page.locator('.adventure-cover a').click();
+      await firstChapter.locator('a').click();
       await loaded(page);
       assert.equal(await page.locator('html').getAttribute('lang'), lang);
-      await page.locator('.reader-footer a').click();
+      await page.locator('.reader-footer .library-link').click();
       await page.waitForSelector('.adventure-cover');
       assert.equal(new URL(page.url()).searchParams.get('lang'), lang);
     }
