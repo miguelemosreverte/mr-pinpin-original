@@ -66,16 +66,20 @@
   function completeBedtime(story) {
     const bedtimePrefix = 'images/standalone/home-sweet-home/';
     return story?.id === 'home-sweet-home' && story.number === 3 && localized(story.title) &&
-      localized(story.cover) && languages.every(lang => story.cover[lang] === bedtimePrefix + 'bedtime-01-v1.png') &&
-      Array.isArray(story.scenes) && story.scenes.length === 20 &&
+      localized(story.cover) && languages.every(lang => story.cover[lang] === bedtimePrefix + `title-${lang}-v1.png`) &&
+      Array.isArray(story.scenes) && story.scenes.length === 21 &&
       story.scenes.every((scene, index) => {
-        const id = 'bedtime-' + String(index + 1).padStart(2, '0');
+        if (index === 0) return scene?.id === 'bedtime-cover' && scene.image === story.cover.en &&
+          scene.width === 1024 && scene.height === 1536 && localized(scene.alt) &&
+          languages.every(lang => Array.isArray(scene.paragraphs?.[lang]) && scene.paragraphs[lang].length === 0);
+        const id = 'bedtime-' + String(index).padStart(2, '0');
         return scene?.id === id && [1, 2].some(v => scene.image === bedtimePrefix + id + '-v' + v + '.png') &&
           scene.width === 1536 && scene.height === 1024 && localized(scene.alt) &&
           languages.every(lang => Array.isArray(scene.paragraphs?.[lang]) && scene.paragraphs[lang].length > 0 &&
             scene.paragraphs[lang].every(p => typeof p === 'string' && p.trim()));
-      }) && Array.isArray(story.spreads) && story.spreads.length === 20 &&
-      story.spreads.every((spread, index) => spread?.style === 'bedtime' && spread.paper === 'landscape' &&
+      }) && Array.isArray(story.spreads) && story.spreads.length === 21 &&
+      story.spreads.every((spread, index) => spread?.style === (index === 0 ? 'cover' : 'bedtime') &&
+        spread.paper === (index === 0 ? 'portrait' : 'landscape') &&
         Array.isArray(spread.scenes) && spread.scenes.length === 1 && spread.scenes[0] === index);
   }
 
@@ -114,7 +118,7 @@
     return {
       title:story.title[lang], scenes:story.scenes.map(scene => ({paragraphs:scene.paragraphs[lang]})),
       images:story.scenes.map((scene, index) => ({...scene, scene:index + 1,
-        src:index === 0 && (story.number ?? 1) === 1 ? story.cover[lang] : scene.image}))
+        src:index === 0 && story.spreads[0]?.style === 'cover' ? story.cover[lang] : scene.image}))
     };
   }
   window.standaloneStories = {complete, compose, load, edition,

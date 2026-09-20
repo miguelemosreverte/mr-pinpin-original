@@ -7,11 +7,27 @@
     "es": "Hogar, dulce hogar"
   },
   "cover": {
-    "en": "images/standalone/home-sweet-home/bedtime-01-v1.png",
-    "es": "images/standalone/home-sweet-home/bedtime-01-v1.png",
-    "ru": "images/standalone/home-sweet-home/bedtime-01-v1.png"
+    "en": "images/standalone/home-sweet-home/title-en-v1.png",
+    "es": "images/standalone/home-sweet-home/title-es-v1.png",
+    "ru": "images/standalone/home-sweet-home/title-ru-v1.png"
   },
   "scenes": [
+    {
+      "id": "bedtime-cover",
+      "image": "images/standalone/home-sweet-home/title-en-v1.png",
+      "width": 1024,
+      "height": 1536,
+      "alt": {
+        "en": "Mr. PinPin — Home, Sweet Home. Mama rinses PinPin in the wooden bath while little PomPom waits beside them in a towel.",
+        "es": "Señor PinPin — Hogar, dulce hogar. Mamá enjuaga a PinPin en la bañera de madera mientras el pequeño PomPom espera a su lado envuelto en una toalla.",
+        "ru": "Мистер Пин-Пин — Дом, милый дом. Мама ополаскивает Пин-Пина в деревянной ванночке, а маленький Пом-Пом сидит рядом, укутавшись в полотенце."
+      },
+      "paragraphs": {
+        "en": [],
+        "es": [],
+        "ru": []
+      }
+    },
     {
       "id": "bedtime-01",
       "image": "images/standalone/home-sweet-home/bedtime-01-v1.png",
@@ -455,8 +471,8 @@
   ],
   "spreads": [
     {
-      "style": "bedtime",
-      "paper": "landscape",
+      "style": "cover",
+      "paper": "portrait",
       "scenes": [
         0
       ]
@@ -592,6 +608,13 @@
       "paper": "landscape",
       "scenes": [
         19
+      ]
+    },
+    {
+      "style": "bedtime",
+      "paper": "landscape",
+      "scenes": [
+        20
       ]
     }
   ]
