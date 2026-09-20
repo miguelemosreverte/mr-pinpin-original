@@ -1,0 +1,90 @@
+{
+  "title": "Timber Tractor: Mama and PomPom join the picnic",
+  "scope": "Two new family beats and two family-continuity edits. Original Mama reference image55 informs proportions, not a claim of fixed modern canonical design.",
+  "shots": [
+    {
+      "id": "scene-19",
+      "order": 14.1,
+      "title": "Mama and baby PomPom arrive",
+      "beat": "Mama brings baby Mr. PomPom to the picnic clearing after the bridge is repaired.",
+      "camera": "Hedgehog eye height, 50cm above meadow, looking along bank path toward the newly repaired bridge.",
+      "staging": "Mama and baby arrive together in the foreground; parked empty timber tractor remains distant left, intact bridge behind.",
+      "alt": "Mama PinPin arrives beside tiny baby PomPom at the woodland picnic meadow.",
+      "references": [
+        {
+          "path": "docs/images/image55.png",
+          "role": "Original mother-and-child proportions and family warmth only; translate to modern dimensional style."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-15.png",
+          "role": "Exact woodland location, light, rendering and PinPin family facial identity; not the picnic staging."
+        }
+      ],
+      "prompt": "Use case: illustration-story. Create a new 1536 x 1024 landscape illustration in the dimensional woodland storybook rendering of reference 2. Camera at hedgehog eye height on the grassy bank path, nearer the arriving family. Reference 1 gives Mama's pointed muzzle, warm maternal expression, taller adult silhouette and strong mother-child size contrast, translated into the fine brown quills and cream fur of PinPin in reference 2. Mama PinPin walks gently toward the picnic meadow with baby Mr. PomPom immediately beside her. PomPom is a tiny round baby version of PinPin, equivalent to a one-year-old: short baby muzzle, softly rounded face, small delicate quills, tiny paws, about one third Mama's body length. Mama looks down affectionately at him; he looks eagerly ahead. Natural four-limbed hedgehog bodies, walking close to the grass, unclothed. A small wicker picnic basket rests on the grass ahead of them. Only these two characters appear in this shot. The same repaired wooden footbridge crosses the shallow stream behind; the red timber tractor with empty trailer and folded yellow crane is parked far left. Rich ferns, daisies, moss, dappled late afternoon light, controlled detailed highlights. Warm storybook faces, clear readable eyes. No lettering.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-19.png"
+    },
+    {
+      "id": "scene-20",
+      "order": 14.2,
+      "title": "A little driver and Mama's applause",
+      "beat": "PinPin tries the steering wheel while Beaver supervises with the tractor parked; Mama applauds and baby watches.",
+      "camera": "Side three-quarter medium-wide view of the open cab and grassy verge, camera just below cab sill, clear view of faces.",
+      "staging": "PinPin sits at wheel, Beaver beside him supervising inside the parked cab. Mama claps on the grass to the right, baby close against her side, away from the wheels.",
+      "alt": "Mama applauds as PinPin holds the steering wheel of the parked tractor with Beaver beside him; baby PomPom watches.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-05.png",
+          "role": "PinPin and Beaver face identities, red cab and steering controls."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-19.png",
+          "role": "Mama and tiny baby identity and family scale; woodland picnic location."
+        }
+      ],
+      "prompt": "Use case: illustration-story. New landscape 1536 x 1024 frame in the same richly detailed dimensional woodland book style. Move camera outside the parked red tractor, a three-quarter view through its open cab doorway, wide enough to include the grassy verge at right. Little Mr. PinPin now sits securely on the driver's seat with his two small front paws on the steering wheel. The blue-vested Beaver sits immediately beside him, smiling and guiding with one paw gently on the wheel. Use reference 1 for their exact appealing faces and machinery design. The tractor is stationary, engine off, unlit dashboard and headlights, empty timber trailer, folded yellow crane. On the grass at right, safely away from the wheels, Mama from reference 2 sits on her haunches and brings her TWO front paws together in delighted applause, looking up toward PinPin. Tiny baby PomPom sits immediately beside her, gazing up with delight. Match their faces and brown quills/cream fur to reference 2; baby is less than half PinPin's size and about one third Mama's body length. Four characters total, readable natural compact bodies and clear faces. Intact footbridge and stream behind, sunny ferns and daisies, balanced soft highlights. PinPin looks proudly toward Mama. Keep character scale plausible against the tractor; compose closer to the cab so PinPin's face reads clearly. No text.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-20.png"
+    },
+    {
+      "id": "scene-15-v2",
+      "order": 15,
+      "title": "Everyone joins the picnic",
+      "beat": "Mama and baby join PinPin and Beaver for the picnic after the steering lesson.",
+      "camera": "Preserve scene15's picnic-eye-height camera and full landscape; extend the group naturally across the grassy foreground.",
+      "staging": "Keep Beaver left and PinPin center-right. Add Mama and baby together to their right, Mama about1.5xPinPin and baby abouthalfPinPin.",
+      "alt": "Beaver, PinPin, Mama and tiny PomPom gather around the woodland picnic cloth beside the repaired bridge.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-15.png",
+          "role": "Edit target; preserve Beaver and PinPin, picnic, location and lighting."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-19.png",
+          "role": "Mama and baby character identities only."
+        }
+      ],
+      "prompt": "Use case: compositing. Edit reference 1, the woodland picnic, adding Mama PinPin and baby Mr. PomPom from reference 2 to the grass on the RIGHT of little PinPin. Keep existing Beaver on the left and existing PinPin unchanged, including their faces. Mama sits warmly beside PinPin, around one-and-a-half times his seated height; baby PomPom nestles next to her, half PinPin's height, very round with tiny muzzle and baby quills. Mama looks toward her proud son; baby watches the picnic fruit. Mama's two front paws rest naturally together in her lap; two hind paws support her haunches. Baby has a small natural four-limbed hedgehog body. Make enough space for the two newcomers at the right within this same wide frame without covering PinPin. Preserve the red-and-white cloth, apple slices, berries, intact footbridge, distant empty parked tractor and folded yellow crane, forest, stream, camera height, detailed fur/quills, gentle dimensional faces and existing exposure. Four characters in total. Soft shaded cream fur with retained detail, no brightening pass, no lettering. Landscape 1536 x 1024.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-15-v2.png"
+    },
+    {
+      "id": "scene-18-v2",
+      "order": 18,
+      "title": "The family hears Beaver's punchline",
+      "beat": "The willow twig, not the bridge, is Beaver's snack; Mama and both little hedgehogs share the joke.",
+      "camera": "Keep final18's eye-height wide picnic framing; accommodate Mama and baby on the right.",
+      "staging": "Beaver left holds leafy willow twig; PinPin laughs beside him; Mama and baby sit together to the right exactly as in family picnic15v2.",
+      "alt": "Beaver shows his willow snack while PinPin, Mama and little PomPom enjoy the picnic by the intact bridge.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-18.png",
+          "role": "Edit target; keep the willow-twig reveal, Beaver and laughing PinPin."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-15-v2.png",
+          "role": "Family faces, relative sizes and Mama/baby picnic placement."
+        }
+      ],
+      "prompt": "Use case: compositing. Edit reference 1, the final willow-twig joke, to include Mama PinPin and baby Mr. PomPom in the same places to PinPin's right as in reference 2. Reference 2 is the precise family-cast reference: same Mama face and size, same tiny round baby, same relation to little PinPin. Beaver stays left holding his single leafy willow twig, smiling with his two small incisors. PinPin stays next to him, laughing and looking at Beaver's face. Mama smiles warmly at the joke, both forepaws together in her lap, seated on two hind paws. Baby sits beside her and looks joyfully at his older brother. Keep all FOUR characters readable in the wide picnic scene. Preserve reference 1's whole twig, checked cloth, berries, wooden bowl, apples, repaired intact bridge, stream, red tractor with empty trailer, forest and gentle detailed golden lighting. Baby smaller than PinPin, Mama larger than PinPin; both match reference 2. Keep natural hedgehog faces, compact bodies and detailed brown quills. No lettering, no exposure increase, no added props. Landscape 1536 x 1024.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-18-v2.png"
+    }
+  ]
+}

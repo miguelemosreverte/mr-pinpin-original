@@ -1,0 +1,42 @@
+# A little driver and Mama's applause
+
+Status: review candidate, not approved
+
+- Reading order: 14.2
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T11:07:49.094Z
+- Completed (UTC): 2026-09-20T11:08:48.096Z
+- Wall time: 59.002 seconds
+- Saved image: docs/storyboard/images/standalone/timber-tractor/scene-20.png
+- Size: 1536 x 1024
+- SHA-256: 009fb9f0d8fc6db0c77f663e4527a0fd1d3a01b7a0a53e5267c06aaf1c4d35dd
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-90f69a69-5e6a-4865-afb9-cb43937286f0.png
+
+## Source Beat
+
+PinPin tries the steering wheel while Beaver supervises with the tractor parked; Mama applauds and baby watches.
+
+## Camera Direction
+
+Side three-quarter medium-wide view of the open cab and grassy verge, camera just below cab sill, clear view of faces.
+
+## Future Character Space
+
+PinPin sits at wheel, Beaver beside him supervising inside the parked cab. Mama claps on the grass to the right, baby close against her side, away from the wheels.
+
+## References
+
+- docs/storyboard/images/standalone/timber-tractor/scene-05.png: PinPin and Beaver face identities, red cab and steering controls.
+- docs/storyboard/images/standalone/timber-tractor/scene-19.png: Mama and tiny baby identity and family scale; woodland picnic location.
+
+## Exact Tool Prompt
+
+```text
+Use case: illustration-story. New landscape 1536 x 1024 frame in the same richly detailed dimensional woodland book style. Move camera outside the parked red tractor, a three-quarter view through its open cab doorway, wide enough to include the grassy verge at right. Little Mr. PinPin now sits securely on the driver's seat with his two small front paws on the steering wheel. The blue-vested Beaver sits immediately beside him, smiling and guiding with one paw gently on the wheel. Use reference 1 for their exact appealing faces and machinery design. The tractor is stationary, engine off, unlit dashboard and headlights, empty timber trailer, folded yellow crane. On the grass at right, safely away from the wheels, Mama from reference 2 sits on her haunches and brings her TWO front paws together in delighted applause, looking up toward PinPin. Tiny baby PomPom sits immediately beside her, gazing up with delight. Match their faces and brown quills/cream fur to reference 2; baby is less than half PinPin's size and about one third Mama's body length. Four characters total, readable natural compact bodies and clear faces. Intact footbridge and stream behind, sunny ferns and daisies, balanced soft highlights. PinPin looks proudly toward Mama. Keep character scale plausible against the tractor; compose closer to the cab so PinPin's face reads clearly. No text.
+```
+
+## Visual Review
+
+Inspected the actual PNG. All four faces are readable; PinPin's muzzle and eyes look coherent at the wheel, and Beaver retains his blue vest, broad muzzle and small incisors. Mama and PomPom retain the brown-quill/cream-fur family identity, with Mama's longer muzzle and the baby's rounded face. Mama has two forepaws together in applause and two feet below; no confirmed duplicate forelimb attachments are visible. PinPin's paws at the wheel and feet on the seat are distinguishable, but the steering rim, fur and cab obscure joints; Beaver's hidden limbs and the baby's overlapping paws remain unverified. Mama and baby are on the grass beside the wheels; exact clearance and scale cannot be established from perspective. This is supervised steering in a parked tractor, not actual driving. The empty trailer, folded crane and lack of visible motion support that staging, but engine-off state cannot be proved from a still. PinPin looks upward/right rather than making an unmistakable eyeline to Mama. Unapproved candidate awaiting user review.
+
+Reviewed (UTC): 2026-09-20T11:11:30.000Z

@@ -4,10 +4,10 @@ const path = require('node:path');
 const {createHash} = require('node:crypto');
 const vm = require('node:vm');
 
-const PLAN_NAMES = ['title', 'covers', 'story', 'environments', 'corrections'];
+const PLAN_NAMES = ['title', 'covers', 'story', 'environments', 'corrections', 'family'];
 const LANGUAGES = ['en', 'es', 'ru'];
 const ART = 'docs/storyboard/images/standalone/timber-tractor';
-const KNOWN_FAILURES = ['scene-08-failed-01.json', 'scene-13-failed-01.json'];
+const KNOWN_FAILURES = ['scene-08-failed-01.json', 'scene-13-failed-01.json', 'scene-18-v2-failed-01.json'];
 const PNG_SIGNATURE = Buffer.from([137, 80, 78, 71, 13, 10, 26, 10]);
 
 function timestamp(value, label) {
@@ -104,7 +104,7 @@ function audit(root = path.resolve(__dirname, '..')) {
 
   const failureFiles = fs.readdirSync(resolve(ART)).filter(file => /-failed-\d+\.(?:json|md|png)$/.test(file));
   assert.deepEqual(failureFiles.sort(), KNOWN_FAILURES.flatMap(file => [file, file.replace(/\.json$/, '.md')]).sort(),
-    'Expected exactly two retained failure JSON/Markdown pairs and no failure PNG');
+    'Expected exactly three retained failure JSON/Markdown pairs and no failure PNG');
   const failures = KNOWN_FAILURES.map(file => {
     const record = json(`${ART}/${file}`);
     const md = read(`${ART}/${file.replace(/\.json$/, '.md')}`);
@@ -148,7 +148,7 @@ function audit(root = path.resolve(__dirname, '..')) {
   const selected = new Set();
   const editions = LANGUAGES.map(lang => {
     const images = reader.edition(story, lang).images;
-    assert.equal(images.length, 18, `${lang}: expected 18 reader images`);
+    assert.equal(images.length, 20, `${lang}: expected 20 reader images`);
     const selections = Array.from(images, (image, index) => {
       const expectedSrc = index === 0 ? story.cover[lang] : story.scenes[index].image;
       assert.equal(image.src, expectedSrc, `${lang}/${index}: reader selection mismatch`);
@@ -165,12 +165,34 @@ function audit(root = path.resolve(__dirname, '..')) {
     return {language: lang, count: selections.length, selections};
   });
 
+  assert.equal(records.length, 33, 'Expected 29 historical outputs plus four family outputs');
+  assert.equal(selected.size, 22, 'Expected 19 shared reading images and three localized covers');
+  const aggregate = json('docs/storyboard/production/timber-tractor-production.json');
+  assert.equal(aggregate.shots.length, records.length, 'Aggregate journal omits or duplicates commissions');
+  assert.deepEqual(aggregate.shots.slice(-4).map(shot => shot.id),
+    ['scene-19', 'scene-20', 'scene-15-v2', 'scene-18-v2'], 'Family commissions must append to the historical journal');
+  for (const shot of aggregate.shots) {
+    assert.deepEqual(shot, outputs.get(resolve(shot.output))?.shot,
+      `${shot.id}: aggregate commission differs from its source plan`);
+  }
+  assert.equal(new Set(aggregate.shots.map(shot => shot.id)).size, records.length,
+    'Aggregate journal contains duplicate commissions');
+  const familySequence = story.scenes.slice(13).map(scene => path.posix.basename(scene.image, '.png'));
+  assert.deepEqual(familySequence,
+    ['scene-14', 'scene-19', 'scene-20', 'scene-15-v2', 'scene-16', 'scene-17', 'scene-18-v2'],
+    'Expected two family insertions before the picnic and two replacement picnic images');
+  const superseded = ['scene-06', 'scene-07', 'scene-09', 'scene-11', 'scene-15', 'scene-18'];
+  for (const id of superseded) {
+    const output = resolve(`${ART}/${id}.png`);
+    assert(outputs.has(output) && !selected.has(output), `${id}: retain superseded candidate outside reader selection`);
+  }
+
   // Calls from independent agents can overlap. Sorting is presentation, not a serialization assertion.
   records.sort((a, b) => a.startedAt.localeCompare(b.startedAt) || a.id.localeCompare(b.id));
   return {result: 'PASS', plans, successfulImages: records.length, failedRequests: failures.length,
     pngMarkdownJsonTriplets: records.length, summedSuccessfulCallSeconds: totalMilliseconds / 1000,
     timingMeaning: 'Sum of successful image-call wall durations; not elapsed project time, throughput, model-only time or cost. Failed requests excluded.',
-    failures, reader: {languages: LANGUAGES.length, selections: editions.reduce((sum, edition) => sum + edition.count, 0),
+    failures, supersededCandidates: superseded, reader: {languages: LANGUAGES.length, selections: editions.reduce((sum, edition) => sum + edition.count, 0),
       uniqueImages: selected.size, editions}, chronologicalCalls: records};
 }
 

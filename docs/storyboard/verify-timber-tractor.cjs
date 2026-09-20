@@ -4,7 +4,6 @@ const path = require('node:path');
 const os = require('node:os');
 const vm = require('node:vm');
 const {execFileSync} = require('node:child_process');
-const {chromium} = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
 const base = process.env.READER_URL || 'http://127.0.0.1:8767/storyboard/';
 const output = process.env.EXPORT_DIR || path.join(os.homedir(), 'Downloads/Mr-PinPin-Timber-Tractor');
 const captures = process.env.CAPTURE_DIR || '/tmp/pinpin-timber-tractor';
@@ -77,7 +76,7 @@ async function pdf(page, story, lang) {
   const imagePages = story.scenes.map((_, index) => story.spreads.findIndex(spread => spread.scenes.includes(index)) + 1);
   const rows = execFileSync('pdfimages', ['-list',file], {encoding:'utf8'})
     .split('\n').filter(line => /^\s*\d+\s+\d+\s+image\s/.test(line));
-  assert.equal(rows.length, 18, 'Every illustration must be embedded');
+  assert.equal(rows.length, story.scenes.length, 'Every illustration must be embedded');
   rows.forEach((row, i) => {
     const fields = row.trim().split(/\s+/);
     assert.equal(Number(fields[0]), imagePages[i], 'Image on wrong PDF page');
@@ -89,11 +88,14 @@ async function pdf(page, story, lang) {
   assert.equal(pages.length, count);
   story.scenes.forEach((scene, i) => scene.paragraphs[lang].forEach(paragraph =>
     assert(compact(pages[imagePages[i] - 1]).includes(compact(paragraph)), 'Narration missing or on wrong page: ' + scene.id)));
-  assert(imagePages[15] < imagePages[17] && imagePages[16] < imagePages[17], 'Joke setup and reveal need separate pages');
+  const revealPage = imagePages[story.scenes.findIndex(scene => scene.id === 'scene-18')];
+  for (const id of ['scene-16', 'scene-17']) {
+    assert(imagePages[story.scenes.findIndex(scene => scene.id === id)] < revealPage, 'Joke setup and reveal need separate pages');
+  }
   assert(!/Print \/ Save PDF|Read adventure/.test(text), 'Controls leaked into PDF');
   // Rasterize the actual PDF, not a browser approximation of its pagination.
   execFileSync('pdftoppm', ['-scale-to','1100','-png',file,path.join(captures,'print-' + lang)], {stdio:'pipe'});
-  console.log(JSON.stringify({pdf:file,pages:count,originalResolutionImages:18,textOnMatchingPages:true,
+  console.log(JSON.stringify({pdf:file,pages:count,originalResolutionImages:story.scenes.length,textOnMatchingPages:true,
     paintedAreaPercent:painted,allPagesRasterized:true}));
 }
 
@@ -193,34 +195,68 @@ async function gestures(browser) {
   }
 }
 
-async function main() {
-  fs.mkdirSync(captures,{recursive:true});
-  const browser = await chromium.launch({channel:'chrome',headless:true});
-  try {
-    await unavailable(browser);
+function verifyContract() {
     const storyPath = path.join(__dirname,'stories/timber-tractor.json');
     assert(fs.existsSync(storyPath), 'PENDING: story JSON is not ready; final rendering/PDF tests have not run');
     const story = JSON.parse(fs.readFileSync(storyPath));
     const context = {window:{}};
     vm.runInNewContext(fs.readFileSync(path.join(__dirname,'standalone-stories.js'),'utf8'),context);
     assert(context.window.standaloneStories.complete(story), 'Story contract is incomplete');
+    assert.deepEqual(story.scenes.map(scene => scene.id), [
+      ...Array.from({length:14}, (_, i) => 'scene-' + String(i + 1).padStart(2, '0')),
+      'scene-19', 'scene-20', 'scene-15', 'scene-16', 'scene-17', 'scene-18'
+    ], 'Stable scene IDs must retain reading order');
+    assert.equal(story.spreads.length,14);
+    assert.deepEqual(story.spreads.map(spread => spread.scenes),
+      [[0],[1,2],[3,4],[5,6],[7,8],[9],[10],[11,12],[13],[14],[15],[16],[17,18],[19]]);
+    for (const id of ['scene-09','scene-15','scene-18']) {
+      assert.equal(story.scenes.find(scene => scene.id === id).image, `images/standalone/timber-tractor/${id}-v2.png`);
+    }
     const revised = structuredClone(story);
-    revised.scenes[8].image = 'images/standalone/timber-tractor/scene-09-v2.png';
+    revised.scenes[14].image = 'images/standalone/timber-tractor/scene-19-v2.png';
     assert(context.window.standaloneStories.complete(revised), 'Reviewed versioned images must be supported');
     for (const mutate of [
       data => { delete data.cover.es; },
       data => { data.scenes[5].paragraphs.ru = []; },
+      data => { data.scenes[14].id = 'scene-15'; },
+      data => { [data.scenes[14],data.scenes[15]] = [data.scenes[15],data.scenes[14]]; },
+      data => { data.scenes[14].image = 'images/standalone/timber-tractor/scene-20.png'; },
+      data => { data.scenes[14].image = 'https://example.com/scene-19.png'; },
+      data => { data.scenes[14].image = 'images/standalone/timber-tractor/../scene-19.png'; },
+      data => { data.scenes[14].image += '\n'; },
+      data => { data.scenes[14] = null; },
+      data => { data.spreads[9] = null; },
+      data => { data.spreads[9].style += '\n'; },
+      data => { data.spreads[9].paper = 'portrait'; },
+      data => { data.spreads[10].scenes.push(...data.spreads.splice(11,1)[0].scenes); },
       data => { data.spreads[1].scenes.reverse(); },
-      data => { data.spreads.at(-2).scenes.push(...data.spreads.pop().scenes); }
+      data => {
+        data.spreads.at(-2).scenes.push(...data.spreads.pop().scenes);
+        data.spreads.splice(1,1,
+          {style:'arrival',paper:'landscape',scenes:[1]},
+          {style:'meeting',paper:'landscape',scenes:[2]});
+      }
     ]) {
       const incomplete = structuredClone(story);
       mutate(incomplete);
       assert(!context.window.standaloneStories.complete(incomplete), 'Incomplete or mistimed edition must stay unpublished');
     }
+    console.log(JSON.stringify({storyContract:true,stableSceneOrder:true,scenes:story.scenes.length,printPages:story.spreads.length}));
+    return story;
+}
+
+async function main() {
+  const story = verifyContract();
+  if (process.env.CONTRACT_ONLY) return;
+  fs.mkdirSync(captures,{recursive:true});
+  const {chromium} = require(process.env.PLAYWRIGHT_MODULE || 'playwright');
+  const browser = await chromium.launch({channel:'chrome',headless:true});
+  try {
+    await unavailable(browser);
     const missing = [...new Set([...Object.values(story.cover),...story.scenes.map(scene => scene.image)])]
       .filter(file => !fs.existsSync(path.join(__dirname,file)));
     assert.deepEqual(missing, [], 'PENDING: final artwork is missing; no PDFs exported');
-    fs.mkdirSync(output,{recursive:true});
+    if (!process.env.LIVE_CHECK) fs.mkdirSync(output,{recursive:true});
     await missingImage(browser);
     await library(browser,story);
     const groups = story.spreads.map(spread => spread.scenes);
@@ -231,7 +267,7 @@ async function main() {
         await page.goto(url(lang)); await loaded(page);
         await page.evaluate(() => window.prepareChapterPrint());
         assert.equal(await page.title(),story.title[lang]);
-        assert.equal(await page.locator('.scene').count(),18);
+        assert.equal(await page.locator('.scene').count(),story.scenes.length);
         assert.equal(await page.locator('.eyebrow,[data-chapter]').count(),0, 'Chapter labels leaked into standalone');
         assert.deepEqual(await page.locator('.spread').evaluateAll(sheets => sheets.map(sheet =>
           [...sheet.querySelectorAll('.scene')].map(scene => Number(scene.id.slice(6)) - 1))),groups);

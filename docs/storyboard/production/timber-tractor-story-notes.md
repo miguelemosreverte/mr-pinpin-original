@@ -2,7 +2,7 @@
 
 ## Scope and authorship
 
-This is original standalone children's fiction, separate from the main book's 38 chapters. It is not a translation, recovered chapter, or adaptation of a supplied source passage. The English story was composed for the approved 18-scene brief; Spanish and Russian preserve its actions, dialogue intentions, and delayed joke, with natural local phrasing.
+This is original standalone children's fiction, separate from the main book's 38 chapters. It is not a translation, recovered chapter, or adaptation of a supplied source passage. The English story began with the approved 18-scene brief and now has 20 scenes after two family insertions before the picnic; Spanish and Russian preserve its actions, dialogue intentions, and delayed joke, with natural local phrasing. The four new family illustrations remain unapproved candidates awaiting user review.
 
 The old farm story supplies the requested friendly rhythm and interest in machinery only. No source text from that story was supplied or consulted for this copy. No dialogue or plot passage is presented as a quotation from it or from the main book.
 
@@ -12,7 +12,7 @@ Read and applied `WORKFLOW.md`: sequence around actions, keep prose next to its 
 
 ## Data and localization
 
-Reader contract: `../stories/timber-tractor.json`. All image paths are relative to `docs/storyboard/`. There are exactly 18 scenes. Scene 01 retains the canonical English cover image path; the reader resolves its displayed cover through `cover[language]`. It must not display the English cover in every language merely because `scenes[0].image` names it.
+Reader contract: `../stories/timber-tractor.json`. All image paths are relative to `docs/storyboard/`. There are exactly 20 scenes, using 22 unique selected assets across three languages. Scene 01 retains the canonical English cover image path; the reader resolves its displayed cover through `cover[language]`. It must not display the English cover in every language merely because `scenes[0].image` names it. Stable scene IDs 19 and 20 are inserted after 14; IDs do not imply the new reading order.
 
 Fixed titles:
 
@@ -24,7 +24,7 @@ The cover has no narration in any language. Every other scene has one or two par
 
 ## Print sequence
 
-The contract's `spreads` entries each describe one portrait page, not a facing-page pair. Indices are zero-based and appear exactly once in reading order. Style values identify editorial purpose; they are not a request for new visual themes.
+The contract's `spreads` entries each describe one page, not a facing-page pair. The `paper` field records portrait or landscape orientation. Indices are zero-based and appear exactly once in reading order. Style values identify editorial purpose; they are not a request for new visual themes.
 
 | Page | Scene numbers | JSON indices | Reading sequence |
 | --- | --- | --- | --- |
@@ -37,13 +37,15 @@ The contract's `spreads` entries each describe one portrait page, not a facing-p
 | 7 | 11 | 10 | Delivery to the bank; empty trailer confirms unloading. |
 | 8 | 12, 13 | 11, 12 | Last gap noticed above; short plank fitted below. |
 | 9 | 14 | 13 | First crossing, given a large image. |
-| 10 | 15 | 14 | Picnic and quiet parked tractor. |
-| 11 | 16, 17 | 15, 16 | Hidden-food crunch above; reverse shot and question below. No twig. |
-| 12 | 18 | 17 | Page-turn reveal: his own willow twig and the intact bridge. |
+| 10 | 19 | 14 | Mama arrives with baby PomPom. |
+| 11 | 20 | 15 | Beaver supervises PinPin at the parked tractor's wheel; Mama applauds. |
+| 12 | 15 | 16 | Family picnic and quiet parked tractor; selected image is scene-15-v2. |
+| 13 | 16, 17 | 17, 18 | Hidden-food crunch above; reverse shot and question below. No twig. |
+| 14 | 18 | 19 | Page-turn reveal: his own willow twig, the family and intact bridge; selected image is scene-18-v2. |
 
 For paired pages, compose two horizontal image-and-text rows stacked vertically. Within each row, keep the complete 3:2 image on the left and its own prose on the right. Read the upper action and its text before the lower action. Never put both images into one strip with an unrelated block of collected narration beneath. A useful A4 starting point is 12 mm outer margins, a 6 mm image/text gutter, a 115 x 77 mm image per row, and a roughly 65 mm text column. Keep body type around 13.5-14 pt with comfortable leading, and give each row up to 120 mm of vertical room for translated text. Check actual font metrics in all three languages before accepting the PDF; change spacing or page geometry instead of shrinking prose to captions.
 
-Single-action pages give the uncropped landscape image the full printable width and place its matching text immediately below. The cover retains its portrait ratio. The setup must be page 11 and the reveal page 12: in a normal left-bound duplex book this places them on opposite sides of a leaf, preserving the physical turn. Extra front matter must not shift that parity without a layout review.
+Single-action pages give the uncropped landscape image the full printable width and place its matching text immediately below. The cover retains its portrait ratio. The setup must be page 13 and the reveal page 14: in a normal left-bound duplex book this places them on opposite sides of a leaf, preserving the physical turn. Extra front matter must not shift that parity without a layout review. The mixed page orientations still require a physical print/layout check.
 
 The web experience remains independent of those paper rows: native vertical scroll, pinch and pan; full-width uncropped mobile images; minimal right-margin controls; no swipe reader. These are layout requirements for the reader worker, not changes made by this copy task.
 
@@ -57,6 +59,13 @@ The web experience remains independent of those paper rows: native vertical scro
 - Logs accumulate in scenes 06-07, are secured in 08, travel in 09-10, and are all on the bank by 11. The tractor stays on firm ground beside the stream and never crosses the footbridge.
 - Scene 12 begins with a brief elapsed-time transition accounting for the main repairs. Beaver invites PinPin over only after that work. PinPin waits clear during the final plank fitting in 13. The plank spans the small approach gap, not the whole stream.
 - Beaver checks the completed bridge before PinPin makes the first crossing. No tractor load test or bridge-sized vehicle crossing is implied.
+- Scenes 19 and 20 add Mama and baby PomPom before scene 15. Original `docs/images/image55.png` informs Mama's adult/child proportions and warmth, while scene 19 supplies a modern adapted identity for this family sequence. This is not a claim of a fixed canonical Mama design. Scene 20 depicts supervised steering while parked, not actual driving; the still image cannot verify the engine-off state.
 - Scene 15 establishes the picnic without exposing Beaver's twig. Scene 16 hides his food below the lower edge; scene 17 stays on PinPin. Neither prose nor alt text names the food before scene 18. Keep the intact bridge readable behind the final reveal.
+
+## Family production history
+
+The aggregate journal retains all 29 earlier successful outputs plus four family outputs, for 33 total. Three failed requests have separate JSON/Markdown records with no invented PNG: scene-08, scene-13 and the first scene-18-v2 request. Two additions precede the picnic; two family picnic replacements supersede scene-15 and scene-18. Together with scene-06, scene-07, scene-09 and scene-11, there are now six superseded candidates, all preserved. Five intermediate environment plates account for the other unselected outputs.
+
+Adjacent visual reviews describe the actual PNGs, including facial readability, Mama/baby continuity, visible limb attachments and occlusion limits. Baby proportions and apparent age vary between arrival, steering and picnic; the requested exact ratios should not be treated as achieved. Automated journal/art checks establish file, prompt, timing, hash and selection integrity, not anatomy or user approval.
 
 Final art, reader rendering, mobile behavior, font fit, and printed page-turn parity require verification by their respective workers. This copy pass does not claim those checks are complete.
