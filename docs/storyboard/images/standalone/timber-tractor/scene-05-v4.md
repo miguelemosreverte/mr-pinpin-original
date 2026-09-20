@@ -1,0 +1,55 @@
+# Boarding with a compact fixed-cab buddy seat, unapproved
+
+Status: approved by Miguel for publication
+
+- Reading order: 5
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T14:34:03.724Z
+- Completed (UTC): 2026-09-20T14:35:29.847Z
+- Wall time: 86.123 seconds
+- Saved image: docs/storyboard/images/standalone/timber-tractor/scene-05-v4.png
+- Size: 1536 x 1024
+- SHA-256: c82468829d505d5728ed8e006bd1f98f02581147cf3e74efe3b7962f7ec14b56
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0be77-d2e8-71a2-be31-30b0c0163176/exec-b2f265f3-4ba7-4beb-bcde-e5073d51787b.png
+- Approval recorded (UTC): 2026-09-20T15:02:55.052Z
+
+## Source Beat
+
+PinPin joins Beaver before collecting logs; trailer empty.
+
+## Camera Direction
+
+Front windshield looking rearward into cab,35mm feel; driver image-left, PinPin image-right.
+
+## Future Character Space
+
+Two forward-facing seats, one compact fixed inner-fender buddy mount, natural animal bodies.
+
+## References
+
+- docs/storyboard/images/standalone/timber-tractor/references/cabin-front-study-v1.png: Layout edit target, with known issues to correct
+- docs/storyboard/images/standalone/timber-tractor/references/john-deere-instructional-seat-2.jpg: Manufacturer compact seat construction only
+- docs/storyboard/images/standalone/timber-tractor/scene-05.png: Character identity/boarding beat only
+- docs/storyboard/images/standalone/timber-tractor/scene-09-v3.png: Front-view physical sides and tractor identity only
+
+## Exact Tool Prompt
+
+```text
+Use case: precise-object-edit. Finish ONE beautiful 1536x1024 landscape illustration for scene5, the FIRST boarding/departure BEFORE collecting logs.
+Input1 is the front-cab composition to EDIT. Input2 is a REAL compact instructional-seat construction reference ONLY. Input3 supplies the exact story character identities and original boarding beat, not seat geometry or camera. Input4 confirms front-view character sides and red tractor identity ONLY, NOT its loaded cargo state.
+
+Keep the front camera just inside the windshield looking BACK into the red cab, natural35mm view, both character faces and seat assemblies clearly visible. Beaver is IMAGE-LEFT at the single steering wheel and main operator seat; small hedgehog Mr.PinPin is IMAGE-RIGHT on the tractor's MACHINE-LEFT compact buddy seat immediately beside Beaver. BOTH seats and seated bodies face FORWARD toward camera/nose. Both backrests are behind their occupants, never between camera and face.
+
+Make these THREE concrete corrections to input1:
+1. This is BEFORE logging. Through the REAR window show the EMPTY dark logging trailer and its red-tipped stakes/headboard in the same warm forest. Remove EVERY log behind the cab. The trailer bed is empty, with no cargo straps or load. No loose log magically suspended behind a character.
+2. PinPin's seat must be a REAL COMPACT BUDDY seat, not a second full driver chair. Keep one modest thin upholstered cushion directly under his seated pelvis and one much SHORTER, THINNER, NARROWER low backrest, rising only behind his lower torso, well below his shoulders/quill crown. Match input2's small low-back instructional-seat form. Show one coherent short dark metal support bracket bolted to a FIXED inner wheel-arch/fender structure of the CABIN, with that fixed structure visibly distinct from the red glazed opening DOOR. The seat cannot be attached to the opening door or its handle. Leave visible space below cushion; no tall freestanding floor pedestal, no second suspension stack, no second pad. A simple hinge may be present, locked in its occupied position. One lap belt low over his hips, both ends connected to this fixed seat bracket, small red-release buckle, clear of his paws and quills. Keep his two forepaws naturally near his lap and two hindpaws together on cushion/front edge, not humanoid legs. PinPin's body faces forward and only his head turns left/up toward Beaver.
+3. Beaver must actually reach the tractor foot controls. Lower/adjust the main seat and place a modest raised species-sized FOOTWELL/pedal platform ahead of the main seat UNDER the steering column. His two natural furry hind legs descend from hips toward the FRONT, feet visibly supported on this footwell/pedal area; one hindpaw may rest against a pedal. His hindpaws must NOT rest on or float above the suspension bellows beneath the seat cushion. Keep the single main suspension pedestal clearly UNDER and BEHIND his seated pelvis, separate from the forward footwell. Preserve Beaver's furry animal proportions and broad hindpaws, no human legs or shoes. Both forepaws hold the steering wheel.
+
+Preserve the characters' established recognisable faces, PinPin's natural brown quills and tiny scale versus Beaver, Beaver's chestnut fur, two front teeth and blue denim vest, friendly shared moment, red cab pillars, charcoal trim, forest morning light and warm dimensional children's-book artwork. Keep the coherent two-seat arrangement, no opposing seat or duplicate backrest, no extra steering wheel, no extra characters, no labels/text/borders/montage. This must be a finished story illustration with physically readable seated bodies and supports, not a diagram.
+```
+
+## Visual Review
+
+UNAPPROVED ACTUAL SCENE05 REPLACEMENT, inspected full image. Front windshield camera clearly shows Beaver image-left in the main operator chair and PinPin image-right on machine-left in a compact buddy seat, both forward-facing. The rear window now shows an empty trailer, matching boarding before loading. Passenger backrest is significantly shorter than the study and behind the lower body; a short bracket attaches to the dark fixed inner cab/fender panel inward of the red opening-door seam, with no freestanding buddy-seat floor suspension. Cushion/body contact and two forepaws/two hindpaws read coherently. Beaver's near hindpaw now meets a raised pedal face ahead of the main suspension; other hindpaw is partly hidden by steering/dash, so complete control reach is not proven. Remaining caveats: buddy cushion is still fairly thick and its inner belt anchor is occluded; the mount is visually plausible rather than an engineering-certified installation. Character faces differ in viewpoint from original05 but retain recognizable identity and scale; not a pixel-preserving edit. Proposed for before/after approval, not published. Scene10 must be recomposed to the matching reverse-view sides and is being prepared separately.
+
+Reviewed (UTC): 2026-09-20T14:37:35.015Z

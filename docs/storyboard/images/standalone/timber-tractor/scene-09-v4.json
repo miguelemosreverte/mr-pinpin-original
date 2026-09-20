@@ -1,0 +1,57 @@
+{
+  "id": "scene-09-v4",
+  "order": 9,
+  "title": "Scene09: front-mounted folded crane",
+  "beat": "Secured logs travel on trailer.",
+  "camera": "Preserve existing front three-quarter scene.",
+  "staging": "Pedestal immediately behind cab at front of trailer; boom folds rearward.",
+  "alt": "Red tractor with folded front-mounted yellow crane and three strapped logs.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-09-v3.png",
+      "role": "Exact approved target; crane placement only."
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+      "role": "Canonical folded crane identity and behind-cab front-of-trailer location only."
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-07-v3.png",
+      "role": "Visible front pedestal/frame connectivity only; not active pose or cargo state."
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. Edit IMAGE 1, the established traveling red tractor scene09-v3. Preserve its full landscape 1536 x 1024 frame and all approved details except the crane placement correction below. IMAGE 2 scene03 establishes the ONE yellow crane immediately behind the tractor cab at the FRONT of its logging trailer. IMAGE 3 scene07-v3 shows its connected yellow pedestal and swivel base at that front junction; use ONLY base-location/connectivity, never its active lifting pose, camera or cargo state.\nCORRECTION: Remove the old folded yellow crane that currently appears far back over the left/rear portion of the logs. Rebuild that SAME SINGLE crane with a CLEARLY VISIBLE fixed yellow pedestal/swivel BASE on the trailer FRONT chassis, immediately behind the red cab and ahead of the log load's front cut ends/headboard. In this camera the tractor is foreground RIGHT and trailer trails LEFT: place the pedestal next to the cab's rear edge, on the RIGHT end of the loaded trailer, NOT at the LEFT/rear end of the cargo. Make a readable continuous physical path from dark trailer-front frame up through the yellow swivel pedestal and main boom joint. The main mast rises just behind the cab; the two articulated yellow boom sections fold compactly REARWARD toward IMAGE LEFT above the front part of the logs, with one dark grapple folded inward/stowed, not holding a log. The folded arm can extend rearward, but its FIXED BASE remains nearest the cab. No second crane, no floating arm, no cab-roof mounting, no crane at the back of the load. Preserve connected dark hydraulic hoses and cylinders. Show enough of the pedestal next to the headboard to remove all mounting ambiguity; a tiny adjustment to log clearance is acceptable only if needed.\nPRESERVE IMAGE 1: exact approved red bonnet/divided grille/front guard, red rims, all wheels, lamps, exhaust, cab/window geometry; Beaver and PinPin's exact facial identities, expressions, sizes, poses and existing seats; tractor position and perspective; tandem trailer with exactly TWO axles/two near-side trailer wheels; red-tipped stakes; exactly THREE full-length ROUND logs stacked two below one above and exactly TWO orange securing straps. Traveling load stays secured and grapple stays empty/stowed. Preserve forest track, plants, background, focus, shadows, exposure, color and dimensional storybook rendering. No extra cargo, no extra animals, no text or branding, no wholesale tractor redesign, no crop or lighting polish.",
+  "output": "docs/storyboard/images/standalone/timber-tractor/scene-09-v4.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be76-1c10-7622-871c-eaaa6c6ed4a7/exec-d2bb5c1a-7251-4103-b654-f624e3461b43.png",
+  "startedAt": "2026-09-20T14:37:20.911Z",
+  "finishedAt": "2026-09-20T14:38:31.844Z",
+  "seconds": 70.933,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "04b62cb8ced82d42fb14aae72b4c4d08a5fece00435d6310dd9ae729846b441b",
+  "review": "Visual review: one yellow mast and visible swivel pedestal now sit immediately behind the cab at the forward log/headboard junction. A connected articulated boom folds rearward toward image-left; old detached-looking rear position is removed. Three round logs, two orange straps, two near-side trailer wheels, approved grille/guard/red rims/roof lamps/exhaust and both cab characters remain visible and consistent. Caveats: exact lower chassis fastening is occluded by tractor rear fender; boom is a raised folded arch and grapple lies close above the top log, not fully bundled tightly. No log is suspended. Background/material textures have small generative differences. Strong placement improvement; pending user approval, not engineering certification.",
+  "reviewedAt": "2026-09-20T14:55:24.659Z",
+  "previewOutput": "/Users/miguel_lemos/.codex/tmp/timber-tractor-machinery-review/candidates/scene-09-v4.png",
+  "originalReferences": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/scene-09-v3.png",
+      "role": "Exact approved target; crane placement only."
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+      "role": "Canonical folded crane identity and behind-cab front-of-trailer location only."
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/scene-07-v3.png",
+      "role": "Visible front pedestal/frame connectivity only; not active pose or cargo state."
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "approvedBy": "Miguel",
+    "recordedAt": "2026-09-20T15:02:55.084Z",
+    "basis": "Miguel explicitly approved all six displayed proposals and requested updating the official book. Historical pre-approval reviews remain intact."
+  },
+  "publication": "Selected for authorized release; deployment tracked separately."
+}

@@ -1,0 +1,148 @@
+{
+  "title": "Timber Tractor: six approved cabin and crane corrections",
+  "scope": "Six user-approved selected outputs. Two unselected draft inputs and one manufacturer reference retained separately as provenance assets. Unknown original timing for07/20 is preserved rather than reconstructed.",
+  "approvalRecordedAt": "2026-09-20T15:02:55.104Z",
+  "shots": [
+    {
+      "id": "scene-05-v4",
+      "order": 5,
+      "title": "Boarding with a compact fixed-cab buddy seat, unapproved",
+      "beat": "PinPin joins Beaver before collecting logs; trailer empty.",
+      "camera": "Front windshield looking rearward into cab,35mm feel; driver image-left, PinPin image-right.",
+      "staging": "Two forward-facing seats, one compact fixed inner-fender buddy mount, natural animal bodies.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/references/cabin-front-study-v1.png",
+          "role": "Layout edit target, with known issues to correct"
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/references/john-deere-instructional-seat-2.jpg",
+          "role": "Manufacturer compact seat construction only"
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-05.png",
+          "role": "Character identity/boarding beat only"
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-09-v3.png",
+          "role": "Front-view physical sides and tractor identity only"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit. Finish ONE beautiful 1536x1024 landscape illustration for scene5, the FIRST boarding/departure BEFORE collecting logs.\nInput1 is the front-cab composition to EDIT. Input2 is a REAL compact instructional-seat construction reference ONLY. Input3 supplies the exact story character identities and original boarding beat, not seat geometry or camera. Input4 confirms front-view character sides and red tractor identity ONLY, NOT its loaded cargo state.\n\nKeep the front camera just inside the windshield looking BACK into the red cab, natural35mm view, both character faces and seat assemblies clearly visible. Beaver is IMAGE-LEFT at the single steering wheel and main operator seat; small hedgehog Mr.PinPin is IMAGE-RIGHT on the tractor's MACHINE-LEFT compact buddy seat immediately beside Beaver. BOTH seats and seated bodies face FORWARD toward camera/nose. Both backrests are behind their occupants, never between camera and face.\n\nMake these THREE concrete corrections to input1:\n1. This is BEFORE logging. Through the REAR window show the EMPTY dark logging trailer and its red-tipped stakes/headboard in the same warm forest. Remove EVERY log behind the cab. The trailer bed is empty, with no cargo straps or load. No loose log magically suspended behind a character.\n2. PinPin's seat must be a REAL COMPACT BUDDY seat, not a second full driver chair. Keep one modest thin upholstered cushion directly under his seated pelvis and one much SHORTER, THINNER, NARROWER low backrest, rising only behind his lower torso, well below his shoulders/quill crown. Match input2's small low-back instructional-seat form. Show one coherent short dark metal support bracket bolted to a FIXED inner wheel-arch/fender structure of the CABIN, with that fixed structure visibly distinct from the red glazed opening DOOR. The seat cannot be attached to the opening door or its handle. Leave visible space below cushion; no tall freestanding floor pedestal, no second suspension stack, no second pad. A simple hinge may be present, locked in its occupied position. One lap belt low over his hips, both ends connected to this fixed seat bracket, small red-release buckle, clear of his paws and quills. Keep his two forepaws naturally near his lap and two hindpaws together on cushion/front edge, not humanoid legs. PinPin's body faces forward and only his head turns left/up toward Beaver.\n3. Beaver must actually reach the tractor foot controls. Lower/adjust the main seat and place a modest raised species-sized FOOTWELL/pedal platform ahead of the main seat UNDER the steering column. His two natural furry hind legs descend from hips toward the FRONT, feet visibly supported on this footwell/pedal area; one hindpaw may rest against a pedal. His hindpaws must NOT rest on or float above the suspension bellows beneath the seat cushion. Keep the single main suspension pedestal clearly UNDER and BEHIND his seated pelvis, separate from the forward footwell. Preserve Beaver's furry animal proportions and broad hindpaws, no human legs or shoes. Both forepaws hold the steering wheel.\n\nPreserve the characters' established recognisable faces, PinPin's natural brown quills and tiny scale versus Beaver, Beaver's chestnut fur, two front teeth and blue denim vest, friendly shared moment, red cab pillars, charcoal trim, forest morning light and warm dimensional children's-book artwork. Keep the coherent two-seat arrangement, no opposing seat or duplicate backrest, no extra steering wheel, no extra characters, no labels/text/borders/montage. This must be a finished story illustration with physically readable seated bodies and supports, not a diagram.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-05-v4.png"
+    },
+    {
+      "id": "scene-07-v4",
+      "order": 7,
+      "title": "Rear loading cab orientation",
+      "beat": "Beaver loads the third log while PinPin remains seated.",
+      "camera": "Preserve scene camera; correct cabin seating and controls.",
+      "staging": "Preserve approved exterior machinery and character identities.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-07-v3.png",
+          "role": "edit target",
+          "sha256": "fd6b0b4274699c9999d32271b28d4597ded1c055c588c4e9ea04c7707cedd259"
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-05-v4.png",
+          "role": "opposite-camera physical seat reference",
+          "sha256": "c82468829d505d5728ed8e006bd1f98f02581147cf3e74efe3b7962f7ec14b56"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit\nAsset type: 1536×1024 landscape children's book loading illustration, Scene07.\nInput images: Image1 is the exact EDIT TARGET (current approved scene07-v3). Image2 is a reference for the physical seats and character identities ONLY (scene05-v4, seen from the OPPOSITE front-facing camera). Do not import Image2's camera, empty trailer, cabin close-up, or composition.\nPrimary request: Correct ONLY the two characters, seat orientation, and tiny controls visible through the tractor's REAR CAB WINDOW in Image1. This loading illustration is viewed from BEHIND the trailer looking toward the BACK of the tractor. Therefore seating seen from this rear camera must be the opposite screen order from Image2: SMALL HEDGEHOG PINPIN on IMAGE LEFT, BLUE-VESTED BEAVER on IMAGE RIGHT.\nCab geometry: Both seats remain facing the normal driving direction, AWAY from this rear camera toward the tractor nose. Show the backs of their seats and the rear of their bodies, not two forward-facing portraits. PinPin sits on a compact low-back buddy seat on the cab's machine LEFT/image LEFT: small quilled back visible with a little head turn to observe the loading. Beaver sits on the main operator seat on machine RIGHT/image RIGHT: blue vest back visible, and a natural head/shoulder turn back toward the log loading. Beaver uses ONE small side crane joystick next to his main seat. His operator seat must not swivel 180 degrees to face backwards.\nRemove the incorrect frontal steering wheel/dashboard visible on the rear-facing window in the current target. The driving steering wheel belongs at the FRONT of the cab, ahead of Beaver's body away from the camera, mostly hidden from this rear view; it must NOT be pasted onto the rear window, the rear protective railing, or in front of the backwards-facing characters. No extra wheel or opposing seat.\nCharacter identities: Keep the same warm chestnut Beaver with blue work vest and much smaller recognizable tan/cream PinPin with brown quills. Seat/body direction matters more than displaying frontal faces; a partial profile/head turn is sufficient. Exactly these two characters in this illustration, no extra passenger or family added.\nStrict preservation: Everything outside the small cab rear-window/interior region must remain unchanged: camera and framing, red tractor body and wheels, the already approved yellow crane pedestal and its attachment immediately behind the cab, continuous raised boom/hydraulic hoses/grapple, two logs already loaded plus exactly one third log suspended by the grapple, empty spaces between trailer stakes, trailer frame/red-tipped stakes/two axles/tires, ground logs at left, woodland path/stream/trees/lighting/style. Do not mirror, rotate, or redraw the whole illustration. Do not change the successful machinery correction while fixing the tiny rear cabin.\nStyle: match the existing warm detailed three-dimensional storybook illustration exactly. No labels, annotations, text, or watermark.\n",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-07-v4.png"
+    },
+    {
+      "id": "scene-08-v2",
+      "order": 8,
+      "title": "Scene08: show crane base before headboard",
+      "beat": "Three logs secured, crane folded before travel.",
+      "camera": "Step modestly back/outward from rear close-up to expose leftward cab/front-trailer junction.",
+      "staging": "One front-mounted crane behind cab ahead of headboard and three logs; boom folded rearward.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-08.png",
+          "role": "Target secured-log detail and visual materials; camera may widen to expose front mount."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Canonical red tractor/cab edge and folded crane placement identity only."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-07-v3.png",
+          "role": "Visible pedestal/front frame connectivity only; not loading action."
+        }
+      ],
+      "prompt": "Use case: illustration-story and precise-object-edit. Revise IMAGE 1, scene08, the close-up of three secured logs, to clearly establish where its folded yellow crane is attached. Landscape1536x1024 in exactly the same warm dimensional woodland storybook rendering. IMAGE 2 scene03 supplies ONLY the canonical red cab, front trailer headboard and single yellow crane immediately behind cab. IMAGE 3 scene07-v3 supplies ONLY the visible yellow swivel pedestal mounted to the forward trailer frame; do not copy its lifting action, unstrapped load, faces or camera.\nCAMERA CHANGE IS INTENTIONAL: Step back modestly and move slightly outward to a low trailer-side/rear three-quarter viewpoint. Keep the three logs and TWO orange straps/ratchets as the principal close subject, but INCLUDE the tractor's rear cab edge, its rear red fender, the front trailer headboard, and the entire crane pedestal's connection to the trailer frame, so the mount is unmistakable. Tractor FRONT is toward IMAGE LEFT, trailer REAR and log-end faces toward IMAGE RIGHT. Only the back edge of tractor cab need appear at the far LEFT; there are no visible animals in this picture. The loaded trailer follows behind the tractor, never ahead of its bonnet.\nEXACT STRUCTURAL ORDER ALONG VEHICLE from LEFT to RIGHT: red tractor rear-cab edge and rear fender; then ONE fixed yellow crane pedestal/swivel securely attached down to the dark front trailer chassis immediately behind that cab; then dark protective headboard; then the THREE log front ends and their full-length load extending rearward RIGHT. Reserve a narrow visible clearance at the cab/headboard junction for that pedestal. Do not bury the base behind the logs. The connected yellow articulated main boom rises from this FORWARD pedestal and folds compactly REARWARD/RIGHT over the front section of the load. One dark rotator and empty grapple stows with it. The arm can reach rearward, but the fixed pedestal must stay nearest the tractor. No floating crane, no second base, no boom rooted at the rear cut ends, no cab-roof attachment, no active lifting.\nCARGO AND VEHICLE INVARIANTS: Exactly THREE full-length cylindrical bark-covered oak logs, two below and one above, held tightly by exactly TWO orange ratchet straps visible across the top and down to secure dark frame anchor points. Same natural bark/moss/lichen and pale round end grain. Dark upright trailer stakes with red tops; ONE tandem trailer with exactly TWO axles and two near-side wheels, earthy rims. Keep trailer/body proportions close to Image1. No fourth log, no squared beam, no loose log outside trailer. Preserve streamside dry woodland terrain, foliage and sunlight direction, subdued exposure and material detail. Camera may change only enough to expose front mounting; do not turn this into a full distant vehicle portrait or a new story beat. No people/animals, no labels/text, no arrows/diagrams, no brand markings, no decorative extra machinery.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-08-v2.png"
+    },
+    {
+      "id": "scene-09-v4",
+      "order": 9,
+      "title": "Scene09: front-mounted folded crane",
+      "beat": "Secured logs travel on trailer.",
+      "camera": "Preserve existing front three-quarter scene.",
+      "staging": "Pedestal immediately behind cab at front of trailer; boom folds rearward.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-09-v3.png",
+          "role": "Exact approved target; crane placement only."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "Canonical folded crane identity and behind-cab front-of-trailer location only."
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-07-v3.png",
+          "role": "Visible front pedestal/frame connectivity only; not active pose or cargo state."
+        }
+      ],
+      "prompt": "Use case: precise-object-edit. Edit IMAGE 1, the established traveling red tractor scene09-v3. Preserve its full landscape 1536 x 1024 frame and all approved details except the crane placement correction below. IMAGE 2 scene03 establishes the ONE yellow crane immediately behind the tractor cab at the FRONT of its logging trailer. IMAGE 3 scene07-v3 shows its connected yellow pedestal and swivel base at that front junction; use ONLY base-location/connectivity, never its active lifting pose, camera or cargo state.\nCORRECTION: Remove the old folded yellow crane that currently appears far back over the left/rear portion of the logs. Rebuild that SAME SINGLE crane with a CLEARLY VISIBLE fixed yellow pedestal/swivel BASE on the trailer FRONT chassis, immediately behind the red cab and ahead of the log load's front cut ends/headboard. In this camera the tractor is foreground RIGHT and trailer trails LEFT: place the pedestal next to the cab's rear edge, on the RIGHT end of the loaded trailer, NOT at the LEFT/rear end of the cargo. Make a readable continuous physical path from dark trailer-front frame up through the yellow swivel pedestal and main boom joint. The main mast rises just behind the cab; the two articulated yellow boom sections fold compactly REARWARD toward IMAGE LEFT above the front part of the logs, with one dark grapple folded inward/stowed, not holding a log. The folded arm can extend rearward, but its FIXED BASE remains nearest the cab. No second crane, no floating arm, no cab-roof mounting, no crane at the back of the load. Preserve connected dark hydraulic hoses and cylinders. Show enough of the pedestal next to the headboard to remove all mounting ambiguity; a tiny adjustment to log clearance is acceptable only if needed.\nPRESERVE IMAGE 1: exact approved red bonnet/divided grille/front guard, red rims, all wheels, lamps, exhaust, cab/window geometry; Beaver and PinPin's exact facial identities, expressions, sizes, poses and existing seats; tractor position and perspective; tandem trailer with exactly TWO axles/two near-side trailer wheels; red-tipped stakes; exactly THREE full-length ROUND logs stacked two below one above and exactly TWO orange securing straps. Traveling load stays secured and grapple stays empty/stowed. Preserve forest track, plants, background, focus, shadows, exposure, color and dimensional storybook rendering. No extra cargo, no extra animals, no text or branding, no wholesale tractor redesign, no crop or lighting polish.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-09-v4.png"
+    },
+    {
+      "id": "scene-10-v3",
+      "order": 10,
+      "title": "Reverse cabin seats with corner residue removed, unapproved",
+      "beat": "PinPin spots the broken footbridge from his machine-left buddy seat.",
+      "camera": "Unchanged rear cabin toward windshield.",
+      "staging": "Preserve corrected physical sides and seat construction.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/references/scene-10-v2.png",
+          "role": "Edit target; remove only stray corner upholstery"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit. ONE TINY cleanup to the attached1536x1024 image.\nAt the EXTREME BOTTOM-RIGHT corner there is an unwanted curved triangular piece of gray woven SEAT UPHOLSTERY entering the frame, roughly x1420-1536,y925-1024. It is a leftover third-seat fragment. REMOVE ONLY this tiny upholstered wedge. Continue the adjacent dark charcoal molded right-hand cab console/fender panel naturally into that corner, with its existing cup holder and control lever bases unchanged. No fabric/padding/seat rim remains in the bottom-right corner.\nKeep EVERYTHING ELSE exactly as close as possible: main Beaver chair in centre/right foreground, small PinPin buddy chair at left with its short fixed bracket, both characters/poses/faces/fur/quills/bluevest/belts, steering ahead of Beaver, all right-side levers/cupholders, red cab/pillars, the broken footbridge at upper-right, stream/trees/path/light and right-side exhaust. Exactly TWO existing seats only; do not add or remove any other element. No camera change, no mirror, no text, no montage.",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-10-v3.png"
+    },
+    {
+      "id": "scene-20-v2",
+      "order": 20,
+      "title": "Parked steering orientation",
+      "beat": "PinPin tries the steering wheel while parked with Beaver supervising.",
+      "camera": "Preserve scene camera; correct cabin seating and controls.",
+      "staging": "Preserve approved exterior machinery and character identities.",
+      "references": [
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-20.png",
+          "role": "edit target",
+          "sha256": "009fb9f0d8fc6db0c77f663e4527a0fd1d3a01b7a0a53e5267c06aaf1c4d35dd"
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+          "role": "geometry reference",
+          "sha256": "cd6fc9a3e01decb743ce5c999fb4eca7ccfccd568115695c492ac9e9cacdaba4"
+        },
+        {
+          "path": "docs/storyboard/images/standalone/timber-tractor/scene-09-v3.png",
+          "role": "geometry reference",
+          "sha256": "32e95df6e30fd549a7c296a398fd0cebd11598ac223793eafdf8b14af65b7695"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit\nAsset type: a 1536×1024 landscape children's book illustration, scene20 of Mr. PinPin and the Timber Tractor.\nInput images: Image1 is the exact EDIT TARGET, showing the parked tractor, PinPin at the controls, supervising Beaver, and Mama plus baby PomPom outside. Image2 is a tractor geometry reference only. Image3 is a tractor model/reference for correct hood, cab, and wheel relationships only; do NOT import its load or travelling scene.\nPrimary request: Correct the physically backwards steering layout in Image1. The red engine hood and tractor nose point toward IMAGE LEFT, and the rear tractor wheel, trailer, and crane are toward IMAGE RIGHT. Therefore the operator seat, PinPin's torso and legs, and the steering column must all face LEFT toward the engine hood. The SINGLE steering wheel must be AHEAD OF PinPin on his LEFT toward the hood, not on his right toward the back of the cab. Remove the existing wrong rear/right-side wheel and dashboard/column. Put the dashboard and steering-column base at the actual FRONT of the cab, directly behind the engine hood/front windshield on the LEFT. A clearly connected column rises from this forward dashboard/floor and tilts back toward PinPin's paws. One operator seat with its cushion pointing left and its backrest behind PinPin toward the RIGHT/rear. PinPin sits on this main operator seat and reaches both paws FORWARD/LEFT to the one steering wheel. The seat, body, steering wheel, column, front windshield, and engine hood must form one readable aligned forward-driving direction.\nCamera and readability: You may adjust the camera to an exterior front three-quarter view through the open near-side door so PinPin's recognizable face remains visible in profile or with a small head turn toward the viewer, while his body and seat still face the engine front. Do not simply mirror the whole image. Keep the tractor's nose toward image LEFT and trailer toward image RIGHT. Preserve the warm original composition as much as possible while making the correct geometry obvious.\nCharacters and story invariants: The tractor is parked with engine off, no movement, no exhaust smoke. This is an imaginary driving game, not actual driving. Beaver in his blue work vest supervises warmly from behind/beside PinPin and is not occupying an opposing driver's position. Mama and much smaller baby PomPom remain outside on the ground at foreground RIGHT, watching happily, with their original distinct identities and relative sizes. Keep all FOUR characters; no new character and no duplicate PinPin. Keep PinPin's expressive established hedgehog face and warm tan/cream fur and quills. Preserve the family, completed wooden bridge, stream, bright woodland, daisies, and sunny storybook rendering.\nMachinery invariants: Red engine hood and smaller tractor front wheel at LEFT; cab above the larger rear wheel; empty two-axle timber trailer attached BEHIND the cab to RIGHT with dark frame and red-tipped stakes. Yellow crane remains mounted on the trailer-front frame immediately behind the cab, not at the far rear. No load of logs. Only ONE steering wheel, one coherent steering column, and one operator seat. The compact passenger seat may be folded out of view; do not add an extra opposing chair. Do not attach steering to the rear window, door pillar, or side door.\nAvoid: backwards operator seating, steering at the rear, duplicated wheels/controls/chairs, mirrored whole scene, missing family, swapped baby/adult sizes, text, captions, watermarks, or changing this into a moving tractor scene.\n",
+      "output": "docs/storyboard/images/standalone/timber-tractor/scene-20-v2.png"
+    }
+  ]
+}

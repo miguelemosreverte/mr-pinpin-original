@@ -210,7 +210,7 @@ function verifyContract() {
     assert.equal(story.spreads.length,14);
     assert.deepEqual(story.spreads.map(spread => spread.scenes),
       [[0],[1,2],[3,4],[5,6],[7,8],[9],[10],[11,12],[13],[14],[15],[16],[17,18],[19]]);
-    for (const [id, version] of [['scene-06',2],['scene-07',3],['scene-09',3],['scene-11',3],['scene-15',2],['scene-18',3]]) {
+    for (const [id, version] of [['scene-05',4],['scene-06',2],['scene-07',4],['scene-08',2],['scene-09',4],['scene-10',3],['scene-11',3],['scene-15',2],['scene-18',3],['scene-20',2]]) {
       assert.equal(story.scenes.find(scene => scene.id === id).image, `images/standalone/timber-tractor/${id}-v${version}.png`);
     }
     const revised = structuredClone(story);

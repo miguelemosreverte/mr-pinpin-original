@@ -1,0 +1,40 @@
+{
+  "id": "scene-10-v3",
+  "order": 10,
+  "title": "Reverse cabin seats with corner residue removed, unapproved",
+  "beat": "PinPin spots the broken footbridge from his machine-left buddy seat.",
+  "camera": "Unchanged rear cabin toward windshield.",
+  "staging": "Preserve corrected physical sides and seat construction.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/references/scene-10-v2.png",
+      "role": "Edit target; remove only stray corner upholstery"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. ONE TINY cleanup to the attached1536x1024 image.\nAt the EXTREME BOTTOM-RIGHT corner there is an unwanted curved triangular piece of gray woven SEAT UPHOLSTERY entering the frame, roughly x1420-1536,y925-1024. It is a leftover third-seat fragment. REMOVE ONLY this tiny upholstered wedge. Continue the adjacent dark charcoal molded right-hand cab console/fender panel naturally into that corner, with its existing cup holder and control lever bases unchanged. No fabric/padding/seat rim remains in the bottom-right corner.\nKeep EVERYTHING ELSE exactly as close as possible: main Beaver chair in centre/right foreground, small PinPin buddy chair at left with its short fixed bracket, both characters/poses/faces/fur/quills/bluevest/belts, steering ahead of Beaver, all right-side levers/cupholders, red cab/pillars, the broken footbridge at upper-right, stream/trees/path/light and right-side exhaust. Exactly TWO existing seats only; do not add or remove any other element. No camera change, no mirror, no text, no montage.",
+  "output": "docs/storyboard/images/standalone/timber-tractor/scene-10-v3.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be77-d2e8-71a2-be31-30b0c0163176/exec-2283c765-2cd9-4f46-b871-6dd7a2c9758f.png",
+  "startedAt": "2026-09-20T14:45:57.878Z",
+  "finishedAt": "2026-09-20T14:46:38.850Z",
+  "seconds": 40.972,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "a081167d830721304e2d1fc74c9aa88a645bb083e762e3f386cd4805d877ae1f",
+  "review": "UNAPPROVED CLEANED REVERSE-VIEW PROPOSAL, full image inspected. The unwanted bottom-right upholstered wedge is removed and replaced by matching molded console trim; only the intended two seatbacks remain visible. PinPin occupies machine-left=image-left on compact low-back bracket-mounted buddy seat, Beaver central/right in the main operator chair, both facing windshield with steering ahead of Beaver. This is physically consistent with05-v4's opposite front camera. Fixed inner left cab mount reads separate from the red opening door. Exterior broken bridge remains upper-right, exhaust right, woodland/stream composition unchanged in its main relationships. No new obvious visible extra limb or duplicate seat. Caveats: large driver backrest hides feet/main base and portions of belts; exact anchor/control reach cannot be inspected from this rear camera. Upholstery and dashboard details are generatively redrawn rather than calibrated3D/pixel-locked geometry. Ready for user before/after review, not approved or published.",
+  "reviewedAt": "2026-09-20T14:51:53.326Z",
+  "previewOutput": "/Users/miguel_lemos/.codex/tmp/timber-tractor-machinery-review/candidates/scene-10-v3.png",
+  "originalReferences": [
+    {
+      "path": "/Users/miguel_lemos/.codex/tmp/timber-tractor-machinery-review/candidates/scene-10-v2.png",
+      "role": "Edit target; remove only stray corner upholstery"
+    }
+  ],
+  "approval": {
+    "status": "approved",
+    "approvedBy": "Miguel",
+    "recordedAt": "2026-09-20T15:02:55.096Z",
+    "basis": "Miguel explicitly approved all six displayed proposals and requested updating the official book. Historical pre-approval reviews remain intact."
+  },
+  "publication": "Selected for authorized release; deployment tracked separately."
+}

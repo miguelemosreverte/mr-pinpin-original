@@ -4,7 +4,9 @@ const path = require('node:path');
 const {createHash} = require('node:crypto');
 const vm = require('node:vm');
 
-const PLAN_NAMES = ['title', 'covers', 'story', 'environments', 'corrections', 'family', 'machinery-approved'];
+const PLAN_NAMES = ['title', 'covers', 'story', 'environments', 'corrections', 'family', 'machinery-approved', 'seating-approved'];
+const APPROVED_SIX = ['scene-05-v4', 'scene-07-v4', 'scene-08-v2', 'scene-09-v4', 'scene-10-v3', 'scene-20-v2'];
+const UNKNOWN_TIMING_IMPORTS = new Set(['scene-07-v4', 'scene-20-v2']);
 const LANGUAGES = ['en', 'es', 'ru'];
 const ART = 'docs/storyboard/images/standalone/timber-tractor';
 const KNOWN_FAILURES = ['scene-08-failed-01.json', 'scene-13-failed-01.json', 'scene-18-v2-failed-01.json'];
@@ -77,10 +79,22 @@ function audit(root = path.resolve(__dirname, '..')) {
       assert.deepEqual(record.references, shot.references, `${label}: commission references mismatch`);
       references(record.references, label);
       assert.equal(record.sha256, createHash('sha256').update(bytes).digest('hex'), `${label}: SHA-256 mismatch`);
-      const start = timestamp(record.startedAt, label + ' start');
-      const end = timestamp(record.finishedAt, label + ' finish');
-      assert(end > start, `${label}: nonpositive duration`);
-      assert.equal(record.seconds, (end - start) / 1000, `${label}: duration mismatch`);
+      let start, end;
+      const unknownTiming = name === 'seating-approved' && UNKNOWN_TIMING_IMPORTS.has(shot.id);
+      if (unknownTiming) {
+        assert.deepEqual([record.startedAt, record.finishedAt, record.seconds], [null, null, null], `${label}: do not reconstruct missing timing`);
+        assert.equal(record.timingStatus, 'not-recorded-in-original-draft');
+        assert.match(record.timingNote, /not retained/);
+        assert(record.originalDraftRecord?.generated_at, `${label}: missing original timing evidence`);
+        assert.equal(record.originalDraftRecord.prompt, record.prompt, `${label}: original prompt changed`);
+        assert.equal(record.originalDraftRecord.sha256, record.sha256, `${label}: original output changed`);
+        start = end = timestamp(record.generatedAt, label + ' output registration');
+      } else {
+        start = timestamp(record.startedAt, label + ' start');
+        end = timestamp(record.finishedAt, label + ' finish');
+        assert(end > start, `${label}: nonpositive duration`);
+        assert.equal(record.seconds, (end - start) / 1000, `${label}: duration mismatch`);
+      }
       assert(timestamp(record.reviewedAt, label + ' review') >= end, `${label}: review precedes completion`);
       assert(typeof record.review === 'string' && record.review.trim(), `${label}: missing review`);
       assert(md.includes(`\n\x60\x60\x60text\n${record.prompt}\n\x60\x60\x60\n`), `${label}: Markdown prompt mismatch`);
@@ -89,13 +103,13 @@ function audit(root = path.resolve(__dirname, '..')) {
       assert.equal(md.split(reviewMarker)[1], `${record.review}\n\nReviewed (UTC): ${record.reviewedAt}\n`,
         `${label}: Markdown review mismatch`);
       for (const line of [
-        `- Started (UTC): ${record.startedAt}`, `- Completed (UTC): ${record.finishedAt}`,
-        `- Wall time: ${record.seconds} seconds`, `- Saved image: ${record.output}`,
+        `- Started (UTC): ${unknownTiming ? 'not recorded' : record.startedAt}`, `- Completed (UTC): ${unknownTiming ? 'not recorded' : record.finishedAt}`,
+        `- Wall time: ${unknownTiming ? 'not recorded' : record.seconds + ' seconds'}`, `- Saved image: ${record.output}`,
         `- Size: ${record.width} x ${record.height}`, `- SHA-256: ${record.sha256}`
       ]) assert(md.split('\n').includes(line), `${label}: Markdown metadata mismatch: ${line}`);
       outputs.set(output, {shot, record, dimensions});
       records.push({plan: name, id: shot.id, output: shot.output, startedAt: record.startedAt,
-        finishedAt: record.finishedAt, seconds: record.seconds});
+        finishedAt: record.finishedAt, seconds: record.seconds, ...(unknownTiming ? {generatedAt: record.generatedAt} : {})});
       milliseconds += end - start;
     }
     totalMilliseconds += milliseconds;
@@ -165,17 +179,21 @@ function audit(root = path.resolve(__dirname, '..')) {
     return {language: lang, count: selections.length, selections};
   });
 
-  assert.equal(records.length, 37, 'Expected 29 historical outputs, four family outputs and four approved machinery outputs');
+  assert.equal(records.length, 43, 'Expected 37 retained historical commissions and six newly approved outputs');
   assert.equal(selected.size, 22, 'Expected 19 shared reading images and three localized covers');
   const aggregate = json('docs/storyboard/production/timber-tractor-production.json');
   assert.equal(aggregate.shots.length, records.length, 'Aggregate journal omits or duplicates commissions');
   assert.deepEqual(aggregate.shots.slice(29, 33).map(shot => shot.id),
     ['scene-19', 'scene-20', 'scene-15-v2', 'scene-18-v2'], 'Family commissions must append to the historical journal');
   const machineryIds = ['scene-07', 'scene-09', 'scene-11', 'scene-18'];
-  assert.deepEqual(aggregate.shots.slice(33).map(shot => shot.id),
+  assert.deepEqual(aggregate.shots.slice(33, 37).map(shot => shot.id),
     machineryIds.map(id => id + '-v3'), 'Approved machinery commissions must append after the family journal');
-  for (const id of machineryIds) {
-    const image = `images/standalone/timber-tractor/${id}-v3.png`;
+  assert.deepEqual(aggregate.shots.slice(37).map(shot => shot.id), APPROVED_SIX,
+    'Six approved corrections must append without replacing historical commissions');
+  const approvedSelections = [...APPROVED_SIX, 'scene-11-v3', 'scene-18-v3'];
+  for (const selectedId of approvedSelections) {
+    const id = selectedId.slice(0, 8);
+    const image = `images/standalone/timber-tractor/${selectedId}.png`;
     assert.equal(story.scenes.find(scene => scene.id === id)?.image, image, `${id}: approved image must be selected`);
     const record = outputs.get(resolve('docs/storyboard/' + image)).record;
     assert.equal(record.approval?.status, 'approved', `${id}: missing user approval`);
@@ -191,20 +209,21 @@ function audit(root = path.resolve(__dirname, '..')) {
     'Aggregate journal contains duplicate commissions');
   const familySequence = story.scenes.slice(13).map(scene => path.posix.basename(scene.image, '.png'));
   assert.deepEqual(familySequence,
-    ['scene-14', 'scene-19', 'scene-20', 'scene-15-v2', 'scene-16', 'scene-17', 'scene-18-v3'],
+    ['scene-14', 'scene-19', 'scene-20-v2', 'scene-15-v2', 'scene-16', 'scene-17', 'scene-18-v3'],
     'Expected two family insertions before the picnic and two replacement picnic images');
   const superseded = ['scene-06', 'scene-07', 'scene-09', 'scene-11', 'scene-15', 'scene-18',
-    ...machineryIds.map(id => id + '-v2')];
+    ...machineryIds.map(id => id + '-v2'), 'scene-05', 'scene-08', 'scene-10', 'scene-20', 'scene-07-v3', 'scene-09-v3'];
   for (const id of superseded) {
     const output = resolve(`${ART}/${id}.png`);
     assert(outputs.has(output) && !selected.has(output), `${id}: retain superseded candidate outside reader selection`);
   }
 
   // Calls from independent agents can overlap. Sorting is presentation, not a serialization assertion.
-  records.sort((a, b) => a.startedAt.localeCompare(b.startedAt) || a.id.localeCompare(b.id));
+  records.sort((a, b) => (a.startedAt || a.generatedAt).localeCompare(b.startedAt || b.generatedAt) || a.id.localeCompare(b.id));
   return {result: 'PASS', plans, successfulImages: records.length, failedRequests: failures.length,
     pngMarkdownJsonTriplets: records.length, summedSuccessfulCallSeconds: totalMilliseconds / 1000,
-    timingMeaning: 'Sum of successful image-call wall durations; not elapsed project time, throughput, model-only time or cost. Failed requests excluded.',
+    unknownTimingImports: [...UNKNOWN_TIMING_IMPORTS],
+    timingMeaning: 'Sum of recorded successful image-call wall durations only; two imports with unrecorded timing and failed requests excluded. Not elapsed project time, throughput, model-only time or cost.',
     failures, supersededCandidates: superseded, reader: {languages: LANGUAGES.length, selections: editions.reduce((sum, edition) => sum + edition.count, 0),
       uniqueImages: selected.size, editions}, chronologicalCalls: records};
 }

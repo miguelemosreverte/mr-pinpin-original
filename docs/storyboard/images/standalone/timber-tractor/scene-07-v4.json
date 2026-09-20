@@ -1,0 +1,106 @@
+{
+  "id": "scene-07-v4",
+  "tool": "built-in imagegen",
+  "mode": "edit",
+  "source_output": "/Users/miguel_lemos/.codex/generated_images/01a0be76-4cea-77a1-9a7d-bc150baaf965/exec-2989e653-a1a5-4e8a-9f08-36729290b0e0.png",
+  "output": "docs/storyboard/images/standalone/timber-tractor/scene-07-v4.png",
+  "generated_at": "2026-09-20T14:43:52.861596+00:00",
+  "prompt": "Use case: precise-object-edit\nAsset type: 1536×1024 landscape children's book loading illustration, Scene07.\nInput images: Image1 is the exact EDIT TARGET (current approved scene07-v3). Image2 is a reference for the physical seats and character identities ONLY (scene05-v4, seen from the OPPOSITE front-facing camera). Do not import Image2's camera, empty trailer, cabin close-up, or composition.\nPrimary request: Correct ONLY the two characters, seat orientation, and tiny controls visible through the tractor's REAR CAB WINDOW in Image1. This loading illustration is viewed from BEHIND the trailer looking toward the BACK of the tractor. Therefore seating seen from this rear camera must be the opposite screen order from Image2: SMALL HEDGEHOG PINPIN on IMAGE LEFT, BLUE-VESTED BEAVER on IMAGE RIGHT.\nCab geometry: Both seats remain facing the normal driving direction, AWAY from this rear camera toward the tractor nose. Show the backs of their seats and the rear of their bodies, not two forward-facing portraits. PinPin sits on a compact low-back buddy seat on the cab's machine LEFT/image LEFT: small quilled back visible with a little head turn to observe the loading. Beaver sits on the main operator seat on machine RIGHT/image RIGHT: blue vest back visible, and a natural head/shoulder turn back toward the log loading. Beaver uses ONE small side crane joystick next to his main seat. His operator seat must not swivel 180 degrees to face backwards.\nRemove the incorrect frontal steering wheel/dashboard visible on the rear-facing window in the current target. The driving steering wheel belongs at the FRONT of the cab, ahead of Beaver's body away from the camera, mostly hidden from this rear view; it must NOT be pasted onto the rear window, the rear protective railing, or in front of the backwards-facing characters. No extra wheel or opposing seat.\nCharacter identities: Keep the same warm chestnut Beaver with blue work vest and much smaller recognizable tan/cream PinPin with brown quills. Seat/body direction matters more than displaying frontal faces; a partial profile/head turn is sufficient. Exactly these two characters in this illustration, no extra passenger or family added.\nStrict preservation: Everything outside the small cab rear-window/interior region must remain unchanged: camera and framing, red tractor body and wheels, the already approved yellow crane pedestal and its attachment immediately behind the cab, continuous raised boom/hydraulic hoses/grapple, two logs already loaded plus exactly one third log suspended by the grapple, empty spaces between trailer stakes, trailer frame/red-tipped stakes/two axles/tires, ground logs at left, woodland path/stream/trees/lighting/style. Do not mirror, rotate, or redraw the whole illustration. Do not change the successful machinery correction while fixing the tiny rear cabin.\nStyle: match the existing warm detailed three-dimensional storybook illustration exactly. No labels, annotations, text, or watermark.\n",
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-07-v3.png",
+      "role": "edit target",
+      "sha256": "fd6b0b4274699c9999d32271b28d4597ded1c055c588c4e9ea04c7707cedd259"
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-05-v4.png",
+      "role": "opposite-camera physical seat reference",
+      "sha256": "c82468829d505d5728ed8e006bd1f98f02581147cf3e74efe3b7962f7ec14b56"
+    }
+  ],
+  "sha256": "5f14370771d4986a89d2ae8aea91f97362678e6debe84b5adfc085ae0a4899e4",
+  "approval": {
+    "status": "approved",
+    "approvedBy": "Miguel",
+    "recordedAt": "2026-09-20T15:02:55.061Z",
+    "basis": "Miguel explicitly approved all six displayed proposals and requested updating the official book. Historical pre-approval reviews remain intact."
+  },
+  "publication": "Selected for authorized release; deployment tracked separately.",
+  "visual_review": {
+    "result": "reviewed; user approval pending",
+    "confirmed": [
+      "Rear-window screen order now PinPin left and Beaver right.",
+      "Seat backs/quilled back/blue vest back face rear camera; both heads turn toward loading.",
+      "Wrong frontal rear-window steering removed; Beaver has one visible side crane joystick.",
+      "Crane mounting, continuous boom, two loaded logs plus suspended third log, trailer stakes/wheels, and scene composition retained visually."
+    ],
+    "caveats": [
+      "The distant cabin view partly hides PinPin’s body and the detailed seat attachments."
+    ]
+  },
+  "previewOutput": "/Users/miguel_lemos/.codex/tmp/timber-tractor-machinery-review/candidates/scene-07-v4.png",
+  "originalReferences": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/scene-07-v3.png",
+      "role": "edit target",
+      "sha256": "fd6b0b4274699c9999d32271b28d4597ded1c055c588c4e9ea04c7707cedd259"
+    },
+    {
+      "path": "/Users/miguel_lemos/.codex/tmp/timber-tractor-machinery-review/candidates/scene-05-v4.png",
+      "role": "opposite-camera physical seat reference",
+      "sha256": "c82468829d505d5728ed8e006bd1f98f02581147cf3e74efe3b7962f7ec14b56"
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "originalDraftRecord": {
+    "id": "scene-07-v4",
+    "tool": "built-in image_gen.imagegen",
+    "mode": "edit",
+    "source_output": "/Users/miguel_lemos/.codex/generated_images/01a0be76-4cea-77a1-9a7d-bc150baaf965/exec-2989e653-a1a5-4e8a-9f08-36729290b0e0.png",
+    "output": "/Users/miguel_lemos/.codex/tmp/timber-tractor-machinery-review/candidates/scene-07-v4.png",
+    "generated_at": "2026-09-20T14:43:52.861596+00:00",
+    "prompt": "Use case: precise-object-edit\nAsset type: 1536×1024 landscape children's book loading illustration, Scene07.\nInput images: Image1 is the exact EDIT TARGET (current approved scene07-v3). Image2 is a reference for the physical seats and character identities ONLY (scene05-v4, seen from the OPPOSITE front-facing camera). Do not import Image2's camera, empty trailer, cabin close-up, or composition.\nPrimary request: Correct ONLY the two characters, seat orientation, and tiny controls visible through the tractor's REAR CAB WINDOW in Image1. This loading illustration is viewed from BEHIND the trailer looking toward the BACK of the tractor. Therefore seating seen from this rear camera must be the opposite screen order from Image2: SMALL HEDGEHOG PINPIN on IMAGE LEFT, BLUE-VESTED BEAVER on IMAGE RIGHT.\nCab geometry: Both seats remain facing the normal driving direction, AWAY from this rear camera toward the tractor nose. Show the backs of their seats and the rear of their bodies, not two forward-facing portraits. PinPin sits on a compact low-back buddy seat on the cab's machine LEFT/image LEFT: small quilled back visible with a little head turn to observe the loading. Beaver sits on the main operator seat on machine RIGHT/image RIGHT: blue vest back visible, and a natural head/shoulder turn back toward the log loading. Beaver uses ONE small side crane joystick next to his main seat. His operator seat must not swivel 180 degrees to face backwards.\nRemove the incorrect frontal steering wheel/dashboard visible on the rear-facing window in the current target. The driving steering wheel belongs at the FRONT of the cab, ahead of Beaver's body away from the camera, mostly hidden from this rear view; it must NOT be pasted onto the rear window, the rear protective railing, or in front of the backwards-facing characters. No extra wheel or opposing seat.\nCharacter identities: Keep the same warm chestnut Beaver with blue work vest and much smaller recognizable tan/cream PinPin with brown quills. Seat/body direction matters more than displaying frontal faces; a partial profile/head turn is sufficient. Exactly these two characters in this illustration, no extra passenger or family added.\nStrict preservation: Everything outside the small cab rear-window/interior region must remain unchanged: camera and framing, red tractor body and wheels, the already approved yellow crane pedestal and its attachment immediately behind the cab, continuous raised boom/hydraulic hoses/grapple, two logs already loaded plus exactly one third log suspended by the grapple, empty spaces between trailer stakes, trailer frame/red-tipped stakes/two axles/tires, ground logs at left, woodland path/stream/trees/lighting/style. Do not mirror, rotate, or redraw the whole illustration. Do not change the successful machinery correction while fixing the tiny rear cabin.\nStyle: match the existing warm detailed three-dimensional storybook illustration exactly. No labels, annotations, text, or watermark.\n",
+    "references": [
+      {
+        "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/scene-07-v3.png",
+        "role": "edit target",
+        "sha256": "fd6b0b4274699c9999d32271b28d4597ded1c055c588c4e9ea04c7707cedd259"
+      },
+      {
+        "path": "/Users/miguel_lemos/.codex/tmp/timber-tractor-machinery-review/candidates/scene-05-v4.png",
+        "role": "opposite-camera physical seat reference",
+        "sha256": "c82468829d505d5728ed8e006bd1f98f02581147cf3e74efe3b7962f7ec14b56"
+      }
+    ],
+    "sha256": "5f14370771d4986a89d2ae8aea91f97362678e6debe84b5adfc085ae0a4899e4",
+    "approval": "pending",
+    "publication": "not published",
+    "visual_review": {
+      "result": "reviewed; user approval pending",
+      "confirmed": [
+        "Rear-window screen order now PinPin left and Beaver right.",
+        "Seat backs/quilled back/blue vest back face rear camera; both heads turn toward loading.",
+        "Wrong frontal rear-window steering removed; Beaver has one visible side crane joystick.",
+        "Crane mounting, continuous boom, two loaded logs plus suspended third log, trailer stakes/wheels, and scene composition retained visually."
+      ],
+      "caveats": [
+        "The distant cabin view partly hides PinPin’s body and the detailed seat attachments."
+      ]
+    }
+  },
+  "order": 7,
+  "title": "Rear loading cab orientation",
+  "beat": "Beaver loads the third log while PinPin remains seated.",
+  "camera": "Preserve scene camera; correct cabin seating and controls.",
+  "staging": "Preserve approved exterior machinery and character identities.",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be76-4cea-77a1-9a7d-bc150baaf965/exec-2989e653-a1a5-4e8a-9f08-36729290b0e0.png",
+  "startedAt": null,
+  "finishedAt": null,
+  "seconds": null,
+  "generatedAt": "2026-09-20T14:43:52.861Z",
+  "timingStatus": "not-recorded-in-original-draft",
+  "timingNote": "Original draft recorded output registration time only. Generation start, finish and duration were not retained; no timestamps reconstructed.",
+  "review": "Original visual review: Rear-window screen order now PinPin left and Beaver right. Seat backs/quilled back/blue vest back face rear camera; both heads turn toward loading. Wrong frontal rear-window steering removed; Beaver has one visible side crane joystick. Crane mounting, continuous boom, two loaded logs plus suspended third log, trailer stakes/wheels, and scene composition retained visually. Caveats: The distant cabin view partly hides PinPin’s body and the detailed seat attachments. Release inspection confirms the described visible changes; concealed attachments remain unverified.",
+  "reviewedAt": "2026-09-20T15:02:55.061Z"
+}
