@@ -1,0 +1,70 @@
+{
+  "status": "Three renders reviewed: shared study, gaze correction and arrival test. Ready for your feedback; the chapter and published edition have not been replaced.",
+  "study": {
+    "src": "images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v2.png",
+    "provenance": "images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v2.json",
+    "review": "Shared style study after the gaze correction. Papa keeps his mature body; Scooby keeps his approved markings and curled tail.",
+    "crops": {
+      "papa": [
+        265,
+        305,
+        300,
+        250
+      ],
+      "scooby": [
+        605,
+        235,
+        345,
+        330
+      ]
+    }
+  },
+  "candidate": {
+    "src": "images/chapter-02-expanded/revision-04/style-tests/scene-002-style-v1.png",
+    "provenance": "images/chapter-02-expanded/revision-04/style-tests/scene-002-style-v1.json",
+    "review": "Lighter cream face and readable irises for Papa; softer animated face and coat for Scooby. Their gaze now connects. Internally reviewed proposal, awaiting Miguel’s feedback.",
+    "crops": {
+      "papa": [
+        560,
+        345,
+        150,
+        145
+      ],
+      "scooby": [
+        685,
+        360,
+        220,
+        180
+      ]
+    }
+  },
+  "before": {
+    "src": "images/chapter-02-expanded/revision-04/scenes/scene-002-v1.png",
+    "provenance": "images/chapter-02-expanded/revision-04/scenes/scene-002-v1.json"
+  },
+  "authority": {
+    "src": "images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+    "provenance": "images/chapter-02-expanded/revision-03/home-edits/home-51-v1.json"
+  },
+  "iterations": [
+    {
+      "src": "images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v1.png",
+      "label": "Study 1 — style improved; gaze held",
+      "review": "Papa face and both materials improved; dog pupils looked above Papa. Superseded by study2."
+    },
+    {
+      "src": "images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v2.png",
+      "label": "Study 2 — gaze corrected",
+      "review": "Dog head and eyes now address Papa. Style and mature body preserved."
+    },
+    {
+      "src": "images/chapter-02-expanded/revision-04/style-tests/scene-002-style-v1.png",
+      "label": "Arrival scene test 1",
+      "review": "Reviewed scene test. Character style and reciprocal attention improved; original chapter selection retained."
+    }
+  ],
+  "foundation": {
+    "src": "images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v1.png",
+    "provenance": "images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v1.json"
+  }
+}

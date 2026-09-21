@@ -10,6 +10,10 @@ Papa already knows the Elder. Mama approves the outing and sends a greeting. Mam
 
 The lake/quill event motivates breakfast conversation and a social visit. It is not a chosen-one revelation or magic curriculum. Remove ancestral-magic payoff, private dawn appointment and training promises. PinPin explicitly asks to learn reading/writing; the Elder offers his name, one letter at a time, and includes Papa in future visits.
 
+## Latest style direction
+
+Miguel reopened Papa/Scooby style acceptance after the completed structural review. The old Papa dark-eye-surround instruction is superseded. The established Elder/PinPin study (revision03/home-edits/home-51-v1) controls facial forms, expressive eyes and material rendering; dog/Papa identity references do not override this style. Shared study v2 and scene002 style-v1 are internally reviewed proposals under style-tests, awaiting user feedback; current selected chapter files remain unchanged. See ../style-correction/REPORT.md.
+
 ## Cast and scale
 
 PinPin is the older child; PomPom is an infant, not the explorer. Existing modern Mama/PinPin/PomPom identities remain binding. Papa is being established by the spatial lane from original and modern family sources: no spectacles, no clothing, visibly distinct from the silver-quilled Elder. Elder retains round spectacles and silver-grey quills; staff is parked by the exterior before book work and remains there throughout the visit.

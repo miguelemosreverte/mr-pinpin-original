@@ -1,5 +1,7 @@
 # Elder revision04 progress
 
+Latest feedback: Papa/Scooby style acceptance is reopened. Miguel flags photographic materials/eyes and insufficient attentive gaze. See [STYLE-REVIEW.md](../STYLE-REVIEW.md) for the existing-image comparison and prompt audit; a shared study, gaze correction and arrival scene test are now rendered and internally reviewed. See [style-correction/REPORT.md](../style-correction/REPORT.md). No chapter correction is selected yet.
+
 The complete106-beat family-led story is integrated and viewable locally. 67 unchanged revision03 images preserve the root discovery, sanctuary conversations and return;39 new scene slots expand Papa/Scooby arrival, breakfast, travel, familiar greeting, reunion and daytime lunch.
 
 All106 selected scene images now exist and are integrated. Scene014-v2 is a new dog-only listening reaction portrait, with the father/child exchange off camera; adjacent013 and015 establish boarding and seated departure. The rejected014 request is preserved and was not retried. All39 new scenes have actual creator reviews and RU/EN/ES alt text. Root independently passed021/022 and final outward corrections; root also independently passed return096–101; final ordered/browser checks have passed. The integration lead independently viewed014-v2 and passed identity, visible paws, composition and caption compatibility. This is a proposed local review edition, not publication.

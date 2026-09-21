@@ -34,7 +34,7 @@ Record object states per beat: who holds an object, its orientation and location
 
 Render the canonical cast study and environment layout/clean plate with the built-in image tool. Include scale references and an interior layout only when required. Inspect every reference at full size, including faces and visible limb attachments. Resolve continuity contradictions now. List the selected, internally reviewed versions in the bible and manifest preproduction pack. Preserve rejected attempts with reasons.
 
-For each reference, record its role: identity, size comparison, environment continuity, camera plate, material/lighting, or prop geometry. A reference containing a character does not authorize that character in every scene. Keep short reference chains; do not repeatedly polish a noisy composite.
+For each reference, record its role: identity, size comparison, environment continuity, camera plate, material/lighting, or prop geometry. A reference containing a character does not authorize that character in every scene. Keep short reference chains; do not repeatedly polish a noisy composite. For a newly integrated character, compare the actual cast study side by side with an established finished chapter image before accepting it. Assign that finished image explicit rendering authority; photographs and older assets may control likeness or markings without controlling materials, eye design or shadow treatment. Check facial style again at final scene size: a good enlarged portrait can still collapse into dark button eyes when the character is small.
 
 A scene may proceed as soon as its own region and required references pass; unrelated pending locations must not hold the whole chapter. Record that scoped acceptance explicitly.
 

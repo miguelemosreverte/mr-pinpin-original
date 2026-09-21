@@ -1,0 +1,28 @@
+{
+  "id": "papa-scooby-style-study-v2",
+  "prompt": "Use case: precise-object-edit.\nImage1 is the new shared Papa/Scooby character study. Image2 is the established Elder/PinPin style authority.\nMake ONE narrow correction to image1: Scooby must actually meet Papa's eyes. Currently the dog's pupils are too high, looking above Papa. Lower and direct BOTH amber irises/pupils toward the small hedgehog's visible eye at left, a little BELOW the dog's eyes. The dog's near eye (rightmost eye in the canvas) should look LEFT and modestly DOWN, not up. The far eye must converge on the same Papa face naturally, not cross-eyed. A very small downward head inclination is allowed if necessary to make attentive eye contact clear.\nKeep Papa completely unchanged, including his successful bright cream face, hazel eyes, mature rounded torso, muzzle, relaxed paws and grounded feet. Keep Scooby's new soft animated facial design, eye size, iris color, markings, folded ears, muzzle length, mouth/smile, body pose, white bib, folded hindlegs, two foreground paws and curled tail unchanged. Preserve exact framing, scale, warm ivory background, soft lighting, fur grouping and image1's new illustrated materials; no shift back to photorealism. Keep both faces appealing and equally in image2's expressive animated storybook style. No additional changes, no text, no new props or actors. One landscape1536x1024 image.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v1.png",
+      "role": "edit target; preserve successful style and Papa, change dog gaze only",
+      "sha256": "ab86f4fabad26304e42c40c545068ddf412a9e5653ee09d3e6dbd1053a11c1d5"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "style authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T21:24:19.484Z",
+  "status": "internally-reviewed",
+  "startedAt": "2026-09-21T21:24:32.156Z",
+  "finishedAt": "2026-09-21T21:25:01.018Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-d3f8ba68-e76c-4b61-9b12-d2e785c3673a.png",
+  "output": "images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v2.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "a2a9d78052a91b1e0b0aa38fd9d7dc16d77e10761d09203e4f29c1dfb8a12d36",
+  "review": "Root and independent full-image PASS for scene test: Papa has luminous cream eye surrounds, hazel iris/pupil separation and robust adult torso; Scooby has rounded animated face and grouped coat. Lowered head and shifted eyes now address Papa. Far eye remains somewhat high, so exact convergence is not certified.",
+  "independentReview": "See production/chapters-02-04/revision-04/style-correction/INDEPENDENT-REVIEW.md"
+}

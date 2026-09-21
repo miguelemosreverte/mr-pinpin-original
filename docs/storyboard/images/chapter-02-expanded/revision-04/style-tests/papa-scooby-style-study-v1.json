@@ -1,0 +1,33 @@
+{
+  "id": "papa-scooby-style-study-v1",
+  "prompt": "Use case: illustration-story.\nAsset: preproduction character-style integration study, ONE landscape 1536x1024 image, no text or panels.\nReference priority: Image 1 (Elder and PinPin at the book) is the ONLY rendering and facial-stylization authority. Images 2 and 3 identify Papa and Scooby; intentionally correct their more photographic rendering. Do not copy the Elder's glasses or the child.\nOn a warm pale ivory floor/background, show exactly two full-body characters together: mature Papa hedgehog at left, the larger Scooby dog lying comfortably at right with head lowered toward Papa. Papa stands with two hindfeet planted and relaxed forepaws; Scooby's body, grounded forepaws, folded hindlegs and single upward-curled rump tail are legible. Papa is a small forest hedgehog beside a dog, not a human-sized animal. Their faces are turned three-quarter toward one another, both visible, and their actual pupils meet in a friendly attentive exchange.\nMatch image1's beautiful animated-feature storybook character design: rounded expressive facial forms, sculpted cheek tufts, clean soft transitions, appealing readable colored irises around dark pupils, delicately visible warm ivory sclera and shaped eyelids. Papa must have bright warm cream fur continuously around both eyes and cheeks, NO dark brown eye mask, no black eye sockets, no thick dark contours, no all-black button eyes. Use warm hazel irises, relaxed adult brows, a broader mature muzzle and sturdy adult build: Papa, not a baby and not the Elder. Keep his dark brown grey-tipped quill cap/back, small rounded ears, cream muzzle/chest and dark nose. Soften the quills into designed groups as on image1 rather than a photoreal sharply bristling coat.\nScooby remains the same recognizable brown/brindle dog: short folded ears, familiar moderate-length cream-grey muzzle, dark forehead/saddle markings, white chest bib, curled tail. Translate his face into the SAME animated character language as image1: subtly larger expressive amber eyes with readable iris/pupil separation and soft eyelids, rounded cheek/muzzle forms, gentle attentive brow and ear response. Keep the adult dog's identity; no giant puppy eyes, no new breed, no long floppy ears. Simplify coat hairs into soft designed tufts and broad brindle color groups. No photographic hair microtexture or gritty skin/nose pores.\nSoft broad warm key light and gentle frontal fill keep both faces open and luminous, like image1's faces. Rich dimensional fur remains; avoid flat vector/cartoon outlines, plastic toys, wet-looking reflective fur, harsh ambient-occlusion creases and black contact bands. No clothes, spectacles, staff, saddle, reins, extra characters or accessories. This is a clean shared character study to prove Papa and Scooby inhabit the same illustrated world as image1, not a photograph or a comparison collage.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "sole style/facial-rendering authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/papa-cast-v1.png",
+      "role": "Papa identity only; replace dark eye surrounds and photographic rendering",
+      "sha256": "8e8d040b850274a743be992740967facf2dbad3e6fbd99ec6d733e8627ad935d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/scooby-proposal-v2.png",
+      "role": "Scooby likeness/markings only; restyle",
+      "sha256": "98a1533e14de8fb0e1cb34c16ce5c8421ec03ea0900419cb9b7d09f98a98026a"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T21:21:26.298Z",
+  "status": "superseded",
+  "startedAt": "2026-09-21T21:21:35.343Z",
+  "finishedAt": "2026-09-21T21:22:06.647Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-0fdbddf4-2cea-43d1-bf26-5f67cb7d38bf.png",
+  "output": "images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v1.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "ab86f4fabad26304e42c40c545068ddf412a9e5653ee09d3e6dbd1053a11c1d5",
+  "review": "Root and independent full-image review: brighter cream Papa face, readable amber eyes and softer designed Scooby materials substantially improve style. Held because dog pupils look above Papa. Superseded by v2 gaze correction.",
+  "independentReview": "See production/chapters-02-04/revision-04/style-correction/INDEPENDENT-REVIEW.md"
+}

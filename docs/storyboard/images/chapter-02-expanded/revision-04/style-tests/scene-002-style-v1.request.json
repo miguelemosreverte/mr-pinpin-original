@@ -1,0 +1,24 @@
+{
+  "id": "scene-002-style-v1",
+  "prompt": "Use case: style-transfer.\nOutput ONE landscape1536x1024 children's-book scene.\nInput roles: Image1 is the authoritative established Elder/PinPin illustration: match its animated-feature facial design, expressive eyes, soft sculpted fur and rich storybook dimensional rendering. Image2 is the internally reviewed new Papa/Scooby character study: transfer those redesigned characters into the scene. Image3 is the EDIT TARGET for composition, environment and riding geometry ONLY; its photographic character rendering and Papa's black eye mask are precisely what must change.\nKeep image3's exact cottage, green round door, two round windows, moss roof, left chimney, unlit right lantern, stone path, low mounting stone at left, water bowl at right, plants, early morning mist, overall camera and arrangement. Dog remains stopped sideways facing right on FOUR grounded paws, whole body visible, one curled tail at the rump left. Papa remains seated securely astride middle back just behind withers, same small adult-to-dog scale, furry hips touching back, two forepaws supported ahead, near hindleg draped naturally down side and far hindleg on far side, no saddle or reins.\nReplace the appearance/rendering of BOTH characters with image2's designs in image1's visual language. Papa's face must stay warmly luminous cream around the eyes and cheeks, broad and mature, with readable warm hazel irises, distinct pupils and a small amount of ivory sclera, gentle shaped lids and brows. NO old dark eye mask, button eyes, black contour shading or photographic hedgehog face. Keep dark grey-brown tipped quills on back but soft designed grouping, rounded cheeks and cream chest; no glasses, clothes or staff. Papa is an adult, not PinPin and not the Elder.\nScooby keeps his brown/brindle markings, folded ears, cream-grey muzzle, white chest bib and curled tail from image2, but his face/body must read as the same polished animated storybook character as Papa and image1, never a photographed pet. Soft designed fur tufts and broader color groups, rounded muzzle/cheeks, expressive amber eyes, gently simplified nose, no wet hair or pore-level photographic texture.\nSpecific interaction during the arrival pause: Scooby turns his head comfortably back and slightly up LEFT toward Papa on his back, both pupils directed at Papa's face. Papa looks gently DOWN and RIGHT at Scooby's visible eye. Keep a plausible neck turn and readable three-quarter faces, not a twisted rear-facing head. Both share a calm affectionate attentive glance rather than looking at the camera. Dog body remains stopped parallel to the forecourt, Papa's seat and hands remain planted.\nKeep golden environment light, but use soft warm bounce/fill on character faces so Papa's eyes are visible even at whole-scene size. Match image1's soft facial shadow transitions and purposeful eye highlights. Do not redesign the background, alter scale, add characters, add props, text, borders or panels. This is a controlled character style correction, not a new chapter composition.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "sole rendering/facial style authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v2.png",
+      "role": "accepted shared Papa/Scooby style and identity study",
+      "sha256": "a2a9d78052a91b1e0b0aa38fd9d7dc16d77e10761d09203e4f29c1dfb8a12d36"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-002-v1.png",
+      "role": "edit target; layout/scale/contact only, replace character rendering",
+      "sha256": "2430e3e179cdeaf30d2dccbe7d0e3b67be81f6a2d3fc71917af770493f295209"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T21:27:07.069Z",
+  "status": "planned"
+}
