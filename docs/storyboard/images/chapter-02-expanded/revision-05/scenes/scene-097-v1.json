@@ -1,0 +1,156 @@
+{
+  "id": "scene-097-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 polished dimensional animated children's-book illustration, no text, panels or border.\nINPUT ROLES: Image1 established Elder/PinPin scene controls ALL rendering, expressive eyes, shaped brows and soft sculpted materials. Image2 approved cast: FAR LEFT round-eared broad adult HEDGEHOG is Papa; middle auburn mother holds tiny baby; smaller orange hedgehog is PinPin; separate far-right DOG is Scooby. Keep identities SEPARATE. Papa is never dog-faced, never spectacles. Image3 is previous scene for location, physical state, family seating/contact ONLY, not its obsolete character rendering or camera.\nPapa has luminous cream cheeks/eye surrounds, warm hazel irises with distinct pupils/ivory sclera, mature broad haunch/body, grey-brown tipped quills; NO dark eye mask, button eyes, photographic face or black rim shadows. PinPin smaller younger reddish quills expressive face. Scooby when present has approved soft animated brown/brindle groups, folded ears, cream muzzle, white bib, curled tail, expressive amber eyes; NO photographed pet detail or wet PBR fur. Qualitative scale Papa1.6child, dog shoulder2.7child. Anatomy two forepaws/two hindfeet per hedgehog, four dog legs, one tail. Soft facial bounce lighting, warm rich book environment, bright late morning/midday, no dusk.\nNEW SHOT: Exactly Papa hedgehog, child PinPin, dog Scooby and silver-quilled Elder with round spectacles ONLY, no mother or infant. Distinct NEW CAMERA from behind dog/riders at three-quarter rear side, looking past two mounted hedgehogs toward Elder at natural root entrance ahead-right background. Dog body now faces away down path but head attentive toward path, standing on four grounded paws. Child sits just behind withers, Papa immediately behind; both pelvises rest fur, legs astride. Papa wraps ONE forearm across child lower front torso and braces other paw back. Child turns head/eyes BACK toward Elder and raises ONE paw in little wave, other remains planted shoulder fur. Elder faces child returning wave, other paw belly. Foreground riders larger, Elder smaller in doorway, keeps staff left and fern right. This is farewell from child perspective, NOT old broad side-on dog portrait. No tack.\nCAMERA art-direction record (not literal labels in image): {\"positionXYZ\":[2,-6,1.6],\"targetXYZ\":[-1,-2,1.8],\"height\":1.6,\"framing\":\"Rear-side farewell across riders toward Elder\",\"approximateFieldOfView\":48,\"axisSide\":\"negativeY\"}\nActors: Scooby at -1,-2,0; body/head/eyes toward path; standing four paws ground. PinPin at -1,-2.1,2.7; body/head/eyes toward Elder; seated hips fur legs astride one paw fur one wave. Papa at -1,-1.3,2.7; body/head/eyes toward Elder; seated behind child arm across childs lower front other paw fur legs astride. Elder at 0,0,0; body/head/eyes toward PinPin; one paw returning wave other belly grounded\nPurpose: Rear-side farewell across riders toward Elder. Keep named landmarks in existing reference geographic relationship; don't mirror set. Natural cropping/occlusion allowed, no invented limbs.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:28:17.076Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "style and Elder/PinPin",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "cast identity scale; Papa far left hedgehog",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-097-v1.png",
+      "role": "location/action state only; camera must change as directed",
+      "sha256": "e1d1ccefc0a250c402e4603b167962f37eed09a67c8f34ee6dd64f8bb2aec816"
+    }
+  ],
+  "status": "ready",
+  "transformRecord": {
+    "previousNumber": 97,
+    "id": "elder-r5-097",
+    "purpose": "Rear-side farewell across riders toward Elder",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -6,
+        1.6
+      ],
+      "targetXYZ": [
+        -1,
+        -2,
+        1.8
+      ],
+      "height": 1.6,
+      "framing": "Rear-side farewell across riders toward Elder",
+      "approximateFieldOfView": 48,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "id": "Scooby",
+        "positionXYZ": [
+          -1.0,
+          -2.0,
+          0.0
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "path",
+        "eyeTarget": "path",
+        "pose": "standing four paws ground",
+        "limbsContactSupport": "standing four paws ground",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "PinPin",
+        "positionXYZ": [
+          -1.0,
+          -2.1,
+          2.7
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "seated hips fur legs astride one paw fur one wave",
+        "limbsContactSupport": "seated hips fur legs astride one paw fur one wave",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Papa",
+        "positionXYZ": [
+          -1.0,
+          -1.3,
+          2.7
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "seated behind child arm across childs lower front other paw fur legs astride",
+        "limbsContactSupport": "seated behind child arm across childs lower front other paw fur legs astride",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Elder",
+        "positionXYZ": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "one paw returning wave other belly grounded",
+        "limbsContactSupport": "one paw returning wave other belly grounded",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staff": [
+        -1,
+        0,
+        0
+      ],
+      "fern": [
+        1,
+        0,
+        0
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "canonical scene096",
+      "after": "Both riders mounted dog upright child waves"
+    },
+    "previousAction": "canonical scene096",
+    "nextAction": "canonical scene098",
+    "reasonForShotChange": "Rear-side farewell across riders toward Elder"
+  },
+  "startedAt": "2026-09-21T22:28:46.265Z",
+  "finishedAt": "2026-09-21T22:29:25.073Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c600-79e9-7ef1-bcf3-9c07d2a5d2dd/exec-affe6daa-bd11-4f9d-9002-0cf5a8f51820.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-097-v1.png",
+  "sha256": "bf6c824fb7d7338cb22650dd1a3495dd6c3304d085728369db0d705385cf3fba",
+  "review": "Creator full-image PASS: new rear three-quarter composition toward Elder, four dog paws grounded; both riders hips/near feet contact dog, Papa arm across child's lower front, child one wave one paw fur. Elder returns wave, staff left/fern right. Dog actually faces Elder before turning away, valid stationary farewell; change from planned body-away noted. Child face directed Elder side, precise pupil fixation qualitative. No dark face mask; far rider limbs occluded.",
+  "width": 1536,
+  "height": 1024
+}

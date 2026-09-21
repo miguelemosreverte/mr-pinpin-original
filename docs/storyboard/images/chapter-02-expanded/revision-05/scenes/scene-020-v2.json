@@ -1,0 +1,136 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-020",
+  "version": 2,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:27:41.570512+00:00",
+  "prompt": "Edit this exact image with ONE correction only: REMOVE the tall crooked wooden staff from the background to the RIGHT of the root doorway, including curved top and shaft behind dog. Replace those pixels with matching tree roots, soft vegetation and ground continuous with surroundings. Correct staff location is to LEFT of doorway, naturally hidden behind Papa from this close angle, so DO NOT show any staff anywhere in this crop. Preserve ALL other pixels and composition as closely as possible: Papa without glasses, child on stone, every face and reciprocal eye, all paws and feet/contact, Scooby attentive gaze, stone, root entrance, light, fur and quills. No new objects. No captions. Landscape3:2.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-020-v1.png",
+      "role": "EDIT TARGET: remove wrongly placed background staff only",
+      "sha256": "b33be175b4538dbd4e0614fb26a2395a984b952a88034e2bca5236db374b17a1"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 20,
+    "id": "elder-r5-020",
+    "purpose": "Intimate supported landing: child feet find stone",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        -3.7,
+        -5,
+        1
+      ],
+      "targetXYZ": [
+        -2,
+        -3,
+        1
+      ],
+      "height": 1,
+      "fieldOfView": 44,
+      "framing": "low close interaction from child height, dog head at edge",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2.7,
+          -3,
+          0
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "grounded leaning forward",
+        "contacts": "two hindfeet path two forepaws support child torso",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -2,
+          -3,
+          0.4
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "standing on stone",
+        "contacts": "two hindfeet stone; paws on Papa forearms",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -3,
+          0
+        ],
+        "bodyFacing": [
+          -0.5,
+          -2,
+          0
+        ],
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "crouched motionless",
+        "contacts": "ground contact partly cropped",
+        "visibility": "visible"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "Papa grounded; child feet stone after support",
+    "transition": "closer human-scale moment; greeting next",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "ready",
+  "completedAt": "2026-09-21T22:29:31.752974+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c600-14b2-7cd0-a2bc-99b2f7afd2dd/exec-8ee74468-0349-4edd-9cc8-29b3e2ee2629.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-020-v2.png",
+  "sha256": "3b4d411ec0e4b82a6abc34f96c831409e8b8e0c7e7d750264fc8c7b3fd4c666f",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator actual full-image PASS v2: materially closer, lower father-child landing moment; Papa two hindfeet grounded and two forepaws supporting child torso, child two feet on stone and paws on father forearms. Reciprocal eye contact and warm expressive cream faces, no Papa glasses. Scooby crouches nearby, front paws grounded, amber eyes follow child. Tail belongs to dog; small child tail behind rump is not extra foot. V2 removes misplaced right-of-door staff; correct staff is occluded behind Papa in this close crop. Background root portal/fern retained. Dog body seen more front-three-quarter than019, compatible changed close camera rather than new movement.",
+  "alt": {
+    "en": "Papa stands on the path and gently holds PinPin, whose two little feet have reached the stone; Scooby watches their faces from beside them.",
+    "ru": "Папа стоит на тропинке и бережно держит Пин-Пина, чьи маленькие лапки уже коснулись камня; Скуби рядом следит за их лицами.",
+    "es": "Papá está en el sendero y sostiene con cariño a PinPin, cuyas patitas ya han llegado a la piedra; Scooby observa sus rostros desde un lado."
+  },
+  "startedAt": "2026-09-21T22:27:57.813Z",
+  "finishedAt": "2026-09-21T22:28:37.340Z",
+  "timingSource": {
+    "source": "actual session tool-call and matching result timestamps",
+    "callId": "call_EajeaDjqx3h1Pqo7gJYK8q3b",
+    "scope": "functions.exec containing request read and awaited built-in imagegen; includes orchestration overhead, not claimed model-internal latency"
+  }
+}

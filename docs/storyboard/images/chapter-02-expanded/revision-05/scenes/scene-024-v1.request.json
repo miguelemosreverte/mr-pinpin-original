@@ -1,0 +1,137 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-024",
+  "version": 1,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:41:15.614568+00:00",
+  "prompt": "Use case: illustration-story. One full-bleed landscape3:2 image, no text. Create an INTIMATE CLOSE child-eye-height camera version of the father-child exchange in image2. Maintain image1 beautiful soft animated Papa/Scooby faces/materials, but Papa and dog AWAKE. Papa is a mature HEDGEHOG, not a dog, sits against moss restrock at right-center; standing child PinPin is at left. Papa and child faces occupy much of image. Father lowers head/eyes DOWN-LEFT into child eyes; child lifts chin/eyes UP-RIGHT into Papa eyes. Exact reciprocal warm pupils, no looking past one another. Papa one open forepaw toward child in reassuring gesture, other paw rests belly; his seated body and two forward hindfeet grounded; child has two small paws/two grounded feet. Papa standing size would be1.6child; seated height is similar to child standing, broad mature torso. Scooby remains CURLED LYING immediately beside Papa at right cropedge, chin on two forepaws, sleepy open amber eye attentively toward child. ONE dog only, soft illustrated grouped fur/brownbrindle/cream muzzle/whitebib, no photographic materials. All characters soft expressive animated book forms, cream light facial shadows, visible hazel irises. Papa never glasses; no Elder visible. Background only mossrestrock and softly blurred forest/ferns: portal/staff are far OFFSCREEN LEFT because this restpatch is farRIGHT beyond fern. No staff nearrock, no hillbehindright. Morning dappledsun, relaxed reassuring moment before nap. This is a true close two-shot/three-character detail, NOT repeated wide layout.\nPersisted camera/peractor art direction: {}{\"previousNumber\":24,\"id\":\"elder-r5-024\",\"purpose\":\"Reassuring reciprocal father-child farewell\",\"frame\":\"E\",\"camera\":{\"positionXYZ\":[2.4,-3,0.85],\"targetXYZ\":[3.5,-1,0.8],\"height\":0.85,\"fieldOfView\":40,\"framing\":\"intimate medium two-shot Papa seated and child standing; dog resting edge\",\"axisSide\":\"approach/front negativeY; travel rear negativeY\"},\"actors\":[{\"name\":\"Papa\",\"positionXYZ\":[3.6,-1,0],\"bodyFacing\":\"PinPin\",\"headFacing\":\"PinPin\",\"eyeTarget\":\"PinPin\",\"pose\":\"seated leaning gently\",\"contacts\":\"seat rock feet ground one paw open child direction other belly\",\"visibility\":\"visible\"},{\"name\":\"PinPin\",\"positionXYZ\":[2.8,-1.2,0],\"bodyFacing\":\"Papa\",\"headFacing\":\"Papa\",\"eyeTarget\":\"Papa\",\"pose\":\"standing\",\"contacts\":\"two feet ground two paws relaxed\",\"visibility\":\"visible\"},{\"name\":\"Scooby\",\"positionXYZ\":[4.6,-1,0],\"bodyFacing\":\"Papa\",\"headFacing\":\"Papa\",\"eyeTarget\":\"Papa\",\"pose\":\"drowsy curl\",\"contacts\":\"chin front paws\",\"visibility\":\"partly cropped\"},{\"name\":\"Elder\",\"positionXYZ\":[0,-0.3,0],\"bodyFacing\":\"PinPin\",\"headFacing\":\"PinPin\",\"eyeTarget\":\"PinPin\",\"pose\":\"waiting\",\"contacts\":\"feet ground\",\"visibility\":\"offscreen left\"}],\"landmarks\":{\"threshold\":[0,0,0],\"staffBoulder\":[-1.6,-0.2,0],\"fern\":[1.4,-0.3,0],\"restRock\":[4,-1,0],\"mountingStone\":[-2,-3,0.4]},\"state\":\"Papa says right here; child about to turn\",\"transition\":\"wide map to intimate reassuring gaze\",\"status\":\"planned-awaiting-cast-gate\"}",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-025-v2.png",
+      "role": "Papa/Scooby facial style and seatedrest relation; current scene AWAKE before sleep",
+      "sha256": "b400c8b6c114518b737cd5c8d6734672c66c21dc26470775fd775df9e1eedc69"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-023-v3.png",
+      "role": "IMMEDIATELY PREVIOUS wide scene; preserve positions/cast scale but move camera close",
+      "sha256": "7c32a0e53da8c734d4a890ed5544215fb1f2cf02e724d6c63eddd71d9a659fdf"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Papa mature cream face/hazel eyes, NO GLASSES; not dark background",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 24,
+    "id": "elder-r5-024",
+    "purpose": "Reassuring reciprocal father-child farewell",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        2.4,
+        -3,
+        0.85
+      ],
+      "targetXYZ": [
+        3.5,
+        -1,
+        0.8
+      ],
+      "height": 0.85,
+      "fieldOfView": 40,
+      "framing": "intimate medium two-shot Papa seated and child standing; dog resting edge",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          3.6,
+          -1,
+          0
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "seated leaning gently",
+        "contacts": "seat rock feet ground one paw open child direction other belly",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          2.8,
+          -1.2,
+          0
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "standing",
+        "contacts": "two feet ground two paws relaxed",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          4.6,
+          -1,
+          0
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "drowsy curl",
+        "contacts": "chin front paws",
+        "visibility": "partly cropped"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0,
+          -0.3,
+          0
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "waiting",
+        "contacts": "feet ground",
+        "visibility": "offscreen left"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "Papa says right here; child about to turn",
+    "transition": "wide map to intimate reassuring gaze",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "requested"
+}

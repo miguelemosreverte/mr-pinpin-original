@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-019",
+  "version": 2,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:24:07.120636+00:00",
+  "prompt": "Create the NEXT ACTION after image1 while retaining its exact exterior geography, dog orientation facing screen RIGHT, child seat behind withers, animated child/dog style, low stone foreground LEFT and sunny light. Move camera slightly closer to show the dismount stone and three actors prominently but SAME side of path. Papa has got off the rear seat and now stands with BOTH hindfeet on TOP of the LOW broad stone foreground-left. Papa from image2: mature broad cream-faced adult, readable hazel eyes, NO GLASSES, no spectacles or Elder features. His body faces screenRIGHT toward his child, one forepaw rests on Scooby back and other reaches toward PinPin. PinPin remains seated astride on Scooby behind withers, both forepaws on shoulder, near hindleg draped visible, far leg naturally hidden. Child turns head backLEFT to Papa, reciprocal eyes. Dog stays crouched exactly as in image1, two front paws forward RIGHT, folded hindquarters/tail LEFT; eyes back toward Papa, no body reversal. Keep natural root portal behindright, staff/boulder LEFT of portal, fernRIGHT of portal. Low stone reaches only about Papa knee-to-hip height, not tall pillar. ONLY these three actors. Fullbody Papa with both feet visibly on stone. No other hedgehog, no Elder, no clothes, no text. Soft expressive animated book surfaces match image1 and2, not photograph.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-018-v2.png",
+      "role": "CONTINUITY TARGET; next dismount state, same dog orientation and landmarks",
+      "sha256": "12a1e2e84695b2a9e5dfcfb88d8c5dd28a635ec9d52419a31aee60240ed01b19"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "PAPA IDENTITY ONLY; no spectacles, mature cream face; ignore dark background",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 19,
+    "id": "elder-r5-019",
+    "purpose": "Show Papa first dismount completed onto stone",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        -4,
+        -6,
+        1.5
+      ],
+      "targetXYZ": [
+        -1.6,
+        -3,
+        1
+      ],
+      "height": 1.5,
+      "fieldOfView": 48,
+      "framing": "closer side profile including Papa feet stone child",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2,
+          -3,
+          0.4
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "standing on stone",
+        "contacts": "both hindfeet stone one forepaw dog other toward child",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          -2.7,
+          1.3
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "waiting front seat",
+        "contacts": "both forepaws shoulder hindlegs astride",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -3,
+          0
+        ],
+        "bodyFacing": [
+          -0.5,
+          -2,
+          0
+        ],
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "still crouched",
+        "contacts": "front paws ground hindfeet occluded",
+        "visibility": "visible"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "Papa on stone not ground; child seated",
+    "transition": "same axis narrower frame to show state change",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "requested"
+}

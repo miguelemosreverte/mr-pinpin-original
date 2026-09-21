@@ -1,0 +1,179 @@
+{
+  "id": "scene-005-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 children’s book illustration, no text/border/panels.\nInput roles: Image1 is the established animated-feature storybook rendering authority. Image2 is ACCEPTED shared family identity and scale. Image3 controls ONLY environment/props/contact geometry; IGNORE its old photographic faces/rendering and old camera, use the NEW SHOT BELOW.\nMatch established Elder/PinPin dimensional animated storybook illustration, readable expressive irises, designed soft grouped fur, rounded forms, warm light with soft fill; no photographic pet/human rendering or black eye mask. Approved shared cast controls identities and approximate common scale. Papa is the mature broad-bodied HEDGEHOG at far LEFT in image2, cream face/eye surrounds, hazel iris/pupil separation, dark brown tipped quills, no spectacles. PinPin is the SMALL standing chestnut HEDGEHOG child; Mama the copper-quilled ADULT HEDGEHOG holding infant PomPom. Scooby is the LARGE DOG at right, amber eyes, warm brindle brown, cream-grey muzzle, white chest, folded ears/curled rump tail. Species must never swap. Adult hedgehog about1.6 child height, dog shoulder2.7child height. No clothing/reins/saddle.\nSHOT: At child eye height, prioritize the loving hug foreground. Papa crouches on earth with cream face touching close to PinPin, two forearms embracing. PinPin grounded with arms round Papa. Mama stands in open green doorway behind holding baby securely in ONE arm, other on jamb. Much larger Scooby watches the hug from beside them with warmly attentive eyes, no riders. Exactly four hedgehogs and one dog.\nGreen rounded door, outside hinges left/knob and lantern right, two round windows, chimney left, low broad mounting stone left and water bowl right, moss roof. Dog remains outdoors.\nPLANNED CAMERA AND ACTORS (approximate staging cues, not text in image): {\"frameId\": \"H\", \"camera\": {\"positionXYZ\": [-2.8, -5, 0.75], \"targetXYZ\": [-0.3, -1.3, 0.8], \"height\": 0.75, \"framing\": \"low medium family hug; dog large left edge, Mama doorway background\", \"approximateFieldOfViewDegrees\": 55, \"axisSide\": \"H exterior negativeY\"}, \"actors\": {\"Papa\": {\"positionXYZ\": [-0.6, -1.7, 0], \"bodyFacingTarget\": \"PinPin\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"crouching to hug\", \"limbsContactSupport\": \"both feet earth, two forearms around child\", \"visibility\": \"visible\"}, \"PinPin\": {\"positionXYZ\": [-0.2, -1.5, 0], \"bodyFacingTarget\": \"Papa\", \"headFacingTarget\": \"Papa\", \"eyeTarget\": \"Papa\", \"pose\": \"hugging Papa\", \"limbsContactSupport\": \"both feet earth, two forearms around Papa\", \"visibility\": \"visible\"}, \"Mama\": {\"positionXYZ\": [0, 0.1, 0], \"bodyFacingTarget\": \"PinPin\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"doorway smiling\", \"limbsContactSupport\": \"one arm supports infant; other rests doorframe\", \"visibility\": \"visible\"}, \"PomPom\": {\"positionXYZ\": [0, 0.1, 0.9], \"bodyFacingTarget\": \"Papa\", \"headFacingTarget\": \"Papa\", \"eyeTarget\": \"Papa\", \"pose\": \"held by Mama\", \"limbsContactSupport\": \"one Mama forearm/lap-side support\", \"visibility\": \"visible\"}, \"Scooby\": {\"positionXYZ\": [-2.2, -1.7, 0], \"bodyFacingTarget\": \"path\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"stands watching hug attentively\", \"limbsContactSupport\": \"grounded paws; flank/tail may crop\", \"visibility\": \"visible\"}}, \"staticLandmarks\": {\"threshold\": [0, 0, 0], \"stone\": [-2, -2, 0.35], \"bowl\": [2, -2, 0], \"path\": [0, -6, 0], \"leftWindow\": [-1.4, 0, 1.2], \"rightWindow\": [1.4, 0, 1.2], \"lantern\": [1, 0, 1.6]}, \"objectStateBefore\": \"door opens; Papa grounded\", \"objectStateAfter\": \"hug; open door; baby remains held\"}.\nPrioritize purposeful gaze, connected forepaws/feet, soft animated face/materials and the stated new framing. No additional actors or duplicated limbs. Warm morning daylight with soft cream fill on faces. All offscreen characters remain outside crop, do not force every reference-sheet figure into image.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "sole rendering and expressive face style authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "accepted family identity and scale, change gaze/pose per shot",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-005-v2.png",
+      "role": "environment, props and physical contact geometry ONLY; not old character rendering or old camera",
+      "sha256": "6c525a5d469482f328aec918783be5651e6d8229387953829f26fd60af752d98"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:16:29.868296+00:00",
+  "transformRecord": {
+    "previousNumber": 5,
+    "id": "elder-r5-005",
+    "purpose": "Reunion felt from child height rather than distant tableau",
+    "frameId": "H",
+    "camera": {
+      "positionXYZ": [
+        -2.8,
+        -5,
+        0.75
+      ],
+      "targetXYZ": [
+        -0.3,
+        -1.3,
+        0.8
+      ],
+      "height": 0.75,
+      "framing": "low medium family hug; dog large left edge, Mama doorway background",
+      "approximateFieldOfViewDegrees": 55,
+      "axisSide": "H exterior negativeY"
+    },
+    "actors": {
+      "Papa": {
+        "positionXYZ": [
+          -0.6,
+          -1.7,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "crouching to hug",
+        "limbsContactSupport": "both feet earth, two forearms around child",
+        "visibility": "visible"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          -0.2,
+          -1.5,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "hugging Papa",
+        "limbsContactSupport": "both feet earth, two forearms around Papa",
+        "visibility": "visible"
+      },
+      "Mama": {
+        "positionXYZ": [
+          0,
+          0.1,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "doorway smiling",
+        "limbsContactSupport": "one arm supports infant; other rests doorframe",
+        "visibility": "visible"
+      },
+      "PomPom": {
+        "positionXYZ": [
+          0,
+          0.1,
+          0.9
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "held by Mama",
+        "limbsContactSupport": "one Mama forearm/lap-side support",
+        "visibility": "visible"
+      },
+      "Scooby": {
+        "positionXYZ": [
+          -2.2,
+          -1.7,
+          0
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "stands watching hug attentively",
+        "limbsContactSupport": "grounded paws; flank/tail may crop",
+        "visibility": "visible"
+      }
+    },
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "leftWindow": [
+        -1.4,
+        0,
+        1.2
+      ],
+      "rightWindow": [
+        1.4,
+        0,
+        1.2
+      ],
+      "lantern": [
+        1,
+        0,
+        1.6
+      ]
+    },
+    "objectStateBefore": "door opens; Papa grounded",
+    "objectStateAfter": "hug; open door; baby remains held",
+    "previousAction": "dismount",
+    "nextAction": "breakfast",
+    "reasonForShotChange": "intimate low angle and converging gazes establish affection",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "Mama opened the door with PomPom in her arms. PinPin hurried into Papa’s hug. Scooby’s tail curled up."
+      ],
+      "ru": [
+        "Мама открыла дверь с Пом-Помом на руках. Пин-Пин поспешил обнять Папу. Хвост Скуби загнулся колечком."
+      ],
+      "es": [
+        "Mamá abrió la puerta con PomPom en brazos. PinPin corrió a abrazar a Papá. La cola de Scooby se curvó hacia arriba."
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-005-v2.png",
+    "sceneDirection": "At child eye height, prioritize the loving hug foreground. Papa crouches on earth with cream face touching close to PinPin, two forearms embracing. PinPin grounded with arms round Papa. Mama stands in open green doorway behind holding baby securely in ONE arm, other on jamb. Much larger Scooby watches the hug from beside them with warmly attentive eyes, no riders. Exactly four hedgehogs and one dog."
+  },
+  "status": "needs-correction",
+  "n": 5,
+  "v": 1,
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-1bffd58d-f0fe-4598-b2c4-c3a570bd4e1d.png",
+  "startedAt": "2026-09-21T22:27:39.504Z",
+  "finishedAt": "2026-09-21T22:28:30.502Z",
+  "review": "Actual creator full-image review: strong child-height affectionate hug, Papa cream face/gaze to child, child two feet grounded, very large animated dog attends hug; exact four family. Mama has TWO arms supporting infant PLUS stray third forearm/paw on door jamb. Narrow removal of jamb arm required.",
+  "sha256": "f5c337feb199fee69809d1337c700a25ce4badcc96d346691be013f57effcfc6",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-005-v1.png",
+  "width": 1536,
+  "height": 1024
+}

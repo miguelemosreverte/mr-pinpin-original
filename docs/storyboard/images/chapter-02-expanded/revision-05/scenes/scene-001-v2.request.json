@@ -1,0 +1,169 @@
+{
+  "id": "scene-001-v2",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 children’s book illustration, no text/border/panels.\nInput roles: Image1 is the established animated-feature storybook rendering authority. Image2 is ACCEPTED shared family identity and scale. Image3 controls ONLY environment/props/contact geometry; IGNORE its old photographic faces/rendering and old camera, use the NEW SHOT BELOW.\nMatch established Elder/PinPin dimensional animated storybook illustration, readable expressive irises, designed soft grouped fur, rounded forms, warm light with soft fill; no photographic pet/human rendering or black eye mask. Approved shared cast controls identities and approximate common scale. Papa is the mature broad-bodied HEDGEHOG at far LEFT in image2, cream face/eye surrounds, hazel iris/pupil separation, dark brown tipped quills, no spectacles. PinPin is the SMALL standing chestnut HEDGEHOG child; Mama the copper-quilled ADULT HEDGEHOG holding infant PomPom. Scooby is the LARGE DOG at right, amber eyes, warm brindle brown, cream-grey muzzle, white chest, folded ears/curled rump tail. Species must never swap. Adult hedgehog about1.6 child height, dog shoulder2.7child height. No clothing/reins/saddle.\nSHOT: Make the location and mist the subject: Papa and dog modest in the mid-distance, traveling toward the cottage. Do not repeat the close side-on arrival portrait. Cool mist contrasts warm mossy home. Papa rides alone with seat/paws supported; no other actor visible.\nGreen rounded door, outside hinges left/knob and lantern right, two round windows, chimney left, low broad mounting stone left and water bowl right, moss roof. Dog remains outdoors.\nPLANNED CAMERA AND ACTORS (approximate staging cues, not text in image): {\"frameId\": \"H\", \"camera\": {\"positionXYZ\": [-7, -12, 2.4], \"targetXYZ\": [0, -3, 1], \"height\": 2.4, \"framing\": \"atmospheric environmental wide; cottage right, path diagonal foreground\", \"approximateFieldOfViewDegrees\": 62, \"axisSide\": \"H exterior negativeY\"}, \"actors\": {\"Papa\": {\"positionXYZ\": [0, -6, 2.8], \"bodyFacingTarget\": \"threshold\", \"headFacingTarget\": \"threshold\", \"eyeTarget\": \"leftWindow\", \"pose\": \"solo astride Scooby\", \"limbsContactSupport\": \"two paws braced on shoulders; two hindlegs astride; no reins\", \"visibility\": \"visible\"}, \"Scooby\": {\"positionXYZ\": [0, -6, 0], \"bodyFacingTarget\": \"threshold\", \"headFacingTarget\": \"threshold\", \"eyeTarget\": \"threshold\", \"pose\": \"gentle approaching walk\", \"limbsContactSupport\": \"four connected legs, one near forepaw midstep; tail at rump\", \"visibility\": \"visible\"}, \"PinPin\": {\"positionXYZ\": [-1.4, 0.2, 0.8], \"bodyFacingTarget\": \"leftWindow\", \"headFacingTarget\": \"path\", \"eyeTarget\": \"Papa\", \"pose\": \"inside at window\", \"limbsContactSupport\": \"paws on sill\", \"visibility\": \"offscreen interior\"}, \"Mama\": {\"positionXYZ\": [0, 1, 0], \"bodyFacingTarget\": \"threshold\", \"headFacingTarget\": \"threshold\", \"eyeTarget\": \"Papa\", \"pose\": \"inside holding infant\", \"limbsContactSupport\": \"infant supported\", \"visibility\": \"offscreen\"}, \"PomPom\": {\"positionXYZ\": [0, 1, 0.8], \"bodyFacingTarget\": \"Mama\", \"headFacingTarget\": \"Mama\", \"eyeTarget\": \"Mama\", \"pose\": \"held\", \"limbsContactSupport\": \"Mama forearm\", \"visibility\": \"offscreen\"}}, \"staticLandmarks\": {\"threshold\": [0, 0, 0], \"stone\": [-2, -2, 0.35], \"bowl\": [2, -2, 0], \"path\": [0, -6, 0], \"leftWindow\": [-1.4, 0, 1.2], \"rightWindow\": [1.4, 0, 1.2], \"lantern\": [1, 0, 1.6]}, \"objectStateBefore\": \"door closed; mist at ground; Papa solo on dog\", \"objectStateAfter\": \"same, closer approach\"}.\nPrioritize purposeful gaze, connected forepaws/feet, soft animated face/materials and the stated new framing. No additional actors or duplicated limbs. Warm morning daylight with soft cream fill on faces. All offscreen characters remain outside crop, do not force every reference-sheet figure into image.\nOVERRIDING COMPOSITION REQUIREMENT: TRULY DISTANT environmental opening from BEHIND and LEFT of approaching Papa/dog. Camera pulled far back along forest path, about15child-heights away; pair FULL combined rider+dog height occupies ONLY20–25percent of total picture height, not half the frame. Lower-left foreground ferns/tree frame a long diagonal path. Small Papa/dog backs and tiny side profile, moving AWAY from camera toward cottage ahead at upper-right mid-distance. Most image is misty forest depth and cottage/garden, not character portrait. No character eye-contact detail needed because they are distant facing home. This must differ radically from close stopped side-on nextscene. Exterior lantern UNLIT; pale dawn sky makes clear morning. Keep door/windows/chimney geometry and path-side bowl/stone if discernible.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "sole rendering and expressive face style authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "accepted family identity and scale, change gaze/pose per shot",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/home-arrival-plate-v1.png",
+      "role": "environment, props and physical contact geometry ONLY; not old character rendering or old camera",
+      "sha256": "ba099fa668afbf140e432e461e647dd270a659149c247fb0a4e08a7fae3d44d0"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:35:22.545659+00:00",
+  "transformRecord": {
+    "previousNumber": 1,
+    "id": "elder-r5-001",
+    "purpose": "Anticipation: a small approaching pair within a large misty home landscape",
+    "frameId": "H",
+    "camera": {
+      "positionXYZ": [
+        -7,
+        -12,
+        2.4
+      ],
+      "targetXYZ": [
+        0,
+        -3,
+        1
+      ],
+      "height": 2.4,
+      "framing": "atmospheric environmental wide; cottage right, path diagonal foreground",
+      "approximateFieldOfViewDegrees": 62,
+      "axisSide": "H exterior negativeY"
+    },
+    "actors": {
+      "Papa": {
+        "positionXYZ": [
+          0,
+          -6,
+          2.8
+        ],
+        "bodyFacingTarget": "threshold",
+        "headFacingTarget": "threshold",
+        "eyeTarget": "leftWindow",
+        "pose": "solo astride Scooby",
+        "limbsContactSupport": "two paws braced on shoulders; two hindlegs astride; no reins",
+        "visibility": "visible"
+      },
+      "Scooby": {
+        "positionXYZ": [
+          0,
+          -6,
+          0
+        ],
+        "bodyFacingTarget": "threshold",
+        "headFacingTarget": "threshold",
+        "eyeTarget": "threshold",
+        "pose": "gentle approaching walk",
+        "limbsContactSupport": "four connected legs, one near forepaw midstep; tail at rump",
+        "visibility": "visible"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          -1.4,
+          0.2,
+          0.8
+        ],
+        "bodyFacingTarget": "leftWindow",
+        "headFacingTarget": "path",
+        "eyeTarget": "Papa",
+        "pose": "inside at window",
+        "limbsContactSupport": "paws on sill",
+        "visibility": "offscreen interior"
+      },
+      "Mama": {
+        "positionXYZ": [
+          0,
+          1,
+          0
+        ],
+        "bodyFacingTarget": "threshold",
+        "headFacingTarget": "threshold",
+        "eyeTarget": "Papa",
+        "pose": "inside holding infant",
+        "limbsContactSupport": "infant supported",
+        "visibility": "offscreen"
+      },
+      "PomPom": {
+        "positionXYZ": [
+          0,
+          1,
+          0.8
+        ],
+        "bodyFacingTarget": "Mama",
+        "headFacingTarget": "Mama",
+        "eyeTarget": "Mama",
+        "pose": "held",
+        "limbsContactSupport": "Mama forearm",
+        "visibility": "offscreen"
+      }
+    },
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "leftWindow": [
+        -1.4,
+        0,
+        1.2
+      ],
+      "rightWindow": [
+        1.4,
+        0,
+        1.2
+      ],
+      "lantern": [
+        1,
+        0,
+        1.6
+      ]
+    },
+    "objectStateBefore": "door closed; mist at ground; Papa solo on dog",
+    "objectStateAfter": "same, closer approach",
+    "previousAction": "previous chapter lake resolution",
+    "nextAction": "child recognizes Papa at window",
+    "reasonForShotChange": "wide orientation before child reaction and closer reveal",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "The morning after PinPin helped the lake, mist lay low over the garden. Someone was coming along the path."
+      ],
+      "ru": [
+        "Наутро после того, как Пин-Пин помог озеру, над садом стелился туман. По дорожке кто-то приближался."
+      ],
+      "es": [
+        "A la mañana siguiente de ayudar al lago, una neblina cubría el jardín. Alguien venía por el sendero."
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-001-v1.png",
+    "sceneDirection": "Make the location and mist the subject: Papa and dog modest in the mid-distance, traveling toward the cottage. Do not repeat the close side-on arrival portrait. Cool mist contrasts warm mossy home. Papa rides alone with seat/paws supported; no other actor visible."
+  },
+  "status": "planned-full-cast-gate"
+}

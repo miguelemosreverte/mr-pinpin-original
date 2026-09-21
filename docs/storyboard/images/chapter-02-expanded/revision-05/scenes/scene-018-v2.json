@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-018",
+  "version": 2,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:21:16.192130+00:00",
+  "prompt": "Targeted contact edit of image1. Preserve camera, ALL expressive faces and eyes, Papa identity, Scooby attentive upward gaze/head/body/paws/tail, tree background, stone, lighting exactly. Correct only small child PinPin body seating and Papa supporting arm. PinPin must sit astride Scooby just behind withers with BODY FACING FORWARD TOWARD DOG HEAD/right. His head alone turns back/up LEFT toward Papa as already. His NEAR hindleg drapes down visible near side of dog, FAR hindleg passes over far side and is OCCLUDED, not two feet together on top of dog. His two little forepaws rest forward on Scooby shoulder fur, not on own belly. Papa behind child wraps one forearm across lower child torso, other forepaw braces dog back. Keep child small. Image2 is riding contact geometry ONLY, not style. Exactly two child forepaws and two child hindfeet total; hide far hindfoot naturally. No new actors or glasses. Maintain the beautiful softer animated style in image1.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-018-v1.png",
+      "role": "EDIT TARGET: correct child astride seat and supporting forearm only",
+      "sha256": "a63918343886fecce8e4aeb29bdee2f92588a9c0b4fda3f8dacbbfa858549beb"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/riding-tandem-v3.png",
+      "role": "CONTACT GEOMETRY only; body forward and hindlegs astride, child paws on dog, Papa support",
+      "sha256": "f5977afa36440ad9b11e8a7554296a114e0c733f1d771b1be4781e0a4d36c176"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 18,
+    "id": "elder-r5-018",
+    "purpose": "Establish stopped dog stone and doorway before dismount",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        -4,
+        -7,
+        1.1
+      ],
+      "targetXYZ": [
+        -1,
+        -2,
+        1
+      ],
+      "height": 1.1,
+      "fieldOfView": 57,
+      "framing": "medium wide side-three-quarter",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -3,
+          0
+        ],
+        "bodyFacing": [
+          -0.5,
+          -2,
+          0
+        ],
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "crouched still",
+        "contacts": "belly low front paws planted",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          -2.7,
+          1.3
+        ],
+        "bodyFacing": "threshold",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "front seat",
+        "contacts": "straddle back both paws shoulder",
+        "visibility": "visible"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -1,
+          -3.3,
+          1.3
+        ],
+        "bodyFacing": "threshold",
+        "headFacing": "stone",
+        "eyeTarget": "stone",
+        "pose": "rear seat",
+        "contacts": "arm supports child other dog",
+        "visibility": "visible"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "dog crouches next to stone both riders seated",
+    "transition": "reveal to legible physical staging",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "ready",
+  "completedAt": "2026-09-21T22:22:31.267740+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c600-14b2-7cd0-a2bc-99b2f7afd2dd/exec-906fbd67-9f97-40c6-a14e-eed833f33137.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-018-v2.png",
+  "sha256": "12a1e2e84695b2a9e5dfcfb88d8c5dd28a635ec9d52419a31aee60240ed01b19",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator actual full-image PASS v2: crouched Scooby stays beside near-left low stone; dog attentive eyes turn back up toward riders. PinPin torso faces dog head with near hindleg draped down, far hindleg occluded, two forepaws on shoulder fur; head turns up to Papa. Papa supporting forearm crosses child lower chest; remaining arm/far legs occluded, not certified. Papa cream face/hazel eyes and dog soft animated expression match approval. Root portal/staff-left/fern-right held; no Elder or extra rider. Papa looks child rather than stone in plan, a welcome reciprocal attention improvement compatible with stopping action.",
+  "alt": {
+    "en": "Scooby crouches beside the arrival stone and looks back attentively as Papa steadies PinPin, who turns up toward his father.",
+    "ru": "Скуби пригибается у камня и внимательно оглядывается, пока Папа поддерживает Пин-Пина, поднявшего взгляд к отцу.",
+    "es": "Scooby se agacha junto a la piedra y mira hacia atrás con atención mientras Papá sostiene a PinPin, que alza la mirada hacia su padre."
+  },
+  "startedAt": "2026-09-21T22:21:28.228Z",
+  "finishedAt": "2026-09-21T22:21:55.368Z",
+  "timingSource": {
+    "source": "actual session tool-call and matching result timestamps",
+    "callId": "call_tqLCicVUwACLK3troRjaUwva",
+    "scope": "functions.exec containing request read and awaited built-in imagegen; includes orchestration overhead, not claimed model-internal latency"
+  }
+}

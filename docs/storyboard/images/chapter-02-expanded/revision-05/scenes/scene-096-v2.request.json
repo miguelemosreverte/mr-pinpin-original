@@ -1,0 +1,143 @@
+{
+  "id": "scene-096-v2",
+  "prompt": "Use case: precise-object-edit. Image1 target; image2 original scene contact/entrance geometry ONLY. Keep image1 new animated Papa/dog/child faces, expressive eye targets, lighting and side-threequarter camera. Correct ONLY staging contacts and doorway: MOVE low flat stone snug beside dog's near flank beneath child's near hindfoot. Child NEAR hindfoot must rest firmly on flat STONE top, FAR hindfoot on dog's back, TWO forepaws on shoulder fur. Papa stands entirely on GROUND behind stone, two own hindfeet visible on earth, his two forepaws support child's lower hips. Dog stays lying still two forepaws ground rear tucked. Make natural ROOT ARCH doorway like image2, no manufactured jamb or built step; Elder alone gold spectacles stands on bare earth inside root opening, staff left fern right. Three hedgehogs and dog only. Preserve all correct style and attentive facial warmth. One landscape1536x1024 no text.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:26:57.491Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-096-v1.png",
+      "role": "edit target contacts",
+      "sha256": "b584e87b763740dd0054ef81254b0000387e86c444f09b1587ed3b01eacba97c"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-096-v1.png",
+      "role": "original correct contact and natural root portal only",
+      "sha256": "27559ca65613b1633cbf61e88a3b8619ddd405484fcaedae633d0c16a9191ef4"
+    }
+  ],
+  "status": "planned",
+  "transformRecord": {
+    "previousNumber": 96,
+    "id": "elder-r5-096",
+    "purpose": "Side three-quarter contact view",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        -3,
+        -6,
+        1.1
+      ],
+      "targetXYZ": [
+        -1.5,
+        -2,
+        1
+      ],
+      "height": 1.1,
+      "framing": "Side three-quarter contact view",
+      "approximateFieldOfView": 48,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "id": "Scooby",
+        "positionXYZ": [
+          -1.0,
+          -2.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "stationary crouch chest/forepaws grounded rear tucked",
+        "limbsContactSupport": "stationary crouch chest/forepaws grounded rear tucked",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Papa",
+        "positionXYZ": [
+          -2.4,
+          -2.4,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "two feet ground two paws childs hips",
+        "limbsContactSupport": "two feet ground two paws childs hips",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "PinPin",
+        "positionXYZ": [
+          -1.8,
+          -2.0,
+          0.8
+        ],
+        "bodyFacingTarget": "dogBack",
+        "headFacingTarget": "dogBack",
+        "eyeTarget": "dogBack",
+        "pose": "near foot stone far foot dogback two forepaws fur",
+        "limbsContactSupport": "near foot stone far foot dogback two forepaws fur",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Elder",
+        "positionXYZ": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "background watching grounded",
+        "limbsContactSupport": "background watching grounded",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staff": [
+        -1,
+        0,
+        0
+      ],
+      "fern": [
+        1,
+        0,
+        0
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "canonical scene095",
+      "after": "Child climbs stone to dog while Papa supports"
+    },
+    "previousAction": "canonical scene095",
+    "nextAction": "canonical scene097",
+    "reasonForShotChange": "Side three-quarter contact view"
+  }
+}

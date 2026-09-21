@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-023",
+  "version": 3,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:37:15.770953+00:00",
+  "prompt": "Only correct seated PAPA in image1. Papa is right-center adult hedgehog leaning against rock beside ONE curled dog. SHRINK PAPA ENTIRE BODY UNIFORMLY by about35percent around his seated ground-contact point. His seated total height including quills must be about the SAME height as standing child PinPin at center, not1.6times. Papa is mature broad adult whose standing height would be1.6child; because he is SITTING his illustrated height is lower. Retain his exact mature warm cream face/hazel iris and quills, two forepaws belly/two feet. Gently lower/turn his head and aim pupils DOWN-LEFT into PinPin eyes, direct reciprocal attention. Fill newly revealed background with existing moss rest rock and grass. DO NOT change child, dog, Elder, tree/portal, staff, fern, path, lighting or composition. Keep dog one curled tail, NO extra dog or glasses on Papa. Image2 confirms correct Papa sitting relative to Scooby; copy scale relationship, not the sleeping closed eyes. Whole scene wide landscape no text.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-023-v2.png",
+      "role": "EDIT TARGET; reduce only seatedPapa35percent and aim gaze at child",
+      "sha256": "f6eb8df21cbb47804e8566f3cd8c316ecea51d367d1704129bef84ae13de53e7"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-025-v2.png",
+      "role": "Papa seated/dog relative proportions; not sleep state",
+      "sha256": "b400c8b6c114518b737cd5c8d6734672c66c21dc26470775fd775df9e1eedc69"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 23,
+    "id": "elder-r5-023",
+    "purpose": "Map safe resting place and clear path to entrance",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -8,
+        3
+      ],
+      "targetXYZ": [
+        2,
+        -0.5,
+        0.3
+      ],
+      "height": 3,
+      "fieldOfView": 70,
+      "framing": "wide slightly elevated geographic master doorway left rest far right",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          3.6,
+          -1,
+          0
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "seated against moss rock",
+        "contacts": "seat rock two hindfeet ground",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          4.6,
+          -1,
+          0
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "curl settling",
+        "contacts": "body/front paws ground",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          2.2,
+          -1.8,
+          0
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "standing",
+        "contacts": "feet path",
+        "visibility": "visible"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0,
+          -0.3,
+          0
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "waiting by portal",
+        "contacts": "feet ground",
+        "visibility": "visible"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "Papa dog relocated beyond fern; doorway unobstructed",
+    "transition": "intimate greeting to useful geography reset",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "requested"
+}

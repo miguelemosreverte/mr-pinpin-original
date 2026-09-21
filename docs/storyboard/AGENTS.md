@@ -8,6 +8,6 @@ Use the imagegen skill and built-in image tool for raster creation/edits. Keep e
 
 Develop action, reaction and transitions without a fixed image quota. Separate source content from adaptation additions and future promises. Internal production checks do not require repeated permission questions; follow the user's authorized scope through to a complete reviewable result. Keep unfinished or unapproved proposals clearly identified and preserve official editions until the authorized publication step.
 
-Latest Elder revision: `production/chapters-02-04/revision-04/CONTRACT.md`; its USER-BRIEF.md adds the family-led daytime outing and literacy ending, while retaining revision03's natural root discovery. Academy remains revision02. Read revision02/SOURCE-ARC.md for the whole original-book context. Preserve all prior proposals.
+Latest Elder revision: `production/chapters-02-04/revision-05/CONTRACT.md`; it applies the approved Papa/Scooby style and explicit camera/actor transforms to the family-led daytime outing, retaining the established study/root/cavern sequence. Revision04 USER-BRIEF.md remains the story brief. Academy remains revision02. Read revision02/SOURCE-ARC.md for the whole original-book context. Preserve all prior proposals.
 
 Two-chapter proposal overview: `production/chapters-02-04/README.md`. Cover/title-miniature organization: `production/TITLE-COVERS.md`.

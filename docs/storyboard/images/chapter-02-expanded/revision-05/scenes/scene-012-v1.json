@@ -1,0 +1,160 @@
+{
+  "id": "scene-012-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 children’s book illustration, no text/border/panels.\nInput roles: Image1 is the established animated-feature storybook rendering authority. Image2 is ACCEPTED shared family identity and scale. Image3 controls ONLY environment/props/contact geometry; IGNORE its old photographic faces/rendering and old camera, use the NEW SHOT BELOW.\nMatch established Elder/PinPin dimensional animated storybook illustration, readable expressive irises, designed soft grouped fur, rounded forms, warm light with soft fill; no photographic pet/human rendering or black eye mask. Approved shared cast controls identities and approximate common scale. Papa is the mature broad-bodied HEDGEHOG at far LEFT in image2, cream face/eye surrounds, hazel iris/pupil separation, dark brown tipped quills, no spectacles. PinPin is the SMALL standing chestnut HEDGEHOG child; Mama the copper-quilled ADULT HEDGEHOG holding infant PomPom. Scooby is the LARGE DOG at right, amber eyes, warm brindle brown, cream-grey muzzle, white chest, folded ears/curled rump tail. Species must never swap. Adult hedgehog about1.6 child height, dog shoulder2.7child height. No clothing/reins/saddle.\nSHOT: Clear medium-wide side contact view, one low broad stone at home left. Child both hindfeet planted on stone, reaching two forepaws to crouched dog shoulder-back. Papa stands on DIRT beside child, one paw supporting child waist, other ready. Dog lies still beside stone and gently looks back toward child, not camera. Preserve correct adult child dog size; do not shrink dog. Feet and forearm connections legible.\nGreen rounded door, outside hinges left/knob and lantern right, two round windows, chimney left, low broad mounting stone left and water bowl right, moss roof. Dog remains outdoors.\nPLANNED CAMERA AND ACTORS (approximate staging cues, not text in image): {\"frameId\": \"H\", \"camera\": {\"positionXYZ\": [-4.2, -4.4, 0.8], \"targetXYZ\": [-1.7, -2, 0.75], \"height\": 0.8, \"framing\": \"clear profile medium-wide stone/Papa/child/dog shoulder\", \"approximateFieldOfViewDegrees\": 48, \"axisSide\": \"H exterior negativeY\"}, \"actors\": {\"Papa\": {\"positionXYZ\": [-2.6, -2, 0], \"bodyFacingTarget\": \"PinPin\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"grounded steadying child\", \"limbsContactSupport\": \"two feet dirt; one paw child waist, other ready support\", \"visibility\": \"visible\"}, \"PinPin\": {\"positionXYZ\": [-2, -2, 0.35], \"bodyFacingTarget\": \"Scooby\", \"headFacingTarget\": \"Scooby\", \"eyeTarget\": \"Scooby\", \"pose\": \"stands facing dog on stone\", \"limbsContactSupport\": \"both hindfeet stone; two forepaws reach back\", \"visibility\": \"visible\"}, \"Scooby\": {\"positionXYZ\": [-0.5, -2, 0], \"bodyFacingTarget\": \"path\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"crouched still\", \"limbsContactSupport\": \"two front paws earth; folded hindlegs; broad back beside stone\", \"visibility\": \"visible\"}}, \"staticLandmarks\": {\"threshold\": [0, 0, 0], \"stone\": [-2, -2, 0.35], \"bowl\": [2, -2, 0], \"path\": [0, -6, 0], \"leftWindow\": [-1.4, 0, 1.2], \"rightWindow\": [1.4, 0, 1.2], \"lantern\": [1, 0, 1.6]}, \"objectStateBefore\": \"Papa/child at stone, dog drinks\", \"objectStateAfter\": \"Papa down on earth; dog crouched; child two feet stone\"}.\nPrioritize purposeful gaze, connected forepaws/feet, soft animated face/materials and the stated new framing. No additional actors or duplicated limbs. Warm morning daylight with soft cream fill on faces. All offscreen characters remain outside crop, do not force every reference-sheet figure into image.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "sole rendering and expressive face style authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "accepted family identity and scale, change gaze/pose per shot",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-012-v3.png",
+      "role": "environment, props and physical contact geometry ONLY; not old character rendering or old camera",
+      "sha256": "dd0db3020d9fe9932802be52fd59410c8fc9304eefe0ac30074ef1182ee41dfd"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:16:29.930403+00:00",
+  "transformRecord": {
+    "previousNumber": 12,
+    "id": "elder-r5-012",
+    "purpose": "Establish climb support before movement",
+    "frameId": "H",
+    "camera": {
+      "positionXYZ": [
+        -4.2,
+        -4.4,
+        0.8
+      ],
+      "targetXYZ": [
+        -1.7,
+        -2,
+        0.75
+      ],
+      "height": 0.8,
+      "framing": "clear profile medium-wide stone/Papa/child/dog shoulder",
+      "approximateFieldOfViewDegrees": 48,
+      "axisSide": "H exterior negativeY"
+    },
+    "actors": {
+      "Papa": {
+        "positionXYZ": [
+          -2.6,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "grounded steadying child",
+        "limbsContactSupport": "two feet dirt; one paw child waist, other ready support",
+        "visibility": "visible"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          -2,
+          -2,
+          0.35
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "Scooby",
+        "eyeTarget": "Scooby",
+        "pose": "stands facing dog on stone",
+        "limbsContactSupport": "both hindfeet stone; two forepaws reach back",
+        "visibility": "visible"
+      },
+      "Scooby": {
+        "positionXYZ": [
+          -0.5,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "crouched still",
+        "limbsContactSupport": "two front paws earth; folded hindlegs; broad back beside stone",
+        "visibility": "visible"
+      }
+    },
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "leftWindow": [
+        -1.4,
+        0,
+        1.2
+      ],
+      "rightWindow": [
+        1.4,
+        0,
+        1.2
+      ],
+      "lantern": [
+        1,
+        0,
+        1.6
+      ]
+    },
+    "objectStateBefore": "Papa/child at stone, dog drinks",
+    "objectStateAfter": "Papa down on earth; dog crouched; child two feet stone",
+    "previousAction": "water pause",
+    "nextAction": "child transfers onto dog",
+    "reasonForShotChange": "wider side contact proof before close transfer",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "Scooby crouched beside the stone. Papa stepped down to help PinPin."
+      ],
+      "ru": [
+        "Скуби пригнулся рядом с камнем. Папа спустился на землю, чтобы помочь Пин-Пину."
+      ],
+      "es": [
+        "Scooby se agachó junto a la piedra. Papá bajó al suelo para ayudar a PinPin."
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-012-v3.png",
+    "sceneDirection": "Clear medium-wide side contact view, one low broad stone at home left. Child both hindfeet planted on stone, reaching two forepaws to crouched dog shoulder-back. Papa stands on DIRT beside child, one paw supporting child waist, other ready. Dog lies still beside stone and gently looks back toward child, not camera. Preserve correct adult child dog size; do not shrink dog. Feet and forearm connections legible."
+  },
+  "status": "creator-and-root-reviewed",
+  "n": 12,
+  "v": 1,
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-eb5cdf40-17f4-454d-b2cc-4b6ad73e61f9.png",
+  "startedAt": "2026-09-21T22:48:44.402Z",
+  "finishedAt": "2026-09-21T22:49:32.332Z",
+  "review": "Creator actual full-image PASS: child two hindfeet clearly planted on single low stone, two forepaws touch dog back; Papa stands on earth beside stone, two supporting forearms at child waist/back with feet grounded. Larger crouched dog two forepaws on earth, back reaches child support height, head turned toward boarding family rather than camera; rear limbs/tail concealed. Papa mature/light face and soft animated dog retained; correct cottage/bowl sides. Side view clearly establishes before-transfer state.",
+  "alt": {
+    "en": "PinPin stands with both feet on the stone and places his paws on Scooby’s back while Papa steadies him from the ground.",
+    "ru": "Пин-Пин стоит обеими лапками на камне и кладёт передние лапки на спину Скуби, а Папа поддерживает его с земли.",
+    "es": "PinPin apoya ambos pies en la piedra y las patitas en el lomo de Scooby mientras Papá lo sostiene desde el suelo."
+  },
+  "sha256": "66f43db76812fa6faf9dab0aaded9059dee4490336d11f4f57b929d6ebae1c5a",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-012-v1.png",
+  "width": 1536,
+  "height": 1024,
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-eb5cdf40-17f4-454d-b2cc-4b6ad73e61f9.png",
+  "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+}

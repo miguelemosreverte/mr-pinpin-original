@@ -1,0 +1,146 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-019",
+  "version": 1,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:22:31.313591+00:00",
+  "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 3:2 finished children’s-book illustration, no text or panels.\nSTYLE LOCK: closely match the soft expressive animated children’s-book forms in references 1 and 2. Warm cream facial planes, open readable hazel/amber iris around separate pupil, broad gentle eyelids, rounded appealing muzzle, grouped sculpted fur. Papa is a mature broad adult about 1.6 times PinPin height, NOT the child duplicated at same scale. Dog shoulder about 2.7 child heights, warm dark-brindled brown, white chest bib, grey-cream muzzle, folded triangular ears, curled rump tail. Dog expression attentive and emotionally present. No black button eyes, dark face masks, hard shiny skin, photographic animal anatomy/detail or live-action fur. All unclothed animal characters. Only Elder has glasses.\nREFERENCE ROLES: Image 1: PRIMARY approved common-scale animated identity/style reference; Papa and child distinct; dog scale and expressive materials; Image 2: AUTHORITATIVE book style, Elder and PinPin identity, expressive iris/pupil eyes, soft animation shapes; Image 3: ENVIRONMENT GEOGRAPHY ONLY; root portal, left staff/boulder and path, right fern, sunny patch beyond fern.\nNARRATIVE AND CAMERA: Closer side view of the first completed dismount step: Papa now stands with BOTH hindfeet clearly planted on the flat TOP of the low stone beside the crouched dog, not on the ground. PinPin still sits alone just behind Scooby’s withers, waiting, forepaws on shoulder fur, near hindleg visibly straddling. Papa rests one forepaw on dog’s back and extends the other toward his child. Papa and child look at each other. Dog head looks back gently toward Papa without twisting body. Include the full stone and both Papa feet. The root portal/left staff/right fern are softer depth landmarks. ONLY one father, one child, one dog.\nPER-ACTOR/CAMERA PLAN (approximate illustrative geometry, not labels to render): {\"previousNumber\":19,\"id\":\"elder-r5-019\",\"purpose\":\"Show Papa first dismount completed onto stone\",\"frame\":\"E\",\"camera\":{\"positionXYZ\":[-4,-6,1.5],\"targetXYZ\":[-1.6,-3,1],\"height\":1.5,\"fieldOfView\":48,\"framing\":\"closer side profile including Papa feet stone child\",\"axisSide\":\"approach/front negativeY; travel rear negativeY\"},\"actors\":[{\"name\":\"Papa\",\"positionXYZ\":[-2,-3,0.4],\"bodyFacing\":\"PinPin\",\"headFacing\":\"PinPin\",\"eyeTarget\":\"PinPin\",\"pose\":\"standing on stone\",\"contacts\":\"both hindfeet stone one forepaw dog other toward child\",\"visibility\":\"visible\"},{\"name\":\"PinPin\",\"positionXYZ\":[-1,-2.7,1.3],\"bodyFacing\":\"Papa\",\"headFacing\":\"Papa\",\"eyeTarget\":\"Papa\",\"pose\":\"waiting front seat\",\"contacts\":\"both forepaws shoulder hindlegs astride\",\"visibility\":\"visible\"},{\"name\":\"Scooby\",\"positionXYZ\":[-1,-3,0],\"bodyFacing\":[-0.5,-2,0],\"headFacing\":\"Papa\",\"eyeTarget\":\"Papa\",\"pose\":\"still crouched\",\"contacts\":\"front paws ground hindfeet occluded\",\"visibility\":\"visible\"}],\"landmarks\":{\"threshold\":[0,0,0],\"staffBoulder\":[-1.6,-0.2,0],\"fern\":[1.4,-0.3,0],\"restRock\":[4,-1,0],\"mountingStone\":[-2,-3,0.4]},\"state\":\"Papa on stone not ground; child seated\",\"transition\":\"same axis narrower frame to show state change\",\"status\":\"planned-awaiting-cast-gate\"}\nPhysical discipline: one head and two forepaws/two hindfeet per hedgehog; dog exactly four legs and one tail. Naturally occluded limbs stay hidden, do not expose extra limbs to satisfy a count. Actual contact and believable balance. Preserve morning daytime light and scene landmarks; no clothes, tack, harness, captions, diagrams, arrows, watermarks. This is a cinematic story moment, not a character-sheet montage.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "PRIMARY approved common-scale animated identity/style reference; Papa and child distinct; dog scale and expressive materials",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "AUTHORITATIVE book style, Elder and PinPin identity, expressive iris/pupil eyes, soft animation shapes",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/elder-exterior-rest-plate-v1.png",
+      "role": "ENVIRONMENT GEOGRAPHY ONLY; root portal, left staff/boulder and path, right fern, sunny patch beyond fern",
+      "sha256": "6295a3c64ad0ad7ff1634a046201804f3a5885c759419538247be28074b0500b"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 19,
+    "id": "elder-r5-019",
+    "purpose": "Show Papa first dismount completed onto stone",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        -4,
+        -6,
+        1.5
+      ],
+      "targetXYZ": [
+        -1.6,
+        -3,
+        1
+      ],
+      "height": 1.5,
+      "fieldOfView": 48,
+      "framing": "closer side profile including Papa feet stone child",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2,
+          -3,
+          0.4
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "standing on stone",
+        "contacts": "both hindfeet stone one forepaw dog other toward child",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          -2.7,
+          1.3
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "waiting front seat",
+        "contacts": "both forepaws shoulder hindlegs astride",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -3,
+          0
+        ],
+        "bodyFacing": [
+          -0.5,
+          -2,
+          0
+        ],
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "still crouched",
+        "contacts": "front paws ground hindfeet occluded",
+        "visibility": "visible"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "Papa on stone not ground; child seated",
+    "transition": "same axis narrower frame to show state change",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "rejected-identity-axis",
+  "completedAt": "2026-09-21T22:24:07.055397+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c600-14b2-7cd0-a2bc-99b2f7afd2dd/exec-5a7645fd-5607-40b7-8ffb-8edeb6e0f243.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-019-v1.png",
+  "sha256": "fd92a05de543199e5e422e8bd50ac08b2d43b9a76bce703863fcf39d27ef977d",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator full image reject: Papa acquired Elder glasses, dog faces opposite side and stone expanded tall. Although support staging is readable, identity and arrival continuity require fresh targeted edit from accepted018.",
+  "alt": {
+    "en": "Papa stands on a stone beside PinPin and Scooby.",
+    "ru": "Папа стоит на камне рядом с Пин-Пином и Скуби.",
+    "es": "Papá está sobre una piedra junto a PinPin y Scooby."
+  },
+  "startedAt": "2026-09-21T22:22:45.557Z",
+  "finishedAt": "2026-09-21T22:23:21.522Z",
+  "timingSource": {
+    "source": "actual session tool-call and matching result timestamps",
+    "callId": "call_SmhNpzafJuXvUIpu9WzommOF",
+    "scope": "functions.exec containing request read and awaited built-in imagegen; includes orchestration overhead, not claimed model-internal latency"
+  }
+}

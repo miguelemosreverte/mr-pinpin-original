@@ -1,0 +1,103 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-016",
+  "version": 1,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:15:01.722727+00:00",
+  "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 3:2 finished children’s-book illustration, no text or panels.\nSTYLE LOCK: closely match the soft expressive animated children’s-book forms in references 1 and 2. Warm cream facial planes, open readable hazel/amber iris around separate pupil, broad gentle eyelids, rounded appealing muzzle, grouped sculpted fur. Papa is a mature broad adult about 1.6 times PinPin height, NOT the child duplicated at same scale. Dog shoulder about 2.7 child heights, warm dark-brindled brown, white chest bib, grey-cream muzzle, folded triangular ears, curled rump tail. Dog expression attentive and emotionally present. No black button eyes, dark face masks, hard shiny skin, photographic animal anatomy/detail or live-action fur. All unclothed animal characters. Only Elder has glasses.\nREFERENCE ROLES: Image 1: PRIMARY approved common-scale animated identity/style reference; Papa and child distinct; dog scale and expressive materials; Image 2: AUTHORITATIVE book style, Elder and PinPin identity, expressive iris/pupil eyes, soft animation shapes; Image 3: CONTACT GEOMETRY ONLY; supported tandem seats; ignore its old dark-face and naturalistic rendering.\nNARRATIVE AND CAMERA: A joyful intimate over-the-shoulder view belonging to PinPin. We are immediately behind his small head and right shoulder, seeing only part of his chestnut quills and his cream cheek profile at lower left, his forepaws on Scooby’s back and Papa’s supporting forearm across his lower torso at the bottom edge. Papa sits behind PinPin and behind the camera: do NOT invent a second child/head in front of him. Ahead of the ONE child are the back of Scooby’s brown head and two folded ears, then a sunlit winding forest path through thinning silver mist. All look forward along the path. Camera feels seated on dog height, never detached aerial view. The broad dog shoulders occupy lower right; dog walks softly; no reins. A discovered beam of morning light leads our eyes forward.\nPER-ACTOR/CAMERA PLAN (approximate illustrative geometry, not labels to render): {\"previousNumber\":16,\"id\":\"elder-r5-016\",\"purpose\":\"Feel journey through child attention, not another side-profile demonstration\",\"frame\":\"T\",\"camera\":{\"positionXYZ\":[0.3,-0.9,3.6],\"targetXYZ\":[0,5,2],\"height\":3.6,\"fieldOfView\":55,\"framing\":\"child-height over-shoulder medium; back of child at lower edge; dog ears beyond\",\"axisSide\":\"approach/front negativeY; travel rear negativeY\"},\"actors\":[{\"name\":\"PinPin\",\"positionXYZ\":[0,0.4,2.7],\"bodyFacing\":\"path\",\"headFacing\":\"path\",\"eyeTarget\":\"path\",\"pose\":\"seated astride behind withers\",\"contacts\":\"two forepaws on dog shoulder; thighs/feet straddle\",\"visibility\":\"visible\"},{\"name\":\"Papa\",\"positionXYZ\":[0,-0.4,2.7],\"bodyFacing\":\"path\",\"headFacing\":\"path\",\"eyeTarget\":\"path\",\"pose\":\"seated behind child\",\"contacts\":\"one forearm around child lower torso other paw on back; head outside crop\",\"visibility\":\"offscreen except supporting forearm\"},{\"name\":\"Scooby\",\"positionXYZ\":[0,0,0],\"bodyFacing\":\"path\",\"headFacing\":\"path\",\"eyeTarget\":\"path\",\"pose\":\"gentle walking\",\"contacts\":\"grounded slow gait, forelegs beyond crop\",\"visibility\":\"visible\"}],\"landmarks\":{\"path\":[0,6,0]},\"state\":\"dog walking; supported tandem\",\"transition\":\"follows boarding; reveals destination next\",\"status\":\"planned-awaiting-cast-gate\"}\nPhysical discipline: one head and two forepaws/two hindfeet per hedgehog; dog exactly four legs and one tail. Naturally occluded limbs stay hidden, do not expose extra limbs to satisfy a count. Actual contact and believable balance. Preserve morning daytime light and scene landmarks; no clothes, tack, harness, captions, diagrams, arrows, watermarks. This is a cinematic story moment, not a character-sheet montage.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "PRIMARY approved common-scale animated identity/style reference; Papa and child distinct; dog scale and expressive materials",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "AUTHORITATIVE book style, Elder and PinPin identity, expressive iris/pupil eyes, soft animation shapes",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/riding-tandem-v3.png",
+      "role": "CONTACT GEOMETRY ONLY; supported tandem seats; ignore its old dark-face and naturalistic rendering",
+      "sha256": "f5977afa36440ad9b11e8a7554296a114e0c733f1d771b1be4781e0a4d36c176"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 16,
+    "id": "elder-r5-016",
+    "purpose": "Feel journey through child attention, not another side-profile demonstration",
+    "frame": "T",
+    "camera": {
+      "positionXYZ": [
+        0.3,
+        -0.9,
+        3.6
+      ],
+      "targetXYZ": [
+        0,
+        5,
+        2
+      ],
+      "height": 3.6,
+      "fieldOfView": 55,
+      "framing": "child-height over-shoulder medium; back of child at lower edge; dog ears beyond",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0,
+          0.4,
+          2.7
+        ],
+        "bodyFacing": "path",
+        "headFacing": "path",
+        "eyeTarget": "path",
+        "pose": "seated astride behind withers",
+        "contacts": "two forepaws on dog shoulder; thighs/feet straddle",
+        "visibility": "visible"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0,
+          -0.4,
+          2.7
+        ],
+        "bodyFacing": "path",
+        "headFacing": "path",
+        "eyeTarget": "path",
+        "pose": "seated behind child",
+        "contacts": "one forearm around child lower torso other paw on back; head outside crop",
+        "visibility": "offscreen except supporting forearm"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          0,
+          0,
+          0
+        ],
+        "bodyFacing": "path",
+        "headFacing": "path",
+        "eyeTarget": "path",
+        "pose": "gentle walking",
+        "contacts": "grounded slow gait, forelegs beyond crop",
+        "visibility": "visible"
+      }
+    ],
+    "landmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ]
+    },
+    "state": "dog walking; supported tandem",
+    "transition": "follows boarding; reveals destination next",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "requested"
+}

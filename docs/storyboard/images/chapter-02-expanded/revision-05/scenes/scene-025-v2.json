@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-025",
+  "version": 2,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:13:48.939710+00:00",
+  "prompt": "Edit image1 with ONLY these geography corrections. Preserve the exact lovely animated sleeping Papa and Scooby, all their faces, closed eyes, fur/quills, limbs, tail, scale, contact, moss rest rock and daisies unchanged. REMOVE the tall curved staff from left completely; replace its pixels with continuous moss, leaves and ordinary vegetation. This is a resting rock far RIGHT of the actual tree entrance; the staff remains far offscreen LEFT by that doorway, so no staff is visible in this crop. In the upper-right BACKGROUND remove the small summit hill and winding path beyond the fern; replace them with continuous softly blurred woodland foliage and tree trunks. Do not add another tree door or house. Keep the foreground ground beneath sleeping characters unchanged, including dappled sunshine. Image2 is geography evidence only: rest rock far right beyond fern, forest behind. No text, no panels. Landscape 3:2, original softness and light.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-025-v1.png",
+      "role": "EDIT TARGET; preserve sleeping cast exactly, correct misplaced staff and hill only",
+      "sha256": "575947b0a738156e11b071d07a27948ab6218a4abc007934bb000bfefbd99b6e"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-023-v2.png",
+      "role": "GEOGRAPHY ONLY; rest patch far right beyond fern with forest behind; ignore outdated animal rendering",
+      "sha256": "ffe72719bb329a3259bb425a2a5b4ffcb78a25360e407b9a0dfb2dbb2312f655"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 25,
+    "id": "elder-r5-025",
+    "purpose": "Quiet rest insert: shared sleep, calm attention shifts inside",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        4,
+        -3.2,
+        1.8
+      ],
+      "targetXYZ": [
+        4.1,
+        -1,
+        0.4
+      ],
+      "height": 1.8,
+      "fieldOfView": 42,
+      "framing": "close gently elevated paired sleeping faces",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          3.6,
+          -1,
+          0
+        ],
+        "bodyFacing": "Scooby",
+        "headFacing": "rest",
+        "eyeTarget": "closed",
+        "pose": "seated eyes closed",
+        "contacts": "seat rock two paws belly feet ground",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          4.6,
+          -1,
+          0
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "rest",
+        "eyeTarget": "closed",
+        "pose": "curled asleep chin paws",
+        "contacts": "body ground",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          1,
+          -0.8,
+          0
+        ],
+        "bodyFacing": "threshold",
+        "headFacing": "threshold",
+        "eyeTarget": "threshold",
+        "pose": "walking to door",
+        "contacts": "feet path",
+        "visibility": "offscreen"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0,
+          -0.3,
+          0
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "waiting",
+        "contacts": "feet ground",
+        "visibility": "offscreen"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "both eyes closed; dappled midmorning",
+    "transition": "farewell to quiet shared sleeping insert then inherited doorway",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "ready",
+  "completedAt": "2026-09-21T22:14:45.836444+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c600-14b2-7cd0-a2bc-99b2f7afd2dd/exec-ef86a0de-9be5-4845-b0a9-fd07cca8d5ac.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-025-v2.png",
+  "sha256": "b400c8b6c114518b737cd5c8d6734672c66c21dc26470775fd775df9e1eedc69",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator actual full-image PASS: Papa and Scooby sleep with eyes fully closed and appealing soft animated cream/amber facial forms. Papa two forepaws rest on belly, two hindfeet forward; dog chin contacts two forepaws, one curled rump tail, rear paws partly hidden and not certified. V2 removes misplaced staff and summit hill; moss rock, fern and continuous forest now match far-right rest station. No doorway in intimate crop. Root independent review pending.",
+  "alt": {
+    "en": "Papa and Scooby sleep side by side against a mossy rock, their faces relaxed in the dappled morning sunshine.",
+    "ru": "Папа и Скуби спят рядом у мшистого камня, расслабив лица в пятнистом утреннем солнечном свете.",
+    "es": "Papá y Scooby duermen juntos junto a una roca musgosa, con los rostros relajados bajo la luz moteada de la mañana."
+  },
+  "startedAt": "2026-09-21T22:13:57.316Z",
+  "finishedAt": "2026-09-21T22:14:31.216Z",
+  "timingSource": {
+    "source": "actual session tool-call and matching result timestamps",
+    "callId": "call_OQb1HpHxG9LMJM50mDMbZdyD",
+    "scope": "functions.exec containing request read and awaited built-in imagegen; includes orchestration overhead, not claimed model-internal latency"
+  }
+}

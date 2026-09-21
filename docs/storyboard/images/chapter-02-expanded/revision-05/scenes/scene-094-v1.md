@@ -1,0 +1,7 @@
+# scene-094-v1
+
+REJECT full view: excellent hug and attentive dog, but stray floating glasses beside staff and faint gold spectacle arm on Papa temple. Remove accessories; Elder offscreen in close framing.
+
+## Exact prompt
+
+Use case: illustration-story. One landscape1536x1024. Reference1 is current accepted cast/style/geography, reference2 established facial rendering. Create NEW closer child-height camera of same clearing: intimate emotional hug between small PinPin and much broader Papa. Papa crouches with both hindfeet on grass, both arms gently enclose child's lower back. Child two hindfeet on ground, near forepaw against Papa chest, turns smiling face UP directly into Papa eyes. Papa looks DOWN directly into child's eyes. Their faces dominate central frame, bright cream facial planes, clear hazel irises, soft stylized grouped quills. Never dark eye mask or photographic PBR. Papa mature rounded adult, PinPin smaller youthful reddish quills. Elder gold spectacles softly out of focus at left doorway, Scooby's attentive animated face partly visible background right, looking at hug. No mother/baby. Staff left portal, fern right, rest moss rock beyond fern. Camera0.75child height, medium close shot,38degree approximate view, natural lower-body crop allowed but child feet preferably visible. This is not full-cast lineup; foreground emotional contact matters. Bright daytime soft bounced fill. No text.

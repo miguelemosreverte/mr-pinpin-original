@@ -1,0 +1,122 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-018",
+  "version": 2,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:21:16.192130+00:00",
+  "prompt": "Targeted contact edit of image1. Preserve camera, ALL expressive faces and eyes, Papa identity, Scooby attentive upward gaze/head/body/paws/tail, tree background, stone, lighting exactly. Correct only small child PinPin body seating and Papa supporting arm. PinPin must sit astride Scooby just behind withers with BODY FACING FORWARD TOWARD DOG HEAD/right. His head alone turns back/up LEFT toward Papa as already. His NEAR hindleg drapes down visible near side of dog, FAR hindleg passes over far side and is OCCLUDED, not two feet together on top of dog. His two little forepaws rest forward on Scooby shoulder fur, not on own belly. Papa behind child wraps one forearm across lower child torso, other forepaw braces dog back. Keep child small. Image2 is riding contact geometry ONLY, not style. Exactly two child forepaws and two child hindfeet total; hide far hindfoot naturally. No new actors or glasses. Maintain the beautiful softer animated style in image1.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-018-v1.png",
+      "role": "EDIT TARGET: correct child astride seat and supporting forearm only",
+      "sha256": "a63918343886fecce8e4aeb29bdee2f92588a9c0b4fda3f8dacbbfa858549beb"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/riding-tandem-v3.png",
+      "role": "CONTACT GEOMETRY only; body forward and hindlegs astride, child paws on dog, Papa support",
+      "sha256": "f5977afa36440ad9b11e8a7554296a114e0c733f1d771b1be4781e0a4d36c176"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 18,
+    "id": "elder-r5-018",
+    "purpose": "Establish stopped dog stone and doorway before dismount",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        -4,
+        -7,
+        1.1
+      ],
+      "targetXYZ": [
+        -1,
+        -2,
+        1
+      ],
+      "height": 1.1,
+      "fieldOfView": 57,
+      "framing": "medium wide side-three-quarter",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -3,
+          0
+        ],
+        "bodyFacing": [
+          -0.5,
+          -2,
+          0
+        ],
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "crouched still",
+        "contacts": "belly low front paws planted",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          -2.7,
+          1.3
+        ],
+        "bodyFacing": "threshold",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "front seat",
+        "contacts": "straddle back both paws shoulder",
+        "visibility": "visible"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -1,
+          -3.3,
+          1.3
+        ],
+        "bodyFacing": "threshold",
+        "headFacing": "stone",
+        "eyeTarget": "stone",
+        "pose": "rear seat",
+        "contacts": "arm supports child other dog",
+        "visibility": "visible"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "dog crouches next to stone both riders seated",
+    "transition": "reveal to legible physical staging",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "requested"
+}

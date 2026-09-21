@@ -1,0 +1,27 @@
+{
+  "id": "papa-style-v1",
+  "prompt": "Use case: illustration-story. PREPRODUCTION isolated Papa character reference, single1536x1024 landscape on ivory floor.\nImage1 LEFT character is PAPA, a mature adult HEDGEHOG with light cream face and grey-brown tipped quills. Extract only this LEFT HEDGEHOG identity, NOT the dog. Image2 controls the established soft animated-feature book rendering, but DO NOT copy Elder glasses or child age.\nShow TWO separated full-body views of the SAME adult Papa hedgehog: front three-quarter at left, gentle side-three-quarter at right. Each view is Papa alone, standing relaxed on two hindfeet with two small forepaws near belly. Same identity/proportions across views. Sturdy elongated mature torso, broad warm cream muzzle, rounded ears, dark grey-brown tipped quill cap/back. Light cream fur around eyes, readable hazel irises surrounding pupils, softly shaped lids, no dark mask/black button eyes. Match approved image1 Papa exactly: softer cheek forms and grouped quills, rich dimensional fur with gentle warm fill, not photographic animal texture.\nPapa must read as a father, not a baby: torso larger relative head, wider muzzle, solid haunches. Do not add wrinkles, dark eye sockets or heavy brows to convey age. Hedgehog anatomy only: little hedgehog nose/snout, short rounded ears and quills. Absolutely no dog head, dog muzzle, dog ears, dog coat or tail; no other species anywhere. No spectacles, clothes, cane, collar, props, text or panels. Clearly separated two reference views with space between, complete paws and quills within margins.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v2.png",
+      "role": "LEFT hedgehog Papa identity and approved style ONLY; dog excluded",
+      "sha256": "a2a9d78052a91b1e0b0aa38fd9d7dc16d77e10761d09203e4f29c1dfb8a12d36"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "finished book rendering only; no Elder glasses",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:19:24.815Z",
+  "output": "images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-59367ac2-9a0e-40b2-878d-711973b04142.png",
+  "startedAt": "2026-09-21T22:20:10.497Z",
+  "finishedAt": "2026-09-21T22:20:50.494Z",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344",
+  "status": "internally-reviewed",
+  "review": "Root actual full-image PASS isolated Papa identity: two mature robust hedgehog views, cream open faces and readable hazel irises, no glasses/dog hybrid, two forepaws/two grounded feet per view. Actual background is dark brown vignette rather than requested ivory; NOT background/lighting authority. Views differ mildly rather than full profile. Useful identity-only extraction to prevent dog/Elder feature transfer; keep scene lighting from its actual environment."
+}

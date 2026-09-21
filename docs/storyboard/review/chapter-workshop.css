@@ -9,3 +9,5 @@
 @media(prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 @media(max-width:600px){.revision-control{flex:1 1 100%;order:-1;justify-content:space-between}.revision-control select{max-width:270px;font-size:12px}.comparison-panel .production-text{font-size:17px;margin-bottom:12px}}
 @media print{.workshop-header,.workshop-intro,.workshop-controls,.load-status,.scene-navigation,footer{display:none!important}main{padding:0}.reading-scene{break-inside:avoid}.picture-frame{margin:0!important}.narration{font-size:15pt}.reading-sequence{break-before:page}}
+
+.camera-transform{margin:1rem 0;padding:1rem;border:1px solid var(--line,#d8dbce);border-radius:8px}.camera-transform summary{cursor:pointer}.camera-transform pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.8rem;max-height:34rem;overflow:auto}

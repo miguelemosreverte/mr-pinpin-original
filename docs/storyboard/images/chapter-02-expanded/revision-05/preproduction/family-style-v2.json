@@ -1,0 +1,22 @@
+{
+  "id": "family-style-v2",
+  "prompt": "Use case: precise-object-edit. Image1 is a shared family style study. Preserve all five character designs, warm animated illustrated materials, light cream Papa face and readable eyes, Mama supporting baby, dog markings/ears/muzzle/curledtail, soft ivory floor and 1536x1024 canvas. Correct ONLY relative scale and necessary gaze/spacing.\nThe hedgehogs are MUCH TOO LARGE against Scooby. Keep Scooby at exactly his current size and position, full body and four paws on baseline aroundy880. Reduce all hedgehogs substantially: Papa full standing height about300pixels; Mama about280pixels; PinPin about185pixels. Papa about1.6 times PinPin height, NOT over twice his height. Baby remains about half child body length, cradled byMama, not a fifth standing hedgehog. Keep all hedgehog feet on same baseline as dog's paws. Arrange Papa, Mama/baby, PinPin across the left half with small spaces; leave dog at right. Dog shoulder now approximately2.7 times PinPin standing height, adult hedgehogs clearly tiny next to him. Do not enlarge Papa's head to compensate: retain adult longer torso/broader muzzle versus child's larger head/shorter body. No dark mask/button eyes may return.\nRe-angle pupils/head only enough for scaled scene: Papa looks down/right atPinPin, PinPin looks up/left toPapa, Mama/baby look at eachother, Scooby looks down/left toward littlePinPin. Preserve body postures and correct visible paw counts, no additional props/text/actors. This is a strict common-ground-plane scale repair, not a new style or new breed.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v1.png",
+      "role": "edit target: preserve identities/style; correct scale",
+      "sha256": "6c0b12f88d9d806c789b79ede5c12158161b94b956c1a557148e113a4ef93a26"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:09:10.234Z",
+  "output": "images/chapter-02-expanded/revision-05/preproduction/family-style-v2.png",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-1217a1a5-0b3f-4256-a15b-132be177acf4.png",
+  "startedAt": "2026-09-21T22:09:29.689Z",
+  "finishedAt": "2026-09-21T22:09:51.584Z",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "b89525a0100fe064dffcee95295e9b0dd1f1371a2359e6e698565f20d52fc678",
+  "status": "held-for-scale",
+  "review": "Root full-image: improved but hedgehogs still larger relative dog than accepted old scale authority. Adult-child distinction readable and material style good. Close identity usable, not selected common-scale authority."
+}

@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-022",
+  "version": 1,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:11:17.956363+00:00",
+  "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 3:2 finished children’s-book illustration, no text or panels.\nSTYLE LOCK: closely match the soft expressive animated children’s-book forms in references 1 and 2. Warm cream facial planes, open readable hazel/amber iris around separate pupil, broad gentle eyelids, rounded appealing muzzle, grouped sculpted fur. Papa is a mature broad adult about 1.6 times PinPin height, NOT the child duplicated at same scale. Dog shoulder about 2.7 child heights, warm dark-brindled brown, white chest bib, grey-cream muzzle, folded triangular ears, curled rump tail. Dog expression attentive and emotionally present. No black button eyes, dark face masks, hard shiny skin, photographic animal anatomy/detail or live-action fur. All unclothed animal characters. Only Elder has glasses.\nREFERENCE ROLES: Image 1: PRIMARY Elder and PinPin identity/style reference; exactly these two hedgehogs; Image 2: AUTHORITATIVE book style, Elder and PinPin identity, expressive iris/pupil eyes, soft animation shapes; Image 3: ENVIRONMENT GEOGRAPHY ONLY; root portal, left staff/boulder and path, right fern, sunny patch beyond fern.\nNARRATIVE AND CAMERA: A close two-shot at PinPin’s eye height. The Elder has turned away from Papa and bent toward the child, silver-quilled expressive face and gold round glasses at right, PinPin’s curious cream face/chestnut quills at left. True reciprocal pupil alignment: Elder gazes DOWN-LEFT into PinPin eyes; PinPin looks UP-RIGHT into Elder eyes. Their faces and small forepaw gestures carry the image, root-door background softly recedes. Elder two open gentle paws; child two paws relaxed near belly. Papa is standing nearby OFFSCREEN LEFT speaking his introduction; dog also offscreen. No large looming adult, no duplicate father, no labels. Natural invitation to conversation.\nPER-ACTOR/CAMERA PLAN (approximate illustrative geometry, not labels to render): {\"previousNumber\":22,\"id\":\"elder-r5-022\",\"purpose\":\"Elder turns from Papa to meet child personally\",\"frame\":\"E\",\"camera\":{\"positionXYZ\":[-2,-2.6,0.8],\"targetXYZ\":[-0.1,-0.8,0.8],\"height\":0.8,\"fieldOfView\":40,\"framing\":\"close two-shot at child eye level, faces dominate\",\"axisSide\":\"approach/front negativeY; travel rear negativeY\"},\"actors\":[{\"name\":\"PinPin\",\"positionXYZ\":[-0.5,-1.3,0],\"bodyFacing\":\"Elder\",\"headFacing\":\"Elder\",\"eyeTarget\":\"Elder\",\"pose\":\"standing curious\",\"contacts\":\"feet ground two forepaws near belly\",\"visibility\":\"visible\"},{\"name\":\"Elder\",\"positionXYZ\":[0.3,-0.3,0],\"bodyFacing\":\"PinPin\",\"headFacing\":\"PinPin\",\"eyeTarget\":\"PinPin\",\"pose\":\"bends head toward child\",\"contacts\":\"two feet ground palms gentle open\",\"visibility\":\"visible\"},{\"name\":\"Papa\",\"positionXYZ\":[-1.4,-1.3,0],\"bodyFacing\":\"Elder\",\"headFacing\":\"PinPin\",\"eyeTarget\":\"PinPin\",\"pose\":\"standing nearby\",\"contacts\":\"feet ground\",\"visibility\":\"offscreen left\"},{\"name\":\"Scooby\",\"positionXYZ\":[-1,-3,0],\"bodyFacing\":\"threshold\",\"headFacing\":\"Papa\",\"eyeTarget\":\"Papa\",\"pose\":\"lying\",\"contacts\":\"body ground\",\"visibility\":\"offscreen\"}],\"landmarks\":{\"threshold\":[0,0,0],\"staffBoulder\":[-1.6,-0.2,0],\"fern\":[1.4,-0.3,0],\"restRock\":[4,-1,0],\"mountingStone\":[-2,-3,0.4]},\"state\":\"Elder pupils lowered to child, child pupils raised\",\"transition\":\"adult familiarity to intimate invitation, no duplicate triangular wide\",\"status\":\"planned-awaiting-cast-gate\"}\nPhysical discipline: one head and two forepaws/two hindfeet per hedgehog; dog exactly four legs and one tail. Naturally occluded limbs stay hidden, do not expose extra limbs to satisfy a count. Actual contact and believable balance. Preserve morning daytime light and scene landmarks; no clothes, tack, harness, captions, diagrams, arrows, watermarks. This is a cinematic story moment, not a character-sheet montage.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "PRIMARY Elder and PinPin identity/style reference; exactly these two hedgehogs",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "PRIMARY Elder and PinPin identity/style reference; exactly these two hedgehogs",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/elder-exterior-rest-plate-v1.png",
+      "role": "ENVIRONMENT GEOGRAPHY ONLY; root portal, left staff/boulder and path, right fern, sunny patch beyond fern",
+      "sha256": "6295a3c64ad0ad7ff1634a046201804f3a5885c759419538247be28074b0500b"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 22,
+    "id": "elder-r5-022",
+    "purpose": "Elder turns from Papa to meet child personally",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        -2,
+        -2.6,
+        0.8
+      ],
+      "targetXYZ": [
+        -0.1,
+        -0.8,
+        0.8
+      ],
+      "height": 0.8,
+      "fieldOfView": 40,
+      "framing": "close two-shot at child eye level, faces dominate",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -0.5,
+          -1.3,
+          0
+        ],
+        "bodyFacing": "Elder",
+        "headFacing": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "standing curious",
+        "contacts": "feet ground two forepaws near belly",
+        "visibility": "visible"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0.3,
+          -0.3,
+          0
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "bends head toward child",
+        "contacts": "two feet ground palms gentle open",
+        "visibility": "visible"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -1.4,
+          -1.3,
+          0
+        ],
+        "bodyFacing": "Elder",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "standing nearby",
+        "contacts": "feet ground",
+        "visibility": "offscreen left"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -3,
+          0
+        ],
+        "bodyFacing": "threshold",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "lying",
+        "contacts": "body ground",
+        "visibility": "offscreen"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "Elder pupils lowered to child, child pupils raised",
+    "transition": "adult familiarity to intimate invitation, no duplicate triangular wide",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "ready",
+  "completedAt": "2026-09-21T22:12:37.672958+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c600-14b2-7cd0-a2bc-99b2f7afd2dd/exec-7e925262-89b8-4c82-a651-1e841bc0cd90.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-022-v1.png",
+  "sha256": "0bc549bcf634f26c84dc665d5dd2e12b174673d7b15c1747a864f762922d5396",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator actual full-image PASS: close child-height two-shot, Elder bends with pupils down-left meeting child up-right gaze. Exactly two distinct hedgehogs, each two forepaws and two grounded hindfeet; gold glasses only Elder. Cream facial planes, separate amber irises/pupils and soft grouped quills match established book style. Staff/boulder left, root portal middle and fern right remain. Papa/dog deliberately offscreen. Image is a closer two-shot rather than face-only crop; full-body contacts strengthen invitation clarity.",
+  "alt": {
+    "en": "The Elder bends toward PinPin outside the root doorway, meeting his curious eyes with a welcoming smile and open paws.",
+    "ru": "Старейшина наклоняется к Пин-Пину у входа между корнями, встречая его любопытный взгляд доброй улыбкой и раскрытыми лапами.",
+    "es": "El Anciano se inclina hacia PinPin ante la entrada entre raíces, encontrando su mirada curiosa con una sonrisa y las patas abiertas."
+  },
+  "startedAt": "2026-09-21T22:11:28.119Z",
+  "finishedAt": "2026-09-21T22:12:20.477Z",
+  "timingSource": {
+    "source": "actual session tool-call and matching result timestamps",
+    "callId": "call_AkEQMvtx6mJYfOwym84vdMVQ",
+    "scope": "functions.exec containing request read and awaited built-in imagegen; includes orchestration overhead, not claimed model-internal latency"
+  }
+}

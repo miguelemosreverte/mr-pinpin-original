@@ -1,0 +1,151 @@
+{
+  "id": "scene-008-v3",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 children’s book illustration, no text/border/panels.\nInput roles: Image1 is the established animated-feature storybook rendering authority. Image2 is ACCEPTED shared family identity and scale. Image3 controls ONLY environment/props/contact geometry; IGNORE its old photographic faces/rendering and old camera, use the NEW SHOT BELOW.\nMatch established Elder/PinPin dimensional animated storybook illustration, readable expressive irises, designed soft grouped fur, rounded forms, warm light with soft fill; no photographic pet/human rendering or black eye mask. Approved shared cast controls identities and approximate common scale. Papa is the mature broad-bodied HEDGEHOG at far LEFT in image2, cream face/eye surrounds, hazel iris/pupil separation, dark brown tipped quills, no spectacles. PinPin is the SMALL standing chestnut HEDGEHOG child; Mama the copper-quilled ADULT HEDGEHOG holding infant PomPom. Scooby is the LARGE DOG at right, amber eyes, warm brindle brown, cream-grey muzzle, white chest, folded ears/curled rump tail. Species must never swap. Adult hedgehog about1.6 child height, dog shoulder2.7child height. No clothing/reins/saddle.\nSHOT: A genuinely close single-Papa reaction, not the previous family two-shot. Papa head and upper chest dominate, warm light cream eye surrounds, readable hazel irises aimed down toward offcamera PinPin near camera-left. One attached paw lowers cup until base meets tabletop at bottom edge; other paw rests near bowl. Brows lift in interested surprise. Child/Mama/baby entirely outside crop at existing seats. Cup and face both visible.\nFixed table left of green door, cupboards left, stove right; inner door hardware reversed appropriately. Do not move seats or mirror furniture to cheat reverse camera. Three cups/individual porridge bowls, serving bowl and bread. Only hedgehogs appear in kitchen; DOG stays outdoors and MUST NOT APPEAR. Preserve plain beige speckled cups/bowls, plain porridge WITHOUT berries or leaf patterns, brown teapot and bread rolls from image3. Papa is adult HEDGEHOG, never a dog. Interior door hinges RIGHT/knobLEFT.\nPLANNED CAMERA AND ACTORS (approximate staging cues, not text in image): {\"frameId\": \"K\", \"camera\": {\"positionXYZ\": [1.8, -0.9, 1.4], \"targetXYZ\": [0.7, 0.8, 1.3], \"height\": 1.4, \"framing\": \"tight Papa face and lowering cup; child fully offscreen\", \"approximateFieldOfViewDegrees\": 28, \"axisSide\": \"K +X of Papa-child dialogue axis\"}, \"actors\": {\"Mama\": {\"positionXYZ\": [-1.2, 0, 0], \"bodyFacingTarget\": \"table\", \"headFacingTarget\": \"Papa\", \"eyeTarget\": \"Papa\", \"pose\": \"seated with infant\", \"limbsContactSupport\": \"seat supports body; one forearm supports baby; other on table\", \"visibility\": \"offscreen left seat\"}, \"PomPom\": {\"positionXYZ\": [-1.1, 0, 0.7], \"bodyFacingTarget\": \"Mama\", \"headFacingTarget\": \"Mama\", \"eyeTarget\": \"Mama\", \"pose\": \"held infant\", \"limbsContactSupport\": \"Mama forearm and lap\", \"visibility\": \"offscreen held by Mama\"}, \"Papa\": {\"positionXYZ\": [0.7, 0.8, 0], \"bodyFacingTarget\": \"PinPin\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"attentive listening, lowering cup\", \"limbsContactSupport\": \"one paw puts cup on table, other relaxed near bowl\", \"visibility\": \"visible\"}, \"PinPin\": {\"positionXYZ\": [0.9, -0.8, 0], \"bodyFacingTarget\": \"table\", \"headFacingTarget\": \"PapaCup\", \"eyeTarget\": \"PapaCup\", \"pose\": \"seated watching pour\", \"limbsContactSupport\": \"boosted chair; two paws table\", \"visibility\": \"offscreen at fixed near seat\"}}, \"staticLandmarks\": {\"table\": [0, 0, 0.85], \"greenDoor\": [0, 3, 0], \"leftCupboards\": [-3, 1, 0], \"rightStove\": [3, 1, 0], \"PapaCup\": [0.55, 0.6, 0.85], \"childBowl\": [0.65, -0.6, 0.85]}, \"objectStateBefore\": \"cup raised in previous shot\", \"objectStateAfter\": \"cup touches tabletop; Papa eyebrows curious\"}.\nPrioritize purposeful gaze, connected forepaws/feet, soft animated face/materials and the stated new framing. No additional actors or duplicated limbs. Warm morning daylight with soft cream fill on faces. All offscreen characters remain outside crop, do not force every reference-sheet figure into image.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "sole rendering and expressive face style authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "accepted family identity and scale, change gaze/pose per shot",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-008-v2.png",
+      "role": "environment, props and physical contact geometry ONLY; not old character rendering or old camera",
+      "sha256": "cc41892590b10acb2b160e98a3b46437a05f4d2d7375480a31bd4fb5b7c0fc2a"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:16:29.898014+00:00",
+  "transformRecord": {
+    "previousNumber": 8,
+    "id": "elder-r5-008",
+    "purpose": "A small reaction: Papa gives child full attention and lowers cup",
+    "frameId": "K",
+    "camera": {
+      "positionXYZ": [
+        1.8,
+        -0.9,
+        1.4
+      ],
+      "targetXYZ": [
+        0.7,
+        0.8,
+        1.3
+      ],
+      "height": 1.4,
+      "framing": "tight Papa face and lowering cup; child fully offscreen",
+      "approximateFieldOfViewDegrees": 28,
+      "axisSide": "K +X of Papa-child dialogue axis"
+    },
+    "actors": {
+      "Mama": {
+        "positionXYZ": [
+          -1.2,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "seated with infant",
+        "limbsContactSupport": "seat supports body; one forearm supports baby; other on table",
+        "visibility": "offscreen left seat"
+      },
+      "PomPom": {
+        "positionXYZ": [
+          -1.1,
+          0,
+          0.7
+        ],
+        "bodyFacingTarget": "Mama",
+        "headFacingTarget": "Mama",
+        "eyeTarget": "Mama",
+        "pose": "held infant",
+        "limbsContactSupport": "Mama forearm and lap",
+        "visibility": "offscreen held by Mama"
+      },
+      "Papa": {
+        "positionXYZ": [
+          0.7,
+          0.8,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "attentive listening, lowering cup",
+        "limbsContactSupport": "one paw puts cup on table, other relaxed near bowl",
+        "visibility": "visible"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          0.9,
+          -0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "PapaCup",
+        "eyeTarget": "PapaCup",
+        "pose": "seated watching pour",
+        "limbsContactSupport": "boosted chair; two paws table",
+        "visibility": "offscreen at fixed near seat"
+      }
+    },
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCupboards": [
+        -3,
+        1,
+        0
+      ],
+      "rightStove": [
+        3,
+        1,
+        0
+      ],
+      "PapaCup": [
+        0.55,
+        0.6,
+        0.85
+      ],
+      "childBowl": [
+        0.65,
+        -0.6,
+        0.85
+      ]
+    },
+    "objectStateBefore": "cup raised in previous shot",
+    "objectStateAfter": "cup touches tabletop; Papa eyebrows curious",
+    "previousAction": "child lake story",
+    "nextAction": "Papa suggests familiar Elder",
+    "reasonForShotChange": "cut to reaction, not duplicated family conversation wide",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "“And my golden quill helped,” he added. Papa put down his cup and listened."
+      ],
+      "ru": [
+        "«И моя золотая иголка помогла», — добавил он. Папа поставил чашку и стал слушать."
+      ],
+      "es": [
+        "«Y mi púa dorada ayudó», añadió. Papá dejó su taza y escuchó."
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-008-v2.png",
+    "sceneDirection": "A genuinely close single-Papa reaction, not the previous family two-shot. Papa head and upper chest dominate, warm light cream eye surrounds, readable hazel irises aimed down toward offcamera PinPin near camera-left. One attached paw lowers cup until base meets tabletop at bottom edge; other paw rests near bowl. Brows lift in interested surprise. Child/Mama/baby entirely outside crop at existing seats. Cup and face both visible."
+  },
+  "status": "planned-full-cast-gate"
+}

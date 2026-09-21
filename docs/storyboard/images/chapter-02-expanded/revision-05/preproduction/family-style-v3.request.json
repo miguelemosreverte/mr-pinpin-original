@@ -1,0 +1,23 @@
+{
+  "id": "family-style-v3",
+  "prompt": "Use case: style-transfer. Image1 is the exact EDIT TARGET. Keep its composition, every character's bounding size, ground contact, pose and position EXACTLY. Do not grow any hedgehog. The dog must remain much larger than the tiny family as in image1. All five actors and warm ivory background remain.\nChange only how Papa and Scooby are rendered. Use image2 for Papa/Scooby NEW approved-type facial and material design ONLY, NOT image2's relative sizes/composition. Papa in the small LEFT position of image1 needs image2's bright cream face, hazel iris/pupil separation, soft shaped eyelids, broader mature muzzle, robust torso; remove image1's dark mask/button eyes. Retain his exact small height relative dog and his grey-brown tipped quills. Mama/baby/PinPin in image1 retain their exact identities, poses, sizes and positions. Papa stays about1.6 times PinPin's height. Dog shoulder stays about2.7 times PinPin height as image1.\nScooby keeps image1's exact whole-body silhouette and position, short folded ears, curled rump tail, markings and white bib, but redraw facial forms/coat as image2's soft appealing animated dog: designed amber eyes, rounded muzzle/cheeks, grouped coat, gentle nose shading. No photorealistic hair/skin. Image3 is the absolute finished-book style authority for eyes, designed fur/quills and dimensional materials. Match that animated illustration language.\nWarm soft fill keeps tiny Papa's eyes readable at full-sheet size. The dog can direct eyes gently down-left toward PinPin without changing whole-body position; no unrelated camera stare. No dark contours, plastic gloss, new actors, text, accessories, layout/scale change.1536x1024 single landscape study.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/family-scale-v3.png",
+      "role": "edit target: exact scale/group geometry",
+      "sha256": "501e990a82416820d66249f3f90d8075ababe23811f5ff8608f710a8a93718bb"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v2.png",
+      "role": "style/face only, NOT scale",
+      "sha256": "b89525a0100fe064dffcee95295e9b0dd1f1371a2359e6e698565f20d52fc678"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "absolute finished illustration style authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:12:26.706Z"
+}

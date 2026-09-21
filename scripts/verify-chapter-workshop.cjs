@@ -22,14 +22,14 @@ function chapterFolder(id, revision=1) {
   return path.join(base,'production/chapters-02-04',...(revision===1?[]:[`revision-0${revision}`]),id);
 }
 function chaptersForRevision(revision=1) {
-  if(![1,2,3,4].includes(revision))throw Error('Unknown revision');
+  if(![1,2,3,4,5].includes(revision))throw Error('Unknown revision');
   return revision>=3?['elder']:Object.keys(chapters);
 }
 function parseArgs(args) {
   const flags=new Set();let revision=1,seenRevision=false;
   for(let i=0;i<args.length;i++){
     if(args[i]==='--revision'){
-      if(seenRevision||!['1','2','3','4'].includes(args[i+1]))throw Error('--revision requires 1, 2, 3 or 4, once');
+      if(seenRevision||!['1','2','3','4','5'].includes(args[i+1]))throw Error('--revision requires 1, 2, 3, 4 or 5, once');
       revision=Number(args[++i]);seenRevision=true;
     }else if(['--allow-pending','--self-test','--json'].includes(args[i]))flags.add(args[i]);
     else throw Error(`Unknown argument: ${args[i]}`);
@@ -42,6 +42,27 @@ function check(condition, message) { if (!condition) errors.push(message); }
 function unavailable(message) { pending.push(message); }
 function localized(value, label, issues) {
   for (const lang of languages) if (!isText(value?.[lang])) issues.push(`${label}.${lang}: nonempty translation required`);
+}
+function validateCameraTransform(record,label) {
+  const issues=[], ensure=(ok,message)=>{if(!ok)issues.push(`${label}: ${message}`);};
+  const xyz=value=>Array.isArray(value)&&value.length===3&&value.every(Number.isFinite);
+  ensure(record?.schemaVersion===1,'camera schemaVersion1 required');
+  for(const key of ['purpose','frameId','units'])ensure(isText(record?.[key]),`camera ${key} required`);
+  const camera=record?.camera;
+  ensure(xyz(camera?.positionXYZ)&&xyz(camera?.targetXYZ),'camera position and target XYZ required');
+  ensure(Number.isFinite(camera?.height)&&camera.height>=0,'camera height required');
+  ensure(Number.isFinite(camera?.fieldOfViewDegrees)&&camera.fieldOfViewDegrees>0&&camera.fieldOfViewDegrees<180,'valid camera field of view required');
+  for(const key of ['framing','axisSide'])ensure(isText(camera?.[key]),`camera ${key} required`);
+  ensure(Array.isArray(record?.actors)&&record.actors.length>0,'actor records required');
+  const names=new Set();
+  for(const actor of record?.actors||[]){
+    ensure(isText(actor.name)&&!names.has(actor.name),'unique actor name required');names.add(actor.name);
+    ensure(xyz(actor.positionXYZ),`${actor.name} position required`);
+    for(const key of ['bodyFacingTarget','headFacingTarget','eyeTarget'])ensure(isText(actor[key])||xyz(actor[key]),`${actor.name} ${key} required`);
+    for(const key of ['pose','limbsContactSupport','visibility'])ensure(isText(actor[key]),`${actor.name} ${key} required`);
+  }
+  for(const key of ['staticLandmarks','objectStates','transition'])ensure(record?.[key]&&typeof record[key]==='object'&&Object.keys(record[key]).length>0,`camera ${key} required`);
+  return issues;
 }
 function validateManifest(data, id) {
   const issues=[];
@@ -86,6 +107,7 @@ function validateManifest(data, id) {
     ensure(isText(scene.source?.note),`${label}: source/adaptation note required`);
     for(const field of ['camera','continuity','review'])ensure(isText(scene[field]),`${label}: ${field} required`);
     ensure(typeof scene.reused==='boolean',`${label}: reused must be explicit boolean`);
+    if(scene.cameraTransform!==undefined)issues.push(...validateCameraTransform(scene.cameraTransform,label));
   }
   for(const sequenceID of sequenceIDs)ensure(usedSequences.has(sequenceID),`${id}/${sequenceID}: declared sequence has no scenes`);
   const referenceIDs=new Set();
@@ -162,7 +184,7 @@ function auditChapter(id,revision=1){
   if(data.miniature){const miniature=typeof data.miniature==='string'?data.miniature:data.miniature.src;inspectAsset(miniature,{label:`${id}/miniature`,generated:true});}
   for(const reference of data.preproduction||[]){stats.preproduction++;inspectAsset(reference.src,{label:`${id}/preproduction/${reference.id}`,generated:true,preproduction:true});}
   for(const scene of data.scenes||[]){
-    stats.scenes++;if(isPending(scene.review))unavailable(`${id}/${scene.id}: visual review still pending`);
+    stats.scenes++;if(revision===5&&scene.src.includes('/revision-05/scenes/'))check(!!scene.cameraTransform,`${id}/${scene.id}: new revision05 scene requires camera/actor record`);if(isPending(scene.review))unavailable(`${id}/${scene.id}: visual review still pending`);
     inspectAsset(scene.src,{label:`${id}/${scene.id}`,legacy:scene.reused===true,generated:scene.reused!==true,expected:scene});
     if(scene.before)inspectAsset(scene.before,{label:`${id}/${scene.id}/before`,legacy:true});
   }
@@ -173,6 +195,7 @@ function selfTest(){
   const localized={ru:'тест',en:'test',es:'prueba'};
   const data={schemaVersion:1,id:'elder',sourceChapter:'chapter-02',status:'proposed',title:localized,summary:localized,cover:{},preproduction:[],editorialNotes:[],continuityNotes:[],sequences:[{id:'a',title:localized,purpose:'Validation fixture only.'}],scenes:[{id:'test-01',sequence:'a',src:'images/test.png',width:1536,height:1024,alt:localized,text:{ru:['тест'],en:['test'],es:['prueba']},source:{kind:'new',blocks:[],note:'In-memory validation fixture; never rendered in workshop.'},camera:'camera',continuity:'continuity',review:'Inspected.',reused:false}]};
   assert.deepEqual(validateManifest(data,'elder'),[]);
+  assert.ok(validateCameraTransform({},'fixture').length>0);
   for(const name of ['floorplan.svg','location-plan-v2.png']){assert.equal(isPlanningDiagram(name),true);assert.deepEqual(validateManifest({...data,planningDiagram:name},'elder'),[]);}
   for(const name of ['../floorplan.svg','sub/floorplan.svg','https://example.com/x.svg','/x.png','x.svg?download','%2e%2e.svg','x.html','x.svg#part','x\\y.png']){assert.equal(isPlanningDiagram(name),false);assert.ok(validateManifest({...data,planningDiagram:name},'elder').some(issue=>issue.includes('planningDiagram')));}
   let changed=structuredClone(data);changed.scenes.push(structuredClone(changed.scenes[0]));assert.ok(validateManifest(changed,'elder').some(issue=>issue.includes('duplicate scene')));
@@ -195,11 +218,14 @@ function selfTest(){
   assert.equal(chapterFolder('elder',4),path.join(base,'production/chapters-02-04/revision-04/elder'));
   assert.deepEqual(chaptersForRevision(),['elder','academy']);assert.deepEqual(chaptersForRevision(2),['elder','academy']);assert.deepEqual(chaptersForRevision(3),['elder']);
   assert.deepEqual(chaptersForRevision(4),['elder']);
-  assert.throws(()=>chapterFolder('../elder',2));assert.throws(()=>chapterFolder('academy',3));assert.throws(()=>chapterFolder('academy',4));assert.throws(()=>chaptersForRevision(5));
+  assert.deepEqual(chaptersForRevision(5),['elder']);
+  assert.throws(()=>chapterFolder('academy',5));
+  assert.equal(parseArgs(['--revision','5','--json']).revision,5);
+  assert.throws(()=>chapterFolder('../elder',2));assert.throws(()=>chapterFolder('academy',3));assert.throws(()=>chapterFolder('academy',4));assert.throws(()=>chaptersForRevision(6));
   assert.equal(parseArgs([]).revision,1);assert.equal(parseArgs(['--revision','2','--json']).revision,2);
   assert.equal(parseArgs(['--revision','3','--allow-pending']).revision,3);
   assert.equal(parseArgs(['--revision','4','--allow-pending']).revision,4);
-  for(const args of [['--revision'],['--revision','../2'],['--revision','5'],['--revision','4','--revision','3'],['--revision','3','--revision','2'],['--revision','2','--revision','1'],['2']])assert.throws(()=>parseArgs(args));
+  for(const args of [['--revision'],['--revision','../2'],['--revision','6'],['--revision','4','--revision','3'],['--revision','3','--revision','2'],['--revision','2','--revision','1'],['2']])assert.throws(()=>parseArgs(args));
   const originalDesign={references:[],referenceMode:'original-design',referenceRationale:'First authored mural design; no image references supplied.'};
   assert.equal(referenceListValid(originalDesign,true),true,'honest original-design preproduction allowed');
   assert.equal(referenceListValid(originalDesign,false),false,'same empty-reference record rejected for scene');
@@ -212,7 +238,7 @@ function selfTest(){
   console.log('Self-tests passed: revision routing/arguments, safe image and optional planning-diagram paths, duplicate IDs, sequence coverage, three languages, intentional silence, earlier-text comparison/context, original-design preproduction boundary, source evidence, image headers, pending review, template JSON and browser-script syntax.');
 }
 function main(){
-  let options;try{options=parseArgs(process.argv.slice(2));}catch(error){console.error(`${error.message}\nUsage: node scripts/verify-chapter-workshop.cjs [--revision 1|2|3|4] [--allow-pending] [--self-test] [--json]`);process.exitCode=2;return;}
+  let options;try{options=parseArgs(process.argv.slice(2));}catch(error){console.error(`${error.message}\nUsage: node scripts/verify-chapter-workshop.cjs [--revision 1|2|3|4|5] [--allow-pending] [--self-test] [--json]`);process.exitCode=2;return;}
   const {revision,flags}=options;
   if(flags.has('--self-test')){selfTest();return;}
   for(const id of chaptersForRevision(revision))auditChapter(id,revision);

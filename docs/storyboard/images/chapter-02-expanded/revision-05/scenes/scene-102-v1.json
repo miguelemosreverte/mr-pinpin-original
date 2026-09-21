@@ -1,0 +1,134 @@
+{
+  "id": "scene-102-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 polished dimensional animated children's-book illustration, no text, panels or border.\nINPUT ROLES: Image1 established Elder/PinPin scene controls ALL rendering, expressive eyes, shaped brows and soft sculpted materials. Image2 approved cast: FAR LEFT round-eared broad adult HEDGEHOG is Papa; middle auburn mother holds tiny baby; smaller orange hedgehog is PinPin; separate far-right DOG is Scooby. Keep identities SEPARATE. Papa is never dog-faced, never spectacles. Image3 is previous scene for location, physical state, family seating/contact ONLY, not its obsolete character rendering or camera.\nPapa has luminous cream cheeks/eye surrounds, warm hazel irises with distinct pupils/ivory sclera, mature broad haunch/body, grey-brown tipped quills; NO dark eye mask, button eyes, photographic face or black rim shadows. PinPin smaller younger reddish quills expressive face. Scooby when present has approved soft animated brown/brindle groups, folded ears, cream muzzle, white bib, curled tail, expressive amber eyes; NO photographed pet detail or wet PBR fur. Qualitative scale Papa1.6child, dog shoulder2.7child. Anatomy two forepaws/two hindfeet per hedgehog, four dog legs, one tail. Soft facial bounce lighting, warm rich book environment, bright late morning/midday, no dusk.\nNEW SHOT: ONLY Papa and PinPin hedgehogs with Scooby outside, mother/baby inside OFFSCREEN. Low close affectionate care triangle, camera near child's eyelevel. Child grounded left beside dog's near shoulder, ONE paw pats soft shoulder fur other at side; dog lying resting at established RIGHT-side bowl spot, turns face DOWN toward child with direct reciprocal eyes. Papa right pours water from ceramic jug held with BOTH paws, visible stream lands inside water bowl. Papa eyes follow pour. Dog face and child reaction foreground central, Papa pouring right slight depth, green home door closed and two windows behind, stone left edge. Keep dog rear curl at LEFT rump, not shoulder. Bright soft animated forms, dog no photoreal hairs, Papa no dark mask.\nCAMERA art-direction record (not literal labels in image): {\"positionXYZ\":[1,-5,0.75],\"targetXYZ\":[2,-2,0.7],\"height\":0.75,\"framing\":\"Low close care triangle dog face child attention\",\"approximateFieldOfView\":42,\"axisSide\":\"negativeY\"}\nActors: Scooby at 1,-2,0; body/head/eyes toward PinPin; resting forepaws ground hindlegs tucked. PinPin at 0.5,-2.6,0; body/head/eyes toward Scooby; two feet ground one paw shoulder other side. Papa at 2.8,-2,0; body/head/eyes toward bowl; two feet ground two paws jug stream into bowl\nPurpose: Low close care triangle dog face child attention. Keep named landmarks in existing reference geographic relationship; don't mirror set. Natural cropping/occlusion allowed, no invented limbs.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:39:54.961Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "style and Elder/PinPin",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "cast identity scale; Papa far left hedgehog",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-102-v1.png",
+      "role": "location/action state only; camera must change as directed",
+      "sha256": "e2c85ce2afe1b87c999150902f48dd7945284a90b1c593a53e3193e9bcad3c4b"
+    }
+  ],
+  "status": "ready",
+  "transformRecord": {
+    "previousNumber": 102,
+    "id": "elder-r5-102",
+    "purpose": "Low close care triangle dog face child attention",
+    "frame": "H",
+    "camera": {
+      "positionXYZ": [
+        1,
+        -5,
+        0.75
+      ],
+      "targetXYZ": [
+        2,
+        -2,
+        0.7
+      ],
+      "height": 0.75,
+      "framing": "Low close care triangle dog face child attention",
+      "approximateFieldOfView": 42,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "id": "Scooby",
+        "positionXYZ": [
+          1.0,
+          -2.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "resting forepaws ground hindlegs tucked",
+        "limbsContactSupport": "resting forepaws ground hindlegs tucked",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "PinPin",
+        "positionXYZ": [
+          0.5,
+          -2.6,
+          0.0
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "Scooby",
+        "eyeTarget": "Scooby",
+        "pose": "two feet ground one paw shoulder other side",
+        "limbsContactSupport": "two feet ground one paw shoulder other side",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Papa",
+        "positionXYZ": [
+          2.8,
+          -2.0,
+          0.0
+        ],
+        "bodyFacingTarget": "bowl",
+        "headFacingTarget": "bowl",
+        "eyeTarget": "bowl",
+        "pose": "two feet ground two paws jug stream into bowl",
+        "limbsContactSupport": "two feet ground two paws jug stream into bowl",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "chimney": "facade left",
+      "lantern": "facade right",
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "canonical scene101",
+      "after": "Papa pours bowl as child thanks dog with pat"
+    },
+    "previousAction": "canonical scene101",
+    "nextAction": "canonical scene103",
+    "reasonForShotChange": "Low close care triangle dog face child attention"
+  },
+  "startedAt": "2026-09-21T22:41:03.167Z",
+  "finishedAt": "2026-09-21T22:42:24.353Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c600-79e9-7ef1-bcf3-9c07d2a5d2dd/exec-979b20e1-fd67-419e-b4d2-9b6d68ffa386.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-102-v1.png",
+  "sha256": "3f7d8cfb50404db8e5fbf5a3736b997546a9427a2d071eb8363e3249e2c55588",
+  "review": "Creator full-image PASS: close low care triangle, child two grounded feet/one paw dog shoulder, direct child-dog reciprocal gaze. Papa two paws jug visible water stream reaches bowl; Papa actually glances toward child/dog rather than planned bowl, acceptable social attention while pour contact clear. One rear curl, grounded forepaws. Soft animated faces cohesive; far limbs hidden not certified.",
+  "width": 1536,
+  "height": 1024
+}

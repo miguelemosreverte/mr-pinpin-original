@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-017",
+  "version": 2,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:17:17.588372+00:00",
+  "prompt": "Precise identity correction of image1 only. REMOVE the gold spectacles from the larger rear hedgehog rider, Papa: no frame, no lens, no temple arm. Restore his natural cream cheek and single visible warm hazel eye with soft expressive lid where glasses were. Papa never wears glasses; image2 gives correct Papa identity. Keep EVERYTHING ELSE in image1 unchanged: same rear three-quarter low camera, two riders, supporting Papa forearm around smaller child, their poses and quills, dog anatomy/size/stride, large root tree, portal, staff parked left and fern right, sun and composition. Do not change child or add actors. Landscape no text. This is Papa visiting Elder, not Elder riding dog.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-017-v1.png",
+      "role": "EDIT TARGET; remove erroneous spectacles only",
+      "sha256": "ce670ba8604498d9cc9c7bcbb13093dd5a921bbebb5caf4999d2d4f5d767375d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v2.png",
+      "role": "Papa identity; NO spectacles",
+      "sha256": "a2a9d78052a91b1e0b0aa38fd9d7dc16d77e10761d09203e4f29c1dfb8a12d36"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 17,
+    "id": "elder-r5-017",
+    "purpose": "Reveal enormous destination from low forest approach",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        -3,
+        -9,
+        0.8
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        3.4
+      ],
+      "height": 0.8,
+      "fieldOfView": 74,
+      "framing": "wide low establishing; riders small lower foreground and monumental root home above",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -5,
+          0
+        ],
+        "bodyFacing": "threshold",
+        "headFacing": "threshold",
+        "eyeTarget": "threshold",
+        "pose": "slow walking",
+        "contacts": "4 feet on path",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          -4.6,
+          2.7
+        ],
+        "bodyFacing": "threshold",
+        "headFacing": "threshold",
+        "eyeTarget": "threshold",
+        "pose": "front seat",
+        "contacts": "two paws/back; straddling",
+        "visibility": "visible"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -1,
+          -5.4,
+          2.7
+        ],
+        "bodyFacing": "threshold",
+        "headFacing": "threshold",
+        "eyeTarget": "threshold",
+        "pose": "rear seat",
+        "contacts": "arm supports child; other on dog",
+        "visibility": "visible"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "thinning mist sunny clearing",
+    "transition": "travel subjective to destination reveal; next stop",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "requested"
+}

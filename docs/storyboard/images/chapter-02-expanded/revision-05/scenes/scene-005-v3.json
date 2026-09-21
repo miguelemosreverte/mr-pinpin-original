@@ -1,0 +1,176 @@
+{
+  "id": "scene-005-v3",
+  "prompt": "Use case: precise-object-edit. Keep this exact1536x1024 family hug illustration and ALL characters, expressions, anatomy, size, positions, camera, lighting, plants and house unchanged. Correct ONLY duplicated brass doorknobs on the open green door leaf behind Papa. There are currently multiple gold knob forms; leave exactly ONE simple brass round knob at the free LEFT EDGE of the open leaf (approximatelyx760y363). REMOVE the other double gold knob assembly closer to the middle of the leaf (approximatelyx822y363), filling with matching green vertical wood. Keep the dark hinges at its RIGHT attached edge near doorway. Do not add new hardware or alter any character. Exactly ONE visible brass knob on the green leaf. No text.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-005-v2.png",
+      "role": "edit target; narrow continuity correction only",
+      "sha256": "9f9c3c46c54cbdab7e1448a3441011d8b4fd62f1b39706b2f00eb5350453b78a"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:35:22.546387+00:00",
+  "transformRecord": {
+    "previousNumber": 5,
+    "id": "elder-r5-005",
+    "purpose": "Reunion felt from child height rather than distant tableau",
+    "frameId": "H",
+    "camera": {
+      "positionXYZ": [
+        -2.8,
+        -5,
+        0.75
+      ],
+      "targetXYZ": [
+        -0.3,
+        -1.3,
+        0.8
+      ],
+      "height": 0.75,
+      "framing": "low medium family hug; dog large left edge, Mama doorway background",
+      "approximateFieldOfViewDegrees": 55,
+      "axisSide": "H exterior negativeY"
+    },
+    "actors": {
+      "Papa": {
+        "positionXYZ": [
+          -0.6,
+          -1.7,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "crouching to hug",
+        "limbsContactSupport": "both feet earth, two forearms around child",
+        "visibility": "visible"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          -0.2,
+          -1.5,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "hugging Papa",
+        "limbsContactSupport": "both feet earth, two forearms around Papa",
+        "visibility": "visible"
+      },
+      "Mama": {
+        "positionXYZ": [
+          0,
+          0.1,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "doorway smiling",
+        "limbsContactSupport": "one arm supports infant; other rests doorframe",
+        "visibility": "visible"
+      },
+      "PomPom": {
+        "positionXYZ": [
+          0,
+          0.1,
+          0.9
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "held by Mama",
+        "limbsContactSupport": "one Mama forearm/lap-side support",
+        "visibility": "visible"
+      },
+      "Scooby": {
+        "positionXYZ": [
+          -2.2,
+          -1.7,
+          0
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "stands watching hug attentively",
+        "limbsContactSupport": "grounded paws; flank/tail may crop",
+        "visibility": "visible"
+      }
+    },
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "leftWindow": [
+        -1.4,
+        0,
+        1.2
+      ],
+      "rightWindow": [
+        1.4,
+        0,
+        1.2
+      ],
+      "lantern": [
+        1,
+        0,
+        1.6
+      ]
+    },
+    "objectStateBefore": "door opens; Papa grounded",
+    "objectStateAfter": "hug; open door; baby remains held",
+    "previousAction": "dismount",
+    "nextAction": "breakfast",
+    "reasonForShotChange": "intimate low angle and converging gazes establish affection",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "Mama opened the door with PomPom in her arms. PinPin hurried into Papa’s hug. Scooby’s tail curled up."
+      ],
+      "ru": [
+        "Мама открыла дверь с Пом-Помом на руках. Пин-Пин поспешил обнять Папу. Хвост Скуби загнулся колечком."
+      ],
+      "es": [
+        "Mamá abrió la puerta con PomPom en brazos. PinPin corrió a abrazar a Papá. La cola de Scooby se curvó hacia arriba."
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-005-v2.png",
+    "sceneDirection": "At child eye height, prioritize the loving hug foreground. Papa crouches on earth with cream face touching close to PinPin, two forearms embracing. PinPin grounded with arms round Papa. Mama stands in open green doorway behind holding baby securely in ONE arm, other on jamb. Much larger Scooby watches the hug from beside them with warmly attentive eyes, no riders. Exactly four hedgehogs and one dog."
+  },
+  "status": "creator-and-root-reviewed",
+  "n": 5,
+  "v": 3,
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-ed6254b7-b97f-43dd-bf07-533ffe459943.png",
+  "startedAt": "2026-09-21T22:41:05.943Z",
+  "finishedAt": "2026-09-21T22:41:41.549Z",
+  "review": "Creator actual full-image PASS: child-height near reunion, Papa crouched and child grounded hugging with eyes meeting; large animated Scooby directs gaze to hug; four hedgehogs exact. Mama two forearms cradle infant, no third jamb arm. V3 removed duplicated central brass knob assembly: one knob at open leaf free edge remains and hinges stay attached edge. Dog two front paws plus partial rear visible, hidden anatomy not certified. Root had accepted cast/hug/gaze in v2, v3 narrow hardware correction only.",
+  "alt": {
+    "en": "Papa crouches to hug PinPin at the doorstep while Scooby watches and Mama holds PomPom in the open doorway.",
+    "ru": "Папа приседает, чтобы обнять Пин-Пина у порога; Скуби смотрит на них, а Мама держит Пом-Пома в открытых дверях.",
+    "es": "Papá se agacha para abrazar a PinPin junto a la puerta; Scooby los observa y Mamá sostiene a PomPom en la entrada."
+  },
+  "sha256": "3709b93187a9b784150d3ad49d8a660045b3f65b03a16ba1aea1d02dff96a5e9",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-005-v3.png",
+  "width": 1536,
+  "height": 1024,
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-ed6254b7-b97f-43dd-bf07-533ffe459943.png",
+  "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+}

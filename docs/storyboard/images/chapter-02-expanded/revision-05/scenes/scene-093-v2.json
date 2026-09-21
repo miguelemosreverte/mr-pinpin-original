@@ -1,0 +1,151 @@
+{
+  "id": "scene-093-v2",
+  "prompt": "Use case: precise-object-edit. ONE1536x1024. Image1 EDIT TARGET. Correct ONLY character inside left root doorway: remove the mother AND the baby completely, replace BOTH with exactly ONE Elder hedgehog as image2: mature silver-grey tipped quills, warm cream face, round gold spectacles, both forepaws relaxed at belly, feet ground. Elder watches small child in front of doorway. Exactly THREE hedgehogs total: Elder left doorway, little PinPin center path, round cream-faced Papa seated right. One dog lies right. NO mother, infant, carried objects. Preserve ALL other pixels/composition/style: same child, Papa, Scooby, their attentive gazes and grounded contacts, sunny moss rock, staff left, fern right, tree and flowers. Elder is standalone animal, wears glasses only, no clothes.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:19:43.861Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-093-v1.png",
+      "role": "edit target replace wrongly present mother/baby with Elder",
+      "sha256": "b5e3417b58d83df47d303ff16cff7f5df20305612ee4a83994b9c5cb7d39be06"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "Elder identity left spectacles",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    }
+  ],
+  "status": "ready",
+  "transformRecord": {
+    "previousNumber": 93,
+    "id": "elder-r5-093",
+    "purpose": "Wide geography reset after enclosed study",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -8,
+        1.1
+      ],
+      "targetXYZ": [
+        2,
+        -0.6,
+        0.8
+      ],
+      "height": 1.1,
+      "framing": "Wide geography reset after enclosed study",
+      "approximateFieldOfView": 55,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "id": "PinPin",
+        "positionXYZ": [
+          0.4,
+          -0.7,
+          0.0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "walking",
+        "limbsContactSupport": "walking; feet ground; forepaws relaxed",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Elder",
+        "positionXYZ": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "following",
+        "limbsContactSupport": "following; feet threshold",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Papa",
+        "positionXYZ": [
+          4.0,
+          -1.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "seated moss rock",
+        "limbsContactSupport": "seated moss rock; feet ground; forepaws lap",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Scooby",
+        "positionXYZ": [
+          5.0,
+          -1.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "lying head raised",
+        "limbsContactSupport": "lying head raised; forepaws grounded rear tucked",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staff": [
+        -1,
+        0,
+        0
+      ],
+      "fern": [
+        1,
+        0,
+        0
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "canonical scene092",
+      "after": "Papa awake, Scooby lifts head, PinPin emerges with Elder"
+    },
+    "previousAction": "canonical scene092",
+    "nextAction": "canonical scene094",
+    "reasonForShotChange": "Wide geography reset after enclosed study"
+  },
+  "startedAt": "2026-09-21T22:20:17.178Z",
+  "finishedAt": "2026-09-21T22:20:48.517Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c600-79e9-7ef1-bcf3-9c07d2a5d2dd/exec-e9a9b7dc-0bb6-41f9-9dea-d7202236033a.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-093-v2.png",
+  "sha256": "d1cad17c89b4843a82be19dfb6aafb90090598eb7b98961ffc9741accc7f84c6",
+  "review": "Creator full-image PASS: corrected Elder spectacles alone at doorway, child emerging, Papa seated awake and dog head up at far-right rest patch. Papa clear cream eyes; Scooby stylized animated gaze toward child. Same staff-left/fern-right unblocked path. Grounded visible paws; lying dog scale qualitative.",
+  "width": 1536,
+  "height": 1024
+}

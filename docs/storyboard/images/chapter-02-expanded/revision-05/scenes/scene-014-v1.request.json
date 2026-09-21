@@ -1,0 +1,143 @@
+{
+  "id": "scene-014-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 children’s book illustration, no text/border/panels.\nInput roles: Image1 is the established animated-feature storybook rendering authority. Image2 is ACCEPTED shared family identity and scale. Image3 controls ONLY environment/props/contact geometry; IGNORE its old photographic faces/rendering and old camera, use the NEW SHOT BELOW.\nMatch established Elder/PinPin dimensional animated storybook illustration, readable expressive irises, designed soft grouped fur, rounded forms, warm light with soft fill; no photographic pet/human rendering or black eye mask. Approved shared cast controls identities and approximate common scale. Papa is the mature broad-bodied HEDGEHOG at far LEFT in image2, cream face/eye surrounds, hazel iris/pupil separation, dark brown tipped quills, no spectacles. PinPin is the SMALL standing chestnut HEDGEHOG child; Mama the copper-quilled ADULT HEDGEHOG holding infant PomPom. Scooby is the LARGE DOG at right, amber eyes, warm brindle brown, cream-grey muzzle, white chest, folded ears/curled rump tail. Species must never swap. Adult hedgehog about1.6 child height, dog shoulder2.7child height. No clothing/reins/saddle.\nSHOT: Dog-only attentive closeup: Scooby face/white chest/two front paws, crouched earth, soft green door blur behind. He turns head a little back/up to offscreen Papa on his back, pupils deliberately aligned with that target, alert soft folded ears and engaged brows. Do not show riders or invent head on body in this crop. Broad soft animated facial design and fur groups; no photographic dog nose/hair texture.\nGreen rounded door, outside hinges left/knob and lantern right, two round windows, chimney left, low broad mounting stone left and water bowl right, moss roof. Dog remains outdoors.\nPLANNED CAMERA AND ACTORS (approximate staging cues, not text in image): {\"frameId\": \"H\", \"camera\": {\"positionXYZ\": [0.7, -4.2, 0.6], \"targetXYZ\": [0.2, -2, 1], \"height\": 0.6, \"framing\": \"dog-only face/chest/front-paw closeup\", \"approximateFieldOfViewDegrees\": 30, \"axisSide\": \"H exterior negativeY\"}, \"actors\": {\"Scooby\": {\"positionXYZ\": [-0.5, -2, 0], \"bodyFacingTarget\": \"path\", \"headFacingTarget\": \"Papa\", \"eyeTarget\": \"Papa\", \"pose\": \"head tipped up/back slightly listening\", \"limbsContactSupport\": \"two forepaws earth; rear body cropped\", \"visibility\": \"visible\"}, \"Papa\": {\"positionXYZ\": [-0.7, -1.2, 1.2], \"bodyFacingTarget\": \"path\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"mounted behind child\", \"limbsContactSupport\": \"one arm supports child; other braces dog\", \"visibility\": \"outside crop behind dog face\"}, \"PinPin\": {\"positionXYZ\": [-0.5, -1.7, 1.2], \"bodyFacingTarget\": \"path\", \"headFacingTarget\": \"Papa\", \"eyeTarget\": \"Papa\", \"pose\": \"seated comfortably\", \"limbsContactSupport\": \"paws dog; legs astride\", \"visibility\": \"outside crop\"}}, \"staticLandmarks\": {\"threshold\": [0, 0, 0], \"stone\": [-2, -2, 0.35], \"bowl\": [2, -2, 0], \"path\": [0, -6, 0], \"leftWindow\": [-1.4, 0, 1.2], \"rightWindow\": [1.4, 0, 1.2], \"lantern\": [1, 0, 1.6]}, \"objectStateBefore\": \"boarding completed between shots\", \"objectStateAfter\": \"dog remains crouched listening; two riders offscreen\"}.\nPrioritize purposeful gaze, connected forepaws/feet, soft animated face/materials and the stated new framing. No additional actors or duplicated limbs. Warm morning daylight with soft cream fill on faces. All offscreen characters remain outside crop, do not force every reference-sheet figure into image.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "sole rendering and expressive face style authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "accepted family identity and scale, change gaze/pose per shot",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/style-tests/scene-002-style-v1.png",
+      "role": "environment, props and physical contact geometry ONLY; not old character rendering or old camera",
+      "sha256": "f1fa54442881cda9e494270a8b4905a347d312f5747a92cedcac473378a858df"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:16:29.945653+00:00",
+  "transformRecord": {
+    "previousNumber": 14,
+    "id": "elder-r5-014",
+    "purpose": "Scooby actively listens to offcamera riders",
+    "frameId": "H",
+    "camera": {
+      "positionXYZ": [
+        0.7,
+        -4.2,
+        0.6
+      ],
+      "targetXYZ": [
+        0.2,
+        -2,
+        1
+      ],
+      "height": 0.6,
+      "framing": "dog-only face/chest/front-paw closeup",
+      "approximateFieldOfViewDegrees": 30,
+      "axisSide": "H exterior negativeY"
+    },
+    "actors": {
+      "Scooby": {
+        "positionXYZ": [
+          -0.5,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "head tipped up/back slightly listening",
+        "limbsContactSupport": "two forepaws earth; rear body cropped",
+        "visibility": "visible"
+      },
+      "Papa": {
+        "positionXYZ": [
+          -0.7,
+          -1.2,
+          1.2
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "mounted behind child",
+        "limbsContactSupport": "one arm supports child; other braces dog",
+        "visibility": "outside crop behind dog face"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          -0.5,
+          -1.7,
+          1.2
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "seated comfortably",
+        "limbsContactSupport": "paws dog; legs astride",
+        "visibility": "outside crop"
+      }
+    },
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "leftWindow": [
+        -1.4,
+        0,
+        1.2
+      ],
+      "rightWindow": [
+        1.4,
+        0,
+        1.2
+      ],
+      "lantern": [
+        1,
+        0,
+        1.6
+      ]
+    },
+    "objectStateBefore": "boarding completed between shots",
+    "objectStateAfter": "dog remains crouched listening; two riders offscreen",
+    "previousAction": "child transfer",
+    "nextAction": "dog rises with supported riders",
+    "reasonForShotChange": "attentive animal reaction rather than another riding diagram",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "“Comfortable?” asked Papa. “Very!” said PinPin. Scooby listened, ready to go."
+      ],
+      "ru": [
+        "— Удобно? — спросил Папа. — Очень! — ответил Пин-Пин. Скуби прислушивался, готовый отправиться в путь."
+      ],
+      "es": [
+        "—¿Cómodo? —preguntó Papá. —¡Mucho! —dijo PinPin. Scooby escuchaba, listo para partir."
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-014-v2.png",
+    "sceneDirection": "Dog-only attentive closeup: Scooby face/white chest/two front paws, crouched earth, soft green door blur behind. He turns head a little back/up to offscreen Papa on his back, pupils deliberately aligned with that target, alert soft folded ears and engaged brows. Do not show riders or invent head on body in this crop. Broad soft animated facial design and fur groups; no photographic dog nose/hair texture."
+  },
+  "status": "planned-full-cast-gate"
+}

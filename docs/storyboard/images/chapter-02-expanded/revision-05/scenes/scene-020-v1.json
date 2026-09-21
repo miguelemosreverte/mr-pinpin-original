@@ -1,0 +1,151 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-020",
+  "version": 1,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:25:39.623112+00:00",
+  "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 3:2 finished children’s-book illustration, no text or panels.\nSTYLE LOCK: closely match the soft expressive animated children’s-book forms in references 1 and 2. Warm cream facial planes, open readable hazel/amber iris around separate pupil, broad gentle eyelids, rounded appealing muzzle, grouped sculpted fur. Papa is a mature broad adult about 1.6 times PinPin height, NOT the child duplicated at same scale. Dog shoulder about 2.7 child heights, warm dark-brindled brown, white chest bib, grey-cream muzzle, folded triangular ears, curled rump tail. Dog expression attentive and emotionally present. No black button eyes, dark face masks, hard shiny skin, photographic animal anatomy/detail or live-action fur. All unclothed animal characters. Only Elder has glasses.\nREFERENCE ROLES: Image 1: PRIMARY approved common-scale animated identity/style reference; Papa and child distinct; dog scale and expressive materials; Image 2: PAPA IDENTITY: mature cream-face/hazel eyes, never glasses; ignore dark backdrop; Image 3: ENVIRONMENT GEOGRAPHY ONLY; root portal, left staff/boulder and path, right fern, sunny patch beyond fern; Image 4: IMMEDIATELY PREVIOUS STATE; Papa moves to ground, child comes onto same stone; dog remains facing right and crouched.\nNARRATIVE AND CAMERA: Intimate low close interaction at the child’s height. Papa is now standing on the dirt GROUND to left of the low stone. Both his hindfeet are visibly grounded. PinPin has BOTH little hindfeet on the stone, face to face with Papa, who supports his child at the lower ribs with both forepaws. Child paws rest on Papa forearms. Reciprocal warm eyes, Papa lowered chin and child lifted chin. Scooby stays crouched immediately behind the stone; his attentive animated face is a partial right-edge presence watching the child; do not enlarge the dog to fill the intimate emotional moment. Preserve stone, dog and path contacts with believable occlusion. This is much closer and lower than preceding arrival master.\nPER-ACTOR/CAMERA PLAN (approximate illustrative geometry, not labels to render): {\"previousNumber\":20,\"id\":\"elder-r5-020\",\"purpose\":\"Intimate supported landing: child feet find stone\",\"frame\":\"E\",\"camera\":{\"positionXYZ\":[-3.7,-5,1],\"targetXYZ\":[-2,-3,1],\"height\":1,\"fieldOfView\":44,\"framing\":\"low close interaction from child height, dog head at edge\",\"axisSide\":\"approach/front negativeY; travel rear negativeY\"},\"actors\":[{\"name\":\"Papa\",\"positionXYZ\":[-2.7,-3,0],\"bodyFacing\":\"PinPin\",\"headFacing\":\"PinPin\",\"eyeTarget\":\"PinPin\",\"pose\":\"grounded leaning forward\",\"contacts\":\"two hindfeet path two forepaws support child torso\",\"visibility\":\"visible\"},{\"name\":\"PinPin\",\"positionXYZ\":[-2,-3,0.4],\"bodyFacing\":\"Papa\",\"headFacing\":\"Papa\",\"eyeTarget\":\"Papa\",\"pose\":\"standing on stone\",\"contacts\":\"two hindfeet stone; paws on Papa forearms\",\"visibility\":\"visible\"},{\"name\":\"Scooby\",\"positionXYZ\":[-1,-3,0],\"bodyFacing\":[-0.5,-2,0],\"headFacing\":\"PinPin\",\"eyeTarget\":\"PinPin\",\"pose\":\"crouched motionless\",\"contacts\":\"ground contact partly cropped\",\"visibility\":\"visible\"}],\"landmarks\":{\"threshold\":[0,0,0],\"staffBoulder\":[-1.6,-0.2,0],\"fern\":[1.4,-0.3,0],\"restRock\":[4,-1,0],\"mountingStone\":[-2,-3,0.4]},\"state\":\"Papa grounded; child feet stone after support\",\"transition\":\"closer human-scale moment; greeting next\",\"status\":\"planned-awaiting-cast-gate\"}\nPhysical discipline: one head and two forepaws/two hindfeet per hedgehog; dog exactly four legs and one tail. Naturally occluded limbs stay hidden, do not expose extra limbs to satisfy a count. Actual contact and believable balance. Preserve morning daytime light and scene landmarks; no clothes, tack, harness, captions, diagrams, arrows, watermarks. This is a cinematic story moment, not a character-sheet montage.\nCRUCIAL: Papa has NO GLASSES. Use a materially CLOSER camera than image4, same arrival axis. Dog remains head pointing screenRIGHT, not turned around. Show supported landing, both child feet on stone, Papa both feet on dirt.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "PRIMARY approved common-scale animated identity/style reference; Papa and child distinct; dog scale and expressive materials",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "PAPA IDENTITY: mature cream-face/hazel eyes, never glasses; ignore dark backdrop",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/elder-exterior-rest-plate-v1.png",
+      "role": "ENVIRONMENT GEOGRAPHY ONLY; root portal, left staff/boulder and path, right fern, sunny patch beyond fern",
+      "sha256": "6295a3c64ad0ad7ff1634a046201804f3a5885c759419538247be28074b0500b"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-019-v2.png",
+      "role": "IMMEDIATELY PREVIOUS STATE; Papa moves to ground, child comes onto same stone; dog remains facing right and crouched",
+      "sha256": "2ac1f23c60151109539ce35801325fe326e4d79c899fe25d517bb04b7f403eba"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 20,
+    "id": "elder-r5-020",
+    "purpose": "Intimate supported landing: child feet find stone",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        -3.7,
+        -5,
+        1
+      ],
+      "targetXYZ": [
+        -2,
+        -3,
+        1
+      ],
+      "height": 1,
+      "fieldOfView": 44,
+      "framing": "low close interaction from child height, dog head at edge",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2.7,
+          -3,
+          0
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "grounded leaning forward",
+        "contacts": "two hindfeet path two forepaws support child torso",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -2,
+          -3,
+          0.4
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "standing on stone",
+        "contacts": "two hindfeet stone; paws on Papa forearms",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -3,
+          0
+        ],
+        "bodyFacing": [
+          -0.5,
+          -2,
+          0
+        ],
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "crouched motionless",
+        "contacts": "ground contact partly cropped",
+        "visibility": "visible"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "Papa grounded; child feet stone after support",
+    "transition": "closer human-scale moment; greeting next",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "rejected-landmark",
+  "completedAt": "2026-09-21T22:27:41.459765+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c600-14b2-7cd0-a2bc-99b2f7afd2dd/exec-fa4caae0-9cbb-460b-b9fa-34f8f3041d07.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-020-v1.png",
+  "sha256": "b33be175b4538dbd4e0614fb26a2395a984b952a88034e2bca5236db374b17a1",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator full image: strong intimate father-child support and correct both feet/ground contacts, dog attentive. Crooked staff incorrectly shifted to right of root portal. Remove from crop because correct left-of-portal staff is occluded behind Papa in this close angle. Other content accepted.",
+  "alt": {
+    "en": "Papa steadies PinPin on the stone while Scooby watches.",
+    "ru": "Папа поддерживает Пин-Пина на камне, а Скуби наблюдает.",
+    "es": "Papá sostiene a PinPin sobre la piedra mientras Scooby observa."
+  },
+  "startedAt": "2026-09-21T22:26:28.660Z",
+  "finishedAt": "2026-09-21T22:27:08.893Z",
+  "timingSource": {
+    "source": "actual session tool-call and matching result timestamps",
+    "callId": "call_PPSdjZdYQCxX5EKvSsiAtV3x",
+    "scope": "functions.exec containing request read and awaited built-in imagegen; includes orchestration overhead, not claimed model-internal latency"
+  }
+}

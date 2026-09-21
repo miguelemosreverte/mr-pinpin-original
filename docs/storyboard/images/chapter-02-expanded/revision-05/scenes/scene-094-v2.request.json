@@ -1,0 +1,143 @@
+{
+  "id": "scene-094-v2",
+  "prompt": "Use case: precise-object-edit. Image1 target; image2 Papa identity (ignore dark background). Preserve composition and all characters/contacts of image1. ONLY remove every gold spectacle artifact: remove floating glasses beside staff at far LEFT edge, and remove thin gold spectacle line at Papa's temple/eyebrow. Papa wears absolutely no glasses, jewelry or other accessories; restore uninterrupted cream fur there. Keep Papa/child reciprocal gaze, same hug/grounded feet, Scooby attentive face background right, same expressive cream face and soft book rendering. Elder remains completely OFFSCREEN in this close crop; do not add any character or glasses. ONE landscape1536x1024, no text.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:23:16.293Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-094-v1.png",
+      "role": "edit target remove stray spectacles",
+      "sha256": "99a8c325af9a6718d4bd2458fddac2b577bb688203686d8697eb2fbaa47f5315"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Papa identity no glasses",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "status": "planned",
+  "transformRecord": {
+    "previousNumber": 94,
+    "id": "elder-r5-094",
+    "purpose": "Intimate child-height two-shot",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -4,
+        0.75
+      ],
+      "targetXYZ": [
+        3,
+        -1,
+        1
+      ],
+      "height": 0.75,
+      "framing": "Intimate child-height two-shot",
+      "approximateFieldOfView": 38,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "id": "Papa",
+        "positionXYZ": [
+          3.0,
+          -1.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "crouched embraces child with two arms",
+        "limbsContactSupport": "crouched embraces child with two arms; feet ground",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "PinPin",
+        "positionXYZ": [
+          2.6,
+          -1.3,
+          0.0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "hug",
+        "limbsContactSupport": "hug; near paw chest; two feet ground",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Elder",
+        "positionXYZ": [
+          0.0,
+          -0.2,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "background left watching",
+        "limbsContactSupport": "background left watching; feet ground",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Scooby",
+        "positionXYZ": [
+          5.0,
+          -1.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "background right lying attentive",
+        "limbsContactSupport": "background right lying attentive; legs grounded",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staff": [
+        -1,
+        0,
+        0
+      ],
+      "fern": [
+        1,
+        0,
+        0
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "canonical scene093",
+      "after": "Grounded affectionate hug, discovery shared"
+    },
+    "previousAction": "canonical scene093",
+    "nextAction": "canonical scene095",
+    "reasonForShotChange": "Intimate child-height two-shot"
+  }
+}

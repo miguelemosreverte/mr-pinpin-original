@@ -18,10 +18,13 @@
   copy.ru.revision4='Четвёртое предложение · Старейшина';
   copy.en.revision4='Fourth proposal · Elder';
   copy.es.revision4='Cuarta propuesta · Anciano';
+  copy.ru.revision5='Пятое предложение · Старейшина';
+  copy.en.revision5='Fifth proposal · Elder';
+  copy.es.revision5='Quinta propuesta · Anciano';
   const params = new URLSearchParams(location.search);
-  const state = {revision:['2','3','4'].includes(params.get('revision'))?params.get('revision'):'1',lang:languages.includes(params.get('lang'))?params.get('lang'):'ru',chapter:chapters.includes(params.get('chapter'))?params.get('chapter'):'elder',view:views.includes(params.get('view'))?params.get('view'):'reading',scene:params.get('scene')||'',data:null,request:0,observer:null};
-  // Revisions 3 and 4 change only Elder. Academy keeps its actual revision-2 URL and identity.
-  const normalizeRevision = () => {if(state.chapter==='academy'&&['3','4'].includes(state.revision))state.revision='2';};
+  const state = {revision:['2','3','4','5'].includes(params.get('revision'))?params.get('revision'):'1',lang:languages.includes(params.get('lang'))?params.get('lang'):'ru',chapter:chapters.includes(params.get('chapter'))?params.get('chapter'):'elder',view:views.includes(params.get('view'))?params.get('view'):'reading',scene:params.get('scene')||'',data:null,request:0,observer:null};
+  // Revisions 3, 4 and 5 change only Elder. Academy keeps its actual revision-2 URL and identity.
+  const normalizeRevision = () => {if(state.chapter==='academy'&&['3','4','5'].includes(state.revision))state.revision='2';};
   normalizeRevision();
   const $ = id => document.getElementById(id);
   const t = key => copy[state.lang][key] || key;
@@ -44,7 +47,7 @@
     document.querySelectorAll('[data-view]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.view===state.view)));
     [...$('chapter-select').options].forEach(option=>option.textContent=t(option.value));
     $('chapter-select').value=state.chapter;
-    [...$('revision-select').options].forEach(option=>{option.textContent=t(`revision${option.value}`);option.disabled=['3','4'].includes(option.value)&&state.chapter==='academy';});
+    [...$('revision-select').options].forEach(option=>{option.textContent=t(`revision${option.value}`);option.disabled=['3','4','5'].includes(option.value)&&state.chapter==='academy';});
     $('revision-select').value=state.revision;
     $('previous-scene').setAttribute('aria-label',t('previous'));
     $('next-scene').setAttribute('aria-label',t('next'));
@@ -142,7 +145,9 @@
       else {article.append(picture(scene.src,localized(scene.alt),scene),el('p','comparison-note',t('noBefore')));if(scene.beforeNote)article.append(el('p','comparison-context',localized(scene.beforeNote)));}
       const details=el('dl','production-details');
       for(const [label,value] of [['Sequence',scene.sequence],['Source',`${scene.source?.kind||'pending'} · blocks: ${(scene.source?.blocks||[]).join(', ')||'—'}\n${scene.source?.note||''}`],['Camera',scene.camera],['Continuity',scene.continuity],['Visual review',scene.review]]){details.append(el('dt','',label),el('dd','',typeof value==='string'?value:JSON.stringify(value||'')));}
-      article.append(details);if(!scene.before)article.append(narration(scene,true));article.append(recordLink(scene.src));fragment.append(article);
+      article.append(details);
+      if(scene.cameraTransform){const transform=el('details','camera-transform');const label={ru:'План камеры и персонажей',en:'Camera and character plan',es:'Plan de cámara y personajes'}[state.lang];transform.append(el('summary','',label),el('pre','',JSON.stringify(scene.cameraTransform,null,2)));article.append(transform);}
+      if(!scene.before)article.append(narration(scene,true));article.append(recordLink(scene.src));fragment.append(article);
     });return fragment;
   }
   function sceneIndex(){const scenes=state.data?.scenes||[];return Math.max(0,scenes.findIndex(scene=>scene.id===state.scene));}

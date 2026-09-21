@@ -1,0 +1,160 @@
+{
+  "id": "scene-011-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 children’s book illustration, no text/border/panels.\nInput roles: Image1 is the established animated-feature storybook rendering authority. Image2 is ACCEPTED shared family identity and scale. Image3 controls ONLY environment/props/contact geometry; IGNORE its old photographic faces/rendering and old camera, use the NEW SHOT BELOW.\nMatch established Elder/PinPin dimensional animated storybook illustration, readable expressive irises, designed soft grouped fur, rounded forms, warm light with soft fill; no photographic pet/human rendering or black eye mask. Approved shared cast controls identities and approximate common scale. Papa is the mature broad-bodied HEDGEHOG at far LEFT in image2, cream face/eye surrounds, hazel iris/pupil separation, dark brown tipped quills, no spectacles. PinPin is the SMALL standing chestnut HEDGEHOG child; Mama the copper-quilled ADULT HEDGEHOG holding infant PomPom. Scooby is the LARGE DOG at right, amber eyes, warm brindle brown, cream-grey muzzle, white chest, folded ears/curled rump tail. Species must never swap. Adult hedgehog about1.6 child height, dog shoulder2.7child height. No clothing/reins/saddle.\nSHOT: Low sensory CLOSE INSERT of Scooby lowering animated muzzle to water bowl and lapping, ripples and tiny tongue. Two front paws grounded behind bowl. Fur grouped soft animated, broad warm brindle shapes. Eyes gently focus on bowl, appropriate attention to drinking. Papa/PinPin waiting on distant LEFT stone outside crop; do not insert random miniature people. Close enough it differs dramatically from family wide.\nGreen rounded door, outside hinges left/knob and lantern right, two round windows, chimney left, low broad mounting stone left and water bowl right, moss roof. Dog remains outdoors.\nPLANNED CAMERA AND ACTORS (approximate staging cues, not text in image): {\"frameId\": \"H\", \"camera\": {\"positionXYZ\": [3.1, -3.6, 0.4], \"targetXYZ\": [2, -2, 0.5], \"height\": 0.4, \"framing\": \"low close detail Scooby muzzle, two paws and bowl; distant family may crop\", \"approximateFieldOfViewDegrees\": 36, \"axisSide\": \"H exterior negativeY\"}, \"actors\": {\"Scooby\": {\"positionXYZ\": [1.7, -1.6, 0], \"bodyFacingTarget\": \"bowl\", \"headFacingTarget\": \"bowl\", \"eyeTarget\": \"bowl\", \"pose\": \"lapping water\", \"limbsContactSupport\": \"forepaws grounded either side behind bowl; tongue to surface\", \"visibility\": \"visible\"}, \"Papa\": {\"positionXYZ\": [-2.3, -2, 0.35], \"bodyFacingTarget\": \"Scooby\", \"headFacingTarget\": \"Scooby\", \"eyeTarget\": \"Scooby\", \"pose\": \"waiting on low stone\", \"limbsContactSupport\": \"both feet stone\", \"visibility\": \"offscreen left\"}, \"PinPin\": {\"positionXYZ\": [-1.8, -2, 0.35], \"bodyFacingTarget\": \"Scooby\", \"headFacingTarget\": \"Scooby\", \"eyeTarget\": \"Scooby\", \"pose\": \"waiting on stone\", \"limbsContactSupport\": \"both feet stone\", \"visibility\": \"offscreen left\"}}, \"staticLandmarks\": {\"threshold\": [0, 0, 0], \"stone\": [-2, -2, 0.35], \"bowl\": [2, -2, 0], \"path\": [0, -6, 0], \"leftWindow\": [-1.4, 0, 1.2], \"rightWindow\": [1.4, 0, 1.2], \"lantern\": [1, 0, 1.6]}, \"objectStateBefore\": \"bowl water full\", \"objectStateAfter\": \"ripples, dog drinks; riders not mounted\"}.\nPrioritize purposeful gaze, connected forepaws/feet, soft animated face/materials and the stated new framing. No additional actors or duplicated limbs. Warm morning daylight with soft cream fill on faces. All offscreen characters remain outside crop, do not force every reference-sheet figure into image.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "sole rendering and expressive face style authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "accepted family identity and scale, change gaze/pose per shot",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/home-arrival-plate-v1.png",
+      "role": "environment, props and physical contact geometry ONLY; not old character rendering or old camera",
+      "sha256": "ba099fa668afbf140e432e461e647dd270a659149c247fb0a4e08a7fae3d44d0"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:16:29.923164+00:00",
+  "transformRecord": {
+    "previousNumber": 11,
+    "id": "elder-r5-011",
+    "purpose": "Sensory pause: dog water and attention before mounting",
+    "frameId": "H",
+    "camera": {
+      "positionXYZ": [
+        3.1,
+        -3.6,
+        0.4
+      ],
+      "targetXYZ": [
+        2,
+        -2,
+        0.5
+      ],
+      "height": 0.4,
+      "framing": "low close detail Scooby muzzle, two paws and bowl; distant family may crop",
+      "approximateFieldOfViewDegrees": 36,
+      "axisSide": "H exterior negativeY"
+    },
+    "actors": {
+      "Scooby": {
+        "positionXYZ": [
+          1.7,
+          -1.6,
+          0
+        ],
+        "bodyFacingTarget": "bowl",
+        "headFacingTarget": "bowl",
+        "eyeTarget": "bowl",
+        "pose": "lapping water",
+        "limbsContactSupport": "forepaws grounded either side behind bowl; tongue to surface",
+        "visibility": "visible"
+      },
+      "Papa": {
+        "positionXYZ": [
+          -2.3,
+          -2,
+          0.35
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "Scooby",
+        "eyeTarget": "Scooby",
+        "pose": "waiting on low stone",
+        "limbsContactSupport": "both feet stone",
+        "visibility": "offscreen left"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          -1.8,
+          -2,
+          0.35
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "Scooby",
+        "eyeTarget": "Scooby",
+        "pose": "waiting on stone",
+        "limbsContactSupport": "both feet stone",
+        "visibility": "offscreen left"
+      }
+    },
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "leftWindow": [
+        -1.4,
+        0,
+        1.2
+      ],
+      "rightWindow": [
+        1.4,
+        0,
+        1.2
+      ],
+      "lantern": [
+        1,
+        0,
+        1.6
+      ]
+    },
+    "objectStateBefore": "bowl water full",
+    "objectStateAfter": "ripples, dog drinks; riders not mounted",
+    "previousAction": "Mama approval",
+    "nextAction": "Papa helps child board",
+    "reasonForShotChange": "purposeful object insert interrupts wide action repetition",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "Outside, Scooby drank a little water. Papa and PinPin waited at the garden stone."
+      ],
+      "ru": [
+        "На улице Скуби попил воды. Папа и Пин-Пин ждали у садового камня."
+      ],
+      "es": [
+        "Fuera, Scooby bebió un poco de agua. Papá y PinPin esperaban junto a la piedra del jardín."
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-011-v1.png",
+    "sceneDirection": "Low sensory CLOSE INSERT of Scooby lowering animated muzzle to water bowl and lapping, ripples and tiny tongue. Two front paws grounded behind bowl. Fur grouped soft animated, broad warm brindle shapes. Eyes gently focus on bowl, appropriate attention to drinking. Papa/PinPin waiting on distant LEFT stone outside crop; do not insert random miniature people. Close enough it differs dramatically from family wide."
+  },
+  "status": "creator-and-root-reviewed",
+  "n": 11,
+  "v": 1,
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-1fa53342-c34a-4c66-9f04-8a7b8d9d2c9b.png",
+  "startedAt": "2026-09-21T22:46:54.503Z",
+  "finishedAt": "2026-09-21T22:47:28.499Z",
+  "review": "Creator actual full-image PASS: low dog-drinking close detail with tongue touching water/ripples, two front paws behind bowl plus two rear paws coherent, eyes downward toward water. Soft animated dog face and readable amber eyes, folded ears/rump curl; family correctly outside crop. Home stays behind-left from bowl-right camera, exterior hardware and chimney consistent. Bowl rendered with thicker weathered rim than preceding ceramic wide, same beige round outdoor water container; qualitative prop variation noted.",
+  "alt": {
+    "en": "Scooby laps water from his outdoor bowl, making little rings on the surface.",
+    "ru": "Скуби лакает воду из миски у дома, и по поверхности расходятся маленькие круги.",
+    "es": "Scooby bebe de su cuenco fuera de casa y forma pequeños círculos en el agua."
+  },
+  "sha256": "7c81f9046067c42b9bba38cb1df86e1f0cd93bab43f657bca2b4f7b41f55b833",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-011-v1.png",
+  "width": 1536,
+  "height": 1024,
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-1fa53342-c34a-4c66-9f04-8a7b8d9d2c9b.png",
+  "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+}

@@ -1,0 +1,158 @@
+{
+  "id": "scene-007-v3",
+  "prompt": "Use case: precise-object-edit. Keep image exactly unchanged except remove the BACKGROUND cupboard/shelves/pots/flowers at far LEFT edge behind child (roughly leftmost200pixels above tabletop). Replace only that cupboard/shelf area with the same simple warm cream plaster, curved timber ribs and lower wooden wainscot as the rest of opposite wall. This camera looks away from entrance so no fixtures from entrancewall should migrate to this reverse. Keep child, Papa foreground, every paw/face/quill, tabletop cups/porridge/teapot/bread, expressions/eye contact, lighting, camera and color exactly as original. No new objects, windows, doors or decorations.1536x1024.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-007-v2.png",
+      "role": "edit target; remove left background cabinet remnant only",
+      "sha256": "3c6ba2b300da55418f02211cfb096e15925f0422436f0b416260b3159763d446"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:36:41.587962+00:00",
+  "transformRecord": {
+    "previousNumber": 7,
+    "id": "elder-r5-007",
+    "purpose": "Let child own the story: expressive face past Papa shoulder",
+    "frameId": "K",
+    "camera": {
+      "positionXYZ": [
+        1.45,
+        1.75,
+        1.55
+      ],
+      "targetXYZ": [
+        0.9,
+        -0.8,
+        1.25
+      ],
+      "height": 1.55,
+      "framing": "over-Papa-shoulder close medium on PinPin",
+      "approximateFieldOfViewDegrees": 38,
+      "axisSide": "K +X of Papa-child dialogue axis"
+    },
+    "actors": {
+      "Mama": {
+        "positionXYZ": [
+          -1.2,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "seated with infant",
+        "limbsContactSupport": "seat supports body; one forearm supports baby; other on table",
+        "visibility": "outside tight crop"
+      },
+      "PomPom": {
+        "positionXYZ": [
+          -1.1,
+          0,
+          0.7
+        ],
+        "bodyFacingTarget": "Mama",
+        "headFacingTarget": "Mama",
+        "eyeTarget": "Mama",
+        "pose": "held infant",
+        "limbsContactSupport": "Mama forearm and lap",
+        "visibility": "outside tight crop"
+      },
+      "Papa": {
+        "positionXYZ": [
+          0.7,
+          0.8,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "listening with cup",
+        "limbsContactSupport": "cup in one paw; other on tabletop",
+        "visibility": "foreground shoulder/back partial"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          0.9,
+          -0.8,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "animated story, one open raised paw",
+        "limbsContactSupport": "other paw table; seated",
+        "visibility": "visible"
+      }
+    },
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCupboards": [
+        -3,
+        1,
+        0
+      ],
+      "rightStove": [
+        3,
+        1,
+        0
+      ],
+      "PapaCup": [
+        0.55,
+        0.6,
+        0.85
+      ],
+      "childBowl": [
+        0.65,
+        -0.6,
+        0.85
+      ]
+    },
+    "objectStateBefore": "Papa cup lifted after pouring",
+    "objectStateAfter": "child tells lake story; Papa listens",
+    "previousAction": "breakfast pour",
+    "nextAction": "Papa lowers cup",
+    "reasonForShotChange": "reverse distance/view for child excitement; fixed +X dialogue-axis side",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "“Yesterday, we helped the lake,” PinPin told Papa. “The water came back!”"
+      ],
+      "ru": [
+        "«Вчера мы помогли озеру, — рассказал Пин-Пин Папе. — Вода вернулась!»"
+      ],
+      "es": [
+        "«Ayer ayudamos al lago», le contó PinPin a Papá. «¡El agua volvió!»"
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-007-v1.png",
+    "sceneDirection": "A genuinely new viewpoint OVER PAPA SHOULDER: small out-of-focus cream cheek/quill/shoulder foreground right, child full expressive face beyond table. PinPin raises one paw as he tells Papa about the lake, second paw by porridge. Papa holds cup, listening. Child pupils direct to Papa immediately beside camera, not viewer. Keep fixed seats and daylight kitchen. Mama/baby remain outside this tight crop."
+  },
+  "status": "creator-and-root-reviewed",
+  "n": 7,
+  "v": 3,
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-9c1469d6-11e6-4b50-9e90-e1c692e55f72.png",
+  "startedAt": "2026-09-21T22:37:08.775Z",
+  "finishedAt": "2026-09-21T22:37:48.278Z",
+  "review": "Creator actual full-image PASS: true over-Papa-shoulder child close-medium, PinPin expressive face and pupils to Papa foreground, one raised story paw and other by bowl; Papa attached foreground paw holds cup. New camera sees opposite timber/plaster wall; v2/v3 removed wrongly transplanted entrance/windows/stove/cupboard from initial reverse. Fixed table props plain porridge, beige crockery, teapot and bread retained. Child lower legs cropped; no hidden anatomy certified. Opposite wall is minimal inferred continuation without invented door/furniture.",
+  "alt": {
+    "en": "Seen over Papa’s shoulder, PinPin raises one paw and excitedly tells him about the lake.",
+    "ru": "Через плечо Папы видно, как Пин-Пин поднимает лапку и увлечённо рассказывает об озере.",
+    "es": "Por encima del hombro de Papá, PinPin levanta una patita y le cuenta emocionado lo del lago."
+  },
+  "sha256": "95e0aa56c0e40010dc5bd7603d1894a42f608c3e5913c62e40b3d18b25398d77",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-007-v3.png",
+  "width": 1536,
+  "height": 1024,
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-9c1469d6-11e6-4b50-9e90-e1c692e55f72.png",
+  "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+}

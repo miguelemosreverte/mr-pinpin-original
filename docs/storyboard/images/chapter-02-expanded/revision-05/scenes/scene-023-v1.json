@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-023",
+  "version": 1,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:33:02.155199+00:00",
+  "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 3:2 finished children’s-book illustration, no text or panels.\nSTYLE LOCK: closely match the soft expressive animated children’s-book forms in references 1 and 2. Warm cream facial planes, open readable hazel/amber iris around separate pupil, broad gentle eyelids, rounded appealing muzzle, grouped sculpted fur. Papa is a mature broad adult about 1.6 times PinPin height, NOT the child duplicated at same scale. Dog shoulder about 2.7 child heights, warm dark-brindled brown, white chest bib, grey-cream muzzle, folded triangular ears, curled rump tail. Dog expression attentive and emotionally present. No black button eyes, dark face masks, hard shiny skin, photographic animal anatomy/detail or live-action fur. All unclothed animal characters. Only Elder has glasses.\nREFERENCE ROLES: Image 1: PRIMARY approved common-scale animated identity/style reference; Papa and child distinct; dog scale and expressive materials; Image 2: AUTHORITATIVE book style, Elder and PinPin identity, expressive iris/pupil eyes, soft animation shapes; Image 3: ENVIRONMENT GEOGRAPHY ONLY; root portal, left staff/boulder and path, right fern, sunny patch beyond fern; Image 4: CONTACT/LOCATION ONLY, not camera nor character style; replace with fresh approved animated cast.\nNARRATIVE AND CAMERA: A genuinely wide slightly elevated geography reset: tree root doorway in LEFT THIRD, parked crooked staff and moss boulder left of it, a tall fern next, and well BEYOND that fern in FAR RIGHT THIRD the sunny resting patch. Papa sits against the low mossy REST ROCK, Scooby curls beside him, oversized compared with little hedgehogs but not blocking entrance/path. PinPin stands between path and father facing Papa; Elder waits small at left threshold, looking toward child. Papa and Scooby pay gentle attention to PinPin. Plenty of open path visibly connects resting place to portal. Rest rock is separate from trunk; background right is continuous forest, not a second hill/tree summit. Bright midmorning.\nPER-ACTOR/CAMERA PLAN (approximate illustrative geometry, not labels to render): {\"previousNumber\":23,\"id\":\"elder-r5-023\",\"purpose\":\"Map safe resting place and clear path to entrance\",\"frame\":\"E\",\"camera\":{\"positionXYZ\":[2,-8,3],\"targetXYZ\":[2,-0.5,0.3],\"height\":3,\"fieldOfView\":70,\"framing\":\"wide slightly elevated geographic master doorway left rest far right\",\"axisSide\":\"approach/front negativeY; travel rear negativeY\"},\"actors\":[{\"name\":\"Papa\",\"positionXYZ\":[3.6,-1,0],\"bodyFacing\":\"PinPin\",\"headFacing\":\"PinPin\",\"eyeTarget\":\"PinPin\",\"pose\":\"seated against moss rock\",\"contacts\":\"seat rock two hindfeet ground\",\"visibility\":\"visible\"},{\"name\":\"Scooby\",\"positionXYZ\":[4.6,-1,0],\"bodyFacing\":\"Papa\",\"headFacing\":\"Papa\",\"eyeTarget\":\"Papa\",\"pose\":\"curl settling\",\"contacts\":\"body/front paws ground\",\"visibility\":\"visible\"},{\"name\":\"PinPin\",\"positionXYZ\":[2.2,-1.8,0],\"bodyFacing\":\"Papa\",\"headFacing\":\"Papa\",\"eyeTarget\":\"Papa\",\"pose\":\"standing\",\"contacts\":\"feet path\",\"visibility\":\"visible\"},{\"name\":\"Elder\",\"positionXYZ\":[0,-0.3,0],\"bodyFacing\":\"PinPin\",\"headFacing\":\"PinPin\",\"eyeTarget\":\"PinPin\",\"pose\":\"waiting by portal\",\"contacts\":\"feet ground\",\"visibility\":\"visible\"}],\"landmarks\":{\"threshold\":[0,0,0],\"staffBoulder\":[-1.6,-0.2,0],\"fern\":[1.4,-0.3,0],\"restRock\":[4,-1,0],\"mountingStone\":[-2,-3,0.4]},\"state\":\"Papa dog relocated beyond fern; doorway unobstructed\",\"transition\":\"intimate greeting to useful geography reset\",\"status\":\"planned-awaiting-cast-gate\"}\nPhysical discipline: one head and two forepaws/two hindfeet per hedgehog; dog exactly four legs and one tail. Naturally occluded limbs stay hidden, do not expose extra limbs to satisfy a count. Actual contact and believable balance. Preserve morning daytime light and scene landmarks; no clothes, tack, harness, captions, diagrams, arrows, watermarks. This is a cinematic story moment, not a character-sheet montage.\nImage5 isolates Papa identity: never put glasses on Papa. Only Elder at distant doorway-left wears glasses. Position rest rock and Papa/dog FAR RIGHT beyond fern exactly asimage4, no staff by restingrock and no hill behindright. Genuine wide GEOGRAPHY establishing with considerable empty connecting path.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "PRIMARY approved common-scale animated identity/style reference; Papa and child distinct; dog scale and expressive materials",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "AUTHORITATIVE book style, Elder and PinPin identity, expressive iris/pupil eyes, soft animation shapes",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/elder-exterior-rest-plate-v1.png",
+      "role": "ENVIRONMENT GEOGRAPHY ONLY; root portal, left staff/boulder and path, right fern, sunny patch beyond fern",
+      "sha256": "6295a3c64ad0ad7ff1634a046201804f3a5885c759419538247be28074b0500b"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-023-v2.png",
+      "role": "CONTACT/LOCATION ONLY, not camera nor character style; replace with fresh approved animated cast",
+      "sha256": "ffe72719bb329a3259bb425a2a5b4ffcb78a25360e407b9a0dfb2dbb2312f655"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Papa identity NO glasses, adult warm cream face, not Elder; background ignored",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 23,
+    "id": "elder-r5-023",
+    "purpose": "Map safe resting place and clear path to entrance",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -8,
+        3
+      ],
+      "targetXYZ": [
+        2,
+        -0.5,
+        0.3
+      ],
+      "height": 3,
+      "fieldOfView": 70,
+      "framing": "wide slightly elevated geographic master doorway left rest far right",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          3.6,
+          -1,
+          0
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "seated against moss rock",
+        "contacts": "seat rock two hindfeet ground",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          4.6,
+          -1,
+          0
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "curl settling",
+        "contacts": "body/front paws ground",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          2.2,
+          -1.8,
+          0
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "standing",
+        "contacts": "feet path",
+        "visibility": "visible"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0,
+          -0.3,
+          0
+        ],
+        "bodyFacing": "PinPin",
+        "headFacing": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "waiting by portal",
+        "contacts": "feet ground",
+        "visibility": "visible"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "Papa dog relocated beyond fern; doorway unobstructed",
+    "transition": "intimate greeting to useful geography reset",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "rejected-cast",
+  "completedAt": "2026-09-21T22:35:33.256378+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c600-14b2-7cd0-a2bc-99b2f7afd2dd/exec-60ebe91e-7650-48c3-96d5-3ce24fe93235.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-023-v1.png",
+  "sha256": "a8386bdc13c0e1900fd85424e10415cafa72a7dd02c53afebc6af888c2d339b4",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator full image reject: layout and camera effective but model replaced seated Papa with a second upright dog. Exactly one dog required; restore seated mature hedgehog Papa and keep curled Scooby. Elder distant quills also too brown; correct silver tone.",
+  "alt": {
+    "en": "A sunny resting patch lies beyond the fern near the Elder’s doorway.",
+    "ru": "Солнечное место для отдыха находится за папоротником у входа Старейшины.",
+    "es": "Un rincón soleado para descansar queda más allá del helecho junto a la entrada del Anciano."
+  },
+  "startedAt": "2026-09-21T22:33:58.926Z",
+  "finishedAt": "2026-09-21T22:34:42.436Z",
+  "timingSource": {
+    "source": "actual session tool-call and matching result timestamps",
+    "callId": "call_xislXz6sDT3DwnE62G0nszC8",
+    "scope": "functions.exec containing request read and awaited built-in imagegen; includes orchestration overhead, not claimed model-internal latency"
+  }
+}

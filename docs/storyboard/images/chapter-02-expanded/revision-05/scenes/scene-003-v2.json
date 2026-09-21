@@ -1,0 +1,137 @@
+{
+  "id": "scene-003-v2",
+  "prompt": "Use case: precise-object-edit. Keep this exact1536x1024 storybook image, camera, Papa face/body/feet on stone, dog head/expression/gaze, both front paws, cottage, bowl, stone, lighting and all scale. Correct ONLY Scooby tail anatomical placement. REMOVE the curled tail currently at screen RIGHT beside the dog front shoulder; fill with matching garden/path. The dog body runs behind Papa/stone toward screenLEFT, so its rump and tail base belong at far LEFT behind the stone. Show at most a small upward-curled tail tip peeking from behind the stone/Papa left edge attached plausibly to that concealed rump. The tail may be mostly hidden; never place it near head or chest. Do not move other anatomy or objects. Keep all expressive animated materials unchanged. No text.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-003-v1.png",
+      "role": "edit target; relocate tail only",
+      "sha256": "b9a46c5105e20033c6ef12f2110b64a63e4704401d5f80e69d03b2ce1ddfce8a"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:25:56.564419+00:00",
+  "transformRecord": {
+    "previousNumber": 3,
+    "id": "elder-r5-003",
+    "purpose": "Make the dismount support readable",
+    "frameId": "H",
+    "camera": {
+      "positionXYZ": [
+        -4,
+        -5,
+        1
+      ],
+      "targetXYZ": [
+        -1.5,
+        -2,
+        1
+      ],
+      "height": 1,
+      "framing": "side three-quarter medium-wide low contact view",
+      "approximateFieldOfViewDegrees": 48,
+      "axisSide": "H exterior negativeY"
+    },
+    "actors": {
+      "Papa": {
+        "positionXYZ": [
+          -2,
+          -2,
+          0.35
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "Scooby",
+        "eyeTarget": "Scooby",
+        "pose": "standing both feet on stone after dismount",
+        "limbsContactSupport": "two feet stone, near paw on dog shoulder, free paw balance",
+        "visibility": "visible"
+      },
+      "Scooby": {
+        "positionXYZ": [
+          -0.7,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "crouched still beside stone",
+        "limbsContactSupport": "forepaws earth and folded hindlegs; back lowered",
+        "visibility": "visible"
+      }
+    },
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "leftWindow": [
+        -1.4,
+        0,
+        1.2
+      ],
+      "rightWindow": [
+        1.4,
+        0,
+        1.2
+      ],
+      "lantern": [
+        1,
+        0,
+        1.6
+      ]
+    },
+    "objectStateBefore": "solo rider on dog; stone adjacent",
+    "objectStateAfter": "Papa on stone; dog crouched",
+    "previousAction": "Papa reveal",
+    "nextAction": "family hug",
+    "reasonForShotChange": "drop camera to feet/support from preceding portrait",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "Scooby crouched. Papa stepped onto the stone, then down onto the ground."
+      ],
+      "ru": [
+        "Скуби пригнулся. Папа спустился на камень, а потом на землю."
+      ],
+      "es": [
+        "Scooby se agachó. Papá bajó a la piedra y después al suelo."
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-003-v1.png",
+    "sceneDirection": "A clear low side dismount image: Scooby crouched with chest close to earth, Papa now upright with BOTH feet on single broad low stone, one paw on Scooby shoulder. Stone does not float or duplicate. Dog watches Papa attentively, Papa watches his foothold/dog. Only Papa and Scooby visible."
+  },
+  "status": "creator-and-root-reviewed",
+  "n": 3,
+  "v": 2,
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-7e22c33b-9f6d-4a2b-a41d-1f49ae4b5864.png",
+  "startedAt": "2026-09-21T22:26:14.757Z",
+  "finishedAt": "2026-09-21T22:26:42.581Z",
+  "review": "Creator actual full-image PASS: Papa has two planted feet on the single low broad stone, one forepaw steadies on Scooby back; dog crouched with two grounded front paws and looks up at Papa, whose eyes meet dog. Papa light cream face and dog soft animated features match accepted style. V2 corrected erroneous front-side tail: only tip now peeks left behind stone near concealed rump. Hindlegs/body partly occluded, not certified. Home facade and bowl positions intact.",
+  "alt": {
+    "en": "Papa stands with both feet on the garden stone, resting one paw on crouching Scooby as they look at each other.",
+    "ru": "Папа стоит обеими лапами на садовом камне и опирается на пригнувшегося Скуби; они смотрят друг на друга.",
+    "es": "Papá apoya ambos pies en la piedra del jardín y una pata en Scooby agachado, mientras se miran."
+  },
+  "sha256": "7f4545db4867e9e56cf955d4f0c6fc1e3ae5e6fc4412dc242de1ad2de342d25e",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-003-v2.png",
+  "width": 1536,
+  "height": 1024,
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-7e22c33b-9f6d-4a2b-a41d-1f49ae4b5864.png",
+  "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+}

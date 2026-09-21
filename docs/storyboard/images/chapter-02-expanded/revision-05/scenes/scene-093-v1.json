@@ -1,0 +1,156 @@
+{
+  "id": "scene-093-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 polished dimensional animated children's-book illustration, no text, panels or border.\nINPUT ROLES: Image1 established Elder/PinPin scene controls ALL rendering, expressive eyes, shaped brows and soft sculpted materials. Image2 approved cast: FAR LEFT round-eared broad adult HEDGEHOG is Papa; middle auburn mother holds tiny baby; smaller orange hedgehog is PinPin; separate far-right DOG is Scooby. Keep identities SEPARATE. Papa is never dog-faced, never spectacles. Image3 is previous scene for location, physical state, family seating/contact ONLY, not its obsolete character rendering or camera.\nPapa has luminous cream cheeks/eye surrounds, warm hazel irises with distinct pupils/ivory sclera, mature broad haunch/body, grey-brown tipped quills; NO dark eye mask, button eyes, photographic face or black rim shadows. PinPin smaller younger reddish quills expressive face. Scooby when present has approved soft animated brown/brindle groups, folded ears, cream muzzle, white bib, curled tail, expressive amber eyes; NO photographed pet detail or wet PBR fur. Qualitative scale Papa1.6child, dog shoulder2.7child. Anatomy two forepaws/two hindfeet per hedgehog, four dog legs, one tail. Soft facial bounce lighting, warm rich book environment, bright late morning/midday, no dusk.\nNEW SHOT: WIDE reassuring geography return from enclosed study. Tree entrance left with Elder following smaller PinPin out. Staff parked LEFT entrance; fern RIGHT. Awake seated Papa against mossy rock FAR RIGHT beyond fern, Scooby resting beside him head lifted. Child faces Papa, Papa looks directly child, dog looks directly child, Elder watches child. Sunny open path unblocked. Camera a little lower than old master, greenery at bottom foreground frames clear path between child and father. Same rest patch, no new doors.\nCAMERA art-direction record (not literal labels in image): {\"positionXYZ\":[2,-8,1.1],\"targetXYZ\":[2,-0.6,0.8],\"height\":1.1,\"framing\":\"Wide geography reset after enclosed study\",\"approximateFieldOfView\":55,\"axisSide\":\"negativeY\"}\nActors: PinPin at 0.4,-0.7,0; body/head/eyes toward Papa; walking; feet ground; forepaws relaxed. Elder at 0,0,0; body/head/eyes toward Papa; following; feet threshold. Papa at 4,-1,0; body/head/eyes toward PinPin; seated moss rock; feet ground; forepaws lap. Scooby at 5,-1,0; body/head/eyes toward PinPin; lying head raised; forepaws grounded rear tucked\nPurpose: Wide geography reset after enclosed study. Keep named landmarks in existing reference geographic relationship; don't mirror set. Natural cropping/occlusion allowed, no invented limbs.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:18:17.154Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "style and Elder/PinPin",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "cast identity scale; Papa far left hedgehog",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-093-v1.png",
+      "role": "location/action state only; camera must change as directed",
+      "sha256": "31c4e59e0f77ac3b52fc251f6ec2adc09e3c032193084eff31534b702b005a8a"
+    }
+  ],
+  "status": "rejected",
+  "transformRecord": {
+    "previousNumber": 93,
+    "id": "elder-r5-093",
+    "purpose": "Wide geography reset after enclosed study",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -8,
+        1.1
+      ],
+      "targetXYZ": [
+        2,
+        -0.6,
+        0.8
+      ],
+      "height": 1.1,
+      "framing": "Wide geography reset after enclosed study",
+      "approximateFieldOfView": 55,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "id": "PinPin",
+        "positionXYZ": [
+          0.4,
+          -0.7,
+          0.0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "walking",
+        "limbsContactSupport": "walking; feet ground; forepaws relaxed",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Elder",
+        "positionXYZ": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "following",
+        "limbsContactSupport": "following; feet threshold",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Papa",
+        "positionXYZ": [
+          4.0,
+          -1.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "seated moss rock",
+        "limbsContactSupport": "seated moss rock; feet ground; forepaws lap",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Scooby",
+        "positionXYZ": [
+          5.0,
+          -1.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "lying head raised",
+        "limbsContactSupport": "lying head raised; forepaws grounded rear tucked",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staff": [
+        -1,
+        0,
+        0
+      ],
+      "fern": [
+        1,
+        0,
+        0
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "canonical scene092",
+      "after": "Papa awake, Scooby lifts head, PinPin emerges with Elder"
+    },
+    "previousAction": "canonical scene092",
+    "nextAction": "canonical scene094",
+    "reasonForShotChange": "Wide geography reset after enclosed study"
+  },
+  "startedAt": "2026-09-21T22:18:30.010Z",
+  "finishedAt": "2026-09-21T22:19:17.121Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c600-79e9-7ef1-bcf3-9c07d2a5d2dd/exec-bf63f5e7-1f0b-4447-aada-9ca33b577bce.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-093-v1.png",
+  "sha256": "b5e3417b58d83df47d303ff16cff7f5df20305612ee4a83994b9c5cb7d39be06",
+  "review": "REJECT actual image: incorrectly inserts Mama and baby in doorway instead of Elder. Papa/Scooby style and gaze good but cast violates scene.",
+  "width": 1536,
+  "height": 1024
+}

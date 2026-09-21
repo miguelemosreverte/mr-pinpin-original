@@ -17,3 +17,13 @@ Both root and independent QA consider the scene test ready for Miguel's comparis
 User review precedes propagation and official publication. Prior art is preserved.
 
 Root browser visual review: actually viewed the full proposed/authority pair and eight enlarged original-image face views. Papa’s brighter eyes and facial planes remain visible at scene size; the dog’s brow, muzzle and grouped coat read consistently with the animated reference. Side-by-side differences in setting and light are retained deliberately.
+
+## Miguel approval and next discussion
+
+Miguel: “Right, this works perfectly. Thank you very much. Let's proceed now.” The shared style and arrival proposal are user-approved for further work. His same message asks to discuss camera improvements to the Papa introduction before continuing. Root reviewed actual ordered images001–036 and the scene camera/text records. No new camera proposal is approved yet; no official-publication cutover is implied.
+
+Current opening is25 images: arrival/reunion001–005, breakfast006–010, boarding/departure011–015, journey/arrival016–020, greeting/rest021–025. Useful existing strengths: atmosphere001, window reaction004, family greeting005, Mama response010, dog reaction014, destination reveal017, spatial rest establishing023. Repetition: breakfast007–009 similar table angle; boarding012–013 and arrival018–020 largely similar side views.
+
+Discussion proposal: preserve stepwise action and locations while changing who the camera follows. Move the window reaction earlier in the arrival sequence; alternate child narration and Papa's listening reaction at breakfast; retain side-on physical-contact shots but add/replace an existing travel shot with a view from behind PinPin over Scooby's ears; present the familiar Papa/Elder greeting from the child's height and a closer personal welcome; preserve the wide rest-space geography and quiet nap beat. Recompose selected existing slots rather than add a new blanket image quota. Interior/cavern work largely stays. This is discussion, not an implemented shot-plan change.
+
+Subsequent instruction: Miguel authorized execution of the next full camera/style revision. See `../../revision-05/CONTRACT.md` and `../../revision-05/elder/REPORT.md` for the resulting proposal. The discussion above is preserved as history.

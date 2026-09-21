@@ -1,0 +1,156 @@
+{
+  "id": "scene-096-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 polished dimensional animated children's-book illustration, no text, panels or border.\nINPUT ROLES: Image1 established Elder/PinPin scene controls ALL rendering, expressive eyes, shaped brows and soft sculpted materials. Image2 approved cast: FAR LEFT round-eared broad adult HEDGEHOG is Papa; middle auburn mother holds tiny baby; smaller orange hedgehog is PinPin; separate far-right DOG is Scooby. Keep identities SEPARATE. Papa is never dog-faced, never spectacles. Image3 is previous scene for location, physical state, family seating/contact ONLY, not its obsolete character rendering or camera.\nPapa has luminous cream cheeks/eye surrounds, warm hazel irises with distinct pupils/ivory sclera, mature broad haunch/body, grey-brown tipped quills; NO dark eye mask, button eyes, photographic face or black rim shadows. PinPin smaller younger reddish quills expressive face. Scooby when present has approved soft animated brown/brindle groups, folded ears, cream muzzle, white bib, curled tail, expressive amber eyes; NO photographed pet detail or wet PBR fur. Qualitative scale Papa1.6child, dog shoulder2.7child. Anatomy two forepaws/two hindfeet per hedgehog, four dog legs, one tail. Soft facial bounce lighting, warm rich book environment, bright late morning/midday, no dusk.\nNEW SHOT: Exactly Papa, PinPin, Scooby and Elder only; NO Mama or infant. Side-three-quarter boarding contact view at low eye level, dog crouched sideways facing RIGHT, turned attentive eyes toward boarding child without twisting neck. Papa GROUNDED near side of low stone supports child with BOTH forepaws at child's hips. Child moves onto back: NEAR hindfoot planted on stone, FAR hindfoot on dog's back, two forepaws planted shoulder fur. Keep simple clearly attached limbs. Elder round spectacles alone at distant doorway watches. Camera slightly more frontward than former scene, fur/stone/paw contact center, dog face right gives attentive connection. Staff parked portal-left fern right. No reins saddle clothing. Preserve large dog relative to tiny riders from cast plate.\nCAMERA art-direction record (not literal labels in image): {\"positionXYZ\":[-3,-6,1.1],\"targetXYZ\":[-1.5,-2,1],\"height\":1.1,\"framing\":\"Side three-quarter contact view\",\"approximateFieldOfView\":48,\"axisSide\":\"negativeY\"}\nActors: Scooby at -1,-2,0; body/head/eyes toward PinPin; stationary crouch chest/forepaws grounded rear tucked. Papa at -2.4,-2.4,0; body/head/eyes toward PinPin; two feet ground two paws childs hips. PinPin at -1.8,-2,0.8; body/head/eyes toward dogBack; near foot stone far foot dogback two forepaws fur. Elder at 0,0,0; body/head/eyes toward PinPin; background watching grounded\nPurpose: Side three-quarter contact view. Keep named landmarks in existing reference geographic relationship; don't mirror set. Natural cropping/occlusion allowed, no invented limbs.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:24:39.218Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "style and Elder/PinPin",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "cast identity scale; Papa far left hedgehog",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-096-v1.png",
+      "role": "location/action state only; camera must change as directed",
+      "sha256": "27559ca65613b1633cbf61e88a3b8619ddd405484fcaedae633d0c16a9191ef4"
+    }
+  ],
+  "status": "rejected",
+  "transformRecord": {
+    "previousNumber": 96,
+    "id": "elder-r5-096",
+    "purpose": "Side three-quarter contact view",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        -3,
+        -6,
+        1.1
+      ],
+      "targetXYZ": [
+        -1.5,
+        -2,
+        1
+      ],
+      "height": 1.1,
+      "framing": "Side three-quarter contact view",
+      "approximateFieldOfView": 48,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "id": "Scooby",
+        "positionXYZ": [
+          -1.0,
+          -2.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "stationary crouch chest/forepaws grounded rear tucked",
+        "limbsContactSupport": "stationary crouch chest/forepaws grounded rear tucked",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Papa",
+        "positionXYZ": [
+          -2.4,
+          -2.4,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "two feet ground two paws childs hips",
+        "limbsContactSupport": "two feet ground two paws childs hips",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "PinPin",
+        "positionXYZ": [
+          -1.8,
+          -2.0,
+          0.8
+        ],
+        "bodyFacingTarget": "dogBack",
+        "headFacingTarget": "dogBack",
+        "eyeTarget": "dogBack",
+        "pose": "near foot stone far foot dogback two forepaws fur",
+        "limbsContactSupport": "near foot stone far foot dogback two forepaws fur",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Elder",
+        "positionXYZ": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "background watching grounded",
+        "limbsContactSupport": "background watching grounded",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staff": [
+        -1,
+        0,
+        0
+      ],
+      "fern": [
+        1,
+        0,
+        0
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "canonical scene095",
+      "after": "Child climbs stone to dog while Papa supports"
+    },
+    "previousAction": "canonical scene095",
+    "nextAction": "canonical scene097",
+    "reasonForShotChange": "Side three-quarter contact view"
+  },
+  "startedAt": "2026-09-21T22:25:07.920Z",
+  "finishedAt": "2026-09-21T22:25:38.811Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c600-79e9-7ef1-bcf3-9c07d2a5d2dd/exec-7a3fb706-1b98-4c44-b4e4-1e569b7c0f1b.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-096-v1.png",
+  "sha256": "b584e87b763740dd0054ef81254b0000387e86c444f09b1587ed3b01eacba97c",
+  "review": "REJECT actual fullview: child near hindfoot rests dog rump instead of stone; Papa near foot also reads stone. Root portal gains built jamb/step. Style and attentive dog pass; correct contact and natural entrance.",
+  "width": 1536,
+  "height": 1024
+}

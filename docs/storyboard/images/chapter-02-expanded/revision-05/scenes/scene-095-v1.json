@@ -1,0 +1,156 @@
+{
+  "id": "scene-095-v1",
+  "prompt": "Use case: illustration-story. Create ONE landscape1536x1024 polished dimensional animated children's-book frame, no text/panels. Image1 is sole established rendering style and Elder/child identity authority. Image2 gives approved mature Papa cream-faced redesign. Image3 supplies clearing landmarks only; DO NOT copy its camera or old Papa eyes. \nNEW CAMERA: intimate medium shot at PinPin eye-height, just behind the child's near shoulder. Child's small reddish quilled head and readable upward-looking profile at lower foreground, Papa adult on right in three-quarter profile, Elder with gold round spectacles left/center. See the friendly Elder's expressive face clearly; Papa looks directly at Elder and Elder reciprocates. Child is INCLUDED watching Elder with raised attentive face. All three feet are grounded but lower bodies may crop. Papa about1.6 child height with broad adult haunch/body, mature cream cheeks and warm hazel irises, visible pupil separation, no dark eye mask/button eyes. Elder grey tipped quills and spectacles; child younger smaller reddish quills, no glasses. Papa thanks familiar friend; Elder lifts one conversational forepaw, other rests belly. No handshake or extra paws. Dog waits OFF CAMERA to right; do not add him to frame.\nMaintain same enormous root-tree entrance BACKGROUND, staff parked left of doorway, fern right, sunny late morning; camera shifts close around child, never mirror environment. Depth is shallow but keep expressive faces readable. Soft warm reflected fill, creamy face planes, sculpted grouped fur/quills, animated brows/eyelids; NO photographed hedgehog faces, black rim shadows, wet PBR fur. This is emotional exchange through child's attention rather than another full-body lineup.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:12:39.567Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "style and Elder/PinPin",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/style-tests/papa-scooby-style-study-v2.png",
+      "role": "approved Papa identity/style only; dog offscreen",
+      "sha256": "a2a9d78052a91b1e0b0aa38fd9d7dc16d77e10761d09203e4f29c1dfb8a12d36"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-095-v1.png",
+      "role": "environment geography only",
+      "sha256": "ecac07eeddb81dcf429668765a9b83273a9f29058a576bb0ae00986fce803517"
+    }
+  ],
+  "status": "rejected",
+  "transformRecord": {
+    "previousNumber": 95,
+    "id": "elder-r5-095",
+    "purpose": "Past child shoulder toward adult thanks triangle",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        1.7,
+        -3.5,
+        1
+      ],
+      "targetXYZ": [
+        1,
+        -0.5,
+        1.25
+      ],
+      "height": 1,
+      "framing": "Past child shoulder toward adult thanks triangle",
+      "approximateFieldOfView": 45,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "id": "Papa",
+        "positionXYZ": [
+          2.0,
+          -1.0,
+          0.0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "standing grounded",
+        "limbsContactSupport": "standing grounded; paws relaxed",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Elder",
+        "positionXYZ": [
+          0.0,
+          -0.4,
+          0.0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "one conversational paw other belly",
+        "limbsContactSupport": "one conversational paw other belly; feet ground",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "PinPin",
+        "positionXYZ": [
+          1.0,
+          -1.6,
+          0.0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "foreground looks up",
+        "limbsContactSupport": "foreground looks up; feet ground",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Scooby",
+        "positionXYZ": [
+          4.0,
+          -1.5,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "offscreen right waiting grounded",
+        "limbsContactSupport": "offscreen right waiting grounded",
+        "visibility": "offscreen"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staff": [
+        -1,
+        0,
+        0
+      ],
+      "fern": [
+        1,
+        0,
+        0
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "canonical scene094",
+      "after": "Papa thanks Elder, child participates by listening"
+    },
+    "previousAction": "canonical scene094",
+    "nextAction": "canonical scene096",
+    "reasonForShotChange": "Past child shoulder toward adult thanks triangle"
+  },
+  "startedAt": "2026-09-21T22:13:04.018Z",
+  "finishedAt": "2026-09-21T22:13:38.046Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c600-79e9-7ef1-bcf3-9c07d2a5d2dd/exec-d8127416-8bb1-4f7f-b491-7152e0514036.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-095-v1.png",
+  "sha256": "a9e50a18d3b0d3ce3d175284738aea607e44dfe41fc6b0fa528b4c6eaedf4baa",
+  "review": "REJECT actual full image: Papa became dog-faced hedgehog hybrid from two-character reference. Camera triangle strong, but character identity invalid. Never select.",
+  "width": 1536,
+  "height": 1024
+}

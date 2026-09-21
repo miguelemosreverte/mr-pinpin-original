@@ -1,0 +1,141 @@
+{
+  "id": "scene-009-v2",
+  "prompt": "Use case: precise-object-edit. Keep exact1536x1024 breakfast illustration, all character faces/gazes/paws/quills/positions, camera, table, cups/porridge/teapot/bread, furniture and lighting unchanged. TWO small continuity corrections only. 1) REMOVE the dark horizontal hinge currently visible on LEFT edge of green interior door above its brass knob. Fill hinge spot with matching green boards. Keep brass knob LEFT. Correct hinges are at RIGHT edge hidden behind Papa, so no additional visible hinge. 2) PinPin sits on the established round BACKLESS wooden stool. Remove the newly invented chair-back rail crossing bottom-left foreground behind PinPin (brown horizontal/diagonal rail nearx0–310,y800–1024). Fill its small exposed areas with matching child quills where they naturally continue or background floor; do not change the child body/sitting position. No new chair back. Do not alter any other area. No text.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-009-v1.png",
+      "role": "edit target; remove incorrect hinge and chair back only",
+      "sha256": "52a10351cd12717ee738c12c8fab03a76ba5bdbd94afba6d7dacc9cd38025701"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:44:29.530951+00:00",
+  "transformRecord": {
+    "previousNumber": 9,
+    "id": "elder-r5-009",
+    "purpose": "Papa proposes visiting a known friend with child reaction foreground",
+    "frameId": "K",
+    "camera": {
+      "positionXYZ": [
+        1.8,
+        -2,
+        1.35
+      ],
+      "targetXYZ": [
+        0.7,
+        0.8,
+        1.35
+      ],
+      "height": 1.35,
+      "framing": "over-child shoulder medium on Papa, wider than reaction closeup",
+      "approximateFieldOfViewDegrees": 43,
+      "axisSide": "K +X of Papa-child dialogue axis"
+    },
+    "actors": {
+      "Mama": {
+        "positionXYZ": [
+          -1.2,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "seated with infant",
+        "limbsContactSupport": "seat supports body; one forearm supports baby; other on table",
+        "visibility": "cropped/offscreen fixed seat"
+      },
+      "PomPom": {
+        "positionXYZ": [
+          -1.1,
+          0,
+          0.7
+        ],
+        "bodyFacingTarget": "Mama",
+        "headFacingTarget": "Mama",
+        "eyeTarget": "Mama",
+        "pose": "held infant",
+        "limbsContactSupport": "Mama forearm and lap",
+        "visibility": "cropped/offscreen held by Mama"
+      },
+      "Papa": {
+        "positionXYZ": [
+          0.7,
+          0.8,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "warm speaking gesture",
+        "limbsContactSupport": "one open paw childward; other rests table; cup on table",
+        "visibility": "visible"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          0.9,
+          -0.8,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "listening eagerly",
+        "limbsContactSupport": "seated; two paws near bowl",
+        "visibility": "near foreground head/shoulder partial"
+      }
+    },
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCupboards": [
+        -3,
+        1,
+        0
+      ],
+      "rightStove": [
+        3,
+        1,
+        0
+      ],
+      "PapaCup": [
+        0.55,
+        0.6,
+        0.85
+      ],
+      "childBowl": [
+        0.65,
+        -0.6,
+        0.85
+      ]
+    },
+    "objectStateBefore": "cup on table",
+    "objectStateAfter": "Papa open conversational paw",
+    "previousAction": "Papa listening",
+    "nextAction": "Mama agrees",
+    "reasonForShotChange": "widen into relationship while maintaining +X dialogue-axis side",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "“I know an old friend who listens very carefully,” said Papa. “The Elder. Shall we visit him together?”"
+      ],
+      "ru": [
+        "«У меня есть старый друг, который умеет внимательно слушать, — сказал Папа. — Старейшина. Сходим к нему вместе?»"
+      ],
+      "es": [
+        "«Tengo un viejo amigo que escucha con mucha atención», dijo Papá. «El anciano. ¿Vamos a visitarlo juntos?»"
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-009-v1.png",
+    "sceneDirection": "A wider REVERSE over PinPin shoulder toward Papa speaking, camera stays on same +X side of father-child line. PinPin head/quills near foreground left, a sliver delighted profile if natural. Papa broad mature face visible beyond, looks directly at child, one paw open invitation gesture, other rests table. Cup stays on table. Fixed furniture/background perspective follows camera, not mirror. Other family cropped."
+  },
+  "status": "planned-full-cast-gate"
+}

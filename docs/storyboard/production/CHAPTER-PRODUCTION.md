@@ -2,7 +2,7 @@
 
 This workflow carries a chapter from source to a complete reviewable proposal without relying on chat memory. The chapter bible, plans, images, sidecars and report are the handoff. They form an **illustrated continuity pack**, not a calibrated 3D model or a promise of exact geometry. Coordinates, dimensions and lens notes are explicit artistic constraints that must be checked against each output.
 
-Start from [chapter-template/](chapter-template/) and the project's [camera-first working method](WORKFLOW.md). For the current Elder revision, [revision-04/CONTRACT.md](chapters-02-04/revision-04/CONTRACT.md) and its user brief are authoritative. Academy remains revision02. Earlier contracts describe preserved proposals.
+Start from [chapter-template/](chapter-template/) and the project's [camera-first working method](WORKFLOW.md). For the current Elder revision, [revision-05/CONTRACT.md](chapters-02-04/revision-05/CONTRACT.md) and [revision04 story brief](chapters-02-04/revision-04/USER-BRIEF.md) are authoritative. Academy remains revision02. Earlier contracts describe preserved proposals.
 
 ## Durable files
 
@@ -48,7 +48,7 @@ For concealed natural routes, establish the same opening from both sides, actual
 
 Plan the complete sequence before filling isolated attractive images. Each meaningful action needs a readable setup, consequence or response; connect location/time changes with sufficient physical or emotional transitions. Silence can carry a reaction. Avoid filler and arbitrary image quotas.
 
-For every shot record source evidence, purpose, action/reaction/transition role, cast positions, look directions, camera position and target, eye height, framing, axis side, foreground/middle/background, light, prop state before/after and selected reference IDs. Coordinates are scene-space art direction, not measured rendering output. Describe off-camera partners for reverse shots so eyelines remain consistent. Mark inherited art as reuse only after checking it against the new sequence.
+For every shot record source evidence, purpose, action/reaction/transition role, cast positions, look directions, camera position and target, eye height, framing, axis side, foreground/middle/background, light, prop state before/after and selected reference IDs. Coordinates are scene-space art direction, not measured rendering output. Describe off-camera partners for reverse shots so eyelines remain consistent. Persist a structured camera/actor transform record before the generation request: camera position/target/height/framing/field-of-view/axis side, and every actor’s position, body direction, head direction, named eye target, pose, support and visibility. Use a shared location frame and scale; keep offscreen actors positioned. The current [camera standard](chapters-02-04/revision-05/elder/CAMERA-STANDARD.md) defines the reusable fields and limitations. A change of camera needs a story purpose; dense intermediate views are retained when they explain a physical or emotional transition. Mark inherited art as reuse only after checking it against the new sequence.
 
 **Stop that shot if:** the action is unclear, no valid references exist, the camera crosses the axis accidentally, an object changes state without a beat, or the narration describes something the image cannot show.
 
@@ -64,7 +64,7 @@ Write narration that matches the selected image and source/adaptation map. Prese
 
 Review the entire chapter in order: pacing, cause/effect, entrances/exits, day/time, emotional transitions, scale, changing prop states and unresolved future threads. Inspect the preproduction pack alongside the resulting scenes. Compare revised Elder scenes with optional `before` images where useful. Review all three languages, including repeated source passages and adaptation additions.
 
-Run `node scripts/verify-chapter-workshop.cjs` from the durable workspace (add `--revision 2` for the current revised proposal). During generation, `--allow-pending` reports missing assets as pending; it is **not** a completion pass. Open `review/chapter-workshop.html` on the local server; check desktop and a 390px mobile viewport. All scene images must remain uncropped, the complete reading sequence must be reachable, and production-only commentary must stay outside reading mode.
+Run `node scripts/verify-chapter-workshop.cjs` from the durable workspace (add `--revision 5` for the current Elder proposal; use the relevant revision for earlier proposals). During generation, `--allow-pending` reports missing assets as pending; it is **not** a completion pass. Open `review/chapter-workshop.html` on the local server; check desktop and a 390px mobile viewport. All scene images must remain uncropped, the complete reading sequence must be reachable, and production-only commentary must stay outside reading mode.
 
 **Completion gate:** no missing selected assets, complete three-language narration, structural/hash checks pass, every output has an actual review, no unresolved blocking continuity defect, and full-sequence desktop/mobile review is recorded. Present status as proposed until Miguel approves. Publication requires a separate authorized cutover; this workflow does not publish anything.
 

@@ -1,0 +1,7 @@
+# scene-096-v2
+
+Creator full-image PASS: child near foot stone, two forepaws fur, Papa two feet earth and attached support paws hips; child far leg naturally occluded, not certified. Scooby lies still attentive upward child gaze with animated face. Natural root arch restored, spectacles Elder background; staff left fern right. Dog rear/tail partly occluded. Light cream Papa style preserved.
+
+## Exact prompt
+
+Use case: precise-object-edit. Image1 target; image2 original scene contact/entrance geometry ONLY. Keep image1 new animated Papa/dog/child faces, expressive eye targets, lighting and side-threequarter camera. Correct ONLY staging contacts and doorway: MOVE low flat stone snug beside dog's near flank beneath child's near hindfoot. Child NEAR hindfoot must rest firmly on flat STONE top, FAR hindfoot on dog's back, TWO forepaws on shoulder fur. Papa stands entirely on GROUND behind stone, two own hindfeet visible on earth, his two forepaws support child's lower hips. Dog stays lying still two forepaws ground rear tucked. Make natural ROOT ARCH doorway like image2, no manufactured jamb or built step; Elder alone gold spectacles stands on bare earth inside root opening, staff left fern right. Three hedgehogs and dog only. Preserve all correct style and attentive facial warmth. One landscape1536x1024 no text.

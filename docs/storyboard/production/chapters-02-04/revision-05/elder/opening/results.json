@@ -1,0 +1,2001 @@
+{
+  "revision": 5,
+  "lane": "opening",
+  "status": "complete-creator-and-root-reviewed",
+  "scenes": [
+    {
+      "previousNumber": 1,
+      "id": "elder-r5-001",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-001-v2.png",
+      "alt": {
+        "en": "Seen from behind through misty trees, Papa and Scooby follow the garden path toward the little green-doored cottage.",
+        "ru": "Сквозь туманные деревья видно со спины, как Папа и Скуби идут по садовой дорожке к домику с зелёной дверью.",
+        "es": "Vistos de espaldas entre los árboles con niebla, Papá y Scooby siguen el sendero hacia la casita de puerta verde."
+      },
+      "review": "Creator actual full-image PASS: substantially pulled-back rear three-quarter environmental opening, Papa/Scooby walking away toward cottage ahead, misty forest depth and foreground ferns dominate. Pair roughly30percent of frame height, not literal20–25prompt, but no longer close portrait and clearly anticipatory. Papa seated sole rider with visible paw/contact near back; four connected dog limbs with near forepaw lifted, tail at rump. Door left hinges/right knob, windows/chimney/left stone/right bowl consistent; tiny lantern glass catches daylight, no distinct flame certified. Faces mostly profile/hidden by intended rear view.",
+      "camera": {
+        "positionXYZ": [
+          -7,
+          -12,
+          2.4
+        ],
+        "targetXYZ": [
+          0,
+          -3,
+          1
+        ],
+        "height": 2.4,
+        "framing": "atmospheric environmental wide; cottage right, path diagonal foreground",
+        "approximateFieldOfViewDegrees": 62,
+        "axisSide": "H exterior negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 1,
+        "id": "elder-r5-001",
+        "purpose": "Anticipation: a small approaching pair within a large misty home landscape",
+        "frameId": "H",
+        "camera": {
+          "positionXYZ": [
+            -7,
+            -12,
+            2.4
+          ],
+          "targetXYZ": [
+            0,
+            -3,
+            1
+          ],
+          "height": 2.4,
+          "framing": "atmospheric environmental wide; cottage right, path diagonal foreground",
+          "approximateFieldOfViewDegrees": 62,
+          "axisSide": "H exterior negativeY"
+        },
+        "actors": {
+          "Papa": {
+            "positionXYZ": [
+              0,
+              -6,
+              2.8
+            ],
+            "bodyFacingTarget": "threshold",
+            "headFacingTarget": "threshold",
+            "eyeTarget": "leftWindow",
+            "pose": "solo astride Scooby",
+            "limbsContactSupport": "two paws braced on shoulders; two hindlegs astride; no reins",
+            "visibility": "visible"
+          },
+          "Scooby": {
+            "positionXYZ": [
+              0,
+              -6,
+              0
+            ],
+            "bodyFacingTarget": "threshold",
+            "headFacingTarget": "threshold",
+            "eyeTarget": "threshold",
+            "pose": "gentle approaching walk",
+            "limbsContactSupport": "four connected legs, one near forepaw midstep; tail at rump",
+            "visibility": "visible"
+          },
+          "PinPin": {
+            "positionXYZ": [
+              -1.4,
+              0.2,
+              0.8
+            ],
+            "bodyFacingTarget": "leftWindow",
+            "headFacingTarget": "path",
+            "eyeTarget": "Papa",
+            "pose": "inside at window",
+            "limbsContactSupport": "paws on sill",
+            "visibility": "offscreen interior"
+          },
+          "Mama": {
+            "positionXYZ": [
+              0,
+              1,
+              0
+            ],
+            "bodyFacingTarget": "threshold",
+            "headFacingTarget": "threshold",
+            "eyeTarget": "Papa",
+            "pose": "inside holding infant",
+            "limbsContactSupport": "infant supported",
+            "visibility": "offscreen"
+          },
+          "PomPom": {
+            "positionXYZ": [
+              0,
+              1,
+              0.8
+            ],
+            "bodyFacingTarget": "Mama",
+            "headFacingTarget": "Mama",
+            "eyeTarget": "Mama",
+            "pose": "held",
+            "limbsContactSupport": "Mama forearm",
+            "visibility": "offscreen"
+          }
+        },
+        "staticLandmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "stone": [
+            -2,
+            -2,
+            0.35
+          ],
+          "bowl": [
+            2,
+            -2,
+            0
+          ],
+          "path": [
+            0,
+            -6,
+            0
+          ],
+          "leftWindow": [
+            -1.4,
+            0,
+            1.2
+          ],
+          "rightWindow": [
+            1.4,
+            0,
+            1.2
+          ],
+          "lantern": [
+            1,
+            0,
+            1.6
+          ]
+        },
+        "objectStateBefore": "door closed; mist at ground; Papa solo on dog",
+        "objectStateAfter": "same, closer approach",
+        "previousAction": "previous chapter lake resolution",
+        "nextAction": "child recognizes Papa at window",
+        "reasonForShotChange": "wide orientation before child reaction and closer reveal",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "The morning after PinPin helped the lake, mist lay low over the garden. Someone was coming along the path."
+          ],
+          "ru": [
+            "Наутро после того, как Пин-Пин помог озеру, над садом стелился туман. По дорожке кто-то приближался."
+          ],
+          "es": [
+            "A la mañana siguiente de ayudar al lago, una neblina cubría el jardín. Alguien venía por el sendero."
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-001-v1.png",
+        "sceneDirection": "Make the location and mist the subject: Papa and dog modest in the mid-distance, traveling toward the cottage. Do not repeat the close side-on arrival portrait. Cool mist contrasts warm mossy home. Papa rides alone with seat/paws supported; no other actor visible."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-001-v2.json",
+        "sha256": "e2ccb4e55a0217f7b0b52d28abe83a0790a7397892e9cd9ad6297eef94892d92",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:39:05.778Z",
+        "finishedAt": "2026-09-21T22:39:44.729Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS: substantially pulled-back rear three-quarter environmental opening, Papa/Scooby walking away toward cottage ahead, misty forest depth and foreground ferns dominate. Pair roughly30percent of frame height, not literal20–25prompt, but no longer close portrait and clearly anticipatory. Papa seated sole rider with visible paw/contact near back; four connected dog limbs with near forepaw lifted, tail at rump. Door left hinges/right knob, windows/chimney/left stone/right bowl consistent; tiny lantern glass catches daylight, no distinct flame certified. Faces mostly profile/hidden by intended rear view.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    },
+    {
+      "previousNumber": 3,
+      "id": "elder-r5-003",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-003-v2.png",
+      "alt": {
+        "en": "Papa stands with both feet on the garden stone, resting one paw on crouching Scooby as they look at each other.",
+        "ru": "Папа стоит обеими лапами на садовом камне и опирается на пригнувшегося Скуби; они смотрят друг на друга.",
+        "es": "Papá apoya ambos pies en la piedra del jardín y una pata en Scooby agachado, mientras se miran."
+      },
+      "review": "Creator actual full-image PASS: Papa has two planted feet on the single low broad stone, one forepaw steadies on Scooby back; dog crouched with two grounded front paws and looks up at Papa, whose eyes meet dog. Papa light cream face and dog soft animated features match accepted style. V2 corrected erroneous front-side tail: only tip now peeks left behind stone near concealed rump. Hindlegs/body partly occluded, not certified. Home facade and bowl positions intact.",
+      "camera": {
+        "positionXYZ": [
+          -4,
+          -5,
+          1
+        ],
+        "targetXYZ": [
+          -1.5,
+          -2,
+          1
+        ],
+        "height": 1,
+        "framing": "side three-quarter medium-wide low contact view",
+        "approximateFieldOfViewDegrees": 48,
+        "axisSide": "H exterior negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 3,
+        "id": "elder-r5-003",
+        "purpose": "Make the dismount support readable",
+        "frameId": "H",
+        "camera": {
+          "positionXYZ": [
+            -4,
+            -5,
+            1
+          ],
+          "targetXYZ": [
+            -1.5,
+            -2,
+            1
+          ],
+          "height": 1,
+          "framing": "side three-quarter medium-wide low contact view",
+          "approximateFieldOfViewDegrees": 48,
+          "axisSide": "H exterior negativeY"
+        },
+        "actors": {
+          "Papa": {
+            "positionXYZ": [
+              -2,
+              -2,
+              0.35
+            ],
+            "bodyFacingTarget": "Scooby",
+            "headFacingTarget": "Scooby",
+            "eyeTarget": "Scooby",
+            "pose": "standing both feet on stone after dismount",
+            "limbsContactSupport": "two feet stone, near paw on dog shoulder, free paw balance",
+            "visibility": "visible"
+          },
+          "Scooby": {
+            "positionXYZ": [
+              -0.7,
+              -2,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "crouched still beside stone",
+            "limbsContactSupport": "forepaws earth and folded hindlegs; back lowered",
+            "visibility": "visible"
+          }
+        },
+        "staticLandmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "stone": [
+            -2,
+            -2,
+            0.35
+          ],
+          "bowl": [
+            2,
+            -2,
+            0
+          ],
+          "path": [
+            0,
+            -6,
+            0
+          ],
+          "leftWindow": [
+            -1.4,
+            0,
+            1.2
+          ],
+          "rightWindow": [
+            1.4,
+            0,
+            1.2
+          ],
+          "lantern": [
+            1,
+            0,
+            1.6
+          ]
+        },
+        "objectStateBefore": "solo rider on dog; stone adjacent",
+        "objectStateAfter": "Papa on stone; dog crouched",
+        "previousAction": "Papa reveal",
+        "nextAction": "family hug",
+        "reasonForShotChange": "drop camera to feet/support from preceding portrait",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "Scooby crouched. Papa stepped onto the stone, then down onto the ground."
+          ],
+          "ru": [
+            "Скуби пригнулся. Папа спустился на камень, а потом на землю."
+          ],
+          "es": [
+            "Scooby se agachó. Papá bajó a la piedra y después al suelo."
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-003-v1.png",
+        "sceneDirection": "A clear low side dismount image: Scooby crouched with chest close to earth, Papa now upright with BOTH feet on single broad low stone, one paw on Scooby shoulder. Stone does not float or duplicate. Dog watches Papa attentively, Papa watches his foothold/dog. Only Papa and Scooby visible."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-003-v2.json",
+        "sha256": "7f4545db4867e9e56cf955d4f0c6fc1e3ae5e6fc4412dc242de1ad2de342d25e",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:26:14.757Z",
+        "finishedAt": "2026-09-21T22:26:42.581Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS: Papa has two planted feet on the single low broad stone, one forepaw steadies on Scooby back; dog crouched with two grounded front paws and looks up at Papa, whose eyes meet dog. Papa light cream face and dog soft animated features match accepted style. V2 corrected erroneous front-side tail: only tip now peeks left behind stone near concealed rump. Hindlegs/body partly occluded, not certified. Home facade and bowl positions intact.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    },
+    {
+      "previousNumber": 5,
+      "id": "elder-r5-005",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-005-v3.png",
+      "alt": {
+        "en": "Papa crouches to hug PinPin at the doorstep while Scooby watches and Mama holds PomPom in the open doorway.",
+        "ru": "Папа приседает, чтобы обнять Пин-Пина у порога; Скуби смотрит на них, а Мама держит Пом-Пома в открытых дверях.",
+        "es": "Papá se agacha para abrazar a PinPin junto a la puerta; Scooby los observa y Mamá sostiene a PomPom en la entrada."
+      },
+      "review": "Creator actual full-image PASS: child-height near reunion, Papa crouched and child grounded hugging with eyes meeting; large animated Scooby directs gaze to hug; four hedgehogs exact. Mama two forearms cradle infant, no third jamb arm. V3 removed duplicated central brass knob assembly: one knob at open leaf free edge remains and hinges stay attached edge. Dog two front paws plus partial rear visible, hidden anatomy not certified. Root had accepted cast/hug/gaze in v2, v3 narrow hardware correction only.",
+      "camera": {
+        "positionXYZ": [
+          -2.8,
+          -5,
+          0.75
+        ],
+        "targetXYZ": [
+          -0.3,
+          -1.3,
+          0.8
+        ],
+        "height": 0.75,
+        "framing": "low medium family hug; dog large left edge, Mama doorway background",
+        "approximateFieldOfViewDegrees": 55,
+        "axisSide": "H exterior negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 5,
+        "id": "elder-r5-005",
+        "purpose": "Reunion felt from child height rather than distant tableau",
+        "frameId": "H",
+        "camera": {
+          "positionXYZ": [
+            -2.8,
+            -5,
+            0.75
+          ],
+          "targetXYZ": [
+            -0.3,
+            -1.3,
+            0.8
+          ],
+          "height": 0.75,
+          "framing": "low medium family hug; dog large left edge, Mama doorway background",
+          "approximateFieldOfViewDegrees": 55,
+          "axisSide": "H exterior negativeY"
+        },
+        "actors": {
+          "Papa": {
+            "positionXYZ": [
+              -0.6,
+              -1.7,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "crouching to hug",
+            "limbsContactSupport": "both feet earth, two forearms around child",
+            "visibility": "visible"
+          },
+          "PinPin": {
+            "positionXYZ": [
+              -0.2,
+              -1.5,
+              0
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "hugging Papa",
+            "limbsContactSupport": "both feet earth, two forearms around Papa",
+            "visibility": "visible"
+          },
+          "Mama": {
+            "positionXYZ": [
+              0,
+              0.1,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "doorway smiling",
+            "limbsContactSupport": "one arm supports infant; other rests doorframe",
+            "visibility": "visible"
+          },
+          "PomPom": {
+            "positionXYZ": [
+              0,
+              0.1,
+              0.9
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "held by Mama",
+            "limbsContactSupport": "one Mama forearm/lap-side support",
+            "visibility": "visible"
+          },
+          "Scooby": {
+            "positionXYZ": [
+              -2.2,
+              -1.7,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "stands watching hug attentively",
+            "limbsContactSupport": "grounded paws; flank/tail may crop",
+            "visibility": "visible"
+          }
+        },
+        "staticLandmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "stone": [
+            -2,
+            -2,
+            0.35
+          ],
+          "bowl": [
+            2,
+            -2,
+            0
+          ],
+          "path": [
+            0,
+            -6,
+            0
+          ],
+          "leftWindow": [
+            -1.4,
+            0,
+            1.2
+          ],
+          "rightWindow": [
+            1.4,
+            0,
+            1.2
+          ],
+          "lantern": [
+            1,
+            0,
+            1.6
+          ]
+        },
+        "objectStateBefore": "door opens; Papa grounded",
+        "objectStateAfter": "hug; open door; baby remains held",
+        "previousAction": "dismount",
+        "nextAction": "breakfast",
+        "reasonForShotChange": "intimate low angle and converging gazes establish affection",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "Mama opened the door with PomPom in her arms. PinPin hurried into Papa’s hug. Scooby’s tail curled up."
+          ],
+          "ru": [
+            "Мама открыла дверь с Пом-Помом на руках. Пин-Пин поспешил обнять Папу. Хвост Скуби загнулся колечком."
+          ],
+          "es": [
+            "Mamá abrió la puerta con PomPom en brazos. PinPin corrió a abrazar a Papá. La cola de Scooby se curvó hacia arriba."
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-005-v2.png",
+        "sceneDirection": "At child eye height, prioritize the loving hug foreground. Papa crouches on earth with cream face touching close to PinPin, two forearms embracing. PinPin grounded with arms round Papa. Mama stands in open green doorway behind holding baby securely in ONE arm, other on jamb. Much larger Scooby watches the hug from beside them with warmly attentive eyes, no riders. Exactly four hedgehogs and one dog."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-005-v3.json",
+        "sha256": "3709b93187a9b784150d3ad49d8a660045b3f65b03a16ba1aea1d02dff96a5e9",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:41:05.943Z",
+        "finishedAt": "2026-09-21T22:41:41.549Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS: child-height near reunion, Papa crouched and child grounded hugging with eyes meeting; large animated Scooby directs gaze to hug; four hedgehogs exact. Mama two forearms cradle infant, no third jamb arm. V3 removed duplicated central brass knob assembly: one knob at open leaf free edge remains and hinges stay attached edge. Dog two front paws plus partial rear visible, hidden anatomy not certified. Root had accepted cast/hug/gaze in v2, v3 narrow hardware correction only.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    },
+    {
+      "previousNumber": 6,
+      "id": "elder-r5-006",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-006-v1.png",
+      "alt": {
+        "en": "Papa pours tea at the family breakfast table while Mama holds PomPom and PinPin watches.",
+        "ru": "Папа наливает чай за семейным завтраком; Мама держит Пом-Пома, а Пин-Пин наблюдает.",
+        "es": "Papá sirve té en el desayuno familiar mientras Mamá sostiene a PomPom y PinPin observa."
+      },
+      "review": "Creator actual full-image PASS: exact four family hedgehogs at consistent seats, adult Papa cream light eye surrounds and readable attentive eyes, real tea stream into his tabletop cup. Handle-gripping forepaw attached; second forepaw hovers near spout rather than lid as planned, no unsafe extra limb. Mama one forearm supports infant and free paw rests table; child's two paws tabletop and hindfeet/seat supported. Three plain cups, three porridge bowls plus serving bowl/bread match continuity. Correct interior right hinges/left knob and cupboard/stove positions. Establishing framing remains close to old master intentionally before new reverses.",
+      "camera": {
+        "positionXYZ": [
+          4,
+          -4,
+          2.3
+        ],
+        "targetXYZ": [
+          0,
+          0,
+          0.95
+        ],
+        "height": 2.3,
+        "framing": "wide diagonal kitchen/table establishment",
+        "approximateFieldOfViewDegrees": 62,
+        "axisSide": "K +X of Papa-child dialogue axis"
+      },
+      "transformRecord": {
+        "previousNumber": 6,
+        "id": "elder-r5-006",
+        "purpose": "Establish four family seats and breakfast action",
+        "frameId": "K",
+        "camera": {
+          "positionXYZ": [
+            4,
+            -4,
+            2.3
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            0.95
+          ],
+          "height": 2.3,
+          "framing": "wide diagonal kitchen/table establishment",
+          "approximateFieldOfViewDegrees": 62,
+          "axisSide": "K +X of Papa-child dialogue axis"
+        },
+        "actors": {
+          "Mama": {
+            "positionXYZ": [
+              -1.2,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "table",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "seated with infant",
+            "limbsContactSupport": "seat supports body; one forearm supports baby; other on table",
+            "visibility": "visible"
+          },
+          "PomPom": {
+            "positionXYZ": [
+              -1.1,
+              0,
+              0.7
+            ],
+            "bodyFacingTarget": "Mama",
+            "headFacingTarget": "Mama",
+            "eyeTarget": "Mama",
+            "pose": "held infant",
+            "limbsContactSupport": "Mama forearm and lap",
+            "visibility": "visible"
+          },
+          "Papa": {
+            "positionXYZ": [
+              0.7,
+              0.8,
+              0
+            ],
+            "bodyFacingTarget": "table",
+            "headFacingTarget": "PapaCup",
+            "eyeTarget": "PapaCup",
+            "pose": "seated pouring tea",
+            "limbsContactSupport": "one paw teapot handle, one stabilizes lid; hindbody on chair",
+            "visibility": "visible"
+          },
+          "PinPin": {
+            "positionXYZ": [
+              0.9,
+              -0.8,
+              0
+            ],
+            "bodyFacingTarget": "table",
+            "headFacingTarget": "PapaCup",
+            "eyeTarget": "PapaCup",
+            "pose": "seated watching pour",
+            "limbsContactSupport": "boosted chair; two paws table",
+            "visibility": "visible"
+          }
+        },
+        "staticLandmarks": {
+          "table": [
+            0,
+            0,
+            0.85
+          ],
+          "greenDoor": [
+            0,
+            3,
+            0
+          ],
+          "leftCupboards": [
+            -3,
+            1,
+            0
+          ],
+          "rightStove": [
+            3,
+            1,
+            0
+          ],
+          "PapaCup": [
+            0.55,
+            0.6,
+            0.85
+          ],
+          "childBowl": [
+            0.65,
+            -0.6,
+            0.85
+          ]
+        },
+        "objectStateBefore": "three cups, porridge bowls, teapot, bread",
+        "objectStateAfter": "tea stream reaches Papa cup; Mama holding baby",
+        "previousAction": "hug outside",
+        "nextAction": "PinPin reports lake",
+        "reasonForShotChange": "new space wide with readable seats before close dialogue",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "Soon they were all around the breakfast table. Papa poured tea. Mama held PomPom close."
+          ],
+          "ru": [
+            "Вскоре все собрались за завтраком. Папа наливал чай. Мама держала Пом-Пома на руках."
+          ],
+          "es": [
+            "Pronto estaban todos a la mesa para desayunar. Papá servía el té. Mamá sostenía a PomPom bien cerquita."
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-006-v1.png",
+        "sceneDirection": "Wider diagonal kitchen opening, seats evident. Papa right/far pours tea from pot into his own tabletop cup, one paw handle other stabilizing lid. Actual stream enters cup. Mama left holds tiny infant on lap with one forearm and rests free paw table. PinPin near/right watches pour. Exactly four hedgehogs, no dog inside. Three cups, individual porridge bowls, central serving bowl, bread."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-006-v1.json",
+        "sha256": "4e7c1c238a31f1c79cb8a31c1266d27fcab4b22fb5cdc174d5029aa5060347a7",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:31:03.940Z",
+        "finishedAt": "2026-09-21T22:31:50.788Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS: exact four family hedgehogs at consistent seats, adult Papa cream light eye surrounds and readable attentive eyes, real tea stream into his tabletop cup. Handle-gripping forepaw attached; second forepaw hovers near spout rather than lid as planned, no unsafe extra limb. Mama one forearm supports infant and free paw rests table; child's two paws tabletop and hindfeet/seat supported. Three plain cups, three porridge bowls plus serving bowl/bread match continuity. Correct interior right hinges/left knob and cupboard/stove positions. Establishing framing remains close to old master intentionally before new reverses.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    },
+    {
+      "previousNumber": 7,
+      "id": "elder-r5-007",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-007-v3.png",
+      "alt": {
+        "en": "Seen over Papa’s shoulder, PinPin raises one paw and excitedly tells him about the lake.",
+        "ru": "Через плечо Папы видно, как Пин-Пин поднимает лапку и увлечённо рассказывает об озере.",
+        "es": "Por encima del hombro de Papá, PinPin levanta una patita y le cuenta emocionado lo del lago."
+      },
+      "review": "Creator actual full-image PASS: true over-Papa-shoulder child close-medium, PinPin expressive face and pupils to Papa foreground, one raised story paw and other by bowl; Papa attached foreground paw holds cup. New camera sees opposite timber/plaster wall; v2/v3 removed wrongly transplanted entrance/windows/stove/cupboard from initial reverse. Fixed table props plain porridge, beige crockery, teapot and bread retained. Child lower legs cropped; no hidden anatomy certified. Opposite wall is minimal inferred continuation without invented door/furniture.",
+      "camera": {
+        "positionXYZ": [
+          1.45,
+          1.75,
+          1.55
+        ],
+        "targetXYZ": [
+          0.9,
+          -0.8,
+          1.25
+        ],
+        "height": 1.55,
+        "framing": "over-Papa-shoulder close medium on PinPin",
+        "approximateFieldOfViewDegrees": 38,
+        "axisSide": "K +X of Papa-child dialogue axis"
+      },
+      "transformRecord": {
+        "previousNumber": 7,
+        "id": "elder-r5-007",
+        "purpose": "Let child own the story: expressive face past Papa shoulder",
+        "frameId": "K",
+        "camera": {
+          "positionXYZ": [
+            1.45,
+            1.75,
+            1.55
+          ],
+          "targetXYZ": [
+            0.9,
+            -0.8,
+            1.25
+          ],
+          "height": 1.55,
+          "framing": "over-Papa-shoulder close medium on PinPin",
+          "approximateFieldOfViewDegrees": 38,
+          "axisSide": "K +X of Papa-child dialogue axis"
+        },
+        "actors": {
+          "Mama": {
+            "positionXYZ": [
+              -1.2,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "table",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "seated with infant",
+            "limbsContactSupport": "seat supports body; one forearm supports baby; other on table",
+            "visibility": "outside tight crop"
+          },
+          "PomPom": {
+            "positionXYZ": [
+              -1.1,
+              0,
+              0.7
+            ],
+            "bodyFacingTarget": "Mama",
+            "headFacingTarget": "Mama",
+            "eyeTarget": "Mama",
+            "pose": "held infant",
+            "limbsContactSupport": "Mama forearm and lap",
+            "visibility": "outside tight crop"
+          },
+          "Papa": {
+            "positionXYZ": [
+              0.7,
+              0.8,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "listening with cup",
+            "limbsContactSupport": "cup in one paw; other on tabletop",
+            "visibility": "foreground shoulder/back partial"
+          },
+          "PinPin": {
+            "positionXYZ": [
+              0.9,
+              -0.8,
+              0
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "animated story, one open raised paw",
+            "limbsContactSupport": "other paw table; seated",
+            "visibility": "visible"
+          }
+        },
+        "staticLandmarks": {
+          "table": [
+            0,
+            0,
+            0.85
+          ],
+          "greenDoor": [
+            0,
+            3,
+            0
+          ],
+          "leftCupboards": [
+            -3,
+            1,
+            0
+          ],
+          "rightStove": [
+            3,
+            1,
+            0
+          ],
+          "PapaCup": [
+            0.55,
+            0.6,
+            0.85
+          ],
+          "childBowl": [
+            0.65,
+            -0.6,
+            0.85
+          ]
+        },
+        "objectStateBefore": "Papa cup lifted after pouring",
+        "objectStateAfter": "child tells lake story; Papa listens",
+        "previousAction": "breakfast pour",
+        "nextAction": "Papa lowers cup",
+        "reasonForShotChange": "reverse distance/view for child excitement; fixed +X dialogue-axis side",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "“Yesterday, we helped the lake,” PinPin told Papa. “The water came back!”"
+          ],
+          "ru": [
+            "«Вчера мы помогли озеру, — рассказал Пин-Пин Папе. — Вода вернулась!»"
+          ],
+          "es": [
+            "«Ayer ayudamos al lago», le contó PinPin a Papá. «¡El agua volvió!»"
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-007-v1.png",
+        "sceneDirection": "A genuinely new viewpoint OVER PAPA SHOULDER: small out-of-focus cream cheek/quill/shoulder foreground right, child full expressive face beyond table. PinPin raises one paw as he tells Papa about the lake, second paw by porridge. Papa holds cup, listening. Child pupils direct to Papa immediately beside camera, not viewer. Keep fixed seats and daylight kitchen. Mama/baby remain outside this tight crop."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-007-v3.json",
+        "sha256": "95e0aa56c0e40010dc5bd7603d1894a42f608c3e5913c62e40b3d18b25398d77",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:37:08.775Z",
+        "finishedAt": "2026-09-21T22:37:48.278Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS: true over-Papa-shoulder child close-medium, PinPin expressive face and pupils to Papa foreground, one raised story paw and other by bowl; Papa attached foreground paw holds cup. New camera sees opposite timber/plaster wall; v2/v3 removed wrongly transplanted entrance/windows/stove/cupboard from initial reverse. Fixed table props plain porridge, beige crockery, teapot and bread retained. Child lower legs cropped; no hidden anatomy certified. Opposite wall is minimal inferred continuation without invented door/furniture.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    },
+    {
+      "previousNumber": 8,
+      "id": "elder-r5-008",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-008-v4.png",
+      "alt": {
+        "en": "Papa lowers his cup and listens closely to PinPin, who is outside the picture.",
+        "ru": "Папа опускает чашку и внимательно слушает Пин-Пина, оставшегося за кадром.",
+        "es": "Papá baja su taza y escucha con atención a PinPin, que está fuera de la imagen."
+      },
+      "review": "Creator actual full-image PASS: mature broad light-faced Papa hedgehog alone in medium-close reaction, distinct hazel irises and warm eyes aimed to offscreen child right; one forepaw on lowered cup whose base contacts tabletop, other at bowl. Correct plain porridge, beige speckled crockery and bread. Narrow v4 removed erroneous right door knob; right interior hinges preserved, true left knob occluded by Papa. Lower seated body outside crop unverified. Framing is medium-close rather than extreme tight, still distinct single-character reaction.",
+      "camera": {
+        "positionXYZ": [
+          1.8,
+          -0.9,
+          1.4
+        ],
+        "targetXYZ": [
+          0.7,
+          0.8,
+          1.3
+        ],
+        "height": 1.4,
+        "framing": "tight Papa face and lowering cup; child fully offscreen",
+        "approximateFieldOfViewDegrees": 28,
+        "axisSide": "K +X of Papa-child dialogue axis"
+      },
+      "transformRecord": {
+        "previousNumber": 8,
+        "id": "elder-r5-008",
+        "purpose": "A small reaction: Papa gives child full attention and lowers cup",
+        "frameId": "K",
+        "camera": {
+          "positionXYZ": [
+            1.8,
+            -0.9,
+            1.4
+          ],
+          "targetXYZ": [
+            0.7,
+            0.8,
+            1.3
+          ],
+          "height": 1.4,
+          "framing": "tight Papa face and lowering cup; child fully offscreen",
+          "approximateFieldOfViewDegrees": 28,
+          "axisSide": "K +X of Papa-child dialogue axis"
+        },
+        "actors": {
+          "Mama": {
+            "positionXYZ": [
+              -1.2,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "table",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "seated with infant",
+            "limbsContactSupport": "seat supports body; one forearm supports baby; other on table",
+            "visibility": "offscreen left seat"
+          },
+          "PomPom": {
+            "positionXYZ": [
+              -1.1,
+              0,
+              0.7
+            ],
+            "bodyFacingTarget": "Mama",
+            "headFacingTarget": "Mama",
+            "eyeTarget": "Mama",
+            "pose": "held infant",
+            "limbsContactSupport": "Mama forearm and lap",
+            "visibility": "offscreen held by Mama"
+          },
+          "Papa": {
+            "positionXYZ": [
+              0.7,
+              0.8,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "attentive listening, lowering cup",
+            "limbsContactSupport": "one paw puts cup on table, other relaxed near bowl",
+            "visibility": "visible"
+          },
+          "PinPin": {
+            "positionXYZ": [
+              0.9,
+              -0.8,
+              0
+            ],
+            "bodyFacingTarget": "table",
+            "headFacingTarget": "PapaCup",
+            "eyeTarget": "PapaCup",
+            "pose": "seated watching pour",
+            "limbsContactSupport": "boosted chair; two paws table",
+            "visibility": "offscreen at fixed near seat"
+          }
+        },
+        "staticLandmarks": {
+          "table": [
+            0,
+            0,
+            0.85
+          ],
+          "greenDoor": [
+            0,
+            3,
+            0
+          ],
+          "leftCupboards": [
+            -3,
+            1,
+            0
+          ],
+          "rightStove": [
+            3,
+            1,
+            0
+          ],
+          "PapaCup": [
+            0.55,
+            0.6,
+            0.85
+          ],
+          "childBowl": [
+            0.65,
+            -0.6,
+            0.85
+          ]
+        },
+        "objectStateBefore": "cup raised in previous shot",
+        "objectStateAfter": "cup touches tabletop; Papa eyebrows curious",
+        "previousAction": "child lake story",
+        "nextAction": "Papa suggests familiar Elder",
+        "reasonForShotChange": "cut to reaction, not duplicated family conversation wide",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "“And my golden quill helped,” he added. Papa put down his cup and listened."
+          ],
+          "ru": [
+            "«И моя золотая иголка помогла», — добавил он. Папа поставил чашку и стал слушать."
+          ],
+          "es": [
+            "«Y mi púa dorada ayudó», añadió. Papá dejó su taza y escuchó."
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-008-v2.png",
+        "sceneDirection": "A genuinely close single-Papa reaction, not the previous family two-shot. Papa head and upper chest dominate, warm light cream eye surrounds, readable hazel irises aimed down toward offcamera PinPin near camera-left. One attached paw lowers cup until base meets tabletop at bottom edge; other paw rests near bowl. Brows lift in interested surprise. Child/Mama/baby entirely outside crop at existing seats. Cup and face both visible."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-008-v4.json",
+        "sha256": "fc0e98a2869039e9417936b4dc7b4c8cbeaa1730a511a8e020fc7d73d2528b6d",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:19:00.623Z",
+        "finishedAt": "2026-09-21T22:19:44.212Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS: mature broad light-faced Papa hedgehog alone in medium-close reaction, distinct hazel irises and warm eyes aimed to offscreen child right; one forepaw on lowered cup whose base contacts tabletop, other at bowl. Correct plain porridge, beige speckled crockery and bread. Narrow v4 removed erroneous right door knob; right interior hinges preserved, true left knob occluded by Papa. Lower seated body outside crop unverified. Framing is medium-close rather than extreme tight, still distinct single-character reaction.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    },
+    {
+      "previousNumber": 9,
+      "id": "elder-r5-009",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-009-v2.png",
+      "alt": {
+        "en": "Seen over PinPin’s shoulder, Papa smiles and opens one paw as he suggests visiting the Elder together.",
+        "ru": "Через плечо Пин-Пина видно, как Папа улыбается и раскрывает лапу, предлагая вместе навестить Старейшину.",
+        "es": "Visto por encima del hombro de PinPin, Papá sonríe y abre una pata al proponer visitar juntos al Anciano."
+      },
+      "review": "Creator actual full-image PASS: over-child-shoulder reverse Papa proposing visit, warm cream adult face/hazel eyes to child near-left, open attached conversational paw and other by cup on table. Child eye/profile up to Papa. V2 removes erroneous left interior hinge (right hinges hidden by Papa) and invented chair-back; child sits on backless stool. Plain porridge/crockery and bread/brown teapot retained. Mama/infant outside crop. Hidden lower anatomy not certified.",
+      "camera": {
+        "positionXYZ": [
+          1.8,
+          -2,
+          1.35
+        ],
+        "targetXYZ": [
+          0.7,
+          0.8,
+          1.35
+        ],
+        "height": 1.35,
+        "framing": "over-child shoulder medium on Papa, wider than reaction closeup",
+        "approximateFieldOfViewDegrees": 43,
+        "axisSide": "K +X of Papa-child dialogue axis"
+      },
+      "transformRecord": {
+        "previousNumber": 9,
+        "id": "elder-r5-009",
+        "purpose": "Papa proposes visiting a known friend with child reaction foreground",
+        "frameId": "K",
+        "camera": {
+          "positionXYZ": [
+            1.8,
+            -2,
+            1.35
+          ],
+          "targetXYZ": [
+            0.7,
+            0.8,
+            1.35
+          ],
+          "height": 1.35,
+          "framing": "over-child shoulder medium on Papa, wider than reaction closeup",
+          "approximateFieldOfViewDegrees": 43,
+          "axisSide": "K +X of Papa-child dialogue axis"
+        },
+        "actors": {
+          "Mama": {
+            "positionXYZ": [
+              -1.2,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "table",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "seated with infant",
+            "limbsContactSupport": "seat supports body; one forearm supports baby; other on table",
+            "visibility": "cropped/offscreen fixed seat"
+          },
+          "PomPom": {
+            "positionXYZ": [
+              -1.1,
+              0,
+              0.7
+            ],
+            "bodyFacingTarget": "Mama",
+            "headFacingTarget": "Mama",
+            "eyeTarget": "Mama",
+            "pose": "held infant",
+            "limbsContactSupport": "Mama forearm and lap",
+            "visibility": "cropped/offscreen held by Mama"
+          },
+          "Papa": {
+            "positionXYZ": [
+              0.7,
+              0.8,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "warm speaking gesture",
+            "limbsContactSupport": "one open paw childward; other rests table; cup on table",
+            "visibility": "visible"
+          },
+          "PinPin": {
+            "positionXYZ": [
+              0.9,
+              -0.8,
+              0
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "listening eagerly",
+            "limbsContactSupport": "seated; two paws near bowl",
+            "visibility": "near foreground head/shoulder partial"
+          }
+        },
+        "staticLandmarks": {
+          "table": [
+            0,
+            0,
+            0.85
+          ],
+          "greenDoor": [
+            0,
+            3,
+            0
+          ],
+          "leftCupboards": [
+            -3,
+            1,
+            0
+          ],
+          "rightStove": [
+            3,
+            1,
+            0
+          ],
+          "PapaCup": [
+            0.55,
+            0.6,
+            0.85
+          ],
+          "childBowl": [
+            0.65,
+            -0.6,
+            0.85
+          ]
+        },
+        "objectStateBefore": "cup on table",
+        "objectStateAfter": "Papa open conversational paw",
+        "previousAction": "Papa listening",
+        "nextAction": "Mama agrees",
+        "reasonForShotChange": "widen into relationship while maintaining +X dialogue-axis side",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "“I know an old friend who listens very carefully,” said Papa. “The Elder. Shall we visit him together?”"
+          ],
+          "ru": [
+            "«У меня есть старый друг, который умеет внимательно слушать, — сказал Папа. — Старейшина. Сходим к нему вместе?»"
+          ],
+          "es": [
+            "«Tengo un viejo amigo que escucha con mucha atención», dijo Papá. «El anciano. ¿Vamos a visitarlo juntos?»"
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-009-v1.png",
+        "sceneDirection": "A wider REVERSE over PinPin shoulder toward Papa speaking, camera stays on same +X side of father-child line. PinPin head/quills near foreground left, a sliver delighted profile if natural. Papa broad mature face visible beyond, looks directly at child, one paw open invitation gesture, other rests table. Cup stays on table. Fixed furniture/background perspective follows camera, not mirror. Other family cropped."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-009-v2.json",
+        "sha256": "e0edf207e07b065385b532df3ab2fc30b59db5d94dfe9eff60bdab55f2ea1122",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:44:53.662Z",
+        "finishedAt": "2026-09-21T22:45:33.125Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS: over-child-shoulder reverse Papa proposing visit, warm cream adult face/hazel eyes to child near-left, open attached conversational paw and other by cup on table. Child eye/profile up to Papa. V2 removes erroneous left interior hinge (right hinges hidden by Papa) and invented chair-back; child sits on backless stool. Plain porridge/crockery and bread/brown teapot retained. Mama/infant outside crop. Hidden lower anatomy not certified.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    },
+    {
+      "previousNumber": 11,
+      "id": "elder-r5-011",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-011-v1.png",
+      "alt": {
+        "en": "Scooby laps water from his outdoor bowl, making little rings on the surface.",
+        "ru": "Скуби лакает воду из миски у дома, и по поверхности расходятся маленькие круги.",
+        "es": "Scooby bebe de su cuenco fuera de casa y forma pequeños círculos en el agua."
+      },
+      "review": "Creator actual full-image PASS: low dog-drinking close detail with tongue touching water/ripples, two front paws behind bowl plus two rear paws coherent, eyes downward toward water. Soft animated dog face and readable amber eyes, folded ears/rump curl; family correctly outside crop. Home stays behind-left from bowl-right camera, exterior hardware and chimney consistent. Bowl rendered with thicker weathered rim than preceding ceramic wide, same beige round outdoor water container; qualitative prop variation noted.",
+      "camera": {
+        "positionXYZ": [
+          3.1,
+          -3.6,
+          0.4
+        ],
+        "targetXYZ": [
+          2,
+          -2,
+          0.5
+        ],
+        "height": 0.4,
+        "framing": "low close detail Scooby muzzle, two paws and bowl; distant family may crop",
+        "approximateFieldOfViewDegrees": 36,
+        "axisSide": "H exterior negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 11,
+        "id": "elder-r5-011",
+        "purpose": "Sensory pause: dog water and attention before mounting",
+        "frameId": "H",
+        "camera": {
+          "positionXYZ": [
+            3.1,
+            -3.6,
+            0.4
+          ],
+          "targetXYZ": [
+            2,
+            -2,
+            0.5
+          ],
+          "height": 0.4,
+          "framing": "low close detail Scooby muzzle, two paws and bowl; distant family may crop",
+          "approximateFieldOfViewDegrees": 36,
+          "axisSide": "H exterior negativeY"
+        },
+        "actors": {
+          "Scooby": {
+            "positionXYZ": [
+              1.7,
+              -1.6,
+              0
+            ],
+            "bodyFacingTarget": "bowl",
+            "headFacingTarget": "bowl",
+            "eyeTarget": "bowl",
+            "pose": "lapping water",
+            "limbsContactSupport": "forepaws grounded either side behind bowl; tongue to surface",
+            "visibility": "visible"
+          },
+          "Papa": {
+            "positionXYZ": [
+              -2.3,
+              -2,
+              0.35
+            ],
+            "bodyFacingTarget": "Scooby",
+            "headFacingTarget": "Scooby",
+            "eyeTarget": "Scooby",
+            "pose": "waiting on low stone",
+            "limbsContactSupport": "both feet stone",
+            "visibility": "offscreen left"
+          },
+          "PinPin": {
+            "positionXYZ": [
+              -1.8,
+              -2,
+              0.35
+            ],
+            "bodyFacingTarget": "Scooby",
+            "headFacingTarget": "Scooby",
+            "eyeTarget": "Scooby",
+            "pose": "waiting on stone",
+            "limbsContactSupport": "both feet stone",
+            "visibility": "offscreen left"
+          }
+        },
+        "staticLandmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "stone": [
+            -2,
+            -2,
+            0.35
+          ],
+          "bowl": [
+            2,
+            -2,
+            0
+          ],
+          "path": [
+            0,
+            -6,
+            0
+          ],
+          "leftWindow": [
+            -1.4,
+            0,
+            1.2
+          ],
+          "rightWindow": [
+            1.4,
+            0,
+            1.2
+          ],
+          "lantern": [
+            1,
+            0,
+            1.6
+          ]
+        },
+        "objectStateBefore": "bowl water full",
+        "objectStateAfter": "ripples, dog drinks; riders not mounted",
+        "previousAction": "Mama approval",
+        "nextAction": "Papa helps child board",
+        "reasonForShotChange": "purposeful object insert interrupts wide action repetition",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "Outside, Scooby drank a little water. Papa and PinPin waited at the garden stone."
+          ],
+          "ru": [
+            "На улице Скуби попил воды. Папа и Пин-Пин ждали у садового камня."
+          ],
+          "es": [
+            "Fuera, Scooby bebió un poco de agua. Papá y PinPin esperaban junto a la piedra del jardín."
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-011-v1.png",
+        "sceneDirection": "Low sensory CLOSE INSERT of Scooby lowering animated muzzle to water bowl and lapping, ripples and tiny tongue. Two front paws grounded behind bowl. Fur grouped soft animated, broad warm brindle shapes. Eyes gently focus on bowl, appropriate attention to drinking. Papa/PinPin waiting on distant LEFT stone outside crop; do not insert random miniature people. Close enough it differs dramatically from family wide."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-011-v1.json",
+        "sha256": "7c81f9046067c42b9bba38cb1df86e1f0cd93bab43f657bca2b4f7b41f55b833",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:46:54.503Z",
+        "finishedAt": "2026-09-21T22:47:28.499Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS: low dog-drinking close detail with tongue touching water/ripples, two front paws behind bowl plus two rear paws coherent, eyes downward toward water. Soft animated dog face and readable amber eyes, folded ears/rump curl; family correctly outside crop. Home stays behind-left from bowl-right camera, exterior hardware and chimney consistent. Bowl rendered with thicker weathered rim than preceding ceramic wide, same beige round outdoor water container; qualitative prop variation noted.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    },
+    {
+      "previousNumber": 12,
+      "id": "elder-r5-012",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-012-v1.png",
+      "alt": {
+        "en": "PinPin stands with both feet on the stone and places his paws on Scooby’s back while Papa steadies him from the ground.",
+        "ru": "Пин-Пин стоит обеими лапками на камне и кладёт передние лапки на спину Скуби, а Папа поддерживает его с земли.",
+        "es": "PinPin apoya ambos pies en la piedra y las patitas en el lomo de Scooby mientras Papá lo sostiene desde el suelo."
+      },
+      "review": "Creator actual full-image PASS: child two hindfeet clearly planted on single low stone, two forepaws touch dog back; Papa stands on earth beside stone, two supporting forearms at child waist/back with feet grounded. Larger crouched dog two forepaws on earth, back reaches child support height, head turned toward boarding family rather than camera; rear limbs/tail concealed. Papa mature/light face and soft animated dog retained; correct cottage/bowl sides. Side view clearly establishes before-transfer state.",
+      "camera": {
+        "positionXYZ": [
+          -4.2,
+          -4.4,
+          0.8
+        ],
+        "targetXYZ": [
+          -1.7,
+          -2,
+          0.75
+        ],
+        "height": 0.8,
+        "framing": "clear profile medium-wide stone/Papa/child/dog shoulder",
+        "approximateFieldOfViewDegrees": 48,
+        "axisSide": "H exterior negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 12,
+        "id": "elder-r5-012",
+        "purpose": "Establish climb support before movement",
+        "frameId": "H",
+        "camera": {
+          "positionXYZ": [
+            -4.2,
+            -4.4,
+            0.8
+          ],
+          "targetXYZ": [
+            -1.7,
+            -2,
+            0.75
+          ],
+          "height": 0.8,
+          "framing": "clear profile medium-wide stone/Papa/child/dog shoulder",
+          "approximateFieldOfViewDegrees": 48,
+          "axisSide": "H exterior negativeY"
+        },
+        "actors": {
+          "Papa": {
+            "positionXYZ": [
+              -2.6,
+              -2,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "grounded steadying child",
+            "limbsContactSupport": "two feet dirt; one paw child waist, other ready support",
+            "visibility": "visible"
+          },
+          "PinPin": {
+            "positionXYZ": [
+              -2,
+              -2,
+              0.35
+            ],
+            "bodyFacingTarget": "Scooby",
+            "headFacingTarget": "Scooby",
+            "eyeTarget": "Scooby",
+            "pose": "stands facing dog on stone",
+            "limbsContactSupport": "both hindfeet stone; two forepaws reach back",
+            "visibility": "visible"
+          },
+          "Scooby": {
+            "positionXYZ": [
+              -0.5,
+              -2,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "crouched still",
+            "limbsContactSupport": "two front paws earth; folded hindlegs; broad back beside stone",
+            "visibility": "visible"
+          }
+        },
+        "staticLandmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "stone": [
+            -2,
+            -2,
+            0.35
+          ],
+          "bowl": [
+            2,
+            -2,
+            0
+          ],
+          "path": [
+            0,
+            -6,
+            0
+          ],
+          "leftWindow": [
+            -1.4,
+            0,
+            1.2
+          ],
+          "rightWindow": [
+            1.4,
+            0,
+            1.2
+          ],
+          "lantern": [
+            1,
+            0,
+            1.6
+          ]
+        },
+        "objectStateBefore": "Papa/child at stone, dog drinks",
+        "objectStateAfter": "Papa down on earth; dog crouched; child two feet stone",
+        "previousAction": "water pause",
+        "nextAction": "child transfers onto dog",
+        "reasonForShotChange": "wider side contact proof before close transfer",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "Scooby crouched beside the stone. Papa stepped down to help PinPin."
+          ],
+          "ru": [
+            "Скуби пригнулся рядом с камнем. Папа спустился на землю, чтобы помочь Пин-Пину."
+          ],
+          "es": [
+            "Scooby se agachó junto a la piedra. Papá bajó al suelo para ayudar a PinPin."
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-012-v3.png",
+        "sceneDirection": "Clear medium-wide side contact view, one low broad stone at home left. Child both hindfeet planted on stone, reaching two forepaws to crouched dog shoulder-back. Papa stands on DIRT beside child, one paw supporting child waist, other ready. Dog lies still beside stone and gently looks back toward child, not camera. Preserve correct adult child dog size; do not shrink dog. Feet and forearm connections legible."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-012-v1.json",
+        "sha256": "66f43db76812fa6faf9dab0aaded9059dee4490336d11f4f57b929d6ebae1c5a",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:48:44.402Z",
+        "finishedAt": "2026-09-21T22:49:32.332Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS: child two hindfeet clearly planted on single low stone, two forepaws touch dog back; Papa stands on earth beside stone, two supporting forearms at child waist/back with feet grounded. Larger crouched dog two forepaws on earth, back reaches child support height, head turned toward boarding family rather than camera; rear limbs/tail concealed. Papa mature/light face and soft animated dog retained; correct cottage/bowl sides. Side view clearly establishes before-transfer state.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    },
+    {
+      "previousNumber": 13,
+      "id": "elder-r5-013",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-013-v1.png",
+      "alt": {
+        "en": "Papa supports PinPin as he leans onto Scooby’s back, keeping one foot on the stone.",
+        "ru": "Папа поддерживает Пин-Пина, который опирается на спину Скуби, оставив одну лапку на камне.",
+        "es": "Papá sostiene a PinPin mientras se apoya sobre el lomo de Scooby, con un pie todavía en la piedra."
+      },
+      "review": "Creator actual full-image PASS with occlusion limitation: tighter same-side transfer shot, child near hindfoot still contacts single stone, both forepaws press dog back, belly/chest leans onto back while Papa grounded both feet supports waist with two attached forearms. Child far hindleg is concealed by body/dog back, so far-foot planted contact from plan is not visually certified. No visible floating/extra appendage. Dog crouched two forepaws earth, head/amber eyes turn back toward child, curled tail at left rump. Adult/child faces and materials align accepted style.",
+      "camera": {
+        "positionXYZ": [
+          -3.3,
+          -3.6,
+          1.1
+        ],
+        "targetXYZ": [
+          -1.4,
+          -2,
+          1
+        ],
+        "height": 1.1,
+        "framing": "tighter side three-quarter contact study, faces and feet readable",
+        "approximateFieldOfViewDegrees": 36,
+        "axisSide": "H exterior negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 13,
+        "id": "elder-r5-013",
+        "purpose": "Show actual transfer with uninterrupted contact",
+        "frameId": "H",
+        "camera": {
+          "positionXYZ": [
+            -3.3,
+            -3.6,
+            1.1
+          ],
+          "targetXYZ": [
+            -1.4,
+            -2,
+            1
+          ],
+          "height": 1.1,
+          "framing": "tighter side three-quarter contact study, faces and feet readable",
+          "approximateFieldOfViewDegrees": 36,
+          "axisSide": "H exterior negativeY"
+        },
+        "actors": {
+          "Papa": {
+            "positionXYZ": [
+              -2.6,
+              -2,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "supports child from ground",
+            "limbsContactSupport": "both feet earth; near paw lower torso, other hovering support",
+            "visibility": "visible"
+          },
+          "PinPin": {
+            "positionXYZ": [
+              -1.7,
+              -2,
+              0.8
+            ],
+            "bodyFacingTarget": "Scooby",
+            "headFacingTarget": "Scooby",
+            "eyeTarget": "Scooby",
+            "pose": "climbing from stone to shoulder-back",
+            "limbsContactSupport": "near hindfoot stone, far hindfoot planted back; both forepaws back",
+            "visibility": "visible"
+          },
+          "Scooby": {
+            "positionXYZ": [
+              -0.5,
+              -2,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "still crouched during transfer",
+            "limbsContactSupport": "paws grounded; dog body supports child far foot",
+            "visibility": "visible"
+          }
+        },
+        "staticLandmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "stone": [
+            -2,
+            -2,
+            0.35
+          ],
+          "bowl": [
+            2,
+            -2,
+            0
+          ],
+          "path": [
+            0,
+            -6,
+            0
+          ],
+          "leftWindow": [
+            -1.4,
+            0,
+            1.2
+          ],
+          "rightWindow": [
+            1.4,
+            0,
+            1.2
+          ],
+          "lantern": [
+            1,
+            0,
+            1.6
+          ]
+        },
+        "objectStateBefore": "child both feet stone",
+        "objectStateAfter": "one foot stone one back; no unsupported jump",
+        "previousAction": "boarding setup",
+        "nextAction": "comfort question/dog listens",
+        "reasonForShotChange": "closer framing emphasizes changed foot/support state without crossing axis",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "From there, PinPin climbed onto Scooby’s back. Papa kept a steady paw beside him."
+          ],
+          "ru": [
+            "Оттуда Пин-Пин перелез на спину Скуби. Папа придерживал его лапой."
+          ],
+          "es": [
+            "Desde allí, PinPin subió al lomo de Scooby. Papá lo sostenía con una pata firme."
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-013-v3.png",
+        "sceneDirection": "TIGHTER side-threequarter contact view, same side as previous: child is transferring from single low stone to dog. Child near hindfoot remains flat on stone, far hindfoot presses dog back, both forepaws on shoulder fur. Papa stands with BOTH feet on ground and supports lower torso with one paw. Scooby remains crouched still, head turns gently back to watch child. Exactly two child forepaws and two hindfeet, no floating third appendage. Crop some dog flank if necessary but show child/Papa contact and feet."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-013-v1.json",
+        "sha256": "f125dfa6e2db5758d85047d27575cdb4c59596ddd2f3651bf403f21702f4a0ff",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:50:45.933Z",
+        "finishedAt": "2026-09-21T22:51:26.028Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS with occlusion limitation: tighter same-side transfer shot, child near hindfoot still contacts single stone, both forepaws press dog back, belly/chest leans onto back while Papa grounded both feet supports waist with two attached forearms. Child far hindleg is concealed by body/dog back, so far-foot planted contact from plan is not visually certified. No visible floating/extra appendage. Dog crouched two forepaws earth, head/amber eyes turn back toward child, curled tail at left rump. Adult/child faces and materials align accepted style.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    },
+    {
+      "previousNumber": 14,
+      "id": "elder-r5-014",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-014-v1.png",
+      "alt": {
+        "en": "Scooby tilts his head and looks up attentively toward Papa, with both front paws resting on the garden path.",
+        "ru": "Скуби наклоняет голову и внимательно смотрит вверх на Папу, положив обе передние лапы на садовую дорожку.",
+        "es": "Scooby ladea la cabeza y mira atento hacia Papá, con las dos patas delanteras apoyadas en el sendero."
+      },
+      "review": "Creator actual full-image PASS: soft animated Scooby face, broad brindle/cream groups, readable amber eyes both directed up-left toward offscreen riders, ears attentively lifted/folded; head tilts naturally. Two connected front paws rest on garden earth, rear/riders outside tight face crop so hidden contacts not certified. Familiar green exterior door right knob, right lantern, left stone/right water bowl retained. A small flank sliver is visible but no riding area is fully shown.",
+      "camera": {
+        "positionXYZ": [
+          0.7,
+          -4.2,
+          0.6
+        ],
+        "targetXYZ": [
+          0.2,
+          -2,
+          1
+        ],
+        "height": 0.6,
+        "framing": "dog-only face/chest/front-paw closeup",
+        "approximateFieldOfViewDegrees": 30,
+        "axisSide": "H exterior negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 14,
+        "id": "elder-r5-014",
+        "purpose": "Scooby actively listens to offcamera riders",
+        "frameId": "H",
+        "camera": {
+          "positionXYZ": [
+            0.7,
+            -4.2,
+            0.6
+          ],
+          "targetXYZ": [
+            0.2,
+            -2,
+            1
+          ],
+          "height": 0.6,
+          "framing": "dog-only face/chest/front-paw closeup",
+          "approximateFieldOfViewDegrees": 30,
+          "axisSide": "H exterior negativeY"
+        },
+        "actors": {
+          "Scooby": {
+            "positionXYZ": [
+              -0.5,
+              -2,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "head tipped up/back slightly listening",
+            "limbsContactSupport": "two forepaws earth; rear body cropped",
+            "visibility": "visible"
+          },
+          "Papa": {
+            "positionXYZ": [
+              -0.7,
+              -1.2,
+              1.2
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "mounted behind child",
+            "limbsContactSupport": "one arm supports child; other braces dog",
+            "visibility": "outside crop behind dog face"
+          },
+          "PinPin": {
+            "positionXYZ": [
+              -0.5,
+              -1.7,
+              1.2
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "seated comfortably",
+            "limbsContactSupport": "paws dog; legs astride",
+            "visibility": "outside crop"
+          }
+        },
+        "staticLandmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "stone": [
+            -2,
+            -2,
+            0.35
+          ],
+          "bowl": [
+            2,
+            -2,
+            0
+          ],
+          "path": [
+            0,
+            -6,
+            0
+          ],
+          "leftWindow": [
+            -1.4,
+            0,
+            1.2
+          ],
+          "rightWindow": [
+            1.4,
+            0,
+            1.2
+          ],
+          "lantern": [
+            1,
+            0,
+            1.6
+          ]
+        },
+        "objectStateBefore": "boarding completed between shots",
+        "objectStateAfter": "dog remains crouched listening; two riders offscreen",
+        "previousAction": "child transfer",
+        "nextAction": "dog rises with supported riders",
+        "reasonForShotChange": "attentive animal reaction rather than another riding diagram",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "“Comfortable?” asked Papa. “Very!” said PinPin. Scooby listened, ready to go."
+          ],
+          "ru": [
+            "— Удобно? — спросил Папа. — Очень! — ответил Пин-Пин. Скуби прислушивался, готовый отправиться в путь."
+          ],
+          "es": [
+            "—¿Cómodo? —preguntó Papá. —¡Mucho! —dijo PinPin. Scooby escuchaba, listo para partir."
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-014-v2.png",
+        "sceneDirection": "Dog-only attentive closeup: Scooby face/white chest/two front paws, crouched earth, soft green door blur behind. He turns head a little back/up to offscreen Papa on his back, pupils deliberately aligned with that target, alert soft folded ears and engaged brows. Do not show riders or invent head on body in this crop. Broad soft animated facial design and fur groups; no photographic dog nose/hair texture."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-014-v1.json",
+        "sha256": "b7641fa34a6523d46854d44b882ff2d0922b8ca480203a428cfd6833d46dc8b7",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:20:50.272Z",
+        "finishedAt": "2026-09-21T22:21:20.874Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS: soft animated Scooby face, broad brindle/cream groups, readable amber eyes both directed up-left toward offscreen riders, ears attentively lifted/folded; head tilts naturally. Two connected front paws rest on garden earth, rear/riders outside tight face crop so hidden contacts not certified. Familiar green exterior door right knob, right lantern, left stone/right water bowl retained. A small flank sliver is visible but no riding area is fully shown.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    },
+    {
+      "previousNumber": 15,
+      "id": "elder-r5-015",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-015-v1.png",
+      "alt": {
+        "en": "Papa holds PinPin securely on Scooby’s back as PinPin and Mama wave to each other; Mama keeps PomPom in her other arm.",
+        "ru": "Папа надёжно придерживает Пин-Пина на спине Скуби; Пин-Пин и Мама машут друг другу, а другой лапой Мама держит Пом-Пома.",
+        "es": "Papá sostiene bien a PinPin sobre Scooby mientras PinPin y Mamá se despiden con la pata; Mamá lleva a PomPom en el otro brazo."
+      },
+      "review": "Creator actual full-image PASS: four distinct grounded dog paws and full rump curl; Papa seated behind smaller PinPin, distinct near hindleg each and hips supported on back. Papa visible forearm crosses child's lower front for support; child one paw on fur, other waves. Mama has one waving arm and one supporting infant, exact four hedgehogs plus dog. Rider heads/eyes turned right toward Mama doorway; Mama eyes up-left toward riders. Dog attends forward path. Door leaf drawn partly inward with exterior-face hardware; same facade-left hinge axis/right knob relation, angle differs from reunion outward view. Far rider limbs partly occluded, not certified.",
+      "camera": {
+        "positionXYZ": [
+          -4,
+          -6,
+          1.5
+        ],
+        "targetXYZ": [
+          0,
+          -2,
+          1.6
+        ],
+        "height": 1.5,
+        "framing": "three-quarter departure wide, Mama/baby doorway behind and rider faces turned back",
+        "approximateFieldOfViewDegrees": 58,
+        "axisSide": "H exterior negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 15,
+        "id": "elder-r5-015",
+        "purpose": "Departure connects family farewell and visible tandem support",
+        "frameId": "H",
+        "camera": {
+          "positionXYZ": [
+            -4,
+            -6,
+            1.5
+          ],
+          "targetXYZ": [
+            0,
+            -2,
+            1.6
+          ],
+          "height": 1.5,
+          "framing": "three-quarter departure wide, Mama/baby doorway behind and rider faces turned back",
+          "approximateFieldOfViewDegrees": 58,
+          "axisSide": "H exterior negativeY"
+        },
+        "actors": {
+          "Scooby": {
+            "positionXYZ": [
+              0,
+              -3,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "path",
+            "eyeTarget": "path",
+            "pose": "standing after slow rise",
+            "limbsContactSupport": "four grounded paws; full curled tail",
+            "visibility": "visible"
+          },
+          "PinPin": {
+            "positionXYZ": [
+              0,
+              -3.4,
+              2.7
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "Mama",
+            "eyeTarget": "Mama",
+            "pose": "seated front behind withers looking back",
+            "limbsContactSupport": "one paw shoulder fur; other small wave; legs astride",
+            "visibility": "visible"
+          },
+          "Papa": {
+            "positionXYZ": [
+              0,
+              -2.6,
+              2.7
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "Mama",
+            "eyeTarget": "Mama",
+            "pose": "seated immediately behind child",
+            "limbsContactSupport": "one forearm child lower torso, other braces back; two legs astride",
+            "visibility": "visible"
+          },
+          "Mama": {
+            "positionXYZ": [
+              0,
+              0.1,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "doorway goodbye",
+            "limbsContactSupport": "one arm supports baby, other waves",
+            "visibility": "visible"
+          },
+          "PomPom": {
+            "positionXYZ": [
+              0,
+              0.1,
+              0.9
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "held against shoulder",
+            "limbsContactSupport": "Mama supporting arm",
+            "visibility": "visible"
+          }
+        },
+        "staticLandmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "stone": [
+            -2,
+            -2,
+            0.35
+          ],
+          "bowl": [
+            2,
+            -2,
+            0
+          ],
+          "path": [
+            0,
+            -6,
+            0
+          ],
+          "leftWindow": [
+            -1.4,
+            0,
+            1.2
+          ],
+          "rightWindow": [
+            1.4,
+            0,
+            1.2
+          ],
+          "lantern": [
+            1,
+            0,
+            1.6
+          ]
+        },
+        "objectStateBefore": "dog crouched riders settled",
+        "objectStateAfter": "dog standing; Mama/baby farewell; board stone behind",
+        "previousAction": "dog attentive reaction",
+        "nextAction": "forest journey",
+        "reasonForShotChange": "wide culmination with reciprocal family farewell and support clear",
+        "status": "planned-awaiting-shared-cast",
+        "narration": {
+          "en": [
+            "Scooby stood up slowly. Mama waved from the door, with PomPom against her shoulder."
+          ],
+          "ru": [
+            "Скуби медленно встал. Мама помахала им от двери, прижимая Пом-Пома к плечу."
+          ],
+          "es": [
+            "Scooby se levantó despacio. Mamá los saludó desde la puerta, con PomPom apoyado en su hombro."
+          ]
+        },
+        "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-015-v1.png",
+        "sceneDirection": "Wide departure after Scooby rises, all four dog paws grounded, whole dog body and rump curl. Child sits just behind shoulders, adult Papa immediately behind. Papa one forearm securely across child lower torso, other paw braced on back; distinct hips seated and one near hindleg each, far legs astride far side. PinPin one paw planted on shoulder fur and free paw small wave. Papa and child turn heads back toward Mama at doorway, actual eyes connect. Mama one arm supports baby against shoulder and other waves; no third arm. Dog looks forward down path, ready to walk gently. Correct large dog small family scale; no saddle/reins/clothing."
+      },
+      "provenance": {
+        "sidecar": "images/chapter-02-expanded/revision-05/scenes/scene-015-v1.json",
+        "sha256": "9a6bf4ab96dbc03402d3ba9a8f32536c1311c3b5a9623ace6672715c06a49664",
+        "tool": "built-in image_gen",
+        "startedAt": "2026-09-21T22:52:49.023Z",
+        "finishedAt": "2026-09-21T22:53:44.227Z"
+      },
+      "status": "ready",
+      "width": 1536,
+      "height": 1024,
+      "observedFramingAndContinuity": "Creator actual full-image PASS: four distinct grounded dog paws and full rump curl; Papa seated behind smaller PinPin, distinct near hindleg each and hips supported on back. Papa visible forearm crosses child's lower front for support; child one paw on fur, other waves. Mama has one waving arm and one supporting infant, exact four hedgehogs plus dog. Rider heads/eyes turned right toward Mama doorway; Mama eyes up-left toward riders. Dog attends forward path. Door leaf drawn partly inward with exterior-face hardware; same facade-left hinge axis/right knob relation, angle differs from reunion outward view. Far rider limbs partly occluded, not certified.",
+      "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+    }
+  ],
+  "completedAt": "2026-09-21T22:56:00.960601+00:00"
+}

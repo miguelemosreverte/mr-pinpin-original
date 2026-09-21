@@ -1,0 +1,146 @@
+{
+  "id": "scene-105-v1",
+  "prompt": "Use case: illustration-story. One landscape1536x1024, no text. Image1 is accepted family meal state, identity, STYLE and geography. Image2 ONLY Papa cream-faced mature hedgehog identity; ignore dark backdrop. Generate NEXT narrative moment from a genuinely CLOSER DIAGONAL camera at table height near child's RIGHT shoulder, angled across child toward Papa and Mama. Do NOT simply crop same frontal tableau. Child foreground-right threequarter profile, Papa beyond to right/center, Mama across-table left with infant lap. Preserve physical seat map and kitchen fixtures, cupboardsleft/stoveright, green door behind innerhingesright.\nAction: Papa passes a single bread roll with ONE forepaw toward PinPin's reaching ONE forepaw. Roll midway between them with believable distinct fingers, their other paws rest table. Papa eyes warmly DOWN to child; child eyes UP to Papa. Mama looks directly at child, mouth slightly open inviting his story, one arm supports infant, other paw near infant who reaches it. Four hedgehogs only no glasses no dog. Bread transfer in central foreground with expressive faces above; dishes naturally cropped but stay same positions: child bowl near him, Papa bowl beyond, large serving bowlcenter, teapotright, breadplateleft,2cups. Warm bright daytime, sculpted animated cream Papa, no black eyes/darkmask, mature broad body distinct child. Camera closer diagonal42degree cue, not flat repeated full-body wide.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:45:25.107Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-104-v1.png",
+      "role": "accepted meal geography cast and state",
+      "sha256": "0318d4ec447231ddfee36b6468ba9269a2363b1e4a85a06be65efa68baa70152"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Papa face identity only",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "status": "ready",
+  "transformRecord": {
+    "previousNumber": 105,
+    "id": "elder-r5-105",
+    "purpose": "Closer diagonal bread handoff faces behind",
+    "frame": "K",
+    "camera": {
+      "positionXYZ": [
+        2.4,
+        -2,
+        1.6
+      ],
+      "targetXYZ": [
+        0.5,
+        0.2,
+        1.2
+      ],
+      "height": 1.6,
+      "framing": "Closer diagonal bread handoff faces behind",
+      "approximateFieldOfView": 42,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "id": "Mama",
+        "positionXYZ": [
+          -1.2,
+          0.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "seated speaks one arm baby other paw near infant reach",
+        "limbsContactSupport": "seated speaks one arm baby other paw near infant reach",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "PomPom",
+        "positionXYZ": [
+          -1.2,
+          -0.1,
+          0.7
+        ],
+        "bodyFacingTarget": "Mama",
+        "headFacingTarget": "Mama",
+        "eyeTarget": "Mama",
+        "pose": "lap arm supported reaching Mama paw",
+        "limbsContactSupport": "lap arm supported reaching Mama paw",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.8,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "one paw offers roll other table chair supports",
+        "limbsContactSupport": "one paw offers roll other table chair supports",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "PinPin",
+        "positionXYZ": [
+          0.9,
+          -0.8,
+          0.0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "one paw receives roll other table stool supports",
+        "limbsContactSupport": "one paw receives roll other table stool supports",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "landmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "door": [
+        0,
+        3,
+        0
+      ],
+      "cupboards": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "canonical scene104",
+      "after": "Papa passes roll to child Mama invites story baby reaches her paw"
+    },
+    "previousAction": "canonical scene104",
+    "nextAction": "canonical scene106",
+    "reasonForShotChange": "Closer diagonal bread handoff faces behind"
+  },
+  "startedAt": "2026-09-21T22:46:16.995Z",
+  "finishedAt": "2026-09-21T22:47:02.386Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c600-79e9-7ef1-bcf3-9c07d2a5d2dd/exec-4b5a8d22-e49c-4e2e-95c9-df9b34182eb2.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-105-v1.png",
+  "sha256": "716fe082099b38d806069ecae1aac565153eea13215e4541a4d4f08f71f5078e",
+  "review": "Creator full-image PASS: closer diagonal table-height composition foreground roll transfer; Papa one forepaw roll/other table, child reaches one paw/other table. Mama supports infant with near arm, other paw within infant reach; four cast only. Papa expressive cream face eyes lowered toward bread/child, Mama attends child side. Same meal placements/serving spoon, no mirrored room. Lower limbs cropped intentionally, not certified.",
+  "width": 1536,
+  "height": 1024
+}

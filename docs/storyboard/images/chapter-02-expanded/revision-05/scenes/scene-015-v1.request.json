@@ -1,0 +1,169 @@
+{
+  "id": "scene-015-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 children’s book illustration, no text/border/panels.\nInput roles: Image1 is the established animated-feature storybook rendering authority. Image2 is ACCEPTED shared family identity and scale. Image3 controls ONLY environment/props/contact geometry; IGNORE its old photographic faces/rendering and old camera, use the NEW SHOT BELOW.\nMatch established Elder/PinPin dimensional animated storybook illustration, readable expressive irises, designed soft grouped fur, rounded forms, warm light with soft fill; no photographic pet/human rendering or black eye mask. Approved shared cast controls identities and approximate common scale. Papa is the mature broad-bodied HEDGEHOG at far LEFT in image2, cream face/eye surrounds, hazel iris/pupil separation, dark brown tipped quills, no spectacles. PinPin is the SMALL standing chestnut HEDGEHOG child; Mama the copper-quilled ADULT HEDGEHOG holding infant PomPom. Scooby is the LARGE DOG at right, amber eyes, warm brindle brown, cream-grey muzzle, white chest, folded ears/curled rump tail. Species must never swap. Adult hedgehog about1.6 child height, dog shoulder2.7child height. No clothing/reins/saddle.\nSHOT: Wide departure after Scooby rises, all four dog paws grounded, whole dog body and rump curl. Child sits just behind shoulders, adult Papa immediately behind. Papa one forearm securely across child lower torso, other paw braced on back; distinct hips seated and one near hindleg each, far legs astride far side. PinPin one paw planted on shoulder fur and free paw small wave. Papa and child turn heads back toward Mama at doorway, actual eyes connect. Mama one arm supports baby against shoulder and other waves; no third arm. Dog looks forward down path, ready to walk gently. Correct large dog small family scale; no saddle/reins/clothing.\nGreen rounded door, outside hinges left/knob and lantern right, two round windows, chimney left, low broad mounting stone left and water bowl right, moss roof. Dog remains outdoors.\nPLANNED CAMERA AND ACTORS (approximate staging cues, not text in image): {\"frameId\": \"H\", \"camera\": {\"positionXYZ\": [-4, -6, 1.5], \"targetXYZ\": [0, -2, 1.6], \"height\": 1.5, \"framing\": \"three-quarter departure wide, Mama/baby doorway behind and rider faces turned back\", \"approximateFieldOfViewDegrees\": 58, \"axisSide\": \"H exterior negativeY\"}, \"actors\": {\"Scooby\": {\"positionXYZ\": [0, -3, 0], \"bodyFacingTarget\": \"path\", \"headFacingTarget\": \"path\", \"eyeTarget\": \"path\", \"pose\": \"standing after slow rise\", \"limbsContactSupport\": \"four grounded paws; full curled tail\", \"visibility\": \"visible\"}, \"PinPin\": {\"positionXYZ\": [0, -3.4, 2.7], \"bodyFacingTarget\": \"path\", \"headFacingTarget\": \"Mama\", \"eyeTarget\": \"Mama\", \"pose\": \"seated front behind withers looking back\", \"limbsContactSupport\": \"one paw shoulder fur; other small wave; legs astride\", \"visibility\": \"visible\"}, \"Papa\": {\"positionXYZ\": [0, -2.6, 2.7], \"bodyFacingTarget\": \"path\", \"headFacingTarget\": \"Mama\", \"eyeTarget\": \"Mama\", \"pose\": \"seated immediately behind child\", \"limbsContactSupport\": \"one forearm child lower torso, other braces back; two legs astride\", \"visibility\": \"visible\"}, \"Mama\": {\"positionXYZ\": [0, 0.1, 0], \"bodyFacingTarget\": \"PinPin\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"doorway goodbye\", \"limbsContactSupport\": \"one arm supports baby, other waves\", \"visibility\": \"visible\"}, \"PomPom\": {\"positionXYZ\": [0, 0.1, 0.9], \"bodyFacingTarget\": \"PinPin\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"held against shoulder\", \"limbsContactSupport\": \"Mama supporting arm\", \"visibility\": \"visible\"}}, \"staticLandmarks\": {\"threshold\": [0, 0, 0], \"stone\": [-2, -2, 0.35], \"bowl\": [2, -2, 0], \"path\": [0, -6, 0], \"leftWindow\": [-1.4, 0, 1.2], \"rightWindow\": [1.4, 0, 1.2], \"lantern\": [1, 0, 1.6]}, \"objectStateBefore\": \"dog crouched riders settled\", \"objectStateAfter\": \"dog standing; Mama/baby farewell; board stone behind\"}.\nPrioritize purposeful gaze, connected forepaws/feet, soft animated face/materials and the stated new framing. No additional actors or duplicated limbs. Warm morning daylight with soft cream fill on faces. All offscreen characters remain outside crop, do not force every reference-sheet figure into image.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "sole rendering and expressive face style authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "accepted family identity and scale, change gaze/pose per shot",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-015-v1.png",
+      "role": "environment, props and physical contact geometry ONLY; not old character rendering or old camera",
+      "sha256": "020b52038b8abf340e558293b3987c19e5337e828d7b6961b07bb5f4ab7ef814"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:16:29.953015+00:00",
+  "transformRecord": {
+    "previousNumber": 15,
+    "id": "elder-r5-015",
+    "purpose": "Departure connects family farewell and visible tandem support",
+    "frameId": "H",
+    "camera": {
+      "positionXYZ": [
+        -4,
+        -6,
+        1.5
+      ],
+      "targetXYZ": [
+        0,
+        -2,
+        1.6
+      ],
+      "height": 1.5,
+      "framing": "three-quarter departure wide, Mama/baby doorway behind and rider faces turned back",
+      "approximateFieldOfViewDegrees": 58,
+      "axisSide": "H exterior negativeY"
+    },
+    "actors": {
+      "Scooby": {
+        "positionXYZ": [
+          0,
+          -3,
+          0
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "path",
+        "eyeTarget": "path",
+        "pose": "standing after slow rise",
+        "limbsContactSupport": "four grounded paws; full curled tail",
+        "visibility": "visible"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          0,
+          -3.4,
+          2.7
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "Mama",
+        "eyeTarget": "Mama",
+        "pose": "seated front behind withers looking back",
+        "limbsContactSupport": "one paw shoulder fur; other small wave; legs astride",
+        "visibility": "visible"
+      },
+      "Papa": {
+        "positionXYZ": [
+          0,
+          -2.6,
+          2.7
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "Mama",
+        "eyeTarget": "Mama",
+        "pose": "seated immediately behind child",
+        "limbsContactSupport": "one forearm child lower torso, other braces back; two legs astride",
+        "visibility": "visible"
+      },
+      "Mama": {
+        "positionXYZ": [
+          0,
+          0.1,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "doorway goodbye",
+        "limbsContactSupport": "one arm supports baby, other waves",
+        "visibility": "visible"
+      },
+      "PomPom": {
+        "positionXYZ": [
+          0,
+          0.1,
+          0.9
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "held against shoulder",
+        "limbsContactSupport": "Mama supporting arm",
+        "visibility": "visible"
+      }
+    },
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "leftWindow": [
+        -1.4,
+        0,
+        1.2
+      ],
+      "rightWindow": [
+        1.4,
+        0,
+        1.2
+      ],
+      "lantern": [
+        1,
+        0,
+        1.6
+      ]
+    },
+    "objectStateBefore": "dog crouched riders settled",
+    "objectStateAfter": "dog standing; Mama/baby farewell; board stone behind",
+    "previousAction": "dog attentive reaction",
+    "nextAction": "forest journey",
+    "reasonForShotChange": "wide culmination with reciprocal family farewell and support clear",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "Scooby stood up slowly. Mama waved from the door, with PomPom against her shoulder."
+      ],
+      "ru": [
+        "Скуби медленно встал. Мама помахала им от двери, прижимая Пом-Пома к плечу."
+      ],
+      "es": [
+        "Scooby se levantó despacio. Mamá los saludó desde la puerta, con PomPom apoyado en su hombro."
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-015-v1.png",
+    "sceneDirection": "Wide departure after Scooby rises, all four dog paws grounded, whole dog body and rump curl. Child sits just behind shoulders, adult Papa immediately behind. Papa one forearm securely across child lower torso, other paw braced on back; distinct hips seated and one near hindleg each, far legs astride far side. PinPin one paw planted on shoulder fur and free paw small wave. Papa and child turn heads back toward Mama at doorway, actual eyes connect. Mama one arm supports baby against shoulder and other waves; no third arm. Dog looks forward down path, ready to walk gently. Correct large dog small family scale; no saddle/reins/clothing."
+  },
+  "status": "planned-full-cast-gate"
+}

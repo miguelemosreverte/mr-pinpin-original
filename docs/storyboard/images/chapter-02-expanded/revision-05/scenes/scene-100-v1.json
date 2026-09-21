@@ -1,0 +1,134 @@
+{
+  "id": "scene-100-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 polished dimensional animated children's-book illustration, no text, panels or border.\nINPUT ROLES: Image1 established Elder/PinPin scene controls ALL rendering, expressive eyes, shaped brows and soft sculpted materials. Image2 approved cast: FAR LEFT round-eared broad adult HEDGEHOG is Papa; middle auburn mother holds tiny baby; smaller orange hedgehog is PinPin; separate far-right DOG is Scooby. Keep identities SEPARATE. Papa is never dog-faced, never spectacles. Image3 is previous scene for location, physical state, family seating/contact ONLY, not its obsolete character rendering or camera.\nPapa has luminous cream cheeks/eye surrounds, warm hazel irises with distinct pupils/ivory sclera, mature broad haunch/body, grey-brown tipped quills; NO dark eye mask, button eyes, photographic face or black rim shadows. PinPin smaller younger reddish quills expressive face. Scooby when present has approved soft animated brown/brindle groups, folded ears, cream muzzle, white bib, curled tail, expressive amber eyes; NO photographed pet detail or wet PBR fur. Qualitative scale Papa1.6child, dog shoulder2.7child. Anatomy two forepaws/two hindfeet per hedgehog, four dog legs, one tail. Soft facial bounce lighting, warm rich book environment, bright late morning/midday, no dusk.\nNEW SHOT: ONLY Papa, PinPin and Scooby, NO Mama baby Elder. Clear side medium view at child-height. Scooby lies stationary beside familiar low flat mounting stone, front to RIGHT. Papa ALREADY dismounted and stands with BOTH HINDFEET ON FLAT STONE TOP, not ground not back. Child remains seated secure on dog's back behind withers with both forepaws fur, Papa one forepaw close child's torso. Father looks directly child and child up father. Scooby gently tilts head back/up toward child attentive, not camera. Frame stone/feet/child support clearly, closer than wide99 but fully readable dog paws. Cottage green door CLOSED, left hinges right knob/lantern, two windows, leftchimney and rightbowl. Preserve soft animated Papa face and dog style. This is first dismount step before Papa goes ground.\nCAMERA art-direction record (not literal labels in image): {\"positionXYZ\":[-3,-6,0.95],\"targetXYZ\":[-1.5,-2,1],\"height\":0.95,\"framing\":\"Stable child-height side contact view\",\"approximateFieldOfView\":45,\"axisSide\":\"negativeY\"}\nActors: Scooby at -1,-2,0; body/head/eyes toward PinPin; lying still chest forepaws ground. Papa at -2,-2,0.35; body/head/eyes toward PinPin; both hindfeet stone forepaws close child. PinPin at -1,-2,1; body/head/eyes toward Papa; seated waiting hips back paws fur near leg flank\nPurpose: Stable child-height side contact view. Keep named landmarks in existing reference geographic relationship; don't mirror set. Natural cropping/occlusion allowed, no invented limbs.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:33:52.152Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "style and Elder/PinPin",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "cast identity scale; Papa far left hedgehog",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-100-v1.png",
+      "role": "location/action state only; camera must change as directed",
+      "sha256": "386062675220517deeb3943b488b8d8469b1262559ca7ac1f221f796c51aceb9"
+    }
+  ],
+  "status": "ready",
+  "transformRecord": {
+    "previousNumber": 100,
+    "id": "elder-r5-100",
+    "purpose": "Stable child-height side contact view",
+    "frame": "H",
+    "camera": {
+      "positionXYZ": [
+        -3,
+        -6,
+        0.95
+      ],
+      "targetXYZ": [
+        -1.5,
+        -2,
+        1
+      ],
+      "height": 0.95,
+      "framing": "Stable child-height side contact view",
+      "approximateFieldOfView": 45,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "id": "Scooby",
+        "positionXYZ": [
+          -1.0,
+          -2.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "lying still chest forepaws ground",
+        "limbsContactSupport": "lying still chest forepaws ground",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Papa",
+        "positionXYZ": [
+          -2.0,
+          -2.0,
+          0.35
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "both hindfeet stone forepaws close child",
+        "limbsContactSupport": "both hindfeet stone forepaws close child",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "PinPin",
+        "positionXYZ": [
+          -1.0,
+          -2.0,
+          1.0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "seated waiting hips back paws fur near leg flank",
+        "limbsContactSupport": "seated waiting hips back paws fur near leg flank",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "chimney": "facade left",
+      "lantern": "facade right",
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "canonical scene099",
+      "after": "Papa on stone first child remains mounted"
+    },
+    "previousAction": "canonical scene099",
+    "nextAction": "canonical scene101",
+    "reasonForShotChange": "Stable child-height side contact view"
+  },
+  "startedAt": "2026-09-21T22:34:20.519Z",
+  "finishedAt": "2026-09-21T22:35:05.752Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c600-79e9-7ef1-bcf3-9c07d2a5d2dd/exec-c4434d90-bb5a-4338-b6ed-9ec3801167e0.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-100-v1.png",
+  "sha256": "530176c395bbe3f08ba2b8c5e6372e5fb969d6bf84eaadd63c69b293361f747a",
+  "review": "Creator full-image PASS: Papa both feet flat stone, child still seated hips/back with forepaws fur; reciprocal father-child gaze, dog head turns attentively to them. Dog front legs grounded, rear hidden. Clear staged dismount and cottage orientation. Cream Papa face and soft animated dog match approval; no accessory/extra limb observed.",
+  "width": 1536,
+  "height": 1024
+}

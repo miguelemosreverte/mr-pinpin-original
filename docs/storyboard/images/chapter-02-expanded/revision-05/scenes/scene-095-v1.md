@@ -1,0 +1,9 @@
+# scene-095-v1
+
+REJECT actual full image: Papa became dog-faced hedgehog hybrid from two-character reference. Camera triangle strong, but character identity invalid. Never select.
+
+## Exact prompt
+
+Use case: illustration-story. Create ONE landscape1536x1024 polished dimensional animated children's-book frame, no text/panels. Image1 is sole established rendering style and Elder/child identity authority. Image2 gives approved mature Papa cream-faced redesign. Image3 supplies clearing landmarks only; DO NOT copy its camera or old Papa eyes. 
+NEW CAMERA: intimate medium shot at PinPin eye-height, just behind the child's near shoulder. Child's small reddish quilled head and readable upward-looking profile at lower foreground, Papa adult on right in three-quarter profile, Elder with gold round spectacles left/center. See the friendly Elder's expressive face clearly; Papa looks directly at Elder and Elder reciprocates. Child is INCLUDED watching Elder with raised attentive face. All three feet are grounded but lower bodies may crop. Papa about1.6 child height with broad adult haunch/body, mature cream cheeks and warm hazel irises, visible pupil separation, no dark eye mask/button eyes. Elder grey tipped quills and spectacles; child younger smaller reddish quills, no glasses. Papa thanks familiar friend; Elder lifts one conversational forepaw, other rests belly. No handshake or extra paws. Dog waits OFF CAMERA to right; do not add him to frame.
+Maintain same enormous root-tree entrance BACKGROUND, staff parked left of doorway, fern right, sunny late morning; camera shifts close around child, never mirror environment. Depth is shallow but keep expressive faces readable. Soft warm reflected fill, creamy face planes, sculpted grouped fur/quills, animated brows/eyelids; NO photographed hedgehog faces, black rim shadows, wet PBR fur. This is emotional exchange through child's attention rather than another full-body lineup.

@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-r5-021",
+  "version": 1,
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-21T22:29:31.882973+00:00",
+  "prompt": "Use case: illustration-story. Create ONE full-bleed landscape 3:2 finished children’s-book illustration, no text or panels.\nSTYLE LOCK: closely match the soft expressive animated children’s-book forms in references 1 and 2. Warm cream facial planes, open readable hazel/amber iris around separate pupil, broad gentle eyelids, rounded appealing muzzle, grouped sculpted fur. Papa is a mature broad adult about 1.6 times PinPin height, NOT the child duplicated at same scale. Dog shoulder about 2.7 child heights, warm dark-brindled brown, white chest bib, grey-cream muzzle, folded triangular ears, curled rump tail. Dog expression attentive and emotionally present. No black button eyes, dark face masks, hard shiny skin, photographic animal anatomy/detail or live-action fur. All unclothed animal characters. Only Elder has glasses.\nREFERENCE ROLES: Image 1: PRIMARY approved common-scale animated identity/style reference; Papa and child distinct; dog scale and expressive materials; Image 2: AUTHORITATIVE book style, Elder and PinPin identity, expressive iris/pupil eyes, soft animation shapes; Image 3: ENVIRONMENT GEOGRAPHY ONLY; root portal, left staff/boulder and path, right fern, sunny patch beyond fern.\nNARRATIVE AND CAMERA: View the familiar adult greeting from PinPin’s own height, over the child’s quilled shoulder in the near lower-left foreground. Beyond him Papa at center-left lifts one open forepaw to greet the silver-quilled Elder at right outside the natural root portal. The two adults SMILE DIRECTLY AT EACH OTHER, pupils visibly aimed to each other. Papa broad mature cream-faced adult, brown-grey quills, no spectacles; Elder silver quills and gold round spectacles, slightly stooped. Child is small foreground observer, not a third adult in line. Dog remains lying offscreen left by stone; no need to add him. Staff remains parked beside boulder LEFT of portal, not in Elder hand; fern RIGHT. Warm reunion, trust visible through relaxed posture.\nPER-ACTOR/CAMERA PLAN (approximate illustrative geometry, not labels to render): {\"previousNumber\":21,\"id\":\"elder-r5-021\",\"purpose\":\"Child observes trusted adult friendship\",\"frame\":\"E\",\"camera\":{\"positionXYZ\":[-0.6,-3.5,0.75],\"targetXYZ\":[0,-0.4,1.1],\"height\":0.75,\"fieldOfView\":56,\"framing\":\"over PinPin shoulder low medium; two adults friendly greeting\",\"axisSide\":\"approach/front negativeY; travel rear negativeY\"},\"actors\":[{\"name\":\"PinPin\",\"positionXYZ\":[-0.6,-2.5,0],\"bodyFacing\":\"Elder\",\"headFacing\":\"Elder\",\"eyeTarget\":\"Elder\",\"pose\":\"foreground standing\",\"contacts\":\"two feet path\",\"visibility\":\"back/shoulder foreground\"},{\"name\":\"Papa\",\"positionXYZ\":[-0.8,-1.4,0],\"bodyFacing\":\"Elder\",\"headFacing\":\"Elder\",\"eyeTarget\":\"Elder\",\"pose\":\"warm raised greeting forepaw\",\"contacts\":\"feet ground other paw lowered\",\"visibility\":\"visible\"},{\"name\":\"Elder\",\"positionXYZ\":[0.3,-0.3,0],\"bodyFacing\":\"Papa\",\"headFacing\":\"Papa\",\"eyeTarget\":\"Papa\",\"pose\":\"smile leaning welcoming\",\"contacts\":\"feet ground paws relaxed\",\"visibility\":\"visible\"},{\"name\":\"Scooby\",\"positionXYZ\":[-1,-3,0],\"bodyFacing\":\"threshold\",\"headFacing\":\"Papa\",\"eyeTarget\":\"Papa\",\"pose\":\"lying by stone\",\"contacts\":\"body ground\",\"visibility\":\"offscreen left\"}],\"landmarks\":{\"threshold\":[0,0,0],\"staffBoulder\":[-1.6,-0.2,0],\"fern\":[1.4,-0.3,0],\"restRock\":[4,-1,0],\"mountingStone\":[-2,-3,0.4]},\"state\":\"staff parked left; reciprocal adult gaze\",\"transition\":\"child physical landing to child social perspective\",\"status\":\"planned-awaiting-cast-gate\"}\nPhysical discipline: one head and two forepaws/two hindfeet per hedgehog; dog exactly four legs and one tail. Naturally occluded limbs stay hidden, do not expose extra limbs to satisfy a count. Actual contact and believable balance. Preserve morning daytime light and scene landmarks; no clothes, tack, harness, captions, diagrams, arrows, watermarks. This is a cinematic story moment, not a character-sheet montage.\nImage4 is isolated PAPA identity. Separate adults unambiguously: Papa LEFT has NO spectacles and brown-grey quills, Elder RIGHT has gold round glasses and silver quills. Child seen only from behind in near-left foreground. No dog visible. No adult frontal lineup; genuine over-child-shoulder viewpoint, two adults connect eyes.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "PRIMARY approved common-scale animated identity/style reference; Papa and child distinct; dog scale and expressive materials",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "AUTHORITATIVE book style, Elder and PinPin identity, expressive iris/pupil eyes, soft animation shapes",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/elder-exterior-rest-plate-v1.png",
+      "role": "ENVIRONMENT GEOGRAPHY ONLY; root portal, left staff/boulder and path, right fern, sunny patch beyond fern",
+      "sha256": "6295a3c64ad0ad7ff1634a046201804f3a5885c759419538247be28074b0500b"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "PAPA IDENTITY: no glasses, mature broad face and torso, warm hazel eyes; not Elder",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "transformRecord": {
+    "previousNumber": 21,
+    "id": "elder-r5-021",
+    "purpose": "Child observes trusted adult friendship",
+    "frame": "E",
+    "camera": {
+      "positionXYZ": [
+        -0.6,
+        -3.5,
+        0.75
+      ],
+      "targetXYZ": [
+        0,
+        -0.4,
+        1.1
+      ],
+      "height": 0.75,
+      "fieldOfView": 56,
+      "framing": "over PinPin shoulder low medium; two adults friendly greeting",
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -0.6,
+          -2.5,
+          0
+        ],
+        "bodyFacing": "Elder",
+        "headFacing": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "foreground standing",
+        "contacts": "two feet path",
+        "visibility": "back/shoulder foreground"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -0.8,
+          -1.4,
+          0
+        ],
+        "bodyFacing": "Elder",
+        "headFacing": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "warm raised greeting forepaw",
+        "contacts": "feet ground other paw lowered",
+        "visibility": "visible"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0.3,
+          -0.3,
+          0
+        ],
+        "bodyFacing": "Papa",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "smile leaning welcoming",
+        "contacts": "feet ground paws relaxed",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -3,
+          0
+        ],
+        "bodyFacing": "threshold",
+        "headFacing": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "lying by stone",
+        "contacts": "body ground",
+        "visibility": "offscreen left"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "state": "staff parked left; reciprocal adult gaze",
+    "transition": "child physical landing to child social perspective",
+    "status": "planned-awaiting-cast-gate"
+  },
+  "mode": "generate",
+  "status": "rejected-eyeline",
+  "completedAt": "2026-09-21T22:31:23.153213+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c600-14b2-7cd0-a2bc-99b2f7afd2dd/exec-29571d36-0c93-4b6a-9738-13d42d9c99ff.png",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-021-v1.png",
+  "sha256": "6964b560e067b28ed7cedaef956d19948f2dae4fae66355d60ce6f28469f07e3",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator actual full-image: effective child-over-shoulder greeting, correct separate adult identities/feet/paws and landmarks. Elder looks up to Papa, but Papa iris aims slightly too high past Elder face. Refine only Papa head/iris downward to exact Elder eyes; no other changes needed.",
+  "alt": {
+    "en": "PinPin watches Papa greet the Elder outside the tree home.",
+    "ru": "Пин-Пин наблюдает, как Папа приветствует Старейшину у дома в дереве.",
+    "es": "PinPin observa cómo Papá saluda al Anciano ante su casa en el árbol."
+  },
+  "startedAt": "2026-09-21T22:29:50.253Z",
+  "finishedAt": "2026-09-21T22:30:26.913Z",
+  "timingSource": {
+    "source": "actual session tool-call and matching result timestamps",
+    "callId": "call_wzQsZlUfhpB0vwDkErPV7F8y",
+    "scope": "functions.exec containing request read and awaited built-in imagegen; includes orchestration overhead, not claimed model-internal latency"
+  }
+}

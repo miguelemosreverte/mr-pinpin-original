@@ -1,0 +1,140 @@
+{
+  "tool": "built-in image_gen",
+  "transformRecord": {
+    "previousNumber": 8,
+    "id": "elder-r5-008",
+    "purpose": "A small reaction: Papa gives child full attention and lowers cup",
+    "frameId": "K",
+    "camera": {
+      "positionXYZ": [
+        1.8,
+        -0.9,
+        1.4
+      ],
+      "targetXYZ": [
+        0.7,
+        0.8,
+        1.3
+      ],
+      "height": 1.4,
+      "framing": "tight Papa face and lowering cup; child fully offscreen",
+      "approximateFieldOfViewDegrees": 28,
+      "axisSide": "K +X of Papa-child dialogue axis"
+    },
+    "actors": {
+      "Mama": {
+        "positionXYZ": [
+          -1.2,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "seated with infant",
+        "limbsContactSupport": "seat supports body; one forearm supports baby; other on table",
+        "visibility": "offscreen left seat"
+      },
+      "PomPom": {
+        "positionXYZ": [
+          -1.1,
+          0,
+          0.7
+        ],
+        "bodyFacingTarget": "Mama",
+        "headFacingTarget": "Mama",
+        "eyeTarget": "Mama",
+        "pose": "held infant",
+        "limbsContactSupport": "Mama forearm and lap",
+        "visibility": "offscreen held by Mama"
+      },
+      "Papa": {
+        "positionXYZ": [
+          0.7,
+          0.8,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "attentive listening, lowering cup",
+        "limbsContactSupport": "one paw puts cup on table, other relaxed near bowl",
+        "visibility": "visible"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          0.9,
+          -0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "PapaCup",
+        "eyeTarget": "PapaCup",
+        "pose": "seated watching pour",
+        "limbsContactSupport": "boosted chair; two paws table",
+        "visibility": "offscreen at fixed near seat"
+      }
+    },
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCupboards": [
+        -3,
+        1,
+        0
+      ],
+      "rightStove": [
+        3,
+        1,
+        0
+      ],
+      "PapaCup": [
+        0.55,
+        0.6,
+        0.85
+      ],
+      "childBowl": [
+        0.65,
+        -0.6,
+        0.85
+      ]
+    },
+    "objectStateBefore": "cup raised in previous shot",
+    "objectStateAfter": "cup touches tabletop; Papa eyebrows curious",
+    "previousAction": "child lake story",
+    "nextAction": "Papa suggests familiar Elder",
+    "reasonForShotChange": "cut to reaction, not duplicated family conversation wide",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "“And my golden quill helped,” he added. Papa put down his cup and listened."
+      ],
+      "ru": [
+        "«И моя золотая иголка помогла», — добавил он. Папа поставил чашку и стал слушать."
+      ],
+      "es": [
+        "«Y mi púa dorada ayudó», añadió. Papá dejó su taza y escuchó."
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-008-v2.png",
+    "sceneDirection": "A genuinely close single-Papa reaction, not the previous family two-shot. Papa head and upper chest dominate, warm light cream eye surrounds, readable hazel irises aimed down toward offcamera PinPin near camera-left. One attached paw lowers cup until base meets tabletop at bottom edge; other paw rests near bowl. Brows lift in interested surprise. Child/Mama/baby entirely outside crop at existing seats. Cup and face both visible."
+  },
+  "id": "scene-008-v4",
+  "plannedAt": "2026-09-21T22:18:47.656641+00:00",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-008-v3.png",
+      "role": "edit target, keep everything except incorrect visible door knob",
+      "sha256": "1a3a586989d177aac835318870dd3aa773ea0a12a755839899f299ddb692a1ea"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. Keep this exact landscape illustration unchanged in framing, Papa character, facial expression and gaze, hands, cup, table, all food, lighting and room. ONE tiny architectural correction only: REMOVE the visible brass round knob from the RIGHT side of the green door in the background (behind Papa right shoulder). Fill that small spot with matching green vertical wooden boards. This is the INTERIOR view: door hinges correctly stay on RIGHT; actual knob is on LEFT and hidden behind Papa. Do not add another visible knob. Do not move or change hinges, windows, furniture, character, camera, teapot, crockery or colors. No text or border. Return the same1536x1024 image with only the erroneous right-side brass knob removed."
+}

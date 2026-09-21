@@ -1,0 +1,160 @@
+{
+  "id": "scene-013-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 children’s book illustration, no text/border/panels.\nInput roles: Image1 is the established animated-feature storybook rendering authority. Image2 is ACCEPTED shared family identity and scale. Image3 controls ONLY environment/props/contact geometry; IGNORE its old photographic faces/rendering and old camera, use the NEW SHOT BELOW.\nMatch established Elder/PinPin dimensional animated storybook illustration, readable expressive irises, designed soft grouped fur, rounded forms, warm light with soft fill; no photographic pet/human rendering or black eye mask. Approved shared cast controls identities and approximate common scale. Papa is the mature broad-bodied HEDGEHOG at far LEFT in image2, cream face/eye surrounds, hazel iris/pupil separation, dark brown tipped quills, no spectacles. PinPin is the SMALL standing chestnut HEDGEHOG child; Mama the copper-quilled ADULT HEDGEHOG holding infant PomPom. Scooby is the LARGE DOG at right, amber eyes, warm brindle brown, cream-grey muzzle, white chest, folded ears/curled rump tail. Species must never swap. Adult hedgehog about1.6 child height, dog shoulder2.7child height. No clothing/reins/saddle.\nSHOT: TIGHTER side-threequarter contact view, same side as previous: child is transferring from single low stone to dog. Child near hindfoot remains flat on stone, far hindfoot presses dog back, both forepaws on shoulder fur. Papa stands with BOTH feet on ground and supports lower torso with one paw. Scooby remains crouched still, head turns gently back to watch child. Exactly two child forepaws and two hindfeet, no floating third appendage. Crop some dog flank if necessary but show child/Papa contact and feet.\nGreen rounded door, outside hinges left/knob and lantern right, two round windows, chimney left, low broad mounting stone left and water bowl right, moss roof. Dog remains outdoors.\nPLANNED CAMERA AND ACTORS (approximate staging cues, not text in image): {\"frameId\": \"H\", \"camera\": {\"positionXYZ\": [-3.3, -3.6, 1.1], \"targetXYZ\": [-1.4, -2, 1], \"height\": 1.1, \"framing\": \"tighter side three-quarter contact study, faces and feet readable\", \"approximateFieldOfViewDegrees\": 36, \"axisSide\": \"H exterior negativeY\"}, \"actors\": {\"Papa\": {\"positionXYZ\": [-2.6, -2, 0], \"bodyFacingTarget\": \"PinPin\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"supports child from ground\", \"limbsContactSupport\": \"both feet earth; near paw lower torso, other hovering support\", \"visibility\": \"visible\"}, \"PinPin\": {\"positionXYZ\": [-1.7, -2, 0.8], \"bodyFacingTarget\": \"Scooby\", \"headFacingTarget\": \"Scooby\", \"eyeTarget\": \"Scooby\", \"pose\": \"climbing from stone to shoulder-back\", \"limbsContactSupport\": \"near hindfoot stone, far hindfoot planted back; both forepaws back\", \"visibility\": \"visible\"}, \"Scooby\": {\"positionXYZ\": [-0.5, -2, 0], \"bodyFacingTarget\": \"path\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"still crouched during transfer\", \"limbsContactSupport\": \"paws grounded; dog body supports child far foot\", \"visibility\": \"visible\"}}, \"staticLandmarks\": {\"threshold\": [0, 0, 0], \"stone\": [-2, -2, 0.35], \"bowl\": [2, -2, 0], \"path\": [0, -6, 0], \"leftWindow\": [-1.4, 0, 1.2], \"rightWindow\": [1.4, 0, 1.2], \"lantern\": [1, 0, 1.6]}, \"objectStateBefore\": \"child both feet stone\", \"objectStateAfter\": \"one foot stone one back; no unsupported jump\"}.\nPrioritize purposeful gaze, connected forepaws/feet, soft animated face/materials and the stated new framing. No additional actors or duplicated limbs. Warm morning daylight with soft cream fill on faces. All offscreen characters remain outside crop, do not force every reference-sheet figure into image.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "sole rendering and expressive face style authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "accepted family identity and scale, change gaze/pose per shot",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-013-v3.png",
+      "role": "environment, props and physical contact geometry ONLY; not old character rendering or old camera",
+      "sha256": "8144c85844dc2a74f06e163677c1809b443bda7084b07df0b88a30850d15d6fb"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:16:29.938167+00:00",
+  "transformRecord": {
+    "previousNumber": 13,
+    "id": "elder-r5-013",
+    "purpose": "Show actual transfer with uninterrupted contact",
+    "frameId": "H",
+    "camera": {
+      "positionXYZ": [
+        -3.3,
+        -3.6,
+        1.1
+      ],
+      "targetXYZ": [
+        -1.4,
+        -2,
+        1
+      ],
+      "height": 1.1,
+      "framing": "tighter side three-quarter contact study, faces and feet readable",
+      "approximateFieldOfViewDegrees": 36,
+      "axisSide": "H exterior negativeY"
+    },
+    "actors": {
+      "Papa": {
+        "positionXYZ": [
+          -2.6,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "supports child from ground",
+        "limbsContactSupport": "both feet earth; near paw lower torso, other hovering support",
+        "visibility": "visible"
+      },
+      "PinPin": {
+        "positionXYZ": [
+          -1.7,
+          -2,
+          0.8
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "Scooby",
+        "eyeTarget": "Scooby",
+        "pose": "climbing from stone to shoulder-back",
+        "limbsContactSupport": "near hindfoot stone, far hindfoot planted back; both forepaws back",
+        "visibility": "visible"
+      },
+      "Scooby": {
+        "positionXYZ": [
+          -0.5,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "still crouched during transfer",
+        "limbsContactSupport": "paws grounded; dog body supports child far foot",
+        "visibility": "visible"
+      }
+    },
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "leftWindow": [
+        -1.4,
+        0,
+        1.2
+      ],
+      "rightWindow": [
+        1.4,
+        0,
+        1.2
+      ],
+      "lantern": [
+        1,
+        0,
+        1.6
+      ]
+    },
+    "objectStateBefore": "child both feet stone",
+    "objectStateAfter": "one foot stone one back; no unsupported jump",
+    "previousAction": "boarding setup",
+    "nextAction": "comfort question/dog listens",
+    "reasonForShotChange": "closer framing emphasizes changed foot/support state without crossing axis",
+    "status": "planned-awaiting-shared-cast",
+    "narration": {
+      "en": [
+        "From there, PinPin climbed onto Scooby’s back. Papa kept a steady paw beside him."
+      ],
+      "ru": [
+        "Оттуда Пин-Пин перелез на спину Скуби. Папа придерживал его лапой."
+      ],
+      "es": [
+        "Desde allí, PinPin subió al lomo de Scooby. Papá lo sostenía con una pata firme."
+      ]
+    },
+    "previousSrc": "images/chapter-02-expanded/revision-04/scenes/scene-013-v3.png",
+    "sceneDirection": "TIGHTER side-threequarter contact view, same side as previous: child is transferring from single low stone to dog. Child near hindfoot remains flat on stone, far hindfoot presses dog back, both forepaws on shoulder fur. Papa stands with BOTH feet on ground and supports lower torso with one paw. Scooby remains crouched still, head turns gently back to watch child. Exactly two child forepaws and two hindfeet, no floating third appendage. Crop some dog flank if necessary but show child/Papa contact and feet."
+  },
+  "status": "creator-and-root-reviewed",
+  "n": 13,
+  "v": 1,
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-e0a50280-1509-4907-b170-5fb3423fed1a.png",
+  "startedAt": "2026-09-21T22:50:45.933Z",
+  "finishedAt": "2026-09-21T22:51:26.028Z",
+  "review": "Creator actual full-image PASS with occlusion limitation: tighter same-side transfer shot, child near hindfoot still contacts single stone, both forepaws press dog back, belly/chest leans onto back while Papa grounded both feet supports waist with two attached forearms. Child far hindleg is concealed by body/dog back, so far-foot planted contact from plan is not visually certified. No visible floating/extra appendage. Dog crouched two forepaws earth, head/amber eyes turn back toward child, curled tail at left rump. Adult/child faces and materials align accepted style.",
+  "alt": {
+    "en": "Papa supports PinPin as he leans onto Scooby’s back, keeping one foot on the stone.",
+    "ru": "Папа поддерживает Пин-Пина, который опирается на спину Скуби, оставив одну лапку на камне.",
+    "es": "Papá sostiene a PinPin mientras se apoya sobre el lomo de Scooby, con un pie todavía en la piedra."
+  },
+  "sha256": "f125dfa6e2db5758d85047d27575cdb4c59596ddd2f3651bf403f21702f4a0ff",
+  "output": "images/chapter-02-expanded/revision-05/scenes/scene-013-v1.png",
+  "width": 1536,
+  "height": 1024,
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c5ff-b7a0-7643-b3a3-e103187a7ada/exec-e0a50280-1509-4907-b170-5fb3423fed1a.png",
+  "independentReview": "Root independently viewed full selected image and PASS recorded in revision05 ROOT-REVIEW.md; final batch009011012013015 confirmed by coordinator."
+}

@@ -1,0 +1,1349 @@
+{
+  "revision": 5,
+  "lane": "outward",
+  "status": "complete",
+  "selected": [
+    {
+      "previousNumber": 16,
+      "id": "elder-r5-016",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-016-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "dc4a9df72a30891d3062553528973d58f164bd0ce2ff30707ad43c4236b95f80",
+      "alt": {
+        "en": "From just behind PinPin, Scooby’s ears frame a sunlit forest path and distant mist; Papa’s arm supports the child as he holds the dog’s back.",
+        "ru": "Из-за плеча Пин-Пина между ушами Скуби видны солнечная лесная тропинка и далёкий туман; Папина лапа поддерживает малыша, который держится за спину собаки.",
+        "es": "Desde detrás de PinPin, las orejas de Scooby enmarcan un sendero soleado y la niebla distante; el brazo de Papá sostiene al pequeño mientras se apoya en el lomo del perro."
+      },
+      "review": "Creator actual full-image PASS: child-shoulder travel view shows one PinPin cream cheek profile, two paws contacting Scooby shoulder, Papa supporting forearm enters lower-left while his body/head remains behind camera. No duplicate rider head. Scooby two folded ears and broad back lead toward path and misty forest/lake distance. Child looks forward along route. Hidden seats/feet/whole Papa not certified; this purposeful crop inherits tandem contacts from neighboring established views. Soft animated child forms and grouped dog fur retained.",
+      "camera": {
+        "positionXYZ": [
+          0.3,
+          -0.9,
+          3.6
+        ],
+        "targetXYZ": [
+          0,
+          5,
+          2
+        ],
+        "height": 3.6,
+        "fieldOfView": 55,
+        "framing": "child-height over-shoulder medium; back of child at lower edge; dog ears beyond",
+        "axisSide": "approach/front negativeY; travel rear negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 16,
+        "id": "elder-r5-016",
+        "purpose": "Feel journey through child attention, not another side-profile demonstration",
+        "frame": "T",
+        "camera": {
+          "positionXYZ": [
+            0.3,
+            -0.9,
+            3.6
+          ],
+          "targetXYZ": [
+            0,
+            5,
+            2
+          ],
+          "height": 3.6,
+          "fieldOfView": 55,
+          "framing": "child-height over-shoulder medium; back of child at lower edge; dog ears beyond",
+          "axisSide": "approach/front negativeY; travel rear negativeY"
+        },
+        "actors": [
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              0,
+              0.4,
+              2.7
+            ],
+            "bodyFacing": "path",
+            "headFacing": "path",
+            "eyeTarget": "path",
+            "pose": "seated astride behind withers",
+            "contacts": "two forepaws on dog shoulder; thighs/feet straddle",
+            "visibility": "visible"
+          },
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0,
+              -0.4,
+              2.7
+            ],
+            "bodyFacing": "path",
+            "headFacing": "path",
+            "eyeTarget": "path",
+            "pose": "seated behind child",
+            "contacts": "one forearm around child lower torso other paw on back; head outside crop",
+            "visibility": "offscreen except supporting forearm"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              0,
+              0,
+              0
+            ],
+            "bodyFacing": "path",
+            "headFacing": "path",
+            "eyeTarget": "path",
+            "pose": "gentle walking",
+            "contacts": "grounded slow gait, forelegs beyond crop",
+            "visibility": "visible"
+          }
+        ],
+        "landmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ]
+        },
+        "state": "dog walking; supported tandem",
+        "transition": "follows boarding; reveals destination next",
+        "status": "planned-awaiting-cast-gate"
+      },
+      "provenance": "images/chapter-02-expanded/revision-05/scenes/scene-016-v1.json",
+      "status": "ready"
+    },
+    {
+      "previousNumber": 17,
+      "id": "elder-r5-017",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-017-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "119793a28c2efac29d89c28e673bea28a3b13f250e31e6ed0b013a578a48dc45",
+      "alt": {
+        "en": "Seen from low behind, Papa supports PinPin on Scooby as they approach the enormous tree and its small entrance between the roots.",
+        "ru": "С низкой точки позади видно, как Папа поддерживает Пин-Пина на Скуби, пока они приближаются к огромному дереву с маленьким входом между корнями.",
+        "es": "Vistos desde abajo y por detrás, Papá sostiene a PinPin sobre Scooby mientras se acercan al enorme árbol y su pequeña entrada entre las raíces."
+      },
+      "review": "Creator actual full-image PASS after v2 removes erroneous Papa spectacles. Wide low destination reveal makes great root tree dominant; Papa/PinPin tandem shown from rear three-quarter, Papa one forearm/paw around child and hips on back. Four dog legs in slow walking gait, single curled tail. Hidden far rider limbs not certified. Papa mature cream profile/hazel eye readable, child smaller chestnut. Both face destination, dog along path. Staff/boulder left of root portal, fern right, mounting stone near-left, background hill left. No other actors.",
+      "camera": {
+        "positionXYZ": [
+          -3,
+          -9,
+          0.8
+        ],
+        "targetXYZ": [
+          0,
+          0,
+          3.4
+        ],
+        "height": 0.8,
+        "fieldOfView": 74,
+        "framing": "wide low establishing; riders small lower foreground and monumental root home above",
+        "axisSide": "approach/front negativeY; travel rear negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 17,
+        "id": "elder-r5-017",
+        "purpose": "Reveal enormous destination from low forest approach",
+        "frame": "E",
+        "camera": {
+          "positionXYZ": [
+            -3,
+            -9,
+            0.8
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            3.4
+          ],
+          "height": 0.8,
+          "fieldOfView": 74,
+          "framing": "wide low establishing; riders small lower foreground and monumental root home above",
+          "axisSide": "approach/front negativeY; travel rear negativeY"
+        },
+        "actors": [
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              -1,
+              -5,
+              0
+            ],
+            "bodyFacing": "threshold",
+            "headFacing": "threshold",
+            "eyeTarget": "threshold",
+            "pose": "slow walking",
+            "contacts": "4 feet on path",
+            "visibility": "visible"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -1,
+              -4.6,
+              2.7
+            ],
+            "bodyFacing": "threshold",
+            "headFacing": "threshold",
+            "eyeTarget": "threshold",
+            "pose": "front seat",
+            "contacts": "two paws/back; straddling",
+            "visibility": "visible"
+          },
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              -1,
+              -5.4,
+              2.7
+            ],
+            "bodyFacing": "threshold",
+            "headFacing": "threshold",
+            "eyeTarget": "threshold",
+            "pose": "rear seat",
+            "contacts": "arm supports child; other on dog",
+            "visibility": "visible"
+          }
+        ],
+        "landmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "staffBoulder": [
+            -1.6,
+            -0.2,
+            0
+          ],
+          "fern": [
+            1.4,
+            -0.3,
+            0
+          ],
+          "restRock": [
+            4,
+            -1,
+            0
+          ],
+          "mountingStone": [
+            -2,
+            -3,
+            0.4
+          ]
+        },
+        "state": "thinning mist sunny clearing",
+        "transition": "travel subjective to destination reveal; next stop",
+        "status": "planned-awaiting-cast-gate"
+      },
+      "provenance": "images/chapter-02-expanded/revision-05/scenes/scene-017-v2.json",
+      "status": "ready"
+    },
+    {
+      "previousNumber": 18,
+      "id": "elder-r5-018",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-018-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "12a1e2e84695b2a9e5dfcfb88d8c5dd28a635ec9d52419a31aee60240ed01b19",
+      "alt": {
+        "en": "Scooby crouches beside the arrival stone and looks back attentively as Papa steadies PinPin, who turns up toward his father.",
+        "ru": "Скуби пригибается у камня и внимательно оглядывается, пока Папа поддерживает Пин-Пина, поднявшего взгляд к отцу.",
+        "es": "Scooby se agacha junto a la piedra y mira hacia atrás con atención mientras Papá sostiene a PinPin, que alza la mirada hacia su padre."
+      },
+      "review": "Creator actual full-image PASS v2: crouched Scooby stays beside near-left low stone; dog attentive eyes turn back up toward riders. PinPin torso faces dog head with near hindleg draped down, far hindleg occluded, two forepaws on shoulder fur; head turns up to Papa. Papa supporting forearm crosses child lower chest; remaining arm/far legs occluded, not certified. Papa cream face/hazel eyes and dog soft animated expression match approval. Root portal/staff-left/fern-right held; no Elder or extra rider. Papa looks child rather than stone in plan, a welcome reciprocal attention improvement compatible with stopping action.",
+      "camera": {
+        "positionXYZ": [
+          -4,
+          -7,
+          1.1
+        ],
+        "targetXYZ": [
+          -1,
+          -2,
+          1
+        ],
+        "height": 1.1,
+        "fieldOfView": 57,
+        "framing": "medium wide side-three-quarter",
+        "axisSide": "approach/front negativeY; travel rear negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 18,
+        "id": "elder-r5-018",
+        "purpose": "Establish stopped dog stone and doorway before dismount",
+        "frame": "E",
+        "camera": {
+          "positionXYZ": [
+            -4,
+            -7,
+            1.1
+          ],
+          "targetXYZ": [
+            -1,
+            -2,
+            1
+          ],
+          "height": 1.1,
+          "fieldOfView": 57,
+          "framing": "medium wide side-three-quarter",
+          "axisSide": "approach/front negativeY; travel rear negativeY"
+        },
+        "actors": [
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              -1,
+              -3,
+              0
+            ],
+            "bodyFacing": [
+              -0.5,
+              -2,
+              0
+            ],
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "crouched still",
+            "contacts": "belly low front paws planted",
+            "visibility": "visible"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -1,
+              -2.7,
+              1.3
+            ],
+            "bodyFacing": "threshold",
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "front seat",
+            "contacts": "straddle back both paws shoulder",
+            "visibility": "visible"
+          },
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              -1,
+              -3.3,
+              1.3
+            ],
+            "bodyFacing": "threshold",
+            "headFacing": "stone",
+            "eyeTarget": "stone",
+            "pose": "rear seat",
+            "contacts": "arm supports child other dog",
+            "visibility": "visible"
+          }
+        ],
+        "landmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "staffBoulder": [
+            -1.6,
+            -0.2,
+            0
+          ],
+          "fern": [
+            1.4,
+            -0.3,
+            0
+          ],
+          "restRock": [
+            4,
+            -1,
+            0
+          ],
+          "mountingStone": [
+            -2,
+            -3,
+            0.4
+          ]
+        },
+        "state": "dog crouches next to stone both riders seated",
+        "transition": "reveal to legible physical staging",
+        "status": "planned-awaiting-cast-gate"
+      },
+      "provenance": "images/chapter-02-expanded/revision-05/scenes/scene-018-v2.json",
+      "status": "ready"
+    },
+    {
+      "previousNumber": 19,
+      "id": "elder-r5-019",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-019-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "2ac1f23c60151109539ce35801325fe326e4d79c899fe25d517bb04b7f403eba",
+      "alt": {
+        "en": "Papa stands with both feet on the stone and steadies PinPin, who still waits on crouching Scooby; the dog watches Papa closely.",
+        "ru": "Папа стоит обеими лапами на камне и поддерживает Пин-Пина, который ещё ждёт на спине пригнувшегося Скуби; собака внимательно смотрит на Папу.",
+        "es": "Papá está con ambos pies sobre la piedra y sostiene a PinPin, que aún espera sobre Scooby agachado; el perro observa atentamente a Papá."
+      },
+      "review": "Creator actual full-image PASS v2: Papa NO glasses, mature cream face with distinct hazel iris/pupil. Both hindfeet clearly on top of near-left stone, one forepaw on dog back and far forepaw at child shoulder. Child remains seated astride with near hindleg visible/two paws on dog, reciprocal eyes to Papa. Scooby crouched head/body oriented right as018 and looks attentively up toward father. Two front paws visible; rear feet/tail naturally obscured by stone and father, not certified. Portal/left staff/right fern unchanged. Camera modestly tighter for dismount clarity.",
+      "camera": {
+        "positionXYZ": [
+          -4,
+          -6,
+          1.5
+        ],
+        "targetXYZ": [
+          -1.6,
+          -3,
+          1
+        ],
+        "height": 1.5,
+        "fieldOfView": 48,
+        "framing": "closer side profile including Papa feet stone child",
+        "axisSide": "approach/front negativeY; travel rear negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 19,
+        "id": "elder-r5-019",
+        "purpose": "Show Papa first dismount completed onto stone",
+        "frame": "E",
+        "camera": {
+          "positionXYZ": [
+            -4,
+            -6,
+            1.5
+          ],
+          "targetXYZ": [
+            -1.6,
+            -3,
+            1
+          ],
+          "height": 1.5,
+          "fieldOfView": 48,
+          "framing": "closer side profile including Papa feet stone child",
+          "axisSide": "approach/front negativeY; travel rear negativeY"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              -2,
+              -3,
+              0.4
+            ],
+            "bodyFacing": "PinPin",
+            "headFacing": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "standing on stone",
+            "contacts": "both hindfeet stone one forepaw dog other toward child",
+            "visibility": "visible"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -1,
+              -2.7,
+              1.3
+            ],
+            "bodyFacing": "Papa",
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "waiting front seat",
+            "contacts": "both forepaws shoulder hindlegs astride",
+            "visibility": "visible"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              -1,
+              -3,
+              0
+            ],
+            "bodyFacing": [
+              -0.5,
+              -2,
+              0
+            ],
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "still crouched",
+            "contacts": "front paws ground hindfeet occluded",
+            "visibility": "visible"
+          }
+        ],
+        "landmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "staffBoulder": [
+            -1.6,
+            -0.2,
+            0
+          ],
+          "fern": [
+            1.4,
+            -0.3,
+            0
+          ],
+          "restRock": [
+            4,
+            -1,
+            0
+          ],
+          "mountingStone": [
+            -2,
+            -3,
+            0.4
+          ]
+        },
+        "state": "Papa on stone not ground; child seated",
+        "transition": "same axis narrower frame to show state change",
+        "status": "planned-awaiting-cast-gate"
+      },
+      "provenance": "images/chapter-02-expanded/revision-05/scenes/scene-019-v2.json",
+      "status": "ready"
+    },
+    {
+      "previousNumber": 20,
+      "id": "elder-r5-020",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-020-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "3b4d411ec0e4b82a6abc34f96c831409e8b8e0c7e7d750264fc8c7b3fd4c666f",
+      "alt": {
+        "en": "Papa stands on the path and gently holds PinPin, whose two little feet have reached the stone; Scooby watches their faces from beside them.",
+        "ru": "Папа стоит на тропинке и бережно держит Пин-Пина, чьи маленькие лапки уже коснулись камня; Скуби рядом следит за их лицами.",
+        "es": "Papá está en el sendero y sostiene con cariño a PinPin, cuyas patitas ya han llegado a la piedra; Scooby observa sus rostros desde un lado."
+      },
+      "review": "Creator actual full-image PASS v2: materially closer, lower father-child landing moment; Papa two hindfeet grounded and two forepaws supporting child torso, child two feet on stone and paws on father forearms. Reciprocal eye contact and warm expressive cream faces, no Papa glasses. Scooby crouches nearby, front paws grounded, amber eyes follow child. Tail belongs to dog; small child tail behind rump is not extra foot. V2 removes misplaced right-of-door staff; correct staff is occluded behind Papa in this close crop. Background root portal/fern retained. Dog body seen more front-three-quarter than019, compatible changed close camera rather than new movement.",
+      "camera": {
+        "positionXYZ": [
+          -3.7,
+          -5,
+          1
+        ],
+        "targetXYZ": [
+          -2,
+          -3,
+          1
+        ],
+        "height": 1,
+        "fieldOfView": 44,
+        "framing": "low close interaction from child height, dog head at edge",
+        "axisSide": "approach/front negativeY; travel rear negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 20,
+        "id": "elder-r5-020",
+        "purpose": "Intimate supported landing: child feet find stone",
+        "frame": "E",
+        "camera": {
+          "positionXYZ": [
+            -3.7,
+            -5,
+            1
+          ],
+          "targetXYZ": [
+            -2,
+            -3,
+            1
+          ],
+          "height": 1,
+          "fieldOfView": 44,
+          "framing": "low close interaction from child height, dog head at edge",
+          "axisSide": "approach/front negativeY; travel rear negativeY"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              -2.7,
+              -3,
+              0
+            ],
+            "bodyFacing": "PinPin",
+            "headFacing": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "grounded leaning forward",
+            "contacts": "two hindfeet path two forepaws support child torso",
+            "visibility": "visible"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -2,
+              -3,
+              0.4
+            ],
+            "bodyFacing": "Papa",
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "standing on stone",
+            "contacts": "two hindfeet stone; paws on Papa forearms",
+            "visibility": "visible"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              -1,
+              -3,
+              0
+            ],
+            "bodyFacing": [
+              -0.5,
+              -2,
+              0
+            ],
+            "headFacing": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "crouched motionless",
+            "contacts": "ground contact partly cropped",
+            "visibility": "visible"
+          }
+        ],
+        "landmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "staffBoulder": [
+            -1.6,
+            -0.2,
+            0
+          ],
+          "fern": [
+            1.4,
+            -0.3,
+            0
+          ],
+          "restRock": [
+            4,
+            -1,
+            0
+          ],
+          "mountingStone": [
+            -2,
+            -3,
+            0.4
+          ]
+        },
+        "state": "Papa grounded; child feet stone after support",
+        "transition": "closer human-scale moment; greeting next",
+        "status": "planned-awaiting-cast-gate"
+      },
+      "provenance": "images/chapter-02-expanded/revision-05/scenes/scene-020-v2.json",
+      "status": "ready"
+    },
+    {
+      "previousNumber": 21,
+      "id": "elder-r5-021",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-021-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "cdded438485e4ad7694df034834d025ae54ff6b76f4e1db1b867a8c8a01d7482",
+      "alt": {
+        "en": "Over PinPin’s shoulder, Papa raises a paw and smiles at his old friend, the silver-quilled Elder, who returns his warm greeting.",
+        "ru": "Из-за плеча Пин-Пина видно, как Папа поднимает лапу и улыбается своему старому другу — серебристому Старейшине, который тепло отвечает на приветствие.",
+        "es": "Por encima del hombro de PinPin, Papá levanta una pata y sonríe a su viejo amigo, el Anciano de púas plateadas, que le devuelve el saludo con cariño."
+      },
+      "review": "Creator actual full-image PASS v2: foreground PinPin quilled shoulder frames two familiar adults; Papa left no glasses, Elder right silver quills and gold spectacles. Papa chin/iris lowered toward Elder after v1 refinement, Elder eyes rise toward Papa, friendly reciprocal attention. Papa raised greeting forepaw and lower second paw, both adult pairs of feet grounded. Elder two forepaws together, staff parked by left boulder, root entrance behind right and fern right. Child body mostly cropped; dog offscreen as intended. Slightly taller Papa also nearer camera, no exact pixel scale claim.",
+      "camera": {
+        "positionXYZ": [
+          -0.6,
+          -3.5,
+          0.75
+        ],
+        "targetXYZ": [
+          0,
+          -0.4,
+          1.1
+        ],
+        "height": 0.75,
+        "fieldOfView": 56,
+        "framing": "over PinPin shoulder low medium; two adults friendly greeting",
+        "axisSide": "approach/front negativeY; travel rear negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 21,
+        "id": "elder-r5-021",
+        "purpose": "Child observes trusted adult friendship",
+        "frame": "E",
+        "camera": {
+          "positionXYZ": [
+            -0.6,
+            -3.5,
+            0.75
+          ],
+          "targetXYZ": [
+            0,
+            -0.4,
+            1.1
+          ],
+          "height": 0.75,
+          "fieldOfView": 56,
+          "framing": "over PinPin shoulder low medium; two adults friendly greeting",
+          "axisSide": "approach/front negativeY; travel rear negativeY"
+        },
+        "actors": [
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.6,
+              -2.5,
+              0
+            ],
+            "bodyFacing": "Elder",
+            "headFacing": "Elder",
+            "eyeTarget": "Elder",
+            "pose": "foreground standing",
+            "contacts": "two feet path",
+            "visibility": "back/shoulder foreground"
+          },
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              -0.8,
+              -1.4,
+              0
+            ],
+            "bodyFacing": "Elder",
+            "headFacing": "Elder",
+            "eyeTarget": "Elder",
+            "pose": "warm raised greeting forepaw",
+            "contacts": "feet ground other paw lowered",
+            "visibility": "visible"
+          },
+          {
+            "name": "Elder",
+            "positionXYZ": [
+              0.3,
+              -0.3,
+              0
+            ],
+            "bodyFacing": "Papa",
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "smile leaning welcoming",
+            "contacts": "feet ground paws relaxed",
+            "visibility": "visible"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              -1,
+              -3,
+              0
+            ],
+            "bodyFacing": "threshold",
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "lying by stone",
+            "contacts": "body ground",
+            "visibility": "offscreen left"
+          }
+        ],
+        "landmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "staffBoulder": [
+            -1.6,
+            -0.2,
+            0
+          ],
+          "fern": [
+            1.4,
+            -0.3,
+            0
+          ],
+          "restRock": [
+            4,
+            -1,
+            0
+          ],
+          "mountingStone": [
+            -2,
+            -3,
+            0.4
+          ]
+        },
+        "state": "staff parked left; reciprocal adult gaze",
+        "transition": "child physical landing to child social perspective",
+        "status": "planned-awaiting-cast-gate"
+      },
+      "provenance": "images/chapter-02-expanded/revision-05/scenes/scene-021-v2.json",
+      "status": "ready"
+    },
+    {
+      "previousNumber": 22,
+      "id": "elder-r5-022",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-022-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "0bc549bcf634f26c84dc665d5dd2e12b174673d7b15c1747a864f762922d5396",
+      "alt": {
+        "en": "The Elder bends toward PinPin outside the root doorway, meeting his curious eyes with a welcoming smile and open paws.",
+        "ru": "Старейшина наклоняется к Пин-Пину у входа между корнями, встречая его любопытный взгляд доброй улыбкой и раскрытыми лапами.",
+        "es": "El Anciano se inclina hacia PinPin ante la entrada entre raíces, encontrando su mirada curiosa con una sonrisa y las patas abiertas."
+      },
+      "review": "Creator actual full-image PASS: close child-height two-shot, Elder bends with pupils down-left meeting child up-right gaze. Exactly two distinct hedgehogs, each two forepaws and two grounded hindfeet; gold glasses only Elder. Cream facial planes, separate amber irises/pupils and soft grouped quills match established book style. Staff/boulder left, root portal middle and fern right remain. Papa/dog deliberately offscreen. Image is a closer two-shot rather than face-only crop; full-body contacts strengthen invitation clarity.",
+      "camera": {
+        "positionXYZ": [
+          -2,
+          -2.6,
+          0.8
+        ],
+        "targetXYZ": [
+          -0.1,
+          -0.8,
+          0.8
+        ],
+        "height": 0.8,
+        "fieldOfView": 40,
+        "framing": "close two-shot at child eye level, faces dominate",
+        "axisSide": "approach/front negativeY; travel rear negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 22,
+        "id": "elder-r5-022",
+        "purpose": "Elder turns from Papa to meet child personally",
+        "frame": "E",
+        "camera": {
+          "positionXYZ": [
+            -2,
+            -2.6,
+            0.8
+          ],
+          "targetXYZ": [
+            -0.1,
+            -0.8,
+            0.8
+          ],
+          "height": 0.8,
+          "fieldOfView": 40,
+          "framing": "close two-shot at child eye level, faces dominate",
+          "axisSide": "approach/front negativeY; travel rear negativeY"
+        },
+        "actors": [
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.5,
+              -1.3,
+              0
+            ],
+            "bodyFacing": "Elder",
+            "headFacing": "Elder",
+            "eyeTarget": "Elder",
+            "pose": "standing curious",
+            "contacts": "feet ground two forepaws near belly",
+            "visibility": "visible"
+          },
+          {
+            "name": "Elder",
+            "positionXYZ": [
+              0.3,
+              -0.3,
+              0
+            ],
+            "bodyFacing": "PinPin",
+            "headFacing": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "bends head toward child",
+            "contacts": "two feet ground palms gentle open",
+            "visibility": "visible"
+          },
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              -1.4,
+              -1.3,
+              0
+            ],
+            "bodyFacing": "Elder",
+            "headFacing": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "standing nearby",
+            "contacts": "feet ground",
+            "visibility": "offscreen left"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              -1,
+              -3,
+              0
+            ],
+            "bodyFacing": "threshold",
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "lying",
+            "contacts": "body ground",
+            "visibility": "offscreen"
+          }
+        ],
+        "landmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "staffBoulder": [
+            -1.6,
+            -0.2,
+            0
+          ],
+          "fern": [
+            1.4,
+            -0.3,
+            0
+          ],
+          "restRock": [
+            4,
+            -1,
+            0
+          ],
+          "mountingStone": [
+            -2,
+            -3,
+            0.4
+          ]
+        },
+        "state": "Elder pupils lowered to child, child pupils raised",
+        "transition": "adult familiarity to intimate invitation, no duplicate triangular wide",
+        "status": "planned-awaiting-cast-gate"
+      },
+      "provenance": "images/chapter-02-expanded/revision-05/scenes/scene-022-v1.json",
+      "status": "ready"
+    },
+    {
+      "previousNumber": 23,
+      "id": "elder-r5-023",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-023-v3.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "7c32a0e53da8c734d4a890ed5544215fb1f2cf02e724d6c63eddd71d9a659fdf",
+      "alt": {
+        "en": "A wide view shows the Elder waiting at his doorway while PinPin faces Papa and curled-up Scooby in the sunny resting place beyond the fern.",
+        "ru": "На общем плане Старейшина ждёт у входа, а Пин-Пин смотрит на Папу и свернувшегося Скуби на солнечном месте за папоротником.",
+        "es": "Una vista amplia muestra al Anciano esperando en la entrada mientras PinPin mira a Papá y a Scooby acurrucado en el rincón soleado más allá del helecho."
+      },
+      "review": "Creator actual full-image PASS v3 after correcting erroneous second dog in v1 and oversized Papa in v2. Three hedgehogs and one curled Scooby: Elder with glasses at left portal, child center, seated broad Papa at far-right rest rock beyond fern, dog beside him. Papa now seated near child standing height, eyes lowered toward child, dog attentive toward them. Each hedgehog has two visible forepaws/two feet; dog forepaws under chin, rear hidden. Clear open connecting path and unblocked doorway; staff/boulder left, fern between door and restpatch; forest behindright. This wide reset makes offscreen position in inherited doorway crops understandable. Relative sizes qualitative.",
+      "camera": {
+        "positionXYZ": [
+          2,
+          -8,
+          3
+        ],
+        "targetXYZ": [
+          2,
+          -0.5,
+          0.3
+        ],
+        "height": 3,
+        "fieldOfView": 70,
+        "framing": "wide slightly elevated geographic master doorway left rest far right",
+        "axisSide": "approach/front negativeY; travel rear negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 23,
+        "id": "elder-r5-023",
+        "purpose": "Map safe resting place and clear path to entrance",
+        "frame": "E",
+        "camera": {
+          "positionXYZ": [
+            2,
+            -8,
+            3
+          ],
+          "targetXYZ": [
+            2,
+            -0.5,
+            0.3
+          ],
+          "height": 3,
+          "fieldOfView": 70,
+          "framing": "wide slightly elevated geographic master doorway left rest far right",
+          "axisSide": "approach/front negativeY; travel rear negativeY"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              3.6,
+              -1,
+              0
+            ],
+            "bodyFacing": "PinPin",
+            "headFacing": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "seated against moss rock",
+            "contacts": "seat rock two hindfeet ground",
+            "visibility": "visible"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              4.6,
+              -1,
+              0
+            ],
+            "bodyFacing": "Papa",
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "curl settling",
+            "contacts": "body/front paws ground",
+            "visibility": "visible"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              2.2,
+              -1.8,
+              0
+            ],
+            "bodyFacing": "Papa",
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "standing",
+            "contacts": "feet path",
+            "visibility": "visible"
+          },
+          {
+            "name": "Elder",
+            "positionXYZ": [
+              0,
+              -0.3,
+              0
+            ],
+            "bodyFacing": "PinPin",
+            "headFacing": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "waiting by portal",
+            "contacts": "feet ground",
+            "visibility": "visible"
+          }
+        ],
+        "landmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "staffBoulder": [
+            -1.6,
+            -0.2,
+            0
+          ],
+          "fern": [
+            1.4,
+            -0.3,
+            0
+          ],
+          "restRock": [
+            4,
+            -1,
+            0
+          ],
+          "mountingStone": [
+            -2,
+            -3,
+            0.4
+          ]
+        },
+        "state": "Papa dog relocated beyond fern; doorway unobstructed",
+        "transition": "intimate greeting to useful geography reset",
+        "status": "planned-awaiting-cast-gate"
+      },
+      "provenance": "images/chapter-02-expanded/revision-05/scenes/scene-023-v3.json",
+      "status": "ready"
+    },
+    {
+      "previousNumber": 24,
+      "id": "elder-r5-024",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-024-v3.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "93dab2b56d720ae9c798fb18a6874375eff626ff35b2b42af93afe914013c9b2",
+      "alt": {
+        "en": "Beside resting Scooby, seated Papa meets PinPin’s eyes and opens a paw reassuringly: he will be right here.",
+        "ru": "Рядом с отдыхающим Скуби сидящий Папа встречает взгляд Пин-Пина и успокаивающе раскрывает лапу: он будет здесь.",
+        "es": "Junto a Scooby descansando, Papá sentado encuentra la mirada de PinPin y abre una pata para tranquilizarlo: estará allí mismo."
+      },
+      "review": "Creator actual full-image PASS v3: intimate father-child reassurance with genuine reciprocal near-level pupils. V1 oversized seatedPapa corrected30percent in v2; v3 retargets child head/eyes to current Papa position. Mature broad seatedPapa roughly childstandingheight, one open paw towardchild/other belly, two forward feet supported; child two paws/two grounded feet. Warm cream expressive faces and separate hazel iris/pupil, no glasses. Scooby chin on frontpaws with attentive upward-left eyes toward child, rearbody offcrop not certified. Mossrestrock and forest only, no misplaced staff/door/hill. No extra actors.",
+      "camera": {
+        "positionXYZ": [
+          2.4,
+          -3,
+          0.85
+        ],
+        "targetXYZ": [
+          3.5,
+          -1,
+          0.8
+        ],
+        "height": 0.85,
+        "fieldOfView": 40,
+        "framing": "intimate medium two-shot Papa seated and child standing; dog resting edge",
+        "axisSide": "approach/front negativeY; travel rear negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 24,
+        "id": "elder-r5-024",
+        "purpose": "Reassuring reciprocal father-child farewell",
+        "frame": "E",
+        "camera": {
+          "positionXYZ": [
+            2.4,
+            -3,
+            0.85
+          ],
+          "targetXYZ": [
+            3.5,
+            -1,
+            0.8
+          ],
+          "height": 0.85,
+          "fieldOfView": 40,
+          "framing": "intimate medium two-shot Papa seated and child standing; dog resting edge",
+          "axisSide": "approach/front negativeY; travel rear negativeY"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              3.6,
+              -1,
+              0
+            ],
+            "bodyFacing": "PinPin",
+            "headFacing": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "seated leaning gently",
+            "contacts": "seat rock feet ground one paw open child direction other belly",
+            "visibility": "visible"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              2.8,
+              -1.2,
+              0
+            ],
+            "bodyFacing": "Papa",
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "standing",
+            "contacts": "two feet ground two paws relaxed",
+            "visibility": "visible"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              4.6,
+              -1,
+              0
+            ],
+            "bodyFacing": "Papa",
+            "headFacing": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "drowsy curl",
+            "contacts": "chin front paws",
+            "visibility": "partly cropped"
+          },
+          {
+            "name": "Elder",
+            "positionXYZ": [
+              0,
+              -0.3,
+              0
+            ],
+            "bodyFacing": "PinPin",
+            "headFacing": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "waiting",
+            "contacts": "feet ground",
+            "visibility": "offscreen left"
+          }
+        ],
+        "landmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "staffBoulder": [
+            -1.6,
+            -0.2,
+            0
+          ],
+          "fern": [
+            1.4,
+            -0.3,
+            0
+          ],
+          "restRock": [
+            4,
+            -1,
+            0
+          ],
+          "mountingStone": [
+            -2,
+            -3,
+            0.4
+          ]
+        },
+        "state": "Papa says right here; child about to turn",
+        "transition": "wide map to intimate reassuring gaze",
+        "status": "planned-awaiting-cast-gate"
+      },
+      "provenance": "images/chapter-02-expanded/revision-05/scenes/scene-024-v3.json",
+      "status": "ready"
+    },
+    {
+      "previousNumber": 25,
+      "id": "elder-r5-025",
+      "src": "images/chapter-02-expanded/revision-05/scenes/scene-025-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "sha256": "b400c8b6c114518b737cd5c8d6734672c66c21dc26470775fd775df9e1eedc69",
+      "alt": {
+        "en": "Papa and Scooby sleep side by side against a mossy rock, their faces relaxed in the dappled morning sunshine.",
+        "ru": "Папа и Скуби спят рядом у мшистого камня, расслабив лица в пятнистом утреннем солнечном свете.",
+        "es": "Papá y Scooby duermen juntos junto a una roca musgosa, con los rostros relajados bajo la luz moteada de la mañana."
+      },
+      "review": "Creator actual full-image PASS: Papa and Scooby sleep with eyes fully closed and appealing soft animated cream/amber facial forms. Papa two forepaws rest on belly, two hindfeet forward; dog chin contacts two forepaws, one curled rump tail, rear paws partly hidden and not certified. V2 removes misplaced staff and summit hill; moss rock, fern and continuous forest now match far-right rest station. No doorway in intimate crop. Root independent review pending.",
+      "camera": {
+        "positionXYZ": [
+          4,
+          -3.2,
+          1.8
+        ],
+        "targetXYZ": [
+          4.1,
+          -1,
+          0.4
+        ],
+        "height": 1.8,
+        "fieldOfView": 42,
+        "framing": "close gently elevated paired sleeping faces",
+        "axisSide": "approach/front negativeY; travel rear negativeY"
+      },
+      "transformRecord": {
+        "previousNumber": 25,
+        "id": "elder-r5-025",
+        "purpose": "Quiet rest insert: shared sleep, calm attention shifts inside",
+        "frame": "E",
+        "camera": {
+          "positionXYZ": [
+            4,
+            -3.2,
+            1.8
+          ],
+          "targetXYZ": [
+            4.1,
+            -1,
+            0.4
+          ],
+          "height": 1.8,
+          "fieldOfView": 42,
+          "framing": "close gently elevated paired sleeping faces",
+          "axisSide": "approach/front negativeY; travel rear negativeY"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              3.6,
+              -1,
+              0
+            ],
+            "bodyFacing": "Scooby",
+            "headFacing": "rest",
+            "eyeTarget": "closed",
+            "pose": "seated eyes closed",
+            "contacts": "seat rock two paws belly feet ground",
+            "visibility": "visible"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              4.6,
+              -1,
+              0
+            ],
+            "bodyFacing": "Papa",
+            "headFacing": "rest",
+            "eyeTarget": "closed",
+            "pose": "curled asleep chin paws",
+            "contacts": "body ground",
+            "visibility": "visible"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              1,
+              -0.8,
+              0
+            ],
+            "bodyFacing": "threshold",
+            "headFacing": "threshold",
+            "eyeTarget": "threshold",
+            "pose": "walking to door",
+            "contacts": "feet path",
+            "visibility": "offscreen"
+          },
+          {
+            "name": "Elder",
+            "positionXYZ": [
+              0,
+              -0.3,
+              0
+            ],
+            "bodyFacing": "PinPin",
+            "headFacing": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "waiting",
+            "contacts": "feet ground",
+            "visibility": "offscreen"
+          }
+        ],
+        "landmarks": {
+          "threshold": [
+            0,
+            0,
+            0
+          ],
+          "staffBoulder": [
+            -1.6,
+            -0.2,
+            0
+          ],
+          "fern": [
+            1.4,
+            -0.3,
+            0
+          ],
+          "restRock": [
+            4,
+            -1,
+            0
+          ],
+          "mountingStone": [
+            -2,
+            -3,
+            0.4
+          ]
+        },
+        "state": "both eyes closed; dappled midmorning",
+        "transition": "farewell to quiet shared sleeping insert then inherited doorway",
+        "status": "planned-awaiting-cast-gate"
+      },
+      "provenance": "images/chapter-02-expanded/revision-05/scenes/scene-025-v2.json",
+      "status": "ready"
+    }
+  ]
+}

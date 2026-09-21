@@ -1,0 +1,144 @@
+{
+  "id": "scene-101-v2",
+  "prompt": "Use case: precise-object-edit. Correct ONLY two details in target. 1 Remove the curled dog tail currently on RIGHT behind front shoulder; dog front is right, rump left. Put ONE curled tail attached to rear rump at LEFT behind Papa/stone, partly occluded naturally. No tail on front. 2 Open green door has duplicated gold knobs: remove left-edge extra knob; keep SINGLE knob on the free edge at viewer-right of door leaf, opposite left hinge edge. Preserve everything else: Papa feet ground supports child's hips, child nearfootstone/farfootback/2forepawsfur, Mama holds infant in doorway, attentive dog gaze, luminous animated faces, whole composition, sunlight. ONE landscape1536x1024 no text.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T22:37:24.623Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-101-v1.png",
+      "role": "edit target tail/knob only",
+      "sha256": "ce9009ce12e4879c450723316e42a87e3d7b868227d699e893d56fe3f7caecac"
+    }
+  ],
+  "status": "planned",
+  "transformRecord": {
+    "previousNumber": 101,
+    "id": "elder-r5-101",
+    "purpose": "Same contact axis widened for doorway depth",
+    "frame": "H",
+    "camera": {
+      "positionXYZ": [
+        -2.7,
+        -5.5,
+        1.1
+      ],
+      "targetXYZ": [
+        -1,
+        -1,
+        1
+      ],
+      "height": 1.1,
+      "framing": "Same contact axis widened for doorway depth",
+      "approximateFieldOfView": 48,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "id": "Scooby",
+        "positionXYZ": [
+          -1.0,
+          -2.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "lying still limbs grounded tucked",
+        "limbsContactSupport": "lying still limbs grounded tucked",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Papa",
+        "positionXYZ": [
+          -2.5,
+          -2.3,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "two feet ground two paws childs lower trunk",
+        "limbsContactSupport": "two feet ground two paws childs lower trunk",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "PinPin",
+        "positionXYZ": [
+          -1.8,
+          -2.0,
+          0.8
+        ],
+        "bodyFacingTarget": "stone",
+        "headFacingTarget": "stone",
+        "eyeTarget": "stone",
+        "pose": "near foot stone far foot back two forepaws fur",
+        "limbsContactSupport": "near foot stone far foot back two forepaws fur",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "Mama",
+        "positionXYZ": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "grounded threshold both arms support baby",
+        "limbsContactSupport": "grounded threshold both arms support baby",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "id": "PomPom",
+        "positionXYZ": [
+          0.0,
+          -0.1,
+          0.8
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "infant fully cradled in Mama arms",
+        "limbsContactSupport": "infant fully cradled in Mama arms",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "landmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "chimney": "facade left",
+      "lantern": "facade right",
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "canonical scene100",
+      "after": "Papa grounded child midtransfer Mama greets"
+    },
+    "previousAction": "canonical scene100",
+    "nextAction": "canonical scene102",
+    "reasonForShotChange": "Same contact axis widened for doorway depth"
+  }
+}
