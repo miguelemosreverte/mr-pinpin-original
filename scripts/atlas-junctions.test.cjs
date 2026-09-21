@@ -17,11 +17,12 @@ const angle=(a,b,c)=>Math.acos(Math.max(-1,Math.min(1,((b[0]-a[0])*(c[0]-b[0])+
   (b[1]-a[1])*(c[1]-b[1]))/(distance(a,b)*distance(b,c)))))*180/Math.PI;
 const clean=points=>points.filter((p,i)=>!i || distance(p,points[i-1])>1e-6);
 
-test('derived network is opt-in, bounded and replaces all five branch centers',()=>{
+test('derived network is opt-in, bounded and replaces all seven branch centers',()=>{
   const raw=scope.window.graphFor(routes);
   assert.equal(raw.junctions.length,0,'generic/synthetic graph contract stays unchanged');
-  assert.equal(graph.junctions.filter(j=>j.kind==='branch').length,5);
-  assert(graph.nodeCount<=520,'bounded initialization and planner work: '+graph.nodeCount);
+  assert.equal(graph.junctions.filter(j=>j.kind==='branch').length,7);
+  // The encircling road adds 100 baked segments and two three-way junctions.
+  assert(graph.nodeCount<=650,'bounded initialization and planner work: '+graph.nodeCount);
   for(const junction of graph.junctions.filter(j=>j.kind==='branch')) {
     assert.equal(junction.paths.length,3,'one connection per approach/exit pair');
     assert(!graph.edges.some(e=>distance(e.a,junction.center)<1e-6 || distance(e.b,junction.center)<1e-6),

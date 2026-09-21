@@ -74,9 +74,9 @@ test('first two v2 traces remain exact; picnic return moves clear of the blanket
 });
 
 test('purposeful network stays interior, bounded and explicitly joined',()=>{
-  assert.equal(geometry.routes.length,8);
+  assert.equal(geometry.routes.length,9);
   assert.equal(new Set(routes.map(r=>r.id)).size,routes.length);
-  assert(routes.reduce((count,r)=>count+r.points.length-1,0)<=250,'bounded baked-curve graph work');
+  assert(routes.reduce((count,r)=>count+r.points.length-1,0)<=350,'bounded baked-curve graph work, including the 100-segment encircling road');
   for(const route of geometry.routes) for(const point of route.points) {
     assert.equal(point.length,2);
     assert(point.every(v=>Number.isFinite(v) && v>=0 && v<=1),route.id);
@@ -218,6 +218,26 @@ test('tractor is a curved through-connection on the lower road, picnic, bridge a
   }
 });
 
+test('new road and retained west bypass genuinely encircle the whole vehicle',()=>{
+  const loop=routes.find(r=>r.id==='tractor-encircling-loop');
+  const lower=routes.find(r=>r.id==='home-lower-road-to-tractor');
+  const west=routes.find(r=>r.id==='tractor-west-to-picnic');
+  const bottom=lower.points.findIndex(p=>distance(p,loop.points[0])<1e-6);
+  const top=west.points.findIndex(p=>distance(p,loop.points.at(-1))<1e-6);
+  assert(bottom>=0 && top>=0,'two distinct explicit forks, away from protected arrivals');
+  const ring=[...loop.points,...west.points.slice(0,top).reverse(),...lower.points.slice(bottom).reverse()];
+  for(const p of [[1302,760],[1350,775],[1370,690],[1450,749]])
+    assert(inside(p,ring),'tractor front, wheels, raised boom and trailer must be enclosed: '+p);
+  for(const [x,y] of loop.points)assert(x>=1200 && x<=1505.01 && y>=643.99 && y<=875.01,
+    'compact in-map perimeter, not an off-map spur');
+  for(let i=1;i<loop.points.length-1;i++){
+    const [a,b,c]=loop.points.slice(i-1,i+2);
+    const turn=Math.acos(Math.max(-1,Math.min(1,((b[0]-a[0])*(c[0]-b[0])+
+      (b[1]-a[1])*(c[1]-b[1]))/(distance(a,b)*distance(b,c)))))*180/Math.PI;
+    assert(turn<=12.1,'bounded heading along the encircling road: '+turn);
+  }
+});
+
 test('simple-story-path coverage rejects a dangling lollipop even with no extra leaves',()=>{
   const network=new Map([...adjacency].map(([u,vs])=>[u,new Set(vs)]));
   const anchor=key(routes[0].points[8]);
@@ -242,7 +262,7 @@ test('home reaches every route vertex and segment midpoint through the productio
   }
 });
 
-test('v7 manual survey excludes rejected v3 from active provenance and runtime media',()=>{
+test('v9 manual survey excludes rejected v3 from active provenance and runtime media',()=>{
   const requests=[];
   const context={window:{},document:{hidden:false,addEventListener(){}},
     matchMedia:()=>({matches:true,addEventListener(){}}),
@@ -264,8 +284,9 @@ test('v7 manual survey excludes rejected v3 from active provenance and runtime m
   assert.equal(geometry.rejectedRoutePlanSource,'images/atlas/shire-routes-v3.png');
   assert(!geometry.generationReview.includes('images/atlas/shire-routes-v3.json'));
   assert.equal(geometry.routeSurveySource,'images/atlas/shire-v1.png');
-  assert.equal(geometry.routeSurveyVersion,7);
+  assert.equal(geometry.routeSurveyVersion,9);
   assert(geometry.routes.slice(2).every(r=>r.provenance===(r.id==='tractor-west-to-picnic'
-    ? 'manual-original-art-survey-v7' : 'manual-original-art-survey-v6')));
+    ? 'manual-original-art-survey-v7' : r.id==='tractor-encircling-loop'
+      ? 'manual-original-art-survey-v9' : 'manual-original-art-survey-v6')));
   assert.deepEqual(requests,['images/atlas/pinpin-walk-v1.webp'],'only the existing fallback sprite is requested');
 });

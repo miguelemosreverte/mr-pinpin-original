@@ -324,7 +324,7 @@ test('actual production motion traverses every rounded branch approach/exit in b
       assert(dist(h.point(),outside[j])<1e-5,'actual exit arrival');pairs++;
     }
   }
-  assert.equal(pairs,30);
+  assert.equal(pairs,42);
 });
 test('disconnected routes cannot cause an invented crossing; empty geometry remains usable',async()=>{
   const geometry={...straight,routes:[...straight.routes,{id:'island',points:[[.1,.1],[.9,.1]]}]};

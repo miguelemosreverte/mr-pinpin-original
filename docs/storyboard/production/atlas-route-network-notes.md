@@ -1,4 +1,37 @@
-# Atlas route network v8
+# Atlas route network v9
+
+## Tractor encircling road
+
+The nine-route network adds `tractor-encircling-loop` and retains all eight
+approved a17f870 route objects byte-for-byte at the JSON level, including the
+west bypass. The new road forks from the lower approach at (1204.16,845.65),
+passes south and east of the vehicle, then returns above the raised boom to the
+west approach at (1264,674). Tractor (1248,820) and picnic (1260,642) remain
+exact degree-two arrivals; neither becomes a removed branch center.
+
+The user authorized a true circle around the vehicle, including a modest outer
+passage inside the map. The full directional sprite envelope remains clear of
+the conservative vehicle polygon, including the boom, by at least 14px. The
+perimeter stays within x<=1505 and y<=875: it is an inferred woodland passage,
+not a claim that the original art contains a continuous painted dirt road.
+The existing vegetation/depth treatment still owns canopy occlusion.
+
+The new 100-segment baked road uses quadratic corners with eight samples per
+corner and at most 28px setback. Two 24px branch trims use the existing motion
+engine. There are now seven three-way junctions, 324 logical segments, and
+618 derived edges / 608 active nodes. Unit budgets increase to 350 logical
+segments and 650 derived nodes to cover this measured addition. The 12.1deg
+local heading and 25deg per 0.75px travel bounds are unchanged. All 42 directed
+branch approach/exit plans are exercised, including both new forks.
+
+V9 review artifacts: [survey](/tmp/atlas-routes-v9-survey.png),
+[tractor detail](/tmp/atlas-tractor-v9-survey.png),
+[handoff](/tmp/atlas-tractor-loop-v9.md), and
+[browser evidence](/tmp/atlas-tractor-loop-v9-browser.md).
+No motion engine, UI, banner, renderer, or occlusion change belongs to this pass.
+No commit before parent review.
+
+## Historical V8
 
 ## Derived rounded junctions
 
@@ -68,6 +101,20 @@ The first two routes retain their strict v2 trace source. The previously
 resurveyed picnic approach, gold shortcut, blue outer route and lower woodland
 road retain v6 provenance. The new bypass is `manual-original-art-survey-v7`
 from `shire-v1.png`. Generated v3 remains rejected historical material.
+
+## V9 Integrated Verification
+
+The route, motion, occlusion, grounding and surface suites pass 58 tests, with
+four opt-in browser tests skipped. The motion suite traverses all 42 directed
+branch pairs. Separate Chrome WebGPU checks pass 13 route cases and 38 combined
+scene cases across desktop, 390px and 320px phone-sized viewports, including
+native story opening and map return. These are emulated phones, not devices.
+
+The tractor banner footprint at [1360,720] (small-phone fallback [1348,720])
+clears every derived edge by at least 75.6 map pixels. Ground-ring calibration
+is local to banners; source normals and depth remain artistic estimates.
+The pre-existing Home banner visibility failures are outside this focused fix.
+Integrated report: /tmp/atlas-tractor-scene-v9-review.md.
 
 ## V7 Verification
 

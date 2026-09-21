@@ -7,8 +7,8 @@ const { createHash } = require('node:crypto');
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || '/Users/miguel_lemos/.npm/_npx/705bc6b22212b352/node_modules/playwright');
 const root = path.resolve(__dirname, '../docs/storyboard');
 const base = process.env.ATLAS_BASE_URL || 'http://127.0.0.1:8767/storyboard/';
-const report = process.env.ATLAS_ROUTE_REPORT || '/tmp/atlas-junctions-v8-browser.md';
-const output = process.env.ATLAS_ROUTE_SCREENSHOTS || '/tmp/atlas-junctions-v8-browser';
+const report = process.env.ATLAS_ROUTE_REPORT || '/tmp/atlas-tractor-loop-v9-browser.md';
+const output = process.env.ATLAS_ROUTE_SCREENSHOTS || '/tmp/atlas-tractor-loop-v9-browser';
 const fullRun = process.env.ATLAS_ROUTE_FULL === '1';
 const results = [], screenshots = [], sourceHashes = {};
 const hash = text => createHash('sha256').update(text).digest('hex');
@@ -156,7 +156,8 @@ async function waitForWorkers() {
     const geometryData = sandbox.window.atlasGeometry;
     const routes = geometryData.routes;
     const additions = routes.filter(r => !originalIds.includes(r.id));
-    if (Date.now() - stableSince >= 10000 && geometryData.routeSurveyVersion === 7 &&
+    if (Date.now() - stableSince >= 10000 && geometryData.routeSurveyVersion === 9 &&
+        routes.some(r => r.id === 'tractor-encircling-loop') &&
         routes.some(r => r.id === 'tractor-west-to-picnic') &&
         !routes.some(r => ['home-lower-road-west-bank', 'right-bank-to-tractor-road', 'tractor-road-to-picnic'].includes(r.id)) &&
         routes.some(r => /tractor/.test(r.id) && distance([r.points.at(-1)[0] * 1536, r.points.at(-1)[1] * 1024], approvedPoi.tractor) < 1) &&
@@ -166,7 +167,7 @@ async function waitForWorkers() {
           routes.some(other => other !== r && other.points.some(q => Math.hypot((p[0] - q[0]) * 1536, (p[1] - q[1]) * 1024) < 12))))) {
       sourceHashes.geometry = hash(geometry); sourceHashes.motion = hash(motion); return;
     }
-    console.log('Waiting for v7 tractor through-connection and ten seconds of source stability.');
+    console.log('Waiting for v9 encircling road and ten seconds of source stability.');
     await new Promise(resolve => setTimeout(resolve, 10000));
   }
   throw new Error('Timed out waiting for geometry and motion workers; no final browser validation performed.');
@@ -245,7 +246,7 @@ async function topology(page) {
   assert(additions.length, 'There are alternatives to the original story routes');
   assert.equal(new Set(data.routes.map(r => r.id)).size, data.routes.length, 'Unique route identities');
   assert(!data.routes.some(r => ['home-lower-road-west-bank', 'right-bank-to-tractor-road', 'tractor-road-to-picnic'].includes(r.id)),
-    'Removed riverbank returns and eastern vehicle detour stay removed');
+    'Rejected historical riverbank returns stay removed');
   const tractor = data.routes.find(r => r.to === 'tractor');
   assert(tractor && distance(tractor.points.at(-1).map((v, i) => v * (i ? 1024 : 1536)), approvedPoi.tractor) < 1,
     'The lower road joins the tractor through-connection');
@@ -716,7 +717,7 @@ async function focusedActual(browser, width) {
       atlasGpuDebug.motionCanvas.dataset.sprite === 'ready' && atlasGpuDebug.renderer.stats.scenery.uploads > 3);
     assert.equal(await page.evaluate(() => atlasGpuDebug.renderer.backend), 'webgpu');
     await capture(page, width + '-default');
-    if (width === 1440) await check('v7 tractor through-connection, loop, and full sprite clearance', async () => {
+    if (width === 1440) await check('v9 tractor encircling loop and full sprite clearance', async () => {
       const graph = await topology(page), terrain = await terrainSafety(page);
       const metadata = await page.evaluate(() => ({ stories: atlasGeometry.regions.map(r => r.id),
         poi: atlasGeometry.navigationDestinations }));
@@ -824,6 +825,46 @@ async function focusedActual(browser, width) {
       }
       return journeys;
     });
+    await check(width + ' actual encircling road in both directions', async () => {
+      await pause(page);
+      await page.evaluate(() => {
+        atlasGpuDebug.renderer.setBokehStrength(0);
+        atlasGpuDebug.camera.focus([1350,750],atlasGpuDebug.camera.snapshot.width/520);
+      });
+      const journeys=[];
+      // The east waypoint selects the long perimeter; picnic alone correctly
+      // chooses the retained, shorter west bypass.
+      for(const [name,target] of [['south-to-east',[1505,790]],['east-to-picnic',[1260,642]],
+        ['picnic-to-east',[1505,790]],['east-to-tractor',approvedPoi.tractor]]) {
+        const before=await state(page),start=[Number(before.x),Number(before.y)];
+        await page.evaluate(point=>{
+          atlasGpuDebug.motion.setTarget([point[0]/1536,point[1]/1024]);
+          atlasGpuDebug.motion.toggle();
+        },target);
+        await page.clock.runFor(40);
+        const samples=[];
+        for(let i=0;i<36;i++) {
+          await page.clock.fastForward(600);
+          const s=await state(page);samples.push([Number(s.x),Number(s.y)]);
+          if(i===7) {
+            await pause(page);await page.clock.resume();
+            await capture(page,width+'-'+name+'-moving');
+            await page.evaluate(()=>atlasGpuDebug.motion.toggle());
+            await page.clock.runFor(40);
+          }
+          if(s.arrived==='true')break;
+        }
+        await pause(page);await page.clock.resume();
+        const after=await state(page),end=[Number(after.x),Number(after.y)];
+        assert.equal(after.arrived,'true',name+': arrives');
+        assert(distance(end,target)<1,name+': exact destination');
+        assert(samples.some(p=>p[0]>1400),name+': actually uses east perimeter');
+        assert(samples.some(p=>name.includes('picnic')?p[0]>1300&&p[1]<675:p[0]>1300&&p[1]>860),
+          name+': observed correct upper/lower arc');
+        journeys.push({name,start,end,samples});
+      }
+      return {journeys,timing:'accelerated Playwright clock, unmodified production motion'};
+    });
     assert.deepEqual(errors, [], 'No uncaught browser errors');
     return { browser: browser.version(), viewport: width, errors };
   } finally { await context.close(); }
@@ -897,7 +938,7 @@ async function actual(browser, width) {
 
 function writeReport() {
   if (!fullRun) {
-    fs.writeFileSync(report, ['# V8 Derived Junction Browser Smoke', '',
+    fs.writeFileSync(report, ['# V9 Tractor Encircling Loop Browser Smoke', '',
       `${results.filter(r => r.pass).length}/${results.length} checks passed; wall ${((Date.now() - startedAt.getTime()) / 1000).toFixed(2)}s.`,
       `URL: ${base}atlas-webgpu.html`,
       'Actual Chrome WebGPU: 1440x1000 desktop and 390x844 emulated touch viewport.',
