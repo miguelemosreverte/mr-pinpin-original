@@ -7,6 +7,16 @@ window.atlasGeometry = {
   rejectedRoutePlanSource: 'images/atlas/shire-routes-v3.png',
   routeSurveySource: 'images/atlas/shire-v1.png',
   routeSurveyVersion: 7,
+  junctions: {
+    radius: 14, maxTurn: 12, minBend: 35,
+    wide: [[873,606,26],[1032,581,44]],
+    turnHandles: [{at: [1032,581], pair: [1,2], handles: [1,.35]}],
+    anchors: [[1212,205,12],[1248,820,8]],
+    blends: [{chain: [[656,522],[670,518],[672,515],[681,519],[676,527]], curves: [
+      {from: 0, to: 1, controls: [[660.75,520.417],[665,517.999616]]},
+      {from: 1, to: 4, controls: [[677,517.999616],[679.881,523.846]]}
+    ]}]
+  },
   navigationDestinations: [{id: 'tractor', point: [0.8125,0.800781]}],
   generationReview: ['images/atlas/shire-regions-v2.json', 'images/atlas/shire-routes-v2.json', 'images/atlas/pinpin-walk-v1.json'],
   // Bounds measured from the generated mask with a 48-level RGB tolerance.

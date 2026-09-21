@@ -262,9 +262,9 @@ test('missing new sprite falls back; metadata can arrive after initial create',a
   h.advance(50);await Promise.resolve();await Promise.resolve();h.advance(50);
   assert.equal(h.canvas.dataset.direction,'fallback');assert.equal(h.canvas.dataset.sprite,'ready');assert(h.raf.size);
 });
-test('real atlas reaches every route endpoint and all motion remains on traces or bounded joins',async()=>{
+test('real atlas reaches projected route endpoints and all motion follows the derived centerlines',async()=>{
   const h=await harness(null),g=h.geometry,segments=[];
-  g.routes.forEach(r=>r.points.slice(1).forEach((b,i)=>segments.push([r.points[i],b].map(p=>[p[0]*g.width,p[1]*g.height]))));
+  h.motion.navigation.edges.forEach(({a,b})=>segments.push([a,b]));
   const traceDistance=p=>Math.min(...segments.map(([a,b])=>{
     const dx=b[0]-a[0],dy=b[1]-a[1],t=Math.max(0,Math.min(1,((p[0]-a[0])*dx+(p[1]-a[1])*dy)/(dx*dx+dy*dy)));
     return dist(p,[a[0]+t*dx,a[1]+t*dy]);
@@ -274,18 +274,57 @@ test('real atlas reaches every route endpoint and all motion remains on traces o
   destinations.push(...g.routes.flatMap(route=>[route.points[0],route.points.at(-1)].map(target=>({route,target,reset:true}))));
   for(const {route,target,reset} of destinations) {
     if(reset)h.motion.placeAtLocation('home');
-    const expected=[target[0]*g.width,target[1]*g.height],before=h.point();
+    const before=h.point();
     h.motion.setTarget(target);assert.deepEqual(h.point(),before);
-    assert(dist(JSON.parse(h.canvas.dataset.target),expected)<.001,route.id+': requested endpoint must be reachable');
+    const expected=JSON.parse(h.canvas.dataset.target);
+    assert(traceDistance(expected)<1e-5,route.id+': requested endpoint projects onto the derived network');
     let previous=before,frames=0;
     do {
       h.frame(50);const p=h.point();assert(dist(p,previous)<=2.200001,'speed bound across junction');
-      assert(traceDistance(p)<6,'route or short surveyed junction only');previous=p;
+      assert(traceDistance(p)<1e-5,'walking uses the same derived centerlines as dashes');previous=p;
     } while(h.canvas.dataset.arrived!=='true' && ++frames<3000);
     assert(frames<3000,route.id+': route must finish within the movement budget');
     assert(dist(h.point(),expected)<.001,route.id+': arrive at requested route endpoint');
   }
   assert(h.strokes.length>0);h.strokes.forEach(s=>{assert.equal(s.color,'#ffffff');assert.deepEqual(Array.from(s.dash),[5,11]);});
+});
+test('actual production motion traverses every rounded branch approach/exit in both directions',async()=>{
+  const h=await harness(null),network=h.motion.navigation;
+  const pointGap=(p,a,b)=>{
+    const d=b.map((v,i)=>v-a[i]),t=Math.max(0,Math.min(1,((p[0]-a[0])*d[0]+(p[1]-a[1])*d[1])/(d[0]**2+d[1]**2)));
+    return dist(p,a.map((v,i)=>v+t*d[i]));
+  };
+  let pairs=0;
+  for(const junction of network.junctions.filter(j=>j.kind==='branch')){
+    const outside=junction.portals.map(portal=>{
+      const edge=network.edges.find(e=>(dist(e.a,portal)<1e-6 || dist(e.b,portal)<1e-6) &&
+        !junction.paths.some(path=>path.points.some(p=>dist(p,dist(e.a,portal)<1e-6?e.b:e.a)<1e-6)));
+      let previous=portal,current=dist(edge.a,portal)<1e-6?edge.b:edge.a;
+      for(let i=0;i<30 && dist(portal,current)<28;i++){
+        const next=network.edges.flatMap(e=>dist(e.a,current)<1e-6?[e.b]:dist(e.b,current)<1e-6?[e.a]:[])
+          .filter(p=>dist(p,previous)>1e-6)
+          .sort((a,b)=>dist(b,portal)-dist(a,portal))[0];
+        assert(next,'outside approach continues');previous=current;current=next;
+      }
+      return current;
+    });
+    for(let i=0;i<outside.length;i++)for(let j=0;j<outside.length;j++)if(i!==j){
+      const normalized=p=>p.map((v,axis)=>v/(axis?h.geometry.height:h.geometry.width));
+      h.motion.placeAtLocation('home');h.motion.setTarget(normalized(outside[i]));h.frame(0);h.frame(120000);
+      assert(dist(h.point(),outside[i])<1e-5,'arrive at entry before testing turn');
+      h.motion.setTarget(normalized(outside[j]));
+      assert(dist(JSON.parse(h.canvas.dataset.target),outside[j])<1e-5,'exit target accepted');
+      h.frame(0);
+      let frames=0;
+      do{
+        h.frame(25);frames++;
+        assert(Math.min(...network.edges.map(e=>pointGap(h.point(),e.a,e.b)))<1e-5,'body follows derived dash centerline');
+      }while(h.canvas.dataset.arrived!=='true' && frames<300);
+      assert(frames<300,'bounded local movement');
+      assert(dist(h.point(),outside[j])<1e-5,'actual exit arrival');pairs++;
+    }
+  }
+  assert.equal(pairs,30);
 });
 test('disconnected routes cannot cause an invented crossing; empty geometry remains usable',async()=>{
   const geometry={...straight,routes:[...straight.routes,{id:'island',points:[[.1,.1],[.9,.1]]}]};

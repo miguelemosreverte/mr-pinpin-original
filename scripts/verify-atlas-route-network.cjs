@@ -7,8 +7,8 @@ const { createHash } = require('node:crypto');
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || '/Users/miguel_lemos/.npm/_npx/705bc6b22212b352/node_modules/playwright');
 const root = path.resolve(__dirname, '../docs/storyboard');
 const base = process.env.ATLAS_BASE_URL || 'http://127.0.0.1:8767/storyboard/';
-const report = process.env.ATLAS_ROUTE_REPORT || '/tmp/atlas-routes-v7-browser.md';
-const output = process.env.ATLAS_ROUTE_SCREENSHOTS || '/tmp/atlas-route-network-v7';
+const report = process.env.ATLAS_ROUTE_REPORT || '/tmp/atlas-junctions-v8-browser.md';
+const output = process.env.ATLAS_ROUTE_SCREENSHOTS || '/tmp/atlas-junctions-v8-browser';
 const fullRun = process.env.ATLAS_ROUTE_FULL === '1';
 const results = [], screenshots = [], sourceHashes = {};
 const hash = text => createHash('sha256').update(text).digest('hex');
@@ -84,7 +84,7 @@ function sweptRectangle(a, b, extent) {
 
 async function terrainSafety(page) {
   const data = await page.evaluate(() => ({ width: atlasGeometry.width, height: atlasGeometry.height,
-    routes: atlasGeometry.routes, directions: atlasDirections }));
+    routes: atlasGeometry.routes, directions: atlasDirections, navigation: atlasGpuDebug.motion.navigation }));
   for (const [id, expected] of Object.entries(retainedTraceHashes)) {
     assert.equal(hash(JSON.stringify(data.routes.find(r => r.id === id).points)), expected,
       id + ': retained original traces remain unchanged; new curved routes and cyan adjustment are permitted');
@@ -99,8 +99,8 @@ async function terrainSafety(page) {
     extent.down = Math.max(extent.down, (frame.rect[3] - frame.anchor[1]) * scale);
   }
   let minimumVehicleGap = Infinity, minimumPicnicGap = Infinity;
-  for (const route of data.routes) {
-    const points = route.points.map(p => [p[0] * data.width, p[1] * data.height]);
+  for (const route of data.navigation.edges.map(e => ({ id: e.route, points: [e.a, e.b] }))) {
+    const points = route.points;
     for (let i = 1; i < points.length; i++) {
       const a = points[i - 1], b = points[i];
       const swept = sweptRectangle(a, b, extent);
@@ -295,7 +295,7 @@ function branchReturns() {
   vm.runInNewContext(source.replace(marker, 'window.routeGraphForTest=graphFor; ' + marker), sandbox);
   const geometry = sandbox.window.atlasGeometry;
   const routes = geometry.routes.map(r => ({ ...r, points: r.points.map(p => [p[0] * geometry.width, p[1] * geometry.height]) }));
-  const graph = sandbox.window.routeGraphForTest(routes);
+  const graph = sandbox.window.routeGraphForTest(routes, geometry.junctions);
   const homeLake = routes.find(r => r.id === 'home-to-lake');
   const tractorPoint = geometry.navigationDestinations?.find(p => p.id === 'tractor')?.point;
   assert(tractorPoint, 'Approved tractor navigation destination is declared');
@@ -310,8 +310,9 @@ function branchReturns() {
     const to = namedDestination || nearest(route.points.at(-1), route.from);
     const from = stories[route.from] ? route.from : nearest(route.points[0], to);
     branchStories[route.id] = { from, to };
-    const points = fullRun ? [...route.points, ...route.points.slice(1).map((p, i) => p.map((v, j) => (v + route.points[i][j]) / 2))]
+    const logical = fullRun ? [...route.points, ...route.points.slice(1).map((p, i) => p.map((v, j) => (v + route.points[i][j]) / 2))]
       : [route.points[0], route.points[Math.floor(route.points.length / 2)], route.points.at(-1)];
+    const points = logical.map(point => graph.plan(stories.home, point).target);
     let plans = 0;
     for (const point of points) for (const id of [from, to]) {
       for (const [start, target] of [[point, stories[id]], [stories[id], point]]) {
@@ -758,9 +759,7 @@ async function focusedActual(browser, width) {
         const sample = await page.evaluate(() => {
           const d = atlasGpuDebug.motionCanvas.dataset, p = [Number(d.x), Number(d.y)];
           let gap = Infinity;
-          for (const route of atlasGeometry.routes) for (let j = 1; j < route.points.length; j++) {
-            const a = route.points[j - 1].map((v, axis) => v * (axis ? 1024 : 1536));
-            const b = route.points[j].map((v, axis) => v * (axis ? 1024 : 1536));
+          for (const { a, b } of atlasGpuDebug.motion.navigation.edges) {
             const v = b.map((n, axis) => n - a[axis]);
             const t = Math.max(0, Math.min(1, ((p[0] - a[0]) * v[0] + (p[1] - a[1]) * v[1]) / (v[0] ** 2 + v[1] ** 2 || 1)));
             gap = Math.min(gap, Math.hypot(p[0] - a[0] - t * v[0], p[1] - a[1] - t * v[1]));
@@ -898,7 +897,7 @@ async function actual(browser, width) {
 
 function writeReport() {
   if (!fullRun) {
-    fs.writeFileSync(report, ['# V7 Focused Browser Smoke', '',
+    fs.writeFileSync(report, ['# V8 Derived Junction Browser Smoke', '',
       `${results.filter(r => r.pass).length}/${results.length} checks passed; wall ${((Date.now() - startedAt.getTime()) / 1000).toFixed(2)}s.`,
       `URL: ${base}atlas-webgpu.html`,
       'Actual Chrome WebGPU: 1440x1000 desktop and 390x844 emulated touch viewport.',

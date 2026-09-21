@@ -10,7 +10,120 @@
     const point=[a[0]+t*dx,a[1]+t*dy];
     return {point,t,distance:distance(p,point)};
   }
-  function graphFor(routes) {
+  function roundNetwork(nodes,edges,options,anchors) {
+    const radius=options.radius || 14, limit=(options.maxTurn || 12)*Math.PI/180;
+    const original=edges.slice(), adjacency=nodes.map(() => []), removed=new Set(), replacements=[], junctions=[];
+    const unit=(a,b) => { const d=distance(a,b); return b.map((v,i) => (v-a[i])/d); };
+    const shift=(p,v,d) => p.map((n,i) => n+v[i]*d);
+    original.forEach((e,i) => { adjacency[e.u].push(i); adjacency[e.v].push(i); });
+    const protectedNode=i => anchors.some(p => distance(p,nodes[i])<1e-6);
+    const addPoint=p => { const i=nodes.length; nodes.push(p); return i; };
+    const addEdge=(u,v,r,offset=0) => replacements.push({u,v,r,offset});
+    function curve(a,c,d,b,r,kind) {
+      const at=t => a.map((v,i) => (1-t)**3*v+3*(1-t)**2*t*c[i]+3*(1-t)*t*t*d[i]+t**3*b[i]);
+      const tangent=t => a.map((v,i) => 3*((1-t)**2*(c[i]-v)+2*(1-t)*t*(d[i]-c[i])+t*t*(b[i]-d[i])));
+      const angle=(u,v) => Math.acos(Math.max(-1,Math.min(1,(u[0]*v[0]+u[1]*v[1])/(Math.hypot(...u)*Math.hypot(...v)||1))));
+      const points=[a];
+      function flatten(lo,hi,depth=0) {
+        const middle=(lo+hi)/2, p=at(lo),q=at(hi),chord=q.map((v,i) => v-p[i]);
+        if (depth<9 && (distance(p,q)>8 || angle(tangent(lo),chord)>limit/2 ||
+            angle(chord,tangent(hi))>limit/2 || angle(tangent(lo),tangent(middle))>limit)) {
+          flatten(lo,middle,depth+1); flatten(middle,hi,depth+1);
+        } else points.push(q);
+      }
+      flatten(0,1);
+      return {points,r,kind};
+    }
+    function install(paths,portals) {
+      const endpoint=p => portals.find(portal => distance(nodes[portal],p)<1e-6);
+      for (const path of paths) {
+        let u=endpoint(path.points[0]),offset=0;
+        for (let i=1;i<path.points.length;i++) {
+          const v=i===path.points.length-1 ? endpoint(path.points[i]) : addPoint(path.points[i]);
+          addEdge(u,v,path.r,offset); offset+=distance(nodes[u],nodes[v]); u=v;
+        }
+      }
+    }
+    // A surveyed replacement absorbs the lake's tiny endpoint dogleg while
+    // keeping its exact story anchor on a physically wider turn.
+    for (const blend of options.blends || []) {
+      const chain=blend.chain.map(p => nodes.findIndex(q => distance(p,q)<.01));
+      if (chain.some(i => i<0)) continue;
+      const links=chain.slice(1).map((v,i) => original.findIndex(e =>
+        (e.u===chain[i] && e.v===v) || (e.v===chain[i] && e.u===v)));
+      if (links.some(i => i<0)) continue;
+      links.forEach(i => removed.add(i));
+      const paths=blend.curves.map(c => curve(nodes[chain[c.from]],c.controls[0],c.controls[1],
+        nodes[chain[c.to]],original[links.at(-1)].r,'anchor'));
+      install(paths,chain);
+      junctions.push({center:nodes[chain[1]],kind:'anchor',portals:[nodes[chain[0]],nodes[chain.at(-1)]],paths});
+    }
+    // Branch spokes may include short degree-two connectors. Consume them as one
+    // approach so a historical tiny dogleg cannot survive inside the new junction.
+    for (let center=0;center<adjacency.length;center++) {
+      if (adjacency[center].length<3) continue;
+      const spokes=[];
+      const spec=options.wide?.find(p => distance(p,nodes[center])<1);
+      const branchRadius=spec?.[2] || radius,handle=spec?.[3] || 2/3;
+      for (const first of adjacency[center]) {
+        let edge=first,u=center,remaining=branchRadius;
+        while (true) {
+          const e=original[edge],v=e.u===u ? e.v : e.u,length=distance(nodes[u],nodes[v]);
+          const terminal=adjacency[v].length!==2 || protectedNode(v);
+          const trim=terminal ? Math.min(remaining,length*.4) : Math.min(remaining,length);
+          removed.add(edge);
+          if (trim<length-1e-6) {
+            const outward=unit(nodes[u],nodes[v]),point=shift(nodes[u],outward,trim),portal=addPoint(point);
+            addEdge(portal,v,e.r,e.offset+trim);
+            spokes.push({portal,point,outward,r:e.r}); break;
+          }
+          remaining-=length; u=v;
+          edge=adjacency[v].find(i => i!==edge);
+          if (remaining<1e-6) remaining=.01;
+        }
+      }
+      const paths=[];
+      for (let i=0;i<spokes.length;i++) for (let j=i+1;j<spokes.length;j++) {
+        const a=spokes[i],b=spokes[j];
+        const chord=distance(a.point,b.point);
+        const tuned=options.turnHandles?.find(t => distance(t.at,nodes[center])<1 && t.pair[0]===i && t.pair[1]===j);
+        paths.push(curve(a.point,shift(a.point,a.outward,-Math.min(chord,distance(a.point,nodes[center]))*(tuned?.handles[0] || handle)),
+          shift(b.point,b.outward,-Math.min(chord,distance(b.point,nodes[center]))*(tuned?.handles[1] || handle)),b.point,b.r,'branch'));
+      }
+      install(paths,spokes.map(s => s.portal));
+      junctions.push({center:nodes[center],kind:'branch',portals:spokes.map(s => s.point),paths});
+    }
+    const branchRemoved=new Set(removed),bendCuts=new Map();
+    for (let center=0;center<adjacency.length;center++) {
+      const incident=adjacency[center];
+      if (incident.length!==2 || incident.some(i => branchRemoved.has(i))) continue;
+      const neighbors=incident.map(i => original[i].u===center ? original[i].v : original[i].u);
+      const directions=neighbors.map(i => unit(nodes[center],nodes[i]));
+      const turn=Math.acos(Math.max(-1,Math.min(1,-directions[0].reduce((sum,v,i) => sum+v*directions[1][i],0))));
+      if (turn<(options.minBend || 35)*Math.PI/180) continue;
+      const wide=options.anchors?.find(p => distance(p,nodes[center])<1)?.[2];
+      const trim=Math.min(wide || 6,...neighbors.map(i => distance(nodes[center],nodes[i])*(wide ? .8 : .3)));
+      const points=directions.map(v => shift(nodes[center],v,trim)),portals=points.map(addPoint);
+      incident.forEach((edge,i) => {
+        if (!bendCuts.has(edge)) bendCuts.set(edge,new Map());
+        bendCuts.get(edge).set(center,portals[i]);
+      });
+      const paths=[],r=original[incident[1]].r,keep=protectedNode(center);
+      if (keep) {
+        const tangent=unit(directions[0],directions[1]);
+        const approach=wide ? trim/3 : trim/2,anchor=wide ? trim/2 : trim/3;
+        paths.push(curve(points[0],shift(points[0],directions[0],-approach),shift(nodes[center],tangent,-anchor),nodes[center],r,'anchor'));
+        paths.push(curve(nodes[center],shift(nodes[center],tangent,anchor),shift(points[1],directions[1],-approach),points[1],r,'anchor'));
+      } else paths.push(curve(points[0],shift(points[0],directions[0],-trim*2/3),
+        shift(points[1],directions[1],-trim*2/3),points[1],r,'bend'));
+      install(paths,keep ? [...portals,center] : portals);
+      junctions.push({center:nodes[center],kind:keep ? 'anchor' : 'bend',portals:points,paths});
+    }
+    edges.splice(0,edges.length,...original.flatMap((e,i) => branchRemoved.has(i) ? [] : [{...e,
+      u:bendCuts.get(i)?.get(e.u) ?? e.u,v:bendCuts.get(i)?.get(e.v) ?? e.v}]),...replacements);
+    return junctions;
+  }
+  function graphFor(routes,options=null) {
     const segments=[], joins=[], nodes=[], edges=[];
     routes.forEach((route,r) => {
       let offset=0;
@@ -42,6 +155,17 @@
       cuts.slice(1).forEach((t,i) => edge(at(cuts[i]),at(t),s.r,s.offset+cuts[i]*distance(s.a,s.b)));
     });
     joins.forEach(([a,b]) => edge(a,b,-1));
+    let junctions=[];
+    if (options) {
+      const unique=new Set();
+      for (let i=edges.length-1;i>=0;i--) {
+        const e=edges[i],key=[e.u,e.v].sort((a,b) => a-b).join(',');
+        if (unique.has(key)) edges.splice(i,1); else unique.add(key);
+      }
+      const anchors=routes.filter(r => ['home-to-lake','lake-to-elder','lake-to-bridge','home-lower-road-to-tractor'].includes(r.id))
+        .flatMap(r => r.id==='home-to-lake' ? [r.points[0],r.points.at(-1)] : [r.points.at(-1)]);
+      junctions=roundNetwork(nodes,edges,options,anchors);
+    }
     function nearest(p,allowed=null) {
       let best=null;
       edges.forEach((e,i) => {
@@ -84,7 +208,8 @@
       }
       return {points:path,steps,length:costs[goal],target:end.point,route:routes[edges[end.edge].r]?.id || ''};
     }
-    return {plan,edges:edges.map(e => ({a:nodes[e.u],b:nodes[e.v],offset:e.offset}))};
+    return {plan,junctions,nodeCount:new Set(edges.flatMap(e => [e.u,e.v])).size,
+      edges:edges.map(e => ({a:nodes[e.u],b:nodes[e.v],offset:e.offset,route:routes[e.r]?.id || ''}))};
   }
   function preload(src,redraw) {
     if (!src) return null;
@@ -107,7 +232,7 @@
       const points=route.points.map(([x,y]) => [x*geometry.width,y*geometry.height]);
       return {...route,points};
     });
-    const graph=graphFor(routes), initial=routes.find(r => r.from==='home' && r.to==='lake') || routes[0];
+    const graph=graphFor(routes,geometry.junctions), initial=routes.find(r => r.from==='home' && r.to==='lake') || routes[0];
     let point=initial?.points[0]?.slice() || [0,0], journey=graph.plan(point,initial?.points.at(-1) || point);
     let trails=[], segment=1, travelled=0, heading=0, elapsed=0, walkTime=0;
     let paused=reduced.matches, hidden=document.hidden, suspended=false, request=0, idleTimer=0, last=null, failed=false;
@@ -352,6 +477,7 @@
     rebuild(); run();
     return {
       get version() { return version; },
+      get navigation() { return {edges:graph.edges,junctions:graph.junctions,nodeCount:graph.nodeCount}; },
       get spriteLayer() { return spriteLayer; },
       get paused() { return paused; },
       suspend(value) { if (suspended===Boolean(value)) return; suspended=Boolean(value); run(); },

@@ -18,6 +18,7 @@ const marker='window.AtlasMotion={create';
 assert(motionSource.includes(marker),'production motion factory marker');
 vm.runInNewContext(motionSource.replace(marker,'window.routeGraphForTest=graphFor; '+marker),scope);
 const graph=scope.window.routeGraphForTest(routes);
+const derived=scope.window.routeGraphForTest(routes,geometry.junctions);
 const home=routes[0].points[0];
 const key=p=>p.map(v=>v.toFixed(5)).join(',');
 const edgeKey=(u,v)=>[u,v].sort().join('|');
@@ -149,7 +150,7 @@ test('all segments keep feet and the full directional sprite envelope clear of p
   assert(extent.up>40 && extent.left>=28,'check actual directional crops, not a foot-only proxy');
   const corners=[[-extent.left,-extent.up],[extent.right,-extent.up],
     [extent.right,extent.down],[-extent.left,extent.down]];
-  for(const [name,obstacle] of [['picnic',picnic],['tractor/trailer/boom',tractor]]) for(const {a,b} of graph.edges) {
+  for(const [name,obstacle] of [['picnic',picnic],['tractor/trailer/boom',tractor]]) for(const {a,b} of [...graph.edges,...derived.edges]) {
     const label=name+' '+JSON.stringify([a,b]);
     assert(polygonDistance([a,b],obstacle)>=20,'foot clearance along entire segment: '+label);
     const swept=hull([a,b].flatMap(p=>corners.map(c=>[p[0]+c[0],p[1]+c[1]])));
@@ -162,7 +163,7 @@ test('lower road connects Home to tractor below the visible river with bank rout
   // Visible channel below the wooden bridge; woodland outside it is inferred ground.
   const channel=[[900,632],[935,632],[970,647],[1000,677],[1055,712],[1086,750],[1110,786],
     [1134,819],[1115,831],[1070,797],[1030,765],[993,737],[968,713],[943,683],[917,658]];
-  for(const {a,b} of graph.edges) assert(polygonDistance([a,b],channel)>0,
+  for(const {a,b} of [...graph.edges,...derived.edges]) assert(polygonDistance([a,b],channel)>0,
     'route crosses surveyed water channel: '+JSON.stringify([a,b]));
   assert(routes.some(r=>r.id==='home-lower-road-to-tractor'));
   assert(!routes.some(r=>['home-lower-road-west-bank','right-bank-to-tractor-road','tractor-road-to-picnic'].includes(r.id)));
