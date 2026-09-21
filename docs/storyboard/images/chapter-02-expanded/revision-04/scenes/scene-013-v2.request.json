@@ -1,0 +1,14 @@
+{
+  "id": "scene-013-v2",
+  "prompt": "Targeted spatial correction only. Remove the EXTRA foreground rectangular stone under Papa at bottom-left, replacing its mass with continuous level dirt path. Keep Papa at same place but extend his lower legs just enough for both soles to rest on level path; do not lengthen torso. Preserve the ONE rounded boarding stone under child, its foot contact, child crossing to dog, dog anatomy, cottage and bowl unchanged. Papa stands on ground beside single stone, not on second stone.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-04/scenes/scene-013-v1.png",
+      "role": "Targeted correction base",
+      "sha256": "ac327fd518815bd98abce12bb8f87c1499091549ee54db76c11b4cea46cce510"
+    }
+  ],
+  "startedAt": "2026-09-21T10:40:28.769813+00:00",
+  "tool": "built-in image_gen",
+  "status": "requested"
+}

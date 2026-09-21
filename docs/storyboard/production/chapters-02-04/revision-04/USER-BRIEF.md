@@ -1,6 +1,6 @@
 # Elder revision04 — agreed story direction, 2026-09-21
 
-Status: discussion record and story-planning phase only. This is a paraphrase of the agreed direction, not a verbatim transcript. Revision03 and its review remain intact. The user subsequently authorized one Scooby appearance proposal from a verbal description. Root is producing that candidate for confirmation. This brief does not authorize dog-dependent chapter rendering, manifest changes, commit or publication; Scooby’s appearance must first be confirmed.
+Status: full revision04 execution authorized. User: “very well. With all we have said, do you want to expand the chapter and relent as many images as needed”. Read “relent” in context as render. Scooby v2 is user-approved. The planning-only restrictions below are historical discussion notes superseded by this authorization and CONTRACT.md. Produce a complete illustrated, trilingual chapter with as many meaningful images as required, preserving earlier proposals and presenting a new review before official publication.
 
 ## Story direction
 

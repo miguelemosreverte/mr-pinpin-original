@@ -1,0 +1,24 @@
+{
+  "id": "scene-015-v1",
+  "prompt": "Use case: illustration-story. Create one landscape full-bleed children's picture book illustration in the same richly textured, gentle woodland style as the references, no text or panels. Scene: morning departure outside the family's moss-roof cottage. Scooby the large brindled brown dog has just risen and stands calmly on all four paws on the path, facing right. Tiny hedgehog PinPin sits in front on his broad back, Papa immediately behind him with one forearm supporting PinPin's lower chest. Match the accepted tandem reference exactly for identities, scale, seated hips, visible legs, and paw contacts. PinPin's own two forepaws rest ahead on the dog. Preserve Scooby's grey-cream muzzle, white chest, folded ears and single curled tail at his rump. In the background Mama stands at the open green doorway, holding infant PomPom securely against her shoulder with one arm and waving with her other paw; exactly two adult forearms. Papa and PinPin look back warmly toward Mama. Exactly four hedgehogs and one dog. Preserve cottage facade, two round windows, left door hinges, right lantern, low stone left of path and water bowl right. Soft misty morning sunshine. Medium wide side-three-quarter camera, complete dog and grounded paws in view; nobody floating, no clothing or equipment.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/riding-tandem-v3.png",
+      "role": "Rider identities, exact scale and supporting contact",
+      "sha256": "f5977afa36440ad9b11e8a7554296a114e0c733f1d771b1be4781e0a4d36c176"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/family-scale-v3.png",
+      "role": "Mama and infant identity; dog/family size",
+      "sha256": "501e990a82416820d66249f3f90d8075ababe23811f5ff8608f710a8a93718bb"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/home-arrival-plate-v1.png",
+      "role": "Fixed cottage, stone and bowl geometry",
+      "sha256": "ba099fa668afbf140e432e461e647dd270a659149c247fb0a4e08a7fae3d44d0"
+    }
+  ],
+  "startedAt": "2026-09-21T10:48:14.694293+00:00",
+  "tool": "built-in image_gen",
+  "status": "requested"
+}

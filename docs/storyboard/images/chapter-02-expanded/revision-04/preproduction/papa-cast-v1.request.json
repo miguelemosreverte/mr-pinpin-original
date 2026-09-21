@@ -1,0 +1,24 @@
+{
+  "id": "papa-cast-v1",
+  "prompt": "Use case: illustration-story. PREPRODUCTION character identity reference, not story scene. Single1536x1024 landscape canvas with TWO separated full-body views of THE SAME PAPA HEDGEHOG on warm ivory ground: front three-quarter left, natural side profile right. Image1 is explicit Papa from original book: preserve his mature kindly face, darker natural eyebrows and eye surround, cream muzzle and chest, darkgrey-brown quills with silvery tips, small rounded ears and black nose, robust rounded adult build. Image2 supports Papa as UNCLOTHED natural hedgehog. Image3 controls MODERN rich miniature dimensional children's-book style and hedgehog anatomy only, do not copy Mama/child faces. Adapt Papa to same sophisticated warm fur/quill rendering. Papa has NO CLOTHES, waistcoat, bowtie, shirt, shoes, glasses, beard, cane or staff. His face mature and broader than child's but warm expressive eyes; not Elder's silver face, not Mama's orange quills. Two forepaws and two hindfeet per view, plausible short limbs attached to body. Stand comfortably on hindfeet with two forepaws relaxed near belly for front view; side view shows natural low four-paw standing posture with paws grounded. Keep same exact head/body identity across poses; do not add extra animals. Neutral soft daylight/contact shadows, no text, labels, props, montage borders or decorative background.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image50.png",
+      "role": "explicit original Papa face and mature robust build; discard clothing",
+      "sha256": "e57ad8dc512580aafd025f1711f65438b2b8702f28f8c36aa02280c7326dd344"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/images/image18.png",
+      "role": "unclothed Papa concept only; do not copy oversized adult scale",
+      "sha256": "24ebe3556bb3737b813214047af58a501280807ae5cef0e26133d7965bddc4bf"
+    },
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/family-carry-v1.png",
+      "role": "current modern hedgehog style/anatomy only, not Papa identity",
+      "sha256": "6ab657cdefbe4c0297aabcf3d640333a2e719a280740cd694c7ba19c30670a0f"
+    }
+  ],
+  "startedAt": "2026-09-21T09:40:48.191483+00:00",
+  "tool": "built-in image_gen",
+  "status": "requested"
+}

@@ -1,0 +1,23 @@
+# scene-002-v1
+
+Use case: illustration-story. Final SINGLE landscape1536x1024 children'sbook scene, rich dimensional tactile miniaturewoodlandrealism, no text/borders/panels. Exact familycottagegeometry andmorningdew/mist fromref1, closedgreenrounddoor/tworoundwindows/leftchimney/rightunlitlantern; lowbroadflatmountingstone pathLEFT, ceramicwaterbowl pathRIGHT. ExactlyTWOanimals: Scooby withPapa ridingALONE; nochild/Mama/baby. Dog approvedbrindledshortcoat, whitebib, greycreammuzzle, ambereyes, shortfoldedears, singlecurledtailatRUMP. Papa exact mature darkgrey-brown/silvertippedquills, creamface/darkerbrows, NOglasses/clothes/staff. Match acceptedsolo-seated fitref2: PapasmallrelativeDOG, furryhiponmiddleback justbehindwithers, twoforepaws restingbackahead, hindlegsstraddle eachside; nofloatingfeet/saddle/reins. CloserlowTHREEQUARTERcamera infrontclearing, dogSTOPPEDsideways facingRIGHTbesidefixedLOWSTONE atpathLEFT/nearforeground. ShowcompleteScooby onFOURgroundedpawsandPapaseatedsecurely, lookingtowardhouse. Cottage recognizableupperbackground withunchangeddoor/windows/morningmist, lowstone visiblybesidePapaseatfordismount, waterbowlrightatgardenedge. Doggentlefaceangledslightlytowardcamera butbodyparallelforecourt, tailleftcorrectrump. Papa tinycomparedvillageDOG likeacceptedref2, no enlarginghedgehogbecausecloserview. Newcamera iscloserthanopening001, fullanimalsnotcropped. No walkingmotionandno dismountyet, createsclear arrivalpause.
+
+References:
+[
+  {
+    "path": "images/chapter-02-expanded/revision-04/preproduction/home-arrival-plate-v1.png",
+    "role": "fixedhomeforecourtstone/bowl",
+    "sha256": "ba099fa668afbf140e432e461e647dd270a659149c247fb0a4e08a7fae3d44d0"
+  },
+  {
+    "path": "images/chapter-02-expanded/revision-04/preproduction/riding-solo-v1.png",
+    "role": "exactsolo seat/identities",
+    "sha256": "4286389389ebb0e2ff9f1e5d9c4fcb2e709ec186e3fda45243cc2ba2a1a4aa96"
+  }
+]
+
+Generated: 2026-09-21T10:23:53.706152+00:00 to 2026-09-21T10:31:59.892448+00:00
+
+SHA256: 2430e3e179cdeaf30d2dccbe7d0e3b67be81f6a2d3fc71917af770493f295209
+
+Review: Creator full-image pass: solo rider stopped beside low stone, four grounded dog paws, proper tail, Papa plausible seated contact and no spectacles. Same closed green door, two round windows, unlit lantern, bowl right.

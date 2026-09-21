@@ -1,0 +1,25 @@
+{
+  "id": "scene-019-v2",
+  "prompt": "One landscape illustration for a gentle children's picture book, matching the warm painterly storybook references. No lettering or panels. Preserve all character identities and relative sizes from references; Papa the mature silver-tipped dark hedgehog, PinPin the smaller russet young hedgehog, Scooby the much larger brindled dog with white bib, folded ears, amber eyes and single curled rump tail. Four limbs per animal, natural contact, no accessories. At Elder tree-house clearing, same Scooby lies still facing RIGHT beside low flat stone. PinPin remains seated alone at front of dog's back immediately behind shoulders, both own forepaws rest on fur; he waits calmly. Papa has dismounted and now stands with BOTH feet planted on stone beside dog's middle, one forepaw steadies on dog's fur and other reaches slightly toward waiting child. This illustrates Papa dismounts FIRST, child does not dismount yet. Dog four plausible folded legs, tail at rump left. Fixed sunny tree entrance, left staff/boulder, right ferns behind. Medium side view shows contact.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/elder-exterior-rest-plate-v1.png",
+      "role": "Destination geography",
+      "sha256": "6295a3c64ad0ad7ff1634a046201804f3a5885c759419538247be28074b0500b"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/riding-tandem-v3.png",
+      "role": "Relative identity and scale",
+      "sha256": "f5977afa36440ad9b11e8a7554296a114e0c733f1d771b1be4781e0a4d36c176"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/riding-boarding-v3.png",
+      "role": "Dog crouch beside stone",
+      "sha256": "d6fdb4f4dceb15ce78ceaabd6ab4f5a0e5e49d5608e66153586d339b9ae3aa7b"
+    }
+  ],
+  "startedAt": "2026-09-21T10:48:14.695146+00:00",
+  "tool": "built-in image_gen",
+  "status": "requested",
+  "provenanceNote": "New request by outward finish lane. Earlier v1 request has no saved output and is preserved without invented completion."
+}

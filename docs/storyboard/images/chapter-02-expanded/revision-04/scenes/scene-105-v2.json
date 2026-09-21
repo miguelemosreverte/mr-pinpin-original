@@ -1,0 +1,33 @@
+{
+  "id": "elder-r4-105",
+  "title": "Scene105 — Papa passes the bread as Mama listens — attentive gaze correction",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T10:04:51.637Z",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-105-v2.png",
+  "references": [
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-105-v1.png"
+  ],
+  "referenceRoles": [
+    "Exact selected composition edit target; change only parental head/eye attention"
+  ],
+  "prompt": "Use case: precise-object-edit. Targeted EDIT of this exact children's story image. Preserve entire composition, camera, all FOUR hedgehog identities, quills, bodies, arms/paws, table, bowls, bread, teapot, window/door, daylight and baby support. Change ONLY adult facial head/eye orientation very slightly for meaningful attention to the CHILD at lower-right. Mama on LEFT is asking/listening to PinPin on foreground RIGHT: direct her pupils and modest head tilt down and right toward PinPin's FACE, not to Papa's upper face. Papa at upper-right turns his head/pupils down and toward his near-right seated child, visibly focusing on child's FACE rather than looking left across toward Mama. Both parents should visibly see/hear PinPin. Preserve child exact gaze/expression/pose, baby exact pose/support, all attached limbs; do not add or move a paw. Papa continues holding the ONE bread roll between his unchanged forepaw and child's unchanged reaching forepaw; preserve gap, bread shape and real handoff. No other changes, no props added/removed, no text. Same1536x1024 landscape, same rich dimensional style.",
+  "startedAt": "2026-09-21T10:05:03.520Z",
+  "finishedAt": "2026-09-21T10:06:42.693Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-17b1cf03-5844-4604-985b-2fa2cb7e39ec.png",
+  "reviewedAt": "2026-09-21T10:10:20.449Z",
+  "review": "Full image inspected after targeted gaze edit: Papa head now turns down/right toward near-right child, Mama head/eyes tilt down/right across table toward child's side instead of upper Papa face. Four identities, seated map, lap baby/support, bowls/cups and bread transfer between distinct attached forepaws preserved. Readable family attention improved; exact optical fixation is qualitative. No new anatomy defect seen; hidden lower limbs remain unverified.",
+  "selection": "accepted for proposed revision04",
+  "alt": {
+    "en": "Papa passes a bread roll to PinPin while Mama listens and PomPom reaches toward her paw.",
+    "ru": "Папа передаёт ПинПину булочку, Мама слушает, а ПомПом тянется к её лапке.",
+    "es": "Papá le pasa un panecillo a PinPin mientras Mamá escucha y PomPom estira una patita hacia ella."
+  },
+  "width": 1536,
+  "height": 1024,
+  "sha256": "20f172a3bb5daee4164ed0e01e45a117303f1553e390811e944324feba6824f4",
+  "referenceHashes": {
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-105-v1.png": "55fbc9f0ecdd17865ea02ebcaa7f972536ef59bd027f9a3436d2660fa8760a7d"
+  },
+  "independentReview": "Root full-image PASS: parents now turn toward child; bread handoff and secure lap baby support unchanged."
+}

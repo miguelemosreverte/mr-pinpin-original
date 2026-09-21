@@ -1,0 +1,25 @@
+# Elder revision04 scene005 v2
+
+Status: proposed
+
+- Tool: built-in imagegen
+- Started: 2026-09-21T10:19:20.097Z
+- Finished: 2026-09-21T10:20:09.759Z
+- Tool-call wall time: 34.679 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-005-v2.png
+- Dimensions: 1536×1024
+- SHA-256: 6c525a5d469482f328aec918783be5651e6d8229387953829f26fd60af752d98
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-776427df-3746-41f4-8b55-ff3307b1c487.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-005-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/family-scale-v3.png
+
+## Exact prompt
+
+Use case: precise-object-edit. Edit image1 narrowly to correct only Scooby's relative SIZE at left. Image2 is approved scale: dog is substantially larger than adult hedgehogs and can carry father and child. Keep image1's FOUR hedgehogs, hugging Papa/PinPin poses, Mama supporting infant, all their faces/limbs/body sizes/positions, cottage/door/windows, garden stone/right water bowl, misty daylight completely unchanged. ENLARGE the single dog Scooby by about1.35 times in both height and body length relative to his image1 size, around his existing ground contact area; shift very slightly left only if needed to fit. His paws remain grounded behind/beside the low stone, no floating. His full head, folded ears, brown/brindle body, white chest, grey muzzle and curled tail remain within the picture; if necessary gain a little headroom on top while preserving architecture. The larger dog should clearly have a taller shoulder and longer back than crouched Papa, matching image2 qualitative size. Do not enlarge the hedgehogs to cancel the correction. Do not add a second dog, rider, saddle, reins, extra legs or new humans. Reconstruct only the immediately affected foliage/ground/shadow behind dog's new contour; keep hug group and Mama/baby untouched. Landscape1536x1024, same dimensional warm fur style, no text.
+
+## Review
+
+Creator full-image review: four identifiable family hedgehogs, supported infant with Mama in doorway and grounded Papa/PinPin hugging in front; one larger Scooby at left with coherent folded ears, curled tail and visible front legs. Version2 increases dog relative to unchanged family; final qualitative scale comparison awaits root. Some rear dog feet are concealed by stone. Door open-leaf interior hardware is consistent with left exterior hinge axis; mist and garden fixtures retained.

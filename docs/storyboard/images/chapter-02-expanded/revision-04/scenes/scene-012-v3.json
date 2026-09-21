@@ -1,0 +1,29 @@
+{
+  "id": "scene-012-v3",
+  "prompt": "Targeted illustration correction only. Remove the one small extraneous brown foot projecting left from behind the young hedgehog rump (near x450 y591 in 1536x1024 reference). Young hedgehog must retain exactly the two hindfeet already planted on stone and two forepaws toward dog. Rebuild tiny removed area as uninterrupted dog fur/background, without changing all other characters, poses, stone or environment. Preserve entire composition.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-04/scenes/scene-012-v1.png",
+      "role": "Targeted correction base",
+      "sha256": "47694f97da95c03983fd49272772767eac0c90a019675726faeac7fe672b728c"
+    }
+  ],
+  "startedAt": "2026-09-21T10:51:33.728622+00:00",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "provenanceNote": "New request; existing v2 request has no recorded output and remains unchanged.",
+  "finishedAt": "2026-09-21T10:54:33.410549+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c392-eba4-7251-a126-7deced70b370/exec-f9e838d2-b450-4d74-97db-373e1ded1d08.png",
+  "output": "images/chapter-02-expanded/revision-04/scenes/scene-012-v3.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "dd0db3020d9fe9932802be52fd59410c8fc9304eefe0ac30074ef1182ee41dfd",
+  "review": "Creator full-image pass: extra third appendage behind child removed; two child feet planted on single low stone, two forepaws reaching toward dog. Papa grounded beside stone, near foot fully visible/far foot partly occluded, steadying child. Dog remains prone with forelegs visible, hindquarters partly obscured. Updated narration has Papa stepping down to help; this staging matches.",
+  "reviewedAt": "2026-09-21T10:54:33.410549+00:00",
+  "reviewer": "/root/elder_outward_finish",
+  "alt": {
+    "en": "Papa steadies PinPin, who stands with both feet on the low stone beside crouching Scooby outside the cottage.",
+    "ru": "Папа поддерживает ПинПина, стоящего обеими лапками на низком камне рядом с лежащим Скуби у дома.",
+    "es": "Papá sostiene a PinPin, que tiene ambos pies sobre la piedra baja junto a Scooby agachado frente a la casa."
+  }
+}

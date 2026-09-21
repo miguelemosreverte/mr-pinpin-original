@@ -1,0 +1,18 @@
+# riding-boarding-v3
+
+Use case: precise-object-edit. Make ONLY childPinPin's NEAR HIND FOOT physically contact the stone. Current nearhindfoot hangs about25pixels above broadstone. Gentlyextend/repose this SAMEshortnearhindleg DOWN justenough so its soleisFLATandPLANTED onthe stone's top at approximatelyx690,y620. Add matchingcontactshadow onstone. No extra leg, no separatefloatingpaw. Childotherhindleg remains overdogback, bothforepawsretaintheircontactondogfur, Papa'ssupportpaws/bodyunchanged. PreservewholeScooby EXACT withcorrecttailoriginleft, fourlegs, markings/face, Papaidentity, scales, stoneposition/shape, ivorybackground,1536x1024. Onlychange small childnearhindleg/footandlocalcontactshadow. This makes literalonefootstone/onefootoverdog supportedboarding, notchildlevitating.
+
+References:
+[
+  {
+    "path": "images/chapter-02-expanded/revision-04/preproduction/riding-boarding-v2.png",
+    "role": "target: groundonlychildnearhindfootonstone",
+    "sha256": "9d6a3628944fd12eb9b9850947c31da693cab5039b5fabe09f22782480221d62"
+  }
+]
+
+Generated: 2026-09-21T10:19:29.585786+00:00 to 2026-09-21T10:31:59.538437+00:00
+
+SHA256: d6fdb4f4dceb15ce78ceaabd6ab4f5a0e5e49d5608e66153586d339b9ae3aa7b
+
+Review: Creator full-image pass: child near hindfoot sole now contacts broad stone; far foot contacts dog, two forepaws on back, Papa grounded supports child. Dog rump tail correct. Qualitative scale; hidden limbs not certified. Await root gate.

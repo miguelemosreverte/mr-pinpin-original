@@ -1,0 +1,34 @@
+{
+  "id": "scene-020-v2",
+  "prompt": "One landscape illustration for a gentle children's picture book, matching the warm painterly storybook references. No lettering or panels. Preserve all character identities and relative sizes from references; Papa the mature silver-tipped dark hedgehog, PinPin the smaller russet young hedgehog, Scooby the much larger brindled dog with white bib, folded ears, amber eyes and single curled rump tail. Four limbs per animal, natural contact, no accessories. Elder tree-house clearing, Scooby lying still facing right beside low stone. Papa now stands on GROUND at near-left of stone, PinPin stands entirely on stone with BOTH feet planted, no longer on dog. Papa gently steadies child with two forepaws; child looks down toward path for next step. This is completed assisted descent to stone, not another boarding pose: child faces Papa/left away from dog. Show all feet clearly. Exact established tree entrance, staff/boulder left and fern bank right behind, daylight. Dog calm, proper curled tail at rump left, four natural legs with far side allowed occluded.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/elder-exterior-rest-plate-v1.png",
+      "role": "Destination geography",
+      "sha256": "6295a3c64ad0ad7ff1634a046201804f3a5885c759419538247be28074b0500b"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/riding-boarding-v3.png",
+      "role": "Grounded Papa, stone and crouched dog scale; reverse child away from dog",
+      "sha256": "d6fdb4f4dceb15ce78ceaabd6ab4f5a0e5e49d5608e66153586d339b9ae3aa7b"
+    }
+  ],
+  "startedAt": "2026-09-21T10:48:14.695386+00:00",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "provenanceNote": "New request by outward finish lane. Earlier v1 request has no saved output and is preserved without invented completion.",
+  "finishedAt": "2026-09-21T10:51:33.724416+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c392-eba4-7251-a126-7deced70b370/exec-e03c417d-025c-4bfb-bd78-b2e76c6135ec.png",
+  "output": "images/chapter-02-expanded/revision-04/scenes/scene-020-v2.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "32b35a4b3b02bedfb702e4aad5998cb4fb3c0930a5c5c9aac78c615ae8a514cd",
+  "review": "Creator full-view pass: Papa two feet grounded beside single boarding stone; child two feet planted on stone, facing Papa and away from dog. Separate paired forepaws meet for steadying. Dog remains prone, two forelegs and near rear paw visible, one curled rump tail. Child has small natural tail, no third foot. Staff remains left of portal, ferns right. Child looks toward Papa, not down; narration descent is compatible.",
+  "reviewedAt": "2026-09-21T10:51:33.724416+00:00",
+  "reviewer": "/root/elder_outward_finish",
+  "alt": {
+    "en": "Papa steadies PinPin, whose feet are on the low stone beside Scooby outside the Elder’s tree home.",
+    "ru": "Папа поддерживает ПинПина, стоящего на низком камне рядом со Скуби у дома Старца.",
+    "es": "Papá sostiene a PinPin, que tiene los pies sobre la piedra baja junto a Scooby frente a la casa del Anciano."
+  }
+}

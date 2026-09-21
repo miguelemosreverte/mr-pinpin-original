@@ -1,0 +1,18 @@
+# family-scale-v2
+
+Use case: precise-object-edit. Correct ONLY relative animal SCALE in this reference sheet. Scooby DOG on RIGHT is PERFECT: preserve every dog pixel, same size/position/face/brindle/whitebib/fourpaws/tail. Make ALL FOUR HEDGEHOGS dramatically SMALLER: reduce Papa, Mama-with-held-baby as one connected unit, and PinPin to exactly about40PERCENT of their current linear HEIGHT and WIDTH. Keep each grounded hedgehog's FEET on the SAME original floor baseline nearbottom. DO NOT alter their faces, colors, expressions, body shapes or limb counts; baby stays securely held byMama. They should now look like SMALL natural hedgehogs beside a normal villageDOG. In finalimage dog SHOULDER is about1.8times Papa FULL standingheight and about3.2times PinPin standingheight. Papa/Mama remain1.75times child; baby ratio unchanged. Group the three shrunken standinghedgehogs on LEFT half with reasonable smallgaps, Papa left,Mama+baby next,PinPin nearest dog; do not enlarge them to fill space. Leave LOTSof EMPTY IVORY ABOVE THEM, this is intentional. Preserve canvas1536x1024, common baseline, softshadows, noextraactors, no captions/numbers/props. Change only hedgehog group scale/compact horizontal placement and naturally restore ivory background around it. This is a strict SCALE EDIT, not a new composition of equal-size portraits.
+
+References:
+[
+  {
+    "path": "images/chapter-02-expanded/revision-04/preproduction/family-scale-v1.png",
+    "role": "target: retain dog unchanged, shrink all four hedgehogs to40percent linear size",
+    "sha256": "546d8192f083d9bc6a51441e52bd14a6e03e3fa1fe604259c8311aeb297b150b"
+  }
+]
+
+Generated: 2026-09-21T09:52:15.357772+00:00 to 2026-09-21T09:55:01.645509+00:00
+
+SHA256: d3bbcb0700feab033f6cb6d91ebd06d60322e3b9f2a5f5fb181af71d787bbc56
+
+Review: Full output inspected. Dog unchanged and adult hedgehogs now small enough for credible dog relation, but PinPin was shrunk less than adults, weakening parent/child ratio (adults about1.5childheight). Hold scale authority pending tiny child-only reduction20percent. Cast faces and Mama baby carry remain distinct/plausible; babybody relative child will match after correction.

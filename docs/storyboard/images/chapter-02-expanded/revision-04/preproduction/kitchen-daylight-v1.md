@@ -1,0 +1,38 @@
+# Revision04 family kitchen daylight master
+
+## Exact prompt
+
+Use case: lighting-weather. Make a DAYLIGHT VERSION of this EXACT EMPTY KITCHEN reference. Preserve the same camera, composition, wooden beams, wall shapes, floorboards and every permanent fixture. Round green front door remains CENTER with hinges viewer-RIGHT and brass knob viewer-LEFT; exactly TWO round SPOKE windows remain one on each side. Keep dining table LEFT-center on its same woven rug with existing stools; cupboards and shelves LEFT; cast-iron stove, chimney, kettle and right cabinet on RIGHT. Preserve doorway threshold mat, all crockery, flowers and table footprint. Change ONLY time/light: gentle clear late-morning daylight comes through the two windows, green outdoor foliage is visibly in daytime, room bright and readable with warm wood and soft natural shadows. Existing overhead and wall lantern fixtures stay exactly in place but are UNLIT (no bright artificial flame glow); stove may retain a small subdued cooking warmth without dominating daylight. Rich warm tactile dimensional children's-storybook illustration in same style. NO living characters, no animals, no dog, no food service setting, no new furniture, no basin, no props, no extra windows/doors, no text, labels or panels. Do not move or resize the table or mirror the room. Standalone1536x1024 landscape. This is a stable EMPTY environment reference, not a story scene.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "kitchen-daylight-v1",
+  "title": "Revision04 family kitchen daylight master",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T09:47:01.866Z",
+  "references": [
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/chapter-02/kitchen-plate.png"
+  ],
+  "referenceRoles": [
+    "Exact empty kitchen geometry/camera edit target; all permanent fixtures remain fixed."
+  ],
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/kitchen-daylight-v1.png",
+  "prompt": "Use case: lighting-weather. Make a DAYLIGHT VERSION of this EXACT EMPTY KITCHEN reference. Preserve the same camera, composition, wooden beams, wall shapes, floorboards and every permanent fixture. Round green front door remains CENTER with hinges viewer-RIGHT and brass knob viewer-LEFT; exactly TWO round SPOKE windows remain one on each side. Keep dining table LEFT-center on its same woven rug with existing stools; cupboards and shelves LEFT; cast-iron stove, chimney, kettle and right cabinet on RIGHT. Preserve doorway threshold mat, all crockery, flowers and table footprint. Change ONLY time/light: gentle clear late-morning daylight comes through the two windows, green outdoor foliage is visibly in daytime, room bright and readable with warm wood and soft natural shadows. Existing overhead and wall lantern fixtures stay exactly in place but are UNLIT (no bright artificial flame glow); stove may retain a small subdued cooking warmth without dominating daylight. Rich warm tactile dimensional children's-storybook illustration in same style. NO living characters, no animals, no dog, no food service setting, no new furniture, no basin, no props, no extra windows/doors, no text, labels or panels. Do not move or resize the table or mirror the room. Standalone1536x1024 landscape. This is a stable EMPTY environment reference, not a story scene.",
+  "startedAt": "2026-09-21T09:47:31.932Z",
+  "finishedAt": "2026-09-21T09:48:04.329Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-68fb89ea-86ad-48ba-bac3-2de77a73b72a.png",
+  "reviewedAt": "2026-09-21T09:54:22.118Z",
+  "review": "Full image inspected: clear daylight/green foliage; exactly two round spoke windows, centered green door with interior hinges right/knob left, table and stools on left rug, left cupboards, stove/kettle/chimney right. No actors or new fixture. Caveat: lanterns retain small visible warm glows despite requested unlit state; daylight dominates. Qualitative environment continuity, not measured geometry.",
+  "selection": "accepted internal reference; proposed chapter preview",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "6992f950510276f683fc98578fd9bdf2c758eefb4c57fa7793d5dcbd203fb1ee",
+  "referenceHashes": {
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/chapter-02/kitchen-plate.png": "66070a05fdc7510096cdc9c57d0a4eeda24fec53deaa9f8c13af900e4d2ed404"
+  },
+  "independentReview": "Root independently viewed full image and accepted: room geometry/hinges hold, daylight dominates; small lantern glows accepted, no unlit claim."
+}
+```

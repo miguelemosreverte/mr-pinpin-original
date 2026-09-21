@@ -1,0 +1,22 @@
+{
+  "id": "riding-tandem-v2",
+  "prompt": "Use case: precise-object-edit. Correct ONLY PAPA's VISIBLE NEAR ARM in this exact tandem riding study. Preserve every dog pixel and all THREEfaces, animal sizes, positions, seatedhips/hindlegs, childownTWOforepaws restingdogfur. Papa adultBEHIND child currently has a paw on child's quilledback. Instead move that SAMEnearforearm forward gently AROUND CHILDLOWERBELLY/WAIST, visible supporting across lowercreamabdomen belowchild'sownarms. Papaelbow remainsattachedtohisnearshoulder, one continuous anatomicallyplausible forearm/paw, no extra hand. Endpawrests gently atchild'sfarhip/side; do not coverchild'sface/chest ormergewithchildtwohands. Papa's otherfararm may remain naturallyhidden. Child still sits securelyaheadastridedog, nearhindfoot separatebelowwaist. All other imagery unchanged. No new limb, accessory, reins,saddle,background or text. Keep1536x1024 sameivoryfloor. One reassuring supportarm is the entire edit.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/riding-tandem-v1.png",
+      "role": "target: changeonlyPapa visibleforearm tosupportchildlowerwaist",
+      "sha256": "c7f42ac5042386cd09d14b6ff50c34ec6ee2d3c701db39baf5761cdc18a5a6ee"
+    }
+  ],
+  "startedAt": "2026-09-21T10:09:33.846829+00:00",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "finishedAt": "2026-09-21T10:14:12.265760+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0ce-32e6-7c83-8515-c2ff0973d7d3/exec-22d1fdab-4667-41d5-9cd6-3897d1543ab4.png",
+  "output": "images/chapter-02-expanded/revision-04/preproduction/riding-tandem-v2.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "67ad93b1adc76fa714019e81667f6e87e97f2fd94178aefc752b4727d15fa888",
+  "review": "Full output inspected. Arm moved slightly lower but still only touches child side/back quills rather than visibly encircling lower belly. Keep as rejected support attempt; physical dog/rider seatfit unchanged. Next correction needs clearly visible supporting forearm across cream lower abdomen below child own paws.",
+  "reviewedAt": "2026-09-21T10:14:12.358072+00:00"
+}

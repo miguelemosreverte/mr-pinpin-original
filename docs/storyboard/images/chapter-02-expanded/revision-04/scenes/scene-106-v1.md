@@ -1,0 +1,46 @@
+# Scene106 — PinPin begins his story at lunch
+
+## Exact prompt
+
+Use case: illustration-story. One standalone1536x1024 landscape rich warm dimensional children's story illustration. Reference1 is the accepted daytime meal with EXACT four-family identity, proportions, seating and food arrangement; reference2 fixes the underlying room. Mama copper quills LEFT with tiny PomPom seated securely in her LAP, one of her forearms always supporting baby torso; Papa mature dark-brown/silver-tipped quills FAR RIGHT opposite Mama, NO glasses; child PinPin copper quills on OWN foreground-right stool beside Papa. Do not swap child and Papa or duplicate anyone. Exactly FOUR hedgehogs and no dog. Same green door center with interior hinges right/knob left, two spoke windows, cupboards left, stove/chimney right, round table on same woven rug. Keep same central vegetable serving bowl, three personal bowls, bread plate at front-left and small clay teapot near Papa, the two visible cups by Mama and PinPin; hidden props not invented. Same warm clear midday window daylight and green outdoors, not sunset. No words, labels, clothing, glasses, magic, panels or extra limbs. Keep paws attached and eyelines reciprocal; tabletop may naturally occlude lower limbs. Final warm family storytelling view, camera slightly closer to PinPin at foreground-right so his lively face is focal but ALL FOUR hedgehogs remain visible around same table. PinPin holds his newly received small bread roll in one paw just above his OWN bowl; other paw lightly rests at table edge. He smiles and speaks toward Mama with mouth gently open between bites, not with food visibly stuffing mouth. Papa at far right listens with a small affectionate smile, his forepaws relaxed by his bowl. Mama looks warmly toward PinPin while securely supporting lap baby; PomPom looks toward child's face. The central vegetable bowl, bread plate with one fewer roll, teapot and visible cups retain placement from earlier meal. No page, floating object, magic flash, new book or dream illustration: this is simply a child telling his family his morning story.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "elder-r4-106",
+  "title": "Scene106 \u2014 PinPin begins his story at lunch",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T09:59:10.885Z",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-106-v1.png",
+  "references": [
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/meal-seating-v1.png",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/kitchen-daylight-v1.png"
+  ],
+  "referenceRoles": [
+    "Exact approved four-family seating/identities/meal props",
+    "Fixed daylight kitchen geometry"
+  ],
+  "prompt": "Use case: illustration-story. One standalone1536x1024 landscape rich warm dimensional children's story illustration. Reference1 is the accepted daytime meal with EXACT four-family identity, proportions, seating and food arrangement; reference2 fixes the underlying room. Mama copper quills LEFT with tiny PomPom seated securely in her LAP, one of her forearms always supporting baby torso; Papa mature dark-brown/silver-tipped quills FAR RIGHT opposite Mama, NO glasses; child PinPin copper quills on OWN foreground-right stool beside Papa. Do not swap child and Papa or duplicate anyone. Exactly FOUR hedgehogs and no dog. Same green door center with interior hinges right/knob left, two spoke windows, cupboards left, stove/chimney right, round table on same woven rug. Keep same central vegetable serving bowl, three personal bowls, bread plate at front-left and small clay teapot near Papa, the two visible cups by Mama and PinPin; hidden props not invented. Same warm clear midday window daylight and green outdoors, not sunset. No words, labels, clothing, glasses, magic, panels or extra limbs. Keep paws attached and eyelines reciprocal; tabletop may naturally occlude lower limbs. Final warm family storytelling view, camera slightly closer to PinPin at foreground-right so his lively face is focal but ALL FOUR hedgehogs remain visible around same table. PinPin holds his newly received small bread roll in one paw just above his OWN bowl; other paw lightly rests at table edge. He smiles and speaks toward Mama with mouth gently open between bites, not with food visibly stuffing mouth. Papa at far right listens with a small affectionate smile, his forepaws relaxed by his bowl. Mama looks warmly toward PinPin while securely supporting lap baby; PomPom looks toward child's face. The central vegetable bowl, bread plate with one fewer roll, teapot and visible cups retain placement from earlier meal. No page, floating object, magic flash, new book or dream illustration: this is simply a child telling his family his morning story.",
+  "startedAt": "2026-09-21T09:59:27.426Z",
+  "finishedAt": "2026-09-21T10:01:17.693Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-4430c5c3-ccde-4dce-a305-a6c0a592db66.png",
+  "reviewedAt": "2026-09-21T10:02:54.786Z",
+  "review": "Full image creator PASS: all four family members at same seats; child smiles with open speaking mouth and holds received bread in one forepaw over his bowl, other forepaw on table. Mama/baby supported, parents attentive. Papa gaze broadly toward Mama rather than fixed on child. No page/magic inserted. Two visible cups and same food vessels; precise bread-roll count not a continuity measurement. Hidden lower limbs unverified.",
+  "selection": "rejected for narrative eyeline; v2 correction pending",
+  "alt": {
+    "en": "PinPin holds his bread and begins telling his story at the sunny family lunch table.",
+    "ru": "\u041f\u0438\u043d\u041f\u0438\u043d \u0434\u0435\u0440\u0436\u0438\u0442 \u0431\u0443\u043b\u043e\u0447\u043a\u0443 \u0438 \u043d\u0430\u0447\u0438\u043d\u0430\u0435\u0442 \u0441\u0432\u043e\u0439 \u0440\u0430\u0441\u0441\u043a\u0430\u0437 \u0437\u0430 \u0441\u0435\u043c\u0435\u0439\u043d\u044b\u043c \u043e\u0431\u0435\u0434\u043e\u043c \u0432 \u0441\u043e\u043b\u043d\u0435\u0447\u043d\u043e\u0439 \u043a\u0443\u0445\u043d\u0435.",
+    "es": "PinPin sostiene su panecillo y comienza a contar su historia durante el almuerzo familiar en la cocina soleada."
+  },
+  "width": 1536,
+  "height": 1024,
+  "sha256": "836c42cf320f786b9ff7ff3b345c1f04d65f545a60622e5b4db7919a105c8938",
+  "referenceHashes": {
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/meal-seating-v1.png": "a1e2f82a9891b20b97c7fe3e56b0d292463014cda0b794e91247fa93afb7ac3b",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/kitchen-daylight-v1.png": "6992f950510276f683fc98578fd9bdf2c758eefb4c57fa7793d5dcbd203fb1ee"
+  },
+  "independentReview": "Root rejected parental eyelines: both adults look toward each other during the child interaction; anatomy, support and props passed. Narrow gaze correction requested."
+}
+```

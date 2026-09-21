@@ -15,10 +15,13 @@
   copy.ru.revision3='Третье предложение · Старейшина';
   copy.en.revision3='Third proposal · Elder';
   copy.es.revision3='Tercera propuesta · Anciano';
+  copy.ru.revision4='Четвёртое предложение · Старейшина';
+  copy.en.revision4='Fourth proposal · Elder';
+  copy.es.revision4='Cuarta propuesta · Anciano';
   const params = new URLSearchParams(location.search);
-  const state = {revision:['2','3'].includes(params.get('revision'))?params.get('revision'):'1',lang:languages.includes(params.get('lang'))?params.get('lang'):'ru',chapter:chapters.includes(params.get('chapter'))?params.get('chapter'):'elder',view:views.includes(params.get('view'))?params.get('view'):'reading',scene:params.get('scene')||'',data:null,request:0,observer:null};
-  // Revision 3 changes only Elder. Academy keeps its actual revision-2 URL and identity.
-  const normalizeRevision = () => {if(state.chapter==='academy'&&state.revision==='3')state.revision='2';};
+  const state = {revision:['2','3','4'].includes(params.get('revision'))?params.get('revision'):'1',lang:languages.includes(params.get('lang'))?params.get('lang'):'ru',chapter:chapters.includes(params.get('chapter'))?params.get('chapter'):'elder',view:views.includes(params.get('view'))?params.get('view'):'reading',scene:params.get('scene')||'',data:null,request:0,observer:null};
+  // Revisions 3 and 4 change only Elder. Academy keeps its actual revision-2 URL and identity.
+  const normalizeRevision = () => {if(state.chapter==='academy'&&['3','4'].includes(state.revision))state.revision='2';};
   normalizeRevision();
   const $ = id => document.getElementById(id);
   const t = key => copy[state.lang][key] || key;
@@ -41,7 +44,7 @@
     document.querySelectorAll('[data-view]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.view===state.view)));
     [...$('chapter-select').options].forEach(option=>option.textContent=t(option.value));
     $('chapter-select').value=state.chapter;
-    [...$('revision-select').options].forEach(option=>{option.textContent=t(`revision${option.value}`);option.disabled=option.value==='3'&&state.chapter==='academy';});
+    [...$('revision-select').options].forEach(option=>{option.textContent=t(`revision${option.value}`);option.disabled=['3','4'].includes(option.value)&&state.chapter==='academy';});
     $('revision-select').value=state.revision;
     $('previous-scene').setAttribute('aria-label',t('previous'));
     $('next-scene').setAttribute('aria-label',t('next'));

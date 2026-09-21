@@ -1,0 +1,38 @@
+{
+  "id": "scene-015-v1",
+  "prompt": "Use case: illustration-story. Create one landscape full-bleed children's picture book illustration in the same richly textured, gentle woodland style as the references, no text or panels. Scene: morning departure outside the family's moss-roof cottage. Scooby the large brindled brown dog has just risen and stands calmly on all four paws on the path, facing right. Tiny hedgehog PinPin sits in front on his broad back, Papa immediately behind him with one forearm supporting PinPin's lower chest. Match the accepted tandem reference exactly for identities, scale, seated hips, visible legs, and paw contacts. PinPin's own two forepaws rest ahead on the dog. Preserve Scooby's grey-cream muzzle, white chest, folded ears and single curled tail at his rump. In the background Mama stands at the open green doorway, holding infant PomPom securely against her shoulder with one arm and waving with her other paw; exactly two adult forearms. Papa and PinPin look back warmly toward Mama. Exactly four hedgehogs and one dog. Preserve cottage facade, two round windows, left door hinges, right lantern, low stone left of path and water bowl right. Soft misty morning sunshine. Medium wide side-three-quarter camera, complete dog and grounded paws in view; nobody floating, no clothing or equipment.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/riding-tandem-v3.png",
+      "role": "Rider identities, exact scale and supporting contact",
+      "sha256": "f5977afa36440ad9b11e8a7554296a114e0c733f1d771b1be4781e0a4d36c176"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/family-scale-v3.png",
+      "role": "Mama and infant identity; dog/family size",
+      "sha256": "501e990a82416820d66249f3f90d8075ababe23811f5ff8608f710a8a93718bb"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/home-arrival-plate-v1.png",
+      "role": "Fixed cottage, stone and bowl geometry",
+      "sha256": "ba099fa668afbf140e432e461e647dd270a659149c247fb0a4e08a7fae3d44d0"
+    }
+  ],
+  "startedAt": "2026-09-21T10:48:14.694293+00:00",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "finishedAt": "2026-09-21T10:51:33.704152+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c392-eba4-7251-a126-7deced70b370/exec-60963b58-421a-4855-a63f-e2ece895ff24.png",
+  "output": "images/chapter-02-expanded/revision-04/scenes/scene-015-v1.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "020b52038b8abf340e558293b3987c19e5337e828d7b6961b07bb5f4ab7ef814",
+  "review": "Creator full-view pass: Scooby stands on four distinct grounded paws; tandem riders have separate hips and visible near hindlegs, Papa supports child chest, child paws rest on fur. Mama has exactly two arms, one supporting baby and one waving. Papa/child look forward rather than reciprocating wave. Left cottage window partly occluded by riders; right bowl present, low stone mostly obscured. Lantern appears bright in daylight, not certified unlit.",
+  "reviewedAt": "2026-09-21T10:51:33.704152+00:00",
+  "reviewer": "/root/elder_outward_finish",
+  "alt": {
+    "en": "Papa and PinPin sit on standing Scooby while Mama waves from the cottage door, holding baby PomPom.",
+    "ru": "Папа и ПинПин сидят на спине стоящего Скуби, а мама машет им из дверей, держа малыша ПомПома.",
+    "es": "Papá y PinPin están sentados sobre Scooby mientras Mamá los saluda desde la puerta con el bebé PomPom en brazos."
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "id": "scene-012-v3",
+  "prompt": "Targeted illustration correction only. Remove the one small extraneous brown foot projecting left from behind the young hedgehog rump (near x450 y591 in 1536x1024 reference). Young hedgehog must retain exactly the two hindfeet already planted on stone and two forepaws toward dog. Rebuild tiny removed area as uninterrupted dog fur/background, without changing all other characters, poses, stone or environment. Preserve entire composition.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-04/scenes/scene-012-v1.png",
+      "role": "Targeted correction base",
+      "sha256": "47694f97da95c03983fd49272772767eac0c90a019675726faeac7fe672b728c"
+    }
+  ],
+  "startedAt": "2026-09-21T10:51:33.728622+00:00",
+  "tool": "built-in image_gen",
+  "status": "requested",
+  "provenanceNote": "New request; existing v2 request has no recorded output and remains unchanged."
+}

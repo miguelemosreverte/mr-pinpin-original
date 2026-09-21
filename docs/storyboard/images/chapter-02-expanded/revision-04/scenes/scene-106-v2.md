@@ -1,0 +1,43 @@
+# Scene106 — PinPin begins his story at lunch — attentive gaze correction
+
+## Exact prompt
+
+Use case: precise-object-edit. Targeted EDIT of this exact children's story image. Preserve entire composition, camera, all FOUR hedgehog identities, quills, bodies, arms/paws, table, bowls, bread, teapot, window/door, daylight and baby support. Change ONLY adult facial head/eye orientation very slightly for meaningful attention to the CHILD at lower-right. Mama on LEFT is asking/listening to PinPin on foreground RIGHT: direct her pupils and modest head tilt down and right toward PinPin's FACE, not to Papa's upper face. Papa at upper-right turns his head/pupils down and toward his near-right seated child, visibly focusing on child's FACE rather than looking left across toward Mama. Both parents should visibly see/hear PinPin. Preserve child exact gaze/expression/pose, baby exact pose/support, all attached limbs; do not add or move a paw. Child continues holding the ONE received bread roll while smiling with gently open speaking mouth; no magic or floating page. Baby stays securely on Mama lap. No other changes, no props added/removed, no text. Same1536x1024 landscape, same rich dimensional style.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "elder-r4-106",
+  "title": "Scene106 — PinPin begins his story at lunch — attentive gaze correction",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T10:04:51.637Z",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-106-v2.png",
+  "references": [
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-106-v1.png"
+  ],
+  "referenceRoles": [
+    "Exact selected composition edit target; change only parental head/eye attention"
+  ],
+  "prompt": "Use case: precise-object-edit. Targeted EDIT of this exact children's story image. Preserve entire composition, camera, all FOUR hedgehog identities, quills, bodies, arms/paws, table, bowls, bread, teapot, window/door, daylight and baby support. Change ONLY adult facial head/eye orientation very slightly for meaningful attention to the CHILD at lower-right. Mama on LEFT is asking/listening to PinPin on foreground RIGHT: direct her pupils and modest head tilt down and right toward PinPin's FACE, not to Papa's upper face. Papa at upper-right turns his head/pupils down and toward his near-right seated child, visibly focusing on child's FACE rather than looking left across toward Mama. Both parents should visibly see/hear PinPin. Preserve child exact gaze/expression/pose, baby exact pose/support, all attached limbs; do not add or move a paw. Child continues holding the ONE received bread roll while smiling with gently open speaking mouth; no magic or floating page. Baby stays securely on Mama lap. No other changes, no props added/removed, no text. Same1536x1024 landscape, same rich dimensional style.",
+  "startedAt": "2026-09-21T10:05:03.529Z",
+  "finishedAt": "2026-09-21T10:05:52.813Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-dcef3a83-854a-473f-8417-c07f6cdaa3f0.png",
+  "reviewedAt": "2026-09-21T10:10:20.459Z",
+  "review": "Full image inspected after targeted gaze edit: Papa head now turns down/right toward near-right child, Mama head/eyes tilt down/right across table toward child's side instead of upper Papa face. Four identities, seated map, lap baby/support, bowls/cups and bread in child's attached forepaw and speaking expression preserved. Readable family attention improved; exact optical fixation is qualitative. No new anatomy defect seen; hidden lower limbs remain unverified.",
+  "selection": "accepted for proposed revision04",
+  "alt": {
+    "en": "PinPin holds his bread and begins telling his story at the sunny family lunch table.",
+    "ru": "ПинПин держит булочку и начинает свой рассказ за семейным обедом в солнечной кухне.",
+    "es": "PinPin sostiene su panecillo y comienza a contar su historia durante el almuerzo familiar en la cocina soleada."
+  },
+  "width": 1536,
+  "height": 1024,
+  "sha256": "da25df65212546d563919788faae423dbe454b90c228f2ac438892e18cb37875",
+  "referenceHashes": {
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-106-v1.png": "836c42cf320f786b9ff7ff3b345c1f04d65f545a60622e5b4db7919a105c8938"
+  },
+  "independentReview": "Root full-image PASS: parents now visibly attend to child, ending feels heard; bread and baby support preserved."
+}
+```

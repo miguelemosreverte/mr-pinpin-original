@@ -1,0 +1,45 @@
+# Revision04 four-hedgehog daytime meal seating master
+
+## Exact prompt
+
+Use case: illustration-story. Create ONE warm dimensional storybook family MEAL SEATING MASTER, 1536x1024 landscape. Use reference1 exact kitchen architecture/daylight: green rounded door centered behind, hinges right/knob left, exactly TWO spoke windows, cupboards LEFT, stove/chimney/kettle RIGHT, same round dining table on woven rug in LEFT-center of room. Camera is closer at table height, slightly from foreground-right so family faces read; do NOT move table to another room position. Reference2 supplies ONLY FOUR hedgehogs: mature Papa dark brown/silver-tipped quills and cream cheeks/chest, NO glasses; mature Mama warm copper quills; small boy PinPin warm copper quills; much smaller baby PomPom. Adults ~1.8 child height, baby ~0.55 child body size. Omit dog from that sheet completely. Reference3 supplies recognizable modern faces, fur/quill texture and secure lap-baby handling, not night lighting.
+SEATING: Mama LEFT/far side, facing right across table toward Papa. Papa RIGHT/far side facing left toward Mama. PinPin on his OWN stool on near-right/foreground side BESIDE Papa, facing slightly left with visible three-quarter face; child must not be seated between Mama's arms, and Papa must not replace PinPin. PomPom sits securely in Mama's LAP, leaning against her torso, supported by Mama's one forearm. Mama's other paw rests on tabletop. Exactly FOUR distinct hedgehogs, three seated bodies plus lap baby. Papa and PinPin each have their own stool. Natural happy conversational gaze among family, not facing viewer as a lineup. Tabletop has one central simple serving bowl, one bread plate, three individual bowls and three small cups, a small clay teapot within Papa's reach. No feeding/pouring/action yet: this is calm readable reference setup. Show plausible attached forearms and paws, don't duplicate paws; legs can be naturally hidden by table. Warm clear late-morning window light and green foliage outside. Preserve room fixtures and rich tactile dimensional style; no night blue, no dramatic sunset, no text/labels/panels, no clothes or glasses, no dog indoors, no additional characters, no extra table or window.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "meal-seating-v1",
+  "title": "Revision04 four-hedgehog daytime meal seating master",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T09:55:13.750Z",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/meal-seating-v1.png",
+  "references": [
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/kitchen-daylight-v1.png",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/family-scale-v1.png",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/standalone/home-sweet-home/bedtime-05-v1.png"
+  ],
+  "referenceRoles": [
+    "Fixed room geometry and daylight",
+    "ONLY four hedgehog identities/relative sizes; OMIT dog entirely, dog scale is rejected",
+    "Modern Mama/child/baby handling and rich story style; NOT evening lighting"
+  ],
+  "prompt": "Use case: illustration-story. Create ONE warm dimensional storybook family MEAL SEATING MASTER, 1536x1024 landscape. Use reference1 exact kitchen architecture/daylight: green rounded door centered behind, hinges right/knob left, exactly TWO spoke windows, cupboards LEFT, stove/chimney/kettle RIGHT, same round dining table on woven rug in LEFT-center of room. Camera is closer at table height, slightly from foreground-right so family faces read; do NOT move table to another room position. Reference2 supplies ONLY FOUR hedgehogs: mature Papa dark brown/silver-tipped quills and cream cheeks/chest, NO glasses; mature Mama warm copper quills; small boy PinPin warm copper quills; much smaller baby PomPom. Adults ~1.8 child height, baby ~0.55 child body size. Omit dog from that sheet completely. Reference3 supplies recognizable modern faces, fur/quill texture and secure lap-baby handling, not night lighting.\nSEATING: Mama LEFT/far side, facing right across table toward Papa. Papa RIGHT/far side facing left toward Mama. PinPin on his OWN stool on near-right/foreground side BESIDE Papa, facing slightly left with visible three-quarter face; child must not be seated between Mama's arms, and Papa must not replace PinPin. PomPom sits securely in Mama's LAP, leaning against her torso, supported by Mama's one forearm. Mama's other paw rests on tabletop. Exactly FOUR distinct hedgehogs, three seated bodies plus lap baby. Papa and PinPin each have their own stool. Natural happy conversational gaze among family, not facing viewer as a lineup. Tabletop has one central simple serving bowl, one bread plate, three individual bowls and three small cups, a small clay teapot within Papa's reach. No feeding/pouring/action yet: this is calm readable reference setup. Show plausible attached forearms and paws, don't duplicate paws; legs can be naturally hidden by table. Warm clear late-morning window light and green foliage outside. Preserve room fixtures and rich tactile dimensional style; no night blue, no dramatic sunset, no text/labels/panels, no clothes or glasses, no dog indoors, no additional characters, no extra table or window.",
+  "startedAt": "2026-09-21T09:55:27.587Z",
+  "finishedAt": "2026-09-21T09:56:14.994Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-baf8a42e-8261-40c4-b5f8-259617299527.png",
+  "reviewedAt": "2026-09-21T09:56:47.455Z",
+  "review": "Full image inspected: exactly four recognizable hedgehogs, Papa dark/silver quills opposite copper Mama; PinPin on own foreground-right stool beside Papa; PomPom in Mama lap with one supporting forearm, Mama other paw on tabletop. Clear daylight, correct door hinge side and two spoke windows, cupboards left/stove right. No dog or glasses. Central serving bowl, three individual bowls, bread and teapot present; only two cups plainly visible, not the requested three. Papa stool/legs mostly occluded. Camera is closer; exact table footprint/hidden limbs not certified.",
+  "selection": "accepted internal reference; proposed chapter preview",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "a1e2f82a9891b20b97c7fe3e56b0d292463014cda0b794e91247fa93afb7ac3b",
+  "referenceHashes": {
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/kitchen-daylight-v1.png": "6992f950510276f683fc98578fd9bdf2c758eefb4c57fa7793d5dcbd203fb1ee",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/family-scale-v1.png": "546d8192f083d9bc6a51441e52bd14a6e03e3fa1fe604259c8311aeb297b150b",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/standalone/home-sweet-home/bedtime-05-v1.png": "4612de5e87413ff0d9bef15786e66bf501ca12c387e3956cc690448392fdc972"
+  },
+  "independentReview": "Root full-image PASS: exactly four family members, Mama supporting lap baby and free paw on table; Papa opposite at far-right, child near-right own stool; engaged gazes/daylight. Two cups visibly shown; no invisible cup claim. Breakfast can separately establish porridge and a Papa cup."
+}
+```

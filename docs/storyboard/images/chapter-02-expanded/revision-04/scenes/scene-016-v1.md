@@ -1,0 +1,18 @@
+# scene-016-v1
+
+Create ONE full-bleed landscape children's storybook illustration, richly detailed soft painterly 3D storybook woodland realism, matching references exactly. No text, panels, labels or border. Natural unclothed hedgehogs; Papa mature dark silver-tipped quills, cream face, no spectacles; PinPin small russet child no spectacles. Scooby canonical brindled brown, white bib, amber eyes, folded ears, one curled tail from RUMP, exactly four dog limbs. Keep true relative size and contact from ride authority; dog broad and much larger than hedgehogs. Forest journey, slow walking Scooby facing RIGHT in full side-three-quarter profile along broad level leafy trail. PinPin front and Papa behind in EXACT tandem reference scale/contact: child own two forepaws supported on dogback, Papa forearm visibly around child's cream lower chest, two independent seated hips, plausible straddling near hindlegs. Dog gentle step, not running/jumping. Papa and child relaxed looking forward; morning sun through thinning mist, fern banks, no house or other actors. Four plausible dog paws, single curled rump tail. Wide enough full dog and riders in frame, beautiful readable directional movement.
+
+References:
+[
+  {
+    "path": "images/chapter-02-expanded/revision-04/preproduction/riding-tandem-v3.png",
+    "role": "Binding body fit and identity",
+    "sha256": "f5977afa36440ad9b11e8a7554296a114e0c733f1d771b1be4781e0a4d36c176"
+  }
+]
+
+Generated: 2026-09-21T10:32:52.348864+00:00 to 2026-09-21T10:35:37.427984+00:00
+
+SHA256: 6b7eee33b9d26fd48b31e32bf42f6d2c4b236e36178bfb77cae84c2e45631469
+
+Review: Creator full-image pass: slow walking Scooby with four plausible legs, one rump tail; separate tandem hips/near legs, child two paws resting on back and Papa forearm around cream lower chest. No clothes/spectacles, warm thinning mist.

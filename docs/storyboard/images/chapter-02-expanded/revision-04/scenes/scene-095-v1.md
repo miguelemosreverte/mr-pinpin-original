@@ -1,0 +1,49 @@
+# Scene095 — Papa and Elder exchange thanks
+
+## Exact prompt
+
+Use case: illustration-story. Standalone1536x1024 warm dimensional woodland children's story frame. Use reference1 as EXACT Elder exterior/rest-location continuity: natural root doorway on LEFT, crooked staff leaning to its LEFT by moss boulder, big fern beside doorway; Papa/Scooby rest FAR RIGHT beyond fern against an outlying broad root, forest behind them, NO mountain on right. Bright daytime, no sunset/disc, no formal door. Reference2 sets actual Papa/PinPin/Scooby relative scale and identity: adult Papa dark brown/silver-tipped quills creamface NOglasses, child PinPin much smaller copperquills, Scooby substantially larger dog with brindled brown coat/whitebib/shortfoldedears/greycream muzzle/singlecurledtail. Use reference3 ONLY for OLD ELDER silver-quill face and round GOLD glasses, distinct from Papa. Child bare face NOglasses. Exactly FOUR actors maximum: Papa, child PinPin, Elder, Scooby. No Mama/baby/other animals. All mammals have only two forelimbs/two hindlimbs, natural short hedgehog paws; no extra limbs. Preserve texture/recognizable faces, clear individual silhouettes and physical grounding. Camera slightly closer to front path by doorway, clear reciprocal farewell. Papa stands LEFT of small PinPin, Elder stands RIGHT of child at threshold-side: Papa and Elder turn their faces and eyes directly toward EACH OTHER at adult height, warm open expressions. Little PinPin between but slightly foreground/lower looks up at Elder, delighted. Papa forepaws relaxed/one open conversational gesture; Elder one forepaw open gently, other resting naturally; no grip of staff, staff still parked to entrance-left behind. Scooby now calmly waits on ground beside the departure flat stone at far-left path edge, body/size consistent with family-scale-v3, not on stone; head turns toward family. No mounted riders yet. Preserve permanent entrance/boulder/fern placement, don't mirror clearing; no new door/tree.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "elder-r4-095",
+  "title": "Scene095 — Papa and Elder exchange thanks",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T10:16:41.049Z",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-095-v1.png",
+  "references": [
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-023-v2.png",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/family-scale-v3.png",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png"
+  ],
+  "referenceRoles": [
+    "Selected far-right rest/portal layout; awaiting root gate before generation",
+    "Accepted family/dog scale; only Papa child dog",
+    "Elder identity and gold glasses only, no environment authority"
+  ],
+  "prompt": "Use case: illustration-story. Standalone1536x1024 warm dimensional woodland children's story frame. Use reference1 as EXACT Elder exterior/rest-location continuity: natural root doorway on LEFT, crooked staff leaning to its LEFT by moss boulder, big fern beside doorway; Papa/Scooby rest FAR RIGHT beyond fern against an outlying broad root, forest behind them, NO mountain on right. Bright daytime, no sunset/disc, no formal door. Reference2 sets actual Papa/PinPin/Scooby relative scale and identity: adult Papa dark brown/silver-tipped quills creamface NOglasses, child PinPin much smaller copperquills, Scooby substantially larger dog with brindled brown coat/whitebib/shortfoldedears/greycream muzzle/singlecurledtail. Use reference3 ONLY for OLD ELDER silver-quill face and round GOLD glasses, distinct from Papa. Child bare face NOglasses. Exactly FOUR actors maximum: Papa, child PinPin, Elder, Scooby. No Mama/baby/other animals. All mammals have only two forelimbs/two hindlimbs, natural short hedgehog paws; no extra limbs. Preserve texture/recognizable faces, clear individual silhouettes and physical grounding. Camera slightly closer to front path by doorway, clear reciprocal farewell. Papa stands LEFT of small PinPin, Elder stands RIGHT of child at threshold-side: Papa and Elder turn their faces and eyes directly toward EACH OTHER at adult height, warm open expressions. Little PinPin between but slightly foreground/lower looks up at Elder, delighted. Papa forepaws relaxed/one open conversational gesture; Elder one forepaw open gently, other resting naturally; no grip of staff, staff still parked to entrance-left behind. Scooby now calmly waits on ground beside the departure flat stone at far-left path edge, body/size consistent with family-scale-v3, not on stone; head turns toward family. No mounted riders yet. Preserve permanent entrance/boulder/fern placement, don't mirror clearing; no new door/tree.",
+  "startedAt": "2026-09-21T10:26:14.361Z",
+  "finishedAt": "2026-09-21T10:26:52.145Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-b3b7cb34-0716-4f8e-bc14-38eb81c8fdc0.png",
+  "reviewedAt": "2026-09-21T10:31:03.385Z",
+  "review": "Full image creator PASS: Papa left and gold-glasses Elder right visibly look at one another; small child between looks up toward Elder. Single Elder conversational forepaw and other forepaw at belly, Papa relaxed separate paws; cast faces distinct and feet grounded. Scooby lies waiting left facing group, staff remains left portal, fern/tree direction unchanged. Departure stone largely outside/obscured at left edge and not claimed visible. Dog in lying pose, qualitative size only. No extra limbs observed; distant dog hindlimbs naturally obscured.",
+  "selection": "accepted for proposed revision04",
+  "alt": {
+    "en": "Papa thanks the Elder while PinPin looks up between them and Scooby waits beside the path.",
+    "ru": "Папа благодарит Старейшину; ПинПин стоит между ними и смотрит вверх, а Скуби ждёт у тропинки.",
+    "es": "Papá le da las gracias al Anciano; PinPin los mira desde abajo entre los dos y Scooby espera junto al sendero."
+  },
+  "width": 1536,
+  "height": 1024,
+  "sha256": "ecac07eeddb81dcf429668765a9b83273a9f29058a576bb0ae00986fce803517",
+  "referenceHashes": {
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/scenes/scene-023-v2.png": "ffe72719bb329a3259bb425a2a5b4ffcb78a25360e407b9a0dfb2dbb2312f655",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-04/preproduction/family-scale-v3.png": "501e990a82416820d66249f3f90d8075ababe23811f5ff8608f710a8a93718bb",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png": "9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7"
+  },
+  "independentReview": "Root full-image PASS: reciprocal Papa/Elder farewell, child between, dog waiting and same portal/staff."
+}
+```

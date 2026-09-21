@@ -2,7 +2,7 @@
 
 This workflow carries a chapter from source to a complete reviewable proposal without relying on chat memory. The chapter bible, plans, images, sidecars and report are the handoff. They form an **illustrated continuity pack**, not a calibrated 3D model or a promise of exact geometry. Coordinates, dimensions and lens notes are explicit artistic constraints that must be checked against each output.
 
-Start from [chapter-template/](chapter-template/) and the project's [camera-first working method](WORKFLOW.md). For the current Elder revision, [revision-03/CONTRACT.md](chapters-02-04/revision-03/CONTRACT.md) and its user brief are authoritative. Academy remains revision02. Earlier contracts describe preserved proposals.
+Start from [chapter-template/](chapter-template/) and the project's [camera-first working method](WORKFLOW.md). For the current Elder revision, [revision-04/CONTRACT.md](chapters-02-04/revision-04/CONTRACT.md) and its user brief are authoritative. Academy remains revision02. Earlier contracts describe preserved proposals.
 
 ## Durable files
 

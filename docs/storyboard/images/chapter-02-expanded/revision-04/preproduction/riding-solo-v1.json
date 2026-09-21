@@ -1,0 +1,32 @@
+{
+  "id": "riding-solo-v1",
+  "prompt": "Use case: illustration-story. PREPRODUCTION physical contact study, one landscape1536x1024 image, warm ivory ground and soft natural light, rich tactile miniature realism. Scooby SAMEdog fromrefs: brindle shortcoat, whitebib, greycreammuzzle, amber almond eyes, shortfoldedears, singlecurledtail. Papa SAME mature darkbrown/silver-tippedquills creamface darkerbrows NOglasses/clothes. Relative scale from image1: dogshoulder about1.7Papa full uprightheight, broad dogback easily accommodates tinyhedgehogs, normalcanine proportions. Fourdoglegs, eachmammal twoforelimbs/twohindlimbs, shortnaturalhedgehoglimbs, noextra toes-as-arms. No saddle,pad,reins,collar,harness,text,labels or extraanimals. ExactlyTWOactors: Scooby andPapa only. Dog stands STILL comfortably onFOUR groundedpaws, full side view facingRIGHT with headslightlyturned towardcamera soface/bibvisible. Papa sits ASTRIDE middleofdog'sback justbehindwithers, fur-coveredbottom touchesdog'sbroadback, his two short HINDLEGS lie oneeachside ofdog'supperflanks withnearhindfootvisibleandfaroneoccludednaturally. BothPapaFOREPAWS restonDOGBACK immediatelyaheadwithinshortnaturalreach (nottrying toreachdoghead). Papa leansslightlyforward lookingwhereScoobyfaces. Viewcamera slightlyabove dog'sback tosee Papa'sseatedhip andtwo forepawcontactpoints whilealsoseeingnearhindleg separately. Dogtorso level, noarchedsaggingback, Papa clearlysmall enoughforcomfortablefit; no floatingseats/paws. Keep full dogtail andallpaws inframe. This models Papaalonearrival, nottandem.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/family-scale-v3.png",
+      "role": "accepted common family/dog scale, use only Papa/PinPin/Scooby",
+      "sha256": "501e990a82416820d66249f3f90d8075ababe23811f5ff8608f710a8a93718bb"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/papa-cast-v1.png",
+      "role": "mature darksilver Papa face/limb identity",
+      "sha256": "8e8d040b850274a743be992740967facf2dbad3e6fbd99ec6d733e8627ad935d"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-04/preproduction/scooby-proposal-v2.png",
+      "role": "exact approved dog face/body markings",
+      "sha256": "98a1533e14de8fb0e1cb34c16ce5c8421ec03ea0900419cb9b7d09f98a98026a"
+    }
+  ],
+  "startedAt": "2026-09-21T10:05:17.202819+00:00",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "finishedAt": "2026-09-21T10:09:33.211025+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0ce-32e6-7c83-8515-c2ff0973d7d3/exec-e70e4218-a6a6-409b-aef3-5b6c542012d7.png",
+  "output": "images/chapter-02-expanded/revision-04/preproduction/riding-solo-v1.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "4286389389ebb0e2ff9f1e5d9c4fcb2e709ec186e3fda45243cc2ba2a1a4aa96",
+  "review": "Full output inspected. Dog four grounded paws, single tail, correct bib/brindle/face. Papa seated on broad back, two forepaws contact fur ahead, near hindleg straddles side and far leg occluded; seat contact plausible with no floating body. Papa recognizable mature/darkquills, no glasses. Accept physical solo fit pending root.",
+  "reviewedAt": "2026-09-21T10:09:33.306690+00:00"
+}

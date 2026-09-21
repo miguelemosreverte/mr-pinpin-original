@@ -22,14 +22,14 @@ function chapterFolder(id, revision=1) {
   return path.join(base,'production/chapters-02-04',...(revision===1?[]:[`revision-0${revision}`]),id);
 }
 function chaptersForRevision(revision=1) {
-  if(![1,2,3].includes(revision))throw Error('Unknown revision');
-  return revision===3?['elder']:Object.keys(chapters);
+  if(![1,2,3,4].includes(revision))throw Error('Unknown revision');
+  return revision>=3?['elder']:Object.keys(chapters);
 }
 function parseArgs(args) {
   const flags=new Set();let revision=1,seenRevision=false;
   for(let i=0;i<args.length;i++){
     if(args[i]==='--revision'){
-      if(seenRevision||!['1','2','3'].includes(args[i+1]))throw Error('--revision requires 1, 2 or 3, once');
+      if(seenRevision||!['1','2','3','4'].includes(args[i+1]))throw Error('--revision requires 1, 2, 3 or 4, once');
       revision=Number(args[++i]);seenRevision=true;
     }else if(['--allow-pending','--self-test','--json'].includes(args[i]))flags.add(args[i]);
     else throw Error(`Unknown argument: ${args[i]}`);
@@ -192,11 +192,14 @@ function selfTest(){
   assert.equal(chapterFolder('elder'),path.join(base,'production/chapters-02-04/elder'));
   assert.equal(chapterFolder('academy',2),path.join(base,'production/chapters-02-04/revision-02/academy'));
   assert.equal(chapterFolder('elder',3),path.join(base,'production/chapters-02-04/revision-03/elder'));
+  assert.equal(chapterFolder('elder',4),path.join(base,'production/chapters-02-04/revision-04/elder'));
   assert.deepEqual(chaptersForRevision(),['elder','academy']);assert.deepEqual(chaptersForRevision(2),['elder','academy']);assert.deepEqual(chaptersForRevision(3),['elder']);
-  assert.throws(()=>chapterFolder('../elder',2));assert.throws(()=>chapterFolder('academy',3));assert.throws(()=>chaptersForRevision(4));
+  assert.deepEqual(chaptersForRevision(4),['elder']);
+  assert.throws(()=>chapterFolder('../elder',2));assert.throws(()=>chapterFolder('academy',3));assert.throws(()=>chapterFolder('academy',4));assert.throws(()=>chaptersForRevision(5));
   assert.equal(parseArgs([]).revision,1);assert.equal(parseArgs(['--revision','2','--json']).revision,2);
   assert.equal(parseArgs(['--revision','3','--allow-pending']).revision,3);
-  for(const args of [['--revision'],['--revision','../2'],['--revision','4'],['--revision','3','--revision','2'],['--revision','2','--revision','1'],['2']])assert.throws(()=>parseArgs(args));
+  assert.equal(parseArgs(['--revision','4','--allow-pending']).revision,4);
+  for(const args of [['--revision'],['--revision','../2'],['--revision','5'],['--revision','4','--revision','3'],['--revision','3','--revision','2'],['--revision','2','--revision','1'],['2']])assert.throws(()=>parseArgs(args));
   const originalDesign={references:[],referenceMode:'original-design',referenceRationale:'First authored mural design; no image references supplied.'};
   assert.equal(referenceListValid(originalDesign,true),true,'honest original-design preproduction allowed');
   assert.equal(referenceListValid(originalDesign,false),false,'same empty-reference record rejected for scene');
@@ -209,7 +212,7 @@ function selfTest(){
   console.log('Self-tests passed: revision routing/arguments, safe image and optional planning-diagram paths, duplicate IDs, sequence coverage, three languages, intentional silence, earlier-text comparison/context, original-design preproduction boundary, source evidence, image headers, pending review, template JSON and browser-script syntax.');
 }
 function main(){
-  let options;try{options=parseArgs(process.argv.slice(2));}catch(error){console.error(`${error.message}\nUsage: node scripts/verify-chapter-workshop.cjs [--revision 1|2|3] [--allow-pending] [--self-test] [--json]`);process.exitCode=2;return;}
+  let options;try{options=parseArgs(process.argv.slice(2));}catch(error){console.error(`${error.message}\nUsage: node scripts/verify-chapter-workshop.cjs [--revision 1|2|3|4] [--allow-pending] [--self-test] [--json]`);process.exitCode=2;return;}
   const {revision,flags}=options;
   if(flags.has('--self-test')){selfTest();return;}
   for(const id of chaptersForRevision(revision))auditChapter(id,revision);
