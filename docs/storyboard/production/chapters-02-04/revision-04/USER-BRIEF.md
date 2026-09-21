@@ -50,3 +50,7 @@ Keep revision03, all earlier proposals, their manifests, images and review evide
 ## Scooby appearance feedback
 
 User confirmed the first dog proposal's overall breed/build as perfect. They will provide a photograph to refine the face. Preserve the small brown short-haired body, hanging ears and curled tail from scooby-proposal-v1; face identity remains awaiting that photograph.
+
+## Scooby final appearance approval
+
+User supplied both face and full-body references from Downloads, then approved scooby-proposal-v2 with “perfect!” on2026-09-21. Use v2 as the Scooby identity master: amber almond eyes, brindled warm brown/dark coat, grey-cream muzzle, distinct white chest patch, shorter folded ears, curled tail. Both source photos stay outside the public repository. The earlier pending-face-reference condition is now resolved.

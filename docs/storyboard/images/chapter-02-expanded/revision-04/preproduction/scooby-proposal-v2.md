@@ -42,3 +42,7 @@ Use case: identity-preserve / illustration-story. Edit reference1 into ONE revis
   }
 }
 ```
+
+## User approval
+
+Approved by user: “perfect!” The revised face, body markings and character design are now the Scooby appearance reference for chapter production.
