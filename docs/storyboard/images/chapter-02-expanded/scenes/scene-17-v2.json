@@ -1,0 +1,22 @@
+{
+  "id": "scene-17-v2",
+  "title": "Careful lift corrected four-limb anatomy",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/scenes/scene-17-v2.png",
+  "references": [
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/scenes/scene-17-v1.png"
+  ],
+  "prompt": "Use case: precise-object-edit. Image1 EDIT TARGET, landscape1536x1024. Correct ONLY young PinPin's lower body anatomy on RIGHT while preserving face, BOTH forepaws correctly holding the raised stick, stick position, plant, elder, environment and lighting. Current image mistakenly contains THREE ground paw shapes below his belly/quills in addition to the two paws on the stick. PinPin must have EXACTLY FOUR LIMBS TOTAL: two front arms/paws on stick and exactly TWO rear legs/feet supporting his seated body. Rebuild his lower body as a clearly SEATED natural rounded hedgehog, resting on rear haunches; show one left hindfoot partly behind the plant and one right hindfoot forward below the right belly. Remove the tiny EXTRA rear paw currently peeking below the far-right quill edge behind the large ground foot. The one right hindfoot should attach through a bent rear haunch, not look like an extra straight foreleg. No other ground forepaws remain. No extra arms, fingers or feet. Keep both separate forearm attachments to chest and both grips on the SAME raised stick. Do not change relative scale, eyes, number of characters, leaves or branch airgap; no new text or effects.",
+  "status": "rejected",
+  "tool": "built-in image_gen.imagegen",
+  "startedAt": "2026-09-20T22:28:49.554Z",
+  "finishedAt": "2026-09-20T22:29:53.159Z",
+  "seconds": 63.605,
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-c7652438-541e-437b-a798-4f2f1e8cd258.png",
+  "review": "Rejected: targeted correction did not clearly remove the tiny third ground paw; the five-paw concern remains. Do not certify corrected anatomy. A new tight action close-up with only the actual two gripping forepaws in frame is required.",
+  "width": 1536,
+  "height": 1024,
+  "bytes": 2810017,
+  "sha256": "dd15bfbed9d584c1a9cd41ff3ebc5c8bf7dc05ee3ffab52dc5ab65f271a9ea4d",
+  "reviewedAt": "2026-09-20T22:31:59.237Z",
+  "selected": false
+}

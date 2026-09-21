@@ -1,0 +1,28 @@
+# Elder expanded scene 04
+
+Status: rejected
+
+- Tool: built-in image_gen.imagegen
+- Started: 2026-09-20T22:09:03.078Z
+- Finished: 2026-09-20T22:10:44.496Z
+- Tool-call wall time: 101.418 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/scenes/scene-04-v1.png
+- Dimensions: 1536×1024
+- SHA-256: ff209d5feb49dacbf64456d809f36af7e480b278ae9e9eb83b3146f3543fcbca
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-ad556e95-774a-4663-a989-0e0499ecfbe5.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/chapter-02-direct/scene-03.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/environment-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. One finished standalone landscape1536x1024 story illustration, no text, border, panels or watermark. Exact warm dimensional woodland style, fine natural hedgehog fur/quills, tactile bark/moss, gentle golden daylight. Preserve reference identities and place; no clothes, human torso, exaggerated eyes, extra animals or invented props. Clear coherent paw attachments; two forelimbs and two hindlimbs per hedgehog, partly hidden where natural. Reference1 wider approach geography, reference2 cast identity/scale ONLY (ignore its staff lying down), reference3 exact clearing/staff placement. Low medium view from path just behind and to the left of young chestnut PinPin. He pauses at the edge of the clearing, one forepaw lifted for a tentative small step, looking toward the Elder. PinPin large enough to read his side face and natural hesitant curiosity, not looking at camera. Elder is smaller in the background at LEFT near mossy rock, facing away to left, not yet greeting or turning around. Root doorway centerback, staff leaning left, fern right. Exactly two hedgehogs, no magic. The plantpatch is incidental far right; do not make it the focus. Leave enough path between them to show approach.
+
+## Review
+
+Rejected: foreground PinPin has a thin apparent spectacle arm at the cheek and is too upright. His gaze is toward doorway rather than elder. Background place and Elder position good. Correct foreground identity, natural quadruped pause and gaze in v2.
+
+Reviewed: 2026-09-20T22:11:23.863Z

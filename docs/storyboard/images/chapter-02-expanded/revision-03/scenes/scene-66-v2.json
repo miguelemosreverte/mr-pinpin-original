@@ -1,0 +1,22 @@
+{
+  "id": "scene-66-v2",
+  "prompt": "Use case: precise-object-edit. One tiny identity correction: REMOVE the gold spectacle frame from ONLY the SMALL CHILD HEDGEHOG farther ahead at center-right. PinPin never wears glasses. Restore his natural tiny dark eye/cream cheek and whiskers in that small profile without glasses. The LARGE ELDER foreground-left MUST KEEP his round gold glasses exactly unchanged. Preserve every body, quill, paw, direction, mural, tunnel, root, floor and light. No other changes. Single landscape1536x1024.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-03/scenes/scene-66-v1.png",
+      "role": "edit target: remove only child spectacles, preserve Elder glasses",
+      "sha256": "0ec00a71b41d3f1cc48e512ed9d9e26c5f62a886e66231c82d5bc4d80d26fd05"
+    }
+  ],
+  "startedAt": "2026-09-21T06:56:51.666943+00:00",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "finishedAt": "2026-09-21T06:59:35.056120+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0ce-32e6-7c83-8515-c2ff0973d7d3/exec-72ccd051-ca24-4177-8b38-c5fa246fe3e1.png",
+  "output": "images/chapter-02-expanded/revision-03/scenes/scene-66-v2.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "a9707921258c0965149783976c2af7911789481939756ae49a166a2825cd7e8a",
+  "review": "Full output inspected. Child spectacle correction is inconclusive: fine gold curved loop still appears just in front of small profile, possibly retained frame rather than whisker. Otherwise same correct rear-direction uphill entry and natural cave mouth; Elder glasses retained. Requires close independent check or another targeted fix before selection.",
+  "reviewedAt": "2026-09-21T06:59:35.134357+00:00"
+}

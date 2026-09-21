@@ -1,0 +1,35 @@
+# Elder revision02 scene-15-v1
+
+Status: proposed
+
+- Tool: built-in image_gen
+- Started: 2026-09-21T02:00:35.067Z
+- Finished: 2026-09-21T02:02:01.761Z
+- Tool-call wall time: 86.694 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-15-v1.png
+- Dimensions: 1536×1024
+- SHA-256: 92b249547914996ec0c9dc16e0cac71d03148085f0631e97e80f39de9a3c7fc1
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-bef430cb-6fed-4f49-926c-7b1c44ae026b.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/home-v2.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. One final standalone landscape1536x1024 story illustration, rich warm dimensional fur/wood/stone style. Ref1 canonical home geography/props, ref2 character identities. Exactly two natural hedgehogs, modestly larger gray-silver Elder with round gold spectacles and smaller chestnut PinPin, no clothes, four limbs total each, no staff indoors. No readable words, labels, montage, watermark. THINGS WORTH KEEPING. Different camera medium close at WEST bookshelf/artifact shelf, looking northwest. On low shelf above books show same pale spiral shell, smooth gray pebble, little dark seed box now OPEN revealing one seed; no new magical object. Elder lowerLEFT and child lowerRIGHT both on floor side by side, facing shelf and looking UP at the actual shell/seed objects. Three-quarter backs/profile cheeks, not talking eye contact and not looking at viewer. Elder says something while both attend to objects. Shelf at believable reachable adult height, no giant furniture, root trunk and warm plaster/book textures consistent. Tight prop-focused composition with faces recognizable, no unrelated door/background additions.
+
+## Review
+
+Selected after full inspection: both faces tilted toward artifact shelf with shell, smooth stone and open seed box. Meaningful shared observation, no claim of mutual dialogue gaze. Elder one forepaw lifted in small gesture; other visible planted, no obvious extra limb. Shelf/books consistent, hidden feet unverified.
+
+Reviewed: 2026-09-21T02:05:06.027Z
+
+
+## Reference hash verification
+
+Recorded 2026-09-21T03:34:02.591150+00:00 during final provenance verification (not a claimed pre-call hash record).
+
+- 53b5d2c81242f8d0f505a7f24cf04b9e7f8adbf6b1340cb999e865e436e44a83 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/home-v2.png
+- 9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png

@@ -1,0 +1,30 @@
+{
+  "id": "academy-r02-06-v2",
+  "status": "proposed",
+  "tool": "image_gen.imagegen",
+  "title": "Five pupils greeting with canonical workbench",
+  "prompt": "Targeted background-only edit. Output1536x1024 landscape. Reference1 scene06-v1 is the EDIT TARGET: preserve all FIVE foreground children exactly in existing poses, facial expressions, scale, positions and identities: PinPin left, Lulu waving, Tutu red squirrel, tiny Mila mouse with one thin tail, Bruno badger right. Preserve their visible anatomy, paws and all foreground flowers. Only correct background furniture at pavilion: the target invented a PICNIC TABLE with attached bench seats. Replace that furniture with the canonical LOW FOUR-LEGGED RECTANGULAR WORKBENCH from reference2 academy-workbench-v2: single broad plank worktop, four simple legs, NO attached sitting benches or side seating; shallow rectangular loose tray beneath and low broad mouse standing step at near/front-left where visible. Keep five small cups and bowl on top in tray if visible. Use correct distance/perspective behind pupils, NOT a giant foreground workbench. Pavilion stays screen-left, stream left, pale snag back-center, oak right; preserve all landscape geography and light. Leave ordinary existing seating INSIDE pavilion only if it belongs to reference2; remove the new benches attached to the workbench. Do not change pupils or camera, add/remove animals, or add text.",
+  "references": [
+    {
+      "path": "images/chapter-04-academy/revision-02/scenes/scene-06-v1.png",
+      "role": "Edit target; foreground pupils invariant",
+      "sha256": "5ba600f3a89ba9d4d4efe502e7730b3ea7ae8e68a4b21e7983130601a56105d2"
+    },
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/academy-workbench-v2.png",
+      "role": "Canonical four-legged workbench, separate low step and undertray reference",
+      "sha256": "c68a73a5107d06b7b0f0084208f5d49cc5e40e13fe1f566ece8cbf26bc44ee86"
+    }
+  ],
+  "plannedAt": "2026-09-21T02:28:55.145Z",
+  "output": "images/chapter-04-academy/revision-02/scenes/scene-06-v2.png",
+  "startedAt": "2026-09-21T02:28:55.237Z",
+  "finishedAt": "2026-09-21T02:29:33.991Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-1141344a-0603-45bf-8029-7851b0152a8c.png",
+  "reviewedAt": "2026-09-21T02:31:22.480Z",
+  "review": "Full generated output viewed: foreground five pupils/poses/faces remain recognizable and unchanged in arrangement; background picnic seating removed, plain four-legged workbench with five cups/bowl and separate low left step/undertray restored. No clear added limb or animal. Table is now shown farther back, tucked within/at pavilion front rather than broad foreground master; root/lead should check location impression against fixed site before selecting. Creator review, independent root gate pending.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "1337a013e35550cd60d67237557426147d8dda3df76b0d6d8e2fd7c8120ddd6e",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}

@@ -1,0 +1,30 @@
+{
+  "id": "elder-r2-32",
+  "status": "proposed",
+  "tool": "image_gen.imagegen",
+  "prompt": "Create one standalone 1536x1024 landscape story illustration, a child's point-of-view insert looking at an existing sacred mural inside the Elder's underground stone cave. This is one continuous image, NOT a multi-panel sheet. Preserve the supplied approved mural designs, warm aged ochre lime-plaster surface, mineral painted pigment, carved/rough stone surround and dimensional amber cave light. The mural itself remains FLAT ancient painted artwork, not living people or animals. No living foreground actors at all: no PinPin, Elder, hedgehogs in the room, paws, backs, heads or silhouettes. No written words, labels, border captions or typography. Do not redesign the symbols or mirror the artwork. Warm detailed dimensional children's woodland-book rendering around the flat mural. Reference1 murals-v1 TOP-RIGHT is exact design; reference2 cave-v1 NORTH/rear wall setting. Child-height nearly frontal view of full single Shield Keeper panel in same cave with slim stone border and low stone bench edge if visible. Strong bearded adult HUMAN MAN in bronze armor, red cloak, sheathed sword, large OVAL bronze-brown shield with gold tree motif held on VIEWER RIGHT, dark storm on viewer right. Warm little homes and mother/children on VIEWER LEFT behind his protected side. Preserve body pose and relative placement from accepted mural; do not mirror. No combat or gore, no extra weapons or live actors.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-02/preproduction/murals-v1.png",
+      "role": "Exact accepted flat mural design reference",
+      "sha256": "ccfbfff59929e0635a83a56fb626a5da3b53bef383d526c82924d4702326039d"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-02/preproduction/cave-v1.png",
+      "role": "Accepted cave material, light and wall placement reference",
+      "sha256": "c46ef299e7a595d8bf8e59bdf9f2dfd8930a12bc223cdfa62b3e52b8b2345efc"
+    }
+  ],
+  "plannedAt": "2026-09-21T02:08:45.681Z",
+  "output": "images/chapter-02-expanded/revision-02/scenes/scene-32-v1.png",
+  "title": "Full Shield Keeper mural",
+  "startedAt": "2026-09-21T02:09:01.817Z",
+  "finishedAt": "2026-09-21T02:11:24.942Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-73e1a2db-f004-4b76-8e05-9b037f855f46.png",
+  "review": "Viewed full generated output: full Shield Keeper, strong bearded male, bronze armor/red cloak/sheathed sword, original oval tree shield right, storm right and families/homes left. No live foreground actors. North bench remains below correct mural. Creator pass; root independent review pending.",
+  "reviewedAt": "2026-09-21T02:17:13.068Z",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "54e3c4f3359867a8828c669366ec8d139d8798299aa908e521284b4035a8a435",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}

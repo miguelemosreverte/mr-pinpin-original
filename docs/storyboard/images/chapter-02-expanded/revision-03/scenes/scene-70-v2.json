@@ -1,0 +1,24 @@
+{
+  "id": "scene-70-v2",
+  "prompt": "Use case: precise-object-edit. Make ONE background-only correction to supplied illustration. The far RIGHT edge currently shows bright outdoor greenery beyond the root. Replace that narrow far-right exterior sliver with the same enclosed warm packed-earth/root wall of this indoor northeast nook, matching adjacent wall texture. No exterior opening on that side. Preserve PinPin face, body, every paw, root arch, mat, stool, leaf pile, shadows, exposure and all other pixels as closely as possible. Light still comes from left. Single landscape1536x1024, no text.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-03/scenes/scene-70-v1.png",
+      "role": "edit target; only far-right exterior sliver is wrong",
+      "sha256": "339bc6fb6fcd18966e6f7bd714c6c2a381dad3a346d46133c9c8cc22167c9359"
+    }
+  ],
+  "startedAt": "2026-09-21T06:41:10.561299+00:00",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "finishedAt": "2026-09-21T06:43:41.465827+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0ce-32e6-7c83-8515-c2ff0973d7d3/exec-9099c340-e708-44a3-a0d6-9ac1ec81d746.png",
+  "output": "images/chapter-02-expanded/revision-03/scenes/scene-70-v2.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "c4af61b8d8fef5249c899e22ba4dd8a4eac7c40937535f308e181bb1cb5f32ad",
+  "review": "Full output inspected. Narrow invented right exterior opening replaced with enclosed earth/root wall. Child identity, forepaws, visible hindpaw, root arch, rolled mat, stool, leaf pile and left-origin light preserved. Correct home-side emergence, no extra animal or clear duplicated limb. Far hindpaw remains naturally hidden.",
+  "reviewedAt": "2026-09-21T06:43:41.548375+00:00",
+  "seconds": 150.904528,
+  "timingNote": "Recorded request-to-capture elapsed time includes local registration overhead; not model-only computation."
+}

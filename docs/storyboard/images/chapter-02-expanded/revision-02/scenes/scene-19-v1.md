@@ -1,0 +1,35 @@
+# Elder revision02 scene-19-v1
+
+Status: proposed
+
+- Tool: built-in image_gen
+- Started: 2026-09-21T02:08:58.445Z
+- Finished: 2026-09-21T02:10:42.729Z
+- Tool-call wall time: 104.284 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-19-v1.png
+- Dimensions: 1536×1024
+- SHA-256: c1fd7d7f10857ace02689b6736871c4fc80406d4e49aa69853253f937d787244
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-0dc0d422-2a12-4e4f-a6f3-704bc27ef151.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/stairs-v3.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. One standalone1536x1024 landscape story illustration, rich dimensional fur and warm stone/wood, no text/montage/watermark. Exactly two natural rounded hedgehogs: silver-grey Elder with round gold spectacles, smaller chestnut PinPin. Four limbs total each, no clothes, no staff indoors, no extra arms. FIRST FLIGHT DOWN. Input1 route/material only, NOT cutaway graphic; input2 identities. Final immersive view INSIDE enclosed staircase from top landing looking down first shallow stone flight, camera behind child at his eye height. Elder descends FIRST several broad treads lower, PinPin follows one body length behind; both viewed three-quarter back/profile, eyes lowered to next tread, no one looking at viewer or turning back while moving. Four-footed careful walking, paws actually contact treads. Shallow risers, broad treads deep enough for child whole body, low continuous wooden paw rails/stone curbs on both sides. Ahead below is generous middle landing with fixed amber lamp and turn, next flight only glimpse. No black cutaway void, no outside, no mural yet, no endless stairs. Warm stone ceiling clears quills; closed walls keep route intimate/safe.
+
+## Review
+
+Selected full inspection and root acceptance: Elder leads child down first broad shallow flight toward level turn, both heads oriented to treads. Enclosed rails/lamps/materials consistent, no outdoor destination or cutaway void. Hidden limb attachments and exact tread count unverified.
+
+Reviewed: 2026-09-21T02:27:03.528Z
+
+
+## Reference hash verification
+
+Recorded 2026-09-21T03:34:02.591150+00:00 during final provenance verification (not a claimed pre-call hash record).
+
+- 702bea42864a9f5ef48b13c21be11750dd58acebbb3a44c57a13f5e9f7e96f48 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/stairs-v3.png
+- 9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png

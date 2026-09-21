@@ -1,0 +1,25 @@
+# model-states-v3
+
+Status: proposed
+
+Tool: built-in imagegen
+
+Started UTC: 2026-09-21T02:05:57.681Z
+Finished UTC: 2026-09-21T02:06:22.440Z
+
+Dimensions: 1536 x 1024
+SHA-256: 919d9ea660361fff3def8c3ed760dcefe4225c3d5bf98252e084e4ef687b9a89
+
+## Exact prompt
+
+Generate a COMPLETELY NEW simple physical prop reference layout, NOT an edit preserving the four-panel composition. Use reference only for bark/wood material appearance. 1536x1024 image with just TWO panels stacked VERTICALLY, both equal full-width panels. Strict straight FRONT ORTHOGRAPHIC camera, zero perspective, NO top surfaces visible, same scale in both panels, plain ivory background and horizontal tabletop line. Upper panel: TWO identical pale wooden upright rectangular blocks, each width100 height180, with their inner faces separated by a very wide gap of600 pixels. Between them lies ONE flat rectangular bark roof slab on the tabletop, width400 pixels, thickness35pixels, exactly horizontal, clearly 100pixels empty on each side between roof and support blocks. Lower panel: EXACT SAME BLOCKS AND EXACT SAME ROOF SLAB, same front orthographic camera and same scale; now the blocks have moved inward so gap between inner faces is200pixels, and the identical400pixels wide roof rests firmly on both block tops, with its left and right ends flush with outer block faces. The roof in BOTH panels must be exactly SAME400pixel length and35pixel thickness. The visible difference must be ONLY support positions and slab height: upper blocks widely separated with slab on tabletop; lower blocks close together with slab across tops. In lower successful shelter only, a tiny pinecone100pixels tall sits on a thin green leaf on tabletop beneath middle of roof. Keep cone safely small enough to fit. No cup, water, animals, handwriting, measurement numbers, labels, arrows or extra panels. Exact two blocks and one slab per panel, no additional walls. Rich storybook texture and soft warm contact shadows but orthographic geometry is mandatory. New layout fully replaces reference's misleading camera/perspective panels.
+
+## References
+
+/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/revision-02/preproduction/model-states-v1.png: Identity/style/geometry or target as specified in exact prompt
+
+## Visual review
+
+Accepted as corrected roof-length/support-spacing reference after full image inspection. Two stacked front views keep bark roof visually identical width at x385–1150 in both panels. Top support gap is clearly much wider; bottom supports visibly moved inward and contact roof ends. Single cone/leaf fits in dry open center. Minor block-height/framing difference remains illustrative rather than calibrated geometry; selected story prop size will lock from handling reference. V1/v2 not selected.
+
+Reviewed UTC: 2026-09-21T02:06:50.384076+00:00

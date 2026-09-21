@@ -1,0 +1,2247 @@
+{
+  "schemaVersion": 1,
+  "id": "elder",
+  "sourceChapter": "chapter-02",
+  "status": "proposed",
+  "title": {
+    "ru": "Мудрость Старейшины",
+    "en": "The Elder’s Wisdom",
+    "es": "La sabiduría del anciano"
+  },
+  "cover": {
+    "ru": "images/covers/chapter-02/title/title-ru-v1.png",
+    "en": "images/covers/chapter-02/title/title-en-v1.png",
+    "es": "images/covers/chapter-02/title/title-es-v1.png"
+  },
+  "revision": 2,
+  "productionState": "review-ready",
+  "planningDiagram": "floorplan.svg",
+  "summary": {
+    "ru": "Пин-Пин впервые приходит к Старейшине, исследует его дом и пещеру священных картин и узнаёт о новой жизни, защите и общих делах.",
+    "en": "PinPin visits the Elder’s home and cave of sacred pictures, learning about new life, protection and the work a community shares.",
+    "es": "PinPin visita la casa del anciano y la cueva de pinturas sagradas, y descubre la nueva vida, la protección y el trabajo compartido."
+  },
+  "preproduction": [
+    {
+      "id": "cast",
+      "title": "Character reference",
+      "src": "images/chapter-02-expanded/preproduction/cast-v1.png",
+      "description": "Canonical child/Elder identity and moderate size difference; staff on ground is a study arrangement only."
+    },
+    {
+      "id": "environment",
+      "title": "Clearing and plant patch",
+      "src": "images/chapter-02-expanded/preproduction/environment-v1.png",
+      "description": "Exterior continuity: root portal, parked staff left, fern/plant right, separate summit oak. Plant state changes during brief rescue."
+    },
+    {
+      "id": "home-v2",
+      "title": "The Elder’s furnished home",
+      "src": "images/chapter-02-expanded/revision-02/preproduction/home-v2.png",
+      "description": "Corrected right hinges and reachable lowleft pull ring; books, writing table, artifacts, bed and two distinct thresholds."
+    },
+    {
+      "id": "stairs-v3",
+      "title": "The connected staircase",
+      "src": "images/chapter-02-expanded/revision-02/preproduction/stairs-v3.png",
+      "description": "Home visible only through upper door; two flights, level turn, fixed lamps and enclosed cave bottom. Illustrated planning reference, exact tread count unverified."
+    },
+    {
+      "id": "murals-v1",
+      "title": "The sacred pictures",
+      "src": "images/chapter-02-expanded/revision-02/preproduction/murals-v1.png",
+      "description": "Original authored forest-tradition iconography: pregnant Mother of Life, male war defender, light and darkness, shared work."
+    },
+    {
+      "id": "cave-v1",
+      "title": "Cave master",
+      "src": "images/chapter-02-expanded/revision-02/preproduction/cave-v1.png",
+      "description": "West life, north defender, east light, northeast stair arrival, southwest actual daylight shaft; north-wall bench."
+    },
+    {
+      "id": "cave-south-v1",
+      "title": "Cave reverse / south wall",
+      "src": "images/chapter-02-expanded/revision-02/preproduction/cave-south-v1.png",
+      "description": "Community frieze and reversed east/west clues; no new doorway."
+    },
+    {
+      "id": "gaze-shared-v2",
+      "title": "Shared attention",
+      "src": "images/chapter-02-expanded/revision-02/preproduction/gaze-shared-v2.png",
+      "description": "Rear three-quarter bodies facing one mural; grounded paws. Conversation uses separate reciprocal views."
+    }
+  ],
+  "sequences": [
+    {
+      "id": "arrival",
+      "title": {
+        "ru": "Дорога к Старейшине",
+        "en": "The path to the Elder",
+        "es": "El camino al anciano"
+      },
+      "purpose": "Continuous first mentor visit; see detailed shot plan."
+    },
+    {
+      "id": "small-help",
+      "title": {
+        "ru": "Маленькая помощь",
+        "en": "A small act of help",
+        "es": "Una pequeña ayuda"
+      },
+      "purpose": "Continuous first mentor visit; see detailed shot plan."
+    },
+    {
+      "id": "dwelling",
+      "title": {
+        "ru": "Дом мудреца",
+        "en": "The wise one’s home",
+        "es": "La casa del sabio"
+      },
+      "purpose": "Continuous first mentor visit; see detailed shot plan."
+    },
+    {
+      "id": "descent",
+      "title": {
+        "ru": "Под холмом",
+        "en": "Beneath the hill",
+        "es": "Bajo la colina"
+      },
+      "purpose": "Continuous first mentor visit; see detailed shot plan."
+    },
+    {
+      "id": "sacred-pictures",
+      "title": {
+        "ru": "Священные картины",
+        "en": "The sacred pictures",
+        "es": "Las pinturas sagradas"
+      },
+      "purpose": "Continuous first mentor visit; see detailed shot plan."
+    },
+    {
+      "id": "return",
+      "title": {
+        "ru": "Обратный путь",
+        "en": "The way back",
+        "es": "El regreso"
+      },
+      "purpose": "Continuous first mentor visit; see detailed shot plan."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "elder-r2-01",
+      "sequence": "arrival",
+      "src": "images/chapter-02-direct/scene-01.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин идёт по тропе к холму.",
+        "en": "PinPin walks along the path toward the hill.",
+        "es": "PinPin camina por el sendero hacia la colina."
+      },
+      "text": {
+        "en": [
+          "The day after he helped the lake, PinPin went to see the oldest hedgehog on Burrow Hill."
+        ],
+        "ru": [
+          "На следующий день после того, как он помог озеру, Пин-Пин отправился к самому старому ежу на Холме Нор."
+        ],
+        "es": [
+          "Al día siguiente de ayudar al lago, PinPin fue a ver al erizo más anciano de la Colina de las Madrigueras."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          1
+        ],
+        "note": "Original first-visit spine adapted; religious pantheon, home/cave journey and symbolic teaching are user-authorized additions. See source-adaptation-map.md."
+      },
+      "camera": "E0 wide",
+      "continuity": "PinPin walks away from camera toward hill; eyes on path.",
+      "review": "Re-inspected in revision02 all30 EYELINE-AUDIT.md; selected for the stated action/gaze.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-01.png",
+      "beforeText": {
+        "ru": [
+          "За озером и Лугом Серебряных Листьев возвышался Холм Нор. На следующий день после приключения Пин-Пин отправился к старому ежу, который там жил."
+        ],
+        "en": [
+          "Beyond the lake and Silver Leaf Meadow stood Burrow Hill. The day after his adventure, PinPin went to see the old hedgehog who lived there."
+        ],
+        "es": [
+          "Más allá del lago y de la Pradera de las Hojas de Plata se alzaba la Colina de las Madrigueras. Al día siguiente de su aventura, PinPin fue a visitar al viejo erizo que vivía allí."
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-02",
+      "sequence": "arrival",
+      "src": "images/chapter-02-direct/scene-02.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин смотрит вверх под аркой из листьев.",
+        "en": "PinPin looks up beneath an arch of leaves.",
+        "es": "PinPin mira hacia arriba bajo un arco de hojas."
+      },
+      "text": {
+        "en": [
+          "What would a very old, very wise hedgehog be like?"
+        ],
+        "ru": [
+          "Каким он будет — очень старый, очень мудрый ёж?"
+        ],
+        "es": [
+          "¿Cómo sería un erizo muy viejo y muy sabio?"
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          1
+        ],
+        "note": "Original first-visit spine adapted; religious pantheon, home/cave journey and symbolic teaching are user-authorized additions. See source-adaptation-map.md."
+      },
+      "camera": "Low approach",
+      "continuity": "PinPin stops beneath leaf arch, looking up at leaves; no listener.",
+      "review": "Re-inspected in revision02 all30 EYELINE-AUDIT.md; selected for the stated action/gaze.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-02.png",
+      "beforeText": {
+        "ru": [
+          "Все звали его Мастером Шипоставом. Говорили, что он многое знает о волшебстве. У Пин-Пина было столько вопросов!"
+        ],
+        "en": [
+          "Everyone called him Master Shipostav. They said he knew a great deal about magic. PinPin had so many questions."
+        ],
+        "es": [
+          "Todos lo llamaban maestro Shipostav. Decían que sabía mucho de magia. ¡PinPin tenía tantas preguntas!"
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-03",
+      "sequence": "arrival",
+      "src": "images/chapter-02-direct/scene-03.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин подходит к дому Старейшины под корнями дерева.",
+        "en": "PinPin approaches the Elder's home beneath tree roots.",
+        "es": "PinPin se acerca a la casa del anciano bajo las raíces."
+      },
+      "text": {
+        "en": [
+          "There he was, beside a house tucked under the roots of a great tree."
+        ],
+        "ru": [
+          "Вот и он, рядом с домом под корнями огромного дерева."
+        ],
+        "es": [
+          "Allí estaba, junto a una casa escondida bajo las raíces de un gran árbol."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          1
+        ],
+        "note": "Original first-visit spine adapted; religious pantheon, home/cave journey and symbolic teaching are user-authorized additions. See source-adaptation-map.md."
+      },
+      "camera": "E0 wide",
+      "continuity": "PinPin foreground faces Elder distant left of root arch; Elder faces away.",
+      "review": "Re-inspected in revision02 all30 EYELINE-AUDIT.md; selected for the stated action/gaze.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-03.png",
+      "beforeText": {
+        "ru": [
+          "Вот и он, у своего дома. Серебристые иголки блестели на солнце. Рядом стоял кривой посох из ветвей ежевики."
+        ],
+        "en": [
+          "There he was, outside his home. Sunlight shone on his silver quills. A crooked bramble staff stood beside him."
+        ],
+        "es": [
+          "Allí estaba, junto a su casa. El sol brillaba sobre sus púas plateadas. A su lado había un bastón curvo de zarza."
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-04",
+      "sequence": "arrival",
+      "src": "images/chapter-02-direct/scene-04.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина смотрит в сторону, приветствуя подошедшего Пин-Пина.",
+        "en": "The Elder faces away while greeting the arriving PinPin.",
+        "es": "El anciano saluda a PinPin sin darse la vuelta."
+      },
+      "text": {
+        "en": [
+          "“Hello, PinPin,” said the Elder, without turning. “I felt you would come today.”"
+        ],
+        "ru": [
+          "— Здравствуй, Пин-Пин, — сказал Старейшина, не оборачиваясь. — Я чувствовал, что ты сегодня придёшь."
+        ],
+        "es": [
+          "—Hola, PinPin —dijo el anciano, sin darse la vuelta—. Presentía que vendrías hoy."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          2
+        ],
+        "note": "Original first-visit spine adapted; religious pantheon, home/cave journey and symbolic teaching are user-authorized additions. See source-adaptation-map.md."
+      },
+      "camera": "E0 medium",
+      "continuity": "Elder left deliberately faces left away from arriving child right. This is the source surprise, not attempted eye contact.",
+      "review": "Re-inspected in revision02 all30 EYELINE-AUDIT.md; selected for the stated action/gaze.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-04.png",
+      "beforeText": {
+        "ru": [
+          "— А, юный Пин-Пин, — сказал Старейшина, даже не обернувшись. — Я чувствовал, что ты сегодня придёшь."
+        ],
+        "en": [
+          "“Ah, young PinPin,” said the Elder without turning round. “I felt you would come today.”"
+        ],
+        "es": [
+          "—Ah, pequeño PinPin —dijo el anciano sin darse la vuelta—. Presentía que vendrías hoy."
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-05",
+      "sequence": "arrival",
+      "src": "images/chapter-02-direct/scene-05.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин смотрит на Старейшину, чьё плечо видно справа.",
+        "en": "PinPin looks toward the Elder's visible shoulder at right.",
+        "es": "PinPin mira al anciano, cuyo hombro se ve a la derecha."
+      },
+      "text": {
+        "en": [
+          "“You knew? How?”"
+        ],
+        "ru": [
+          "— Вы знали? Как?"
+        ],
+        "es": [
+          "—¿Lo sabía? ¿Cómo?"
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          3
+        ],
+        "note": "Original first-visit spine adapted; religious pantheon, home/cave journey and symbolic teaching are user-authorized additions. See source-adaptation-map.md."
+      },
+      "camera": "Reverse over Elder shoulder",
+      "continuity": "PinPin left looks up/right at visible Elder shoulder right; speaker child, listener Elder.",
+      "review": "Re-inspected in revision02 all30 EYELINE-AUDIT.md; selected for the stated action/gaze.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-05.png",
+      "beforeText": {
+        "ru": [
+          "— Вы знали? — Пин-Пин заморгал. — Но как?"
+        ],
+        "en": [
+          "“You knew?” PinPin blinked. “But how?”"
+        ],
+        "es": [
+          "—¿Lo sabía? —PinPin parpadeó—. ¿Cómo?"
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-06",
+      "sequence": "arrival",
+      "src": "images/chapter-02-landscapes/shot-07.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Свет проходит сквозь крону дерева.",
+        "en": "Light shines through the leafy tree canopy.",
+        "es": "La luz atraviesa la copa del árbol."
+      },
+      "text": {
+        "en": [
+          "“The wind and the leaves bring news,” said the Elder. “I listen.”"
+        ],
+        "ru": [
+          "— Ветер и листья приносят новости, — сказал Старейшина. — Я прислушиваюсь."
+        ],
+        "es": [
+          "—El viento y las hojas traen noticias —dijo el anciano—. Yo escucho."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          4
+        ],
+        "note": "Original first-visit spine adapted; religious pantheon, home/cave journey and symbolic teaching are user-authorized additions. See source-adaptation-map.md."
+      },
+      "camera": "Upward canopy insert",
+      "continuity": "No actors; leaf movement is the named listening target.",
+      "review": "Re-inspected in revision02 all30 EYELINE-AUDIT.md; selected for the stated action/gaze.",
+      "reused": true,
+      "before": "images/chapter-02-landscapes/shot-07.png",
+      "beforeText": {
+        "ru": [
+          "Старейшина тихо засмеялся. — Ветер шепчет. Листья шуршат. Они многое расскажут тому, кто умеет слушать."
+        ],
+        "en": [
+          "The Elder chuckled. “The wind whispers. The leaves rustle. There is news for anyone who listens.”"
+        ],
+        "es": [
+          "El anciano rio suavemente. —El viento susurra. Las hojas crujen. Hay noticias para quien escucha."
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-07",
+      "sequence": "arrival",
+      "src": "images/chapter-02-expanded/scenes/scene-09-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина и Пин-Пин смотрят друг другу в глаза у норы.",
+        "en": "The Elder and PinPin face one another outside the burrow.",
+        "es": "El anciano y PinPin se miran frente a la madriguera."
+      },
+      "text": {
+        "en": [
+          "“My golden quill helped the lake,” said PinPin. “Where did its magic come from?” “That is a good question. Come with me.”"
+        ],
+        "ru": [
+          "— Моя золотая иголка помогла озеру, — сказал Пин-Пин. — Откуда в ней волшебство? — Хороший вопрос. Пойдём со мной."
+        ],
+        "es": [
+          "—Mi púa dorada ayudó al lago —dijo PinPin—. ¿De dónde viene su magia? —Es una buena pregunta. Ven conmigo."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          5,
+          6,
+          8,
+          9,
+          10
+        ],
+        "note": "Lake/quill, responsible power and origin question adapted into one short exchange and new invitation."
+      },
+      "camera": "E0 reciprocal two-shot",
+      "continuity": "Elder left faces child right. Both pupils/heads target partner. Child asks; Elder listens.",
+      "review": "Accepted: frontal pair, Elder left offers a small forepaw invitation and child right settles. Exactly two forelimbs per actor where visible; Elder rearfeet partly hidden. Staff remains leaning against left boulder but shifts a little within that left zone relative to source. Entrance and fern relation preserved; no interior/furniture. Expressions and moderate size contrast match cast.",
+      "reused": true,
+      "before": "images/chapter-02-expanded/scenes/scene-09-v1.png",
+      "beforeText": {
+        "ru": [
+          "— Садись рядом, — предложил Старейшина. Пин-Пин устроился на тёплой земле. Теперь с вопросами можно было не спешить."
+        ],
+        "en": [
+          "“Come and sit,” said the Elder. PinPin settled on the warm earth. His questions no longer had to hurry."
+        ],
+        "es": [
+          "—Ven, siéntate —dijo el anciano. PinPin se acomodó sobre la tierra tibia. Sus preguntas ya no tenían prisa."
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-08",
+      "sequence": "small-help",
+      "src": "images/chapter-02-expanded/scenes/scene-12-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Оба ежа замечают росток, прижатый палочкой.",
+        "en": "Both hedgehogs notice the plant trapped beneath a stick.",
+        "es": "Los dos erizos observan la planta atrapada bajo un palo."
+      },
+      "text": {
+        "en": [
+          "On the way to the door, PinPin stopped. “That little plant is stuck.”"
+        ],
+        "ru": [
+          "По пути к двери Пин-Пин остановился. — Этот маленький росток застрял."
+        ],
+        "es": [
+          "De camino a la puerta, PinPin se detuvo. —Esa plantita está atrapada."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "E0 plant approach",
+      "continuity": "Both look down/right at trapped plant. Shared attention, no eye-contact claim.",
+      "review": "Accepted: both faces turn toward fern-side plant patch at right, same broad leaves pressed under single short stick. Door center, boulder/staff left, separate summit oak remain. Elder left modestly larger, PinPin right naturally low to ground. No touching or magic. Exact leafcount is partly obscured and not certified.",
+      "reused": true,
+      "before": "images/chapter-02-expanded/scenes/scene-12-v1.png",
+      "beforeText": {
+        "ru": [
+          "Потом он посмотрел на папоротник. — Что ты видишь вон там? Пин-Пин тоже повернул голову."
+        ],
+        "en": [
+          "Then he looked toward the fern. “What do you notice over there?” PinPin followed his gaze."
+        ],
+        "es": [
+          "Luego miró hacia el helecho. —¿Qué ves allí? PinPin siguió su mirada."
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-09",
+      "sequence": "small-help",
+      "src": "images/chapter-02-expanded/scenes/scene-17-v3.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин двумя передними лапками поднимает палочку над ростком.",
+        "en": "PinPin lifts the stick above the plant with two forepaws.",
+        "es": "PinPin levanta el palo sobre la planta con las dos patas delanteras."
+      },
+      "text": {
+        "en": [
+          "He lifted the stick, carefully, so the leaves could unfold."
+        ],
+        "ru": [
+          "Он осторожно поднял палочку, чтобы листочки могли расправиться."
+        ],
+        "es": [
+          "Levantó el palito con cuidado, para que las hojas pudieran abrirse."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "Plant close",
+      "continuity": "PinPin eyes on branch; two forepaws lift it clear of leaves. No dialogue gaze.",
+      "review": "Selected fresh close action: two separate forepaws grip the same lifted stick, with visible airgap above the rooted broad leaf cluster. Most lower body lies outside tight frame; a tiny partial rearfoot remains at extreme right, so prompt request for all feet absent was not fully met. No confirmed duplicated limb attachment visible in this composition; hidden/lower-body anatomy cannot be certified. Child identity matches solo reference, no Elder or glasses. Clear careful lift replaces rejected full-body five-paw attempts.",
+      "reused": true,
+      "before": "images/chapter-02-expanded/scenes/scene-17-v3.png",
+      "beforeText": {
+        "ru": [
+          "Он медленно приподнял веточку двумя передними лапками. Вверх, не задевая листья."
+        ],
+        "en": [
+          "He lifted the stick slowly, with both front paws. Up—not across the leaves."
+        ],
+        "es": [
+          "Levantó la ramita despacio con las dos patas delanteras. Hacia arriba, sin arrastrarla sobre las hojas."
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-10",
+      "sequence": "small-help",
+      "src": "images/chapter-02-expanded/scenes/scene-18-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин кладёт палочку рядом с освобождённым ростком.",
+        "en": "PinPin puts the stick beside the freed plant.",
+        "es": "PinPin deja el palo junto a la planta liberada."
+      },
+      "text": {
+        "en": [
+          "“There. Room to grow,” said PinPin. The Elder smiled."
+        ],
+        "ru": [
+          "— Вот. Теперь можно расти, — сказал Пин-Пин. Старейшина улыбнулся."
+        ],
+        "es": [
+          "—Ya está. Ahora puedes crecer —dijo PinPin. El anciano sonrió."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "E0 plant pair",
+      "continuity": "PinPin sets branch on bare soil right of upright plant; Elder watches action from left.",
+      "review": "Accepted: stick now rests on bare earth to right, one PinPin forepaw lightly releasing near end, other forepaw grounded and rearfoot visible. Plant stays rooted and freed upright, Elder watches from left, doorway/staff/fern relation remains. No duplicate grips, floatingbranch or obvious extra limb; hidden attachments unverified.",
+      "reused": true,
+      "before": "images/chapter-02-expanded/scenes/scene-18-v1.png",
+      "beforeText": {
+        "ru": [
+          "Потом он положил её на свободное место, подальше от растения."
+        ],
+        "en": [
+          "Then he set it on a bare patch of earth, away from the little plant."
+        ],
+        "es": [
+          "Después la dejó sobre un trocito de tierra libre, lejos de la plantita."
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-11",
+      "sequence": "dwelling",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-11-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина входит в дом под корнями; Пин-Пин идёт следом.",
+        "en": "The Elder enters the root home with PinPin following.",
+        "es": "El anciano entra en la casa entre raíces y PinPin lo sigue."
+      },
+      "text": {
+        "en": [
+          "“Now come and see where I keep my questions,” said the Elder."
+        ],
+        "ru": [
+          "— А теперь пойдём туда, где я храню свои вопросы, — сказал Старейшина."
+        ],
+        "es": [
+          "—Ahora ven a ver dónde guardo mis preguntas —dijo el anciano."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "H entrance continuity",
+      "continuity": "Elder ahead at root threshold looks into room; child behind looking through same opening. Staff remains outside.",
+      "review": "Selected after full inspection and root/QA review: physical root entry with Elder leading and child following, staff parked left, freed plant and moved twig right, warm furnished interior. Faces partly turned away appropriately for entering; hidden limbs not certified.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-12",
+      "sequence": "dwelling",
+      "src": "images/chapter-02-expanded/revision-02/preproduction/home-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Уютный дом с книгами, картой, письменным столом и постелью.",
+        "en": "A cozy home with books, a map, writing desk and bed.",
+        "es": "Una casa acogedora con libros, mapa, escritorio y cama."
+      },
+      "text": {
+        "en": [
+          "Inside were books, rolled maps, a soft bed and a little table stained with ink."
+        ],
+        "ru": [
+          "Внутри были книги, свёрнутые карты, мягкая постель и маленький стол со следами чернил."
+        ],
+        "es": [
+          "Dentro había libros, mapas enrollados, una cama blandita y una mesita manchada de tinta."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "H0 master",
+      "continuity": "Pair at south entrance looking around room. Show desk west, books west, map north, cave door northeast CLOSED, sleep alcove east.",
+      "review": "Selected home reference. Full image inspected: low left iron ring and right hinge pivots fixed; root exterior opening left distinct from closed inner door back-right; desk/books/map/artifacts/bed and warm sources coherent; paired hedgehogs face one another. Writing desk needs established small stool or a lowered action camera to show paw reach. Hidden feet unverified.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-13",
+      "sequence": "dwelling",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-13-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина пишет пером, сидя на табурете; Пин-Пин наблюдает.",
+        "en": "The Elder writes with a feather from a stool while PinPin watches.",
+        "es": "El anciano escribe con una pluma desde un taburete mientras PinPin observa."
+      },
+      "text": {
+        "en": [
+          "“Do you write books?” “Sometimes. Today I was writing down what I noticed.”"
+        ],
+        "ru": [
+          "— Вы пишете книги? — Иногда. Сегодня я записывал то, что заметил."
+        ],
+        "es": [
+          "—¿Escribe libros? —A veces. Hoy estaba escribiendo lo que había observado."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "H1 table action",
+      "continuity": "Elder left uses one forepaw with dark writing feather touching page; other at page edge; PinPin right watches the Elder writing, not an asserted precise nib fixation.",
+      "review": "Selected after full inspection and root/QA review: dark writing feather nib touches page, other forepaw stabilizes book; Elder supported on stool reaches table. Child watches Elder writing, not a proven precise nib eyeline. Inner door lowleft ring/righthinges retained. Warm light browns Elder quills; later refs retain silver identity. Hidden seated limb attachments unverified.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-14",
+      "sequence": "dwelling",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-14-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Ежи смотрят друг на друга над открытой книгой.",
+        "en": "The hedgehogs look at one another over an open book.",
+        "es": "Los erizos se miran junto a un libro abierto."
+      },
+      "text": {
+        "en": [
+          "“Do you know everything?” asked PinPin. “Oh, no,” said the Elder. “That is why I read.”"
+        ],
+        "ru": [
+          "— Вы всё знаете? — спросил Пин-Пин. — О нет, — сказал Старейшина. — Поэтому я и читаю."
+        ],
+        "es": [
+          "—¿Lo sabe todo? —preguntó PinPin. —Oh, no —dijo el anciano—. Por eso leo."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "H1 reciprocal then book gaze",
+      "continuity": "Elder left has turned face toward child right while holding open book low. Child looks back; page visible below both.",
+      "review": "Selected after full inspection: reciprocal child/Elder face directions clear, open book on desk and writing feather now laid down. Elder seated on stool behind desk reaches book, child on floor. Closed door hardware preserved. Hindquarters/feet partly hidden by stool/desk, not fully certified.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-15",
+      "sequence": "dwelling",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-15-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Оба смотрят на ракушку, камень и коробочку с семечком.",
+        "en": "Both look toward a shell, stone and seed box on the shelf.",
+        "es": "Ambos miran una concha, una piedra y una caja con una semilla."
+      },
+      "text": {
+        "en": [
+          "A smooth stone. An empty shell. A seed in a little box. “Small things can make us ask big questions,” said the Elder."
+        ],
+        "ru": [
+          "Гладкий камешек. Пустая ракушка. Семечко в маленькой коробочке. — Маленькие вещи помогают задавать большие вопросы, — сказал Старейшина."
+        ],
+        "es": [
+          "Una piedra lisa. Una concha vacía. Una semilla en una cajita. —Las cosas pequeñas nos ayudan a hacer grandes preguntas —dijo el anciano."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "Artifact close with pair",
+      "continuity": "PinPin right looks at shell/fossil/seed case on low shelf left; Elder behind-left looks at same object. No new wand or future gift.",
+      "review": "Selected after full inspection: both faces tilted toward artifact shelf with shell, smooth stone and open seed box. Meaningful shared observation, no claim of mutual dialogue gaze. Elder one forepaw lifted in small gesture; other visible planted, no obvious extra limb. Shelf/books consistent, hidden feet unverified.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-16",
+      "sequence": "dwelling",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-16-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина показывает озеро на карте; Пин-Пин смотрит вверх.",
+        "en": "The Elder points to the lake on the map as PinPin looks up.",
+        "es": "El anciano señala el lago en el mapa y PinPin mira hacia arriba."
+      },
+      "text": {
+        "en": [
+          "PinPin found the lake on a map. All around it were little homes. “So many neighbours!”"
+        ],
+        "ru": [
+          "Пин-Пин нашёл на карте озеро. Вокруг него были маленькие домики. — Как много соседей!"
+        ],
+        "es": [
+          "PinPin encontró el lago en un mapa. A su alrededor había casitas. —¡Cuántos vecinos!"
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "H0 map station",
+      "continuity": "Elder left paw points at lake on simple unlabeled map; PinPin right eyes target lake. Root-home/hill/lake routes legible.",
+      "review": "Selected after full inspection: Elder points at visible lake on unlabeled map, child looks upward toward map/pointing paw; source homes drawn clearly. Only one raised paw, grounded limb silhouette plausible, other limbs partly hidden. Door remains closed, right hinges/lowleft ring. Seed box closed again between object station and map, no hand action shown; incidental prop state should be made continuous if visible in final sequence.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-17",
+      "sequence": "dwelling",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-17-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина и Пин-Пин беседуют у закрытой внутренней двери.",
+        "en": "The Elder and PinPin speak beside the closed inner door.",
+        "es": "El anciano y PinPin conversan junto a la puerta interior cerrada."
+      },
+      "text": {
+        "en": [
+          "“There are older pictures downstairs,” said the Elder. “Would you like to see?” “Yes!”"
+        ],
+        "ru": [
+          "— Внизу есть картины ещё старше этих, — сказал Старейшина. — Хочешь посмотреть? — Да!"
+        ],
+        "es": [
+          "—Abajo hay pinturas más antiguas —dijo el anciano—. ¿Quieres verlas? —¡Sí!"
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "H2 closed door",
+      "continuity": "Elder at northeast closed door left of child; turns to child for invitation. Child eyes Elder, not ring.",
+      "review": "Selected after full inspection: clear reciprocal paired gaze in front of closed inner door; Elder left and smaller child right, visible forefeet coherent. Low ring left/right hinge pivots and nearby map/bed/lamp maintain home geography. No stairs exposed before opening.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-18",
+      "sequence": "dwelling",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-18-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Открытая дверь ведёт на освещённую каменную площадку лестницы.",
+        "en": "The open door leads onto the lit stone stair landing.",
+        "es": "La puerta abierta da al descansillo iluminado de piedra."
+      },
+      "text": {
+        "en": [
+          "The wooden door opened. Warm lamps shone down a stone stair."
+        ],
+        "ru": [
+          "Деревянная дверь открылась. Тёплый свет ламп освещал каменную лестницу."
+        ],
+        "es": [
+          "La puerta de madera se abrió. Unas lámparas de luz cálida iluminaban la escalera de piedra."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "H2 open door",
+      "continuity": "Door has opened into home against east wall; level top landing and descending rail beyond. Elder stands beside opening and child safely behind; no claim that ring is still held.",
+      "review": "Selected full inspection: open door reveals clear level top landing and railing descending out of view, incorrect rising steps removed. Pair safely stands in room after opening; no paw actually holds ring, so image represents completed opening. Door swings into room, hardware and furnishings retained.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-19",
+      "sequence": "descent",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-19-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин следует за Старейшиной вниз по широким ступеням.",
+        "en": "PinPin follows the Elder down the broad steps.",
+        "es": "PinPin sigue al anciano por los escalones anchos."
+      },
+      "text": {
+        "en": [
+          "“Slowly,” said the Elder. “One step, then the next.” PinPin followed."
+        ],
+        "ru": [
+          "— Не спеши, — сказал Старейшина. — Сначала одна ступенька, потом другая. Пин-Пин шёл следом."
+        ],
+        "es": [
+          "—Despacio —dijo el anciano—. Un escalón, y después otro. PinPin lo siguió."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "T0 down first flight",
+      "continuity": "Elder leads below; PinPin one body length behind. Both eyes on shallow broad treads, four limbs plausible. Door remains open above.",
+      "review": "Selected full inspection and root acceptance: Elder leads child down first broad shallow flight toward level turn, both heads oriented to treads. Enclosed rails/lamps/materials consistent, no outdoor destination or cutaway void. Hidden limb attachments and exact tread count unverified.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-20",
+      "sequence": "descent",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-20-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Ежи останавливаются на площадке и смотрят друг на друга.",
+        "en": "The hedgehogs stop on the landing and look at each other.",
+        "es": "Los erizos se detienen en el descansillo y se miran."
+      },
+      "text": {
+        "en": [
+          "At the turn, the Elder waited. “All right?” “All right,” said PinPin."
+        ],
+        "ru": [
+          "На повороте Старейшина подождал. — Всё хорошо? — Хорошо, — сказал Пин-Пин."
+        ],
+        "es": [
+          "En el descansillo, el anciano esperó. —¿Todo bien? —Todo bien —dijo PinPin."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "T1 middle landing",
+      "continuity": "Both stopped on level landing. Elder near turn faces back to PinPin; reciprocal gaze. First flight rises behind, next descends south.",
+      "review": "Selected full inspection and root acceptance: both paused on broad level switchback landing, clear reciprocal eyes. Upper flight/home glimpse behind and lower flight foreground make route legible; warm fixed lamp. Bodies grounded, hidden feet not certified.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-21",
+      "sequence": "descent",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-21-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Оба спускаются по нижнему пролёту к пещере.",
+        "en": "Both descend the lower flight toward the cave.",
+        "es": "Ambos bajan el tramo inferior hacia la cueva."
+      },
+      "text": {
+        "en": [
+          "Another little stair. Then the passage opened wide."
+        ],
+        "ru": [
+          "Ещё один короткий спуск. И проход стал широким."
+        ],
+        "es": [
+          "Otro pequeño tramo de escalera. Después, el pasadizo se abrió."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "T2 second flight",
+      "continuity": "Pair descend toward camera/bottom cave entry; Elder first. Bright shaft-lit cave slice beyond foreground, amber landing lamp behind.",
+      "review": "Selected full inspection: lower-flight descent toward cave camera with Elder first and child following, visible forepaws on treads, faces aimed down route. Bottom cool reflection/mural edge distinguish cave destination, rails/lamps coherent. Hindfeet partly occluded.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-22",
+      "sequence": "descent",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-22-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Ежи выходят на широкую каменную площадку среди настенных картин.",
+        "en": "The hedgehogs enter a broad stone terrace surrounded by murals.",
+        "es": "Los erizos llegan a una amplia terraza de piedra rodeada de murales."
+      },
+      "text": {
+        "en": [
+          "They stood on a broad stone floor inside the hill. Great painted pictures curved around them."
+        ],
+        "ru": [
+          "Они оказались на широкой каменной площадке внутри холма. Вокруг были большие картины на стенах."
+        ],
+        "es": [
+          "Llegaron a una amplia terraza de piedra dentro de la colina. Grandes pinturas cubrían las paredes a su alrededor."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "C0 establishing",
+      "continuity": "Pair at northeast cave arrival, small against broad safe terrace. West mother, north defender, east light panel glimpse; entry remains visible.",
+      "review": "Selected full inspection: pair now on broad room terrace beyond stair landing, backs/profiles looking into mural/shaft space. West mother/north defender/east light and northeast stairs remain fixed. Both natural grounded bodies; no eye contact claimed.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-23",
+      "sequence": "descent",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-23-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Небо и солнечный свет видны через наклонную щель в своде пещеры.",
+        "en": "Sky and sunlight enter through a sloping shaft in the cave roof.",
+        "es": "El cielo y la luz entran por una abertura inclinada en el techo."
+      },
+      "text": {
+        "en": [
+          "“Sunlight!” said PinPin. Far above, a crack in the hillside let the day come in. Wall lamps warmed the darker corners."
+        ],
+        "ru": [
+          "— Солнечный свет! — сказал Пин-Пин. Высоко над ними щель в склоне пропускала дневной свет. Настенные лампы согревали тёмные уголки."
+        ],
+        "es": [
+          "—¡Luz del sol! —dijo PinPin. Muy arriba, una abertura en la ladera dejaba entrar el día. Las lámparas de las paredes daban calidez a los rincones más oscuros."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "C5 ceiling/shaft",
+      "continuity": "Looking up along oblique southwest shaft; actual blue sky patch and stone lip, dust/light cone. Pair optional lower edge look at shaft.",
+      "review": "Selected full inspection: actual blue sky and lit rock lip visible through sloping shaft; sunbeam enters cave above Mother wall edge, warm fixed lamp distinguishable. No unexplained light or living figures.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-24",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/preproduction/gaze-shared-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Оба ежа рассматривают старые картины на стене пещеры.",
+        "en": "Both hedgehogs examine the old paintings on the cave wall.",
+        "es": "Los dos erizos contemplan las antiguas pinturas de la cueva."
+      },
+      "text": {
+        "en": [
+          "“These are sacred stories,” said the Elder. “Stories some forest families treasure.”"
+        ],
+        "ru": [
+          "— Это священные истории, — сказал Старейшина. — Некоторые лесные семьи очень ими дорожат."
+        ],
+        "es": [
+          "—Son historias sagradas —dijo el anciano—. Algunas familias del bosque las guardan como un tesoro."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C0 lower mural survey",
+      "continuity": "Pair look together at mural borders, not viewer. Flat paintings visibly distinct from living cast.",
+      "review": "Selected after full inspection: rear three-quarter pair clearly faces Mother mural and grounded paws are plausible; incorrect left light-dark fragment removed, plain stone remains outside south-frieze crop. North defender fragment right coherent. Use as pose/space reference and story24 shared observation.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-25",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-25-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин задаёт Старейшине вопрос рядом с картиной Матери Жизни.",
+        "en": "PinPin asks the Elder a question beside the Mother of Life mural.",
+        "es": "PinPin pregunta al anciano junto al mural de la Madre de la Vida."
+      },
+      "text": {
+        "en": [
+          "“Sacred?” “Very precious to them. Something they treat with special care.”"
+        ],
+        "ru": [
+          "— Священные? — Очень дорогие для них. К ним относятся с особой заботой."
+        ],
+        "es": [
+          "—¿Sagradas? —Muy valiosas para ellas. Las tratan con un cuidado especial."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C1D question",
+      "continuity": "PinPin right looks up/left directly at Elder left; Elder eyes child. Mother mural edge in background.",
+      "review": "Selected full inspection: child right and Elder left clearly face each other with eye direction compatible, question expression; west Mother/cradle and offering ledge remain background. All visible planted paws plausible; hidden limbs not certified.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-26",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-26-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина отвечает Пин-Пину, глядя ему в глаза.",
+        "en": "The Elder answers PinPin while looking into his eyes.",
+        "es": "El anciano responde a PinPin mirándolo a los ojos."
+      },
+      "text": {
+        "en": [
+          "“They believe in gods and spirits,” said the Elder. “Their stories, prayers and ways of giving thanks are part of their religion. Other families may believe different things.”"
+        ],
+        "ru": [
+          "— Они верят в богов и духов, — сказал Старейшина. — Их истории, молитвы и обычаи благодарить — часть их религии. Другие семьи могут верить по-другому."
+        ],
+        "es": [
+          "—Creen en dioses y espíritus —dijo el anciano—. Sus historias, oraciones y formas de dar las gracias son parte de su religión. Otras familias pueden creer cosas distintas."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C1D answer",
+      "continuity": "Elder left looks into child eyes right; child listens. Small prayer/seed ledge visible by mural.",
+      "review": "Selected full inspection: tighter answer coverage with Elder left facing child right and child looking left/up, responsive faces rather than viewer stare. West Mother and ledge soft background, no relocated murals. Forepaws visible; body/camera crops hide hindfeet.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-27",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-27-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "На стене нарисована беременная Мать Жизни, рядом колыбель и ростки.",
+        "en": "The painted pregnant Mother of Life appears beside a cradle and growing shoots.",
+        "es": "La Madre de la Vida embarazada aparece pintada junto a una cuna y brotes."
+      },
+      "text": {
+        "en": [
+          "PinPin looked at a woman with a round belly. “Is there a baby inside?” “Yes. She is the Mother of Life in these stories.”"
+        ],
+        "ru": [
+          "Пин-Пин посмотрел на женщину с круглым животом. — Там внутри малыш? — Да. В этих историях её зовут Мать Жизни."
+        ],
+        "es": [
+          "PinPin miró a una mujer de vientre redondo. —¿Tiene un bebé dentro? —Sí. En estas historias es la Madre de la Vida."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "Child POV / actor-free mural insert",
+      "continuity": "No living actors visible. Child/Elder dialogue is voice-over attached to painted mural detail. Preserve accepted mural orientation.",
+      "review": "Viewed full generated output: complete flat pregnant Mother mural, hands above/below belly, same ochre robe/green mantle, separate cradle lower-right, grain and oak symbols. Real stone/side-lamp/offerings distinguish room from artwork. No living foreground actors or text. Creator pass; root independent review pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-28",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-28-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин и Старейшина беседуют перед картиной богини.",
+        "en": "PinPin and the Elder speak before the goddess painting.",
+        "es": "PinPin y el anciano conversan ante la pintura de la diosa."
+      },
+      "text": {
+        "en": [
+          "“Is she a goddess?” “Yes. A goddess of fertility. That means new life: babies being born, and seeds growing into food.”"
+        ],
+        "ru": [
+          "— Она богиня? — Да. Богиня плодородия. Это значит — новой жизни: рождаются малыши, а из семян вырастает еда."
+        ],
+        "es": [
+          "—¿Es una diosa? —Sí. Una diosa de la fertilidad. Eso significa nueva vida: bebés que nacen y semillas que crecen y nos dan comida."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C1D close child question",
+      "continuity": "Child right turns from mural toward Elder left; eye contact. Pregnant painting remains visible behind them.",
+      "review": "Selected full inspection: child right looks left/up to visible Elder shoulder/face at left, reverse question coverage keeps axis. West Mother belly/cradle behind remain flat painted symbols. Child visible forepaws coherent, Elder body cropped.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-29",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-29-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Деталь картины: малыш в колыбели и растущие злаки.",
+        "en": "Mural detail: a baby in a cradle and growing grain.",
+        "es": "Detalle del mural: un bebé en una cuna y cereales que crecen."
+      },
+      "text": {
+        "en": [
+          "PinPin found the painted baby. Then he found the tiny green shoots. “Both need looking after,” he said."
+        ],
+        "ru": [
+          "Пин-Пин нашёл нарисованного малыша. А потом — крошечные зелёные ростки. — И малышам, и росткам нужна забота, — сказал он."
+        ],
+        "es": [
+          "PinPin encontró al bebé pintado. Después vio los pequeños brotes verdes. —Los dos necesitan cuidados —dijo."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "Child POV / actor-free mural insert",
+      "continuity": "No living actors visible. Child/Elder dialogue is voice-over attached to painted mural detail. Preserve accepted mural orientation.",
+      "review": "Viewed full generated output: distinct tighter baby/cradle/grain detail, mother robe edge, same right-side deer/plant and cradle ornament, flat pigment and warm practical light. No live infant. Crop angle reveals right lamp and offering ledge; no blocking iconographic error. Creator pass; root independent review pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-30",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-30-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Ежи рассматривают чашу с семенами под картиной.",
+        "en": "The hedgehogs look toward the seed bowl beneath the painting.",
+        "es": "Los erizos miran el cuenco de semillas bajo la pintura."
+      },
+      "text": {
+        "en": [
+          "“Some families bring seeds here,” said the Elder. “They pray. They ask the goddess for help, or say thank you.”"
+        ],
+        "ru": [
+          "— Некоторые семьи приносят сюда семена, — сказал Старейшина. — Они молятся. Просят богиню о помощи или говорят ей спасибо."
+        ],
+        "es": [
+          "—Algunas familias traen semillas aquí —dijo el anciano—. Rezan. Piden ayuda a la diosa o le dan las gracias."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C1 ledge medium",
+      "continuity": "Elder left points with one forepaw toward old seed bowl/flower on ledge; PinPin right looks at exact bowl. Neither compelled to pray.",
+      "review": "Selected full inspection: Elder left and child right attend offering bowl with recognizable acorns/seeds on same west ledge, both bodies face object. Visible forepaw support on ledge and grounded feet plausible; no extra pointing arm. Mother painting stays backdrop. Bowl includes varied seed/fruit colors, not exact botanical/count claim.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-31",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-31-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина и Пин-Пин обращаются друг к другу рядом с каменной полкой.",
+        "en": "The Elder and PinPin face each other beside the stone ledge.",
+        "es": "El anciano y PinPin se miran junto al saliente de piedra."
+      },
+      "text": {
+        "en": [
+          "“And then?” asked PinPin. “Then they go home and care for their babies and their gardens.”"
+        ],
+        "ru": [
+          "— А потом? — спросил Пин-Пин. — Потом идут домой и заботятся о своих малышах и садах."
+        ],
+        "es": [
+          "—¿Y después? —preguntó PinPin. —Después vuelven a casa y cuidan de sus bebés y sus huertos."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C1D two-shot",
+      "continuity": "Both turn toward each other, away from ledge. PinPin right listening to Elder left; warm, no sermon pose.",
+      "review": "Selected full inspection: reciprocal paired conversation resumed by west ledge, wider/lower framing than close28. Faces aimed at partner, grounded bodies, no gesture duplication. Mural border/seed bowl fixed behind.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-32",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-32-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Нарисованный сильный защитник держит щит перед семьями и бурей.",
+        "en": "A painted strong defender holds a shield between families and a storm.",
+        "es": "Un defensor fuerte pintado sostiene un escudo entre familias y tormenta."
+      },
+      "text": {
+        "en": [
+          "On the next wall stood a strong man with a great shield. Behind him, families huddled together."
+        ],
+        "ru": [
+          "На следующей стене был сильный мужчина с большим щитом. За ним стояли семьи, прижавшись друг к другу."
+        ],
+        "es": [
+          "En la siguiente pared había un hombre fuerte con un gran escudo. Detrás de él, varias familias se juntaban buscando refugio."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "Child POV / actor-free mural insert",
+      "continuity": "No living actors visible. Child/Elder dialogue is voice-over attached to painted mural detail. Preserve accepted mural orientation.",
+      "review": "Viewed full generated output: full Shield Keeper, strong bearded male, bronze armor/red cloak/sheathed sword, original oval tree shield right, storm right and families/homes left. No live foreground actors. North bench remains below correct mural. Creator pass; root independent review pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-33",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-33-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин спрашивает Старейшину о защитнике на стене.",
+        "en": "PinPin asks the Elder about the defender on the wall.",
+        "es": "PinPin pregunta al anciano por el defensor del mural."
+      },
+      "text": {
+        "en": [
+          "“Who is he?” “The Shield Keeper. In these stories, he is a god of war.”"
+        ],
+        "ru": [
+          "— Кто это? — Защитник со Щитом. В этих историях он бог войны."
+        ],
+        "es": [
+          "—¿Quién es? —El Guardián del Escudo. En estas historias es un dios de la guerra."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C2D question two-shot",
+      "continuity": "PinPin right looks left at Elder; Elder left meets gaze. Shield mural cropped behind, not replacing listener.",
+      "review": "Selected targeted correction full inspected: raised child limb removed, two grounded forepaws plus visible rearfoot coherent; reciprocal gaze retained, north defender design/bench preserved. Hidden far hindfoot not certified.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-34",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-34-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина отвечает Пин-Пину рядом с картиной защитника.",
+        "en": "The Elder answers PinPin beside the defender mural.",
+        "es": "El anciano responde a PinPin junto al mural del defensor."
+      },
+      "text": {
+        "en": [
+          "“What is war?” “When large groups of people fight one another. It can hurt people and destroy their homes. Here, he stands in the way of harm.”"
+        ],
+        "ru": [
+          "— Что такое война? — Это когда большие группы людей сражаются друг с другом. Люди могут пострадать, а их дома — разрушиться. Здесь он защищает их от беды."
+        ],
+        "es": [
+          "—¿Qué es la guerra? —Cuando grandes grupos de personas luchan entre sí. Puede hacer daño a la gente y destruir sus hogares. Aquí él se pone delante del peligro para protegerlos."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C2D reply angle same axis",
+      "continuity": "Elder left lowers head toward child right, both mutual gaze. Warm firm expression, no frightening reenactment.",
+      "review": "Selected full inspection: Elder answer close view left faces child right, child looks left/up. No extra forepaw gestures, warm serious/kind expression, north shield/home mural stays behind. Hidden feet unverified.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-35",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-35-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "На картине щит справа защищает дома и семьи слева от бури.",
+        "en": "The painted shield at right protects homes and families at left from the storm.",
+        "es": "El escudo pintado a la derecha protege a los hogares y familias de la izquierda."
+      },
+      "text": {
+        "en": [
+          "“If the darkness swept everything away, where would the little ones live?” asked PinPin. He looked at the tiny homes behind the shield."
+        ],
+        "ru": [
+          "— Если темнота всё унесёт, где будут жить малыши? — спросил Пин-Пин. Он смотрел на маленькие дома за щитом."
+        ],
+        "es": [
+          "—Si la oscuridad se lo llevara todo, ¿dónde vivirían los pequeños? —preguntó PinPin. Miró las casitas detrás del escudo."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "Child POV / actor-free mural insert",
+      "continuity": "No living actors visible. Child/Elder dialogue is voice-over attached to painted mural detail. Preserve accepted mural orientation. Families and homes LEFT, defender shield RIGHT, storm farther RIGHT.",
+      "review": "Viewed full generated output: close shield/family detail preserves orientation and protective relation; warm little homes and held children left, shield right, storm beyond. Upper face intentionally cropped. No living foreground actors, gore or text. Creator pass; root independent review pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-36",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-36-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина успокаивает Пин-Пина в тёплом свете пещеры.",
+        "en": "The Elder reassures PinPin in the cave's warm light.",
+        "es": "El anciano tranquiliza a PinPin bajo la luz cálida de la cueva."
+      },
+      "text": {
+        "en": [
+          "“This is a picture, and you are safe here,” said the Elder. “It tells us why protecting others matters.”"
+        ],
+        "ru": [
+          "— Это картина, а здесь ты в безопасности, — сказал Старейшина. — Она напоминает, почему так важно защищать других."
+        ],
+        "es": [
+          "—Esto es una pintura, y aquí estás a salvo —dijo el anciano—. Nos recuerda por qué es tan importante proteger a los demás."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C2D reassurance",
+      "continuity": "Child right near Elder left; Elder responds into child’s eyes. Safe lamp and peaceful real cave visible, storm remains flat painting.",
+      "review": "Selected full inspection: close reassuring pair, Elder lowers head toward child, genuine reciprocal orientation, planted paws, north defender painted behind. Peaceful real cave and visible lamp distinct from symbolic storm.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-37",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-37-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Ежи беседуют перед картиной щита и защищённых домов.",
+        "en": "The hedgehogs speak before the painted shield and sheltered homes.",
+        "es": "Los erizos conversan ante el escudo y los hogares protegidos del mural."
+      },
+      "text": {
+        "en": [
+          "“Does he like fighting?” “The best defender wants everyone safe. Being strong is not a reason to hurt someone.”"
+        ],
+        "ru": [
+          "— Он любит драться? — Лучший защитник хочет, чтобы все были в безопасности. Сила не даёт права обижать других."
+        ],
+        "es": [
+          "—¿Le gusta pelear? —El mejor defensor quiere que todos estén a salvo. Ser fuerte no es una razón para hacer daño a alguien."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C2 two-shot shield connection",
+      "continuity": "PinPin right asks Elder left with reciprocal gaze; shield remains background target for following glance.",
+      "review": "Selected full inspection: wider pair conversation at north wall, mutual face orientation, north bench left and stair opening right preserve geography. Shield families-left/storm-right exact orientation retained; no extra living humans or gestures.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-38",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-38-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Картина золотого света, живого дерева и холодной тёмной бури.",
+        "en": "A mural of golden light, a living tree and a cold dark storm.",
+        "es": "Un mural de luz dorada, un árbol vivo y una tormenta fría y oscura."
+      },
+      "text": {
+        "en": [
+          "Another picture showed light pushing back a great cold darkness. A little shelter glowed between them."
+        ],
+        "ru": [
+          "На другой картине свет оттеснял огромную холодную тьму. Между ними светился маленький тёплый дом."
+        ],
+        "es": [
+          "Otra pintura mostraba la luz haciendo retroceder una gran oscuridad helada. Entre ambas brillaba un pequeño refugio."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "Child POV / actor-free mural insert",
+      "continuity": "No living actors visible. Child/Elder dialogue is voice-over attached to painted mural detail. Preserve accepted mural orientation.",
+      "review": "Full output viewed: extra right-side bench removed, uninterrupted cave wall base and bare floor restored; sun/tree/cottage/river/storm mural unchanged in composition. No living actors/text. Creator pass; root independent gate pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-39",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-39-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин смотрит на Старейшину возле картины света и тьмы.",
+        "en": "PinPin looks toward the Elder beside the light-and-darkness mural.",
+        "es": "PinPin mira al anciano junto al mural de luz y oscuridad."
+      },
+      "text": {
+        "en": [
+          "“But I like night,” said PinPin. “Mama tucks me in.”"
+        ],
+        "ru": [
+          "— Но я люблю ночь, — сказал Пин-Пин. — Мама укладывает меня спать."
+        ],
+        "es": [
+          "—Pero a mí me gusta la noche —dijo PinPin—. Mamá me arropa."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C3D child reaction",
+      "continuity": "PinPin right faces Elder left, eyes meet; dark mural behind kept calm and visibly painted.",
+      "review": "Accepted after full-image inspection: reciprocal face and pupil directions, natural grounded visible forepaws, east sun/tree versus cold blue storm painting remains recognizable. Hidden limb attachment is not certified.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-40",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-40-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина тепло отвечает ребёнку; картина остаётся позади них.",
+        "en": "The Elder warmly answers the child with the mural behind them.",
+        "es": "El anciano responde con cariño al pequeño, con el mural detrás."
+      },
+      "text": {
+        "en": [
+          "“So do I,” said the Elder. “Night gives us rest. The darkness in this story means danger that could take their home away.”"
+        ],
+        "ru": [
+          "— И я люблю, — сказал Старейшина. — Ночью мы отдыхаем. А тьма в этой истории — это опасность, которая может отнять у них дом."
+        ],
+        "es": [
+          "—A mí también —dijo el anciano—. La noche nos deja descansar. La oscuridad de esta historia representa un peligro que podría quitarles su hogar."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C3D mentor reply",
+      "continuity": "Elder left smiles toward child right; reciprocal gaze; tiny star border of mural in background.",
+      "review": "Accepted after full-image inspection: corrected EAST painting now has oak/deer, gold sun, green valley/cottage and blue cold storm only. Wrong human defender/baby removed. Foreground pair, grounded paws and actual reciprocal gaze preserved; no claim of pixel-identical mural brushwork.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-41",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-41-v3.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "На южной стене нарисованы звери, которые строят, носят еду и заботятся о малышах.",
+        "en": "The south mural shows animals building, carrying food and caring for babies.",
+        "es": "El mural del sur muestra animales construyendo, llevando comida y cuidando bebés."
+      },
+      "text": {
+        "en": [
+          "On the last wall were many small helpers. Some carried wood. Some brought food. Some held babies."
+        ],
+        "ru": [
+          "На последней стене было много маленьких помощников. Одни несли дерево. Другие — еду. Кто-то держал малышей."
+        ],
+        "es": [
+          "En la última pared había muchos pequeños ayudantes. Unos llevaban madera. Otros traían comida. Algunos sostenían a los bebés."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "Child POV / actor-free mural insert",
+      "continuity": "No living actors visible. Child/Elder dialogue is voice-over attached to painted mural detail. Preserve accepted mural orientation.",
+      "review": "Full output viewed: rug is absent from entire lower foreground; bare warm stone now continuous. Community mural retains beam-carriers/builder/food/carers/infants and original placement, real twin side lamps and offering ledge. No living actors or text. Minor texture redraw is visible; exact pixel identity not claimed. No clear blocking painted-limb defect observed, overlapping painted caregiver hands remain simplified stylization. Creator pass; root independent review pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-42",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-42-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин и Старейшина беседуют у картины общих дел.",
+        "en": "PinPin and the Elder speak beside the shared-work mural.",
+        "es": "PinPin y el anciano conversan junto al mural del trabajo compartido."
+      },
+      "text": {
+        "en": [
+          "“Can the Shield Keeper do all those jobs?” “No,” said the Elder. “No one can.”"
+        ],
+        "ru": [
+          "— Защитник со Щитом может всё это сделать? — Нет, — сказал Старейшина. — Никто не может всё один."
+        ],
+        "es": [
+          "—¿Puede el Guardián del Escudo hacer todos esos trabajos? —No —dijo el anciano—. Nadie puede."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C4D child question",
+      "continuity": "PinPin right looks up at Elder left; Elder meets gaze. A beam carried by two painted animals visible below.",
+      "review": "Accepted after full-image inspection: actual mutual gaze before the south community-work painting; visible foreground limbs coherent, two living hedgehogs only. Paint details interpreted as artwork rather than literal additional actors.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-43",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-43-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина показывает помощников на стене, и Пин-Пин следует его взгляду.",
+        "en": "The Elder indicates the painted helpers and PinPin follows his attention.",
+        "es": "El anciano muestra a los ayudantes pintados y PinPin sigue su mirada."
+      },
+      "text": {
+        "en": [
+          "“A strong arm can hold a shield. Other paws grow food and build warm homes. They need one another.”"
+        ],
+        "ru": [
+          "— Сильная рука держит щит. Другие лапки выращивают еду и строят тёплые дома. Все нужны друг другу."
+        ],
+        "es": [
+          "—Un brazo fuerte puede sostener un escudo. Otras patitas cultivan comida y construyen hogares cálidos. Se necesitan unos a otros."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C4 detail/action two-shot",
+      "continuity": "Rear three-quarter pair shares attention toward south community frieze. Elder rests forepaw on low ledge, child looks up toward painted helpers; no precise pointing gesture.",
+      "review": "Accepted after full-image inspection: rear three-quarter pair shares attention toward the south community frieze; east light mural left and west mother mural right match reverse geography. Elder rests a forepaw on low ledge, not an airborne pointing gesture; exact finger target is not asserted.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-44",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-44-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина и Пин-Пин спокойно беседуют у низкой скамьи.",
+        "en": "The Elder and PinPin talk quietly by the low bench.",
+        "es": "El anciano y PinPin hablan tranquilos junto al banco bajo."
+      },
+      "text": {
+        "en": [
+          "“And my quill?” asked PinPin. “Your gift can help. First, look. Listen. Ask who needs you. You do not have to help all alone.”"
+        ],
+        "ru": [
+          "— А моя иголка? — спросил Пин-Пин. — Твой дар может помочь. Сначала посмотри. Послушай. Спроси, кому ты нужен. Тебе не обязательно помогать одному."
+        ],
+        "es": [
+          "—¿Y mi púa? —preguntó PinPin. —Tu don puede ayudar. Primero, mira. Escucha. Pregunta quién te necesita. No tienes que ayudar tú solo."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C north-wall bench two-shot",
+      "continuity": "Pair on floor beside low north-wall bench, Elder left child right meet eyes. Bench stays against north wall.",
+      "review": "Accepted after full-image inspection: intimate reciprocal gaze beside the north-wall bench, correct lower defender mural behind. Both living hedgehogs grounded with coherent visible paws; no floating quill. Bench remains against wall.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-45",
+      "sequence": "sacred-pictures",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-45-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин задумался, а Старейшина спокойно сидит рядом.",
+        "en": "PinPin thinks quietly while the Elder sits nearby.",
+        "es": "PinPin piensa en silencio mientras el anciano está a su lado."
+      },
+      "text": {
+        "en": [
+          "PinPin was quiet. He thought of the lake, the little plant, and the homes on the map."
+        ],
+        "ru": [
+          "Пин-Пин помолчал. Он думал об озере, о маленьком ростке и о домах на карте."
+        ],
+        "es": [
+          "PinPin se quedó callado. Pensó en el lago, en la plantita y en las casas del mapa."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support.",
+        "thematicSupport": [
+          "Chapter02 block6 responsibility (zero-based), not evidence of deities/religion in that passage.",
+          "Later chapters11–12 light/winter myth and17–25 communal protection; exact cave/murals/pantheon newly authored."
+        ]
+      },
+      "camera": "C north-wall bench quiet close",
+      "continuity": "PinPin eyes gently lowered to own paws/back quill reflection not needed; Elder quietly attentive beside him. No magical vision.",
+      "review": "Accepted after full-image inspection: distinct silent reaction, child looks down at his two forepaws held together above two hindfeet in a seated pose; Elder quietly attends to him. North-wall bench/defender and northeast stair remain behind. No dialogue eye-contact claim or magical vision.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-46",
+      "sequence": "return",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-46-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Ежи возвращаются к той же лестнице в углу пещеры.",
+        "en": "The hedgehogs return to the same staircase in the cave corner.",
+        "es": "Los erizos vuelven a la misma escalera del rincón de la cueva."
+      },
+      "text": {
+        "en": [
+          "“Shall we go back?” asked the Elder. PinPin nodded. He had more questions now."
+        ],
+        "ru": [
+          "— Пойдём обратно? — спросил Старейшина. Пин-Пин кивнул. Теперь у него было ещё больше вопросов."
+        ],
+        "es": [
+          "—¿Volvemos? —preguntó el anciano. PinPin asintió. Ahora tenía más preguntas."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "C6 departure wide",
+      "continuity": "Pair walk northeast to same bottom stair opening. Child slightly ahead, Elder behind. Lamp and mural coordinates unchanged.",
+      "review": "Full output viewed: child closer to same northeast cave stair, Elder behind; both face opening rather than murals. Cave mural positions, shaft, north bench and lamps retain accepted arrangement. Child three-quarter face attends first steps. Walking is a quiet transitional pose, not a dramatic stride; no new exit or staff. Creator pass; root independent review pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-47",
+      "sequence": "return",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-47-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин поднимается первым, Старейшина следует за ним.",
+        "en": "PinPin climbs first with the Elder following.",
+        "es": "PinPin sube primero y el anciano lo sigue."
+      },
+      "text": {
+        "en": [
+          "Up they went. One broad step, then the next."
+        ],
+        "ru": [
+          "Они поднимались. Одна широкая ступенька, потом другая."
+        ],
+        "es": [
+          "Subieron. Un escalón ancho, y después otro."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "T2 ascent",
+      "continuity": "PinPin leads up flight B away from cave; Elder follows within one body length. Eyes on steps. No turned talking faces while climbing.",
+      "review": "Full output viewed: both face uphill/away from camera, child clearly ahead/higher and Elder lower behind. Forepaws extend to higher treads; hind feet below, broad original staircase/rails/left lamps retained. No turned speaking face. Raised hind feet are movement, hidden far joints not certified. Creator pass; root independent review pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-48",
+      "sequence": "return",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-48-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин поворачивает на знакомой освещённой площадке.",
+        "en": "PinPin turns at the familiar lamp-lit landing.",
+        "es": "PinPin gira en el conocido descansillo iluminado."
+      },
+      "text": {
+        "en": [
+          "There was the little lamp again. PinPin turned the corner."
+        ],
+        "ru": [
+          "Вот и знакомая маленькая лампа. Пин-Пин повернул за угол."
+        ],
+        "es": [
+          "Allí estaba otra vez la pequeña lámpara. PinPin dobló la esquina."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "T1 ascent landing",
+      "continuity": "Pair stopped on exact same landing; child has turned left toward upper flight; Elder watches child. Same lamp/rail.",
+      "review": "Full output viewed: same landing and walllamp, upper flight rear-left; child left nearest upper flight faces uphill, Elder right behind attends child. Pair grounded on level landing before turn. No reversed route or new door. Creator pass; root independent review pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-49",
+      "sequence": "return",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-49-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Ежи проходят через открытую дверь обратно в дом.",
+        "en": "The hedgehogs pass through the open door back into the home.",
+        "es": "Los erizos atraviesan la puerta abierta para volver a la casa."
+      },
+      "text": {
+        "en": [
+          "The books and the ink-stained table came back into view. They were in the Elder’s home again."
+        ],
+        "ru": [
+          "Снова появились книги и стол со следами чернил. Они вернулись в дом Старейшины."
+        ],
+        "es": [
+          "Volvieron a aparecer los libros y la mesa manchada de tinta. Estaban de nuevo en la casa del anciano."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "H3 top threshold",
+      "continuity": "PinPin crosses level top landing through same open plank door into home; Elder one step behind. Desk visible in correct room side.",
+      "review": "Full output viewed: child already crossing into furnished room toward camera, Elder immediately behind in doorway. Open door/low ring/right-side swing preserved, level landing/stairlamp behind. Left desk/books and right bed reveal home, no forest beyond inner doorway. Foreground furniture reframed; exact metric placement not claimed. Creator pass; root independent review pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-50",
+      "sequence": "return",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-50-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина записывает вопрос Пин-Пина за своим столом.",
+        "en": "The Elder writes down PinPin's question at his desk.",
+        "es": "El anciano escribe la pregunta de PinPin en su escritorio."
+      },
+      "text": {
+        "en": [
+          "The Elder closed the stair door. “What shall I write?” “How can my magic help?” said PinPin."
+        ],
+        "ru": [
+          "Старейшина закрыл дверь к лестнице. — Что мне записать? — Как моё волшебство может помочь? — сказал Пин-Пин."
+        ],
+        "es": [
+          "El anciano cerró la puerta de la escalera. —¿Qué escribo? —¿Cómo puede ayudar mi magia? —dijo PinPin."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "H1 table writing",
+      "continuity": "Elder left writes with nib touching page; PinPin right watches him and paper while dictating. Cave door CLOSED background; no staff inside.",
+      "review": "Accepted after full-image inspection: dark feather nib visibly touches notebook page, one forepaw writes and other rests on page; child beside stool watches Elder while speaking. Stool supports Elder, closed inner door retains right hinges/low left ring. Hidden lower anatomy not fully visible; no claim of exact nib fixation by child.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-51",
+      "sequence": "return",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-51-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина поворачивается от книги к Пин-Пину.",
+        "en": "The Elder turns from the book toward PinPin.",
+        "es": "El anciano se vuelve del libro hacia PinPin."
+      },
+      "text": {
+        "en": [
+          "“Your quill carries old magic from our ancestors,” said the Elder. “There is still much to learn. We will take our time.”"
+        ],
+        "ru": [
+          "— В твоей иголке живёт старое волшебство наших предков, — сказал Старейшина. — Нам ещё многому предстоит научиться. Не будем спешить."
+        ],
+        "es": [
+          "—Tu púa guarda una magia antigua de nuestros antepasados —dijo el anciano—. Aún tenemos mucho que aprender. Iremos con calma."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          10
+        ],
+        "note": "Original first-visit spine adapted; religious pantheon, home/cave journey and symbolic teaching are user-authorized additions. See source-adaptation-map.md."
+      },
+      "camera": "H0 reciprocal at table",
+      "continuity": "Elder left turns from page to child right. Both eye contact; writing feather laid on rest, no extra hand.",
+      "review": "Accepted after full-image inspection: final home exchange has clear reciprocal gaze, dark writing feather laid on desk and both visible Elder forepaws at table/stool edge. Closed inner door and room anchors retained. Notebook marks are indistinct illustrated writing, not authored readable text. Stool perspective varies slightly between views without an action contradiction.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-52",
+      "sequence": "return",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-52-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Ежи выходят из дома под корнями в золотой вечерний свет.",
+        "en": "The hedgehogs emerge from the root home into golden evening light.",
+        "es": "Los erizos salen de la casa entre raíces a la luz dorada de la tarde."
+      },
+      "text": {
+        "en": [
+          "Outside, the leaves glowed gold. The little plant stood free beside the fern."
+        ],
+        "ru": [
+          "Снаружи листья светились золотом. Маленький росток свободно стоял рядом с папоротником."
+        ],
+        "es": [
+          "Fuera, las hojas brillaban como el oro. La plantita crecía libre junto al helecho."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "New user-authorized adaptation scene. Religion, deity iconography, home/cave geography and dialogue are not present in original chapter02. See source-adaptation-map.md for later-source thematic support."
+      },
+      "camera": "E0 threshold exit",
+      "continuity": "PinPin emerges from root arch, Elder follows; staff still rockleft; upright plant/branch right. Pair look at outside path, not dialogue.",
+      "review": "Full output viewed: child steps out toward foreground ahead of Elder at root opening. Staff remains leaned left, upright freed plant and moved twig right. Familiar furniture visible within, golden leaves/no sun disc. No conversation eyeline required while walking. Creator pass; root independent review pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-53",
+      "sequence": "return",
+      "src": "images/chapter-02-landscapes/shot-11.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пустой дуб на вершине холма — место завтрашней встречи.",
+        "en": "The empty hilltop oak is the place of tomorrow's meeting.",
+        "es": "El roble vacío de la cima es el lugar de la cita de mañana."
+      },
+      "text": {
+        "en": [
+          "“Tomorrow at dawn,” said the Elder, “meet me by the oak on the hilltop. We will begin with listening.”"
+        ],
+        "ru": [
+          "— Завтра на рассвете, — сказал Старейшина, — приходи к дубу на вершине холма. Начнём с того, что прислушаемся."
+        ],
+        "es": [
+          "—Mañana al amanecer —dijo el anciano—, ven al roble de la cima. Empezaremos escuchando."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          12
+        ],
+        "note": "Original first-visit spine adapted; religious pantheon, home/cave journey and symbolic teaching are user-authorized additions. See source-adaptation-map.md."
+      },
+      "camera": "Empty summit insert",
+      "continuity": "Separate summit oak only, no actors, future lesson not happening now.",
+      "review": "Re-inspected in revision02 all30 EYELINE-AUDIT.md; selected for the stated action/gaze.",
+      "reused": true,
+      "before": "images/chapter-02-landscapes/shot-11.png",
+      "beforeText": {
+        "ru": [
+          "— Начни с того, чтобы прислушаться к себе, — сказал Старейшина. — Завтра на рассвете приходи к дубу на вершине Холма Нор. Следующий шаг мы сделаем вместе."
+        ],
+        "en": [
+          "“Begin by listening to yourself,” said the Elder. “Tomorrow at dawn, meet me beneath the oak at the top of Burrow Hill. We'll take the next step together.”"
+        ],
+        "es": [
+          "—Empieza por escucharte a ti mismo —dijo el anciano—. Mañana al amanecer, ven al roble de la cima. Daremos juntos el siguiente paso."
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-54",
+      "sequence": "return",
+      "src": "images/chapter-02-expanded/revision-02/scenes/scene-54-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин оборачивается к Старейшине, и они прощаются, глядя друг на друга.",
+        "en": "PinPin faces the Elder for a goodbye with clear mutual gaze.",
+        "es": "PinPin mira al anciano para despedirse y ambos se miran."
+      },
+      "text": {
+        "en": [
+          "“At dawn,” said PinPin. “Thank you.” The Elder smiled. “Bring your questions.”"
+        ],
+        "ru": [
+          "— На рассвете, — сказал Пин-Пин. — Спасибо. Старейшина улыбнулся. — Приноси свои вопросы."
+        ],
+        "es": [
+          "—Al amanecer —dijo PinPin—. Gracias. El anciano sonrió. —Trae tus preguntas."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          12,
+          13
+        ],
+        "note": "Added reciprocal goodbye after original future-dawn promise."
+      },
+      "camera": "E0 reciprocal farewell NEW",
+      "continuity": "PinPin near path right turns face LEFT toward Elder at rootleft. Both visibly meet gaze; warm sunset, no explicit sun disc.",
+      "review": "Full output viewed: stopped outdoor pair Elder left, child right, faces and pupils directed reciprocally toward partner. Staff left and freed plant/twig right persist, no held staff or departing stride. Warm golden daylight, no explicit sun disc. No obvious extra limb; hidden far joints unknown. Creator pass; root independent review pending.",
+      "reused": false
+    },
+    {
+      "id": "elder-r2-55",
+      "sequence": "return",
+      "src": "images/chapter-02-direct/scene-14.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин уходит по тропинке от холма на закате.",
+        "en": "PinPin walks away from the hill along the sunset path.",
+        "es": "PinPin se aleja de la colina por el sendero al atardecer."
+      },
+      "text": {
+        "en": [
+          "PinPin set off. He did not know everything yet. But now he knew where to begin."
+        ],
+        "ru": [
+          "Пин-Пин пошёл по тропинке. Он ещё не знал всего. Но теперь знал, с чего начать."
+        ],
+        "es": [
+          "PinPin se puso en camino. Todavía no lo sabía todo. Pero ahora sabía por dónde empezar."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          13
+        ],
+        "note": "Original first-visit spine adapted; religious pantheon, home/cave journey and symbolic teaching are user-authorized additions. See source-adaptation-map.md."
+      },
+      "camera": "Departure wide",
+      "continuity": "PinPin walks toward foreground away from hill; eyes on route/sky. No claim he is looking back at Elder.",
+      "review": "Re-inspected in revision02 all30 EYELINE-AUDIT.md; selected for the stated action/gaze.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-14.png",
+      "beforeText": {
+        "ru": [
+          "Небо стало золотым и багряным. У Пин-Пина по-прежнему было много вопросов. Он радовался и немножко тревожился. Завтра он придёт и с радостью, и с тревогой."
+        ],
+        "en": [
+          "The sky turned gold and crimson. PinPin still had questions. He felt excited—and a little unsure. Tomorrow, he would bring both feelings with him."
+        ],
+        "es": [
+          "El cielo se volvió dorado y carmesí. PinPin aún tenía preguntas. Sentía ilusión y un poquito de inquietud. Mañana llevaría consigo las dos cosas."
+        ]
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-56",
+      "sequence": "return",
+      "src": "images/chapter-02-landscapes/shot-12.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Закат виден через пустое окошко из листьев.",
+        "en": "The sunset shows through an empty window of leaves.",
+        "es": "El atardecer se ve por una ventana vacía entre hojas."
+      },
+      "text": {
+        "en": [],
+        "ru": [],
+        "es": []
+      },
+      "source": {
+        "kind": "silent",
+        "blocks": [
+          13
+        ],
+        "note": "Original first-visit spine adapted; religious pantheon, home/cave journey and symbolic teaching are user-authorized additions. See source-adaptation-map.md."
+      },
+      "camera": "Silent leaf arch",
+      "continuity": "Empty sunset leaf window; no actors.",
+      "review": "Re-inspected in revision02 all30 EYELINE-AUDIT.md; selected for the stated action/gaze.",
+      "reused": true,
+      "before": "images/chapter-02-landscapes/shot-12.png",
+      "beforeText": {
+        "ru": [],
+        "en": [],
+        "es": []
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    },
+    {
+      "id": "elder-r2-57",
+      "sequence": "return",
+      "src": "images/chapter-02-direct/scene-16.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин выглядывает через листья и смотрит на читателя.",
+        "en": "PinPin peeks through the leaves toward the reader.",
+        "es": "PinPin se asoma entre las hojas y mira al lector."
+      },
+      "text": {
+        "en": [],
+        "ru": [],
+        "es": []
+      },
+      "source": {
+        "kind": "silent",
+        "blocks": [
+          13
+        ],
+        "note": "Original first-visit spine adapted; religious pantheon, home/cave journey and symbolic teaching are user-authorized additions. See source-adaptation-map.md."
+      },
+      "camera": "Silent leaf arch",
+      "continuity": "PinPin peeks through same leaves looking at reader; playful final beat, no partner.",
+      "review": "Re-inspected in revision02 all30 EYELINE-AUDIT.md; selected for the stated action/gaze.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-16.png",
+      "beforeText": {
+        "ru": [],
+        "en": [],
+        "es": []
+      },
+      "beforeNote": "Earlier proposal passage; selected image retained after actual revision eyeline audit."
+    }
+  ],
+  "editorialNotes": [
+    "Second proposal:57 visual beats, brief concrete exchanges for age-four read-aloud. No image quota.",
+    "The three-image plant rescue is a small act within a fuller mentor visit.",
+    "Religious paintings and cave route are explicitly commissioned new adaptation, not recovered chapter02 source.",
+    "Human deity figures remain flat paintings; Elder identity and later story reveals remain concealed.",
+    "Planning coordinates and dimensions are qualitative art direction, not a calibrated reconstruction.",
+    "English/Russian/Spanish narration and all selected images complete; creator full-image and ordered sequence reviews passed. Root browser review is a separate gate."
+  ],
+  "continuityNotes": [
+    "First visit the day after the lake; next dawn lesson remains promised, not shown.",
+    "Exterior staff parked left; freed plant and moved twig stay right after rescue.",
+    "Home → inner door → two stair flights/turn → cave plateau → same route up → home → exterior.",
+    "Murals fixed west/north/east/south; sky shaft southwest; ordinary night distinguished from destructive darkness in sacred story."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "id": "passage-route-v3",
+  "prompt": "Use case: precise-object-edit. Edit this longitudinal route study with ONE geometric correction. Keep the ENTIRE FLOOR LINE absolutely unchanged, from home left across A B C D to cave E; floor must remain continuously gently sloped and flush. Keep home, cave, murals, labels, light and every object unchanged. ONLY LIFT THE TUNNEL CEILING between just right of A and just left of E. The overhead root/earth/rock line must rise upward into the soil so the passage has generous UNIFORM clear headroom along ALL of B C D, about TWO TIMES the height of the low home root squeeze A. Currently D is too low; enlarge it visibly upward, without lowering or shifting floor. A itself remains the same small low crawl opening; immediately beyond A the passage opens up. Carry the higher ceiling to cave entrance E so there is no second squeeze and no root column touching the floor. Pale stone C remains small at side. Natural rough root ceiling, not a built arch or rectangular corridor. Preserve continuous floor, no staircase, no handrail, no extra doorway, no animals. This is a technical preproduction side section; dimensional readability outranks cosmetic preservation of the underground soil directly above B C D. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-03/preproduction/passage-route-v2.png",
+      "role": "edit target: preserve continuous floor, raise only middle tunnel ceiling for reliable body clearance",
+      "sha256": "a876dc2adb29336f71786a74dfc8b12876826e6a4a54c2db925c6a680ecb41a6"
+    }
+  ],
+  "startedAt": "2026-09-21T06:26:42.597583+00:00",
+  "tool": "built-in image_gen",
+  "status": "requested"
+}

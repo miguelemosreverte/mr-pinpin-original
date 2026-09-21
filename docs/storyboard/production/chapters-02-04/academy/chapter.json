@@ -1,0 +1,1376 @@
+{
+  "schemaVersion": 1,
+  "id": "academy",
+  "sourceChapter": "chapter-04",
+  "status": "proposed",
+  "title": {
+    "ru": "Академия Леса",
+    "en": "The Forest Academy",
+    "es": "La academia del bosque"
+  },
+  "summary": {
+    "ru": "Одна прогулка учит друзей прислушиваться. После уроков у старого дуба хватает времени для истории, венка и тихой дружбы.",
+    "en": "One listening walk helps the friends notice their forest. After class, there is time for a story, a flower crown and quiet friendship beneath the oak.",
+    "es": "Un paseo para escuchar ayuda a los amigos a descubrir su bosque. Después de clase hay tiempo para una historia, una corona de flores y la amistad bajo el roble."
+  },
+  "cover": {
+    "ru": "images/covers/chapter-04/title/title-ru-v1.png",
+    "en": "images/covers/chapter-04/title/title-en-v1.png",
+    "es": "images/covers/chapter-04/title/title-es-v1.png"
+  },
+  "preproduction": [
+    {
+      "id": "cast",
+      "title": "Canonical cast",
+      "src": "images/chapter-04-academy/preproduction/cast-v1.png",
+      "description": "PinPin, Lulu, Tutu and proposed owl teacher; internally reviewed identity study."
+    },
+    {
+      "id": "site",
+      "title": "Academy site",
+      "src": "images/chapter-04-academy/preproduction/site-v1.png",
+      "description": "Pavilion left, stream left, stump center, snag rear, oak right; geography reference."
+    },
+    {
+      "id": "oak",
+      "title": "Oak root clean plate",
+      "src": "images/chapter-04-academy/preproduction/oak-plate-v1.png",
+      "description": "Three dry root hollows, daisies left, southeast departure path."
+    },
+    {
+      "id": "pinpin-turnaround",
+      "title": "PinPin shared turnaround",
+      "src": "images/chapter-preproduction/shared/pinpin-turnaround-v1.png",
+      "description": "Established child identity from front, right profile, rear and three-quarter; illustrative proportions."
+    },
+    {
+      "id": "family-reference",
+      "title": "Mama and PinPin",
+      "src": "images/chapter-04-academy/preproduction/family-reference-v1.png",
+      "description": "Reviewed homecoming cast and relative scale; no PomPom in this episode."
+    },
+    {
+      "id": "title",
+      "title": "Localized title cover",
+      "src": "images/covers/chapter-04/title/title-en-v1.png",
+      "description": "Root-generated proposed title cover; RU/EN/ES variants supplied."
+    },
+    {
+      "id": "miniature",
+      "title": "Text-free title miniature",
+      "src": "images/covers/chapter-04/miniature/miniature-v1.png",
+      "description": "One proposed text-free master, shared across display sizes and languages."
+    }
+  ],
+  "sequences": [
+    {
+      "id": "school",
+      "title": {
+        "ru": "Слушаем лес",
+        "en": "Listening to the forest",
+        "es": "Escuchamos el bosque"
+      },
+      "purpose": "Expand physical and emotional continuity through distinct actions and reactions."
+    },
+    {
+      "id": "oak",
+      "title": {
+        "ru": "Под старым дубом",
+        "en": "Beneath the old oak",
+        "es": "Bajo el viejo roble"
+      },
+      "purpose": "Expand physical and emotional continuity through distinct actions and reactions."
+    },
+    {
+      "id": "tale",
+      "title": {
+        "ru": "История Туту",
+        "en": "Tutu’s story",
+        "es": "La historia de Tutu"
+      },
+      "purpose": "Expand physical and emotional continuity through distinct actions and reactions."
+    },
+    {
+      "id": "crown",
+      "title": {
+        "ru": "Венок Лулу",
+        "en": "Lulu’s flower crown",
+        "es": "La corona de Lulu"
+      },
+      "purpose": "Expand physical and emotional continuity through distinct actions and reactions."
+    },
+    {
+      "id": "quiet",
+      "title": {
+        "ru": "Хорошо быть вместе",
+        "en": "Happy to be together",
+        "es": "Qué bien estar juntos"
+      },
+      "purpose": "Expand physical and emotional continuity through distinct actions and reactions."
+    },
+    {
+      "id": "home",
+      "title": {
+        "ru": "Мама зовёт домой",
+        "en": "Mama calls us home",
+        "es": "Mamá nos llama a casa"
+      },
+      "purpose": "Expand physical and emotional continuity through distinct actions and reactions."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "academy-01",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-01-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Сова собирает трёх друзей у пенька в лесной школе.",
+        "en": "The owl gathers three friends beside her stump in the woodland school.",
+        "es": "La maestra Búho reúne a tres amigos junto a su tocón en la escuela del bosque."
+      },
+      "text": {
+        "ru": [
+          "Однажды днём в Лесной академии учительница Сова собрала Пин-Пина, Лулу и Туту на полянке."
+        ],
+        "en": [
+          "One afternoon at the Forest Academy, their owl teacher gathered PinPin, Lulu and Tutu in the clearing."
+        ],
+        "es": [
+          "Una tarde, en la Academia del Bosque, la maestra Búho reunió a PinPin, Lulu y Tutu en el claro."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Wide from southwest, all four by central stump.",
+      "continuity": "PinPin left-front, Lulu center, Tutu right-front; owl on central stump. Pavilion far-left, oak far-right. No props.",
+      "review": "Accepted scene01: exactly3 children+owl, believable owl one wing gesture and other folded, feet on central stump. Site landmarks intact; PinPin childsmall, rabbit taller, Tutu one full tail. No obvious duplicate limbs; occluded attachments unverified.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-01-v1.json"
+    },
+    {
+      "id": "academy-02",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-02-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Сова обращается к Пин-Пину, Лулу и Туту.",
+        "en": "The owl speaks to PinPin, Lulu and Tutu.",
+        "es": "La maestra habla con PinPin, Lulu y Tutu."
+      },
+      "text": {
+        "ru": [
+          "— Сегодня попробуем услышать то, мимо чего обычно пробегаем, — сказала Сова."
+        ],
+        "en": [
+          "“Today, let’s listen for the things we usually hurry past,” said their teacher."
+        ],
+        "es": [
+          "—Hoy vamos a escuchar lo que solemos pasar por alto cuando corremos —dijo la maestra."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Medium four-shot at child height, teacher right and pupils left.",
+      "continuity": "Owl on same stump; three friends look toward teacher.",
+      "review": "Accepted scene02 closer teacher address, three pupils oriented toward owl on camera-right. All four distinct, retained landmark direction, mild scale/camera shift consistent. No duplicate visible limbs; hidden attachments unverified.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-02-v1.json"
+    },
+    {
+      "id": "academy-03",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-03-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Трое друзей замирают и внимательно слушают.",
+        "en": "The three friends grow still and listen attentively.",
+        "es": "Los tres amigos se quedan quietos y escuchan atentos."
+      },
+      "text": {
+        "ru": [
+          "Друзья перестали разговаривать. Пин-Пин замер и прислушался."
+        ],
+        "en": [
+          "The friends stopped talking. PinPin held still and listened."
+        ],
+        "es": [
+          "Los amigos dejaron de hablar. PinPin se quedó quieto y escuchó."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Close low child-eye view of three attentive listeners; teacher and her stump off-camera right.",
+      "continuity": "PinPin left Lulu middle Tutu right, comfortable still paws, no props.",
+      "review": "Accepted scene03v2: incorrect empty teacherstump removed, three attentive faces and grounded anatomy preserved. Teacher remains offcamera-right. Subtle edit texture shift but no visible new fault; hidden limbs unverified.",
+      "reused": false,
+      "before": "images/chapter-04-academy/scenes/scene-03-v1.png",
+      "provenance": "images/chapter-04-academy/scenes/scene-03-v2.json"
+    },
+    {
+      "id": "academy-04",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-04-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Лулу поднимает уши; друзья смотрят вверх, к листьям.",
+        "en": "Lulu lifts her ears as the friends look up toward the leaves.",
+        "es": "Lulu levanta las orejas y los amigos miran hacia las hojas."
+      },
+      "text": {
+        "ru": [
+          "Лулу подняла уши. — Слышите? Листья шепчутся над нами."
+        ],
+        "en": [
+          "Lulu lifted her ears. “Listen. The leaves are whispering above us.”"
+        ],
+        "es": [
+          "Lulu levantó las orejas. —¿Lo oyen? Las hojas susurran sobre nosotros."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Close low angle, upward listening reaction; ground landmarks out of frame.",
+      "continuity": "Lulu raises ears toward canopy; feet remain ground; no pointing extra forelimbs.",
+      "review": "Root inspected full generated frame: camera genuinely closer/lower, looking upward at three recognizable faces and Lulu raised ears. Both ear tips in frame, torsos intentionally cut by bottom edge, no exposed limb anomaly. Background contains high oak foliage/branches, with all ground-level landmarks out of frame. This fixes contradictory visible empty teacher stump without erasing a set landmark. No added actors/text. Shot now emphasizes listening reaction and adds camera variety. Approved internally for proposal, not user approved.",
+      "reused": false,
+      "before": "images/chapter-04-academy/scenes/scene-04-v1.png",
+      "provenance": "images/chapter-04-academy/scenes/scene-04-v2.json"
+    },
+    {
+      "id": "academy-05",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-05-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Солнечный свет и движущиеся листья в кроне дуба.",
+        "en": "Sunlight and moving leaves in the oak canopy.",
+        "es": "Luz del sol y hojas en movimiento entre las ramas del roble."
+      },
+      "text": {
+        "ru": [
+          "Ветер перебирал листья. Ш-ш-ш… Потом стих, и листья снова замерли."
+        ],
+        "en": [
+          "The breeze stirred the leaves. Shhh… Then it eased, and the leaves grew still again."
+        ],
+        "es": [
+          "La brisa movió las hojas. Shhh… Después se calmó, y las hojas quedaron quietas otra vez."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Upward canopy shot, no cast.",
+      "continuity": "Oak leaves sunlit, no literal faces or music symbols.",
+      "review": "Accepted scene05 environment breathing beat: upward oak canopy, windborne leaves and sunlight, no unwanted animals or music symbols. Falling leaves add visible wind beyond text; plausible gentle movement.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-05-v1.json"
+    },
+    {
+      "id": "academy-06",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-06-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин поворачивается к ручью у края полянки.",
+        "en": "PinPin turns toward the stream at the clearing’s edge.",
+        "es": "PinPin se vuelve hacia el arroyo junto al claro."
+      },
+      "text": {
+        "ru": [
+          "У края полянки Пин-Пин услышал другой звук: тихое журчание ручья. — Давайте послушаем его поближе?"
+        ],
+        "en": [
+          "At the edge of the clearing, PinPin heard another sound: the stream softly trickling. “Shall we listen a little closer?”"
+        ],
+        "es": [
+          "En el borde del claro, PinPin oyó otro sonido: el suave murmullo del arroyo. —¿Lo escuchamos un poco más de cerca?"
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Close PinPin turning left toward stream, ears attentive.",
+      "continuity": "PinPin only. Stream direction camera-left, grass foreground.",
+      "review": "Accepted scene06 solo PinPin listening toward left stream, four plausible paw placements, no extra cast. Stream is already visible close left rather than hidden beyond grass; revise narration to acknowledge hearing stream from clearing edge, next group walk follows bank toward better listening spot. No teacherstump contradiction.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-06-v1.json"
+    },
+    {
+      "id": "academy-07",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-07-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Сова ведёт друзей по сухой тропинке вдоль ручья.",
+        "en": "The owl leads the friends along the dry path beside the stream.",
+        "es": "La maestra guía a los amigos por el sendero seco junto al arroyo."
+      },
+      "text": {
+        "ru": [
+          "Сова повела друзей по тропинке вдоль берега. Они шли медленно, прислушиваясь к воде."
+        ],
+        "en": [
+          "Their teacher led them along the path beside the bank. They walked slowly, listening to the water."
+        ],
+        "es": [
+          "La maestra los guio por el sendero junto a la orilla. Caminaron despacio, escuchando el agua."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Wide lateral group walking toward left stream bank.",
+      "continuity": "Owl on ground leads left, Lulu then PinPin then Tutu follow on dry path.",
+      "review": "Accepted scene07 clear group walking left along dry path, owl leads and empty stump now correctly behind because teacher has left it. Site streamleft/snagrear/oakright stable. PinPin uses upright walking story pose; occluded far limbs unverified, no confirmed extra attachments.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-07-v1.json"
+    },
+    {
+      "id": "academy-08",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-08-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Трое друзей слушают воду с сухого берега; Сова рядом.",
+        "en": "The three friends listen from the dry bank with the owl nearby.",
+        "es": "Los tres amigos escuchan desde la orilla seca, cerca de la maestra."
+      },
+      "text": {
+        "ru": [
+          "На сухом берегу нашлось место для всех. Вода была совсем рядом, но заходить в неё не понадобилось."
+        ],
+        "en": [
+          "There was room for everyone on the dry bank. The water was close enough to hear without stepping into it."
+        ],
+        "es": [
+          "En la orilla seca había sitio para todos. Podían escuchar el agua de cerca sin entrar en ella."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Medium group on dry bank, stream leftforeground.",
+      "continuity": "Owl right/rear supervises; children evenly spaced safely behind edge, boulder left.",
+      "review": "Accepted scene08 all three on dry bank, owl behind supervising, waterpebbles near left, no one standing inwater. Faces expressive and consistent; mammal forepaws/feet plausible and owl wingsfolded. Some far limbs hidden, not certified.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-08-v1.json"
+    },
+    {
+      "id": "academy-09",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-09-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Мелкий ручей струится между гладкими камешками.",
+        "en": "The shallow stream flows between smooth pebbles.",
+        "es": "El arroyo poco profundo corre entre piedras lisas."
+      },
+      "text": {
+        "ru": [
+          "Вода огибала камешки и собиралась в маленькие струйки. Каждая журчала чуть по-своему."
+        ],
+        "en": [
+          "Water slipped around the pebbles and gathered into little streams. Each made a slightly different sound."
+        ],
+        "es": [
+          "El agua rodeaba las piedritas y formaba pequeños hilos. Cada uno sonaba un poco distinto."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Close stream at pebble level, no animals.",
+      "continuity": "Clear shallow water flows among small rounded stones, no treasure or new object.",
+      "review": "Accepted scene09 low stream-level view shows shallow water slipping around pebbles, no unwanted animals. Wider than requested closeup but water dominates foreground and academy landmarks persist; useful listening/environment beat.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-09-v1.json"
+    },
+    {
+      "id": "academy-10",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-10-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Туту поворачивается на стук; Лулу и Пин-Пин прислушиваются.",
+        "en": "Tutu turns toward a tapping sound while Lulu and PinPin listen.",
+        "es": "Tutu se vuelve hacia unos golpecitos mientras Lulu y PinPin escuchan."
+      },
+      "text": {
+        "ru": [
+          "Туту вдруг повернула голову. — Тук-тук-тук! Кто-то стучит. Слышите?"
+        ],
+        "en": [
+          "Suddenly Tutu turned her head. “Tap-tap-tap! Someone’s knocking. Can you hear it?”"
+        ],
+        "es": [
+          "De pronto, Tutu giró la cabeza. —¡Toc, toc, toc! Alguien está golpeando. ¿Lo oyen?"
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Medium on Tutu beside bank, others partly visible.",
+      "continuity": "Tutu turns toward rear/north pale snag; single tail, two forepaws.",
+      "review": "Accepted scene10 Tutu initiates turn toward tapping, friends follow gaze right/up. Empty central stump now valid whileteacher accompaniesoffscreen. Three faces clear, one squirrel tail and no confirmed extra limbs; far forepaw partially obscured by nearpaw.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-10-v1.json"
+    },
+    {
+      "id": "academy-11",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-11-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Друзья идут вслед за Совой к светлому сухому стволу.",
+        "en": "The friends follow the owl toward a pale weathered trunk.",
+        "es": "Los amigos siguen a la maestra hacia un tronco seco y claro."
+      },
+      "text": {
+        "ru": [
+          "Они отошли от ручья и пошли на стук. За поворотом тропинки показался светлый сухой ствол."
+        ],
+        "en": [
+          "They left the stream and followed the tapping. Around the bend stood a pale, weathered tree trunk."
+        ],
+        "es": [
+          "Se alejaron del arroyo y siguieron los golpecitos. Tras una curva apareció un tronco seco y claro."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Rear threequarter wide, group follows path away from stream toward pale snag.",
+      "continuity": "Teacher leads, all4 on earthpath; streamleft behind; pale trunk ahead, no crossing.",
+      "review": "Full output inspected. The extra red tail to Lulu's left is removed; natural foliage/path restored. Lulu retains one small white cottontail. Tutu retains one large proper red tail attached to her body. Four characters still walk toward the pale snag, with pavilion left, stream left and oak right. No clear new anatomy defect or unrelated composition change observed. Hidden limb attachments and exact scale remain unverified.",
+      "reused": false,
+      "before": "images/chapter-04-academy/scenes/scene-11-v1.png",
+      "provenance": "images/chapter-04-academy/scenes/scene-11-v2.json"
+    },
+    {
+      "id": "academy-12",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-12-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Чёрно-бело-красный дятел стучит по светлому стволу.",
+        "en": "A black, white and red woodpecker taps the pale trunk.",
+        "es": "Un pájaro carpintero negro, blanco y rojo golpea el tronco claro."
+      },
+      "text": {
+        "ru": [
+          "На стволе работал дятел. Он остановился на миг — и снова застучал клювом."
+        ],
+        "en": [
+          "A woodpecker was busy on the trunk. It paused for a moment, then tapped again."
+        ],
+        "es": [
+          "Un pájaro carpintero trabajaba en el tronco. Se detuvo un instante y volvió a golpear con el pico."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Medium telephoto woodpecker on pale trunk; no school cast.",
+      "continuity": "One small natural black-white-red woodpecker attached to trunk, coherent wings/feet.",
+      "review": "Accepted scene12 single recognizable black-white-red woodpecker braced against pale snag; two feet appear at bark, folded wing and supporting tail coherent. Warm feather detail, small chips convey tapping. Far wing/leg partly hidden; exact birdanatomy not certified.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-12-v1.json"
+    },
+    {
+      "id": "academy-13",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-13-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "С высоты дятла видны четыре наблюдателя, смотрящие вверх.",
+        "en": "From the woodpecker’s height, four observers look up from the ground.",
+        "es": "Desde la altura del pájaro se ven cuatro observadores mirando hacia arriba."
+      },
+      "text": {
+        "ru": [
+          "Друзья смотрели снизу и не мешали ему. Даже Туту говорила шёпотом."
+        ],
+        "en": [
+          "The friends watched from below and left the bird to its work. Even Tutu spoke in a whisper."
+        ],
+        "es": [
+          "Los amigos miraron desde abajo y dejaron que el pájaro siguiera trabajando. Hasta Tutu hablaba en voz baja."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Bird-height downward view from near pale snag; woodpecker foreground and all four ground observers look up.",
+      "continuity": "All4 on dry earth at respectful distance, no touchingbird; owl folded wings.",
+      "review": "Full output inspected. Bird-height downward camera shows one woodpecker attached to near-left pale snag and exactly PinPin, Lulu, Tutu and owl on the dry ground below, all faces tilted upward. Owl is on the same ground, with no teacher stump or second distant snag. Identities and relative size relationships remain recognizable, Tutu has one proper red tail, no extra rabbit tail. Clear observing action matches narration. Foreground woodpecker appears larger through proximity; this is perspective, not calibrated scale. Concealed limb roots and far bird foot remain unverified.",
+      "reused": false,
+      "before": "images/chapter-04-academy/scenes/scene-13-v1.png",
+      "provenance": "images/chapter-04-academy/scenes/scene-13-v2.json"
+    },
+    {
+      "id": "academy-14",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-14-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Сова и друзья возвращаются по тропинке через сад.",
+        "en": "The owl and friends return along the garden path.",
+        "es": "La maestra y los amigos regresan por el sendero del jardín."
+      },
+      "text": {
+        "ru": [
+          "— Лес звучал всё время, — сказал Пин-Пин по дороге обратно. — Просто я раньше так внимательно не слушал."
+        ],
+        "en": [
+          "“The forest was making sounds all along,” PinPin said on the way back. “I just wasn’t listening so carefully.”"
+        ],
+        "es": [
+          "—El bosque sonaba todo el tiempo —dijo PinPin al volver—. Yo no lo había escuchado con tanta atención."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Wide returning group, central stump ahead; preserve site.",
+      "continuity": "Return path rightward from snag toward central lawn, owl groundsame, bird not needed.",
+      "review": "Accepted scene14 group returning rightward along garden loop, owl on ground, all4 distinct. Stump visible behind rather than ahead; camera catches arc of circular path, narration only says return so acceptable. No duplicate tails or confirmed extra limbs; far attachments occluded.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-14-v1.json"
+    },
+    {
+      "id": "academy-15",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-15-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Друзья делятся воспоминаниями об услышанном возле Совы.",
+        "en": "The friends share memories of the sounds beside their teacher.",
+        "es": "Los amigos recuerdan los sonidos junto a la maestra."
+      },
+      "text": {
+        "ru": [
+          "Лулу вспомнила листья, Туту — дятла, а Пин-Пин — ручей. Из одной прогулки каждый принёс своё воспоминание."
+        ],
+        "en": [
+          "Lulu remembered the leaves, Tutu the woodpecker, and PinPin the stream. Each had something different to remember from the same walk."
+        ],
+        "es": [
+          "Lulu recordó las hojas; Tutu, al pájaro carpintero; y PinPin, al arroyo. Cada uno se llevó un recuerdo distinto del mismo paseo."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Medium four-shot by stump, children exchange glances.",
+      "continuity": "Owl perched again; PinPin left Lulu center Tutu right.",
+      "review": "Accepted scene15v2: invented leaf and feather removed; Lulu/Tutu each retain exactly two empty forepaws, faces and groundfooting preserved. Remembrance now clearly conversation, no unexplained souvenirs. No new anatomy defect visible.",
+      "reused": false,
+      "before": "images/chapter-04-academy/scenes/scene-15-v1.png",
+      "provenance": "images/chapter-04-academy/scenes/scene-15-v2.json"
+    },
+    {
+      "id": "academy-16",
+      "sequence": "school",
+      "src": "images/chapter-04-academy/scenes/scene-16-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Друзья уходят к дубу, оставляя Сову у пенька.",
+        "en": "The friends leave for the oak while the owl stays at her stump.",
+        "es": "Los amigos van hacia el roble mientras la maestra se queda en su tocón."
+      },
+      "text": {
+        "ru": [
+          "На этом урок закончился. Друзья поблагодарили Сову, но расходиться им ещё не хотелось."
+        ],
+        "en": [
+          "The lesson was over. The friends thanked their teacher, but they weren’t ready to go their separate ways."
+        ],
+        "es": [
+          "La clase había terminado. Los amigos le dieron las gracias a la maestra, pero todavía no querían separarse."
+        ]
+      },
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "Proposed classroom activity"
+      },
+      "camera": "Wide teacher goodbye and children turning towardoakright.",
+      "continuity": "Owl remains stump; children begin depart right; no waved human fingers.",
+      "review": "Accepted scene16 teacher stays onstump and three children leave rightward toward oak, lookingbacknaturally. Correct distinct tails, no props to teleport. Walking mammal far limbs partially hidden, no confirmed duplicates.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-16-v1.json"
+    },
+    {
+      "id": "academy-17",
+      "sequence": "oak",
+      "src": "images/chapter-04-academy/scenes/scene-17-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Трое друзей подходят к пустым уютным местам между корнями дуба.",
+        "en": "Three friends approach empty sitting places between the oak roots.",
+        "es": "Tres amigos se acercan a los rincones vacíos entre las raíces del roble."
+      },
+      "text": {
+        "ru": [
+          "— Посидим под дубом? — предложила Лулу. Между большими корнями было три уютных местечка."
+        ],
+        "en": [
+          "“Shall we sit under the oak?” suggested Lulu. Between its big roots were three comfortable little places."
+        ],
+        "es": [
+          "—¿Nos sentamos bajo el roble? —propuso Lulu. Entre las grandes raíces había tres rinconcitos cómodos."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          1
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Wide lateral left-to-right walking approach toward visibly empty oak hollows.",
+      "continuity": "Exactly3 friends; teacher absent; crown not started.",
+      "review": "Full output inspected. Exactly three friends walk left-to-right across foreground path toward visibly empty oak-root hollows: Lulu leading, PinPin middle, Tutu behind. None is seated or already inside a hollow. One white rabbit cottontail and one red squirrel tail; no owl, crown, picked flowers, leaf, feather or carried props. Pavilion left, pale snag rear and great oak right preserve location. Three figures have readable walking poses and ground contact. Distant root layout remains an illustrated match rather than calibrated geometry; far-side limb attachments cannot all be verified.",
+      "reused": false,
+      "before": "images/chapter-04-academy/scenes/scene-17-v1.png",
+      "provenance": "images/chapter-04-academy/scenes/scene-17-v2.json"
+    },
+    {
+      "id": "academy-18",
+      "sequence": "oak",
+      "src": "images/chapter-04-academy/scenes/scene-18-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Лулу сидит слева, Пин-Пин в середине, Туту справа.",
+        "en": "Lulu sits on the left, PinPin in the middle and Tutu on the right.",
+        "es": "Lulu se sienta a la izquierda, PinPin en el centro y Tutu a la derecha."
+      },
+      "text": {
+        "ru": [
+          "Лулу устроилась слева, Пин-Пин — посередине, а Туту свернула хвост возле правого корня."
+        ],
+        "en": [
+          "Lulu settled on the left, PinPin in the middle, and Tutu curled her tail beside the root on the right."
+        ],
+        "es": [
+          "Lulu se acomodó a la izquierda; PinPin, en el centro; y Tutu enroscó la cola junto a la raíz de la derecha."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          1
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Mediumwide three friends settled root hollows, southwestview.",
+      "continuity": "Permanent oak seating leftLulu centerPinPin rightTutu. All seatedfeet grounded.",
+      "review": "Accepted scene18 established seated order Lulu-left PinPin-center Tutu-right, all on dry roots, no crown yet. Root dividers less prominent in close angle than plate but same oak/pavilion/snag geography; three comfortable positions readable. Visible fore/hind anatomy plausible, hidden attachments unverified.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-18-v1.json"
+    },
+    {
+      "id": "academy-19",
+      "sequence": "tale",
+      "src": "images/chapter-04-academy/scenes/scene-19-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Туту рассказывает историю двум внимательным друзьям.",
+        "en": "Tutu tells a story to her two attentive friends.",
+        "es": "Tutu cuenta una historia a sus dos amigos atentos."
+      },
+      "text": {
+        "ru": [
+          "— А знаете, что на прошлой неделе случилось с енотом? — начала Туту. — Он никак не мог открыть банку мёда!"
+        ],
+        "en": [
+          "“Do you know what happened to a raccoon last week?” Tutu began. “He couldn’t get a honey jar open!”"
+        ],
+        "es": [
+          "—¿Saben lo que le pasó a un mapache la semana pasada? —empezó Tutu—. ¡No podía abrir un tarro de miel!"
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          2
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Medium three-shot emphasis Tutu right speakingtoleft.",
+      "continuity": "Tutu one tail, hands empty, listeners faceher; no actualjar.",
+      "review": "Accepted scene19 Tutu tells orally with two open forepaw gestures; PinPin and Lulu listen toward right. No actual jar/raccoon added. Seat order holds, clear expressive faces and single squirrel tail; paws anthropomorphic but coherent with book gesture convention.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-19-v1.json"
+    },
+    {
+      "id": "academy-20",
+      "sequence": "tale",
+      "src": "images/chapter-04-academy/scenes/scene-20-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Туту двумя лапками изображает, как трудно открыть воображаемую банку.",
+        "en": "Tutu mimes struggling with an imaginary jar using her two forepaws.",
+        "es": "Tutu imita con sus dos patitas lo difícil que es abrir un tarro imaginario."
+      },
+      "text": {
+        "ru": [
+          "Туту показала, как енот тянул крышку. — Он пыхтел, сопел и даже сказал банке: «Ну пожалуйста!»"
+        ],
+        "en": [
+          "Tutu showed them how he pulled at the lid. “He huffed and puffed. He even said to the jar, ‘Oh, please!’”"
+        ],
+        "es": [
+          "Tutu les mostró cómo tiraba de la tapa. —Resopló y bufó. ¡Hasta le dijo al tarro: «Por favooor»!"
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          2
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Close Tutu mime pulling lid with twoforepaws, nojar.",
+      "continuity": "Seatedright hollow, bodyfacesleft, other2 offscreenleft.",
+      "review": "Accepted scene20 solo Tutu mimes effort pulling an imaginary lid, two forepaws together and two hindfeet, one tail. Exaggerated gritted-teeth comic face conveys raccoon imitation rather than anger; no physical jar or extra character. Teeth stylized, not zoological reference.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-20-v1.json"
+    },
+    {
+      "id": "academy-21",
+      "sequence": "tale",
+      "src": "images/chapter-04-academy/scenes/scene-21-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Лулу, Пин-Пин и Туту вместе смеются под дубом.",
+        "en": "Lulu, PinPin and Tutu laugh together beneath the oak.",
+        "es": "Lulu, PinPin y Tutu se ríen juntos bajo el roble."
+      },
+      "text": {
+        "ru": [
+          "— А потом он повернул крышку — и она открылась! «Что же ты сразу не сказала?» — спросил он банку. Друзья расхохотались."
+        ],
+        "en": [
+          "“Then he turned the lid—and it opened! ‘Why didn’t you say so?’ he asked the jar.” The friends burst out laughing."
+        ],
+        "es": [
+          "—¡Entonces giró la tapa y se abrió! «¿Por qué no lo dijiste antes?», le preguntó al tarro. Los amigos soltaron una carcajada."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          2
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Medium all3 laughing natural, Tutu animated butgrounded.",
+      "continuity": "SameleftLulu centerPinPin rightTutu; nojar/raccoon.",
+      "review": "Accepted scene21 laughter payoff with exactly3 friends, correct seatorder and two raised forepaws each plus grounded hindfeet. Warm expressions, Tutu single tail. No imaginary story objects materialized; stylized teeth consistent with comedy.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-21-v1.json"
+    },
+    {
+      "id": "academy-22",
+      "sequence": "crown",
+      "src": "images/chapter-04-academy/scenes/scene-22-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Лулу замечает маргаритки у левого корня.",
+        "en": "Lulu notices daisies beside the left root.",
+        "es": "Lulu descubre margaritas junto a la raíz de la izquierda."
+      },
+      "text": {
+        "ru": [
+          "Когда смех стих, Лулу заметила рядом с корнем маргаритки. — Сделаю маленький венок, — сказала она."
+        ],
+        "en": [
+          "As their laughter faded, Lulu noticed the daisies beside the root. “I’ll make a little crown,” she said."
+        ],
+        "es": [
+          "Cuando se apagaron las risas, Lulu vio las margaritas junto a la raíz. —Voy a hacer una coronita —dijo."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          3
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Medium Lulu noticesflowersleftforeground othersrelaxbehind.",
+      "continuity": "Lulu stillseatedleft thenleans towardpatch; no crown.",
+      "review": "Accepted scene22 Lulu notices and reaches gently toward daisies beside left root, friends stillseated. One extended forepaw plus one grounded forepaw and two rearfeet distinguishable; no crown premature. Daisies moreforeground prominent matching focus.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-22-v1.json"
+    },
+    {
+      "id": "academy-23",
+      "sequence": "crown",
+      "src": "images/chapter-04-academy/scenes/scene-23-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Лулу собирает несколько маргариток; друзья остаются на корнях.",
+        "en": "Lulu gathers a few daisies while her friends remain on the roots.",
+        "es": "Lulu recoge algunas margaritas mientras sus amigos siguen junto a las raíces."
+      },
+      "text": {
+        "ru": [
+          "Она спустилась к цветам и собрала несколько длинных стебельков. Большинство маргариток осталось расти у дуба."
+        ],
+        "en": [
+          "She stepped down to the flowers and gathered a few long stems. Most of the daisies stayed growing beside the oak."
+        ],
+        "es": [
+          "Bajó hasta las flores y recogió unos pocos tallos largos. La mayoría de las margaritas siguió creciendo junto al roble."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          3
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Medium Lulu ongroundbesidepatch, holdsfewstems; friendsbehind.",
+      "continuity": "Lulu left ofroot seat nowatpatch; a few daisies gathered, many remain.",
+      "review": "Accepted scene23 Lulu has moved down left from root to flowerpatch, gathering modest bunch with two forepaws while PinPin/Tutu remain behind. Many daisies left growing. Forepaw attachments clear, lowerfar hindfoot obscured in flowers rather than extra limb.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-23-v1.json"
+    },
+    {
+      "id": "academy-24",
+      "sequence": "crown",
+      "src": "images/chapter-04-academy/scenes/scene-24-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Лулу переплетает стебельки короткой цветочной цепочки.",
+        "en": "Lulu weaves stems into a short flower chain.",
+        "es": "Lulu entrelaza tallos para formar una pequeña cadena de flores."
+      },
+      "text": {
+        "ru": [
+          "Вернувшись на своё место, Лулу осторожно переплела стебельки: один за другим, цветок за цветком."
+        ],
+        "en": [
+          "Back in her place, Lulu carefully wove the stems together: one after another, flower after flower."
+        ],
+        "es": [
+          "De vuelta en su sitio, Lulu entrelazó los tallos con cuidado: uno tras otro, flor tras flor."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          3
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Medium close single rabbit carefully handling the first open daisy chain.",
+      "continuity": "Short unfinished chain and looseflowers onrootbesideher; no completecrownyet.",
+      "review": "Accepted scene24 solo Lulu begins weaving, clearly two forepaws manipulating stems and two hindfeet grounded. A short hanging flowerchain and loose stems rest nearby; no crown onhead. Stem interweaving is illustrative rather than a precise craft tutorial.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-24-v1.json"
+    },
+    {
+      "id": "academy-25",
+      "sequence": "crown",
+      "src": "images/chapter-04-academy/scenes/scene-25-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин смотрит, как Лулу держит незамкнутую цветочную цепочку.",
+        "en": "PinPin watches Lulu holding an open flower chain.",
+        "es": "PinPin observa a Lulu mientras sostiene una cadena de flores abierta."
+      },
+      "text": {
+        "ru": [
+          "Пин-Пин придвинулся, чтобы посмотреть. Он подождал, пока Лулу закончит очередной стебелёк, и только потом заговорил."
+        ],
+        "en": [
+          "PinPin leaned closer to watch. He waited for Lulu to finish the next stem before speaking."
+        ],
+        "es": [
+          "PinPin se acercó para mirar. Esperó a que Lulu terminara con el siguiente tallo antes de hablar."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          3
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Two-shot of Lulu with short open daisy chain and PinPin watching.",
+      "continuity": "PinPin seatedcenterhandsrelaxed; Luluholds longeropenflowerchain; Tutuoffscreenright.",
+      "review": "Full output inspected. Lulu holds one short open U-shaped daisy chain in two forepaws at chest/lap height, with separate ends. No garland trails onto ground; it is a plausible small-head-crown precursor for scene26. Ground restored to leaf litter, growing daisy patch retained. Lulu and PinPin faces, gaze, seated poses, body scale, oak and warm lighting preserved. Visible limb counts plausible; hidden attachments unverified. Exact flower count not certified.",
+      "reused": false,
+      "before": "images/chapter-04-academy/scenes/scene-25-v1.png",
+      "provenance": "images/chapter-04-academy/scenes/scene-25-v2.json"
+    },
+    {
+      "id": "academy-26",
+      "sequence": "crown",
+      "src": "images/chapter-04-academy/scenes/scene-26-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Лулу держит маленький замкнутый венок перед собой.",
+        "en": "Lulu holds the small completed flower ring before her.",
+        "es": "Lulu sostiene delante de sí el pequeño aro de flores terminado."
+      },
+      "text": {
+        "ru": [
+          "— И как же он станет круглым? — спросил он. Лулу соединила два конца. — Вот так."
+        ],
+        "en": [
+          "“How does it become a circle?” he asked. Lulu joined the two ends. “Like this.”"
+        ],
+        "es": [
+          "—¿Y cómo se hace redonda? —preguntó. Lulu unió los dos extremos. —Así."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          3
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Close Lulu holding the completed small flower ring before her chest.",
+      "continuity": "Ringcomplete heldintwopaws, stillnotonhead, earsclear.",
+      "review": "Accepted scene26 close Lulu with completed small circular daisy ring held in two forepaws; no crown yet worn, no added limbs. Ear tip close to top frame but recognizable. Ring modest size, later worn placement should remain near ear bases rather than become oversized wreath.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-26-v1.json"
+    },
+    {
+      "id": "academy-27",
+      "sequence": "crown",
+      "src": "images/chapter-04-academy/scenes/scene-27-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Лулу примеряет венок между ушами; друзья улыбаются.",
+        "en": "Lulu wears the flower crown at her ear bases while her friends smile.",
+        "es": "Lulu luce la corona junto a la base de las orejas y sus amigos sonríen."
+      },
+      "text": {
+        "ru": [
+          "Лулу примерила венок. Туту улыбнулась. — Как будто у тебя на голове кусочек нашей полянки!"
+        ],
+        "en": [
+          "Lulu tried on the crown. Tutu smiled. “It’s like wearing a little piece of our clearing!”"
+        ],
+        "es": [
+          "Lulu se probó la corona. Tutu sonrió. —¡Parece que llevas un pedacito de nuestro claro en la cabeza!"
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          3
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Mediumall3 Lulu crownwornatbaseears, friendswarmapproval.",
+      "continuity": "White daisy crown onLulu head between/aroundbaseears, notonPinPin/Tutu.",
+      "review": "Accepted scene27: small daisy crown now worn at Lulu's ear bases; friends admire it. Correct L-P-T order, allthree grounded, Lulu two forepaws/two hindfeet distinguishable, Tutu one tail. Crown diameter interpreted as wearable headband; exact dimensions vary with perspective.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-27-v1.json"
+    },
+    {
+      "id": "academy-28",
+      "sequence": "quiet",
+      "src": "images/chapter-04-academy/scenes/scene-28-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Лулу в венке закрывает глаза и слушает; друзья рядом.",
+        "en": "Crowned Lulu closes her eyes and listens beside her friends.",
+        "es": "Lulu, con su corona, cierra los ojos y escucha junto a sus amigos."
+      },
+      "text": {
+        "ru": [
+          "Лулу закрыла глаза. — Иногда я просто слушаю лес. И чувствую, что мне здесь хорошо."
+        ],
+        "en": [
+          "Lulu closed her eyes. “Sometimes I just listen to the forest. And I feel that I belong here.”"
+        ],
+        "es": [
+          "Lulu cerró los ojos. —A veces solo escucho el bosque. Y siento que este es mi lugar."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          3
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Medium three-shot of crowned Lulu listening with eyes closed; sunset sky without visible sun disc.",
+      "continuity": "Sameoakpositions, sunsetwarmer. No magic symbols.",
+      "review": "Accepted scene28v2: right-side sun disc removed and pink forest haze restored; Lulu crown/closedeyes, all3 identities and visible anatomy retained. No direct solar position contradiction with scenes29/30 left sunset. Gentle warm illustrative lighting remains.",
+      "reused": false,
+      "before": "images/chapter-04-academy/scenes/scene-28-v1.png",
+      "provenance": "images/chapter-04-academy/scenes/scene-28-v2.json"
+    },
+    {
+      "id": "academy-29",
+      "sequence": "quiet",
+      "src": "images/chapter-04-academy/scenes/scene-29-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин задумчиво прислушивается под дубом на закате.",
+        "en": "PinPin listens thoughtfully beneath the oak at sunset.",
+        "es": "PinPin escucha pensativo bajo el roble al atardecer."
+      },
+      "text": {
+        "ru": [
+          "Пин-Пин прислушался к листьям и далёкому ручью. — Мы тоже здесь, — сказал он. — Наш смех ведь тоже слышно."
+        ],
+        "en": [
+          "PinPin listened to the leaves and the distant stream. “We’re here too,” he said. “Our laughter is one of the sounds.”"
+        ],
+        "es": [
+          "PinPin escuchó las hojas y el arroyo lejano. —Nosotros también estamos aquí —dijo—. Nuestras risas también forman parte de los sonidos."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          4
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "ClosePinPin lookingsoftlyup smile, oakmossbehind.",
+      "continuity": "OnlyPinPin, seatcenter, noaddedcrown.",
+      "review": "Accepted scene29 solo PinPin thoughtful and upward-listening, recognizable child face, two forepaws plus visible rear paws, no crown. Sunset visible left behind pavilion; compare adjacent28's sunright and correct28 visible-disc inconsistency before final.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-29-v1.json"
+    },
+    {
+      "id": "academy-30",
+      "sequence": "quiet",
+      "src": "images/chapter-04-academy/scenes/scene-30-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Трое друзей тихо сидят под дубом; на Лулу цветочный венок.",
+        "en": "Three friends sit quietly beneath the oak; Lulu wears her flower crown.",
+        "es": "Tres amigos descansan en silencio bajo el roble; Lulu lleva su corona."
+      },
+      "text": {
+        "ru": [
+          "Потом они помолчали вместе. Небо розовело, листья шелестели, и никто не торопился нарушить эту тишину."
+        ],
+        "en": [
+          "Then they sat quietly together. The sky turned pink, the leaves rustled, and none of them hurried to break the silence."
+        ],
+        "es": [
+          "Después se quedaron juntos en silencio. El cielo se tiñó de rosa, las hojas susurraron y ninguno tuvo prisa por romper aquella calma."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          5
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Wide oak threefriends resting sunset, pavilionleftdistant.",
+      "continuity": "Lulucrownleft PinPincenter Tuturight; friendsquiet, no teacher.",
+      "review": "Viewed full output: small white/yellow daisy crown restored only on Lulu at ear bases. Three friends retain left-to-right order and quiet expressions; proper visible paws/tails, oak and left sunset preserved. No clear blocking defect seen; hidden anatomy unverified.",
+      "reused": false,
+      "before": "images/chapter-04-academy/scenes/scene-30-v1.png",
+      "provenance": "images/chapter-04-academy/scenes/scene-30-v2.json"
+    },
+    {
+      "id": "academy-31",
+      "sequence": "home",
+      "src": "images/chapter-04-academy/scenes/scene-31-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Мама подходит по тропинке к друзьям под дубом.",
+        "en": "Mama approaches the friends beneath the oak along the path.",
+        "es": "Mamá se acerca por el sendero a los amigos bajo el roble."
+      },
+      "text": {
+        "ru": [
+          "По тропинке показалась Мама. Она увидела друзей под дубом и на минутку замедлила шаг."
+        ],
+        "en": [
+          "Mama appeared on the path. When she saw the friends beneath the oak, she slowed her steps for a moment."
+        ],
+        "es": [
+          "Mamá apareció en el sendero. Al ver a los amigos bajo el roble, aflojó el paso un momento."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Widepathforegroundright Mamaapproaching oakbackgroundleft.",
+      "continuity": "Mamaonlyforeground, threefriends smallinoakdistance; Lulu crown.",
+      "review": "Accepted by lane and root. Exactly Mama foreground right and three children seated at the oak on the left. Lulu alone wears the completed daisy crown; Tutu has one red tail. Mama's profile is readable, with no extra family or owl. The camera shifts to the approach side, so the oak appears left and the right-hand sun differs legitimately from the original frontal oak view; root accepted this change. Visible limbs look plausible. Hidden attachments and exact perspective scale remain unverified.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-31-v1.json"
+    },
+    {
+      "id": "academy-32",
+      "sequence": "home",
+      "src": "images/chapter-04-academy/scenes/scene-32-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин поворачивается на знакомый голос Мамы.",
+        "en": "PinPin turns toward Mama’s familiar voice.",
+        "es": "PinPin se vuelve hacia la voz conocida de Mamá."
+      },
+      "text": {
+        "ru": [
+          "— Пин-Пин, пора домой, — мягко позвала она. Среди всех лесных звуков он сразу узнал её голос."
+        ],
+        "en": [
+          "“PinPin, it’s time to go home,” she called softly. Among all the forest sounds, he knew her voice at once."
+        ],
+        "es": [
+          "—PinPin, es hora de volver a casa —llamó con dulzura. Entre todos los sonidos del bosque, él reconoció su voz enseguida."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "MediumPinPin atrootturningright towardoffscreenMama.",
+      "continuity": "PinPincenterroot riseshead; Lululeftcrown Tuturightstayseated.",
+      "review": "Accepted by lane and root. Three children retain Lulu-left, PinPin-center, Tutu-right order. Only Lulu wears the completed crown, and Tutu has one red tail. PinPin lifts his face and looks right toward offscreen Mama, giving a distinct response to her call. No adult appears in this reaction shot, matching narration of an offscreen voice. Grounded front paws look coherent; hidden limbs remain unverified.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-32-v1.json"
+    },
+    {
+      "id": "academy-33",
+      "sequence": "home",
+      "src": "images/chapter-04-academy/scenes/scene-33-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин спускается с корней и подходит к Маме.",
+        "en": "PinPin steps down from the roots and goes to Mama.",
+        "es": "PinPin baja de las raíces y se acerca a Mamá."
+      },
+      "text": {
+        "ru": [
+          "Пин-Пин спустился с корня и подошёл к Маме. Она ласково улыбнулась ему."
+        ],
+        "en": [
+          "PinPin stepped down from the root and went to Mama. She smiled warmly at him."
+        ],
+        "es": [
+          "PinPin bajó de la raíz y se acercó a Mamá. Ella le sonrió con cariño."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "MediumMama right PinPin walkingfromoaklefttowardher.",
+      "continuity": "PinPin onground nojump/airborne; friendsseatedbehind, Lulu crown.",
+      "review": "Accepted by lane and root. One PinPin is on the path walking toward Mama at right; the oak now holds only Lulu with her completed crown and Tutu with one red tail. Visible empty root space separates departure from the former seated group. Mama is recognizably adult and larger. PinPin faces Mama, so the original claim that he already turns back should move to the following goodbye frame. Visible limbs are distinct and no duplicate actor is present; hidden attachments and exact scale remain unverified.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-33-v1.json"
+    },
+    {
+      "id": "academy-34",
+      "sequence": "home",
+      "src": "images/chapter-04-academy/scenes/scene-34-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин с Мамой прощаются с Лулу в венке и Туту.",
+        "en": "PinPin and Mama say goodbye to crowned Lulu and Tutu.",
+        "es": "PinPin y Mamá se despiden de Lulu, con su corona, y Tutu."
+      },
+      "text": {
+        "ru": [
+          "Он обернулся к друзьям. — До встречи! Лулу и Туту помахали ему. Венок остался у Лулу, а смех этого дня — у всех троих."
+        ],
+        "en": [
+          "He turned back to his friends. “See you soon!” Lulu and Tutu waved. Lulu kept her flower crown, and all three kept the day’s laughter."
+        ],
+        "es": [
+          "Se volvió hacia sus amigos. —¡Hasta pronto! Lulu y Tutu lo saludaron. Lulu se quedó con la corona, y los tres se llevaron las risas de aquel día."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "WideMamaPinPin foregroundright facingfriends atoakleft.",
+      "continuity": "Lulucrown andTutu remainroot, PinPinoneforepawgoodbye; Mamanearhim.",
+      "review": "Full generated output inspected: contradictory background-right pavilion removed into woodland. Four actors, wave gestures, relative adult/child scale, Lulu crown and original foreground retained; no clear blocking anatomy/prop defect observed. Hidden limb roots unverified.",
+      "reused": false,
+      "before": "images/chapter-04-academy/scenes/scene-34-v1.png",
+      "provenance": "images/chapter-04-academy/scenes/scene-34-v2.json"
+    },
+    {
+      "id": "academy-35",
+      "sequence": "home",
+      "src": "images/chapter-04-academy/scenes/scene-35-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Мама и Пин-Пин идут вдвоём по лесной тропинке в сумерках.",
+        "en": "Mama and PinPin walk together along the forest path at dusk.",
+        "es": "Mamá y PinPin caminan juntos por el sendero del bosque al anochecer."
+      },
+      "text": {
+        "ru": [
+          "По дороге Пин-Пин рассказал Маме о ручье, дятле и смешной банке мёда. Потом они немного послушали лес вместе."
+        ],
+        "en": [
+          "On the way home, PinPin told Mama about the stream, the woodpecker and the funny honey jar. Then they listened to the forest together for a while."
+        ],
+        "es": [
+          "De camino a casa, PinPin le contó a Mamá lo del arroyo, el pájaro carpintero y el gracioso tarro de miel. Después escucharon juntos el bosque un ratito."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          7
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "LateralmediumwideMamaandPinPin walkrightforestpathdusk.",
+      "continuity": "Only2hedgehogs, Mama2xPinPin, no crown, no academy backgroundneed.",
+      "review": "Accepted by lane and root. Exactly Mama and PinPin walk right together with recognizable mature-mother and child identities, shared eyeline and visible forward steps. No crown, baby, school characters or anecdote props. Cool forest and fading warm sky establish the homeward transition. The right-hand sun is allowed in the changed travel camera; lighting is not calibrated. Mama is visibly larger; exact ratio and hidden far feet remain unverified.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-35-v1.json"
+    },
+    {
+      "id": "academy-36",
+      "sequence": "home",
+      "src": "images/chapter-04-academy/scenes/scene-36-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Мама и Пин-Пин подходят к зелёной двери своего освещённого дома.",
+        "en": "Mama and PinPin approach the green door of their warmly lit home.",
+        "es": "Mamá y PinPin se acercan a la puerta verde de su casa iluminada."
+      },
+      "text": {
+        "ru": [
+          "Наконец впереди засветились знакомые окна. — Мы дома, — сказала Мама. И Пин-Пин довольно вздохнул."
+        ],
+        "en": [
+          "At last, their familiar windows glowed ahead. “We’re home,” said Mama. PinPin gave a happy little sigh."
+        ],
+        "es": [
+          "Por fin brillaron delante de ellos las ventanas conocidas. —Ya estamos en casa —dijo Mamá. PinPin suspiró contento."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          7
+        ],
+        "note": "Source event expanded into action/reaction/transition; narration adds concrete staging."
+      },
+      "camera": "Rear3quarterMamaandPinPin approachgreenrounddoorhome.",
+      "continuity": "Establishedcottageexterior dusk, Mama left PinPinright, doorcloseduntilarrival, no extra family.",
+      "review": "Accepted by lane and root after direct comparison with the established home. Mossy stone cottage, closed rounded green door, right knob and left hinges, amber circular windows on both sides, lantern right of door, rear-left chimney and curving stone approach are preserved. Exactly mother left and child right approach together. Quill-covered rear views are plausible; Mama is larger but no exact 2:1 ratio is claimed. No new interior or extra family.",
+      "reused": false,
+      "provenance": "images/chapter-04-academy/scenes/scene-36-v1.json"
+    }
+  ],
+  "editorialNotes": [
+    "Original chapter4 repeats the same seven-beat afternoon passage twice; adapted once.",
+    "Ordinary later school day, not the morning after chapter3 or first-ever school day.",
+    "Owl teacher, outdoor academy and listening walk are adaptation additions.",
+    "Raccoon anecdote has a newly written gentle punch line and stays an orally told story, not a flashback.",
+    "Daisy gathering/weaving stages and home threshold expand compressed source actions.",
+    "Visual-production caveat: illustrated reference sheets and planning coordinates guide continuity; these are not calibrated 3D renders. Hidden anatomy and exact real-world dimensions are not certified."
+  ],
+  "continuityNotes": [
+    "Elder’s next-dawn invitation remains a future story thread, not depicted or cancelled here.",
+    "Lulu is rabbit, Tutu squirrel; established PinPin and Mama identities.",
+    "School garden consistent landmark geography; no invented interior used.",
+    "Lulu retains the crown at the oak; PinPin and Mama go home without it."
+  ],
+  "miniature": "images/covers/chapter-04/miniature/miniature-v1.png"
+}

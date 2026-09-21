@@ -1,0 +1,30 @@
+{
+  "id": "elder-r2-41",
+  "status": "rejected",
+  "tool": "image_gen.imagegen",
+  "prompt": "Create one standalone 1536x1024 landscape story illustration, a child's point-of-view insert looking at an existing sacred mural inside the Elder's underground stone cave. This is one continuous image, NOT a multi-panel sheet. Preserve the supplied approved mural designs, warm aged ochre lime-plaster surface, mineral painted pigment, carved/rough stone surround and dimensional amber cave light. The mural itself remains FLAT ancient painted artwork, not living people or animals. No living foreground actors at all: no PinPin, Elder, hedgehogs in the room, paws, backs, heads or silhouettes. No written words, labels, border captions or typography. Do not redesign the symbols or mirror the artwork. Warm detailed dimensional children's woodland-book rendering around the flat mural. Reference1 murals-v1 BOTTOM-RIGHT supplies exact community artwork; reference2 cave-south-v1 supplies accepted SOUTH wall framing/materials. Child-height view of complete central community panel with slim real stone margin and low ledge, warm practical light. Preserve existing flat painted cooperative woodland animals: two hedgehogs carrying one beam upper-left, squirrel builder in green dress raising beam upper-right, red squirrel carrying food lower-left, small birds/owl, two caregivers with swaddled hedgehog infants/basket lower-right. Keep these as flat ancient mural figures, their costumes only inside painting. Activities wood-building/food/baby-care legible. No new machinery and no living foreground child/Elder. Frame the central community panel, not adjacent maternal or storm panels.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-02/preproduction/murals-v1.png",
+      "role": "Exact accepted flat mural design reference",
+      "sha256": "ccfbfff59929e0635a83a56fb626a5da3b53bef383d526c82924d4702326039d"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-02/preproduction/cave-south-v1.png",
+      "role": "Accepted cave material, light and wall placement reference",
+      "sha256": "6db09becc00adbee33d259c1a98dc08cfd7db8e3e17088ea57d8f8ff065ad062"
+    }
+  ],
+  "plannedAt": "2026-09-21T02:08:45.681Z",
+  "output": "images/chapter-02-expanded/revision-02/scenes/scene-41-v1.png",
+  "title": "Full community frieze",
+  "startedAt": "2026-09-21T02:12:40.958Z",
+  "finishedAt": "2026-09-21T02:15:07.243Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-45f4e28f-a2cb-4c81-9126-f19ca3a74a54.png",
+  "review": "Viewed full generated output: community activities preserve accepted mural, including wood/food/building/baby care; no living foreground actors. Added foreground woven rug absent accepted south-wall reference. Reject v1 as selected room continuity; targeted rug removal planned.",
+  "reviewedAt": "2026-09-21T02:17:13.095Z",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "61f24470d624931193c1a6737457f186cdfd3013ba9ced95f3bc9a56a377fe2c",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}

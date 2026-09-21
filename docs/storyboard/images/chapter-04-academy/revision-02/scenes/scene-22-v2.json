@@ -1,0 +1,31 @@
+{
+  "id": "scene-22-v2",
+  "tool": "built-in imagegen",
+  "status": "proposed",
+  "startedAt": "2026-09-21T03:15:25.544283+00:00",
+  "prompt": "Use case: precise-object-edit. Edit the supplied snack illustration only to remove THREE duplicate paws on the tabletop. Lulu the rabbit already has TWO forepaws holding her apple: remove the extra small paw resting on the tabletop just right of her belly, next to her wooden cup. PinPin the hedgehog already has TWO forepaws holding his apple: remove the extra furry arm and paw lying flat on the tabletop below his chest. Tutu the squirrel already has TWO forepaws holding her apple: remove the extra paw resting flat on the tabletop below her right side. Replace those three duplicate paw areas with matching clean tabletop/background. Each child must have exactly two forepaws, both holding their apple. Keep all apple-holding hands unchanged. Preserve EVERYTHING else: all five children plus owl, faces and gaze, identities, species, poses, apple wedges, precisely five cups, central bowl, pinecone on separate tray, table and mouse step, lower tray, scenery, lighting, camera, 1536x1024 single illustration, no text. Do not add hands or move any character.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/revision-02/scenes/scene-22-v1.png",
+      "role": "Edit target: remove only duplicate tabletop paws; preserve all other content",
+      "sha256": "8d3459cb7314d848048c527d1611cc999e2670f921499473a9fa820cbad6480a"
+    }
+  ],
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/revision-02/scenes/scene-22-v2.png",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-fb62add9-49ae-4a20-8d84-aebc25b9c933.png",
+  "finishedAt": "2026-09-21T03:20:09.483273+00:00",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "087d2128eba1fd9d14c38afa4b1016ff1e4995cc251f746c5bb1882c231b5a15",
+  "seconds": 283.93899,
+  "toolCallSeconds": 66.1,
+  "timingNote": "Started before tool call; finished recorded immediately after inspection/copy. Tool reported 66.1 seconds elapsed; not model-only generation time.",
+  "reviewedAt": "2026-09-21T03:20:09.483273+00:00",
+  "review": "Root creator full-image review: removed duplicate tabletop forepaws from rabbit, hedgehog and squirrel. Each of five pupils visibly holds apple with two forepaws; remaining feet partly obscured by table, not fully certified. Exactly five wooden cups plus central apple bowl, separate pinecone tray, fixed mouse step, five children and owl retained. All faces/action and environment preserved. Await independent lead review before selection.",
+  "independentReview": {
+    "recordedAt": "2026-09-21T04:05:30.720673+00:00",
+    "status": "accepted-for-proposal",
+    "note": "Academy lead and independent Elder reviewer inspected and accepted: five cups, five children plus owl, two apple-holding forepaws per child; no duplicate tabletop paws.",
+    "evidence": "production/chapters-02-04/revision-02/academy/INDEPENDENT-REVIEW.md; lead handoff to root"
+  }
+}

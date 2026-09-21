@@ -1,0 +1,30 @@
+{
+  "id": "academy-r02-43",
+  "title": "PinPin tells Mama about the roof",
+  "status": "rejected",
+  "tool": "image_gen.imagegen",
+  "prompt": "Create ONE1536x1024 landscape story illustration, continuous scene not panels. Same rich warm dimensional woodland children's-book style, recognizable individual faces and natural animal bodies from approved references. Sunny AFTERNOON with blue sky/fresh green leaves, ordinary daylight, no sunset disc, orange nightlight or night. No clothing, bags, carriers or invented accessories; only Lulu's modest white/yellow daisy crown when Lulu is visible. Four limbs per mammal, one own tail each. Mama hedgehog ALWAYS securely carries baby PomPom at her LEFT chest: left forearm supports bottom/back, right paw steadies; exactly TWO maternal arms, unobstructed baby face, no sling/stroller, baby never on ground. Adults mature and larger, not scaled clones. No Elder at pickup. No words/labels/speech bubbles. Close three-character reunion at school path: ONLY Mama, carried PomPom, child PinPin visible; other families immediately off-camera, do not add background replicas. Ref1 family carry exact anatomy/identity; ref2 pickup environment. Mama on right, PinPin left. PinPin faces UP/RIGHT into Mama's eyes while extending ONE forepaw toward workbench off-frame LEFT; his other forepaw rests at body, two feet grounded. Mama looks DOWN/LEFT at him with proud interested face while both arms support baby. Baby turns eyes/head toward pointing direction (left), no extra baby hands. Workbench/model can be kept offscreen rather than invented. Actual eye contact mother-child, no hand on child's shoulder, no baby ground transfer.",
+  "references": [
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/family-carry-v1.png",
+      "role": "Approved family-carry-v1 identity, scale, setting or prop-state reference",
+      "sha256": "6ab657cdefbe4c0297aabcf3d640333a2e719a280740cd694c7ba19c30670a0f"
+    },
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/pickup-families-v1.png",
+      "role": "Approved pickup-families-v1 identity, scale, setting or prop-state reference",
+      "sha256": "16f4548d0a5f48eb6f52d369ed0f10876f322f19c24b04ebc3491ed4217a461f"
+    }
+  ],
+  "plannedAt": "2026-09-21T03:06:38.484Z",
+  "output": "images/chapter-04-academy/revision-02/scenes/scene-43-v1.png",
+  "startedAt": "2026-09-21T03:08:26.556Z",
+  "finishedAt": "2026-09-21T03:11:32.187Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-4c9c834d-b7de-4c73-bc5d-f719ea077992.png",
+  "reviewedAt": "2026-09-21T03:18:56.128Z",
+  "review": "Full output viewed: PinPin points left while looking up to Mama; Mama reciprocates and baby securely carried. However baby pupils attend Mama rather than left/down toward pointed direction; targeted gaze correction required for narration. Retain v1 rejected. Creator review; root independent gate pending for proposed.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "e2d61b9c19019f818452216e41b823a41bd492b29a401ca6cd39b5150782f9e1",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}

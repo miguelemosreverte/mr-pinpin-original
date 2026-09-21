@@ -1,0 +1,27 @@
+# Mama and PinPin walk home together
+
+Status: proposed
+
+- Tool: built-in image_gen.imagegen
+- Started: 2026-09-21T00:20:12.929Z
+- Finished: 2026-09-21T00:20:46.238Z
+- Tool-call wall time: 33.309 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-35-v1.png
+- Dimensions: 1536×1024
+- SHA-256: 9258d07455de9935f19c1aa8d2f87db95cfdb9d8dd149e9c146b3afe9414da3d
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-08b54de5-1a36-4ad0-bafb-d14b97992926.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/family-reference-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/home-sweet-home/bedtime-01-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. One finished standalone landscape1536x1024 children's book illustration, warm rich dimensional woodland style, tactile fur/quills/bark/moss, soft natural cinematic light. NO text, labels, speech balloons, symbols, panels, borders or watermark. Natural small mammals each exactly two forelimbs and two hindlimbs, clear distinct attachments, no extra paws or duplicated characters. No clothes, bags, toys, jars, magic, owl or baby PomPom. Reference1 is the ONLY cast: exactly TWO hedgehogs, mature Mama and child PinPin, no other animals. Reference2 ONLY gives familiar forest/cottage-region foliage/material/light, do not reproduce the cottageyet or add actors. Lateral medium-wide travel view of Mama at LEFT and PinPin at RIGHT walking side by side toward RIGHT along dry gentle forest path at blue-gold dusk. Mama roughly twice child's bodyheight, both on SAME ground depth, heads turn a little toward each other in a relaxed conversation. PinPin's animated small smile says he is telling her about his day; no literal jar, woodpecker, stream, thoughtballoon or flashback. Clear forward stepping direction and separate fourlimb anatomy for each, no handholding or carriedchild. Tall trunks and ferns frame path, distant warm fading sky and cool shadows, no house in immediate background. Neither has a crown: Lulu keptit. No clothing or bags. Camera travels alongside them, not identical frontal pose to study.
+
+## Review
+
+Accepted by lane and root. Exactly Mama and PinPin walk right together with recognizable mature-mother and child identities, shared eyeline and visible forward steps. No crown, baby, school characters or anecdote props. Cool forest and fading warm sky establish the homeward transition. The right-hand sun is allowed in the changed travel camera; lighting is not calibrated. Mama is visibly larger; exact ratio and hidden far feet remain unverified.
+
+Reviewed: 2026-09-21T00:36:07.551Z

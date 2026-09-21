@@ -1,0 +1,22 @@
+{
+  "id": "scene-03-v2",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-03-v2.png",
+  "prompt": "Use case: precise-object-edit. Correct ONLY this children's-book scene's background continuity. Remove the small empty tree stump in center background above the rabbit's shoulder, replacing that one small patch with matching unobtrusive grass and ferns. The owl teacher is off-camera to the right; her real stump is also outside the frame. Preserve every pixel as closely as possible elsewhere: all three animals, faces, fur, limbs, their exact pose and scale, pavilion, stream, oak, pale distant snag, camera, lighting. Do not add any animals or text. Landscape1536x1024.",
+  "startedAt": "2026-09-20T22:12:36.137Z",
+  "finishedAt": "2026-09-20T22:13:15.194Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0ce-32e6-7c83-8515-c2ff0973d7d3/exec-3441594f-31f4-4521-bf91-10b82daac506.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "2d017b8709306a2a93d66ae6ab1398eab099d4a4f5d37d480fd80fd9fff2c94a",
+  "tool": "built-in imagegen",
+  "status": "proposed",
+  "review": "Accepted scene03v2: incorrect empty teacherstump removed, three attentive faces and grounded anatomy preserved. Teacher remains offcamera-right. Subtle edit texture shift but no visible new fault; hidden limbs unverified.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-03-v1.png",
+      "role": "identity/style or spatial environment as described in exact prompt"
+    }
+  ],
+  "seconds": 39.057,
+  "reviewedAt": "2026-09-20T22:13:44.242111+00:00"
+}

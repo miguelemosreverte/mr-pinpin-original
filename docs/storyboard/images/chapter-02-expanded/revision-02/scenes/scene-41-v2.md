@@ -1,0 +1,35 @@
+# Scene 41 fixed room continuity
+
+## Exact prompt
+
+Targeted edit of the supplied scene-41-v1 image only, preserving 1536x1024 landscape composition and every mural motif, shape, position, texture, color and practical light. Remove the woven circular rug at lower-left foreground completely, replacing only its occupied region with continuous bare warm cave floor matching adjoining surfaces. No rug exists in this part of the accepted cave. All painted figures remain unchanged; no new props, furniture, live actors or text. This is a local removal, no reframing or redesign.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "elder-r2-41-v2",
+  "status": "rejected",
+  "tool": "image_gen.imagegen",
+  "prompt": "Targeted edit of the supplied scene-41-v1 image only, preserving 1536x1024 landscape composition and every mural motif, shape, position, texture, color and practical light. Remove the woven circular rug at lower-left foreground completely, replacing only its occupied region with continuous bare warm cave floor matching adjoining surfaces. No rug exists in this part of the accepted cave. All painted figures remain unchanged; no new props, furniture, live actors or text. This is a local removal, no reframing or redesign.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-02/scenes/scene-41-v1.png",
+      "role": "Edit target: preserve complete frame except specified invented floor prop",
+      "sha256": "61f24470d624931193c1a6737457f186cdfd3013ba9ced95f3bc9a56a377fe2c"
+    }
+  ],
+  "plannedAt": "2026-09-21T02:17:13.297Z",
+  "output": "images/chapter-02-expanded/revision-02/scenes/scene-41-v2.png",
+  "title": "Scene 41 fixed room continuity",
+  "startedAt": "2026-09-21T02:17:47.649Z",
+  "finishedAt": "2026-09-21T02:18:56.138Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-3260905c-6051-482b-9383-d2978dc6a612.png",
+  "reviewedAt": "2026-09-21T02:20:16.580Z",
+  "review": "Full output viewed: left rug removed but relocated cropped woven rug to lower-right edge. Reject v2 for failed removal; target all rugs in v3. Mural remains legible; caregiver arm count clearer.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "560cfac92e5639fa9e24eab3a4f183f2b67bb70aecf2a0bc849a14387b437043",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}
+```

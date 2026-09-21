@@ -1,0 +1,25 @@
+{
+  "id": "academy-r02-48-v2",
+  "title": "Scene48 targeted scale/site correction",
+  "status": "proposed",
+  "tool": "image_gen.imagegen",
+  "prompt": "Preserve1536x1024 landscape. Targeted background-prop removal from scene48-v1 ONLY. Preserve all TWELVE foreground animals, their exact faces/poses/waving/crown/carry, composition, pavilion/oak/path and lighting. Remove the invented ACORN SIGN and its supporting vertical wooden post at upper-left behind owl; fill that region with natural forest/pavilion background. Remove the invented wooden fence/posts at upper-right edge behind Mama; replace with natural green plants and path edge. Do not move/reintroduce these props elsewhere. This school has no new sign/fence. Keep only original pavilion construction. No animal changes, no added text or props.",
+  "references": [
+    {
+      "path": "images/chapter-04-academy/revision-02/scenes/scene-48-v1.png",
+      "role": "Edit target; local correction only",
+      "sha256": "2a26d4bb28b0ecc0030fcb5b11500a780e2732a166bdb732ae8d2bb2063299e9"
+    }
+  ],
+  "plannedAt": "2026-09-21T03:29:04.447Z",
+  "output": "images/chapter-04-academy/revision-02/scenes/scene-48-v2.png",
+  "startedAt": "2026-09-21T03:30:06.864Z",
+  "finishedAt": "2026-09-21T03:30:39.853Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-fc1bc7a5-0684-4a95-9e9c-f801a073f57d.png",
+  "reviewedAt": "2026-09-21T03:37:33.732Z",
+  "review": "Full generated image inspected at native composition. Invented acorn sign and right-side fence have been removed. Eleven family animals face the owl, with raised child paws and the owl's raised wing establishing reciprocal goodbye. Lulu retains her crown, Mama supports the distinct smaller PomPom at her chest with two forearms, and the tiny mouse pair remain separate. Sunny school-edge setting preserves pavilion left and oak right. No obvious extra limb or duplicate actor observed; hidden limb attachments are not certified.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "90b8af86a01d565a87685b4c90e7c06e9c0ba153b1e5058c87eb5f7b225d2a37",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}

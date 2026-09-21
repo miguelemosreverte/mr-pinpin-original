@@ -1,0 +1,22 @@
+{
+  "id": "model-states-v2",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/revision-02/preproduction/model-states-v2.png",
+  "prompt": "Correct this four-panel prop continuity sheet. CRITICAL engineering geometry: identical fixed orthographic camera and IDENTICAL PROP PIXEL SIZE in all four panels. Use straight FRONT VIEW with slight elevated angle to see flat top surfaces, no perspective scaling from placement depth. Every panel same tabletop distance. No text. EXACT SAME one rectangular bark slab roof in each panel: screen width260pixels, thickness18pixels. EXACT SAME two pale wooden blocks in every panel: each screen width60pixels,height110pixels. ONE tiny cone on green leaf and wooden cup per panel. TOP LEFT: left block at panel x100, right block at panel x500; empty inner gap340pixels, obviously much wider than260px roof. Roof lies flat on tabletop centered in front, exactly260px wide, NOT stretching to blocks. Cone and cup parked aside. TOP RIGHT: KEEP same two block positions x100 and x500 (gap340); same260px roof lies on tabletop centered IN gap with40px clearly empty on each end. BOTTOM LEFT: blocks have visibly moved toward each other, LEFT block now at x210, RIGHT block x390 (inner gap120), while roof SAME260px width rests across their tops with40px total overhang. Roof must not grow in lower panels. Cone/leaf parked aside. BOTTOM RIGHT: identical narrowed block positions and same260px roof as bottom-left; cone on leaf beneath dry middle, small water beads on bark top with drips outside edges; cup at side. These numerical coordinates are instructions only DO NOT PRINT numbers/labels. The visible correction is substantially MUCH WIDER SPACING IN TOP PANELS and CLOSER SUPPORTS IN BOTTOM PANELS, unchanged roof size. Plain warm ivory surround, four equal panels, beautiful realistic dimensional bark/pale wood/leaf matching reference style. No animals, no added boards, no gables or house walls.",
+  "startedAt": "2026-09-21T02:04:20.955Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0ce-32e6-7c83-8515-c2ff0973d7d3/exec-402b59b8-d572-4618-a4c9-c6e62c643107.png",
+  "finishedAt": "2026-09-21T02:05:00.372Z",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "52caec2d0b07575c686bfdc799c5d9065ee1a23c131733bbb55d5324be5f0a61",
+  "tool": "built-in imagegen",
+  "status": "proposed",
+  "review": "Not selected: wider upper block spacing improved, but roof pixel length still varies substantially between upper-right and bottom panels. A simpler two-state orthographic study will lock physical geometry.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/revision-02/preproduction/model-states-v1.png",
+      "role": "Identity/style/geometry or target as specified in exact prompt"
+    }
+  ],
+  "seconds": 39.417,
+  "reviewedAt": "2026-09-21T02:05:57.648526+00:00"
+}

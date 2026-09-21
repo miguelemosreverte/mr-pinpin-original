@@ -1,0 +1,29 @@
+{
+  "id": "passage-route-v2",
+  "prompt": "Use case: scientific-educational. Asset: spatial preproduction TRUE LONGITUDINAL SIDE SECTION. Create a single clean technical miniature-render side cutaway, viewed perfectly horizontally perpendicular to the length of the route, NOT a three-quarter dollhouse/isometric view. Left third shows a small cozy animal home with floor at upper level; middle third shows a ROOT-AND-EARTH TUNNEL; right third shows a much larger HUMAN SACRED CAVE. ONE UNBROKEN VISIBLE FLOOR LINE is the overriding requirement: home floor → low root mouth A → gently descending compacted-earth ramp B C D → cave floor E, meeting the broad cave terrace flush with absolutely no step, vertical drop, ledge, missing floor or doorway. The tunnel should meet the cave at FLOOR HEIGHT on its left wall in this sectional camera, NEVER through cave ceiling or above the floor. The floor slopes gently about1 unit down for5 units along. The two plan-view bends are unfolded for this SECTION, so the floor appears almost straight/slightly curved here; this is allowed and is not the room compass view. Labels A B C D E are small and sit beside the actual route. A has the low crossed-root squeeze and small rolled mat on home side. B has split root overhead; C has one pale rounded stone at wall side, not blocking path; D shallow rock seam. Tunnel broadens beyond A, with comfortable low-hedgehog clearance. No animals, no stairs, rails, doors, pillars, human bodies, magical light, cliff or floating platform. Home section furnished simply with desk/books/rug/bed but architectural identity only suggested; exact home plate remains authority. Cave right section shows one partial flat human-themed mural far wall and a real natural southwest light shaft from above, plus one existing mural lamp; exact cave plate remains mural/compass authority. Soil above and below is visibly sectioned. Keep natural warmhome→dimtunnel→coolcave lighting. Image1 root-nook is materials/state reference, Image2 cave is cave materials/scale reference, neither is literal camera. Beautiful tactile woodland-book realism with a mathematically readable continuous walking floor. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-03/preproduction/root-opening-states-v1.png",
+      "role": "nook materials and cleared state, not literal section camera",
+      "sha256": "af6803dd4dcab9450a26fe49d52d5c1a355b9143833b203afafb2f60fce2fc22"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-03/preproduction/cave-root-arrival-v1.png",
+      "role": "cave materials, scale and terrace state, not literal section camera",
+      "sha256": "7c40d1976d3353ffdb53329911539cdabf3ef5e58d09a8b22a5015ba0e70c756"
+    }
+  ],
+  "startedAt": "2026-09-21T06:24:57.358282+00:00",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "finishedAt": "2026-09-21T06:26:42.438098+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0ce-32e6-7c83-8515-c2ff0973d7d3/exec-0266d648-ffa1-43d1-a139-b8a56ca2439d.png",
+  "output": "images/chapter-02-expanded/revision-03/preproduction/passage-route-v2.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "a876dc2adb29336f71786a74dfc8b12876826e6a4a54c2db925c6a680ecb41a6",
+  "review": "Full output inspected. Longitudinal section now visibly has one continuous gently sloped floor joining cave floor flush, with no steps/drop. Home and cave shown as simplified section identities only. Rejected as final bodily-clearance authority because ceiling tapers too close to floor near D/E versus the home squeeze. Needs targeted ceiling lift while keeping floor unchanged. Cave human scale visually clearer than prior study.",
+  "reviewedAt": "2026-09-21T06:26:42.526004+00:00",
+  "seconds": 105.079816,
+  "timingNote": "Recorded request-to-capture elapsed time includes local registration overhead; not model-only computation."
+}

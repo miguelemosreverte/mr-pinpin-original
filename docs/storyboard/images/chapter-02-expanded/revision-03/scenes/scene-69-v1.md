@@ -1,0 +1,28 @@
+# scene-69-v1
+
+Use case: illustration-story. Final single standalone landscape1536x1024 children's-book illustration. Rich tactile warm miniature woodland realism, natural hedgehog anatomy, no human clothes or living humans. References control exact identities and selected room/route materials; never copy panel labels, diagram labels or montage into story. Child PinPin copper quills/cream face/no glasses; Elder larger silver-brown quills/cream muzzle/round gold spectacles, approximately1.55 child upright height. Exactly two forelimbs and two hindlimbs per hedgehog; hidden limbs may stay naturally occluded. Staff stays outside home, so no staff/wand/handheld lantern. No text, border, split panels, arrows, watermark. Rear low view INSIDE passage looking toward the home root squeeze A ahead. PinPin leads at middle-left, Elder follows slightly behind/right. Both face AWAY toward a small warm illuminated root-framed patch ahead; through opening see just floor, edge of bookcase/desk wood in cozy room, not an outside landscape. Smooth floor rises gently to root mouth, both fit. Body sizes distinct and plausible. Warm home light spills toward their noses; tunnel behind darker. No artificial door, stairs, rail or second passage. Do not show lamps inside tunnel. PinPin has NO spectacles, only Elder wears gold glasses. No outdoor forest/sky is visible anywhere in this enclosed underground route.
+
+References:
+[
+  {
+    "path": "images/chapter-02-expanded/revision-03/preproduction/home-root-nook-v1.png",
+    "role": "accepted spatial/state/body-fit reference; no copying diagram layout",
+    "sha256": "fcfffd326c139beff1af7c442793f8530e602d15b306eb4fdb3bb616fd22ad01"
+  },
+  {
+    "path": "images/chapter-02-expanded/revision-03/preproduction/root-fit-v1.png",
+    "role": "accepted spatial/state/body-fit reference; no copying diagram layout",
+    "sha256": "65347c95ac20f0e3fcd27e9058437b084b08c699717168d9da17df2f5a4c67c7"
+  },
+  {
+    "path": "images/chapter-02-expanded/preproduction/cast-v1.png",
+    "role": "character identity/size authority (ignore external setting/staff)",
+    "sha256": "9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7"
+  }
+]
+
+Generated: 2026-09-21T07:05:14.327371+00:00 to 2026-09-21T07:09:46.029476+00:00
+
+SHA256: bf9fa18f80b503d8838852d1b7ca302b27f83a09f0fa12efd3a147a09bcffb34
+
+Review: Full output inspected. Good rear view toward recognizable warm home books/rug, continuous slope, child leading Elder and distinct grounded bodies. However child has incorrect gold spectacle loop on left profile. Must remove only child glasses or turn tiny profile away, preserving Elder glasses. Home mouth clearance is qualitative in perspective; body-fit master governs squeeze.

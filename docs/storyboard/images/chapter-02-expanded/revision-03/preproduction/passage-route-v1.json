@@ -1,0 +1,34 @@
+{
+  "id": "passage-route-v1",
+  "prompt": "Use case: scientific-educational. Asset: ONE coherent isometric cutaway PREPRODUCTION route study for the children's-book environment, not a final narrative image. Image1 is the deterministic route plan; Image2 the accepted home, Image3 the accepted cave arrival. Show the actual CONTINUOUS connection from a SMALL concealed root mouth in the northeast of the upper warm home, through a gently descending winding natural dirt/stone passage, to a flush root/rock mouth at northeast of the lower human-size sacred cave. Arrange a dollhouse cutaway so the entire floor route is visible, upper home at upper-left, passage curving broadly through center, cave terrace at lower-right. Vertical descent modest, smooth floor throughout, two gentle bends, NO stairs, treads, handrails, ladders, door, chasm or sheer drop. Critical landmarks in order: A low home root squeeze; B split overhead root; C pale rounded embedded stone at OUTER side of bend; D shallow ceiling seam; E widened mouth flush on cave terrace. Small clear labels A B C D E only. Home root squeeze is low/broad; passage broadens immediately beyond it to allow larger Elder walking crouched. Same route works uphill in reverse. Keep root arch at home and separate SMALL mat rolled back toward room-left; tiny leaf/soil heap at room-right. Large central home rug stays flat, desk west/map north/bed east. Cave plate controls mural edge/bench identity but this is route authority, not replacement mural art. Human sanctuary chamber broader/higher than animal passage. Warm room light spills a short distance into A; tunnel center dim but readable diffuse light, cooler reflected cave daylight toward E; cave daylight shaft remains southwest and does not shine directly through sealed soil. No new lamps in tunnel, no glowing roots. Earth above shown in technical cutaway rather than transparent material in real scene. Empty environment, no animals or living humans. Same rich tactile miniature wood/earth/stone materials as reference, legible physical connection prioritized. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "production/chapters-02-04/revision-03/elder/space-plan.png",
+      "role": "deterministic route topology and smooth section; A to E reversible",
+      "sha256": "9521eb99e7988eb8692a04a99948a088f51d5e6767eeeeb000953843133e4be1"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-03/preproduction/home-root-nook-v1.png",
+      "role": "home materials/furniture/nook identity; small mat rolled for open state",
+      "sha256": "fcfffd326c139beff1af7c442793f8530e602d15b306eb4fdb3bb616fd22ad01"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-03/preproduction/cave-root-arrival-v1.png",
+      "role": "cave terrace/arrival materials and sanctuary identity",
+      "sha256": "7c40d1976d3353ffdb53329911539cdabf3ef5e58d09a8b22a5015ba0e70c756"
+    }
+  ],
+  "startedAt": "2026-09-21T06:21:56.025584+00:00",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "finishedAt": "2026-09-21T06:24:57.196766+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0ce-32e6-7c83-8515-c2ff0973d7d3/exec-9c4f7b92-fb6e-4f49-8960-6553a27658d0.png",
+  "output": "images/chapter-02-expanded/revision-03/preproduction/passage-route-v1.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "611d217d443adf86729981a63f1c8fd3e39c5f1a7772c0b3c5f7dbfdab613142",
+  "review": "Rejected after full output inspection. Home and passage materials and A/B/C/D landmarks are attractive, but E reaches above the cave floor and the apparent connection requires an abrupt drop. Text labels claiming no drops do not establish physical continuity. Also room/mural arrangement simplified and not authoritative. Preserve rejected study; replace with a longitudinal section that visibly joins the terrace floor.",
+  "reviewedAt": "2026-09-21T06:24:57.285974+00:00",
+  "seconds": 181.171182,
+  "timingNote": "Recorded request-to-capture elapsed time includes local registration overhead; not model-only computation."
+}

@@ -8,7 +8,7 @@
       Number.isInteger(cover.version) && cover.version > 0 && cover.width === 1024 && cover.height === 1536 &&
       ['prepend', 'replace'].includes(cover.placement) && localized(cover.title) && localized(cover.alt) &&
       localized(cover.assets) && languages.every(lang =>
-        cover.assets[lang] === `images/covers/${id}/title-${lang}-v${cover.version}.png`);
+        cover.assets[lang] === `images/covers/${id}/title/title-${lang}-v${cover.version}.png`);
   }
 
   // Covers are optional: a missing registry never makes an existing book unavailable.

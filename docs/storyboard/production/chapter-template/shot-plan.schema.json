@@ -1,0 +1,25 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Chapter camera and continuity plan",
+  "type": "object",
+  "required": ["schemaVersion", "chapterId", "status", "coordinateSystem", "preproductionGate", "shots"],
+  "properties": {
+    "schemaVersion": {"const": 1},
+    "chapterId": {"type": "string", "minLength": 1},
+    "status": {"enum": ["planning", "preproduction", "rendering", "review", "proposed"]},
+    "coordinateSystem": {"type": "object", "required": ["origin", "positiveX", "positiveY", "positiveZ", "units"]},
+    "preproductionGate": {"type": "object", "required": ["state", "castReferences", "environmentReferences", "interiorReferences", "interiorsUsed", "findings"], "properties": {"state": {"enum": ["pending", "passed", "blocked"]}, "reviewedAt": {"type": ["string", "null"]}, "reviewer": {"type": ["string", "null"]}, "sourceMap": {"type": "string"}, "castReferences": {"type": "array", "items": {"type": "string"}}, "environmentReferences": {"type": "array", "items": {"type": "string"}}, "interiorReferences": {"type": "array", "items": {"type": "string"}}, "interiorsUsed": {"type": "boolean"}, "findings": {"type": "string"}}},
+    "shots": {"type": "array", "items": {"type": "object", "required": ["id", "sequence", "coverage", "purpose", "source", "cast", "camera", "propState", "references", "status"], "properties": {
+      "id": {"type": "string", "minLength": 1}, "sequence": {"type": "string", "minLength": 1},
+      "coverage": {"enum": ["setup", "action", "reaction", "transition", "resolution"]},
+      "purpose": {"type": "string", "minLength": 1},
+      "source": {"type": "object", "required": ["kind", "blocks", "note"]},
+      "cast": {"type": "array", "items": {"type": "object", "required": ["character", "position", "facing", "gaze"]}},
+      "camera": {"type": "object", "required": ["position", "target", "height", "framing", "axisSide", "foreground", "middleGround", "background", "light"]},
+      "propState": {"type": "array", "items": {"type": "object", "required": ["prop", "before", "after", "holderOrPosition"]}},
+      "references": {"type": "array", "items": {"type": "object", "required": ["path", "role"]}},
+      "status": {"enum": ["planned", "ready", "rendered", "rejected", "reviewed", "selected"]},
+      "selectedSceneId": {"type": ["string", "null"]}, "review": {"type": "string"}
+    }}}
+  }
+}

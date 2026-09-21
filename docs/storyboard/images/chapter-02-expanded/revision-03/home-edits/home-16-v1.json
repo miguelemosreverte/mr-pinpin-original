@@ -1,0 +1,37 @@
+{
+  "id": "elder-r03-home-16-v1",
+  "title": "Elder revision03 home scene16: concealed root nook before discovery",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T06:25:43.482Z",
+  "output": "images/chapter-02-expanded/revision-03/home-edits/home-16-v1.png",
+  "sourceScene": "elder-r2-16",
+  "state": "S0 concealed, before discovery",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-02/scenes/scene-16-v1.png",
+      "role": "EDIT TARGET: preserve whole frame except old northeast interior door region",
+      "sha256": "0b400f49d7a2c3aa3d4d597d3b1c05a8cc735e37578c20c918d38245bd30e0b1"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-03/preproduction/home-root-nook-v1.png",
+      "role": "accepted room identity and replacement root/earth nook authority",
+      "sha256": "fcfffd326c139beff1af7c442793f8530e602d15b306eb4fdb3bb616fd22ad01"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-03/preproduction/root-opening-states-v1.png",
+      "role": "LEFT panel CONCEALED: mat flat, thin leaves/soil screen low slit",
+      "sha256": "af6803dd4dcab9450a26fe49d52d5c1a355b9143833b203afafb2f60fce2fc22"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. Output ONE standalone1536x1024 landscape story image, no added text, not a comparison. Image1 is the EDIT TARGET; images2 and3 are spatial REFERENCES ONLY. Keep image1's exact beautiful composition, camera, two hedgehog characters, body/face identities, sizes, every existing pose and limb, pupils/eyelines, quills, Elder glasses, table/book/ink/feather, bookshelves, wall map, artifacts, bed, large central woven rug, warm lighting and foreground completely intact. Elder points at the unchanged wall map and child looks up at that map; preserve this exact pointing arm and every existing visible limb. Make only this background correction: REMOVE the entire obvious northeast wooden interior door, metal hinges/ring, surrounding dressed-stone door arch/frame and its hanging jamb lamp. In that exact wall area substitute the accepted ordinary packed-earth wall with two knotted structural roots forming a LOW irregular root nook at FLOOR level, as shown in reference2. Above the low nook is SOLID packed earth and climbing roots, NOT a tall doorway or a formal arch. The two roots are fixed, uncut, thick, and remain part of the tree. Adapt the nook to image1's existing perspective and scale; do not copy reference2's empty-room camera or remove/repose the actors. Use ONLY the LEFT concealed state of reference3: a separate SMALL oval woven mat lies FLAT just in front of the nook, its far edge and a thin bank of old leaves/loose soil discreetly screen the low dark slit. Small light stool stays just WEST/left of nook. This is BEFORE discovery: no rolled mat, no excavated spoil heap, no fully cleared passage. The large central room rug must NEVER move or become the small nook mat. Keep any target foreground stool/chair unchanged; the little nook stool is a background prop only. Warm desk/window illumination remains unchanged despite deleting the old door lamp. No stairs, handrails, fitted panels, door hardware, magical glow, human actors, new gestures, extra limbs, duplicate characters, or readable labels. Keep all untouched areas as close to image1 as possible; this is a local background repair, not a new rendering of the whole scene.",
+  "startedAt": "2026-09-21T06:30:42.992Z",
+  "finishedAt": "2026-09-21T06:33:36.626Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-ffcf8b9e-aa2d-47d0-8e86-7d97b3d0289e.png",
+  "reviewedAt": "2026-09-21T06:40:06.791Z",
+  "review": "Full output inspected. Close map composition and exact Elder pointing arm/child upward gaze retained. Old right-side tall door/frame/lamp becomes solid earth and roots above a low leaf-screened slit; small flat mat and small stool left of nook visible. No cut stair, formal hardware or extra visible limb. Main rug, shelf artifacts and wall map remain intact.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "6017e2dbddb9f109241d45b1413fb3a493f4d2f613d173a86c294e13a2eb3691",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}

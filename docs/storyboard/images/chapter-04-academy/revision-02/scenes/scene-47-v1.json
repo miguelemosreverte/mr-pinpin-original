@@ -1,0 +1,40 @@
+{
+  "id": "academy-r02-47",
+  "title": "All families see the little shelter",
+  "status": "rejected",
+  "tool": "image_gen.imagegen",
+  "prompt": "Create ONE1536x1024 landscape story illustration, continuous scene not panels. Same rich warm dimensional woodland children's-book style, recognizable individual faces and natural animal bodies from approved references. Sunny AFTERNOON with blue sky/fresh green leaves, ordinary daylight, no sunset disc, orange nightlight or night. No clothing, bags, carriers or invented accessories; only Lulu's modest white/yellow daisy crown when Lulu is visible. Four limbs per mammal, one own tail each. Mama hedgehog ALWAYS securely carries baby PomPom at her LEFT chest: left forearm supports bottom/back, right paw steadies; exactly TWO maternal arms, unobstructed baby face, no sling/stroller, baby never on ground. Adults mature and larger, not scaled clones. No Elder at pickup. No words/labels/speech bubbles. Exact family cast ELEVEN animals total: (1)Mama adult hedgehog carrying(2)tiny baby PomPom, with(3)child PinPin beside her; (4)Lulu child rabbit WEARING SAME DAISY CROWN with(5)mature rabbit mother; (6)Tutu child red squirrel with(7)mature larger dark chestnut squirrel father, single tail each; (8)tiny Mila field-mouse child with(9)larger mature mouse father, one thin tail each; (10)Bruno badger cub with(11)larger mature badger mother. Keep each child close to OWN parent. Mila child remains about0.45 PinPin height, father1.7x Mila; Bruno child1.2PinPin, mother1.8xBruno. Add ONE teacher owl standing at far-right behind group: exactlyTWELVE animals including carried baby. Ref1 pickup identity/family-count, ref2 model-handling exact simple workbench geography, ref3 model-states correct completed model, ref4 carry. Beautiful roomy WIDE gathered semicircle around low four-legged workbench OUTSIDE pavilion (not picnic table), tree/oakright and pavilionleft retain site. Foreground table/model clear; children at reachable near/side edge, their parents immediately behind corresponding child. Mila uses SAME low separate step at bench-left; father beside step. Mama stands with PinPin right of bench carrying baby with BOTH arms; baby's own tiny paws CLAP in front of chest unobstructed, distinct from mother's arms. PinPin points toward dry pinecone. Lulu crown stays ON head. Model exact TWO upright support blocks with ONE flat bark roof spanning; ONE small pinecone on ONE green leaf UNDER roof, dry, no second cone/on-top guest. No actors place hands through tabletop. Owl calmly watches, not extra parent. Keep all11 family animals visible and separable; no duplicated babies or giant mouse. No food tray crowding tabletop; empty undertray fixed.",
+  "references": [
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/pickup-families-v1.png",
+      "role": "Approved pickup-families-v1 identity, scale, setting or prop-state reference",
+      "sha256": "16f4548d0a5f48eb6f52d369ed0f10876f322f19c24b04ebc3491ed4217a461f"
+    },
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/model-handling-v2.png",
+      "role": "Approved model-handling-v2 identity, scale, setting or prop-state reference",
+      "sha256": "8454e2f60896fdd0d65e70fd7718d0be6f81238d0e371be55aab50f586fb7092"
+    },
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/model-states-v3.png",
+      "role": "Approved model-states-v3 identity, scale, setting or prop-state reference",
+      "sha256": "919d9ea660361fff3def8c3ed760dcefe4225c3d5bf98252e084e4ef687b9a89"
+    },
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/family-carry-v1.png",
+      "role": "Approved family-carry-v1 identity, scale, setting or prop-state reference",
+      "sha256": "6ab657cdefbe4c0297aabcf3d640333a2e719a280740cd694c7ba19c30670a0f"
+    }
+  ],
+  "plannedAt": "2026-09-21T03:06:38.485Z",
+  "output": "images/chapter-04-academy/revision-02/scenes/scene-47-v1.png",
+  "startedAt": "2026-09-21T03:19:52.031Z",
+  "finishedAt": "2026-09-21T03:22:26.298Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-16d4f8a6-a267-4e4d-8acc-b2fad88ff535.png",
+  "reviewedAt": "2026-09-21T03:29:04.222Z",
+  "review": "Full output viewed: all12 present, crowned Lulu, baby clapping while Mama carries, model two blocks/roof/one cone on leaf. However mouse father at left is nearly PinPin-sized/taller and child also too large versus tiny-mouse hierarchy. Reject v1, shrink mice locally; preserve model/all other10 actors. Creator review; root independent gate pending for proposed.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "e50bc3ed5ca90a60c27efdbcc79e99cfe1993e32054f767eba2bb542f6b34293",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}

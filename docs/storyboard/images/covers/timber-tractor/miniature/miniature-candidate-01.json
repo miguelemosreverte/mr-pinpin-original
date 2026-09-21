@@ -1,0 +1,27 @@
+{
+  "asset": "miniature-candidate-01",
+  "status": "superseded candidate; not approved or published",
+  "mode": "built-in image_gen.imagegen",
+  "prompt": "Use case: illustration-story.\nAsset type: ONE text-free miniature / library cover for the existing children's story Timber Tractor.\nPrimary request: Recompose the established cover into a strong small-thumbnail image with a much larger recognizable PinPin in the foreground and a prominent red forestry tractor behind him. Generate a finished 1024x1536 portrait image, 2:3 aspect ratio.\nInput images: Image 1 is the current Timber Tractor Russian cover: use it for PinPin identity, red tractor design, woodland setting, warm sunlight, and tractor/trailer continuity, but remove every bit of lettering and recompose. Image 2 is the approved Home Sweet Home text-free cover: use ONLY as the benchmark for rich warm dimensional storybook rendering, tactile material quality, expressive clean faces, big subjects and reduced background clutter; do not add its mother, baby, bath or indoor objects.\nCamera/composition: move low and much closer to PinPin. His appealing cream face, bright brown eyes, small dark nose, rounded ears and brown quills are instantly readable; he occupies about the lower 45% of the frame with a large unobstructed face, looking cheerfully upward toward the tractor. Preserve his established hedgehog proportions, no clothes. He is physically a small hedgehog very near the camera, not a giant animal. The red tractor occupies most of the upper two thirds behind him; keep a coherent front three-quarter view with hood facing camera-right and trailer receding toward camera-left. Both hero and tractor remain legible, with enough separation and no face occlusion. Crop unnecessary foreground and sky; compose illustration right up into the former title area. No blank title zone.\nCRITICAL machine geometry: From front to back the connected order is red front hood and front wheels, cab with steering wheel correctly aligned behind hood, yellow crane mounting base immediately behind the cab, THEN trailer/log load behind that crane base. The crane base MUST visibly sit between the cab and the first logs, never at the rear behind the log load. Folded yellow articulated boom rises beside the back of the cab and folds backward over the trailer. Keep the hood, chassis, steering and cab on one coherent longitudinal axis. Trailer remains attached behind tractor. Show round bark-covered logs with circular cut ends, retained by upright stakes and visible taut securing straps. No squared timber. No crane behind the logs.\nScene/backdrop: a simple soft woodland backdrop with a few large shapes, warm leafy light and subdued forest green separation; retain the established rich warm dimensional woodland storybook style, believable tractor metal, bark, tires, fur and quills. Golden warmth without washed-out highlights. Clear subject silhouette, fewer ferns, flowers and tiny competing details.\nText: NONE. No letters, title, wordmarks, logo, watermark, signs, captions, or pseudo-text anywhere.\nConstraints: one PinPin only; no additional animals or people; no extra limbs or malformed face; no added vehicle parts; no giant hedgehog scale. Preserve character recognizability, red tractor identity and warm textured dimensional style. This is a proposed cover miniature, not a redesign of the character.",
+  "references": [
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/timber-tractor/title-ru-v1.png",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/home-sweet-home/textless-v1.png"
+  ],
+  "started_at_utc": "2026-09-20T21:34:39.943Z",
+  "ended_at_utc": "2026-09-20T21:35:28.902Z",
+  "source_output": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-76db3c97-dc6e-4a7f-97d5-b9dde7db669a.png",
+  "review": "Full image inspected. Larger clear PinPin face and prominent coherent red tractor. Yellow crane base is immediately behind cab and before log load. Round logs held by stakes, but straps are not obvious; small shield-like hood badge remains. One targeted edit requested for stronger visible securing straps and badge removal. Rear paw attachment partly hidden; not certified.",
+  "saved_location": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/timber-tractor/miniature/miniature-candidate-01.png",
+  "sha256": "40eb0b6d8c4627bb77eb238ef94585b829fa3a513981228016c2c90c10acae1b",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "elapsed_wall_seconds": 48.959,
+  "tool_reported_wall_seconds": 41.8,
+  "timing_note": "UTC interval includes dispatch and orchestration overhead; tool-reported wall time is rounded and is not model-only computation.",
+  "reference_sha256": {
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/timber-tractor/title-ru-v1.png": "a191c3145352c8415cba67b66b14a2051fdd88fdcb648980085eb23f6579c16b",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/home-sweet-home/textless-v1.png": "c894462b0061fe27487c048cd626a73515f00fd46f3342df2955c54f5a66e26a"
+  }
+}

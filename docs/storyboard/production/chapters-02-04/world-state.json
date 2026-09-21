@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "status": "production-direction-for-proposals",
+  "source": "docs/storyboard/book.json in original checkout",
+  "chronology": [
+    {"event":"restored-lake","sourceChapter":"chapter-01","status":"existing"},
+    {"event":"elder-first-visit","sourceChapter":"chapter-02","status":"expanded-proposal","relativeTime":"day after lake; afternoon ending at sunset"},
+    {"event":"home-bedtime","sourceChapter":"chapter-03","status":"existing-adaptation","relativeTime":"evening after Elder visit in original; published adaptation also fits family-home sequence"},
+    {"event":"promised-dawn-lesson","sourceChapter":"chapter-02","status":"future-thread-not-depicted","relativeTime":"following dawn in original promise","note":"Do not depict the promised lesson as already fulfilled or use Academy as its substitute."},
+    {"event":"ordinary-academy-day","sourceChapter":"chapter-04","status":"expanded-proposal","relativeTime":"another day; unspecified interval","note":"First-day framing and immediate morning-after-bedtime chronology are not established by source."}
+  ],
+  "characters": {
+    "pinpin":{"species":"hedgehog","role":"child protagonist","continuity":"Established warm dimensional cream face/chestnut quills; no costume changes without story reason."},
+    "elder":{"species":"hedgehog","role":"older mentor","continuity":"Established silvering quills, round spectacles, bramble staff. Not automatically Academy teacher."},
+    "lulu":{"species":"rabbit","source":"chapter-01 text","continuity":"Use modern chapter-01 rabbit identity; two forelimbs and two hindlimbs, avoid known earlier duplicated forepaws."},
+    "tutu":{"species":"squirrel","source":"later original text places Tutu among squirrel family","continuity":"Academy preproduction establishes proposed modern identity; record coat, tail and child scale before scenes."},
+    "mama":{"species":"hedgehog","role":"PinPin and PomPom's mother","continuity":"Use published home-sweet-home modern Mama; older source costumes are not authority to redress current cast."},
+    "pompom":{"species":"hedgehog","role":"baby brother","continuity":"Not school-age; include only if specifically staged with Mama. No obligation to add extra cast."}
+  },
+  "locations": {
+    "burrowHill":"Use chapter-02 direct scenes and landscapes as anchors; lock approach, doorway, staff and seating axes in Elder bible.",
+    "academy":"New proposed environment; lock site plan before scenes. No claim of an original established classroom interior.",
+    "oakGathering":"Original afternoon location; lock three seated places, flower patch and Mama's approach path.",
+    "home":"Already established low moss-roof cottage, rounded green door, circular windows; preserve existing exterior. If an interior is used, reference established kitchen/entrance rather than invent its layout per shot."
+  },
+  "adaptationRules":[
+    "Original source text remains untouched; new story copy lives in proposal manifests.",
+    "Chapter04 repeated prose is one afternoon sequence, not two days.",
+    "Physical actions, reactions and changes of place need coverage; no fixed image quota.",
+    "Abstract ideas should become understandable through small exchanges/observations; new demonstrations are labeled adaptation additions.",
+    "Illustrated references and camera maps guide consistency but are not calibrated 3D geometry.",
+    "Internal production acceptance is distinct from Miguel's final approval."
+  ]
+}

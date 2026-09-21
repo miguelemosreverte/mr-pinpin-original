@@ -1,0 +1,40 @@
+# Full light and darkness mural
+
+## Exact prompt
+
+Create one standalone 1536x1024 landscape story illustration, a child's point-of-view insert looking at an existing sacred mural inside the Elder's underground stone cave. This is one continuous image, NOT a multi-panel sheet. Preserve the supplied approved mural designs, warm aged ochre lime-plaster surface, mineral painted pigment, carved/rough stone surround and dimensional amber cave light. The mural itself remains FLAT ancient painted artwork, not living people or animals. No living foreground actors at all: no PinPin, Elder, hedgehogs in the room, paws, backs, heads or silhouettes. No written words, labels, border captions or typography. Do not redesign the symbols or mirror the artwork. Warm detailed dimensional children's woodland-book rendering around the flat mural. Reference1 murals-v1 BOTTOM-LEFT supplies exact image, reference2 cave-v1 EAST/right wall supplies stone setting. Child-height near frontal single full mural view with narrow actual stone edge. Same great GOLD SUN and flourishing oak/deer on VIEWER LEFT, blue-black cold winter storm/leafless trees/snow on VIEWER RIGHT. River winds to little warm shelter near center as in approved design. Preserve composition and scale of painted tree/sun/cottage, distinct flat mineral-pigment artwork on plaster. Real cave amber side-light illuminates stone, painted sun is pigment not a literal luminous portal. No live foreground actors.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "elder-r2-38",
+  "status": "rejected",
+  "tool": "image_gen.imagegen",
+  "prompt": "Create one standalone 1536x1024 landscape story illustration, a child's point-of-view insert looking at an existing sacred mural inside the Elder's underground stone cave. This is one continuous image, NOT a multi-panel sheet. Preserve the supplied approved mural designs, warm aged ochre lime-plaster surface, mineral painted pigment, carved/rough stone surround and dimensional amber cave light. The mural itself remains FLAT ancient painted artwork, not living people or animals. No living foreground actors at all: no PinPin, Elder, hedgehogs in the room, paws, backs, heads or silhouettes. No written words, labels, border captions or typography. Do not redesign the symbols or mirror the artwork. Warm detailed dimensional children's woodland-book rendering around the flat mural. Reference1 murals-v1 BOTTOM-LEFT supplies exact image, reference2 cave-v1 EAST/right wall supplies stone setting. Child-height near frontal single full mural view with narrow actual stone edge. Same great GOLD SUN and flourishing oak/deer on VIEWER LEFT, blue-black cold winter storm/leafless trees/snow on VIEWER RIGHT. River winds to little warm shelter near center as in approved design. Preserve composition and scale of painted tree/sun/cottage, distinct flat mineral-pigment artwork on plaster. Real cave amber side-light illuminates stone, painted sun is pigment not a literal luminous portal. No live foreground actors.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-02/preproduction/murals-v1.png",
+      "role": "Exact accepted flat mural design reference",
+      "sha256": "ccfbfff59929e0635a83a56fb626a5da3b53bef383d526c82924d4702326039d"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-02/preproduction/cave-v1.png",
+      "role": "Accepted cave material, light and wall placement reference",
+      "sha256": "c46ef299e7a595d8bf8e59bdf9f2dfd8930a12bc223cdfa62b3e52b8b2345efc"
+    }
+  ],
+  "plannedAt": "2026-09-21T02:08:45.681Z",
+  "output": "images/chapter-02-expanded/revision-02/scenes/scene-38-v1.png",
+  "title": "Full light and darkness mural",
+  "startedAt": "2026-09-21T02:12:40.958Z",
+  "finishedAt": "2026-09-21T02:14:19.433Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-e7c25abe-8d17-45dc-90ff-da7d2ed747b0.png",
+  "review": "Viewed full generated output: flat light/dark mural iconography correct, but new fur-covered bench appears below right/east panel; accepted cave locates that bench under north Shield Keeper. Reject v1 for furniture continuity; targeted removal planned.",
+  "reviewedAt": "2026-09-21T02:17:13.090Z",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "a0a89d2c16c10ba6fb39a9b9f6e6e94cd47c857cf5262df1ed4b53d3fd38aa56",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}
+```

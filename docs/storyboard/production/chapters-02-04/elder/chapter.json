@@ -1,0 +1,1149 @@
+{
+  "schemaVersion": 1,
+  "id": "elder",
+  "sourceChapter": "chapter-02",
+  "status": "proposed",
+  "productionState": "complete-root-art-reviewed-pending-browser-review",
+  "title": {
+    "ru": "Мудрость Старейшины",
+    "en": "The Elder’s Wisdom",
+    "es": "La sabiduría del anciano"
+  },
+  "summary": {
+    "ru": "Первая встреча со Старейшиной: Пин-Пин учится замечать, какая помощь нужна, и задаёт вопросы о своей золотой иголке.",
+    "en": "At his first visit to the Elder, PinPin learns to notice what help is needed and asks about his golden quill.",
+    "es": "En su primera visita al anciano, PinPin aprende a observar qué ayuda hace falta y pregunta por su púa dorada."
+  },
+  "cover": {
+    "ru": "images/covers/chapter-02/title/title-ru-v1.png",
+    "en": "images/covers/chapter-02/title/title-en-v1.png",
+    "es": "images/covers/chapter-02/title/title-es-v1.png"
+  },
+  "preproduction": [
+    {
+      "id": "cast",
+      "title": "Character reference",
+      "src": "images/chapter-02-expanded/preproduction/cast-v1.png",
+      "description": "Canonical child/Elder identity and moderate size difference; staff on ground is a study arrangement only."
+    },
+    {
+      "id": "environment",
+      "title": "Clearing and plant patch",
+      "src": "images/chapter-02-expanded/preproduction/environment-v1.png",
+      "description": "Root burrow center, rock/staff left, fern/seedling right, separate summit oak; no invented interior."
+    },
+    {
+      "id": "pinpin-angles",
+      "title": "PinPin angle reference",
+      "src": "images/chapter-preproduction/shared/pinpin-turnaround-v1.png",
+      "description": "Shared front, profile, back and three-quarter identity study, supervised by coordinator; pair proportions follow this chapter cast."
+    }
+  ],
+  "sequences": [
+    {
+      "id": "arrival",
+      "title": {
+        "ru": "Дорога к Старейшине",
+        "en": "The path to the Elder",
+        "es": "El camino al anciano"
+      },
+      "purpose": "Orient place, preserve first-visit curiosity and give approach a pause."
+    },
+    {
+      "id": "greeting",
+      "title": {
+        "ru": "Прислушаться",
+        "en": "Listening",
+        "es": "Escuchar"
+      },
+      "purpose": "Greeting, surprise, canopy, actual listening response and invitation to sit."
+    },
+    {
+      "id": "care",
+      "title": {
+        "ru": "Какая помощь нужна",
+        "en": "The help that is needed",
+        "es": "La ayuda que hace falta"
+      },
+      "purpose": "Connect power/responsibility to a small observable careful action with a trapped plant."
+    },
+    {
+      "id": "mystery",
+      "title": {
+        "ru": "Загадка золотой иголки",
+        "en": "The golden quill's mystery",
+        "es": "El misterio de la púa dorada"
+      },
+      "purpose": "Return to calm and preserve unknown personal history without invented lore."
+    },
+    {
+      "id": "promise",
+      "title": {
+        "ru": "До рассвета",
+        "en": "A promise for dawn",
+        "es": "Una promesa para el amanecer"
+      },
+      "purpose": "Future invitation, thank-you, departure and separate silent leaf-window ending."
+    }
+  ],
+  "scenes": [
+    {
+      "id": "elder-01",
+      "sequence": "arrival",
+      "src": "images/chapter-02-direct/scene-01.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин идёт по тропинке от Кристального озера к Лугу Серебряных Листьев и Холму Нор в Шепчущем лесу.",
+        "en": "PinPin follows the path from Crystal Lake toward Silver Leaf Meadow and Burrow Hill in the Whispering Forest.",
+        "es": "PinPin sigue el sendero desde el Lago de Cristal hacia la Pradera de las Hojas de Plata y la Colina de las Madrigueras, en el Bosque Susurrante."
+      },
+      "text": {
+        "ru": [
+          "За озером и Лугом Серебряных Листьев возвышался Холм Нор. На следующий день после приключения Пин-Пин отправился к старому ежу, который там жил."
+        ],
+        "en": [
+          "Beyond the lake and Silver Leaf Meadow stood Burrow Hill. The day after his adventure, PinPin went to see the old hedgehog who lived there."
+        ],
+        "es": [
+          "Más allá del lago y de la Pradera de las Hojas de Plata se alzaba la Colina de las Madrigueras. Al día siguiente de su aventura, PinPin fue a visitar al viejo erizo que vivía allí."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          0,
+          1
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Approach path at low animal height; back of PinPin.",
+      "continuity": "Lake behind-left; summit ahead.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-01.png"
+    },
+    {
+      "id": "elder-02",
+      "sequence": "arrival",
+      "src": "images/chapter-02-direct/scene-02.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин приближается к Холму Нор под низкой аркой из листьев.",
+        "en": "PinPin approaches Burrow Hill beneath a low arch of leaves.",
+        "es": "PinPin se acerca a la Colina de las Madrigueras bajo un arco bajo de hojas."
+      },
+      "text": {
+        "ru": [
+          "Все звали его Мастером Шипоставом. Говорили, что он многое знает о волшебстве. У Пин-Пина было столько вопросов!"
+        ],
+        "en": [
+          "Everyone called him Master Shipostav. They said he knew a great deal about magic. PinPin had so many questions."
+        ],
+        "es": [
+          "Todos lo llamaban maestro Shipostav. Decían que sabía mucho de magia. ¡PinPin tenía tantas preguntas!"
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          0,
+          1
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Leaf-level passage and visible summit.",
+      "continuity": "Only PinPin under silver leaves.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-02.png"
+    },
+    {
+      "id": "elder-03",
+      "sequence": "arrival",
+      "src": "images/chapter-02-direct/scene-03.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин подходит к холму через луг; Мастер Шипостав сидит снаружи, его шипы блестят на солнце, а рядом стоит посох из ветвей ежевики.",
+        "en": "PinPin approaches the hill across the meadow; Master Shipostav sits outside with sunlight on his quills and a bramble staff beside him.",
+        "es": "PinPin se acerca a la colina por la pradera; el maestro Shipostav está sentado fuera, con las púas al sol y un bastón de zarza a su lado."
+      },
+      "text": {
+        "ru": [
+          "Вот и он, у своего дома. Серебристые иголки блестели на солнце. Рядом стоял кривой посох из ветвей ежевики."
+        ],
+        "en": [
+          "There he was, outside his home. Sunlight shone on his silver quills. A crooked bramble staff stood beside him."
+        ],
+        "es": [
+          "Allí estaba, junto a su casa. El sol brillaba sobre sus púas plateadas. A su lado había un bastón curvo de zarza."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          1
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Wide reveal across meadow toward root home.",
+      "continuity": "Elder at root oak, distinct summit oak beyond.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-03.png"
+    },
+    {
+      "id": "elder-04",
+      "sequence": "arrival",
+      "src": "images/chapter-02-expanded/scenes/scene-04-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин замер на тропинке перед норой; Старейшина сидит вдали слева.",
+        "en": "PinPin pauses on the path before the burrow; the Elder sits farther left.",
+        "es": "PinPin se detiene ante la madriguera; el anciano está sentado al fondo a la izquierda."
+      },
+      "text": {
+        "ru": [
+          "У края полянки Пин-Пин остановился. С какого вопроса начать? Он сделал ещё один маленький шаг."
+        ],
+        "en": [
+          "At the edge of the clearing, PinPin stopped. Which question should he ask first? He took one more small step."
+        ],
+        "es": [
+          "Al borde del claro, PinPin se detuvo. ¿Qué preguntaría primero? Dio otro pasito."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          1
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Low medium view from approach behind PinPin; Elder distant left.",
+      "continuity": "PinPin not yet seated; Elder still looks away.",
+      "review": "Accepted replacement: PinPin has no spectacles, lower natural body with one forepaw lifted and other grounded. He looks toward root doorway rather than directly at Elder; narration only describes pausing with questions, so no mismatched dialogue/gaze claim. Elder still faces away. Place preserved, two actors, no obvious duplicate limbs; hidden attachments unverified.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-03.png"
+    },
+    {
+      "id": "elder-05",
+      "sequence": "greeting",
+      "src": "images/chapter-02-direct/scene-04.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Мастер Шипостав приветствует подошедшего Пин-Пина, не оборачиваясь.",
+        "en": "Master Shipostav greets PinPin without turning around.",
+        "es": "El maestro Shipostav saluda a PinPin sin darse la vuelta."
+      },
+      "text": {
+        "ru": [
+          "— А, юный Пин-Пин, — сказал Старейшина, даже не обернувшись. — Я чувствовал, что ты сегодня придёшь."
+        ],
+        "en": [
+          "“Ah, young PinPin,” said the Elder without turning round. “I felt you would come today.”"
+        ],
+        "es": [
+          "—Ah, pequeño PinPin —dijo el anciano sin darse la vuelta—. Presentía que vendrías hoy."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          2
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Frontal medium: Elder faces away, PinPin arrives right.",
+      "continuity": "Do not turn Elder toward child yet.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-04.png"
+    },
+    {
+      "id": "elder-06",
+      "sequence": "greeting",
+      "src": "images/chapter-02-direct/scene-05.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Удивлённый Пин-Пин спрашивает Мастера Шипостава, как тот узнал о его приходе.",
+        "en": "An astonished PinPin asks Master Shipostav how he knew he would come.",
+        "es": "PinPin, asombrado, pregunta al maestro Shipostav cómo supo que vendría."
+      },
+      "text": {
+        "ru": [
+          "— Вы знали? — Пин-Пин заморгал. — Но как?"
+        ],
+        "en": [
+          "“You knew?” PinPin blinked. “But how?”"
+        ],
+        "es": [
+          "—¿Lo sabía? —PinPin parpadeó—. ¿Cómo?"
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          3
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Reverse over Elder shoulder to child's reaction.",
+      "continuity": "PinPin left looks right; meadow/lake behind.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-05.png"
+    },
+    {
+      "id": "elder-07",
+      "sequence": "greeting",
+      "src": "images/chapter-02-landscapes/shot-07.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Свет проникает сквозь листву лесного полога; ежей в кадре нет.",
+        "en": "Light filters through the leaves of the forest canopy, with no hedgehogs in view.",
+        "es": "La luz se filtra entre las hojas del dosel del bosque; no hay erizos a la vista."
+      },
+      "text": {
+        "ru": [
+          "Старейшина тихо засмеялся. — Ветер шепчет. Листья шуршат. Они многое расскажут тому, кто умеет слушать."
+        ],
+        "en": [
+          "The Elder chuckled. “The wind whispers. The leaves rustle. There is news for anyone who listens.”"
+        ],
+        "es": [
+          "El anciano rio suavemente. —El viento susurra. Las hojas crujen. Hay noticias para quien escucha."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          4
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Upward canopy cutaway.",
+      "continuity": "No actors; nearby root oak canopy, not a new location.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-landscapes/shot-07.png"
+    },
+    {
+      "id": "elder-08",
+      "sequence": "greeting",
+      "src": "images/chapter-02-expanded/scenes/scene-08-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин поднял мордочку к дубовым листьям и прислушивается.",
+        "en": "PinPin lifts his muzzle toward the oak leaves and listens.",
+        "es": "PinPin alza el hocico hacia las hojas del roble y escucha."
+      },
+      "text": {
+        "ru": [
+          "Пин-Пин прислушался. Один лист коснулся другого. За спиной тихонько зашуршала трава."
+        ],
+        "en": [
+          "PinPin listened. A leaf brushed another leaf. Somewhere behind him, the grass whispered too."
+        ],
+        "es": [
+          "PinPin escuchó. Una hoja rozó otra. A su espalda también susurró la hierba."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          4
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Low close portrait of PinPin lifting nose and ears toward canopy.",
+      "continuity": "Solo PinPin, meadow reverse background; paws resting.",
+      "review": "Accepted visual candidate: one PinPin listening with raised muzzle toward actual oak leaves upper-right, both frontpaws grounded and visible rear foot coherent. Reverse lake/meadow background matches established child view. No Elder or identity leakage. Full body visible; exact hidden attachments unverified. Gentle pose adds a response rather than duplicating the question expression.",
+      "reused": false,
+      "before": "images/chapter-02-landscapes/shot-07.png"
+    },
+    {
+      "id": "elder-09",
+      "sequence": "greeting",
+      "src": "images/chapter-02-expanded/scenes/scene-09-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Старейшина слева приглашает Пин-Пина сесть на землю напротив него.",
+        "en": "The Elder on the left invites PinPin to sit on the earth opposite him.",
+        "es": "El anciano, a la izquierda, invita a PinPin a sentarse frente a él."
+      },
+      "text": {
+        "ru": [
+          "— Садись рядом, — предложил Старейшина. Пин-Пин устроился на тёплой земле. Теперь с вопросами можно было не спешить."
+        ],
+        "en": [
+          "“Come and sit,” said the Elder. PinPin settled on the warm earth. His questions no longer had to hurry."
+        ],
+        "es": [
+          "—Ven, siéntate —dijo el anciano. PinPin se acomodó sobre la tierra tibia. Sus preguntas ya no tenían prisa."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          4,
+          5
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Frontal medium pair; Elder warmly indicates empty ground, PinPin settles opposite.",
+      "continuity": "Elder left by boulder, PinPin right; staff leaning left.",
+      "review": "Accepted: frontal pair, Elder left offers a small forepaw invitation and child right settles. Exactly two forelimbs per actor where visible; Elder rearfeet partly hidden. Staff remains leaning against left boulder but shifts a little within that left zone relative to source. Entrance and fern relation preserved; no interior/furniture. Expressions and moderate size contrast match cast.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-07.png"
+    },
+    {
+      "id": "elder-10",
+      "sequence": "care",
+      "src": "images/chapter-02-direct/scene-07.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин рассказывает Мастеру Шипоставу о вчерашнем волшебстве у озера.",
+        "en": "PinPin tells Master Shipostav about yesterday's magic at the lake.",
+        "es": "PinPin le cuenta al maestro Shipostav la magia que hizo ayer en el lago."
+      },
+      "text": {
+        "ru": [
+          "— Вчера моя золотая иголка вернула воду в озеро, — сказал Пин-Пин. — Я помог! Только не понимаю, как это получилось."
+        ],
+        "en": [
+          "“Yesterday my golden quill brought the water back to the lake,” said PinPin. “I helped! But I don't understand how it happened.”"
+        ],
+        "es": [
+          "—Ayer mi púa dorada devolvió el agua al lago —dijo PinPin—. ¡Pude ayudar! Pero no entiendo cómo ocurrió."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          5
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Original frontal pair conversation.",
+      "continuity": "No magical effect or new handheld wand.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-07.png"
+    },
+    {
+      "id": "elder-11",
+      "sequence": "care",
+      "src": "images/chapter-02-direct/scene-08.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Мастер Шипостав медленно кивает, беседуя с Пин-Пином.",
+        "en": "Master Shipostav nods slowly as he speaks with PinPin.",
+        "es": "El maestro Shipostav asiente despacio mientras habla con PinPin."
+      },
+      "text": {
+        "ru": [
+          "Старейшина кивнул. — Сила может помочь. Но сначала надо понять, какая помощь нужна."
+        ],
+        "en": [
+          "The Elder nodded. “Power can help. But first we must understand what help is needed.”"
+        ],
+        "es": [
+          "El anciano asintió. —El poder puede ayudar. Pero primero debemos entender qué ayuda hace falta."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          6
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Original Elder close portrait by entrance.",
+      "continuity": "Elder left, looks right toward child.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-08.png"
+    },
+    {
+      "id": "elder-12",
+      "sequence": "care",
+      "src": "images/chapter-02-expanded/scenes/scene-12-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Оба ежа смотрят на растение у папоротника справа; на листьях лежит веточка.",
+        "en": "Both hedgehogs look at the plant beside the right-hand fern, with a stick across its leaves.",
+        "es": "Los dos erizos miran la planta junto al helecho de la derecha, con una ramita sobre las hojas."
+      },
+      "text": {
+        "ru": [
+          "Потом он посмотрел на папоротник. — Что ты видишь вон там? Пин-Пин тоже повернул голову."
+        ],
+        "en": [
+          "Then he looked toward the fern. “What do you notice over there?” PinPin followed his gaze."
+        ],
+        "es": [
+          "Luego miró hacia el helecho. —¿Qué ves allí? PinPin siguió su mirada."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Wide orientation shows both looking toward right-hand plant patch.",
+      "continuity": "Twig rests on leaf cluster, untouched.",
+      "review": "Accepted: both faces turn toward fern-side plant patch at right, same broad leaves pressed under single short stick. Door center, boulder/staff left, separate summit oak remain. Elder left modestly larger, PinPin right naturally low to ground. No touching or magic. Exact leafcount is partly obscured and not certified.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-08.png"
+    },
+    {
+      "id": "elder-13",
+      "sequence": "care",
+      "src": "images/chapter-02-expanded/scenes/scene-13-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Крупный план живых зелёных листьев, прижатых к земле упавшей веточкой.",
+        "en": "A close view of living green leaves bent beneath a fallen stick.",
+        "es": "Primer plano de hojas verdes vivas dobladas bajo una ramita caída."
+      },
+      "text": {
+        "ru": [
+          "На маленьком растении лежала упавшая веточка. Зелёные листья пригнулись к земле."
+        ],
+        "en": [
+          "A fallen stick lay across a little plant. Its green leaves were bent close to the ground."
+        ],
+        "es": [
+          "Una ramita caída descansaba sobre una plantita. Sus hojas verdes estaban dobladas hacia el suelo."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Plant-height close insert, no characters.",
+      "continuity": "Same rooted plant and short straight stick; no broken stem.",
+      "review": "Accepted close prop reference: no actors, broad heart-shaped leaf cluster bent beneath one ordinary short straight stick, rooted stem intact. More than two leaf shapes are visible, so exact leafcount is deliberately not asserted. Close-up preserves rootdoor behind-left and fern behind-right. Stick has textured bark and appears hand-movable at character scale, not a log; leaf/stick geometry will be reused for continuity.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-08.png"
+    },
+    {
+      "id": "elder-14",
+      "sequence": "care",
+      "src": "images/chapter-02-expanded/scenes/scene-14-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин протягивает одну переднюю лапку к веточке, пока Старейшина наблюдает.",
+        "en": "PinPin reaches one front paw toward the stick while the Elder watches.",
+        "es": "PinPin extiende una pata delantera hacia la ramita mientras el anciano observa."
+      },
+      "text": {
+        "ru": [
+          "— Я помогу! — Пин-Пин подбежал поближе и протянул лапку."
+        ],
+        "en": [
+          "“I'll help it!” PinPin hurried closer and reached out a paw."
+        ],
+        "es": [
+          "—¡Yo la ayudaré! —PinPin se acercó deprisa y extendió una patita."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Medium near fern; eager child reaches toward branch before contact.",
+      "continuity": "Plant unchanged; Elder just behind-left; child not pulling yet.",
+      "review": "Accepted: eager PinPin reaches one forepaw toward same stick but remains short of contact; other forepaw and visible rearfoot support body. Elder left watches, exactly two actors. Plant remains bent and rooted, same broad leaf cluster and branch. No wand/magic, no obvious extra limbs; hidden far hindleg unverified.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-08.png"
+    },
+    {
+      "id": "elder-15",
+      "sequence": "care",
+      "src": "images/chapter-02-expanded/scenes/scene-15-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин опустил лапку и слушает Старейшину; веточка ещё лежит на листьях.",
+        "en": "PinPin lowers his paw and listens to the Elder; the stick still rests across the leaves.",
+        "es": "PinPin baja la patita y escucha al anciano; la ramita aún descansa sobre las hojas."
+      },
+      "text": {
+        "ru": [
+          "— Погоди, — мягко сказал Старейшина. — Сначала посмотри. Что прижато веточкой? Пин-Пин опустил лапку."
+        ],
+        "en": [
+          "“A moment,” said the Elder gently. “Look first. What is caught beneath the stick?” PinPin let his paw rest."
+        ],
+        "es": [
+          "—Un momento —dijo el anciano con suavidad—. Mira primero. ¿Qué hay debajo de la ramita? PinPin bajó la patita."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Eye-level two-shot; Elder inclines head, child stops.",
+      "continuity": "No forceful grip; all paws lowered, stick unchanged.",
+      "review": "Accepted: both forepaws lowered on each character, PinPin looks up at gently leaning Elder, same plant/branch untouched in foreground. Eye contact and changed pause beat clear, no scolding gesture. Natural modest size contrast; hidden rear attachments unverified. Staff remains leftofdoor.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-08.png"
+    },
+    {
+      "id": "elder-16",
+      "sequence": "care",
+      "src": "images/chapter-02-expanded/scenes/scene-16-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин наклонил нос к листьям и веточке, не касаясь их.",
+        "en": "PinPin lowers his nose to inspect the leaves and stick without touching them.",
+        "es": "PinPin baja el hocico para observar las hojas y la ramita sin tocarlas."
+      },
+      "text": {
+        "ru": [
+          "Пин-Пин наклонился. — Листья. Если потянуть вбок, я могу их порвать."
+        ],
+        "en": [
+          "PinPin lowered his nose. “The leaves. If I pull sideways, I might tear them.”"
+        ],
+        "es": [
+          "PinPin bajó el hocico. —Las hojas. Si tiro hacia un lado, podría romperlas."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Close low child inspection with muzzle above plant, no touching.",
+      "continuity": "Solo PinPin; branch still presses leaves; stem stays rooted.",
+      "review": "Accepted: solo PinPin low at right observes leaf/stick from close range with two frontpaws on soil. No contact, biting or pulling; stem remains rooted, branch still presses same heart-shaped leaf cluster. Door blurred left, fern right. No extra Elder, glasses or limbs; some body falls outside rightedge in deliberate close-up.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-08.png"
+    },
+    {
+      "id": "elder-17",
+      "sequence": "care",
+      "src": "images/chapter-02-expanded/scenes/scene-17-v3.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Крупный план: две передние лапки Пин-Пина осторожно приподнимают веточку над листьями.",
+        "en": "Close view: PinPin's two front paws gently lift the stick clear of the leaves.",
+        "es": "Primer plano: las dos patas delanteras de PinPin levantan la ramita por encima de las hojas."
+      },
+      "text": {
+        "ru": [
+          "Он медленно приподнял веточку двумя передними лапками. Вверх, не задевая листья."
+        ],
+        "en": [
+          "He lifted the stick slowly, with both front paws. Up—not across the leaves."
+        ],
+        "es": [
+          "Levantó la ramita despacio con las dos patas delanteras. Hacia arriba, sin arrastrarla sobre las hojas."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Tight leaf-height action close-up of face and two gripping forepaws; lower body mostly outside frame.",
+      "continuity": "One child, one raised stick, same rooted leaf cluster with airgap; Elder outside close frame.",
+      "review": "Selected fresh close action: two separate forepaws grip the same lifted stick, with visible airgap above the rooted broad leaf cluster. Most lower body lies outside tight frame; a tiny partial rearfoot remains at extreme right, so prompt request for all feet absent was not fully met. No confirmed duplicated limb attachment visible in this composition; hidden/lower-body anatomy cannot be certified. Child identity matches solo reference, no Elder or glasses. Clear careful lift replaces rejected full-body five-paw attempts.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-08.png"
+    },
+    {
+      "id": "elder-18",
+      "sequence": "care",
+      "src": "images/chapter-02-expanded/scenes/scene-18-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин опускает веточку на свободную землю справа от растения.",
+        "en": "PinPin sets the stick on bare soil to the right of the plant.",
+        "es": "PinPin deja la ramita en la tierra libre a la derecha de la planta."
+      },
+      "text": {
+        "ru": [
+          "Потом он положил её на свободное место, подальше от растения."
+        ],
+        "en": [
+          "Then he set it on a bare patch of earth, away from the little plant."
+        ],
+        "es": [
+          "Después la dejó sobre un trocito de tierra libre, lejos de la plantita."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Slightly higher medium: child lowers stick onto bare soil to right.",
+      "continuity": "Stick now beside plant, no longer over any leaves.",
+      "review": "Accepted: stick now rests on bare earth to right, one PinPin forepaw lightly releasing near end, other forepaw grounded and rearfoot visible. Plant stays rooted and freed upright, Elder watches from left, doorway/staff/fern relation remains. No duplicate grips, floatingbranch or obvious extra limb; hidden attachments unverified.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-08.png"
+    },
+    {
+      "id": "elder-19",
+      "sequence": "care",
+      "src": "images/chapter-02-expanded/scenes/scene-19-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Освобождённые листья поднялись; веточка лежит отдельно справа.",
+        "en": "The freed leaves rise; the stick rests separately on the right.",
+        "es": "Las hojas liberadas se alzan; la ramita queda aparte, a la derecha."
+      },
+      "text": {
+        "ru": [
+          "Листья поднялись к свету. Пин-Пин смотрел и больше их не трогал."
+        ],
+        "en": [
+          "The leaves rose into the light. PinPin watched without touching them."
+        ],
+        "es": [
+          "Las hojas se alzaron hacia la luz. PinPin las miró sin tocarlas."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Quiet plant-height result insert, no characters.",
+      "continuity": "Same plant upright; same stick visible safely on bare soil right.",
+      "review": "Accepted result insert: same broad rooted plant leafcluster upright and same short brown stick set separately on soil right, no leaves pinned. Rootdoor blur left and fern right preserved. No actors or magical growth; exact hidden leafcount not claimed.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-08.png"
+    },
+    {
+      "id": "elder-20",
+      "sequence": "care",
+      "src": "images/chapter-02-expanded/scenes/scene-20-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин и Старейшина улыбаются друг другу возле свободного растения.",
+        "en": "PinPin and the Elder smile at each other beside the freed plant.",
+        "es": "PinPin y el anciano se sonríen junto a la planta liberada."
+      },
+      "text": {
+        "ru": [
+          "— А волшебство и не понадобилось, — сказал он. — Ты заметил, какая помощь нужна, — ответил Старейшина. — Помни об этом и тогда, когда пользуешься своей иголкой."
+        ],
+        "en": [
+          "“I didn't need magic,” he said. “You noticed what was needed,” said the Elder. “Remember that when you use your quill, too.”"
+        ],
+        "es": [
+          "—No necesité magia —dijo. —Viste qué ayuda hacía falta —respondió el anciano—. Recuérdalo también cuando uses tu púa."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          6
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Medium shared response near plant, child looks up to Elder.",
+      "continuity": "Freed plant foreground; stick apart, Elder slightly larger.",
+      "review": "Accepted: shared calm response with reciprocal gaze, Elder left modestly larger than PinPin right, both natural on earth. Same broad leafcluster freed upright in foreground; stick separately right. No state reset or new magic. Some paws hidden by plant/body; no confirmed duplicated visible attachments.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-08.png"
+    },
+    {
+      "id": "elder-21",
+      "sequence": "mystery",
+      "src": "images/chapter-02-expanded/scenes/scene-21-v1.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Два ежа возвращаются на свои места перед норой; растение справа свободно.",
+        "en": "The two hedgehogs return to their places before the burrow; the plant on the right is free.",
+        "es": "Los dos erizos vuelven a sus sitios ante la madriguera; la planta de la derecha está libre."
+      },
+      "text": {
+        "ru": [
+          "Они вернулись на свои места. На этот раз Пин-Пин сел не спеша."
+        ],
+        "en": [
+          "They went back to their places. This time, PinPin sat down slowly."
+        ],
+        "es": [
+          "Volvieron a sus sitios. Esta vez, PinPin se sentó sin prisa."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          7
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "High oblique transition toward burrow, both move a short distance back.",
+      "continuity": "Elder returns left by rock, PinPin right; plant freed at near-right edge.",
+      "review": "Accepted transition: two natural hedgehogs move leftward within the clearing toward original seating, Elder nearing boulder and child remaining right. Doorcenter, staffleft, fernright and summitleft preserved. Broad leaves remain free at right; branch lies beyond/right of them rather than across their upper surfaces. Plant posture varies slightly by view, exact leafcount unclaimed. Visible paws plausible without confirmed duplicates; hiddenattachments unverified.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-09.png"
+    },
+    {
+      "id": "elder-22",
+      "sequence": "mystery",
+      "src": "images/chapter-02-direct/scene-09.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Сверху видна поляна, где Пин-Пин и Мастер Шипостав тихо сидят вместе.",
+        "en": "An overhead view shows PinPin and Master Shipostav sitting quietly together in the clearing.",
+        "es": "Una vista desde arriba muestra a PinPin y al maestro Shipostav sentados juntos en silencio en el claro."
+      },
+      "text": {
+        "ru": [
+          "Некоторое время они слушали деревья. Потом Старейшина спросил: — Откуда берётся волшебство твоей золотой иголки?"
+        ],
+        "en": [
+          "For a while, they listened to the trees. Then the Elder asked, “Where does your golden quill's magic come from?”"
+        ],
+        "es": [
+          "Durante un rato escucharon los árboles. Después el anciano preguntó: —¿De dónde viene la magia de tu púa dorada?"
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          7,
+          8
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Original overhead calm two-shot.",
+      "continuity": "Returns to established seating; plant beyond right crop.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-09.png"
+    },
+    {
+      "id": "elder-23",
+      "sequence": "mystery",
+      "src": "images/chapter-02-direct/scene-10-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин смотрит вправо, в сторону Мастера Шипостава, и качает головой в ответ.",
+        "en": "PinPin looks right toward Master Shipostav and shakes his head in reply.",
+        "es": "PinPin mira hacia la derecha, hacia el maestro Shipostav, y niega con la cabeza al responder."
+      },
+      "text": {
+        "ru": [
+          "— Не знаю, — сказал Пин-Пин. — Она у меня с самого рождения."
+        ],
+        "en": [
+          "“I don't know,” said PinPin. “It has been with me since I was born.”"
+        ],
+        "es": [
+          "—No lo sé —dijo PinPin—. La tengo desde que nací."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          9
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Original reverse child portrait.",
+      "continuity": "Looks right toward off-camera Elder.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-10-v2.png"
+    },
+    {
+      "id": "elder-24",
+      "sequence": "mystery",
+      "src": "images/chapter-02-direct/scene-11.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Мастер Шипостав наклоняется к Пин-Пину и рассказывает о древней магии предков.",
+        "en": "Master Shipostav leans toward PinPin as he tells him about the ancient magic of their ancestors.",
+        "es": "El maestro Shipostav se inclina hacia PinPin mientras le habla de la antigua magia de sus antepasados."
+      },
+      "text": {
+        "ru": [
+          "Старейшина наклонился поближе. — Наши предки знали это древнее волшебство. Твоя иголка хранит частицу их истории. Нам ещё многое предстоит узнать."
+        ],
+        "en": [
+          "The Elder leaned closer. “Our ancestors knew this old magic. Your quill carries a piece of their story. There is more to discover.”"
+        ],
+        "es": [
+          "El anciano se inclinó un poco. —Nuestros antepasados conocían esta magia antigua. Tu púa guarda una parte de su historia. Aún queda mucho por descubrir."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          10
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Original Elder close answer.",
+      "continuity": "General source statement only; no invented ancestors or flashback.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-11.png"
+    },
+    {
+      "id": "elder-25",
+      "sequence": "mystery",
+      "src": "images/chapter-02-direct/scene-12-v3.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин смотрит вправо, в сторону Мастера Шипостава, широко раскрытыми от любопытства глазами.",
+        "en": "PinPin looks right toward Master Shipostav with eyes wide with curiosity.",
+        "es": "PinPin mira hacia la derecha, hacia el maestro Shipostav, con los ojos muy abiertos de curiosidad."
+      },
+      "text": {
+        "ru": [
+          "Пин-Пин широко раскрыл глаза. — Как же мне узнать?"
+        ],
+        "en": [
+          "PinPin's eyes grew wide. “How can I find out?”"
+        ],
+        "es": [
+          "PinPin abrió mucho los ojos. —¿Cómo puedo descubrirlo?"
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          11
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Original curious PinPin reverse portrait.",
+      "continuity": "Child looks right; no knowledge gained off-page.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-12-v3.png"
+    },
+    {
+      "id": "elder-26",
+      "sequence": "promise",
+      "src": "images/chapter-02-landscapes/shot-11.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Вид снизу на пустую вершину Холма Нор, обрамлённую листвой; завтрашний урок ещё не начался.",
+        "en": "Seen from below, the empty summit of Burrow Hill is framed by foliage; tomorrow's lesson has yet to begin.",
+        "es": "Vista desde abajo, la cima vacía de la Colina de las Madrigueras queda enmarcada por hojas; la lección de mañana aún no ha comenzado."
+      },
+      "text": {
+        "ru": [
+          "— Начни с того, чтобы прислушаться к себе, — сказал Старейшина. — Завтра на рассвете приходи к дубу на вершине Холма Нор. Следующий шаг мы сделаем вместе."
+        ],
+        "en": [
+          "“Begin by listening to yourself,” said the Elder. “Tomorrow at dawn, meet me beneath the oak at the top of Burrow Hill. We'll take the next step together.”"
+        ],
+        "es": [
+          "—Empieza por escucharte a ti mismo —dijo el anciano—. Mañana al amanecer, ven al roble de la cima. Daremos juntos el siguiente paso."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          12
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Empty summit viewed from below.",
+      "continuity": "Future destination only; lesson has not begun; no actors.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-landscapes/shot-11.png"
+    },
+    {
+      "id": "elder-27",
+      "sequence": "promise",
+      "src": "images/chapter-02-expanded/scenes/scene-27-v2.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин уходит по тропинке на закате, а Старейшина остаётся у норы.",
+        "en": "PinPin leaves along the path at sunset while the Elder remains beside the burrow.",
+        "es": "PinPin se marcha por el sendero al atardecer mientras el anciano se queda junto a la madriguera."
+      },
+      "text": {
+        "ru": [
+          "— На рассвете, — повторил Пин-Пин. — Спасибо, Мастер Шипостав. У края полянки он ещё раз улыбнулся."
+        ],
+        "en": [
+          "“At dawn,” PinPin repeated. “Thank you, Master Shipostav.” At the edge of the clearing, he smiled once more."
+        ],
+        "es": [
+          "—Al amanecer —repitió PinPin—. Gracias, maestro Shipostav. Al llegar al borde del claro, sonrió una vez más."
+        ]
+      },
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          12,
+          13
+        ],
+        "note": "Proposed added staging within the original first visit; no additional canon history."
+      },
+      "camera": "Medium-wide farewell at clearing edge in late golden sunset light; child faces outward while leaving.",
+      "continuity": "Elder remains near rock; child leaves toward meadow smiling. Staff stays leaning left; plant remains freed.",
+      "review": "Selected replacement: summit oak restored upper-left, root-home center-right with boulder/staff left and fern right. Plant freed upright and stick separately on soil at right. Child moves outward smiling, Elder remains near door. Sunset light is warm; precise sun position differs from legacy departure shot, so lighting direction remains illustrative rather than calibrated. No obvious additional limbs; hiddenfeet unverified.",
+      "reused": false,
+      "before": "images/chapter-02-direct/scene-14.png"
+    },
+    {
+      "id": "elder-28",
+      "sequence": "promise",
+      "src": "images/chapter-02-direct/scene-14.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин уходит от Холма Нор под золотым и багряным закатным небом.",
+        "en": "PinPin leaves Burrow Hill beneath a sunset sky of gold and crimson.",
+        "es": "PinPin se aleja de la Colina de las Madrigueras bajo un cielo de atardecer dorado y carmesí."
+      },
+      "text": {
+        "ru": [
+          "Небо стало золотым и багряным. У Пин-Пина по-прежнему было много вопросов. Он радовался и немножко тревожился. Завтра он придёт и с радостью, и с тревогой."
+        ],
+        "en": [
+          "The sky turned gold and crimson. PinPin still had questions. He felt excited—and a little unsure. Tomorrow, he would bring both feelings with him."
+        ],
+        "es": [
+          "El cielo se volvió dorado y carmesí. PinPin aún tenía preguntas. Sentía ilusión y un poquito de inquietud. Mañana llevaría consigo las dos cosas."
+        ]
+      },
+      "source": {
+        "kind": "original",
+        "blocks": [
+          13
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Original wide sunset departure.",
+      "continuity": "Home/root oak behind, child goes away from hill. Dawn remains future.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-14.png"
+    },
+    {
+      "id": "elder-29",
+      "sequence": "promise",
+      "src": "images/chapter-02-landscapes/shot-12.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Закат виден сквозь просвет между серебристыми листьями; в кадре никого нет.",
+        "en": "The sunset is visible through a gap between silver leaves, with no characters in view.",
+        "es": "El atardecer se ve por un hueco entre hojas plateadas; no hay personajes a la vista."
+      },
+      "text": {
+        "ru": [],
+        "en": [],
+        "es": []
+      },
+      "source": {
+        "kind": "silent",
+        "blocks": [
+          13
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Original empty sunset leaf window.",
+      "continuity": "Separate silent page before peek, no animals.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-landscapes/shot-12.png"
+    },
+    {
+      "id": "elder-30",
+      "sequence": "promise",
+      "src": "images/chapter-02-direct/scene-16.png",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "ru": "Пин-Пин забавно выглядывает в тот же просвет между серебристыми листьями на закате.",
+        "en": "PinPin peeks playfully through the same gap between silver leaves at sunset.",
+        "es": "PinPin se asoma con gracia por el mismo hueco entre hojas plateadas al atardecer."
+      },
+      "text": {
+        "ru": [],
+        "en": [],
+        "es": []
+      },
+      "source": {
+        "kind": "silent",
+        "blocks": [
+          13
+        ],
+        "note": "Existing illustration retained; original source passage adapted to brief read-aloud phrasing."
+      },
+      "camera": "Original playful PinPin peek through same leaf gap.",
+      "continuity": "Same sunset framing, closes current visit without depicting next dawn.",
+      "review": "Full image inspected against proposed beat; no obvious duplicated limbs. Hidden attachments and exact relative scale remain unverified.",
+      "reused": true,
+      "before": "images/chapter-02-direct/scene-16.png"
+    }
+  ],
+  "editorialNotes": [
+    "30 reading images: 16 retained existing illustrations and 14 new action/reaction/transition images. No quota was imposed; each new image has a specific beat.",
+    "The twig-and-seedling demonstration is an explicit adaptation addition, not a recovered original passage.",
+    "Source blocks0–13 are covered. Elder's general ancestor statement is preserved without inventing a named history or showing memories as present action.",
+    "Narration is adapted into short read-aloud exchanges in Russian, English and Spanish; original official prose remains untouched.",
+    "Two final images stay silent and separate.",
+    "For newly inserted beats, the earlier image in Scene review is the original passage’s visual context, not an earlier rendering of that new action. Retained illustrations compare identically."
+  ],
+  "continuityNotes": [
+    "This is the same first visit the day after the lake adventure, not a second visit.",
+    "Tomorrow's dawn lesson remains promised and unresolved; this proposal does not depict it.",
+    "Staff placement follows environment plate, not cast-study ground pose.",
+    "No interior is introduced.",
+    "All new anatomy/scale reviews are visual, not calibrated proofs."
+  ]
+}

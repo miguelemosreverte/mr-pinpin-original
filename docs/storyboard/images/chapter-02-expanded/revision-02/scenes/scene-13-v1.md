@@ -1,0 +1,35 @@
+# Elder revision02 scene-13-v1
+
+Status: proposed
+
+- Tool: built-in image_gen
+- Started: 2026-09-21T01:53:38.824Z
+- Finished: 2026-09-21T01:55:12.727Z
+- Tool-call wall time: 93.903 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-13-v1.png
+- Dimensions: 1536×1024
+- SHA-256: e8b47347893c0f3d5548fff5076486a6bf8964211c1b603d01d8a17a05fb9aa9
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-04d2fea0-164f-4cb2-80ae-be402f713538.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/home-v2.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. Final standalone story illustration, landscape1536x1024, rich warm dimensional fur/quills and textured woodland materials, no words/title/labels/panels/watermark. Exactly two living hedgehogs: silver-quilled Elder with fine gold spectacles, modestly smaller chestnut child PinPin, both natural four-limbed rounded bodies, no clothes. No extra forepaws or human hands. Reference1 exact home/desk/props, reference2 identities. Camera at east side of low writing desk, medium close. Elder at LEFT perched naturally on established low round wooden stool beside desk, round hindquarters supported, hindfeet on stool; one forepaw holds DARK writing feather and its nib visibly touches paper in open notebook, other forepaw rests near page edge. Child PinPin RIGHT on floor beside stool watches the moving NIB, not viewer; their faces visible in profile/three-quarter. Elder's actual eyes on page as he writes. Inkpot dark heavy square holder on desk; two flat paperweight stones and book consistent. Show stool and relation of paws/tabletop so reach is physically credible. Writing is fine non-readable marks, no invented readable words. Warm enclosed desk lamp left, shelves soft background, CLOSED inner door back-right only if seen. No staff inside. Distinct meaningful writing action, no generic portrait.
+
+## Review
+
+Selected after full inspection and root/QA review: dark writing feather nib touches page, other forepaw stabilizes book; Elder supported on stool reaches table. Child watches Elder writing, not a proven precise nib eyeline. Inner door lowleft ring/righthinges retained. Warm light browns Elder quills; later refs retain silver identity. Hidden seated limb attachments unverified.
+
+Reviewed: 2026-09-21T02:05:05.881Z
+
+
+## Reference hash verification
+
+Recorded 2026-09-21T03:34:02.591150+00:00 during final provenance verification (not a claimed pre-call hash record).
+
+- 53b5d2c81242f8d0f505a7f24cf04b9e7f8adbf6b1340cb999e865e436e44a83 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/home-v2.png
+- 9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png

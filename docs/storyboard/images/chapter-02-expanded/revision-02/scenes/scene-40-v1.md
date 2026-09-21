@@ -1,0 +1,37 @@
+# Elder revision02 scene-40-v1
+
+Status: proposed
+
+- Tool: built-in image_gen
+- Started: 2026-09-21T03:11:40.105Z
+- Finished: 2026-09-21T03:14:54.995Z
+- Tool-call wall time: 194.89 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-40-v1.png
+- Dimensions: 1536×1024
+- SHA-256: dfff6bf95337e1cc3badb2531b57f371b329219d6c83651be24b56a432f3f0c9
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-64a91195-818d-4c49-b8b0-1171452af759.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/cave-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/murals-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. ONE standalone1536x1024 landscape richly dimensional fur/stone story illustration, no text/labels/panels/watermark. Exactly two natural hedgehogs, silver-grey Elder round gold spectacles LEFT, smaller chestnut PinPin RIGHT, no clothes/staff. Exactly two forepaws and two hindfeet each; no extra arms. During conversation Elder face/pupilsRIGHT/down and childLEFT/up, actual mutual gaze. NIGHT GIVES REST. Medium paired answer at EAST mural, Elder LEFT kindly smiling directly at childRIGHT, both actual eyes meet, child listens relaxed. All four-footed bodies grounded with visibleforepaws, no pointingarm. Background same east golden sun/livingtree versus blue storm painting, somewhat wider crop than39 so tiny warm painted shelter readable, NOT living cottage in room. No north bench or offeringbowl teleported intoeaststation, no extra openings. Different calm conversational beat, warm protected cave, no horror/shadowcharacters.
+
+## Review
+
+Rejected after full-image inspection: the east light/dark mural was incorrectly replaced with a combined baby/grain and male defender painting. Foreground pair is usable but background continuity requires targeted replacement.
+
+Reviewed: 2026-09-21T03:25:59.401Z
+
+
+## Reference hash verification
+
+Recorded 2026-09-21T03:34:02.591150+00:00 during final provenance verification (not a claimed pre-call hash record).
+
+- c46ef299e7a595d8bf8e59bdf9f2dfd8930a12bc223cdfa62b3e52b8b2345efc /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/cave-v1.png
+- ccfbfff59929e0635a83a56fb626a5da3b53bef383d526c82924d4702326039d /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/murals-v1.png
+- 9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png

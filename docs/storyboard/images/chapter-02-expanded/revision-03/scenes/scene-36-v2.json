@@ -1,0 +1,28 @@
+{
+  "id": "elder-r3-36-v2",
+  "title": "Elder revision03 scene36 enclosed-passage correction",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T07:17:56.967Z",
+  "references": [
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/scenes/scene-36-v1.png",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/preproduction/cave-root-arrival-v1.png"
+  ],
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/scenes/scene-36-v2.png",
+  "prompt": "Use case: precise-object-edit. Make ONE localized background correction to reference1, the exact finished wide cave scene. The LOW ROOT MOUTH at BACK-RIGHT (between shield mural and east sunlight mural) incorrectly shows bright outdoor green forest. Replace ONLY the outdoor vista INSIDE that mouth with an ENCLOSED dim underground earthen/stone tunnel bending out of sight, like reference2. No sky, trees, foliage, daylight landscape or exterior view inside that low passage. Preserve the root mouth border/size/location, smooth same-level earthen connection, and every other composition feature. IMPORTANT: KEEP the REAL HIGH SKYLIGHT at UPPER LEFT and its daylight shaft exactly as before\u2014this is separate and correct. Preserve tiny solo child hedgehog, pose/gaze/feet/quills, all three exact human sacred mural designs, altar/pots/north bench, broad terrace, cave ceiling, sunlight/shadows and warm dimensional style. Do not add Elder or any animal/prop, do not enlarge child, do not redraw whole scene. Landscape1536x1024, no text, no stairs/door. Only change inside the low back-right mouth from outdoor greenery to enclosed underground tunnel.",
+  "startedAt": "2026-09-21T07:18:18.526Z",
+  "finishedAt": "2026-09-21T07:19:10.108Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-62e7c6ac-19cc-43b0-8b18-e36442739502.png",
+  "reviewedAt": "2026-09-21T07:26:32.146Z",
+  "selection": "accepted for proposed revision03",
+  "review": "Full output inspected. Back-right low mouth now contains enclosed dim earthen/rock passage with no outdoor vista, while real upper-left skylight/daylight shaft is unchanged. Tiny solo child, raised mural gaze, three human-scale mural walls, cave ceiling, terrace and bench retained. No Elder or added prop. Exact six-height measurement and hidden child limbs not certified from this wide camera. Replaces rejected36-v1.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "44671440096ddafe20e50702b99174030eac1f3bcbe02bf02c3bae1f28c37d03",
+  "referenceHashes": {
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/scenes/scene-36-v1.png": "a48f0759aba3ea5f8567efaf37a82c5ccc4947a3a3aa86b1aebbaaa4622c010c",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/preproduction/cave-root-arrival-v1.png": "7c40d1976d3353ffdb53329911539cdabf3ef5e58d09a8b22a5015ba0e70c756"
+  },
+  "independentReview": "Root full-image review passed: tiny solo child, three mural walls, enclosed root passage, original cave skylight preserved.",
+  "independentReviewedAt": "2026-09-21T07:30:46.675181+00:00"
+}

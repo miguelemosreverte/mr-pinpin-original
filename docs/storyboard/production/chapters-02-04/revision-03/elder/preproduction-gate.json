@@ -1,0 +1,67 @@
+{
+  "status": "All five spatial regions accepted by root; route also independently accepted by narrative lead",
+  "revision": 3,
+  "scope": "spatial preproduction only",
+  "referencesInspected": [
+    "images/chapter-02-expanded/revision-02/preproduction/home-v2.png",
+    "images/chapter-02-expanded/revision-02/preproduction/cave-v1.png",
+    "images/chapter-02-expanded/revision-02/preproduction/cave-south-v1.png"
+  ],
+  "plannedAssets": [
+    "home-root-nook-v1",
+    "root-opening-states-v1",
+    "root-fit-v1",
+    "passage-route-v1",
+    "cave-root-arrival-v1"
+  ],
+  "selected": [
+    {
+      "id": "home-root-nook-v1",
+      "src": "images/chapter-02-expanded/revision-03/preproduction/home-root-nook-v1.png",
+      "sha256": "fcfffd326c139beff1af7c442793f8530e602d15b306eb4fdb3bb616fd22ad01",
+      "creatorReview": "complete; adjacent provenance",
+      "rootReview": "accepted in team review message"
+    },
+    {
+      "id": "root-opening-states-v1",
+      "src": "images/chapter-02-expanded/revision-03/preproduction/root-opening-states-v1.png",
+      "sha256": "af6803dd4dcab9450a26fe49d52d5c1a355b9143833b203afafb2f60fce2fc22",
+      "creatorReview": "complete; adjacent provenance",
+      "rootReview": "accepted in team review message"
+    },
+    {
+      "id": "root-fit-v1",
+      "src": "images/chapter-02-expanded/revision-03/preproduction/root-fit-v1.png",
+      "sha256": "65347c95ac20f0e3fcd27e9058437b084b08c699717168d9da17df2f5a4c67c7",
+      "creatorReview": "complete; adjacent provenance",
+      "rootReview": "accepted in team review message"
+    },
+    {
+      "id": "passage-route-v3",
+      "src": "images/chapter-02-expanded/revision-03/preproduction/passage-route-v3.png",
+      "sha256": "e3be3f1b46f1787284be2c5627ef5b1b1d8237c4d76835360c3b9e632914b258",
+      "creatorReview": "complete; adjacent provenance",
+      "rootReview": "Root independently full-viewed and accepted continuous floor, headroom and flush terrace after reconnecting.",
+      "independentReview": "PASS: continuous gentle floor flush with cave, widened passage, pale stone and endpoints, no stairs/cliff; schematic not calibrated."
+    },
+    {
+      "id": "cave-root-arrival-v1",
+      "src": "images/chapter-02-expanded/revision-03/preproduction/cave-root-arrival-v1.png",
+      "sha256": "7c40d1976d3353ffdb53329911539cdabf3ef5e58d09a8b22a5015ba0e70c756",
+      "creatorReview": "complete; adjacent provenance",
+      "rootReview": "accepted in team review message"
+    }
+  ],
+  "storyRenderingAuthorized": true,
+  "rejected": [
+    "passage-route-v1: discontinuous cave arrival",
+    "passage-route-v2: insufficient passage headroom"
+  ],
+  "storyRegionsReady": [
+    "home",
+    "root opening/body fit",
+    "cave"
+  ],
+  "routeRegionReady": true,
+  "gateRecordedAt": "2026-09-21T06:50:48.282178+00:00"
+}

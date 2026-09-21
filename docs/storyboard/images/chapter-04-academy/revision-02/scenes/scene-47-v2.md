@@ -1,0 +1,35 @@
+# Scene47 targeted scale/site correction
+
+## Exact prompt
+
+Preserve1536x1024 landscape. Targeted LOCAL SCALE edit of scene47-v1 ONLY. Keep exactly same TWELVE animals, same scene/camera, and preserve the TEN non-mouse actors, workbench/model and entire background unchanged. Correct ONLY the TWO MICE at far LEFT: shrink mouse FATHER to about55percent of present body height/width, feet on same ground beside low step; shrink child Mila to about65percent of present body size, feet still firmly ON same low step, near table edge with paws resting naturally on edge if reachable. Mouse father should have body height about0.7–0.8PinPin body, Mila about0.4–0.45PinPin. Father about1.7Mila body. Keep exact mouse faces, one thin tail each, mature adult distinct from child. Restore natural grass/background where enlarged mice used to be. DO NOT scale badgers, squirrels, rabbits, hedgehogs, baby or owl. Preserve baby's clapping, Mama two support arms, Lulu crown. Model remains exactly2blocks+1flatbarkroof+1pineconeonleafUNDERroof. Do not add or omit animals/props.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "academy-r02-47-v2",
+  "title": "Scene47 targeted scale/site correction",
+  "status": "proposed",
+  "tool": "image_gen.imagegen",
+  "prompt": "Preserve1536x1024 landscape. Targeted LOCAL SCALE edit of scene47-v1 ONLY. Keep exactly same TWELVE animals, same scene/camera, and preserve the TEN non-mouse actors, workbench/model and entire background unchanged. Correct ONLY the TWO MICE at far LEFT: shrink mouse FATHER to about55percent of present body height/width, feet on same ground beside low step; shrink child Mila to about65percent of present body size, feet still firmly ON same low step, near table edge with paws resting naturally on edge if reachable. Mouse father should have body height about0.7\u20130.8PinPin body, Mila about0.4\u20130.45PinPin. Father about1.7Mila body. Keep exact mouse faces, one thin tail each, mature adult distinct from child. Restore natural grass/background where enlarged mice used to be. DO NOT scale badgers, squirrels, rabbits, hedgehogs, baby or owl. Preserve baby's clapping, Mama two support arms, Lulu crown. Model remains exactly2blocks+1flatbarkroof+1pineconeonleafUNDERroof. Do not add or omit animals/props.",
+  "references": [
+    {
+      "path": "images/chapter-04-academy/revision-02/scenes/scene-47-v1.png",
+      "role": "Edit target; local correction only",
+      "sha256": "e50bc3ed5ca90a60c27efdbcc79e99cfe1993e32054f767eba2bb542f6b34293"
+    }
+  ],
+  "plannedAt": "2026-09-21T03:29:04.447Z",
+  "output": "images/chapter-04-academy/revision-02/scenes/scene-47-v2.png",
+  "startedAt": "2026-09-21T03:30:06.864Z",
+  "finishedAt": "2026-09-21T03:31:30.586Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-da606ae8-642e-4c98-bb09-75ab6989b7d2.png",
+  "reviewedAt": "2026-09-21T03:37:33.658Z",
+  "review": "Full generated image inspected at native composition. All eleven family animals plus the owl remain visible. The father mouse is now below PinPin's standing scale; Mila is smaller again, with both mice at the left step. This qualitatively restores the small mouse family without claiming measured physical ratios. Exactly two supports, one bark roof and one pinecone on a leaf are visible on the plain workbench. Lulu retains the daisy crown. Mama visibly supports PomPom with two forearms; the baby brings its forepaws together. No clear extra limbs observed; hidden joints and furniture details remain unverified.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "ee7b6f517d16f54250e47e22808dff153d2f290fcf322f2eed1d19c38c92ec6e",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}
+```

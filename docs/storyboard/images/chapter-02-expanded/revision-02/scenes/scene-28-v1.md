@@ -1,0 +1,35 @@
+# Elder revision02 scene-28-v1
+
+Status: proposed
+
+- Tool: built-in image_gen
+- Started: 2026-09-21T02:50:47.352Z
+- Finished: 2026-09-21T02:52:17.596Z
+- Tool-call wall time: 90.244 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-28-v1.png
+- Dimensions: 1536×1024
+- SHA-256: a1d1ee011b1b218e5bb03805c431d036e6a8c47a7814629c8817b3fc1b51578c
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-c3722bc1-09c6-4b56-ae2f-961273e7f116.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-25-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. One standalone landscape1536x1024 richly dimensional warm stone/fur story illustration, no text/panels/watermark. Living cast exactly two natural hedgehogs, Elder silver-grey quills/fine round gold spectacles LEFT, smaller chestnut cream-faced PinPin RIGHT, no clothes/staff, four limbs each. Keep actual partner eye directions; never both faces point same way during conversation. NEW LIFE QUESTION, reverse close-up from behind Elder's LEFT shoulder (soft foregroundleft quills/glasses edge). PinPin RIGHT is main focus, body facing LEFT with eyes lifted LEFT toward Elder's actual visible face edge, curious gentle open mouth. Elder listens, no gesturing arms. Behind child, crop of SAME WEST Mother of Life mural shows pregnant belly and ochre/sage robe, flatpaint notlivehuman. Baby cradle edge may visible, stone ledge and warm light same. Camera stays same side of pair axis and never puts child looking away. Natural grounded child forepaws visible, hindbody can crop cleanly.
+
+## Review
+
+Selected full inspection: child right looks left/up to visible Elder shoulder/face at left, reverse question coverage keeps axis. West Mother belly/cradle behind remain flat painted symbols. Child visible forepaws coherent, Elder body cropped.
+
+Reviewed: 2026-09-21T03:15:06.707Z
+
+
+## Reference hash verification
+
+Recorded 2026-09-21T03:34:02.591150+00:00 during final provenance verification (not a claimed pre-call hash record).
+
+- 35afbfeb8d5bdede14c8cc9726c5b9e5c9e10adde6b194089e377d7ea36032f8 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-25-v1.png
+- 9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png

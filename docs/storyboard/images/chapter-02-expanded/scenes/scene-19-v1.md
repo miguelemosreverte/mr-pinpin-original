@@ -1,0 +1,27 @@
+# Elder expanded scene 19
+
+Status: proposed
+
+- Tool: built-in image_gen.imagegen
+- Started: 2026-09-20T22:22:26.089Z
+- Finished: 2026-09-20T22:23:21.274Z
+- Tool-call wall time: 55.185 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/scenes/scene-19-v1.png
+- Dimensions: 1536×1024
+- SHA-256: a0cc110bb078a034283df396368cb472503b9ba7f7da3f42977c5ff3f3a9fabf
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-8be91dcc-093f-4ba3-898d-56b848920b38.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/environment-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/scenes/scene-13-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. One finished standalone landscape1536x1024 story illustration, no text, border, panels or watermark. Exact warm dimensional woodland style, fine natural hedgehog fur/quills, tactile bark/moss, gentle golden daylight. Preserve reference identities and place; no clothes, human torso, exaggerated eyes, extra animals or invented props. Clear coherent paw attachments; two forelimbs and two hindlimbs per hedgehog, partly hidden where natural. Reference1 exact fern-side plantpatch and single stick. One quiet close RESULT insert, no animals, paws or insects. Same viewpoint and framing idea as plant-height close-up: the little rooted seedling is now freed and its same broad heart-shaped green leaf cluster stands naturally upright toward the warm light. Do not make it suddenly flower, grow taller or sprout extra branches. The SAME short straight brown stick lies safely on BARE SOIL to the RIGHT of the plant, clearly separated from leaves and stem, no longer pressing anything. Fern softbehindright, ordinary earth/moss. Let readers compare before and after: only branch placement and released leafposture changed. No magicglow or sparkles. Final reference is a CLOSE PROP CONTINUITY reference: preserve this same young rooted plant with its broad heart-shaped leaf cluster and this one short straight ordinary stick. Do not constrain an exact hidden leaf count. For before states the stick still presses leaves; for lift/after states move that same stick as described, keeping stem rooted and plant identity. No sudden growth or flowers.
+
+## Review
+
+Accepted result insert: same broad rooted plant leafcluster upright and same short brown stick set separately on soil right, no leaves pinned. Rootdoor blur left and fern right preserved. No actors or magical growth; exact hidden leafcount not claimed.
+
+Reviewed: 2026-09-20T22:28:23.610Z

@@ -1,0 +1,12 @@
+{
+  "id": "academy-title-en-v1",
+  "status": "proposed",
+  "prompt": "Use case: text-localization. Asset: children's illustrated chapter title cover, portrait 1024 x 1536. Edit input Russian cover by replacing ONLY its upper title lettering with en lettering. Exact title in two groups: Mr. PinPin / The Forest Academy. Use the slash only as a separator in this instruction, NOT as a printed character. Same large elegant dark forest-green storybook serif, gracefully arched heading with balanced lower title lines and comfortable margins. All text must be exactly spelled, no Russian lettering or extra words remain. Preserve the entire illustration: exact rabbit Lulu left, small hedgehog PinPin middle and red squirrel Tutu right, their expressions, size, paws, tail, fur; oak roots, daisies, mossy pavilion and snag; camera, lighting, sky and warm colors. Do not redraw/recompose scene or add any actors. Change only title words/line breaks. No logos/watermark.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/chapter-04/title/title-ru-v1.png",
+      "role": "Edit target; preserve illustration, translate title only"
+    }
+  ],
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/chapter-04/title/title-en-v1.png"
+}

@@ -1,0 +1,45 @@
+# Academy scene17-v2 — walking toward the oak
+
+Proposed, not published.
+
+## Exact prompt
+
+Use case: illustration-story. ONE finished Forest Academy scene17 replacement, landscape1536x1024, warm dimensional woodland style. PRIMARY ACTION IS WALKING TOWARD A DESTINATION, NOT SITTING OR ARRIVAL. This is the connective moment after leaving the teacher and BEFORE the following scene where the friends sit.
+Reference1 is identities/relative size ONLY: PinPin small brown hedgehog with cream face, Lulu grey-beige rabbit with long pink-inner ears and white cottontail, Tutu young red squirrel with one fluffy red tail. IGNORE reference1 owl; NO owl belongs in this scene.
+Reference2 is the LOCATION: old oak at right with three mossy root hollows, small daisy patch beside the left root, distant moss-roof pavilion left and pale snag behind. Preserve this place and warm late-afternoon materials, but pull the camera BACK to include a broad lawn/path in front-left of the oak. ALL THREE ROOT HOLLOWS MUST BE VISIBLY EMPTY.
+Stage exactly three friends physically WALKING left-to-right across the flat lawn/path, still a few steps BEFORE reaching the roots. Keep the figures well separated from the empty hollows. They are NOT seated, NOT nestled between roots, NOT touching the root seats. Lulu leads at front-right nearest but still outside the root area, PinPin follows at middle, Tutu follows at rear-left. All bodies face to the right toward the oak, in readable gentle natural animal walking strides. Lulu may glance toward the inviting empty hollows while speaking; PinPin and Tutu follow her direction. Keep at least one foot grounded per walking animal and exactly two forelimb/two hindlimb anatomy. No jumping or floating. The three empty hollows remain clearly visible beyond them at middle/right.
+Natural small woodland animal proportions, no giant figures, no long human legs, no clothes. Preserve distinct expressive faces, fur/quills and tails: Lulu only a white rabbit cottontail, Tutu only ONE proper red squirrel tail, PinPin no squirrel tail. Daisies stay growing untouched; no picked flowers, crown, feather, leaf or carried props. No additional creatures, no teacher, no speech bubbles, no text, no montage, borders or watermark. Warm rich natural light and subtle tactile foliage, with body action and EMPTY destination more important than copying the reference framing.
+
+## Record and full-image review
+
+```json
+{
+  "id": "scene-17-v2",
+  "status": "proposed",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+      "role": "Three child identities and relative scale only; omit owl.",
+      "sha256": "62a3364fdb8da55e6c59c34bbd8d25a2e60c380f978175e0ab79edbb5fa20bd3"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png",
+      "role": "Oak root destination geography; camera pulled back and seats empty.",
+      "sha256": "bf62614840688e5d35c3c57b498b737fa78441f3936b1dfab3ab55f06cb0dd6f"
+    }
+  ],
+  "startedAt": "2026-09-20T22:34:13.181Z",
+  "tool": "built-in imagegen",
+  "finishedAt": "2026-09-20T22:34:58.437Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-06a0dd5d-f59a-4233-813d-1666d510f01c.png",
+  "toolReportedWallSeconds": 26.3,
+  "seconds": 45.256,
+  "timingNote": "UTC interval includes dispatch and orchestration overhead; not model-only compute.",
+  "reviewedAt": "2026-09-20T22:35:48.159Z",
+  "review": "Full output inspected. Exactly three friends walk left-to-right across foreground path toward visibly empty oak-root hollows: Lulu leading, PinPin middle, Tutu behind. None is seated or already inside a hollow. One white rabbit cottontail and one red squirrel tail; no owl, crown, picked flowers, leaf, feather or carried props. Pavilion left, pale snag rear and great oak right preserve location. Three figures have readable walking poses and ground contact. Distant root layout remains an illustrated match rather than calibrated geometry; far-side limb attachments cannot all be verified.",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-17-v2.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "79d4ccf6eecdac579fd36bee706abc1be431d23ec3db143ef709c67450f7e171"
+}
+```

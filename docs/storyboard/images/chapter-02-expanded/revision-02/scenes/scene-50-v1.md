@@ -1,0 +1,37 @@
+# Elder revision02 scene-50-v1
+
+Status: proposed
+
+- Tool: built-in image_gen
+- Started: 2026-09-21T03:23:15.019Z
+- Finished: 2026-09-21T03:24:12.891Z
+- Tool-call wall time: 57.872 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-50-v1.png
+- Dimensions: 1536×1024
+- SHA-256: bf3f021e160b62c62da87ad170b8ceded262eaf5b40479d763e7cc6fbdb27860
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-ca442890-cc30-40cf-8da2-1da22aad3648.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-13-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/home-v2.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. ONE standalone landscape1536x1024 richly dimensional warm fur/wood/stone story image, no text/labels/panels/watermark. Exactly two natural hedgehogs, silver-grey Elder with fine round gold spectacles LEFT, smaller chestnut PinPin RIGHT, no clothes/staff, exactly two forelimbs/twohindlimbs each. WRITING DOWN THE CHILD'S QUESTION AFTER RETURN. Same actual home/desk/stool asref1, room geometryref2, identitiesref3. Camera higher near deskfront looking down slightly, a new composition showing open notebook and actual writingfeather nib touching page. Elder LEFT perched on low roundstool, oneforepaw holds DARKFEATHER writing, otherforepaw rests page; hindbody supported onstool. Child RIGHT onfloor beside stool looks toward Elder and paper while dictating; childmouth smallopen, no nib-eyelineexactclaim. Heavy dark inkpot, twostonepaperweights, enclosed warmdesklamp consistent. Inner stair door CLOSED backright with righthinges/lowleftring. Afternoon light now slightly deepergold but not night, no sun disc. Marks unreadable, no actuallettertext, no extra arm, no staffinside.
+
+## Review
+
+Accepted after full-image inspection: dark feather nib visibly touches notebook page, one forepaw writes and other rests on page; child beside stool watches Elder while speaking. Stool supports Elder, closed inner door retains right hinges/low left ring. Hidden lower anatomy not fully visible; no claim of exact nib fixation by child.
+
+Reviewed: 2026-09-21T03:29:15.734Z
+
+
+## Reference hash verification
+
+Recorded 2026-09-21T03:34:02.591150+00:00 during final provenance verification (not a claimed pre-call hash record).
+
+- e8b47347893c0f3d5548fff5076486a6bf8964211c1b603d01d8a17a05fb9aa9 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-13-v1.png
+- 53b5d2c81242f8d0f505a7f24cf04b9e7f8adbf6b1340cb999e865e436e44a83 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/home-v2.png
+- 9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png

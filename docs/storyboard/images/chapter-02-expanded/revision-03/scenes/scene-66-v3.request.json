@@ -1,0 +1,14 @@
+{
+  "id": "scene-66-v3",
+  "prompt": "Use case: precise-object-edit. The previous edit failed: a gold eyeglass loop STILL remains on the SMALL CHILD in the CENTER-RIGHT of this image. Correct ONLY that small child's visible face, approximately image coordinates x1020–1070,y500–620. Completely repaint his tiny cheek/eye profile as NATURAL CREAM FUR with ONE ordinary dark animal eye and black nose. ERASE the CLOSED GOLD OVAL, its STRAIGHT TEMPLE/BRIDGE and ALL thin metallic curved lines in front of his eye. No whiskers are needed in this tiny profile if they might resemble a wire loop. Child PinPin wears NO accessories. Preserve his ear, quills, body and every paw. The much LARGER ELDER at foreground LEFT must KEEP his obvious gold glasses unchanged. Keep tunnel, mural, floor, direction, exposure and every other object unchanged. Single landscape1536x1024.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-03/scenes/scene-66-v2.png",
+      "role": "edit target with residual child spectacle loop at x1045–1064; remove entire frame on child only",
+      "sha256": "a9707921258c0965149783976c2af7911789481939756ae49a166a2825cd7e8a"
+    }
+  ],
+  "startedAt": "2026-09-21T07:05:14.252872+00:00",
+  "tool": "built-in image_gen",
+  "status": "requested"
+}

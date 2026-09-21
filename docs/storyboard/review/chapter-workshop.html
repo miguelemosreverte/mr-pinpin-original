@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f1e8">
+  <title>Мастерская глав · Мистер Пин-Пин</title>
+  <link rel="stylesheet" href="chapter-workshop.css">
+  <script src="chapter-workshop.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#content" data-copy="skip">К содержанию</a>
+  <header class="workshop-header">
+    <a class="brand" href="chapter-workshop.html"><span class="brand-mark" aria-hidden="true">✳</span><span data-copy="brand">Мистер Пин-Пин</span></a>
+    <div class="draft-badge" data-copy="badge">Мастерская · Черновики</div>
+    <div class="language-control" role="group" aria-label="Language"><button data-lang="ru" lang="ru">РУ</button><button data-lang="en" lang="en">EN</button><button data-lang="es" lang="es">ES</button></div>
+  </header>
+  <main>
+    <section class="workshop-intro" aria-labelledby="workshop-title">
+      <div class="eyebrow" data-copy="eyebrow">ИСТОРИИ В РАБОТЕ</div>
+      <h1 id="workshop-title" data-copy="heading">Две главы. Целый лес.</h1>
+      <p data-copy="intro">Читайте главы целиком, а затем загляните в подготовку: герои, места и решения, которые связывают каждую сцену.</p>
+      <p class="preview-note" data-copy="notice">Предложения для просмотра. Ещё не опубликованы.</p>
+    </section>
+    <div class="workshop-controls">
+      <div class="revision-control"><label for="revision-select" data-copy="version">Версия</label><select id="revision-select"><option value="1">Предыдущее предложение</option><option value="2">Новое предложение</option><option value="3">Третье предложение · Старейшина</option></select></div>
+      <div class="chapter-control"><label for="chapter-select" data-copy="chapter">Глава</label><select id="chapter-select"><option value="elder">Мудрость Старейшины</option><option value="academy">Лесная академия</option></select></div>
+      <nav class="view-control" aria-label="View"><button data-view="reading" data-copy="reading">Читать</button><button data-view="preproduction" data-copy="preproduction">Подготовка</button><button data-view="production" data-copy="production">Разбор сцен</button></nav>
+      <button id="refresh" class="refresh-button" data-copy="refresh">Обновить</button>
+    </div>
+    <div id="load-status" class="load-status" role="status" aria-live="polite"></div>
+    <div id="content" tabindex="-1" aria-busy="true"></div>
+    <nav id="scene-navigation" class="scene-navigation" aria-label="Scene navigation" hidden>
+      <button id="previous-scene" aria-label="Previous scene">←</button>
+      <div class="scene-position"><label class="sr-only" for="sequence-select" data-copy="sequence">Часть</label><select id="sequence-select"></select><span id="scene-counter"></span></div>
+      <button id="next-scene" aria-label="Next scene">→</button>
+    </nav>
+    <footer><span data-copy="footer">Локальная мастерская · Опубликованные главы не изменены</span><a href="../production/CHAPTER-PRODUCTION.md" data-copy="workflow">Рабочий процесс ↗</a></footer>
+  </main>
+  <noscript><p class="noscript">Для просмотра мастерской нужен JavaScript. / Enable JavaScript to view the workshop.</p></noscript>
+</body>
+</html>

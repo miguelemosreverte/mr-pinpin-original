@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "scene.schema.json",
+  "title": "Selected illustrated chapter scene",
+  "type": "object",
+  "required": ["id", "sequence", "src", "width", "height", "alt", "text", "source", "camera", "continuity", "review", "reused"],
+  "properties": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9-]*$"},
+    "sequence": {"type": "string", "minLength": 1},
+    "src": {"$ref": "#/$defs/imagePath"},
+    "before": {"$ref": "#/$defs/imagePath"},
+    "width": {"type": "integer", "minimum": 1},
+    "height": {"type": "integer", "minimum": 1},
+    "alt": {"$ref": "#/$defs/localizedString"},
+    "text": {"type": "object", "required": ["ru", "en", "es"], "properties": {"ru": {"$ref": "#/$defs/paragraphs"}, "en": {"$ref": "#/$defs/paragraphs"}, "es": {"$ref": "#/$defs/paragraphs"}}},
+    "source": {"type": "object", "required": ["kind", "blocks", "note"], "properties": {"kind": {"enum": ["original", "expanded", "new", "silent"]}, "blocks": {"type": "array", "items": {"type": "integer", "minimum": 0}}, "note": {"type": "string", "minLength": 1}}},
+    "camera": {"type": "string", "minLength": 1},
+    "continuity": {"type": "string", "minLength": 1},
+    "review": {"type": "string", "minLength": 1},
+    "reused": {"type": "boolean"}
+  },
+  "$defs": {
+    "imagePath": {"type": "string", "pattern": "^images/(?!.*(?:\\.\\.|[?#%\\\\]))[a-zA-Z0-9_./-]+\\.(png|jpg|jpeg|webp)$"},
+    "localizedString": {"type": "object", "required": ["ru", "en", "es"], "properties": {"ru": {"type": "string", "minLength": 1}, "en": {"type": "string", "minLength": 1}, "es": {"type": "string", "minLength": 1}}},
+    "paragraphs": {"type": "array", "items": {"type": "string", "minLength": 1}, "description": "An empty array is allowed only for a scene explicitly marked source.kind=silent."}
+  }
+}

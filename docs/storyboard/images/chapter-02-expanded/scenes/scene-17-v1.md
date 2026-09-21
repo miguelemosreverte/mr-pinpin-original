@@ -1,0 +1,28 @@
+# Elder expanded scene 17
+
+Status: rejected
+
+- Tool: built-in image_gen.imagegen
+- Started: 2026-09-20T22:22:26.089Z
+- Finished: 2026-09-20T22:22:55.077Z
+- Tool-call wall time: 28.988 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/scenes/scene-17-v1.png
+- Dimensions: 1536×1024
+- SHA-256: e777bb3890ddf7c20e4dfe873c031323c8b21a1aa90685ac6de82694714a2715
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-3b8033e9-9fce-4473-883c-7d8af4db94e0.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/environment-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/scenes/scene-13-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. One finished standalone landscape1536x1024 story illustration, no text, border, panels or watermark. Exact warm dimensional woodland style, fine natural hedgehog fur/quills, tactile bark/moss, gentle golden daylight. Preserve reference identities and place; no clothes, human torso, exaggerated eyes, extra animals or invented props. Clear coherent paw attachments; two forelimbs and two hindlimbs per hedgehog, partly hidden where natural. Reference1 exact plantpatch with branch initially across leaves; reference2 identities, not staff position. Illustrate the careful LIFT, one clear action. Medium low view shows PinPin at RIGHT, sitting back naturally on his hindquarters, both hindfeet grounded. Each of his TWO front paws grips the SAME thin short straight brown stick at a separate point, gently raising it horizontally a few centimeters above the same little rooted seedling in centerforeground. A clear air gap separates stick from leaves; the leaves begin to lift but remain attached to the stem. Both front legs clearly attach once to chest; no third paw, no human arms, no heavy log. Elder remains seated at LEFT behind him, watching gently with paws down, about1.25x child bodylength. Stick light and plausible to lift; no strain or magic. Root doorway/staff positions unchanged in softback. Final reference is a CLOSE PROP CONTINUITY reference: preserve this same young rooted plant with its broad heart-shaped leaf cluster and this one short straight ordinary stick. Do not constrain an exact hidden leaf count. For before states the stick still presses leaves; for lift/after states move that same stick as described, keeping stem rooted and plant identity. No sudden growth or flowers.
+
+## Review
+
+Rejected after full and enlarged browser inspection: PinPin has two forepaws gripping branch PLUS three ground paw shapes, totaling five; duplicate lower limb must be removed. Stick airgap, planted leafcluster and Elder are good. Original retained for honest provenance, anatomy screenshot in production folder.
+
+Reviewed: 2026-09-20T22:28:23.531Z

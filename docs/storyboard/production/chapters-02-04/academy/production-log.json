@@ -1,0 +1,358 @@
+{
+  "requests": [
+    {
+      "id": "cast-v1",
+      "prompt": "Use case: illustration-story. Create a canonical CAST REFERENCE SHEET, landscape 1536x1024, warm dimensional woodland children's-book style matching image1, on plain warm ivory background with soft ground shadows. Exactly FOUR separated full-body characters arranged left to right, each one view only, all at consistent shared scale. Image1 is identity/style reference for PinPin and Lulu only: small child hedgehog PinPin with cream face/belly, warm brown short quills, dark eyes/nose; young grey-beige rabbit Lulu with cream muzzle/chest and pink-inner long ears, body 1.3x PinPin excluding ears. New third character Tutu is a young red squirrel, cream muzzle/belly, little ear tufts, one bushy curved red tail, body PinPin size. Fourth is one kindly adult tawny owl teacher, cream facial discs, amber eyes, brown mottled folded wings, two feet, height 1.8x PinPin. Animal bodies, no clothes, no glasses, no props or text. Clear individual faces, natural two forelimbs/two hindlimbs for mammals and two wings/two feet for owl, no overlaps, no extra creatures. Refine dimensional tactile fur and quills, no flat cartoon.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/chapter-01-direct/08.png"
+      ],
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+      "startedAt": "2026-09-20T22:00:47.065Z"
+    },
+    {
+      "id": "site-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/chapter-01-direct/08.png"
+      ],
+      "prompt": "Use case: illustration-story. Spatial ENVIRONMENT REFERENCE, one continuous elevated oblique aerial illustration landscape1536x1024 of a tiny woodland outdoor academy garden, NO CHARACTERS or animals. Match reference warm dimensional lush woodland texture and natural golden afternoon light only, do not copy lake. Look from southwest toward northeast. Fix geography clearly: a small open-sided timber pavilion at upper LEFT/northwest, moss roof on four wooden posts, low log benches underneath, no walls; one low circular teacher stump in broad central lawn; an enormous ancient oak at RIGHT/east, roots form three shallow dry sitting hollows facing southwest, small daisy patch by south root. A narrow SHALLOW pebbly stream hugs LEFT/west edge, one smooth large boulder at its bend. A pale standing dead tree trunk at upper CENTER/north marks a woodpecker listening spot. Single narrow looping earth footpath connects pavilion, teacher stump, stream bank, pale trunk and back to central lawn. One homeward footpath leaves oak toward LOWER RIGHT/southeast. All water stays left, usable dry grass everywhere else. No bridge, fence, roads, text, diagram labels or inset panels. This is a believable miniature woodland scene for child-size animals, not human-scale buildings. Spatially legible canopy gaps, gentle camera perspective; precisely one pavilion, one great oak, one pale snag, one stream.",
+      "startedAt": "2026-09-20T22:02:40.776Z"
+    },
+    {
+      "id": "oak-plate-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "prompt": "Use case: illustration-story. One CLEAN ENVIRONMENT PLATE landscape1536x1024, no animals, no text. Move camera down to small rabbit eye height in the same academy garden from reference, on SOUTHWEST side looking northeast at the great oak's SOUTHWEST-facing roots. Medium wide 35mm feel: immense deeply ridged oak trunk takes RIGHT half, three shallow dry root hollows form a broad low natural bench across middle, patches of soft moss and smooth dry ground for three children. A small patch of white yellow-center daisies beside near-left root. Open lawn and distant low moss-roof OPEN-SIDED wooden pavilion remain at far LEFT background, pale snag in distance near center-left. The homeward path runs out at bottom right. Late-afternoon golden light from left, no heavy orange filter. Preserve site geography, oakroot scale and warm dimensional tactile woodland style. No stream in close foreground because stream is behind camera-left. No furniture, doors in tree, fantasy glowing things or wildlife.",
+      "startedAt": "2026-09-20T22:03:44.116Z"
+    },
+    {
+      "id": "scene-01-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-01-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 1, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu, Tutu and one owl teacher, no other animals. ACTION: One afternoon at the Forest Academy, their owl teacher gathered PinPin, Lulu and Tutu in the clearing. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Wide from southwest, all four by central stump.. BLOCKING AND STATE: PinPin left-front, Lulu center, Tutu right-front; owl on central stump. Pavilion far-left, oak far-right. No props. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:09:39.021Z"
+    },
+    {
+      "id": "scene-02-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-02-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 2, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu, Tutu and one owl teacher, no other animals. ACTION: “Today, let’s listen for the things we usually hurry past,” said their teacher. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Medium four-shot at child height, teacher right and pupils left.. BLOCKING AND STATE: Owl on same stump; three friends look toward teacher. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:10:41.328Z"
+    },
+    {
+      "id": "scene-03-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-03-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 3, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: The friends stopped talking. PinPin held still and listened. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Low intimate three-shot, owl outside frame right.. BLOCKING AND STATE: PinPin left Lulu middle Tutu right, comfortable still paws, no props. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:11:22.128Z"
+    },
+    {
+      "id": "scene-03-v2",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-03-v2.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-03-v1.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Correct ONLY this children's-book scene's background continuity. Remove the small empty tree stump in center background above the rabbit's shoulder, replacing that one small patch with matching unobtrusive grass and ferns. The owl teacher is off-camera to the right; her real stump is also outside the frame. Preserve every pixel as closely as possible elsewhere: all three animals, faces, fur, limbs, their exact pose and scale, pavilion, stream, oak, pale distant snag, camera, lighting. Do not add any animals or text. Landscape1536x1024.",
+      "startedAt": "2026-09-20T22:12:36.137Z"
+    },
+    {
+      "id": "scene-04-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-04-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 4, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: Lulu lifted her ears. “Listen. The leaves are whispering above us.” Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Medium on Lulu looking up, PinPin and Tutu low beside her.. BLOCKING AND STATE: Lulu raises ears toward canopy; feet remain ground; no pointing extra forelimbs. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:13:44.292Z"
+    },
+    {
+      "id": "scene-05-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-05-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 5, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: NO ANIMALS: pure environment listening beat. ACTION: The breeze stirred the leaves. Shhh… Then it eased, and the leaves grew still again. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Upward canopy shot, no cast.. BLOCKING AND STATE: Oak leaves sunlit, no literal faces or music symbols. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:14:54.513Z"
+    },
+    {
+      "id": "scene-06-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-06-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 6, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly one small PinPin hedgehog, none of the other reference characters. ACTION: Now PinPin heard something else: a soft trickle beyond the grass. “What’s that?” Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Close PinPin turning left toward stream, ears attentive.. BLOCKING AND STATE: PinPin only. Stream direction camera-left, grass foreground. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:15:40.906Z"
+    },
+    {
+      "id": "scene-07-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-07-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 7, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu, Tutu and one owl teacher, no other animals. ACTION: Their teacher led them along the path toward the stream. They walked slowly, keeping the quiet sound in their ears. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Wide lateral group walking toward left stream bank.. BLOCKING AND STATE: Owl on ground leads left, Lulu then PinPin then Tutu follow on dry path. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:16:30.770Z"
+    },
+    {
+      "id": "scene-08-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-08-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 8, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu, Tutu and one owl teacher, no other animals. ACTION: There was room for everyone on the dry bank. The water was close enough to hear without stepping into it. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Medium group on dry bank, stream leftforeground.. BLOCKING AND STATE: Owl right/rear supervises; children evenly spaced safely behind edge, boulder left. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:17:37.775Z"
+    },
+    {
+      "id": "scene-09-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-09-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 9, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: NO ANIMALS: pure environment listening beat. ACTION: Water slipped around the pebbles and gathered into little streams. Each made a slightly different sound. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Close stream at pebble level, no animals.. BLOCKING AND STATE: Clear shallow water flows among small rounded stones, no treasure or new object. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:18:27.072Z"
+    },
+    {
+      "id": "scene-10-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-10-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 10, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: Suddenly Tutu turned her head. “Tap-tap-tap! Someone’s knocking. Can you hear it?” Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Medium on Tutu beside bank, others partly visible.. BLOCKING AND STATE: Tutu turns toward rear/north pale snag; single tail, two forepaws. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:19:30.758Z"
+    },
+    {
+      "id": "scene-11-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-11-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 11, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu, Tutu and one owl teacher, no other animals. ACTION: They left the stream and followed the tapping. Around the bend stood a pale, weathered tree trunk. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Rear threequarter wide, group follows path away from stream toward pale snag.. BLOCKING AND STATE: Teacher leads, all4 on earthpath; streamleft behind; pale trunk ahead, no crossing. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:20:16.053Z"
+    },
+    {
+      "id": "scene-12-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-12-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 12, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Only one small real woodpecker on pale snag, no other animals. ACTION: A woodpecker was busy on the trunk. It paused for a moment, then tapped again. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Medium telephoto woodpecker on pale trunk; no school cast.. BLOCKING AND STATE: One small natural black-white-red woodpecker attached to trunk, coherent wings/feet. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:21:25.346Z"
+    },
+    {
+      "id": "scene-13-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-13-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 13, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu, Tutu and one owl teacher, no other animals. ACTION: The friends watched from below and left the bird to its work. Even Tutu spoke in a whisper. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Low medium friends+teacher look up, trunk edge left.. BLOCKING AND STATE: All4 on dry earth at respectful distance, no touchingbird; owl folded wings. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:22:54.861Z"
+    },
+    {
+      "id": "scene-14-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-14-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 14, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu, Tutu and one owl teacher, no other animals. ACTION: “The forest was making sounds all along,” PinPin said on the way back. “I just wasn’t listening so carefully.” Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Wide returning group, central stump ahead; preserve site.. BLOCKING AND STATE: Return path rightward from snag toward central lawn, owl groundsame, bird not needed. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:24:40.139Z"
+    },
+    {
+      "id": "scene-15-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-15-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 15, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu, Tutu and one owl teacher, no other animals. ACTION: Lulu remembered the leaves, Tutu the woodpecker, and PinPin the stream. Each had something different to remember from the same walk. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Medium four-shot by stump, children exchange glances.. BLOCKING AND STATE: Owl perched again; PinPin left Lulu center Tutu right. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:25:47.002Z"
+    },
+    {
+      "id": "scene-16-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-16-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 16, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu, Tutu and one owl teacher, no other animals. ACTION: The lesson was over. The friends thanked their teacher, but they weren’t ready to go their separate ways. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Wide teacher goodbye and children turning towardoakright.. BLOCKING AND STATE: Owl remains stump; children begin depart right; no waved human fingers. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:27:28.875Z"
+    },
+    {
+      "id": "scene-17-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-17-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 17, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: “Shall we sit under the oak?” suggested Lulu. Between its big roots were three comfortable little places. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Wide friends walking from lawnleft to oakright.. BLOCKING AND STATE: Exactly3 friends; teacher absent; crown not started. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:29:35.054Z"
+    },
+    {
+      "id": "scene-18-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-18-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 18, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: Lulu settled on the left, PinPin in the middle, and Tutu curled her tail beside the root on the right. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Mediumwide three friends settled root hollows, southwestview.. BLOCKING AND STATE: Permanent oak seating leftLulu centerPinPin rightTutu. All seatedfeet grounded. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:31:57.370Z"
+    },
+    {
+      "id": "scene-19-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-19-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 19, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: “Do you know what happened to a raccoon last week?” Tutu began. “He couldn’t get a honey jar open!” Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Medium three-shot emphasis Tutu right speakingtoleft.. BLOCKING AND STATE: Tutu one tail, hands empty, listeners faceher; no actualjar. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:32:57.433Z"
+    },
+    {
+      "id": "scene-20-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-20-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 20, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly one red squirrel Tutu, none of the other reference characters. ACTION: Tutu showed them how he pulled at the lid. “He huffed and puffed. He even said to the jar, ‘Oh, please!’” Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Close Tutu mime pulling lid with twoforepaws, nojar.. BLOCKING AND STATE: Seatedright hollow, bodyfacesleft, other2 offscreenleft. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:34:09.263Z"
+    },
+    {
+      "id": "scene-21-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-21-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 21, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: “Then he turned the lid—and it opened! ‘Why didn’t you say so?’ he asked the jar.” The friends burst out laughing. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Medium all3 laughing natural, Tutu animated butgrounded.. BLOCKING AND STATE: SameleftLulu centerPinPin rightTutu; nojar/raccoon. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:35:14.831Z"
+    },
+    {
+      "id": "scene-22-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-22-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 22, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: As their laughter faded, Lulu noticed the daisies beside the root. “I’ll make a little crown,” she said. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Medium Lulu noticesflowersleftforeground othersrelaxbehind.. BLOCKING AND STATE: Lulu stillseatedleft thenleans towardpatch; no crown. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:36:41.055Z"
+    },
+    {
+      "id": "scene-23-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-23-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 23, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: She stepped down to the flowers and gathered a few long stems. Most of the daisies stayed growing beside the oak. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Medium Lulu ongroundbesidepatch, holdsfewstems; friendsbehind.. BLOCKING AND STATE: Lulu left ofroot seat nowatpatch; a few daisies gathered, many remain. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:37:50.596Z"
+    },
+    {
+      "id": "scene-24-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-24-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 24, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly one rabbit Lulu, none of the other reference characters. ACTION: Back in her place, Lulu carefully wove the stems together: one after another, flower after flower. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Close Lulu seatedagainleft, forepawsweavingshortopenchain.. BLOCKING AND STATE: Short unfinished chain and looseflowers onrootbesideher; no completecrownyet. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:38:59.554Z"
+    },
+    {
+      "id": "scene-25-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-25-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 25, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly Lulu and PinPin, no other animals. ACTION: PinPin leaned closer to watch. He waited for Lulu to finish the next stem before speaking. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Mediumtwo-shot Luluweavingleft PinPinwatchright.. BLOCKING AND STATE: PinPin seatedcenterhandsrelaxed; Luluholds longeropenflowerchain; Tutuoffscreenright. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:39:58.720Z"
+    },
+    {
+      "id": "scene-26-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-26-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 26, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly one rabbit Lulu, none of the other reference characters. ACTION: “How does it become a circle?” he asked. Lulu joined the two ends. “Like this.” Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Mediumclose Lulu holding finishedsmalldaisyringbeforechest.. BLOCKING AND STATE: Ringcomplete heldintwopaws, stillnotonhead, earsclear. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:41:48.708Z"
+    },
+    {
+      "id": "scene-27-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-27-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 27, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: Lulu tried on the crown. Tutu smiled. “It’s like wearing a little piece of our clearing!” Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Mediumall3 Lulu crownwornatbaseears, friendswarmapproval.. BLOCKING AND STATE: White daisy crown onLulu head between/aroundbaseears, notonPinPin/Tutu. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-20T22:49:31.281Z"
+    },
+    {
+      "id": "scene-28-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-28-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 28, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: Lulu closed her eyes. “Sometimes I just listen to the forest. And I feel that I belong here.” Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: MediumLulu eyesgentlyclosed wearingcrown, friendsstill.. BLOCKING AND STATE: Sameoakpositions, sunsetwarmer. No magic symbols. TIME: warm sunset, gradual pink sky. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-21T00:13:19.853Z"
+    },
+    {
+      "id": "scene-29-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-29-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 29, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly one small PinPin hedgehog, none of the other reference characters. ACTION: PinPin listened to the leaves and the distant stream. “We’re here too,” he said. “Our laughter is one of the sounds.” Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: ClosePinPin lookingsoftlyup smile, oakmossbehind.. BLOCKING AND STATE: OnlyPinPin, seatcenter, noaddedcrown. TIME: warm sunset, gradual pink sky. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-21T00:15:22.958Z"
+    },
+    {
+      "id": "scene-30-v1",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-30-v1.png",
+      "prompt": "Use case: illustration-story. Finished standalone children's book scene 30, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: Then they sat quietly together. The sky turned pink, the leaves rustled, and none of them hurried to break the silence. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Wide oak threefriends resting sunset, pavilionleftdistant.. BLOCKING AND STATE: Lulucrownleft PinPincenter Tuturight; friendsquiet, no teacher. TIME: warm sunset, gradual pink sky. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. ",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png"
+      ],
+      "startedAt": "2026-09-21T00:17:59.472Z"
+    },
+    {
+      "id": "scene-15-v2",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-15-v2.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-15-v1.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Correct only the invented hand-held props in this woodland children's book scene. Remove the green oak leaf held by Lulu the rabbit and remove the long black/white/red feather held by Tutu the squirrel. They are remembering sounds, NOT bringing souvenirs. Show Lulu's exactly TWO forepaws empty and loosely relaxed before her chest in a gentle conversational gesture. Show Tutu's exactly TWO forepaws empty and loosely relaxed before her chest. Preserve each animal's head/face/identity/expression, all hindfeet, one squirrel tail, owl on stump, PinPin, scenery, camera and golden afternoon exposure. No objects in any paws; do not change the rest of the composition. Landscape1536x1024, no text.",
+      "startedAt": "2026-09-21T00:20:37.425Z"
+    },
+    {
+      "id": "scene-28-v2",
+      "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-28-v2.png",
+      "refs": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-28-v1.png"
+      ],
+      "prompt": "Use case: precise-object-edit. Tiny spatial-continuity correction ONLY: remove the bright circular sun disc at the far RIGHT horizon behind the squirrel. Replace that circular sun area with continuous soft pink-peach sunset sky and distant forest haze matching its surroundings. There must be NO visible sun disc anywhere in this frame; the actual sunset is off-camera to the LEFT in this established set. Preserve everything else almost exactly: the three animals and every face/limb, Lulu's closed eyes and modest white-daisy crown, her two ears, PinPin, Tutu and one tail, the oak trunk and roots, pavilionleft, foliage, camera composition and gentle warm overall exposure. Do not move animals or add props. Landscape1536x1024, no text.",
+      "startedAt": "2026-09-21T00:22:13.985Z"
+    }
+  ]
+}

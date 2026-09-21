@@ -1,0 +1,25 @@
+{
+  "id": "scene-66-v4",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "startedAt": "2026-09-21T07:13:25.184100+00:00",
+  "prompt": "Use case: precise-object-edit. Edit this exact illustration. Change ONLY the SMALL CHILD HEDGEHOG'S HEAD at center-right: rotate his head to look directly AWAY from the camera, straight into the tunnel, in a true rear view. Show the back of his small chestnut-quilled head and perhaps the backs of his ears. His FACE, EYE, NOSE and CHEEK must be completely hidden on the far side of his head. There must be no visible eyeglasses or metallic wire on the child. Preserve his existing body, quills, all four paws, crouched forward movement and size. Preserve the LARGE ELDER foreground-left exactly, including his gold spectacles and pose. Preserve every other detail: tunnel, roots, continuous soil slope, murals, floor, bench, lighting and camera. Only a small natural head-direction adjustment; no new characters, no extra limbs, no text. One standalone landscape illustration1536x1024.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/scenes/scene-66-v3.png",
+      "role": "edit target: child head turns fully away so no face or glasses is visible; preserve body and Elder",
+      "sha256": "9e1f6ba3b69c1bad2f7d23e506deaf56d1bb56fd0b0ba793758111d9cce0901c"
+    }
+  ],
+  "recordedAt": "2026-09-21T07:20:13.285793+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-ded19865-012b-49e5-8a73-57b3bb947adc.png",
+  "output": "images/chapter-02-expanded/revision-03/scenes/scene-66-v4.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "2d2ac2cfbcf242e2b5329a1034175f014f44d2171ffa3f682fe70015a7407bf9",
+  "review": "Root full-image creator inspection: child head turned away, visible ear and natural cream side edge/black nose but no visible gold spectacle loop. Elder gold spectacles preserved. Two hind paws and visible forepaw support forward crouch; far forepaw occluded. Continuous enclosed root passage and murals preserved. Independent review requested.",
+  "reviewedAt": "2026-09-21T07:20:13.285793+00:00",
+  "selection": "rejected",
+  "subsequentReview": "Rejected after closer child-profile review: floating old eye/gold oval remains outside turned head. Root explicitly superseded earlier full-image acceptance and assigned fresh66-v5 from clean cave/65 references, with no flawed66 reference.",
+  "subsequentReviewedAt": "2026-09-21T07:32:04.542414+00:00"
+}

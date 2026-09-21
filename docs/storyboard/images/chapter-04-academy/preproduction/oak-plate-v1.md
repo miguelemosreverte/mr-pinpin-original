@@ -1,0 +1,18 @@
+# oak-plate-v1
+
+Proposed; not user-approved.
+
+Exact prompt:
+
+Use case: illustration-story. One CLEAN ENVIRONMENT PLATE landscape1536x1024, no animals, no text. Move camera down to small rabbit eye height in the same academy garden from reference, on SOUTHWEST side looking northeast at the great oak's SOUTHWEST-facing roots. Medium wide 35mm feel: immense deeply ridged oak trunk takes RIGHT half, three shallow dry root hollows form a broad low natural bench across middle, patches of soft moss and smooth dry ground for three children. A small patch of white yellow-center daisies beside near-left root. Open lawn and distant low moss-roof OPEN-SIDED wooden pavilion remain at far LEFT background, pale snag in distance near center-left. The homeward path runs out at bottom right. Late-afternoon golden light from left, no heavy orange filter. Preserve site geography, oakroot scale and warm dimensional tactile woodland style. No stream in close foreground because stream is behind camera-left. No furniture, doors in tree, fantasy glowing things or wildlife.
+
+References:
+/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png
+
+UTC: 2026-09-20T22:03:44.116Z — 2026-09-20T22:04:14.115Z
+
+SHA-256: bf62614840688e5d35c3c57b498b737fa78441f3936b1dfab3ab55f06cb0dd6f
+
+Visual review: Accepted clean oak plate: three shallow dry root hollows under one substantial oak, daisies near left root, pavilion far-left and snag center-left consistent with overview, path exits foreground-right. No characters or added interior. Perspective is illustrative; use shared landmarks rather than claim exact metric geometry.
+
+Reviewed UTC: 2026-09-20T22:07:55.497783+00:00

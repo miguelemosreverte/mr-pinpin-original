@@ -1,0 +1,35 @@
+# Elder revision02 cave-south-v1
+
+Status: proposed
+
+- Tool: built-in image_gen
+- Started: 2026-09-21T01:50:17.500Z
+- Finished: 2026-09-21T01:51:04.574Z
+- Tool-call wall time: 47.074 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/cave-south-v1.png
+- Dimensions: 1536×1024
+- SHA-256: 6db09becc00adbee33d259c1a98dc08cfd7db8e3e17088ea57d8f8ff065ad062
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-3f8a64d3-2a47-4b96-a15f-0bc0ef06c662.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/cave-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/murals-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. PREPRODUCTION reverse environment plate of SAME cave, landscape1536x1024. Ref1 same limestone chamber/materials/light/scale, ref2 canonical four flat sacred paintings. Camera is now at NORTH wall looking SOUTH, a deliberate REVERSE of ref1. Show SOUTH WALL previously behind camera: broad fourth mural Many Paws from ref2 bottom-right centered on south wall, flat mineral fresco of small hedgehog/squirrel/bird community carrying beam/food/water, builders and caregivers. Preserve this exact design, not invented temple/faces. As reverse-camera spatial clues, the LEFT side of frame may show only a narrow edge of EAST sun-vs-dark mural; RIGHT side narrow edge of WEST pregnant Mother of Life mural. Do not repeat defender on south wall; north defender now behind camera. Daylight shaft now upper RIGHT/southwest shows actual tiny sky opening and slanted stone lip, same shaft as ref1 viewed from opposite angle; warm fixed wall lamps beside fresco. Broad level stone terrace, low rounded curb, no pit/cliff. No doorway on south wall; actual staircase northeast now behind camera. NO animals/people physically in room: only flat painted figures in murals. No text. Warm dimensionally rich sanctuary, preserve architecture and ordinal wall placements.
+
+## Review
+
+Selected reverse cave plate; full inspected and root/QA accepted. South community mural centered, east light mural edge screen-left, west mother edge screen-right, southwest shaft now upper-right with actual sky. No new door or live visitors; cooperative beam/food/baby care legible.
+
+Reviewed: 2026-09-21T02:05:05.658Z
+
+
+## Reference hash verification
+
+Recorded 2026-09-21T03:34:02.591150+00:00 during final provenance verification (not a claimed pre-call hash record).
+
+- c46ef299e7a595d8bf8e59bdf9f2dfd8930a12bc223cdfa62b3e52b8b2345efc /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/cave-v1.png
+- ccfbfff59929e0635a83a56fb626a5da3b53bef383d526c82924d4702326039d /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/murals-v1.png

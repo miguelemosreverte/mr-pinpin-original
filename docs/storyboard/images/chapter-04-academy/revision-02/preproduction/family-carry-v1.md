@@ -1,0 +1,25 @@
+# family-carry-v1
+
+Status: proposed
+
+Tool: built-in imagegen
+
+Started UTC: 2026-09-21T01:36:04.983Z
+Finished UTC: 2026-09-21T01:36:34.285Z
+
+Dimensions: 1536 x 1024
+SHA-256: 6ab657cdefbe4c0297aabcf3d640333a2e719a280740cd694c7ba19c30670a0f
+
+## Exact prompt
+
+Use case: illustration-story. PREPRODUCTION FAMILY CARRYING REFERENCE SHEET, landscape1536x1024, warm dimensional tactile woodland-book fur and quills matching supplied identity reference. Plain light ivory studio ground, no house/scenery/text. Exactly TWO separated views of the SAME family trio side-by-side: left group front three-quarter; right group side profile facing right. Each group shows Mama hedgehog standing and safely CARRYING tiny baby PomPom against her upper chest, while child PinPin stands on ground beside her for shared scale. Identity reference: Mama is central mature large hedgehog, PinPin is child on bench LEFT, PomPom is tiny baby on ground RIGHT. Preserve these separate faces and age differences. Mama is about twice PinPin's standing body height; PomPom body about half PinPin's, clearly baby with round face/short quills. CARRY MECHANICS: Mama's LEFT forearm supports baby's bottom and back close against her chest; her RIGHT forepaw gently supports baby's side/back. Her two hindfeet on ground. Exactly TWO maternal forelimbs total; no extra hands. Baby sits naturally upright with open unobstructed face, back nestled against Mama, tiny forepaws visible, lower body firmly supported, never floating or strapped across quills. PinPin independently standing with natural two forepaws/two hindfeet, not being carried. No sling, stroller, harness, clothing, basket or furniture. Both groups complete full bodies, clean separation, soft ground shadows. This is a repeated-pose reference sheet, not six different family members or a story montage.
+
+## References
+
+/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/home-sweet-home/bedtime-03-v1.png: Identity/style/geometry or target as specified in exact prompt
+
+## Visual review
+
+Internally accepted carrying direction: two distinct repeated family views, Mama mature/taller, PinPin independently on ground and baby clearly smaller. Two maternal forearms support baby close against chest with unobstructed face; no extra maternal hands, no floating baby, no new carrier prop. Baby lower legs/attachments obscured by cradle and quills; exact hidden anatomy and numerical ratios not certified. Profile shows safe upright supported seat rather than hanging from paws.
+
+Reviewed UTC: 2026-09-21T01:37:59.858887+00:00

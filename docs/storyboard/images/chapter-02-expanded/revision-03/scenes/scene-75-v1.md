@@ -1,0 +1,33 @@
+# scene-75-v1
+
+Use case: illustration-story. Final single standalone landscape1536x1024 children's-book illustration. Rich tactile warm miniature woodland realism, natural hedgehog anatomy, no human clothes or living humans. References control exact identities and selected room/route materials; never copy panel labels, diagram labels or montage into story. Child PinPin copper quills/cream face/no glasses; Elder larger silver-brown quills/cream muzzle/round gold spectacles, approximately1.55 child upright height. Exactly two forelimbs and two hindlimbs per hedgehog; hidden limbs may stay naturally occluded. Staff stays outside home, so no staff/wand/handheld lantern. No text, border, split panels, arrows, watermark. Medium-wide home nook view after the small oval mat is fully FLAT in its original place. PinPin left and Elder right together SLIDE the LIGHT LOW THREE-LEGGED FOOTSTOOL a short distance into its original position just WEST/left of small mat. Each uses one or two plausible forepaws on stool side/top while hindfeet remain planted; no lifting huge furniture, no extra limbs. Root slit partly screened by tidy leaf/soil bank; main central woven rug unchanged. Book remains open on original west writing desk visible foreground-left if composition permits. End with orderly familiar room, no formal interior door. Keep fatherly proportions and gold spectacles. Room enclosed at right, no invented exterior opening. Small mat now fully flat; a modest tidy leaf bank remains near root lip, not loose all over floor.
+
+References:
+[
+  {
+    "path": "images/chapter-02-expanded/revision-03/preproduction/home-root-nook-v1.png",
+    "role": "accepted spatial/state/body-fit reference; no copying diagram layout",
+    "sha256": "fcfffd326c139beff1af7c442793f8530e602d15b306eb4fdb3bb616fd22ad01"
+  },
+  {
+    "path": "images/chapter-02-expanded/revision-03/preproduction/root-opening-states-v1.png",
+    "role": "accepted spatial/state/body-fit reference; no copying diagram layout",
+    "sha256": "af6803dd4dcab9450a26fe49d52d5c1a355b9143833b203afafb2f60fce2fc22"
+  },
+  {
+    "path": "images/chapter-02-expanded/preproduction/cast-v1.png",
+    "role": "character identity/size authority (ignore external setting/staff)",
+    "sha256": "9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7"
+  },
+  {
+    "path": "images/chapter-02-expanded/revision-03/scenes/scene-74-v1.png",
+    "role": "prior mat restoration and room/cast staging",
+    "sha256": "c4897126ea506b2df666ba6d45c2840b317c28f8474489edad5a952629c310ad"
+  }
+]
+
+Generated: 2026-09-21T06:43:41.623255+00:00 to 2026-09-21T06:45:34.933980+00:00
+
+SHA256: dc35d85062e1faa5c5812af6176734d9343bd33ce78b2ec62c86b67439e873ce
+
+Review: Full output inspected. Both hedgehogs use forepaws on light footstool with hindfeet grounded; stool on floor west of flat small mat, no levitation or extra limbs observed. Root lip again screened by shallow leaves, no formal door. Desk/book/quill/ink/lamp west, map north, bed east and big central rug preserved. Cooperative restoration action legible; small mat flat final state. Room warm light unchanged qualitatively.

@@ -1,0 +1,28 @@
+{
+  "id": "elder-r03-scene-67-v2",
+  "title": "Scene67 targeted child extra-paw correction",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T06:55:48.932Z",
+  "output": "images/chapter-02-expanded/revision-03/scenes/scene-67-v2.png",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-03/scenes/scene-67-v1.png",
+      "role": "Exact edit target; preserve everything except specified extra paw",
+      "sha256": "83832660e15dda099b44952c795b71e544e9da436eef6d4eeabdf024f862d97f"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. TARGETED TINY ANATOMY CORRECTION ONLY to the attached finished illustration. The small child hedgehog on the LEFT erroneously has FIVE paws. Remove ONLY the extra dark little paw directly under the CENTER of the child's belly (approximately x565,y647 in this1536x1024 target), between the planted near FRONT paw at x490 and the two real REAR paws at x612 and x660. Replace only that tiny duplicate dark paw with the natural shadowed earth/background and continuous appropriate belly fur edge. KEEP the other FOUR child limbs: lifted front paw toward upper-left, planted near front paw, and both rear paws. Keep their positions and walking stride. Do NOT remove a real rear paw, do NOT change pose or face or body size. The large spectacled Elder on RIGHT already has four plausible limbs: preserve him entirely. Preserve every other pixel-level visual feature as closely as possible: child face/quills/expression, Elder gaze/face/glasses/pose, smooth ascending earthen tunnel, pale oval landmark stone, root ceiling, distant warm home light at left, perspective, material, color and camera. No steps, added objects, text, labels or reframing. Landscape1536x1024. Make only the specified local duplicate-paw deletion.",
+  "startedAt": "2026-09-21T06:56:01.162Z",
+  "finishedAt": "2026-09-21T06:56:34.861Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-b9f42573-4680-4f57-94ed-fd96340c0fc5.png",
+  "reviewedAt": "2026-09-21T07:00:01.552Z",
+  "review": "Full output inspected. Extra dark central paw under the child's belly removed. Four distinct child limbs remain: one lifted forepaw, one planted forepaw, two hindpaws. Elder retains four plausible limbs. Walking uphill orientation, child leading, pale stone, root ceiling, enclosed earth passage, warm light and facial expressions remain visibly consistent with target. No new clear anatomy defect. Original v1 rejected for five child paw tips; v2 subsequently passed independent full-image review by spatial lead and root.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "bc91ebc6f14f5277533ce4c8f4310423e39a1f22c5fcef1cbc165a934630e5eb",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap.",
+  "selection": "accepted for proposed revision03",
+  "independentReview": "Spatial lead and root both independently inspected and accepted67-v2; extra fifth child paw removed.",
+  "independentReviewedAt": "2026-09-21T07:45:42.470885+00:00"
+}

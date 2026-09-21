@@ -1,0 +1,22 @@
+{
+  "id": "pinpin-turnaround-v1",
+  "status": "proposed-production-reference",
+  "prompt": "Use case: illustration-story. Asset: character preproduction reference sheet, landscape 1536 x 1024. Input image is CHARACTER IDENTITY AND MATERIAL STYLE reference: the LEFTMOST small hedgehog PinPin only. Exclude the rabbit, squirrel and owl entirely. Create a clean professional character turnaround for that exact young hedgehog, on a plain warm ivory background, soft ground shadow. Four clearly separated complete-body views of the SAME child: front view, left-facing profile, rear view, and right-facing three-quarter view. All four at the same ground line and exact same body scale. Preserve reference small natural quadruped hedgehog proportions, cream face and belly, compact chestnut quill coat, small round ears, brown button nose, bright dark eyes, soft detailed fur and individual quills. No clothes, accessories, feather or magic glow. Each view has anatomically coherent two forelimbs and two hindlimbs, four paws total with natural occlusion. All views keep paws grounded in a relaxed standing pose; do not turn him into a tall upright human-like body. Rear view has quill coat and plausible small hind paws, no invented huge tail. Front view shows cream face/chest and forepaws with rear paws naturally farther back. Keep face and ear shape consistent across views, not four different hedgehogs. No text, arrows, labels, borders or decorative objects. This is a reference sheet with four views, not a narrative scene. Match exact warm dimensional woodland illustration quality and natural material softness from input, no flat cartoon or plastic finish.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png",
+      "role": "PinPin identity only; exclude all other cast"
+    }
+  ],
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-preproduction/shared/pinpin-turnaround-v1.png",
+  "tool": "built-in image_gen.imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-56beb17d-e580-458d-b640-3ec0dfb00b2e.png",
+  "startedAt": "2026-09-20T22:04:15.496Z",
+  "finishedAt": "2026-09-20T22:04:43.346Z",
+  "seconds": 27.85,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "7c51fb399881ef53834cf238da22e658024cb2ce7b9dc7aac9da420ec443453c",
+  "review": "Root inspected all four views. Same compact cream-faced, chestnut-quilled child identity with plausible grounded paws and no clothes. Front, near-profile, rear and three-quarter views present. Requested left-facing profile rendered right-facing; use actual visible orientation rather than prompt direction. Rear fur hides forelimbs; exact hidden anatomy and geometric equivalence are not certified. Internally accepted as illustrated identity reference, not narrative art or user-approved model.",
+  "reviewedAt": "2026-09-20T22:06:21.985650+00:00"
+}

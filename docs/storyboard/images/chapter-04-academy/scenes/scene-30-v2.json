@@ -1,0 +1,30 @@
+{
+  "id": "scene-30-v2",
+  "status": "proposed",
+  "tool": "built-in imagegen",
+  "prompt": "Use case: edit an existing children's book illustration. TARGET is reference1, scene30. Make ONE strictly localized continuity correction to this exact landscape 1536x1024 image: add Lulu's established SMALL white-daisy flower crown around the bases of her long rabbit ears, matching the modest white petals/yellow centers/green woven stems and head-sized scale shown on Lulu in reference2, scene27. Lulu is the grey-beige rabbit seated at LEFT of the three friends. The crown belongs only to Lulu. It must be visibly worn at her ear bases, not held in a paw and not a huge garland. Preserve reference1 completely otherwise: same three seated characters, left-to-right Lulu, PinPin hedgehog, Tutu red squirrel; same identities, expressions, poses, TWO forelimbs and TWO hindlimbs per animal, paws, tails, sizes, framing, old oak roots/moss/daisies, pavilion and sunset geography, LEFT sunset disk, warm peach sky, peaceful quiet atmosphere, rich tactile dimensional woodland style. Do not move or duplicate any animal or add any other prop. No text, labels, speech balloons, symbols, panels, borders or watermark. Output one finished landscape illustration; preserve all pixels outside the smallest necessary Lulu-head/crown region as faithfully as possible.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-30-v1.png",
+      "role": "edit target; preserve scene",
+      "sha256": "2b35c13ce04a7dbe66bcc7ab7cec452e5f546847209603620e67ff4aaaa0ac73"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-27-v1.png",
+      "role": "Lulu crown continuity reference",
+      "sha256": "9be5c3645789031ad9a9ddad3aee9fc0fe4a59d255131ac12a8134471efc1ee2"
+    }
+  ],
+  "startedAt": "2026-09-21T00:23:59.428Z",
+  "finishedAt": "2026-09-21T00:24:46.062Z",
+  "toolReportedWallSeconds": 40.3,
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-52e235e9-2d7f-4678-8073-66c0228ad87b.png",
+  "review": "Viewed full output: small white/yellow daisy crown restored only on Lulu at ear bases. Three friends retain left-to-right order and quiet expressions; proper visible paws/tails, oak and left sunset preserved. No clear blocking defect seen; hidden anatomy unverified.",
+  "reviewedAt": "2026-09-21T00:25:14.807Z",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "df46225caef14597de0ae1494b6ed0da88a47263d7fd9b17b3068afc5440376e",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-30-v2.png",
+  "seconds": 46.634,
+  "timingNote": "Wall interval includes tool dispatch; tool wall seconds separately recorded."
+}

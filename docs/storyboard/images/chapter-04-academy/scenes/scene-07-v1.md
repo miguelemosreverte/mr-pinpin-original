@@ -1,0 +1,19 @@
+# scene-07-v1
+
+Proposed; not user-approved.
+
+Exact prompt:
+
+Use case: illustration-story. Finished standalone children's book scene 7, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu, Tutu and one owl teacher, no other animals. ACTION: Their teacher led them along the path toward the stream. They walked slowly, keeping the quiet sound in their ears. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Wide lateral group walking toward left stream bank.. BLOCKING AND STATE: Owl on ground leads left, Lulu then PinPin then Tutu follow on dry path. TIME: golden afternoon. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground.  Academy geography: pavilion northwest/left, stream west/left, teacher stumpcenter, pale snag north/rear, great oak east/right. Keep scenery subtle when close.
+
+References:
+/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png
+/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/site-v1.png
+
+UTC: 2026-09-20T22:16:30.770Z — 2026-09-20T22:17:22.020Z
+
+SHA-256: 750c2965b798c15cf6339b4dff7b0851297d8f71b509d1e5d661e704ca306765
+
+Visual review: Accepted scene07 clear group walking left along dry path, owl leads and empty stump now correctly behind because teacher has left it. Site streamleft/snagrear/oakright stable. PinPin uses upright walking story pose; occluded far limbs unverified, no confirmed extra attachments.
+
+Reviewed UTC: 2026-09-20T22:17:37.746384+00:00

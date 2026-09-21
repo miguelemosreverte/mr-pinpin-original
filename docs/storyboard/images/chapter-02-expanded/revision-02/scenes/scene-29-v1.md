@@ -1,0 +1,40 @@
+# Baby and grain detail
+
+## Exact prompt
+
+Create one standalone 1536x1024 landscape story illustration, a child's point-of-view insert looking at an existing sacred mural inside the Elder's underground stone cave. This is one continuous image, NOT a multi-panel sheet. Preserve the supplied approved mural designs, warm aged ochre lime-plaster surface, mineral painted pigment, carved/rough stone surround and dimensional amber cave light. The mural itself remains FLAT ancient painted artwork, not living people or animals. No living foreground actors at all: no PinPin, Elder, hedgehogs in the room, paws, backs, heads or silhouettes. No written words, labels, border captions or typography. Do not redesign the symbols or mirror the artwork. Warm detailed dimensional children's woodland-book rendering around the flat mural. Reference1 murals-v1 top-left supplies exact artwork; reference2 cave-v1 supplies wall texture/light. A distinctly tighter detail crop of the LOWER-RIGHT of that maternal mural: recognizable swaddled human baby lying in the same oval decorated cradle, nearby green shoots and grain, a portion of the mother's ochre robe hem at left. Baby and shoots are large legible painted motifs, flat pigments on worn plaster. Do not show whole woman/head or unrelated murals; do not invent live baby in cave. Preserve cradle ornament and infant face. No living foreground actors.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "elder-r2-29",
+  "status": "proposed",
+  "tool": "image_gen.imagegen",
+  "prompt": "Create one standalone 1536x1024 landscape story illustration, a child's point-of-view insert looking at an existing sacred mural inside the Elder's underground stone cave. This is one continuous image, NOT a multi-panel sheet. Preserve the supplied approved mural designs, warm aged ochre lime-plaster surface, mineral painted pigment, carved/rough stone surround and dimensional amber cave light. The mural itself remains FLAT ancient painted artwork, not living people or animals. No living foreground actors at all: no PinPin, Elder, hedgehogs in the room, paws, backs, heads or silhouettes. No written words, labels, border captions or typography. Do not redesign the symbols or mirror the artwork. Warm detailed dimensional children's woodland-book rendering around the flat mural. Reference1 murals-v1 top-left supplies exact artwork; reference2 cave-v1 supplies wall texture/light. A distinctly tighter detail crop of the LOWER-RIGHT of that maternal mural: recognizable swaddled human baby lying in the same oval decorated cradle, nearby green shoots and grain, a portion of the mother's ochre robe hem at left. Baby and shoots are large legible painted motifs, flat pigments on worn plaster. Do not show whole woman/head or unrelated murals; do not invent live baby in cave. Preserve cradle ornament and infant face. No living foreground actors.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-02/preproduction/murals-v1.png",
+      "role": "Exact accepted flat mural design reference",
+      "sha256": "ccfbfff59929e0635a83a56fb626a5da3b53bef383d526c82924d4702326039d"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-02/preproduction/cave-v1.png",
+      "role": "Accepted cave material, light and wall placement reference",
+      "sha256": "c46ef299e7a595d8bf8e59bdf9f2dfd8930a12bc223cdfa62b3e52b8b2345efc"
+    }
+  ],
+  "plannedAt": "2026-09-21T02:08:45.681Z",
+  "output": "images/chapter-02-expanded/revision-02/scenes/scene-29-v1.png",
+  "title": "Baby and grain detail",
+  "startedAt": "2026-09-21T02:09:01.817Z",
+  "finishedAt": "2026-09-21T02:10:40.507Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-408c5aa1-cfae-4bb5-9c57-4c0a7cefbc84.png",
+  "review": "Viewed full generated output: distinct tighter baby/cradle/grain detail, mother robe edge, same right-side deer/plant and cradle ornament, flat pigment and warm practical light. No live infant. Crop angle reveals right lamp and offering ledge; no blocking iconographic error. Creator pass; root independent review pending.",
+  "reviewedAt": "2026-09-21T02:17:13.059Z",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "d446a3250f4f379717833729aad375f1d2bfc4edeaed43ced2b075eab018f905",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}
+```

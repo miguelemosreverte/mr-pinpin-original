@@ -1,0 +1,25 @@
+{
+  "id": "scene-11-v2",
+  "status": "proposed",
+  "prompt": "Use case: precise-object-edit. Edit the supplied finished Forest Academy scene with ONE narrowly localized correction. This image has four characters walking away toward the pale tree trunk: PinPin the hedgehog at left, Lulu the grey-beige rabbit center-left, Tutu the red squirrel center-right, owl teacher ahead at right.\nREMOVE the erroneous LARGE RED SQUIRREL TAIL immediately to the LEFT of Lulu's rabbit body (the separate red curl between PinPin and Lulu). That extra red tail does not belong to anyone. Restore the small patch of natural path/grass/foliage that should be visible behind where that wrong red tail was.\nPRESERVE Lulu's correct SMALL ROUND WHITE COTTONTAIL on her rump, preserve her rabbit body, long ears and visible legs unchanged. PRESERVE Tutu's proper SINGLE RED SQUIRREL TAIL attached to Tutu at center-right, the red curl between Lulu and Tutu; do not remove or relocate that correct tail. Preserve all four characters, their identity, size, anatomy, pose, faces, walking direction and relative positions.\nKeep the entire rest of the original illustration unchanged: pavilion at left, stream left, pale snag ahead, great oak right, camera, framing, ground, light, material detail and warm dimensional woodland storybook style. No new characters, body parts, props, wording or symbols. Final image landscape 1536x1024. No text, watermark, borders or montage. Only one squirrel tail should remain in the whole image, attached to the one squirrel.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-11-v1.png",
+      "role": "Edit target: remove only the extra red tail on Lulu; preserve Tutu's proper tail and Lulu's white cottontail.",
+      "sha256": "7e6b17506f57c31490e942cde7b8bbaf08f6fb30a536e714be24633b8670512f"
+    }
+  ],
+  "startedAt": "2026-09-20T22:23:01.952Z",
+  "finishedAt": "2026-09-20T22:24:01.868Z",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-dff36bb7-98c4-4291-89ca-6b78269a6a8a.png",
+  "seconds": 59.916,
+  "toolReportedWallSeconds": 36.4,
+  "timingNote": "UTC interval includes dispatch and tool overhead; not model-only compute.",
+  "reviewedAt": "2026-09-20T22:24:39.485Z",
+  "review": "Full output inspected. The extra red tail to Lulu's left is removed; natural foliage/path restored. Lulu retains one small white cottontail. Tutu retains one large proper red tail attached to her body. Four characters still walk toward the pale snag, with pavilion left, stream left and oak right. No clear new anatomy defect or unrelated composition change observed. Hidden limb attachments and exact scale remain unverified.",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-11-v2.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "7d1785b9299c10351a57587a9712b721e4d53d1092c65b44254aadeff51e7951"
+}

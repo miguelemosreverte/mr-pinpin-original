@@ -1,0 +1,51 @@
+# Academy revision02 — preproduction and cast requirements
+
+Completed production record: root accepted the English draft and all relevant cast/location/prop studies before dependent story production. Source gate passed through the complete-manuscript review. All49 selected story positions are complete; internal acceptance is not user approval or publication. Historical requirements below describe the preparation that was performed.
+
+## Required reference assets, in dependency order
+
+1. **Family carry study** — Mama, PinPin, PomPom: front three-quarter and side views of Mama carrying baby securely, plus PinPin on the same ground plane for age/scale. Base identities: established bedtime02-v2/03-v1 and tractor family-disembarking-v4, inspected by this lane. No sling/stroller or third maternal arm. Baby clearly smaller than PinPin. This study gates all morning and pickup family images.
+2. **Rabbit and squirrel family studies** — Lulu beside her mature mother; Tutu beside her mature father, one separated pair per side of sheet. Keep current child faces, define adult faces and proportions without making enlarged child clones. Existing academy cast controls Lulu/Tutu. Adult identities must be inspected before first morning arrival.
+3. **Mouse and badger family studies** — Mila/field-mouse father and Bruno/badger mother, front three-quarter shared-scale poses. Establish mouse's single thin tail/round ears and badger's proper stripe geography/tapered muzzle/short tail. Distinct adult/child faces, no apparel required. No old picture establishes these identities; they are new proposals.
+4. **Five-pupil class lineup** — PinPin, Lulu, Tutu, Mila, Bruno with regular owl teacher, all at intended relative scale. The lineup is a identity/proportion reference, not a story scene. No Elder here; he stays a distinct visiting mentor.
+5. **Elder guest welcome blocking** — use established Elder cast/reference, spectacles worn, bramble staff visibly parked at root. Owl regular teacher on adjacent low perch, PinPin receiver, real pinecone on small welcome stump. Show deliberate smile/wink to children so greeting pinecone reads as pretend play, not confusion. No extra costume/identity reveal. No story render before this handling/eyeline study passes.
+6. **Morning clean plates** — familiar cottage exterior in clear dawn/dew light with lantern unlit; then fern-lined path with low morning mist, dewy leaves and an open safe walking lane. Fix screen travel toward school and enough dry ground for family. Existing home architecture is immutable; new time of day is a lighting change.
+7. **Academy site revision / workbench plate** — same pavilion-left/stream-left/stump-center/snag-rear/oak-right layout, new low workbench at pavilion front, five-pupil seating/standing zones, five cups/food tray storage and material tray below. No enclosed room or new doorway. Bench camera front/SW, children positions documented below.
+8. **Model-state sheet** — same two blocks/one light bark roof/pinecone/leaf through: too-wide supports; roof fallen safely between; supports closer and roof resting; pinecone under roof with small test-water drips outside. Include simple top and side views for proportions, not a claim of calibrated simulation. No characters needed. Avoid roof becoming a giant house or changed materials between states.
+9. **Five-pupil workbench handling study** — blocking for two support holders, one roof placer, small mouse waiting with pinecone and badger waiting with small cup. Child hands/paws can reach the tabletop from ground or one established shallow step for Mila; no stool appears/disappears. If mouse needs elevation, add a fixed low broad block/platform now and carry it through every bench shot, not an improvised floating pose. Pouring pose must show two badger forepaws controlling cup; owl does not gain human hands.
+10. **Oak resting layout for five** — original trio positions left-Lulu/center-PinPin/right-Tutu retained in front root hollow. Mila sits on low side root beside Lulu, Bruno on broader ground/root seat beside Tutu; no need five equal carved chairs. Daisy patch unchanged. Closer reused pictures explicitly leave new pupils outside frame. Afternoon daylight, no sunset.
+11. **Pickup and departure family blocking study** — five family clusters, then selected smaller reunion compositions, then one shared-path wide. Eleven family animals total: five pupils+five adult relatives+carried baby. Owl only appears in school goodbye, never on final family walk. No Elder at pickup. Parent gaze lines meet children and then model, not camera. New parents must remain the same species/face/relative size as their studies.
+
+## Working positions and eye targets
+
+Coordinates remain illustrative. At bench camera south/SW: Lulu left with left support; PinPin near center/roof; Tutu right with right support. Mila stays near left-front safe waiting zone, with the same broad low step if required by accepted scale study. Bruno stands right-front with cup on table until the water test. Owl at far-right/east observing; children look at the block gap, roof edges or pinecone during task. Teachers' dialogue does not force pupils to look away from the action they are doing.
+
+After roof placed and all hands released, Mila approaches the open front of model, inserts pinecone on leaf and withdraws. Bruno then steps into pouring zone while others watch from opposite side. No one stands beneath a falling model roof; the prop is only knee-high to PinPin and rests on table.
+
+At oak, keep L-P-T order for close reuse. New classmates flank the existing group in wider shots. At pickup, main foreground cluster Mama/baby+PinPin can be camera-right; rabbit family center-left, squirrel family farther-left, mouse and badger families in two shallow background/side clusters. Then isolate pairs. Final walk arranges families across depth rather than a single flat row of11 figures; leave visible gaps so bodies/tails do not merge. Parent pickup/return includes Mama visibly interacting with other adults, not only a private reunion.
+
+## Planned artifact naming
+
+All new images under `images/chapter-04-academy/revision-02/preproduction/` and `/scenes/`; every PNG gets same-basename JSON/MD. Names include `family-carry-v1`, `friend-families-v1`, `new-classmate-families-v1`, `class-five-v1`, `elder-welcome-v1`, `morning-home-v1`, `morning-path-v1`, `academy-workbench-v1`, `model-states-v1`, `model-handling-v1`, `oak-five-v1`, `pickup-families-v1`. Each retry uses v2 etc., never overwriting previous proposal or a rejected attempt.
+
+Exact prompts and reference roles are persisted before each built-in image call. Capture timestamps/dimensions/hash, inspect full image, record actual success or failure. Root reviews preproduction before story production. Narration must be revised if visible facts differ; do not label an image correct just because the prompt requested it.
+
+
+## Selected reference versions
+
+- images/chapter-04-academy/revision-02/preproduction/family-carry-v1.png: Mama and baby handling front/profile; two-forearm support. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/revision-02/preproduction/friend-families-v1.png: Distinct mature rabbit mother and squirrel father with established children. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/revision-02/preproduction/new-classmate-families-v2.png: Tiny mouse pair and badger pair; corrected relative mouse size. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/revision-02/preproduction/class-five-v1.png: Working school scale authority; distinct child identities and owl teacher. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/revision-02/preproduction/morning-home-v1.png: Familiar closed green door, windows, chimney and unlit lantern. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/revision-02/preproduction/morning-path-v1.png: Walkable fern path, dew and soft mist. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/revision-02/preproduction/academy-workbench-v2.png: Plain four-legged table, separate broad mouse step, five cups and bowl. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/revision-02/preproduction/model-states-v3.png: Same-width bark roof bridges genuinely narrowed support gap. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/revision-02/preproduction/model-handling-v2.png: Practical construction scale and five separated cooperative actions; also selected for scene30. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/revision-02/preproduction/elder-welcome-v2.png: Guest identity, corrected scale, glasses and parked staff. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/revision-02/preproduction/oak-five-v1.png: Natural open-top root seats, daytime light and pupil blocking. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/revision-02/preproduction/pickup-families-v1.png: Eleven actors arranged into five readable families, secure baby carry. Root internally accepted after full-image review; still proposed for the user.
+- images/chapter-04-academy/preproduction/site-v1.png: Pavilion left, stream left, stump center, snag rear, oak right; geography reference.
+- images/chapter-preproduction/shared/pinpin-turnaround-v1.png: Established child identity from front, right profile, rear and three-quarter; illustrative proportions.
+
+Rejected attempts remain beside the selected versions. Model-states-v1/v2 are not geometry authorities; v3 visibly changes the support gap while holding roof width. Model-handling-v2 is the practical child/table/model scale authority. Exact prompt, references, timestamps and inspection records are beside every selected PNG.

@@ -1,0 +1,40 @@
+# Scene46 targeted continuity correction
+
+## Exact prompt
+
+Targeted scale/continuity edit of scene46-v1. Preserve1536x1024 composition and both BADGERS exactly at current size/position/poses/faces. Shrink ONLY BOTH MICE on left to approximately65percent of their present body heights/widths, about same shared ground baseline; keep father1.7x child and existing recognizable faces/single thin tail each. Mouse child should be around0.4–0.45 of badger CUB body height rather than the current oversized mouse; clear tiny species hierarchy as reference2 new-classmate-families-v2. Keep both mice mutual eye contact and child small hand gestures. Restore clean natural ground/plants where larger mice used to be. Remove invented small wooden fence/bridge rail in distant middle background, replacing with natural ferns/bushes/stream bank matching approved forest. No added animals/props; other landscape, sunny light and two badger bodies unchanged.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "academy-r02-46-v2",
+  "title": "Scene46 targeted continuity correction",
+  "status": "proposed",
+  "tool": "image_gen.imagegen",
+  "prompt": "Targeted scale/continuity edit of scene46-v1. Preserve1536x1024 composition and both BADGERS exactly at current size/position/poses/faces. Shrink ONLY BOTH MICE on left to approximately65percent of their present body heights/widths, about same shared ground baseline; keep father1.7x child and existing recognizable faces/single thin tail each. Mouse child should be around0.4\u20130.45 of badger CUB body height rather than the current oversized mouse; clear tiny species hierarchy as reference2 new-classmate-families-v2. Keep both mice mutual eye contact and child small hand gestures. Restore clean natural ground/plants where larger mice used to be. Remove invented small wooden fence/bridge rail in distant middle background, replacing with natural ferns/bushes/stream bank matching approved forest. No added animals/props; other landscape, sunny light and two badger bodies unchanged.",
+  "references": [
+    {
+      "path": "images/chapter-04-academy/revision-02/scenes/scene-46-v1.png",
+      "role": "Edit target: preserve non-target details",
+      "sha256": "8b7e9d704993316e6524cad11f31d1e3c12954a6d72bb4841fa94bb5f53f7d28"
+    },
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/new-classmate-families-v2.png",
+      "role": "Accepted common-scale mouse/badger pair identity reference",
+      "sha256": "c73ff1b498780dac6e956a05fda18c0ba5cf666aacf5da31a475e82e9fce99c5"
+    }
+  ],
+  "plannedAt": "2026-09-21T03:18:56.371Z",
+  "output": "images/chapter-04-academy/revision-02/scenes/scene-46-v2.png",
+  "startedAt": "2026-09-21T03:19:52.039Z",
+  "finishedAt": "2026-09-21T03:23:05.086Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-6e0db258-449a-40a5-aadc-26f339eace78.png",
+  "reviewedAt": "2026-09-21T03:29:04.262Z",
+  "review": "Full output viewed: mouse pair reduced relative to unchanged badgers, mature father/child distinction remains, reciprocal pairs and single mouse tails preserved. Added fence removed. Approximate rather than calibrated species scale; much closer to tiny-mouse authority. Creator review; root independent gate pending for proposed.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "eef07bea3d621b852781ab85eea4d953924028bfc0ed204aa02a8c8ddda5a3c1",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}
+```

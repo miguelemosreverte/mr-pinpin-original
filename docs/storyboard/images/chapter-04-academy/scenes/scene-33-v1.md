@@ -1,0 +1,29 @@
+# PinPin steps down and joins Mama
+
+Status: proposed
+
+- Tool: built-in image_gen.imagegen
+- Started: 2026-09-21T00:30:18.137Z
+- Finished: 2026-09-21T00:32:05.174Z
+- Tool-call wall time: 107.037 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-33-v1.png
+- Dimensions: 1536×1024
+- SHA-256: 217f990aca04ba9467e402ba20ad6a7d9d592acfe8fc80858183d1225edc5eab
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-7cf0fc44-a227-4cb2-8a3c-9c705267095f.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-27-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/family-reference-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/scenes/scene-31-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. One finished standalone landscape1536x1024 children's book illustration, warm rich dimensional woodland style, tactile fur/quills/bark/moss, soft natural cinematic light. NO text, labels, speech balloons, symbols, panels, borders or watermark. Natural small mammals each exactly two forelimbs and two hindlimbs, clear distinct attachments, no extra paws or duplicated characters. No clothes, bags, toys, jars, magic, owl or baby PomPom. Reference1 locks three children's identities and Lulu's worn daisy crown; reference2 the root set; reference3 Mama+PinPin identity/relative body size only. Exactly FOUR actors, one each. PinPin is NO LONGER seated at the oak. Show him on bare ground midway between the low root and Mama, walking carefully RIGHT toward her; one small frontpaw making a step, no jump or airborne pose. Mama stands RIGHT waiting kindly, looking down at him, about twice his bodyheight on sameground. At oak backgroundLEFT, ONLY Lulu and Tutu remain seated: Lulu left wearing completed white-daisy crown, Tutu right with one red tail. The CENTER root seat PinPin vacated is visibly EMPTY. Do not duplicate him back in that seat. Distinct action is leaving the root and approaching Mama. Natural low animal bodies, coherent paws; no clothing, carrying or holdinghands. Medium-wide side-front camera includes child transition, waiting mother, friends behind. Oak/pavilion relationship unchanged wherevisible. Warm peach-gold sunset. Last image is accepted arrival blocking: Mama on RIGHT path, root friends LEFT. Preserve that place relation while advancing action; PinPin has LEFT the center seat, which must now be EMPTY. Late warm light, no need for a visible sun disc. Only one PinPin.
+
+## Review
+
+Accepted by lane and root. One PinPin is on the path walking toward Mama at right; the oak now holds only Lulu with her completed crown and Tutu with one red tail. Visible empty root space separates departure from the former seated group. Mama is recognizably adult and larger. PinPin faces Mama, so the original claim that he already turns back should move to the following goodbye frame. Visible limbs are distinct and no duplicate actor is present; hidden attachments and exact scale remain unverified.
+
+Reviewed: 2026-09-21T00:36:07.396Z

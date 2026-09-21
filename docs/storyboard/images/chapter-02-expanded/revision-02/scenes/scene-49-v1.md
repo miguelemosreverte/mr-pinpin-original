@@ -1,0 +1,45 @@
+# Cross back into the home
+
+## Exact prompt
+
+Create one standalone1536x1024 landscape illustration in the exact warm rich dimensional woodland storybook style of references. Only TWO living hedgehogs: PinPin small chestnut child with cream face, and larger silver-brown Elder with fine round gold spectacles. Natural four limbs each, no clothing, no extra paws; preserve recognized face/quill identities and relative scale. No text, captions, speech bubbles, extra actors, loose carried props or handheld lamps. Elder's staff stays parked outside; neither character holds staff inside. REFERENCE1 scene18-v2 establishes the EXACT open door in home and foreground camera, reference2 home-v2 establishes furnished room, reference3 cast identity. Camera is INSIDE HOME looking toward same open inner door at rear-right. Door still hinged on viewer-right edge and open into home, same low ring; level top landing and fixed amber stairlamp visible through doorway. SHOW RETURN: PinPin leads crossing threshold TOWARD CAMERA/into home, small face and front visible, front paws already on room floor. Elder immediately BEHIND him emerging through doorway from stair landing, facing same into-room direction. They are not heading downstairs. Wider framing reveals familiar desk/books on LEFT and bed alcove RIGHT, warm rug on room floor. No mural in home; no open outdoor forest beyond inner door; no staff. Dark writing feather stays on desk, no readable text.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "elder-r2-49",
+  "title": "Cross back into the home",
+  "status": "proposed",
+  "tool": "image_gen.imagegen",
+  "prompt": "Create one standalone1536x1024 landscape illustration in the exact warm rich dimensional woodland storybook style of references. Only TWO living hedgehogs: PinPin small chestnut child with cream face, and larger silver-brown Elder with fine round gold spectacles. Natural four limbs each, no clothing, no extra paws; preserve recognized face/quill identities and relative scale. No text, captions, speech bubbles, extra actors, loose carried props or handheld lamps. Elder's staff stays parked outside; neither character holds staff inside. REFERENCE1 scene18-v2 establishes the EXACT open door in home and foreground camera, reference2 home-v2 establishes furnished room, reference3 cast identity. Camera is INSIDE HOME looking toward same open inner door at rear-right. Door still hinged on viewer-right edge and open into home, same low ring; level top landing and fixed amber stairlamp visible through doorway. SHOW RETURN: PinPin leads crossing threshold TOWARD CAMERA/into home, small face and front visible, front paws already on room floor. Elder immediately BEHIND him emerging through doorway from stair landing, facing same into-room direction. They are not heading downstairs. Wider framing reveals familiar desk/books on LEFT and bed alcove RIGHT, warm rug on room floor. No mural in home; no open outdoor forest beyond inner door; no staff. Dark writing feather stays on desk, no readable text.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-02/scenes/scene-18-v2.png",
+      "role": "Primary approved scene spatial/action reference",
+      "sha256": "e74a7c1928b572557415a8780844e3018e3989aaa69f77996d58ef4f180cd9d0"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-02/preproduction/home-v2.png",
+      "role": "Approved supporting identity/home reference",
+      "sha256": "53b5d2c81242f8d0f505a7f24cf04b9e7f8adbf6b1340cb999e865e436e44a83"
+    },
+    {
+      "path": "images/chapter-02-expanded/preproduction/cast-v1.png",
+      "role": "Approved supporting identity/home reference",
+      "sha256": "9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7"
+    }
+  ],
+  "plannedAt": "2026-09-21T02:43:45.545Z",
+  "output": "images/chapter-02-expanded/revision-02/scenes/scene-49-v1.png",
+  "startedAt": "2026-09-21T02:46:37.849Z",
+  "finishedAt": "2026-09-21T02:49:14.468Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-5af1334a-97c7-435b-82c2-82ea957a2f35.png",
+  "reviewedAt": "2026-09-21T02:54:05.313Z",
+  "review": "Full output viewed: child already crossing into furnished room toward camera, Elder immediately behind in doorway. Open door/low ring/right-side swing preserved, level landing/stairlamp behind. Left desk/books and right bed reveal home, no forest beyond inner doorway. Foreground furniture reframed; exact metric placement not claimed. Creator pass; root independent review pending.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "64b9221478eb0c93a165b6897dc88930350cc3d51c00b9f443d194ce34c11ef1",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}
+```

@@ -1,0 +1,30 @@
+{
+  "id": "scene-29-v2",
+  "tool": "built-in imagegen",
+  "status": "rejected",
+  "startedAt": "2026-09-21T03:27:50.676545+00:00",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET. Image 2 is a continuity reference showing the same bark slab after it is laid across the two wooden blocks. In image 1, correct ONLY the width of the single VERTICAL bark slab held by the central hedgehog PinPin, plus the spacing of his two holding forepaws. The slab is wrongly too short. Make it the SAME LENGTH as the horizontal roof in image 2: about 1.85 times its present width, extending in the image from approximately x570 to x935, long enough to cover the outside edges of both blocks when lowered. Keep its present height, thin material, bark texture and VERTICAL orientation; it is still held upright in front of his chest, not yet placed as a roof. PinPin grips its left and right edges with exactly TWO forepaws, with plausible arms extending outward from his shoulders; no third paw. Bottom edge remains just above table, face visible above board. Do NOT move, resize or change either wooden block, their gap, Lulu or Tutu holding blocks, Mila holding pinecone on leaf on the step, Bruno holding cup, owl, table, lower tray, scenery, faces, lighting or camera. No second slab. Both block TOPS remain bare. Preserve all other image-1 content exactly. Single 1536x1024 story illustration, no text.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/revision-02/scenes/scene-29-v1.png",
+      "role": "Edit target",
+      "sha256": "6fc9bad1194502d3a488bc496cb90d626597990ef33a0d7b3a73a65228790ff8"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/revision-02/preproduction/model-handling-v2.png",
+      "role": "Reference: physical bark slab length after placement",
+      "sha256": "8454e2f60896fdd0d65e70fd7718d0be6f81238d0e371be55aab50f586fb7092"
+    }
+  ],
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/revision-02/scenes/scene-29-v2.png",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-ce3e71a1-e58f-4b50-a59f-0cb7e268c4ef.png",
+  "finishedAt": "2026-09-21T03:31:05.306818+00:00",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "53a45518076e80dc71a3b7c32588ed3108621584ee1ae7819e3a981479324aad",
+  "seconds": 194.630273,
+  "toolCallSeconds": 50.9,
+  "timingNote": "Recorded elapsed includes orchestration; tool reported50.9s, not model-only time.",
+  "reviewedAt": "2026-09-21T03:31:05.306818+00:00",
+  "review": "Root full-image review: wider slab can barely overlap inner support edges, but still about20percent shorter than selected placed-roof reference. Retain rejected as continuity authority; further targeted widening needed. Other cast and props preserved."
+}

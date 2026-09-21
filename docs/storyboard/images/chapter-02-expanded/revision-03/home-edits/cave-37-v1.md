@@ -1,0 +1,43 @@
+# Elder revision03 cave background correction 37
+
+## Exact prompt
+
+TARGETED BACKGROUND EDIT ONLY. Reference image1 is the exact finished story frame to edit; preserve its composition, framing, living characters, facial features, fur, anatomy, poses, gaze directions, hands/paws, foreground props, bench, mural paintings and warm dimensional illustrated style. Reference image2 establishes ONLY the natural cave-side entrance construction and materials, not its camera or composition. Remove the obsolete formal staircase and tall stair opening at the FAR RIGHT of the target frame. Replace that background region with solid ancient rough stone above a LOW irregular natural rock-and-root mouth at floor level, with smooth gently sloping earth inside, consistent with reference2. NO steps, stairs, rails, framed door, engineered arch, elevated threshold or hanging light inside this little passage. Preserve every actual cave-wall mural lamp outside the obsolete stair region. The small entrance may be partly obscured by the existing bench/frame; do not move anything to display it. The monumental human-made sacred cave and its paintings remain unchanged. Do not add living actors, decorative props, text, labels or symbols. Landscape1536x1024. Maintain every original actor's four-limb anatomy, original intent and expressions. This is a localized edit, not a restaging.
+
+Preserve Elder seated foreground left and PinPin seated right looking at one another, north Shield Keeper mural with shield protecting the families on its left against storm on its right, and fur-covered bench at left. Only replace the far-right background staircase/high opening and its interior stair light.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "elder-r03-cave-37-v1",
+  "title": "Elder revision03 cave background correction 37",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T06:43:41.694Z",
+  "output": "images/chapter-02-expanded/revision-03/home-edits/cave-37-v1.png",
+  "sourceScene": "elder-r2-37",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-02/scenes/scene-37-v1.png",
+      "role": "Exact edit target; preserve actors, staging and mural",
+      "sha256": "df41cc38c56822ebebdb086f756e812877d6ce7848500d41c85898681f83744f"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-03/preproduction/cave-root-arrival-v1.png",
+      "role": "Accepted low natural root mouth material/construction reference only",
+      "sha256": "7c40d1976d3353ffdb53329911539cdabf3ef5e58d09a8b22a5015ba0e70c756"
+    }
+  ],
+  "prompt": "TARGETED BACKGROUND EDIT ONLY. Reference image1 is the exact finished story frame to edit; preserve its composition, framing, living characters, facial features, fur, anatomy, poses, gaze directions, hands/paws, foreground props, bench, mural paintings and warm dimensional illustrated style. Reference image2 establishes ONLY the natural cave-side entrance construction and materials, not its camera or composition. Remove the obsolete formal staircase and tall stair opening at the FAR RIGHT of the target frame. Replace that background region with solid ancient rough stone above a LOW irregular natural rock-and-root mouth at floor level, with smooth gently sloping earth inside, consistent with reference2. NO steps, stairs, rails, framed door, engineered arch, elevated threshold or hanging light inside this little passage. Preserve every actual cave-wall mural lamp outside the obsolete stair region. The small entrance may be partly obscured by the existing bench/frame; do not move anything to display it. The monumental human-made sacred cave and its paintings remain unchanged. Do not add living actors, decorative props, text, labels or symbols. Landscape1536x1024. Maintain every original actor's four-limb anatomy, original intent and expressions. This is a localized edit, not a restaging.\n\nPreserve Elder seated foreground left and PinPin seated right looking at one another, north Shield Keeper mural with shield protecting the families on its left against storm on its right, and fur-covered bench at left. Only replace the far-right background staircase/high opening and its interior stair light.",
+  "startedAt": "2026-09-21T06:43:47.985Z",
+  "finishedAt": "2026-09-21T06:44:50.344Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-aacf286b-9568-4a18-b4e8-80ad11a28545.png",
+  "reviewedAt": "2026-09-21T06:46:11.633Z",
+  "review": "Full output inspected. Far-right formal stairs and tall stair opening replaced by low irregular root-lined mouth with continuous earthen interior and solid rough stone above. No stairs, rails or interior stair lamp visible. Elder/child mutual gaze, foreground seated poses, original Shield Keeper mural and left fur-covered bench remain coherent. No clear new anatomy defect. This perspective is illustrative; exact entrance dimensions and pixel-identical preservation are not certified.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "db7140997019b0649955d74ae6b566ac322c0978ffc0522db9a2a755181f3d52",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}
+```

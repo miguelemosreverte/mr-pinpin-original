@@ -1,0 +1,38 @@
+# Elder revision03 scene 40
+
+## Exact prompt
+
+Use case: illustration-story. One finished1536x1024 landscape narrative illustration, rich warm dimensional woodland materials/fur, NO text/labels/panels/cutaway. PinPin is ONLY the smaller chestnut-and-cream hedgehog from cast ref, no clothes/glasses, exactly two living animals in this scene. Natural anatomy two forepaws/two hindfeet, stable support. No other animals, new props or magic effects. Exactly TWO living hedgehogs now: small PinPin foreground-left back three-quarter toward NE passage mouth; familiar larger silver-grey Elder with round gold spectacles appears crouching in the LOW NATURAL ROOT MOUTH at background-right, his reassuring FACE and two forepaws emerge, body partly occluded by rock. Their faces/eyes aim at each other. Elder no staff/clothes, warm gentle smile. Close enough spectacles/identity legible. North defender mural left of mouth and east light edge right unchanged; cave floor connects flush, no stairs/door, no spooky silhouette or extra cast.
+
+## Provenance and actual review
+
+```json
+{
+  "title": "Elder revision03 scene 40",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "references": [
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/preproduction/cave-root-arrival-v1.png",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png"
+  ],
+  "prompt": "Use case: illustration-story. One finished1536x1024 landscape narrative illustration, rich warm dimensional woodland materials/fur, NO text/labels/panels/cutaway. PinPin is ONLY the smaller chestnut-and-cream hedgehog from cast ref, no clothes/glasses, exactly two living animals in this scene. Natural anatomy two forepaws/two hindfeet, stable support. No other animals, new props or magic effects. Exactly TWO living hedgehogs now: small PinPin foreground-left back three-quarter toward NE passage mouth; familiar larger silver-grey Elder with round gold spectacles appears crouching in the LOW NATURAL ROOT MOUTH at background-right, his reassuring FACE and two forepaws emerge, body partly occluded by rock. Their faces/eyes aim at each other. Elder no staff/clothes, warm gentle smile. Close enough spectacles/identity legible. North defender mural left of mouth and east light edge right unchanged; cave floor connects flush, no stairs/door, no spooky silhouette or extra cast.",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/scenes/scene-40-v1.png",
+  "review": "Full image inspected. Exactly two living hedgehogs. Larger spectacled Elder crouches in natural mouth with face and forepaws clear; child foreground turns toward him, reciprocal gaze. Elder body partially occluded by rock; no formal stair/door or extra cast. Color/size remain qualitative continuity, hidden feet not certified.",
+  "referenceHashes": {
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/preproduction/cave-root-arrival-v1.png": "7c40d1976d3353ffdb53329911539cdabf3ef5e58d09a8b22a5015ba0e70c756",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png": "9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7"
+  },
+  "plannedAt": "2026-09-21T07:07:40.423804+00:00",
+  "id": "elder-r3-40",
+  "startedAt": "2026-09-21T07:08:34.318Z",
+  "finishedAt": "2026-09-21T07:12:44.715Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-e9a98c9c-5b5f-4344-b858-6f8d3e90ba5d.png",
+  "reviewedAt": "2026-09-21T07:16:39.405Z",
+  "selection": "accepted for proposed revision03",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "f0a822b46e3b5793480c9f7b5658bc99ff01394c5d4011c20492c8b81d0f65f8",
+  "independentReview": "Root opened full image and accepted selected candidate; qualitative scale, occlusion and peripheral lamp-position limits retained.",
+  "independentReviewedAt": "2026-09-21T07:26:32.396238+00:00"
+}
+```

@@ -1,0 +1,40 @@
+# Turn on the familiar landing
+
+## Exact prompt
+
+Create one standalone1536x1024 landscape illustration in the exact warm rich dimensional woodland storybook style of references. Only TWO living hedgehogs: PinPin small chestnut child with cream face, and larger silver-brown Elder with fine round gold spectacles. Natural four limbs each, no clothing, no extra paws; preserve recognized face/quill identities and relative scale. No text, captions, speech bubbles, extra actors, loose carried props or handheld lamps. Elder's staff stays parked outside; neither character holds staff inside. REFERENCE1 scene20 is exact primary landing/lighting EDIT TARGET: preserve upper flight ascending to furnished doorway at rear-left, broad level central landing, lower-flight foreground rails and same central walllamp. Reverse previous descent state for ascent. Small PinPin now positioned LEFT on level landing nearest base of upper-left flight, body turned LEFT/away toward that upper flight, nose/gaze following next tread. Elder is RIGHT/behind him on level landing, facing LEFT watching child. They have just stopped to turn the corner before climbing second flight; both grounded on broad flat landing, no floating feet/no conversation face mismatch. Keep rail attachment/lamps/door consistent, do not mirror entire environment.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "elder-r2-48",
+  "title": "Turn on the familiar landing",
+  "status": "proposed",
+  "tool": "image_gen.imagegen",
+  "prompt": "Create one standalone1536x1024 landscape illustration in the exact warm rich dimensional woodland storybook style of references. Only TWO living hedgehogs: PinPin small chestnut child with cream face, and larger silver-brown Elder with fine round gold spectacles. Natural four limbs each, no clothing, no extra paws; preserve recognized face/quill identities and relative scale. No text, captions, speech bubbles, extra actors, loose carried props or handheld lamps. Elder's staff stays parked outside; neither character holds staff inside. REFERENCE1 scene20 is exact primary landing/lighting EDIT TARGET: preserve upper flight ascending to furnished doorway at rear-left, broad level central landing, lower-flight foreground rails and same central walllamp. Reverse previous descent state for ascent. Small PinPin now positioned LEFT on level landing nearest base of upper-left flight, body turned LEFT/away toward that upper flight, nose/gaze following next tread. Elder is RIGHT/behind him on level landing, facing LEFT watching child. They have just stopped to turn the corner before climbing second flight; both grounded on broad flat landing, no floating feet/no conversation face mismatch. Keep rail attachment/lamps/door consistent, do not mirror entire environment.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-02/scenes/scene-20-v1.png",
+      "role": "Primary approved scene spatial/action reference",
+      "sha256": "edfee9e708422d333a305fe151838f5dcdc564e38affcc9215d5a5e190ca9605"
+    },
+    {
+      "path": "images/chapter-02-expanded/preproduction/cast-v1.png",
+      "role": "Approved supporting identity/home reference",
+      "sha256": "9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7"
+    }
+  ],
+  "plannedAt": "2026-09-21T02:43:45.544Z",
+  "output": "images/chapter-02-expanded/revision-02/scenes/scene-48-v1.png",
+  "startedAt": "2026-09-21T02:46:37.849Z",
+  "finishedAt": "2026-09-21T02:48:25.232Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-f7aedcfc-3692-43fd-9a74-c0cb562e2b91.png",
+  "reviewedAt": "2026-09-21T02:54:05.310Z",
+  "review": "Full output viewed: same landing and walllamp, upper flight rear-left; child left nearest upper flight faces uphill, Elder right behind attends child. Pair grounded on level landing before turn. No reversed route or new door. Creator pass; root independent review pending.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "8747b5eb3d8f5524aafd464d579f79d54a000930c5f3b64f3eda3da13552f5d7",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}
+```

@@ -1,0 +1,34 @@
+# Home, Sweet Home — text-free composition trial
+
+Status: proposed pilot, not approved.
+
+- Tool: built-in image_gen.imagegen
+- Source: /Users/miguel_lemos/.codex/generated_images/01a0c079-4134-7ae1-a118-c7fb38da4e54/exec-06eacd5a-a909-49ac-ae99-3d52da40fb3f.png
+- Saved: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/home-sweet-home/textless-v1.png
+- Started (UTC): 2026-09-20T20:20:33.324Z
+- Finished (UTC): 2026-09-20T20:20:56.752Z
+- Tool-call wall duration: 23.428 seconds (not model-only duration)
+- Dimensions: 1024 × 1536
+- SHA-256: c894462b0061fe27487c048cd626a73515f00fd46f3342df2955c54f5a66e26a
+- Reference: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/home-sweet-home/title-en-v1.png — edit target, style and character identity.
+
+## Exact prompt
+
+Use case: identity-preserve.
+Asset type: proposed text-free children's story cover, a single 1024 x 1536 portrait image, designed to read at 96 and 160 pixel display widths.
+Input image 1 is the EDIT TARGET and sole STYLE + CHARACTER IDENTITY reference: the existing Home Sweet Home cover. Preserve its exact warm dimensional woodland storybook illustration language, fine soft fur and natural hedgehog quills, rounded expressive cream faces, cozy amber light, believable miniature wooden materials and cinematic soft depth. This is a composition edit, not a change into flat cartoon or shiny plastic 3D.
+Primary request: transform this cover into a completely text-free illustration with an emphatically larger, simpler, thumbnail-legible family bathing scene. Remove ALL title lettering and ALL typographic ornament. No text, letters, numbers, symbols resembling writing, captions, logos or watermark anywhere.
+Preserve the same three identifiable hedgehogs and story action: largest Mama warmly rinses older child PinPin sitting in the round wooden bath with a small cream ceramic pitcher; tiny baby PomPom, distinctly smaller than PinPin, sits towel-wrapped immediately beside the bath and looks up lovingly. Mama retains the reference's long gentle cream muzzle, small round ears, rich brown quills and tender attentive eyes. PinPin retains his round cream child face and brown quills. PomPom retains the tiny baby proportions and cream towel with restrained muted stripe.
+Composition: move the camera much closer and re-stage the full group into a compact triangle of three clear expressive faces. Let Mama's large head rise into the former title area near the upper quarter, PinPin's enlarged face sit centrally below hers, and the baby's smaller but clearly readable face sit close beside PinPin to the lower right. Mama is visibly adult and much larger; PinPin visibly older and larger than baby PomPom. Use a slightly higher viewpoint so a little bath water is visible and the baby's face can be near the other faces without making the baby taller. Hero family and wooden bath occupy nearly the entire canvas, with only a narrow margin above Mama's head and very little empty floor below. Broaden and separate the silhouettes. Keep all three characters unmistakable; the baby may sit on a low stool or cushion immediately beside the bath to bring the face into the family group while staying distinctly tiny.
+Action clarity: Mama's near forepaw rests clearly on the tub rim; her other forepaw grips the pitcher handle naturally, pitcher tilted with one clear water stream landing on PinPin's wet crown. PinPin's two forepaws rest on the near bath rim; his cheerful face tilts toward Mama. Baby's two small forepaws gather the towel at the chest; tiny feet remain plausibly beneath. Anatomically coherent attachments, no extra paws or limbs, no merged grips. Enough pitcher-water separation to read the rinsing gesture at small size.
+Background: keep the same cozy curved timber cottage bathroom, a small softly glowing lantern and a subtly cool blue window as quiet context. Reduce background objects drastically: omit scattered foreground plants, rope-rug intricacy, flower vases, dangling herb bundles, extra furniture and busy towels. Subdue background wood grain and keep it darker and less contrasted than the bright cream faces. A simple wooden tub rim and restrained amber wall curvature convey home. Preserve high-quality detailed character fur, quills and soft towel material without increasing background texture. Gentle warm highlights, no burned-out yellow faces.
+Invariants: same original family, three actors only, same bath-and-pitcher story beat, same warm dimensional illustrated style and palette, no clothing added except baby's towel, baby remains unmistakably smallest, no lettering of any kind. Fill the reclaimed title space with the enlarged family composition, not empty ceiling. Output only one finished portrait illustration.
+
+## Visual inspection
+
+Full-image visual inspection: all title text and flourishes are gone. Mama occupies the former title area, PinPin is enlarged in the bath center, and towel-wrapped PomPom sits immediately alongside on a low wooden stool. Three faces are grouped much more tightly, with little ceiling or floor. The warm dimensional woodland style, fur/quill texture, cream faces, wooden bath, blue window and lantern remain recognizable. Background herbs, plants, extra towels and intricate floor rug are absent. One clear water stream meets PinPin's wet crown; Mama has one paw on the rim and one at the pitcher handle, PinPin has two paws at the near rim, and PomPom has two paws gathering the towel plus two visible feet. No obvious duplicate forelimbs seen; hidden lower limbs and attachments cannot be certified. Baby is smaller than PinPin, but the face-size difference is modest and the nearer stool makes PomPom relatively prominent, so exact baby scale remains a caveat. Bright lantern and large Mama silhouette still attract attention; the cream pitcher floral ornament remains. Actual 96/160px browser legibility awaits coordinator comparison and independent review. Proposed pilot, not user approved.
+
+## Staging invention
+
+Baby sits on a low stool to bring its face closer to the other faces while preserving smaller body size. This is a cover recomposition, not a new story event.
+

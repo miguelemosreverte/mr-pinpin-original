@@ -1,0 +1,9 @@
+{
+  "$schema": "./shot-plan.schema.json",
+  "schemaVersion": 1,
+  "chapterId": "",
+  "status": "planning",
+  "coordinateSystem": {"origin": "", "positiveX": "", "positiveY": "", "positiveZ": "", "units": "nominal scene units; artistic constraints, not calibrated geometry"},
+  "preproductionGate": {"state": "pending", "reviewedAt": null, "reviewer": null, "sourceMap": "bible.md", "castReferences": [], "environmentReferences": [], "interiorReferences": [], "interiorsUsed": false, "findings": ""},
+  "shots": []
+}

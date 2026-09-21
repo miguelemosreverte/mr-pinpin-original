@@ -1,0 +1,28 @@
+# scene-71-v1
+
+Use case: illustration-story. Final single standalone landscape1536x1024 children's-book illustration. Rich tactile warm miniature woodland realism, natural hedgehog anatomy, no human clothes or living humans. References control exact identities and selected room/route materials; never copy panel labels, diagram labels or montage into story. Child PinPin copper quills/cream face/no glasses; Elder larger silver-brown quills/cream muzzle/round gold spectacles, approximately1.55 child upright height. Exactly two forelimbs and two hindlimbs per hedgehog; hidden limbs may stay naturally occluded. Staff stays outside home, so no staff/wand/handheld lantern. No text, border, split panels, arrows, watermark. Same low HOME-SIDE root-mouth camera slightly wider. Elder emerges OUT, crouched low with round gold glasses and back clear under roots. One small DRY BROWN LEAF clings to the TOP-FRONT of his quills near the shoulder, reachable by child. PinPin is already outside on floor foreground-left, safely clear of Elder, looking at him with a little smile. Rolled small mat left, stool farther west, shallow leaf/soil pile right remain unchanged. Exactly two hedgehogs, relative adult-child size preserved; all visible paws grounded except natural walking lift.The nook is INSIDE enclosed room: right background is solid packed earth/root wall, never a bright exterior forest opening. Warm sunlight comes from the room's LEFT only.
+
+References:
+[
+  {
+    "path": "images/chapter-02-expanded/revision-03/preproduction/root-opening-states-v1.png",
+    "role": "accepted spatial/state/body-fit reference; no copying diagram layout",
+    "sha256": "af6803dd4dcab9450a26fe49d52d5c1a355b9143833b203afafb2f60fce2fc22"
+  },
+  {
+    "path": "images/chapter-02-expanded/revision-03/preproduction/root-fit-v1.png",
+    "role": "accepted spatial/state/body-fit reference; no copying diagram layout",
+    "sha256": "65347c95ac20f0e3fcd27e9058437b084b08c699717168d9da17df2f5a4c67c7"
+  },
+  {
+    "path": "images/chapter-02-expanded/preproduction/cast-v1.png",
+    "role": "character identity/size authority (ignore external setting/staff)",
+    "sha256": "9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7"
+  }
+]
+
+Generated: 2026-09-21T06:35:08.876863+00:00 to 2026-09-21T06:37:33.733170+00:00
+
+SHA256: 1b969b1efc8e42411f4bc5f09010bee3906c09884a9d2c7e5fc30beed2ebff05
+
+Review: Full output inspected. PinPin already outside left, larger spectacled Elder emerging/just clear of root mouth right with one dry leaf on upper quills. Clear reciprocal gaze and grounded visible paws; two forepaws each, far hindfeet partly occluded. Mat rolled left, stool west, debris east and closed earth/root wall persist. Elder is in final emergence phase rather than torso visibly squeezed inside; narration can describe completed wriggle. No clear anatomy defect.

@@ -1,0 +1,45 @@
+# Families say goodbye to the teacher
+
+## Exact prompt
+
+Create ONE1536x1024 landscape story illustration, continuous scene not panels. Same rich warm dimensional woodland children's-book style, recognizable individual faces and natural animal bodies from approved references. Sunny AFTERNOON with blue sky/fresh green leaves, ordinary daylight, no sunset disc, orange nightlight or night. No clothing, bags, carriers or invented accessories; only Lulu's modest white/yellow daisy crown when Lulu is visible. Four limbs per mammal, one own tail each. Mama hedgehog ALWAYS securely carries baby PomPom at her LEFT chest: left forearm supports bottom/back, right paw steadies; exactly TWO maternal arms, unobstructed baby face, no sling/stroller, baby never on ground. Adults mature and larger, not scaled clones. No Elder at pickup. No words/labels/speech bubbles. Exact family cast ELEVEN animals total: (1)Mama adult hedgehog carrying(2)tiny baby PomPom, with(3)child PinPin beside her; (4)Lulu child rabbit WEARING SAME DAISY CROWN with(5)mature rabbit mother; (6)Tutu child red squirrel with(7)mature larger dark chestnut squirrel father, single tail each; (8)tiny Mila field-mouse child with(9)larger mature mouse father, one thin tail each; (10)Bruno badger cub with(11)larger mature badger mother. Keep each child close to OWN parent. Mila child remains about0.45 PinPin height, father1.7x Mila; Bruno child1.2PinPin, mother1.8xBruno. Add ONE recognizable owl teacher at SCREEN LEFT near school clearing edge: exactlyTWELVE animals total. Ref1 pickup family identities/count; ref2 class-five owl identity/size (NOT extra children); ref3 familycarry. Wide sunny goodbye at path boundary. Eleven family animals gather to screen-center/right oriented toward exit path RIGHT, but children turn their faces LEFT toward owl and wave one forepaw or smile; owl faces RIGHT toward families with one small wing lifted. Mama uses BOTH arms to carry baby and smiles back, does NOT wave a third arm. Lulu crown remains. Parents stay adjacent respective child; adult badger clearly larger cub and tiny mousepair low foreground visible. School pavilion in distance LEFT, oak behind/right; no duplicated school pavilion along exit. Model remains at school off-camera, no one carries it. It is a stopped farewell before walk, not random camera lineup.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "academy-r02-48",
+  "title": "Families say goodbye to the teacher",
+  "status": "rejected",
+  "tool": "image_gen.imagegen",
+  "prompt": "Create ONE1536x1024 landscape story illustration, continuous scene not panels. Same rich warm dimensional woodland children's-book style, recognizable individual faces and natural animal bodies from approved references. Sunny AFTERNOON with blue sky/fresh green leaves, ordinary daylight, no sunset disc, orange nightlight or night. No clothing, bags, carriers or invented accessories; only Lulu's modest white/yellow daisy crown when Lulu is visible. Four limbs per mammal, one own tail each. Mama hedgehog ALWAYS securely carries baby PomPom at her LEFT chest: left forearm supports bottom/back, right paw steadies; exactly TWO maternal arms, unobstructed baby face, no sling/stroller, baby never on ground. Adults mature and larger, not scaled clones. No Elder at pickup. No words/labels/speech bubbles. Exact family cast ELEVEN animals total: (1)Mama adult hedgehog carrying(2)tiny baby PomPom, with(3)child PinPin beside her; (4)Lulu child rabbit WEARING SAME DAISY CROWN with(5)mature rabbit mother; (6)Tutu child red squirrel with(7)mature larger dark chestnut squirrel father, single tail each; (8)tiny Mila field-mouse child with(9)larger mature mouse father, one thin tail each; (10)Bruno badger cub with(11)larger mature badger mother. Keep each child close to OWN parent. Mila child remains about0.45 PinPin height, father1.7x Mila; Bruno child1.2PinPin, mother1.8xBruno. Add ONE recognizable owl teacher at SCREEN LEFT near school clearing edge: exactlyTWELVE animals total. Ref1 pickup family identities/count; ref2 class-five owl identity/size (NOT extra children); ref3 familycarry. Wide sunny goodbye at path boundary. Eleven family animals gather to screen-center/right oriented toward exit path RIGHT, but children turn their faces LEFT toward owl and wave one forepaw or smile; owl faces RIGHT toward families with one small wing lifted. Mama uses BOTH arms to carry baby and smiles back, does NOT wave a third arm. Lulu crown remains. Parents stay adjacent respective child; adult badger clearly larger cub and tiny mousepair low foreground visible. School pavilion in distance LEFT, oak behind/right; no duplicated school pavilion along exit. Model remains at school off-camera, no one carries it. It is a stopped farewell before walk, not random camera lineup.",
+  "references": [
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/pickup-families-v1.png",
+      "role": "Approved pickup-families-v1 identity, scale, setting or prop-state reference",
+      "sha256": "16f4548d0a5f48eb6f52d369ed0f10876f322f19c24b04ebc3491ed4217a461f"
+    },
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/class-five-v1.png",
+      "role": "Approved class-five-v1 identity, scale, setting or prop-state reference",
+      "sha256": "967dca2bd965039f48e71859a54c0a9d264b804f0d879d3f72b5803c18ee170d"
+    },
+    {
+      "path": "images/chapter-04-academy/revision-02/preproduction/family-carry-v1.png",
+      "role": "Approved family-carry-v1 identity, scale, setting or prop-state reference",
+      "sha256": "6ab657cdefbe4c0297aabcf3d640333a2e719a280740cd694c7ba19c30670a0f"
+    }
+  ],
+  "plannedAt": "2026-09-21T03:06:38.485Z",
+  "output": "images/chapter-04-academy/revision-02/scenes/scene-48-v1.png",
+  "startedAt": "2026-09-21T03:19:52.038Z",
+  "finishedAt": "2026-09-21T03:21:14.909Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-ffc0d1a3-dd88-4f28-8dc3-fd490d4b38ed.png",
+  "reviewedAt": "2026-09-21T03:29:04.235Z",
+  "review": "Full output viewed: all12 present, five distinct child-parent groups say goodbye toward owl left, baby carried/crown intact. Added new acorn sign left and fence right absent fixed site; reject v1 for incidental site props, targeted removal pending. Creator review; root independent gate pending for proposed.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "2a26d4bb28b0ecc0030fcb5b11500a780e2732a166bdb732ae8d2bb2063299e9",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}
+```

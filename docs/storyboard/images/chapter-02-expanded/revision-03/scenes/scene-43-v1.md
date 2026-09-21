@@ -1,0 +1,38 @@
+# Elder revision03 scene 43 camera variant
+
+## Exact prompt
+
+Use case: illustration-story. One standalone1536x1024 landscape, no text, rich warm dimensional woodland story illustration. This is a NEW camera angle of the same accepted sacred cave and two hedgehogs, not an exact duplicate of reference1. Reference1 supplies established cast and Mother mural materials, reference2 supplies full cave architecture. Camera REVERSES the over-shoulder view: small PinPin's chestnut quills and side-profile occupy near RIGHT foreground, while the larger silver-grey Elder's full friendly FACE with round gold spectacles is sharp center-LEFT, looking directly at the child. Elder gently raises ONE forepaw toward the HUMAN-painted wall as he explains who made this place; his other forepaw and hindfeet remain grounded. Child looks directly at Elder's face; no child's glasses. In the softly focused background show a coherent cropped fragment of the SAME west maternal mural, golden robe/green cloak, cradle and wheat, painted flat on stone. Do not invent new deity iconography, no live humans, no pictorial flashback. Exactly two living hedgehogs, correct original faces, natural four limbs each, Elder roughly1.55 times child height qualitatively, no staff/clothing. Warm cave-wall lamps and reflected daylight remain; no new door/stairs or props. Clear camera novelty is the Elder-facing reverse conversational shot; maintain same room continuity.
+
+## Provenance and actual review
+
+```json
+{
+  "id": "elder-r3-43",
+  "title": "Elder revision03 scene 43 camera variant",
+  "status": "proposed",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-21T07:11:58.971Z",
+  "references": [
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-28-v1.png",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/preproduction/cave-root-arrival-v1.png"
+  ],
+  "prompt": "Use case: illustration-story. One standalone1536x1024 landscape, no text, rich warm dimensional woodland story illustration. This is a NEW camera angle of the same accepted sacred cave and two hedgehogs, not an exact duplicate of reference1. Reference1 supplies established cast and Mother mural materials, reference2 supplies full cave architecture. Camera REVERSES the over-shoulder view: small PinPin's chestnut quills and side-profile occupy near RIGHT foreground, while the larger silver-grey Elder's full friendly FACE with round gold spectacles is sharp center-LEFT, looking directly at the child. Elder gently raises ONE forepaw toward the HUMAN-painted wall as he explains who made this place; his other forepaw and hindfeet remain grounded. Child looks directly at Elder's face; no child's glasses. In the softly focused background show a coherent cropped fragment of the SAME west maternal mural, golden robe/green cloak, cradle and wheat, painted flat on stone. Do not invent new deity iconography, no live humans, no pictorial flashback. Exactly two living hedgehogs, correct original faces, natural four limbs each, Elder roughly1.55 times child height qualitatively, no staff/clothing. Warm cave-wall lamps and reflected daylight remain; no new door/stairs or props. Clear camera novelty is the Elder-facing reverse conversational shot; maintain same room continuity.",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/scenes/scene-43-v1.png",
+  "startedAt": "2026-09-21T07:12:34.371Z",
+  "finishedAt": "2026-09-21T07:13:22.132Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-23b2d34d-f118-45b1-ad9e-043a621c9b4d.png",
+  "reviewedAt": "2026-09-21T07:22:28.721Z",
+  "selection": "accepted for proposed revision03",
+  "review": "Full image inspected. New reverse over-child-shoulder view shows Elder facing child and lifting one forepaw toward the human Mother mural. Four plausible Elder limbs (one raised, three grounded), child foreground partly cropped by camera. Reciprocal conversation attention, correct spectacles only on Elder and preserved robe/cradle/wheat motifs. Extra lamps at left edge are visible relative to tighter old view; exact lamp-coordinate fidelity is not certified. No clear anatomy defect.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "a01f5985432efd69962089c8ed7a11a514d81a4b22d35f7b0b1b5cb640d4b9f9",
+  "referenceHashes": {
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/scenes/scene-28-v1.png": "a1d1ee011b1b218e5bb03805c431d036e6a8c47a7814629c8817b3fc1b51578c",
+    "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/preproduction/cave-root-arrival-v1.png": "7c40d1976d3353ffdb53329911539cdabf3ef5e58d09a8b22a5015ba0e70c756"
+  },
+  "independentReview": "Root opened full image and accepted selected candidate; qualitative scale, occlusion and peripheral lamp-position limits retained.",
+  "independentReviewedAt": "2026-09-21T07:26:32.396590+00:00"
+}
+```

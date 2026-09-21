@@ -1,0 +1,27 @@
+# Burrow clearing clean layout plate
+
+Status: proposed
+
+- Tool: built-in image_gen.imagegen
+- Started: 2026-09-20T22:02:06.583Z
+- Finished: 2026-09-20T22:02:45.963Z
+- Tool-call wall time: 39.38 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/environment-v1.png
+- Dimensions: 1536×1024
+- SHA-256: c7e72aea55d42cb6832a1fbd9392b588d826c1ba6dc0d6695d645b37b9d6a018
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-45b355be-1453-4e1b-9797-a3fdf3bb7afc.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/chapter-02-direct/scene-07.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/chapter-02-direct/scene-03.png
+
+## Exact prompt
+
+Use case: illustration-story, clean ENVIRONMENT PREPRODUCTION PLATE. One landscape1536x1024 image, no animals or people. Reference1 locks the exact root-burrow clearing geometry and tactile woodland materials; reference2 shows the wider relation to Burrow Hill and separate summit oak. Re-render the front clearing from a slightly higher oblique camera looking toward the root oak, with the oval dark burrow entrance centered in back, same mossy boulder LEFT of entrance, single crooked bramble staff still leaning against that boulder LEFT of entrance, same tall fern RIGHT. Clear bare-earth oval conversation space in center and approach path leading toward viewer. Reveal a small patch beside the RIGHT edge of clearing, adjacent to fern, containing one tiny rooted seedling with two broad green leaves bent gently beneath a fallen thin forkless twig about one small hedgehog body length. Twig is ordinary light wood, neither a log nor magical. Leaves are alive and not severed. The patch is easily reachable one body-length from the usual right conversation position. Keep the original root architecture, boulder, fern and staff relation; no doors, windows, furniture, stairs, interior, other burrows or extra props. Framing includes enough side slope to understand the route up to the distant second oak without moving the home. Warm natural golden daylight, detailed moss/bark/soil, readable grounding, modest depth of field. This is a clean plate for continuity and actor blocking, not a map or diagram. NO animals, insects, characters, text, labels, panels, arrows, borders or watermark.
+
+## Review
+
+Clean scene contains no characters. Root doorway central, mossy boulder and leaning crooked staff left, fern and bent seedling right; separate summit oak and rising path behind left preserve broader geography. Seedling has a pair of broad heart-shaped leaves pressed by one short straight branch. Branch is thicker than an ideal tiny twig but still looks movable by a small hedgehog; future close-ups must preserve the same ordinary stick, avoiding a heavy log. Central bare earth offers clear blocking space. Perspective and plant dimensions are illustrative, not calibrated. Suitable place reference pending root review.
+
+Reviewed: 2026-09-20T22:02:59.497Z

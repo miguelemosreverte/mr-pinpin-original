@@ -1,0 +1,33 @@
+# Elder revision02 stairs-v3 top route correction
+
+Status: proposed
+
+- Tool: built-in image_gen
+- Started: 2026-09-21T01:45:51.069Z
+- Finished: 2026-09-21T01:46:19.105Z
+- Tool-call wall time: 28.036 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/stairs-v3.png
+- Dimensions: 1536×1024
+- SHA-256: 702bea42864a9f5ef48b13c21be11750dd58acebbb3a44c57a13f5e9f7e96f48
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-0c62ccaf-06d9-4698-8df9-886aa56349c9.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/stairs-v2.png
+
+## Exact prompt
+
+Use case: precise-object-edit. Target this staircase cutaway. Correct ONLY the UPPER LEFT TOP LANDING and the DOOR SWING. The upper platform immediately before the stairs must be a plain enclosed STONE STAIR VESTIBULE on the STAIR SIDE of the open door, NOT part of the furnished home and NOT outside. REMOVE the bright outdoor garden opening at extreme upper-left, REMOVE the bookshelf, map and decorative rug from that upper platform. Replace them with continuous plain warm stone walls and bare broad stone landing floor, lit by the existing fixed lamp. Keep the round-top doorway in its current back-wall position: THROUGH that doorway, and ONLY through it, a small glimpse of the warm furnished home with its rug/table/bookcase is visible. The wooden door leaf opens AWAY from the stair vestibule INTO the home beyond, resting against home-side wall, so it does not stick out onto upper stair landing. Show clear unobstructed threshold from home through open door onto level stone landing then the first downward tread. All other image content stays exactly unchanged: two flights/switchback, middle landing, two hedgehogs, rails, lamps and bottom doorway opening into stone MURAL CAVE. No outdoors anywhere in this cutaway; exterior is offscreen elsewhere in home. No extra doorway, no duplicated door leaf. Landscape1536x1024, no labels.
+
+## Review
+
+Selected stair routing/material reference, full inspected and root/QA accepted. Home visible only through top doorway onto bare level vestibule, two flights and turn with fixed lamps/rails, bottom enclosed cave/mural destination. Minor bottom threshold treads visible and adopted. Exact total tread count and partly edge-on door swing not proven by this image; follow home hardware and explicit story opening.
+
+Reviewed: 2026-09-21T02:05:05.586Z
+
+
+## Reference hash verification
+
+Recorded 2026-09-21T03:34:02.591150+00:00 during final provenance verification (not a claimed pre-call hash record).
+
+- b9a4b54d4bd48a4cd3b4fdfc3303ad1778e7eb082ff42298360ecdb1d7407c2b /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/stairs-v2.png

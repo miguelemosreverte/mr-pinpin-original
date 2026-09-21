@@ -66,7 +66,7 @@ const spreadSignature = result => nodes(result, 'reader', node => classIs(node, 
     assert.equal(cover.width, 1024); assert.equal(cover.height, 1536);
     for (const lang of languages) {
       assert.ok(cover.title[lang]?.trim()); assert.ok(cover.alt[lang]?.trim());
-      assert.equal(cover.assets[lang], `images/covers/${id}/title-${lang}-v${cover.version}.png`);
+      assert.equal(cover.assets[lang], `images/covers/${id}/title/title-${lang}-v${cover.version}.png`);
       const file = path.join(base, cover.assets[lang]);
       const bytes = fs.readFileSync(file);
       assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');

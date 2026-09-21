@@ -1,0 +1,30 @@
+{
+  "id": "elder-r2-46",
+  "title": "Back to the same cave stair",
+  "status": "proposed",
+  "tool": "image_gen.imagegen",
+  "prompt": "Create one standalone1536x1024 landscape illustration in the exact warm rich dimensional woodland storybook style of references. Only TWO living hedgehogs: PinPin small chestnut child with cream face, and larger silver-brown Elder with fine round gold spectacles. Natural four limbs each, no clothing, no extra paws; preserve recognized face/quill identities and relative scale. No text, captions, speech bubbles, extra actors, loose carried props or handheld lamps. Elder's staff stays parked outside; neither character holds staff inside. REFERENCE1 scene22 is the primary spatial EDIT TARGET. Keep camera and cave geometry/pictures/light shaft/lamps essentially unchanged. Change only pair blocking to RETURN: both walk AWAY from camera toward the same arched stair entrance in back-right, PinPin slightly ahead and closer to the first threshold tread, Elder immediately behind within one body length. Their backs and three-quarter profiles show purposeful walking toward opening; heads and pupils attend opening/first tread, not murals or viewer. Broad cave floor, no new exit. Painted mother left, defender rear with north bench beneath, light/dark right remain fixed. Ref2 cast identity only. Warm shaft daylight and practical lamps consistent; no staff.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-02/scenes/scene-22-v1.png",
+      "role": "Primary approved scene spatial/action reference",
+      "sha256": "9cc1afb418dee1cad3f7cd94c944ab00b3b02d89031677ff1971c0a2eac8997d"
+    },
+    {
+      "path": "images/chapter-02-expanded/preproduction/cast-v1.png",
+      "role": "Approved supporting identity/home reference",
+      "sha256": "9bdc399269bfa2b8af0e841a3bb32b50a3853e543a1f199c3bf81b49096a3ab7"
+    }
+  ],
+  "plannedAt": "2026-09-21T02:43:45.544Z",
+  "output": "images/chapter-02-expanded/revision-02/scenes/scene-46-v1.png",
+  "startedAt": "2026-09-21T02:46:37.846Z",
+  "finishedAt": "2026-09-21T02:47:13.993Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c079-fa50-7b31-bb65-aacd3603cbe0/exec-3f1ca6ee-6256-4455-a4f6-3c0bad9a9168.png",
+  "reviewedAt": "2026-09-21T02:54:05.297Z",
+  "review": "Full output viewed: child closer to same northeast cave stair, Elder behind; both face opening rather than murals. Cave mural positions, shaft, north bench and lamps retain accepted arrangement. Child three-quarter face attends first steps. Walking is a quiet transitional pose, not a dramatic stride; no new exit or staff. Creator pass; root independent review pending.",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "e2e99e37602a63a3b159967c19b7548bc01a7062a3f580099afdca6ff0e07cf0",
+  "timingNote": "UTC timestamps surround actual awaited built-in call; concurrent calls may overlap."
+}

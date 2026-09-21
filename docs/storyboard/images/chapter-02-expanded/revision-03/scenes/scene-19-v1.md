@@ -1,0 +1,27 @@
+# Elder revision03 scene 19
+
+Status: proposed
+
+- Tool: built-in image_gen
+- Started: 2026-09-21T06:42:26.242Z
+- Finished: 2026-09-21T06:44:57.597Z
+- Tool-call wall time: 151.355 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/scenes/scene-19-v1.png
+- Dimensions: 1536×1024
+- SHA-256: 5f129cfbc1cf38f6a84c9ac938accec2711302e7245efbb1e2896391c7d3539e
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-9bb3bb60-7de5-47f1-89bd-02913c017137.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/preproduction/home-root-nook-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/preproduction/cast-v1.png
+
+## Exact prompt
+
+Use case: illustration-story. A single finished landscape1536x1024 children's book illustration, no text, no panels. Reference1 is the approved tree-home layout and props, reference2 is character identity and relative size ONLY. Rich warm dimensional woodland illustration, detailed fur, gentle light, natural animal paws. Exactly two hedgehogs: small chestnut-quilled cream-faced PinPin without glasses/clothes and larger ancient silver-grey-quilled Elder with thin round gold spectacles, no clothes. Staff remains outdoors and is absent. Home has low writing desk left, map/books behind, bed right and LOW ROOT NOOK back right with dry leaves, flat SMALL oval mat and its small footstool; no interior door, frame, stairs or rail. Large central rug untouched. Book is open at botanical leaf drawing, writing feather stays in inkpot. Compose at low desk from room side; desk top reachable by standing child's forepaws. Elder comfortably seated on desk stool at left, child on floor at desk's right. Preserve pair proportions, two forepaws and two hindpaws each with plausible occlusion. Elder has fallen peacefully asleep seated securely on low desk stool, his two forepaws folded on the desk and cheek resting on those paws next to the open botanical book, spectacles still on. PinPin on floor at right, quietly looking up directly at Elder's sleeping face with affectionate curiosity. Closer tender shot showing both faces, desk edge, open page and support stool. No one touches the page; all nook props remain undisturbed.
+
+## Review
+
+Full image inspected: Elder's closed eyes and resting cheek establish sleep; PinPin's raised face and pupils watch him. Child has two front paws on reachable desk edge and two grounded hind feet. Elder's body support and second resting paw partly occluded by desk, not independently certified. Open botanical book, feather in inkpot, map/books/bed and undisturbed low leaf-filled nook with flat small mat remain coherent. Warm light tints silver quills brown; spectacles and larger scale retain identity. Accepted as proposed scene19.
+
+Reviewed: 2026-09-21T06:46:04.036Z

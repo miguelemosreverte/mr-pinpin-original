@@ -1,0 +1,24 @@
+{
+  "id": "home-root-nook-v1",
+  "prompt": "Use case: precise-object-edit. Asset: canonical clean environment preproduction plate for a beautiful dimensional woodland children's book. Edit the supplied home image, retaining its camera, rich miniature realism, light, exact room identity and furniture locations. Remove the TWO hedgehog characters to make an empty room. Replace ONLY the obvious rear-right wooden interior door, stone doorframe, iron hardware and adjacent door lamp with ordinary packed-earth wall intertwined with two thick natural roots. At FLOOR LEVEL in that same northeast area, roots form a LOW irregular slit, almost concealed by a shallow bank of loose leaves/earth and the northern lip of the existing SMALL OVAL DOORMAT. This nook must not resemble a doorway: no planks, fitted masonry arch, handle or stairs. Slit is much lower than the bookcase; an animal would crouch through after brushing aside loose debris. Keep the LARGE CENTRAL WOVEN RUG flat and completely unchanged. Small doormat separate from main rug. Keep western foreground writing desk/book/ink/quill/lamp, west books/shells, north wall map/artifact bench, east bed and teapot shelves, root ceiling and warm left exterior daylight exactly where they are. One lightweight low three-legged stool may stand just to the LEFT of the small mat; preserve bed-side furniture. No new room, no humans, no readable text, no characters, no montage. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-02/preproduction/home-v2.png",
+      "role": "edit target: unchanged room identity; remove formal door and cast",
+      "sha256": "53b5d2c81242f8d0f505a7f24cf04b9e7f8adbf6b1340cb999e865e436e44a83"
+    }
+  ],
+  "startedAt": "2026-09-21T06:12:00.544902+00:00",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "finishedAt": "2026-09-21T06:13:00.143085+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0ce-32e6-7c83-8515-c2ff0973d7d3/exec-6172b210-a627-4acd-9a4d-52c660188561.png",
+  "output": "images/chapter-02-expanded/revision-03/preproduction/home-root-nook-v1.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "fcfffd326c139beff1af7c442793f8530e602d15b306eb4fdb3bb616fd22ad01",
+  "review": "Full saved image inspected. Empty room retains desk, books, map, east bed, large central rug and warm window/desk light. Formal door, hardware, stone frame and adjacent door lamp removed; low natural root slit at northeast floor has leaf screen and separate small oval mat. Light stool sits west of mouth. Dark slit remains partly visible above debris, reading as incidental root nook; root internal acceptance requested. No animals or added human artifacts.",
+  "reviewedAt": "2026-09-21T06:13:29.905885+00:00",
+  "seconds": 59.598183,
+  "timingNote": "Recorded request-to-capture elapsed time includes local registration overhead; not model-only computation."
+}

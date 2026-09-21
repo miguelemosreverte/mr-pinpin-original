@@ -1,0 +1,37 @@
+# Elder revision02 stairs-v2 continuity correction
+
+Status: proposed
+
+- Tool: built-in image_gen
+- Started: 2026-09-21T01:42:23.633Z
+- Finished: 2026-09-21T01:43:16.484Z
+- Tool-call wall time: 52.851 seconds
+- Output: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/stairs-v2.png
+- Dimensions: 1536×1024
+- SHA-256: b9a4b54d4bd48a4cd3b4fdfc3303ad1778e7eb082ff42298360ecdb1d7407c2b
+- Original: /Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-c3eb03db-fb13-4c1a-8f59-318ebe6e6a3a.png
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/stairs-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/cave-v1.png
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/home-v2.png
+
+## Exact prompt
+
+Use case: precise-object-edit. Input1 EDIT TARGET stair cutaway. Input2 supporting reference for CAVE at bottom. Input3 correct HOME DOOR design. Fix TWO clear continuity errors only, keeping two flights, rails, midlanding, two hedgehogs, lamps, architectural cutaway framing and material unchanged. A: bottom-right portal must open into an UNDERGROUND STONE MURAL CHAMBER, not outdoors. Replace all outdoor trees, leaves, plants, sky and bright woodland rocks visible beyond that bottom portal with a glimpse of warm limestone cave floor/wall and the edge of the painted golden sun/cold storm mural from input2. It is an interior doorway with warm lamp/cool reflected daylight, no view outdoors. B: at upper-left home-to-stair threshold, show the single round-top wooden door OPEN at ninety degrees TOWARD the home room, leaving a clear doorway and a level top landing before first tread. Door hinged on right when viewed from home, low iron pull ring on left face; door leaf rests against room-side wall and does not obstruct stairs. No duplicate door leaf. Home outside entrance FAR LEFT may still show garden; ONLY bottom portal loses outdoors. Preserve exact paired Elder/child on middle landing and stair geometry. No labels/text. Landscape1536x1024.
+
+## Review
+
+Rejected top routing despite corrected cave bottom: home furnishings remained beside stair start and open door suggested an extra room. Superseded by stairs-v3.
+
+Reviewed: 2026-09-21T02:05:05.509Z
+
+
+## Reference hash verification
+
+Recorded 2026-09-21T03:34:02.591150+00:00 during final provenance verification (not a claimed pre-call hash record).
+
+- d509b5500d027ff7fe0cf05022f174b3f495d22c9485bfc5bc9a483d044c3ce1 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/stairs-v1.png
+- c46ef299e7a595d8bf8e59bdf9f2dfd8930a12bc223cdfa62b3e52b8b2345efc /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/cave-v1.png
+- 53b5d2c81242f8d0f505a7f24cf04b9e7f8adbf6b1340cb999e865e436e44a83 /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-02/preproduction/home-v2.png

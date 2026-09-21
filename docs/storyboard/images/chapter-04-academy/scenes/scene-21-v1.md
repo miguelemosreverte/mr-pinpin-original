@@ -1,0 +1,19 @@
+# scene-21-v1
+
+Proposed; not user-approved.
+
+Exact prompt:
+
+Use case: illustration-story. Finished standalone children's book scene 21, landscape1536x1024, warm dimensional tactile woodland style, detailed fur/quills/bark, soft natural cinematic light; NO text, typography, borders, montage, symbols or speech balloons. Image1 is canonical cast identity/scale ONLY. Image2 is location geography, textures and lighting ONLY; move camera as requested rather than copying framing. CAST SCOPE: Exactly PinPin, Lulu and Tutu, no owl or other animals. ACTION: “Then he turned the lid—and it opened! ‘Why didn’t you say so?’ he asked the jar.” The friends burst out laughing. Translate that story action into visible body language; do not print words or show a separate flashback. CAMERA: Medium all3 laughing natural, Tutu animated butgrounded.. BLOCKING AND STATE: SameleftLulu centerPinPin rightTutu; nojar/raccoon. TIME: late afternoon warm dappled light. Animal proportions from cast, PinPin smallest body, Lulu taller with long pink-inner ears, Tutu single red curled tail; mammals exactly two forelimbs/two hindlimbs, owl two wings/two feet. Clear distinct character silhouettes, expressive kind eyes, no extra paws, characters planted on dry ground. Oak seat order LEFT LULU, CENTER PINPIN, RIGHT TUTU in any shared frontal view. Daisy crown only appears after scene26; use exactly state described above. 
+
+References:
+/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/cast-v1.png
+/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-04-academy/preproduction/oak-plate-v1.png
+
+UTC: 2026-09-20T22:35:14.831Z — 2026-09-20T22:35:44.680Z
+
+SHA-256: ce1552060c456aa5e46f5d2ddd7c8b1f3db97a32892a1b4a2de2962f2c86d9e0
+
+Visual review: Accepted scene21 laughter payoff with exactly3 friends, correct seatorder and two raised forepaws each plus grounded hindfeet. Warm expressions, Tutu single tail. No imaginary story objects materialized; stylized teeth consistent with comedy.
+
+Reviewed UTC: 2026-09-20T22:36:41.019015+00:00

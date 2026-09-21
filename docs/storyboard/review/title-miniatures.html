@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Title covers & miniatures · Mr. PinPin</title>
+<style>
+:root{color-scheme:light;font-family:Georgia,serif;color:#283728;background:#f5f2e8}*{box-sizing:border-box}body{margin:0}main{max-width:1150px;margin:auto;padding:38px 24px 60px}h1{font-size:clamp(30px,5vw,48px);line-height:1.1;margin:12px 0 20px;font-weight:normal}h2{font-size:28px;font-weight:normal;margin:8px 0 14px}p{line-height:1.6;max-width:780px}small,.label,nav,.status,.metadata{font-family:system-ui,sans-serif}.eyebrow{text-transform:uppercase;letter-spacing:.16em;font:12px system-ui;color:#66765b}nav{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:24px 0}button{border:1px solid #9fac94;border-radius:20px;padding:7px 16px;background:transparent;color:inherit;cursor:pointer}button[aria-pressed=true]{background:#344f39;color:white}article{padding:30px 0 42px;border-top:1px solid #d4dacb}.status{font-size:12px;color:#71582d}.pair{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px;margin-top:22px}.label{font-size:12px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 10px}.full img{display:block;width:100%;max-width:320px;aspect-ratio:2/3;height:auto;border-radius:10px;box-shadow:0 8px 24px #21322419}.full{display:flex;flex-direction:column;align-items:center;min-width:0}.sizes{display:flex;flex-wrap:wrap;gap:28px;margin:28px 0 10px}.size{max-width:100%;padding:18px;background:#ecefE4;border-radius:12px}.size .pair{gap:12px;margin-top:12px;display:flex;flex-wrap:wrap}.size figure{margin:0}.size img{display:block;height:auto;border-radius:6px;max-width:100%}.size figcaption{font:11px system-ui;color:#627058;margin-top:6px}.metadata{font-size:12px;color:#64715d;overflow-wrap:anywhere}.metadata a{color:inherit}.note{font-size:15px;color:#58644f}footer{border-top:1px solid #d4dacb;padding-top:22px}#error{color:#9b3630}@media(max-width:600px){main{padding:25px 16px}.pair{gap:12px}.sizes{gap:14px}.size{padding:12px}h2{font-size:24px}}
+</style>
+</head>
+<body><main>
+<div class="eyebrow">Mr. PinPin · cover collection</div>
+<h1>The title, and its miniature.</h1>
+<p>Four stories, each with a full title cover and a text-free miniature composed for small displays. Compare them side by side, then at actual display sizes. Each miniature is one master image scaled for every size and shared across languages.</p>
+<p class="note">The bath-time miniature is approved. The other three are new proposals for your review. The published chapters still have their approved title covers.</p>
+<nav aria-label="Title language"><span>Title language:</span><button data-lang="ru">Русский</button><button data-lang="en">English</button><button data-lang="es">Español</button></nav>
+<div id="error" role="alert"></div><div id="chapters" aria-busy="true"></div>
+<footer><p><strong>On disk:</strong> <code>images/covers/&lt;chapter&gt;/title/</code> contains the three titled language versions. <code>miniature/</code> contains the shared text-free master. Every image has its prompt and production record beside it.</p><p class="metadata"><a href="../production/TITLE-COVERS.md">File organization</a> · <a href="../covers.json">Selected assets and approval states</a></p></footer>
+</main>
+<script>
+const notes = {
+ 'chapter-01':'PinPin, his golden quill and the lake form the main shapes.',
+ 'chapter-02':'The two faces stay prominent: young PinPin and the bespectacled Elder.',
+ 'timber-tractor':'PinPin and the red tractor stay prominent; the yellow crane belongs immediately behind the cab, ahead of the log load.',
+ 'home-sweet-home':'The approved bath-time composition: Mama, PinPin and little PomPom grouped around the tub.'
+};
+let lang = new URLSearchParams(location.search).get('lang') || 'ru';
+if (!['ru','en','es'].includes(lang)) lang='ru';
+let registry;
+const el = (tag, className, text) => {const node=document.createElement(tag);if(className)node.className=className;if(text)node.textContent=text;return node;};
+function picture(src, alt, width) {const image=el('img');image.src='../'+src;image.alt=alt;image.width=width;image.height=width*1.5;image.loading='eager';return image;}
+function render(){
+ const container=document.getElementById('chapters');container.replaceChildren();
+ document.querySelectorAll('[data-lang]').forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.lang===lang)));
+ for(const [id,cover] of Object.entries(registry.covers)){
+  const article=el('article');article.id=id;
+  article.append(el('div','status',cover.miniature.status==='approved'?'APPROVED MINIATURE':'NEW MINIATURE · FOR REVIEW'),el('h2','',cover.title[lang]),el('p','note',notes[id]));
+  const pair=el('div','pair');
+  for(const [label,src] of [['Title · before',cover.assets[lang]],['Title miniature · after',cover.miniature.asset]]){
+   const panel=el('div','full');panel.append(el('div','label',label),picture(src,label+' — '+cover.title[lang],320));pair.append(panel);
+  }
+  article.append(pair);
+  const sizes=el('div','sizes');
+  for(const width of [96,160,240]){
+   const size=el('section','size');size.append(el('div','label',width+' px wide'));
+   const row=el('div','pair');
+   for(const [label,src] of [['Title',cover.assets[lang]],['Miniature',cover.miniature.asset]]){
+    const figure=el('figure');figure.append(picture(src,label+' at '+width+' pixels',width),el('figcaption','',label));row.append(figure);
+   }
+   size.append(row);sizes.append(size);
+  }
+  article.append(sizes);
+  const metadata=el('p','metadata');const link=el('a','','Miniature prompt & production record');link.href='../'+cover.miniature.asset.replace(/\.png$/,'.json');metadata.append(link,document.createTextNode(' · '+cover.miniature.asset));article.append(metadata);container.append(article);
+ }
+ container.setAttribute('aria-busy','false');
+}
+document.querySelectorAll('[data-lang]').forEach(button=>button.onclick=()=>{lang=button.dataset.lang;history.replaceState(null,'','?lang='+lang);render();});
+fetch('../covers.json',{cache:'no-cache'}).then(response=>{if(!response.ok)throw Error('Cover registry unavailable');return response.json();}).then(data=>{registry=data;render();}).catch(error=>{document.getElementById('error').textContent=error.message;document.getElementById('chapters').setAttribute('aria-busy','false');});
+</script>
+</body></html>

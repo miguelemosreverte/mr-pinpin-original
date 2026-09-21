@@ -1,0 +1,26 @@
+# scene-69-v4
+
+Use case: illustration-story. NEW standalone landscape1536x1024 narrative illustration from CLEAN references, not an edit of previous failed pictures. Same beautiful miniature woodland realism. Inside the enclosed natural root passage just before home, use a LOW SIDE THREE-QUARTER camera: child PinPin at center-left and larger Elder following at center-right both walk gently uphill toward screenLEFT. PinPin's CREAM FACE and ordinary DARK EYE are clearly visible in natural side profile, with NO glasses, jewelry, rings, wires or eye accessories. Elder behind him has round gold spectacles as in image2. Identity image2 controls the distinct faces and four-limb anatomy; all four paws per animal naturally walking/partially occluded, never five. Ahead at far LEFT, a SMALL ROOT-FRAMED gap reveals only a warm patch of the familiar HOME interior: low bookcase/books, edge of writing desk, flat woven rug. Image1 gives home furnishings and light; look through the reverse side of its northeast root nook, NOT an outside forest. PinPin gazes toward the inviting warm home patch, Elder also looks that direction. Near home mouth they will soon crouch; keep floor smooth gently uphill and roots low but with body clearance. No formal door, stairs, rail, outside sky, outdoor foliage vista, lantern in tunnel, staff or text. The floor connects naturally through the gap to home. Keep room light warm ahead-left and tunnel shadow behind-right. This is an actual enclosed passage, not diagram/cutaway. Make child face unambiguously bare and preserve his child identity.
+
+References:
+[
+  {
+    "path": "images/chapter-02-expanded/revision-03/preproduction/home-root-nook-v1.png",
+    "role": "home interior identity glimpsed through reverse of northeast nook, no exterior",
+    "sha256": "fcfffd326c139beff1af7c442793f8530e602d15b306eb4fdb3bb616fd22ad01"
+  },
+  {
+    "path": "images/chapter-02-expanded/revision-03/scenes/scene-68-v1.png",
+    "role": "clean cast identities, child bare face and adult glasses, tunnel materials; change camera/action",
+    "sha256": "5280f5c4aa39e6f5b630a295f0670fc1aac1419a9026d81c32ef15acb2d1f770"
+  }
+]
+
+Generated: 2026-09-21T07:22:37.549772+00:00 to 2026-09-21T07:25:50.584359+00:00
+
+SHA256: e0f046e5d8cd98f3d9b134a5f31bb0d99f787acfdc2a5d925bceb06853858cd4
+
+Review: Full output inspected. Fresh side camera removes child spectacle leak completely; clear bare child face and adult glasses, both walking uphill toward warm recognizable bookcase/desk/rug inside home. No outside vista or artificial threshold. Body paws plausible with far limbs partially occluded. However home aperture is taller in this reverse perspective than low home-side squeeze authority; root review requested for scale consistency before selection.
+
+
+Later review: Rejected for oversized reverse home aperture after root independent review; clean child face is retained as basis for69-v5.

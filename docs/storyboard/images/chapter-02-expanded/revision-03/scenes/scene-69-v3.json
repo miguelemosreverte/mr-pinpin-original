@@ -1,0 +1,22 @@
+{
+  "id": "scene-69-v3",
+  "prompt": "Use case: precise-object-edit. Change the SMALL CHILD'S HEAD ORIENTATION substantially. The child ahead at middle-left must now be viewed from the BACK OF HIS HEAD, with his face turned completely away from camera toward the far side of the opening. Replace his entire currently visible cream cheek/face profile and adjacent gold loop with the rear of his head: chestnut quills and back of a small ear only. NO face, NO eye, NO nose, NO muzzle, NO spectacles or wire loop may stick out on the LEFT silhouette of his head. This requires redrawing the whole small head region, not subtle erasure. The body and four limbs remain walking in their original place. Keep the large Elder foreground-right completely unchanged with HIS gold glasses. Preserve warm home/books/rugs, entire tunnel, floor and light. Single landscape1536x1024. Do not preserve the wrong child profile.",
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-03/scenes/scene-69-v2.png",
+      "role": "edit target: redraw child head in unambiguous rear view; preserve other figure and environment",
+      "sha256": "50008a8a7edb9f7f243299a4bfa8725a6ee894732fa61af7a715bb4f38001734"
+    }
+  ],
+  "startedAt": "2026-09-21T07:16:04.836334+00:00",
+  "tool": "built-in image_gen",
+  "status": "proposed",
+  "finishedAt": "2026-09-21T07:18:02.128841+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0ce-32e6-7c83-8515-c2ff0973d7d3/exec-2e8d0826-5ef3-4a04-b15a-c1a1163024db.png",
+  "output": "images/chapter-02-expanded/revision-03/scenes/scene-69-v3.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "5c10b87b87af497b6587c70f6e86964042df656f54dd77df2fabd1c44e3b6b49",
+  "review": "Rejected after magnified inspection: head angle changed but the original fine gold ring still remains in air left of cheek. Do not select. Regenerate from clean references with different camera instead of preserving flawed source.",
+  "reviewedAt": "2026-09-21T07:22:37.475582+00:00"
+}
