@@ -1,0 +1,22 @@
+{
+  "source": "../images/atlas/shire-depth-v1.webp",
+  "worldSize": [1536, 1024],
+  "depthConvention": "black near, white far; sample red as linear unorm, matching the existing GPU depth texture",
+  "model": "Piecewise world-Y ground depth, clamped outside the sampled route extent. Sprite uses the depth at its foot Y for every pixel; each trail fragment uses its own world Y.",
+  "clearPathSamples": [
+    {"point": [1212, 205], "red": 111, "description": "Elder doorway path"},
+    {"point": [1157, 400], "red": 125, "description": "Open east lake path"},
+    {"point": [593, 575], "red": 101, "description": "Open path below lake"},
+    {"point": [579, 640], "red": 91, "description": "Open path toward home"},
+    {"point": [430, 740], "red": 66, "description": "Open southern home path"},
+    {"point": [575, 845], "red": 66, "description": "Exposed lower road west of woodland; original WebP 3x3 mean 66.4"},
+    {"point": [780, 905], "red": 63, "description": "Exposed lower road between woodland trees; original WebP 3x3 mean 63.4"}
+  ],
+  "bias": 0.12,
+  "feather": 0.05,
+  "nearBias": 0.04,
+  "nearFeather": 0.025,
+  "biasModel": "Interpolate near to original bias/feather using clamp((objectDepth*255-66)/25,0,1). The southern artistic depth range is compressed: clear road 58-66, canopy 18-44. Ground objects use the independent ground curve, never scene depth. All overlays share the same comparison, including banner surface depths; lens depth remains separate.",
+  "filter": "Mean of a 3-by-3 neighborhood at two-source-pixel spacing; suppresses isolated dark and bright texture flecks before the biased comparison. Boundaries remain approximate.",
+  "limitations": "Source review explicitly rejects exact occlusion. This is a conservative visual approximation: thin branches and weak depth differences remain visible, coarse depth silhouettes may not match source foliage, terrain at the same Y can have different depth, and the bridge and water retain lighting bias. No navigation or source art is changed. Canvas2D fallback reports occlusion unavailable."
+}
