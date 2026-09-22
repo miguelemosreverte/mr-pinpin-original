@@ -10,6 +10,7 @@ const read = name => fs.readFileSync(path.join(base, name), 'utf8');
 const registry = JSON.parse(read('covers.json'));
 const languages = ['ru', 'en', 'es'];
 const ids = ['chapter-01', 'chapter-02', 'timber-tractor', 'home-sweet-home'];
+const elderIds = ['one-day-in-the-forest', ...['papa-home', 'family-morning', 'forest-path', 'elder-house', 'beneath-roots'].map(part => 'elder-' + part)];
 
 class Element {
   constructor(tag = 'div') { this.tagName = tag; this.children = []; this.dataset = {}; this.style = {setProperty() {}}; this.attributes = {}; this.value = ''; this.options = []; this.classList = {toggle() {}, remove() {}, contains() { return false; }}; }
@@ -79,7 +80,7 @@ const spreadSignature = result => nodes(result, 'reader', node => classIs(node, 
 
 (async () => {
   assert.equal(registry.schemaVersion, 1);
-  assert.deepEqual(Object.keys(registry.covers).sort(), ids.slice().sort());
+  assert.deepEqual(Object.keys(registry.covers).sort(), [...ids, ...elderIds].sort());
   for (const id of ids) {
     const cover = registry.covers[id];
     assert.equal(cover.status, 'approved', `${id} release approval state`);
@@ -153,7 +154,7 @@ const spreadSignature = result => nodes(result, 'reader', node => classIs(node, 
   assert.equal(invalid.context.titleCovers.resolve('chapter-01', 'en'), null);
   assert.equal(nodes(invalid, 'reader', node => node.id === 'title-cover').length, 0);
   const missingLibrary = await page('library', '?lang=en&coverPreview=1', true);
-  assert.equal(nodes(missingLibrary, 'adventure-library', node => node.tagName === 'img').length, 2);
+  assert.equal(nodes(missingLibrary, 'adventure-library', node => node.tagName === 'img').length, 3);
   // Covers and language changes must retain the atlas return route and position.
   for (const [route, place] of [['chapter=1', 'lake'], ['story=home-sweet-home', 'home']]) {
     const reader = await page('reader', `?${route}&lang=en&coverPreview=1&returnTo=atlas.html&returnPlace=${place}`);
