@@ -10,7 +10,7 @@ from lxml import html
 
 
 ROOT = Path(__file__).resolve().parents[1]
-SOURCE = ROOT / "docs/index.html"
+SOURCE = ROOT / "docs/original.html"
 OUTPUT = ROOT / "docs/storyboard/book.json"
 HEADING = re.compile(r"^(?:\*\*)?(?:Глава\b|Chapter\b)")
 

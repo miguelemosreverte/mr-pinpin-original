@@ -35,7 +35,8 @@ This uncertainty does not itself establish that the existing deployment is
 unauthorized. Preserve the origin record; do not invent an upstream MIT grant.
 
 The complete original book export, including its styling, is excluded from the
-project software grant. Character-specific procedural artwork and geometry in
+project software grant: docs/original.html and docs/images/** (original.html and
+images/** in deployed archives). Character-specific procedural artwork and geometry in
 scripts/blender-pinpin/** are creative content; a Python extension does not
 automatically make them MIT software. That workflow also records an external
 implementation reference; any copied expression needs its own permission.

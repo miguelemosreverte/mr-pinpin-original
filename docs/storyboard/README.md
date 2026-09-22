@@ -2,7 +2,7 @@
 
 [Chapter library](https://mr-pinpin.github.io/storyboard/library.html) ·
 [Interactive atlas](https://mr-pinpin.github.io/storyboard/atlas-webgpu.html) ·
-[Original book](https://mr-pinpin.github.io/)
+[Original book](https://mr-pinpin.github.io/original/)
 
 This directory contains the illustrated reader and its authoring records. Work in
 `mr-pinpin-source`; the official website selects a verified release through the
@@ -36,7 +36,7 @@ All paths below are relative to this directory unless stated otherwise.
 
 | Path | Responsibility |
 | --- | --- |
-| [`../index.html`](../index.html), `../images/` | Preserved original book and illustrations; do not edit them to revise an adaptation |
+| [`../original.html`](../original.html), `../images/` | Preserved original book and illustrations; do not edit them to revise an adaptation |
 | [`book.json`](book.json) | Ordered source-book extraction used by the library and source comparisons |
 | [`illustrations.json`](illustrations.json), [`translations.json`](translations.json) | Selected artwork, adapted scene text, and translations for numbered editions |
 | [`chapter-editions.js`](chapter-editions.js) | Numbered edition availability and print-spread layouts |

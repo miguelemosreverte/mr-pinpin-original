@@ -10,8 +10,8 @@ remove its historical Git copies.
 each asset's relative path, role, byte count, SHA-256, and immutable object path.
 Source code, source/provenance notes, generation records, and policy stay in Git.
 Production assets are available from Git or the verified production preservation
-manifest when absent. The deployed reader makes no Hugging Face requests;
-publishing/restoration can download from HF. Experimental, historical, model, and review assets
+manifest when absent. Ordinary HTML reading makes no Hugging Face requests; explicit PDF downloads from the library or `download=pdf` routes fetch verified public PDFs from Hugging Face.
+Publishing and restoration can download from HF. Experimental, historical, model, and review assets
 are archived in the public HF bucket `miguelemosreverte/mr-pinpin-archive` after
 verification. Public visibility was explicitly approved and enabled by the main
 operator on 2026-09-22, resolving the earlier private-storage quota blocker.
@@ -149,3 +149,9 @@ object path. Upload receipts require remote content verification; matching size
 alone is insufficient. Configure authentication using the standard HF credential
 store or `HF_TOKEN` in the operator environment. Never put credentials in the
 repository, browser code, receipts, or logs. Production builds require no HF token.
+
+## Chapter PDF downloads
+
+`assets/chapter-pdfs.json` preserves the separately generated chapter PDFs in the same public bucket. They are downloadable editions, kept outside the Pages bundle; the HTML reader continues to serve its illustrations from Pages. `docs/storyboard/library-pdfs.json` records each completed chapter, language, filename, public content-addressed URL, exact size and SHA-256. The library fetches a PDF only after selection; explicit reader URLs with `download=pdf` request the PDF directly.
+
+Generate with `scripts/export-chapter-pdfs.cjs` and follow `docs/storyboard/production/house-menu-library-20260922/PDF-EXPORT.md`. Keep heavy output and cache on TB4. PDF originals can be restored into a separate directory using `tools/assets/hf_store.py pull --manifest assets/chapter-pdfs.json --root EXTERNAL_DIRECTORY --cache EXTERNAL_CACHE --profile archive`. Never put PDF binaries or credentials into the Pages ledger.

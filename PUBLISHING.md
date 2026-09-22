@@ -6,6 +6,8 @@ Books: https://mr-pinpin.github.io/storyboard/library.html
 
 Atlas: https://mr-pinpin.github.io/storyboard/atlas-webgpu.html
 
+Preserved original book: https://mr-pinpin.github.io/original/
+
 ## Repository responsibilities
 
 - [mr-pinpin-source](https://github.com/mr-pinpin/mr-pinpin-source): authoring source, story text,

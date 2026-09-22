@@ -1,6 +1,7 @@
 # Mr. PinPin Source and Authoring
 
-[Read Mr. PinPin](https://mr-pinpin.github.io/).
+[Visit Mr. PinPin’s house](https://mr-pinpin.github.io/) ·
+[Read the original book](https://mr-pinpin.github.io/original/).
 
 [Read the storyboard edition](https://mr-pinpin.github.io/storyboard/?chapter=1&lang=ru).
 The storyboard edition and standalone family stories are developed alongside the
@@ -79,7 +80,8 @@ See [restoration instructions](tools/assets/backup-publication.md).
 
 | Path | Purpose |
 | --- | --- |
-| `docs/index.html`, `docs/images/` | Preserved original book and artwork |
+| `docs/index.html`, `docs/home.css`, `docs/home.js` | Illustrated house menu |
+| `docs/original.html`, `docs/images/` | Preserved original book and artwork; `/original/` is its reader alias |
 | `docs/storyboard/` | Reader, atlas, library, stories and local review tools |
 | `assets/` | Runtime/archive inventory and policy; storage documentation |
 | `tools/assets/` | Verified backup, restoration and preservation manifests |
@@ -101,8 +103,8 @@ This repository preserves the original HTML book and all 100 original PNG
 illustrations, without compression, resizing, abridgment, or changes to the story.
 Mr. PinPin and Mr. PomPom are brothers; this book focuses on Mr. PinPin's origin.
 
-The supplied `MrPinPin.html` is stored as `docs/index.html` so the book opens
-directly on GitHub Pages. Its bytes and the image bytes are unchanged from the
+The supplied `MrPinPin.html` is stored as `docs/original.html`, accessible through
+`/original/` on GitHub Pages. Its bytes and the image bytes are unchanged from the
 original export. The original document layout and font references are preserved.
 
 The source GitHub Actions workflow verifies assets, build references and publishing
@@ -110,7 +112,8 @@ tools on main pushes and pull requests. It does not deploy. The official reposit
 verifies and deploys an explicitly selected release bundle; experiments are excluded
 from that bundle. Readers do not need a Pages branch or ZIP download.
 
-To read locally, open `docs/index.html` in a browser.
+To read the original locally, open `docs/original.html` in a browser.
+`docs/index.html` is the illustrated house menu.
 
 ## Development and Asset Storage
 

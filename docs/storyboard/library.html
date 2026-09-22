@@ -1,42 +1,47 @@
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#fbfcfa">
-  <title>Mr. PinPin - Chapters</title>
-  <link rel="stylesheet" href="reader.css?v=elder-cycle-20260922">
-  <link rel="stylesheet" href="library.css?v=shire-atlas-1">
-  <script src="locale.js?v=margin-preview" defer></script>
-  <script src="chapter-editions.js?v=chapter-two" defer></script>
-  <script src="standalone-stories.js?v=papa-arrival-20260922-r3" defer></script>
-  <script src="title-covers.js?v=elder-cycle-20260922" defer></script>
-  <script src="library.js?v=elder-cycle-20260922" defer></script>
+  <meta name="theme-color" content="#382416">
+  <title>Mr. PinPin · Library</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="library.css?v=house-library-20260922">
+  <script src="library-download.js?v=house-library-20260922" defer></script>
+  <script src="library.js?v=house-library-20260922" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#chapter-library">Skip to the books</a>
+  <div class="room-light" aria-hidden="true"></div>
   <header class="library-heading">
-    <div><p id="library-eyebrow">The illustrated book</p><h1 id="library-title">Mr. PinPin</h1></div>
-    <div class="language-selector" role="group" aria-label="Language">
-      <button data-lang="en" title="English" aria-label="English" aria-pressed="true"></button>
-      <button data-lang="es" title="Español" aria-label="Español" aria-pressed="false"></button>
-      <button data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="false"></button>
+    <nav class="room-navigation" aria-label="Explore">
+      <a id="library-home" href="../?lang=ru"><span aria-hidden="true">←</span> <span id="home-label">Домой</span></a>
+      <a id="library-atlas" href="atlas-webgpu.html?lang=ru"><span id="atlas-label">Карта леса</span> <span aria-hidden="true">↗</span></a>
+    </nav>
+    <div class="heading-line">
+      <div><p id="library-eyebrow">В гостях у Пин-Пина</p><h1 id="library-title">Наша библиотека</h1></div>
+      <div class="language-selector" role="group" aria-label="Language">
+        <button type="button" data-lang="ru" lang="ru" aria-label="Русский" aria-pressed="true">РУ</button>
+        <button type="button" data-lang="en" lang="en" aria-label="English" aria-pressed="false">EN</button>
+        <button type="button" data-lang="es" lang="es" aria-label="Español" aria-pressed="false">ES</button>
+      </div>
     </div>
+    <p id="library-intro">Выберите книжку, чтобы скачать её и читать вместе.</p>
   </header>
   <main class="library-main">
     <div class="library-tools">
-      <a id="library-atlas" class="icon-button" href="atlas-webgpu.html?lang=en" title="The Shire" aria-label="The Shire"><i data-lucide="map" aria-hidden="true"></i></a>
-      <label class="search"><i data-lucide="search" aria-hidden="true"></i><input id="chapter-search" type="search" placeholder="Find a chapter" aria-label="Find a chapter"></label>
-      <label><select id="chapter-filter" aria-label="Chapter status"><option value="all">All chapters</option><option value="published">Published</option><option value="upcoming">Upcoming</option></select></label>
+      <label class="search"><span id="search-label" class="visually-hidden">Найти книжку</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="chapter-search" type="search" aria-labelledby="search-label" placeholder="Найти книжку" autocomplete="off"></label>
+      <p id="library-count"></p>
     </div>
-    <p id="library-status" role="status">Loading chapters...</p>
-    <section id="standalone-adventures" aria-labelledby="adventure-title" hidden>
-      <h2 id="adventure-title" class="library-band-title">Standalone adventures</h2>
-      <div id="adventure-library" class="chapter-library"></div>
-    </section>
-    <h2 id="main-book-title" class="library-band-title">The main book</h2>
-    <div id="chapter-library" class="chapter-library" aria-busy="true"></div>
+    <div class="download-tray" id="download-tray" hidden>
+      <p id="download-status" role="status" aria-live="polite"></p>
+      <progress id="download-progress" max="100" aria-label="Download progress"></progress>
+      <button type="button" id="cancel-download">Отменить</button>
+    </div>
+    <p id="library-status" role="status" aria-live="polite">Загружаем библиотеку…</p>
+    <div id="chapter-library" class="bookcase" tabindex="-1" aria-busy="true"></div>
+    <button id="retry-library" class="retry-library" type="button" hidden>Попробовать ещё раз</button>
   </main>
-  <footer class="library-footer"><a id="original-book" href="../index.html">Original book</a> <a href="../permissions/index.html">Permissions</a></footer>
-  <script src="icons.js"></script>
+  <footer class="library-footer"><p id="library-note">Книжки для семейного чтения · PDF</p><a id="original-book" href="../original/">Оригинальная книга</a><a id="permissions-link" href="../permissions/index.html">Правила использования</a></footer>
 </body>
 </html>
