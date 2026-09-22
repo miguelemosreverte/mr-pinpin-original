@@ -1,5 +1,18 @@
 # Immutable Pages publishing
 
+Author in [mr-pinpin-source](https://github.com/miguelemosreverte/mr-pinpin-source).
+Publish through [mr-pinpin-official](https://github.com/miguelemosreverte/mr-pinpin-official)
+to the [canonical reader site](https://miguelemosreverte.github.io/mr-pinpin-official/).
+The [public HF store](https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive)
+keeps its existing name and hash keys.
+
+Canonical local directories are
+`/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source` and its sibling
+`mr-pinpin-official`. Former local names are symlink aliases; use canonical paths
+with this CLI. Former GitHub repository URLs redirect, but old Pages URLs do not
+automatically redirect. Any legacy source site at `/mr-pinpin-source/` is not the
+canonical reader site. Preserve historical reports and release manifests as-is.
+
 This tool packages an existing, verified `build-pages.cjs` artifact, preserving
 every file's bytes and relative path. It does not build, convert images, create a
 remote repo, configure Pages, stage Git changes, commit, push, or change the old
@@ -52,7 +65,7 @@ not symlink aliases. Output parents must exist; outputs themselves must be new.
    ```
 
    The operator reviews and copies its tiny contents to the fresh
-   `miguelemosreverte/mr-pinpin-pages` clone. Do not copy the package/archive, the
+   `miguelemosreverte/mr-pinpin-official` clone. Do not copy the package/archive, the
    source checkout, or its `.git` history. Template generation does not edit an
    existing clone. The template contains workflow, stdlib scripts, README/AGENTS,
    an immutable manifest, a selector, and ignore rules.
@@ -72,7 +85,8 @@ not symlink aliases. Output parents must exist; outputs themselves must be new.
    output, then use ordinary commits/pushes in the Pages repo. Its workflow
    repeats anonymous verification before uploading/deploying the Pages artifact.
    Configuring GitHub Pages and changing any public site URL remain operator
-   actions. The old repo/site can remain untouched and live throughout.
+   actions. These tools do not redirect renamed Pages URLs or deploy the separate
+   source-repo legacy site.
 
 The package records the caller-supplied full source commit. It does not prove
 that an arbitrary input directory was produced by that commit; the verified

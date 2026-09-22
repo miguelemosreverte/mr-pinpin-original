@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Serve the local chapter proposals; use legacy assets from the sibling sparse fallback."""
+"""Serve local chapter proposals; missing assets fall back to the canonical source checkout."""
 from argparse import ArgumentParser
 from http.server import ThreadingHTTPServer, SimpleHTTPRequestHandler
 from pathlib import Path
@@ -10,7 +10,7 @@ parser.add_argument('--port', type=int, default=8782)
 args = parser.parse_args()
 repo = Path(__file__).resolve().parents[1]
 primary = repo / 'docs'
-legacy = repo.parent / 'mr-pinpin-original' / 'docs'
+legacy = repo.parent / 'mr-pinpin-source' / 'docs'
 
 class Handler(SimpleHTTPRequestHandler):
     def translate_path(self, request_path):

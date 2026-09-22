@@ -1,26 +1,61 @@
 # Publishing Mr. PinPin
 
-Public site: https://miguelemosreverte.github.io/mr-pinpin-pages/
+Canonical reader site: https://miguelemosreverte.github.io/mr-pinpin-official/
 
-Books: https://miguelemosreverte.github.io/mr-pinpin-pages/storyboard/library.html
+Books: https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/library.html
 
-Atlas: https://miguelemosreverte.github.io/mr-pinpin-pages/storyboard/atlas-webgpu.html
+Atlas: https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/atlas-webgpu.html
 
 ## Repository responsibilities
 
-- `miguelemosreverte/mr-pinpin-original`: authoring source, story text,
+- [mr-pinpin-source](https://github.com/miguelemosreverte/mr-pinpin-source): authoring source, story text,
   translations, artwork provenance, asset policies, and preserved Git history.
-- `miguelemosreverte/mr-pinpin-pages`: deployment code and small, versioned
+- [mr-pinpin-official](https://github.com/miguelemosreverte/mr-pinpin-official): deployment code and small, versioned
   release records only. Do not commit artwork, videos, release archives, or
   authoring history to this repository.
 - Public Hugging Face bucket `miguelemosreverte/mr-pinpin-archive`: verified
   originals, production-media preservation copies, experiments, and immutable
   release bundles. Never put credentials or private files here.
 
-The existing repository and website remain available during cutover. Creating
-the Pages-only repository does not rewrite or shrink the author's old Git
-history. It prevents that history, and future binary changes, from accumulating
-in the publishing repository.
+The public bucket name is unchanged. Repository renames do not change release
+hashes, asset object keys, or preserved Git history. Keep historical reports and
+immutable release manifests exactly as recorded.
+
+GitHub repository URLs using the former `mr-pinpin-original` and `mr-pinpin-pages`
+names redirect to the renamed repositories. Their old Pages URLs do **not**
+automatically redirect. Link readers to `/mr-pinpin-official/`. The source repo's
+legacy Pages workflow may redeploy under `/mr-pinpin-source/`; it is a separate,
+noncanonical site and does not publish a release to the official repo.
+
+Canonical local checkouts are
+`/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source` and
+`/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-official`. Old local names are
+symlink aliases only. Use canonical directories with the publishing CLI, which
+rejects symlink path components.
+
+## Commands and layout
+
+Run authoring commands from the source checkout. Install Node dependencies with
+`npm ci`; install `tools/assets/requirements.txt` in the Python environment used
+for HF transfers. Use an external `PINPIN_ASSET_CACHE` and mini/SSD build outputs.
+
+| Step | Command or path |
+| --- | --- |
+| Restore missing production | `npm run assets:restore-production` |
+| Verify source assets/references | `npm run verify` |
+| Create a fresh production artifact | `npm run build:pages -- --dest NEW_ARTIFACT_DIRECTORY` |
+| Package existing verified bytes | `npm run release -- package --artifact ARTIFACT --source-commit FULL_SHA --out NEW_PACKAGE_DIRECTORY` |
+| Upload plus anonymous readback | `npm run release -- upload --package PACKAGE --cache EXTERNAL_CACHE --receipt NEW_RECEIPT.json` |
+| Add an immutable record to official repo | `npm run release -- stage --package PACKAGE --pages-repo OFFICIAL_CLONE` |
+| Select new release or rollback | `npm run release -- select --pages-repo OFFICIAL_CLONE --release SELECTED_SHA --expected-current CURRENT_SHA` |
+| Materialize/verify before deployment | `python3 OFFICIAL_CLONE/scripts/materialize.py --repo OFFICIAL_CLONE --out NEW_VERIFY_DIRECTORY` |
+
+In source, `docs/` contains book/runtime files, `assets/` holds runtime policy and
+inventory, `tools/assets/` provides preservation/restoration, and
+`tools/publishing/` provides the release CLI. In official, `releases/<sha>.json`
+are immutable records, `release.json` selects one, `scripts/` verifies it, and
+`.github/workflows/pages.yml` deploys it. HF holds the bytes addressed by those
+manifests. Full flags and safeguards: [publisher guide](tools/publishing/README.md).
 
 ## Release contract
 
@@ -36,8 +71,10 @@ size budget, and only then deploys. Readers receive files from GitHub Pages,
 not from Hugging Face. A storage outage can block a new deployment without
 breaking a release that Pages is already serving.
 
-Keep previous release records and objects. Rollback selects a previously
-verified release in a new ordinary commit; it does not force-push or rewrite
+Keep previous release records and objects. Rollback runs the same explicit
+`select` command with the previous manifest SHA and the actual current selector,
+then commits/pushes that selector change in the official repo. It does not
+force-push or rewrite
 history. Content-addressed storage is application-enforced immutability, not a
 provider guarantee against account-owner deletion. Verification detects changed
 content; it cannot prevent a bucket administrator deleting an object.

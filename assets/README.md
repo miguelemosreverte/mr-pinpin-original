@@ -1,19 +1,28 @@
-# Pinpin assets
+# Mr. PinPin Source Assets
 
 For the separate lightweight Pages repository and immutable release bundles,
-read `../PUBLISHING.md`. The Git tracking statements below describe the legacy
-authoring repository, not `mr-pinpin-pages`: the new deployment repository holds
+read [PUBLISHING.md](../PUBLISHING.md). The Git tracking statements below describe
+the `mr-pinpin-source` authoring repository, not `mr-pinpin-official`: the deployment repository holds
 only code and release manifests. Preserving media in HF does not automatically
 remove its historical Git copies.
 
 `policy.json` assigns explicit production and archive roles. `manifest.json` records
 each asset's relative path, role, byte count, SHA-256, and immutable object path.
 Source code, source/provenance notes, generation records, and policy stay in Git.
-Production assets also stay in Git so the production build and deployed reader
-make no Hugging Face requests. Experimental, historical, model, and review assets
+Production assets are available from Git or the verified production preservation
+manifest when absent. The deployed reader makes no Hugging Face requests;
+publishing/restoration can download from HF. Experimental, historical, model, and review assets
 are archived in the public HF bucket `miguelemosreverte/mr-pinpin-archive` after
 verification. Public visibility was explicitly approved and enabled by the main
 operator on 2026-09-22, resolving the earlier private-storage quota blocker.
+
+Canonical reader site: https://miguelemosreverte.github.io/mr-pinpin-official/.
+Authoring source: https://github.com/miguelemosreverte/mr-pinpin-source.
+Public store: https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive.
+The store name and existing hash keys are unchanged by repository renames.
+GitHub repo redirects do not automatically redirect old Pages URLs.
+
+## Historical migration checkpoint
 
 Remote archive preservation succeeded: all 181 manifest assets, totaling
 745,024,807 bytes, passed fresh download and SHA-256 verification on the mini.
@@ -115,9 +124,15 @@ still match. `--workers N` sets transfer verification concurrency from 1 to 16
 ## Restore and verification
 
 ```sh
+npm run assets:restore-production
 npm run assets:pull
 npm run assets:verify -- --receipt /path/outside/repo/archive-verified.json
 ```
+
+`assets:restore-production` uses `tools/assets/production-preservation.json` for
+missing runtime media. `assets:pull` restores archive/review media from
+`assets/manifest.json`. Both operate in the source checkout; neither populates
+the official repo with artwork. See [preservation instructions](../tools/assets/backup-publication.md).
 
 Pull restores missing archive files using the local cache or HF and verifies
 their byte counts and SHA-256. Existing conflicting files are not overwritten.

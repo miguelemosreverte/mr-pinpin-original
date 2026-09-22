@@ -1,21 +1,78 @@
-# Mr. PinPin: Original Book
+# Mr. PinPin Source and Authoring
 
-[Read the complete illustrated book](https://miguelemosreverte.github.io/mr-pinpin-pages/).
+[Read Mr. PinPin](https://miguelemosreverte.github.io/mr-pinpin-official/).
 
-[Read the new storyboard edition](https://miguelemosreverte.github.io/mr-pinpin-pages/storyboard/?chapter=1&lang=ru).
+[Read the storyboard edition](https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/?chapter=1&lang=ru).
 The storyboard edition and standalone family stories are developed alongside the
 original book. Chapter and language are preserved in the URL; the library shows
 the available editions.
 
-[Chapter library](https://miguelemosreverte.github.io/mr-pinpin-pages/storyboard/library.html)
-and [interactive atlas](https://miguelemosreverte.github.io/mr-pinpin-pages/storyboard/atlas-webgpu.html).
+[Chapter library](https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/library.html)
+and [interactive atlas](https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/atlas-webgpu.html).
 
-This is the authoring and historical repository. The separate
-[mr-pinpin-pages repository](https://github.com/miguelemosreverte/mr-pinpin-pages)
-contains only deployment code and immutable release records. It downloads and
-verifies a selected public Hugging Face bundle before deploying. Read
-[PUBLISHING.md](PUBLISHING.md) for the release, restoration, and rollback workflow.
-The previous `mr-pinpin-original` website remains online as well.
+This repository is the source workspace, not the canonical reader website.
+
+| Role | Location | Contents |
+| --- | --- | --- |
+| Authoring | [mr-pinpin-source](https://github.com/miguelemosreverte/mr-pinpin-source) | Story text, translations, code, provenance, manifests, original history |
+| Reader releases | [mr-pinpin-official](https://github.com/miguelemosreverte/mr-pinpin-official) | Small deployment scripts and immutable release records |
+| Public storage | [mr-pinpin-archive](https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive) | Verified originals, experiments, preservation copies, release bundles |
+
+The official workflow verifies a selected public HF bundle before deploying;
+readers receive the resulting files from Pages. See [PUBLISHING.md](PUBLISHING.md)
+for release, restoration, and rollback instructions.
+
+The former GitHub repo URLs `mr-pinpin-original` and `mr-pinpin-pages` redirect
+to the renamed repositories. Old **Pages website URLs do not automatically
+redirect**. Use `/mr-pinpin-official/` for readers. The source repo's legacy
+workflow may redeploy at `/mr-pinpin-source/`; that is not the canonical site.
+
+## Quickstart
+
+Work in `/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source`. The sibling
+`mr-pinpin-official` is the deployment checkout. Old local directory names are
+compatibility symlinks; use canonical paths for tools that reject symlink parents.
+
+```sh
+npm ci
+npm run verify
+python3 scripts/serve-chapter-workshop.py --port 8782
+```
+
+Open http://127.0.0.1:8782/storyboard/library.html for local reading, or the workshop
+URL printed by the server for authoring review. If production media is absent,
+first install the pinned HF SDK in your Python environment and run
+`npm run assets:restore-production` with an external `PINPIN_ASSET_CACHE`.
+See [restoration instructions](tools/assets/backup-publication.md).
+
+| Task | Command |
+| --- | --- |
+| Check production without creating an artifact | `npm run verify` |
+| Run unit tests | `npm test` |
+| Refresh asset classification after authoring | `npm run assets:plan` |
+| Restore missing production / archive media | `npm run assets:restore-production` / `npm run assets:pull` |
+| Inspect archive backup/migration | `npm run assets:sync -- --dry-run` |
+| Build on mini/SSD into a new output directory | `npm run build:pages -- --dest NEW_ARTIFACT_DIRECTORY` |
+| Publisher commands | `npm run release -- --help` |
+| Publisher checks | `npm run test:publishing` |
+
+## Layout
+
+| Path | Purpose |
+| --- | --- |
+| `docs/index.html`, `docs/images/` | Preserved original book and artwork |
+| `docs/storyboard/` | Reader, atlas, library, stories and local review tools |
+| `assets/` | Runtime/archive inventory and policy; storage documentation |
+| `tools/assets/` | Verified backup, restoration and preservation manifests |
+| `tools/publishing/` | Package, upload, manifest selection and rollback tools |
+| `scripts/` | Authoring helpers and focused verification |
+
+Publishing requires an explicit release selection in `mr-pinpin-official`.
+Rollback selects a prior manifest with `publish.py select --pages-repo OFFICIAL_CLONE
+--release PREVIOUS_SHA --expected-current CURRENT_SHA`, followed by an ordinary
+commit/push there. Keep old manifests and HF objects; never force-push for rollback.
+
+## Preserved Book
 
 The new edition lives in `docs/storyboard/`. Run `python3 tools/build_book.py`
 (requires `lxml`) and `python3 tools/prepare_scenes.py` to rebuild source data.
@@ -45,8 +102,9 @@ npm test
 npm run build:pages
 ```
 
-Production assets still stay in this legacy Git history; they are not copied to
-the lightweight Pages repository. Non-production assets use the Hugging Face bucket
+Production assets remain in the preserved Git history; they are not copied to
+the lightweight official repository. Missing production media can be restored
+from its preservation manifest. Non-production assets use the Hugging Face bucket
 recorded in `assets/manifest.json`, with content hashes and verified restoration.
 Source code, generation recipes, provenance, and the manifest remain versioned.
 The production build does not require Hugging Face credentials or make readers

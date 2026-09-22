@@ -1,5 +1,10 @@
 # Publication preservation
 
+Run these tools in [mr-pinpin-source](https://github.com/miguelemosreverte/mr-pinpin-source),
+the authoring checkout. [mr-pinpin-official](https://github.com/miguelemosreverte/mr-pinpin-official)
+holds release records and serves the [canonical reader site](https://miguelemosreverte.github.io/mr-pinpin-official/).
+The public store remains [mr-pinpin-archive](https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive).
+
 `backup-publication.py` preserves production media and Elder original PNG masters
 in the existing public bucket `miguelemosreverte/mr-pinpin-archive`. It does not
 edit runtime classification, remove files, untrack assets, or write Git state.
@@ -14,7 +19,7 @@ script, and the existing HF adapter in the job directory.
 
 ```sh
 python3 -B tools/assets/backup-publication.py prepare \
-  --root /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original \
+  --root /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source \
   --masters-root /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard \
   --transfer-root /Volumes/TB4/mac-mini-storage/shared/pinpin-hf-transfer \
   --job /Volumes/TB4/mac-mini-storage/shared/pinpin-publication-backup-20260922
@@ -23,6 +28,8 @@ python3 -B tools/assets/backup-publication.py prepare \
 Run the frozen script on the mini, preferably in a persistent job. Its existing
 transfer root must contain the production paths matching the frozen runtime
 manifest. Heavy copies, hashing, uploads, and downloads stay on the mini/SSD.
+The dated job path above identifies the existing preservation job; choose a new
+external job directory for a new run. Do not rename frozen manifests or receipts.
 
 ```sh
 HF_HUB_DISABLE_PROGRESS_BARS=1 /opt/homebrew/bin/python3 -B \

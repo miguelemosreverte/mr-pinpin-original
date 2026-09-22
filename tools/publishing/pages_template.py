@@ -42,15 +42,28 @@ jobs:
         uses: actions/deploy-pages@v4
 """
 
-README = """# Mr. PinPin Pages
+README = """# Mr. PinPin Official Reader Releases
 
-Public site: https://miguelemosreverte.github.io/mr-pinpin-pages/
-Authoring repository: https://github.com/miguelemosreverte/mr-pinpin-original
+Public site: https://miguelemosreverte.github.io/mr-pinpin-official/
+Authoring repository: https://github.com/miguelemosreverte/mr-pinpin-source
 Public release bucket: https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive
 
-Deployment-only repository: miguelemosreverte/mr-pinpin-pages. Source, asset
+Deployment-only repository: miguelemosreverte/mr-pinpin-official. Source, asset
 authoring, and build history remain in the authoring repository. No site binaries
 or source history belong in this repo.
+
+Canonical local checkouts are siblings mr-pinpin-official and mr-pinpin-source
+under /Users/miguel_lemos/anastasia-pinpin-repos/. Former local names are symlink
+aliases; use canonical paths with the publishing tools. Old GitHub repository
+URLs redirect to these names, but old Pages URLs do not automatically redirect.
+A legacy source site may redeploy at /mr-pinpin-source/; it is not canonical.
+The public HF bucket name, historical evidence, and release manifests stay unchanged.
+
+| Location | Role |
+| --- | --- |
+| mr-pinpin-source | Authoring, recipes, tests, provenance, preserved history |
+| mr-pinpin-official | Reader deployment scripts and immutable release records |
+| mr-pinpin-archive on HF | Verified original media, experiments, release archives |
 
 release.json selects a SHA-256-addressed releases/<sha>.json. The manifest records
 the source commit, exact archive identity, and every site file's bytes and SHA-256.
@@ -60,6 +73,13 @@ them before deploying. No HF secret is needed. Set Pages source to GitHub Action
 Run locally: python3 scripts/materialize.py --repo . --out NEW_OUTPUT_DIRECTORY
 The Python materializer uses only the standard library and never replaces an
 existing output. URLs and paths inside the built site are preserved unchanged.
+
+| Path | Purpose |
+| --- | --- |
+| release.json | Current release selector |
+| releases/<sha>.json | Immutable per-file manifest and source commit |
+| scripts/ | Anonymous download and verification, stdlib only |
+| .github/workflows/pages.yml | Verify, then deploy to the official site |
 
 To publish or roll back, use tools/publishing/publish.py in the authoring repo:
 stage --package PACKAGE --pages-repo THIS_REPO adds an immutable release record;
@@ -72,19 +92,26 @@ HF buckets are mutable storage, not provider WORM. Hash keys, refusal to overwri
 conflicting content, verified upload readback, and anonymous deployment checks
 enforce immutability at the application level. Never replace/delete release
 objects. External mutation causes verification failure, not silent deployment.
-The script does not create repositories, configure Pages, commit, push, or cut
-over traffic. The old site stays live until its operator explicitly changes it.
+The script does not create repositories, configure Pages, commit, push, cut over
+traffic, or redirect old Pages URLs. Operators manage those actions separately.
 """
 
-AGENTS = """# Publishing rules
+AGENTS = """# Official publishing rules
 
-This is a deployment-only repo. Do not add authoring history or site binaries.
+This is mr-pinpin-official, a deployment-only repo. Author in mr-pinpin-source:
+https://github.com/miguelemosreverte/mr-pinpin-source
+Canonical readers: https://miguelemosreverte.github.io/mr-pinpin-official/
+Store: https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive
+Do not add authoring history or site binaries.
 Never edit/delete releases/<sha>.json or rewrite published HF objects. New
 releases add new records; rollback only changes release.json to an existing SHA.
 Use the authoring repo's tools/publishing CLI, normal commits, and normal pushes.
 Do not bypass archive/file verification or raise the 950,000,000-byte size cap.
 HF public downloads require no credentials. Do not add secrets to this repo.
 No deployment or old-site cutover without the operator's authorization.
+Use canonical local paths, not former-name symlink aliases. GitHub repo redirects
+do not imply Pages URL redirects. The source legacy site is not canonical.
+Keep historical evidence and immutable release manifests unchanged after renames.
 """
 
 
