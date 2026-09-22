@@ -8,6 +8,7 @@
   <title>Дом Мистера Пин-Пина</title>
   <link rel="stylesheet" href="home.css">
   <script src="home.js" defer></script>
+  <script src="home-camera.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#room">Перейти к комнате</a>
@@ -19,7 +20,7 @@
       </nav>
     <div class="room-fit">
     <div class="room" id="room" tabindex="-1">
-      <img class="room-art" src="storyboard/images/house-menu/room-v1.webp" width="1536" height="1024" alt="Уютная комната Мистера Пин-Пина: дверь в лес слева и книжный шкаф справа." fetchpriority="high">
+      <img class="room-art" draggable="false" src="storyboard/images/house-menu/room-v1.webp" width="1536" height="1024" alt="Уютная комната Мистера Пин-Пина: дверь в лес слева и книжный шкаф справа." fetchpriority="high">
       <svg class="room-links" viewBox="0 0 1536 1024" xmlns="http://www.w3.org/2000/svg" aria-label="Выберите дверь или книжный шкаф" role="group">
         <a class="hotspot" id="door-link" href="storyboard/atlas-webgpu.html?lang=ru" aria-label="Открыть дверь в лес" data-destination="atlas">
           <path id="door-contour" class="contour" d="M 146 658 L 141 266 C 144 170 158 56 199 38 C 239 21 265 52 278 104 C 351 59 426 80 489 151 C 549 215 574 303 570 404 L 565 625 L 276 642 Z"/>
