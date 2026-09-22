@@ -1,0 +1,21 @@
+{
+  "reason": "First candidate incorrectly places another cottage behind Papa outside window",
+  "shots": [
+    {
+      "id": "arrival-02",
+      "prompt": "Edit target: reference1 is the new inside-window PinPin waving illustration. Change ONLY the distant outdoor BACKGROUND seen through window glass: remove the impossible second cottage, stone wall and green front door behind Papa and Scooby, replacing those background parts with sunlit misty woodland foliage and the garden path. Papa and Scooby are outdoors facing this house, so there must be NO building anywhere beyond them. Keep PinPin, his two paws and feet, face, pose, the foreground round window and ALL wheel muntins/central circle, indoor fireplace/stool/vase, Papa and Scooby, composition, lighting, dimensions and soft animated storybook style exactly unchanged. No new characters, no text. This is a precise geography repair, not a restyle.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02.png",
+          "role": "Edit target; preserve all except impossible building beyond outside characters"
+        }
+      ],
+      "order": 2,
+      "title": "arrival-02",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v2.png"
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "reason": "Exterior door hardware accidentally mirrored in initial candidate",
+  "shots": [
+    {
+      "id": "arrival-09",
+      "prompt": "Precise continuity edit of this storybook image. Keep Papa and Scooby, their expressions, proportions, gaze, positions, the entire garden, windows, lantern, architecture, camera and lighting completely unchanged. Edit ONLY the hardware on the CLOSED GREEN DOOR. This is the EXTERIOR of the door: move its black iron hinges from the viewer RIGHT edge to the viewer LEFT edge, and move the single brass doorknob from viewer LEFT side to viewer RIGHT side. The final door has iron hinges on LEFT, one brass knob on RIGHT, matching its established exterior design. Restore plain green vertical timber where old hardware was. Do not mirror the whole picture. No other alteration. No lettering.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-09.png",
+          "role": "Edit target; door hardware only"
+        }
+      ],
+      "order": 9,
+      "title": "arrival-09",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-09-v2.png"
+    }
+  ]
+}

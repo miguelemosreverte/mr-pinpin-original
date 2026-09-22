@@ -1,6 +1,6 @@
 {
   "id": "one-day-in-the-forest",
-  "editionVersion": 1,
+  "editionVersion": 2,
   "sourceChapter": "chapter-02",
   "title": {
     "en": "One Day in the Forest",
@@ -63,7 +63,7 @@
     {
       "id": "elder-r6-family-002",
       "part": "papa-home",
-      "image": "images/published/elder-cycle/elder-r6-family-002.webp",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-family-002-window-v2.webp",
       "width": 1536,
       "height": 1024,
       "alt": {
@@ -84,6 +84,98 @@
       }
     },
     {
+      "id": "arrival-01",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-01-v4.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Papa sees the window",
+        "ru": "Папа видит окошко",
+        "es": "Papá ve la ventana"
+      },
+      "paragraphs": {
+        "en": [
+          "Papa looked up. There was PinPin at the window!"
+        ],
+        "ru": [
+          "Папа поднял глаза. В окошке был Пин-Пин!"
+        ],
+        "es": [
+          "Papá levantó la vista. ¡PinPin estaba en la ventana!"
+        ]
+      }
+    },
+    {
+      "id": "arrival-02",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-02-v4.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "PinPin waves",
+        "ru": "Пин-Пин машет лапкой",
+        "es": "PinPin saluda"
+      },
+      "paragraphs": {
+        "en": [
+          "PinPin waved as hard as he could. “Papa!”"
+        ],
+        "ru": [
+          "Пин-Пин замахал лапкой. «Папа!»"
+        ],
+        "es": [
+          "PinPin agitó la patita. «¡Papá!»"
+        ]
+      }
+    },
+    {
+      "id": "arrival-03",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-03-v5.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Papa answers the wave",
+        "ru": "Папа машет в ответ",
+        "es": "Papá responde"
+      },
+      "paragraphs": {
+        "en": [
+          "Papa waved back. Scooby looked up too."
+        ],
+        "ru": [
+          "Папа помахал в ответ. Скуби тоже посмотрел на окошко."
+        ],
+        "es": [
+          "Papá saludó con la pata. Scooby también miró hacia la ventana."
+        ]
+      }
+    },
+    {
+      "id": "arrival-04",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-04.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "PinPin turns into the room",
+        "ru": "Пин-Пин бежит к Маме",
+        "es": "PinPin busca a Mamá"
+      },
+      "paragraphs": {
+        "en": [
+          "PinPin turned. He had to tell Mama!"
+        ],
+        "ru": [
+          "Пин-Пин обернулся. Надо скорее сказать Маме!"
+        ],
+        "es": [
+          "PinPin se dio la vuelta. ¡Tenía que contárselo a Mamá!"
+        ]
+      }
+    },
+    {
       "id": "elder-r6-family-003",
       "part": "papa-home",
       "image": "images/published/elder-cycle/elder-r6-family-003.webp",
@@ -96,13 +188,13 @@
       },
       "paragraphs": {
         "en": [
-          "It was Papa, riding Scooby! The little brown dog stopped beside the broad garden stone."
+          "Scooby stood still beside the broad garden stone. Papa gave him a gentle pat."
         ],
         "ru": [
-          "Это был Папа верхом на Скуби! Маленький коричневый пёс остановился у широкого камня в саду."
+          "Скуби стоял у широкого камня. Папа ласково погладил его."
         ],
         "es": [
-          "¡Era Papá, montado en Scooby! El perrito marrón se detuvo junto a la piedra ancha del jardín."
+          "Scooby se quedó junto a la piedra ancha. Papá le dio una caricia."
         ]
       }
     },
@@ -130,6 +222,190 @@
       }
     },
     {
+      "id": "arrival-05",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Across the kitchen",
+        "ru": "Через кухню",
+        "es": "Por la cocina"
+      },
+      "paragraphs": {
+        "en": [
+          "Little paws pattered across the kitchen."
+        ],
+        "ru": [
+          "Маленькие лапки затопали по кухне."
+        ],
+        "es": [
+          "Las patitas corretearon por la cocina."
+        ]
+      }
+    },
+    {
+      "id": "arrival-06",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-06.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "The news reaches Mama",
+        "ru": "Радостная новость",
+        "es": "La buena noticia"
+      },
+      "paragraphs": {
+        "en": [
+          "“Mama! Papa is here!” said PinPin."
+        ],
+        "ru": [
+          "— Мама! Папа приехал! — крикнул Пин-Пин."
+        ],
+        "es": [
+          "—¡Mamá! ¡Ha llegado Papá! —dijo PinPin."
+        ]
+      }
+    },
+    {
+      "id": "arrival-07",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-07.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Mama lights up",
+        "ru": "Мамина улыбка",
+        "es": "La sonrisa de Mamá"
+      },
+      "paragraphs": {
+        "en": [
+          "Mama smiled. “Then let’s welcome him!”"
+        ],
+        "ru": [
+          "Мама улыбнулась. «Пойдём встречать!»"
+        ],
+        "es": [
+          "Mamá sonrió. «¡Vamos a recibirlo!»"
+        ]
+      }
+    },
+    {
+      "id": "arrival-08",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-08.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "The baby shares the excitement",
+        "ru": "Пом-Пом тоже радуется",
+        "es": "PomPom también se alegra"
+      },
+      "paragraphs": {
+        "en": [
+          "PomPom reached for PinPin’s paw. “Papa’s home!” PinPin told him."
+        ],
+        "ru": [
+          "Пом-Пом потянулся к лапке Пин-Пина. «Папа дома!» — сказал ему Пин-Пин."
+        ],
+        "es": [
+          "PomPom buscó la patita de PinPin. «¡Papá está en casa!», le dijo PinPin."
+        ]
+      }
+    },
+    {
+      "id": "arrival-09",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-09-v2.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Papa waits at the doorstep",
+        "ru": "Папа ждёт у двери",
+        "es": "Papá espera"
+      },
+      "paragraphs": {
+        "en": [
+          "Papa waited by the door. Scooby waited beside him."
+        ],
+        "ru": [
+          "Папа ждал у двери. Скуби ждал рядом."
+        ],
+        "es": [
+          "Papá esperaba junto a la puerta. Scooby esperaba a su lado."
+        ]
+      }
+    },
+    {
+      "id": "arrival-10",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-10-v3.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Together toward the door",
+        "ru": "Все идут к двери",
+        "es": "Todos hacia la puerta"
+      },
+      "paragraphs": {
+        "en": [
+          "Mama carried PomPom to the door. PinPin hurried beside her."
+        ],
+        "ru": [
+          "Мама понесла Пом-Пома к двери. Пин-Пин поспешил рядом."
+        ],
+        "es": [
+          "Mamá llevó a PomPom hacia la puerta. PinPin fue a su lado."
+        ]
+      }
+    },
+    {
+      "id": "arrival-11",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-11-v2.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Mama opens the door",
+        "ru": "Мама открывает дверь",
+        "es": "Mamá abre la puerta"
+      },
+      "paragraphs": {
+        "en": [
+          "Mama opened the green door. “Welcome home!”"
+        ],
+        "ru": [
+          "Мама открыла зелёную дверь. «С возвращением!»"
+        ],
+        "es": [
+          "Mamá abrió la puerta verde. «¡Bienvenido a casa!»"
+        ]
+      }
+    },
+    {
+      "id": "arrival-12",
+      "part": "papa-home",
+      "image": "images/published/elder-cycle/papa-arrival-20260922-arrival-12-v2.webp",
+      "width": 1536,
+      "height": 1024,
+      "alt": {
+        "en": "Across the threshold",
+        "ru": "Навстречу Папе",
+        "es": "Hacia los brazos de Papá"
+      },
+      "paragraphs": {
+        "en": [
+          "Papa opened his arms. PinPin ran to him."
+        ],
+        "ru": [
+          "Папа раскрыл объятия. Пин-Пин побежал к нему."
+        ],
+        "es": [
+          "Papá abrió los brazos. PinPin corrió hacia él."
+        ]
+      }
+    },
+    {
       "id": "elder-r6-family-005",
       "part": "papa-home",
       "image": "images/published/elder-cycle/elder-r6-family-005.webp",
@@ -142,13 +418,13 @@
       },
       "paragraphs": {
         "en": [
-          "Mama opened the door with PomPom in her arms. PinPin hurried into Papa’s hug. Scooby’s tail curled up."
+          "PinPin nestled into Papa’s hug. Mama and PomPom watched, and Scooby’s tail curled up."
         ],
         "ru": [
-          "Мама открыла дверь с Пом-Помом на руках. Пин-Пин поспешил обнять Папу. Хвост Скуби загнулся колечком."
+          "Пин-Пин крепко обнял Папу. Мама и Пом-Пом смотрели на них, а хвост Скуби загнулся колечком."
         ],
         "es": [
-          "Mamá abrió la puerta con PomPom en brazos. PinPin corrió a abrazar a Papá. La cola de Scooby se curvó hacia arriba."
+          "PinPin se acurrucó en el abrazo de Papá. Mamá y PomPom los miraban, y Scooby curvó la cola."
         ]
       }
     },
@@ -3947,8 +4223,8 @@
       ]
     },
     {
-      "style": "cover",
-      "paper": "portrait",
+      "style": "elder",
+      "paper": "landscape",
       "scenes": [
         16
       ]
@@ -4031,8 +4307,8 @@
       ]
     },
     {
-      "style": "elder",
-      "paper": "landscape",
+      "style": "cover",
+      "paper": "portrait",
       "scenes": [
         28
       ]
@@ -4094,8 +4370,8 @@
       ]
     },
     {
-      "style": "cover",
-      "paper": "portrait",
+      "style": "elder",
+      "paper": "landscape",
       "scenes": [
         37
       ]
@@ -4178,8 +4454,8 @@
       ]
     },
     {
-      "style": "elder",
-      "paper": "landscape",
+      "style": "cover",
+      "paper": "portrait",
       "scenes": [
         49
       ]
@@ -4255,8 +4531,8 @@
       ]
     },
     {
-      "style": "cover",
-      "paper": "portrait",
+      "style": "elder",
+      "paper": "landscape",
       "scenes": [
         60
       ]
@@ -4339,8 +4615,8 @@
       ]
     },
     {
-      "style": "elder",
-      "paper": "landscape",
+      "style": "cover",
+      "paper": "portrait",
       "scenes": [
         72
       ]
@@ -4507,8 +4783,8 @@
       ]
     },
     {
-      "style": "cover",
-      "paper": "portrait",
+      "style": "elder",
+      "paper": "landscape",
       "scenes": [
         96
       ]
@@ -4591,8 +4867,8 @@
       ]
     },
     {
-      "style": "elder",
-      "paper": "landscape",
+      "style": "cover",
+      "paper": "portrait",
       "scenes": [
         108
       ]
@@ -4995,6 +5271,90 @@
       "scenes": [
         165
       ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        166
+      ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        167
+      ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        168
+      ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        169
+      ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        170
+      ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        171
+      ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        172
+      ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        173
+      ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        174
+      ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        175
+      ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        176
+      ]
+    },
+    {
+      "style": "elder",
+      "paper": "landscape",
+      "scenes": [
+        177
+      ]
     }
   ],
   "chapterNav": [
@@ -5017,7 +5377,7 @@
         "ru": "Утро всей семьёй",
         "es": "Una mañana en familia"
       },
-      "startScene": 16,
+      "startScene": 28,
       "storyId": "elder-family-morning"
     },
     {
@@ -5028,7 +5388,7 @@
         "ru": "Через лес",
         "es": "Por el bosque"
       },
-      "startScene": 37,
+      "startScene": 49,
       "storyId": "elder-forest-path"
     },
     {
@@ -5039,7 +5399,7 @@
         "ru": "Дом Старейшины",
         "es": "La casa del Anciano"
       },
-      "startScene": 60,
+      "startScene": 72,
       "storyId": "elder-elder-house"
     },
     {
@@ -5050,7 +5410,7 @@
         "ru": "Под корнями",
         "es": "Bajo las raíces"
       },
-      "startScene": 96,
+      "startScene": 108,
       "storyId": "elder-beneath-roots"
     }
   ]

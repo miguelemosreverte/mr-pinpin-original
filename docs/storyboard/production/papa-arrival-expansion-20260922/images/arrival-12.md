@@ -1,0 +1,42 @@
+# arrival-12
+
+Status: review candidate, not approved
+
+- Reading order: 12
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-22T08:50:15.281Z
+- Completed (UTC): 2026-09-22T08:51:05.165Z
+- Wall time: 49.884 seconds
+- Saved image: docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-12.png
+- Size: 1536 x 1024
+- SHA-256: 8e98eb983d7c77d5206cb6ea8da354e6b1675f36431efb7119f42aec90d4c1cd
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-96d058b6-ee0b-4ce1-92e0-abae0ed37742.png
+
+## Source Beat
+
+Papa arrival expansion; see story-plan.json
+
+## Camera Direction
+
+Exact camera and blocking are in prompt and story-plan.json.
+
+## Future Character Space
+
+Preserve character identity, child/infant scale, door/window topology and connected eyelines.
+
+## References
+
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-005.webp: Approved scene reference; roles specified in prompt
+- /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-008.webp: Approved scene reference; roles specified in prompt
+
+## Exact Tool Prompt
+
+```text
+Use case: illustration-story. Create ONE finished landscape 1536x1024 illustration for the next pages of this children's book, using supplied approved illustrations as identity, style and architectural references. New physically placed camera, not a duplicate composition. Match the luminous, warm, dimensional animated-feature storybook rendering: soft sculpted fur clusters and quills, appealing rounded faces, expressive warm amber irises with whites and catchlights, cream facial fill light. Keep charming stylization, never photoreal pet fur, human headshots, black button eyes, dark contour lines or shiny PBR materials. Golden misty morning. No text, typography, watermarks, panels, collage, clothing or new characters. Each hedgehog has two forepaws and two hindpaws. PinPin is the small mobile child; PomPom is a much smaller infant always supported by Mama. Papa is a broad mature cream-faced hedgehog, Mama warmer russet. Identity and size ratios follow the family references. Geography: from INSIDE facing the front wall, green arched door at center, bread counter LEFT, PinPin's round radial-muntin window RIGHT, stove farther right. From OUTSIDE PinPin's window is LEFT of door. Door has one brass knob on interior LEFT and hinges on interior RIGHT; opens OUTWARD, to exterior LEFT. Every gaze and body action must visibly connect to its partner. Low interior over-PinPin-shoulder shot THROUGH THE OPEN doorway toward waiting Papa. Foreground PinPin is in first eager stride across threshold, seen from behind three-quarter, two small feet and two forepaws moving toward Papa. Papa has crouched in garden, opens TWO empty arms, gazes lovingly directly at approaching child. They are NOT hugging yet. Mama remains at doorway edge in near foreground, holding infant PomPom securely; her supporting arm and baby visible but not blocking Papa. Scooby is outside to left of Papa when viewed from garden, therefore visible toward camera's RIGHT from interior; dog watches child approach with attentive warm eyes. Door fully open OUTWARD to exterior LEFT, so green leaf lies near viewer RIGHT outside jamb from this interior viewpoint. Forest and path beyond Papa, never cottage facade behind Papa. Warm morning, camera travels with child into upcoming hug. Preserve approved reference5 hug identities and proportion; exact three adults/children identities four hedgehogs TOTAL, no duplicate children.
+```
+
+## Visual Review
+
+Superseded, not selected: green leaf on wrong side from interior. Corrected in arrival-12-v2.
+
+Reviewed (UTC): 2026-09-22T08:58:48.801Z

@@ -1,0 +1,27 @@
+{
+  "id": "arrival-12",
+  "prompt": "Precise edit of reference1, landscape children's book. Keep EVERY character (Mama holding infant left foreground, PinPin running center, Papa with open arms outside, Scooby behind) exactly as drawn; preserve their faces, anatomy, poses, gaze, sizes, exact scene composition, garden, floor, lighting and expressive soft storybook style. Change ONLY the green door placement. It is currently incorrectly on LEFT side of this interior view. Remove the entire left green leaf and brass knob, replacing the area behind it with the continuous left WOODEN DOOR JAMB and a small natural continuation of the outdoor garden visible through the doorway. Then show only a thin edge of the fully open GREEN DOOR OUTSIDE at the RIGHT jamb of the doorway, far behind the threshold; the door opens out into garden on the right when seen from INSIDE. Interior left is unobstructed doorway frame, NOT a second door. Do not mirror the whole scene or move characters. No green door leaf inside room. No new characters or lettering.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-12.png",
+      "role": "Edit target, preserve all characters; correct only misplaced green leaf"
+    }
+  ],
+  "order": 12,
+  "title": "arrival-12",
+  "beat": "Papa arrival expansion; see story-plan.json",
+  "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+  "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+  "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-12-v2.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-3d53b3bd-3edc-4cdf-92f9-91a1f524c05d.png",
+  "startedAt": "2026-09-22T08:54:37.799Z",
+  "finishedAt": "2026-09-22T08:55:09.674Z",
+  "seconds": 31.875,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "16c3e716f1196dc1628e8b6cc04c2c6431629f6a012e3847f1dbdd986087601b",
+  "review": "Selected revised draft: child crosses threshold toward Papa's open arms; Mama supports infant at left and Scooby watches outside. Incorrect left-side interior green leaf removed; open leaf edge now beyond right jamb. Leads into unchanged original hug005.",
+  "reviewedAt": "2026-09-22T08:58:48.801Z",
+  "selectionStatus": "selected-draft-pending-user-approval"
+}

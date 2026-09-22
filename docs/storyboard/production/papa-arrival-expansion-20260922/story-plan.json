@@ -1,0 +1,699 @@
+{
+  "id": "papa-arrival-expansion-20260922",
+  "status": "approved-for-publication",
+  "storyId": "elder-papa-home",
+  "newImageCount": 12,
+  "existingSceneCountExcludingTitle": 15,
+  "proposedSceneCountExcludingTitle": 27,
+  "sourceManifest": "docs/storyboard/stories/elder-papa-home.json",
+  "preserveExistingImageIds": [
+    "elder-r6-family-001",
+    "elder-r6-family-002",
+    "elder-r6-family-003",
+    "elder-r6-family-004",
+    "elder-r6-family-005",
+    "elder-r6-family-006",
+    "elder-r6-family-007",
+    "elder-r6-family-008",
+    "elder-r6-family-009",
+    "elder-r6-family-010",
+    "elder-r6-family-011",
+    "elder-r6-family-012",
+    "elder-r6-family-013",
+    "elder-r6-family-014",
+    "elder-r6-family-015"
+  ],
+  "coordinateConvention": "H: threshold origin; x+ exterior right / interior left when facing front door; y+ inside; z+ up. Story-scale approximate coordinates, not surveyed geometry.",
+  "landmarks": {
+    "threshold": [
+      0,
+      0,
+      0
+    ],
+    "childWindow": [
+      -1.4,
+      0,
+      1.2
+    ],
+    "oppositeWindow": [
+      1.4,
+      0,
+      1.2
+    ],
+    "breadCounter": [
+      2,
+      1.2,
+      0.9
+    ],
+    "stove": [
+      -2.5,
+      1.8,
+      0
+    ],
+    "table": [
+      -1.8,
+      3,
+      0
+    ],
+    "rug": [
+      0,
+      2,
+      0
+    ],
+    "gardenStone": [
+      -2,
+      -2,
+      0.35
+    ],
+    "dogBowl": [
+      2,
+      -2,
+      0
+    ]
+  },
+  "continuityRules": [
+    "Window002 is exterior LEFT / interior RIGHT of front door. Do not mirror kitchen to chase screen direction.",
+    "PinPin is the mobile child and messenger. PomPom is an infant; he remains in Mama arms, not a second running child.",
+    "Mama faces bread counter and has not seen Papa before the news. Her delight follows PinPin report.",
+    "One brass knob; hinges exterior LEFT / interior RIGHT; leaf opens outward toward exterior left.",
+    "Papa broad mature cream face and readable hazel eyes. Scooby soft animated-feature brown dog; no pet-photo texture.",
+    "Three household hedgehogs indoors before Papa enters, exactly four family hedgehogs at reunion; no duplicate baby or extra child.",
+    "Doorstep hug005 and all later images are retained; insertions develop cause and response."
+  ],
+  "sequence": [
+    "elder-papa-home-title",
+    "elder-r6-family-001",
+    "elder-r6-family-002",
+    "arrival-01",
+    "arrival-02",
+    "arrival-03",
+    "arrival-04",
+    "elder-r6-family-003",
+    "elder-r6-family-004",
+    "arrival-05",
+    "arrival-06",
+    "arrival-07",
+    "arrival-08",
+    "arrival-09",
+    "arrival-10",
+    "arrival-11",
+    "arrival-12",
+    "elder-r6-family-005",
+    "elder-r6-family-006",
+    "elder-r6-family-007",
+    "elder-r6-family-008",
+    "elder-r6-family-009",
+    "elder-r6-family-010",
+    "elder-r6-family-011",
+    "elder-r6-family-012",
+    "elder-r6-family-013",
+    "elder-r6-family-014",
+    "elder-r6-family-015"
+  ],
+  "beats": [
+    {
+      "id": "arrival-01",
+      "title": "Papa sees the window",
+      "afterScene": 2,
+      "afterSceneId": "elder-r6-family-002",
+      "contextScene": 2,
+      "captions": {
+        "en": "Papa looked up. There was PinPin at the window!",
+        "ru": "Папа поднял глаза. В окошке был Пин-Пин!",
+        "es": "Papá levantó la vista. ¡PinPin estaba en la ventana!"
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          -2,
+          -2,
+          1.9
+        ],
+        "targetXYZ": [
+          -1.4,
+          0,
+          1.15
+        ],
+        "height": 1.9,
+        "approximateFieldOfViewDegrees": 50,
+        "framing": "Papa near-POV over soft out-of-focus cream-tipped quills at lower-left foreground, looking toward PinPin at the round window; no dog-ear foreground."
+      },
+      "blockingAndGaze": "PinPin stands on the interior floor at the low window, both paws on sill, eyes directly toward Papa. No baby in window. Mama supports PomPom at counter, out of frame.",
+      "state": {
+        "Papa": "mounted on Scooby",
+        "PomPom": "continuously supported by Mama at counter",
+        "door": "closed"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "Papa sees the window",
+        "ru": "Папа видит окошко",
+        "es": "Papá ve la ventana"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-01-v4.png",
+      "initialPlannedCamera": {
+        "frameId": "H",
+        "positionXYZ": [
+          -2,
+          -2,
+          1.9
+        ],
+        "targetXYZ": [
+          -1.4,
+          0,
+          1.15
+        ],
+        "height": 1.9,
+        "approximateFieldOfViewDegrees": 50,
+        "framing": "Papa eye-level subjective view from Scooby; round window occupies most of frame, one tiny soft dog-ear edge establishes viewpoint."
+      },
+      "initialPlannedBlockingAndGaze": "PinPin stands on the interior floor at the low window, both paws on sill, eyes directly toward Papa. No baby in window. Mama supports PomPom at counter, out of frame.",
+      "selectedImageReview": "Papa quills anchor the actual viewpoint. PinPin is framed beyond glass, one paw raised and the other supported on sill."
+    },
+    {
+      "id": "arrival-02",
+      "title": "PinPin waves",
+      "afterScene": 2,
+      "afterSceneId": "elder-r6-family-002",
+      "contextScene": 2,
+      "captions": {
+        "en": "PinPin waved as hard as he could. “Papa!”",
+        "ru": "Пин-Пин замахал лапкой. «Папа!»",
+        "es": "PinPin agitó la patita. «¡Papá!»"
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          -0.6,
+          1.15,
+          0.8
+        ],
+        "targetXYZ": [
+          -1.4,
+          0.05,
+          0.9
+        ],
+        "height": 0.8,
+        "approximateFieldOfViewDegrees": 55,
+        "framing": "Interior three-quarter medium at child eye-height; see PinPin face, raised paw and window beyond."
+      },
+      "blockingAndGaze": "PinPin keeps one paw on sill, feet planted, waves his other paw to Papa outside. His eyes follow Papa through glass. Camera does not sit in Papa location.",
+      "state": {
+        "Papa": "mounted on Scooby",
+        "PomPom": "continuously supported by Mama at counter",
+        "door": "closed"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "PinPin waves",
+        "ru": "Пин-Пин машет лапкой",
+        "es": "PinPin saluda"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v4.png"
+    },
+    {
+      "id": "arrival-03",
+      "title": "Papa answers the wave",
+      "afterScene": 2,
+      "afterSceneId": "elder-r6-family-002",
+      "contextScene": 2,
+      "captions": {
+        "en": "Papa waved back. Scooby looked up too.",
+        "ru": "Папа помахал в ответ. Скуби тоже посмотрел на окошко.",
+        "es": "Papá saludó con la pata. Scooby también miró hacia la ventana."
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          -1.4,
+          0.2,
+          1
+        ],
+        "targetXYZ": [
+          -2,
+          -2,
+          1.8
+        ],
+        "height": 1,
+        "approximateFieldOfViewDegrees": 45,
+        "framing": "Child subjective view through same round window; Papa face and raised paw clear, Scooby partly visible below."
+      },
+      "blockingAndGaze": "Papa securely astride grounded Scooby, one paw resting on back, other waves toward PinPin. Papa gaze toward lens as PinPin POV. Scooby attentive to window, four paws grounded.",
+      "state": {
+        "Papa": "mounted on Scooby",
+        "PomPom": "continuously supported by Mama at counter",
+        "door": "closed"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "Papa answers the wave",
+        "ru": "Папа машет в ответ",
+        "es": "Papá responde"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-03-v5.png"
+    },
+    {
+      "id": "arrival-04",
+      "title": "PinPin turns into the room",
+      "afterScene": 2,
+      "afterSceneId": "elder-r6-family-002",
+      "contextScene": 2,
+      "captions": {
+        "en": "PinPin turned. He had to tell Mama!",
+        "ru": "Пин-Пин обернулся. Надо скорее сказать Маме!",
+        "es": "PinPin se dio la vuelta. ¡Tenía que contárselo a Mamá!"
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          -0.6,
+          4,
+          0.65
+        ],
+        "targetXYZ": [
+          -0.4,
+          2.3,
+          0.7
+        ],
+        "height": 0.65,
+        "approximateFieldOfViewDegrees": 60,
+        "framing": "Low interior three-quarter: PinPin already stands in the middle of the room, head turned toward Mama at screen-left; window and closed door behind him."
+      },
+      "blockingAndGaze": "PinPin is already clear of the sill in the middle of the kitchen, turning his head and pointing toward Mama at the bread counter to interior-left. Mama supports PomPom against her body while facing breadboard. This frame is not his first step from the window.",
+      "state": {
+        "Papa": "mounted on Scooby",
+        "PomPom": "continuously supported by Mama at counter",
+        "door": "closed"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "PinPin turns into the room",
+        "ru": "Пин-Пин бежит к Маме",
+        "es": "PinPin busca a Mamá"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-04.png",
+      "initialPlannedCamera": {
+        "frameId": "H",
+        "positionXYZ": [
+          -2,
+          1.4,
+          0.5
+        ],
+        "targetXYZ": [
+          -1.25,
+          0.65,
+          0.65
+        ],
+        "height": 0.5,
+        "approximateFieldOfViewDegrees": 60,
+        "framing": "Low interior rear three-quarter move away from sill; window recedes behind PinPin and counter appears far across room."
+      },
+      "initialPlannedBlockingAndGaze": "PinPin pivots away from window toward counter at x+2. He releases sill, both paws free, feet visibly on floor. Mama and supported infant are small background targets.",
+      "selectedImageReview": "Actual camera emphasizes the child in the room and his turn toward Mama; the prose remains accurate without claiming a visible first step from the sill."
+    },
+    {
+      "id": "arrival-05",
+      "title": "Across the kitchen",
+      "afterScene": 4,
+      "afterSceneId": "elder-r6-family-004",
+      "contextScene": 4,
+      "captions": {
+        "en": "Little paws pattered across the kitchen.",
+        "ru": "Маленькие лапки затопали по кухне.",
+        "es": "Las patitas corretearon por la cocina."
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          -0.4,
+          3.3,
+          0.45
+        ],
+        "targetXYZ": [
+          0.6,
+          1.5,
+          0.6
+        ],
+        "height": 0.45,
+        "approximateFieldOfViewDegrees": 65,
+        "framing": "Low lateral tracking view follows child from interior right toward counter at interior left. Front door and both windows maintain orientation behind him."
+      },
+      "blockingAndGaze": "PinPin hurries along clear floor around rug toward Mama. Mama at bread counter holds PomPom securely against hip with one forearm; free paw rests on breadboard. She has not looked outdoors.",
+      "state": {
+        "Papa": "grounded after existing dismount004",
+        "PomPom": "continuously supported by Mama at counter",
+        "door": "closed"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "Across the kitchen",
+        "ru": "Через кухню",
+        "es": "Por la cocina"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-05.png"
+    },
+    {
+      "id": "arrival-06",
+      "title": "The news reaches Mama",
+      "afterScene": 4,
+      "afterSceneId": "elder-r6-family-004",
+      "contextScene": 4,
+      "captions": {
+        "en": "“Mama! Papa is here!” said PinPin.",
+        "ru": "— Мама! Папа приехал! — крикнул Пин-Пин.",
+        "es": "—¡Mamá! ¡Ha llegado Papá! —dijo PinPin."
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          1.3,
+          2.8,
+          0.8
+        ],
+        "targetXYZ": [
+          2,
+          1.2,
+          1
+        ],
+        "height": 0.8,
+        "approximateFieldOfViewDegrees": 55,
+        "framing": "Child shoulder foreground, Mama and infant opposite in medium two-shot; avoid disconnected portrait."
+      },
+      "blockingAndGaze": "PinPin stops before Mama and points back toward window while looking into her eyes. Mama turns head and eyes down to PinPin, pausing bread work. PomPom supported on her other arm.",
+      "state": {
+        "Papa": "grounded after existing dismount004",
+        "PomPom": "continuously supported by Mama at counter",
+        "door": "closed"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "The news reaches Mama",
+        "ru": "Радостная новость",
+        "es": "La buena noticia"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-06.png"
+    },
+    {
+      "id": "arrival-07",
+      "title": "Mama lights up",
+      "afterScene": 4,
+      "afterSceneId": "elder-r6-family-004",
+      "contextScene": 4,
+      "captions": {
+        "en": "Mama smiled. “Then let’s welcome him!”",
+        "ru": "Мама улыбнулась. «Пойдём встречать!»",
+        "es": "Mamá sonrió. «¡Vamos a recibirlo!»"
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          0.8,
+          1.4,
+          1.05
+        ],
+        "targetXYZ": [
+          2,
+          1.3,
+          1.25
+        ],
+        "height": 1.05,
+        "approximateFieldOfViewDegrees": 40,
+        "framing": "Closer child-eye view of Mama response, PinPin paw/ear foreground anchors conversation; baby stays visibly supported."
+      },
+      "blockingAndGaze": "Mama brightens and leans toward PinPin, eyes on child; her free paw leaves breadboard. PomPom rests securely against her body. No bread or knife in opening-hand.",
+      "state": {
+        "Papa": "grounded after existing dismount004",
+        "PomPom": "continuously supported by Mama at counter",
+        "door": "closed"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "Mama lights up",
+        "ru": "Мамина улыбка",
+        "es": "La sonrisa de Mamá"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-07.png"
+    },
+    {
+      "id": "arrival-08",
+      "title": "The baby shares the excitement",
+      "afterScene": 4,
+      "afterSceneId": "elder-r6-family-004",
+      "contextScene": 4,
+      "captions": {
+        "en": "PomPom reached for PinPin’s paw. “Papa’s home!” PinPin told him.",
+        "ru": "Пом-Пом потянулся к лапке Пин-Пина. «Папа дома!» — сказал ему Пин-Пин.",
+        "es": "PomPom buscó la patita de PinPin. «¡Papá está en casa!», le dijo PinPin."
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          1.1,
+          2.4,
+          0.95
+        ],
+        "targetXYZ": [
+          1.8,
+          1.3,
+          0.95
+        ],
+        "height": 0.95,
+        "approximateFieldOfViewDegrees": 45,
+        "framing": "Close interaction across infant and child faces; Mama supporting forearm clearly visible, kitchen softly behind."
+      },
+      "blockingAndGaze": "PinPin gently offers one paw; PomPom reaches from Mama supported hold and touches it. Both children look at one another, Mama watches affectionately. No infant independent standing.",
+      "state": {
+        "Papa": "grounded after existing dismount004",
+        "PomPom": "continuously supported by Mama at counter",
+        "door": "closed"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "The baby shares the excitement",
+        "ru": "Пом-Пом тоже радуется",
+        "es": "PomPom también se alegra"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-08.png"
+    },
+    {
+      "id": "arrival-09",
+      "title": "Papa waits at the doorstep",
+      "afterScene": 4,
+      "afterSceneId": "elder-r6-family-004",
+      "contextScene": 4,
+      "captions": {
+        "en": "Papa waited by the door. Scooby waited beside him.",
+        "ru": "Папа ждал у двери. Скуби ждал рядом.",
+        "es": "Papá esperaba junto a la puerta. Scooby esperaba a su lado."
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          -2.6,
+          -3.8,
+          0.8
+        ],
+        "targetXYZ": [
+          -0.8,
+          -1.1,
+          1
+        ],
+        "height": 0.8,
+        "approximateFieldOfViewDegrees": 55,
+        "framing": "Exterior low medium, a brief waiting beat only after child delivered news; closed green door behind, stone left, bowl right."
+      },
+      "blockingAndGaze": "Papa already dismounted per existing004; stands by threshold looking at closed door, empty paws relaxed. Scooby beside stone watches door too. No riders, baby or child outside yet.",
+      "state": {
+        "Papa": "grounded after existing dismount004",
+        "PomPom": "continuously supported by Mama at counter",
+        "door": "closed"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "Papa waits at the doorstep",
+        "ru": "Папа ждёт у двери",
+        "es": "Papá espera"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-09-v2.png"
+    },
+    {
+      "id": "arrival-10",
+      "title": "Together toward the door",
+      "afterScene": 4,
+      "afterSceneId": "elder-r6-family-004",
+      "contextScene": 4,
+      "captions": {
+        "en": "Mama carried PomPom to the door. PinPin hurried beside her.",
+        "ru": "Мама понесла Пом-Пома к двери. Пин-Пин поспешил рядом.",
+        "es": "Mamá llevó a PomPom hacia la puerta. PinPin fue a su lado."
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          1.7,
+          3.4,
+          0.8
+        ],
+        "targetXYZ": [
+          0.3,
+          0.65,
+          0.9
+        ],
+        "height": 0.8,
+        "approximateFieldOfViewDegrees": 60,
+        "framing": "Interior medium-wide follows Mama and child from counter toward green front door. Mother carries baby; child leads by half-step."
+      },
+      "blockingAndGaze": "Mama walks to door holding PomPom against one hip with supporting forearm. PinPin half-step ahead glances back to Mama; Mama eyes on door then child. Bread remains on counter.",
+      "state": {
+        "Papa": "grounded after existing dismount004",
+        "PomPom": "continuously supported by Mama at door",
+        "door": "closed"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "Together toward the door",
+        "ru": "Все идут к двери",
+        "es": "Todos hacia la puerta"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-10-v3.png"
+    },
+    {
+      "id": "arrival-11",
+      "title": "Mama opens the door",
+      "afterScene": 4,
+      "afterSceneId": "elder-r6-family-004",
+      "contextScene": 4,
+      "captions": {
+        "en": "Mama opened the green door. “Welcome home!”",
+        "ru": "Мама открыла зелёную дверь. «С возвращением!»",
+        "es": "Mamá abrió la puerta verde. «¡Bienvenido a casa!»"
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          -0.5,
+          -2.6,
+          1
+        ],
+        "targetXYZ": [
+          0,
+          0.1,
+          1
+        ],
+        "height": 1,
+        "approximateFieldOfViewDegrees": 55,
+        "framing": "EXTERIOR over Papa shoulder: his blurred quills frame camera-right foreground; look into the doorway at smiling Mama, supported PomPom and PinPin. Green door projects outward to exterior-left."
+      },
+      "blockingAndGaze": "Papa remains outside, only blurred shoulder visible at camera-right. Mama inside doorway faces Papa, supporting PomPom in her left arm and pushing the door outward with her free right paw. PinPin remains inside beside her. Mama and PinPin look toward Papa. Hinges exterior LEFT, single knob assembly on free edge, leaf swings outward into exterior-left foreground; no character in swing path.",
+      "state": {
+        "Papa": "grounded after existing dismount004",
+        "PomPom": "continuously supported by Mama at door",
+        "door": "opens outward exterior-left; open for reunion"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "Mama opens the door",
+        "ru": "Мама открывает дверь",
+        "es": "Mamá abre la puerta"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-11-v2.png",
+      "initialPlannedCamera": {
+        "frameId": "H",
+        "positionXYZ": [
+          -1.2,
+          2.1,
+          0.85
+        ],
+        "targetXYZ": [
+          0,
+          0,
+          1
+        ],
+        "height": 0.85,
+        "approximateFieldOfViewDegrees": 55,
+        "framing": "Interior oblique: Mama free paw on single brass knob, baby supported other arm, PinPin at her side; narrow outdoor opening reveals Papa."
+      },
+      "initialPlannedBlockingAndGaze": "Door opens OUTWARD. Interior view hinges RIGHT and knob LEFT. Mama pushes leaf outward with free paw while other forearm supports infant. PinPin waits beside hinge-safe jamb, no one behind moving leaf.",
+      "selectedImageReview": "The revised exterior viewpoint replaces the planned interior opening shot. Mama and both children are visible; infant support and outward swing read together."
+    },
+    {
+      "id": "arrival-12",
+      "title": "Across the threshold",
+      "afterScene": 4,
+      "afterSceneId": "elder-r6-family-004",
+      "contextScene": 4,
+      "captions": {
+        "en": "Papa opened his arms. PinPin ran to him.",
+        "ru": "Папа раскрыл объятия. Пин-Пин побежал к нему.",
+        "es": "Papá abrió los brazos. PinPin corrió hacia él."
+      },
+      "camera": {
+        "frameId": "H",
+        "positionXYZ": [
+          0.9,
+          1.7,
+          0.55
+        ],
+        "targetXYZ": [
+          -0.6,
+          -1.5,
+          0.7
+        ],
+        "height": 0.55,
+        "approximateFieldOfViewDegrees": 60,
+        "framing": "Low interior over-child shoulder into garden; silhouette of open leaf at correct edge, Papa face beyond. Match cut to existing005 exterior hug."
+      },
+      "blockingAndGaze": "PinPin takes first step across threshold toward crouching Papa, who opens two empty arms and looks at child. Mama remains doorway holding PomPom. Scooby watches reunion from exterior left, four paws grounded.",
+      "state": {
+        "Papa": "grounded after existing dismount004",
+        "PomPom": "continuously supported by Mama at door",
+        "door": "opens outward exterior-left; open for reunion"
+      },
+      "status": "approved-for-publication",
+      "titles": {
+        "en": "Across the threshold",
+        "ru": "Навстречу Папе",
+        "es": "Hacia los brazos de Papá"
+      },
+      "selectedImage": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-12-v2.png"
+    }
+  ],
+  "proposedTextBridges": [
+    {
+      "sceneId": "elder-r6-family-003",
+      "reason": "Arrival is already recognized in inserted exchange. Keep existing image; remove repeated identity reveal.",
+      "captions": {
+        "en": "Scooby stood still beside the broad garden stone. Papa gave him a gentle pat.",
+        "ru": "Скуби стоял у широкого камня. Папа ласково погладил его.",
+        "es": "Scooby se quedó junto a la piedra ancha. Papá le dio una caricia."
+      }
+    },
+    {
+      "sceneId": "elder-r6-family-005",
+      "reason": "Door opening now shown in arrival11; retain beautiful hug with its own action.",
+      "captions": {
+        "en": "PinPin nestled into Papa’s hug. Mama and PomPom watched, and Scooby’s tail curled up.",
+        "ru": "Пин-Пин крепко обнял Папу. Мама и Пом-Пом смотрели на них, а хвост Скуби загнулся колечком.",
+        "es": "PinPin se acurrucó en el abrazo de Papá. Mamá y PomPom los miraban, y Scooby curvó la cola."
+      }
+    }
+  ],
+  "productionProgress": {
+    "newSelectedImages": 12,
+    "generationCalls": 29,
+    "revisionCalls": 17,
+    "userApproved": true,
+    "published": false,
+    "allVersionsRetained": true,
+    "revisions": {
+      "arrival-02": "Removed impossible second cottage behind Papa and Scooby outside the window.",
+      "arrival-09": "Corrected door hardware.",
+      "arrival-11": "Changed to exterior over-Papa-shoulder viewpoint to show outward door swing.",
+      "arrival-12": "Corrected open door leaf side."
+    },
+    "approval": "User requested: stop edits and publish the corrected chapter."
+  },
+  "originalImageOverrides": {
+    "elder-r6-family-002": "docs/storyboard/production/papa-arrival-expansion-20260922/images/family-002-window-v2.png"
+  }
+}

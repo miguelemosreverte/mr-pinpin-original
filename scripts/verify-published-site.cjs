@@ -34,7 +34,7 @@ const legacy = [
   {id:'timber-tractor',query:'story=timber-tractor',count:34}, {id:'home-sweet-home',query:'story=home-sweet-home',count:21}
 ];
 const elder = ['one-day-in-the-forest','elder-papa-home','elder-family-morning','elder-forest-path','elder-elder-house','elder-beneath-roots']
-  .map((id,i) => ({id,query:'story='+id,count:[166,16,21,23,36,70][i]}));
+  .map((id,i) => ({id,query:'story='+id,count:[178,28,21,23,36,70][i]}));
 const report = {base:base.href,readerBase:readerBase.href,started:new Date().toISOString(),checks:[],pageErrors:[],consoleErrors:[],httpErrors:[],requestFailures:[],expectedNoise:[],screenshots:[]};
 const save = () => fs.writeFileSync(path.join(out,'results.json'), JSON.stringify(report,null,2)+'\n');
 let phase = 'startup';
@@ -150,7 +150,7 @@ async function elderNavigation(page,view) {
   await shot(page,view.name+'-elder-preview');
   await page.locator('#preview-open').click(); await page.waitForURL(href.href);
   await page.locator('#reader[aria-busy="false"]').waitFor();
-  assert.equal(await page.locator('article[data-story="one-day-in-the-forest"] .scene-art img').count(),166);
+  assert.equal(await page.locator('article[data-story="one-day-in-the-forest"] .scene-art img').count(),178);
   // Exercise query preservation through a real language change and map-return click.
   await page.locator('#language-toggle').click(); await page.locator('#reader-languages [data-lang="es"]').click();
   await page.waitForFunction(()=>document.documentElement.lang==='es'&&document.getElementById('reader').getAttribute('aria-busy')==='false');

@@ -1,0 +1,33 @@
+{
+  "id": "arrival-10",
+  "title": "Separate PomPom from Mama",
+  "issue": "Baby reads as a head embedded in Mama's quilled body, without a clear torso or carrying arm.",
+  "before": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-10.png",
+  "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-10-v2.png",
+  "prompt": "Use case: precise-object-edit. Edit this existing 1536x1024 landscape children's book illustration. Keep its warm soft dimensional animated-storybook style, lighting, colors, character identities and faces, camera framing and all unaffected details unchanged. No text or panels. Reference1 is EDIT TARGET, Mama and children walking toward green door. Reference2 is SUPPORT/INFANT ANATOMY REFERENCE ONLY. Change ONLY the contact area of baby PomPom and Mama's carrying arm. PomPom is a SEPARATE tiny complete hedgehog, not a head growing from Mama. Show his distinct small oval cream belly, brown quilled back silhouette, two tiny forepaws, a rounded bottom, and two short bent hindlegs with TWO visible little feet hanging slightly beyond her forearm. Mama cradles him slightly forward of her chest: her LEFT forearm lies UNDER his bottom, left paw supports his far hip/back. The carrying arm must visibly connect to Mama's shoulder with elbow bent. Add a thin natural contact shadow that separates baby's quills from Mama's quills, and a small air gap beneath baby's feet and above her flank. Mama has exactly two arms: free right arm already gestures toward door; one left arm carries infant. Baby remains SAME TINY AGE and same head size/face, looks to brother, not a large child. Do not add blankets or clothes or a third arm. Keep all other positions, Mama/PinPin walking poses and expressions, green door and kitchen unchanged.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-10.png",
+      "role": "Edit target"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-07.png",
+      "role": "Supporting visual reference"
+    }
+  ],
+  "order": 4,
+  "beat": "User-requested physical continuity correction",
+  "camera": "Preserve existing framing except minimum window-view adjustment described in prompt",
+  "staging": "Maintain story, characters and style; correct glazing or supported infant silhouette",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-2196b2c6-7fc1-413c-9ecd-00af5a54bfa5.png",
+  "startedAt": "2026-09-22T09:32:51.888Z",
+  "finishedAt": "2026-09-22T09:33:45.343Z",
+  "seconds": 53.455,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "97acc59ef34ac5ee86f22379d2413b9038f968ffd44fa15c56b41cdd70e8aaf2",
+  "review": "Distinct infant cream belly, own quill silhouette, two forepaws and two dangling hindfeet. Mama has one carrying arm and one free gesturing arm. Visible contact shadow separates their bodies.",
+  "reviewedAt": "2026-09-22T09:43:00.287Z",
+  "selectionStatus": "selected-corrected-draft-pending-user-review"
+}

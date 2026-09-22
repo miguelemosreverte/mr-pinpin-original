@@ -10,14 +10,26 @@
   const localized = value => languages.every(lang => typeof value?.[lang] === 'string' && value[lang].trim());
 
   const elderParts = ['papa-home', 'family-morning', 'forest-path', 'elder-house', 'beneath-roots'];
-  const elderCounts = [15, 20, 22, 35, 69];
+  const elderCounts = [27, 20, 22, 35, 69];
   const elderIds = ['one-day-in-the-forest', ...elderParts.map(part => 'elder-' + part)];
   const elderPrefix = 'images/published/elder-cycle/';
+  // Explicit approved arrival sequence and revisions; unrelated assets stay rejected.
+  const papaFamilyIds = numbers => numbers.map(n => 'elder-r6-family-' + String(n).padStart(3, '0'));
+  const papaArrivalIds = numbers => numbers.map(n => 'arrival-' + String(n).padStart(2, '0'));
+  const papaSequence = ['elder-papa-home-title', ...papaFamilyIds([1, 2]),
+    ...papaArrivalIds([1, 2, 3, 4]), ...papaFamilyIds([3, 4]),
+    ...papaArrivalIds([5, 6, 7, 8, 9, 10, 11, 12]), ...papaFamilyIds([5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15])];
+  const papaArrivalImages = Object.fromEntries([
+    ['elder-r6-family-002', 'family-002-window-v2'],
+    ...['arrival-01-v4', 'arrival-02-v4', 'arrival-03-v5', 'arrival-04',
+      'arrival-05', 'arrival-06', 'arrival-07', 'arrival-08', 'arrival-09-v2',
+      'arrival-10-v3', 'arrival-11-v2', 'arrival-12-v2'].map(name => [name.slice(0, 10), name])
+  ].map(([id, name]) => [id, elderPrefix + 'papa-arrival-20260922-' + name + '.webp']));
   const elderPath = value => typeof value === 'string' &&
     /^images\/published\/elder-cycle\/[a-z0-9-]+\.webp$/.test(value);
 
   function completeElder(story) {
-    if (!elderIds.includes(story?.id) || story.editionVersion !== 1 ||
+    if (!elderIds.includes(story?.id) || story.editionVersion !== (['one-day-in-the-forest', 'elder-papa-home'].includes(story.id) ? 2 : 1) ||
         story.sourceChapter !== 'chapter-02' || !localized(story.title) || !localized(story.cover)) return false;
     const parts = story.id === elderIds[0] ? elderParts : [story.id.slice(6)];
     const expected = parts.reduce((sum, part) => sum + elderCounts[elderParts.indexOf(part)] + 1, 0);
@@ -38,6 +50,7 @@
             !languages.every(lang => Array.isArray(scene.paragraphs?.[lang]) &&
               scene.paragraphs[lang].every(p => typeof p === 'string' && p.trim())) ||
             !spread || !Array.isArray(spread.scenes) || spread.scenes.length !== 1 || spread.scenes[0] !== index) return false;
+        if (part === 'papa-home' && scene.id !== papaSequence[local]) return false;
         seen.add(scene.id);
         if (local === 0) {
           if (scene.id !== 'elder-' + part + '-title' || scene.role !== 'title' ||
@@ -45,8 +58,10 @@
               !localized(scene.images) || !languages.every(lang =>
                 scene.images[lang] === elderPrefix + part + '-title-' + lang + '.webp' && scene.paragraphs[lang].length === 0) ||
               scene.image !== scene.images.en) return false;
-        } else if (!/^elder-r6-(family|forest|mentor)-[0-9]{3}$/.test(scene.id) ||
-            scene.image !== elderPrefix + scene.id + '.webp' || scene.role !== undefined || scene.images !== undefined ||
+        } else if (!(part === 'papa-home' && papaArrivalImages[scene.id]
+            ? scene.image === papaArrivalImages[scene.id]
+            : /^elder-r6-(family|forest|mentor)-[0-9]{3}$/.test(scene.id) && scene.image === elderPrefix + scene.id + '.webp') ||
+            scene.role !== undefined || scene.images !== undefined ||
             scene.width !== 1536 || scene.height !== 1024 || spread.style !== 'elder' || spread.paper !== 'landscape' ||
             !languages.every(lang => scene.paragraphs[lang].length > 0)) return false;
       }

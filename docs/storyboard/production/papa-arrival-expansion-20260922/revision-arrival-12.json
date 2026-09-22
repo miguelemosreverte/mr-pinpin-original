@@ -1,0 +1,21 @@
+{
+  "reason": "Door swing/hinge consistency repair",
+  "shots": [
+    {
+      "id": "arrival-12",
+      "prompt": "Precise edit of reference1, landscape children's book. Keep EVERY character (Mama holding infant left foreground, PinPin running center, Papa with open arms outside, Scooby behind) exactly as drawn; preserve their faces, anatomy, poses, gaze, sizes, exact scene composition, garden, floor, lighting and expressive soft storybook style. Change ONLY the green door placement. It is currently incorrectly on LEFT side of this interior view. Remove the entire left green leaf and brass knob, replacing the area behind it with the continuous left WOODEN DOOR JAMB and a small natural continuation of the outdoor garden visible through the doorway. Then show only a thin edge of the fully open GREEN DOOR OUTSIDE at the RIGHT jamb of the doorway, far behind the threshold; the door opens out into garden on the right when seen from INSIDE. Interior left is unobstructed doorway frame, NOT a second door. Do not mirror the whole scene or move characters. No green door leaf inside room. No new characters or lettering.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-12.png",
+          "role": "Edit target, preserve all characters; correct only misplaced green leaf"
+        }
+      ],
+      "order": 12,
+      "title": "arrival-12",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-12-v2.png"
+    }
+  ]
+}

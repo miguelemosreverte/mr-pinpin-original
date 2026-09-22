@@ -1,0 +1,23 @@
+{
+  "reason": "Center was rendered as solid wood rather than transparent glass within wood ring",
+  "shots": [
+    {
+      "id": "arrival-03",
+      "before": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-03-v2.png",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-03-v4.png",
+      "title": "PinPin's view: same eight-spoke frame",
+      "issue": "Replace incompatible reverse-view frame, with gentle glass only.",
+      "prompt": "Make exactly ONE small material correction to this existing picture: the small circular CENTER of the eight-spoke wooden window must be a TRANSPARENT ROUND GLASS PANE surrounded by a thin WOODEN RING. It is currently a solid brown wooden disk. Remove ONLY the wood inside that little center circle, revealing the true continuation of Scooby's brown fur/cream chest and garden BEHIND that circle through transparent glass with minimal sheen. Keep the surrounding small wooden ring and ALL EIGHT spokes exactly fixed, straight and intact. No large new opening, extra circles, reflection effects or bright highlights. Everything outside the little center disk must remain the same pixel composition: all characters, faces, poses, eight-spoke pattern, camera, pottery, morning light and colors. No letters.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-03-v3.png",
+          "role": "Edit target; small center disk material only"
+        }
+      ],
+      "order": 4,
+      "beat": "Consistent eight-spoke window across closeups and room",
+      "camera": "Preserve existing viewpoint",
+      "staging": "Fixed object topology; gentle original glass; readable faces"
+    }
+  ]
+}

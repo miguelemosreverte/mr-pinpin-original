@@ -1,0 +1,29 @@
+{
+  "id": "arrival-02",
+  "title": "Consistent glass from inside",
+  "issue": "Interior waving view needs clearer glass surface cues.",
+  "before": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v2.png",
+  "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v3.png",
+  "prompt": "Use case: precise-object-edit. Edit this existing 1536x1024 landscape children's book illustration. Keep its warm soft dimensional animated-storybook style, lighting, colors, character identities and faces, camera framing and all unaffected details unchanged. No text or panels. Change ONLY transparent window material. This round radial wooden wheel window is CLOSED AND GLAZED in every segment and central round pane. Add coherent subtle reflections of warm kitchen light plus pale sky highlights along the pane surfaces and glass-edge glints in front of outdoor Papa/Scooby; a few faint reflected shapes of interior flowers near lower glass. Keep reflections natural and transparent, not opaque mist. PinPin stays INSIDE with his waving paw in front of inner glass face; Papa and Scooby outside behind the pane. Keep radial wood pattern and all characters/poses/eyes/room untouched. No missing glass, open hole, new cottage outdoors, added character or altered design.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v2.png",
+      "role": "Edit target"
+    }
+  ],
+  "order": 2,
+  "beat": "User-requested physical continuity correction",
+  "camera": "Preserve existing framing except minimum window-view adjustment described in prompt",
+  "staging": "Maintain story, characters and style; correct glazing or supported infant silhouette",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-1969b41e-c339-4ca0-bf0d-28a8380346b0.png",
+  "startedAt": "2026-09-22T09:38:02.371Z",
+  "finishedAt": "2026-09-22T09:38:38.088Z",
+  "seconds": 35.717,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "4ade602574024c993c84deaa8c1ff5620b754f2b73280d9756fb8cf185bad8aa",
+  "review": "Interior reflection, surface sheen and fitted pane edges make closed glazing legible while preserving waving child and outside Papa/Scooby.",
+  "reviewedAt": "2026-09-22T09:43:00.287Z",
+  "selectionStatus": "selected-corrected-draft-pending-user-review"
+}

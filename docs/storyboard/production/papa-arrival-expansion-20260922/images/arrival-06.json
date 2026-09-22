@@ -1,0 +1,31 @@
+{
+  "id": "arrival-06",
+  "prompt": "Use case: illustration-story. Create ONE finished landscape 1536x1024 illustration for the next pages of this children's book, using supplied approved illustrations as identity, style and architectural references. New physically placed camera, not a duplicate composition. Match the luminous, warm, dimensional animated-feature storybook rendering: soft sculpted fur clusters and quills, appealing rounded faces, expressive warm amber irises with whites and catchlights, cream facial fill light. Keep charming stylization, never photoreal pet fur, human headshots, black button eyes, dark contour lines or shiny PBR materials. Golden misty morning. No text, typography, watermarks, panels, collage, clothing or new characters. Each hedgehog has two forepaws and two hindpaws. PinPin is the small mobile child; PomPom is a much smaller infant always supported by Mama. Papa is a broad mature cream-faced hedgehog, Mama warmer russet. Identity and size ratios follow the family references. Geography: from INSIDE facing the front wall, green arched door at center, bread counter LEFT, PinPin's round radial-muntin window RIGHT, stove farther right. From OUTSIDE PinPin's window is LEFT of door. Door has one brass knob on interior LEFT and hinges on interior RIGHT; opens OUTWARD, to exterior LEFT. Every gaze and body action must visibly connect to its partner. Medium conversational OVER-PINPIN-SHOULDER shot at child head-height looking to Mama at LEFT bread counter. His brown child quills and raised paw occupy foreground lower right; he has just stopped, one paw gestures BACK to the window off-camera, open mouth joyfully announces Papa is home. Mama turns her whole upper body from breadboard toward PinPin, looking DOWN INTO HIS EYES with delighted surprise. Her other forearm and paw fully support tiny infant PomPom against her hip. Infant follows PinPin's pointing paw. Three hedgehogs only; no Papa in room. Clear mutual attention, not everyone looking in unrelated directions. Breadboard and loaf remain behind Mama. Use cream soft facial bounce and readable russet quills; no black eye sockets. Reference1 kitchen and2 family identities.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-008.webp",
+      "role": "Approved scene reference; roles specified in prompt"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-005.webp",
+      "role": "Approved scene reference; roles specified in prompt"
+    }
+  ],
+  "order": 6,
+  "title": "arrival-06",
+  "beat": "Papa arrival expansion; see story-plan.json",
+  "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+  "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+  "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-06.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-837f4e35-6b93-4c66-849f-0c9d25d0440c.png",
+  "startedAt": "2026-09-22T08:43:34.776Z",
+  "finishedAt": "2026-09-22T08:44:24.923Z",
+  "seconds": 50.147,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "35d8c14ac09122b8a202120d3ebfea53013fefa59afd6e950bd93950c82d25fc",
+  "review": "Selected draft: PinPin gestures back toward window while his face meets Mama's downward gaze; infant visibly supported. Three household hedgehogs, no duplicated child.",
+  "reviewedAt": "2026-09-22T08:58:48.801Z",
+  "selectionStatus": "selected-draft-pending-user-approval"
+}

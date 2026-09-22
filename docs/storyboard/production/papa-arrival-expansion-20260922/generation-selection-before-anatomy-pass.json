@@ -1,0 +1,251 @@
+{
+  "id": "papa-arrival-expansion-20260922",
+  "status": "draft-pending-user-approval",
+  "tool": "built-in imagegen",
+  "shots": [
+    {
+      "id": "arrival-01",
+      "prompt": "Use case: illustration-story. Create one finished landscape 1536x1024 children's book illustration, a NEW camera view continuing the supplied approved story images. Input1 is the exact round window and PinPin character; input2 supplies Papa, Scooby and cottage proportions; input3 supplies the final approved soft animated-film character rendering. Camera: Papa's near-point-of-view from his seated height on Scooby on the garden path, a 65mm intimate shot toward the cottage's LEFT round window (as seen from outside). A small soft out-of-focus edge of Papa's cream-tipped brown quills at bottom left anchors his viewpoint; the frame is overwhelmingly the window. PinPin, a tiny young cream-faced brown hedgehog with warm amber irises and catchlights, has recognized Papa through the glass, one paw on the inner sill, the other lifting toward Papa. His gaze meets Papa's viewpoint. Preserve the round wooden wheel window with radial muntins, central little circle, stone wall, ivy and daisies. A narrow sliver of the closed green front door is at far RIGHT. Morning golden mist outside, warm home behind him. This is affectionate mutual recognition, not a posed portrait. Same luminous dimensional storybook/animated film style as the references: sculpted soft fur clusters, rounded readable faces, warm cream facial fill light, expressive iris eyes, restrained material detail. No photoreal animal headshot, black button eyes, heavy dark outlines or harsh PBR materials. No new characters, clothes, humans, lettering, borders, panels or captions. Papa and Scooby remain outside; PinPin remains inside; glass separates them. Natural two forepaws/two hindpaws anatomy; paws do not penetrate glass. Use references for identity and continuity, not to copy the same composition.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-002.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-003.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-005.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        }
+      ],
+      "order": 1,
+      "title": "arrival-01",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-01.png"
+    },
+    {
+      "id": "arrival-02",
+      "prompt": "Edit target: reference1 is the new inside-window PinPin waving illustration. Change ONLY the distant outdoor BACKGROUND seen through window glass: remove the impossible second cottage, stone wall and green front door behind Papa and Scooby, replacing those background parts with sunlit misty woodland foliage and the garden path. Papa and Scooby are outdoors facing this house, so there must be NO building anywhere beyond them. Keep PinPin, his two paws and feet, face, pose, the foreground round window and ALL wheel muntins/central circle, indoor fireplace/stool/vase, Papa and Scooby, composition, lighting, dimensions and soft animated storybook style exactly unchanged. No new characters, no text. This is a precise geography repair, not a restyle.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02.png",
+          "role": "Edit target; preserve all except impossible building beyond outside characters"
+        }
+      ],
+      "order": 2,
+      "title": "arrival-02",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v2.png"
+    },
+    {
+      "id": "arrival-03",
+      "prompt": "Use case: illustration-story. Create ONE finished landscape 1536x1024 illustration for the next pages of this children's book, using supplied approved illustrations as identity, style and architectural references. New physically placed camera, not a duplicate composition. Match the luminous, warm, dimensional animated-feature storybook rendering: soft sculpted fur clusters and quills, appealing rounded faces, expressive warm amber irises with whites and catchlights, cream facial fill light. Keep charming stylization, never photoreal pet fur, human headshots, black button eyes, dark contour lines or shiny PBR materials. Golden misty morning. No text, typography, watermarks, panels, collage, clothing or new characters. Each hedgehog has two forepaws and two hindpaws. PinPin is the small mobile child; PomPom is a much smaller infant always supported by Mama. Papa is a broad mature cream-faced hedgehog, Mama warmer russet. Identity and size ratios follow the family references. Geography: from INSIDE facing the front wall, green arched door at center, bread counter LEFT, PinPin's round radial-muntin window RIGHT, stove farther right. From OUTSIDE PinPin's window is LEFT of door. Door has one brass knob on interior LEFT and hinges on interior RIGHT; opens OUTWARD, to exterior LEFT. Every gaze and body action must visibly connect to its partner. Exact reverse: camera is PinPin's eye looking from INSIDE through his round window toward garden stone. Cropped wooden window rim and radial mullion at frame edges establish child POV without obstructing faces. Outside Papa is still securely riding Scooby near garden stone. Papa smiles directly toward PinPin's eye position and WAVES one open forepaw. Other forepaw rests on dog back for balance. Both adult feet straddle dog. Scooby is still, grounded, his short-haired brown floppy-eared face attentively turns toward window with warm brown iris eyes; curled tail. Entire cottage is BEHIND camera, so background is misty garden and forest, never another cottage facade behind Papa. Frame mainly Papa's face/paw and Scooby upper body as seen slightly down through window. References1 Papa/dog identity;2 exact window;3 softer approved rendering. No PinPin visible except optionally tiny blurred paw at frame bottom.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-003.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-002.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-005.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        }
+      ],
+      "order": 3,
+      "title": "arrival-03",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-03.png"
+    },
+    {
+      "id": "arrival-04",
+      "prompt": "Use case: illustration-story. Create ONE finished landscape 1536x1024 illustration for the next pages of this children's book, using supplied approved illustrations as identity, style and architectural references. New physically placed camera, not a duplicate composition. Match the luminous, warm, dimensional animated-feature storybook rendering: soft sculpted fur clusters and quills, appealing rounded faces, expressive warm amber irises with whites and catchlights, cream facial fill light. Keep charming stylization, never photoreal pet fur, human headshots, black button eyes, dark contour lines or shiny PBR materials. Golden misty morning. No text, typography, watermarks, panels, collage, clothing or new characters. Each hedgehog has two forepaws and two hindpaws. PinPin is the small mobile child; PomPom is a much smaller infant always supported by Mama. Papa is a broad mature cream-faced hedgehog, Mama warmer russet. Identity and size ratios follow the family references. Geography: from INSIDE facing the front wall, green arched door at center, bread counter LEFT, PinPin's round radial-muntin window RIGHT, stove farther right. From OUTSIDE PinPin's window is LEFT of door. Door has one brass knob on interior LEFT and hinges on interior RIGHT; opens OUTWARD, to exterior LEFT. Every gaze and body action must visibly connect to its partner. Inside kitchen close LOW tracking shot of PinPin pivoting AWAY from his window to tell Mama. He has released sill; both hindfeet on floor, his body in energetic three-quarter turn, one forepaw pointing toward the room. His eyes target Mama across room, not outdoors. Window is behind him at right, green door LEFT of that window when viewed from inside. Mama with tiny infant PomPom secure in ONE arm is visible small in deep background toward bread counter at interior LEFT, facing bread and unaware of Papa. Counter and bread stay left, table/stove on right. Use short depth of field, strong diagonal from departing child to mother; no repetitive centered character poses. Only PinPin, Mama, infant inside. References1 kitchen geography,2 child's window identity,3 family proportions.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-008.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-002.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-005.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        }
+      ],
+      "order": 4,
+      "title": "arrival-04",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-04.png"
+    },
+    {
+      "id": "arrival-05",
+      "prompt": "Use case: illustration-story. Create ONE finished landscape 1536x1024 illustration for the next pages of this children's book, using supplied approved illustrations as identity, style and architectural references. New physically placed camera, not a duplicate composition. Match the luminous, warm, dimensional animated-feature storybook rendering: soft sculpted fur clusters and quills, appealing rounded faces, expressive warm amber irises with whites and catchlights, cream facial fill light. Keep charming stylization, never photoreal pet fur, human headshots, black button eyes, dark contour lines or shiny PBR materials. Golden misty morning. No text, typography, watermarks, panels, collage, clothing or new characters. Each hedgehog has two forepaws and two hindpaws. PinPin is the small mobile child; PomPom is a much smaller infant always supported by Mama. Papa is a broad mature cream-faced hedgehog, Mama warmer russet. Identity and size ratios follow the family references. Geography: from INSIDE facing the front wall, green arched door at center, bread counter LEFT, PinPin's round radial-muntin window RIGHT, stove farther right. From OUTSIDE PinPin's window is LEFT of door. Door has one brass knob on interior LEFT and hinges on interior RIGHT; opens OUTWARD, to exterior LEFT. Every gaze and body action must visibly connect to its partner. Wide low SIDE tracking view just above kitchen floor, camera deep inside facing front wall. PinPin hurries FROM RIGHT window TOWARD LEFT bread counter where Mama stands with infant PomPom securely supported against her hip by one forearm. Mid-stride clear two feet, one forward one behind, his forepaws balance his rush. Mama's free paw rests near the breadboard, her head beginning to turn at his footsteps. Baby does not stand or walk. Green door CLOSED center background, two round wheel windows, woven rug midfloor, counter left, table/stove right. Child runs around rug toward Mama. Warm sun stretches across planks. Show meaningful distance crossed, foreground chair leg may frame rightedge. Papa and Scooby absent from kitchen. Reference1 room;2 Mama/infant/PInPin proportions;3 PinPin facial softness.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-008.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-005.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-002.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        }
+      ],
+      "order": 5,
+      "title": "arrival-05",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-05.png"
+    },
+    {
+      "id": "arrival-06",
+      "prompt": "Use case: illustration-story. Create ONE finished landscape 1536x1024 illustration for the next pages of this children's book, using supplied approved illustrations as identity, style and architectural references. New physically placed camera, not a duplicate composition. Match the luminous, warm, dimensional animated-feature storybook rendering: soft sculpted fur clusters and quills, appealing rounded faces, expressive warm amber irises with whites and catchlights, cream facial fill light. Keep charming stylization, never photoreal pet fur, human headshots, black button eyes, dark contour lines or shiny PBR materials. Golden misty morning. No text, typography, watermarks, panels, collage, clothing or new characters. Each hedgehog has two forepaws and two hindpaws. PinPin is the small mobile child; PomPom is a much smaller infant always supported by Mama. Papa is a broad mature cream-faced hedgehog, Mama warmer russet. Identity and size ratios follow the family references. Geography: from INSIDE facing the front wall, green arched door at center, bread counter LEFT, PinPin's round radial-muntin window RIGHT, stove farther right. From OUTSIDE PinPin's window is LEFT of door. Door has one brass knob on interior LEFT and hinges on interior RIGHT; opens OUTWARD, to exterior LEFT. Every gaze and body action must visibly connect to its partner. Medium conversational OVER-PINPIN-SHOULDER shot at child head-height looking to Mama at LEFT bread counter. His brown child quills and raised paw occupy foreground lower right; he has just stopped, one paw gestures BACK to the window off-camera, open mouth joyfully announces Papa is home. Mama turns her whole upper body from breadboard toward PinPin, looking DOWN INTO HIS EYES with delighted surprise. Her other forearm and paw fully support tiny infant PomPom against her hip. Infant follows PinPin's pointing paw. Three hedgehogs only; no Papa in room. Clear mutual attention, not everyone looking in unrelated directions. Breadboard and loaf remain behind Mama. Use cream soft facial bounce and readable russet quills; no black eye sockets. Reference1 kitchen and2 family identities.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-008.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-005.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        }
+      ],
+      "order": 6,
+      "title": "arrival-06",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-06.png"
+    },
+    {
+      "id": "arrival-07",
+      "prompt": "Use case: illustration-story. Create ONE finished landscape 1536x1024 illustration for the next pages of this children's book, using supplied approved illustrations as identity, style and architectural references. New physically placed camera, not a duplicate composition. Match the luminous, warm, dimensional animated-feature storybook rendering: soft sculpted fur clusters and quills, appealing rounded faces, expressive warm amber irises with whites and catchlights, cream facial fill light. Keep charming stylization, never photoreal pet fur, human headshots, black button eyes, dark contour lines or shiny PBR materials. Golden misty morning. No text, typography, watermarks, panels, collage, clothing or new characters. Each hedgehog has two forepaws and two hindpaws. PinPin is the small mobile child; PomPom is a much smaller infant always supported by Mama. Papa is a broad mature cream-faced hedgehog, Mama warmer russet. Identity and size ratios follow the family references. Geography: from INSIDE facing the front wall, green arched door at center, bread counter LEFT, PinPin's round radial-muntin window RIGHT, stove farther right. From OUTSIDE PinPin's window is LEFT of door. Door has one brass knob on interior LEFT and hinges on interior RIGHT; opens OUTWARD, to exterior LEFT. Every gaze and body action must visibly connect to its partner. Intimate REACTION close-up of Mama at child eye level after hearing Papa is home. Frame Mama and supported infant against softly blurred kitchen bread counter. Small out-of-focus PinPin ear/quill edge at bottom foreground anchors who she answers. Mama's face brightens into warm broad smile, eyebrows gently raised; she leans toward PinPin, eyes LOWER toward him, her free paw opens invitingly toward the door. Infant remains fully cradled by the other forearm across his bottom and back; tiny PomPom looks toward sibling. No independent toddler, no additional arms, no bread in hand, no photo-real fur. Warm cinematic facial fill light and expressive irises. This is her response 'Let's welcome him', no text rendered.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-005.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-008.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        }
+      ],
+      "order": 7,
+      "title": "arrival-07",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-07.png"
+    },
+    {
+      "id": "arrival-08",
+      "prompt": "Use case: illustration-story. Create ONE finished landscape 1536x1024 illustration for the next pages of this children's book, using supplied approved illustrations as identity, style and architectural references. New physically placed camera, not a duplicate composition. Match the luminous, warm, dimensional animated-feature storybook rendering: soft sculpted fur clusters and quills, appealing rounded faces, expressive warm amber irises with whites and catchlights, cream facial fill light. Keep charming stylization, never photoreal pet fur, human headshots, black button eyes, dark contour lines or shiny PBR materials. Golden misty morning. No text, typography, watermarks, panels, collage, clothing or new characters. Each hedgehog has two forepaws and two hindpaws. PinPin is the small mobile child; PomPom is a much smaller infant always supported by Mama. Papa is a broad mature cream-faced hedgehog, Mama warmer russet. Identity and size ratios follow the family references. Geography: from INSIDE facing the front wall, green arched door at center, bread counter LEFT, PinPin's round radial-muntin window RIGHT, stove farther right. From OUTSIDE PinPin's window is LEFT of door. Door has one brass knob on interior LEFT and hinges on interior RIGHT; opens OUTWARD, to exterior LEFT. Every gaze and body action must visibly connect to its partner. Close interaction of the TWO CHILDREN in kitchen beside Mama: PinPin standing below her, offers one small forepaw UP to baby PomPom; infant reaches from Mama's secure arms and gently catches PinPin's paw. Show their touching paws between two delighted faces, their eyes meeting EACH OTHER, not viewer. Mama crouches slightly to bring baby to sibling height, her forearm visibly supports baby's bottom and her hand his back; Mama's warmly smiling face can appear at upper edge. PinPin visibly larger than infant, infant head tiny relative Mama. Only Mama, PinPin, PomPom, no extra hedgehogs. Bread counter softly blurred, home morning light. Compose diagonal eye-line and actual paw touch, distinct from previous maternal portrait.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-005.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-008.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        }
+      ],
+      "order": 8,
+      "title": "arrival-08",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-08.png"
+    },
+    {
+      "id": "arrival-09",
+      "prompt": "Precise continuity edit of this storybook image. Keep Papa and Scooby, their expressions, proportions, gaze, positions, the entire garden, windows, lantern, architecture, camera and lighting completely unchanged. Edit ONLY the hardware on the CLOSED GREEN DOOR. This is the EXTERIOR of the door: move its black iron hinges from the viewer RIGHT edge to the viewer LEFT edge, and move the single brass doorknob from viewer LEFT side to viewer RIGHT side. The final door has iron hinges on LEFT, one brass knob on RIGHT, matching its established exterior design. Restore plain green vertical timber where old hardware was. Do not mirror the whole picture. No other alteration. No lettering.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-09.png",
+          "role": "Edit target; door hardware only"
+        }
+      ],
+      "order": 9,
+      "title": "arrival-09",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-09-v2.png"
+    },
+    {
+      "id": "arrival-10",
+      "prompt": "Use case: illustration-story. Create ONE finished landscape 1536x1024 illustration for the next pages of this children's book, using supplied approved illustrations as identity, style and architectural references. New physically placed camera, not a duplicate composition. Match the luminous, warm, dimensional animated-feature storybook rendering: soft sculpted fur clusters and quills, appealing rounded faces, expressive warm amber irises with whites and catchlights, cream facial fill light. Keep charming stylization, never photoreal pet fur, human headshots, black button eyes, dark contour lines or shiny PBR materials. Golden misty morning. No text, typography, watermarks, panels, collage, clothing or new characters. Each hedgehog has two forepaws and two hindpaws. PinPin is the small mobile child; PomPom is a much smaller infant always supported by Mama. Papa is a broad mature cream-faced hedgehog, Mama warmer russet. Identity and size ratios follow the family references. Geography: from INSIDE facing the front wall, green arched door at center, bread counter LEFT, PinPin's round radial-muntin window RIGHT, stove farther right. From OUTSIDE PinPin's window is LEFT of door. Door has one brass knob on interior LEFT and hinges on interior RIGHT; opens OUTWARD, to exterior LEFT. Every gaze and body action must visibly connect to its partner. Interior medium-wide FOLLOWING camera behind and slightly to right of Mama and PinPin as they move from LEFT bread counter toward CENTER CLOSED GREEN DOOR. Mama carries infant PomPom against left side in a securely supporting arm; free right paw reaches toward door. PinPin leads by half a step, turning happy face back toward Mama to hurry together, reciprocal glance. Three family hedgehogs inside only. Mother roughly twice child's height; PomPom far smaller and held. Two round wheel windows flank door; departing breadboard at frame LEFT and stove/table RIGHT. Wood planks and woven rug underfoot. Door knob is LEFT when looking at inside door, iron hinges RIGHT. No other door and no mirrored layout. A purposeful walking composition with floor-level perspective and warm broad daylight.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-008.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-005.webp",
+          "role": "Approved scene reference; roles specified in prompt"
+        }
+      ],
+      "order": 10,
+      "title": "arrival-10",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-10.png"
+    },
+    {
+      "id": "arrival-11",
+      "prompt": "Create a NEW camera view of Mama opening the cottage door, a finished landscape1536x1024 animated-feature storybook illustration. Reference1 is the currently open-door family scene for EXACT identity, morning light and rendering. Reference2 is the APPROVED exterior architecture and hinged door. View this moment FROM OUTSIDE over the soft edge of Papa's quilled shoulder at camera-right foreground, looking INTO the doorway. Mama stands INSIDE facing Papa, joyfully smiling, infant PomPom securely held in her LEFT arm, child PinPin beside her but still inside. Mama's free RIGHT paw PUSHES the green door OUT toward camera and to the VIEWER LEFT. The door is about60degrees open, its hinge attached to LEFT exterior jamb, its SINGLE brass knob on FREE EDGE at viewer right edge of leaf. The open green leaf projects into outdoor foreground on LEFT; nobody stands in its swing path. Golden light on Mama, warm kitchen glimpsed behind her, round windows stone wall and lantern match reference2. Papa remains outside frame except blurred shoulder, Scooby can be omitted. Show Mama and Papa making actual eye contact. Infant supported all along forearm. Leaf MUST be OUTSIDE cottage, not in kitchen. Preserve soft rounded characters cream facial bounce and amber iris eyes, no humans, clothes or text, no black button eyes. This camera angle explains the opening with correct geometry instead of copying previous interior view.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-11.png",
+          "role": "Character/light style only; old door opening is erroneous"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-005.webp",
+          "role": "Authoritative exterior hinge-left outward-door architecture"
+        }
+      ],
+      "order": 11,
+      "title": "arrival-11",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-11-v2.png"
+    },
+    {
+      "id": "arrival-12",
+      "prompt": "Precise edit of reference1, landscape children's book. Keep EVERY character (Mama holding infant left foreground, PinPin running center, Papa with open arms outside, Scooby behind) exactly as drawn; preserve their faces, anatomy, poses, gaze, sizes, exact scene composition, garden, floor, lighting and expressive soft storybook style. Change ONLY the green door placement. It is currently incorrectly on LEFT side of this interior view. Remove the entire left green leaf and brass knob, replacing the area behind it with the continuous left WOODEN DOOR JAMB and a small natural continuation of the outdoor garden visible through the doorway. Then show only a thin edge of the fully open GREEN DOOR OUTSIDE at the RIGHT jamb of the doorway, far behind the threshold; the door opens out into garden on the right when seen from INSIDE. Interior left is unobstructed doorway frame, NOT a second door. Do not mirror the whole scene or move characters. No green door leaf inside room. No new characters or lettering.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-12.png",
+          "role": "Edit target, preserve all characters; correct only misplaced green leaf"
+        }
+      ],
+      "order": 12,
+      "title": "arrival-12",
+      "beat": "Papa arrival expansion; see story-plan.json",
+      "camera": "Exact camera and blocking are in prompt and story-plan.json.",
+      "staging": "Preserve character identity, child/infant scale, door/window topology and connected eyelines.",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-12-v2.png"
+    }
+  ]
+}

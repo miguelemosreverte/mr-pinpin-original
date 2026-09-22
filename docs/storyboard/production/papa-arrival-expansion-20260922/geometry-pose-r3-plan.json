@@ -1,0 +1,68 @@
+{
+  "id": "geometry-pose-r3",
+  "status": "in-progress",
+  "shots": [
+    {
+      "id": "arrival-02",
+      "before": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v3.png",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v4.png",
+      "title": "Interior window: same six spokes, subtle glass",
+      "issue": "The interior frame must mirror the exterior six-spoke frame; previous added reflections were excessive.",
+      "prompt": "Precise continuity edit. Reference1 is the TARGET interior PinPin waving scene, with the desired restrained glass rendering. Reference2 is the AUTHORITATIVE EXTERIOR wooden window. Preserve the scene, faces, poses, setting, warm lighting and 1536x1024 format of target. Correct ONLY the wooden radial muntin arrangement so this is the REVERSE SIDE OF EXACTLY THE SAME WINDOW. Six spokes only. Seen from INSIDE they are at roughly12,1:30,4:30,7:30,9,and10:30 o'clock around the small central wooden ring. There is a straight LEFT horizontal spoke at9; NO right horizontal spoke at3, and NO vertical bottom spoke at6. Thus a broad uninterrupted glass sector is on the RIGHT side, and a wide uninterrupted sector along bottom. Same thick circular outer frame and small center ring. The exterior reference has broad left pane; inside must have broad right pane. Retain all glass but only extremely subtle existing sheen: no bright white pane outlines, prominent reflections of lamps, haze, extra highlights or overlaid tree imagery. Preserve every character (PinPin inside, Papa/Scooby outside), warm expressions, two-paw gesture, scale, kitchen, and garden. Change no other objects. No text.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v2.png",
+          "role": "Image to reconstruct"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-01.png",
+          "role": "Exterior topology reference"
+        }
+      ],
+      "order": 1,
+      "beat": "Second user-directed physical-continuity revision",
+      "camera": "Precise anatomical and window topology direction in prompt",
+      "staging": "Preserve tone and story; repair geometry and true occlusion"
+    },
+    {
+      "id": "arrival-03",
+      "before": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-03-v2.png",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-03-v3.png",
+      "title": "Reverse view: consistent six-spoke window",
+      "issue": "The reverse view used a third incompatible wooden pattern.",
+      "prompt": "Precise storybook illustration edit. Reference1 is target Papa waving through the window from PinPin's viewpoint; reference2 is authoritative OUTSIDE view of this same six-spoke window. Replace only foreground window assembly with its correct mirrored INSIDE pattern: small circular wooden center ring with SIX wooden spokes at12,1:30,4:30,7:30,9,and10:30 o'clock. One straight top spoke, one LEFT horizontal spoke, four diagonal spokes. NO horizontal right spoke and NO vertical bottom spoke. Broad uninterrupted pane on RIGHT, another broad pane at bottom. The camera is slightly to left and below center, so circle may project naturally to perspective ellipse, but preserve exact six connections/topology. Place small center ring just below face level; do not obscure Papa or Scooby's eyes. Both are outside beyond closed clear panes; glass is merely subtly visible by a faint edge sheen, never conspicuous reflections, frosting or haze. Preserve Papa's existing wave, face and seated position on Scooby, dog's face, garden stone and forest, composition and warm soft animated-film illustration style. No additional actors, new building, lettering, harsh white pane outlines or photorealism.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-03.png",
+          "role": "Image to reconstruct"
+        },
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-01.png",
+          "role": "Exterior topology reference"
+        }
+      ],
+      "order": 2,
+      "beat": "Second user-directed physical-continuity revision",
+      "camera": "Precise anatomical and window topology direction in prompt",
+      "staging": "Preserve tone and story; repair geometry and true occlusion"
+    },
+    {
+      "id": "arrival-10",
+      "before": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-10-v2.png",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-10-v3.png",
+      "title": "Rebuild Mama's walking pose",
+      "issue": "The prior repair showed incompatible shoulder/hip rotation and two apparently near-side arms.",
+      "prompt": "Create a corrected version of this children's book frame. Reference1 is the ORIGINAL target composition: PinPin and Mama walking toward their green kitchen door. Preserve kitchen and PinPin exactly. Fully REBUILD MAMA'S ENTIRE BODY POSE, including hips, shoulders, quill mantle, arms, steps and baby occlusion. Camera is BEHIND Mama and to her LEFT. Mama's PELVIS and CHEST both face the door ahead; her back/quilled mantle faces camera, shoulder blades align above hips naturally. ONLY her HEAD turns left to smile at PinPin beside her. Her near LEFT shoulder leads into ONE left upper arm then elbow and forepaw extended slightly FORWARD toward the door. It is the only arm clearly visible on the near side. Her RIGHT arm cradles infant PomPom against the FAR/front-right side of her chest/hip, and is mostly OCCLUDED by Mama's torso. The BABY'S BODY AND FACE MUST BE HIDDEN from this behind-left angle; at most a tiny brown infant crown or one ear peeks beyond FAR RIGHT shoulder contour. It is better to show NO baby than invent an impossible front-facing baby attached to the near quilled side. No near-side cradle arm, no second left arm, no baby torso cutout in her back. Mother walks on two hindfeet, one planted and one lifting; rear-view hip orientation agrees with footsteps and front-facing door. Short quills cover her natural rear mantle, not human hair or a draped coat. Mama remains same size, softness and warm cream/russet identity; camera/framing and PinPin's action unchanged. Soft dimensional animated children's book style, same lighting and1536x1024. No text, new objects or extra limbs.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-10.png",
+          "role": "Image to reconstruct"
+        }
+      ],
+      "order": 3,
+      "beat": "Second user-directed physical-continuity revision",
+      "camera": "Precise anatomical and window topology direction in prompt",
+      "staging": "Preserve tone and story; repair geometry and true occlusion"
+    }
+  ]
+}

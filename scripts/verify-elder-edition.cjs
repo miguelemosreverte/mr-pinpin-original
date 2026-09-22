@@ -27,7 +27,7 @@ const clone = value => JSON.parse(JSON.stringify(value));
     const story = read(`stories/${id}.json`);
     assert(api.complete(story), `${id} invalid`);
     assert.equal((await api.load(id)).id, id);
-    assert.equal(story.scenes.length, [166,16,21,23,36,70][i]);
+    assert.equal(story.scenes.length, [178,28,21,23,36,70][i]);
     for (const lang of languages) {
       const edition = api.edition(story, lang);
       for (const scene of story.scenes) {
@@ -41,12 +41,17 @@ const clone = value => JSON.parse(JSON.stringify(value));
     assets.add(story.miniature);
   }
   const invalidCases = [
+    ['wrong edition version', s => {s.editionVersion = 1;}],
+    ['unapproved arrival revision', s => {s.scenes[3].image = s.scenes[3].image.replace('-v4.webp', '-v3.webp');}],
+    ['unknown arrival id', s => {s.scenes[3].id = 'arrival-99';}],
+    ['wrong arrival order', s => {[s.scenes[3], s.scenes[4]] = [s.scenes[4], s.scenes[3]];}],
+    ['wrong original window revision', s => {s.scenes[2].image = 'images/published/elder-cycle/elder-r6-family-002.webp';}],
     ['unknown id', s => {s.id = 'unlisted-elder-story';}],
     ['traversal image', s => {s.scenes[1].image = 'images/published/elder-cycle/../../secret.webp';}],
     ['remote image', s => {s.scenes[1].image = 'https://example.com/image.webp';}],
     ['duplicate scene id', s => {s.scenes[2].id = s.scenes[1].id;}],
-    ['missing Russian cover', s => {delete s.scenes[16].images.ru;}],
-    ['wrong localized interior cover', s => {s.scenes[16].images.ru = s.scenes[0].images.ru;}],
+    ['missing Russian cover', s => {delete s.scenes[s.chapterNav[1].startScene].images.ru;}],
+    ['wrong localized interior cover', s => {s.scenes[s.chapterNav[1].startScene].images.ru = s.scenes[0].images.ru;}],
     ['empty narrative', s => {s.scenes[1].paragraphs.es = [];}],
     ['missing scene', s => {s.scenes.pop();}],
     ['wrong chapter number', s => {s.chapterNav[1].number = 1;}],
@@ -85,5 +90,5 @@ const clone = value => JSON.parse(JSON.stringify(value));
     assert.equal(bytes.toString('ascii',0,4), 'RIFF', asset);
     assert.equal(bytes.toString('ascii',8,12), 'WEBP', asset);
   }
-  console.log(`PASS six editions (166/16/21/23/36/70), all title languages, whitelist/negative cases, old stories/covers, ${assets.size} unique assets${schemaOnly?' (asset presence deferred)':''}`);
+  console.log(`PASS six editions (178/28/21/23/36/70), all title languages, whitelist/negative cases, old stories/covers, ${assets.size} unique assets${schemaOnly?' (asset presence deferred)':''}`);
 })().catch(error => {console.error(error); process.exitCode = 1;});

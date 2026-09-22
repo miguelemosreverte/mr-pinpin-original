@@ -1,0 +1,104 @@
+{
+  "id": "geometry-pose-r3-review",
+  "status": "review-candidate-not-published",
+  "shots": [
+    {
+      "id": "family-002-window",
+      "before": "docs/storyboard/images/published/elder-cycle/elder-r6-family-002.webp",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/family-002-window-v2.png",
+      "title": "Earlier window close-up: eight-spoke frame",
+      "issue": "The retained earlier close-up inherited a six-spoke frame inconsistent with the kitchen.",
+      "prompt": "Edit this exterior window illustration only where needed to repair its WOODEN FRAME. The physical wooden window is a REGULAR EIGHT-SPOKE WHEEL, with small circular center hub and EIGHT slender radial wood dividers at12,1:30,3,4:30,6,7:30,9,10:30 o'clock. All four cardinal directions plus four diagonals; eight equal glass sectors. No missing spoke, asymmetric wide pane or extra ring. This symmetric eight-spoke design matches the wider kitchen. Preserve subdued existing clear-glass appearance: no added visible reflection patterns, fog, white edge-glow or bright overlays. Preserve PinPin's sweet face/identity, paws inside sill, closed green door at right, stone wall, flowers, golden light and soft animated-book style. If necessary move PinPin's head a little upward in the same pane so new left horizontal spoke does not obscure his eyes/nose. Keep both paws on inside sill and connected naturally. Only natural minimal adjustment for wood occlusion. Do not change camera, scene, text or add characters. 1536x1024 landscape.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-002.webp",
+          "role": "Edit target, preserved original remains untouched"
+        }
+      ],
+      "order": 1,
+      "beat": "Consistent eight-spoke window across closeups and room",
+      "camera": "Preserve existing viewpoint",
+      "staging": "Fixed object topology; gentle original glass; readable faces"
+    },
+    {
+      "id": "arrival-01",
+      "before": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-01-v2.png",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-01-v4.png",
+      "title": "Papa's view: frame correction, restrained glass",
+      "issue": "Undo strong reflection effect; match the established eight-spoke kitchen frame.",
+      "prompt": "Reference1 is the editable new eight-spoke window illustration. Make two small story changes: PinPin raises ONE forepaw to wave while his other stays on inner sill; add the soft blurry cream-tipped brown quills of Papa's shoulder in lower-left foreground for an over-Papa view. Everything else stays: same cottage, frame position, eight STRAIGHT CONNECTED wood spokes with a small TRANSPARENT GLASS center ring (not solid wooden hub), gentle existing glass sheen, warm woodland. The horizontal wood rail at9o'clock must remain perfectly STRAIGHT and CONTINUOUS IN FRONT of PinPin; never bend it around his nose, cut a notch, or draw his nose protruding through wood. His entire face is BEHIND the rail/glass, with normal partial occlusion permitted. Prefer lift head slightly so both eyes and nose above rail, smile can be slightly hidden; do not invent new anatomy or stretch arms. Preserve both eyes/sweetexpression, no unnecessary reflections/haze/whiteglow. This is a soft animated storybook landscape1536x1024, no lettering.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/family-002-window-v2.png",
+          "role": "Edit target, preserve rigid eight-spoke structure and subtle glass"
+        }
+      ],
+      "order": 2,
+      "beat": "Consistent eight-spoke window across closeups and room",
+      "camera": "Preserve existing viewpoint",
+      "staging": "Fixed object topology; gentle original glass; readable faces"
+    },
+    {
+      "id": "arrival-02",
+      "before": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v3.png",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v4.png",
+      "title": "Inside view: same eight-spoke frame",
+      "issue": "Correct frame connectivity and remove exaggerated new glass effects.",
+      "prompt": "Edit the supplied original interior PinPin-waving scene. Keep characters, poses, eye contact, room, warm soft storybook style and subdued transparent window sheen exactly. Change only wooden window spoke layout to match established kitchen design. The physical wooden window is a REGULAR EIGHT-SPOKE WHEEL, with small circular center hub and EIGHT slender radial wood dividers at12,1:30,3,4:30,6,7:30,9,10:30 o'clock. All four cardinal directions plus four diagonals; eight equal glass sectors. No missing spoke, asymmetric wide pane or extra ring. This symmetric eight-spoke design matches the wider kitchen. There must be BOTH left and right horizontal spokes, and BOTH top and bottom vertical spokes. Keep centralhubsize andoutercircle. Ensure outdoor Papa and Scooby faces remain readable; no divider over their eyes. PinPin still waves inside, they remain outside. Retain restrained original glass: NO conspicuous lamp reflections, fog, white pane outlines or bright reflection overlays. No layout mirror, no added building/characters, no text, same1536x1024 landscape.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-02-v2.png",
+          "role": "Edit target with restrained original glass"
+        }
+      ],
+      "order": 3,
+      "beat": "Consistent eight-spoke window across closeups and room",
+      "camera": "Preserve existing viewpoint",
+      "staging": "Fixed object topology; gentle original glass; readable faces"
+    },
+    {
+      "id": "arrival-03",
+      "before": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-03-v2.png",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-03-v5.png",
+      "title": "PinPin's view: same eight-spoke frame",
+      "issue": "Replace incompatible reverse-view frame, with gentle glass only.",
+      "prompt": "One very small precise edit: inside the little circular glass pane at the EXACT CENTER of this wooden eight-spoke window, replace the incorrect green flowers/garden image with GOLDEN-BROWN DOG FUR that continues Scooby's torso immediately behind the pane. Scooby's solid brown body occupies that entire area behind window, so NO garden or flowers can be visible through this center circle. The little circle remains clear GLASS in a wooden ring; through it see only the same brown-gold fur of his ribcage, with matching lighting, scale and fur direction continuing from his body outside the circle. Do not create a hole through the dog, do not paint it opaque wood. ALL OTHER PIXELS/COMPOSITION UNCHANGED: Papa, wave, Scoobyface, windoweightspokes, light, pottery, garden. Only the tiny circular area within the center ring changes.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-03-v4.png",
+          "role": "Edit target; tiny central pane only, show physically occluded dog's fur"
+        }
+      ],
+      "order": 4,
+      "beat": "Consistent eight-spoke window across closeups and room",
+      "camera": "Preserve existing viewpoint",
+      "staging": "Fixed object topology; gentle original glass; readable faces"
+    },
+    {
+      "id": "arrival-10",
+      "before": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-10-v2.png",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-10-v3.png",
+      "title": "Rebuild Mama's walking pose",
+      "issue": "The prior repair showed incompatible shoulder/hip rotation and two apparently near-side arms.",
+      "prompt": "Create a corrected version of this children's book frame. Reference1 is the ORIGINAL target composition: PinPin and Mama walking toward their green kitchen door. Preserve kitchen and PinPin exactly. Fully REBUILD MAMA'S ENTIRE BODY POSE, including hips, shoulders, quill mantle, arms, steps and baby occlusion. Camera is BEHIND Mama and to her LEFT. Mama's PELVIS and CHEST both face the door ahead; her back/quilled mantle faces camera, shoulder blades align above hips naturally. ONLY her HEAD turns left to smile at PinPin beside her. Her near LEFT shoulder leads into ONE left upper arm then elbow and forepaw extended slightly FORWARD toward the door. It is the only arm clearly visible on the near side. Her RIGHT arm cradles infant PomPom against the FAR/front-right side of her chest/hip, and is mostly OCCLUDED by Mama's torso. The BABY'S BODY AND FACE MUST BE HIDDEN from this behind-left angle; at most a tiny brown infant crown or one ear peeks beyond FAR RIGHT shoulder contour. It is better to show NO baby than invent an impossible front-facing baby attached to the near quilled side. No near-side cradle arm, no second left arm, no baby torso cutout in her back. Mother walks on two hindfeet, one planted and one lifting; rear-view hip orientation agrees with footsteps and front-facing door. Short quills cover her natural rear mantle, not human hair or a draped coat. Mama remains same size, softness and warm cream/russet identity; camera/framing and PinPin's action unchanged. Soft dimensional animated children's book style, same lighting and1536x1024. No text, new objects or extra limbs.",
+      "references": [
+        {
+          "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-10.png",
+          "role": "Image to reconstruct"
+        }
+      ],
+      "order": 3,
+      "beat": "Second user-directed physical-continuity revision",
+      "camera": "Precise anatomical and window topology direction in prompt",
+      "staging": "Preserve tone and story; repair geometry and true occlusion"
+    },
+    {
+      "id": "arrival-12",
+      "title": "Restore the earlier doorway proportions",
+      "issue": "Return to the earlier doorway image; no shortened Mama arm or additional baby repair.",
+      "before": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-12-v3.png",
+      "output": "docs/storyboard/production/papa-arrival-expansion-20260922/images/arrival-12-v2.png",
+      "action": "restore-existing-version"
+    }
+  ]
+}
