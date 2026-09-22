@@ -1,5 +1,11 @@
 # Pinpin assets
 
+For the separate lightweight Pages repository and immutable release bundles,
+read `../PUBLISHING.md`. The Git tracking statements below describe the legacy
+authoring repository, not `mr-pinpin-pages`: the new deployment repository holds
+only code and release manifests. Preserving media in HF does not automatically
+remove its historical Git copies.
+
 `policy.json` assigns explicit production and archive roles. `manifest.json` records
 each asset's relative path, role, byte count, SHA-256, and immutable object path.
 Source code, source/provenance notes, generation records, and policy stay in Git.

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Original and published image | Mr. PinPin</title>
+  <style>
+    * { box-sizing:border-box; }
+    body { margin:0; color:#243a32; background:#fafcfa; font:17px/1.55 system-ui,sans-serif; letter-spacing:0; }
+    main { max-width:1440px; margin:auto; padding:36px 24px 64px; }
+    h1 { font:700 34px/1.15 Georgia,serif; margin:0 0 14px; }
+    h2 { font:700 25px/1.25 Georgia,serif; margin:0 0 18px; }
+    p { max-width:850px; margin:12px 0; }
+    section { border-top:1px solid #cdd8d0; margin-top:32px; padding-top:26px; }
+    .pair { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; }
+    figure { margin:0; min-width:0; }
+    figcaption { padding:0 0 12px; }
+    figcaption strong { display:block; font-size:20px; }
+    figcaption span { color:#54625d; font-size:15px; }
+    .full { display:block; width:100%; height:auto; aspect-ratio:3/2; }
+    .detail { position:relative; height:340px; overflow:hidden; background:#e6ece7; }
+    .detail img { position:absolute; width:1536px; height:1024px; max-width:none; left:-390px; top:-350px; }
+    .notes { color:#54625d; font-size:15px; }
+    table { border-collapse:collapse; width:100%; max-width:850px; }
+    th,td { padding:10px 0; border-bottom:1px solid #dce3de; text-align:left; }
+    td:last-child,th:last-child { text-align:right; }
+    @media(max-width:650px) { main { padding:24px 16px 40px; } .pair { grid-template-columns:1fr; gap:26px; } h1 { font-size:29px; } }
+    @media print { main { padding:0; } section,figure { break-inside:avoid; } }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Original and published image</h1>
+  <p>Same illustration, same 1536 &times; 1024 pixels. The published WebP is <strong>82.3% smaller</strong>. It uses lossy compression at quality setting 92, not a smaller-resolution image. That setting does not mean 92% of the original quality is preserved.</p>
+  <section aria-label="Full image comparison">
+    <div class="pair">
+      <figure>
+        <figcaption><strong>Original PNG</strong><span>3.07 MB &middot; 3,070,970 bytes</span></figcaption>
+        <img class="full" width="1536" height="1024" src="../../../mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-001-v2.png" alt="Original artwork: PinPin arrives at the forest house on a dog's back.">
+      </figure>
+      <figure>
+        <figcaption><strong>Published WebP</strong><span>544 KB &middot; 543,500 bytes &middot; quality 92</span></figcaption>
+        <img class="full" width="1536" height="1024" src="../storyboard/images/published/elder-cycle/elder-r6-family-001.webp" alt="The same scene as compressed for the published book.">
+      </figure>
+    </div>
+  </section>
+  <section>
+    <h2>Character and foliage detail</h2>
+    <div class="pair">
+      <figure>
+        <figcaption><strong>Original PNG</strong><span>100% scale: one image pixel per CSS pixel</span></figcaption>
+        <div class="detail"><img width="1536" height="1024" src="../../../mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-001-v2.png" alt="Original detail showing the hedgehog's spines, fur, and nearby foliage."></div>
+      </figure>
+      <figure>
+        <figcaption><strong>Published WebP</strong><span>Identical crop and scale</span></figcaption>
+        <div class="detail"><img width="1536" height="1024" src="../storyboard/images/published/elder-cycle/elder-r6-family-001.webp" alt="Compressed detail showing the same spines, fur, and foliage."></div>
+      </figure>
+    </div>
+    <p class="notes">The source and published files both match the SHA-256 hashes recorded in the export manifest. These are the existing files, not newly generated or recompressed examples. This local review page is excluded from GitHub Pages.</p>
+  </section>
+  <section>
+    <h2>What GitHub Pages serves</h2>
+    <table>
+      <thead><tr><th>Production assets</th><th>Files</th><th>Size</th></tr></thead>
+      <tbody>
+        <tr><td>Original book illustrations</td><td>100</td><td>188.6 MB</td></tr>
+        <tr><td>New five-chapter collection</td><td>181</td><td>86.1 MB</td></tr>
+        <tr><td>Atlas assets</td><td>95</td><td>146.2 MB</td></tr>
+        <tr><td>Other production art and assets</td><td>126</td><td>331.0 MB</td></tr>
+      </tbody>
+    </table>
+    <p>GitHub Actions builds a static site from the repository. Pages serves its HTML, styles, JavaScript, story text, and selected production assets. The deployment totals about <strong>756 MB</strong>; a visitor does not download the whole deployment. Reader images below the viewport load lazily.</p>
+    <p>Production media currently includes PNG, WebP, MP4, and atlas data. Pages serves the encoded files as built; it does not run our image compression. Hugging Face holds verified archived assets, not the images requested by the published reader.</p>
+  </section>
+</main>
+</body>
+</html>

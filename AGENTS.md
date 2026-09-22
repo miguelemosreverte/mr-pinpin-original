@@ -1,5 +1,9 @@
 # Working on Mr. PinPin
 
+- Read `PUBLISHING.md` before releasing. The separate `mr-pinpin-pages` repository
+  is a lightweight deployment ledger, not an authoring checkout. Never copy this
+  repository's Git history or binary assets into it. Use the verified,
+  content-addressed release tools in `tools/publishing/`.
 - Preserve the original book and approved story/image content. Storage migration
   must not regenerate, resize, compress, or shorten the published book.
 - Keep source, recipes, provenance, and asset manifests in Git. Production media
