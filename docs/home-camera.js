@@ -13,6 +13,8 @@
     x = limit(x, width / (2 * scale), world.width - width / (2 * scale));
     y = limit(y, height / (2 * scale), world.height - height / (2 * scale));
     room.style.transform = `translate(${width / 2 - x * scale}px, ${height / 2 - y * scale}px) scale(${scale})`;
+    viewport.cameraState = {width,height,x,y,scale};
+    viewport.dispatchEvent(new CustomEvent('roomcamerachange', {detail:viewport.cameraState}));
   }
   function local(event) {
     const rect = viewport.getBoundingClientRect();
