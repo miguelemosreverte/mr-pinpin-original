@@ -1,0 +1,2547 @@
+{
+  "schemaVersion": 1,
+  "assetVersion": "v1",
+  "characterId": "mama",
+  "sheetAngles": [
+    0,
+    30,
+    60,
+    90
+  ],
+  "reviewStatus": "awaiting-visual-review",
+  "productionReady": false,
+  "headingAssessment": "Requested row labels, not visually certified angles.",
+  "source": {
+    "file": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-344b4624-2855-4fc5-8cb8-d82bce78d292.png",
+    "sha256": "8179e3333d633f9a9e19e4d0561258773eabc64cc2f8699ead4afe17a9ff08ff",
+    "width": 1254,
+    "height": 1254
+  },
+  "provenance": {
+    "inputRecordSha256": "f988c77deb5892fb179cff1f3b171541aa6501dcf64839fe5590df0979d9f4fe",
+    "tooling": [
+      {
+        "file": "prepare-atlas-family-production.cjs",
+        "sha256": "96ba3418a98cdf8fd1376aa846032bf53834307e4ca2042a7c38afb790da24f1"
+      },
+      {
+        "file": "atlas-family-production-quality.cjs",
+        "sha256": "9068ae5ba684535d0eb285c1793c3f56c60b11ec9b6f65c946847792cf8e4814"
+      },
+      {
+        "file": "prepare-atlas-intermediate-sprites.cjs",
+        "sha256": "d7e746fcac181a9ca773d26f3025ce7091705275041facecda6c557d245a5c2c"
+      },
+      {
+        "file": "verify-atlas-directions.cjs",
+        "sha256": "eb301b1800750fe838f90fae0ac53046a2e1300b99abdf931f8533beb818db4b"
+      }
+    ],
+    "operation": "unchanged-PNG-copy-and-exact-lossless-WebP",
+    "inputRecord": {
+      "characterId": "mama",
+      "sheetId": "a-blink",
+      "sheetAngles": [
+        0,
+        30,
+        60,
+        90
+      ],
+      "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-344b4624-2855-4fc5-8cb8-d82bce78d292.png",
+      "referenceWidth": 281.616
+    }
+  },
+  "thresholds": {
+    "cropAlphaAbove": 15,
+    "bodyAlphaAbove": 127,
+    "cropPaddingPixels": 4,
+    "minimumTransparentFractionExclusive": 0.1,
+    "minimumBodyFractionExclusive": 0.01,
+    "maximumVisibleEdgePixels": 0
+  },
+  "scaling": {
+    "referenceWidth": 281.616,
+    "selection": "input-fixed-sheet-width-awaiting-visual-review"
+  },
+  "sheet": {
+    "src": "mama-a-blink-v1.png",
+    "runtimeSrc": "mama-a-blink-v1.webp",
+    "width": 1254,
+    "height": 1254,
+    "grid": {
+      "x": [
+        0,
+        313,
+        627,
+        940,
+        1254
+      ],
+      "y": [
+        0,
+        313,
+        627,
+        940,
+        1254
+      ]
+    },
+    "referenceWidth": 281.616,
+    "sha256": "8179e3333d633f9a9e19e4d0561258773eabc64cc2f8699ead4afe17a9ff08ff"
+  },
+  "measurements": {
+    "grid": {
+      "x": [
+        0,
+        313,
+        627,
+        940,
+        1254
+      ],
+      "y": [
+        0,
+        313,
+        627,
+        940,
+        1254
+      ]
+    },
+    "frames": [
+      {
+        "row": 0,
+        "column": 0,
+        "cell": [
+          0,
+          0,
+          313,
+          313
+        ],
+        "artworkBounds": [
+          31,
+          78,
+          279,
+          196
+        ],
+        "bodyBounds": [
+          33,
+          80,
+          277,
+          193
+        ],
+        "rect": [
+          27,
+          74,
+          286,
+          204
+        ],
+        "anchor": [
+          144,
+          199
+        ],
+        "transparent": 54033,
+        "visible": 39679,
+        "semitransparent": 43883,
+        "edgePixels": 0,
+        "faintEdgePixels": 12,
+        "fringe": {
+          "pixels": 1587,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "8daab9a403377595f6ba226ecee24735aa8604756582fe44273ddc4412dfc373",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "cell": [
+          313,
+          0,
+          314,
+          313
+        ],
+        "artworkBounds": [
+          342,
+          78,
+          280,
+          201
+        ],
+        "bodyBounds": [
+          344,
+          79,
+          277,
+          199
+        ],
+        "rect": [
+          338,
+          74,
+          288,
+          209
+        ],
+        "anchor": [
+          144,
+          204
+        ],
+        "transparent": 54118,
+        "visible": 39456,
+        "semitransparent": 44123,
+        "edgePixels": 0,
+        "faintEdgePixels": 18,
+        "fringe": {
+          "pixels": 1939,
+          "maxAlpha": 3,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "2b5b85ebcbe70606db4a7d14a9b8a260b449a03c99d29ae8352f6a6d99fd97fa",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "cell": [
+          627,
+          0,
+          313,
+          313
+        ],
+        "artworkBounds": [
+          655,
+          78,
+          280,
+          199
+        ],
+        "bodyBounds": [
+          657,
+          80,
+          277,
+          196
+        ],
+        "rect": [
+          651,
+          74,
+          288,
+          207
+        ],
+        "anchor": [
+          144,
+          202
+        ],
+        "transparent": 53710,
+        "visible": 39505,
+        "semitransparent": 44221,
+        "edgePixels": 0,
+        "faintEdgePixels": 5,
+        "fringe": {
+          "pixels": 1718,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "ae4cb87154a24cb0c4ac6a958feba1750d37a9ae05ba6a4fd14bb3ee49b48300",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "cell": [
+          940,
+          0,
+          314,
+          313
+        ],
+        "artworkBounds": [
+          967,
+          79,
+          279,
+          202
+        ],
+        "bodyBounds": [
+          969,
+          80,
+          277,
+          200
+        ],
+        "rect": [
+          963,
+          75,
+          287,
+          210
+        ],
+        "anchor": [
+          144,
+          205
+        ],
+        "transparent": 55345,
+        "visible": 38953,
+        "semitransparent": 42906,
+        "edgePixels": 0,
+        "faintEdgePixels": 17,
+        "fringe": {
+          "pixels": 1345,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "b527cac11572d8a33383aa64c74d8dafffee4eb062d9fb0d468dcd6bc616e665",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "cell": [
+          0,
+          313,
+          313,
+          314
+        ],
+        "artworkBounds": [
+          41,
+          356,
+          245,
+          224
+        ],
+        "bodyBounds": [
+          44,
+          357,
+          241,
+          223
+        ],
+        "rect": [
+          37,
+          352,
+          253,
+          232
+        ],
+        "anchor": [
+          127,
+          228
+        ],
+        "transparent": 55123,
+        "visible": 38637,
+        "semitransparent": 43121,
+        "edgePixels": 0,
+        "faintEdgePixels": 28,
+        "fringe": {
+          "pixels": 1787,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "036b70d999615d9414f7406692f6af57ac5bb5c1f767d0ac69eb35b994253b99",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "cell": [
+          313,
+          313,
+          314,
+          314
+        ],
+        "artworkBounds": [
+          355,
+          356,
+          247,
+          231
+        ],
+        "bodyBounds": [
+          356,
+          358,
+          245,
+          228
+        ],
+        "rect": [
+          351,
+          352,
+          255,
+          239
+        ],
+        "anchor": [
+          127,
+          234
+        ],
+        "transparent": 55171,
+        "visible": 39382,
+        "semitransparent": 43387,
+        "edgePixels": 0,
+        "faintEdgePixels": 31,
+        "fringe": {
+          "pixels": 1589,
+          "maxAlpha": 3,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "552c707b92a4d3c4dabcb083841ecc7c7440e8701d7c16ddcd2e200593da53f6",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "cell": [
+          627,
+          313,
+          313,
+          314
+        ],
+        "artworkBounds": [
+          665,
+          357,
+          240,
+          233
+        ],
+        "bodyBounds": [
+          667,
+          359,
+          237,
+          230
+        ],
+        "rect": [
+          661,
+          353,
+          248,
+          241
+        ],
+        "anchor": [
+          124,
+          236
+        ],
+        "transparent": 54839,
+        "visible": 38717,
+        "semitransparent": 43406,
+        "edgePixels": 0,
+        "faintEdgePixels": 16,
+        "fringe": {
+          "pixels": 1952,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "d52978d63edba5b2f60550c396137563ebf6b47fa58d98b2bbb29d2487bfce85",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "cell": [
+          940,
+          313,
+          314,
+          314
+        ],
+        "artworkBounds": [
+          979,
+          356,
+          240,
+          231
+        ],
+        "bodyBounds": [
+          981,
+          357,
+          237,
+          229
+        ],
+        "rect": [
+          975,
+          352,
+          248,
+          239
+        ],
+        "anchor": [
+          124,
+          234
+        ],
+        "transparent": 54651,
+        "visible": 38933,
+        "semitransparent": 43918,
+        "edgePixels": 0,
+        "faintEdgePixels": 17,
+        "fringe": {
+          "pixels": 1829,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "6a3571d0cf40f70671ec2d39cfa0254e04e00cb2752da573e351564d4dfc21e7",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "cell": [
+          0,
+          627,
+          313,
+          313
+        ],
+        "artworkBounds": [
+          54,
+          644,
+          232,
+          254
+        ],
+        "bodyBounds": [
+          55,
+          646,
+          230,
+          251
+        ],
+        "rect": [
+          50,
+          640,
+          240,
+          262
+        ],
+        "anchor": [
+          119.5,
+          257
+        ],
+        "transparent": 53379,
+        "visible": 40183,
+        "semitransparent": 44574,
+        "edgePixels": 0,
+        "faintEdgePixels": 74,
+        "fringe": {
+          "pixels": 1540,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "11ca60edc4829e4e2979fc70e21d2524772075cf43aa1745c8571b32b77a7282",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "cell": [
+          313,
+          627,
+          314,
+          313
+        ],
+        "artworkBounds": [
+          360,
+          644,
+          239,
+          257
+        ],
+        "bodyBounds": [
+          362,
+          646,
+          237,
+          254
+        ],
+        "rect": [
+          356,
+          640,
+          247,
+          265
+        ],
+        "anchor": [
+          124,
+          260
+        ],
+        "transparent": 51694,
+        "visible": 41709,
+        "semitransparent": 46567,
+        "edgePixels": 0,
+        "faintEdgePixels": 43,
+        "fringe": {
+          "pixels": 2273,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "7c8971d9904d7f6ebf47d5bd059c28f22bce74385d80d3e4bc20f5ddd064ba09",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "cell": [
+          627,
+          627,
+          313,
+          313
+        ],
+        "artworkBounds": [
+          673,
+          644,
+          235,
+          261
+        ],
+        "bodyBounds": [
+          675,
+          646,
+          233,
+          258
+        ],
+        "rect": [
+          669,
+          640,
+          243,
+          269
+        ],
+        "anchor": [
+          122,
+          264
+        ],
+        "transparent": 52377,
+        "visible": 41048,
+        "semitransparent": 45572,
+        "edgePixels": 0,
+        "faintEdgePixels": 43,
+        "fringe": {
+          "pixels": 2021,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "9d78fe30aa8845632d9c97e892b1727664967e1e287c382d879fe5d8d29ad827",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "cell": [
+          940,
+          627,
+          314,
+          313
+        ],
+        "artworkBounds": [
+          982,
+          644,
+          235,
+          247
+        ],
+        "bodyBounds": [
+          985,
+          645,
+          231,
+          245
+        ],
+        "rect": [
+          978,
+          640,
+          243,
+          255
+        ],
+        "anchor": [
+          122,
+          250
+        ],
+        "transparent": 52924,
+        "visible": 40003,
+        "semitransparent": 45330,
+        "edgePixels": 0,
+        "faintEdgePixels": 56,
+        "fringe": {
+          "pixels": 2482,
+          "maxAlpha": 3,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "4937862a0f2790b00f0c218832d7874ddd86d621443b048bdd237db1dc06c8bf",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "cell": [
+          0,
+          940,
+          313,
+          314
+        ],
+        "artworkBounds": [
+          60,
+          942,
+          213,
+          240
+        ],
+        "bodyBounds": [
+          62,
+          944,
+          210,
+          237
+        ],
+        "rect": [
+          56,
+          940,
+          221,
+          246
+        ],
+        "anchor": [
+          110.5,
+          241
+        ],
+        "transparent": 57793,
+        "visible": 36165,
+        "semitransparent": 40454,
+        "edgePixels": 0,
+        "faintEdgePixels": 49,
+        "fringe": {
+          "pixels": 1337,
+          "maxAlpha": 3,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "b0f1eea47bb5a13f6bd10dfcd5f6ad31665b3318bf9f579be36dd765cbb8ab7e",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "cell": [
+          313,
+          940,
+          314,
+          314
+        ],
+        "artworkBounds": [
+          369,
+          944,
+          208,
+          246
+        ],
+        "bodyBounds": [
+          371,
+          946,
+          204,
+          243
+        ],
+        "rect": [
+          365,
+          940,
+          216,
+          254
+        ],
+        "anchor": [
+          107.5,
+          249
+        ],
+        "transparent": 59832,
+        "visible": 34876,
+        "semitransparent": 38733,
+        "edgePixels": 0,
+        "faintEdgePixels": 13,
+        "fringe": {
+          "pixels": 1265,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "51ec55ed0c7fde88915e5e92f31c0728734cb09958317399b16f5a54647f12e1",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "cell": [
+          627,
+          940,
+          313,
+          314
+        ],
+        "artworkBounds": [
+          682,
+          946,
+          211,
+          244
+        ],
+        "bodyBounds": [
+          685,
+          948,
+          206,
+          241
+        ],
+        "rect": [
+          678,
+          942,
+          219,
+          252
+        ],
+        "anchor": [
+          109.5,
+          247
+        ],
+        "transparent": 57409,
+        "visible": 35498,
+        "semitransparent": 40837,
+        "edgePixels": 0,
+        "faintEdgePixels": 24,
+        "fringe": {
+          "pixels": 2149,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "e55308759640b1d84ab531a99521b1041a4101766d297bf7bba911e681ba554a",
+        "outerEdgePixels": 0
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "cell": [
+          940,
+          940,
+          314,
+          314
+        ],
+        "artworkBounds": [
+          990,
+          943,
+          210,
+          248
+        ],
+        "bodyBounds": [
+          992,
+          944,
+          206,
+          247
+        ],
+        "rect": [
+          986,
+          940,
+          218,
+          255
+        ],
+        "anchor": [
+          108.5,
+          251
+        ],
+        "transparent": 58387,
+        "visible": 35400,
+        "semitransparent": 40175,
+        "edgePixels": 0,
+        "faintEdgePixels": 54,
+        "fringe": {
+          "pixels": 1888,
+          "maxAlpha": 2,
+          "aboveCropThreshold": 0,
+          "aboveBodyThreshold": 0
+        },
+        "sha256": "36179986ce007c93ce7c961417947d5da8be63ed6da1c326d14c5e0858a6b8b8",
+        "outerEdgePixels": 0
+      }
+    ]
+  },
+  "quality": {
+    "pixelValidation": "PASS",
+    "issue": null,
+    "frames": [
+      {
+        "row": 0,
+        "column": 0,
+        "alpha": {
+          "transparentFraction": 0.551532,
+          "bodyFraction": 0.405016,
+          "semitransparentPixels": 43883
+        },
+        "gutter": {
+          "left": 31,
+          "top": 78,
+          "right": 3,
+          "bottom": 39,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 12,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          27,
+          74,
+          286,
+          204
+        ],
+        "footAnchor": [
+          144,
+          199
+        ]
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "alpha": {
+          "transparentFraction": 0.55064,
+          "bodyFraction": 0.401457,
+          "semitransparentPixels": 44123
+        },
+        "gutter": {
+          "left": 29,
+          "top": 78,
+          "right": 5,
+          "bottom": 34,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 18,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          338,
+          74,
+          288,
+          209
+        ],
+        "footAnchor": [
+          144,
+          204
+        ]
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "alpha": {
+          "transparentFraction": 0.548235,
+          "bodyFraction": 0.40324,
+          "semitransparentPixels": 44221
+        },
+        "gutter": {
+          "left": 28,
+          "top": 78,
+          "right": 5,
+          "bottom": 36,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 5,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          651,
+          74,
+          288,
+          207
+        ],
+        "footAnchor": [
+          144,
+          202
+        ]
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "alpha": {
+          "transparentFraction": 0.563124,
+          "bodyFraction": 0.396339,
+          "semitransparentPixels": 42906
+        },
+        "gutter": {
+          "left": 27,
+          "top": 79,
+          "right": 8,
+          "bottom": 32,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 17,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          963,
+          75,
+          287,
+          210
+        ],
+        "footAnchor": [
+          144,
+          205
+        ]
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "alpha": {
+          "transparentFraction": 0.560866,
+          "bodyFraction": 0.393124,
+          "semitransparentPixels": 43121
+        },
+        "gutter": {
+          "left": 41,
+          "top": 43,
+          "right": 27,
+          "bottom": 47,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 28,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          37,
+          352,
+          253,
+          232
+        ],
+        "footAnchor": [
+          127,
+          228
+        ]
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "alpha": {
+          "transparentFraction": 0.559566,
+          "bodyFraction": 0.399428,
+          "semitransparentPixels": 43387
+        },
+        "gutter": {
+          "left": 42,
+          "top": 43,
+          "right": 25,
+          "bottom": 40,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 31,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          351,
+          352,
+          255,
+          239
+        ],
+        "footAnchor": [
+          127,
+          234
+        ]
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "alpha": {
+          "transparentFraction": 0.557976,
+          "bodyFraction": 0.393938,
+          "semitransparentPixels": 43406
+        },
+        "gutter": {
+          "left": 38,
+          "top": 44,
+          "right": 35,
+          "bottom": 37,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 16,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          661,
+          353,
+          248,
+          241
+        ],
+        "footAnchor": [
+          124,
+          236
+        ]
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "alpha": {
+          "transparentFraction": 0.554292,
+          "bodyFraction": 0.394874,
+          "semitransparentPixels": 43918
+        },
+        "gutter": {
+          "left": 39,
+          "top": 43,
+          "right": 35,
+          "bottom": 40,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 17,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          975,
+          352,
+          248,
+          239
+        ],
+        "footAnchor": [
+          124,
+          234
+        ]
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "alpha": {
+          "transparentFraction": 0.544856,
+          "bodyFraction": 0.41016,
+          "semitransparentPixels": 44574
+        },
+        "gutter": {
+          "left": 54,
+          "top": 17,
+          "right": 27,
+          "bottom": 42,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 74,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          50,
+          640,
+          240,
+          262
+        ],
+        "footAnchor": [
+          119.5,
+          257
+        ]
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "alpha": {
+          "transparentFraction": 0.525976,
+          "bodyFraction": 0.424381,
+          "semitransparentPixels": 46567
+        },
+        "gutter": {
+          "left": 47,
+          "top": 17,
+          "right": 28,
+          "bottom": 39,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 43,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          356,
+          640,
+          247,
+          265
+        ],
+        "footAnchor": [
+          124,
+          260
+        ]
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "alpha": {
+          "transparentFraction": 0.534628,
+          "bodyFraction": 0.41899,
+          "semitransparentPixels": 45572
+        },
+        "gutter": {
+          "left": 46,
+          "top": 17,
+          "right": 32,
+          "bottom": 35,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 43,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          669,
+          640,
+          243,
+          269
+        ],
+        "footAnchor": [
+          122,
+          264
+        ]
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "alpha": {
+          "transparentFraction": 0.538491,
+          "bodyFraction": 0.407023,
+          "semitransparentPixels": 45330
+        },
+        "gutter": {
+          "left": 42,
+          "top": 17,
+          "right": 37,
+          "bottom": 49,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 56,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          978,
+          640,
+          243,
+          255
+        ],
+        "footAnchor": [
+          122,
+          250
+        ]
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "alpha": {
+          "transparentFraction": 0.588032,
+          "bodyFraction": 0.367972,
+          "semitransparentPixels": 40454
+        },
+        "gutter": {
+          "left": 60,
+          "top": 2,
+          "right": 40,
+          "bottom": 72,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 49,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          56,
+          940,
+          221,
+          246
+        ],
+        "footAnchor": [
+          110.5,
+          241
+        ]
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "alpha": {
+          "transparentFraction": 0.60684,
+          "bodyFraction": 0.353726,
+          "semitransparentPixels": 38733
+        },
+        "gutter": {
+          "left": 56,
+          "top": 4,
+          "right": 50,
+          "bottom": 64,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 13,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          365,
+          940,
+          216,
+          254
+        ],
+        "footAnchor": [
+          107.5,
+          249
+        ]
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "alpha": {
+          "transparentFraction": 0.584125,
+          "bodyFraction": 0.361185,
+          "semitransparentPixels": 40837
+        },
+        "gutter": {
+          "left": 55,
+          "top": 6,
+          "right": 47,
+          "bottom": 64,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 24,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          678,
+          942,
+          219,
+          252
+        ],
+        "footAnchor": [
+          109.5,
+          247
+        ]
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "alpha": {
+          "transparentFraction": 0.592184,
+          "bodyFraction": 0.359041,
+          "semitransparentPixels": 40175
+        },
+        "gutter": {
+          "left": 50,
+          "top": 3,
+          "right": 54,
+          "bottom": 63,
+          "visibleEdgePixels": 0,
+          "nonzeroAlphaEdgePixels": 54,
+          "outerEdgePixels": 0
+        },
+        "crop": [
+          986,
+          940,
+          218,
+          255
+        ],
+        "footAnchor": [
+          108.5,
+          251
+        ]
+      }
+    ],
+    "gaitDifference": {
+      "assessment": "metrics-only-not-gait-quality-approval",
+      "method": "All six pairs per row; integer foot-anchor alignment (floor x), alpha-premultiplied RGBA, transparent RGB ignored.",
+      "rows": [
+        {
+          "angle": 0,
+          "row": 0,
+          "measurable": true,
+          "pairs": [
+            {
+              "columns": [
+                0,
+                1
+              ],
+              "comparedPixels": 47530,
+              "changedPixels": 47399,
+              "changedFraction": 0.997244,
+              "meanAbsolutePremultipliedRgbaDifference": 0.1221
+            },
+            {
+              "columns": [
+                0,
+                2
+              ],
+              "comparedPixels": 46428,
+              "changedPixels": 46187,
+              "changedFraction": 0.994809,
+              "meanAbsolutePremultipliedRgbaDifference": 0.093414
+            },
+            {
+              "columns": [
+                0,
+                3
+              ],
+              "comparedPixels": 46658,
+              "changedPixels": 46548,
+              "changedFraction": 0.997642,
+              "meanAbsolutePremultipliedRgbaDifference": 0.123689
+            },
+            {
+              "columns": [
+                1,
+                2
+              ],
+              "comparedPixels": 47099,
+              "changedPixels": 46836,
+              "changedFraction": 0.994416,
+              "meanAbsolutePremultipliedRgbaDifference": 0.091866
+            },
+            {
+              "columns": [
+                1,
+                3
+              ],
+              "comparedPixels": 45365,
+              "changedPixels": 45017,
+              "changedFraction": 0.992329,
+              "meanAbsolutePremultipliedRgbaDifference": 0.07132
+            },
+            {
+              "columns": [
+                2,
+                3
+              ],
+              "comparedPixels": 46039,
+              "changedPixels": 45814,
+              "changedFraction": 0.995113,
+              "meanAbsolutePremultipliedRgbaDifference": 0.099818
+            }
+          ],
+          "identicalAnchoredPairs": []
+        },
+        {
+          "angle": 30,
+          "row": 1,
+          "measurable": true,
+          "pairs": [
+            {
+              "columns": [
+                0,
+                1
+              ],
+              "comparedPixels": 45628,
+              "changedPixels": 45507,
+              "changedFraction": 0.997348,
+              "meanAbsolutePremultipliedRgbaDifference": 0.109211
+            },
+            {
+              "columns": [
+                0,
+                2
+              ],
+              "comparedPixels": 46106,
+              "changedPixels": 45976,
+              "changedFraction": 0.99718,
+              "meanAbsolutePremultipliedRgbaDifference": 0.127247
+            },
+            {
+              "columns": [
+                0,
+                3
+              ],
+              "comparedPixels": 46139,
+              "changedPixels": 45855,
+              "changedFraction": 0.993845,
+              "meanAbsolutePremultipliedRgbaDifference": 0.117792
+            },
+            {
+              "columns": [
+                1,
+                2
+              ],
+              "comparedPixels": 45108,
+              "changedPixels": 44804,
+              "changedFraction": 0.993261,
+              "meanAbsolutePremultipliedRgbaDifference": 0.083236
+            },
+            {
+              "columns": [
+                1,
+                3
+              ],
+              "comparedPixels": 45456,
+              "changedPixels": 45141,
+              "changedFraction": 0.99307,
+              "meanAbsolutePremultipliedRgbaDifference": 0.079866
+            },
+            {
+              "columns": [
+                2,
+                3
+              ],
+              "comparedPixels": 45716,
+              "changedPixels": 45249,
+              "changedFraction": 0.989785,
+              "meanAbsolutePremultipliedRgbaDifference": 0.079173
+            }
+          ],
+          "identicalAnchoredPairs": []
+        },
+        {
+          "angle": 60,
+          "row": 2,
+          "measurable": true,
+          "pairs": [
+            {
+              "columns": [
+                0,
+                1
+              ],
+              "comparedPixels": 48152,
+              "changedPixels": 47980,
+              "changedFraction": 0.996428,
+              "meanAbsolutePremultipliedRgbaDifference": 0.095325
+            },
+            {
+              "columns": [
+                0,
+                2
+              ],
+              "comparedPixels": 47672,
+              "changedPixels": 47585,
+              "changedFraction": 0.998175,
+              "meanAbsolutePremultipliedRgbaDifference": 0.114084
+            },
+            {
+              "columns": [
+                0,
+                3
+              ],
+              "comparedPixels": 48010,
+              "changedPixels": 47779,
+              "changedFraction": 0.995189,
+              "meanAbsolutePremultipliedRgbaDifference": 0.119548
+            },
+            {
+              "columns": [
+                1,
+                2
+              ],
+              "comparedPixels": 48735,
+              "changedPixels": 48544,
+              "changedFraction": 0.996081,
+              "meanAbsolutePremultipliedRgbaDifference": 0.097809
+            },
+            {
+              "columns": [
+                1,
+                3
+              ],
+              "comparedPixels": 49829,
+              "changedPixels": 49655,
+              "changedFraction": 0.996508,
+              "meanAbsolutePremultipliedRgbaDifference": 0.129656
+            },
+            {
+              "columns": [
+                2,
+                3
+              ],
+              "comparedPixels": 49845,
+              "changedPixels": 49661,
+              "changedFraction": 0.996309,
+              "meanAbsolutePremultipliedRgbaDifference": 0.149597
+            }
+          ],
+          "identicalAnchoredPairs": []
+        },
+        {
+          "angle": 90,
+          "row": 3,
+          "measurable": true,
+          "pairs": [
+            {
+              "columns": [
+                0,
+                1
+              ],
+              "comparedPixels": 42398,
+              "changedPixels": 42242,
+              "changedFraction": 0.996321,
+              "meanAbsolutePremultipliedRgbaDifference": 0.126107
+            },
+            {
+              "columns": [
+                0,
+                2
+              ],
+              "comparedPixels": 43129,
+              "changedPixels": 42664,
+              "changedFraction": 0.989218,
+              "meanAbsolutePremultipliedRgbaDifference": 0.109078
+            },
+            {
+              "columns": [
+                0,
+                3
+              ],
+              "comparedPixels": 43536,
+              "changedPixels": 43255,
+              "changedFraction": 0.993546,
+              "meanAbsolutePremultipliedRgbaDifference": 0.136685
+            },
+            {
+              "columns": [
+                1,
+                2
+              ],
+              "comparedPixels": 41946,
+              "changedPixels": 41691,
+              "changedFraction": 0.993921,
+              "meanAbsolutePremultipliedRgbaDifference": 0.055018
+            },
+            {
+              "columns": [
+                1,
+                3
+              ],
+              "comparedPixels": 41441,
+              "changedPixels": 41181,
+              "changedFraction": 0.993726,
+              "meanAbsolutePremultipliedRgbaDifference": 0.074709
+            },
+            {
+              "columns": [
+                2,
+                3
+              ],
+              "comparedPixels": 42467,
+              "changedPixels": 41725,
+              "changedFraction": 0.982528,
+              "meanAbsolutePremultipliedRgbaDifference": 0.083113
+            }
+          ],
+          "identicalAnchoredPairs": []
+        }
+      ]
+    },
+    "rgbaSha256": "fc6242cc623ce1ac8984378cc4be6ab37a5fdb6e0e9770d25171bbb2cbbd3eab"
+  },
+  "directions": [
+    {
+      "angle": 0,
+      "src": "images/atlas/family-production-v1/mama-a-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-a-blink-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            29,
+            76,
+            283,
+            201
+          ],
+          "anchor": [
+            141,
+            196
+          ]
+        },
+        {
+          "rect": [
+            339,
+            75,
+            285,
+            206
+          ],
+          "anchor": [
+            142.5,
+            201
+          ]
+        },
+        {
+          "rect": [
+            652,
+            76,
+            285,
+            204
+          ],
+          "anchor": [
+            142.5,
+            199
+          ]
+        },
+        {
+          "rect": [
+            965,
+            76,
+            283,
+            207
+          ],
+          "anchor": [
+            141.5,
+            202
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 30,
+      "src": "images/atlas/family-production-v1/mama-a-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-a-blink-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            39,
+            355,
+            249,
+            228
+          ],
+          "anchor": [
+            124.5,
+            223
+          ]
+        },
+        {
+          "rect": [
+            352,
+            354,
+            252,
+            236
+          ],
+          "anchor": [
+            126,
+            231
+          ]
+        },
+        {
+          "rect": [
+            663,
+            356,
+            245,
+            237
+          ],
+          "anchor": [
+            122.5,
+            232
+          ]
+        },
+        {
+          "rect": [
+            977,
+            353,
+            244,
+            237
+          ],
+          "anchor": [
+            122.5,
+            232
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 60,
+      "src": "images/atlas/family-production-v1/mama-a-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-a-blink-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            51,
+            642,
+            238,
+            258
+          ],
+          "anchor": [
+            119,
+            253
+          ]
+        },
+        {
+          "rect": [
+            359,
+            641,
+            243,
+            263
+          ],
+          "anchor": [
+            122,
+            258
+          ]
+        },
+        {
+          "rect": [
+            671,
+            642,
+            240,
+            266
+          ],
+          "anchor": [
+            120,
+            261
+          ]
+        },
+        {
+          "rect": [
+            983,
+            641,
+            237,
+            253
+          ],
+          "anchor": [
+            118.5,
+            248
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 90,
+      "src": "images/atlas/family-production-v1/mama-a-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-a-blink-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            58,
+            940,
+            218,
+            245
+          ],
+          "anchor": [
+            108,
+            240
+          ]
+        },
+        {
+          "rect": [
+            366,
+            942,
+            213,
+            250
+          ],
+          "anchor": [
+            105.5,
+            245
+          ]
+        },
+        {
+          "rect": [
+            680,
+            943,
+            215,
+            248
+          ],
+          "anchor": [
+            107.5,
+            244
+          ]
+        },
+        {
+          "rect": [
+            988,
+            940,
+            214,
+            253
+          ],
+          "anchor": [
+            106.5,
+            249
+          ]
+        }
+      ]
+    }
+  ],
+  "encoding": {
+    "name": "cwebp",
+    "version": "1.6.0\nlibsharpyuv: 0.4.2",
+    "args": [
+      "-lossless",
+      "-exact",
+      "-m",
+      "6",
+      "-q",
+      "100",
+      "-metadata",
+      "all"
+    ],
+    "sourceBytes": 1674549,
+    "runtimeBytes": 1178750,
+    "savedBytes": 495799,
+    "runtimeSha256": "757b74bddd0e0173b0a35ea39583151b84ca33d0428f5114a231ef4d854a605b",
+    "rgbaSha256": "fc6242cc623ce1ac8984378cc4be6ab37a5fdb6e0e9770d25171bbb2cbbd3eab",
+    "decodedRgbaExact": true
+  },
+  "kind": "blink",
+  "src": "images/atlas/family-production-v1/mama-a-blink-v1.png",
+  "runtimeSrc": "images/atlas/family-production-v1/mama-a-blink-v1.webp",
+  "neutralSrc": "images/atlas/family-production-v1/mama-a-v1.png",
+  "neutralPreparation": "images/atlas/family-production-v1/mama-a-v1.json",
+  "neutralSha256": "181cbfa6b39355a42b003b9a35b2ff1947434c662190ea420874e5bfc34d3e0d",
+  "generation": null,
+  "registration": {
+    "status": "awaiting-eye-region-registration-review",
+    "runtimeCoordinates": "neutral-body-crops-and-foot-anchors",
+    "pixelRegistrationCertified": false,
+    "matchingCanvasDimensions": true,
+    "neutralGrid": {
+      "x": [
+        0,
+        313,
+        627,
+        940,
+        1254
+      ],
+      "y": [
+        0,
+        313,
+        627,
+        940,
+        1254
+      ]
+    },
+    "expressionGrid": {
+      "x": [
+        0,
+        313,
+        627,
+        940,
+        1254
+      ],
+      "y": [
+        0,
+        313,
+        627,
+        940,
+        1254
+      ]
+    },
+    "fullSheetSwapApproved": false,
+    "frames": [
+      {
+        "row": 0,
+        "column": 0,
+        "neutralRect": [
+          29,
+          76,
+          283,
+          201
+        ],
+        "neutralAnchor": [
+          141,
+          196
+        ],
+        "measuredExpressionRect": [
+          27,
+          74,
+          286,
+          204
+        ],
+        "measuredExpressionAnchor": [
+          144,
+          199
+        ],
+        "sheetFootDelta": [
+          1,
+          1
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 0,
+        "column": 1,
+        "neutralRect": [
+          339,
+          75,
+          285,
+          206
+        ],
+        "neutralAnchor": [
+          142.5,
+          201
+        ],
+        "measuredExpressionRect": [
+          338,
+          74,
+          288,
+          209
+        ],
+        "measuredExpressionAnchor": [
+          144,
+          204
+        ],
+        "sheetFootDelta": [
+          0.5,
+          2
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 0,
+        "column": 2,
+        "neutralRect": [
+          652,
+          76,
+          285,
+          204
+        ],
+        "neutralAnchor": [
+          142.5,
+          199
+        ],
+        "measuredExpressionRect": [
+          651,
+          74,
+          288,
+          207
+        ],
+        "measuredExpressionAnchor": [
+          144,
+          202
+        ],
+        "sheetFootDelta": [
+          0.5,
+          1
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 0,
+        "column": 3,
+        "neutralRect": [
+          965,
+          76,
+          283,
+          207
+        ],
+        "neutralAnchor": [
+          141.5,
+          202
+        ],
+        "measuredExpressionRect": [
+          963,
+          75,
+          287,
+          210
+        ],
+        "measuredExpressionAnchor": [
+          144,
+          205
+        ],
+        "sheetFootDelta": [
+          0.5,
+          2
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 1,
+        "column": 0,
+        "neutralRect": [
+          39,
+          355,
+          249,
+          228
+        ],
+        "neutralAnchor": [
+          124.5,
+          223
+        ],
+        "measuredExpressionRect": [
+          37,
+          352,
+          253,
+          232
+        ],
+        "measuredExpressionAnchor": [
+          127,
+          228
+        ],
+        "sheetFootDelta": [
+          0.5,
+          2
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 1,
+        "column": 1,
+        "neutralRect": [
+          352,
+          354,
+          252,
+          236
+        ],
+        "neutralAnchor": [
+          126,
+          231
+        ],
+        "measuredExpressionRect": [
+          351,
+          352,
+          255,
+          239
+        ],
+        "measuredExpressionAnchor": [
+          127,
+          234
+        ],
+        "sheetFootDelta": [
+          0,
+          1
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 1,
+        "column": 2,
+        "neutralRect": [
+          663,
+          356,
+          245,
+          237
+        ],
+        "neutralAnchor": [
+          122.5,
+          232
+        ],
+        "measuredExpressionRect": [
+          661,
+          353,
+          248,
+          241
+        ],
+        "measuredExpressionAnchor": [
+          124,
+          236
+        ],
+        "sheetFootDelta": [
+          -0.5,
+          1
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 1,
+        "column": 3,
+        "neutralRect": [
+          977,
+          353,
+          244,
+          237
+        ],
+        "neutralAnchor": [
+          122.5,
+          232
+        ],
+        "measuredExpressionRect": [
+          975,
+          352,
+          248,
+          239
+        ],
+        "measuredExpressionAnchor": [
+          124,
+          234
+        ],
+        "sheetFootDelta": [
+          -0.5,
+          1
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 2,
+        "column": 0,
+        "neutralRect": [
+          51,
+          642,
+          238,
+          258
+        ],
+        "neutralAnchor": [
+          119,
+          253
+        ],
+        "measuredExpressionRect": [
+          50,
+          640,
+          240,
+          262
+        ],
+        "measuredExpressionAnchor": [
+          119.5,
+          257
+        ],
+        "sheetFootDelta": [
+          -0.5,
+          2
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 2,
+        "column": 1,
+        "neutralRect": [
+          359,
+          641,
+          243,
+          263
+        ],
+        "neutralAnchor": [
+          122,
+          258
+        ],
+        "measuredExpressionRect": [
+          356,
+          640,
+          247,
+          265
+        ],
+        "measuredExpressionAnchor": [
+          124,
+          260
+        ],
+        "sheetFootDelta": [
+          -1,
+          1
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 2,
+        "column": 2,
+        "neutralRect": [
+          671,
+          642,
+          240,
+          266
+        ],
+        "neutralAnchor": [
+          120,
+          261
+        ],
+        "measuredExpressionRect": [
+          669,
+          640,
+          243,
+          269
+        ],
+        "measuredExpressionAnchor": [
+          122,
+          264
+        ],
+        "sheetFootDelta": [
+          0,
+          1
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 2,
+        "column": 3,
+        "neutralRect": [
+          983,
+          641,
+          237,
+          253
+        ],
+        "neutralAnchor": [
+          118.5,
+          248
+        ],
+        "measuredExpressionRect": [
+          978,
+          640,
+          243,
+          255
+        ],
+        "measuredExpressionAnchor": [
+          122,
+          250
+        ],
+        "sheetFootDelta": [
+          -1.5,
+          1
+        ],
+        "artworkOutsideNeutralCrop": 2
+      },
+      {
+        "row": 3,
+        "column": 0,
+        "neutralRect": [
+          58,
+          940,
+          218,
+          245
+        ],
+        "neutralAnchor": [
+          108,
+          240
+        ],
+        "measuredExpressionRect": [
+          56,
+          940,
+          221,
+          246
+        ],
+        "measuredExpressionAnchor": [
+          110.5,
+          241
+        ],
+        "sheetFootDelta": [
+          0.5,
+          1
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 3,
+        "column": 1,
+        "neutralRect": [
+          366,
+          942,
+          213,
+          250
+        ],
+        "neutralAnchor": [
+          105.5,
+          245
+        ],
+        "measuredExpressionRect": [
+          365,
+          940,
+          216,
+          254
+        ],
+        "measuredExpressionAnchor": [
+          107.5,
+          249
+        ],
+        "sheetFootDelta": [
+          1,
+          2
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 3,
+        "column": 2,
+        "neutralRect": [
+          680,
+          943,
+          215,
+          248
+        ],
+        "neutralAnchor": [
+          107.5,
+          244
+        ],
+        "measuredExpressionRect": [
+          678,
+          942,
+          219,
+          252
+        ],
+        "measuredExpressionAnchor": [
+          109.5,
+          247
+        ],
+        "sheetFootDelta": [
+          0,
+          2
+        ],
+        "artworkOutsideNeutralCrop": 0
+      },
+      {
+        "row": 3,
+        "column": 3,
+        "neutralRect": [
+          988,
+          940,
+          214,
+          253
+        ],
+        "neutralAnchor": [
+          106.5,
+          249
+        ],
+        "measuredExpressionRect": [
+          986,
+          940,
+          218,
+          255
+        ],
+        "measuredExpressionAnchor": [
+          108.5,
+          251
+        ],
+        "sheetFootDelta": [
+          0,
+          2
+        ],
+        "artworkOutsideNeutralCrop": 0
+      }
+    ]
+  },
+  "measuredDirections": [
+    {
+      "angle": 0,
+      "src": "mama-a-blink-v1.png",
+      "runtimeSrc": "mama-a-blink-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            27,
+            74,
+            286,
+            204
+          ],
+          "anchor": [
+            144,
+            199
+          ]
+        },
+        {
+          "rect": [
+            338,
+            74,
+            288,
+            209
+          ],
+          "anchor": [
+            144,
+            204
+          ]
+        },
+        {
+          "rect": [
+            651,
+            74,
+            288,
+            207
+          ],
+          "anchor": [
+            144,
+            202
+          ]
+        },
+        {
+          "rect": [
+            963,
+            75,
+            287,
+            210
+          ],
+          "anchor": [
+            144,
+            205
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 30,
+      "src": "mama-a-blink-v1.png",
+      "runtimeSrc": "mama-a-blink-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            37,
+            352,
+            253,
+            232
+          ],
+          "anchor": [
+            127,
+            228
+          ]
+        },
+        {
+          "rect": [
+            351,
+            352,
+            255,
+            239
+          ],
+          "anchor": [
+            127,
+            234
+          ]
+        },
+        {
+          "rect": [
+            661,
+            353,
+            248,
+            241
+          ],
+          "anchor": [
+            124,
+            236
+          ]
+        },
+        {
+          "rect": [
+            975,
+            352,
+            248,
+            239
+          ],
+          "anchor": [
+            124,
+            234
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 60,
+      "src": "mama-a-blink-v1.png",
+      "runtimeSrc": "mama-a-blink-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            50,
+            640,
+            240,
+            262
+          ],
+          "anchor": [
+            119.5,
+            257
+          ]
+        },
+        {
+          "rect": [
+            356,
+            640,
+            247,
+            265
+          ],
+          "anchor": [
+            124,
+            260
+          ]
+        },
+        {
+          "rect": [
+            669,
+            640,
+            243,
+            269
+          ],
+          "anchor": [
+            122,
+            264
+          ]
+        },
+        {
+          "rect": [
+            978,
+            640,
+            243,
+            255
+          ],
+          "anchor": [
+            122,
+            250
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 90,
+      "src": "mama-a-blink-v1.png",
+      "runtimeSrc": "mama-a-blink-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            56,
+            940,
+            221,
+            246
+          ],
+          "anchor": [
+            110.5,
+            241
+          ]
+        },
+        {
+          "rect": [
+            365,
+            940,
+            216,
+            254
+          ],
+          "anchor": [
+            107.5,
+            249
+          ]
+        },
+        {
+          "rect": [
+            678,
+            942,
+            219,
+            252
+          ],
+          "anchor": [
+            109.5,
+            247
+          ]
+        },
+        {
+          "rect": [
+            986,
+            940,
+            218,
+            255
+          ],
+          "anchor": [
+            108.5,
+            251
+          ]
+        }
+      ]
+    }
+  ]
+}

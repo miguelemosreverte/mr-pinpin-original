@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Shire estimated surface passes</title>
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; color: #202723; background: #f5f7f6; font: 16px/1.55 system-ui, sans-serif; letter-spacing: 0; }
+  header, section, footer { padding: 28px max(20px, calc((100% - 1100px)/2)); border-bottom: 1px solid #ccd5d0; }
+  h1 { font-size: 30px; line-height: 1.2; margin: 0 0 12px; }
+  h2 { font-size: 22px; line-height: 1.3; margin: 0 0 10px; }
+  p { max-width: 82ch; margin: 10px 0 18px; }
+  a { color: #185c75; text-underline-offset: 3px; }
+  figure { margin: 18px 0 0; }
+  img { display: block; width: 100%; height: auto; aspect-ratio: 3/2; object-fit: contain; background: #101512; }
+  figcaption { font-size: 14px; margin-top: 10px; }
+  code { font-size: 14px; overflow-wrap: anywhere; }
+  nav { display: flex; flex-wrap: wrap; gap: 10px 24px; }
+  .mask, .motion-frame { aspect-ratio: 512/342; }
+  @media (max-width: 600px) { header, section, footer { padding: 22px 16px; } h1 { font-size: 26px; } }
+</style>
+<header>
+  <h1>Shire estimated surface passes</h1>
+  <p>Registered technical derivatives of the illustrated atlas. Depth and normals are artistic estimates. Brightness is derived from the painted SDR image; it does not identify true emitters or recover HDR lighting.</p>
+  <nav aria-label="Surface passes"><a href="#original">Original</a><a href="#depth">Depth</a><a href="#normal">Normals</a><a href="#highlight">Brightness</a><a href="#motion">Motion mask</a><a href="#motion-frames">Motion frames</a><a href="#provenance">Provenance</a></nav>
+</header>
+<main>
+  <section id="original">
+    <h2>Original atlas</h2>
+    <figure><a href="../images/atlas/shire-v1.png"><img src="../images/atlas/shire-v1.webp" width="1536" height="1024" alt="Original illustrated Shire with lake, trees, cottage, bridge and stream"></a>
+      <figcaption>The unchanged 1536 × 1024 source artwork. All surface passes retain this framing.</figcaption></figure>
+  </section>
+  <section id="depth">
+    <h2>Estimated continuous depth</h2>
+    <p>Black is nearer; white is farther. This lens-depth estimate replaces the old lake/forest brightness bias with a monotonic ground plane: <code>ground(v) = 0.85 − 0.65 v</code>, where v runs from top to bottom. Bright water follows that continuous gradient. Locally darker occluders receive inferred lifts capped at 0.12 after gentle edge-preserving smoothing.</p>
+    <p>This is an artistic calibration, not recovered geometry. Shadow can still be mistaken for height, and bright occluders may be missed. Ground focus must use the same <code>groundDepthV2(v)</code> calibration. Existing occlusion can continue to use the unchanged v1 source.</p>
+    <figure><a href="../images/atlas/shire-depth-continuous-v2.png"><img src="../images/atlas/shire-depth-continuous-v2-preview.webp" width="768" height="512" loading="lazy" alt="Smoothed grayscale artistic depth of the full Shire, dark foreground and lighter distant terrain"></a>
+      <figcaption><a href="../images/atlas/shire-depth-continuous-v2.png">16-bit scalar PNG</a> · <a href="../images/atlas/shire-depth-continuous-v2.webp">8-bit WebP</a> · <a href="../images/atlas/shire-depth-continuous-v2.json">Provenance</a></figcaption></figure>
+    <figure><a href="../images/atlas/shire-depth-v1.png"><img src="../images/atlas/shire-depth-v1.webp" width="1536" height="1024" loading="lazy" alt="Unchanged artistic depth source before technical smoothing"></a>
+      <figcaption>Original artistic depth, unchanged. Fine inferred object boundaries may already be inaccurate.</figcaption></figure>
+  </section>
+  <section id="normal">
+    <h2>Estimated view-space normals</h2>
+    <p>Outward normals estimated from the smoothed depth surface: +X points right, +Y up, and +Z toward the viewer. RGB encodes XYZ as <code>0.5 * N + 0.5</code>. Decode as linear data and renormalize after interpolation.</p>
+    <figure><a href="../images/atlas/shire-normal-v2.png"><img src="../images/atlas/shire-normal-v2-preview.webp" width="768" height="512" loading="lazy" alt="RGB camera-space normal estimate with visible lake slopes, canopy surfaces and terrain"></a>
+      <figcaption><a href="../images/atlas/shire-normal-v2.png">RGB8 PNG</a> · <a href="../images/atlas/shire-normal-v2.webp">Lossless WebP</a> · <a href="../images/atlas/shire-normal-v2.json">Provenance and compact grid</a></figcaption></figure>
+    <p>The orthographic assumption is <code>P = (x − W/2, H/2 − y, −0.75 H d)</code>. Therefore <code>N = normalize(0.75 H ∂d/∂x, −0.75 H ∂d/∂y, 1)</code>. The depth scale is an artistic choice, not a measured distance. Ground receding toward the image top yields positive Y normals; no additional ground tilt is applied. These are camera-space normals, not world-up vectors.</p>
+    <p>At strong discontinuities, derivatives use the lower-jump side. Painted texture and illumination that remain in the source depth still affect the normal estimate.</p>
+  </section>
+  <section id="highlight">
+    <h2>Estimated brightness and highlight candidates</h2>
+    <p>Inverse-sRGB transfer followed by Rec.709 luminance: <code>Y = 0.2126 R + 0.7152 G + 0.0722 B</code> in linear RGB. White paint, sunlit leaves, reflections and luminous-looking windows can all be bright. This pass alone cannot tell them apart.</p>
+    <figure><a href="../images/atlas/shire-highlight-v2.png"><img src="../images/atlas/shire-highlight-v2-preview.webp" width="768" height="512" loading="lazy" alt="Linear grayscale brightness estimate of the original painted Shire"></a>
+      <figcaption><a href="../images/atlas/shire-highlight-v2.png">Linear scalar PNG</a> · <a href="../images/atlas/shire-highlight-v2.webp">Lossless WebP</a> · <a href="../images/atlas/shire-highlight-v2.json">Provenance</a>. Raw linear values appear darker in this preview. Not true emission or HDR.</figcaption></figure>
+  </section>
+  <section id="motion">
+    <h2>Estimated scenery motion coverage</h2>
+    <p>White permits water motion; selected canopy tops receive at most 22% coverage. Black holds structures and uncertain areas still. Polygon boundaries are feathered inward and color checks suppress solid objects within the water regions. The scene overlay blend multiplies this coverage.</p>
+    <figure><a href="../images/atlas/shire-motion-mask-v1.png"><img class="mask" src="../images/atlas/shire-motion-mask-v1.webp" width="512" height="342" loading="lazy" alt="Mostly black scenery mask with bright lake and waterfall coverage and faint selected canopy tops"></a>
+      <figcaption>512 × 342; red channel is linear coverage. <a href="../images/atlas/shire-motion-mask-v1.png">PNG</a> · <a href="../images/atlas/shire-motion-mask-v1.json">Authored regions and provenance</a>. Conservative estimate, not a semantic segmentation model.</figcaption></figure>
+  </section>
+  <section id="motion-frames">
+    <h2>Scenery motion frames</h2>
+    <p>Five frames, shown in playback order. Frame 1 is the original artwork; frames 2–5 are generated variations, each edited from that same original. The atlas downloads one 442,244-byte sprite sheet containing all five 512 × 342 frames, plus an 11,468-byte mask. The individual images below are review copies, not five extra atlas downloads.</p>
+    <p>The 12-second loop crossfades adjacent frames at 0, 2.4, 4.8, 7.2 and 9.6 seconds, returning to frame 1 at 12 seconds. The scene overlay uses 35% blend strength multiplied by the motion mask. These are cyclic crossfades, not optical flow. <a href="../images/atlas/shire-motion-v1.json">Runtime manifest and workflow</a>.</p>
+    <figure><a href="../images/atlas/shire-motion-01-v1.webp"><img class="motion-frame" src="../images/atlas/shire-motion-01-v1.webp" width="512" height="342" loading="lazy" alt="Scenery frame 1: original Shire artwork at the beginning of the motion loop"></a>
+      <figcaption>Frame 1 · 0 seconds · Original artwork. <a href="../images/atlas/shire-motion-01-v1.md">Provenance</a>.</figcaption></figure>
+    <figure><a href="../images/atlas/shire-motion-02-v1.webp"><img class="motion-frame" src="../images/atlas/shire-motion-02-v1.webp" width="512" height="342" loading="lazy" alt="Scenery frame 2: generated Shire variation at 2.4 seconds"></a>
+      <figcaption>Frame 2 · 2.4 seconds · Generated variation. <a href="../images/atlas/shire-motion-02-v1.json">Prompt and provenance JSON</a>.</figcaption></figure>
+    <figure><a href="../images/atlas/shire-motion-03-v1.webp"><img class="motion-frame" src="../images/atlas/shire-motion-03-v1.webp" width="512" height="342" loading="lazy" alt="Scenery frame 3: generated Shire variation at 4.8 seconds"></a>
+      <figcaption>Frame 3 · 4.8 seconds · Generated variation. <a href="../images/atlas/shire-motion-03-v1.json">Prompt and provenance JSON</a>.</figcaption></figure>
+    <figure><a href="../images/atlas/shire-motion-04-v1.webp"><img class="motion-frame" src="../images/atlas/shire-motion-04-v1.webp" width="512" height="342" loading="lazy" alt="Scenery frame 4: generated Shire variation at 7.2 seconds"></a>
+      <figcaption>Frame 4 · 7.2 seconds · Generated variation. <a href="../images/atlas/shire-motion-04-v1.json">Prompt and provenance JSON</a>.</figcaption></figure>
+    <figure><a href="../images/atlas/shire-motion-05-v1.webp"><img class="motion-frame" src="../images/atlas/shire-motion-05-v1.webp" width="512" height="342" loading="lazy" alt="Scenery frame 5: generated Shire variation at 9.6 seconds before returning to the original"></a>
+      <figcaption>Frame 5 · 9.6 seconds · Generated variation. <a href="../images/atlas/shire-motion-05-v1.json">Prompt and provenance JSON</a>. Loop returns to frame 1 at 12 seconds.</figcaption></figure>
+  </section>
+  <section id="provenance">
+    <h2>Reproducible derivation</h2>
+    <p><code>node scripts/build-atlas-surface-passes.cjs</code> generates the assets using fixed numerical settings, ImageMagick and lossless WebP. <code>--check</code> regenerates in temporary storage and compares output bytes. Sidecars record input and output SHA-256 hashes, generator hash, timestamp, command, dimensions and coordinate assumptions.</p>
+    <p>The CPU surface sampler retains a 256 × 171 RGB8 normal grid (128.25 KiB), plus 42.75 KiB when supplied a depth image. Sampling uses clamped, top-left UVs and renormalized bilinear normals. No pixel readback occurs during sampling.</p>
+  </section>
+</main>
+<footer><a href="../atlas-webgpu.html">Atlas</a></footer>
+</html>

@@ -4,9 +4,10 @@
   const localized = value => languages.every(lang => typeof value?.[lang] === 'string' && value[lang].trim());
 
   const elderParts = ['papa-home', 'family-morning', 'forest-path', 'elder-house', 'beneath-roots'];
+  const elderPart = id => id === 'one-day-in-the-forest' ? 'papa-home' :
+    elderParts.find(part => id === 'elder-' + part);
   function assetMatches(id, cover, lang) {
-    const part = id === 'one-day-in-the-forest' ? 'papa-home' :
-      elderParts.find(part => id === 'elder-' + part);
+    const part = elderPart(id);
     if (part) return cover.assets[lang] === `images/published/elder-cycle/${part}-title-${lang}.webp`;
     return cover.assets[lang] === `images/covers/${id}/title/title-${lang}-v${cover.version}.png` ||
       cover.assets[lang] === `images/covers/${id}/title-${lang}-v${cover.version}.png`;
@@ -41,6 +42,27 @@
     return {...cover, id, src:cover.assets[lang]};
   }
 
+  // Miniature approval is independent of the localized title cover's approval.
+  function resolveMiniature(id, lang, {allowProposed = false} = {}) {
+    const cover = registry[id], miniature = cover?.miniature;
+    const part = elderPart(id);
+    if (!languages.includes(lang) || !miniature ||
+        !['approved', 'proposed'].includes(miniature.status) ||
+        (miniature.status !== 'approved' && allowProposed !== true) ||
+        !Number.isInteger(miniature.version) || miniature.version < 1 ||
+        miniature.width !== 1024 || miniature.height !== 1536 ||
+        miniature.textFree !== true || miniature.languageIndependent !== true ||
+        (part ? miniature.version !== 1 || miniature.asset !== `images/published/elder-cycle/${part}-miniature.webp` :
+          miniature.asset !== `images/covers/${id}/miniature/miniature-v${miniature.version}.png`)) return null;
+    const derivatives = miniature.derivatives;
+    const responsive = !part && Array.isArray(derivatives) && derivatives.length === 3 &&
+      derivatives.every((asset, index) => asset.width === [256, 512, 1024][index] &&
+        asset.height === asset.width * 3 / 2 &&
+        asset.src === miniature.asset.replace('.png', `-${asset.width}.webp`));
+    return {...miniature, id, src:miniature.asset, title:cover.title, alt:cover.title,
+      ...(responsive ? {srcset:derivatives.map(asset => `${asset.src} ${asset.width}w`).join(', ')} : {})};
+  }
+
   function apply(image, cover, lang, fallback, onMissing) {
     function assign(asset) {
       image.src = asset.src;
@@ -56,5 +78,5 @@
     assign(cover);
   }
 
-  window.titleCovers = {load, resolve, apply};
+  window.titleCovers = {load, resolve, resolveMiniature, apply};
 })();

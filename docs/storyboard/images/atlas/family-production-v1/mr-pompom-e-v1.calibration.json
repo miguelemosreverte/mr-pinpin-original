@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mr-pompom",
+  "sheetId": "e",
+  "assetVersion": "v1",
+  "reviewStatus": "measured-scale-awaiting-visual-review",
+  "method": "Median same-heading body bounding area ratio to prepared Pinpin sheet; one fixed sheet referenceWidth. Runtime displayWidth supplies family proportions.",
+  "referenceFile": "pinpin-e-v1.json",
+  "referenceSha256": "ffa39d0c110bced49682eea7d83cabcb8531c8cc7f8bfbb86f422eda9c68ad81",
+  "referenceWidth": 301.945,
+  "chosenReferenceWidth": 299.406,
+  "rows": [
+    {
+      "angle": 135,
+      "bodyPixels": [
+        232.5,
+        236.5
+      ],
+      "referenceBodyPixels": [
+        235,
+        244.5
+      ],
+      "suggestedReferenceWidth": 295.3803023321734
+    },
+    {
+      "angle": 165,
+      "bodyPixels": [
+        277,
+        226.5
+      ],
+      "referenceBodyPixels": [
+        281.5,
+        229
+      ],
+      "suggestedReferenceWidth": 297.88243092806175
+    },
+    {
+      "angle": 195,
+      "bodyPixels": [
+        264,
+        227
+      ],
+      "referenceBodyPixels": [
+        273,
+        221
+      ],
+      "suggestedReferenceWidth": 300.9298537428961
+    },
+    {
+      "angle": 225,
+      "bodyPixels": [
+        233.5,
+        265.5
+      ],
+      "referenceBodyPixels": [
+        233.5,
+        258.5
+      ],
+      "suggestedReferenceWidth": 306.00592207476296
+    }
+  ],
+  "provenance": {
+    "generationLog": "production/pompom-production-generations.json",
+    "generationLogSha256": "33f198993161b6a4688194370bcd96caf6f5d57796ecb7a2f600a371d16c0c25",
+    "generationRecordSha256": "802df42c1ab957a1202e0bafc83fe4eb034d2bf89edffcca635c6fdc02fc89ff",
+    "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-8442dfc9-d5f7-40ec-885d-92ed7e69fae6.png",
+    "sourceSha256": "be8f3c470876db49347a5628803cf9f391a46f25d588eaf7ba3808764d429fe5",
+    "requestedAngles": [
+      135,
+      165,
+      195,
+      225
+    ],
+    "started": "2026-09-21T11:20:51.254Z",
+    "completed": "2026-09-21T11:21:59.584Z",
+    "durationMilliseconds": 68330,
+    "timingNote": null,
+    "parentVisualReview": "Retry restores large brown-and-white baby eyes with short muzzle. All rows remain left/away-left; rear-left face hidden. Four distinct paw phases and neutral closed mouth."
+  }
+}

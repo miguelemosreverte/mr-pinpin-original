@@ -1,0 +1,79 @@
+{
+  "schemaVersion": 1,
+  "status": "complete",
+  "model": "fal-ai/bytedance/seedance/v1/pro/fast/image-to-video",
+  "input": {
+    "prompt": "The camera stays in exactly the same place for the entire shot. Locked overhead view, identical framing from first to last frame: no pan, tilt, zoom, rotation or reframing. Wind moves fine surface texture and reflected sunlight across the lake. Leaves flutter gently, and the existing stream flows continuously. Buildings, paths, bridge and shoreline stay fixed. Steady daylight.",
+    "duration": "5",
+    "resolution": "1080p",
+    "aspect_ratio": "auto",
+    "camera_fixed": true,
+    "image_url": "https://v3b.fal.media/files/b/0aab43e7/LLt2Sw-yG1OSR5BLm9FYl_approved-map.png"
+  },
+  "config": {
+    "model": "fal-ai/bytedance/seedance/v1/pro/fast/image-to-video",
+    "input": {
+      "prompt": "The camera stays in exactly the same place for the entire shot. Locked overhead view, identical framing from first to last frame: no pan, tilt, zoom, rotation or reframing. Wind moves fine surface texture and reflected sunlight across the lake. Leaves flutter gently, and the existing stream flows continuously. Buildings, paths, bridge and shoreline stay fixed. Steady daylight.",
+      "duration": "5",
+      "resolution": "1080p",
+      "aspect_ratio": "auto",
+      "camera_fixed": true
+    },
+    "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/videos/shire-seedance1-fast-locked-v1.mp4",
+    "sourceImage": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/shire-v1.png",
+    "sourceImageField": "image_url",
+    "matchEndFrame": false,
+    "priceEstimate": {
+      "currency": "USD",
+      "amount": 0.243,
+      "basis": "Advertised approximate price for 5 seconds 1080p; $1 per million video tokens. Actual dimensions and frame count determine cost. Estimate, not invoice.",
+      "source": "https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/image-to-video"
+    }
+  },
+  "configPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/production/atlas-video-seedance1-fast-locked-v1.json",
+  "sourceHash": "80af7f9eb7188f0a1f64969a22632d0ef9732284d027042222c1543879f03780",
+  "createdAt": "2026-09-21T03:39:57.151Z",
+  "events": [
+    {
+      "at": "2026-09-21T03:39:57.152Z",
+      "type": "submitting"
+    },
+    {
+      "at": "2026-09-21T03:40:00.961Z",
+      "type": "source_uploaded"
+    },
+    {
+      "at": "2026-09-21T03:40:01.799Z",
+      "type": "submitted"
+    },
+    {
+      "at": "2026-09-21T03:41:21.522Z",
+      "type": "completed"
+    },
+    {
+      "at": "2026-09-21T03:41:25.717Z",
+      "type": "complete"
+    }
+  ],
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 0.243,
+    "basis": "Advertised approximate price for 5 seconds 1080p; $1 per million video tokens. Actual dimensions and frame count determine cost. Estimate, not invoice.",
+    "source": "https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/image-to-video"
+  },
+  "updatedAt": "2026-09-21T03:41:25.717Z",
+  "requestId": "01a0c20c-9da1-7b41-8368-f635efefeaa9",
+  "queueStatus": "COMPLETED",
+  "metadata": {
+    "width": 1664,
+    "height": 1248,
+    "duration": 5.041667,
+    "codec_name": "h264",
+    "avg_frame_rate": "24/1",
+    "frameCount": 121,
+    "hasAudio": false,
+    "bytes": 26350877,
+    "sha256": "0206bb60df71eb6eb5763aec58ebb861ee23f2c306e1ac093e11e552f5634d12"
+  },
+  "videoUrl": "https://v3b.fal.media/files/b/0aab43ec/JlCbCYhYvG7JlkRBgbDIs_video.mp4"
+}

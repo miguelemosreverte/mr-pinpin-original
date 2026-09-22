@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#fbfcfa">
+  <title>The Shire - Mr. PinPin</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="reader.css?v=timber-home-1">
+  <link rel="stylesheet" href="atlas.css?v=4">
+  <link rel="stylesheet" href="atlas-webgpu.css">
+  <link rel="stylesheet" href="atlas-debug.css">
+  <script src="chapter-editions.js" defer></script>
+  <script src="standalone-stories.js" defer></script>
+  <script src="title-covers.js" defer></script>
+  <script src="atlas-stories.js" defer></script>
+  <script type="module" src="atlas-webgpu.js"></script>
+</head>
+<body class="atlas atlas-gpu">
+  <header class="atlas-heading">
+    <div class="atlas-brand"><h1 id="atlas-title">The Shire</h1><p id="atlas-author">Mr. PinPin</p></div>
+    <nav class="atlas-actions">
+      <button id="atlas-language-toggle" type="button" aria-label="Language" title="Language" aria-expanded="false" aria-controls="atlas-languages"></button>
+      <div id="atlas-languages" class="language-selector" role="group" aria-label="Language" hidden>
+        <button type="button" data-lang="en" title="English" aria-label="English" aria-pressed="true"></button>
+        <button type="button" data-lang="es" title="Espa&#241;ol" aria-label="Espa&#241;ol" aria-pressed="false"></button>
+        <button type="button" data-lang="ru" title="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;" aria-label="&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081;" aria-pressed="false"></button>
+      </div>
+      <a id="atlas-library" class="icon-button" href="library.html?lang=en" aria-label="Library" title="Library" hidden inert tabindex="-1"><i data-lucide="library-big" aria-hidden="true"></i></a>
+    </nav>
+  </header>
+  <main class="atlas-map" aria-labelledby="atlas-title">
+    <div id="map-viewport" role="region" aria-label="The Shire">
+      <canvas id="world-canvas" tabindex="0" aria-label="The Shire"></canvas>
+      <div id="book-overlay"></div>
+    </div>
+    <nav id="map-regions" aria-label="Stories"></nav>
+    <p id="map-status" class="atlas-sr-only" role="status" aria-live="polite"></p>
+    <div class="map-controls" role="group" aria-label="Map view" hidden inert>
+      <button id="bokeh-toggle" type="button" class="icon-button" aria-label="Depth of field" title="Depth of field" aria-pressed="true"><i data-lucide="eye" aria-hidden="true"></i></button>
+      <button id="motion-toggle" type="button" class="icon-button" aria-label="Pause animation" title="Pause animation"><i data-lucide="pause" aria-hidden="true"></i></button>
+      <button id="zoom-out" type="button" class="icon-button" aria-label="Zoom out" title="Zoom out"><i data-lucide="minus" aria-hidden="true"></i></button>
+      <button id="zoom-in" type="button" class="icon-button" aria-label="Zoom in" title="Zoom in"><i data-lucide="plus" aria-hidden="true"></i></button>
+      <button id="zoom-fit" type="button" class="icon-button" aria-label="Fit map" title="Fit map"><i data-lucide="scan" aria-hidden="true"></i></button>
+    </div>
+  </main>
+  <dialog id="story-preview" aria-labelledby="preview-title">
+    <div class="preview-heading">
+      <h2 id="preview-title"></h2>
+      <button id="preview-close" type="button">Back to map</button>
+    </div>
+    <a id="preview-open"><img id="preview-image" alt="" draggable="false"></a>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,18 @@
+{
+  "model": "fal-ai/kling-video/v3/pro/image-to-video",
+  "sourceImage": "docs/storyboard/images/atlas/shire-v1.png",
+  "output": "docs/storyboard/videos/shire-kling-loop-v1.mp4",
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 0.896,
+    "basis": "8 seconds at $0.112/second, audio disabled; estimate, not an invoice",
+    "source": "https://fal.ai/models/fal-ai/kling-video/v3/pro/image-to-video"
+  },
+  "input": {
+    "prompt": "A living miniature storybook map, filmed from a completely locked overhead camera. Small clear ripples travel across the lake, sunlight reflections shimmer naturally on its surface, and the little streams flow continuously downstream. Leaves and tree crowns sway gently in a light breeze. The houses, bridge, roads, banks and tree trunks remain perfectly still in exactly their original positions. Constant warm daylight and crisp painted detail throughout. One continuous eight-second seamless loop, ending in the same composition and motion phase as the opening frame.",
+    "duration": "8",
+    "generate_audio": false,
+    "negative_prompt": "camera movement, zoom, fog, smoke, scene transitions, flicker, changing exposure, warped buildings, new objects, animals, text",
+    "cfg_scale": 0.5
+  }
+}

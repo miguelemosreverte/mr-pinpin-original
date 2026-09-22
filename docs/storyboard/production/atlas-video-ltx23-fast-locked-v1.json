@@ -1,0 +1,16 @@
+{
+  "model": "fal-ai/ltx-2.3/image-to-video/fast",
+  "sourceImage": "docs/storyboard/images/atlas/shire-v1.png",
+  "sourceImageField": "image_url",
+  "matchEndFrame": false,
+  "output": "docs/storyboard/videos/shire-ltx23-fast-locked-v1.mp4",
+  "priceEstimate": {
+    "currency": "USD", "amount": 0.36,
+    "basis": "6 seconds at $0.06/second for 1080p. Estimate, not invoice.",
+    "source": "https://fal.ai/models/fal-ai/ltx-2.3/image-to-video/fast"
+  },
+  "input": {
+    "prompt": "The camera stays in exactly the same place for the entire shot. Locked overhead view, identical framing from first to last frame: no pan, tilt, zoom, rotation or reframing. Wind moves fine surface texture and reflected sunlight across the lake. Leaves flutter gently, and the existing stream flows continuously. Buildings, paths, bridge and shoreline stay fixed. Steady daylight.",
+    "duration": 6, "resolution": "1080p", "aspect_ratio": "auto", "fps": 24, "generate_audio": false
+  }
+}

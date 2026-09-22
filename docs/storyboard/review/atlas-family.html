@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pinpin family - candidate review</title>
+  <link rel="stylesheet" href="atlas-family.css">
+  <script src="../icons.js" defer></script>
+  <script src="../atlas-directions.js" defer></script>
+  <script src="atlas-family.js" defer></script>
+</head>
+<body>
+  <main>
+    <header>
+      <div><h1>Pinpin family</h1><p class="subtitle">Candidate sprite review</p></div>
+      <button id="play" type="button" aria-label="Pause animation" title="Pause animation" disabled>
+        <i data-lucide="pause" aria-hidden="true"></i>
+      </button>
+    </header>
+    <p id="status" role="status">Candidate sheets are being prepared.</p>
+    <section aria-labelledby="lineup-title">
+      <div class="section-title"><h2 id="lineup-title">Walking together</h2><span>45&deg; &middot; 1&times; map scale</span></div>
+      <canvas id="lineup" class="lineup" aria-label="Mama, Pinpin and baby Mr. PomPom walking at their relative map sizes"></canvas>
+      <div class="family-labels"><span>Mama <small>84 px</small></span><span>Pinpin <small>56 px</small></span><span>Mr. PomPom <small>28 px</small></span></div>
+    </section>
+    <section aria-labelledby="headings-title">
+      <div class="section-title"><h2 id="headings-title">Four headings</h2><span>1&times; map scale</span></div>
+      <div id="headings" class="heading-list"></div>
+    </section>
+    <section aria-labelledby="references-title">
+      <div class="section-title"><h2 id="references-title">Book references</h2></div>
+      <div class="references">
+        <figure><a href="../images/standalone/timber-tractor/scene-17.png"><img src="../images/standalone/timber-tractor/scene-17.png" width="1536" height="1024" alt="Pinpin's face in the book, scene 17"></a><figcaption>Pinpin &middot; scene 17</figcaption></figure>
+        <figure><a href="../images/standalone/timber-tractor/scene-19-v2.png"><img src="../images/standalone/timber-tractor/scene-19-v2.png" width="1536" height="1024" alt="Mama and baby Mr. PomPom with Pinpin at the stream, scene 19 version 2"></a><figcaption>Mama and Mr. PomPom &middot; scene 19 v2</figcaption></figure>
+      </div>
+    </section>
+    <div id="characters"></div>
+    <footer><span>Candidate artwork &middot; pending review</span><a href="atlas-directions.html">Current Pinpin sprites</a></footer>
+  </main>
+</body>
+</html>

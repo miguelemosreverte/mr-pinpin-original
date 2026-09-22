@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mr. PinPin / Blender study</title>
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  <link rel="stylesheet" href="pinpin-multiview.css">
+  <style>
+    .front-comparison{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:24px}
+    .front-comparison figure{min-height:0;aspect-ratio:1;background:transparent}
+    .front-comparison img{height:100%;min-height:0;aspect-ratio:1}
+    .front-comparison [aria-labelledby="reference-title"] img{object-fit:cover;object-position:center}
+    @media(max-width:600px){.front-comparison{grid-template-columns:minmax(0,1fr);gap:0}}
+  </style>
+  <script src="pinpin-blender.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Mr. PinPin / Blender study</h1>
+    <nav aria-label="3D studies"><a href="pinpin-3d.html?model=v3">Blender v3</a><a href="pinpin-3d.html?model=v1">Trellis v1</a><a href="pinpin-3d.html?model=v2">Tripo v2</a></nav>
+  </header>
+  <main>
+    <div class="front-comparison">
+    <section aria-labelledby="reference-title">
+      <h2 id="reference-title">FRONT REFERENCE</h2>
+      <figure><img data-src="../models/pinpin-v2/reference-front.png" alt="Supplied front reference for Mr. PinPin" hidden><figcaption role="status">Reference pending</figcaption></figure>
+    </section>
+    <section aria-labelledby="front-title">
+      <h2 id="front-title">CURRENT FRONT</h2>
+      <figure><img data-src="../models/pinpin-v3/renders/front.png" alt="Actual Blender PinPin v3 front render" hidden><figcaption role="status">Render pending</figcaption></figure>
+    </section>
+    </div>
+    <section aria-labelledby="face-title">
+      <h2 id="face-title">FACE CLOSE-UP</h2>
+      <figure><img data-src="../models/pinpin-v3/renders/face-closeup.png" alt="Actual Blender PinPin v3 face close-up render" hidden><figcaption role="status">Render pending</figcaption></figure>
+    </section>
+    <section aria-labelledby="three-quarter-title">
+      <h2 id="three-quarter-title">THREE-QUARTER</h2>
+      <figure><img data-src="../models/pinpin-v3/renders/three-quarter.png" alt="Actual Blender PinPin v3 three-quarter render" hidden><figcaption role="status">Render pending</figcaption></figure>
+    </section>
+    <section aria-labelledby="side-title">
+      <h2 id="side-title">SIDE</h2>
+      <figure><img data-src="../models/pinpin-v3/renders/side.png" alt="Actual Blender PinPin v3 side render" hidden><figcaption role="status">Render pending</figcaption></figure>
+      <a href="../models/pinpin-v2/reference-left.png">Side reference</a>
+    </section>
+    <section aria-labelledby="rear-title">
+      <h2 id="rear-title">REAR</h2>
+      <figure><img data-src="../models/pinpin-v3/renders/rear.png" alt="Actual Blender PinPin v3 rear render" hidden><figcaption role="status">Render pending</figcaption></figure>
+      <a href="../models/pinpin-v2/reference-back.png">Rear reference</a>
+    </section>
+    <section aria-labelledby="underside-title">
+      <h2 id="underside-title">UNDERSIDE</h2>
+      <figure><img data-src="../models/pinpin-v3/renders/underside.png" alt="Actual Blender PinPin v3 underside render" hidden><figcaption role="status">Render pending</figcaption></figure>
+    </section>
+    <section class="assessment" aria-labelledby="assessment-title">
+      <h2 id="assessment-title">Static Study / Work in Progress</h2>
+      <p id="revision-state">Current published study.</p>
+      <p>Supplied front reference compared with the current Blender Cycles render, followed by detail views. The interactive viewer uses a procedural studio reflection environment; its lighting is an approximation of the Cycles studio.</p>
+      <dl><div><dt>Blender model</dt><dd id="model-state" role="status">Checking availability</dd></div><div><dt>Production state</dt><dd>Non-final, unrigged static study; face and groom are under refinement.</dd></div><div><dt>Revision provenance</dt><dd>Revision queries refresh the published assets; they do not select an archived pass. Final model and render hashes must be checked after publication.</dd></div></dl>
+      <nav aria-label="Study assets"><a href="../models/pinpin-v3/model.glb">Model GLB</a><a href="pinpin-multiview.html">Reference and Tripo review</a></nav>
+    </section>
+  </main>
+</body>
+</html>

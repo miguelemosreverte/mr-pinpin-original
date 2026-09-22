@@ -1,0 +1,413 @@
+{
+  "version": 1,
+  "character": "mama",
+  "generator": "builtin image_gen",
+  "identityReference": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-walk-v1.png",
+  "angleStatus": "Requested bins only; no measured-angle certification.",
+  "assetStatus": "Raw generations; Hypatia owns preparation and runtime integration.",
+  "generations": [
+    {
+      "sheet": "a",
+      "attempt": 1,
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-a-v1.png",
+      "angles": [
+        0,
+        30,
+        60,
+        90
+      ],
+      "prompt": "Use case: identity-preserve.\nAsset: one transparent PNG production sprite sheet, exactly 4 rows by 4 columns, sixteen complete Mama hedgehog walking frames.\nInput image 1 is the EDIT TARGET: old PinPin sheet, authoritative ONLY for each cell's camera angle, heading, placement and forward-walk leg phase. Input image 2 is IDENTITY REFERENCE ONLY: approved Mama sheet; use her larger adult maternal body, longer muzzle, expressive warm eyes with visible whites, warm fluffy cheeks and chest, brown copper spines and small brown paws. Identity reference orientations MUST NOT override target headings. Replace every PinPin with this SAME Mama identity, preserving target-specific facing and four distinct forward gait phases in each row. This is an identity replacement, not copying rows from reference 2.\nKeep expression neutral, calm and identical in every gait frame; open eyes, no blinking, no smile change, no head turning during gait. Keep stable body size, lighting, fur, spine pattern and camera elevation. The four columns must visibly follow the target's four different leg positions in order, a forward quadruped walk, never identical stills or reversed backward sliding.\nCanvas: square, 4x4 regular cell layout, one intact whole animal per cell, generous transparent gutters and outer padding; no clipped nose, quills, ears or feet. Preserve relative centers and foot baselines of image 1 while fitting Mama fully within cells. Real alpha transparency; no opaque black/white/checker background, colored fringe, ground, cast shadow, labels or grid lines. Do not paint the transparent preview artifacts. Clean high-quality detailed children's-book 3D illustration matching Mama reference.\nThe angles below are requested visual bins in clockwise image-plane convention (0 right, 90 down/front, 180 left, 270 up/rear), not claims of measured exact camera angles.\n\nMANDATORY ROW DIRECTIONS TOP TO BOTTOM:\nRow 1: right profile, nose points screen RIGHT. Row 2: shallow front-right, nose points down-right. Row 3: steeper front-right, nose mostly down and slightly right. Row 4: straight front, symmetric face toward viewer, nose down-screen centered.",
+      "startedAt": "2026-09-21 11:12:46 UTC",
+      "completedAt": "2026-09-21 11:13:56 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-3a01495f-f1b8-4697-a888-1e2fffab4cd3.png",
+      "review": {
+        "status": "rejected",
+        "orientation": "Right profile, front-right shallow/steep, and centered front rows match requested bins visually; angles not measured.",
+        "identity": "Mama long muzzle, adult body and expressive eyes retained.",
+        "gait": "Different leg placements visible across four columns; no temporal playback performed.",
+        "issues": [
+          "Top-right cell nose reaches/crops at outer right image edge.",
+          "Visible preview fringe requires alpha inspection during preparation."
+        ]
+      },
+      "kind": "body",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-3a01495f-f1b8-4697-a888-1e2fffab4cd3.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-a-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-walk-v1.png"
+      ]
+    },
+    {
+      "sheet": "a",
+      "attempt": 2,
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-a-v1.png",
+      "angles": [
+        0,
+        30,
+        60,
+        90
+      ],
+      "prompt": "Use case: identity-preserve.\nAsset: one transparent PNG production sprite sheet, exactly 4 rows by 4 columns, sixteen complete Mama hedgehog walking frames.\nInput image 1 is the EDIT TARGET: old PinPin sheet, authoritative ONLY for each cell's camera angle, heading, placement and forward-walk leg phase. Input image 2 is IDENTITY REFERENCE ONLY: approved Mama sheet; use her larger adult maternal body, longer muzzle, expressive warm eyes with visible whites, warm fluffy cheeks and chest, brown copper spines and small brown paws. Identity reference orientations MUST NOT override target headings. Replace every PinPin with this SAME Mama identity, preserving target-specific facing and four distinct forward gait phases in each row. This is an identity replacement, not copying rows from reference 2.\nKeep expression neutral, calm and identical in every gait frame; open eyes, no blinking, no smile change, no head turning during gait. Keep stable body size, lighting, fur, spine pattern and camera elevation. The four columns must visibly follow the target's four different leg positions in order, a forward quadruped walk, never identical stills or reversed backward sliding.\nCanvas: square, 4x4 regular cell layout, one intact whole animal per cell, generous transparent gutters and outer padding; no clipped nose, quills, ears or feet. Preserve relative centers and foot baselines of image 1 while fitting Mama fully within cells. Real alpha transparency; no opaque black/white/checker background, colored fringe, ground, cast shadow, labels or grid lines. Do not paint the transparent preview artifacts. Clean high-quality detailed children's-book 3D illustration matching Mama reference.\nThe angles below are requested visual bins in clockwise image-plane convention (0 right, 90 down/front, 180 left, 270 up/rear), not claims of measured exact camera angles.\n\nMANDATORY ROW DIRECTIONS TOP TO BOTTOM:\nRow 1: right profile, nose points screen RIGHT. Row 2: shallow front-right, nose points down-right. Row 3: steeper front-right, nose mostly down and slightly right. Row 4: straight front, symmetric face toward viewer, nose down-screen centered.\nCRITICAL PADDING CORRECTION: Make every animal about 12 percent smaller within its existing cell, retaining adult Mama proportions. Leave at least 24 transparent pixels on ALL FOUR SIDES of EVERY cell at 1254-square equivalent resolution, especially the right-pointing nose in top row column 4. Nothing may touch the outer image edge or cross a cell boundary. Preserve the four target leg phases and row directions.",
+      "startedAt": "2026-09-21 11:14:19 UTC",
+      "completedAt": "2026-09-21 11:15:23 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-fb40c5d6-d29d-406f-be10-4fd65e0fefc5.png",
+      "review": {
+        "status": "accepted-for-preparation",
+        "orientation": "Four distinct requested right/front heading rows preserved visually; angles approximate and unmeasured.",
+        "identity": "Mama adult body, long muzzle, expressive eyes consistent across rows.",
+        "gait": "Four varying target-like leg placements per row; playback and final phase verification deferred to preparation.",
+        "completeness": "Sixteen complete silhouettes; top-right nose has narrow but visible margin after retry.",
+        "issues": [
+          "Preview shows red/yellow fringe: alpha and gutter measurements still required.",
+          "Some similar support poses need temporal gait review; no exact phase certification."
+        ]
+      },
+      "workspacePath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-a-raw-v2.png",
+      "kind": "body",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-fb40c5d6-d29d-406f-be10-4fd65e0fefc5.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-a-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-walk-v1.png"
+      ]
+    },
+    {
+      "sheet": "b",
+      "attempt": 1,
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-b-v1.png",
+      "angles": [
+        120,
+        150,
+        180,
+        210
+      ],
+      "prompt": "Use case: identity-preserve.\nAsset: one transparent PNG production sprite sheet, exactly 4 rows by 4 columns, sixteen complete Mama hedgehog walking frames.\nInput image 1 is the EDIT TARGET: old PinPin sheet, authoritative ONLY for each cell's camera angle, heading, placement and forward-walk leg phase. Input image 2 is IDENTITY REFERENCE ONLY: approved Mama sheet; use her larger adult maternal body, longer muzzle, expressive warm eyes with visible whites, warm fluffy cheeks and chest, brown copper spines and small brown paws. Identity reference orientations MUST NOT override target headings. Replace every PinPin with this SAME Mama identity, preserving target-specific facing and four distinct forward gait phases in each row. This is an identity replacement, not copying rows from reference 2.\nKeep expression neutral, calm and identical in every gait frame; open eyes, no blinking, no smile change, no head turning during gait. Keep stable body size, lighting, fur, spine pattern and camera elevation. The four columns must visibly follow the target's four different leg positions in order, a forward quadruped walk, never identical stills or reversed backward sliding.\nCanvas: square, 4x4 regular cell layout, one intact whole animal per cell, generous transparent gutters and outer padding; no clipped nose, quills, ears or feet. Preserve relative centers and foot baselines of image 1 while fitting Mama fully within cells. Real alpha transparency; no opaque black/white/checker background, colored fringe, ground, cast shadow, labels or grid lines. Do not paint the transparent preview artifacts. Clean high-quality detailed children's-book 3D illustration matching Mama reference.\nThe angles below are requested visual bins in clockwise image-plane convention (0 right, 90 down/front, 180 left, 270 up/rear), not claims of measured exact camera angles.\n\nMANDATORY ROW DIRECTIONS TOP TO BOTTOM:\nALL FOUR ROWS FACE LEFT, never right. Row 1: steep front-LEFT, nose down-left. Row 2: shallow front-LEFT, nose left and slightly down. Row 3: exact LEFT profile, nose at leftmost edge. Row 4: rear-LEFT, walking away toward upper-left, mostly spiny back visible, head/nose at upper-LEFT end, rump at lower-right.",
+      "startedAt": "2026-09-21 11:15:45 UTC",
+      "completedAt": "2026-09-21 11:17:05 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-3c850eb1-8712-4527-8065-839671433fb2.png",
+      "review": {
+        "status": "accepted-for-preparation",
+        "orientation": "All four rows correctly face left: steep front-left, shallow front-left, left profile, rear-left. No right-facing substitution. Requested bins approximate, not measured.",
+        "identity": "Adult Mama proportions and long muzzle/expressive eyes maintained.",
+        "gait": "Four varying leg phases apparent per row, target-like order; needs playback verification.",
+        "completeness": "Sixteen intact bodies with visible gutters; rightmost quills have narrow outer margin.",
+        "issues": [
+          "Alpha fringe/gutter pixel analysis and temporal phase registration remain for preparation."
+        ]
+      },
+      "kind": "body",
+      "workspacePath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-b-raw-v1.png",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-3c850eb1-8712-4527-8065-839671433fb2.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-b-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-walk-v1.png"
+      ]
+    },
+    {
+      "kind": "body",
+      "sheet": "c",
+      "attempt": 1,
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-c-v1.png",
+      "angles": [
+        240,
+        270,
+        300,
+        330
+      ],
+      "prompt": "Use case: identity-preserve.\nAsset: one transparent PNG production sprite sheet, exactly 4 rows by 4 columns, sixteen complete Mama hedgehog walking frames.\nInput image 1 is the EDIT TARGET: old PinPin sheet, authoritative ONLY for each cell's camera angle, heading, placement and forward-walk leg phase. Input image 2 is IDENTITY REFERENCE ONLY: approved Mama sheet; use her larger adult maternal body, longer muzzle, expressive warm eyes with visible whites, warm fluffy cheeks and chest, brown copper spines and small brown paws. Identity reference orientations MUST NOT override target headings. Replace every PinPin with this SAME Mama identity, preserving target-specific facing and four distinct forward gait phases in each row. This is an identity replacement, not copying rows from reference 2.\nKeep expression neutral, calm and identical in every gait frame; open eyes, no blinking, no smile change, no head turning during gait. Keep stable body size, lighting, fur, spine pattern and camera elevation. The four columns must visibly follow the target's four different leg positions in order, a forward quadruped walk, never identical stills or reversed backward sliding.\nCanvas: square, 4x4 regular cell layout, one intact whole animal per cell, generous transparent gutters and outer padding; no clipped nose, quills, ears or feet. Preserve relative centers and foot baselines of image 1 while fitting Mama fully within cells. Real alpha transparency; no opaque black/white/checker background, colored fringe, ground, cast shadow, labels or grid lines. Do not paint the transparent preview artifacts. Clean high-quality detailed children's-book 3D illustration matching Mama reference.\nThe angles below are requested visual bins in clockwise image-plane convention (0 right, 90 down/front, 180 left, 270 up/rear), not claims of measured exact camera angles.\n\nMANDATORY ROW DIRECTIONS TOP TO BOTTOM:\nALL FOUR ROWS WALK AWAY from viewer and show spiny backs. Row 1: steep rear-LEFT, head at upper-left, rump lower-right. Row 2: straight REAR, nose toward TOP center, broad back and rump toward viewer, face hidden. Row 3: steep rear-RIGHT, head upper-right, rump lower-left. Row 4: shallow rear-RIGHT, head right and slightly up, rump left. Do not turn any of these into front-facing portraits.",
+      "startedAt": "2026-09-21 11:17:31 UTC",
+      "completedAt": "2026-09-21 11:18:31 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-c1b312fe-ed5f-4f91-8e0a-17549186feb9.png",
+      "review": {
+        "status": "accepted-for-preparation",
+        "orientation": "Rear-left, centered rear/up, steep rear-right and shallow rear-right match target; no front-facing replacement. Requested angles not measured.",
+        "identity": "Warm fluffy adult body/spines retained; rear views hide most facial identity features, limiting identity confidence.",
+        "gait": "Four differing leg/support placements visible per row; temporal phase review deferred.",
+        "completeness": "All sixteen complete silhouettes and separated gutters visible.",
+        "issues": [
+          "Alpha fringe/gutter measurements and playback validation remain for preparation.",
+          "Cannot certify Mama facial identity from predominantly hidden rear faces."
+        ]
+      },
+      "workspacePath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-c-raw-v1.png",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-c1b312fe-ed5f-4f91-8e0a-17549186feb9.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-c-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-walk-v1.png"
+      ]
+    },
+    {
+      "kind": "body",
+      "sheet": "d",
+      "attempt": 1,
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-a-v2.png",
+      "angles": [
+        15,
+        45,
+        75,
+        105
+      ],
+      "prompt": "Use case: identity-preserve.\nAsset: one transparent PNG production sprite sheet, exactly 4 rows by 4 columns, sixteen complete Mama hedgehog walking frames.\nInput image 1 is the EDIT TARGET: old PinPin sheet, authoritative ONLY for each cell's camera angle, heading, placement and forward-walk leg phase. Input image 2 is IDENTITY REFERENCE ONLY: approved Mama sheet; use her larger adult maternal body, longer muzzle, expressive warm eyes with visible whites, warm fluffy cheeks and chest, brown copper spines and small brown paws. Identity reference orientations MUST NOT override target headings. Replace every PinPin with this SAME Mama identity, preserving target-specific facing and four distinct forward gait phases in each row. This is an identity replacement, not copying rows from reference 2.\nKeep expression neutral, calm and identical in every gait frame; open eyes, no blinking, no smile change, no head turning during gait. Keep stable body size, lighting, fur, spine pattern and camera elevation. The four columns must visibly follow the target's four different leg positions in order, a forward quadruped walk, never identical stills or reversed backward sliding.\nCanvas: square, 4x4 regular cell layout, one intact whole animal per cell, generous transparent gutters and outer padding; no clipped nose, quills, ears or feet. Preserve relative centers and foot baselines of image 1 while fitting Mama fully within cells. Real alpha transparency; no opaque black/white/checker background, colored fringe, ground, cast shadow, labels or grid lines. Do not paint the transparent preview artifacts. Clean high-quality detailed children's-book 3D illustration matching Mama reference.\nThe angles below are requested visual bins in clockwise image-plane convention (0 right, 90 down/front, 180 left, 270 up/rear), not claims of measured exact camera angles.\n\nMANDATORY ROW DIRECTIONS TOP TO BOTTOM:\nRow 1: almost right profile, 15 bin, nose right and a little down. Row 2: front-RIGHT diagonal, 45 bin. Row 3: near-front with small RIGHT component, 75 bin. Row 4: near-front with small LEFT component, 105 bin; nose LEFT of body center, not right. Keep the template's four different orientations.\nKeep full transparent outer margin around every nose, especially rightmost column: fit each animal within its cell with 20 pixels minimum clear padding at 1254-square equivalent.",
+      "startedAt": "2026-09-21 11:18:53 UTC",
+      "completedAt": "2026-09-21 11:20:03 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-ab863c62-b679-499f-87c4-137aedb10d2c.png",
+      "review": {
+        "status": "rejected",
+        "orientation": "First three rows broadly front-right; last row turns too far left relative to near-front 105-bin target, resembling identity reference's last row.",
+        "identity": "Mama retained.",
+        "gait": "Varying leg positions present but orientation mismatch prevents acceptance.",
+        "issues": [
+          "Fourth row orientation copied too strongly from identity reference rather than near-front target.",
+          "Top-right nose reaches outer edge."
+        ]
+      },
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-ab863c62-b679-499f-87c4-137aedb10d2c.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-a-v2.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-walk-v1.png"
+      ]
+    },
+    {
+      "kind": "body",
+      "sheet": "d",
+      "attempt": 2,
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-a-v2.png",
+      "angles": [
+        15,
+        45,
+        75,
+        105
+      ],
+      "prompt": "Use case: identity-preserve.\nAsset: one transparent PNG production sprite sheet, exactly 4 rows by 4 columns, sixteen complete Mama hedgehog walking frames.\nInput image 1 is the EDIT TARGET: old PinPin sheet, authoritative ONLY for each cell's camera angle, heading, placement and forward-walk leg phase. Input image 2 is IDENTITY REFERENCE ONLY: approved Mama sheet; use her larger adult maternal body, longer muzzle, expressive warm eyes with visible whites, warm fluffy cheeks and chest, brown copper spines and small brown paws. Identity reference orientations MUST NOT override target headings. Replace every PinPin with this SAME Mama identity, preserving target-specific facing and four distinct forward gait phases in each row. This is an identity replacement, not copying rows from reference 2.\nKeep expression neutral, calm and identical in every gait frame; open eyes, no blinking, no smile change, no head turning during gait. Keep stable body size, lighting, fur, spine pattern and camera elevation. The four columns must visibly follow the target's four different leg positions in order, a forward quadruped walk, never identical stills or reversed backward sliding.\nCanvas: square, 4x4 regular cell layout, one intact whole animal per cell, generous transparent gutters and outer padding; no clipped nose, quills, ears or feet. Preserve relative centers and foot baselines of image 1 while fitting Mama fully within cells. Real alpha transparency; no opaque black/white/checker background, colored fringe, ground, cast shadow, labels or grid lines. Do not paint the transparent preview artifacts. Clean high-quality detailed children's-book 3D illustration matching Mama reference.\nThe angles below are requested visual bins in clockwise image-plane convention (0 right, 90 down/front, 180 left, 270 up/rear), not claims of measured exact camera angles.\n\nMANDATORY ROW DIRECTIONS TOP TO BOTTOM:\nRow 1: almost right profile, 15 bin, nose right and a little down. Row 2: front-RIGHT diagonal, 45 bin. Row 3: near-front with small RIGHT component, 75 bin. Row 4: near-front with small LEFT component, 105 bin; nose LEFT of body center, not right. Keep the template's four different orientations.\nKeep full transparent outer margin around every nose, especially rightmost column: fit each animal within its cell with 20 pixels minimum clear padding at 1254-square equivalent.\nCORRECTION, TARGET IMAGE 1 CAMERA IS ABSOLUTE: row 4 must be ALMOST STRAIGHT FRONT, only a tiny turn toward screen left: nose just slightly left of the center between the paws; both cheeks/ears nearly symmetric in width. DO NOT use the strongly leftward fourth row from identity image 2. Match the precise nose-to-body-center direction in EACH CELL of image 1, especially rows 3 and 4. At row 3, likewise almost front with just a tiny right component. Reduce every sprite's overall footprint 15 percent within its target cell so EVERY nose, tail and quill has 24+ pixels transparent clearance from cell edges; top-right nose must not touch/crop at the sheet edge. Preserve Mama proportions rather than shrink her muzzle.",
+      "startedAt": "2026-09-21 11:20:26 UTC",
+      "completedAt": "2026-09-21 11:21:31 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-603e351a-fd76-4eaf-abf6-6ccc2de52c23.png",
+      "review": {
+        "status": "accepted-for-preparation",
+        "orientation": "Retry restores near-front slight-left fourth row; preceding rows rightward/front-right. Distinct visual bins requested at 15/45/75/105; actual 15-degree separation not measured or certified.",
+        "identity": "Mama long muzzle/expressive eyes/adult body consistent.",
+        "gait": "Four target-like leg placements per row, several similar support poses require playback review.",
+        "completeness": "Sixteen complete silhouettes; top-right nose inside canvas with narrow margin.",
+        "issues": [
+          "Final alpha/gutter measurement and temporal phase registration remain for preparation.",
+          "Requested angles remain approximate, with some rightward rows visually close to A."
+        ]
+      },
+      "workspacePath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-d-raw-v2.png",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-603e351a-fd76-4eaf-abf6-6ccc2de52c23.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-a-v2.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-walk-v1.png"
+      ]
+    },
+    {
+      "kind": "body",
+      "sheet": "e",
+      "attempt": 1,
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-b-v1.png",
+      "angles": [
+        135,
+        165,
+        195,
+        225
+      ],
+      "prompt": "Use case: identity-preserve.\nAsset: one transparent PNG production sprite sheet, exactly 4 rows by 4 columns, sixteen complete Mama hedgehog walking frames.\nInput image 1 is the EDIT TARGET: old PinPin sheet, authoritative ONLY for each cell's camera angle, heading, placement and forward-walk leg phase. Input image 2 is IDENTITY REFERENCE ONLY: approved Mama sheet; use her larger adult maternal body, longer muzzle, expressive warm eyes with visible whites, warm fluffy cheeks and chest, brown copper spines and small brown paws. Identity reference orientations MUST NOT override target headings. Replace every PinPin with this SAME Mama identity, preserving target-specific facing and four distinct forward gait phases in each row. This is an identity replacement, not copying rows from reference 2.\nKeep expression neutral, calm and identical in every gait frame; open eyes, no blinking, no smile change, no head turning during gait. Keep stable body size, lighting, fur, spine pattern and camera elevation. The four columns must visibly follow the target's four different leg positions in order, a forward quadruped walk, never identical stills or reversed backward sliding.\nCanvas: square, 4x4 regular cell layout, one intact whole animal per cell, generous transparent gutters and outer padding; no clipped nose, quills, ears or feet. Preserve relative centers and foot baselines of image 1 while fitting Mama fully within cells. Real alpha transparency; no opaque black/white/checker background, colored fringe, ground, cast shadow, labels or grid lines. Do not paint the transparent preview artifacts. Clean high-quality detailed children's-book 3D illustration matching Mama reference.\nThe angles below are requested visual bins in clockwise image-plane convention (0 right, 90 down/front, 180 left, 270 up/rear), not claims of measured exact camera angles.\n\nMANDATORY ROW DIRECTIONS TOP TO BOTTOM:\nALL FOUR ROWS FACE LEFT, never right. Row 1: front-LEFT diagonal, nose down-left, 135 bin. Row 2: near LEFT profile with slight toward-viewer angle, nose left and slightly down, 165 bin. Row 3: near LEFT profile with slight AWAY angle, nose left and slightly up, 195 bin. Row 4: rear-LEFT diagonal, nose upper-left, mostly spiny back, rump lower-right, 225 bin. No front-right replacements.\nMatch TARGET image 1 nose-to-body-center direction in each cell precisely. Leave visible transparent padding around all full silhouettes.",
+      "startedAt": "2026-09-21 11:22:05 UTC",
+      "completedAt": "2026-09-21 11:23:24 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-0911a2c6-7ce2-46ce-908b-5b37828f63df.png",
+      "review": {
+        "status": "accepted-for-preparation",
+        "orientation": "All rows left-facing; front-left diagonal, near left/front, near left/rear, rear-left diagonal. No accidental rightward turns. Requested bins only, not measured.",
+        "identity": "Mama long muzzle, expressive eyes and adult body retained where face visible.",
+        "gait": "Four varying target-like leg positions per row; exact phase/playback not certified.",
+        "completeness": "Sixteen visible full silhouettes; rightmost outer margins tight, require pixel inspection.",
+        "issues": [
+          "Tight right edge quill margins and alpha fringe require measurement before runtime acceptance.",
+          "B/E rear-left bins visually close; no exact-angle certification."
+        ]
+      },
+      "workspacePath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-e-raw-v1.png",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-0911a2c6-7ce2-46ce-908b-5b37828f63df.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-b-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-walk-v1.png"
+      ]
+    },
+    {
+      "kind": "body",
+      "sheet": "f",
+      "attempt": 1,
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-c-v1.png",
+      "angles": [
+        255,
+        285,
+        315,
+        345
+      ],
+      "prompt": "Use case: identity-preserve.\nAsset: one transparent PNG production sprite sheet, exactly 4 rows by 4 columns, sixteen complete Mama hedgehog walking frames.\nInput image 1 is the EDIT TARGET: old PinPin sheet, authoritative ONLY for each cell's camera angle, heading, placement and forward-walk leg phase. Input image 2 is IDENTITY REFERENCE ONLY: approved Mama sheet; use her larger adult maternal body, longer muzzle, expressive warm eyes with visible whites, warm fluffy cheeks and chest, brown copper spines and small brown paws. Identity reference orientations MUST NOT override target headings. Replace every PinPin with this SAME Mama identity, preserving target-specific facing and four distinct forward gait phases in each row. This is an identity replacement, not copying rows from reference 2.\nKeep expression neutral, calm and identical in every gait frame; open eyes, no blinking, no smile change, no head turning during gait. Keep stable body size, lighting, fur, spine pattern and camera elevation. The four columns must visibly follow the target's four different leg positions in order, a forward quadruped walk, never identical stills or reversed backward sliding.\nCanvas: square, 4x4 regular cell layout, one intact whole animal per cell, generous transparent gutters and outer padding; no clipped nose, quills, ears or feet. Preserve relative centers and foot baselines of image 1 while fitting Mama fully within cells. Real alpha transparency; no opaque black/white/checker background, colored fringe, ground, cast shadow, labels or grid lines. Do not paint the transparent preview artifacts. Clean high-quality detailed children's-book 3D illustration matching Mama reference.\nThe angles below are requested visual bins in clockwise image-plane convention (0 right, 90 down/front, 180 left, 270 up/rear), not claims of measured exact camera angles.\n\nMANDATORY ROW DIRECTIONS TOP TO BOTTOM:\nALL FOUR ROWS WALK AWAY showing backs, not front-facing portraits. Row 1: near rear with LEFT component, head TOP-LEFT, rump bottom-right, 255 bin. Row 2: near rear with RIGHT component, head TOP-RIGHT, rump bottom-left, 285 bin. Row 3: rear-RIGHT diagonal, nose up-right, 315 bin. Row 4: near RIGHT profile with slight away component, nose right and a little up, 345 bin. Never mirror the upper-left first row to right.\nMatch TARGET image 1 nose-to-body-center direction in each cell precisely. Leave visible transparent padding around all full silhouettes.",
+      "startedAt": "2026-09-21 11:23:56 UTC",
+      "completedAt": "2026-09-21 11:24:49 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-c5fe97db-7c1c-4483-9a0d-acdc934838a2.png",
+      "review": {
+        "status": "accepted-for-preparation",
+        "orientation": "First row rear-left; remaining rows near-rear-right, diagonal rear-right, shallow rear-right. Faces never turn toward viewer. Matches target's visual bins, not measured angles.",
+        "identity": "Mama fur/spines and fuller body maintained; most facial features hidden in rear views.",
+        "gait": "Four varying target-like support positions per row; playback validation remains.",
+        "completeness": "Sixteen whole silhouettes and visible gutters.",
+        "issues": [
+          "Alpha/gutter pixel checks and temporal phase registration remain for preparation.",
+          "Some neighboring rear bins are visually similar, as in original templates; no exact 15-degree claim."
+        ]
+      },
+      "workspacePath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-f-raw-v1.png",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-c5fe97db-7c1c-4483-9a0d-acdc934838a2.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-c-v1.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-walk-v1.png"
+      ]
+    },
+    {
+      "kind": "blink",
+      "sheet": "a",
+      "attempt": 1,
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-a-raw-v2.png",
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-a-raw-v2.png",
+      "angles": [
+        0,
+        30,
+        60,
+        90
+      ],
+      "prompt": "Use case: precise-object-edit.\nEdit target: the single supplied Mama 4x4 walking sprite sheet. Generate its perfectly registered CLOSED-EYE blink counterpart.\nCHANGE ONLY THE VISIBLE EYES in all sixteen cells: naturally close every visible eye with a fur-colored eyelid matching the surrounding orange/cream face fur, with a fine softly curved dark lid line. Remove visible iris, pupil, white and eye glints while the lids are shut. Keep eyebrows and mouth/expression unchanged. Where an eye is hidden by the rear-facing head, change nothing there; do not invent eyes on the back.\nPRESERVE EXACTLY all other pixels and geometry: face/head shape, muzzle, nose, mouth, ears, body proportions, every quill and fur tuft, all four distinct paw poses in each row, camera direction, lighting, colors, sprite positions, cell centers, canvas dimensions and original alpha transparency. Do not shift, resize, recrop, rotate, repaint, relight, sharpen or resample the sheet. Keep the same 4x4 layout and complete silhouettes. This must align to the open-eye input for later localized eye-patch extraction by pixel comparison. No new expression, no smile change, no head motion. Output a transparent PNG of identical dimensions, with only small localized eye areas edited. No text, grid or background.",
+      "startedAt": "2026-09-21 11:25:26 UTC",
+      "completedAt": "2026-09-21 11:26:43 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-344b4624-2855-4fc5-8cb8-d82bce78d292.png",
+      "review": {
+        "status": "ready-for-registration-analysis",
+        "eyes": "All visible eyes visually closed with fur-colored lids and fine curved lines; no visible iris/pupil retained.",
+        "orientation": "Open-eye body sheet's right/front directions retained.",
+        "registration": "Layout, full bodies, noses and paw positions appear aligned by visual comparison. Exact non-eye pixel preservation unmeasured.",
+        "issues": [
+          "Main lane must compare open/closed pixels, register eye patches and reject non-eye drift before runtime use.",
+          "Alpha fringe remains for preparation analysis."
+        ]
+      },
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-344b4624-2855-4fc5-8cb8-d82bce78d292.png",
+      "workspacePath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-blink-a-raw-v1.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-a-raw-v2.png"
+      ]
+    },
+    {
+      "kind": "blink",
+      "sheet": "b",
+      "attempt": 1,
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-b-raw-v1.png",
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-b-raw-v1.png",
+      "angles": [
+        120,
+        150,
+        180,
+        210
+      ],
+      "prompt": "Use case: precise-object-edit.\nEdit target: the single supplied Mama 4x4 walking sprite sheet. Generate its perfectly registered CLOSED-EYE blink counterpart.\nCHANGE ONLY THE VISIBLE EYES in all sixteen cells: naturally close every visible eye with a fur-colored eyelid matching the surrounding orange/cream face fur, with a fine softly curved dark lid line. Remove visible iris, pupil, white and eye glints while the lids are shut. Keep eyebrows and mouth/expression unchanged. Where an eye is hidden by the rear-facing head, change nothing there; do not invent eyes on the back.\nPRESERVE EXACTLY all other pixels and geometry: face/head shape, muzzle, nose, mouth, ears, body proportions, every quill and fur tuft, all four distinct paw poses in each row, camera direction, lighting, colors, sprite positions, cell centers, canvas dimensions and original alpha transparency. Do not shift, resize, recrop, rotate, repaint, relight, sharpen or resample the sheet. Keep the same 4x4 layout and complete silhouettes. This must align to the open-eye input for later localized eye-patch extraction by pixel comparison. No new expression, no smile change, no head motion. Output a transparent PNG of identical dimensions, with only small localized eye areas edited. No text, grid or background.",
+      "startedAt": "2026-09-21 11:27:06 UTC",
+      "completedAt": "2026-09-21 11:28:31 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-33bafd28-f1cf-4380-83df-18b7b5ba50fd.png",
+      "review": {
+        "status": "ready-for-registration-analysis",
+        "eyes": "Front/side visible eyes closed; no visible open iris or pupil. Hidden rear-row eyes not invented. Lids thicker than A.",
+        "orientation": "Left-facing and rear-left body headings retained.",
+        "registration": "Body, paw poses and layout appear aligned visually; exact unchanged pixels not certified.",
+        "issues": [
+          "Main lane must compare open/closed pixels and isolate registered eye patches.",
+          "Heavier lower lid lines than A should be reviewed at runtime scale.",
+          "Alpha fringe requires preparation analysis."
+        ]
+      },
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-33bafd28-f1cf-4380-83df-18b7b5ba50fd.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-b-raw-v1.png"
+      ],
+      "workspacePath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-blink-b-raw-v1.png"
+    },
+    {
+      "kind": "blink",
+      "sheet": "d",
+      "attempt": 1,
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-d-raw-v2.png",
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-d-raw-v2.png",
+      "angles": [
+        15,
+        45,
+        75,
+        105
+      ],
+      "prompt": "Use case: precise-object-edit.\nEdit target: the single supplied Mama 4x4 walking sprite sheet. Generate its perfectly registered CLOSED-EYE blink counterpart.\nCHANGE ONLY THE VISIBLE EYES in all sixteen cells: naturally close every visible eye with a fur-colored eyelid matching the surrounding orange/cream face fur, with a fine softly curved dark lid line. Remove visible iris, pupil, white and eye glints while the lids are shut. Keep eyebrows and mouth/expression unchanged. Where an eye is hidden by the rear-facing head, change nothing there; do not invent eyes on the back.\nPRESERVE EXACTLY all other pixels and geometry: face/head shape, muzzle, nose, mouth, ears, body proportions, every quill and fur tuft, all four distinct paw poses in each row, camera direction, lighting, colors, sprite positions, cell centers, canvas dimensions and original alpha transparency. Do not shift, resize, recrop, rotate, repaint, relight, sharpen or resample the sheet. Keep the same 4x4 layout and complete silhouettes. This must align to the open-eye input for later localized eye-patch extraction by pixel comparison. No new expression, no smile change, no head motion. Output a transparent PNG of identical dimensions, with only small localized eye areas edited. No text, grid or background.",
+      "startedAt": "2026-09-21 11:30:12 UTC",
+      "completedAt": "2026-09-21 11:31:36 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-aa4840cb-a294-4fba-9a05-c169902165bf.png",
+      "review": {
+        "status": "ready-for-registration-analysis",
+        "eyes": "All visible eyes closed with fur-colored lids and curved lines; no visible iris/pupil retained.",
+        "orientation": "Right/front-right and near-front-left rows retained.",
+        "registration": "Layout, body silhouettes and paw phases visually retained. Exact pixel preservation requires comparison.",
+        "issues": [
+          "Main lane must register and compare open/closed pixels before eye-patch extraction.",
+          "Alpha fringe remains for preparation analysis."
+        ]
+      },
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-aa4840cb-a294-4fba-9a05-c169902165bf.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-d-raw-v2.png"
+      ],
+      "workspacePath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-blink-d-raw-v1.png"
+    },
+    {
+      "kind": "blink",
+      "sheet": "e",
+      "attempt": 1,
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-e-raw-v1.png",
+      "targetPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-e-raw-v1.png",
+      "angles": [
+        135,
+        165,
+        195,
+        225
+      ],
+      "prompt": "Use case: precise-object-edit.\nEdit target: the single supplied Mama 4x4 walking sprite sheet. Generate its perfectly registered CLOSED-EYE blink counterpart.\nCHANGE ONLY THE VISIBLE EYES in all sixteen cells: naturally close every visible eye with a fur-colored eyelid matching the surrounding orange/cream face fur, with a fine softly curved dark lid line. Remove visible iris, pupil, white and eye glints while the lids are shut. Keep eyebrows and mouth/expression unchanged. Where an eye is hidden by the rear-facing head, change nothing there; do not invent eyes on the back.\nPRESERVE EXACTLY all other pixels and geometry: face/head shape, muzzle, nose, mouth, ears, body proportions, every quill and fur tuft, all four distinct paw poses in each row, camera direction, lighting, colors, sprite positions, cell centers, canvas dimensions and original alpha transparency. Do not shift, resize, recrop, rotate, repaint, relight, sharpen or resample the sheet. Keep the same 4x4 layout and complete silhouettes. This must align to the open-eye input for later localized eye-patch extraction by pixel comparison. No new expression, no smile change, no head motion. Output a transparent PNG of identical dimensions, with only small localized eye areas edited. No text, grid or background.",
+      "startedAt": "2026-09-21 11:32:01 UTC",
+      "completedAt": "2026-09-21 11:33:07 UTC",
+      "outputPath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-49c3c7a7-e9ba-45ea-9221-ce34d459cde4.png",
+      "review": {
+        "status": "ready-for-registration-analysis",
+        "eyes": "All visible front/side eyes closed with fine curved lids. Rear-left hidden eyes remain hidden.",
+        "orientation": "All left/front-left/rear-left headings preserved.",
+        "registration": "Body layout and paw phases visually retained; precise open/closed pixel alignment unmeasured.",
+        "issues": [
+          "Main lane must compare/register eye patches and rule out non-eye pixel drift.",
+          "Alpha fringe and tight silhouette margins require preparation analysis."
+        ]
+      },
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-49c3c7a7-e9ba-45ea-9221-ce34d459cde4.png",
+      "referencePaths": [
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-directions-e-raw-v1.png"
+      ],
+      "workspacePath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/mama-blink-e-raw-v1.png"
+    }
+  ],
+  "summary": {
+    "bodySheets": 6,
+    "requestedHeadingBins": 24,
+    "bodyFrames": 96,
+    "blinkSheets": 4,
+    "blinkSheetsById": [
+      "a",
+      "b",
+      "d",
+      "e"
+    ],
+    "rejectedAttempts": 2,
+    "status": "generation-complete; preparation/registration/runtime validation separate",
+    "completedAt": "2026-09-21 11:33:44 UTC"
+  }
+}

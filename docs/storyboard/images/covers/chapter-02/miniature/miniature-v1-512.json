@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "source": "images/covers/chapter-02/miniature/miniature-v1.png",
+  "sourceSha256": "45d4f3b0895426e72d575e7e5c33e456ec2e6df1665d5c8196c78fb4d8a91567",
+  "asset": "images/covers/chapter-02/miniature/miniature-v1-512.webp",
+  "sha256": "3625cae86cd86a7e33941f1e2b62e285d4a39ae3f0eda439b527a423575b67be",
+  "width": 512,
+  "height": 768,
+  "encoding": "lossy WebP",
+  "quality": 92,
+  "sharpYuv": true,
+  "alphaQuality": 100,
+  "resize": "Lanczos",
+  "build": "node scripts/build-atlas-miniatures.cjs",
+  "approval": "Inherits miniature approval; this derivative does not approve the source artwork."
+}

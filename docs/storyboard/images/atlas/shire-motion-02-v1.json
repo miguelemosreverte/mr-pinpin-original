@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "frame": 2,
+  "generatedAt": "2026-09-21T01:21:52.331Z",
+  "tool": "image_gen built-in",
+  "prompt": "Use case: precise-object-edit. Asset: animation frame 2 of a five-frame seamlessly looping miniature atlas. Edit the provided atlas with exactly the same locked camera, framing, dimensions, architecture, tree trunks, terrain, path boundaries, colors and exposure. Advance time by a fraction of a second: only the lake ripples and tiny reflected highlights shift gently to the right, the waterfall foam progresses downstream, and the very tips of leafy canopies sway a tiny amount in a soft breeze. Buildings, bridge, rocks, roads, shoreline and all object positions are invariant. This is subtle motion for a registered animation, not a new interpretation. No characters, labels, interface, new objects or blur. Match the original detail and sharpness. Return a single full-frame landscape map.",
+  "reference": "shire-v1.png",
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-f6e7f06f-913f-4d41-870f-c6a21de69e96.png",
+  "review": "Static map geometry is approximately preserved. Runtime mask limits edits to water and canopy interiors, blending only 35% to protect landmark registration. Not optical flow."
+}

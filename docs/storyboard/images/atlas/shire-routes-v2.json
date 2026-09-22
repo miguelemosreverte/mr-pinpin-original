@@ -1,0 +1,31 @@
+{
+  "id": "shire-routes-v2",
+  "order": 4,
+  "title": "Walking routes through the bridge",
+  "beat": "Correct water-crossing shortcuts so the route traverses the footbridge.",
+  "camera": "Same original atlas coordinates and grayscale scenery.",
+  "staging": "Red home-to-lake approach unchanged; purple backtracks to dry ground and crosses the bridge before following the east bank to the Elder; cyan short picnic branch.",
+  "alt": "Grayscale route map with a corrected bridge crossing.",
+  "references": [
+    {
+      "path": "docs/storyboard/images/atlas/shire-routes-v1.png",
+      "role": "Edit target, preserve grayscale map registration and red cottage route."
+    },
+    {
+      "path": "docs/storyboard/images/atlas/shire-v1.png",
+      "role": "Original terrain, bridge and dry paths for navigation accuracy."
+    }
+  ],
+  "output": "docs/storyboard/images/atlas/shire-routes-v2.png",
+  "prompt": "Use case: precise-object-edit. Correct ONLY the walking-route lines in reference1. Keep its grayscale landscape exactly registered at1536x1024; reference2 shows originalterrain. Keep the RED cottage-to-lake path unchanged. Remove the existing PURPLE shortcut across the lake outlet, remove the existing CYAN diagonal crossing of the stream. There is only ONE safe crossing of the stream: the wooden bridge. Draw the PURPLE route as follows, on dry ground: start at the red route's lakeshore endpoint around (670,514), backtrack slightly southwest beside the upper red path to around (600,565), then turn east-southeast across the dry clearing on the WEST/LEFT side of the stream, toward (700,598), (800,623), (875,622). Enter the WEST end of the wooden bridge at (900,620), cross ON THE WOODEN BRIDGE DECK to the EAST end around (1010,594). Then follow the dry east-bank walking path north/up around (1050,545), (1100,480), (1145,410), (1115,340), (1160,280), ending at the Elder burrow doorway (1210,207). Follow the actual visible walking surfaces when adjusting these guidepoints. Water and rocks on the stream itself are not walkable; the route crosses water ONLY on the existing bridge. PURPLE #8000ff flat smooth10pixelstroke. Now a short CYAN #00ffff side path branches from the EAST end of the bridge (1010,594) and follows the dry picnic clearing to (1140,618). Cyan never crosses the stream separately. No colored line along the southern lake outlet water. No labels, markers, circles or arrows. All scenery grayscale, only RED/PURPLE/CYAN route strokes have color. Preserve terrain, framing and all landmarks.",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-fb6c60ec-b0ab-47a1-8b28-044acec59058.png",
+  "startedAt": "2026-09-20T15:12:53.430Z",
+  "finishedAt": "2026-09-20T15:14:53.037Z",
+  "seconds": 119.607,
+  "width": 1536,
+  "height": 1024,
+  "sha256": "c16b47745faa1ca0dc64679818f853b0d74f3d43aff2025303bb19e85daf2130",
+  "review": "The route now uses the wooden bridge as the stream crossing. Red preserves the cottage approach; purple backtracks beside the lake, crosses the bridge deck and goes up the east bank; cyan branches on the east bank into the picnic clearing. Some line placement approximates foliage-covered ground, so runtime trace should be checked against the actual terrain. Suitable route source for this prototype, not an exact navigation survey.",
+  "reviewedAt": "2026-09-20T15:16:04.643Z"
+}

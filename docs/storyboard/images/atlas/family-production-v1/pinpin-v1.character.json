@@ -1,0 +1,1526 @@
+{
+  "id": "pinpin",
+  "name": "Mr. Pinpin",
+  "displayWidth": 56,
+  "fullCircle": true,
+  "reviewStatus": "prepared-awaiting-visual-review",
+  "productionReady": false,
+  "headingAssessment": "Requested approximate azimuth bins; no exact-angle certification.",
+  "readiness": {
+    "preparedDirections": 24,
+    "expectedDirections": 24,
+    "preparedFrames": 96,
+    "missingAngles": [],
+    "technicalInventoryComplete": true
+  },
+  "sheets": [
+    {
+      "src": "images/atlas/family-production-v1/pinpin-a-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-a-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          921,
+          1254
+        ]
+      },
+      "referenceWidth": 294,
+      "sha256": "ae95c02059f0af05a10fbabfaf354425b21ac1f7adbb434e8c82be5caa600b9c",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/pinpin-a-v1.json",
+      "prompt": "images/atlas/family-production-v1/pinpin-a-v1.md"
+    },
+    {
+      "src": "images/atlas/family-production-v1/pinpin-b-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-b-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          895,
+          1254
+        ]
+      },
+      "referenceWidth": 298.641,
+      "sha256": "b6c903cb1f2c03769e9622e23a210e0f258cbf05d779407da129593904b35c63",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/pinpin-b-v1.json",
+      "prompt": "images/atlas/family-production-v1/pinpin-b-v1.md"
+    },
+    {
+      "src": "images/atlas/family-production-v1/pinpin-c-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-c-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          329,
+          641,
+          952,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ]
+      },
+      "referenceWidth": 285.979,
+      "sha256": "97d362d7e9fc8222257f93884d77de88bd753b4d4f357bd990f33171d3fb2b60",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/pinpin-c-v1.json",
+      "prompt": "images/atlas/family-production-v1/pinpin-c-v1.md"
+    },
+    {
+      "src": "images/atlas/family-production-v1/pinpin-d-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-d-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          333,
+          642,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          924,
+          1254
+        ]
+      },
+      "referenceWidth": 303.034,
+      "sha256": "1894e0e09001f00ad557e53c12eb2942e7761625eebc449245272f539e5353d1",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/pinpin-d-v1.json",
+      "prompt": "images/atlas/family-production-v1/pinpin-d-v1.md"
+    },
+    {
+      "src": "images/atlas/family-production-v1/pinpin-e-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-e-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          601,
+          886,
+          1254
+        ]
+      },
+      "referenceWidth": 301.945,
+      "sha256": "ffa39d0c110bced49682eea7d83cabcb8531c8cc7f8bfbb86f422eda9c68ad81",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/pinpin-e-v1.json",
+      "prompt": "images/atlas/family-production-v1/pinpin-e-v1.md"
+    },
+    {
+      "src": "images/atlas/family-production-v1/pinpin-f-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-f-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ]
+      },
+      "referenceWidth": 261.818,
+      "sha256": "e98ff4dba1baab84b3072944d2602157c0e0b800924597f4788c48bb229a5f92",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/pinpin-f-v1.json",
+      "prompt": "images/atlas/family-production-v1/pinpin-f-v1.md"
+    }
+  ],
+  "directions": [
+    {
+      "angle": 0,
+      "src": "images/atlas/family-production-v1/pinpin-a-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-a-v1.webp",
+      "referenceWidth": 294,
+      "frames": [
+        {
+          "rect": [
+            23,
+            70,
+            290,
+            205
+          ],
+          "anchor": [
+            145.5,
+            200
+          ]
+        },
+        {
+          "rect": [
+            335,
+            71,
+            291,
+            206
+          ],
+          "anchor": [
+            145.5,
+            202
+          ]
+        },
+        {
+          "rect": [
+            644,
+            71,
+            294,
+            213
+          ],
+          "anchor": [
+            147.5,
+            208
+          ]
+        },
+        {
+          "rect": [
+            961,
+            71,
+            289,
+            213
+          ],
+          "anchor": [
+            144.5,
+            209
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 15,
+      "src": "images/atlas/family-production-v1/pinpin-d-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-d-v1.webp",
+      "referenceWidth": 303.034,
+      "frames": [
+        {
+          "rect": [
+            34,
+            53,
+            290,
+            223
+          ],
+          "anchor": [
+            145.5,
+            218
+          ]
+        },
+        {
+          "rect": [
+            343,
+            52,
+            290,
+            225
+          ],
+          "anchor": [
+            146,
+            220
+          ]
+        },
+        {
+          "rect": [
+            651,
+            53,
+            289,
+            225
+          ],
+          "anchor": [
+            146,
+            220
+          ]
+        },
+        {
+          "rect": [
+            962,
+            54,
+            280,
+            226
+          ],
+          "anchor": [
+            140,
+            221
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 30,
+      "src": "images/atlas/family-production-v1/pinpin-a-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-a-v1.webp",
+      "referenceWidth": 294,
+      "frames": [
+        {
+          "rect": [
+            32,
+            350,
+            281,
+            239
+          ],
+          "anchor": [
+            141,
+            234
+          ]
+        },
+        {
+          "rect": [
+            347,
+            351,
+            269,
+            242
+          ],
+          "anchor": [
+            134,
+            237
+          ]
+        },
+        {
+          "rect": [
+            657,
+            349,
+            271,
+            246
+          ],
+          "anchor": [
+            135.5,
+            241
+          ]
+        },
+        {
+          "rect": [
+            973,
+            349,
+            261,
+            247
+          ],
+          "anchor": [
+            131,
+            242
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 45,
+      "src": "images/atlas/family-production-v1/pinpin-d-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-d-v1.webp",
+      "referenceWidth": 303.034,
+      "frames": [
+        {
+          "rect": [
+            39,
+            342,
+            274,
+            251
+          ],
+          "anchor": [
+            137.5,
+            246
+          ]
+        },
+        {
+          "rect": [
+            346,
+            341,
+            270,
+            255
+          ],
+          "anchor": [
+            136,
+            250
+          ]
+        },
+        {
+          "rect": [
+            656,
+            341,
+            268,
+            256
+          ],
+          "anchor": [
+            134.5,
+            251
+          ]
+        },
+        {
+          "rect": [
+            970,
+            342,
+            266,
+            253
+          ],
+          "anchor": [
+            133.5,
+            248
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 60,
+      "src": "images/atlas/family-production-v1/pinpin-a-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-a-v1.webp",
+      "referenceWidth": 294,
+      "frames": [
+        {
+          "rect": [
+            47,
+            639,
+            243,
+            268
+          ],
+          "anchor": [
+            120.5,
+            263
+          ]
+        },
+        {
+          "rect": [
+            358,
+            637,
+            244,
+            272
+          ],
+          "anchor": [
+            121.5,
+            267
+          ]
+        },
+        {
+          "rect": [
+            671,
+            639,
+            240,
+            275
+          ],
+          "anchor": [
+            119.5,
+            270
+          ]
+        },
+        {
+          "rect": [
+            985,
+            639,
+            237,
+            265
+          ],
+          "anchor": [
+            117.5,
+            260
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 75,
+      "src": "images/atlas/family-production-v1/pinpin-d-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-d-v1.webp",
+      "referenceWidth": 303.034,
+      "frames": [
+        {
+          "rect": [
+            45,
+            637,
+            243,
+            273
+          ],
+          "anchor": [
+            122,
+            268
+          ]
+        },
+        {
+          "rect": [
+            357,
+            636,
+            245,
+            274
+          ],
+          "anchor": [
+            122.5,
+            270
+          ]
+        },
+        {
+          "rect": [
+            666,
+            638,
+            243,
+            275
+          ],
+          "anchor": [
+            121.5,
+            270
+          ]
+        },
+        {
+          "rect": [
+            978,
+            638,
+            245,
+            267
+          ],
+          "anchor": [
+            122,
+            262
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 90,
+      "src": "images/atlas/family-production-v1/pinpin-a-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-a-v1.webp",
+      "referenceWidth": 294,
+      "frames": [
+        {
+          "rect": [
+            52,
+            929,
+            223,
+            258
+          ],
+          "anchor": [
+            111,
+            253
+          ]
+        },
+        {
+          "rect": [
+            362,
+            929,
+            224,
+            267
+          ],
+          "anchor": [
+            111.5,
+            262
+          ]
+        },
+        {
+          "rect": [
+            676,
+            928,
+            226,
+            269
+          ],
+          "anchor": [
+            112,
+            264
+          ]
+        },
+        {
+          "rect": [
+            988,
+            928,
+            225,
+            272
+          ],
+          "anchor": [
+            111.5,
+            268
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 105,
+      "src": "images/atlas/family-production-v1/pinpin-d-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-d-v1.webp",
+      "referenceWidth": 303.034,
+      "frames": [
+        {
+          "rect": [
+            48,
+            936,
+            239,
+            258
+          ],
+          "anchor": [
+            118.5,
+            254
+          ]
+        },
+        {
+          "rect": [
+            360,
+            936,
+            239,
+            273
+          ],
+          "anchor": [
+            119.5,
+            269
+          ]
+        },
+        {
+          "rect": [
+            671,
+            937,
+            241,
+            271
+          ],
+          "anchor": [
+            119,
+            266
+          ]
+        },
+        {
+          "rect": [
+            984,
+            937,
+            240,
+            274
+          ],
+          "anchor": [
+            121,
+            269
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 120,
+      "src": "images/atlas/family-production-v1/pinpin-b-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-b-v1.webp",
+      "referenceWidth": 298.641,
+      "frames": [
+        {
+          "rect": [
+            44,
+            45,
+            247,
+            248
+          ],
+          "anchor": [
+            123,
+            243
+          ]
+        },
+        {
+          "rect": [
+            357,
+            45,
+            246,
+            245
+          ],
+          "anchor": [
+            122,
+            240
+          ]
+        },
+        {
+          "rect": [
+            670,
+            45,
+            246,
+            248
+          ],
+          "anchor": [
+            122.5,
+            244
+          ]
+        },
+        {
+          "rect": [
+            984,
+            45,
+            245,
+            244
+          ],
+          "anchor": [
+            121.5,
+            239
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 135,
+      "src": "images/atlas/family-production-v1/pinpin-e-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-e-v1.webp",
+      "referenceWidth": 301.945,
+      "frames": [
+        {
+          "rect": [
+            46,
+            41,
+            247,
+            257
+          ],
+          "anchor": [
+            124,
+            252
+          ]
+        },
+        {
+          "rect": [
+            353,
+            41,
+            254,
+            256
+          ],
+          "anchor": [
+            129,
+            251
+          ]
+        },
+        {
+          "rect": [
+            671,
+            41,
+            250,
+            257
+          ],
+          "anchor": [
+            124.5,
+            252
+          ]
+        },
+        {
+          "rect": [
+            979,
+            42,
+            255,
+            250
+          ],
+          "anchor": [
+            130,
+            245
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 150,
+      "src": "images/atlas/family-production-v1/pinpin-b-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-b-v1.webp",
+      "referenceWidth": 298.641,
+      "frames": [
+        {
+          "rect": [
+            29,
+            353,
+            281,
+            239
+          ],
+          "anchor": [
+            139,
+            234
+          ]
+        },
+        {
+          "rect": [
+            333,
+            353,
+            286,
+            233
+          ],
+          "anchor": [
+            141.5,
+            228
+          ]
+        },
+        {
+          "rect": [
+            646,
+            352,
+            286,
+            234
+          ],
+          "anchor": [
+            142,
+            229
+          ]
+        },
+        {
+          "rect": [
+            959,
+            353,
+            279,
+            234
+          ],
+          "anchor": [
+            139,
+            229
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 165,
+      "src": "images/atlas/family-production-v1/pinpin-e-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-e-v1.webp",
+      "referenceWidth": 301.945,
+      "frames": [
+        {
+          "rect": [
+            17,
+            335,
+            288,
+            241
+          ],
+          "anchor": [
+            142.5,
+            236
+          ]
+        },
+        {
+          "rect": [
+            324,
+            336,
+            294,
+            244
+          ],
+          "anchor": [
+            145.5,
+            239
+          ]
+        },
+        {
+          "rect": [
+            638,
+            336,
+            296,
+            231
+          ],
+          "anchor": [
+            146.5,
+            227
+          ]
+        },
+        {
+          "rect": [
+            951,
+            337,
+            293,
+            241
+          ],
+          "anchor": [
+            145,
+            236
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "src": "images/atlas/family-production-v1/pinpin-b-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-b-v1.webp",
+      "referenceWidth": 298.641,
+      "frames": [
+        {
+          "rect": [
+            12,
+            650,
+            298,
+            224
+          ],
+          "anchor": [
+            148,
+            219
+          ]
+        },
+        {
+          "rect": [
+            322,
+            649,
+            300,
+            219
+          ],
+          "anchor": [
+            150,
+            214
+          ]
+        },
+        {
+          "rect": [
+            635,
+            648,
+            300,
+            219
+          ],
+          "anchor": [
+            149.5,
+            214
+          ]
+        },
+        {
+          "rect": [
+            951,
+            649,
+            294,
+            218
+          ],
+          "anchor": [
+            146.5,
+            213
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 195,
+      "src": "images/atlas/family-production-v1/pinpin-e-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-e-v1.webp",
+      "referenceWidth": 301.945,
+      "frames": [
+        {
+          "rect": [
+            15,
+            622,
+            287,
+            235
+          ],
+          "anchor": [
+            141.5,
+            230
+          ]
+        },
+        {
+          "rect": [
+            333,
+            622,
+            283,
+            233
+          ],
+          "anchor": [
+            140,
+            228
+          ]
+        },
+        {
+          "rect": [
+            643,
+            623,
+            286,
+            230
+          ],
+          "anchor": [
+            141.5,
+            225
+          ]
+        },
+        {
+          "rect": [
+            959,
+            623,
+            283,
+            232
+          ],
+          "anchor": [
+            140.5,
+            227
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 210,
+      "src": "images/atlas/family-production-v1/pinpin-b-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-b-v1.webp",
+      "referenceWidth": 298.641,
+      "frames": [
+        {
+          "rect": [
+            55,
+            916,
+            256,
+            260
+          ],
+          "anchor": [
+            127,
+            256
+          ]
+        },
+        {
+          "rect": [
+            371,
+            918,
+            249,
+            259
+          ],
+          "anchor": [
+            124,
+            254
+          ]
+        },
+        {
+          "rect": [
+            685,
+            917,
+            245,
+            263
+          ],
+          "anchor": [
+            121,
+            258
+          ]
+        },
+        {
+          "rect": [
+            999,
+            918,
+            240,
+            262
+          ],
+          "anchor": [
+            119.5,
+            257
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 225,
+      "src": "images/atlas/family-production-v1/pinpin-e-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-e-v1.webp",
+      "referenceWidth": 301.945,
+      "frames": [
+        {
+          "rect": [
+            53,
+            907,
+            250,
+            266
+          ],
+          "anchor": [
+            124,
+            261
+          ]
+        },
+        {
+          "rect": [
+            378,
+            907,
+            245,
+            269
+          ],
+          "anchor": [
+            121.5,
+            264
+          ]
+        },
+        {
+          "rect": [
+            690,
+            908,
+            247,
+            272
+          ],
+          "anchor": [
+            123,
+            267
+          ]
+        },
+        {
+          "rect": [
+            1009,
+            907,
+            233,
+            273
+          ],
+          "anchor": [
+            116,
+            269
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 240,
+      "src": "images/atlas/family-production-v1/pinpin-c-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-c-v1.webp",
+      "referenceWidth": 285.979,
+      "frames": [
+        {
+          "rect": [
+            54,
+            50,
+            231,
+            252
+          ],
+          "anchor": [
+            114.5,
+            247
+          ]
+        },
+        {
+          "rect": [
+            369,
+            51,
+            231,
+            249
+          ],
+          "anchor": [
+            114.5,
+            244
+          ]
+        },
+        {
+          "rect": [
+            687,
+            50,
+            227,
+            252
+          ],
+          "anchor": [
+            112,
+            247
+          ]
+        },
+        {
+          "rect": [
+            1005,
+            50,
+            222,
+            250
+          ],
+          "anchor": [
+            110.5,
+            245
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 255,
+      "src": "images/atlas/family-production-v1/pinpin-f-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-f-v1.webp",
+      "referenceWidth": 261.818,
+      "frames": [
+        {
+          "rect": [
+            78,
+            51,
+            196,
+            251
+          ],
+          "anchor": [
+            97,
+            246
+          ]
+        },
+        {
+          "rect": [
+            380,
+            52,
+            200,
+            252
+          ],
+          "anchor": [
+            99.5,
+            247
+          ]
+        },
+        {
+          "rect": [
+            691,
+            54,
+            198,
+            249
+          ],
+          "anchor": [
+            98.5,
+            244
+          ]
+        },
+        {
+          "rect": [
+            1011,
+            53,
+            195,
+            250
+          ],
+          "anchor": [
+            97,
+            245
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 270,
+      "src": "images/atlas/family-production-v1/pinpin-c-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-c-v1.webp",
+      "referenceWidth": 285.979,
+      "frames": [
+        {
+          "rect": [
+            61,
+            321,
+            196,
+            295
+          ],
+          "anchor": [
+            98,
+            290
+          ]
+        },
+        {
+          "rect": [
+            374,
+            321,
+            198,
+            295
+          ],
+          "anchor": [
+            98.5,
+            291
+          ]
+        },
+        {
+          "rect": [
+            689,
+            322,
+            199,
+            286
+          ],
+          "anchor": [
+            99.5,
+            282
+          ]
+        },
+        {
+          "rect": [
+            1000,
+            321,
+            198,
+            297
+          ],
+          "anchor": [
+            98.5,
+            292
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 285,
+      "src": "images/atlas/family-production-v1/pinpin-f-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-f-v1.webp",
+      "referenceWidth": 261.818,
+      "frames": [
+        {
+          "rect": [
+            68,
+            350,
+            201,
+            258
+          ],
+          "anchor": [
+            100.5,
+            253
+          ]
+        },
+        {
+          "rect": [
+            380,
+            352,
+            199,
+            253
+          ],
+          "anchor": [
+            100,
+            248
+          ]
+        },
+        {
+          "rect": [
+            684,
+            350,
+            201,
+            258
+          ],
+          "anchor": [
+            100,
+            254
+          ]
+        },
+        {
+          "rect": [
+            1001,
+            348,
+            197,
+            260
+          ],
+          "anchor": [
+            99,
+            255
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 300,
+      "src": "images/atlas/family-production-v1/pinpin-c-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-c-v1.webp",
+      "referenceWidth": 285.979,
+      "frames": [
+        {
+          "rect": [
+            46,
+            649,
+            239,
+            256
+          ],
+          "anchor": [
+            119,
+            251
+          ]
+        },
+        {
+          "rect": [
+            353,
+            648,
+            235,
+            250
+          ],
+          "anchor": [
+            118,
+            245
+          ]
+        },
+        {
+          "rect": [
+            665,
+            647,
+            238,
+            254
+          ],
+          "anchor": [
+            119.5,
+            249
+          ]
+        },
+        {
+          "rect": [
+            979,
+            648,
+            233,
+            259
+          ],
+          "anchor": [
+            116.5,
+            254
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 315,
+      "src": "images/atlas/family-production-v1/pinpin-f-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-f-v1.webp",
+      "referenceWidth": 261.818,
+      "frames": [
+        {
+          "rect": [
+            58,
+            663,
+            226,
+            251
+          ],
+          "anchor": [
+            113,
+            246
+          ]
+        },
+        {
+          "rect": [
+            364,
+            664,
+            230,
+            242
+          ],
+          "anchor": [
+            115,
+            237
+          ]
+        },
+        {
+          "rect": [
+            668,
+            664,
+            229,
+            250
+          ],
+          "anchor": [
+            115,
+            245
+          ]
+        },
+        {
+          "rect": [
+            985,
+            662,
+            225,
+            249
+          ],
+          "anchor": [
+            112.5,
+            244
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 330,
+      "src": "images/atlas/family-production-v1/pinpin-c-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-c-v1.webp",
+      "referenceWidth": 285.979,
+      "frames": [
+        {
+          "rect": [
+            24,
+            941,
+            297,
+            240
+          ],
+          "anchor": [
+            149,
+            236
+          ]
+        },
+        {
+          "rect": [
+            337,
+            940,
+            296,
+            241
+          ],
+          "anchor": [
+            148.5,
+            236
+          ]
+        },
+        {
+          "rect": [
+            650,
+            940,
+            294,
+            241
+          ],
+          "anchor": [
+            147.5,
+            236
+          ]
+        },
+        {
+          "rect": [
+            961,
+            940,
+            292,
+            242
+          ],
+          "anchor": [
+            146,
+            237
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 345,
+      "src": "images/atlas/family-production-v1/pinpin-f-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-f-v1.webp",
+      "referenceWidth": 261.818,
+      "frames": [
+        {
+          "rect": [
+            38,
+            974,
+            272,
+            211
+          ],
+          "anchor": [
+            136.5,
+            206
+          ]
+        },
+        {
+          "rect": [
+            344,
+            975,
+            269,
+            212
+          ],
+          "anchor": [
+            134.5,
+            208
+          ]
+        },
+        {
+          "rect": [
+            652,
+            973,
+            269,
+            215
+          ],
+          "anchor": [
+            134.5,
+            210
+          ]
+        },
+        {
+          "rect": [
+            963,
+            972,
+            272,
+            216
+          ],
+          "anchor": [
+            136,
+            211
+          ]
+        }
+      ]
+    }
+  ]
+}

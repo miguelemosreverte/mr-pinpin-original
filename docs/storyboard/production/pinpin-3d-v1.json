@@ -1,0 +1,20 @@
+{
+  "model": "fal-ai/trellis-2",
+  "sourceImage": "/Volumes/TB4/mac-mini-storage/shared/pinpin-3d-study-v1/reference.png",
+  "outputGLB": "/Volumes/TB4/mac-mini-storage/shared/pinpin-3d-study-v1/model.glb",
+  "params": {
+    "resolution": "1536",
+    "texture_size": "2048",
+    "decimation_target": 200000,
+    "remesh": true,
+    "seed": 210926
+  },
+  "prompt": "Image-conditioned reconstruction of reference.png. Trellis receives only the image and numeric parameters, no text prompt. Full reference-generation prompt is recorded beside reference.png in reference.md. Preserve Mr. PinPin's book identity for a static 3D inspection before rigging.",
+  "priceEstimate": {
+    "amount": 0.35,
+    "currency": "USD",
+    "quantity": 1,
+    "source": "https://fal.ai/models/fal-ai/trellis-2",
+    "notes": "Published generation price checked 2026-09-21; not a verified billed charge. Reference-image generation cost excluded."
+  }
+}

@@ -18,6 +18,17 @@ class Element {
   setAttribute(name, value) { this.attributes[name] = value; }
   removeAttribute(name) { delete this.attributes[name]; }
   addEventListener() {}
+  querySelector(selector) {
+    if (selector === 'span') {
+      let label = this.children.find(node => node.tagName === 'span');
+      if (!label) { label = new Element('span'); this.append(label); }
+      return label;
+    }
+    return null;
+  }
+  focus() {}
+  getBoundingClientRect() { return this.rect || {top:100, bottom:300, height:200}; }
+  get isConnected() { return true; }
   remove() { if (this.parent) this.parent.children = this.parent.children.filter(node => node !== this); }
   decode() { return Promise.resolve(); }
 }
@@ -27,18 +38,29 @@ const nodes = (page, root, predicate) => descendants(page.elements[root]).filter
 
 async function page(kind, search, missingRegistry = false, registryOverride) {
   const elements = {};
+  const frames = [];
+  const languageButtons = languages.map(lang => Object.assign(new Element('button'), {dataset:{lang}}));
+  const footer = new Element('nav');
   const document = {documentElement:new Element('html'), fonts:{ready:Promise.resolve()},
-    getElementById:id => elements[id] ||= new Element(), createElement:tag => new Element(tag),
-    createTextNode:text => Object.assign(new Element('#text'), {textContent:text}), querySelectorAll:() => []};
+    getElementById:id => (elements.reader && descendants(elements.reader).find(node => node.id === id)) || (elements[id] ||= new Element()),
+    createElement:tag => new Element(tag),
+    createTextNode:text => Object.assign(new Element('#text'), {textContent:text}),
+    querySelector:selector => selector === '.reader-footer' ? footer : null,
+    querySelectorAll:selector => {
+      if (selector === '#reader-languages [data-lang]' || selector === '[data-lang]') return languageButtons;
+      if (selector === '#reader #title-cover, #reader .scene') return descendants(elements.reader).filter(node => node.id === 'title-cover' || classIs(node, 'scene'));
+      return [];
+    }};
+  document.documentElement.scrollHeight = 2000;
   document.getElementById('chapter-filter').value = 'all';
   const context = {URL, URLSearchParams, Set, Intl, document, location:new URL('https://example.test/storyboard/' + search),
     fetch:async name => ({ok:!(missingRegistry && name === 'covers.json'), status:missingRegistry ? 404 : 200,
       json:async () => name === 'covers.json' && registryOverride ? registryOverride : JSON.parse(read(name))}),
-    addEventListener() {}, requestAnimationFrame() {}, ResizeObserver:class { observe() {} },
+    addEventListener() {}, requestAnimationFrame:callback => frames.push(callback), ResizeObserver:class { observe() {} },
     innerHeight:800, scrollY:0, history:{}, console};
   context.history.replaceState = context.history.pushState = (_, __, url) => { context.location = new URL(url, context.location); };
   context.window = context;
-  context.scrollTo = () => {};
+  context.scrollTo = (_, y) => { context.scrollY = y; };
   vm.createContext(context);
   for (const script of ['locale.js', 'chapter-editions.js', 'standalone-stories.js', 'title-covers.js', `${kind}.js`]) {
     vm.runInContext(read(script), context, {filename:script});
@@ -46,7 +68,7 @@ async function page(kind, search, missingRegistry = false, registryOverride) {
   for (let i = 0; i < 8; i++) await new Promise(resolve => setImmediate(resolve));
   assert.equal(elements[kind === 'reader' ? 'reader' : 'chapter-library'].attributes['aria-busy'], 'false');
   if (kind === 'reader') assert.equal(elements.reader.children[0].tagName, 'article', 'Reader must remain available');
-  return {context, elements};
+  return {context, elements, frames, languageButtons};
 }
 const readerImages = result => nodes(result, 'reader', node => node.tagName === 'img');
 const sceneSignature = result => nodes(result, 'reader', node => classIs(node, 'scene')).map(node => ({
@@ -132,5 +154,44 @@ const spreadSignature = result => nodes(result, 'reader', node => classIs(node, 
   assert.equal(nodes(invalid, 'reader', node => node.id === 'title-cover').length, 0);
   const missingLibrary = await page('library', '?lang=en&coverPreview=1', true);
   assert.equal(nodes(missingLibrary, 'adventure-library', node => node.tagName === 'img').length, 2);
+  // Covers and language changes must retain the atlas return route and position.
+  for (const [route, place] of [['chapter=1', 'lake'], ['story=home-sweet-home', 'home']]) {
+    const reader = await page('reader', `?${route}&lang=en&coverPreview=1&returnTo=atlas.html&returnPlace=${place}`);
+    const anchors = nodes(reader, 'reader', node => node.id === 'title-cover' || classIs(node, 'scene'));
+    anchors[0].rect = {top:-80, bottom:400, height:480};
+    reader.context.scrollY = 180;
+    reader.frames.length = 0;
+    reader.languageButtons.find(button => button.dataset.lang === 'es').onclick();
+    const coverId = place === 'lake' ? 'chapter-01' : 'home-sweet-home';
+    assert.equal(readerImages(reader)[0].src, registry.covers[coverId].assets.es);
+    assert.equal(reader.context.location.searchParams.get('lang'), 'es');
+    assert.equal(reader.context.location.searchParams.get('coverPreview'), '1');
+    assert.equal(reader.context.location.searchParams.get('returnTo'), 'atlas.html');
+    assert.equal(reader.context.location.searchParams.get('returnPlace'), place);
+    for (const id of ['reader-map', 'reader-map-end']) {
+      const destination = new URL(reader.elements[id].href);
+      assert.equal(destination.pathname, '/storyboard/atlas.html');
+      assert.equal(destination.searchParams.get('lang'), 'es');
+      assert.equal(destination.searchParams.get('returnPlace'), place);
+    }
+    const nextAnchor = nodes(reader, 'reader', node => node.id === 'title-cover' || classIs(node, 'scene'))[0];
+    nextAnchor.rect = {top:-80, bottom:400, height:480};
+    reader.context.document.documentElement.scrollHeight = 3000;
+    reader.frames.at(-1)();
+    assert.equal(reader.context.scrollY, 180, 'Language change retains the cover reading position');
+  }
+  const routedLibrary = await page('library', '?lang=ru&coverPreview=1&returnTo=atlas-webgpu.html&returnPlace=elder');
+  for (const root of ['chapter-library', 'adventure-library']) {
+    for (const link of nodes(routedLibrary, root, node => node.tagName === 'a')) {
+      const destination = new URL(link.href);
+      assert.equal(destination.searchParams.get('returnTo'), 'atlas-webgpu.html');
+      assert.equal(destination.searchParams.get('returnPlace'), 'elder');
+      assert.equal(destination.searchParams.get('coverPreview'), '1');
+    }
+  }
+  for (const file of ['index.html', 'library.html', 'reader.js', 'library.js']) {
+    assert.doesNotMatch(read(file), /(?:href\s*=\s*["']|\.href\s*=\s*['"])review\//, `${file}: no public links to excluded review pages`);
+  }
+  console.log('Atlas navigation verified: title localization, query preservation, map return links, and cover reading position.');
   console.log('Title covers verified: 12 approved PNGs/sidecars; generated and copied asset hashes; 48 reader/library release and synthetic-proposal route-language-mode cases; original scene/prose/spread preservation; missing registry and missing image fallbacks.');
 })().catch(error => { console.error(error); process.exitCode = 1; });

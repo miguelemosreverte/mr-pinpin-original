@@ -1,0 +1,118 @@
+{
+  "version": 1,
+  "format": "image/webp",
+  "encoder": {
+    "name": "cwebp",
+    "version": "1.6.0\nlibsharpyuv: 0.4.2",
+    "args": [
+      "-lossless",
+      "-exact",
+      "-m",
+      "6",
+      "-q",
+      "100",
+      "-metadata",
+      "all"
+    ]
+  },
+  "verification": "Native PNG and dwebp PNG decoded to unassociated RGBA8; every byte equal, including RGB at alpha zero.",
+  "provenance": "PNG originals and their generation metadata remain authoritative. Runtime substitution only; no resizing or sprite geometry changes.",
+  "totals": {
+    "sourceBytes": 15916582,
+    "runtimeBytes": 11046334,
+    "savedBytes": 4870248
+  },
+  "assets": [
+    {
+      "src": "images/atlas/shire-v1.png",
+      "runtimeSrc": "images/atlas/shire-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 4233413,
+      "runtimeBytes": 2811080,
+      "savedBytes": 1422333,
+      "sourceSha256": "80af7f9eb7188f0a1f64969a22632d0ef9732284d027042222c1543879f03780",
+      "runtimeSha256": "fc10ec39c9f2d0c8be1da12c75ec847142be3ca6f4078f58479475957cafa8fe",
+      "rgbaSha256": "5b3fcba256307ba2413c84d29f1d63582c79301979c7f3b7d3ead2960c78ef27",
+      "decodedRgbaExact": true
+    },
+    {
+      "src": "images/atlas/shire-depth-v1.png",
+      "runtimeSrc": "images/atlas/shire-depth-v1.webp",
+      "width": 1536,
+      "height": 1024,
+      "sourceBytes": 2020699,
+      "runtimeBytes": 1203664,
+      "savedBytes": 817035,
+      "sourceSha256": "bf30f8bebe002348d6e911a3a0fe5ef8a8b02d14a17d9dccb8ab4f59aee0e2ec",
+      "runtimeSha256": "b0ab06b150074bab33515c8c28e3838f5c3920dd24380c52fd4fe83deb8bb568",
+      "rgbaSha256": "ea0735c60de61435a053672865efdca8f6f6f4c7aa715d3884210361d0ff4d9f",
+      "decodedRgbaExact": true
+    },
+    {
+      "src": "images/atlas/shire-floral-tile-v1.png",
+      "runtimeSrc": "images/atlas/shire-floral-tile-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 3461122,
+      "runtimeBytes": 2586778,
+      "savedBytes": 874344,
+      "sourceSha256": "85c2506c36528586a9837f36a6cbb46c4a2956b5783c6b1a3314bdd900da2481",
+      "runtimeSha256": "5d813e8b6ac82cdcebf68f6bb13943f4935a9e1d59ae3c9142d89a0069dc5c05",
+      "rgbaSha256": "10ae42d4302a22b739857714f0fc2cda2aa2d6ec352b490f07c178c3d46551ec",
+      "decodedRgbaExact": true
+    },
+    {
+      "src": "images/atlas/pinpin-directions-a-v1.png",
+      "runtimeSrc": "images/atlas/pinpin-directions-a-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 1785815,
+      "runtimeBytes": 1281654,
+      "savedBytes": 504161,
+      "sourceSha256": "8be56abd29348419d471151cf5092b41567ed73fe2a97a15b665c320357159c0",
+      "runtimeSha256": "da0808dbe1488d36e5614b815ac1203d6845693c3d57f59599d8803c75a08ff6",
+      "rgbaSha256": "10c5cbdcb0814c7a9086668d03a7ca771254eb7f48c2d401f5a6719df5c4bbcf",
+      "decodedRgbaExact": true
+    },
+    {
+      "src": "images/atlas/pinpin-directions-b-v1.png",
+      "runtimeSrc": "images/atlas/pinpin-directions-b-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 1821917,
+      "runtimeBytes": 1312968,
+      "savedBytes": 508949,
+      "sourceSha256": "6594c1b1cb8675f52e4408e0d4f7574ea5f157dde84b748d2f2923f92f526572",
+      "runtimeSha256": "ea732db50bd6ee148d197ff40ac0f4c64310a27654f585c04ba692381393df43",
+      "rgbaSha256": "a1a4e9d7808726d1f7dc914c5df4cb43e9a7a64d0553ef0b2944ea3aa2ab743c",
+      "decodedRgbaExact": true
+    },
+    {
+      "src": "images/atlas/pinpin-directions-c-v1.png",
+      "runtimeSrc": "images/atlas/pinpin-directions-c-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 1585884,
+      "runtimeBytes": 1135344,
+      "savedBytes": 450540,
+      "sourceSha256": "08c80ee3dc504c7edae7c8ff0edfc707a3c2d3c2cb0c7262e8a9f033a5e2d52f",
+      "runtimeSha256": "ce5a5fa4ac8bb1515503704760c4528c5a748273bef04a66da2758123c56b3b8",
+      "rgbaSha256": "44305286519fc1ef7f354b11aaf17a9a1f79052dc357edc8db999aa04fa8d5a2",
+      "decodedRgbaExact": true
+    },
+    {
+      "src": "images/atlas/pinpin-walk-v1.png",
+      "runtimeSrc": "images/atlas/pinpin-walk-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "sourceBytes": 1007732,
+      "runtimeBytes": 714846,
+      "savedBytes": 292886,
+      "sourceSha256": "4cb83d0e03d451de656275212b08a8d64bd789e2160bd0bead290dbd6999a857",
+      "runtimeSha256": "859b6c02036562325ad078b0396348f40b48a1658b0d0fbb8713b119e0089f3d",
+      "rgbaSha256": "dba8b8e43ccdc8cdb279013297e3a2a859272ca0fc039df0872b628ea19d6edc",
+      "decodedRgbaExact": true
+    }
+  ]
+}

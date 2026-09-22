@@ -10,7 +10,8 @@ const ids = ['one-day-in-the-forest', ...parts.map(p => 'elder-' + p)];
 const languages = ['en', 'ru', 'es'];
 const schemaOnly = process.argv.includes('--schema-only');
 const read = file => JSON.parse(fs.readFileSync(path.join(root, file), 'utf8'));
-const context = {window:{}, URLSearchParams, location:{search:''}, fetch:async file => {
+const context = {window:{}, URLSearchParams, location:{search:''}, fetch:async (file,options) => {
+  if(options?.method === 'HEAD') return {ok:fs.existsSync(path.join(root,file)) || fs.existsSync(path.resolve(root,'../../../mr-pinpin-original/docs/storyboard',file))};
   try {const data = read(file); return {ok:true, json:async () => data};}
   catch {return {ok:false};}
 }};

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "frame": 3,
+  "recordedAt": "2026-09-21T01:23:36.822Z",
+  "tool": "image_gen built-in",
+  "prompt": "Use case: precise-object-edit. Asset: animation frame 3 of a five-frame looping miniature atlas. Edit target is the supplied original map. Keep its camera, exact framing, dimensions, all landmarks, buildings, bridge, roads, shorelines, rocks, tree trunks and exposure completely fixed. Advance the gentle breeze a small fraction of a second: lake ripples expand lightly and their little sun reflections travel diagonally down-right; stream foam advances a little downstream; leaf tips sway very slightly right. All movement extremely subtle. Preserve the original color, clear painted detail and scale. No animals, new objects, text, interface or blur. One single full landscape map, exactly registered to reference.",
+  "reference": "shire-v1.png",
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-21238355-934e-4b3a-a8d1-06bc635ab3ef.png",
+  "review": "Water highlights move; landmarks are approximately registered. Runtime motion mask protects static structures, blending 35% inside eligible areas."
+}

@@ -1,0 +1,37 @@
+.atlas-debug {
+  position: fixed;
+  z-index: 1000;
+  top: 76px;
+  right: 16px;
+  box-sizing: border-box;
+  width: 240px;
+  max-width: calc(100vw - 32px);
+  padding: 12px;
+  border: 1px solid #aeb8b0;
+  border-radius: 4px;
+  background: #fff;
+  color: #253c32;
+  font: 13px/1.4 system-ui, sans-serif;
+  letter-spacing: 0;
+}
+.atlas-debug[hidden] { display: none; }
+.atlas-debug-row { display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+.atlas-debug input + .atlas-debug-row { margin-top: 10px; }
+.atlas-debug label { font: inherit; }
+.atlas-debug output { min-width: 5ch; text-align: right; font-variant-numeric: tabular-nums; }
+.atlas-debug-status { margin: 6px 0 0; font: inherit; color: #566259; }
+.atlas-debug-status[hidden] { display: none; }
+.atlas-debug input[type="range"] {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  height: 24px;
+  margin: 6px 0 0;
+  padding: 0;
+  accent-color: #317456;
+  cursor: pointer;
+}
+.atlas-debug input[type="range"]:focus-visible { outline: 2px solid #317456; outline-offset: 2px; }
+@media (max-width: 767px), (hover: none), (pointer: coarse), (pointer: none) {
+  .atlas-debug { display: none; }
+}

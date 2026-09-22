@@ -1,0 +1,21 @@
+{
+  "model": "fal-ai/seedvr/upscale/video",
+  "sourceVideo": "docs/storyboard/videos/shire-kling-loop-v1.mp4",
+  "output": "docs/storyboard/videos/shire-seedvr-loop-2160p-v1.mp4",
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 1.3506912,
+    "basis": "Expected 3240 x 2160 x 193 frames at $0.001 per output megapixel-frame; actual delivered dimensions determine billing",
+    "source": "https://fal.ai/models/fal-ai/seedvr/upscale/video"
+  },
+  "input": {
+    "video_url": "https://v3b.fal.media/files/b/0aab4232/8AX0ALRjjRTkGPCWz7RyF_output.mp4",
+    "upscale_mode": "target",
+    "target_resolution": "2160p",
+    "noise_scale": 0.1,
+    "seed": 20260920,
+    "output_format": "X264 (.mp4)",
+    "output_quality": "high",
+    "output_write_mode": "balanced"
+  }
+}

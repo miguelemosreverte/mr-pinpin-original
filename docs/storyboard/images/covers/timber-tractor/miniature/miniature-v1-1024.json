@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "source": "images/covers/timber-tractor/miniature/miniature-v1.png",
+  "sourceSha256": "7baa6f592fb3f681e49fe10763e26c3274dee9377c35510975bf2f84e04bf334",
+  "asset": "images/covers/timber-tractor/miniature/miniature-v1-1024.webp",
+  "sha256": "5e83aebaab36a57878e909208ff1540a7eebf800deb44ea2fb0edd3d745c02ed",
+  "width": 1024,
+  "height": 1536,
+  "encoding": "lossy WebP",
+  "quality": 92,
+  "sharpYuv": true,
+  "alphaQuality": 100,
+  "resize": "none",
+  "build": "node scripts/build-atlas-miniatures.cjs",
+  "approval": "Inherits miniature approval; this derivative does not approve the source artwork."
+}

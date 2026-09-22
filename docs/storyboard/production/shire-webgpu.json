@@ -1,0 +1,70 @@
+{
+  "title": "The Shire: fixed world, moving camera",
+  "report": "docs/storyboard/review/shire-webgpu.html",
+  "workflow": "docs/storyboard/production/shire-webgpu-notes.md",
+  "eyebrow": "The Shire / WebGPU camera preview",
+  "lead": "Adapting the Gaucho Atlas camera and cached depth-of-field renderer.",
+  "statusLabel": "Local renderer experiment, unpublished.",
+  "scope": "Reuse the existing atlas, semantic mask, paths and 48 sprite frames. Replace the map display in a separate preview with a persistent canvas and a camera in world coordinates. No new map-detail levels.",
+  "sourceHeading": "Reference Renderer",
+  "sourceNotes": [
+    "GauchoAI/gaucho-atlas at d80152ea3b62b94a87d82fa37760133ccd083160: src/webgpu/renderer.ts and its camera controls, plus src/shaders/dof-bake.wgsl and dof.wgsl.",
+    "The reference uses cached 64-tap disc-bokeh focus zones. A depth image enables this effect but does not make its computation free or recover a true 3D scene."
+  ],
+  "steps": [
+    "Inspect the restaurant renderer and preserve the existing Leaflet preview.",
+    "Generate one registered estimated depth pass directly from the original atlas.",
+    "Adapt camera input, fixed-canvas rendering and cached bokeh into small static modules.",
+    "Integrate existing walking sprites, paths and deliberate book previews.",
+    "Verify real mouse drag, touch pinch, camera transforms, nonblank GPU pixels, depth effects and fallback behavior."
+  ],
+  "planHeading": "Depth Asset",
+  "carryForwardHeading": "Interaction",
+  "carryForwardNotes": [
+    "The world stays in fixed coordinates. Only the camera changes; the page and controls do not translate or scale.",
+    "Opening camera scale is twice the previous cover-fit scale.",
+    "A location reveals one book; its cover opens only when deliberately activated."
+  ],
+  "reviewHeading": "Limits",
+  "conclusion": "Review locally before replacing the published atlas.",
+  "footerNote": "The depth pass is an artistic monocular estimate, not metrically measured depth. Bokeh is a rendering effect, not new image detail.",
+  "navigation": [
+    {
+      "href": "../atlas-webgpu.html?lang=en",
+      "label": "WebGPU preview"
+    },
+    {
+      "href": "../atlas.html?lang=en",
+      "label": "Leaflet comparison"
+    },
+    {
+      "href": "atlas-directions.html",
+      "label": "Walking directions"
+    }
+  ],
+  "sourceLinks": [
+    {
+      "href": "https://github.com/GauchoAI/gaucho-atlas/blob/d80152ea3b62b94a87d82fa37760133ccd083160/ARCHITECTURE.md",
+      "label": "Reference architecture"
+    }
+  ],
+  "shots": [
+    {
+      "id": "depth-v1",
+      "order": 1,
+      "title": "Estimated Shire depth",
+      "beat": "Depth supplies relative focus distances for the existing map.",
+      "camera": "Same elevated atlas camera and exact 1536-by-1024 framing. Black nearer, white farther.",
+      "staging": "No characters are added to the depth pass. Paths and sprites are composited separately in world coordinates.",
+      "alt": "Grayscale estimated camera-distance pass of the Shire map",
+      "references": [
+        {
+          "path": "docs/storyboard/images/atlas/shire-v1.png",
+          "role": "Exact original atlas geometry and composition"
+        }
+      ],
+      "prompt": "Use case: precise-object-edit. Create a DEPTH PASS of the supplied illustrated Shire map, not a new scene. Image 1 is the exact registered source image. Output a 1536 by 1024 grayscale RGB image, same framing, same projection, every object boundary and location aligned exactly with the original. Preserve the full image extent. Represent estimated camera distance only: nearest foreground at the bottom is dark charcoal, farthest background at the top is light gray; nearer raised tree canopies are darker than the ground immediately behind them. Smooth continuous grayscale changes across terrain and water, coherent flat-ish surfaces, crisp depth discontinuities at building, canopy, bridge and rock edges. The lake water is one continuous smooth depth surface, the bridge sits above the stream, roofs are closer than their surrounding ground. Remove all color, sunlight, shadows, reflections, wood grain, flowers' color texture and decorative surface shading; those do not encode depth. Use the available gray range roughly 20 to 235, retain subtle depth gradations. This is a clean camera-distance buffer suitable for depth-of-field rendering, not a pencil sketch, not a grayscale photograph, not a height contour map. No text, labels, outlines, legends or border. Keep the exact same scene geometry and composition.",
+      "output": "docs/storyboard/images/atlas/shire-depth-v1.png"
+    }
+  ]
+}

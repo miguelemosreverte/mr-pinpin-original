@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "method": {
+    "topology": "GLB accessor and OBJ face audit; no vertex welding",
+    "edgeCv": "standard deviation / mean over the three edges of every delivered triangle",
+    "areaCv": "standard deviation / mean over delivered triangle areas",
+    "aspect": "longest edge / shortest edge"
+  },
+  "assets": [
+    {
+      "path": "../../pinpin-3d-study-v1/model.glb",
+      "kind": "glb",
+      "bytes": 9015168,
+      "sha256": "e6fe566a1b8daf0d7f4a8a5a57d648c3c0df8376f567fa2a1a3c33917eb0960e",
+      "asset": {
+        "version": "2.0",
+        "generator": "https://github.com/mikedh/trimesh"
+      },
+      "primitives": [
+        {
+          "mesh": 0,
+          "primitive": 0,
+          "mode": 4,
+          "vertices": 172946,
+          "triangles": 195296,
+          "attributes": [
+            "NORMAL",
+            "POSITION",
+            "TEXCOORD_0"
+          ],
+          "material": 0,
+          "metrics": {
+            "edge": {
+              "minimum": 0,
+              "p10": 0.0035548909953612468,
+              "median": 0.007383954787869981,
+              "p90": 0.01398393443166549,
+              "maximum": 0.03371751834771171,
+              "mean": 0.008176026805877762,
+              "coefficientOfVariation": 0.5052407115869841
+            },
+            "area": {
+              "minimum": 0,
+              "p10": 0.000006058730286790883,
+              "median": 0.00001773763962616885,
+              "p90": 0.00004568942848125627,
+              "maximum": 0.0002430226064052197,
+              "mean": 0.000022587365151394035,
+              "coefficientOfVariation": 0.7676626451442887
+            },
+            "aspect": {
+              "minimum": 1.0010098998362873,
+              "p10": 1.335568383409662,
+              "median": 1.9562101998399206,
+              "p90": 3.2318463872322862,
+              "maximum": 998883533.8479787,
+              "mean": 18345.405211674053,
+              "coefficientOfVariation": 205.57196932351562
+            }
+          }
+        }
+      ],
+      "totals": {
+        "vertices": 172946,
+        "triangles": 195296
+      },
+      "materials": [
+        {
+          "index": 0,
+          "name": null,
+          "baseColorTexture": null,
+          "metallicRoughnessTexture": null,
+          "normalTexture": null,
+          "normalScale": 1,
+          "occlusionTexture": null,
+          "emissiveTexture": null
+        }
+      ],
+      "images": [
+        {
+          "index": 0,
+          "name": null,
+          "mimeType": "image/webp",
+          "bytes": 1078620,
+          "sha256": "8289f8e7ce8dd73ba726ec6bf623fa8aa0a7c015b8c86e697500bdb168646846",
+          "dimensions": {
+            "format": "webp"
+          }
+        },
+        {
+          "index": 1,
+          "name": null,
+          "mimeType": "image/webp",
+          "bytes": 56820,
+          "sha256": "f14ff058a3ad6b855c85ce289609f227f3b9500a5f9bb60f60aced7709409e85",
+          "dimensions": {
+            "format": "webp"
+          }
+        }
+      ],
+      "skins": [],
+      "animations": [],
+      "extensionsUsed": [
+        "EXT_texture_webp"
+      ],
+      "extensionsRequired": [
+        "EXT_texture_webp"
+      ],
+      "warnings": []
+    }
+  ],
+  "comparisons": []
+}

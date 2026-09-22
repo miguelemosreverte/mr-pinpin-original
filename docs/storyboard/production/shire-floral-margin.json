@@ -1,0 +1,58 @@
+{
+  "title": "The Shire: floral margins and story return",
+  "report": "docs/storyboard/review/shire-floral-margin.html",
+  "workflow": "docs/storyboard/production/shire-floral-margin-notes.md",
+  "eyebrow": "The Shire / Map margins",
+  "lead": "Crayon flowers outside the map, with room for the camera to travel.",
+  "statusLabel": "Local preview for review; unpublished.",
+  "scope": "Preserve the original map and use a generated floral repeat only outside its bounds. Expand navigable bounds to 1.5 times the map width and height.",
+  "sourceNotes": [
+    "The Chapter 3 crayon study supplies style only; its animals and panels are not repeated.",
+    "The original map remains unchanged. Location masks and road coordinates still refer to the original map extent."
+  ],
+  "sourceHeading": "Style Reference",
+  "sourceLinks": [
+    {
+      "href": "../../comparison/trials/chapter-03-crayon.png",
+      "label": "Crayon study"
+    }
+  ],
+  "steps": [
+    "Inspect the existing crayon study and atlas camera bounds.",
+    "Generate one floral tile with the built-in image tool.",
+    "Record the exact prompt, generation timing, source and checksum beside the output.",
+    "Inspect repeated edges and render the margin consistently on WebGPU and Canvas2D.",
+    "Verify chapter return endpoints, real camera pan and localized cover selection."
+  ],
+  "carryForwardNotes": [
+    "Only the existing Map and language controls remain in the reader; no new toolbars.",
+    "A chapter return should place Mr. PinPin at that story's road endpoint without moving the saved camera."
+  ],
+  "conclusion": "Review the texture and expanded map locally before publication.",
+  "footerNote": "Generated ornament is decorative, not a walkable map extension.",
+  "navigation": [
+    {
+      "href": "../atlas-webgpu.html?lang=en",
+      "label": "Atlas preview"
+    }
+  ],
+  "shots": [
+    {
+      "id": "floral-v1",
+      "order": 1,
+      "title": "Crayon manuscript flowers",
+      "beat": "A quiet decorative ground beyond the map edges.",
+      "camera": "Flat top-down square tile, repeated at a fixed world-space scale.",
+      "staging": "No characters, text or navigable areas in the ornament.",
+      "alt": "Hand-drawn curling green vines and blue, pink, red and white wildflowers on pale paper",
+      "references": [
+        {
+          "path": "docs/comparison/trials/chapter-03-crayon.png",
+          "role": "Style reference only: wax crayon and colored-pencil drawing"
+        }
+      ],
+      "prompt": "Use case: illustration-story. Asset type: seamless square repeating ornamental texture for the outside margin of a children's illustrated story atlas. Input image 1 is a STYLE REFERENCE ONLY: borrow its visible wax crayon strokes, colored pencil grain, warm handmade children's-book drawing, not its characters, panels, or scenes. Create a new 1024 x 1024 flat top-down ornament tile, inspired by the meandering flowering vines in illuminated medieval manuscript margins. Delicate curling green stems, small blue cornflowers, pink and crimson wildflowers, white daisies with golden centers, little leaves, and modest botanical flourishes arranged with generous breathing room on very pale cool ivory paper. Colors varied and clear, gentle and playful, soft crayon on toothy paper, no shadows or three-dimensional lighting. This is an all-over botanical repeat, NOT a rectangular picture frame, not a border around a blank center. The composition must tile seamlessly horizontally and vertically, matching colors and continuing stems precisely across opposite edges, uniform background illumination, no vignette. Medium-small motifs evenly distributed so the repeated tile looks like a beautiful hand-painted manuscript margin around a map. No animals, people, buildings, text, letters, numbers, logos, cartographic marks, or watermark. Do not reproduce any panel divisions from the style reference.",
+      "output": "docs/storyboard/images/atlas/shire-floral-tile-v1.png"
+    }
+  ]
+}

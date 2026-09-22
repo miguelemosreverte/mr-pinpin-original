@@ -1,0 +1,103 @@
+{
+  "version": 2,
+  "estimated": true,
+  "generatedAt": "2026-09-21T01:28:46.615Z",
+  "signature": "10096130f63af84d1012c4ff824d4a22d59a45fcf3a794465a8038a2e0d2be97",
+  "command": "node scripts/build-atlas-surface-passes.cjs",
+  "generatorSha256": "50668af7316060f7f647bb1a1034438d969f42876f9ac2805795cc2d3abde157",
+  "tools": {
+    "magick": "Version: ImageMagick 7.1.2-8 Q16-HDRI aarch64 23412 https://imagemagick.org",
+    "cwebp": "1.6.0\nlibsharpyuv: 0.4.2"
+  },
+  "sources": [
+    {
+      "file": "shire-v1.png",
+      "sha256": "80af7f9eb7188f0a1f64969a22632d0ef9732284d027042222c1543879f03780",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "shire-depth-v1.png",
+      "sha256": "bf30f8bebe002348d6e911a3a0fe5ef8a8b02d14a17d9dccb8ab4f59aee0e2ec",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "settings": {
+    "radius": 4,
+    "spatialSigma": 2.5,
+    "rangeSigma": 0.035,
+    "passes": 2,
+    "normalRadius": 3,
+    "edgeThreshold": 0.045,
+    "depthScale": 0.75,
+    "sampleWidth": 256,
+    "sampleHeight": 171,
+    "groundFar": 0.85,
+    "groundSpan": 0.65,
+    "occluderGain": 0.3,
+    "maxOccluderLift": 0.12
+  },
+  "oldGroundReference": [
+    [
+      0,
+      0.8
+    ],
+    [
+      205,
+      0.43529411764705883
+    ],
+    [
+      400,
+      0.49019607843137253
+    ],
+    [
+      575,
+      0.396078431372549
+    ],
+    [
+      640,
+      0.3568627450980392
+    ],
+    [
+      740,
+      0.25882352941176473
+    ],
+    [
+      1024,
+      0.08
+    ]
+  ],
+  "meaning": "Estimated outward view-space surface normals from smoothed artistic depth; not ground-truth geometry or world-space orientation.",
+  "encoding": "RGB8 UNORM: normalize(2 * rgb / 255 - 1). No sRGB transfer. +X right, +Y up, +Z toward viewer; right-handed camera space.",
+  "assumptions": "Orthographic P=(x-W/2,H/2-y,-s*H*d), s=0.75, d in [0,1]. N=normalize(s*H*dd/dx,-s*H*dd/dy,1). Arbitrary affine distance scale; no intrinsics or physical units. Depth offset does not affect N. Ground receding upward gives positive Ny; no extra global tilt applied. Silhouettes use lower-jump one-sided tangents, not cross-object slopes.",
+  "limitations": "Artistic recalibration, not geometry recovery. Monotonic ground plane intentionally replaces far-distance brightness bias. Bounded occluder lifts still inherit dark-paint/shadow errors and may miss bright occluders. Pixel grid/framing are registered; true silhouettes are not guaranteed. Water is assumed on the ground plane; waterfalls are not reconstructed. V1 stays authoritative for existing occlusion. Brightness does not recover actual emission.",
+  "outputs": [
+    {
+      "file": "shire-normal-v2.png",
+      "bytes": 1835764,
+      "sha256": "16d19219ddb4e7ea0aeb7428a2d7553bd08fcd5de1954d970aefcbbf209f88d6"
+    },
+    {
+      "file": "shire-normal-v2.webp",
+      "bytes": 1535882,
+      "sha256": "c0748deea8a2a4b5c0b3a607f36c218ca5581cd9d35d5ad6e7398d07af8f9359"
+    },
+    {
+      "file": "shire-normal-v2-preview.webp",
+      "bytes": 528048,
+      "sha256": "408677d5c8ffe6bea76fad21a580b4355274fc6d44237c72eba0eac44b31de8a"
+    }
+  ],
+  "compact": {
+    "file": "shire-normal-v2.rgb.bin",
+    "width": 256,
+    "height": 171,
+    "channels": 3,
+    "bytes": 131328,
+    "sha256": "73b6f8f03fd6cbff7c4d123c6a20eb2c793c61b6c908a10f79048ffbe9b79dc2",
+    "sampling": "Nearest source pixel at each compact texel center; no axis flip."
+  }
+}

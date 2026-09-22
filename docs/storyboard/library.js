@@ -23,7 +23,7 @@
     const ui = {...labels[lang], ...standaloneLabels[lang]};
     document.documentElement.lang = lang;
     const atlasTitle = {en:'The Shire',es:'La Comarca',ru:'Шир'}[lang];
-    $('library-atlas').href = 'atlas.html?lang=' + lang;
+    $('library-atlas').href = 'atlas-webgpu.html?lang=' + lang;
     $('library-atlas').title = atlasTitle;
     $('library-atlas').setAttribute('aria-label',atlasTitle);
     document.title = window.readerLabels[lang].book + ' - ' + ui.all;
@@ -79,8 +79,6 @@
     const cards = [];
     book.chapters.forEach((chapter,index) => {
       const ready = published.has(String(index + 1));
-      const study = index === 1 && !ready;
-      const studyLabel = {en:'Camera study (English) · Landscapes only',es:'Estudio de cámara (inglés) · Solo paisajes',ru:'Исследование камеры (на английском) · Только пейзажи'}[lang];
       const title = index === 0 ? translations['chapter-01'][lang]?.title || window.readerLabels.ru.title :
         (ready && translations[chapter.id]?.[lang]?.title) || titles[lang]?.[index] || chapter.title.replace(/^Глава\s*\d*\s*:\s*/, '');
       if (filter !== 'all' && filter !== (ready ? 'published' : 'upcoming')) return;
@@ -88,7 +86,7 @@
       const card = document.createElement('article');
       card.className = 'chapter-cover' + (ready ? ' published' : '');
       card.dataset.chapter = index + 1;
-      const content = document.createElement(ready || study ? 'a' : 'div');
+      const content = document.createElement(ready ? 'a' : 'div');
       if (ready) {
         const destination = new URL('./', location.href);
         destination.search = url.search;
@@ -97,16 +95,15 @@
         destination.searchParams.set('lang', lang);
         content.href = destination.href;
       }
-      if (study) content.href = 'review/chapter-02-landscapes.html';
       const original = chapter.blocks.flat().find(block => block.type === 'image');
-      const asset = ready ? art.chapters[chapter.id].find(image => image.scene === 1) : study ? {src:'images/chapter-02-landscapes/shot-01.png',width:1536,height:1024,alt:{en:'The path from Crystal Lake toward Burrow Hill',es:'El sendero del lago Cristal hacia la colina de las madrigueras',ru:'Тропа от Кристального озера к Холму Нор'}} : original;
+      const asset = ready ? art.chapters[chapter.id].find(image => image.scene === 1) : original;
       const titleCover = ready ? window.titleCovers.resolve(chapter.id, lang) : null;
       if (asset) {
         const figure = document.createElement('figure');
         const image = document.createElement('img');
         image.src = asset.src;
         image.width = asset.width; image.height = asset.height;
-        image.alt = ready || study ? asset.alt[lang] : ui.original + ': ' + title;
+        image.alt = ready ? asset.alt[lang] : ui.original + ': ' + title;
         if (titleCover) {
           figure.style.aspectRatio = titleCover.width + ' / ' + titleCover.height;
           window.titleCovers.apply(image, titleCover, lang, asset, () => { figure.style.aspectRatio = ''; });
@@ -123,16 +120,9 @@
       for (const [tag,cls,text] of [
         ['p','cover-number',window.readerLabels[lang].chapter + ' ' + String(index+1).padStart(2,'0')],
         ['h2','',title],
-        ['p','availability',ready ? ui.ready : study ? studyLabel : ui.planned + (original ? ' · ' + ui.original : '')]
+        ['p','availability',ready ? ui.ready : ui.planned + (original ? ' · ' + ui.original : '')]
       ]) { const node = document.createElement(tag); node.className = cls; node.textContent = text; content.append(node); }
       card.append(content);
-      if (index === 1 && ready) {
-        const report = document.createElement('a');
-        report.className = 'availability camera-report';
-        report.href = 'review/chapter-02-landscapes.html';
-        report.textContent = studyLabel;
-        card.append(report);
-      }
       cards.push(card);
     });
     $('chapter-library').replaceChildren(...cards);

@@ -1,0 +1,77 @@
+{
+  "version": 1,
+  "builtAt": "2026-09-21T01:36:24.291Z",
+  "frames": [
+    {
+      "frame": 1,
+      "file": "shire-motion-01-v1.webp",
+      "source": "shire-v1.png",
+      "width": 512,
+      "height": 342,
+      "bytes": 86006,
+      "sha256": "46c41d7002323e368ecaa17899d7989e99cf7162b77a7fca19e3101e9fa96c5e",
+      "sourceSha256": "80af7f9eb7188f0a1f64969a22632d0ef9732284d027042222c1543879f03780",
+      "provenance": "shire-motion-01-v1.md"
+    },
+    {
+      "frame": 2,
+      "file": "shire-motion-02-v1.webp",
+      "source": "shire-motion-02-v1.png",
+      "width": 512,
+      "height": 342,
+      "bytes": 84284,
+      "sha256": "2b6faf22434e80e0e965397ace0aac15727831a01a71fc135bd5c2063a1dfcfd",
+      "sourceSha256": "ecd711997b31045ef0211bf157c39e0d6605111aac2ecb07f3c404bc840c0bc8",
+      "provenance": "shire-motion-02-v1.json"
+    },
+    {
+      "frame": 3,
+      "file": "shire-motion-03-v1.webp",
+      "source": "shire-motion-03-v1.png",
+      "width": 512,
+      "height": 342,
+      "bytes": 84886,
+      "sha256": "cf88fd5f357fde0e802ad7b3f28cd5aa70bef6969968aa46467c0eb9394a26b0",
+      "sourceSha256": "0fc1792ca44227a5d4f46833e7389d48f3847c1d49b43b9b41b7bcd84b61e31e",
+      "provenance": "shire-motion-03-v1.json"
+    },
+    {
+      "frame": 4,
+      "file": "shire-motion-04-v1.webp",
+      "source": "shire-motion-04-v1.png",
+      "width": 512,
+      "height": 342,
+      "bytes": 83602,
+      "sha256": "9c4ad06fa77cb348bf3d30de1d208465382f29c6336cc19df1ba5ebcfa797820",
+      "sourceSha256": "a57d740611435296408dda27d0b9f80879cc20bacbbb2aa68571d58ee14c6481",
+      "provenance": "shire-motion-04-v1.json"
+    },
+    {
+      "frame": 5,
+      "file": "shire-motion-05-v1.webp",
+      "source": "shire-motion-05-v1.png",
+      "width": 512,
+      "height": 342,
+      "bytes": 84652,
+      "sha256": "a0e599c3f9733b01870fcf985168a886cb67d33c71fc59fcdc2096039e941b34",
+      "sourceSha256": "b74bbbfcd16e959c98a62e902bf709dd75e56220a97519a6fc860a57dc0c8a6c",
+      "provenance": "shire-motion-05-v1.json"
+    }
+  ],
+  "mask": "shire-motion-mask-v1.webp",
+  "packed": {
+    "file": "shire-motion-strip-v1.webp",
+    "width": 512,
+    "height": 1710,
+    "layout": "vertical",
+    "bytes": 442244,
+    "sha256": "9873252a559fd8aba7f453fe0c9866c50d67fe9b9e2d06009cf7dd86b16fee65"
+  },
+  "durationMilliseconds": 12000,
+  "blendStrength": 0.35,
+  "interpolation": "Adjacent-frame cyclic smoothstep crossfade; not optical flow.",
+  "policy": "Load only for WebGPU when reduced motion and save-data are off. One-time GPU upload; pause with scene.",
+  "encodedFrameBytes": 423430,
+  "gpuFrameBytes": 3502080,
+  "provenance": "Frames 2-5 generated with built-in image_gen, always editing original shire-v1.png. Frame 1 is original artwork."
+}

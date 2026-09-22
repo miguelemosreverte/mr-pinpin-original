@@ -1,0 +1,3109 @@
+{
+  "version": 1,
+  "kind": "blink",
+  "reviewStatus": "awaiting-eye-region-registration-review",
+  "logs": [
+    {
+      "path": "production/pinpin-expression-generations.json",
+      "sha256": "175af48c0e0036d8e6d6547bda1782ac74a425fe5b0828af1422a7a4185c3117",
+      "blinkRecords": 4
+    },
+    {
+      "path": "production/mama-production-generations.json",
+      "sha256": "011419e414cd3dab69f1e1bdbb0a417f2984b5b0e2fa0211abe37c3ab8d5316f",
+      "blinkRecords": 4
+    },
+    {
+      "path": "production/pompom-production-generations.json",
+      "sha256": "c2b88ba9d6213abdcbc9fdfc755f4e0b4894be4713348632db185637f417a934",
+      "blinkRecords": 4
+    }
+  ],
+  "sheets": [
+    {
+      "characterId": "pinpin",
+      "bodySheet": "a",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/pinpin-a-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-a-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/pinpin-a-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/pinpin-a-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/pinpin-a-v1.png",
+      "neutralSha256": "ae95c02059f0af05a10fbabfaf354425b21ac1f7adbb434e8c82be5caa600b9c",
+      "sourceSha256": "0da5d73c26273e6feb624eea507b385e8b82a9d355b4d6ed4bb9076782daaa95",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        0,
+        30,
+        60,
+        90
+      ],
+      "directions": [
+        {
+          "angle": 0,
+          "src": "images/atlas/family-production-v1/pinpin-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-a-blink-v1.webp",
+          "referenceWidth": 294,
+          "frames": [
+            {
+              "rect": [
+                23,
+                70,
+                290,
+                205
+              ],
+              "anchor": [
+                145.5,
+                200
+              ]
+            },
+            {
+              "rect": [
+                335,
+                71,
+                291,
+                206
+              ],
+              "anchor": [
+                145.5,
+                202
+              ]
+            },
+            {
+              "rect": [
+                644,
+                71,
+                294,
+                213
+              ],
+              "anchor": [
+                147.5,
+                208
+              ]
+            },
+            {
+              "rect": [
+                961,
+                71,
+                289,
+                213
+              ],
+              "anchor": [
+                144.5,
+                209
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 30,
+          "src": "images/atlas/family-production-v1/pinpin-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-a-blink-v1.webp",
+          "referenceWidth": 294,
+          "frames": [
+            {
+              "rect": [
+                32,
+                350,
+                281,
+                239
+              ],
+              "anchor": [
+                141,
+                234
+              ]
+            },
+            {
+              "rect": [
+                347,
+                351,
+                269,
+                242
+              ],
+              "anchor": [
+                134,
+                237
+              ]
+            },
+            {
+              "rect": [
+                657,
+                349,
+                271,
+                246
+              ],
+              "anchor": [
+                135.5,
+                241
+              ]
+            },
+            {
+              "rect": [
+                973,
+                349,
+                261,
+                247
+              ],
+              "anchor": [
+                131,
+                242
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 60,
+          "src": "images/atlas/family-production-v1/pinpin-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-a-blink-v1.webp",
+          "referenceWidth": 294,
+          "frames": [
+            {
+              "rect": [
+                47,
+                639,
+                243,
+                268
+              ],
+              "anchor": [
+                120.5,
+                263
+              ]
+            },
+            {
+              "rect": [
+                358,
+                637,
+                244,
+                272
+              ],
+              "anchor": [
+                121.5,
+                267
+              ]
+            },
+            {
+              "rect": [
+                671,
+                639,
+                240,
+                275
+              ],
+              "anchor": [
+                119.5,
+                270
+              ]
+            },
+            {
+              "rect": [
+                985,
+                639,
+                237,
+                265
+              ],
+              "anchor": [
+                117.5,
+                260
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 90,
+          "src": "images/atlas/family-production-v1/pinpin-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-a-blink-v1.webp",
+          "referenceWidth": 294,
+          "frames": [
+            {
+              "rect": [
+                52,
+                929,
+                223,
+                258
+              ],
+              "anchor": [
+                111,
+                253
+              ]
+            },
+            {
+              "rect": [
+                362,
+                929,
+                224,
+                267
+              ],
+              "anchor": [
+                111.5,
+                262
+              ]
+            },
+            {
+              "rect": [
+                676,
+                928,
+                226,
+                269
+              ],
+              "anchor": [
+                112,
+                264
+              ]
+            },
+            {
+              "rect": [
+                988,
+                928,
+                225,
+                272
+              ],
+              "anchor": [
+                111.5,
+                268
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/pinpin-expression-generations.json",
+        "generationRecordSha256": "d3e2bf391383fa7750787ea0297bcba60fa4dcd77a2b360e8baaf0770a673601",
+        "started": "2026-09-21T11:13:25.373Z",
+        "completed": "2026-09-21T11:14:27.420Z",
+        "durationMilliseconds": 62047,
+        "timingNote": null
+      }
+    },
+    {
+      "characterId": "pinpin",
+      "bodySheet": "b",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/pinpin-b-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-b-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/pinpin-b-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/pinpin-b-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/pinpin-b-v1.png",
+      "neutralSha256": "b6c903cb1f2c03769e9622e23a210e0f258cbf05d779407da129593904b35c63",
+      "sourceSha256": "057d75e84ccba7edf3f51a14f814d7d00910b82cbfe217af26f7b222fe5fff54",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        120,
+        150,
+        180,
+        210
+      ],
+      "directions": [
+        {
+          "angle": 120,
+          "src": "images/atlas/family-production-v1/pinpin-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-b-blink-v1.webp",
+          "referenceWidth": 298.641,
+          "frames": [
+            {
+              "rect": [
+                44,
+                45,
+                247,
+                248
+              ],
+              "anchor": [
+                123,
+                243
+              ]
+            },
+            {
+              "rect": [
+                357,
+                45,
+                246,
+                245
+              ],
+              "anchor": [
+                122,
+                240
+              ]
+            },
+            {
+              "rect": [
+                670,
+                45,
+                246,
+                248
+              ],
+              "anchor": [
+                122.5,
+                244
+              ]
+            },
+            {
+              "rect": [
+                984,
+                45,
+                245,
+                244
+              ],
+              "anchor": [
+                121.5,
+                239
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 150,
+          "src": "images/atlas/family-production-v1/pinpin-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-b-blink-v1.webp",
+          "referenceWidth": 298.641,
+          "frames": [
+            {
+              "rect": [
+                29,
+                353,
+                281,
+                239
+              ],
+              "anchor": [
+                139,
+                234
+              ]
+            },
+            {
+              "rect": [
+                333,
+                353,
+                286,
+                233
+              ],
+              "anchor": [
+                141.5,
+                228
+              ]
+            },
+            {
+              "rect": [
+                646,
+                352,
+                286,
+                234
+              ],
+              "anchor": [
+                142,
+                229
+              ]
+            },
+            {
+              "rect": [
+                959,
+                353,
+                279,
+                234
+              ],
+              "anchor": [
+                139,
+                229
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 180,
+          "src": "images/atlas/family-production-v1/pinpin-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-b-blink-v1.webp",
+          "referenceWidth": 298.641,
+          "frames": [
+            {
+              "rect": [
+                12,
+                650,
+                298,
+                224
+              ],
+              "anchor": [
+                148,
+                219
+              ]
+            },
+            {
+              "rect": [
+                322,
+                649,
+                300,
+                219
+              ],
+              "anchor": [
+                150,
+                214
+              ]
+            },
+            {
+              "rect": [
+                635,
+                648,
+                300,
+                219
+              ],
+              "anchor": [
+                149.5,
+                214
+              ]
+            },
+            {
+              "rect": [
+                951,
+                649,
+                294,
+                218
+              ],
+              "anchor": [
+                146.5,
+                213
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 210,
+          "src": "images/atlas/family-production-v1/pinpin-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-b-blink-v1.webp",
+          "referenceWidth": 298.641,
+          "frames": [
+            {
+              "rect": [
+                55,
+                916,
+                256,
+                260
+              ],
+              "anchor": [
+                127,
+                256
+              ]
+            },
+            {
+              "rect": [
+                371,
+                918,
+                249,
+                259
+              ],
+              "anchor": [
+                124,
+                254
+              ]
+            },
+            {
+              "rect": [
+                685,
+                917,
+                245,
+                263
+              ],
+              "anchor": [
+                121,
+                258
+              ]
+            },
+            {
+              "rect": [
+                999,
+                918,
+                240,
+                262
+              ],
+              "anchor": [
+                119.5,
+                257
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/pinpin-expression-generations.json",
+        "generationRecordSha256": "76ee4b97a2a86efd67ea9c1301c0ecaf245fdd1e835b1ab3628322062e5857d9",
+        "started": "2026-09-21T11:15:52.605Z",
+        "completed": "2026-09-21T11:16:50.463Z",
+        "durationMilliseconds": 57858,
+        "timingNote": null
+      }
+    },
+    {
+      "characterId": "pinpin",
+      "bodySheet": "d",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/pinpin-d-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-d-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/pinpin-d-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/pinpin-d-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/pinpin-d-v1.png",
+      "neutralSha256": "1894e0e09001f00ad557e53c12eb2942e7761625eebc449245272f539e5353d1",
+      "sourceSha256": "da1e4e54c85ddc3371e8df4b4e835fa9da6976fdc30ee4ff9f3a03a015cf4eca",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        15,
+        45,
+        75,
+        105
+      ],
+      "directions": [
+        {
+          "angle": 15,
+          "src": "images/atlas/family-production-v1/pinpin-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-d-blink-v1.webp",
+          "referenceWidth": 303.034,
+          "frames": [
+            {
+              "rect": [
+                34,
+                53,
+                290,
+                223
+              ],
+              "anchor": [
+                145.5,
+                218
+              ]
+            },
+            {
+              "rect": [
+                343,
+                52,
+                290,
+                225
+              ],
+              "anchor": [
+                146,
+                220
+              ]
+            },
+            {
+              "rect": [
+                651,
+                53,
+                289,
+                225
+              ],
+              "anchor": [
+                146,
+                220
+              ]
+            },
+            {
+              "rect": [
+                962,
+                54,
+                280,
+                226
+              ],
+              "anchor": [
+                140,
+                221
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 45,
+          "src": "images/atlas/family-production-v1/pinpin-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-d-blink-v1.webp",
+          "referenceWidth": 303.034,
+          "frames": [
+            {
+              "rect": [
+                39,
+                342,
+                274,
+                251
+              ],
+              "anchor": [
+                137.5,
+                246
+              ]
+            },
+            {
+              "rect": [
+                346,
+                341,
+                270,
+                255
+              ],
+              "anchor": [
+                136,
+                250
+              ]
+            },
+            {
+              "rect": [
+                656,
+                341,
+                268,
+                256
+              ],
+              "anchor": [
+                134.5,
+                251
+              ]
+            },
+            {
+              "rect": [
+                970,
+                342,
+                266,
+                253
+              ],
+              "anchor": [
+                133.5,
+                248
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 75,
+          "src": "images/atlas/family-production-v1/pinpin-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-d-blink-v1.webp",
+          "referenceWidth": 303.034,
+          "frames": [
+            {
+              "rect": [
+                45,
+                637,
+                243,
+                273
+              ],
+              "anchor": [
+                122,
+                268
+              ]
+            },
+            {
+              "rect": [
+                357,
+                636,
+                245,
+                274
+              ],
+              "anchor": [
+                122.5,
+                270
+              ]
+            },
+            {
+              "rect": [
+                666,
+                638,
+                243,
+                275
+              ],
+              "anchor": [
+                121.5,
+                270
+              ]
+            },
+            {
+              "rect": [
+                978,
+                638,
+                245,
+                267
+              ],
+              "anchor": [
+                122,
+                262
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 105,
+          "src": "images/atlas/family-production-v1/pinpin-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-d-blink-v1.webp",
+          "referenceWidth": 303.034,
+          "frames": [
+            {
+              "rect": [
+                48,
+                936,
+                239,
+                258
+              ],
+              "anchor": [
+                118.5,
+                254
+              ]
+            },
+            {
+              "rect": [
+                360,
+                936,
+                239,
+                273
+              ],
+              "anchor": [
+                119.5,
+                269
+              ]
+            },
+            {
+              "rect": [
+                671,
+                937,
+                241,
+                271
+              ],
+              "anchor": [
+                119,
+                266
+              ]
+            },
+            {
+              "rect": [
+                984,
+                937,
+                240,
+                274
+              ],
+              "anchor": [
+                121,
+                269
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/pinpin-expression-generations.json",
+        "generationRecordSha256": "6bece7415b5d08c8bd6d53df4ddc4942aa355a89736dc4f22401dafef5ee070e",
+        "started": "2026-09-21T11:18:22.364Z",
+        "completed": "2026-09-21T11:18:59.960Z",
+        "durationMilliseconds": 37596,
+        "timingNote": null
+      }
+    },
+    {
+      "characterId": "pinpin",
+      "bodySheet": "e",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/pinpin-e-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/pinpin-e-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/pinpin-e-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/pinpin-e-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/pinpin-e-v1.png",
+      "neutralSha256": "ffa39d0c110bced49682eea7d83cabcb8531c8cc7f8bfbb86f422eda9c68ad81",
+      "sourceSha256": "b1f35f2e112a4852fdd68aedd78e504f2b6e078f51b5dc2a301815c3aa9f95ac",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        135,
+        165,
+        195,
+        225
+      ],
+      "directions": [
+        {
+          "angle": 135,
+          "src": "images/atlas/family-production-v1/pinpin-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-e-blink-v1.webp",
+          "referenceWidth": 301.945,
+          "frames": [
+            {
+              "rect": [
+                46,
+                41,
+                247,
+                257
+              ],
+              "anchor": [
+                124,
+                252
+              ]
+            },
+            {
+              "rect": [
+                353,
+                41,
+                254,
+                256
+              ],
+              "anchor": [
+                129,
+                251
+              ]
+            },
+            {
+              "rect": [
+                671,
+                41,
+                250,
+                257
+              ],
+              "anchor": [
+                124.5,
+                252
+              ]
+            },
+            {
+              "rect": [
+                979,
+                42,
+                255,
+                250
+              ],
+              "anchor": [
+                130,
+                245
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 165,
+          "src": "images/atlas/family-production-v1/pinpin-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-e-blink-v1.webp",
+          "referenceWidth": 301.945,
+          "frames": [
+            {
+              "rect": [
+                17,
+                335,
+                288,
+                241
+              ],
+              "anchor": [
+                142.5,
+                236
+              ]
+            },
+            {
+              "rect": [
+                324,
+                336,
+                294,
+                244
+              ],
+              "anchor": [
+                145.5,
+                239
+              ]
+            },
+            {
+              "rect": [
+                638,
+                336,
+                296,
+                231
+              ],
+              "anchor": [
+                146.5,
+                227
+              ]
+            },
+            {
+              "rect": [
+                951,
+                337,
+                293,
+                241
+              ],
+              "anchor": [
+                145,
+                236
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 195,
+          "src": "images/atlas/family-production-v1/pinpin-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-e-blink-v1.webp",
+          "referenceWidth": 301.945,
+          "frames": [
+            {
+              "rect": [
+                15,
+                622,
+                287,
+                235
+              ],
+              "anchor": [
+                141.5,
+                230
+              ]
+            },
+            {
+              "rect": [
+                333,
+                622,
+                283,
+                233
+              ],
+              "anchor": [
+                140,
+                228
+              ]
+            },
+            {
+              "rect": [
+                643,
+                623,
+                286,
+                230
+              ],
+              "anchor": [
+                141.5,
+                225
+              ]
+            },
+            {
+              "rect": [
+                959,
+                623,
+                283,
+                232
+              ],
+              "anchor": [
+                140.5,
+                227
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 225,
+          "src": "images/atlas/family-production-v1/pinpin-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/pinpin-e-blink-v1.webp",
+          "referenceWidth": 301.945,
+          "frames": [
+            {
+              "rect": [
+                53,
+                907,
+                250,
+                266
+              ],
+              "anchor": [
+                124,
+                261
+              ]
+            },
+            {
+              "rect": [
+                378,
+                907,
+                245,
+                269
+              ],
+              "anchor": [
+                121.5,
+                264
+              ]
+            },
+            {
+              "rect": [
+                690,
+                908,
+                247,
+                272
+              ],
+              "anchor": [
+                123,
+                267
+              ]
+            },
+            {
+              "rect": [
+                1009,
+                907,
+                233,
+                273
+              ],
+              "anchor": [
+                116,
+                269
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/pinpin-expression-generations.json",
+        "generationRecordSha256": "4e83ed22616c65542e1b265434d586292bb54390a7f7980b188b8997dc43590e",
+        "started": "2026-09-21T11:19:37.316Z",
+        "completed": "2026-09-21T11:20:30.645Z",
+        "durationMilliseconds": 53329,
+        "timingNote": null
+      }
+    },
+    {
+      "characterId": "mama",
+      "bodySheet": "a",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/mama-a-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-a-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/mama-a-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/mama-a-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/mama-a-v1.png",
+      "neutralSha256": "181cbfa6b39355a42b003b9a35b2ff1947434c662190ea420874e5bfc34d3e0d",
+      "sourceSha256": "8179e3333d633f9a9e19e4d0561258773eabc64cc2f8699ead4afe17a9ff08ff",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        0,
+        30,
+        60,
+        90
+      ],
+      "directions": [
+        {
+          "angle": 0,
+          "src": "images/atlas/family-production-v1/mama-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-a-blink-v1.webp",
+          "referenceWidth": 281.616,
+          "frames": [
+            {
+              "rect": [
+                29,
+                76,
+                283,
+                201
+              ],
+              "anchor": [
+                141,
+                196
+              ]
+            },
+            {
+              "rect": [
+                339,
+                75,
+                285,
+                206
+              ],
+              "anchor": [
+                142.5,
+                201
+              ]
+            },
+            {
+              "rect": [
+                652,
+                76,
+                285,
+                204
+              ],
+              "anchor": [
+                142.5,
+                199
+              ]
+            },
+            {
+              "rect": [
+                965,
+                76,
+                283,
+                207
+              ],
+              "anchor": [
+                141.5,
+                202
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 30,
+          "src": "images/atlas/family-production-v1/mama-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-a-blink-v1.webp",
+          "referenceWidth": 281.616,
+          "frames": [
+            {
+              "rect": [
+                39,
+                355,
+                249,
+                228
+              ],
+              "anchor": [
+                124.5,
+                223
+              ]
+            },
+            {
+              "rect": [
+                352,
+                354,
+                252,
+                236
+              ],
+              "anchor": [
+                126,
+                231
+              ]
+            },
+            {
+              "rect": [
+                663,
+                356,
+                245,
+                237
+              ],
+              "anchor": [
+                122.5,
+                232
+              ]
+            },
+            {
+              "rect": [
+                977,
+                353,
+                244,
+                237
+              ],
+              "anchor": [
+                122.5,
+                232
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 60,
+          "src": "images/atlas/family-production-v1/mama-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-a-blink-v1.webp",
+          "referenceWidth": 281.616,
+          "frames": [
+            {
+              "rect": [
+                51,
+                642,
+                238,
+                258
+              ],
+              "anchor": [
+                119,
+                253
+              ]
+            },
+            {
+              "rect": [
+                359,
+                641,
+                243,
+                263
+              ],
+              "anchor": [
+                122,
+                258
+              ]
+            },
+            {
+              "rect": [
+                671,
+                642,
+                240,
+                266
+              ],
+              "anchor": [
+                120,
+                261
+              ]
+            },
+            {
+              "rect": [
+                983,
+                641,
+                237,
+                253
+              ],
+              "anchor": [
+                118.5,
+                248
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 90,
+          "src": "images/atlas/family-production-v1/mama-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-a-blink-v1.webp",
+          "referenceWidth": 281.616,
+          "frames": [
+            {
+              "rect": [
+                58,
+                940,
+                218,
+                245
+              ],
+              "anchor": [
+                108,
+                240
+              ]
+            },
+            {
+              "rect": [
+                366,
+                942,
+                213,
+                250
+              ],
+              "anchor": [
+                105.5,
+                245
+              ]
+            },
+            {
+              "rect": [
+                680,
+                943,
+                215,
+                248
+              ],
+              "anchor": [
+                107.5,
+                244
+              ]
+            },
+            {
+              "rect": [
+                988,
+                940,
+                214,
+                253
+              ],
+              "anchor": [
+                106.5,
+                249
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/mama-production-generations.json",
+        "generationRecordSha256": "5464c442dbd468832d930d1ae32e63109f47151a81cc6b98872359de445918a4",
+        "started": "2026-09-21 11:25:26 UTC",
+        "completed": "2026-09-21 11:26:43 UTC",
+        "durationMilliseconds": 77000,
+        "timingNote": null
+      }
+    },
+    {
+      "characterId": "mama",
+      "bodySheet": "b",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/mama-b-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-b-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/mama-b-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/mama-b-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/mama-b-v1.png",
+      "neutralSha256": "3a9c04d7fa2b7c52b184032599da341fd39515f8108a16d4596853f31819d399",
+      "sourceSha256": "01a07d76dcc7764e20bda06f13840447b68e8a5e7e466933292cc9571cd7c979",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        120,
+        150,
+        180,
+        210
+      ],
+      "directions": [
+        {
+          "angle": 120,
+          "src": "images/atlas/family-production-v1/mama-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-b-blink-v1.webp",
+          "referenceWidth": 302.372,
+          "frames": [
+            {
+              "rect": [
+                40,
+                48,
+                256,
+                253
+              ],
+              "anchor": [
+                127.5,
+                248
+              ]
+            },
+            {
+              "rect": [
+                352,
+                47,
+                260,
+                254
+              ],
+              "anchor": [
+                129,
+                249
+              ]
+            },
+            {
+              "rect": [
+                663,
+                48,
+                259,
+                253
+              ],
+              "anchor": [
+                129.5,
+                248
+              ]
+            },
+            {
+              "rect": [
+                982,
+                48,
+                257,
+                253
+              ],
+              "anchor": [
+                128,
+                248
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 150,
+          "src": "images/atlas/family-production-v1/mama-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-b-blink-v1.webp",
+          "referenceWidth": 302.372,
+          "frames": [
+            {
+              "rect": [
+                28,
+                363,
+                282,
+                238
+              ],
+              "anchor": [
+                139.5,
+                233
+              ]
+            },
+            {
+              "rect": [
+                333,
+                363,
+                289,
+                236
+              ],
+              "anchor": [
+                143,
+                231
+              ]
+            },
+            {
+              "rect": [
+                644,
+                363,
+                289,
+                230
+              ],
+              "anchor": [
+                143.5,
+                225
+              ]
+            },
+            {
+              "rect": [
+                960,
+                363,
+                286,
+                238
+              ],
+              "anchor": [
+                141.5,
+                233
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 180,
+          "src": "images/atlas/family-production-v1/mama-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-b-blink-v1.webp",
+          "referenceWidth": 302.372,
+          "frames": [
+            {
+              "rect": [
+                8,
+                649,
+                302,
+                225
+              ],
+              "anchor": [
+                150,
+                220
+              ]
+            },
+            {
+              "rect": [
+                318,
+                648,
+                304,
+                223
+              ],
+              "anchor": [
+                150.5,
+                218
+              ]
+            },
+            {
+              "rect": [
+                631,
+                650,
+                304,
+                221
+              ],
+              "anchor": [
+                151.5,
+                216
+              ]
+            },
+            {
+              "rect": [
+                944,
+                649,
+                303,
+                222
+              ],
+              "anchor": [
+                150.5,
+                217
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 210,
+          "src": "images/atlas/family-production-v1/mama-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-b-blink-v1.webp",
+          "referenceWidth": 302.372,
+          "frames": [
+            {
+              "rect": [
+                52,
+                913,
+                259,
+                267
+              ],
+              "anchor": [
+                128,
+                262
+              ]
+            },
+            {
+              "rect": [
+                375,
+                914,
+                249,
+                264
+              ],
+              "anchor": [
+                123.5,
+                259
+              ]
+            },
+            {
+              "rect": [
+                688,
+                913,
+                248,
+                274
+              ],
+              "anchor": [
+                122.5,
+                269
+              ]
+            },
+            {
+              "rect": [
+                1002,
+                914,
+                247,
+                272
+              ],
+              "anchor": [
+                123,
+                267
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/mama-production-generations.json",
+        "generationRecordSha256": "901c3c7b33a1e09cc66f56a7ffa7c0b2680998a13c4ef8039e6326ccbe2afdf7",
+        "started": "2026-09-21 11:27:06 UTC",
+        "completed": "2026-09-21 11:28:31 UTC",
+        "durationMilliseconds": 85000,
+        "timingNote": null
+      }
+    },
+    {
+      "characterId": "mama",
+      "bodySheet": "d",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/mama-d-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-d-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/mama-d-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/mama-d-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/mama-d-v1.png",
+      "neutralSha256": "9fee5f7da6635a8f87f380d45931fa7fd46c0efc627ce0472623524f04aaa7fd",
+      "sourceSha256": "a852e50c7b0d6d69eeb7640018d96c072528d5607afa2ca426d70492274a4a4c",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        15,
+        45,
+        75,
+        105
+      ],
+      "directions": [
+        {
+          "angle": 15,
+          "src": "images/atlas/family-production-v1/mama-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-d-blink-v1.webp",
+          "referenceWidth": 298.893,
+          "frames": [
+            {
+              "rect": [
+                33,
+                53,
+                287,
+                225
+              ],
+              "anchor": [
+                143.5,
+                220
+              ]
+            },
+            {
+              "rect": [
+                347,
+                54,
+                286,
+                223
+              ],
+              "anchor": [
+                143.5,
+                218
+              ]
+            },
+            {
+              "rect": [
+                658,
+                54,
+                282,
+                225
+              ],
+              "anchor": [
+                141,
+                220
+              ]
+            },
+            {
+              "rect": [
+                971,
+                55,
+                276,
+                224
+              ],
+              "anchor": [
+                138.5,
+                219
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 45,
+          "src": "images/atlas/family-production-v1/mama-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-d-blink-v1.webp",
+          "referenceWidth": 298.893,
+          "frames": [
+            {
+              "rect": [
+                39,
+                343,
+                263,
+                253
+              ],
+              "anchor": [
+                131,
+                248
+              ]
+            },
+            {
+              "rect": [
+                353,
+                343,
+                265,
+                257
+              ],
+              "anchor": [
+                132,
+                252
+              ]
+            },
+            {
+              "rect": [
+                666,
+                342,
+                260,
+                256
+              ],
+              "anchor": [
+                129.5,
+                252
+              ]
+            },
+            {
+              "rect": [
+                979,
+                344,
+                259,
+                253
+              ],
+              "anchor": [
+                129,
+                248
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 75,
+          "src": "images/atlas/family-production-v1/mama-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-d-blink-v1.webp",
+          "referenceWidth": 298.893,
+          "frames": [
+            {
+              "rect": [
+                46,
+                636,
+                246,
+                275
+              ],
+              "anchor": [
+                122.5,
+                270
+              ]
+            },
+            {
+              "rect": [
+                362,
+                636,
+                244,
+                274
+              ],
+              "anchor": [
+                121,
+                269
+              ]
+            },
+            {
+              "rect": [
+                675,
+                637,
+                239,
+                273
+              ],
+              "anchor": [
+                118.5,
+                268
+              ]
+            },
+            {
+              "rect": [
+                989,
+                636,
+                242,
+                267
+              ],
+              "anchor": [
+                120.5,
+                262
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 105,
+          "src": "images/atlas/family-production-v1/mama-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-d-blink-v1.webp",
+          "referenceWidth": 298.893,
+          "frames": [
+            {
+              "rect": [
+                53,
+                940,
+                228,
+                242
+              ],
+              "anchor": [
+                113.5,
+                237
+              ]
+            },
+            {
+              "rect": [
+                367,
+                940,
+                229,
+                259
+              ],
+              "anchor": [
+                114.5,
+                254
+              ]
+            },
+            {
+              "rect": [
+                679,
+                940,
+                229,
+                255
+              ],
+              "anchor": [
+                114,
+                251
+              ]
+            },
+            {
+              "rect": [
+                993,
+                940,
+                230,
+                259
+              ],
+              "anchor": [
+                115,
+                254
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/mama-production-generations.json",
+        "generationRecordSha256": "b272dfafcc1030e9ac3a3988590d03a1b3022a84a7d0cb27923547111dcfcff6",
+        "started": "2026-09-21 11:30:12 UTC",
+        "completed": "2026-09-21 11:31:36 UTC",
+        "durationMilliseconds": 84000,
+        "timingNote": null
+      }
+    },
+    {
+      "characterId": "mama",
+      "bodySheet": "e",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/mama-e-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-e-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/mama-e-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/mama-e-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/mama-e-v1.png",
+      "neutralSha256": "c2a73704c8d6eb43b58fd738407116c50619eb75f0512af3fdd1e728d7d4b81f",
+      "sourceSha256": "e89fd861d8d7a80917187fe3c0e959cc5bdb28bb71013ce7364909c034f8298d",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        135,
+        165,
+        195,
+        225
+      ],
+      "directions": [
+        {
+          "angle": 135,
+          "src": "images/atlas/family-production-v1/mama-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-e-blink-v1.webp",
+          "referenceWidth": 310.301,
+          "frames": [
+            {
+              "rect": [
+                51,
+                44,
+                252,
+                268
+              ],
+              "anchor": [
+                125,
+                264
+              ]
+            },
+            {
+              "rect": [
+                365,
+                45,
+                250,
+                259
+              ],
+              "anchor": [
+                124,
+                254
+              ]
+            },
+            {
+              "rect": [
+                672,
+                44,
+                252,
+                267
+              ],
+              "anchor": [
+                125,
+                262
+              ]
+            },
+            {
+              "rect": [
+                985,
+                45,
+                251,
+                261
+              ],
+              "anchor": [
+                125,
+                256
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 165,
+          "src": "images/atlas/family-production-v1/mama-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-e-blink-v1.webp",
+          "referenceWidth": 310.301,
+          "frames": [
+            {
+              "rect": [
+                14,
+                342,
+                305,
+                251
+              ],
+              "anchor": [
+                150.5,
+                246
+              ]
+            },
+            {
+              "rect": [
+                324,
+                344,
+                306,
+                250
+              ],
+              "anchor": [
+                152,
+                245
+              ]
+            },
+            {
+              "rect": [
+                639,
+                345,
+                301,
+                242
+              ],
+              "anchor": [
+                149.5,
+                237
+              ]
+            },
+            {
+              "rect": [
+                952,
+                344,
+                300,
+                250
+              ],
+              "anchor": [
+                149,
+                245
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 195,
+          "src": "images/atlas/family-production-v1/mama-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-e-blink-v1.webp",
+          "referenceWidth": 310.301,
+          "frames": [
+            {
+              "rect": [
+                18,
+                635,
+                297,
+                236
+              ],
+              "anchor": [
+                147,
+                231
+              ]
+            },
+            {
+              "rect": [
+                333,
+                635,
+                295,
+                235
+              ],
+              "anchor": [
+                146,
+                230
+              ]
+            },
+            {
+              "rect": [
+                645,
+                633,
+                294,
+                237
+              ],
+              "anchor": [
+                146,
+                232
+              ]
+            },
+            {
+              "rect": [
+                960,
+                634,
+                291,
+                236
+              ],
+              "anchor": [
+                144.5,
+                231
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 225,
+          "src": "images/atlas/family-production-v1/mama-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mama-e-blink-v1.webp",
+          "referenceWidth": 310.301,
+          "frames": [
+            {
+              "rect": [
+                46,
+                904,
+                265,
+                273
+              ],
+              "anchor": [
+                131,
+                269
+              ]
+            },
+            {
+              "rect": [
+                382,
+                906,
+                250,
+                277
+              ],
+              "anchor": [
+                123.5,
+                272
+              ]
+            },
+            {
+              "rect": [
+                693,
+                906,
+                247,
+                282
+              ],
+              "anchor": [
+                123.5,
+                277
+              ]
+            },
+            {
+              "rect": [
+                1008,
+                905,
+                241,
+                283
+              ],
+              "anchor": [
+                119.5,
+                278
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/mama-production-generations.json",
+        "generationRecordSha256": "ec9ef2f9e88dfa09fc67ebfbfab55451bb62b2af8da8bc5f2abf57bbb7a1ad9e",
+        "started": "2026-09-21 11:32:01 UTC",
+        "completed": "2026-09-21 11:33:07 UTC",
+        "durationMilliseconds": 66000,
+        "timingNote": null
+      }
+    },
+    {
+      "characterId": "mr-pompom",
+      "bodySheet": "a",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/mr-pompom-a-v1.png",
+      "neutralSha256": "611f2a203382376e30b34e53ebf7512a84c2bdb4f3e41f5b48f839ac4678706a",
+      "sourceSha256": "542d3961d3474c5a1bacc10a8015d97a14a07ef8d2071bd4653c93c30760a3b0",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        0,
+        30,
+        60,
+        90
+      ],
+      "directions": [
+        {
+          "angle": 0,
+          "src": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.webp",
+          "referenceWidth": 284.724,
+          "frames": [
+            {
+              "rect": [
+                36,
+                63,
+                276,
+                207
+              ],
+              "anchor": [
+                138,
+                202
+              ]
+            },
+            {
+              "rect": [
+                349,
+                63,
+                276,
+                210
+              ],
+              "anchor": [
+                138,
+                205
+              ]
+            },
+            {
+              "rect": [
+                659,
+                63,
+                278,
+                208
+              ],
+              "anchor": [
+                139.5,
+                202
+              ]
+            },
+            {
+              "rect": [
+                973,
+                63,
+                274,
+                209
+              ],
+              "anchor": [
+                138,
+                204
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 30,
+          "src": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.webp",
+          "referenceWidth": 284.724,
+          "frames": [
+            {
+              "rect": [
+                40,
+                348,
+                260,
+                241
+              ],
+              "anchor": [
+                130,
+                236
+              ]
+            },
+            {
+              "rect": [
+                357,
+                348,
+                255,
+                244
+              ],
+              "anchor": [
+                127.5,
+                239
+              ]
+            },
+            {
+              "rect": [
+                670,
+                348,
+                256,
+                241
+              ],
+              "anchor": [
+                128,
+                236
+              ]
+            },
+            {
+              "rect": [
+                982,
+                348,
+                254,
+                244
+              ],
+              "anchor": [
+                127.5,
+                239
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 60,
+          "src": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.webp",
+          "referenceWidth": 284.724,
+          "frames": [
+            {
+              "rect": [
+                48,
+                640,
+                234,
+                260
+              ],
+              "anchor": [
+                116.5,
+                255
+              ]
+            },
+            {
+              "rect": [
+                361,
+                639,
+                236,
+                265
+              ],
+              "anchor": [
+                117.5,
+                260
+              ]
+            },
+            {
+              "rect": [
+                674,
+                640,
+                235,
+                264
+              ],
+              "anchor": [
+                117,
+                259
+              ]
+            },
+            {
+              "rect": [
+                988,
+                639,
+                236,
+                260
+              ],
+              "anchor": [
+                117.5,
+                255
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 90,
+          "src": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-a-blink-v1.webp",
+          "referenceWidth": 284.724,
+          "frames": [
+            {
+              "rect": [
+                53,
+                940,
+                223,
+                250
+              ],
+              "anchor": [
+                111.5,
+                245
+              ]
+            },
+            {
+              "rect": [
+                365,
+                940,
+                219,
+                257
+              ],
+              "anchor": [
+                109,
+                252
+              ]
+            },
+            {
+              "rect": [
+                676,
+                940,
+                221,
+                260
+              ],
+              "anchor": [
+                111,
+                255
+              ]
+            },
+            {
+              "rect": [
+                985,
+                940,
+                222,
+                261
+              ],
+              "anchor": [
+                110.5,
+                256
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/pompom-production-generations.json",
+        "generationRecordSha256": "88a1b9206af6f04413f45a0a17ca00bdfa439bd16acdbb1932f4493baf5eb995",
+        "started": "2026-09-21T11:23:45.998Z",
+        "completed": "2026-09-21T11:24:57.560Z",
+        "durationMilliseconds": 71562,
+        "timingNote": null
+      }
+    },
+    {
+      "characterId": "mr-pompom",
+      "bodySheet": "b",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/mr-pompom-b-v1.png",
+      "neutralSha256": "4aa03fbabcc4c5b0dbd682e54a7e36108ac6545798da90b57930322ccd3313a1",
+      "sourceSha256": "9cffc608135c392d9e4efed248d5054cf6c337bce8aa20318c41352bebfcdf5e",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        120,
+        150,
+        180,
+        210
+      ],
+      "directions": [
+        {
+          "angle": 120,
+          "src": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.webp",
+          "referenceWidth": 292.552,
+          "frames": [
+            {
+              "rect": [
+                53,
+                56,
+                235,
+                245
+              ],
+              "anchor": [
+                116.5,
+                241
+              ]
+            },
+            {
+              "rect": [
+                361,
+                55,
+                239,
+                243
+              ],
+              "anchor": [
+                118.5,
+                238
+              ]
+            },
+            {
+              "rect": [
+                675,
+                55,
+                237,
+                245
+              ],
+              "anchor": [
+                117.5,
+                240
+              ]
+            },
+            {
+              "rect": [
+                988,
+                53,
+                237,
+                245
+              ],
+              "anchor": [
+                117.5,
+                240
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 150,
+          "src": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.webp",
+          "referenceWidth": 292.552,
+          "frames": [
+            {
+              "rect": [
+                41,
+                360,
+                267,
+                232
+              ],
+              "anchor": [
+                132,
+                227
+              ]
+            },
+            {
+              "rect": [
+                340,
+                359,
+                278,
+                233
+              ],
+              "anchor": [
+                138,
+                228
+              ]
+            },
+            {
+              "rect": [
+                651,
+                359,
+                274,
+                233
+              ],
+              "anchor": [
+                136.5,
+                229
+              ]
+            },
+            {
+              "rect": [
+                961,
+                359,
+                270,
+                233
+              ],
+              "anchor": [
+                134.5,
+                228
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 180,
+          "src": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.webp",
+          "referenceWidth": 292.552,
+          "frames": [
+            {
+              "rect": [
+                20,
+                652,
+                288,
+                223
+              ],
+              "anchor": [
+                143,
+                218
+              ]
+            },
+            {
+              "rect": [
+                327,
+                652,
+                291,
+                218
+              ],
+              "anchor": [
+                144.5,
+                213
+              ]
+            },
+            {
+              "rect": [
+                641,
+                653,
+                288,
+                219
+              ],
+              "anchor": [
+                143.5,
+                215
+              ]
+            },
+            {
+              "rect": [
+                952,
+                653,
+                288,
+                218
+              ],
+              "anchor": [
+                143.5,
+                213
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 210,
+          "src": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-b-blink-v1.webp",
+          "referenceWidth": 292.552,
+          "frames": [
+            {
+              "rect": [
+                60,
+                920,
+                246,
+                253
+              ],
+              "anchor": [
+                122,
+                248
+              ]
+            },
+            {
+              "rect": [
+                377,
+                921,
+                240,
+                258
+              ],
+              "anchor": [
+                119,
+                253
+              ]
+            },
+            {
+              "rect": [
+                687,
+                921,
+                237,
+                259
+              ],
+              "anchor": [
+                117.5,
+                254
+              ]
+            },
+            {
+              "rect": [
+                997,
+                922,
+                239,
+                257
+              ],
+              "anchor": [
+                119.5,
+                253
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/pompom-production-generations.json",
+        "generationRecordSha256": "627c1efdfeaad29d9a2f62d1bcf6350b9fb94044fc28ed275d255f741c7a673f",
+        "started": "2026-09-21T11:25:27.834Z",
+        "completed": "2026-09-21T11:26:26.472Z",
+        "durationMilliseconds": 58638,
+        "timingNote": null
+      }
+    },
+    {
+      "characterId": "mr-pompom",
+      "bodySheet": "d",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/mr-pompom-d-v1.png",
+      "neutralSha256": "d9f9a517d224a1fecd34ccd2ff6d811558d48083a07194457b72b46df92d92a5",
+      "sourceSha256": "8ed7bcd97e6dba121e4721be7408e69ab350b44b1363f910fc57e46c4b707feb",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        15,
+        45,
+        75,
+        105
+      ],
+      "directions": [
+        {
+          "angle": 15,
+          "src": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.webp",
+          "referenceWidth": 299.067,
+          "frames": [
+            {
+              "rect": [
+                38,
+                55,
+                280,
+                225
+              ],
+              "anchor": [
+                140.5,
+                220
+              ]
+            },
+            {
+              "rect": [
+                352,
+                55,
+                281,
+                225
+              ],
+              "anchor": [
+                141,
+                220
+              ]
+            },
+            {
+              "rect": [
+                660,
+                54,
+                280,
+                226
+              ],
+              "anchor": [
+                141,
+                221
+              ]
+            },
+            {
+              "rect": [
+                972,
+                54,
+                276,
+                226
+              ],
+              "anchor": [
+                139,
+                221
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 45,
+          "src": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.webp",
+          "referenceWidth": 299.067,
+          "frames": [
+            {
+              "rect": [
+                41,
+                341,
+                260,
+                254
+              ],
+              "anchor": [
+                130,
+                249
+              ]
+            },
+            {
+              "rect": [
+                351,
+                342,
+                263,
+                255
+              ],
+              "anchor": [
+                131.5,
+                251
+              ]
+            },
+            {
+              "rect": [
+                664,
+                342,
+                258,
+                254
+              ],
+              "anchor": [
+                128.5,
+                249
+              ]
+            },
+            {
+              "rect": [
+                978,
+                342,
+                260,
+                254
+              ],
+              "anchor": [
+                130,
+                249
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 75,
+          "src": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.webp",
+          "referenceWidth": 299.067,
+          "frames": [
+            {
+              "rect": [
+                48,
+                636,
+                241,
+                269
+              ],
+              "anchor": [
+                120,
+                264
+              ]
+            },
+            {
+              "rect": [
+                360,
+                637,
+                242,
+                272
+              ],
+              "anchor": [
+                121,
+                267
+              ]
+            },
+            {
+              "rect": [
+                672,
+                637,
+                242,
+                272
+              ],
+              "anchor": [
+                120.5,
+                267
+              ]
+            },
+            {
+              "rect": [
+                986,
+                636,
+                240,
+                270
+              ],
+              "anchor": [
+                120,
+                265
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 105,
+          "src": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-d-blink-v1.webp",
+          "referenceWidth": 299.067,
+          "frames": [
+            {
+              "rect": [
+                51,
+                935,
+                237,
+                257
+              ],
+              "anchor": [
+                118,
+                252
+              ]
+            },
+            {
+              "rect": [
+                366,
+                936,
+                236,
+                270
+              ],
+              "anchor": [
+                117.5,
+                265
+              ]
+            },
+            {
+              "rect": [
+                678,
+                937,
+                237,
+                272
+              ],
+              "anchor": [
+                118.5,
+                267
+              ]
+            },
+            {
+              "rect": [
+                993,
+                936,
+                237,
+                272
+              ],
+              "anchor": [
+                117.5,
+                267
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/pompom-production-generations.json",
+        "generationRecordSha256": "4e1d264c6e7a9a6af27526566ae959a613499921a39929c7e113a0c79bbaa243",
+        "started": "2026-09-21T11:26:54.800Z",
+        "completed": "2026-09-21T11:28:04.516Z",
+        "durationMilliseconds": 69716,
+        "timingNote": null
+      }
+    },
+    {
+      "characterId": "mr-pompom",
+      "bodySheet": "e",
+      "kind": "blink",
+      "src": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.webp",
+      "preparation": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.json",
+      "prompt": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.md",
+      "bodySrc": "images/atlas/family-production-v1/mr-pompom-e-v1.png",
+      "neutralSha256": "be8f3c470876db49347a5628803cf9f391a46f25d588eaf7ba3808764d429fe5",
+      "sourceSha256": "949e85b017ba6d43ec7db811c249acbb2282323b84ea339a13c3e21aa2f2ba3c",
+      "width": 1254,
+      "height": 1254,
+      "angles": [
+        135,
+        165,
+        195,
+        225
+      ],
+      "directions": [
+        {
+          "angle": 135,
+          "src": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.webp",
+          "referenceWidth": 299.406,
+          "frames": [
+            {
+              "rect": [
+                50,
+                46,
+                243,
+                246
+              ],
+              "anchor": [
+                120.5,
+                241
+              ]
+            },
+            {
+              "rect": [
+                363,
+                45,
+                244,
+                248
+              ],
+              "anchor": [
+                120.5,
+                243
+              ]
+            },
+            {
+              "rect": [
+                675,
+                46,
+                245,
+                251
+              ],
+              "anchor": [
+                121.5,
+                247
+              ]
+            },
+            {
+              "rect": [
+                989,
+                46,
+                245,
+                246
+              ],
+              "anchor": [
+                121,
+                241
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 165,
+          "src": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.webp",
+          "referenceWidth": 299.406,
+          "frames": [
+            {
+              "rect": [
+                23,
+                337,
+                285,
+                234
+              ],
+              "anchor": [
+                142,
+                229
+              ]
+            },
+            {
+              "rect": [
+                328,
+                337,
+                290,
+                241
+              ],
+              "anchor": [
+                144,
+                236
+              ]
+            },
+            {
+              "rect": [
+                644,
+                336,
+                291,
+                233
+              ],
+              "anchor": [
+                144.5,
+                228
+              ]
+            },
+            {
+              "rect": [
+                958,
+                337,
+                283,
+                245
+              ],
+              "anchor": [
+                140.5,
+                240
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 195,
+          "src": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.webp",
+          "referenceWidth": 299.406,
+          "frames": [
+            {
+              "rect": [
+                24,
+                622,
+                276,
+                237
+              ],
+              "anchor": [
+                137,
+                232
+              ]
+            },
+            {
+              "rect": [
+                343,
+                621,
+                273,
+                238
+              ],
+              "anchor": [
+                135.5,
+                233
+              ]
+            },
+            {
+              "rect": [
+                652,
+                622,
+                278,
+                237
+              ],
+              "anchor": [
+                137.5,
+                232
+              ]
+            },
+            {
+              "rect": [
+                970,
+                621,
+                272,
+                238
+              ],
+              "anchor": [
+                135,
+                233
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 225,
+          "src": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.png",
+          "runtimeSrc": "images/atlas/family-production-v1/mr-pompom-e-blink-v1.webp",
+          "referenceWidth": 299.406,
+          "frames": [
+            {
+              "rect": [
+                52,
+                904,
+                252,
+                271
+              ],
+              "anchor": [
+                125,
+                267
+              ]
+            },
+            {
+              "rect": [
+                382,
+                905,
+                245,
+                275
+              ],
+              "anchor": [
+                122,
+                270
+              ]
+            },
+            {
+              "rect": [
+                695,
+                904,
+                245,
+                278
+              ],
+              "anchor": [
+                121.5,
+                273
+              ]
+            },
+            {
+              "rect": [
+                1010,
+                905,
+                237,
+                278
+              ],
+              "anchor": [
+                118,
+                274
+              ]
+            }
+          ]
+        }
+      ],
+      "registrationStatus": "awaiting-eye-region-registration-review",
+      "pixelRegistrationCertified": false,
+      "fullSheetSwapApproved": false,
+      "provenance": {
+        "generationLog": "production/pompom-production-generations.json",
+        "generationRecordSha256": "79f39e029763e2693273c98f42a5c722f8e74b3a02d69390885a91f2d0fd7526",
+        "started": "2026-09-21T11:28:30.466Z",
+        "completed": "2026-09-21T11:29:48.983Z",
+        "durationMilliseconds": 78517,
+        "timingNote": null
+      }
+    }
+  ],
+  "rejected": []
+}

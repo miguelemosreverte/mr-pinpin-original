@@ -1,0 +1,700 @@
+{
+  "tool": "built-in image_gen",
+  "id": "pompom",
+  "status": "complete-generation-lane",
+  "completed": "2026-09-21T11:31:46.792Z",
+  "summary": {
+    "bodySheets": 6,
+    "bodyFrames": 96,
+    "headingBins": 24,
+    "blinkSheets": 4,
+    "generatedAttempts": 12,
+    "rejectedAttempts": 2,
+    "actualDimensions": [
+      1254,
+      1254
+    ],
+    "bodyRequestedDimensions": [
+      2048,
+      2048
+    ],
+    "allSelectedPixelValidation": "PASS",
+    "headingNote": "Camera views inherit approved legacy templates; requested 15-degree labels are approximate visual bins, not measured exact azimuths.",
+    "blinkNote": "Full-sheet closed-eyelid art for independent eye-overlay extraction. Visual preservation checked, but exact pixel registration and identity outside eyes are not certified; do not swap whole generated blink sheets into the body animation.",
+    "scope": "Only this manifest, new raw PNG copies, and /tmp/atlas-pompom-generation-report.md were written. No runtime, commit, or push."
+  },
+  "assets": [
+    {
+      "id": "pompom",
+      "sheet": "a",
+      "angles": [
+        0,
+        30,
+        60,
+        90
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-a-v1.png",
+      "identity": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/pompom-walk-v1.png",
+      "prompt": "Use case: identity-preserve. Edit image 1 into a MrPomPom baby walking sprite sheet. Image 1 is the AUTHORITATIVE camera, heading, four walking phases, leg articulation and 4 by 4 cell layout template. Image 2 supplies ONLY MrPomPom's baby identity and rendering, NOT its gait, directions or changing expressions. Make the character the one-year-old-equivalent little brother: round cheeks, much shorter muzzle, tiny paws, round compact body, cream facial fur, chestnut brown quills, large warm brown book eyes with distinct dark pupils and ivory whites like image 2. Preserve image 1's exact camera direction and individual paw pose in each of its 16 cells. Keep the four genuinely distinct old walking phases: alternating planted paws and forward swinging lifted paws, not repeated standing poses. Exactly four anatomical limbs with natural occlusion. Row 1 faces directly RIGHT in profile (0). Row 2 faces down-RIGHT shallow front-right (30). Row 3 faces down-RIGHT steep front-right (60). Row 4 faces directly DOWN toward the camera with centered frontal nose (90), NOT left. Stable neutral CLOSED mouth and open eyes throughout all four gait columns: no smile cycle, open mouths, blinking or head turns. Same baby proportions and identity throughout. Detailed softly lit storybook fur and quills matching image 2. Fixed elevated atlas camera. Full true-alpha transparent background. Remove any colored diagnostic fringe. Generous transparent gutters between all 16 complete figures and outer margins; no nose, quill or paw may touch a cell edge. No ground, shadows, lettering, grid or labels. Request a 2048 by 2048 square PNG. Only output this single 4-row 4-column sheet.",
+      "attempt": 1,
+      "started": "2026-09-21T11:12:27.784Z",
+      "completed": "2026-09-21T11:13:23.449Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-ef82f973-9497-45bb-a899-334f9ef83c93.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-ef82f973-9497-45bb-a899-334f9ef83c93.png",
+      "visualReview": "Accepted heading/gait review: right profile, shallow front-right, steep front-right, frontal/down; four visibly distinct paw phases per row; large brown eyes with whites and stable closed mouth. Approximate legacy camera bins, not measured 15-degree angles.",
+      "status": "accepted-visual",
+      "requestedDimensions": [
+        2048,
+        2048
+      ],
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "raw": "images/atlas/family-production-v1/raw/pompom-a-v1.png",
+      "kind": "body",
+      "measurements": {
+        "sheet": "a",
+        "width": 1254,
+        "height": 1254,
+        "colorType": 6,
+        "pixelValidation": "PASS",
+        "grid": {
+          "x": [
+            0,
+            313,
+            627,
+            940,
+            1254
+          ],
+          "y": [
+            0,
+            313,
+            627,
+            940,
+            1254
+          ]
+        },
+        "sha256": "611f2a203382376e30b34e53ebf7512a84c2bdb4f3e41f5b48f839ac4678706a",
+        "edgePixels": 0,
+        "outerEdgePixels": 0,
+        "fullyTransparentPixels": 837591,
+        "rawAlphaPreserved": true
+      },
+      "selected": true,
+      "durationSeconds": 55.665,
+      "copyMatchesSource": true
+    },
+    {
+      "id": "pompom",
+      "sheet": "b",
+      "angles": [
+        120,
+        150,
+        180,
+        210
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-b-v1.png",
+      "identity": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/pompom-walk-v1.png",
+      "prompt": "Use case: identity-preserve. Edit image 1 into a MrPomPom baby walking sprite sheet. Image 1 is the AUTHORITATIVE camera, heading, four walking phases, leg articulation and 4 by 4 cell layout template. Image 2 supplies ONLY MrPomPom's baby identity and rendering, NOT its gait, directions or changing expressions. Make the character the one-year-old-equivalent little brother: round cheeks, much shorter muzzle, tiny paws, round compact body, cream facial fur, chestnut brown quills, large warm brown book eyes with distinct dark pupils and ivory whites like image 2. Preserve image 1's exact camera direction and individual paw pose in each of its 16 cells. Keep the four genuinely distinct old walking phases: alternating planted paws and forward swinging lifted paws, not repeated standing poses. Exactly four anatomical limbs with natural occlusion. Row 1 faces down-LEFT steep front-left (120). Row 2 faces down-LEFT shallow front-left (150). Row 3 faces directly LEFT in profile (180). Row 4 faces up-LEFT away from the camera, rear-left (210). All noses point LEFT or away-LEFT, never right. Stable neutral CLOSED mouth and open eyes throughout all four gait columns: no smile cycle, open mouths, blinking or head turns. Same baby proportions and identity throughout. Detailed softly lit storybook fur and quills matching image 2. Fixed elevated atlas camera. Full true-alpha transparent background. Remove any colored diagnostic fringe. Generous transparent gutters between all 16 complete figures and outer margins; no nose, quill or paw may touch a cell edge. No ground, shadows, lettering, grid or labels. Request a 2048 by 2048 square PNG. Only output this single 4-row 4-column sheet.",
+      "attempt": 1,
+      "requestedDimensions": [
+        2048,
+        2048
+      ],
+      "started": "2026-09-21T11:13:52.749Z",
+      "completed": "2026-09-21T11:14:51.778Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-1c3c5489-9bbf-4a37-8b9b-02113696669e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-1c3c5489-9bbf-4a37-8b9b-02113696669e.png",
+      "status": "rejected-identity",
+      "visualReview": "Correct left/rear-left headings and walking phases, but eyes remain small and dark like old PinPin, with insufficient baby face/white sclera identity compared with sheet A and identity proof.",
+      "kind": "body",
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "selected": false,
+      "durationSeconds": 59.029
+    },
+    {
+      "id": "pompom",
+      "sheet": "b",
+      "angles": [
+        120,
+        150,
+        180,
+        210
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-b-v1.png",
+      "identity": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/pompom-walk-v1.png",
+      "prompt": "Use case: identity-preserve. Edit image 1 into a MrPomPom baby walking sprite sheet. Image 1 is the AUTHORITATIVE camera, heading, four walking phases, leg articulation and 4 by 4 cell layout template. Image 2 supplies ONLY MrPomPom's baby identity and rendering, NOT its gait, directions or changing expressions. Make the character the one-year-old-equivalent little brother: round cheeks, much shorter muzzle, tiny paws, round compact body, cream facial fur, chestnut brown quills, large warm brown book eyes with distinct dark pupils and ivory whites like image 2. Preserve image 1's exact camera direction and individual paw pose in each of its 16 cells. Keep the four genuinely distinct old walking phases: alternating planted paws and forward swinging lifted paws, not repeated standing poses. Exactly four anatomical limbs with natural occlusion. Row 1 faces down-LEFT steep front-left (120). Row 2 faces down-LEFT shallow front-left (150). Row 3 faces directly LEFT in profile (180). Row 4 faces up-LEFT away from the camera, rear-left (210). All noses point LEFT or away-LEFT, never right. Stable neutral CLOSED mouth and open eyes throughout all four gait columns: no smile cycle, open mouths, blinking or head turns. Same baby proportions and identity throughout. Detailed softly lit storybook fur and quills matching image 2. Fixed elevated atlas camera. Full true-alpha transparent background. Remove any colored diagnostic fringe. Generous transparent gutters between all 16 complete figures and outer margins; no nose, quill or paw may touch a cell edge. No ground, shadows, lettering, grid or labels. Request a 2048 by 2048 square PNG. Only output this single 4-row 4-column sheet.\nCritical identity correction: do not retain image 1's small black bead eyes or long adult muzzle. Replace every visible face with the noticeably baby MrPomPom face in image 2: larger brown irises, obvious ivory-white sclera, fuller cream cheeks and distinctly shortened snout. Keep image 1's LEFT facing camera views and its exact paw phases. The baby face stays neutral with mouth closed.",
+      "attempt": 2,
+      "requestedDimensions": [
+        2048,
+        2048
+      ],
+      "started": "2026-09-21T11:15:16.359Z",
+      "completed": "2026-09-21T11:16:16.414Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-2c5adbbd-bfa3-451e-b209-5ea9810fb756.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-2c5adbbd-bfa3-451e-b209-5ea9810fb756.png",
+      "kind": "body",
+      "status": "accepted-visual",
+      "visualReview": "Correct front-left, shallow front-left, left profile and rear-left rows; distinct paw phases, neutral closed mouth. Retry restores larger brown eyes and visible white sclera. Rear-left face naturally hidden.",
+      "raw": "images/atlas/family-production-v1/raw/pompom-b-v2.png",
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "measurements": {
+        "sheet": "b",
+        "width": 1254,
+        "height": 1254,
+        "colorType": 6,
+        "pixelValidation": "PASS",
+        "grid": {
+          "x": [
+            0,
+            313,
+            627,
+            940,
+            1254
+          ],
+          "y": [
+            0,
+            313,
+            627,
+            897,
+            1254
+          ]
+        },
+        "sha256": "4aa03fbabcc4c5b0dbd682e54a7e36108ac6545798da90b57930322ccd3313a1",
+        "edgePixels": 0,
+        "outerEdgePixels": 0,
+        "fullyTransparentPixels": 852459,
+        "rawAlphaPreserved": true
+      },
+      "selected": true,
+      "durationSeconds": 60.055,
+      "copyMatchesSource": true
+    },
+    {
+      "id": "pompom",
+      "kind": "body",
+      "sheet": "c",
+      "angles": [
+        240,
+        270,
+        300,
+        330
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-c-v1.png",
+      "identity": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/pompom-walk-v1.png",
+      "prompt": "Use case: identity-preserve. Edit image 1 into a MrPomPom baby walking sprite sheet. Image 1 is the AUTHORITATIVE camera, heading, four walking phases, leg articulation and 4 by 4 cell layout template. Image 2 supplies ONLY MrPomPom's baby identity and rendering, NOT its gait, directions or changing expressions. Make the character the one-year-old-equivalent little brother: round cheeks, much shorter muzzle, tiny paws, round compact body, cream facial fur, chestnut brown quills, large warm brown book eyes with distinct dark pupils and ivory whites like image 2. Preserve image 1's exact camera direction and individual paw pose in each of its 16 cells. Keep the four genuinely distinct old walking phases: alternating planted paws and forward swinging lifted paws, not repeated standing poses. Exactly four anatomical limbs with natural occlusion. Row 1 faces up-LEFT away from camera, steep rear-left (240). Row 2 faces directly UP straight away, centered back of quills (270), with the entire face hidden. Row 3 faces up-RIGHT away, steep rear-right (300). Row 4 faces up-RIGHT away, shallower rear-right (330). All four rows walk AWAY; never add a frontal face or a head looking back. Stable neutral CLOSED mouth and open eyes throughout all four gait columns: no smile cycle, open mouths, blinking or head turns. Same baby proportions and identity throughout. Detailed softly lit storybook fur and quills matching image 2. Fixed elevated atlas camera. Full true-alpha transparent background. Remove any colored diagnostic fringe. Generous transparent gutters between all 16 complete figures and outer margins; no nose, quill or paw may touch a cell edge. No ground, shadows, lettering, grid or labels. Request a 2048 by 2048 square PNG. Only output this single 4-row 4-column sheet.\nThe baby proportions and brown-and-white book eyes must be apparent wherever the original camera permits seeing an eye. Do not retain adult bead eyes. Never reveal a face on the straight rear row.",
+      "attempt": 1,
+      "requestedDimensions": [
+        2048,
+        2048
+      ],
+      "started": "2026-09-21T11:16:46.728Z",
+      "completed": "2026-09-21T11:17:48.009Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-59ddc8eb-757a-4ec5-adc8-8dbe1a5d9c06.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-59ddc8eb-757a-4ec5-adc8-8dbe1a5d9c06.png",
+      "status": "accepted-visual",
+      "visualReview": "All rows rear-facing: rear-left, centered rear/up with face hidden, steep rear-right, shallow rear-right. Distinct walking paws. Visible eye slivers limited by rear camera; no front-facing head introduced.",
+      "raw": "images/atlas/family-production-v1/raw/pompom-c-v1.png",
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "measurements": {
+        "sheet": "c",
+        "width": 1254,
+        "height": 1254,
+        "colorType": 6,
+        "pixelValidation": "PASS",
+        "grid": {
+          "x": [
+            0,
+            313,
+            627,
+            940,
+            1254
+          ],
+          "y": [
+            0,
+            313,
+            627,
+            940,
+            1254
+          ]
+        },
+        "sha256": "b5fd82d3b94ab3cb248eb1c3ff0aaeecf4912bfecf5e7db555bc6bbf88b19815",
+        "edgePixels": 0,
+        "outerEdgePixels": 0,
+        "fullyTransparentPixels": 957282,
+        "rawAlphaPreserved": true
+      },
+      "selected": true,
+      "durationSeconds": 61.281,
+      "copyMatchesSource": true
+    },
+    {
+      "id": "pompom",
+      "kind": "body",
+      "sheet": "d",
+      "angles": [
+        15,
+        45,
+        75,
+        105
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-a-v2.png",
+      "identity": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/pompom-walk-v1.png",
+      "prompt": "Use case: identity-preserve. Edit image 1 into a MrPomPom baby walking sprite sheet. Image 1 is the AUTHORITATIVE camera, heading, four walking phases, leg articulation and 4 by 4 cell layout template. Image 2 supplies ONLY MrPomPom's baby identity and rendering, NOT its gait, directions or changing expressions. Make the character the one-year-old-equivalent little brother: round cheeks, much shorter muzzle, tiny paws, round compact body, cream facial fur, chestnut brown quills, large warm brown book eyes with distinct dark pupils and ivory whites like image 2. Preserve image 1's exact camera direction and individual paw pose in each of its 16 cells. Keep the four genuinely distinct old walking phases: alternating planted paws and forward swinging lifted paws, not repeated standing poses. Exactly four anatomical limbs with natural occlusion. Row 1 faces mostly RIGHT and slightly down toward camera (15). Row 2 faces diagonally down-RIGHT (45). Row 3 faces mostly DOWN and a little right (75). Row 4 faces mostly DOWN and a little LEFT (105). Preserve those four visibly different camera views exactly. Stable neutral CLOSED mouth and open eyes throughout all four gait columns: no smile cycle, open mouths, blinking or head turns. Same baby proportions and identity throughout. Detailed softly lit storybook fur and quills matching image 2. Fixed elevated atlas camera. Full true-alpha transparent background. Remove any colored diagnostic fringe. Generous transparent gutters between all 16 complete figures and outer margins; no nose, quill or paw may touch a cell edge. No ground, shadows, lettering, grid or labels. Request a 2048 by 2048 square PNG. Only output this single 4-row 4-column sheet.\nCritical baby identity: replace the template's small black bead eyes with MrPomPom's larger warm brown eyes and clearly visible ivory sclera; fuller round cheeks and a distinctly shortened baby snout. The body and feet are compact and baby-round, but every original walking phase stays distinct.",
+      "attempt": 1,
+      "requestedDimensions": [
+        2048,
+        2048
+      ],
+      "started": "2026-09-21T11:18:20.957Z",
+      "completed": "2026-09-21T11:19:16.294Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-3e6b7995-cc55-45a8-8203-94fe79a49b5e.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-3e6b7995-cc55-45a8-8203-94fe79a49b5e.png",
+      "status": "accepted-visual",
+      "visualReview": "Four intermediate forward headings preserved: near-right, front-right diagonal, nearly frontal/right, nearly frontal/left. Baby brown eyes with white sclera; mouth remains closed; distinct paws across columns.",
+      "raw": "images/atlas/family-production-v1/raw/pompom-d-v1.png",
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "measurements": {
+        "sheet": "d",
+        "width": 1254,
+        "height": 1254,
+        "colorType": 6,
+        "pixelValidation": "PASS",
+        "grid": {
+          "x": [
+            0,
+            334,
+            646,
+            940,
+            1254
+          ],
+          "y": [
+            0,
+            313,
+            627,
+            922,
+            1254
+          ]
+        },
+        "sha256": "d9f9a517d224a1fecd34ccd2ff6d811558d48083a07194457b72b46df92d92a5",
+        "edgePixels": 0,
+        "outerEdgePixels": 0,
+        "fullyTransparentPixels": 813623,
+        "rawAlphaPreserved": true
+      },
+      "selected": true,
+      "durationSeconds": 55.337,
+      "copyMatchesSource": true
+    },
+    {
+      "id": "pompom",
+      "kind": "body",
+      "sheet": "e",
+      "angles": [
+        135,
+        165,
+        195,
+        225
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-b-v1.png",
+      "identity": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/pompom-walk-v1.png",
+      "prompt": "Use case: identity-preserve. Edit image 1 into a MrPomPom baby walking sprite sheet. Image 1 is the AUTHORITATIVE camera, heading, four walking phases, leg articulation and 4 by 4 cell layout template. Image 2 supplies ONLY MrPomPom's baby identity and rendering, NOT its gait, directions or changing expressions. Make the character the one-year-old-equivalent little brother: round cheeks, much shorter muzzle, tiny paws, round compact body, cream facial fur, chestnut brown quills, large warm brown book eyes with distinct dark pupils and ivory whites like image 2. Preserve image 1's exact camera direction and individual paw pose in each of its 16 cells. Keep the four genuinely distinct old walking phases: alternating planted paws and forward swinging lifted paws, not repeated standing poses. Exactly four anatomical limbs with natural occlusion. Row 1 faces diagonally down-LEFT toward camera (135). Row 2 faces mostly LEFT and slightly down (165). Row 3 faces mostly LEFT and slightly UP away (195). Row 4 faces diagonally up-LEFT away (225). All noses are LEFT or away-LEFT; never right. Rear rows show quills and only naturally visible slivers of cheek. Stable neutral CLOSED mouth and open eyes throughout all four gait columns: no smile cycle, open mouths, blinking or head turns. Same baby proportions and identity throughout. Detailed softly lit storybook fur and quills matching image 2. Fixed elevated atlas camera. Full true-alpha transparent background. Remove any colored diagnostic fringe. Generous transparent gutters between all 16 complete figures and outer margins; no nose, quill or paw may touch a cell edge. No ground, shadows, lettering, grid or labels. Request a 2048 by 2048 square PNG. Only output this single 4-row 4-column sheet.\nCritical baby identity: replace the template's small black bead eyes with MrPomPom's larger warm brown eyes and clearly visible ivory sclera; fuller round cheeks and a distinctly shortened baby snout. The body and feet are compact and baby-round, but every original walking phase stays distinct.",
+      "attempt": 1,
+      "requestedDimensions": [
+        2048,
+        2048
+      ],
+      "started": "2026-09-21T11:19:43.068Z",
+      "completed": "2026-09-21T11:20:22.533Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-4145d111-d7b3-419e-a4ba-6b6ebffd6375.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-4145d111-d7b3-419e-a4ba-6b6ebffd6375.png",
+      "status": "rejected-identity",
+      "visualReview": "Correct front-left through rear-left headings and gait. Brown irises but insufficient visible white sclera; inconsistent with accepted A/B/D baby identity.",
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "selected": false,
+      "durationSeconds": 39.465
+    },
+    {
+      "id": "pompom",
+      "kind": "body",
+      "sheet": "e",
+      "angles": [
+        135,
+        165,
+        195,
+        225
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-b-v1.png",
+      "identity": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/pompom-walk-v1.png",
+      "prompt": "Edit image 1 into baby MrPomPom from image 2. Use image 1 ONLY for its exact 4x4 layout, four distinct walking paw phases and LEFT/away-LEFT camera directions. Row headings remain 135 front-left, 165 shallow front-left, 195 shallow rear-left, 225 rear-left. ALL face directions stay LEFT or away-LEFT. Change the character identity to the baby in image 2, especially its BIG ROUND BROWN EYES with clearly visible IVORY-WHITE SCLERA crescent, dark pupils, chubby cheeks, short blunt baby muzzle and tiny paws. Each visible eye must have a clearly visible white crescent just like image 2; never small all-dark bead eyes. Keep the mouth neutrally CLOSED in every frame. Retain every distinct walking leg phase from image 1, not image 2. Compact baby body and chestnut quills, detailed cream fur. Rear views stay rear without turned heads. Keep 16 complete figures in the original 4x4 layout with clear transparent gutters and no clipping. Genuine alpha transparency, no ground or shadows or grid or text. Request 2048-square PNG. Only this sheet.",
+      "attempt": 2,
+      "requestedDimensions": [
+        2048,
+        2048
+      ],
+      "started": "2026-09-21T11:20:51.254Z",
+      "completed": "2026-09-21T11:21:59.584Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-8442dfc9-d5f7-40ec-885d-92ed7e69fae6.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-8442dfc9-d5f7-40ec-885d-92ed7e69fae6.png",
+      "status": "accepted-visual",
+      "visualReview": "Retry restores large brown-and-white baby eyes with short muzzle. All rows remain left/away-left; rear-left face hidden. Four distinct paw phases and neutral closed mouth.",
+      "raw": "images/atlas/family-production-v1/raw/pompom-e-v2.png",
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "measurements": {
+        "sheet": "e",
+        "width": 1254,
+        "height": 1254,
+        "colorType": 6,
+        "pixelValidation": "PASS",
+        "grid": {
+          "x": [
+            0,
+            313,
+            627,
+            940,
+            1254
+          ],
+          "y": [
+            0,
+            313,
+            601,
+            885,
+            1254
+          ]
+        },
+        "sha256": "be8f3c470876db49347a5628803cf9f391a46f25d588eaf7ba3808764d429fe5",
+        "edgePixels": 0,
+        "outerEdgePixels": 0,
+        "fullyTransparentPixels": 829291,
+        "rawAlphaPreserved": true
+      },
+      "selected": true,
+      "durationSeconds": 68.33,
+      "copyMatchesSource": true
+    },
+    {
+      "id": "pompom",
+      "kind": "body",
+      "sheet": "f",
+      "angles": [
+        255,
+        285,
+        315,
+        345
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/pinpin-directions-intermediate-c-v1.png",
+      "identity": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-proofs/pompom-walk-v1.png",
+      "prompt": "Use case: identity-preserve. Edit image 1 into a MrPomPom baby walking sprite sheet. Image 1 is the AUTHORITATIVE camera, heading, four walking phases, leg articulation and 4 by 4 cell layout template. Image 2 supplies ONLY MrPomPom's baby identity and rendering, NOT its gait, directions or changing expressions. Make the character the one-year-old-equivalent little brother: round cheeks, much shorter muzzle, tiny paws, round compact body, cream facial fur, chestnut brown quills, large warm brown book eyes with distinct dark pupils and ivory whites like image 2. Preserve image 1's exact camera direction and individual paw pose in each of its 16 cells. Keep the four genuinely distinct old walking phases: alternating planted paws and forward swinging lifted paws, not repeated standing poses. Exactly four anatomical limbs with natural occlusion. Row 1 faces mostly UP away and a little LEFT (255). Row 2 faces mostly UP away and a little RIGHT (285). Row 3 faces diagonally up-RIGHT away (315). Row 4 faces mostly RIGHT and slightly UP away (345). All rows walk AWAY; preserve the back of the quills and only whatever sliver of face is visible in image 1. Never rotate the head toward the viewer. Stable neutral CLOSED mouth and open eyes throughout all four gait columns: no smile cycle, open mouths, blinking or head turns. Same baby proportions and identity throughout. Detailed softly lit storybook fur and quills matching image 2. Fixed elevated atlas camera. Full true-alpha transparent background. Remove any colored diagnostic fringe. Generous transparent gutters between all 16 complete figures and outer margins; no nose, quill or paw may touch a cell edge. No ground, shadows, lettering, grid or labels. Request a 2048 by 2048 square PNG. Only output this single 4-row 4-column sheet.\nThe baby proportions and brown-and-white book eyes must be apparent wherever the original camera permits seeing an eye. Do not retain adult bead eyes. Preserve the rear camera views above all; never reveal a frontal face.",
+      "attempt": 1,
+      "requestedDimensions": [
+        2048,
+        2048
+      ],
+      "started": "2026-09-21T11:22:23.792Z",
+      "completed": "2026-09-21T11:23:07.363Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-fce55f51-30ec-41cc-a8d4-1fe75a5e578f.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-fce55f51-30ec-41cc-a8d4-1fe75a5e578f.png",
+      "status": "accepted-visual",
+      "visualReview": "Rear-left, near-rear/right, rear-right diagonal and shallow rear-right preserved. Round baby body and distinct walking paws. Only side eye slivers visible, no turned frontal head.",
+      "raw": "images/atlas/family-production-v1/raw/pompom-f-v1.png",
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "measurements": {
+        "sheet": "f",
+        "width": 1254,
+        "height": 1254,
+        "colorType": 6,
+        "pixelValidation": "PASS",
+        "grid": {
+          "x": [
+            0,
+            313,
+            627,
+            940,
+            1254
+          ],
+          "y": [
+            0,
+            313,
+            627,
+            940,
+            1254
+          ]
+        },
+        "sha256": "35dd4a51e7878ad92550d55d6a729e959bc98454ae5cb4371e47f1c08f4cf0e8",
+        "edgePixels": 0,
+        "outerEdgePixels": 0,
+        "fullyTransparentPixels": 965995,
+        "rawAlphaPreserved": true
+      },
+      "selected": true,
+      "durationSeconds": 43.571,
+      "copyMatchesSource": true
+    },
+    {
+      "id": "pompom",
+      "kind": "blink",
+      "sheet": "a",
+      "angles": [
+        0,
+        30,
+        60,
+        90
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-production-v1/raw/pompom-a-v1.png",
+      "bodySource": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-ef82f973-9497-45bb-a899-334f9ef83c93.png",
+      "prompt": "Use case: precise-object-edit. Edit the supplied MrPomPom walking sprite sheet ONLY to close every visible eye naturally. In all sixteen cells, replace each visible open eye with a softly furred cream eyelid and a fine curved lash line at the same eye position, a natural relaxed blink. No visible iris or pupil remains in any closed eye. Preserve EVERYTHING else exactly: baby identity, face shape, neutral closed mouth, nose, ears, body, distinct paw phase in each cell, every quill, fur, lighting, colors, camera directions, dimensions, sprite scale, positions, alpha silhouette, clear transparent gutters and outer margin. No head tilt, smile, expression shift, body motion, rerendering or layout change. This is independent blink overlay source artwork; perfect registration with the original body sheet is essential. Output the same full 4 by 4 sheet at the same 1254 by 1254 dimensions with genuine transparent alpha, not an eye-only crop. No ground, shadow, text, labels or grid.",
+      "attempt": 1,
+      "requestedDimensions": [
+        1254,
+        1254
+      ],
+      "started": "2026-09-21T11:23:45.998Z",
+      "completed": "2026-09-21T11:24:57.560Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-f3ca3a15-408b-4aa9-ac44-e9f40a31cb23.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-f3ca3a15-408b-4aa9-ac44-e9f40a31cb23.png",
+      "status": "accepted-blink-art",
+      "visualReview": "Every visible eye closed with cream furred lid and curved lash line; original heading rows, 16 paw poses and closed mouth preserved visually. Full-sheet generated source for independent eye-overlay extraction, not certified pixel-identical outside eyes.",
+      "raw": "images/atlas/family-production-v1/raw/pompom-blink-a-v1.png",
+      "measurements": {
+        "sheet": "a",
+        "width": 1254,
+        "height": 1254,
+        "colorType": 6,
+        "pixelValidation": "PASS",
+        "grid": {
+          "x": [
+            0,
+            313,
+            627,
+            940,
+            1254
+          ],
+          "y": [
+            0,
+            313,
+            627,
+            920,
+            1254
+          ]
+        },
+        "sha256": "542d3961d3474c5a1bacc10a8015d97a14a07ef8d2071bd4653c93c30760a3b0",
+        "edgePixels": 0,
+        "outerEdgePixels": 0,
+        "fullyTransparentPixels": 829173,
+        "rawAlphaPreserved": true
+      },
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "selected": true,
+      "durationSeconds": 71.562,
+      "copyMatchesSource": true
+    },
+    {
+      "id": "pompom",
+      "kind": "blink",
+      "sheet": "b",
+      "angles": [
+        120,
+        150,
+        180,
+        210
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-production-v1/raw/pompom-b-v2.png",
+      "bodySource": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-2c5adbbd-bfa3-451e-b209-5ea9810fb756.png",
+      "prompt": "Use case: precise-object-edit. Edit the supplied MrPomPom walking sprite sheet ONLY to close every visible eye naturally. In all sixteen cells, replace each visible open eye with a softly furred cream eyelid and a fine curved lash line at the same eye position, a natural relaxed blink. No visible iris or pupil remains in any closed eye. Preserve EVERYTHING else exactly: baby identity, face shape, neutral closed mouth, nose, ears, body, distinct paw phase in each cell, every quill, fur, lighting, colors, camera directions, dimensions, sprite scale, positions, alpha silhouette, clear transparent gutters and outer margin. No head tilt, smile, expression shift, body motion, rerendering or layout change. This is independent blink overlay source artwork; perfect registration with the original body sheet is essential. Output the same full 4 by 4 sheet at the same 1254 by 1254 dimensions with genuine transparent alpha, not an eye-only crop. No ground, shadow, text, labels or grid. Preserve the rear-left bottom row with eyes hidden; do not invent eyes where no eyes are visible.",
+      "attempt": 1,
+      "requestedDimensions": [
+        1254,
+        1254
+      ],
+      "started": "2026-09-21T11:25:27.834Z",
+      "completed": "2026-09-21T11:26:26.472Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-f38b3063-4c6c-4006-88a2-1cd27df053e2.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-f38b3063-4c6c-4006-88a2-1cd27df053e2.png",
+      "status": "accepted-blink-art",
+      "visualReview": "Visible eyes closed with furred lids and curved lash lines in first three rows. Rear-left bottom row stays rear with eyes hidden. Camera/gait layout preserved visually. Full-sheet source for eye-overlay extraction; not certified pixel-identical outside eyes.",
+      "raw": "images/atlas/family-production-v1/raw/pompom-blink-b-v1.png",
+      "measurements": {
+        "sheet": "b",
+        "width": 1254,
+        "height": 1254,
+        "colorType": 6,
+        "pixelValidation": "PASS",
+        "grid": {
+          "x": [
+            0,
+            313,
+            627,
+            940,
+            1254
+          ],
+          "y": [
+            0,
+            313,
+            627,
+            897,
+            1254
+          ]
+        },
+        "sha256": "9cffc608135c392d9e4efed248d5054cf6c337bce8aa20318c41352bebfcdf5e",
+        "edgePixels": 0,
+        "outerEdgePixels": 0,
+        "fullyTransparentPixels": 848305,
+        "rawAlphaPreserved": true
+      },
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "selected": true,
+      "durationSeconds": 58.638,
+      "copyMatchesSource": true
+    },
+    {
+      "id": "pompom",
+      "kind": "blink",
+      "sheet": "d",
+      "angles": [
+        15,
+        45,
+        75,
+        105
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-production-v1/raw/pompom-d-v1.png",
+      "bodySource": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-3e6b7995-cc55-45a8-8203-94fe79a49b5e.png",
+      "prompt": "Use case: precise-object-edit. Edit the supplied MrPomPom walking sprite sheet ONLY to close every visible eye naturally. In all sixteen cells, replace each visible open eye with a softly furred cream eyelid and a fine curved lash line at the same eye position, a natural relaxed blink. No visible iris or pupil remains in any closed eye. Preserve EVERYTHING else exactly: baby identity, face shape, neutral closed mouth, nose, ears, body, distinct paw phase in each cell, every quill, fur, lighting, colors, camera directions, dimensions, sprite scale, positions, alpha silhouette, clear transparent gutters and outer margin. No head tilt, smile, expression shift, body motion, rerendering or layout change. This is independent blink overlay source artwork; perfect registration with the original body sheet is essential. Output the same full 4 by 4 sheet at the same 1254 by 1254 dimensions with genuine transparent alpha, not an eye-only crop. No ground, shadow, text, labels or grid.",
+      "attempt": 1,
+      "requestedDimensions": [
+        1254,
+        1254
+      ],
+      "started": "2026-09-21T11:26:54.800Z",
+      "completed": "2026-09-21T11:28:04.516Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-d811c762-5bcc-44c8-ac03-2583ea029b9c.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-d811c762-5bcc-44c8-ac03-2583ea029b9c.png",
+      "status": "accepted-blink-art",
+      "visualReview": "All visible eyes closed with cream furred lids and curved lash lines. Intermediate headings, paw phases and neutral closed mouth preserved visually. Full-sheet source for eye-overlay extraction; not certified pixel-identical outside eyes.",
+      "raw": "images/atlas/family-production-v1/raw/pompom-blink-d-v1.png",
+      "measurements": {
+        "sheet": "d",
+        "width": 1254,
+        "height": 1254,
+        "colorType": 6,
+        "pixelValidation": "PASS",
+        "grid": {
+          "x": [
+            0,
+            334,
+            647,
+            940,
+            1254
+          ],
+          "y": [
+            0,
+            313,
+            627,
+            922,
+            1254
+          ]
+        },
+        "sha256": "8ed7bcd97e6dba121e4721be7408e69ab350b44b1363f910fc57e46c4b707feb",
+        "edgePixels": 0,
+        "outerEdgePixels": 0,
+        "fullyTransparentPixels": 801585,
+        "rawAlphaPreserved": true
+      },
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "selected": true,
+      "durationSeconds": 69.716,
+      "copyMatchesSource": true
+    },
+    {
+      "id": "pompom",
+      "kind": "blink",
+      "sheet": "e",
+      "angles": [
+        135,
+        165,
+        195,
+        225
+      ],
+      "target": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/atlas/family-production-v1/raw/pompom-e-v2.png",
+      "bodySource": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-8442dfc9-d5f7-40ec-885d-92ed7e69fae6.png",
+      "prompt": "Use case: precise-object-edit. Edit the supplied MrPomPom walking sprite sheet ONLY to close every visible eye naturally. In all sixteen cells, replace each visible open eye with a softly furred cream eyelid and a fine curved lash line at the same eye position, a natural relaxed blink. No visible iris or pupil remains in any closed eye. Preserve EVERYTHING else exactly: baby identity, face shape, neutral closed mouth, nose, ears, body, distinct paw phase in each cell, every quill, fur, lighting, colors, camera directions, dimensions, sprite scale, positions, alpha silhouette, clear transparent gutters and outer margin. No head tilt, smile, expression shift, body motion, rerendering or layout change. This is independent blink overlay source artwork; perfect registration with the original body sheet is essential. Output the same full 4 by 4 sheet at the same 1254 by 1254 dimensions with genuine transparent alpha, not an eye-only crop. No ground, shadow, text, labels or grid. Preserve the rear-left bottom row with eyes hidden; do not invent eyes where no eyes are visible.",
+      "attempt": 1,
+      "requestedDimensions": [
+        1254,
+        1254
+      ],
+      "started": "2026-09-21T11:28:30.466Z",
+      "completed": "2026-09-21T11:29:48.983Z",
+      "output_hint": "Generated images are saved to /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f as /Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-3983ae57-32ee-4c04-8c3c-7ae7608948ce.png by default.\nIf you need to use a generated image at another path, copy it and leave the original in place unless the user explicitly asks you to delete it.\nThe generated image is already displayed to the user. There is no need to render it in the final response as a Markdown image or file link.",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-3983ae57-32ee-4c04-8c3c-7ae7608948ce.png",
+      "status": "accepted-blink-art",
+      "visualReview": "All visible eyes in first three left-facing rows closed naturally with furred lids and curved lash lines. Rear-left bottom row remains face-hidden. Original heading/gait layout retained visually. Full-sheet source for eye-overlay extraction; not certified pixel-identical outside eyes.",
+      "raw": "images/atlas/family-production-v1/raw/pompom-blink-e-v1.png",
+      "measurements": {
+        "sheet": "e",
+        "width": 1254,
+        "height": 1254,
+        "colorType": 6,
+        "pixelValidation": "PASS",
+        "grid": {
+          "x": [
+            0,
+            313,
+            627,
+            940,
+            1254
+          ],
+          "y": [
+            0,
+            313,
+            602,
+            884,
+            1254
+          ]
+        },
+        "sha256": "949e85b017ba6d43ec7db811c249acbb2282323b84ea339a13c3e21aa2f2ba3c",
+        "edgePixels": 0,
+        "outerEdgePixels": 0,
+        "fullyTransparentPixels": 778565,
+        "rawAlphaPreserved": true
+      },
+      "actualDimensions": [
+        1254,
+        1254
+      ],
+      "selected": true,
+      "durationSeconds": 78.517,
+      "copyMatchesSource": true
+    }
+  ]
+}

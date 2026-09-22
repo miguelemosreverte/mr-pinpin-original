@@ -1,0 +1,27 @@
+{
+  "id": "directions-b",
+  "order": 2,
+  "title": "Directional walking sheet B",
+  "beat": "Mr. PinPin follows the atlas paths in the direction of travel.",
+  "camera": "Row 1: walking mostly toward the viewer and slightly left, nose down-left at 120 degrees. Row 2: walking diagonally left and slightly toward the viewer, nose down-left at 150 degrees, more profile than row 1. Row 3: walking exactly left, left-facing profile (180 degrees). Row 4: walking diagonally left and slightly away from the viewer, nose up-left at 210 degrees, rear three-quarter view.",
+  "staging": "Four rows of headings, four walking phases per row. Intended angular spacing requires visual inspection.",
+  "alt": "Mr. PinPin walking direction sheet B",
+  "references": [
+    {
+      "path": "docs/storyboard/images/atlas/pinpin-walk-v1.png",
+      "role": "Character identity and rendering reference"
+    }
+  ],
+  "prompt": "Use case: stylized-concept. Asset: transparent RGBA game sprite sheet for a beautiful children's story atlas. Image 1 is the identity/style reference for Mr. PinPin: the same small natural quadruped hedgehog, cream face, warm brown spines, friendly shiny eyes, four short natural paws. Render a 2048 by 2048 square with exactly FOUR ROWS and FOUR COLUMNS, 16 isolated sprites on genuine transparent background. Each cell has the same virtual scale and centered ground anchor, generous clear margins. Fixed elevated 55-degree camera looking down at the animal on a horizontal ground plane; rotate the actual animal's body direction between rows, not the flat artwork. Within each row show four successive clearly different walking gait phases from left to right, alternating fore and hind paws, all with the SAME heading. Soft warm storybook 3D lighting consistent across all cells, detailed fur and spines, crisp silhouette. Keep compact anatomy low to the ground. No text, numbers, grid lines, floor, backdrop, cast shadow or accessories. Heading convention is the direction the nose travels ON THE IMAGE, clockwise: right=0 degrees, toward bottom=90, left=180, toward top=270. Row 1: walking mostly toward the viewer and slightly left, nose down-left at 120 degrees. Row 2: walking diagonally left and slightly toward the viewer, nose down-left at 150 degrees, more profile than row 1. Row 3: walking exactly left, left-facing profile (180 degrees). Row 4: walking diagonally left and slightly away from the viewer, nose up-left at 210 degrees, rear three-quarter view.",
+  "output": "docs/storyboard/images/atlas/pinpin-directions-b-v1.png",
+  "tool": "built-in imagegen",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-ed0f6f95-c963-4bcd-9914-276ff2664321.png",
+  "startedAt": "2026-09-20T15:51:53.074Z",
+  "finishedAt": "2026-09-20T15:52:36.744Z",
+  "seconds": 43.67,
+  "width": 1254,
+  "height": 1254,
+  "sha256": "6594c1b1cb8675f52e4408e0d4f7574ea5f157dde84b748d2f2923f92f526572",
+  "review": "Four distinct heading rows: steep front-left, shallow front-left, left profile, and rear-left. Requested 120/150/180/210 are approximate bins. The final rear-left pose appears steeper than requested (roughly 225 rather than exact 210), but is visibly less rear-facing/wider than sheet C row 1. A measured clear gutter at y=896 replaces the equal-grid y=940 boundary so all heads remain intact. Sixteen distinct frames; no visible artwork clipping or high-alpha red/yellow fringe.",
+  "reviewedAt": "2026-09-20T15:57:10.074Z"
+}

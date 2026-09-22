@@ -1,0 +1,89 @@
+:root { color-scheme: light; font: 14px/1.45 system-ui, sans-serif; color: #24312e; background: #fff; letter-spacing: 0; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+button, input { font: inherit; }
+a { color: #206c63; text-underline-offset: 3px; }
+a:hover { color: #133f39; }
+.page-heading, main, footer { max-width: 1600px; margin: auto; padding-inline: 24px; }
+.page-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 12px; padding-block: 20px; }
+h1 { margin: 0 0 5px; font-size: 26px; line-height: 1.2; }
+h2 { margin: 0; font-size: 22px; }
+h3 { margin: 0; font-size: 18px; font-variant-numeric: tabular-nums; }
+p { margin: 0; }
+#status { color: #60716a; }
+#status[data-error="true"], .asset-status[data-error="true"] { color: #ac3939; }
+.page-heading > a { display: inline-flex; align-items: center; gap: 5px; }
+svg { width: 18px; height: 18px; flex: 0 0 18px; }
+.animation-controls { padding-block: 12px; border-bottom: 1px solid #d9e0dc; }
+.toolbar { display: flex; align-items: center; gap: 12px; flex-wrap: wrap; margin-top: 10px; padding: 10px 12px; background: #f5f7f6; }
+nav, .transport { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+nav { margin-right: auto; gap: 18px; }
+nav a { white-space: nowrap; }
+button { width: 34px; height: 34px; display: inline-flex; align-items: center; justify-content: center; padding: 0; border: 1px solid #c6d0ca; border-radius: 4px; background: #fff; color: #24312e; cursor: pointer; }
+button:hover { background: #e4eeea; }
+button:focus-visible, a:focus-visible, input:focus-visible, summary:focus-visible { outline: 2px solid #25685e; outline-offset: 3px; }
+fieldset { padding: 0; margin: 0; border: 0; display: flex; }
+fieldset label { position: relative; cursor: pointer; }
+fieldset input { position: absolute; opacity: 0; width: 1px; height: 1px; }
+.frames { margin-inline: 4px; }
+.frames span { display: grid; place-items: center; width: 30px; height: 32px; border: 1px solid #c6d0ca; background: #fff; font-variant-numeric: tabular-nums; }
+.frames label + label span { border-left: 0; }
+.frames input:checked + span { background: #286b60; color: #fff; }
+fieldset input:focus-visible + span { outline: 2px solid #25685e; outline-offset: 2px; }
+.timing { display: flex; align-items: center; gap: 5px; color: #52645c; white-space: nowrap; }
+.timing input { width: 72px; height: 32px; padding: 3px 5px; border: 1px solid #c6d0ca; border-radius: 3px; }
+.swatches { gap: 7px; }
+.swatches label > span { display: block; width: 25px; height: 25px; border: 1px solid #99a79f; border-radius: 50%; }
+.swatches input:checked + span { outline: 2px solid #25685e; outline-offset: 2px; }
+.light { background: #f2f4f5; }
+.dark { background: #25292b; }
+.grid { background: conic-gradient(#e0e5e2 25%, #fff 0 50%, #e0e5e2 0 75%, #fff 0); background-size: 12px 12px; }
+.character { padding-block: 28px 12px; scroll-margin-top: 14px; }
+.walking { padding-block: 22px 14px; border-bottom: 1px solid #dce2df; }
+.walking-heading, .stage-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 10px; }
+.walking-heading { justify-content: space-between; margin-bottom: 8px; }
+.stage-controls output { font-variant-numeric: tabular-nums; min-width: 40px; text-align: center; }
+#clock { color: #60716a; min-width: 62px; }
+#walking-canvas { width: 100%; height: 330px; background: #f2f4f5; }
+#face-diagnostics { margin-top: 8px; font-size: 12px; }
+.face-status { color: #64766a; font-size: 12px; margin-top: 9px; }
+.character-heading { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 8px 20px; padding-bottom: 15px; border-bottom: 2px solid #465d53; }
+.character-heading p { color: #617169; }
+.heading-row { padding-block: 16px 22px; border-bottom: 1px solid #dce2df; scroll-margin-top: 14px; }
+.row-heading { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
+.row-heading h3 { min-width: 52px; }
+.row-heading p { color: #68756e; font-size: 12px; }
+.sprite-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 20px; }
+.pinpin .sprite-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+figure { margin: 0; min-width: 0; }
+figcaption { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 5px; font-size: 12px; margin-bottom: 6px; color: #4c6256; }
+.canvas-scroll { overflow-x: auto; background: #f2f4f5; border-bottom: 1px solid #c5cfc8; }
+body[data-background="dark"] .canvas-scroll { background: #25292b; }
+body[data-background="grid"] .canvas-scroll { background: conic-gradient(#e0e5e2 25%, #fff 0 50%, #e0e5e2 0 75%, #fff 0); background-size: 16px 16px; }
+canvas { display: block; margin-inline: auto; }
+.asset-status { height: 18px; color: #65776c; font-size: 11px; overflow: hidden; }
+.row-links { display: flex; align-items: baseline; flex-wrap: wrap; gap: 12px; margin-top: 8px; font-size: 12px; }
+details { min-width: 0; }
+summary { cursor: pointer; color: #206c63; }
+pre { max-width: 100%; white-space: pre-wrap; overflow-wrap: anywhere; padding: 12px; margin: 8px 0 0; background: #f6f7f6; color: #34483c; font: 12px/1.5 ui-monospace, monospace; }
+footer { display: flex; flex-wrap: wrap; gap: 14px 24px; padding-block: 24px; font-size: 12px; color: #60716a; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+@media (max-width: 1000px) { .pinpin .sprite-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) {
+  .page-heading, main, footer { padding-inline: 14px; }
+  .toolbar { padding: 8px 14px; gap: 9px; }
+  nav { width: 100%; }
+  .transport { gap: 5px; }
+  .timing { font-size: 12px; }
+  .timing input { width: 62px; }
+  .sprite-grid, .pinpin .sprite-grid { grid-template-columns: minmax(0, 1fr); }
+  .page-heading { padding-block: 14px 8px; gap: 7px; }
+  .page-heading > a, #status { font-size: 12px; }
+  .walking { padding-top: 12px; }
+  .walking-heading, .stage-controls { gap: 5px; }
+  .walking-heading h2 { font-size: 18px; }
+  .stage-controls button { width: 28px; height: 28px; }
+  .stage-controls output { min-width: 30px; font-size: 12px; }
+  #clock { min-width: 50px; }
+  h1 { font-size: 22px; }
+}

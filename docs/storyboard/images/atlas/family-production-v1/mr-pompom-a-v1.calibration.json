@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mr-pompom",
+  "sheetId": "a",
+  "assetVersion": "v1",
+  "reviewStatus": "measured-scale-awaiting-visual-review",
+  "method": "Median same-heading body bounding area ratio to prepared Pinpin sheet; one fixed sheet referenceWidth. Runtime displayWidth supplies family proportions.",
+  "referenceFile": "pinpin-a-v1.json",
+  "referenceSha256": "ae95c02059f0af05a10fbabfaf354425b21ac1f7adbb434e8c82be5caa600b9c",
+  "referenceWidth": 294,
+  "chosenReferenceWidth": 284.724,
+  "rows": [
+    {
+      "angle": 0,
+      "bodyPixels": [
+        265,
+        196.5
+      ],
+      "referenceBodyPixels": [
+        281,
+        199
+      ],
+      "suggestedReferenceWidth": 283.7081727040502
+    },
+    {
+      "angle": 30,
+      "bodyPixels": [
+        244.5,
+        231.5
+      ],
+      "referenceBodyPixels": [
+        259.5,
+        233.5
+      ],
+      "suggestedReferenceWidth": 284.1516199320354
+    },
+    {
+      "angle": 60,
+      "bodyPixels": [
+        222.5,
+        251.5
+      ],
+      "referenceBodyPixels": [
+        229,
+        259.5
+      ],
+      "suggestedReferenceWidth": 285.2954927555587
+    },
+    {
+      "angle": 90,
+      "bodyPixels": [
+        209.5,
+        249
+      ],
+      "referenceBodyPixels": [
+        212,
+        257.5
+      ],
+      "suggestedReferenceWidth": 287.397158840672
+    }
+  ],
+  "provenance": {
+    "generationLog": "production/pompom-production-generations.json",
+    "generationLogSha256": "5d07be102f6caa946df0225cd9857c4ebed97cd95db839f38dafb30f09300cf8",
+    "generationRecordSha256": "bfd639857417236499e6e60724f61c81818ccfb67dc91d215e19426906196929",
+    "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-ef82f973-9497-45bb-a899-334f9ef83c93.png",
+    "sourceSha256": "611f2a203382376e30b34e53ebf7512a84c2bdb4f3e41f5b48f839ac4678706a",
+    "requestedAngles": [
+      0,
+      30,
+      60,
+      90
+    ],
+    "started": "2026-09-21T11:12:27.784Z",
+    "completed": "2026-09-21T11:13:23.449Z",
+    "durationMilliseconds": 55665,
+    "timingNote": null,
+    "parentVisualReview": "Accepted heading/gait review: right profile, shallow front-right, steep front-right, frontal/down; four visibly distinct paw phases per row; large brown eyes with whites and stable closed mouth. Approximate legacy camera bins, not measured 15-degree angles. Alpha/edge metadata pending."
+  }
+}

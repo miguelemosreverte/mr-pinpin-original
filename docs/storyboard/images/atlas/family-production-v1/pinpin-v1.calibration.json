@@ -1,0 +1,627 @@
+{
+  "schemaVersion": 1,
+  "characterId": "pinpin",
+  "assetVersion": "v1",
+  "reviewStatus": "measured-scale-awaiting-visual-review",
+  "baseline": {
+    "sheet": "pinpin-a-v1.json",
+    "referenceWidth": 294,
+    "oldTemplateSuggestedWidth": 299.214,
+    "commonReferenceWidthFactor": 0.9825743273472358
+  },
+  "method": "Median body bounding area ratio to same-heading old template, then one fixed referenceWidth per sheet with common A baseline. No per-heading scaling.",
+  "sheets": [
+    {
+      "sheet": "a",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-9e10151a-4ddc-4393-8448-13c2500b958a.png",
+      "sourceSha256": "ae95c02059f0af05a10fbabfaf354425b21ac1f7adbb434e8c82be5caa600b9c",
+      "width": 1254,
+      "height": 1254,
+      "pixelValidation": "PASS",
+      "issue": null,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          921,
+          1254
+        ]
+      },
+      "template": "images/atlas/pinpin-directions-a-v1.png",
+      "templateSha256": "8be56abd29348419d471151cf5092b41567ed73fe2a97a15b665c320357159c0",
+      "templateReferenceWidth": 285,
+      "suggestedReferenceWidth": 299.214005,
+      "chosenReferenceWidth": 294,
+      "rows": [
+        {
+          "angle": 0,
+          "bodyPixels": [
+            281,
+            199
+          ],
+          "templateBodyPixels": [
+            272.5,
+            187
+          ],
+          "suggestedReferenceWidth": 298.552355
+        },
+        {
+          "angle": 30,
+          "bodyPixels": [
+            259.5,
+            233.5
+          ],
+          "templateBodyPixels": [
+            246.5,
+            226
+          ],
+          "suggestedReferenceWidth": 297.231137
+        },
+        {
+          "angle": 60,
+          "bodyPixels": [
+            229,
+            259.5
+          ],
+          "templateBodyPixels": [
+            213,
+            252
+          ],
+          "suggestedReferenceWidth": 299.875655
+        },
+        {
+          "angle": 90,
+          "bodyPixels": [
+            212,
+            257.5
+          ],
+          "templateBodyPixels": [
+            192,
+            244.5
+          ],
+          "suggestedReferenceWidth": 307.334533
+        }
+      ],
+      "bodyWidthRange": [
+        211,
+        284
+      ],
+      "bodyHeightRange": [
+        194,
+        265
+      ],
+      "sharpness": {
+        "source": {
+          "interiorPixels": 617718,
+          "meanCentralGradient": 24.904142,
+          "laplacianVariance": 1892.672088
+        },
+        "template": {
+          "interiorPixels": 547136,
+          "meanCentralGradient": 27.584233,
+          "laplacianVariance": 2037.683849
+        },
+        "gradientRatio": 0.90284,
+        "laplacianVarianceRatio": 0.928835
+      }
+    },
+    {
+      "sheet": "b",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-e2d78c6b-7a55-49cb-bf05-e72044dfa085.png",
+      "sourceSha256": "b6c903cb1f2c03769e9622e23a210e0f258cbf05d779407da129593904b35c63",
+      "width": 1254,
+      "height": 1254,
+      "pixelValidation": "PASS",
+      "issue": null,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          895,
+          1254
+        ]
+      },
+      "template": "images/atlas/pinpin-directions-b-v1.png",
+      "templateSha256": "6594c1b1cb8675f52e4408e0d4f7574ea5f157dde84b748d2f2923f92f526572",
+      "templateReferenceWidth": 292,
+      "suggestedReferenceWidth": 303.937169,
+      "chosenReferenceWidth": 298.641,
+      "rows": [
+        {
+          "angle": 120,
+          "bodyPixels": [
+            235.5,
+            236.5
+          ],
+          "templateBodyPixels": [
+            216.5,
+            233.5
+          ],
+          "suggestedReferenceWidth": 306.493654
+        },
+        {
+          "angle": 150,
+          "bodyPixels": [
+            272.5,
+            223
+          ],
+          "templateBodyPixels": [
+            264.5,
+            213
+          ],
+          "suggestedReferenceWidth": 303.260535
+        },
+        {
+          "angle": 180,
+          "bodyPixels": [
+            288,
+            209
+          ],
+          "templateBodyPixels": [
+            279,
+            204
+          ],
+          "suggestedReferenceWidth": 300.285978
+        },
+        {
+          "angle": 210,
+          "bodyPixels": [
+            237,
+            250.5
+          ],
+          "templateBodyPixels": [
+            224.5,
+            243
+          ],
+          "suggestedReferenceWidth": 304.613804
+        }
+      ],
+      "bodyWidthRange": [
+        230,
+        290
+      ],
+      "bodyHeightRange": [
+        207,
+        252
+      ],
+      "sharpness": {
+        "source": {
+          "interiorPixels": 620834,
+          "meanCentralGradient": 26.335796,
+          "laplacianVariance": 1835.97172
+        },
+        "template": {
+          "interiorPixels": 576658,
+          "meanCentralGradient": 25.328167,
+          "laplacianVariance": 1701.778904
+        },
+        "gradientRatio": 1.039783,
+        "laplacianVarianceRatio": 1.078854
+      }
+    },
+    {
+      "sheet": "c",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-47fbd3f0-0dfd-4922-83ec-8fb9c3a376c8.png",
+      "sourceSha256": "97d362d7e9fc8222257f93884d77de88bd753b4d4f357bd990f33171d3fb2b60",
+      "width": 1254,
+      "height": 1254,
+      "pixelValidation": "PASS",
+      "issue": null,
+      "grid": {
+        "x": [
+          0,
+          329,
+          641,
+          952,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ]
+      },
+      "template": "images/atlas/pinpin-directions-c-v1.png",
+      "templateSha256": "08c80ee3dc504c7edae7c8ff0edfc707a3c2d3c2cb0c7262e8a9f033a5e2d52f",
+      "templateReferenceWidth": 263,
+      "suggestedReferenceWidth": 291.051019,
+      "chosenReferenceWidth": 285.979,
+      "rows": [
+        {
+          "angle": 240,
+          "bodyPixels": [
+            217.5,
+            240
+          ],
+          "templateBodyPixels": [
+            191.5,
+            223.5
+          ],
+          "suggestedReferenceWidth": 290.447637
+        },
+        {
+          "angle": 270,
+          "bodyPixels": [
+            185.5,
+            285.5
+          ],
+          "templateBodyPixels": [
+            165,
+            261
+          ],
+          "suggestedReferenceWidth": 291.654402
+        },
+        {
+          "angle": 300,
+          "bodyPixels": [
+            225.5,
+            245.5
+          ],
+          "templateBodyPixels": [
+            209,
+            229.5
+          ],
+          "suggestedReferenceWidth": 282.546728
+        },
+        {
+          "angle": 330,
+          "bodyPixels": [
+            283,
+            230
+          ],
+          "templateBodyPixels": [
+            245.5,
+            209.5
+          ],
+          "suggestedReferenceWidth": 295.866042
+        }
+      ],
+      "bodyWidthRange": [
+        184,
+        287
+      ],
+      "bodyHeightRange": [
+        230,
+        288
+      ],
+      "sharpness": {
+        "source": {
+          "interiorPixels": 572146,
+          "meanCentralGradient": 26.362085,
+          "laplacianVariance": 1530.553368
+        },
+        "template": {
+          "interiorPixels": 460982,
+          "meanCentralGradient": 30.486754,
+          "laplacianVariance": 2320.434763
+        },
+        "gradientRatio": 0.864706,
+        "laplacianVarianceRatio": 0.659598
+      }
+    },
+    {
+      "sheet": "d",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-255c5d89-d7c3-4784-a7a3-e9133b43b8c5.png",
+      "sourceSha256": "1894e0e09001f00ad557e53c12eb2942e7761625eebc449245272f539e5353d1",
+      "width": 1254,
+      "height": 1254,
+      "pixelValidation": "PASS",
+      "issue": null,
+      "grid": {
+        "x": [
+          0,
+          333,
+          642,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          924,
+          1254
+        ]
+      },
+      "template": "images/atlas/pinpin-directions-intermediate-a-v2.png",
+      "templateSha256": "c87e5160f28b7e5e0d05ac5864c84637b03f0af95d7f2e68dac10d89e4456277",
+      "templateReferenceWidth": 301.912,
+      "suggestedReferenceWidth": 308.408002,
+      "chosenReferenceWidth": 303.034,
+      "rows": [
+        {
+          "angle": 15,
+          "bodyPixels": [
+            279,
+            213.5
+          ],
+          "templateBodyPixels": [
+            272.5,
+            209
+          ],
+          "suggestedReferenceWidth": 308.762835
+        },
+        {
+          "angle": 45,
+          "bodyPixels": [
+            257.5,
+            243
+          ],
+          "templateBodyPixels": [
+            248,
+            240
+          ],
+          "suggestedReferenceWidth": 309.557027
+        },
+        {
+          "angle": 75,
+          "bodyPixels": [
+            231.5,
+            262.5
+          ],
+          "templateBodyPixels": [
+            224.5,
+            260
+          ],
+          "suggestedReferenceWidth": 308.053168
+        },
+        {
+          "angle": 105,
+          "bodyPixels": [
+            226.5,
+            260.5
+          ],
+          "templateBodyPixels": [
+            221,
+            258
+          ],
+          "suggestedReferenceWidth": 307.123008
+        }
+      ],
+      "bodyWidthRange": [
+        226,
+        280
+      ],
+      "bodyHeightRange": [
+        212,
+        264
+      ],
+      "sharpness": {
+        "source": {
+          "interiorPixels": 668269,
+          "meanCentralGradient": 23.053928,
+          "laplacianVariance": 1471.785591
+        },
+        "template": {
+          "interiorPixels": 646573,
+          "meanCentralGradient": 20.384997,
+          "laplacianVariance": 880.175567
+        },
+        "gradientRatio": 1.130926,
+        "laplacianVarianceRatio": 1.67215
+      }
+    },
+    {
+      "sheet": "e",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-938ba5a8-d16a-4963-a869-46427e98102a.png",
+      "sourceSha256": "ffa39d0c110bced49682eea7d83cabcb8531c8cc7f8bfbb86f422eda9c68ad81",
+      "width": 1254,
+      "height": 1254,
+      "pixelValidation": "PASS",
+      "issue": null,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          601,
+          886,
+          1254
+        ]
+      },
+      "template": "images/atlas/pinpin-directions-intermediate-b-v1.png",
+      "templateSha256": "49c8fa5b1bcf14e92eb2d233760bfc3fe6b0c698d14339802fcebcea4298c0d1",
+      "templateReferenceWidth": 303.776,
+      "suggestedReferenceWidth": 307.299649,
+      "chosenReferenceWidth": 301.945,
+      "rows": [
+        {
+          "angle": 135,
+          "bodyPixels": [
+            235,
+            244.5
+          ],
+          "templateBodyPixels": [
+            226,
+            241
+          ],
+          "suggestedReferenceWidth": 312.006816
+        },
+        {
+          "angle": 165,
+          "bodyPixels": [
+            281.5,
+            229
+          ],
+          "templateBodyPixels": [
+            279,
+            224
+          ],
+          "suggestedReferenceWidth": 308.520687
+        },
+        {
+          "angle": 195,
+          "bodyPixels": [
+            273,
+            221
+          ],
+          "templateBodyPixels": [
+            268.5,
+            222.5
+          ],
+          "suggestedReferenceWidth": 305.276776
+        },
+        {
+          "angle": 225,
+          "bodyPixels": [
+            233.5,
+            258.5
+          ],
+          "templateBodyPixels": [
+            230,
+            258.5
+          ],
+          "suggestedReferenceWidth": 306.078612
+        }
+      ],
+      "bodyWidthRange": [
+        223,
+        284
+      ],
+      "bodyHeightRange": [
+        218,
+        261
+      ],
+      "sharpness": {
+        "source": {
+          "interiorPixels": 638657,
+          "meanCentralGradient": 25.897801,
+          "laplacianVariance": 1829.355237
+        },
+        "template": {
+          "interiorPixels": 620402,
+          "meanCentralGradient": 21.993595,
+          "laplacianVariance": 1078.620661
+        },
+        "gradientRatio": 1.177516,
+        "laplacianVarianceRatio": 1.696014
+      }
+    },
+    {
+      "sheet": "f",
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-d5e0fe0f-0523-479c-b16e-90a4a80e5e16.png",
+      "sourceSha256": "e98ff4dba1baab84b3072944d2602157c0e0b800924597f4788c48bb229a5f92",
+      "width": 1254,
+      "height": 1254,
+      "pixelValidation": "PASS",
+      "issue": null,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ]
+      },
+      "template": "images/atlas/pinpin-directions-intermediate-c-v1.png",
+      "templateSha256": "3399cb0c4bfef2dd31b5c7977709f57d0d020a37f2e2d6fd7628b0e87ddf3fef",
+      "templateReferenceWidth": 263.396,
+      "suggestedReferenceWidth": 266.461698,
+      "chosenReferenceWidth": 261.818,
+      "rows": [
+        {
+          "angle": 255,
+          "bodyPixels": [
+            185.5,
+            240.5
+          ],
+          "templateBodyPixels": [
+            178,
+            237.5
+          ],
+          "suggestedReferenceWidth": 270.58073
+        },
+        {
+          "angle": 285,
+          "bodyPixels": [
+            187.5,
+            248.5
+          ],
+          "templateBodyPixels": [
+            183.5,
+            248.5
+          ],
+          "suggestedReferenceWidth": 266.251325
+        },
+        {
+          "angle": 315,
+          "bodyPixels": [
+            216,
+            239.5
+          ],
+          "templateBodyPixels": [
+            212.5,
+            237.5
+          ],
+          "suggestedReferenceWidth": 266.672072
+        },
+        {
+          "angle": 345,
+          "bodyPixels": [
+            259,
+            202.5
+          ],
+          "templateBodyPixels": [
+            257,
+            200
+          ],
+          "suggestedReferenceWidth": 266.066387
+        }
+      ],
+      "bodyWidthRange": [
+        183,
+        261
+      ],
+      "bodyHeightRange": [
+        200,
+        250
+      ],
+      "sharpness": {
+        "source": {
+          "interiorPixels": 488361,
+          "meanCentralGradient": 25.356904,
+          "laplacianVariance": 1146.661929
+        },
+        "template": {
+          "interiorPixels": 471649,
+          "meanCentralGradient": 27.375574,
+          "laplacianVariance": 1456.73718
+        },
+        "gradientRatio": 0.92626,
+        "laplacianVarianceRatio": 0.787144
+      }
+    }
+  ]
+}

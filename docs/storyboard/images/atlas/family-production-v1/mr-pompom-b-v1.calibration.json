@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mr-pompom",
+  "sheetId": "b",
+  "assetVersion": "v1",
+  "reviewStatus": "measured-scale-awaiting-visual-review",
+  "method": "Median same-heading body bounding area ratio to prepared Pinpin sheet; one fixed sheet referenceWidth. Runtime displayWidth supplies family proportions.",
+  "referenceFile": "pinpin-b-v1.json",
+  "referenceSha256": "b6c903cb1f2c03769e9622e23a210e0f258cbf05d779407da129593904b35c63",
+  "referenceWidth": 298.641,
+  "chosenReferenceWidth": 292.552,
+  "rows": [
+    {
+      "angle": 120,
+      "bodyPixels": [
+        228,
+        234.5
+      ],
+      "referenceBodyPixels": [
+        235.5,
+        236.5
+      ],
+      "suggestedReferenceWidth": 292.60197279020474
+    },
+    {
+      "angle": 150,
+      "bodyPixels": [
+        262,
+        222.5
+      ],
+      "referenceBodyPixels": [
+        272.5,
+        223
+      ],
+      "suggestedReferenceWidth": 292.50237696529507
+    },
+    {
+      "angle": 180,
+      "bodyPixels": [
+        278,
+        209
+      ],
+      "referenceBodyPixels": [
+        288,
+        209
+      ],
+      "suggestedReferenceWidth": 293.41045525541097
+    },
+    {
+      "angle": 210,
+      "bodyPixels": [
+        228.5,
+        247.5
+      ],
+      "referenceBodyPixels": [
+        237,
+        250.5
+      ],
+      "suggestedReferenceWidth": 291.47552746416073
+    }
+  ],
+  "provenance": {
+    "generationLog": "production/pompom-production-generations.json",
+    "generationLogSha256": "5d07be102f6caa946df0225cd9857c4ebed97cd95db839f38dafb30f09300cf8",
+    "generationRecordSha256": "1decd76798839834e04ec818a56a002375244927168d960b7a5de39d18642653",
+    "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-2c5adbbd-bfa3-451e-b209-5ea9810fb756.png",
+    "sourceSha256": "4aa03fbabcc4c5b0dbd682e54a7e36108ac6545798da90b57930322ccd3313a1",
+    "requestedAngles": [
+      120,
+      150,
+      180,
+      210
+    ],
+    "started": "2026-09-21T11:15:16.359Z",
+    "completed": "2026-09-21T11:16:16.414Z",
+    "durationMilliseconds": 60055,
+    "timingNote": null,
+    "parentVisualReview": "Correct front-left, shallow front-left, left profile and rear-left rows; distinct paw phases, neutral closed mouth. Retry restores larger brown eyes and visible white sclera. Rear-left face naturally hidden."
+  }
+}

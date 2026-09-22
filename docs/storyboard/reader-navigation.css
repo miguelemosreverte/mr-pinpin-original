@@ -1,0 +1,47 @@
+/* Loaded after the edition and paper sheets; navigation never enters the printed book. */
+[hidden] { display:none !important; }
+@media screen {
+  body { padding-right:192px; }
+  #reader-controls {
+    position:fixed; inset:auto 8px 24px auto; z-index:8;
+    display:flex; flex-direction:column; align-items:center; gap:12px;
+    width:112px; min-height:0; max-height:none; padding:0;
+    border:0; border-radius:0; background:var(--paper); overflow:visible;
+  }
+  #reader-map,#reader-map-end {
+    display:inline-flex; align-items:center; justify-content:center; gap:8px;
+    min-height:48px; padding:8px; font-size:16px; font-weight:600;
+    line-height:1.4; text-decoration:none;
+  }
+  #reader-map { width:100%; }
+  #reader-map svg,#reader-map-end svg { width:22px; height:22px; flex:none; }
+  #reader-map:hover,#reader-map-end:hover { text-decoration:underline; }
+  #reader-controls .reader-current-language { margin:0; }
+  #language-toggle { width:48px; height:48px; opacity:1; border:2px solid var(--line); }
+  #reader-languages {
+    position:absolute; right:0; bottom:calc(100% + 12px);
+    display:flex; flex-direction:row; gap:8px; margin:0; padding:8px; border:1px solid var(--line);
+    border-radius:6px; background:var(--paper);
+  }
+  #reader-languages button {
+    width:48px; height:48px; padding:0; border-radius:50%;
+  }
+  .reader-footer { justify-content:center; padding:32px 20px; }
+  #reader-map-end { min-height:56px; font-size:18px; text-decoration:underline; }
+}
+@media screen and (max-width:600px), screen and (max-width:1000px) and (max-height:500px) {
+  :root { --reader-bar-height:calc(64px + env(safe-area-inset-bottom,0px)); }
+  html { scroll-padding-bottom:calc(var(--reader-bar-height) + 16px); }
+  body { padding-right:0; padding-bottom:var(--reader-bar-height); }
+  #reader-controls {
+    inset:auto 0 0; width:100%; height:var(--reader-bar-height);
+    flex-direction:row; flex-wrap:nowrap; justify-content:space-between; gap:16px;
+    padding:8px max(20px,env(safe-area-inset-right)) calc(8px + env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));
+    border-top:1px solid var(--line);
+  }
+  #reader-map { width:auto; min-width:96px; }
+  #reader-languages { right:max(12px,env(safe-area-inset-right)); bottom:calc(100% + 8px); }
+}
+@media print {
+  #reader-controls,.reader-footer,#preview,#print { display:none !important; }
+}

@@ -1,0 +1,56 @@
+{
+  "version": 1,
+  "format": "atlas-focus-rg8-v1",
+  "channels": 2,
+  "confidenceGapPixels": 24,
+  "encoding": {
+    "label": "uint8: 0 unknown; 1..255 index into geometry.regions + 1",
+    "confidence": "uint8: bits 0..6 geometric separation percentage (0..100); bit 7 direct mask hit"
+  },
+  "width": 1536,
+  "height": 1024,
+  "byteLength": 3145728,
+  "sourceMask": "images/atlas/shire-regions-v2.png",
+  "sourceSha256": "89520ed7acf156bf925d62f79dc807892b3b828e1f19a499007634e303c9e810",
+  "regions": [
+    {
+      "id": "lake",
+      "color": [
+        255,
+        0,
+        0
+      ]
+    },
+    {
+      "id": "elder",
+      "color": [
+        128,
+        0,
+        255
+      ]
+    },
+    {
+      "id": "home",
+      "color": [
+        0,
+        255,
+        0
+      ]
+    },
+    {
+      "id": "bridge",
+      "color": [
+        0,
+        255,
+        255
+      ]
+    }
+  ],
+  "data": "shire-focus-field-v1.bin",
+  "sha256": "f86ae4fc99867645a07dd658b642116f8d50d1dfa0f145f2254d6c8ec0a333b6",
+  "gzip": {
+    "data": "shire-focus-field-v1.bin.gz",
+    "byteLength": 78294,
+    "sha256": "2468d7fefb1f6196a4f7721ea160f9e447c47832403999ebe246c96c819a23ed"
+  }
+}

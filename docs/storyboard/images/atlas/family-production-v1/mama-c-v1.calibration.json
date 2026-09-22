@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mama",
+  "sheetId": "c",
+  "assetVersion": "v1",
+  "reviewStatus": "measured-scale-awaiting-visual-review",
+  "method": "Median same-heading body bounding area ratio to prepared Pinpin sheet; one fixed sheet referenceWidth. Runtime displayWidth supplies family proportions.",
+  "referenceFile": "pinpin-c-v1.json",
+  "referenceSha256": "97d362d7e9fc8222257f93884d77de88bd753b4d4f357bd990f33171d3fb2b60",
+  "referenceWidth": 285.979,
+  "chosenReferenceWidth": 274.642,
+  "rows": [
+    {
+      "angle": 240,
+      "bodyPixels": [
+        208,
+        235
+      ],
+      "referenceBodyPixels": [
+        217.5,
+        240
+      ],
+      "suggestedReferenceWidth": 276.7352551387454
+    },
+    {
+      "angle": 270,
+      "bodyPixels": [
+        177.5,
+        271
+      ],
+      "referenceBodyPixels": [
+        185.5,
+        285.5
+      ],
+      "suggestedReferenceWidth": 272.54797151767417
+    },
+    {
+      "angle": 300,
+      "bodyPixels": [
+        220,
+        246
+      ],
+      "referenceBodyPixels": [
+        225.5,
+        245.5
+      ],
+      "suggestedReferenceWidth": 282.75742358787494
+    },
+    {
+      "angle": 330,
+      "bodyPixels": [
+        254,
+        220
+      ],
+      "referenceBodyPixels": [
+        283,
+        230
+      ],
+      "suggestedReferenceWidth": 264.9751862879509
+    }
+  ],
+  "provenance": {
+    "generationLog": "production/mama-production-generations.json",
+    "generationLogSha256": "3db7102ac88a648e054c33bee78ece0075d0e1e182015d0cbe523ef57cd2cf8c",
+    "generationRecordSha256": "7949499a6f2cd325cc4240fd153ef17a225bf94e155384a7fc2703189d3363b2",
+    "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-c1b312fe-ed5f-4f91-8e0a-17549186feb9.png",
+    "sourceSha256": "311854c32c5749e75e2190ef5391c6fe80d4ab4d9e0971cb32fe1915b9aec8e6",
+    "requestedAngles": [
+      240,
+      270,
+      300,
+      330
+    ],
+    "started": "2026-09-21 11:17:31 UTC",
+    "completed": "2026-09-21 11:18:31 UTC",
+    "durationMilliseconds": 60000,
+    "timingNote": null,
+    "parentVisualReview": {
+      "status": "accepted-for-preparation",
+      "orientation": "Rear-left, centered rear/up, steep rear-right and shallow rear-right match target; no front-facing replacement. Requested angles not measured.",
+      "identity": "Warm fluffy adult body/spines retained; rear views hide most facial identity features, limiting identity confidence.",
+      "gait": "Four differing leg/support placements visible per row; temporal phase review deferred.",
+      "completeness": "All sixteen complete silhouettes and separated gutters visible.",
+      "issues": [
+        "Alpha fringe/gutter measurements and playback validation remain for preparation.",
+        "Cannot certify Mama facial identity from predominantly hidden rear faces."
+      ]
+    }
+  }
+}

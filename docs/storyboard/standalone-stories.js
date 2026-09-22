@@ -110,26 +110,6 @@
       spread.scenes.every(Number.isInteger) && spread.scenes.join(',') === groups[index].join(','));
   }
 
-  function completeBedtime(story) {
-    const bedtimePrefix = 'images/standalone/home-sweet-home/';
-    return story?.id === 'home-sweet-home' && story.number === 3 && localized(story.title) &&
-      localized(story.cover) && languages.every(lang => story.cover[lang] === bedtimePrefix + `title-${lang}-v1.png`) &&
-      Array.isArray(story.scenes) && story.scenes.length === 21 &&
-      story.scenes.every((scene, index) => {
-        if (index === 0) return scene?.id === 'bedtime-cover' && scene.image === story.cover.en &&
-          scene.width === 1024 && scene.height === 1536 && localized(scene.alt) &&
-          languages.every(lang => Array.isArray(scene.paragraphs?.[lang]) && scene.paragraphs[lang].length === 0);
-        const id = 'bedtime-' + String(index).padStart(2, '0');
-        return scene?.id === id && [1, 2].some(v => scene.image === bedtimePrefix + id + '-v' + v + '.png') &&
-          scene.width === 1536 && scene.height === 1024 && localized(scene.alt) &&
-          languages.every(lang => Array.isArray(scene.paragraphs?.[lang]) && scene.paragraphs[lang].length > 0 &&
-            scene.paragraphs[lang].every(p => typeof p === 'string' && p.trim()));
-      }) && Array.isArray(story.spreads) && story.spreads.length === 21 &&
-      story.spreads.every((spread, index) => spread?.style === (index === 0 ? 'cover' : 'bedtime') &&
-        spread.paper === (index === 0 ? 'portrait' : 'landscape') &&
-        Array.isArray(spread.scenes) && spread.scenes.length === 1 && spread.scenes[0] === index);
-  }
-
   // Source parts retain their production IDs; the reader receives one continuous edition.
   function compose(opening, home) {
     if (!complete(opening, 1) || !complete(home, 2)) return null;
@@ -139,6 +119,26 @@
       scenes:[...opening.scenes, ...home.scenes.map(scene => ({...scene, id:'home-' + scene.id}))],
       spreads:[...opening.spreads, ...home.spreads.map(spread =>
         ({...spread, scenes:spread.scenes.map(index => index + offset)}))]};
+  }
+
+  function completeBedtime(story) {
+    const homePrefix = 'images/standalone/home-sweet-home/';
+    if (story?.id !== 'home-sweet-home' || story.number !== 3 || !localized(story.title) || !localized(story.cover) ||
+        !languages.every(lang => story.cover[lang] === homePrefix + `title-${lang}-v1.png`) ||
+        !Array.isArray(story.scenes) || story.scenes.length !== 21 ||
+        !Array.isArray(story.spreads) || story.spreads.length !== 21) return false;
+    return story.scenes.every((scene, index) => {
+      const id = index === 0 ? 'bedtime-cover' : 'bedtime-' + String(index).padStart(2, '0');
+      return scene?.id === id && typeof scene.image === 'string' &&
+        (index === 0 ? scene.image === story.cover.en :
+          [1, 2].some(version => scene.image === homePrefix + id + '-v' + version + '.png')) &&
+        scene.width === (index === 0 ? 1024 : 1536) && scene.height === (index === 0 ? 1536 : 1024) &&
+        localized(scene.alt) && languages.every(lang => Array.isArray(scene.paragraphs?.[lang]) &&
+          (index === 0 ? scene.paragraphs[lang].length === 0 : scene.paragraphs[lang].length > 0) &&
+          scene.paragraphs[lang].every(p => typeof p === 'string' && p.trim()));
+    }) && story.spreads.every((spread, index) => spread?.style === (index === 0 ? 'cover' : 'bedtime') &&
+      spread.paper === (index === 0 ? 'portrait' : 'landscape') &&
+      Array.isArray(spread.scenes) && spread.scenes.length === 1 && spread.scenes[0] === index);
   }
 
   async function load(id, legacyChapter) {
@@ -155,7 +155,11 @@
         const response = await fetch('stories/home-sweet-home.json', {cache:'no-cache'});
         if (!response.ok) return null;
         const story = await response.json();
-        return completeBedtime(story) ? story : null;
+        if (story.id !== id || !complete(story)) return null;
+        // A draft manifest alone must not unlock Home while its artwork is still arriving.
+        const assets = [...new Set([...Object.values(story.cover), ...story.scenes.map(scene => scene.image)])];
+        const ready = await Promise.all(assets.map(async src => (await fetch(src, {method:'HEAD'})).ok));
+        return ready.every(Boolean) ? story : null;
       } catch { return null; }
     }
     if (id !== 'timber-tractor' || !chapterNumber(legacyChapter)) return null;

@@ -1,0 +1,87 @@
+{
+  "recordedAt": "2026-09-21T02:08:34.466Z",
+  "file": "atlas-water-loop-v1.mp4",
+  "duration": 12.033008,
+  "bytes": 2283315,
+  "width": 1024,
+  "height": 684,
+  "source": "Actual atlas WebGPU renderer",
+  "effects": "Five-frame scenery loop with the production 35% blend and water/canopy mask. No depth of field, characters, routes or banners.",
+  "scenery": {
+    "enabled": true,
+    "frames": 5,
+    "width": 512,
+    "height": 342,
+    "duration": 12000
+  },
+  "renderer": {
+    "backend": "webgpu",
+    "adapter": {
+      "vendor": "apple",
+      "architecture": "metal-3",
+      "device": "",
+      "description": "",
+      "isFallbackAdapter": false
+    },
+    "draws": 724,
+    "overlayUploads": 0,
+    "spriteUploads": 1,
+    "needsFrame": false,
+    "world": [
+      1536,
+      1024
+    ],
+    "pixels": 700416,
+    "bokehStrength": 0,
+    "dof": {
+      "model": "global-miniature-aperture",
+      "zones": 0,
+      "slices": 0,
+      "maxSlices": 0,
+      "sliceBytes": 0,
+      "baked": 0,
+      "inFlight": false,
+      "focus": 0.5249999999999999,
+      "targetFocus": 0.5249999999999999,
+      "strength": 0,
+      "passes": 0,
+      "taps": 32,
+      "effectWidth": 512,
+      "effectHeight": 342,
+      "effectPixels": 175104,
+      "textureBytes": 8863744,
+      "prefilterBytes": 458752,
+      "linearLight": true,
+      "signedCoC": true,
+      "maxRadiusCss": 48,
+      "depthModel": "ground-plane-minus-canopy",
+      "depthRangeMeters": [
+        0.25,
+        2
+      ],
+      "focusOffset": 0,
+      "highlights": 1
+    },
+    "banner": {
+      "ready": false,
+      "uploads": 0,
+      "revision": null
+    },
+    "scenery": {
+      "ready": true,
+      "frames": 5,
+      "uploads": 5,
+      "phase": 0.0013499999999999623,
+      "animate": true,
+      "textureBytes": 4202496
+    },
+    "occlusion": {
+      "available": true,
+      "enabled": true,
+      "approximate": true,
+      "model": "calibrated-ground-y",
+      "spriteReady": false,
+      "extraTextureBytes": 69632
+    }
+  }
+}

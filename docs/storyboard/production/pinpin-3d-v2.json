@@ -1,0 +1,29 @@
+{
+  "model": "tripo3d/h3.1/multiview-to-3d",
+  "sourceImages": {
+    "front": "../models/pinpin-v2/reference-front.png",
+    "left": "../models/pinpin-v2/reference-left.png",
+    "back": "../models/pinpin-v2/reference-back.png"
+  },
+  "outputGLB": "/Volumes/TB4/mac-mini-storage/shared/pinpin-3d-study-v2/model.glb",
+  "params": {
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "detailed",
+    "geometry_quality": "detailed",
+    "texture_alignment": "original_image",
+    "orientation": "default",
+    "quad": false,
+    "face_limit": 150000,
+    "model_seed": 210926,
+    "texture_seed": 210926
+  },
+  "prompt": "Reconstruct Mr. PinPin from front, anatomical left profile (nose pointing right), and rear references in that order. Static quadruped model study. Exact reference-generation prompts are saved alongside each reference image. This endpoint receives ordered images and parameters, not this descriptive text.",
+  "priceEstimate": {
+    "amount": 0.60,
+    "currency": "USD",
+    "quantity": 1,
+    "source": "https://fal.ai/models/tripo3d/h3.1/multiview-to-3d",
+    "notes": "Published estimate checked 2026-09-21: HD textures 0.40 plus detailed geometry 0.20. Quad disabled. Not a verified billed charge; reference-image generation excluded."
+  }
+}
