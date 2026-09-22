@@ -9,13 +9,15 @@ are archived in the public HF bucket `miguelemosreverte/mr-pinpin-archive` after
 verification. Public visibility was explicitly approved and enabled by the main
 operator on 2026-09-22, resolving the earlier private-storage quota blocker.
 
-The main operator uploaded 181 manifest assets from the mini and is completing
-fresh remote verification. Migration is not complete until the verified receipt
-is available and applied; this catalog
-alone is not proof. The planned receipt is
+Remote archive preservation succeeded: all 181 manifest assets, totaling
+745,024,807 bytes, passed fresh download and SHA-256 verification on the mini.
+The successful `action: verify` receipt is
 `/Volumes/TB4/mac-mini-storage/shared/pinpin-asset-cache/mini-upload-receipt.json`.
-Local assets remain in place. Authoring Blender sources are being preserved
-independently under `authoring/blender-v3`; see
+Migration succeeded: the main operator applied the receipt and untracked 111
+verified archive paths while retaining all working files. The production build
+contains 411 files (669,321,739 bytes); navigation checks passed at 320, 390, and
+1440 pixels. Authoring Blender sources are preserved independently under
+`authoring/blender-v3`; see
 `tools/assets/verification-authoring.md` for their separate verification status.
 
 ## Plan and sync

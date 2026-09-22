@@ -82,9 +82,12 @@ all 181 manifest assets, totaling 745,024,807 bytes. This lane independently rea
 the successful `action: verify` receipt, confirmed `verified: true`, the exact
 bucket, and `remote_verified: true` for every entry. The receipt is at
 `/Volumes/TB4/mac-mini-storage/shared/pinpin-asset-cache/mini-upload-receipt.json`.
-The main operator reports local receipt application underway; this lane has not
-changed the real checkout's index or ignore rules. The main operator also reports
-27 Python tests and the full Node suite passed after the adapter fix.
+The main operator reports successful local receipt application: 111 tracked
+archive paths untracked, all working files retained. The production build contains
+411 files totaling 669,321,739 bytes, and navigation checks passed at 320, 390,
+and 1440 pixels. The main operator also reports 27 Python tests and the full Node
+suite passed after the adapter fix. This lane did not change the real checkout's
+index or ignore rules.
 Independent authoring preservation is documented
 in `verification-authoring.md`. Use an adapter-generated successful
 receipt; incomplete older hand-written receipts are intentionally refused.

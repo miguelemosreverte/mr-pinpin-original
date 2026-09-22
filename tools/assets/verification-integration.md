@@ -1,6 +1,26 @@
 # Asset migration integration verification
 
-Verified 2026-09-22. Migration and deployment are still pending.
+Verified 2026-09-22. Archive migration completed; deployment verification follows.
+
+## Cutover update
+
+Miguel explicitly approved the public HF archive. All 181 archive assets
+(745,024,807 bytes) were uploaded and fresh-downloaded with matching SHA-256.
+The SDK's HEAD metadata returned redirect-body lengths; the adapter now reads
+authoritative bucket path-info while retaining downloaded checksum and remote
+Xet-identity verification. The Python suite now passes 27 tests.
+
+Applied the matching successful verification receipt: 111 indexed paths were
+untracked, all working files retained. No archive binaries remain in the index.
+Receipt: `/Volumes/TB4/mac-mini-storage/shared/pinpin-asset-cache/mini-upload-receipt.json`.
+
+Approved remote covers and canonical Home story metadata were reconciled with
+the local atlas navigation before commit `b855ccb`. Rebuilt production artifact:
+411 files / 669,321,739 bytes at
+`/Volumes/TB4/mac-mini-storage/shared/pinpin-pages-release-20260922`.
+The full Node suite, 48 cover verification cases, and mobile/desktop reader
+navigation checks passed again. The conventional origin/main merge retains both
+histories. Historical pre-cutover observations follow below.
 
 ## Results
 
@@ -26,7 +46,7 @@ Verified 2026-09-22. Migration and deployment are still pending.
 - Actual-checkout `assets:sync -- --dry-run`: 181 archive entries, 111 tracked
   paths; no uploads or Git writes. `git diff --check` passed.
 
-## Pending cutover
+## Initial cutover findings
 
 The private HF bucket exists, but the attempted live upload was rejected for
 private storage quota. Offline tests and a dry run are not remote backup proof.
