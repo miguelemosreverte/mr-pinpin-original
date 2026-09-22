@@ -24,9 +24,10 @@ immutable release manifests exactly as recorded.
 Former GitHub repository URLs, including `mr-pinpin-original`, `mr-pinpin-pages`,
 and `mr-pinpin-official`, redirect to the repositories in the `mr-pinpin` organization.
 Their old Pages URLs do **not** automatically redirect. Link readers to
-`https://mr-pinpin.github.io/`. The source repo's
-legacy Pages workflow may redeploy under `/mr-pinpin-source/`; it is a separate,
-noncanonical site and does not publish a release to the official repo.
+`https://mr-pinpin.github.io/`. The source repository now runs verification only
+through `.github/workflows/verify-source.yml`. Its former Pages workflow is retired.
+An old source-site snapshot may remain available, but it is not updated by source
+pushes and must not be used as the reader address.
 
 Canonical local checkouts are
 `/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source` and
@@ -34,6 +35,8 @@ Canonical local checkouts are
 symlink aliases only. Use canonical directories with the publishing CLI, which
 rejects symlink path components. The organization move does not rename these local
 directories; `mr-pinpin-official` now checks out `mr-pinpin/mr-pinpin.github.io`.
+
+For local checkout roles and retained history, see [WORKSPACE.md](WORKSPACE.md).
 
 ## Commands and layout
 

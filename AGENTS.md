@@ -12,6 +12,8 @@
 - Canonical reader site: `https://mr-pinpin.github.io/`.
   Public storage stays `miguelemosreverte/mr-pinpin-archive`; do not rename its
   objects or rewrite historical reports/manifests to match repository renames.
+- Read `WORKSPACE.md` to distinguish canonical checkouts from retained worktrees
+  and migration snapshots. Preserve branch-only work and uncommitted edits.
 - Read `PUBLISHING.md` before releasing. The separate `mr-pinpin/mr-pinpin.github.io` repository
   is a lightweight deployment ledger, not an authoring checkout. Never copy this
   repository's Git history or binary assets into it. Use the verified,
@@ -37,7 +39,8 @@
   archived or proposed studies as approved production content.
 - Do not rewrite Git history to remove old assets without explicit approval.
 - Renamed GitHub repository URLs redirect; old Pages URLs do not automatically
-  redirect. The source legacy site may deploy under `/mr-pinpin-source/`, but
-  link readers to `https://mr-pinpin.github.io/`. A source push does not select an official
-  release. Rollback explicitly selects an existing release SHA in the official
-  checkout, with ordinary commits/pushes and retained archive objects.
+  redirect. The source workflow performs verification only; an old source-site
+  snapshot may still be served, but link readers to `https://mr-pinpin.github.io/`.
+  A source push does not select an official release. Rollback explicitly selects an
+  existing release SHA in the official checkout, with ordinary commits/pushes and
+  retained archive objects.

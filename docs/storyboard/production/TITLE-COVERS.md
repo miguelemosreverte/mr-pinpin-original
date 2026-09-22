@@ -1,6 +1,21 @@
-# Title covers
+# Initial title-cover workflow
 
-`docs/storyboard/covers.json` is the lookup and approval authority for the reader's first page and library thumbnails. All four editions are approved: `chapter-01`, `chapter-02`, `timber-tractor`, and `home-sweet-home`, with Russian, English, and Spanish covers for each. Their `route` objects identify the existing reader query parameters; the timber story includes its existing continuation.
+`docs/storyboard/covers.json` is the lookup and approval authority for the reader's first page and library thumbnails. The original four editions are approved: `chapter-01`, `chapter-02`, `timber-tractor`, and `home-sweet-home`, with Russian, English, and Spanish covers for each. Their `route` objects identify the existing reader query parameters; the timber story includes its existing continuation.
+
+## Current registry and later editions
+
+This guide records the original four-edition PNG convention. The current
+`covers.json` also selects the five expanded Elder chapters and their combined
+collection. Their full-resolution WebP title pages and separate text-free
+miniatures live under `images/published/elder-cycle/`. Use the explicit registry
+paths; do not infer every cover path from the older PNG examples below.
+
+The Elder story manifests localize every embedded chapter title page, including
+all five in the continuous edition. `scripts/verify-elder-edition.cjs` covers those
+editions; `scripts/verify-title-covers.cjs` covers the original PNG editions.
+Originals and generation records remain in the retained draft worktree described
+in [the workspace guide](../../../WORKSPACE.md). For current routes and runtime
+files, see [the storyboard guide](../README.md).
 
 ## Find an asset
 

@@ -12,6 +12,12 @@ and [interactive atlas](https://mr-pinpin.github.io/storyboard/atlas-webgpu.html
 
 This repository is the source workspace, not the canonical reader website.
 
+Start with the [storyboard guide](docs/storyboard/README.md) for content and runtime,
+[workspace guide](WORKSPACE.md) for checkouts and retained drafts, and
+[publishing guide](PUBLISHING.md) for releases.
+
+[Read One Day in the Forest — five chapters](https://mr-pinpin.github.io/storyboard/?story=one-day-in-the-forest&lang=ru).
+
 | Role | Location | Contents |
 | --- | --- | --- |
 | Authoring | [mr-pinpin-source](https://github.com/mr-pinpin/mr-pinpin-source) | Story text, translations, code, provenance, manifests, original history |
@@ -25,8 +31,8 @@ for release, restoration, and rollback instructions.
 Former GitHub repo URLs, including `mr-pinpin-original`, `mr-pinpin-pages`, and
 `mr-pinpin-official`, redirect to the repositories in the `mr-pinpin` organization.
 Old **Pages website URLs do not automatically redirect**. Use
-`https://mr-pinpin.github.io/` for readers. The source repo's legacy
-workflow may redeploy at `/mr-pinpin-source/`; that is not the canonical site.
+`https://mr-pinpin.github.io/` for readers. Source pushes run verification only;
+official deployment happens in the separate release repository.
 
 ## Permissions
 
@@ -51,7 +57,9 @@ python3 scripts/serve-chapter-workshop.py --port 8782
 ```
 
 Open http://127.0.0.1:8782/storyboard/library.html for local reading, or the workshop
-URL printed by the server for authoring review. If production media is absent,
+URL printed by the server when the relevant review pack is present. Retained Elder
+production packs live in the draft worktree described in [WORKSPACE.md](WORKSPACE.md).
+If production media is absent,
 first install the pinned HF SDK in your Python environment and run
 `npm run assets:restore-production` with an external `PINPIN_ASSET_CACHE`.
 See [restoration instructions](tools/assets/backup-publication.md).
@@ -97,11 +105,10 @@ The supplied `MrPinPin.html` is stored as `docs/index.html` so the book opens
 directly on GitHub Pages. Its bytes and the image bytes are unchanged from the
 original export. The original document layout and font references are preserved.
 
-The legacy GitHub Actions workflow builds a production-only site from `main`, using the asset manifest
-instead of uploading the complete development directory. Original book images
-and active story/atlas assets remain unchanged; experiments are not bundled into
-the published site.
-There is no separate Pages branch or ZIP download required for reading.
+The source GitHub Actions workflow verifies assets, build references and publishing
+tools on main pushes and pull requests. It does not deploy. The official repository
+verifies and deploys an explicitly selected release bundle; experiments are excluded
+from that bundle. Readers do not need a Pages branch or ZIP download.
 
 To read locally, open `docs/index.html` in a browser.
 
