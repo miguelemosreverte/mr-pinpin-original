@@ -8,6 +8,8 @@ from release_format import (canonical, clean_path, digest, load_release, new_dir
                             require, write_new)
 from materialize import selected_release
 
+LICENSE_FILES = ("LICENSE", "LICENSE-MIT", "CONTENT-LICENSE.md", "THIRD-PARTY-NOTICES.md")
+
 WORKFLOW = """name: Publish Verified Release
 on:
   push:
@@ -96,6 +98,16 @@ enforce immutability at the application level. Never replace/delete release
 objects. External mutation causes verification failure, not silent deployment.
 The script does not create repositories, configure Pages, commit, push, cut over
 traffic, or redirect old Pages URLs. Operators manage those actions separately.
+
+## Permissions
+
+MIT covers only project-owned software under LICENSE and LICENSE-MIT.
+Deployed stories, media, prompts, and other creative content are excluded even
+when embedded in code. CONTENT-LICENSE.md gives limited personal/noncommercial
+family permissions only for rights the project controls. THIRD-PARTY-NOTICES.md
+preserves upstream terms; prior grants and legal exceptions remain unaffected.
+No copyright is invented in public-domain or unprotectable AI-generated material.
+These repo notices do not modify any existing immutable release archive.
 """
 
 AGENTS = """# Official publishing rules
@@ -115,6 +127,11 @@ No deployment or old-site cutover without the operator's authorization.
 Use canonical local paths, not former-name symlink aliases. GitHub repo redirects
 do not imply Pages URL redirects. The source legacy site is not canonical.
 Keep historical evidence and immutable release manifests unchanged after renames.
+Read LICENSE, CONTENT-LICENSE.md, and THIRD-PARTY-NOTICES.md before reuse.
+MIT covers owned software only, not creative content embedded in JS/JSON/HTML
+or deployed media. Preserve upstream terms, prior grants, and legal exceptions;
+do not invent rights in unprotectable AI or public-domain material.
+Publish new notices through a new source build; never mutate an old archive.
 """
 
 
@@ -144,6 +161,8 @@ def template(package, output):
         write_new(output / ".github" / "workflows" / "pages.yml", WORKFLOW.encode())
         write_new(output / "README.md", README.encode())
         write_new(output / "AGENTS.md", AGENTS.encode())
+        for name in LICENSE_FILES:
+            write_new(output / name, (Path(__file__).resolve().parents[2] / name).read_bytes())
         write_new(output / ".gitignore", b".pages-site/\n__pycache__/\n*.pyc\n")
     except BaseException:
         shutil.rmtree(output)

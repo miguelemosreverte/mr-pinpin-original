@@ -16,6 +16,18 @@ must never be overwritten or deleted.
 - This bucket holds original assets, preservation copies, experiments, Blender
   authoring data, and complete release bundles.
 
+## Permissions
+
+Public storage is not a blanket MIT or open-content grant. Only project-owned
+software is MIT under the [scope notice](https://github.com/mr-pinpin/mr-pinpin-source/blob/main/LICENSE).
+Stories, translations, artwork, characters, audio/video, models, prompts,
+references, and provenance creative content are excluded, including when embedded
+in code or release bundles. [Content permissions](https://github.com/mr-pinpin/mr-pinpin-source/blob/main/CONTENT-LICENSE.md)
+allow personal/noncommercial family reading, downloading, and printing only for
+rights controlled by the project. [Third-party terms](https://github.com/mr-pinpin/mr-pinpin-source/blob/main/THIRD-PARTY-NOTICES.md),
+valid prior grants, legal exceptions, and public-domain status remain unaffected;
+no rights are invented in unprotectable AI-generated material.
+
 ## Inventories and restoration
 
 - [Production preservation manifest](https://github.com/mr-pinpin/mr-pinpin-source/blob/main/tools/assets/production-preservation.json)

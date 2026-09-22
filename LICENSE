@@ -1,0 +1,38 @@
+Mr. PinPin licensing scope
+
+Copyright (c) 2026 Miguel Lemos, for copyrightable contributions he owns.
+
+This is a mixed software and creative-content project, NOT a blanket MIT release.
+
+The standard MIT grant in LICENSE-MIT applies only to project-owned functional
+software and its technical documentation: for example reader/navigation logic,
+rendering utilities, build/test/storage/publishing tools, and deployment code.
+It applies only to rights Miguel Lemos owns or is authorized to license.
+Third-party code remains under its own license, not this project's MIT grant.
+
+Specifically excluded pending separate clearance: docs/storyboard/gpu/**, whose
+SOURCE.md records adaptation from GauchoAI/gaucho-atlas without an established
+upstream license. The complete preserved original export (docs/index.html and
+docs/images/**) is also excluded. In a deployed archive these paths omit docs/.
+Character-specific procedural artwork, geometry, and creative configuration
+(including in scripts/blender-pinpin/**) are content, not automatically MIT code.
+
+Excluded from that grant are stories, translations, illustrations, character
+designs, audio, video, models, prompts, reference material, provenance creative
+content, and other creative content. These exclusions apply even when content
+is embedded in JS, JSON, HTML, CSS, code comments, tests, or documentation.
+A filename, extension, directory, content hash, or public download is not a
+license decision. In mixed files, separate functional software from creative
+content; the MIT grant covers only the former where project-owned.
+
+Creative material in deployed releases, release archives, and the public HF
+bucket is also excluded from MIT. Release manifests do not relicense what they
+describe. See CONTENT-LICENSE.md for limited personal/family permissions and
+THIRD-PARTY-NOTICES.md for upstream terms and unresolved ownership boundaries.
+
+This notice does not claim copyright in public-domain material, facts, ideas,
+or purely AI-generated material lacking copyright protection under applicable
+law. Copyrightable human contributions, if any, are considered separately.
+Fair use, fair dealing, other legal exceptions, and valid prior grants remain
+unaffected. No trademark, endorsement, or personality-rights permission is
+implied. Preserve relevant notices when copying covered software or content.

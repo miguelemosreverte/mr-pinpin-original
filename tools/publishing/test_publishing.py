@@ -14,7 +14,7 @@ from unittest.mock import patch
 from release_format import (MAX_BYTES, archive_url, canonical, identity, load_release,
                             object_key, sha, validate)
 from package_release import package
-from pages_template import select, stage, template
+from pages_template import LICENSE_FILES, select, stage, template
 from materialize import download, materialize, selected_release
 from publish import upload
 
@@ -47,6 +47,23 @@ class PublishingTests(unittest.TestCase):
         actual = {p.relative_to(output).as_posix(): p.read_bytes() for p in output.rglob("*") if p.is_file()}
         self.assertEqual(actual, expected)
         self.assertFalse(list(self.repo.rglob("*.tar.gz")))
+
+    def test_template_and_website_carry_scoped_notices(self):
+        source = Path(__file__).resolve().parents[2]
+        for name in LICENSE_FILES:
+            with self.subTest(name=name):
+                expected = (source / name).read_bytes()
+                self.assertEqual((self.repo / name).read_bytes(), expected)
+                self.assertEqual((source / "docs/permissions" / name).read_bytes(), expected)
+        scope = (self.repo / "LICENSE").read_text()
+        self.assertIn("NOT a blanket MIT release", scope)
+        self.assertIn("docs/storyboard/gpu/**", scope)
+        self.assertIn("scripts/blender-pinpin/**", scope)
+        self.assertIn("embedded in JS, JSON, HTML", scope)
+        self.assertIn("Copyright (c) 2026 Miguel Lemos", scope)
+        self.assertIn("CONTENT-LICENSE.md", (self.repo / "README.md").read_text())
+        self.assertIn("THIRD-PARTY-NOTICES.md", (self.repo / "AGENTS.md").read_text())
+        self.assertEqual(selected_release(self.repo)[1], self.result["release"])
 
     def test_refuses_existing_outputs_and_package_links(self):
         with self.assertRaises(FileExistsError):

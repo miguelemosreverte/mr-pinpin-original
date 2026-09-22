@@ -28,6 +28,15 @@ Old **Pages website URLs do not automatically redirect**. Use
 `https://mr-pinpin.github.io/` for readers. The source repo's legacy
 workflow may redeploy at `/mr-pinpin-source/`; that is not the canonical site.
 
+## Permissions
+
+Only project-owned software is [MIT-licensed](LICENSE-MIT), within the
+[scope in LICENSE](LICENSE). Stories and other creative content, including
+content embedded in code, are excluded. [Content permissions](CONTENT-LICENSE.md)
+allow personal/noncommercial family reading, downloading, and printing only for
+rights the project controls. [Third-party terms](THIRD-PARTY-NOTICES.md), legal
+exceptions, public-domain status, and valid prior grants remain unaffected.
+
 ## Quickstart
 
 Work in `/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source`. The sibling

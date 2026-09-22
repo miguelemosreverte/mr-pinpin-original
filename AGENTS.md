@@ -1,5 +1,11 @@
 # Working in Mr. PinPin Source
 
+- Read `LICENSE`, `CONTENT-LICENSE.md`, and `THIRD-PARTY-NOTICES.md`. MIT covers
+  owned software only, never creative content merely because it is in JS/JSON/HTML.
+  Preserve upstream terms and prior grants; do not claim rights in unprotectable
+  AI output or public-domain material. Keep `docs/permissions/` notice copies in
+  sync with root notices. New notices require a new release, not archive mutation.
+
 - Canonical source: `https://github.com/mr-pinpin/mr-pinpin-source`, local
   `/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source`. Use this checkout
   for authoring; old local names are compatibility symlinks only.
