@@ -1,0 +1,169 @@
+{
+  "id": "handoff-v1",
+  "slug": "handoff",
+  "prompt": "Use case: illustration-story. ONE landscape 1536x1024 image for a children’s picturebook, no text/border/panels.\nREFERENCE ROLES: 1 finished Elder scene controls dimensional animated-storybook rendering ONLY; no glasses/elder/imported room. 2 acceptedfamily controls identity and approximate scale. 3 establishedscene controls room geometry and props, not camera. Soft designed fur/quills, roundedexpressivefaces, warmfilledcreamfaces, readableirises, neverphotographic/PBR/blackbutton eyes. Papa mature broad adult HEDGEHOG creamface/hazeliris/brown-greyquills,no glasses. Mama copperquilledadult, PinPin smallchestnutchild, PomPom tinyinfant. Exactlythese FOUR hedgehogs, no duplicates. Adult1.6childheight infant0.5child. No clothing.\nALL INPUT ROLES: [{\"image\": 1, \"role\": \"Sole rendering authority; never import Elder, glasses or location\"}, {\"image\": 2, \"role\": \"Exact four hedgehog identities/relative scale; no dog inside\"}, {\"image\": 3, \"role\": \"Exterior house/identity and relative scale; requested new action\"}, {\"image\": 4, \"role\": \"Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting\"}]\nSHOT: Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.\nKITCHEN RULES ifinside: greenrounddoorcenterrear hingesRIGHT knobLEFT, cupboardsLEFT stoveRIGHT, roundwoodtable. For breakfastfixed seats MamaLEFT holdinginfant, PapaFAR-RIGHT, childNEAR-RIGHT, exactly3speckledbeigecups3porridgebowls1communalbowlbreadfrontleftbrownteapot. Allfourfamilyfaces must be visible in mealframes; no crops that omitMama/baby. For floor/preparationframes follow explicit changed state rather than forcing seatedmeal. DOG staysoutside. For exteriorScooby softanimatedbrownbrindle/creamgrey muzzle/whitebib/foldedears/curledtail, dogshoulder2.7childheight. Meaningful directedpupils, no camera-facing posedportraits.\nCAMERA/ACTOR ART DIRECTION (notlabels): {\"schemaVersion\": 1, \"purpose\": \"Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.\", \"frameId\": \"H\", \"units\": \"Approximate PinPin standing heights; illustrative art direction, not measured geometry.\", \"camera\": {\"positionXYZ\": [2, -5, 1.25], \"targetXYZ\": [0, 0, 0.9], \"height\": 1.25, \"framing\": \"Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.\", \"fieldOfViewDegrees\": 50, \"axisSide\": \"Exterior negativeY\"}, \"actors\": [{\"name\": \"Papa\", \"positionXYZ\": [0.6, -1, 0], \"bodyFacingTarget\": \"family group\", \"headFacingTarget\": \"PomPom\", \"eyeTarget\": \"PomPom\", \"pose\": \"Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.\", \"limbsContactSupport\": \"Two forearms under infant bottom and torso, no extra waving arm\", \"visibility\": \"visible\"}, {\"name\": \"Mama\", \"positionXYZ\": [-0.6, -0.5, 0], \"bodyFacingTarget\": \"family group\", \"headFacingTarget\": \"PomPom\", \"eyeTarget\": \"PomPom\", \"pose\": \"Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.\", \"limbsContactSupport\": \"Both hindfeet on ground; two arms perform stated action\", \"visibility\": \"visible\"}, {\"name\": \"PinPin\", \"positionXYZ\": [0, -2, 0], \"bodyFacingTarget\": \"family group\", \"headFacingTarget\": \"PomPom\", \"eyeTarget\": \"PomPom\", \"pose\": \"Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.\", \"limbsContactSupport\": \"Both hindfeet on ground; two arms perform stated action\", \"visibility\": \"visible\"}, {\"name\": \"PomPom\", \"positionXYZ\": [0.3, -1, 0.9], \"bodyFacingTarget\": \"family group\", \"headFacingTarget\": \"Papa\", \"eyeTarget\": \"Papa\", \"pose\": \"Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.\", \"limbsContactSupport\": \"Papa two forearms cradle infant bottom and torso; during handoff Mama supporting until transfer complete\", \"visibility\": \"visible\"}, {\"name\": \"Scooby\", \"positionXYZ\": [-2, -2, 0], \"bodyFacingTarget\": \"family group\", \"headFacingTarget\": \"Papa\", \"eyeTarget\": \"Papa\", \"pose\": \"Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.\", \"limbsContactSupport\": \"Four anatomically attached legs planted or natural gait, no saddle/reins\", \"visibility\": \"visible\"}], \"staticLandmarks\": {\"threshold\": [0, 0, 0], \"stone\": [-2, -2, 0.35], \"dogBowl\": [2, -2, 0], \"path\": [0, -6, 0], \"family group\": [0, -1, 0]}, \"objectStates\": {\"before\": \"See scene action and sequential state ledger\", \"after\": \"Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.\"}, \"transition\": {\"previousAction\": \"Mama opened the door with PomPom in her arms. PinPin hurried into Papa’s hug. Scooby’s tail curled up.\", \"nextAction\": \"PomPom caught Papa’s paw. “You remember me!” Papa laughed. PinPin leaned close to see.\", \"reasonForShotChange\": \"Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.\"}}.\nNo extra limbs, paws must visiblyattach. Infant neverfloats. Morning warmdaylight withsoftfill, no darkmask, no captions.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "Sole rendering authority; never import Elder, glasses or location",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "Exact four hedgehog identities/relative scale; no dog inside",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-005-v3.png",
+      "role": "Exterior house/identity and relative scale; requested new action",
+      "sha256": "3709b93187a9b784150d3ad49d8a660045b3f65b03a16ba1aea1d02dff96a5e9"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T01:48:39.906094Z",
+  "output": "images/chapter-02-expanded/revision-06/family/handoff-v1.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.",
+    "frameId": "H",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -5,
+        1.25
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        0.9
+      ],
+      "height": 1.25,
+      "framing": "Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Exterior negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.6,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "PomPom",
+        "eyeTarget": "PomPom",
+        "pose": "Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.",
+        "limbsContactSupport": "Two forearms under infant bottom and torso, no extra waving arm",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          -0.6,
+          -0.5,
+          0
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "PomPom",
+        "eyeTarget": "PomPom",
+        "pose": "Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.",
+        "limbsContactSupport": "Both hindfeet on ground; two arms perform stated action",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "PomPom",
+        "eyeTarget": "PomPom",
+        "pose": "Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.",
+        "limbsContactSupport": "Both hindfeet on ground; two arms perform stated action",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          0.3,
+          -1,
+          0.9
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.",
+        "limbsContactSupport": "Papa two forearms cradle infant bottom and torso; during handoff Mama supporting until transfer complete",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -2,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background.",
+        "limbsContactSupport": "Four anatomically attached legs planted or natural gait, no saddle/reins",
+        "visibility": "visible"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "dogBowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "See scene action and sequential state ledger",
+      "after": "Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background."
+    },
+    "transition": {
+      "previousAction": "Mama opened the door with PomPom in her arms. PinPin hurried into Papa’s hug. Scooby’s tail curled up.",
+      "nextAction": "PomPom caught Papa’s paw. “You remember me!” Papa laughed. PinPin leaned close to see.",
+      "reasonForShotChange": "Threshold medium profile: Mama left securely transfers infant to Papa right, all four forearms readable; PinPin foreground watches. Scooby outside left background."
+    }
+  },
+  "status": "creator-reviewed",
+  "requestPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/handoff-v1.request.json",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c6ba-3ec7-7e90-8b64-cfa109b43746/exec-b0aa76a9-1731-48e3-8160-0c9d4f68d064.png",
+  "startedAt": "2026-09-22T01:48:55.428Z",
+  "finishedAt": "2026-09-22T01:49:54.400Z",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "d4894f088e8ed62e9295d1c69e4d3812cf874943ff4671509aee4739d17d401f",
+  "review": "Creator actual full-image PASS: Exact four hedgehogs plus Scooby background. Mama supporting infant back and Papa forearm beneath bottom, Papa/infant mutual gaze; far arms partly hidden and not certified. Infant feet hidden inside cradle. Both adults and child planted feet; child gazes to baby. Correct house threshold and single door knob, warm animated faces."
+}

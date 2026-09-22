@@ -1,0 +1,6 @@
+# Exact built-in imagegen prompt
+
+Use case: precise-object-edit. Edit first image. Correct only OVERSIZED DOG BOWL; it is the same small shallow wooden bowl from reference2, outer diameter only about 1.4 times the small drinking cup. Never a large washbasin. Reduce bowl to roughly HALF its current width and lower shallow height. Preserve wood material and water. Bowl stays on grass under dog tongue but becomes a small shallow dish approximately 1.4 times visible cup diameter, not giant bowl. Keep right edge beneath tongue and bring left edge inward; adjust child two forepaws naturally to touch smaller rim, child may lean forward slightly, no extra fingers. Dog continues gently lapping water with attentive eyes. Preserve Papa, dog head/body, child identity, satchel, cloth, cup/flask/apples, camera, background and lighting. No new bowl elsewhere. Single landscape illustration, no text.
+
+EDIT TARGET reduce oversized dog bowl only, preserve action: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-015-v1.png
+Fixed bowl geometry authority: shallow wood bowl only 1.4 times cup diameter, originally nested cup inside it: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-012-v2.png

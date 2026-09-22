@@ -1,0 +1,139 @@
+{
+  "id": "elder-r6-forest-012",
+  "stem": "scene-012-v2",
+  "version": 2,
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-06/forest/scene-012-v1.png",
+      "role": "EDIT TARGET preserve all except cloth and nested bowl"
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-06/forest/scene-011-v1.png",
+      "role": "Plain cream cloth with ochre hem authority"
+    }
+  ],
+  "mode": "edit",
+  "prompt": "Use case: precise-object-edit. Edit first image: preserve wonderful bread-breaking action, faces, anatomy, poses, dog, log, light, camera, apples, flask and satchel. Change picnic cloth ONLY from red checks to identical plain warm cream linen with narrow muted ochre edge from second image. Absolutely NO checkered pattern, no red lines. Add a shallow wooden dog bowl directly beneath small wooden cup so cup is nested naturally in shallow bowl; same simple wood. All else unchanged. Single full landscape image.",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Bread to share: Papa broke the bread in two. The soft middle was still lovely to smell.",
+    "frameId": "P",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -2,
+        -3,
+        1.15
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "height": 1.15,
+      "framing": "intimate bread action",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.4,
+          0
+        ],
+        "bodyFacingTarget": "bread",
+        "headFacingTarget": "bread",
+        "eyeTarget": "bread",
+        "pose": "sits, two paws break small bread roll",
+        "limbsContactSupport": "sits, two paws break small bread roll",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -0.7,
+          -0.7,
+          0
+        ],
+        "bodyFacingTarget": "bread",
+        "headFacingTarget": "bread",
+        "eyeTarget": "bread",
+        "pose": "sits with two paws ready to receive",
+        "limbsContactSupport": "sits with two paws ready to receive",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          2.5,
+          0.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "lies, visible in background or cropped right",
+        "limbsContactSupport": "lies, visible in background or cropped right",
+        "visibility": "visible unless specified by purposeful crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ]
+    },
+    "objectStates": {
+      "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+      "after": "picnic state: bread"
+    },
+    "transition": {
+      "previous": "Together they spread the cloth",
+      "next": "A piece for Papa",
+      "reason": "Bread to share"
+    }
+  }
+}

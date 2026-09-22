@@ -1,0 +1,125 @@
+{
+  "id": "elder-r6-mentor-096-v1",
+  "tool": "built-in image_gen",
+  "status": "ready",
+  "plannedAt": "2026-09-22T04:35:11.619Z",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Rear three-quarter travel through foreground leaves",
+    "frameId": "T",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        4,
+        -5,
+        2.3
+      ],
+      "targetXYZ": [
+        0,
+        1,
+        2.4
+      ],
+      "height": 2.3,
+      "framing": "Rear three-quarter travel through foreground leaves",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "positiveX"
+    },
+    "actors": [
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          0,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "pathAhead",
+        "headFacingTarget": "pathAhead",
+        "eyeTarget": "pathAhead",
+        "pose": "gentle walk three paws ground one small step",
+        "limbsContactSupport": "gentle walk three paws ground one small step",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0,
+          0.3,
+          2.7
+        ],
+        "bodyFacingTarget": "pathAhead",
+        "headFacingTarget": "leaves",
+        "eyeTarget": "leaves",
+        "pose": "front seat hips fur both forepaws shoulder legs astride leaning into Papa",
+        "limbsContactSupport": "front seat hips fur both forepaws shoulder legs astride leaning into Papa",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0,
+          -0.5,
+          2.7
+        ],
+        "bodyFacingTarget": "pathAhead",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "rear seat arm child belly other paw back legs astride",
+        "limbsContactSupport": "rear seat arm child belly other paw back legs astride",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "staticLandmarks": {
+      "pathAhead": [
+        0,
+        8,
+        0
+      ],
+      "leaves": [
+        2,
+        3,
+        3
+      ],
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "Satchel worn left shoulder/right hip",
+      "after": "Same bag position; visible strap/contact only, no restaging"
+    },
+    "transition": {
+      "previousAction": "canonical scene097",
+      "nextAction": "canonical scene099",
+      "reasonForShotChange": "Rear three-quarter travel through foreground leaves"
+    },
+    "editMode": "Preserve counterpart pixels/camera/contact; add satchel only"
+  },
+  "prompt": "Use case: precise-object-edit. ONE landscape1536x1024. Image1 EDIT TARGET: preserve exact camera, all character faces/style/poses/gaze/feet/paw contacts, clothing-free animals, environmental geometry, lighting. Image2 is satchel PROP ONLY, do not copy its white background or change cast. Add ONE small muted ochre linen crossbody satchel worn ONLY by adult Papa hedgehog. Broad soft strap from Papa ANATOMICAL LEFT SHOULDER diagonally to ANATOMICAL RIGHT HIP; compact closed rounded flap bag rests at right hip, just behind hip during riding, away from child/supporting arm. Bagwidth about0.6Papa torso/height0.55. No duplicate straps or bag on dog/child; far side may naturally occlude. Strap follows body not quill spikes, does not replace or hide supporting paws. This is continuity of already packed picnicbag, no new action/props. Do not change feet positions or eye style. Keep soft animated Papa creamface and dog expressiveness. No text, no panels, no borders.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-098-v1.png",
+      "role": "edit target preserve all except worn satchel",
+      "sha256": "947573ae34cd522fdb232c93db1ecaa338b7a32757bfac74cd2bd95257413fa6"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "satchel routing shape only",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    }
+  ],
+  "startedAt": "2026-09-22T04:36:56.886Z",
+  "finishedAt": "2026-09-22T04:37:39.275Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c74a-b423-7862-8792-861f676f14e3/exec-3d47b2df-993f-4cd3-8ad7-491a5136dc7c.png",
+  "review": "Creator full-image PASS: compact ochre bag behind Papa near hip, partly occluded by dog curled tail; strap visible up side with far attachment hidden. Both riders/support arm, child's grounded near leg and raised attention, dog's original walking limbs, forest path and lighting unchanged. Small dark flap fastening appears, nonblocking detail; exact hidden strap routing not certified.",
+  "output": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-096-v1.png",
+  "sha256": "e4492a80f52151ceb49a08e7bcf1d9b5f91b540c7316d1925e9381baf0c32b51",
+  "width": 1536,
+  "height": 1024
+}

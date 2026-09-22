@@ -1,0 +1,169 @@
+{
+  "id": "elder-r6-forest-010",
+  "stem": "scene-010-v2",
+  "version": 2,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-010-v1.png",
+      "role": "EDIT TARGET: enlarge Scooby dog by approximately 60% while keeping paws on grass, Papa and child unchanged. Dog shoulder must rise above Papa head.",
+      "sha256": "97a02ccf16ba6305a440e7364e528fbf9a8bbefd0b4c21d623e033ec759e1147"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "AUTHORITATIVE Papa/PinPin/Scooby identities and soft style, correct satchel contact/scale. NOT a montage layout to copy.",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/environments-v1.png",
+      "role": "Geography only. Use left stop/path for walking, right clearing for picnic. Not a split-panel layout; output ONE scene.",
+      "sha256": "8514a0e488ead46e8ed520fb526dfaf4b9e680084b3c831a4754e732fd621f6b"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Papa face/identity only, never transfer darkbackground or isolate as portrait.",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "mode": "edit",
+  "prompt": "Use case: precise-object-edit. EDIT first image. Preserve entire beautiful clearing, Papa and child identities, handholding, bag, camera, light and style. Correct ONLY dog SCALE: Scooby is currently too small. Enlarge the dog around its ground contact by 60%, so its shoulder is visibly slightly ABOVE Papa head and its head higher still. Same brown/brindle short soft stylized fur, bib, curled tail, exact four anatomically connected legs. Scooby turns head downward attentively toward child. Keep dog on their right, do not overlap their bodies or alter them. Supporting image2 is scale/identity reference; image3 environment, image4 Papa. Full single landscape scene, no text.",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Their lunch place: Beyond the ferns was a sunny patch of grass. “Shall we have our lunch here?”",
+    "frameId": "P",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -5,
+        -7,
+        2
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "height": 2,
+      "framing": "wide clearing reveal",
+      "fieldOfViewDegrees": 65,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.4,
+          0
+        ],
+        "bodyFacingTarget": "picnicLog",
+        "headFacingTarget": "picnicLog",
+        "eyeTarget": "picnicLog",
+        "pose": "clearing",
+        "limbsContactSupport": "two hindfeet or seated hips on firm ground; exact paw action follows shot action",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -0.7,
+          -0.7,
+          0
+        ],
+        "bodyFacingTarget": "picnicLog",
+        "headFacingTarget": "picnicLog",
+        "eyeTarget": "picnicLog",
+        "pose": "clearing",
+        "limbsContactSupport": "grounded child; exact paw action follows shot action",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          2.5,
+          0.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "resting/crouched",
+        "limbsContactSupport": "four anatomical limbs; no saddle/reins; visible paws contact ground, hidden limbs not certified",
+        "visibility": "visible unless specified by purposeful crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ]
+    },
+    "objectStates": {
+      "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+      "after": "picnic state: clearing"
+    },
+    "transition": {
+      "previous": "PinPin helps too",
+      "next": "Together they spread the cloth",
+      "reason": "Their lunch place"
+    }
+  },
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-22T02:23:50.702791+00:00",
+  "status": "ready",
+  "schemaVersion": 1,
+  "startedAt": "2026-09-22T02:23:50.742Z",
+  "finishedAt": "2026-09-22T02:24:38.785Z",
+  "completedAt": "2026-09-22T02:25:27.692135+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c6e8-4236-7423-aba9-373f8983fcab/exec-305e9d67-4bf7-403a-99d9-b2881b7a7ec8.png",
+  "output": "images/chapter-02-expanded/revision-06/forest/scene-010-v2.png",
+  "sha256": "87a22d16fbc01edcb85991324ae0767bcaa80cef50d4e1d8a196762af9ffba80",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator full-image review PASS after size correction: broad clear picnic grass, log and birches establish clearing; Papa and child visibly hold paws while walking; Scooby larger than child with head above Papa, four plausible gait legs and curled tail. Bag correct near right hip. Exact numeric scale is illustrative, not measured; visible size improved from rejected v1.",
+  "timingSource": {
+    "source": "Date().toISOString immediately before and after awaited built-in tool call",
+    "scope": "observed request wall time, not model-only latency"
+  },
+  "reviewedAt": "2026-09-22T02:25:51.871015+00:00"
+}

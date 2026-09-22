@@ -1,0 +1,183 @@
+{
+  "id": "wrap-bread-v2",
+  "slug": "wrap-bread",
+  "prompt": "Use case: illustration-story. ONE landscape 1536x1024 image for a children’s picturebook, no text/border/panels.\nREFERENCE ROLES: 1 finished Elder scene controls dimensional animated-storybook rendering ONLY; no glasses/elder/imported room. 2 acceptedfamily controls identity and approximate scale. 3 establishedscene controls room geometry and props, not camera. Soft designed fur/quills, roundedexpressivefaces, warmfilledcreamfaces, readableirises, neverphotographic/PBR/blackbutton eyes. Papa mature broad adult HEDGEHOG creamface/hazeliris/brown-greyquills,no glasses. Mama copperquilledadult, PinPin smallchestnutchild, PomPom tinyinfant. Exactlythese FOUR hedgehogs, no duplicates. Adult1.6childheight infant0.5child. No clothing.\nALL INPUT ROLES: [{\"image\": 1, \"role\": \"Sole rendering authority; never import Elder, glasses or location\"}, {\"image\": 2, \"role\": \"Exact four hedgehog identities/relative scale; no dog inside\"}, {\"image\": 3, \"role\": \"Kitchen geometry, fixed meal seats and tableware; pose changes per requested shot\"}, {\"image\": 4, \"role\": \"Accepted ochre linen satchel geometry and ridercontact; no extra dogs insidehouse\"}, {\"image\": 5, \"role\": \"Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting\"}]\nSHOT: Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present. SATCHEL exactlyreference4 softochrelinen singleflap, broadstrap leftshoulder toRIGHT hip. No basket or leathermodernbackpack. Contents creamclothbread2apples smallcorkflask woodcupnesteddogbowl. Table clearedallbreakfastbowls/cups. NO dogindoors. Forcodaemptybag nofood.\nKITCHEN RULES ifinside: greenrounddoorcenterrear hingesRIGHT knobLEFT, cupboardsLEFT stoveRIGHT, roundwoodtable. For breakfastfixed seats MamaLEFT holdinginfant, PapaFAR-RIGHT, childNEAR-RIGHT, exactly3speckledbeigecups3porridgebowls1communalbowlbreadfrontleftbrownteapot. Allfourfamilyfaces must be visible in mealframes; no crops that omitMama/baby. For floor/preparationframes follow explicit changed state rather than forcing seatedmeal. DOG staysoutside. For exteriorScooby softanimatedbrownbrindle/creamgrey muzzle/whitebib/foldedears/curledtail, dogshoulder2.7childheight. Meaningful directedpupils, no camera-facing posedportraits.\nCAMERA/ACTOR ART DIRECTION (notlabels): {\"schemaVersion\": 1, \"purpose\": \"Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.\", \"frameId\": \"K\", \"units\": \"Approximate PinPin standing heights; illustrative art direction, not measured geometry.\", \"camera\": {\"positionXYZ\": [2.7, -4, 1.6], \"targetXYZ\": [0, 0, 0.9], \"height\": 1.6, \"framing\": \"Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.\", \"fieldOfViewDegrees\": 50, \"axisSide\": \"Kitchen negativeY master half-space\"}, \"actors\": [{\"name\": \"Papa\", \"positionXYZ\": [0.7, 0.8, 0], \"bodyFacingTarget\": \"table\", \"headFacingTarget\": \"satchel\", \"eyeTarget\": \"satchel\", \"pose\": \"Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.\", \"limbsContactSupport\": \"Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported\", \"visibility\": \"visible\"}, {\"name\": \"Mama\", \"positionXYZ\": [-1.2, 0, 0], \"bodyFacingTarget\": \"table\", \"headFacingTarget\": \"satchel\", \"eyeTarget\": \"satchel\", \"pose\": \"Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.\", \"limbsContactSupport\": \"Two arms only; one forearm continuously beneath infant torso/bottom; both hindfeet or seated haunches visibly supported\", \"visibility\": \"visible\"}, {\"name\": \"PinPin\", \"positionXYZ\": [0.9, -0.8, 0], \"bodyFacingTarget\": \"table\", \"headFacingTarget\": \"satchel\", \"eyeTarget\": \"satchel\", \"pose\": \"Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.\", \"limbsContactSupport\": \"Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported\", \"visibility\": \"visible\"}, {\"name\": \"PomPom\", \"positionXYZ\": [-1.1, 0, 0.7], \"bodyFacingTarget\": \"table\", \"headFacingTarget\": \"satchel\", \"eyeTarget\": \"satchel\", \"pose\": \"Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.\", \"limbsContactSupport\": \"Mama lap/forearm\", \"visibility\": \"visible\"}, {\"name\": \"Scooby\", \"positionXYZ\": [-4, 5, 0], \"bodyFacingTarget\": \"garden\", \"headFacingTarget\": \"garden\", \"eyeTarget\": \"garden\", \"pose\": \"rests outside house\", \"limbsContactSupport\": \"Four legs on ground\", \"visibility\": \"offscreen outside\"}], \"staticLandmarks\": {\"table\": [0, 0, 0.85], \"greenDoor\": [0, 3, 0], \"leftCounter\": [-3, 1, 0], \"stove\": [3, 1, 0], \"playRug\": [-2, -1, 0], \"satchel\": [0, 0, 0.85], \"bread\": [-0.4, 0, 0.85], \"family group\": [0, -1, 0]}, \"objectStates\": {\"before\": \"Kitchen same geometry; meal clearing and baby transfers shown in prior beats; newpacking uses ochre satchel only.\", \"after\": \"Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.\"}, \"transition\": {\"previousAction\": \"“Today?” asked PinPin. “Today,” said Papa. “We’ll take our lunch.” He fetched the picnic bag.\", \"nextAction\": \"Mama added a little bottle of water. “For the walk.” PinPin checked the lid with Papa.\", \"reasonForShotChange\": \"Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.\"}}.\nNo extra limbs, paws must visiblyattach. Infant neverfloats. Morning warmdaylight withsoftfill, no darkmask, no captions.\nPRIORITY: Reference3 is preceding packing scene. Advance action: HIGH OBLIQUE view over table, see all four faces at upper edges. PinPin folds plain cream linen around THREE small rolls with2hands. Papa uses2hands to guide bread bundle into small OPEN ochre satchel; TWO apples already inside visible. Mama watches fromleft cradling baby with2arms. No breakfast dishes, no teapot, no dog, no duplicates. One coherent image.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "Sole rendering authority; never import Elder, glasses or location",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "Exact four hedgehog identities/relative scale; no dog inside",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/bag-ready-v3.png",
+      "role": "Exact preceding kitchen, four cast, smaller satchel, creamcloth and3rolls2apples. Advance action with new top-oblique camera.",
+      "sha256": "df8b15414aa32b97afece5e29f1387c53f59c55750e7dd56d07e860258800b13"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "Accepted ochre linen satchel geometry and ridercontact; no extra dogs insidehouse",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:15:15.009200Z",
+  "output": "images/chapter-02-expanded/revision-06/family/wrap-bread-v2.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.",
+    "frameId": "K",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        2.7,
+        -4,
+        1.6
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        0.9
+      ],
+      "height": 1.6,
+      "framing": "Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Kitchen negativeY master half-space"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.",
+        "limbsContactSupport": "Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          -1.2,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.",
+        "limbsContactSupport": "Two arms only; one forearm continuously beneath infant torso/bottom; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0.9,
+          -0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.",
+        "limbsContactSupport": "Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          -1.1,
+          0,
+          0.7
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present.",
+        "limbsContactSupport": "Mama lap/forearm",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -4,
+          5,
+          0
+        ],
+        "bodyFacingTarget": "garden",
+        "headFacingTarget": "garden",
+        "eyeTarget": "garden",
+        "pose": "rests outside house",
+        "limbsContactSupport": "Four legs on ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCounter": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "playRug": [
+        -2,
+        -1,
+        0
+      ],
+      "satchel": [
+        0,
+        0,
+        0.85
+      ],
+      "bread": [
+        -0.4,
+        0,
+        0.85
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "Kitchen same geometry; meal clearing and baby transfers shown in prior beats; newpacking uses ochre satchel only.",
+      "after": "Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present."
+    },
+    "transition": {
+      "previousAction": "“Today?” asked PinPin. “Today,” said Papa. “We’ll take our lunch.” He fetched the picnic bag.",
+      "nextAction": "Mama added a little bottle of water. “For the walk.” PinPin checked the lid with Papa.",
+      "reasonForShotChange": "Topoblique tabletop action Papa andPinPin paws foldingcreamlinen aroundbread into open ochre cloth satchel creamliner2apples, Mamaandbaby faces upperleft present."
+    }
+  },
+  "status": "planned",
+  "requestPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/wrap-bread-v2.request.json",
+  "provenanceNote": "Generated during resumption; renumbered to preserve older attempt discovered after stale results manifest."
+}

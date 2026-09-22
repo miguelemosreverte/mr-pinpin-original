@@ -1,0 +1,152 @@
+{
+  "id": "elder-r6-mentor-099-v1",
+  "tool": "built-in image_gen",
+  "status": "planned",
+  "plannedAt": "2026-09-22T04:43:58.747Z",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Same contact axis widened for doorway depth",
+    "frameId": "H",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -2.7,
+        -5.5,
+        1.1
+      ],
+      "targetXYZ": [
+        -1,
+        -1,
+        1
+      ],
+      "height": 1.1,
+      "framing": "Same contact axis widened for doorway depth",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "lying still limbs grounded tucked",
+        "limbsContactSupport": "lying still limbs grounded tucked",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2.5,
+          -2.3,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "two feet ground two paws childs lower trunk",
+        "limbsContactSupport": "two feet ground two paws childs lower trunk",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1.8,
+          -2,
+          0.8
+        ],
+        "bodyFacingTarget": "stone",
+        "headFacingTarget": "stone",
+        "eyeTarget": "stone",
+        "pose": "near foot stone far foot back two forepaws fur",
+        "limbsContactSupport": "near foot stone far foot back two forepaws fur",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          0,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "grounded threshold both arms support baby",
+        "limbsContactSupport": "grounded threshold both arms support baby",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          0,
+          -0.1,
+          0.8
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "infant fully cradled in Mama arms",
+        "limbsContactSupport": "infant fully cradled in Mama arms",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "chimney": "facade left",
+      "lantern": "facade right",
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "Satchel worn left shoulder/right hip",
+      "after": "Same bag position; visible strap/contact only, no restaging"
+    },
+    "transition": {
+      "previousAction": "canonical scene100",
+      "nextAction": "canonical scene102",
+      "reasonForShotChange": "Same contact axis widened for doorway depth"
+    },
+    "editMode": "Preserve counterpart pixels/camera/contact; add satchel only"
+  },
+  "prompt": "Use case: precise-object-edit. ONE landscape1536x1024. Image1 EDIT TARGET: preserve exact camera, all character faces/style/poses/gaze/feet/paw contacts, clothing-free animals, environmental geometry, lighting. Image2 is satchel PROP ONLY, do not copy its white background or change cast. Add ONE small muted ochre linen crossbody satchel worn ONLY by adult Papa hedgehog. Broad soft strap from Papa ANATOMICAL LEFT SHOULDER diagonally to ANATOMICAL RIGHT HIP; compact closed rounded flap bag rests at right hip, just behind hip during riding, away from child/supporting arm. Bagwidth about0.6Papa torso/height0.55. No duplicate straps or bag on dog/child; far side may naturally occlude. Strap follows body not quill spikes, does not replace or hide supporting paws. This is continuity of already packed picnicbag, no new action/props. Do not change feet positions or eye style. Keep soft animated Papa creamface and dog expressiveness. No text, no panels, no borders.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-101-v2.png",
+      "role": "edit target preserve all except worn satchel",
+      "sha256": "d6d074c3fbd6970367ea96ae76ec04a2bc92841f44ab51a65ce170391aa77118"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "satchel routing shape only",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    }
+  ]
+}

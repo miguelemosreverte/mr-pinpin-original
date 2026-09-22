@@ -1,0 +1,130 @@
+{
+  "id": "elder-r6-mentor-006-v1",
+  "tool": "built-in image_gen",
+  "status": "planned",
+  "plannedAt": "2026-09-22T04:22:05.450Z",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "frameId": "Elder-exterior-E",
+    "units": "PinPin height approximate, not calibrated",
+    "purpose": "Explicit satchel set-down before siesta",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -4,
+        1
+      ],
+      "targetXYZ": [
+        4,
+        -1,
+        0.6
+      ],
+      "height": 1,
+      "framing": "Low medium exterior Papa lowers satchel to ground beside far-right moss rock; child watches, dog lies nearby",
+      "fieldOfViewDegrees": 45,
+      "axisSide": "exterior negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          4,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "satchel",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "crouches lowering bag",
+        "limbsContactSupport": "two feet ground two forepaws strap/bag",
+        "visibility": "full"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          3,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "standing watches",
+        "limbsContactSupport": "feet ground paws sides",
+        "visibility": "full"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          5,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "waiting crouched",
+        "limbsContactSupport": "grounded legs",
+        "visibility": "full"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "watching",
+        "limbsContactSupport": "grounded feet paws belly",
+        "visibility": "background"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staff": [
+        -1,
+        0,
+        0
+      ],
+      "fern": [
+        1,
+        0,
+        0
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "satchel worn",
+      "after": "satchel on ground beside moss rock; strap rests with bag"
+    },
+    "transition": {
+      "previousAction": "prior story-plan scene",
+      "nextAction": "next story-plan scene",
+      "reasonForShotChange": "Show satchel leaving Papa body and touching ground before rest."
+    }
+  },
+  "prompt": "Use case: illustration-story. Create ONE landscape1536x1024 scene in same polished soft animated children's storybook style as references. Image1 environment, cast layout and bag location authority; image2 Papa/child identity and proportion/contact authority. A MOMENT BEFORE image1: move camera closer to sunny moss boulder rest patch at RIGHT of Elder tree doorway, low medium three-quarter. Papa adult cream-faced brown hedgehog has TWO feet on ground and bends forward, TWO forepaws holding loose strap and top of small ochre linen satchel as he LOWERS it until its bottom just touches grass immediately screen-left of his body against moss rock. Strap completely off shoulder, dangling loose with bag. No other bag. Child PinPin stands screen-left watching father's paw and bag, TWO forepaws near belly, two feet on path. Scooby lies screen-right of Papa attentive face toward bag, near forepaws grounded, folded ears and curled tail. In left background, silver-quilled Elder with round spectacles waits in same tree-root doorway; staff against rock left of doorway, fern right. Keep Papa1.6child scale, dog much larger than both, bag about0.45Papa torsoheight. Papa looks at bag, child looks at Papa hands, dog looks at Papa. No clothing, no feather, no text, no extra animals. Real action of setting down the same picnic carrier; no sitting yet.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-007-v1.png",
+      "role": "rest patch environment and bag continuity",
+      "sha256": "ea9afb864499532f9899e6b953b358e0d135f0ba537b5df8b8534821ca730a6f"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-003-v1.png",
+      "role": "Papa PinPin identity and proportions",
+      "sha256": "eca20ea6ae148b324aee20eaabadb8b91bc3f80f00dd2d126ec9570c72a9b413"
+    }
+  ]
+}

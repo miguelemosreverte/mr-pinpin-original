@@ -11,3 +11,6 @@
 @media print{.workshop-header,.workshop-intro,.workshop-controls,.load-status,.scene-navigation,footer{display:none!important}main{padding:0}.reading-scene{break-inside:avoid}.picture-frame{margin:0!important}.narration{font-size:15pt}.reading-sequence{break-before:page}}
 
 .camera-transform{margin:1rem 0;padding:1rem;border:1px solid var(--line,#d8dbce);border-radius:8px}.camera-transform summary{cursor:pointer}.camera-transform pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:.8rem;max-height:34rem;overflow:auto}
+
+#part-control[hidden]{display:none}.part-title-page{margin:5rem auto 3rem;max-width:48rem;text-align:center}.part-title-page .picture-frame{max-width:26rem;margin:2rem auto}.part-title-page h2{font-size:clamp(2rem,5vw,3.5rem)}
+.part-index{display:flex;flex-wrap:wrap;justify-content:center;gap:22px;margin:1rem 0 3rem}.part-card{width:160px;max-width:42%;display:flex;flex-direction:column;gap:10px;text-align:center;font-size:14px;line-height:1.4;text-decoration:none}.part-card img{display:block;width:100%;height:auto;border-radius:8px}.chapter-heading.part-heading{display:flex;flex-direction:column;text-align:center}.part-heading .picture-frame{width:min(100%,26rem);margin:auto}.part-heading>div{max-width:48rem}@media print{.part-index{display:none}}

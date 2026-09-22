@@ -1,0 +1,135 @@
+{
+  "id": "elder-r6-mentor-005-v1",
+  "prompt": "Use case: precise-object-edit. ONE landscape1536x1024. Image1 EDIT TARGET: preserve exact camera, all character faces/style/poses/gaze/feet/paw contacts, clothing-free animals, environmental geometry, lighting. Image2 is satchel PROP ONLY, do not copy its white background or change cast. Add ONE small muted ochre linen crossbody satchel worn ONLY by adult Papa hedgehog. Broad soft strap from Papa ANATOMICAL LEFT SHOULDER diagonally to ANATOMICAL RIGHT HIP; compact closed rounded flap bag rests at right hip, just behind hip during riding, away from child/supporting arm. Bagwidth about0.6Papa torso/height0.55. No duplicate straps or bag on dog/child; far side may naturally occlude. Strap follows body not quill spikes, does not replace or hide supporting paws. This is continuity of already packed picnicbag, no new action/props. Do not change feet positions or eye style. Keep soft animated Papa creamface and dog expressiveness. No text, no panels, no borders.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:14:58.944Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-022-v1.png",
+      "role": "edit target preserve all except satchel",
+      "sha256": "0bc549bcf634f26c84dc665d5dd2e12b174673d7b15c1747a864f762922d5396"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "satchel shape/routing only",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    }
+  ],
+  "status": "withdrawn-unnecessary",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Elder turns from Papa to meet child personally",
+    "frameId": "E",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -2,
+        -2.6,
+        0.8
+      ],
+      "targetXYZ": [
+        -0.1,
+        -0.8,
+        0.8
+      ],
+      "height": 0.8,
+      "framing": "close two-shot at child eye level, faces dominate",
+      "fieldOfViewDegrees": 40,
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -0.5,
+          -1.3,
+          0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "standing curious",
+        "limbsContactSupport": "feet ground two forepaws near belly",
+        "visibility": "visible"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0.3,
+          -0.3,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "bends head toward child",
+        "limbsContactSupport": "two feet ground palms gentle open",
+        "visibility": "visible"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -1.4,
+          -1.3,
+          0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "standing nearby",
+        "limbsContactSupport": "feet ground",
+        "visibility": "offscreen left"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -3,
+          0
+        ],
+        "bodyFacingTarget": "threshold",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "lying",
+        "limbsContactSupport": "body ground",
+        "visibility": "offscreen"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "objectStates": {
+      "before": "Satchel worn left shoulder/right hip",
+      "after": "Same bag position; visible strap/contact only, no restaging"
+    },
+    "transition": {
+      "description": "adult familiarity to intimate invitation, no duplicate triangular wide"
+    },
+    "editMode": "Preserve counterpart pixels/camera/contact; add satchel only"
+  },
+  "note": "Actual target shows Papa fully offscreen; unchanged reuse is correct. No generation called."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "elder-r6-papa-home/title-ru-v1",
+  "output": "images/covers/elder-r6-papa-home/title/title-ru-v1.png",
+  "title": "Папа возвращается",
+  "language": "ru",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/elder-r6-papa-home/title/title-en-v1.png",
+      "role": "Edit target: accepted English cover, replace lettering only.",
+      "sha256": "75c2d2188c395ca9aade8c9cf9b81a3780c18cb75ff81f8594320d79367ba51e"
+    }
+  ],
+  "prompt": "Use case: text-localization. Edit this portrait chapter cover, changing ONLY the two cream serif titles. Upper brand exact Russian text \"Мистер Пин-Пин\". Below exact chapter title \"Папа возвращается\". Balanced readable cream storybook lettering in the same upper area, wrap chapter title if needed. Preserve ALL illustration details: four hedgehogs, faces and iris colors, hands and feet, infant support, reunion gaze and embrace, green door hardware, cottage, lighting and framing. No other writing, no new characters. Portrait 1024x1536.",
+  "startedAt": "2026-09-22T02:21:04.624145+00:00",
+  "tool": "built-in imagegen",
+  "status": "proposed",
+  "review": "Full image inspected. Exact Russian lettering Мистер Пин-Пин / Папа возвращается correct and readable. Four identities, infant support, embrace, mutual gaze, green doorway hardware and lighting visually preserved from English master. Hidden far attachments remain unverified; no obvious illustration drift. Proposed.",
+  "finishedAt": "2026-09-22T02:22:33.161460+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-0d6d9cff-4f7f-42d3-8d6e-ab8e3d7e4df8.png",
+  "sha256": "070fdae895e44e24b5d3fe350e3446c551f46d999ec88bc9e2965cc9a689d983",
+  "width": 1024,
+  "height": 1536,
+  "reviewedAt": "2026-09-22T02:22:33.166660+00:00"
+}

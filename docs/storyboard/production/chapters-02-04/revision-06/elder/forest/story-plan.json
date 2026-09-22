@@ -1,0 +1,3248 @@
+{
+  "schemaVersion": 1,
+  "status": "planned awaiting storage/prop approval",
+  "part": {
+    "id": "forest-path",
+    "title": {
+      "en": "Through the Forest",
+      "ru": "Через лес",
+      "es": "Por el bosque"
+    },
+    "summary": {
+      "en": "Papa, PinPin and Scooby walk, discover little wonders and share lunch before reaching the Elder’s tree.",
+      "ru": "Папа, Пин-Пин и Скуби идут через лес, замечают маленькие чудеса и обедают на полянке по дороге к Старейшине.",
+      "es": "Papá, PinPin y Scooby caminan, descubren pequeñas maravillas y almuerzan juntos antes de llegar al árbol del anciano."
+    }
+  },
+  "scenes": [
+    {
+      "id": "elder-r6-forest-001",
+      "sequence": "forest-path",
+      "label": "A child’s view",
+      "text": {
+        "en": [
+          "They travelled between the tall trees. Scooby’s ears bobbed gently ahead."
+        ],
+        "ru": [
+          "Они ехали между высокими деревьями. Впереди тихонько покачивались уши Скуби."
+        ],
+        "es": [
+          "Avanzaban entre los árboles altos. Delante, las orejas de Scooby se balanceaban suavemente."
+        ]
+      },
+      "previousID": "elder-r5-016",
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "mounted",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "A child’s view: They travelled between the tall trees. Scooby’s ears bobbed gently ahead.",
+        "frameId": "T",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            0.3,
+            -0.9,
+            3.6
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 3.6,
+          "framing": "child over-shoulder",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0,
+              -0.4,
+              2.7
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "path",
+            "eyeTarget": "path",
+            "pose": "seated behind child",
+            "limbsContactSupport": "One forearm supports child lower torso, other paw braces dog back",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              0,
+              0.4,
+              2.7
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "path",
+            "eyeTarget": "path",
+            "pose": "seated astride behind withers",
+            "limbsContactSupport": "thighs straddle; two forepaws on dog shoulder",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              0,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "path",
+            "eyeTarget": "path",
+            "pose": "gentle walking",
+            "limbsContactSupport": "four anatomical limbs; no saddle/reins; visible paws contact ground, hidden limbs not certified",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+          "after": "satchel on Papa, child seated in front"
+        },
+        "transition": {
+          "previous": "supported departure from family home",
+          "next": "A place to walk",
+          "reason": "A child’s view"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-002",
+      "sequence": "forest-path",
+      "label": "A place to walk",
+      "text": {
+        "en": [
+          "“Can we walk here?” asked PinPin. Papa found a broad stone, and Scooby crouched beside it."
+        ],
+        "ru": [
+          "— А здесь можно пешком? — спросил Пин-Пин. Папа нашёл широкий камень, и Скуби пригнулся рядом."
+        ],
+        "es": [
+          "—¿Podemos caminar aquí? —preguntó PinPin. Papá encontró una piedra ancha y Scooby se agachó a su lado."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "stop",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "A place to walk: “Can we walk here?” asked PinPin. Papa found a broad stone, and Scooby crouched beside it.",
+        "frameId": "S",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -5,
+            -5,
+            1.1
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 1.1,
+          "framing": "wide low side",
+          "fieldOfViewDegrees": 65,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0,
+              -0.4,
+              1.3
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "seated behind child",
+            "limbsContactSupport": "One forearm supports child lower torso, other paw braces dog back",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              0,
+              0.4,
+              1.3
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "seated astride behind withers",
+            "limbsContactSupport": "thighs straddle; two forepaws on dog shoulder",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              0,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "path",
+            "eyeTarget": "path",
+            "pose": "resting/crouched",
+            "limbsContactSupport": "four anatomical limbs; no saddle/reins; visible paws contact ground, hidden limbs not certified",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+          "after": "satchel on Papa, child seated in front"
+        },
+        "transition": {
+          "previous": "A child’s view",
+          "next": "Papa makes room",
+          "reason": "A place to walk"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-003",
+      "sequence": "forest-path",
+      "label": "Papa makes room",
+      "text": {
+        "en": [
+          "Papa stepped onto the stone. “I’ve got you.”"
+        ],
+        "ru": [
+          "Папа встал на камень. — Я тебя держу."
+        ],
+        "es": [
+          "Papá se puso de pie sobre la piedra. —Te tengo."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "papa-down",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Papa makes room: Papa stepped onto the stone. “I’ve got you.”",
+        "frameId": "S",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -4,
+            -3,
+            1.4
+          ],
+          "targetXYZ": [
+            -0.4,
+            0.2,
+            0.8
+          ],
+          "height": 1.4,
+          "framing": "medium side contact",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              -1,
+              0,
+              0.35
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "standing on stone, one paw on child and other braced on dog",
+            "limbsContactSupport": "standing on stone, one paw on child and other braced on dog",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              0,
+              0.4,
+              1.3
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "still straddling shoulder",
+            "limbsContactSupport": "still straddling shoulder",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              0,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "crouched belly low",
+            "limbsContactSupport": "crouched belly low",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+          "after": "Papa satchel right hip, walking or supported transfer"
+        },
+        "transition": {
+          "previous": "A place to walk",
+          "next": "Feet on the stone",
+          "reason": "Papa makes room"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-004",
+      "sequence": "forest-path",
+      "label": "Feet on the stone",
+      "text": {
+        "en": [
+          "PinPin slid into Papa’s arms. Soon his feet were on the stone too."
+        ],
+        "ru": [
+          "Пин-Пин скользнул в Папины лапы. Скоро и его ножки стояли на камне."
+        ],
+        "es": [
+          "PinPin se deslizó entre los brazos de Papá. Pronto sus pies también estaban sobre la piedra."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "child-down",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Feet on the stone: PinPin slid into Papa’s arms. Soon his feet were on the stone too.",
+        "frameId": "S",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -3,
+            -3,
+            0.8
+          ],
+          "targetXYZ": [
+            -0.4,
+            0.2,
+            0.8
+          ],
+          "height": 0.8,
+          "framing": "close low landing",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              -1,
+              0,
+              0.35
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "standing stone both arms around child lower torso",
+            "limbsContactSupport": "standing stone both arms around child lower torso",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -1.1,
+              0.2,
+              0.35
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "hindfeet land on stone with Papa support",
+            "limbsContactSupport": "hindfeet land on stone with Papa support",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              0,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "crouched still",
+            "limbsContactSupport": "crouched still",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+          "after": "Papa satchel right hip, walking or supported transfer"
+        },
+        "transition": {
+          "previous": "Papa makes room",
+          "next": "Three walkers",
+          "reason": "Feet on the stone"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-005",
+      "sequence": "forest-path",
+      "label": "Three walkers",
+      "text": {
+        "en": [
+          "Papa took PinPin’s paw. Scooby padded alongside them."
+        ],
+        "ru": [
+          "Папа взял Пин-Пина за лапку. Скуби мягко шагал рядом."
+        ],
+        "es": [
+          "Papá tomó la patita de PinPin. Scooby caminaba a su lado."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "walk",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Three walkers: Papa took PinPin’s paw. Scooby padded alongside them.",
+        "frameId": "W",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -5,
+            -4,
+            1
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 1,
+          "framing": "wide lateral movement",
+          "fieldOfViewDegrees": 65,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "path",
+            "eyeTarget": "path",
+            "pose": "walk",
+            "limbsContactSupport": "two hindfeet or seated hips on firm ground; exact paw action follows shot action",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.6,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "path",
+            "eyeTarget": "path",
+            "pose": "walk",
+            "limbsContactSupport": "grounded child; exact paw action follows shot action",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2,
+              1,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "grounded attentive companion",
+            "limbsContactSupport": "four anatomical limbs; no saddle/reins; visible paws contact ground, hidden limbs not certified",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+          "after": "Papa satchel right hip, walking or supported transfer"
+        },
+        "transition": {
+          "previous": "Feet on the stone",
+          "next": "A tiny shining world",
+          "reason": "Three walkers"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-006",
+      "sequence": "forest-path",
+      "label": "A tiny shining world",
+      "text": {
+        "en": [
+          "“Look, Papa!” A drop of water trembled at the tip of a fern."
+        ],
+        "ru": [
+          "— Папа, смотри! На кончике папоротника дрожала капля воды."
+        ],
+        "es": [
+          "—¡Mira, Papá! Una gota de agua temblaba en la punta de un helecho."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "droplet",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "A tiny shining world: “Look, Papa!” A drop of water trembled at the tip of a fern.",
+        "frameId": "W",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -2,
+            -2,
+            0.6
+          ],
+          "targetXYZ": [
+            -1,
+            1,
+            0.65
+          ],
+          "height": 0.6,
+          "framing": "child-eye close shared detail",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "fernDrop",
+            "headFacingTarget": "fernDrop",
+            "eyeTarget": "fernDrop",
+            "pose": "kneeling toward droplet",
+            "limbsContactSupport": "kneeling toward droplet",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.6,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "fernDrop",
+            "headFacingTarget": "fernDrop",
+            "eyeTarget": "fernDrop",
+            "pose": "pointing with one paw other relaxed",
+            "limbsContactSupport": "pointing with one paw other relaxed",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2,
+              1,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "standing behind, offscreen beyond close crop",
+            "limbsContactSupport": "standing behind, offscreen beyond close crop",
+            "visibility": "offscreen right beyond close crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+          "after": "Papa satchel right hip, walking or supported transfer"
+        },
+        "transition": {
+          "previous": "Three walkers",
+          "next": "A rainbow in a drop",
+          "reason": "A tiny shining world"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-007",
+      "sequence": "forest-path",
+      "label": "A rainbow in a drop",
+      "text": {
+        "en": [
+          "Papa crouched beside him. They moved their heads, and the little drop flashed with colour."
+        ],
+        "ru": [
+          "Папа присел рядом. Они чуть повернули головы, и маленькая капля заиграла красками."
+        ],
+        "es": [
+          "Papá se agachó a su lado. Movieron un poquito la cabeza y la gota brilló con colores."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "droplet",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "A rainbow in a drop: Papa crouched beside him. They moved their heads, and the little drop flashed with colour.",
+        "frameId": "W",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -2,
+            1,
+            0.65
+          ],
+          "targetXYZ": [
+            -1,
+            1,
+            0.65
+          ],
+          "height": 0.65,
+          "framing": "reverse three-quarter close faces and fern",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "fernDrop",
+            "headFacingTarget": "fernDrop",
+            "eyeTarget": "fernDrop",
+            "pose": "kneeling leaning head slightly left",
+            "limbsContactSupport": "kneeling leaning head slightly left",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.6,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "fernDrop",
+            "headFacingTarget": "fernDrop",
+            "eyeTarget": "fernDrop",
+            "pose": "leans head slightly left, paws relaxed",
+            "limbsContactSupport": "leans head slightly left, paws relaxed",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2,
+              1,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "standing behind, offscreen beyond close crop",
+            "limbsContactSupport": "standing behind, offscreen beyond close crop",
+            "visibility": "offscreen right beyond close crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+          "after": "Papa satchel right hip, walking or supported transfer"
+        },
+        "transition": {
+          "previous": "A tiny shining world",
+          "next": "Over the root",
+          "reason": "A rainbow in a drop"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-008",
+      "sequence": "forest-path",
+      "label": "Over the root",
+      "text": {
+        "en": [
+          "A root crossed the path. Papa offered his paw, and PinPin stepped over."
+        ],
+        "ru": [
+          "Поперёк тропинки лежал корень. Папа подал лапу, и Пин-Пин перешагнул через него."
+        ],
+        "es": [
+          "Una raíz cruzaba el sendero. Papá le ofreció la pata y PinPin pasó por encima."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "root-step",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Over the root: A root crossed the path. Papa offered his paw, and PinPin stepped over.",
+        "frameId": "W",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -3,
+            -2,
+            0.6
+          ],
+          "targetXYZ": [
+            0,
+            2,
+            0.45
+          ],
+          "height": 0.6,
+          "framing": "low hands feet root",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.3,
+              2.5,
+              0
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "one paw holds child paw, feet past root",
+            "limbsContactSupport": "one paw holds child paw, feet past root",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.3,
+              2,
+              0
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "root",
+            "eyeTarget": "root",
+            "pose": "one hindfoot grounded, other steps over root .15high",
+            "limbsContactSupport": "one hindfoot grounded, other steps over root .15high",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2,
+              3,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "stands past root waiting",
+            "limbsContactSupport": "stands past root waiting",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ],
+          "root": [
+            0,
+            2,
+            0.15
+          ]
+        },
+        "objectStates": {
+          "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+          "after": "Papa satchel right hip, walking or supported transfer"
+        },
+        "transition": {
+          "previous": "A rainbow in a drop",
+          "next": "PinPin helps too",
+          "reason": "Over the root"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-009",
+      "sequence": "forest-path",
+      "label": "PinPin helps too",
+      "text": {
+        "en": [
+          "“Now you, Papa!” PinPin held a low leafy twig aside while Papa ducked under it."
+        ],
+        "ru": [
+          "— Теперь ты, Папа! Пин-Пин отвёл в сторону тонкую веточку, а Папа пригнулся под ней."
+        ],
+        "es": [
+          "—¡Ahora tú, Papá! PinPin apartó una ramita con hojas mientras Papá se agachaba para pasar."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "twig-help",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "PinPin helps too: “Now you, Papa!” PinPin held a low leafy twig aside while Papa ducked under it.",
+        "frameId": "W",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -3,
+            -3,
+            1
+          ],
+          "targetXYZ": [
+            0,
+            4,
+            0.9
+          ],
+          "height": 1,
+          "framing": "medium child foreground father action",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0,
+              4,
+              0
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "stooping head beneath thin leafy twig",
+            "limbsContactSupport": "stooping head beneath thin leafy twig",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.7,
+              3.6,
+              0
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "feetground, onepawholdstwigaside",
+            "limbsContactSupport": "feetground, onepawholdstwigaside",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2,
+              4.5,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "stands beyond, gazes toward Papa",
+            "limbsContactSupport": "stands beyond, gazes toward Papa",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ],
+          "twig": [
+            -0.5,
+            4,
+            1.3
+          ]
+        },
+        "objectStates": {
+          "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+          "after": "Papa satchel right hip, walking or supported transfer"
+        },
+        "transition": {
+          "previous": "Over the root",
+          "next": "Their lunch place",
+          "reason": "PinPin helps too"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-010",
+      "sequence": "forest-path",
+      "label": "Their lunch place",
+      "text": {
+        "en": [
+          "Beyond the ferns was a sunny patch of grass. “Shall we have our lunch here?”"
+        ],
+        "ru": [
+          "За папоротниками открылась солнечная полянка. — Пообедаем здесь?"
+        ],
+        "es": [
+          "Detrás de los helechos había un claro soleado. —¿Almorzamos aquí?"
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "clearing",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Their lunch place: Beyond the ferns was a sunny patch of grass. “Shall we have our lunch here?”",
+        "frameId": "P",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -5,
+            -7,
+            2
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 2,
+          "framing": "wide clearing reveal",
+          "fieldOfViewDegrees": 65,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0.4,
+              0
+            ],
+            "bodyFacingTarget": "picnicLog",
+            "headFacingTarget": "picnicLog",
+            "eyeTarget": "picnicLog",
+            "pose": "clearing",
+            "limbsContactSupport": "two hindfeet or seated hips on firm ground; exact paw action follows shot action",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.7,
+              -0.7,
+              0
+            ],
+            "bodyFacingTarget": "picnicLog",
+            "headFacingTarget": "picnicLog",
+            "eyeTarget": "picnicLog",
+            "pose": "clearing",
+            "limbsContactSupport": "grounded child; exact paw action follows shot action",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2.5,
+              0.5,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "resting/crouched",
+            "limbsContactSupport": "four anatomical limbs; no saddle/reins; visible paws contact ground, hidden limbs not certified",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+          "after": "picnic state: clearing"
+        },
+        "transition": {
+          "previous": "PinPin helps too",
+          "next": "Together they spread the cloth",
+          "reason": "Their lunch place"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-011",
+      "sequence": "forest-path",
+      "label": "Together they spread the cloth",
+      "text": {
+        "en": [
+          "Papa opened the bag. PinPin caught the other corner of Mama’s cloth, and together they spread it on the grass."
+        ],
+        "ru": [
+          "Папа открыл сумку. Пин-Пин взял другой уголок Маминой салфетки, и они вместе расстелили её на траве."
+        ],
+        "es": [
+          "Papá abrió la bolsa. PinPin tomó la otra punta del paño de Mamá y juntos lo extendieron sobre la hierba."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "cloth",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Together they spread the cloth: Papa opened the bag. PinPin caught the other corner of Mama’s cloth, and together they spread it on the grass.",
+        "frameId": "P",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -3,
+            -3,
+            2.8
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 2.8,
+          "framing": "slightly high hands and cloth",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0.4,
+              0
+            ],
+            "bodyFacingTarget": "picnicCloth",
+            "headFacingTarget": "picnicCloth",
+            "eyeTarget": "picnicCloth",
+            "pose": "kneels two paws hold adjacent cloth corners",
+            "limbsContactSupport": "kneels two paws hold adjacent cloth corners",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.7,
+              -0.7,
+              0
+            ],
+            "bodyFacingTarget": "picnicCloth",
+            "headFacingTarget": "picnicCloth",
+            "eyeTarget": "picnicCloth",
+            "pose": "two paws hold opposite cloth corners",
+            "limbsContactSupport": "two paws hold opposite cloth corners",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2.5,
+              0.5,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "lies apart from spread cloth",
+            "limbsContactSupport": "lies apart from spread cloth",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+          "after": "picnic state: cloth"
+        },
+        "transition": {
+          "previous": "Their lunch place",
+          "next": "Bread to share",
+          "reason": "Together they spread the cloth"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-012",
+      "sequence": "forest-path",
+      "label": "Bread to share",
+      "text": {
+        "en": [
+          "Papa broke the bread in two. The soft middle was still lovely to smell."
+        ],
+        "ru": [
+          "Папа разломил хлеб надвое. Мягкая серединка так вкусно пахла!"
+        ],
+        "es": [
+          "Papá partió el pan en dos. ¡Qué bien olía la miga!"
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "bread",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Bread to share: Papa broke the bread in two. The soft middle was still lovely to smell.",
+        "frameId": "P",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -2,
+            -3,
+            1.15
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 1.15,
+          "framing": "intimate bread action",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0.4,
+              0
+            ],
+            "bodyFacingTarget": "bread",
+            "headFacingTarget": "bread",
+            "eyeTarget": "bread",
+            "pose": "sits, two paws break small bread roll",
+            "limbsContactSupport": "sits, two paws break small bread roll",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.7,
+              -0.7,
+              0
+            ],
+            "bodyFacingTarget": "bread",
+            "headFacingTarget": "bread",
+            "eyeTarget": "bread",
+            "pose": "sits with two paws ready to receive",
+            "limbsContactSupport": "sits with two paws ready to receive",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2.5,
+              0.5,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "lies, visible in background or cropped right",
+            "limbsContactSupport": "lies, visible in background or cropped right",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+          "after": "picnic state: bread"
+        },
+        "transition": {
+          "previous": "Together they spread the cloth",
+          "next": "A piece for Papa",
+          "reason": "Bread to share"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-013",
+      "sequence": "forest-path",
+      "label": "A piece for Papa",
+      "text": {
+        "en": [
+          "PinPin put a little apple into Papa’s paw. “This one is for you.”"
+        ],
+        "ru": [
+          "Пин-Пин положил маленькое яблоко в Папину лапу. — Это тебе."
+        ],
+        "es": [
+          "PinPin puso una manzanita en la pata de Papá. —Esta es para ti."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "apple",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "A piece for Papa: PinPin put an apple slice into Papa’s paw. “This one is for you.”",
+        "frameId": "P",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -3,
+            -3,
+            1
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 1,
+          "framing": "medium two-shot clear handoff",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0.4,
+              0
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "sits opens one paw toward child whole small apple",
+            "limbsContactSupport": "sits opens one paw toward child apple slice",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.7,
+              -0.7,
+              0
+            ],
+            "bodyFacingTarget": "Papa",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "extends one paw with whole small apple into Papa open paw",
+            "limbsContactSupport": "extends one paw with pre-cut apple slice into Papa open paw",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2.5,
+              0.5,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "rests right",
+            "limbsContactSupport": "rests right",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ],
+          "apple": [
+            0,
+            -0.2,
+            0.5
+          ]
+        },
+        "objectStates": {
+          "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+          "after": "picnic state: apple"
+        },
+        "transition": {
+          "previous": "Bread to share",
+          "next": "A drink after walking",
+          "reason": "A piece for Papa"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-014",
+      "sequence": "forest-path",
+      "label": "A drink after walking",
+      "text": {
+        "en": [
+          "Papa poured some water into their little cup. PinPin held it carefully with both paws."
+        ],
+        "ru": [
+          "Папа налил воды в маленькую чашку. Пин-Пин осторожно держал её двумя лапками."
+        ],
+        "es": [
+          "Papá sirvió agua en la tacita. PinPin la sujetó con cuidado entre las dos patas."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "water",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "A drink after walking: Papa poured some water into their little cup. PinPin held it carefully with both paws.",
+        "frameId": "P",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -2,
+            -2,
+            0.9
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 0.9,
+          "framing": "close pouring clear contacts",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0.4,
+              0
+            ],
+            "bodyFacingTarget": "cup",
+            "headFacingTarget": "cup",
+            "eyeTarget": "cup",
+            "pose": "holds small water flask two paws tilts into cup",
+            "limbsContactSupport": "holds small water flask two paws tilts into cup",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.7,
+              -0.7,
+              0
+            ],
+            "bodyFacingTarget": "cup",
+            "headFacingTarget": "cup",
+            "eyeTarget": "cup",
+            "pose": "holds cup both paws on cloth",
+            "limbsContactSupport": "holds cup both paws on cloth",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2.5,
+              0.5,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "rests right offscreen close crop",
+            "limbsContactSupport": "rests right offscreen close crop",
+            "visibility": "offscreen right beyond close crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+          "after": "picnic state: water"
+        },
+        "transition": {
+          "previous": "A piece for Papa",
+          "next": "Scooby has a drink",
+          "reason": "A drink after walking"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-015",
+      "sequence": "forest-path",
+      "label": "Scooby has a drink",
+      "text": {
+        "en": [
+          "Scooby had his own bowl. PinPin set it on the grass, and Scooby lowered his nose to drink."
+        ],
+        "ru": [
+          "У Скуби была своя миска. Пин-Пин поставил её на траву, и Скуби опустил морду к воде."
+        ],
+        "es": [
+          "Scooby tenía su propio cuenco. PinPin lo dejó sobre la hierba y Scooby bajó el hocico para beber."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "dog-water",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Scooby has a drink: Scooby had his own bowl. PinPin set it on the grass, and Scooby lowered his nose to drink.",
+        "frameId": "P",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            2,
+            -3,
+            0.65
+          ],
+          "targetXYZ": [
+            2,
+            -0.5,
+            0.4
+          ],
+          "height": 0.65,
+          "framing": "low dog child bowl triangle",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0.4,
+              0
+            ],
+            "bodyFacingTarget": "bowl",
+            "headFacingTarget": "bowl",
+            "eyeTarget": "bowl",
+            "pose": "seated behind, flask on cloth",
+            "limbsContactSupport": "seated behind, flask on cloth",
+            "visibility": "visible background context"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              1.5,
+              -0.7,
+              0
+            ],
+            "bodyFacingTarget": "bowl",
+            "headFacingTarget": "bowl",
+            "eyeTarget": "bowl",
+            "pose": "kneels both paws on bowl rim lowering it on ground",
+            "limbsContactSupport": "kneels both paws on bowl rim lowering it on ground",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2.5,
+              0.5,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "bowl",
+            "eyeTarget": "bowl",
+            "pose": "front pawsground headbends to bowl",
+            "limbsContactSupport": "front pawsground headbends to bowl",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+          "after": "picnic state: dog-water"
+        },
+        "transition": {
+          "previous": "A drink after walking",
+          "next": "A little rest together",
+          "reason": "Scooby has a drink"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-016",
+      "sequence": "forest-path",
+      "label": "A little rest together",
+      "text": {
+        "en": [
+          "With lunch finished, PinPin leaned against Papa. Leaves whispered above them."
+        ],
+        "ru": [
+          "После обеда Пин-Пин прислонился к Папе. Над ними шелестели листья."
+        ],
+        "es": [
+          "Después de comer, PinPin se apoyó en Papá. Las hojas susurraban sobre ellos."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "rest",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "A little rest together: With lunch finished, PinPin leaned against Papa. Leaves whispered above them.",
+        "frameId": "P",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -4,
+            -5,
+            1.1
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 1.1,
+          "framing": "wide quiet family cuddle",
+          "fieldOfViewDegrees": 65,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0.4,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "seated against low log one arm rests around child",
+            "limbsContactSupport": "seated against low log one arm rests around child",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              0.1,
+              0.4,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "seated against Papa side, head against chest",
+            "limbsContactSupport": "seated against Papa side, head against chest",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2.5,
+              0.5,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "eyes closed asleep",
+            "eyeTarget": "eyes closed asleep",
+            "pose": "lies asleep to right",
+            "limbsContactSupport": "lies asleep to right",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+          "after": "picnic state: rest"
+        },
+        "transition": {
+          "previous": "Scooby has a drink",
+          "next": "Nothing left behind",
+          "reason": "A little rest together"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-017",
+      "sequence": "forest-path",
+      "label": "Nothing left behind",
+      "text": {
+        "en": [
+          "They folded the cloth together. Papa put the cup and bowl away, and PinPin checked the grass."
+        ],
+        "ru": [
+          "Они вместе сложили салфетку. Папа убрал чашку и миску, а Пин-Пин оглядел траву."
+        ],
+        "es": [
+          "Doblaron el paño juntos. Papá guardó la taza y el cuenco, y PinPin revisó la hierba."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "pack",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Nothing left behind: They folded the cloth together. Papa put the cup and bowl away, and PinPin checked the grass.",
+        "frameId": "P",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -3,
+            -3,
+            2.6
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 2.6,
+          "framing": "top oblique packing",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0.4,
+              0
+            ],
+            "bodyFacingTarget": "picnicCloth",
+            "headFacingTarget": "picnicCloth",
+            "eyeTarget": "picnicCloth",
+            "pose": "kneels folding cloth; bag mouthopen utensils already inside",
+            "limbsContactSupport": "kneels folding cloth; bag mouthopen utensils already inside",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.7,
+              -0.7,
+              0
+            ],
+            "bodyFacingTarget": "picnicCloth",
+            "headFacingTarget": "picnicCloth",
+            "eyeTarget": "picnicCloth",
+            "pose": "kneels holdingclothotheredge thenchecksground",
+            "limbsContactSupport": "kneels holdingclothotheredge thenchecksground",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2.5,
+              0.5,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "sitting right watching",
+            "limbsContactSupport": "sitting right watching",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+          "after": "picnic state: pack"
+        },
+        "transition": {
+          "previous": "A little rest together",
+          "next": "Back along the path",
+          "reason": "Nothing left behind"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-018",
+      "sequence": "forest-path",
+      "label": "Back along the path",
+      "text": {
+        "en": [
+          "They walked on. This time PinPin spotted the roots before Papa did."
+        ],
+        "ru": [
+          "Они пошли дальше. Теперь Пин-Пин замечал корни раньше Папы."
+        ],
+        "es": [
+          "Siguieron caminando. Esta vez PinPin veía las raíces antes que Papá."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "walk-after",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Back along the path: They walked on. This time PinPin spotted the roots before Papa did.",
+        "frameId": "W",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -3,
+            -5,
+            1
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 1,
+          "framing": "rear wide path leads onward",
+          "fieldOfViewDegrees": 65,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0.7,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "path",
+            "eyeTarget": "path",
+            "pose": "walk-after",
+            "limbsContactSupport": "two hindfeet or seated hips on firm ground; exact paw action follows shot action",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -0.6,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "path",
+            "eyeTarget": "path",
+            "pose": "walk-after",
+            "limbsContactSupport": "grounded child; exact paw action follows shot action",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              2,
+              1,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "grounded attentive companion",
+            "limbsContactSupport": "four anatomical limbs; no saddle/reins; visible paws contact ground, hidden limbs not certified",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "All gear repacked; Papa again wears closed bag",
+          "after": "Papa satchel right hip, walking or supported transfer"
+        },
+        "transition": {
+          "previous": "Nothing left behind",
+          "next": "A ride for little feet",
+          "reason": "Back along the path"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-019",
+      "sequence": "forest-path",
+      "label": "A ride for little feet",
+      "text": {
+        "en": [
+          "After a while, PinPin’s steps grew smaller. Papa led Scooby beside another low stone."
+        ],
+        "ru": [
+          "Через некоторое время шажки Пин-Пина стали короче. Папа подвёл Скуби к ещё одному низкому камню."
+        ],
+        "es": [
+          "Al cabo de un rato, los pasos de PinPin se hicieron más cortitos. Papá llevó a Scooby junto a otra piedra baja."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "remount-ready",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "A ride for little feet: After a while, PinPin’s steps grew smaller. Papa led Scooby beside another low stone.",
+        "frameId": "S2",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -4,
+            -4,
+            1
+          ],
+          "targetXYZ": [
+            -0.4,
+            0.2,
+            0.8
+          ],
+          "height": 1,
+          "framing": "side full supports",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              -1,
+              0,
+              0.35
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "standing on broad stone near dog shoulder",
+            "limbsContactSupport": "standing on broad stone near dog shoulder",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              -1,
+              0.4,
+              0.35
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "stands stone with Papa holding one paw",
+            "limbsContactSupport": "stands stone with Papa holding one paw",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              0,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "crouches motionless beside stone",
+            "limbsContactSupport": "crouches motionless beside stone",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "All gear repacked; Papa again wears closed bag",
+          "after": "Papa satchel right hip, walking or supported transfer"
+        },
+        "transition": {
+          "previous": "Back along the path",
+          "next": "Papa helps him up",
+          "reason": "A ride for little feet"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-020",
+      "sequence": "forest-path",
+      "label": "Papa helps him up",
+      "text": {
+        "en": [
+          "Scooby crouched. Papa helped PinPin onto his warm back and kept one paw around him."
+        ],
+        "ru": [
+          "Скуби пригнулся. Папа помог Пин-Пину сесть на тёплую спину и придержал его лапой."
+        ],
+        "es": [
+          "Scooby se agachó. Papá ayudó a PinPin a sentarse sobre su lomo calentito y lo sostuvo con una pata."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "child-up",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Papa helps him up: Scooby crouched. Papa helped PinPin onto his warm back and kept one paw around him.",
+        "frameId": "S2",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -3,
+            -3,
+            1.2
+          ],
+          "targetXYZ": [
+            -0.4,
+            0.2,
+            0.8
+          ],
+          "height": 1.2,
+          "framing": "medium contact from near flank",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              -1,
+              0,
+              0.35
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "feet stone one arm supports child lower torso other braces dog",
+            "limbsContactSupport": "feet stone one arm supports child lower torso other braces dog",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              0,
+              0.4,
+              1.3
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "seated astride shoulder two forepaws back near hindlegdown farlegoccluded",
+            "limbsContactSupport": "seated astride shoulder two forepaws back near hindlegdown farlegoccluded",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              0,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "crouched still",
+            "limbsContactSupport": "crouched still",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "All gear repacked; Papa again wears closed bag",
+          "after": "Papa satchel right hip, walking or supported transfer"
+        },
+        "transition": {
+          "previous": "A ride for little feet",
+          "next": "Together again",
+          "reason": "Papa helps him up"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-021",
+      "sequence": "forest-path",
+      "label": "Together again",
+      "text": {
+        "en": [
+          "Papa settled behind him. “Comfortable?” “Yes!” Scooby stood up slowly."
+        ],
+        "ru": [
+          "Папа устроился сзади. — Удобно? — Да! Скуби медленно поднялся."
+        ],
+        "es": [
+          "Papá se acomodó detrás. —¿Estás cómodo? —¡Sí! Scooby se levantó despacito."
+        ]
+      },
+      "previousID": null,
+      "source": {
+        "kind": "new",
+        "blocks": [],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "mounted",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "Together again: Papa settled behind him. “Comfortable?” “Yes!” Scooby stood up slowly.",
+        "frameId": "S2",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -4,
+            -3,
+            1.2
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            1
+          ],
+          "height": 1.2,
+          "framing": "low three-quarter settled tandem",
+          "fieldOfViewDegrees": 48,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0,
+              -0.4,
+              2.7
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "seated behind child",
+            "limbsContactSupport": "One forearm supports child lower torso, other paw braces dog back",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              0,
+              0.4,
+              2.7
+            ],
+            "bodyFacingTarget": "PinPin",
+            "headFacingTarget": "Papa",
+            "eyeTarget": "Papa",
+            "pose": "seated astride behind withers",
+            "limbsContactSupport": "thighs straddle; two forepaws on dog shoulder",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              0,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "PinPin",
+            "eyeTarget": "PinPin",
+            "pose": "gentle walking",
+            "limbsContactSupport": "four anatomical limbs; no saddle/reins; visible paws contact ground, hidden limbs not certified",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "All gear repacked; Papa again wears closed bag",
+          "after": "satchel on Papa, child seated in front"
+        },
+        "transition": {
+          "previous": "Papa helps him up",
+          "next": "The great tree",
+          "reason": "Together again"
+        }
+      },
+      "status": "planned"
+    },
+    {
+      "id": "elder-r6-forest-022",
+      "sequence": "forest-path",
+      "label": "The great tree",
+      "text": {
+        "en": [
+          "Then the trees opened. On Burrow Hill stood a great old tree, with a little doorway among its roots."
+        ],
+        "ru": [
+          "И вот деревья расступились. На Холме Нор стояло огромное старое дерево с маленьким входом между корнями."
+        ],
+        "es": [
+          "Entonces los árboles se abrieron. En la Colina de las Madrigueras se alzaba un árbol enorme y antiguo, con una puertecita entre sus raíces."
+        ]
+      },
+      "previousID": "elder-r5-017",
+      "source": {
+        "kind": "expanded",
+        "blocks": [
+          0
+        ],
+        "note": "User-authorized family forest outing adaptation; only destination Burrow Hill derives directly from original chapter02 block0. No invented magic event."
+      },
+      "state": "mounted",
+      "cameraTransform": {
+        "schemaVersion": 1,
+        "purpose": "The great tree: Then the trees opened. On Burrow Hill stood a great old tree, with a little doorway among its roots.",
+        "frameId": "E",
+        "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+        "camera": {
+          "positionXYZ": [
+            -3,
+            -9,
+            0.8
+          ],
+          "targetXYZ": [
+            0,
+            0,
+            3.4
+          ],
+          "height": 0.8,
+          "framing": "low wide destination reveal",
+          "fieldOfViewDegrees": 65,
+          "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+        },
+        "actors": [
+          {
+            "name": "Papa",
+            "positionXYZ": [
+              0,
+              -0.4,
+              2.7
+            ],
+            "bodyFacingTarget": "threshold",
+            "headFacingTarget": "threshold",
+            "eyeTarget": "threshold",
+            "pose": "seated behind child",
+            "limbsContactSupport": "One forearm supports child lower torso, other paw braces dog back",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "PinPin",
+            "positionXYZ": [
+              0,
+              0.4,
+              2.7
+            ],
+            "bodyFacingTarget": "threshold",
+            "headFacingTarget": "threshold",
+            "eyeTarget": "threshold",
+            "pose": "seated astride behind withers",
+            "limbsContactSupport": "thighs straddle; two forepaws on dog shoulder",
+            "visibility": "visible unless specified by purposeful crop"
+          },
+          {
+            "name": "Scooby",
+            "positionXYZ": [
+              0,
+              0,
+              0
+            ],
+            "bodyFacingTarget": "path",
+            "headFacingTarget": "path",
+            "eyeTarget": "path",
+            "pose": "gentle walking",
+            "limbsContactSupport": "four anatomical limbs; no saddle/reins; visible paws contact ground, hidden limbs not certified",
+            "visibility": "visible unless specified by purposeful crop"
+          }
+        ],
+        "staticLandmarks": {
+          "path": [
+            0,
+            6,
+            0
+          ],
+          "fernDrop": [
+            -1,
+            1,
+            0.65
+          ],
+          "picnicLog": [
+            0,
+            1,
+            0.6
+          ],
+          "picnicCloth": [
+            0,
+            0,
+            0
+          ],
+          "bread": [
+            0,
+            0,
+            0.2
+          ],
+          "cup": [
+            0.1,
+            -0.1,
+            0.2
+          ],
+          "bowl": [
+            2,
+            -0.5,
+            0
+          ],
+          "threshold": [
+            0,
+            8,
+            0
+          ],
+          "stone": [
+            -1,
+            0,
+            0.35
+          ]
+        },
+        "objectStates": {
+          "before": "All gear repacked; Papa again wears closed bag",
+          "after": "satchel on Papa, child seated in front"
+        },
+        "transition": {
+          "previous": "Together again",
+          "next": "arrival and familiar Elder welcome",
+          "reason": "The great tree"
+        }
+      },
+      "status": "planned"
+    }
+  ]
+}

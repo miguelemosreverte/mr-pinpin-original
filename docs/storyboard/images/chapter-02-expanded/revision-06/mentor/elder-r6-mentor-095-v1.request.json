@@ -1,0 +1,146 @@
+{
+  "id": "elder-r6-mentor-095-v1",
+  "tool": "built-in image_gen",
+  "status": "planned",
+  "plannedAt": "2026-09-22T04:29:44.505Z",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Rear-side farewell across riders toward Elder",
+    "frameId": "E",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -6,
+        1.6
+      ],
+      "targetXYZ": [
+        -1,
+        -2,
+        1.8
+      ],
+      "height": 1.6,
+      "framing": "Rear-side farewell across riders toward Elder",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "path",
+        "eyeTarget": "path",
+        "pose": "standing four paws ground",
+        "limbsContactSupport": "standing four paws ground",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          -2.1,
+          2.7
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "seated hips fur legs astride one paw fur one wave",
+        "limbsContactSupport": "seated hips fur legs astride one paw fur one wave",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -1,
+          -1.3,
+          2.7
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "seated behind child arm across childs lower front other paw fur legs astride",
+        "limbsContactSupport": "seated behind child arm across childs lower front other paw fur legs astride",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "one paw returning wave other belly grounded",
+        "limbsContactSupport": "one paw returning wave other belly grounded",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staff": [
+        -1,
+        0,
+        0
+      ],
+      "fern": [
+        1,
+        0,
+        0
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "Satchel worn left shoulder/right hip",
+      "after": "Same bag position; visible strap/contact only, no restaging"
+    },
+    "transition": {
+      "previousAction": "canonical scene096",
+      "nextAction": "canonical scene098",
+      "reasonForShotChange": "Rear-side farewell across riders toward Elder"
+    },
+    "editMode": "Preserve counterpart pixels/camera/contact; add satchel only"
+  },
+  "prompt": "Use case: precise-object-edit. ONE landscape1536x1024. Image1 EDIT TARGET: preserve exact camera, all character faces/style/poses/gaze/feet/paw contacts, clothing-free animals, environmental geometry, lighting. Image2 is satchel PROP ONLY, do not copy its white background or change cast. Add ONE small muted ochre linen crossbody satchel worn ONLY by adult Papa hedgehog. Broad soft strap from Papa ANATOMICAL LEFT SHOULDER diagonally to ANATOMICAL RIGHT HIP; compact closed rounded flap bag rests at right hip, just behind hip during riding, away from child/supporting arm. Bagwidth about0.6Papa torso/height0.55. No duplicate straps or bag on dog/child; far side may naturally occlude. Strap follows body not quill spikes, does not replace or hide supporting paws. This is continuity of already packed picnicbag, no new action/props. Do not change feet positions or eye style. Keep soft animated Papa creamface and dog expressiveness. No text, no panels, no borders.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-097-v1.png",
+      "role": "edit target preserve all except worn satchel",
+      "sha256": "bf6c824fb7d7338cb22650dd1a3495dd6c3304d085728369db0d705385cf3fba"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "satchel routing shape only",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    }
+  ]
+}

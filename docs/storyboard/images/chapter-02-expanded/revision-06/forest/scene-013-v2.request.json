@@ -1,0 +1,149 @@
+{
+  "id": "elder-r6-forest-013",
+  "stem": "scene-013-v2",
+  "version": 2,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-013-v1.png",
+      "role": "EDIT target preserve apple handoff and everything except food parcels/cup",
+      "sha256": "c490faff10c4aaf65904356a6f07b38dd54af8fe794230cedeecc63f3b1ede24"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-012-v2.png",
+      "role": "Prop continuity: two freshly torn bread halves and nested cup/bowl",
+      "sha256": "47274e6585cee29b9dfa70a19b7037b54f0f932f1aec2c364a6378863c635451"
+    }
+  ],
+  "mode": "edit",
+  "prompt": "Use case: precise-object-edit. Preserve first scene exact apple handoff, all three characters, clear mutual gazes, anatomy, bag, cloth, log, camera and light. Correct only continuity of food: replace the TWO tied cloth parcels on picnic cloth with TWO UNWRAPPED halves of same small bread roll torn apart in second image. Soft white broken crumb visible, one half per existing parcel position. No knots/string/wrapping remaining. Add shallow wooden dog bowl directly underneath cup so cup nests as in second image. Keep one whole apple on cloth and another in handoff, corked flask unchanged. Single landscape no text.",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "A piece for Papa: PinPin put an apple slice into Papa’s paw. “This one is for you.”",
+    "frameId": "P",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3,
+        -3,
+        1
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "height": 1,
+      "framing": "medium two-shot clear handoff",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.4,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "sits opens one paw toward child whole small apple",
+        "limbsContactSupport": "sits opens one paw toward child apple slice",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -0.7,
+          -0.7,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "extends one paw with whole small apple into Papa open paw",
+        "limbsContactSupport": "extends one paw with pre-cut apple slice into Papa open paw",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          2.5,
+          0.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "rests right",
+        "limbsContactSupport": "rests right",
+        "visibility": "visible unless specified by purposeful crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ],
+      "apple": [
+        0,
+        -0.2,
+        0.5
+      ]
+    },
+    "objectStates": {
+      "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+      "after": "picnic state: apple"
+    },
+    "transition": {
+      "previous": "Bread to share",
+      "next": "A drink after walking",
+      "reason": "A piece for Papa"
+    }
+  },
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-22T02:34:51.341283+00:00",
+  "status": "prepared"
+}

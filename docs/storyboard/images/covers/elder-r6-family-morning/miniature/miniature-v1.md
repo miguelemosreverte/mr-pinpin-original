@@ -1,0 +1,5 @@
+# elder-r6-family-morning/miniature-v1
+
+Use case: illustration-story. Create a separately composed portrait 1024x1536 text-free title miniature of this family breakfast cover. Enlarge exactly FOUR family hedgehogs and bread handoff to occupy most of portrait: Mama left cradles tiny PomPom, Papa center passes bread to little PinPin right. All four faces, their visible paws/contact and supported infant must be clear; soft animated cream faces, expressive warm iris eyes. Simplify backdrop to green arched door and warm wood, eliminate upper blank title area and all lettering/flourishes. Show only sufficient table to establish breakfast with exactly three personal porridge bowls and one larger serving bowl, three cups, teapot, bread board, as reference. Larger subjects and broad warm shapes to read at 96 pixels width. Keep identities/seating/eye directions/lighting consistent, no photographic fur, no extra characters or limbs, no clothes. Absolutely no letters/text/numbers/logos/watermarks.
+
+Full image inspected. Recomposition and family acting good; reject selection because extra fourth cup foreground center and missing Papa personal bowl. Correct v2.

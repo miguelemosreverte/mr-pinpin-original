@@ -1,0 +1,144 @@
+{
+  "id": "elder-r6-forest-015",
+  "stem": "scene-015-v2",
+  "version": 2,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-015-v1.png",
+      "role": "EDIT TARGET reduce oversized dog bowl only, preserve action",
+      "sha256": "c123710363310968b437473e591f13bd311f4da1bb6b37bc82adf0f6caba5d6c"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-012-v2.png",
+      "role": "Fixed bowl geometry authority: shallow wood bowl only 1.4 times cup diameter, originally nested cup inside it",
+      "sha256": "47274e6585cee29b9dfa70a19b7037b54f0f932f1aec2c364a6378863c635451"
+    }
+  ],
+  "mode": "edit",
+  "prompt": "Use case: precise-object-edit. Edit first image. Correct only OVERSIZED DOG BOWL; it is the same small shallow wooden bowl from reference2, outer diameter only about 1.4 times the small drinking cup. Never a large washbasin. Reduce bowl to roughly HALF its current width and lower shallow height. Preserve wood material and water. Bowl stays on grass under dog tongue but becomes a small shallow dish approximately 1.4 times visible cup diameter, not giant bowl. Keep right edge beneath tongue and bring left edge inward; adjust child two forepaws naturally to touch smaller rim, child may lean forward slightly, no extra fingers. Dog continues gently lapping water with attentive eyes. Preserve Papa, dog head/body, child identity, satchel, cloth, cup/flask/apples, camera, background and lighting. No new bowl elsewhere. Single landscape illustration, no text.",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Scooby has a drink: Scooby had his own bowl. PinPin set it on the grass, and Scooby lowered his nose to drink.",
+    "frameId": "P",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -3,
+        0.65
+      ],
+      "targetXYZ": [
+        2,
+        -0.5,
+        0.4
+      ],
+      "height": 0.65,
+      "framing": "low dog child bowl triangle",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.4,
+          0
+        ],
+        "bodyFacingTarget": "bowl",
+        "headFacingTarget": "bowl",
+        "eyeTarget": "bowl",
+        "pose": "seated behind, flask on cloth",
+        "limbsContactSupport": "seated behind, flask on cloth",
+        "visibility": "visible background context"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          1.5,
+          -0.7,
+          0
+        ],
+        "bodyFacingTarget": "bowl",
+        "headFacingTarget": "bowl",
+        "eyeTarget": "bowl",
+        "pose": "kneels both paws on bowl rim lowering it on ground",
+        "limbsContactSupport": "kneels both paws on bowl rim lowering it on ground",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          2.5,
+          0.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "bowl",
+        "eyeTarget": "bowl",
+        "pose": "front pawsground headbends to bowl",
+        "limbsContactSupport": "front pawsground headbends to bowl",
+        "visibility": "visible unless specified by purposeful crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ]
+    },
+    "objectStates": {
+      "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+      "after": "picnic state: dog-water"
+    },
+    "transition": {
+      "previous": "A drink after walking",
+      "next": "A little rest together",
+      "reason": "Scooby has a drink"
+    }
+  },
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-22T03:16:25.365692+00:00",
+  "status": "prepared"
+}

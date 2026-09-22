@@ -1,0 +1,142 @@
+{
+  "id": "elder-r6-mentor-009-v1",
+  "prompt": "Use case: precise-object-edit. One1536x1024landscape. Image1 edit target; preserve exact sleeping Papa and Scooby, all anatomy, warm style, camera, boulder, ground, lighting. Image2 reference ONLY bag placement and size. Add ONE small closed muted ochre linen rounded-flap satchel on ground at boulder base immediately screen-left of sleeping Papa, partly obscured behind his left silhouette/quills. Bag top about Papa lowerchest height, bottom planted grass, loose broad strap folded beside bag. No strap on Papa, no bag on dog, no duplicate props. Do not move sleeping actors or change crop. No text.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:20:37.740Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-025-v2.png",
+      "role": "edit target",
+      "sha256": "b400c8b6c114518b737cd5c8d6734672c66c21dc26470775fd775df9e1eedc69"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-008-v2.png",
+      "role": "grounded bag continuity",
+      "sha256": "0f7aa18b09350b3529c1f880298673a35d2417c4374ddc60a2953ea81676706b"
+    }
+  ],
+  "status": "ready",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Quiet rest insert: shared sleep, calm attention shifts inside",
+    "frameId": "E",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        4,
+        -3.2,
+        1.8
+      ],
+      "targetXYZ": [
+        4.1,
+        -1,
+        0.4
+      ],
+      "height": 1.8,
+      "framing": "close gently elevated paired sleeping faces",
+      "fieldOfViewDegrees": 42,
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          3.6,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "rest",
+        "eyeTarget": "closed",
+        "pose": "seated eyes closed",
+        "limbsContactSupport": "seat rock two paws belly feet ground",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          4.6,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "rest",
+        "eyeTarget": "closed",
+        "pose": "curled asleep chin paws",
+        "limbsContactSupport": "body ground",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          1,
+          -0.8,
+          0
+        ],
+        "bodyFacingTarget": "threshold",
+        "headFacingTarget": "threshold",
+        "eyeTarget": "threshold",
+        "pose": "walking to door",
+        "limbsContactSupport": "feet path",
+        "visibility": "offscreen"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0,
+          -0.3,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "waiting",
+        "limbsContactSupport": "feet ground",
+        "visibility": "offscreen"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "objectStates": {
+      "before": "Satchel on ground far-right rest rock",
+      "after": "Same bag position; visible strap/contact only, no restaging"
+    },
+    "transition": {
+      "description": "farewell to quiet shared sleeping insert then inherited doorway"
+    },
+    "editMode": "Preserve counterpart pixels/camera/contact; add satchel only"
+  },
+  "startedAt": "2026-09-22T04:20:56.377Z",
+  "finishedAt": "2026-09-22T04:21:23.002Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c74a-b423-7862-8792-861f676f14e3/exec-970a44e1-dc88-4485-8c05-4aea5243d57a.png",
+  "review": "Creator full-image PASS: one closed ochre bag rests to left of Papa against same moss rock, partly hidden behind his quills, loose strap grounded. Two sleeping faces, visible forepaws/feet and curled dog tail unchanged. Bag remains unworn and no duplicated prop; hidden base segment not independently certified.",
+  "output": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-009-v1.png",
+  "sha256": "bbcd2c35ffbeb606b0c5991be4147c8f585b8661f4866a1a8e16e7391d16e6a4",
+  "width": 1536,
+  "height": 1024
+}

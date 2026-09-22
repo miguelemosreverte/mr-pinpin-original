@@ -1,0 +1,6 @@
+# Exact built-in imagegen prompt
+
+Use case: precise-object-edit. Fix ONLY dog anatomy in first image. Its head faces right and its torso extends LEFT behind Papa. Therefore remove the wrong tail behind right shoulder entirely and draw ONE curled tail at LEFT REAR haunch, partially behind Papa far-left lower body as second image shows. Dog has exactly TWO FRONT PAWS extending forward toward right lower edge; REMOVE orphan extra paw at lowerleft underneath rider, replacing with continuous dog flank. Folded hindquarters at LEFT REAR can be partly hidden behind Papa. No separate hindquarters to right of shoulder. Keep child seated astride just behind withers, near leg hanging, both Papa feet firmly on same broad stone and supporting forepaws unchanged. Preserve all faces, style, bag, rock geometry, background and lighting. Single landscape, no text.
+
+EDIT TARGET dog body/tail correction while retaining Papa and child contact: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-020-v1.png
+Anatomy authority dog crouch with head right, body extends left and tail at left rear: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-003-v2.png

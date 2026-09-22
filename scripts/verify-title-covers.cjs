@@ -57,7 +57,7 @@ const spreadSignature = result => nodes(result, 'reader', node => classIs(node, 
 
 (async () => {
   assert.equal(registry.schemaVersion, 1);
-  assert.deepEqual(Object.keys(registry.covers).sort(), ids.slice().sort());
+  for (const id of ids) assert.ok(registry.covers[id], `${id} legacy cover remains registered`);
   for (const id of ids) {
     const cover = registry.covers[id];
     assert.equal(cover.status, 'approved', `${id} release approval state`);
@@ -66,7 +66,10 @@ const spreadSignature = result => nodes(result, 'reader', node => classIs(node, 
     assert.equal(cover.width, 1024); assert.equal(cover.height, 1536);
     for (const lang of languages) {
       assert.ok(cover.title[lang]?.trim()); assert.ok(cover.alt[lang]?.trim());
-      assert.equal(cover.assets[lang], `images/covers/${id}/title/title-${lang}-v${cover.version}.png`);
+      assert.ok([
+        `images/covers/${id}/title/title-${lang}-v${cover.version}.png`,
+        `images/covers/${id}/title-${lang}-v${cover.version}.png`
+      ].includes(cover.assets[lang]), `${id}/${lang} canonical or preserved legacy cover path`);
       const file = path.join(base, cover.assets[lang]);
       const bytes = fs.readFileSync(file);
       assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
@@ -131,6 +134,10 @@ const spreadSignature = result => nodes(result, 'reader', node => classIs(node, 
   assert.equal(invalid.context.titleCovers.resolve('chapter-01', 'en'), null);
   assert.equal(nodes(invalid, 'reader', node => node.id === 'title-cover').length, 0);
   const missingLibrary = await page('library', '?lang=en&coverPreview=1', true);
-  assert.equal(nodes(missingLibrary, 'adventure-library', node => node.tagName === 'img').length, 2);
+  const standaloneIds = ['timber-tractor', 'home-sweet-home', 'one-day-in-the-forest'];
+  for (const id of standaloneIds) assert.ok(
+    nodes(missingLibrary, 'adventure-library', node => node.dataset.story === id).length === 1,
+    `${id} library card remains available without cover registry`);
+  assert.equal(nodes(missingLibrary, 'adventure-library', node => node.tagName === 'img').length, standaloneIds.length);
   console.log('Title covers verified: 12 approved PNGs/sidecars; generated and copied asset hashes; 48 reader/library release and synthetic-proposal route-language-mode cases; original scene/prose/spread preservation; missing registry and missing image fallbacks.');
 })().catch(error => { console.error(error); process.exitCode = 1; });

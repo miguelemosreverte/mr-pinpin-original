@@ -1,0 +1,204 @@
+{
+  "id": "cups-ready-v2",
+  "slug": "cups-ready",
+  "prompt": "Use case: precise-object-edit. LAST INPUT IMAGE IS EXACT EDIT TARGET. Preserve actors, expressions, anatomy, camera framing, room geometry, lighting and all other details. Change ONLY this: Change liquid in all three cups to EMPTY cups, interiors clearly emptybeigepottery, because Papa willpourtea next. Preserve allcups/positions/actors/tablefood.\nSupporting reference roles: [{\"image\": 1, \"role\": \"Sole rendering authority; never import Elder, glasses or location\"}, {\"image\": 2, \"role\": \"Exact four hedgehog identities/relative scale; no dog inside\"}, {\"image\": 3, \"role\": \"Kitchen geometry, fixed meal seats and tableware; pose changes per requested shot\"}, {\"image\": 4, \"role\": \"Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting\"}, {\"image\": 5, \"role\": \"Exact edit target; preserve all actors/camera/lighting and change only stated correction\"}]\nNo text. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "Sole rendering authority; never import Elder, glasses or location",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "Exact four hedgehog identities/relative scale; no dog inside",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-006-v1.png",
+      "role": "Kitchen geometry, fixed meal seats and tableware; pose changes per requested shot",
+      "sha256": "4e7c1c238a31f1c79cb8a31c1266d27fcab4b22fb5cdc174d5029aa5060347a7"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/cups-ready-v1.png",
+      "role": "Exact edit target; preserve all actors/camera/lighting and change only stated correction",
+      "sha256": "4cf3f3516ebdee798c24bf49bd1df287abdfa64a023c47b046e2b875d4451a1b"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T02:35:44.023584Z",
+  "output": "images/chapter-02-expanded/revision-06/family/cups-ready-v2.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Higher kitchen table action wide: Papa far-right lowers final pottery cup; PinPin near-right arranges his cup; Mama left holds PomPom. Exact3 bowls3cups breadfront-left communalporridgecenter teapotnearPapa. All four visible.",
+    "frameId": "K",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        2.5,
+        -4,
+        2.7
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        0.9
+      ],
+      "height": 2.7,
+      "framing": "Higher kitchen table action wide: Papa far-right lowers final pottery cup; PinPin near-right arranges his cup; Mama left holds PomPom. Exact3 bowls3cups breadfront-left communalporridgecenter teapotnearPapa. All four visible.",
+      "fieldOfViewDegrees": 58,
+      "axisSide": "Kitchen negativeY master half-space"
+    },
+    "actors": [
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          -1.2,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "childCup",
+        "eyeTarget": "childCup",
+        "pose": "Seated at fixed meal place; Higher kitchen table action wide: Papa far-right lowers final pottery cup; PinPin near-right arranges his cup; Mama left holds PomPom. Exact3 bowls3cups breadfront-left communalporridgecenter teapotnearPapa. All four visible.",
+        "limbsContactSupport": "Mama seated on chair, one forearm securely beneath infant and other free for stated action",
+        "visibility": "visible"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "childCup",
+        "eyeTarget": "childCup",
+        "pose": "Seated at fixed meal place; Higher kitchen table action wide: Papa far-right lowers final pottery cup; PinPin near-right arranges his cup; Mama left holds PomPom. Exact3 bowls3cups breadfront-left communalporridgecenter teapotnearPapa. All four visible.",
+        "limbsContactSupport": "Seated on fixed chair; two forepaws perform stated action; hindfeet supported on seat/footrest",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0.9,
+          -0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "childCup",
+        "eyeTarget": "childCup",
+        "pose": "Seated at fixed meal place; Higher kitchen table action wide: Papa far-right lowers final pottery cup; PinPin near-right arranges his cup; Mama left holds PomPom. Exact3 bowls3cups breadfront-left communalporridgecenter teapotnearPapa. All four visible.",
+        "limbsContactSupport": "Seated on fixed chair; two forepaws perform stated action; hindfeet supported on seat/footrest",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          -1.1,
+          0,
+          0.7
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "childCup",
+        "eyeTarget": "childCup",
+        "pose": "Seated at fixed meal place; Higher kitchen table action wide: Papa far-right lowers final pottery cup; PinPin near-right arranges his cup; Mama left holds PomPom. Exact3 bowls3cups breadfront-left communalporridgecenter teapotnearPapa. All four visible.",
+        "limbsContactSupport": "Mama forearm and lap support infant; infant arms free",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -4,
+          5,
+          0
+        ],
+        "bodyFacingTarget": "garden",
+        "headFacingTarget": "garden",
+        "eyeTarget": "garden",
+        "pose": "rests outside house",
+        "limbsContactSupport": "Four legs on ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCounter": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "playRug": [
+        -2,
+        -1,
+        0
+      ],
+      "childCup": [
+        0.75,
+        -0.65,
+        0.85
+      ],
+      "bread": [
+        -0.5,
+        -0.5,
+        0.85
+      ],
+      "PapaCup": [
+        0.6,
+        0.55,
+        0.85
+      ],
+      "MamaCup": [
+        -0.85,
+        0,
+        0.85
+      ],
+      "servingBowl": [
+        0,
+        0,
+        0.85
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "Three plain pottery cups, three individual porridge bowls, one communal serving bowl, bread platter front-left, teapot by Papa. Mama always holds infant left.",
+      "after": "Higher kitchen table action wide: Papa far-right lowers final pottery cup; PinPin near-right arranges his cup; Mama left holds PomPom. Exact3 bowls3cups breadfront-left communalporridgecenter teapotnearPapa. All four visible."
+    },
+    "transition": {
+      "previousAction": "Mama sat down. Papa settled PomPom into her arms, and the little one snuggled close.",
+      "nextAction": "Soon they were all around the breakfast table. Papa poured tea. Mama held PomPom close.",
+      "reasonForShotChange": "Higher kitchen table action wide: Papa far-right lowers final pottery cup; PinPin near-right arranges his cup; Mama left holds PomPom. Exact3 bowls3cups breadfront-left communalporridgecenter teapotnearPapa. All four visible."
+    }
+  },
+  "status": "creator-reviewed",
+  "requestPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/cups-ready-v2.request.json",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c6ba-3ec7-7e90-8b64-cfa109b43746/exec-7b402a6f-3636-488b-9b96-8f018b2ae4ed.png",
+  "startedAt": "2026-09-22T02:39:25.584Z",
+  "finishedAt": "2026-09-22T02:40:21.436Z",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "402b57ade823ad3f8fd54cea5af00c4e97ca6e9dce9d5841e784933885f241fe",
+  "review": "Creator actual full-image PASS: Exact4atfixedseats Mama-leftinfantlap Papa-farright child-nearright. Threeemptycups beforepour, threeindividualbowls+onecommunal, breadrollsfrontleft, teapotPapa. Visiblecupplacement andattention. Mama forearm supportsbaby; no extraarms. Newview similarmealwide intentionally establishes settingaction."
+}

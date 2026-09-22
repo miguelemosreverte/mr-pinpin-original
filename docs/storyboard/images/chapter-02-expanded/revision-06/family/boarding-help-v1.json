@@ -1,0 +1,159 @@
+{
+  "id": "boarding-help-v1",
+  "slug": "boarding-help",
+  "prompt": "Use case: precise-object-edit. Image1 is approved satchel geometry only. Image2 is EXACT EDIT TARGET. Preserve the entire scene2 including camera, mature Papa creamface, child, Mama infant, dog, garden, all body contact and pose. Add ONLY small ochre linen satchel to Papa, strap from anatomical LEFT shoulder across chest to RIGHT hip. Papa facingviewer: leftshoulder is viewerRIGHT and righthip is viewerLEFT. Bag must not interfere with helpingpaw or child; keep partiallyhidden ifneeded. No duplicate bag, no clothing, no other changes. Same landscape1536x1024.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "Accepted ochre linen satchel geometry and ridercontact; no extra dogs insidehouse",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-012-v1.png",
+      "role": "Exact edit target action/contacts/camera; add satchel without changing anatomy",
+      "sha256": "66f43db76812fa6faf9dab0aaded9059dee4490336d11f4f57b929d6ebae1c5a"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:23:31.014802Z",
+  "output": "images/chapter-02-expanded/revision-06/family/boarding-help-v1.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Garden mountingstone: Papa downon ground steadyingchild, ochre satchel crossbody leftshoulder to righthip, dog crouched beside stone; Mama baby doorway. Preserve exact original contacts.",
+    "frameId": "H",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        3,
+        -5,
+        1.5
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        0.9
+      ],
+      "height": 1.5,
+      "framing": "Garden mountingstone: Papa downon ground steadyingchild, ochre satchel crossbody leftshoulder to righthip, dog crouched beside stone; Mama baby doorway. Preserve exact original contacts.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Exterior negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2.2,
+          -2.2,
+          0
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Garden mountingstone: Papa downon ground steadyingchild, ochre satchel crossbody leftshoulder to righthip, dog crouched beside stone; Mama baby doorway. Preserve exact original contacts.",
+        "limbsContactSupport": "Support child lower torso with one forearm; other braces dog during mounted departure; ochre bag hangs securely opposite child",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          0,
+          0.1,
+          0
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Garden mountingstone: Papa downon ground steadyingchild, ochre satchel crossbody leftshoulder to righthip, dog crouched beside stone; Mama baby doorway. Preserve exact original contacts.",
+        "limbsContactSupport": "Both hindfeet on ground; two arms perform stated action",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1.8,
+          -2,
+          1.3
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "Garden mountingstone: Papa downon ground steadyingchild, ochre satchel crossbody leftshoulder to righthip, dog crouched beside stone; Mama baby doorway. Preserve exact original contacts.",
+        "limbsContactSupport": "Mountingstone then straddled dog behindwithers; never both feet on same top side",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          0,
+          0.1,
+          0.9
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Garden mountingstone: Papa downon ground steadyingchild, ochre satchel crossbody leftshoulder to righthip, dog crouched beside stone; Mama baby doorway. Preserve exact original contacts.",
+        "limbsContactSupport": "Mama forearm and chest",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -2,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "path",
+        "eyeTarget": "path",
+        "pose": "Garden mountingstone: Papa downon ground steadyingchild, ochre satchel crossbody leftshoulder to righthip, dog crouched beside stone; Mama baby doorway. Preserve exact original contacts.",
+        "limbsContactSupport": "Four anatomically attached legs planted or natural gait, no saddle/reins",
+        "visibility": "visible"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "dogBowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "See scene action and sequential state ledger",
+      "after": "Garden mountingstone: Papa downon ground steadyingchild, ochre satchel crossbody leftshoulder to righthip, dog crouched beside stone; Mama baby doorway. Preserve exact original contacts."
+    },
+    "transition": {
+      "previousAction": "Outside, Scooby drank a little water. Papa and PinPin waited at the garden stone.",
+      "nextAction": "From there, PinPin climbed onto Scooby’s back. Papa kept a steady paw beside him.",
+      "reasonForShotChange": "Garden mountingstone: Papa downon ground steadyingchild, ochre satchel crossbody leftshoulder to righthip, dog crouched beside stone; Mama baby doorway. Preserve exact original contacts."
+    }
+  },
+  "status": "creator-reviewed",
+  "requestPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/boarding-help-v1.request.json",
+  "startedAt": "2026-09-22T04:24:19.744Z",
+  "finishedAt": "2026-09-22T04:25:04.364Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c74a-058e-7603-a917-810e97ab9b62/exec-096e524d-ac1e-47c5-9ed8-a2b0571ee44f.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "32c9492b331bc9e0b9c1b083cb42c96859571f689094576718655d1a17feabac",
+  "review": "Creator actual full-image PASS: Original action preserved Papa twofeetgrounded supportschild atback, childtwofeetstone andpawsdogback. Bag at anatomicalRIGHT hip visible with diagonalstrap fromLEFTshoulder. Scooby looksback towardchild, softstyle. Dogrearlegs concealednotcertified; Mama infant insideoffscreen inheritedcrop."
+}

@@ -1,0 +1,144 @@
+{
+  "id": "elder-r6-forest-003",
+  "stem": "scene-003-v2",
+  "version": 2,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-003-v1.png",
+      "role": "EDIT TARGET: retain Papa contact and child position; fix tail and stone",
+      "sha256": "7d9e56f57f5f6a809745ec947bc98dc5e42148a24e86dfb05b85a26f40a0b87e"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-002-v1.png",
+      "role": "Continuity authority: SAME stone height and SAME dog body orientation/tail at rear LEFT",
+      "sha256": "50bcf47ffce22c4cefb1fa28fbb4fca87fe2ca5e3406654c2b0e664be73cea81"
+    }
+  ],
+  "mode": "edit",
+  "prompt": "Use case: precise-object-edit. First image edit target, second image immediately preceding scene and strict geography authority. Retain soft art, Papa with both feet supported on stone, supporting child on crouched Scooby, satchel and faces. Correct continuity: dog body extends LEFT behind head and its curled tail must emerge from LEFT REAR haunch behind Papa, never at right shoulder. Remove entirely wrong right-side tail. The moss stone is same low broad stone seen image2; do not grow it. Lower stone top and Papa together about 15 percent, keeping both Papa feet firmly on same stone and child support reachable by slightly bent forearms. Dog remains belly low on ground, head right looking up toward child. Same birches and forest. One dog, two hedgehogs, no extra limbs. Full standalone landscape.",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Papa makes room: Papa stepped onto the stone. “I’ve got you.”",
+    "frameId": "S",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -4,
+        -3,
+        1.4
+      ],
+      "targetXYZ": [
+        -0.4,
+        0.2,
+        0.8
+      ],
+      "height": 1.4,
+      "framing": "medium side contact",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -1,
+          0,
+          0.35
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "standing on stone, one paw on child and other braced on dog",
+        "limbsContactSupport": "standing on stone, one paw on child and other braced on dog",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0,
+          0.4,
+          1.3
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "still straddling shoulder",
+        "limbsContactSupport": "still straddling shoulder",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          0,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "crouched belly low",
+        "limbsContactSupport": "crouched belly low",
+        "visibility": "visible unless specified by purposeful crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ]
+    },
+    "objectStates": {
+      "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+      "after": "Papa satchel right hip, walking or supported transfer"
+    },
+    "transition": {
+      "previous": "A place to walk",
+      "next": "Feet on the stone",
+      "reason": "Papa makes room"
+    }
+  },
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-22T02:28:33.738134+00:00",
+  "status": "prepared"
+}

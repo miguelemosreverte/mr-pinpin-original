@@ -1,0 +1,132 @@
+{
+  "id": "elder-r6-mentor-003-v1",
+  "prompt": "Use case: precise-object-edit. ONE landscape1536x1024. Image1 EDIT TARGET: preserve exact camera, all character faces/style/poses/gaze/feet/paw contacts, clothing-free animals, environmental geometry, lighting. Image2 is satchel PROP ONLY, do not copy its white background or change cast. Add ONE small muted ochre linen crossbody satchel worn ONLY by adult Papa hedgehog. Broad soft strap from Papa ANATOMICAL LEFT SHOULDER diagonally to ANATOMICAL RIGHT HIP; compact closed rounded flap bag rests at right hip, just behind hip during riding, away from child/supporting arm. Bagwidth about0.6Papa torso/height0.55. No duplicate straps or bag on dog/child; far side may naturally occlude. Strap follows body not quill spikes, does not replace or hide supporting paws. This is continuity of already packed picnicbag, no new action/props. Do not change feet positions or eye style. Keep soft animated Papa creamface and dog expressiveness. No text, no panels, no borders.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:12:38.145Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-020-v2.png",
+      "role": "edit target preserve all except satchel",
+      "sha256": "3b4d411ec0e4b82a6abc34f96c831409e8b8e0c7e7d750264fc8c7b3fd4c666f"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "satchel shape/routing only",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    }
+  ],
+  "status": "ready",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Intimate supported landing: child feet find stone",
+    "frameId": "E",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3.7,
+        -5,
+        1
+      ],
+      "targetXYZ": [
+        -2,
+        -3,
+        1
+      ],
+      "height": 1,
+      "framing": "low close interaction from child height, dog head at edge",
+      "fieldOfViewDegrees": 44,
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2.7,
+          -3,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "grounded leaning forward",
+        "limbsContactSupport": "two hindfeet path two forepaws support child torso",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -2,
+          -3,
+          0.4
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "standing on stone",
+        "limbsContactSupport": "two hindfeet stone; paws on Papa forearms",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -3,
+          0
+        ],
+        "bodyFacingTarget": [
+          -0.5,
+          -2,
+          0
+        ],
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "crouched motionless",
+        "limbsContactSupport": "ground contact partly cropped",
+        "visibility": "visible"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "objectStates": {
+      "before": "Satchel worn left shoulder/right hip",
+      "after": "Same bag position; visible strap/contact only, no restaging"
+    },
+    "transition": {
+      "description": "closer human-scale moment; greeting next"
+    },
+    "editMode": "Preserve counterpart pixels/camera/contact; add satchel only"
+  },
+  "startedAt": "2026-09-22T04:12:45.630Z",
+  "finishedAt": "2026-09-22T04:13:30.001Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c74a-b423-7862-8792-861f676f14e3/exec-300abdfd-cfc6-4755-b5ee-4c5821662f06.png",
+  "review": "Creator full-image PASS: Papa right-hip ochre bag and left-shoulder diagonal strap added without changing hands supporting child torso, four grounded visible hedgehog feet, reciprocal gaze, dog attention or root-door geometry. Bag naturally below supporting arm; hidden far attachments not certified.",
+  "output": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-003-v1.png",
+  "sha256": "eca20ea6ae148b324aee20eaabadb8b91bc3f80f00dd2d126ec9570c72a9b413",
+  "width": 1536,
+  "height": 1024
+}

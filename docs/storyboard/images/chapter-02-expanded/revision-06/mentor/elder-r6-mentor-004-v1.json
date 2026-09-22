@@ -1,0 +1,142 @@
+{
+  "id": "elder-r6-mentor-004-v1",
+  "prompt": "Use case: precise-object-edit. ONE landscape1536x1024. Image1 EDIT TARGET: preserve exact camera, all character faces/style/poses/gaze/feet/paw contacts, clothing-free animals, environmental geometry, lighting. Image2 is satchel PROP ONLY, do not copy its white background or change cast. Add ONE small muted ochre linen crossbody satchel worn ONLY by adult Papa hedgehog. Broad soft strap from Papa ANATOMICAL LEFT SHOULDER diagonally to ANATOMICAL RIGHT HIP; compact closed rounded flap bag rests at right hip, just behind hip during riding, away from child/supporting arm. Bagwidth about0.6Papa torso/height0.55. No duplicate straps or bag on dog/child; far side may naturally occlude. Strap follows body not quill spikes, does not replace or hide supporting paws. This is continuity of already packed picnicbag, no new action/props. Do not change feet positions or eye style. Keep soft animated Papa creamface and dog expressiveness. No text, no panels, no borders.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:13:46.780Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-021-v2.png",
+      "role": "edit target preserve all except satchel",
+      "sha256": "cdded438485e4ad7694df034834d025ae54ff6b76f4e1db1b867a8c8a01d7482"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "satchel shape/routing only",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    }
+  ],
+  "status": "ready",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Child observes trusted adult friendship",
+    "frameId": "E",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -0.6,
+        -3.5,
+        0.75
+      ],
+      "targetXYZ": [
+        0,
+        -0.4,
+        1.1
+      ],
+      "height": 0.75,
+      "framing": "over PinPin shoulder low medium; two adults friendly greeting",
+      "fieldOfViewDegrees": 56,
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -0.6,
+          -2.5,
+          0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "foreground standing",
+        "limbsContactSupport": "two feet path",
+        "visibility": "back/shoulder foreground"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -0.8,
+          -1.4,
+          0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "warm raised greeting forepaw",
+        "limbsContactSupport": "feet ground other paw lowered",
+        "visibility": "visible"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0.3,
+          -0.3,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "smile leaning welcoming",
+        "limbsContactSupport": "feet ground paws relaxed",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -3,
+          0
+        ],
+        "bodyFacingTarget": "threshold",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "lying by stone",
+        "limbsContactSupport": "body ground",
+        "visibility": "offscreen left"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "objectStates": {
+      "before": "Satchel worn left shoulder/right hip",
+      "after": "Same bag position; visible strap/contact only, no restaging"
+    },
+    "transition": {
+      "description": "child physical landing to child social perspective"
+    },
+    "editMode": "Preserve counterpart pixels/camera/contact; add satchel only"
+  },
+  "startedAt": "2026-09-22T04:13:59.758Z",
+  "finishedAt": "2026-09-22T04:14:42.073Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c74a-b423-7862-8792-861f676f14e3/exec-d8e19938-491a-49b3-adfb-e7b192592de7.png",
+  "review": "Creator full-image PASS: Papa satchel rests anatomical right hip and strap crosses from left shoulder, no duplicate strap. Two adults retain reciprocal eye contact, Papa single raised greeting paw plus lowered paw, child foreground back and outdoor doorway/staff unchanged. Bag partially occluded by foreground child as expected; hidden attachments not certified.",
+  "output": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-004-v1.png",
+  "sha256": "642867dcac1598398edf10810d9a877fc4b355b5f93fe91091f4aca6d4268f12",
+  "width": 1536,
+  "height": 1024
+}

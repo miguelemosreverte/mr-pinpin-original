@@ -1,0 +1,181 @@
+{
+  "id": "bread-table-v2",
+  "slug": "bread-table",
+  "prompt": "Use case: precise-object-edit. LAST INPUT IMAGE IS EXACT EDIT TARGET. Preserve actors, expressions, anatomy, camera framing, room geometry, lighting and all other details. Change ONLY this: Replace ONLY bread on child platter with exactly three small golden round rolls and one halved roll matching meal reference. Remove extra bread/platter from Mama paws at counter; let her paws rest counter, no extra loaf. Preserve actors/camera.\nSupporting reference roles: [{\"image\": 1, \"role\": \"Sole rendering authority; never import Elder, glasses or location\"}, {\"image\": 2, \"role\": \"Exact four hedgehog identities/relative scale; no dog inside\"}, {\"image\": 3, \"role\": \"Accepted emptytable premeal room and floorfamily placements; change action as requested\"}, {\"image\": 4, \"role\": \"Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting\"}, {\"image\": 5, \"role\": \"Exact edit target; preserve all actors/camera/lighting and change only stated correction\"}]\nNo text. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "Sole rendering authority; never import Elder, glasses or location",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "Exact four hedgehog identities/relative scale; no dog inside",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/found-you-v2.png",
+      "role": "Accepted emptytable premeal room and floorfamily placements; change action as requested",
+      "sha256": "8ad89d34a871428e00ac340343a12dddbcc4576a67c69bd9df835415e7a37b6e"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/bread-table-v1.png",
+      "role": "Exact edit target; preserve all actors/camera/lighting and change only stated correction",
+      "sha256": "d3341c04f55ed5dc687ea0aeab10afcf5ad76e353219ceec13dd6452c897e138"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T02:35:43.425205Z",
+  "output": "images/chapter-02-expanded/revision-06/family/bread-table-v2.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Table rim level: PinPin stands stable stool placing bread platter at tablefront-left; Papa sitting floor baby lap beyond, Mama at counter. No breakfast bowls yet.",
+    "frameId": "K",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3.8,
+        -3.5,
+        1.3
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        0.9
+      ],
+      "height": 1.3,
+      "framing": "Table rim level: PinPin stands stable stool placing bread platter at tablefront-left; Papa sitting floor baby lap beyond, Mama at counter. No breakfast bowls yet.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Kitchen negativeY master half-space"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2,
+          -0.7,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Seated on play rug cradling infant",
+        "limbsContactSupport": "Both arms support infant on lap; haunches/rump and two hindfeet on rug",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          -3,
+          1,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Standing at left counter",
+        "limbsContactSupport": "Two hindfeet grounded, two paws holding/passing platter",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0.9,
+          -0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "bread",
+        "eyeTarget": "bread",
+        "pose": "Standing two feet on stable chair seat",
+        "limbsContactSupport": "Two paws support platter underside, two hindfeet on floor or stable chair seat",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          -2,
+          -0.7,
+          0.6
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Supported on Papa lap",
+        "limbsContactSupport": "Papa lap and forearms",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -4,
+          5,
+          0
+        ],
+        "bodyFacingTarget": "garden",
+        "headFacingTarget": "garden",
+        "eyeTarget": "garden",
+        "pose": "rests outside house",
+        "limbsContactSupport": "Four legs on ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCounter": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "playRug": [
+        -2,
+        -1,
+        0
+      ],
+      "satchel": [
+        0,
+        0,
+        0.85
+      ],
+      "bread": [
+        -0.4,
+        0,
+        0.85
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "Kitchen same geometry; meal clearing and baby transfers shown in prior beats; newpacking uses ochre satchel only.",
+      "after": "Table rim level: PinPin stands stable stool placing bread platter at tablefront-left; Papa sitting floor baby lap beyond, Mama at counter. No breakfast bowls yet."
+    },
+    "transition": {
+      "previousAction": "“Will someone carry the bread?” Mama asked. PinPin sprang up. “I will!”",
+      "nextAction": "Mama sat down. Papa settled PomPom into her arms, and the little one snuggled close.",
+      "reasonForShotChange": "Table rim level: PinPin stands stable stool placing bread platter at tablefront-left; Papa sitting floor baby lap beyond, Mama at counter. No breakfast bowls yet."
+    }
+  },
+  "status": "planned"
+}

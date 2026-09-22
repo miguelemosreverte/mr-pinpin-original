@@ -1,0 +1,142 @@
+{
+  "id": "elder-r6-mentor-007-v1",
+  "prompt": "Use case: precise-object-edit. One landscape1536x1024. Image1 EDIT TARGET preserve exact camera, every character and face, all poses/limbs/gazes, tree doorway, fern, boulders, flowers and warm animated storybook rendering. Image2 is PROP reference ONLY for small ochre linen rounded-flap satchel. Add ONE closed compact ochre linen satchel resting ON THE GROUND at moss boulder base immediately screen-left of seated Papa, behind standing child but clearly visible in gap between them. Bag bottom touches grass, top reaches only seated Papa lower belly; broad loose strap folded on ground beside bag. NO strap on Papa now, no bag on dog or child. Do not move or resize any actor or alter lighting. No text, panels or new props.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:16:02.456Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-023-v3.png",
+      "role": "edit target preserve all except grounded satchel",
+      "sha256": "7c32a0e53da8c734d4a890ed5544215fb1f2cf02e724d6c63eddd71d9a659fdf"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "satchel shape/routing only",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    }
+  ],
+  "status": "ready",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Map safe resting place and clear path to entrance",
+    "frameId": "E",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -8,
+        3
+      ],
+      "targetXYZ": [
+        2,
+        -0.5,
+        0.3
+      ],
+      "height": 3,
+      "framing": "wide slightly elevated geographic master doorway left rest far right",
+      "fieldOfViewDegrees": 70,
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          3.6,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "seated against moss rock",
+        "limbsContactSupport": "seat rock two hindfeet ground",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          4.6,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "curl settling",
+        "limbsContactSupport": "body/front paws ground",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          2.2,
+          -1.8,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "standing",
+        "limbsContactSupport": "feet path",
+        "visibility": "visible"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0,
+          -0.3,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "waiting by portal",
+        "limbsContactSupport": "feet ground",
+        "visibility": "visible"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "objectStates": {
+      "before": "Satchel on ground far-right rest rock",
+      "after": "Same bag position; visible strap/contact only, no restaging"
+    },
+    "transition": {
+      "description": "intimate greeting to useful geography reset"
+    },
+    "editMode": "Preserve counterpart pixels/camera/contact; add satchel only"
+  },
+  "startedAt": "2026-09-22T04:16:20.939Z",
+  "finishedAt": "2026-09-22T04:17:03.561Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c74a-b423-7862-8792-861f676f14e3/exec-8798547b-76ba-4b89-9c7e-ca6f1e698fe4.png",
+  "review": "Creator full-image PASS: single closed ochre satchel planted on grass immediately left of seated Papa at moss-rock base; loose strap lies below, no strap remains on Papa. Four cast members, shared attention, resting dog and entire exterior preserved. Bag reaches around Papa lower chest in perspective; stable ground contact clear, contents hidden.",
+  "output": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-007-v1.png",
+  "sha256": "ea9afb864499532f9899e6b953b358e0d135f0ba537b5df8b8534821ca730a6f",
+  "width": 1536,
+  "height": 1024
+}

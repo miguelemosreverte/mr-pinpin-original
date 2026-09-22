@@ -1,0 +1,161 @@
+{
+  "id": "tell-mama-v2",
+  "slug": "tell-mama",
+  "prompt": "Use case: precise-object-edit. LAST INPUT IMAGE IS EXACT EDIT TARGET. Preserve actors, expressions, anatomy, camera framing, room geometry, lighting and all other details. Change ONLY this: This is the final instant of babyhandoff. Change ONLY Mama far-side arm (her anatomicalLEFT arm, currently the hand onfloor besidePinPin). Raise that connected arm gently behind PinPin to rest her paw behind infant back while Papa already supportsinfant withhisexistingtwohands. Show a visible natural elbow/forearm reach fromMama shoulder behindchild toinfant. Keep Mama neararm andhandplanted onrug. No third arm, exactlyTWOarmsMama. Preserve all other faces/poses, Papa2hands, childgestures, babybody and room.\nSupporting reference roles: [{\"image\": 1, \"role\": \"Exact edit target; preserve all actors/camera/lighting and change only stated correction\"}]\nNo text. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/tell-mama-v1.png",
+      "role": "Exact edit target; preserve all actors/camera/lighting and change only stated correction",
+      "sha256": "a7f96e3f9601b773066d763cec835fe3edd6017f5a614b404ae40d851581dca5"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:35:21.339730Z",
+  "output": "images/chapter-02-expanded/revision-06/family/tell-mama-v2.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds.",
+    "frameId": "K",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3.8,
+        -4.3,
+        1.2
+      ],
+      "targetXYZ": [
+        -1.8,
+        -0.8,
+        0.6
+      ],
+      "height": 1.2,
+      "framing": "Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Kitchen negativeY master half-space"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2,
+          -0.7,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Infant held continuously: Mama supporting underside until Papa two forearms cradle torso and bottom; exactly two arms per adult",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          -3,
+          0.5,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Infant held continuously: Mama supporting underside until Papa two forearms cradle torso and bottom; exactly two arms per adult",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1.1,
+          -1.5,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "PomPom",
+        "eyeTarget": "PomPom",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Seated haunches on woven rug, two hindfeet on floor; two forearms perform described action",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          -3,
+          0.4,
+          0.6
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Infant held continuously: Mama supporting underside until Papa two forearms cradle torso and bottom; exactly two arms per adult",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -4,
+          5,
+          0
+        ],
+        "bodyFacingTarget": "garden",
+        "headFacingTarget": "garden",
+        "eyeTarget": "garden",
+        "pose": "rests outside house",
+        "limbsContactSupport": "Four legs on ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCounter": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "playRug": [
+        -2,
+        -1,
+        0
+      ],
+      "woodBlocks": [
+        -1.8,
+        -1.4,
+        0.1
+      ],
+      "bread": [
+        -3,
+        1,
+        0.85
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "Floor play area left of table. Infant holder explicitly specified; three wooden blocks only when block play sequence begins.",
+      "after": "Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds."
+    },
+    "transition": {
+      "previousAction": "Papa set the empty bag down. PinPin helped Mama fold the picnic cloth.",
+      "nextAction": "PinPin settled beside them. There was still so much to tell—and everyone was there to listen.",
+      "reasonForShotChange": "Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds."
+    }
+  },
+  "status": "planned"
+}

@@ -1,0 +1,18 @@
+{
+  "id": "elder-r6-family-morning/title-en-v2",
+  "output": "images/covers/elder-r6-family-morning/title/title-en-v2.png",
+  "title": "A Morning Together",
+  "language": "en",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/elder-r6-family-morning/title/title-en-v1.png",
+      "role": "Edit target: correct missing Papa bowl only.",
+      "sha256": "a78efb170d07f90cec3ede12725243eadb10b3b2ffb00bed1be0c6021c62560e"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. Correct one missing table object in this portrait cover. Add Papa’s personal small porridge bowl on the tabletop directly before Papa, behind the large central serving bowl, slightly to its right but left of Papa’s cup; make its rim and porridge clearly visible. There must be exactly THREE small personal bowls (Mama, Papa, PinPin) plus ONE large central serving bowl. Keep all three cups, teapot, bread board, every character, bread handoff, visible paws, faces, gaze, typography, door and all background unchanged. Do not change framing or hide another bowl. Same portrait 1024x1536, exact title Mr. PinPin / A Morning Together unchanged.",
+  "startedAt": "2026-09-22T02:28:35.463627+00:00",
+  "tool": "built-in imagegen",
+  "status": "proposed",
+  "review": "Pending actual image inspection"
+}

@@ -1,0 +1,181 @@
+{
+  "id": "tell-mama-v1",
+  "slug": "tell-mama",
+  "prompt": "Use case: illustration-story. ONE landscape 1536x1024 image for a children’s picturebook, no text/border/panels.\nREFERENCE ROLES: 1 finished Elder scene controls dimensional animated-storybook rendering ONLY; no glasses/elder/imported room. 2 acceptedfamily controls identity and approximate scale. 3 establishedscene controls room geometry and props, not camera. Soft designed fur/quills, roundedexpressivefaces, warmfilledcreamfaces, readableirises, neverphotographic/PBR/blackbutton eyes. Papa mature broad adult HEDGEHOG creamface/hazeliris/brown-greyquills,no glasses. Mama copperquilledadult, PinPin smallchestnutchild, PomPom tinyinfant. Exactlythese FOUR hedgehogs, no duplicates. Adult1.6childheight infant0.5child. No clothing.\nALL INPUT ROLES: [{\"image\": 1, \"role\": \"Sole rendering authority; never import Elder, glasses or location\"}, {\"image\": 2, \"role\": \"Exact four hedgehog identities/relative scale; no dog inside\"}, {\"image\": 3, \"role\": \"Kitchen geometry, fixed meal seats and tableware; pose changes per requested shot\"}, {\"image\": 4, \"role\": \"Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting\"}, {\"image\": 5, \"role\": \"Accepted infant/support/floor environment study; do not copy its arrangement unless requested\"}]\nSHOT: Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds.\nKITCHEN RULES ifinside: greenrounddoorcenterrear hingesRIGHT knobLEFT, cupboardsLEFT stoveRIGHT, roundwoodtable. For breakfastfixed seats MamaLEFT holdinginfant, PapaFAR-RIGHT, childNEAR-RIGHT, exactly3speckledbeigecups3porridgebowls1communalbowlbreadfrontleftbrownteapot. Allfourfamilyfaces must be visible in mealframes; no crops that omitMama/baby. For floor/preparationframes follow explicit changed state rather than forcing seatedmeal. DOG staysoutside. For exteriorScooby softanimatedbrownbrindle/creamgrey muzzle/whitebib/foldedears/curledtail, dogshoulder2.7childheight. Meaningful directedpupils, no camera-facing posedportraits.\nCAMERA/ACTOR ART DIRECTION (notlabels): {\"schemaVersion\": 1, \"purpose\": \"Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds.\", \"frameId\": \"K\", \"units\": \"Approximate PinPin standing heights; illustrative art direction, not measured geometry.\", \"camera\": {\"positionXYZ\": [-3.8, -4.3, 1.2], \"targetXYZ\": [-1.8, -0.8, 0.6], \"height\": 1.2, \"framing\": \"Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds.\", \"fieldOfViewDegrees\": 50, \"axisSide\": \"Kitchen negativeY master half-space\"}, \"actors\": [{\"name\": \"Papa\", \"positionXYZ\": [-2, -0.7, 0], \"bodyFacingTarget\": \"playRug\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"Seated at floor play area\", \"limbsContactSupport\": \"Infant held continuously: Mama supporting underside until Papa two forearms cradle torso and bottom; exactly two arms per adult\", \"visibility\": \"visible\"}, {\"name\": \"Mama\", \"positionXYZ\": [-3, 0.5, 0], \"bodyFacingTarget\": \"playRug\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"Seated at floor play area\", \"limbsContactSupport\": \"Infant held continuously: Mama supporting underside until Papa two forearms cradle torso and bottom; exactly two arms per adult\", \"visibility\": \"visible\"}, {\"name\": \"PinPin\", \"positionXYZ\": [-1.1, -1.5, 0], \"bodyFacingTarget\": \"playRug\", \"headFacingTarget\": \"PomPom\", \"eyeTarget\": \"PomPom\", \"pose\": \"Seated at floor play area\", \"limbsContactSupport\": \"Seated haunches on woven rug, two hindfeet on floor; two forearms perform described action\", \"visibility\": \"visible\"}, {\"name\": \"PomPom\", \"positionXYZ\": [-3, 0.4, 0.6], \"bodyFacingTarget\": \"playRug\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"Seated at floor play area\", \"limbsContactSupport\": \"Infant held continuously: Mama supporting underside until Papa two forearms cradle torso and bottom; exactly two arms per adult\", \"visibility\": \"visible\"}, {\"name\": \"Scooby\", \"positionXYZ\": [-4, 5, 0], \"bodyFacingTarget\": \"garden\", \"headFacingTarget\": \"garden\", \"eyeTarget\": \"garden\", \"pose\": \"rests outside house\", \"limbsContactSupport\": \"Four legs on ground\", \"visibility\": \"offscreen outside\"}], \"staticLandmarks\": {\"table\": [0, 0, 0.85], \"greenDoor\": [0, 3, 0], \"leftCounter\": [-3, 1, 0], \"stove\": [3, 1, 0], \"playRug\": [-2, -1, 0], \"woodBlocks\": [-1.8, -1.4, 0.1], \"bread\": [-3, 1, 0.85], \"family group\": [0, -1, 0]}, \"objectStates\": {\"before\": \"Floor play area left of table. Infant holder explicitly specified; three wooden blocks only when block play sequence begins.\", \"after\": \"Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds.\"}, \"transition\": {\"previousAction\": \"Papa set the empty bag down. PinPin helped Mama fold the picnic cloth.\", \"nextAction\": \"PinPin settled beside them. There was still so much to tell—and everyone was there to listen.\", \"reasonForShotChange\": \"Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds.\"}}.\nNo extra limbs, paws must visiblyattach. Infant neverfloats. Morning warmdaylight withsoftfill, no darkmask, no captions.\nPRIORITY FINAL ACTION: Move camera LOW into floor rug playzone LEFT OF TABLE. Papa sits RIGHT onrug, both forearms cradleinfant securely whileMama LEFT sits and keepsonepaw beneathinfantback finishingtransfer, otherhandonrug. PinPin child CENTER foreground usesbothpaws fluttergesture likeapage, lookingtoMama tellingadventure. Exactly4hedgehogs, allfacesvisible andinteracting. TablebackgroundRIGHT withsmallochresatchel andfoldedcreamclothONLY, no breakfastdishes or food, no blocksontable. AFTERNOON warmdaylight, notsleepnight. KeepMama/Papabroadmaturebodies infant clearlyhalfchildsize. Babytransfer musthave2Papaarmsand1Mamasupportpaw continuousunderbody.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "Sole rendering authority; never import Elder, glasses or location",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "Exact four hedgehog identities/relative scale; no dog inside",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/bag-home-v1.png",
+      "role": "Preceding afternoon kitchen state: nofood, open satcheloncleartable, picniccloth now folded.",
+      "sha256": "183bc3182f71408df94d4bd2f955c7bf2ece9d2795cbb4a8ee158038a3e0c2a3"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/family-contact-study-v1.png",
+      "role": "Accepted infant/support/floor environment study; do not copy its arrangement unless requested",
+      "sha256": "e97588c91508a4083e14c85de27f53ec08d27c009350d5f8be3b2aed6c1475eb"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:32:52.307980Z",
+  "output": "images/chapter-02-expanded/revision-06/family/tell-mama-v1.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds.",
+    "frameId": "K",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3.8,
+        -4.3,
+        1.2
+      ],
+      "targetXYZ": [
+        -1.8,
+        -0.8,
+        0.6
+      ],
+      "height": 1.2,
+      "framing": "Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Kitchen negativeY master half-space"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2,
+          -0.7,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Infant held continuously: Mama supporting underside until Papa two forearms cradle torso and bottom; exactly two arms per adult",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          -3,
+          0.5,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Infant held continuously: Mama supporting underside until Papa two forearms cradle torso and bottom; exactly two arms per adult",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1.1,
+          -1.5,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "PomPom",
+        "eyeTarget": "PomPom",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Seated haunches on woven rug, two hindfeet on floor; two forearms perform described action",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          -3,
+          0.4,
+          0.6
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Infant held continuously: Mama supporting underside until Papa two forearms cradle torso and bottom; exactly two arms per adult",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -4,
+          5,
+          0
+        ],
+        "bodyFacingTarget": "garden",
+        "headFacingTarget": "garden",
+        "eyeTarget": "garden",
+        "pose": "rests outside house",
+        "limbsContactSupport": "Four legs on ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCounter": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "playRug": [
+        -2,
+        -1,
+        0
+      ],
+      "woodBlocks": [
+        -1.8,
+        -1.4,
+        0.1
+      ],
+      "bread": [
+        -3,
+        1,
+        0.85
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "Floor play area left of table. Infant holder explicitly specified; three wooden blocks only when block play sequence begins.",
+      "after": "Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds."
+    },
+    "transition": {
+      "previousAction": "Papa set the empty bag down. PinPin helped Mama fold the picnic cloth.",
+      "nextAction": "PinPin settled beside them. There was still so much to tell—and everyone was there to listen.",
+      "reasonForShotChange": "Afternoon rugfamilytriangle Papa seatedright receivingbaby withtwoforearms Mama seatedleft keepsonepaw supportingbaby duringhandoff listenschildcenter gesturingflutterpagehands; emptybag tablebackground. Explicit newbabyhandoff needed preceding or combineMama stillholds."
+    }
+  },
+  "status": "planned"
+}

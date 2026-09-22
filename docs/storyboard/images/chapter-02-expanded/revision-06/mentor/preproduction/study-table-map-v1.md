@@ -1,0 +1,7 @@
+# study-table-map-v1
+
+Creator actual fullview PASS: same room rootnook/mat/bed/wallmap/shelf, separate openbook left and portablelake map right with clear workspace. Nocharacters, no stairs/formaldoor. Added two stone weights on portablemap now state ledger must account; not claim calibrated room.
+
+## Exact prompt
+
+Use case: illustration-story. ONE landscape1536x1024 preproduction environment/prop reference for this exact established Elder tree home. Image1 controls room geography, image2 finished style. NO characters. Retain desk foreground-left, warm amber lamp at far-left tabletop, existing open book left half, feather and inkwell foreground-left, north wall map and shelf, east bed right, small low natural root nook back-right with oval mat and stool, central large woven rug. The NEW PROP is one modest portable parchment map freshly unrolled on the EMPTY RIGHT HALF of the existing desk, separate from openbook/inkwell. Map has a simple blue lake shape, branching path and a few little cottage/tree drawings, no text. Show enough tabletop depth for small hedgehog hands to smooth it without overlapping book or lamp. Portable map is smaller than wallmap and obviously a separate sheet. Afternoon soft light same warm dimensional animated storybook rendering; no new door/stairs, no transformed room, no extra furniture. Camera slightly elevated above familiar southwest desk view showing fixed room and clear separate book/map working spaces. This is a practical staged prop reference, not dramatic magic.

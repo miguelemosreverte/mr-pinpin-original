@@ -1,0 +1,132 @@
+{
+  "id": "elder-r6-mentor-098-v1",
+  "tool": "built-in image_gen",
+  "status": "ready",
+  "plannedAt": "2026-09-22T04:41:46.516Z",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Stable child-height side contact view",
+    "frameId": "H",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3,
+        -6,
+        0.95
+      ],
+      "targetXYZ": [
+        -1.5,
+        -2,
+        1
+      ],
+      "height": 0.95,
+      "framing": "Stable child-height side contact view",
+      "fieldOfViewDegrees": 45,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -1,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "lying still chest forepaws ground",
+        "limbsContactSupport": "lying still chest forepaws ground",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2,
+          -2,
+          0.35
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "both hindfeet stone forepaws close child",
+        "limbsContactSupport": "both hindfeet stone forepaws close child",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          -2,
+          1
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "seated waiting hips back paws fur near leg flank",
+        "limbsContactSupport": "seated waiting hips back paws fur near leg flank",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "chimney": "facade left",
+      "lantern": "facade right",
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "Satchel worn left shoulder/right hip",
+      "after": "Same bag position; visible strap/contact only, no restaging"
+    },
+    "transition": {
+      "previousAction": "canonical scene099",
+      "nextAction": "canonical scene101",
+      "reasonForShotChange": "Stable child-height side contact view"
+    },
+    "editMode": "Preserve counterpart pixels/camera/contact; add satchel only"
+  },
+  "prompt": "Use case: precise-object-edit. ONE landscape1536x1024. Image1 EDIT TARGET: preserve exact camera, all character faces/style/poses/gaze/feet/paw contacts, clothing-free animals, environmental geometry, lighting. Image2 is satchel PROP ONLY, do not copy its white background or change cast. Add ONE small muted ochre linen crossbody satchel worn ONLY by adult Papa hedgehog. Broad soft strap from Papa ANATOMICAL LEFT SHOULDER diagonally to ANATOMICAL RIGHT HIP; compact closed rounded flap bag rests at right hip, just behind hip during riding, away from child/supporting arm. Bagwidth about0.6Papa torso/height0.55. No duplicate straps or bag on dog/child; far side may naturally occlude. Strap follows body not quill spikes, does not replace or hide supporting paws. This is continuity of already packed picnicbag, no new action/props. Do not change feet positions or eye style. Keep soft animated Papa creamface and dog expressiveness. No text, no panels, no borders.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-100-v1.png",
+      "role": "edit target preserve all except worn satchel",
+      "sha256": "530176c395bbe3f08ba2b8c5e6372e5fb969d6bf84eaadd63c69b293361f747a"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "satchel routing shape only",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    }
+  ],
+  "startedAt": "2026-09-22T04:42:35.293Z",
+  "finishedAt": "2026-09-22T04:43:19.294Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c74a-b423-7862-8792-861f676f14e3/exec-b28b311b-cb92-4c0b-acc6-05ef672f44f4.png",
+  "review": "Creator full-image PASS: one compact ochre right-hip satchel and diagonal chest strap added. Papa remains two feet on mounting stone, one forepaw near child shoulder and other extended; child seated and two forepaws grounded on dog, dog looks up attentively. Closed home door/water bowl/background retained. Far strap anchor and hidden rider leg unverified.",
+  "output": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-098-v1.png",
+  "sha256": "42db6e17f3d4fa16d9d78fd103ddb36e0141060e2542b0d1d44d09cf826f3d80",
+  "width": 1536,
+  "height": 1024
+}

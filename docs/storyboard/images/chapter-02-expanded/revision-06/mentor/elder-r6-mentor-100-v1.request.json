@@ -1,0 +1,124 @@
+{
+  "id": "elder-r6-mentor-100-v1",
+  "tool": "built-in image_gen",
+  "status": "planned",
+  "plannedAt": "2026-09-22T04:45:44.585Z",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Low close care triangle dog face child attention",
+    "frameId": "H",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        1,
+        -5,
+        0.75
+      ],
+      "targetXYZ": [
+        2,
+        -2,
+        0.7
+      ],
+      "height": 0.75,
+      "framing": "Low close care triangle dog face child attention",
+      "fieldOfViewDegrees": 42,
+      "axisSide": "negativeY"
+    },
+    "actors": [
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          1,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "resting forepaws ground hindlegs tucked",
+        "limbsContactSupport": "resting forepaws ground hindlegs tucked",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0.5,
+          -2.6,
+          0
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "Scooby",
+        "eyeTarget": "Scooby",
+        "pose": "two feet ground one paw shoulder other side",
+        "limbsContactSupport": "two feet ground one paw shoulder other side",
+        "visibility": "visible, natural occlusion allowed"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          2.8,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "bowl",
+        "headFacingTarget": "bowl",
+        "eyeTarget": "bowl",
+        "pose": "two feet ground two paws jug stream into bowl",
+        "limbsContactSupport": "two feet ground two paws jug stream into bowl",
+        "visibility": "visible, natural occlusion allowed"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "bowl": [
+        2,
+        -2,
+        0
+      ],
+      "chimney": "facade left",
+      "lantern": "facade right",
+      "path": [
+        0,
+        -8,
+        0
+      ],
+      "dogBack": [
+        -1,
+        -2,
+        1
+      ]
+    },
+    "objectStates": {
+      "before": "Satchel worn left shoulder/right hip",
+      "after": "Same bag position; visible strap/contact only, no restaging"
+    },
+    "transition": {
+      "previousAction": "canonical scene101",
+      "nextAction": "canonical scene103",
+      "reasonForShotChange": "Low close care triangle dog face child attention"
+    },
+    "editMode": "Preserve counterpart pixels/camera/contact; add satchel only"
+  },
+  "prompt": "Use case: precise-object-edit. ONE landscape1536x1024. Image1 EDIT TARGET: preserve exact camera, all character faces/style/poses/gaze/feet/paw contacts, clothing-free animals, environmental geometry, lighting. Image2 is satchel PROP ONLY, do not copy its white background or change cast. Add ONE small muted ochre linen crossbody satchel worn ONLY by adult Papa hedgehog. Broad soft strap from Papa ANATOMICAL LEFT SHOULDER diagonally to ANATOMICAL RIGHT HIP; compact closed rounded flap bag rests at right hip, just behind hip during riding, away from child/supporting arm. Bagwidth about0.6Papa torso/height0.55. No duplicate straps or bag on dog/child; far side may naturally occlude. Strap follows body not quill spikes, does not replace or hide supporting paws. This is continuity of already packed picnicbag, no new action/props. Do not change feet positions or eye style. Keep soft animated Papa creamface and dog expressiveness. No text, no panels, no borders.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-102-v1.png",
+      "role": "edit target preserve all except worn satchel",
+      "sha256": "3f7d8cfb50404db8e5fbf5a3736b997546a9427a2d071eb8363e3249e2c55588"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "satchel routing shape only",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    }
+  ]
+}

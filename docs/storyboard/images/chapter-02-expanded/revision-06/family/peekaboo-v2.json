@@ -1,0 +1,189 @@
+{
+  "id": "peekaboo-v2",
+  "slug": "peekaboo",
+  "prompt": "Use case: precise-object-edit. LAST INPUT IMAGE IS EXACT EDIT TARGET. Preserve actors, expressions, anatomy, camera framing, room geometry, lighting and all other details. Change ONLY this: Remove all toys/blocks/toycar from floor and basket foreground. Remove every object from round tabletop, leaving completely bare wooden surface, because breakfast has NOT been laid yet. Keep bread on Mama counter. Keep all family unchanged.\nSupporting reference roles: [{\"image\": 1, \"role\": \"Sole rendering authority; never import Elder, glasses or location\"}, {\"image\": 2, \"role\": \"Exact four hedgehog identities/relative scale; no dog inside\"}, {\"image\": 3, \"role\": \"Kitchen geometry, fixed meal seats and tableware; pose changes per requested shot\"}, {\"image\": 4, \"role\": \"Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting\"}, {\"image\": 5, \"role\": \"Exact edit target; preserve all actors/camera/lighting and change only stated correction\"}]\nNo text. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "Sole rendering authority; never import Elder, glasses or location",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "Exact four hedgehog identities/relative scale; no dog inside",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-006-v1.png",
+      "role": "Kitchen geometry, fixed meal seats and tableware; pose changes per requested shot",
+      "sha256": "4e7c1c238a31f1c79cb8a31c1266d27fcab4b22fb5cdc174d5029aa5060347a7"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/peekaboo-v1.png",
+      "role": "Exact edit target; preserve all actors/camera/lighting and change only stated correction",
+      "sha256": "f801ca924f23e160a638fcb7698ac529dc72ed04b9e70f322132825a6339580a"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T02:26:35.073655Z",
+  "output": "images/chapter-02-expanded/revision-06/family/peekaboo-v2.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Low intimate over Papa shoulder toward PinPin covering face with both paws; infant on Papa lap clearly supported, Mama counter background.",
+    "frameId": "K",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3.2,
+        -2.3,
+        0.9
+      ],
+      "targetXYZ": [
+        -1.8,
+        -0.8,
+        0.6
+      ],
+      "height": 0.9,
+      "framing": "Low intimate over Papa shoulder toward PinPin covering face with both paws; infant on Papa lap clearly supported, Mama counter background.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Kitchen negativeY master half-space"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2,
+          -0.7,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Seated haunches on woven rug, two hindfeet on floor; two forearms securely support infant",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          -3,
+          1,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "bread",
+        "eyeTarget": "bread",
+        "pose": "standing at counter preparing bread",
+        "limbsContactSupport": "Both hindfeet on floor; two paws at bread platter",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1.1,
+          -1.5,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "PomPom",
+        "eyeTarget": "PomPom",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Seated haunches on woven rug, two hindfeet on floor; two forearms perform described action",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          -2,
+          -0.75,
+          0.6
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Papa lap and forearm",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -4,
+          5,
+          0
+        ],
+        "bodyFacingTarget": "garden",
+        "headFacingTarget": "garden",
+        "eyeTarget": "garden",
+        "pose": "rests outside house",
+        "limbsContactSupport": "Four legs on ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCounter": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "playRug": [
+        -2,
+        -1,
+        0
+      ],
+      "woodBlocks": [
+        -1.8,
+        -1.4,
+        0.1
+      ],
+      "bread": [
+        -3,
+        1,
+        0.85
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "Floor play area left of table. Infant holder explicitly specified; three wooden blocks only when block play sequence begins.",
+      "after": "Low intimate over Papa shoulder toward PinPin covering face with both paws; infant on Papa lap clearly supported, Mama counter background."
+    },
+    "transition": {
+      "previousAction": "Inside, Papa sat on the rug with PomPom on his lap. PinPin sat beside them.",
+      "nextAction": "“Here!” PinPin opened his paws. PomPom squealed, and Papa laughed with them.",
+      "reasonForShotChange": "Low intimate over Papa shoulder toward PinPin covering face with both paws; infant on Papa lap clearly supported, Mama counter background."
+    }
+  },
+  "status": "creator-reviewed",
+  "requestPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/peekaboo-v2.request.json",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c6ba-3ec7-7e90-8b64-cfa109b43746/exec-23bfa7f1-e7fd-4138-b3e3-f97e456921c4.png",
+  "startedAt": "2026-09-22T02:27:43.378Z",
+  "finishedAt": "2026-09-22T02:28:44.833Z",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "b0051350939a0d95b273ccd9dbb30384f15e0e133a0340e9a98c414497ca1e52",
+  "review": "Creator actual full-image PASS: Purposeful Papa-shoulder lowview reveals childcoveringface bothpaws, babyreaches towardchild fromsupportedPapaforearm/lap, Papa profile lookschild. Mama remainsvisiblecounter, baretable andnontoys correct. Childtwofeetgrounded, adultfararm/feetoccluded notcertified. Exact4 cast."
+}

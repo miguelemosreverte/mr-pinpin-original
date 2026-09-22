@@ -1,0 +1,32 @@
+{
+  "id": "forest-environments-v1",
+  "stem": "preproduction/environments-v1",
+  "version": 1,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-016-v1.png",
+      "role": "Finished story forest style/color/light and natural path only. Do not copy actors.",
+      "sha256": "dc4a9df72a30891d3062553528973d58f164bd0ce2ff30707ad43c4236b95f80"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Preproduction forest continuity sheet, landscape 3:2, exactly TWO equally sized detailed environment views side by side, no labels or text, no characters. Warm soft animated children’s book illustration, luminous leaves and gentle grouped moss, not photography or hard PBR.\nLEFT: low child’s-eye forest path establishing the first walking stop. Gentle firm earth path runs from foreground to back center among slim birches. On LEFT of path is a broad low flat oval mossy stone, height about a small child’s knee and width about three child heights, thick rather than paper-thin, with a usable level top. Two slim white birches just behind the stone, low ferns on right, a modest root crosses the path further back only 15% of child height, and a soft leafy twig extends from left further up the path at about adult hedgehog head height. No huge barrier, falls, cliffs or stairways. Slight morning mist in the distance, clear daylight foreground.\nRIGHT: midday picnic clearing adjoining the same gentle forest path. Camera faces into a small grass patch. Low fallen log horizontally left to right across back third, a few soft moss edges with clear usable grass in front. Double-trunk birch behind LEFT end of log; low lush fern clump behind RIGHT end. Earth path enters bottom center then exits back right; flat grass center with usable space. Sun from upper left, dappled shade behind log, open warm foreground. No food, table, buildings, water, artificial chairs, bags, cups, cloth, people, animals or writing. Keep room for two small hedgehogs front center and a larger resting dog to their right.\nThis sheet locks geography only. No labels, arrows or map icons. Both spaces inviting and practical, cinematic depth and soft illustrated forms like the reference forest.",
+  "tool": "image_gen.imagegen",
+  "mode": "generate",
+  "requestedAt": "2026-09-22T01:45:03.400226+00:00",
+  "status": "ready",
+  "schemaVersion": 1,
+  "startedAt": "2026-09-22T01:45:15.683Z",
+  "finishedAt": "2026-09-22T01:45:44.768Z",
+  "completedAt": "2026-09-22T01:46:11.696655+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c6ba-ce3a-7982-b8e7-ca232b847164/exec-54a93465-7bc3-487f-88e2-ce2728fb21ba.png",
+  "output": "images/chapter-02-expanded/revision-06/forest/preproduction/environments-v1.png",
+  "sha256": "8514a0e488ead46e8ed520fb526dfaf4b9e680084b3c831a4754e732fd621f6b",
+  "width": 1536,
+  "height": 1024,
+  "review": "Actual full-image creator PASS: left stop/path has broad low oval stone on left, two birches behind, fern right, modest root across flat path, leafy twig above. Right clearing shows low horizontal log back, double birch left, fern right, clear flat grass foreground, path enters bottom and continues right. No actors/props/water/buildings. Soft luminous book style. Stone height illustrative without scale actor; enforce child knee height in narrative output, no exact dimensions certified.",
+  "timingSource": {
+    "source": "Date().toISOString immediately before and after awaited built-in tool call",
+    "scope": "observed request wall time, not model-only latency"
+  },
+  "reviewedAt": "2026-09-22T01:47:43.697301+00:00"
+}

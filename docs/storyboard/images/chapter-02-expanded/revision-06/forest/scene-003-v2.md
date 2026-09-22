@@ -1,0 +1,6 @@
+# Exact built-in imagegen prompt
+
+Use case: precise-object-edit. First image edit target, second image immediately preceding scene and strict geography authority. Retain soft art, Papa with both feet supported on stone, supporting child on crouched Scooby, satchel and faces. Correct continuity: dog body extends LEFT behind head and its curled tail must emerge from LEFT REAR haunch behind Papa, never at right shoulder. Remove entirely wrong right-side tail. The moss stone is same low broad stone seen image2; do not grow it. Lower stone top and Papa together about 15 percent, keeping both Papa feet firmly on same stone and child support reachable by slightly bent forearms. Dog remains belly low on ground, head right looking up toward child. Same birches and forest. One dog, two hedgehogs, no extra limbs. Full standalone landscape.
+
+EDIT TARGET: retain Papa contact and child position; fix tail and stone: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-003-v1.png
+Continuity authority: SAME stone height and SAME dog body orientation/tail at rear LEFT: /Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-002-v1.png

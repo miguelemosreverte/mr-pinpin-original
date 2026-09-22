@@ -1,0 +1,5 @@
+# elder-r6-beneath-roots/title-en-v2
+
+Use case: precise-object-edit. Correct ONLY Elder hedgehog anatomy. He is pointing upward with one front arm, so that arm CANNOT also have a second paw on the floor. REMOVE the extra small grounded paw under his raised pointing arm, the paw closest to the child (at approximately x420,y1260 in1024x1536 image). Restore natural chest/belly fur and stone shadow in its place. Keep his OTHER big grounded front paw near x310,y1280, keep rear foot near x140,y1235, and keep raised arm/pointing paw. Final: one raised forelimb, ONE grounded forelimb; rear feet may be hidden. Preserve every other pixel as closely as possible: exact titles, two faces and spectacles, child, mural pregnant woman/crops/cradle, lamp, bowl, lighting and framing. No new limbs. Portrait1024x1536.
+
+Full image inspected. Extra grounded forepaw successfully removed: one grounded near forepaw plus raised far pointing forelimb and rear foot visible. Elder/child attentive exchange, two identities and spectacles, mural/light/acorns and exact English text preserved. Hidden rear anatomy unverified. Selected v2 proposal.

@@ -1,0 +1,149 @@
+{
+  "id": "elder-r6-forest-009",
+  "stem": "scene-009-v2",
+  "version": 2,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-009-v1.png",
+      "role": "EDIT target keep branch helping action and anatomy",
+      "sha256": "17687c5cfca675d6314ed09e9d6697df8bd8b083ba4c3194d1d8290aedb585a0"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-005-v1.png",
+      "role": "Same crossbody bag orientation: left shoulder to right hip",
+      "sha256": "0e61ac329b49ea65effcfcd99fc5ea72c0699cdce125819c3343f251cbfa0a96"
+    }
+  ],
+  "mode": "edit",
+  "prompt": "Use case: precise-object-edit. Edit first image ONLY bag orientation. Keep exact Papa ducking under leafy twig held by child, soft faces, bodies, dog, daylight, forest and camera. Move Papa ochre satchel to HIS RIGHT HIP, visible on SCREEN LEFT side of his lower torso, and make one simple strap from HIS LEFT SHOULDER (screen-right upper shoulder) diagonally across chest to SCREEN LEFT hip bag. Second image shows correct same shoulder-to-hip orientation. Current image wrongly has bag on other side and waist strap; remove that wrong bag/strap. Preserve both Papa arms and paw positions, do not add limbs. Full landscape no text.",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "PinPin helps too: “Now you, Papa!” PinPin held a low leafy twig aside while Papa ducked under it.",
+    "frameId": "W",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3,
+        -3,
+        1
+      ],
+      "targetXYZ": [
+        0,
+        4,
+        0.9
+      ],
+      "height": 1,
+      "framing": "medium child foreground father action",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0,
+          4,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "stooping head beneath thin leafy twig",
+        "limbsContactSupport": "stooping head beneath thin leafy twig",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -0.7,
+          3.6,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "feetground, onepawholdstwigaside",
+        "limbsContactSupport": "feetground, onepawholdstwigaside",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          2,
+          4.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "stands beyond, gazes toward Papa",
+        "limbsContactSupport": "stands beyond, gazes toward Papa",
+        "visibility": "visible unless specified by purposeful crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ],
+      "twig": [
+        -0.5,
+        4,
+        1.3
+      ]
+    },
+    "objectStates": {
+      "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+      "after": "Papa satchel right hip, walking or supported transfer"
+    },
+    "transition": {
+      "previous": "Over the root",
+      "next": "Their lunch place",
+      "reason": "PinPin helps too"
+    }
+  },
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-22T02:42:14.632782+00:00",
+  "status": "prepared"
+}

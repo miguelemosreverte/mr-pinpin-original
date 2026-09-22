@@ -2,7 +2,7 @@
 
 This workflow carries a chapter from source to a complete reviewable proposal without relying on chat memory. The chapter bible, plans, images, sidecars and report are the handoff. They form an **illustrated continuity pack**, not a calibrated 3D model or a promise of exact geometry. Coordinates, dimensions and lens notes are explicit artistic constraints that must be checked against each output.
 
-Start from [chapter-template/](chapter-template/) and the project's [camera-first working method](WORKFLOW.md). For the current Elder revision, [revision-05/CONTRACT.md](chapters-02-04/revision-05/CONTRACT.md) and [revision04 story brief](chapters-02-04/revision-04/USER-BRIEF.md) are authoritative. Academy remains revision02. Earlier contracts describe preserved proposals.
+Start from [chapter-template/](chapter-template/) and the project's [camera-first working method](WORKFLOW.md). For the current Elder revision, [revision-06/CONTRACT.md](chapters-02-04/revision-06/CONTRACT.md) and [revision04 story brief](chapters-02-04/revision-04/USER-BRIEF.md) are authoritative. Academy remains revision02. Earlier contracts describe preserved proposals.
 
 ## Durable files
 
@@ -64,7 +64,7 @@ Write narration that matches the selected image and source/adaptation map. Prese
 
 Review the entire chapter in order: pacing, cause/effect, entrances/exits, day/time, emotional transitions, scale, changing prop states and unresolved future threads. Inspect the preproduction pack alongside the resulting scenes. Compare revised Elder scenes with optional `before` images where useful. Review all three languages, including repeated source passages and adaptation additions.
 
-Run `node scripts/verify-chapter-workshop.cjs` from the durable workspace (add `--revision 5` for the current Elder proposal; use the relevant revision for earlier proposals). During generation, `--allow-pending` reports missing assets as pending; it is **not** a completion pass. Open `review/chapter-workshop.html` on the local server; check desktop and a 390px mobile viewport. All scene images must remain uncropped, the complete reading sequence must be reachable, and production-only commentary must stay outside reading mode.
+Run `node scripts/verify-chapter-workshop.cjs` from the durable workspace (add `--revision 6` for the current Elder proposal; use the relevant revision for earlier proposals). During generation, `--allow-pending` reports missing assets as pending; it is **not** a completion pass. Open `review/chapter-workshop.html` on the local server; check desktop and a 390px mobile viewport. All scene images must remain uncropped, the complete reading sequence must be reachable, and production-only commentary must stay outside reading mode.
 
 **Completion gate:** no missing selected assets, complete three-language narration, structural/hash checks pass, every output has an actual review, no unresolved blocking continuity defect, and full-sequence desktop/mobile review is recorded. Present status as proposed until Miguel approves. Publication requires a separate authorized cutover; this workflow does not publish anything.
 

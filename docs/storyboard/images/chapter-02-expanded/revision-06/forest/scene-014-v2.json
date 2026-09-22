@@ -1,0 +1,159 @@
+{
+  "id": "elder-r6-forest-014",
+  "stem": "scene-014-v2",
+  "version": 2,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-014-v1.png",
+      "role": "EDIT TARGET reduce oversized dog bowl only, preserve action",
+      "sha256": "e9d3f54ab4da30827c514885ad32298a1044fdf30c11ad5887b7618346759eb6"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-012-v2.png",
+      "role": "Fixed bowl geometry authority: shallow wood bowl only 1.4 times cup diameter, originally nested cup inside it",
+      "sha256": "47274e6585cee29b9dfa70a19b7037b54f0f932f1aec2c364a6378863c635451"
+    }
+  ],
+  "mode": "edit",
+  "prompt": "Use case: precise-object-edit. Edit first image. Correct only OVERSIZED DOG BOWL; it is the same small shallow wooden bowl from reference2, outer diameter only about 1.4 times the small drinking cup. Never a large washbasin. Reduce bowl to roughly HALF its current width and lower shallow height. Preserve wood material and water. Bowl sits on picnic cloth lower-right in same location, small shallow dish approximately diameter of one and a half apples. Preserve Papa pouring, child holding cup with both paws, water stream, faces, anatomy, every other prop, cloth, camera and light exactly. Single landscape illustration, no text.",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "A drink after walking: Papa poured some water into their little cup. PinPin held it carefully with both paws.",
+    "frameId": "P",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -2,
+        -2,
+        0.9
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "height": 0.9,
+      "framing": "close pouring clear contacts",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.4,
+          0
+        ],
+        "bodyFacingTarget": "cup",
+        "headFacingTarget": "cup",
+        "eyeTarget": "cup",
+        "pose": "holds small water flask two paws tilts into cup",
+        "limbsContactSupport": "holds small water flask two paws tilts into cup",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -0.7,
+          -0.7,
+          0
+        ],
+        "bodyFacingTarget": "cup",
+        "headFacingTarget": "cup",
+        "eyeTarget": "cup",
+        "pose": "holds cup both paws on cloth",
+        "limbsContactSupport": "holds cup both paws on cloth",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          2.5,
+          0.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "rests right offscreen close crop",
+        "limbsContactSupport": "rests right offscreen close crop",
+        "visibility": "offscreen right beyond close crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ]
+    },
+    "objectStates": {
+      "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+      "after": "picnic state: water"
+    },
+    "transition": {
+      "previous": "A piece for Papa",
+      "next": "Scooby has a drink",
+      "reason": "A drink after walking"
+    }
+  },
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-22T03:16:25.375461+00:00",
+  "status": "ready",
+  "schemaVersion": 1,
+  "startedAt": "2026-09-22T03:16:25.407Z",
+  "finishedAt": "2026-09-22T03:18:22.394Z",
+  "completedAt": "2026-09-22T03:18:23.122949+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c6e8-4236-7423-aba9-373f8983fcab/exec-38a61110-4032-4341-babf-d91e67abc282.png",
+  "output": "images/chapter-02-expanded/revision-06/forest/scene-014-v2.png",
+  "sha256": "8446865e80876ccef778ba74f877f8cfd4fef1bfc854381cd6764187af3c0480",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator full-image review PASS bowl correction: shallow wooden bowl substantially reduced from oversized v1, now a small portable dish comparable to two foreground apples, with slight foreground perspective enlargement versus held cup farther back. Pouring hands/cup/water stream and all other props preserved. Numeric fixed ratio not certified from perspective; root to verify final match.",
+  "timingSource": {
+    "source": "Date().toISOString immediately before and after awaited built-in tool call",
+    "scope": "observed request wall time, not model-only latency"
+  },
+  "reviewedAt": "2026-09-22T03:22:18.864139+00:00"
+}

@@ -1,0 +1,169 @@
+{
+  "id": "goodbye-hug-v2",
+  "slug": "goodbye-hug",
+  "prompt": "Use case: precise-object-edit. LAST INPUT IMAGE IS EXACT EDIT TARGET. Preserve actors, expressions, anatomy, camera framing, room geometry, lighting and all other details. Change ONLY this: Correct ONLY Papa satchel placement. Strap starts on his anatomical LEFT shoulder (viewerRIGHT), crosses diagonally down across cream chest to his anatomical RIGHT hip (viewerLEFT, partly hidden behind child). Remove current bag on viewerRIGHT hip and its vertical same-side strap. Bag should be mostly hidden by child at viewerLEFT with small ochre flap visible, no duplicate bags. Preserve warm hug, allfour faces, infant continuous support, exactly2arms eachadult, room and open door.\nSupporting reference roles: [{\"image\": 1, \"role\": \"Exact edit target; preserve all actors/camera/lighting and change only stated correction\"}]\nNo text. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/goodbye-hug-v1.png",
+      "role": "Exact edit target; preserve all actors/camera/lighting and change only stated correction",
+      "sha256": "445f1dd8c047a9fa225dc3b17e67898ebce1ae9c80a6b1eccfc9ef1af0d8ffff"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:21:30.219782Z",
+  "output": "images/chapter-02-expanded/revision-06/family/goodbye-hug-v2.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Inside doorwaylow childhugMama knees sheholdsPomPomtwoarms, Papa behindcarriesclosedbag atside, middaynotnightgreeninnerhingesrightknobleft.",
+    "frameId": "K",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3.8,
+        -3.5,
+        1.3
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        0.9
+      ],
+      "height": 1.3,
+      "framing": "Inside doorwaylow childhugMama knees sheholdsPomPomtwoarms, Papa behindcarriesclosedbag atside, middaynotnightgreeninnerhingesrightknobleft.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Kitchen negativeY master half-space"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.9,
+          2,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Stands waiting wearing packed satchel",
+        "limbsContactSupport": "Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          0,
+          2.5,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Standing beside open door holding infant",
+        "limbsContactSupport": "Two arms only; one forearm continuously beneath infant torso/bottom; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0,
+          2.2,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "PomPom",
+        "eyeTarget": "PomPom",
+        "pose": "Hugs Mama lower torso, one paw touches infant paw",
+        "limbsContactSupport": "Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          0,
+          2.5,
+          0.9
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Inside doorwaylow childhugMama knees sheholdsPomPomtwoarms, Papa behindcarriesclosedbag atside, middaynotnightgreeninnerhingesrightknobleft.",
+        "limbsContactSupport": "Mama two forearms and chest",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -4,
+          5,
+          0
+        ],
+        "bodyFacingTarget": "garden",
+        "headFacingTarget": "garden",
+        "eyeTarget": "garden",
+        "pose": "rests outside house",
+        "limbsContactSupport": "Four legs on ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCounter": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "playRug": [
+        -2,
+        -1,
+        0
+      ],
+      "satchel": [
+        0,
+        0,
+        0.85
+      ],
+      "bread": [
+        -0.4,
+        0,
+        0.85
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "Kitchen same geometry; meal clearing and baby transfers shown in prior beats; newpacking uses ochre satchel only.",
+      "after": "Inside doorwaylow childhugMama knees sheholdsPomPomtwoarms, Papa behindcarriesclosedbag atside, middaynotnightgreeninnerhingesrightknobleft."
+    },
+    "transition": {
+      "previousAction": "Mama added a little bottle of water. “For the walk.” PinPin checked the lid with Papa.",
+      "nextAction": "Outside, Scooby drank a little water. Papa and PinPin waited at the garden stone.",
+      "reasonForShotChange": "Inside doorwaylow childhugMama knees sheholdsPomPomtwoarms, Papa behindcarriesclosedbag atside, middaynotnightgreeninnerhingesrightknobleft."
+    }
+  },
+  "status": "creator-reviewed",
+  "requestPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/goodbye-hug-v2.request.json",
+  "startedAt": "2026-09-22T04:22:05.406Z",
+  "finishedAt": "2026-09-22T04:22:42.993Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c74a-058e-7603-a917-810e97ab9b62/exec-3b82ac41-8ccc-416c-be73-b49da8dcef1a.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "ce5c1e39d5856b9d15da7ea11e506da5c79bcae3f960441841ce8275537de1d4",
+  "review": "Creator actual full-image PASS: Correct diagonal strap anatomicalLEFTshoulder toRIGHT hip, bagmostlyhiddenbehindchild. Exactfour family, Mama supportsinfanttwoarms, childhugsMama touchingbaby paw. Papa warmcreamface, visiblefeetgrounded. Open innerdoor right hingeleftknob. FarPapa hand hidden, notcertified."
+}

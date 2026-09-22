@@ -1,0 +1,147 @@
+{
+  "id": "elder-r6-forest-015",
+  "stem": "scene-015-v1",
+  "version": 1,
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "AUTHORITATIVE Papa/PinPin/Scooby identities and soft style, correct satchel contact/scale. NOT a montage layout to copy."
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-06/forest/preproduction/environments-v1.png",
+      "role": "Geography only. Use left stop/path for walking, right clearing for picnic. Not a split-panel layout; output ONE scene."
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Papa face/identity only, never transfer darkbackground or isolate as portrait."
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-06/forest/scene-011-v1.png",
+      "role": "Picnic geography and PROP authority: plain cream linen cloth with ochre edge, NO CHECKERBOARD/STRIPES. Same flask, cup, two apples and grounded open satchel. Do not copy spreading action."
+    }
+  ],
+  "mode": "generate",
+  "prompt": "Use case: illustration-story. ONE full-bleed landscape 3:2 finished children's-book illustration, no text or panels. PRIMARY STYLE: luminous soft expressive animated forms consistent with approved study, cream face planes, readable hazel/amber iris around separate pupil, broad gentle lids, grouped sculpted short fur and quills. Mature Papa 1.6 times child height; dog shoulder 2.7 child heights. CRITICAL SCALE: when standing the dog shoulder is clearly HIGHER than Papa head, and its head is much higher; Papa reaches only dog shoulder lower edge. Never shrink Scooby to child-size companion. Papa hedgehog cream face, elongated mature muzzle and robust body, tipped brown-grey quills, NO glasses. PinPin small chestnut child. Scooby brown/brindle, white chest bib, cream-grey muzzle, short folded ears, curled tail, attentive meaningful gaze. All animals unclothed; ochre cloth bag is a carried prop, not clothing. No photoreal headshot/PBR materials, black button eyes, masks, saddles/reins/collars or humans. Exactly Papa, PinPin, Scooby; no Mama/baby/Elder copied from identity reference. Two forepaws and two hindlegs per hedgehog, four dog legs and one tail; occluded limbs stay hidden. Natural contact and believable support. Daylight only. No captions, borders, watermarks, montage, arrows or labels.\nREFERENCE ROLES: Image 1: AUTHORITATIVE Papa/PinPin/Scooby identities and soft style, correct satchel contact/scale. NOT a montage layout to copy.; Image 2: Geography only. Use left stop/path for walking, right clearing for picnic. Not a split-panel layout; output ONE scene.; Image 3: Papa face/identity only, never transfer darkbackground or isolate as portrait.; Image 4: Picnic geography and PROP authority: plain cream linen cloth with ochre edge, NO CHECKERBOARD/STRIPES. Same flask, cup, two apples and grounded open satchel. Do not copy spreading action.\nSHOT ACTION AND CAMERA: Low dog-child interaction from grass height: PinPin kneels at right edge of picnic cloth, both paws touch shallow wooden bowl rim as he sets bowl FULL OF WATER firmly onto grass in front of Scooby. Dog lies with two front paws either side behind bowl, lowers cream muzzle to drink with soft attentive eyes. Papa seated behind on left with water flask on cloth, watches child, bag ground by log right. Dog two hindlimbs naturally tucked, one tail. No extra dog or bowl, no giant cup.\nPERSISTED CAMERA/ACTOR RECORD (approximate art direction, not labels): {\"schemaVersion\": 1, \"purpose\": \"Scooby has a drink: Scooby had his own bowl. PinPin set it on the grass, and Scooby lowered his nose to drink.\", \"frameId\": \"P\", \"units\": \"Approximate PinPin standing heights; illustrative, not measured geometry.\", \"camera\": {\"positionXYZ\": [2, -3, 0.65], \"targetXYZ\": [2, -0.5, 0.4], \"height\": 0.65, \"framing\": \"low dog child bowl triangle\", \"fieldOfViewDegrees\": 48, \"axisSide\": \"negative X unless named reverse; neutral establishing shot precedes new region\"}, \"actors\": [{\"name\": \"Papa\", \"positionXYZ\": [0.7, 0.4, 0], \"bodyFacingTarget\": \"bowl\", \"headFacingTarget\": \"bowl\", \"eyeTarget\": \"bowl\", \"pose\": \"seated behind, flask on cloth\", \"limbsContactSupport\": \"seated behind, flask on cloth\", \"visibility\": \"visible background context\"}, {\"name\": \"PinPin\", \"positionXYZ\": [1.5, -0.7, 0], \"bodyFacingTarget\": \"bowl\", \"headFacingTarget\": \"bowl\", \"eyeTarget\": \"bowl\", \"pose\": \"kneels both paws on bowl rim lowering it on ground\", \"limbsContactSupport\": \"kneels both paws on bowl rim lowering it on ground\", \"visibility\": \"visible unless specified by purposeful crop\"}, {\"name\": \"Scooby\", \"positionXYZ\": [2.5, 0.5, 0], \"bodyFacingTarget\": \"PinPin\", \"headFacingTarget\": \"bowl\", \"eyeTarget\": \"bowl\", \"pose\": \"front pawsground headbends to bowl\", \"limbsContactSupport\": \"front pawsground headbends to bowl\", \"visibility\": \"visible unless specified by purposeful crop\"}], \"staticLandmarks\": {\"path\": [0, 6, 0], \"fernDrop\": [-1, 1, 0.65], \"picnicLog\": [0, 1, 0.6], \"picnicCloth\": [0, 0, 0], \"bread\": [0, 0, 0.2], \"cup\": [0.1, -0.1, 0.2], \"bowl\": [2, -0.5, 0], \"threshold\": [0, 8, 0], \"stone\": [-1, 0, 0.35]}, \"objectStates\": {\"before\": \"Bag on grass at log right; cloth and food states advance in preceding scene\", \"after\": \"picnic state: dog-water\"}, \"transition\": {\"previous\": \"A drink after walking\", \"next\": \"A little rest together\", \"reason\": \"Scooby has a drink\"}}",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Scooby has a drink: Scooby had his own bowl. PinPin set it on the grass, and Scooby lowered his nose to drink.",
+    "frameId": "P",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -3,
+        0.65
+      ],
+      "targetXYZ": [
+        2,
+        -0.5,
+        0.4
+      ],
+      "height": 0.65,
+      "framing": "low dog child bowl triangle",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.4,
+          0
+        ],
+        "bodyFacingTarget": "bowl",
+        "headFacingTarget": "bowl",
+        "eyeTarget": "bowl",
+        "pose": "seated behind, flask on cloth",
+        "limbsContactSupport": "seated behind, flask on cloth",
+        "visibility": "visible background context"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          1.5,
+          -0.7,
+          0
+        ],
+        "bodyFacingTarget": "bowl",
+        "headFacingTarget": "bowl",
+        "eyeTarget": "bowl",
+        "pose": "kneels both paws on bowl rim lowering it on ground",
+        "limbsContactSupport": "kneels both paws on bowl rim lowering it on ground",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          2.5,
+          0.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "bowl",
+        "eyeTarget": "bowl",
+        "pose": "front pawsground headbends to bowl",
+        "limbsContactSupport": "front pawsground headbends to bowl",
+        "visibility": "visible unless specified by purposeful crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ]
+    },
+    "objectStates": {
+      "before": "Bag on grass at log right; cloth and food states advance in preceding scene",
+      "after": "picnic state: dog-water"
+    },
+    "transition": {
+      "previous": "A drink after walking",
+      "next": "A little rest together",
+      "reason": "Scooby has a drink"
+    }
+  }
+}

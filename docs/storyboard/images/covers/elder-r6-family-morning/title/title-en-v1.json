@@ -1,0 +1,29 @@
+{
+  "id": "elder-r6-family-morning/title-en-v1",
+  "output": "images/covers/elder-r6-family-morning/title/title-en-v1.png",
+  "title": "A Morning Together",
+  "language": "en",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-006-v1.png",
+      "role": "Exact family identity, table seating/props, cottage and finished animated style authority.",
+      "sha256": "4e7c1c238a31f1c79cb8a31c1266d27fcab4b22fb5cdc174d5029aa5060347a7"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/elder-r6-papa-home/title/title-en-v1.png",
+      "role": "Cover format/typography and family style, not action.",
+      "sha256": "75c2d2188c395ca9aade8c9cf9b81a3780c18cb75ff81f8594320d79367ba51e"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Design a portrait 1024x1536 chapter title cover. Exact cream serif upper lettering \"Mr. PinPin\", chapter title \"A Morning Together\". Readable spacious upper third above a warm family breakfast in lower two thirds. Closely preserve reference1 family identities, table seats and meal: Mama screen-left with tiny infant PomPom held on her lap, Papa center-right beyond round wooden table, little PinPin near-right on stool. Exactly four hedgehogs, no dog. Papa gently hands a small piece of bread across to PinPin, their paws meet visibly at the bread and their eyes follow that shared action; Mama smiles toward them, baby watching. Mama supports infant with one arm securely, second paw at table. Fixed table props three individual porridge bowls, one larger serving bowl, three cups, one teapot resting on table, bread board. No duplicate extra dishes. Same green arched door with hinges right/knob left, round windows warm early morning, braided rug timber cottage. Same soft polished animated storybook illustration, luminous cream faces, readable hazel irises and soft brown quills, no photographic materials or black eye masks. Low intimate three-quarter table camera, all four faces clearly visible. No clothing, glasses or new characters, no extra arms. Friendly cream serif with restrained botanical flourishes in upper open wall. One coherent scene, no collage.",
+  "startedAt": "2026-09-22T02:26:57.960568+00:00",
+  "tool": "built-in imagegen",
+  "status": "proposed",
+  "review": "Full image inspected. Reject selection: only two individual porridge bowls visible plus serving bowl; Papa bowl absent. Family count and bread contact, style, text, cottage are good. Correct missing bowl in v2, preserve all else.",
+  "finishedAt": "2026-09-22T02:28:34.635782+00:00",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-2cb0b694-374e-4524-a3ea-55ff62d3b332.png",
+  "sha256": "a78efb170d07f90cec3ede12725243eadb10b3b2ffb00bed1be0c6021c62560e",
+  "width": 1024,
+  "height": 1536,
+  "reviewedAt": "2026-09-22T02:28:34.643824+00:00"
+}

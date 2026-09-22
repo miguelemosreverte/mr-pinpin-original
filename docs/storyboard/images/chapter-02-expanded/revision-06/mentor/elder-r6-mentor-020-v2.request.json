@@ -1,0 +1,170 @@
+{
+  "id": "elder-r6-mentor-020-v2",
+  "prompt": "Use case: precise-object-edit. Target exact same composition/cast/table. Correct TWO details only: replace gold leaf/feather on PinPin upperback with ONE GOLDEN HEDGEHOG SPINE, a narrow smooth tapered needle/conical spike with round crosssection, no barbs/leafveins/feather shaft, same length as adjacent ordinary quills or only slightlylonger, attached naturally among them, catches daylight no glow. Turn child head and pupils LEFT toward Elder's face instead of looking out at viewer; keep torso turned showing back, paws/stool unchanged. Elder gaze toward that tiny golden spine, no touching. Keep map/openbook/weights/inkfeather/room fixed. ONE1536x1024 no text, no new objects.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T02:44:42.100Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-020-v1.png",
+      "role": "edit target golden spine and gaze",
+      "sha256": "b72b7df0c5baee650d2c448758f4c7567e0667246661f20c0b5cca74958d5846"
+    }
+  ],
+  "status": "planned",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "frameId": "Elder-home-H",
+    "units": "PinPin height approximate, not calibrated",
+    "purpose": "The golden quill",
+    "camera": {
+      "positionXYZ": [
+        0.4,
+        4.5,
+        1
+      ],
+      "targetXYZ": [
+        -1,
+        3.5,
+        0.8
+      ],
+      "height": 1,
+      "framing": "rear child three-quarter single golden quill among normal quills Elder gazes at it; no touching/plucking",
+      "fieldOfViewDegrees": 42,
+      "axisSide": "south of desk dialogue axis; named overhead/reverse framed within established room"
+    },
+    "actors": [
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          -2.8,
+          4.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "goldenQuill",
+        "eyeTarget": "goldenQuill",
+        "pose": "at existing west desk",
+        "limbsContactSupport": "two hindfeet floor or established desk stool; exactly two forepaws; rear child three-quarter single golden quill among normal quills Elder gazes at it; no touching/plucking",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          3.5,
+          0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "standing beside desk",
+        "limbsContactSupport": "two hindfeet floor; exactly two forepaws; rear child three-quarter single golden quill among normal quills Elder gazes at it; no touching/plucking",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          4,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside sleeping",
+        "limbsContactSupport": "seated ground moss rock",
+        "visibility": "offscreen outside"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          5,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside resting",
+        "limbsContactSupport": "lying ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "desk": [
+        -2,
+        4,
+        0
+      ],
+      "wallMap": [
+        -1,
+        8,
+        0
+      ],
+      "bed": [
+        4,
+        3,
+        0
+      ],
+      "rootNook": [
+        3,
+        8,
+        0
+      ],
+      "entrance": [
+        0,
+        0,
+        0
+      ],
+      "shelf": [
+        -3,
+        5,
+        0
+      ],
+      "portableMap": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "mapRoll": [
+        -3,
+        5,
+        0.9
+      ],
+      "childFinger": [
+        -1.5,
+        3.7,
+        0.9
+      ],
+      "childPaws": [
+        -1,
+        3.5,
+        1
+      ],
+      "goldenQuill": [
+        -0.8,
+        3.6,
+        0.9
+      ],
+      "mapPath": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "quill remains attached child back no spell/effect",
+      "after": "quill remains attached child back no spell/effect"
+    },
+    "transition": {
+      "previousAction": "prior story-plan scene",
+      "nextAction": "next story-plan scene",
+      "reasonForShotChange": "rear child three-quarter single golden quill among normal quills Elder gazes at it; no touching/plucking"
+    }
+  }
+}

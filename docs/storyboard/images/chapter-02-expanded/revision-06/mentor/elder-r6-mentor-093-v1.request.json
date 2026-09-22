@@ -1,0 +1,135 @@
+{
+  "id": "elder-r6-mentor-093-v1",
+  "tool": "built-in image_gen",
+  "status": "planned",
+  "plannedAt": "2026-09-22T04:25:59.959Z",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "frameId": "Elder-exterior-E",
+    "units": "PinPin height approximate, not calibrated",
+    "purpose": "Satchel again",
+    "camera": {
+      "positionXYZ": [
+        2,
+        -4,
+        1
+      ],
+      "targetXYZ": [
+        4,
+        -1,
+        1
+      ],
+      "height": 1,
+      "framing": "medium exterior restpatch Papa lifts satchel from ground child watches dog waits Elder doorway",
+      "fieldOfViewDegrees": 45,
+      "axisSide": "exterior negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          4,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "satchel",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "standing lifting strap",
+        "limbsContactSupport": "two feet ground two forepaws strap/bag",
+        "visibility": "full"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          3,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "standing watches",
+        "limbsContactSupport": "feet ground paws sides",
+        "visibility": "full"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          5,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "waiting crouched",
+        "limbsContactSupport": "grounded legs",
+        "visibility": "full"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "watching",
+        "limbsContactSupport": "grounded feet paws belly",
+        "visibility": "background"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staff": [
+        -1,
+        0,
+        0
+      ],
+      "fern": [
+        1,
+        0,
+        0
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ],
+      "satchel": [
+        4.4,
+        -1.1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "satchel on ground beside moss rock",
+      "after": "satchel worn left shoulder right hip"
+    },
+    "transition": {
+      "previousAction": "prior story-plan scene",
+      "nextAction": "next story-plan scene",
+      "reasonForShotChange": "medium exterior restpatch Papa lifts satchel from ground child watches dog waits Elder doorway"
+    }
+  },
+  "prompt": "Use case: illustration-story. One1536x1024landscape new narrative shot. Reference1 setting, cast, contact and satchel; reference2 worn bag routing ONLY. Same soft animated storybook rendering, warm afternoon at moss-rock rest patch beside Elder's tree. Medium three-quarter eye-level camera same approach side, Papa centre, little PinPin left, large brown/brindle Scooby lying right, Elder with spectacles at distant left doorway. Papa has just picked up the single small ochre linen picnic satchel and is completing putting it on: broad strap over his ANATOMICAL LEFT shoulder crossing cream chest to compact closed rounded-flap bag at ANATOMICAL RIGHT hip. One forepaw adjusts strap at left shoulder, other supports bottom of bag at right hip. Two feet grounded, no additional arms. Papa gently turns his face toward child and smiles; PinPin looks up at him with two paws belly and feet on ground. Scooby watches Papa attentively. No other bag on grass now. SAME moss boulder/root doorway/fern/staff geography as reference1, no new props. Papa about1.6childheight, dog much larger; no clothes or glasses on Papa. No text or borders.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-006-v1.png",
+      "role": "rest patch environment and cast scale",
+      "sha256": "e449fa832a1932715b05b2d69a1040107aa6e605cad36c9c7c90062d3c3bb6c6"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "worn satchel routing",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    }
+  ]
+}

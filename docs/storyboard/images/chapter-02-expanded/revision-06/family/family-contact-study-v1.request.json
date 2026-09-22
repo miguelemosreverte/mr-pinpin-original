@@ -1,0 +1,52 @@
+{
+  "id": "family-contact-study-v1",
+  "slug": "family-contact-study",
+  "prompt": "Use case: illustration-story. ONE landscape 1536x1024 image for a children’s picturebook, no text/border/panels.\nREFERENCE ROLES: 1 finished Elder scene controls dimensional animated-storybook rendering ONLY; no glasses/elder/imported room. 2 acceptedfamily controls identity and approximate scale. 3 establishedscene controls room geometry and props, not camera. Soft designed fur/quills, roundedexpressivefaces, warmfilledcreamfaces, readableirises, neverphotographic/PBR/blackbutton eyes. Papa mature broad adult HEDGEHOG creamface/hazeliris/brown-greyquills,no glasses. Mama copperquilledadult, PinPin smallchestnutchild, PomPom tinyinfant. Exactlythese FOUR hedgehogs, no duplicates. Adult1.6childheight infant0.5child. No clothing.\nALL INPUT ROLES: [{\"image\": 1, \"role\": \"Sole rendering authority; never import Elder, glasses or location\"}, {\"image\": 2, \"role\": \"Exact four hedgehog identities/relative scale; no dog inside\"}, {\"image\": 3, \"role\": \"Kitchen geometry, fixed meal seats and tableware; pose changes per requested shot\"}, {\"image\": 4, \"role\": \"Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting\"}]\nSHOT: PREPRODUCTION CONTACT / ENVIRONMENT STUDY, one coherent scene not panels: inside kitchen left-floor-rug area, Papa seated on rug right with both forearms cupped below infant torso and bottom while Mama seated left keeps one paw beneath infant during handoff and other on rug. Tiny infant between them in continuous visible support. PinPin child sits foreground observing. Exactly4hedgehogs,no dog. Two arms eachadult,2feet each, infant2arms2legs. Same roundtable beyond right, cupboardsleft stovefar-right greenrounddoorcenter rear windowsflank. No food laid yet. Establish usable open rug area left of table and baby proportions.\nKITCHEN RULES ifinside: greenrounddoorcenterrear hingesRIGHT knobLEFT, cupboardsLEFT stoveRIGHT, roundwoodtable. For breakfastfixed seats MamaLEFT holdinginfant, PapaFAR-RIGHT, childNEAR-RIGHT, exactly3speckledbeigecups3porridgebowls1communalbowlbreadfrontleftbrownteapot. Allfourfamilyfaces must be visible in mealframes; no crops that omitMama/baby. For floor/preparationframes follow explicit changed state rather than forcing seatedmeal. DOG staysoutside. For exteriorScooby softanimatedbrownbrindle/creamgrey muzzle/whitebib/foldedears/curledtail, dogshoulder2.7childheight. Meaningful directedpupils, no camera-facing posedportraits.\nCAMERA/ACTOR ART DIRECTION (notlabels): {\"purpose\": \"Actual infant handoff/contact and new floor play zone layout reference\", \"frameId\": \"K\", \"camera\": {\"positionXYZ\": [-4, -4, 1.3], \"targetXYZ\": [-2, -0.7, 0.7], \"height\": 1.3, \"fieldOfViewDegrees\": 55, \"framing\": \"wide floorlevel contact reference\", \"axisSide\": \"negativeY\"}, \"actors\": []}.\nNo extra limbs, paws must visiblyattach. Infant neverfloats. Morning warmdaylight withsoftfill, no darkmask, no captions.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "Sole rendering authority; never import Elder, glasses or location",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "Exact four hedgehog identities/relative scale; no dog inside",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-006-v1.png",
+      "role": "Kitchen geometry, fixed meal seats and tableware; pose changes per requested shot",
+      "sha256": "4e7c1c238a31f1c79cb8a31c1266d27fcab4b22fb5cdc174d5029aa5060347a7"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T01:45:54.673795Z",
+  "output": "images/chapter-02-expanded/revision-06/family/family-contact-study-v1.png",
+  "cameraTransform": {
+    "purpose": "Actual infant handoff/contact and new floor play zone layout reference",
+    "frameId": "K",
+    "camera": {
+      "positionXYZ": [
+        -4,
+        -4,
+        1.3
+      ],
+      "targetXYZ": [
+        -2,
+        -0.7,
+        0.7
+      ],
+      "height": 1.3,
+      "fieldOfViewDegrees": 55,
+      "framing": "wide floorlevel contact reference",
+      "axisSide": "negativeY"
+    },
+    "actors": []
+  },
+  "status": "planned"
+}

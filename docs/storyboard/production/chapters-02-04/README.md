@@ -1,6 +1,6 @@
 # Expanded Elder and Forest Academy proposals
 
-**Latest work:** [Revision02](revision-02/CONTRACT.md) is in production following Miguel’s dialogue, school-day and Elder/religion/cavern feedback. [His exact brief](revision-02/USER-BRIEF.md) governs this revision. The completed first proposal remains intact below for comparison.
+**Latest work:** [Revision06](revision-06/CONTRACT.md) expands the Elder outing into five adapted chapters: Papa Comes Home, A Morning Together, Through the Forest, The Elder’s House, and Beneath the Roots. See the [current production report](revision-06/elder/REPORT.md) and [five-chapter preview](http://127.0.0.1:8782/storyboard/review/chapter-workshop.html?revision=6&chapter=elder&lang=ru&view=reading). Academy remains [revision02](revision-02/academy/REPORT.md). Earlier proposals below are preserved history. Official editions remain unchanged.
 
 Start here in any future session. User commissioned complete, carefully paced proposals for both chapters, supported by reusable preproduction and a documented workflow. These files are the production state; conversation context is not required.
 

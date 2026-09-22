@@ -1,0 +1,184 @@
+{
+  "id": "mama-bread-v6",
+  "slug": "mama-bread",
+  "prompt": "Use case: precise-object-edit. LAST INPUT IMAGE IS EXACT EDIT TARGET. Preserve actors, expressions, anatomy, camera framing, room geometry, lighting and all other details. Change ONLY this: Add exactly ONE communal serving bowl of porridge in the empty table space behind the bread platter, between Mama bowl and Papa bowl. Keep the existing THREE personal porridge bowls, THREE cups, single brown teapot, all four characters and exact poses unchanged. Mama slides bread plate toward child; no additional arm or changed seating.\nSupporting reference roles: [{\"image\": 1, \"role\": \"Exact edit target; preserve all actors/camera/lighting and change only stated correction\"}]\nNo text. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/mama-bread-v5.png",
+      "role": "Exact edit target; preserve all actors/camera/lighting and change only stated correction",
+      "sha256": "d7af2f4ab278d8d7d05e310234d26afc5dddfd17b27dc806340a70e75e0aaf73"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:06:03.477500Z",
+  "output": "images/chapter-02-expanded/revision-06/family/mama-bread-v6.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Breakfast frontal context all4: Mama left baby securely held oneforearm/lap otherpaw passes bread toward PinPinright, Papa far-right smiles holdingcup. Maintain3bowls3cups.",
+    "frameId": "K",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        0,
+        -4.3,
+        1.5
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        0.9
+      ],
+      "height": 1.5,
+      "framing": "Breakfast frontal context all4: Mama left baby securely held oneforearm/lap otherpaw passes bread toward PinPinright, Papa far-right smiles holdingcup. Maintain3bowls3cups.",
+      "fieldOfViewDegrees": 58,
+      "axisSide": "Kitchen negativeY master half-space"
+    },
+    "actors": [
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          -1.2,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Seated at fixed meal place; Breakfast frontal context all4: Mama left baby securely held oneforearm/lap otherpaw passes bread toward PinPinright, Papa far-right smiles holdingcup. Maintain3bowls3cups.",
+        "limbsContactSupport": "Mama seated on chair, one forearm securely beneath infant and other free for stated action",
+        "visibility": "visible"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Seated at fixed meal place; Breakfast frontal context all4: Mama left baby securely held oneforearm/lap otherpaw passes bread toward PinPinright, Papa far-right smiles holdingcup. Maintain3bowls3cups.",
+        "limbsContactSupport": "Seated on fixed chair; two forepaws perform stated action; hindfeet supported on seat/footrest",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0.9,
+          -0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "bread",
+        "eyeTarget": "bread",
+        "pose": "Seated at fixed meal place; Breakfast frontal context all4: Mama left baby securely held oneforearm/lap otherpaw passes bread toward PinPinright, Papa far-right smiles holdingcup. Maintain3bowls3cups.",
+        "limbsContactSupport": "Seated on fixed chair; two forepaws perform stated action; hindfeet supported on seat/footrest",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          -1.1,
+          0,
+          0.7
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "Mama",
+        "eyeTarget": "Mama",
+        "pose": "Seated at fixed meal place; Breakfast frontal context all4: Mama left baby securely held oneforearm/lap otherpaw passes bread toward PinPinright, Papa far-right smiles holdingcup. Maintain3bowls3cups.",
+        "limbsContactSupport": "Mama forearm and lap support infant; infant arms free",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -4,
+          5,
+          0
+        ],
+        "bodyFacingTarget": "garden",
+        "headFacingTarget": "garden",
+        "eyeTarget": "garden",
+        "pose": "rests outside house",
+        "limbsContactSupport": "Four legs on ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCounter": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "playRug": [
+        -2,
+        -1,
+        0
+      ],
+      "childCup": [
+        0.75,
+        -0.65,
+        0.85
+      ],
+      "bread": [
+        -0.5,
+        -0.5,
+        0.85
+      ],
+      "PapaCup": [
+        0.6,
+        0.55,
+        0.85
+      ],
+      "MamaCup": [
+        -0.85,
+        0,
+        0.85
+      ],
+      "servingBowl": [
+        0,
+        0,
+        0.85
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "Three plain pottery cups, three individual porridge bowls, one communal serving bowl, bread platter front-left, teapot by Papa. Mama always holds infant left.",
+      "after": "Breakfast frontal context all4: Mama left baby securely held oneforearm/lap otherpaw passes bread toward PinPinright, Papa far-right smiles holdingcup. Maintain3bowls3cups."
+    },
+    "transition": {
+      "previousAction": "“Was there enough for everyone?” Papa asked. “Yes! They drank and splashed and swam!”",
+      "nextAction": "PinPin reached for the bread—and nudged his cup. A little water ran across the table. “Oh!”",
+      "reasonForShotChange": "Breakfast frontal context all4: Mama left baby securely held oneforearm/lap otherpaw passes bread toward PinPinright, Papa far-right smiles holdingcup. Maintain3bowls3cups."
+    }
+  },
+  "status": "creator-reviewed",
+  "requestPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/mama-bread-v6.request.json",
+  "startedAt": "2026-09-22T04:06:08.996Z",
+  "finishedAt": "2026-09-22T04:06:59.571Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c74a-058e-7603-a917-810e97ab9b62/exec-b11e8a44-71b7-4377-a3ce-2ae889efe6f1.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "9a7d5fa7efbcae10570a634e550b02439e89d430aacf56e7b2ef44b5632cd0ed",
+  "review": "Creator actual full-image PASS: Four family members in fixed meal seats, three cups and three personal bowls plus restored communal bowl, single teapot. Mama one arm supports infant and other hand reaches bread plate; Papa holds cup with two paws, child watches mother. Hidden adult legs not certified. Bread is offered by sliding plate rather than direct handoff."
+}

@@ -1,0 +1,183 @@
+{
+  "id": "elder-r6-mentor-017-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 dimensional animated children's-book image, no text/panels. Established reference imagery governs expressive faces and warm sculpted materials, not photographs. EXACTLY TWO characters: silver-grey tipped mature Elder hedgehog with round gold spectacles and smaller reddish-quilled child PinPin without spectacles. No Papa/dog/Mama/baby indoors. Elder about1.55child standingheight, qualitative. Warm cream faces, readable brown/hazel iris/pupil separation, soft grouped quills. Two forepaws/two hindfeet each, realistic contact, naturally occluded limbs not duplicated. Afternoon soft daylight from existing left entrance, existing warm desk lamp; no new magic glow. Preserve tree-home deskWEST/book/lamp, wallmapNORTH/shelf, bedEAST/right, central fixedrug, rootnookbackRIGHT low ovalmat/stool, no artificialdoor/stairs. Specific shot: Medium side view near bookshelf: Elder has stepped from desk to LOW WEST bookshelf and takes ONE rolled parchment map with BOTH forepaws from easy child-height open shelf. PinPin stands beside him lower/right watching roll directly; Elder eyes look at roll. Two grounded feet each, no reaching high shelf or climbing. Camera(-1,2.5,1.3) target(-3,5,1)46degree. Desk openbook remains visible near-left foreground; map is still ROLLED in Elder paws, not duplicated on table. Large fixed wallmap remains on wall. Shelf shell/stone/box unchanged; room unmoved. Afternoon. Gentle practical action, no lecturing pose.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T02:32:01.572Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "cast and rendered room",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/preproduction/home-root-nook-v1.png",
+      "role": "shelf geography and unrolledmap not yet present",
+      "sha256": "fcfffd326c139beff1af7c442793f8530e602d15b306eb4fdb3bb616fd22ad01"
+    }
+  ],
+  "status": "ready",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "frameId": "Elder-home-H",
+    "units": "PinPin height approximate, not calibrated",
+    "purpose": "A familiar map",
+    "camera": {
+      "positionXYZ": [
+        -1,
+        2.5,
+        1.3
+      ],
+      "targetXYZ": [
+        -3,
+        5,
+        1
+      ],
+      "height": 1.3,
+      "framing": "side medium Elder two paws takes roll shelf child watches; fixed room axis",
+      "fieldOfViewDegrees": 46,
+      "axisSide": "south of desk dialogue axis; named overhead/reverse framed within established room"
+    },
+    "actors": [
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          -2.8,
+          4.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "mapRoll",
+        "eyeTarget": "mapRoll",
+        "pose": "at existing west desk",
+        "limbsContactSupport": "two hindfeet floor or established desk stool; exactly two forepaws; side medium Elder two paws takes roll shelf child watches; fixed room axis",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          3.5,
+          0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "mapRoll",
+        "eyeTarget": "mapRoll",
+        "pose": "standing beside desk",
+        "limbsContactSupport": "two hindfeet floor; exactly two forepaws; side medium Elder two paws takes roll shelf child watches; fixed room axis",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          4,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside sleeping",
+        "limbsContactSupport": "seated ground moss rock",
+        "visibility": "offscreen outside"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          5,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside resting",
+        "limbsContactSupport": "lying ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "desk": [
+        -2,
+        4,
+        0
+      ],
+      "wallMap": [
+        -1,
+        8,
+        0
+      ],
+      "bed": [
+        4,
+        3,
+        0
+      ],
+      "rootNook": [
+        3,
+        8,
+        0
+      ],
+      "entrance": [
+        0,
+        0,
+        0
+      ],
+      "shelf": [
+        -3,
+        5,
+        0
+      ],
+      "portableMap": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "mapRoll": [
+        -3,
+        5,
+        0.9
+      ],
+      "childFinger": [
+        -1.5,
+        3.7,
+        0.9
+      ],
+      "childPaws": [
+        -1,
+        3.5,
+        1
+      ],
+      "goldenQuill": [
+        -0.8,
+        3.6,
+        0.9
+      ],
+      "mapPath": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "map shelf to paws; book stays open",
+      "after": "map shelf to paws; book stays open"
+    },
+    "transition": {
+      "previousAction": "prior story-plan scene",
+      "nextAction": "next story-plan scene",
+      "reasonForShotChange": "side medium Elder two paws takes roll shelf child watches; fixed room axis"
+    }
+  },
+  "startedAt": "2026-09-22T02:32:41.831Z",
+  "finishedAt": "2026-09-22T02:33:37.550Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c600-79e9-7ef1-bcf3-9c07d2a5d2dd/exec-373de51c-a840-4c3b-b3d8-99e86fba818e.png",
+  "output": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-017-v1.png",
+  "sha256": "3a572649e793065d86e6353caf3d0b13491daae915002ac25990f0801a18b516",
+  "review": "Creator fullview PASS: Elder grounded takes rolledmap from low shelf, visible near paw holdsroll farpaw occluded; child watches roll/shelf from grounded pose. Openbook still foreground, shelfwallmap/rootnook preserved. Map visibly tied cord; next unroll must place loose tie aside. No character duplication or room mirror.",
+  "width": 1536,
+  "height": 1024
+}

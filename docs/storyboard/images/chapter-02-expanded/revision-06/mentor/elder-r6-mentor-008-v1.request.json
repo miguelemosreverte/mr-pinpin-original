@@ -1,0 +1,134 @@
+{
+  "id": "elder-r6-mentor-008-v1",
+  "prompt": "Use case: precise-object-edit. One landscape1536x1024. Image1 EDIT TARGET preserve exact camera, characters, faces, poses, limbs, gazes, moss boulder and warm animated storybook style. Image2 is continuity reference for SAME small ochre linen satchel placement, not a camera to copy. Add ONE closed small ochre linen rounded-flap bag on ground at moss-boulder base screen-left of Papa, BEHIND standing PinPin, so child naturally partly occludes it. Same physical bag scale as image2: bag height about0.4 seated Papa height. Broad strap lies folded beside it on ground, no strap on Papa. Preserve all foreground character pixels; bag appears only where geometry allows. Do not move actors to expose bag; no text, no new props.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:17:27.837Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-024-v3.png",
+      "role": "edit target",
+      "sha256": "93dab2b56d720ae9c798fb18a6874375eff626ff35b2b42af93afe914013c9b2"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-007-v1.png",
+      "role": "satchel location/scale continuity",
+      "sha256": "ea9afb864499532f9899e6b953b358e0d135f0ba537b5df8b8534821ca730a6f"
+    }
+  ],
+  "status": "planned",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Reassuring reciprocal father-child farewell",
+    "frameId": "E",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        2.4,
+        -3,
+        0.85
+      ],
+      "targetXYZ": [
+        3.5,
+        -1,
+        0.8
+      ],
+      "height": 0.85,
+      "framing": "intimate medium two-shot Papa seated and child standing; dog resting edge",
+      "fieldOfViewDegrees": 40,
+      "axisSide": "approach/front negativeY; travel rear negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          3.6,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "seated leaning gently",
+        "limbsContactSupport": "seat rock feet ground one paw open child direction other belly",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          2.8,
+          -1.2,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "standing",
+        "limbsContactSupport": "two feet ground two paws relaxed",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          4.6,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "drowsy curl",
+        "limbsContactSupport": "chin front paws",
+        "visibility": "partly cropped"
+      },
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          0,
+          -0.3,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "waiting",
+        "limbsContactSupport": "feet ground",
+        "visibility": "offscreen left"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "staffBoulder": [
+        -1.6,
+        -0.2,
+        0
+      ],
+      "fern": [
+        1.4,
+        -0.3,
+        0
+      ],
+      "restRock": [
+        4,
+        -1,
+        0
+      ],
+      "mountingStone": [
+        -2,
+        -3,
+        0.4
+      ]
+    },
+    "objectStates": {
+      "before": "Satchel on ground far-right rest rock",
+      "after": "Same bag position; visible strap/contact only, no restaging"
+    },
+    "transition": {
+      "description": "wide map to intimate reassuring gaze"
+    },
+    "editMode": "Preserve counterpart pixels/camera/contact; add satchel only"
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "id": "water-packed-v2",
+  "slug": "water-packed",
+  "prompt": "Use case: illustration-story. ONE landscape 1536x1024 image for a children’s picturebook, no text/border/panels.\nREFERENCE ROLES: 1 finished Elder scene controls dimensional animated-storybook rendering ONLY; no glasses/elder/imported room. 2 acceptedfamily controls identity and approximate scale. 3 establishedscene controls room geometry and props, not camera. Soft designed fur/quills, roundedexpressivefaces, warmfilledcreamfaces, readableirises, neverphotographic/PBR/blackbutton eyes. Papa mature broad adult HEDGEHOG creamface/hazeliris/brown-greyquills,no glasses. Mama copperquilledadult, PinPin smallchestnutchild, PomPom tinyinfant. Exactlythese FOUR hedgehogs, no duplicates. Adult1.6childheight infant0.5child. No clothing.\nALL INPUT ROLES: [{\"image\": 1, \"role\": \"Sole rendering authority; never import Elder, glasses or location\"}, {\"image\": 2, \"role\": \"Exact four hedgehog identities/relative scale; no dog inside\"}, {\"image\": 3, \"role\": \"Kitchen geometry, fixed meal seats and tableware; pose changes per requested shot\"}, {\"image\": 4, \"role\": \"Accepted ochre linen satchel geometry and ridercontact; no extra dogs insidehouse\"}, {\"image\": 5, \"role\": \"Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting\"}]\nSHOT: Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner. Visible plain small wooden cup nested inside shallow wooden dogbowl being packed beside small corked waterflask, creamclothbread and2smallapples. Satchel softochrelinen roundedrectangularflap broadclothstrap leftshoulder→righthip,0.6Papatorsowidth/0.55height. SATCHEL exactlyreference4 softochrelinen singleflap, broadstrap leftshoulder toRIGHT hip. No basket or leathermodernbackpack. Contents creamclothbread2apples smallcorkflask woodcupnesteddogbowl. Table clearedallbreakfastbowls/cups. NO dogindoors. Forcodaemptybag nofood.\nKITCHEN RULES ifinside: greenrounddoorcenterrear hingesRIGHT knobLEFT, cupboardsLEFT stoveRIGHT, roundwoodtable. For breakfastfixed seats MamaLEFT holdinginfant, PapaFAR-RIGHT, childNEAR-RIGHT, exactly3speckledbeigecups3porridgebowls1communalbowlbreadfrontleftbrownteapot. Allfourfamilyfaces must be visible in mealframes; no crops that omitMama/baby. For floor/preparationframes follow explicit changed state rather than forcing seatedmeal. DOG staysoutside. For exteriorScooby softanimatedbrownbrindle/creamgrey muzzle/whitebib/foldedears/curledtail, dogshoulder2.7childheight. Meaningful directedpupils, no camera-facing posedportraits.\nCAMERA/ACTOR ART DIRECTION (notlabels): {\"schemaVersion\": 1, \"purpose\": \"Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.\", \"frameId\": \"K\", \"units\": \"Approximate PinPin standing heights; illustrative art direction, not measured geometry.\", \"camera\": {\"positionXYZ\": [2.7, -4, 1.6], \"targetXYZ\": [0, 0, 0.9], \"height\": 1.6, \"framing\": \"Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.\", \"fieldOfViewDegrees\": 50, \"axisSide\": \"Kitchen negativeY master half-space\"}, \"actors\": [{\"name\": \"Papa\", \"positionXYZ\": [0.7, 0.8, 0], \"bodyFacingTarget\": \"table\", \"headFacingTarget\": \"satchel\", \"eyeTarget\": \"satchel\", \"pose\": \"Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.\", \"limbsContactSupport\": \"Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported\", \"visibility\": \"visible\"}, {\"name\": \"Mama\", \"positionXYZ\": [-1.2, 0, 0], \"bodyFacingTarget\": \"table\", \"headFacingTarget\": \"satchel\", \"eyeTarget\": \"satchel\", \"pose\": \"Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.\", \"limbsContactSupport\": \"Two arms only; one forearm continuously beneath infant torso/bottom; both hindfeet or seated haunches visibly supported\", \"visibility\": \"visible\"}, {\"name\": \"PinPin\", \"positionXYZ\": [0.9, -0.8, 0], \"bodyFacingTarget\": \"table\", \"headFacingTarget\": \"satchel\", \"eyeTarget\": \"satchel\", \"pose\": \"Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.\", \"limbsContactSupport\": \"Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported\", \"visibility\": \"visible\"}, {\"name\": \"PomPom\", \"positionXYZ\": [-1.1, 0, 0.7], \"bodyFacingTarget\": \"table\", \"headFacingTarget\": \"satchel\", \"eyeTarget\": \"satchel\", \"pose\": \"Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.\", \"limbsContactSupport\": \"Mama lap/forearm\", \"visibility\": \"visible\"}, {\"name\": \"Scooby\", \"positionXYZ\": [-4, 5, 0], \"bodyFacingTarget\": \"garden\", \"headFacingTarget\": \"garden\", \"eyeTarget\": \"garden\", \"pose\": \"rests outside house\", \"limbsContactSupport\": \"Four legs on ground\", \"visibility\": \"offscreen outside\"}], \"staticLandmarks\": {\"table\": [0, 0, 0.85], \"greenDoor\": [0, 3, 0], \"leftCounter\": [-3, 1, 0], \"stove\": [3, 1, 0], \"playRug\": [-2, -1, 0], \"satchel\": [0, 0, 0.85], \"bread\": [-0.4, 0, 0.85], \"family group\": [0, -1, 0]}, \"objectStates\": {\"before\": \"Kitchen same geometry; meal clearing and baby transfers shown in prior beats; newpacking uses ochre satchel only.\", \"after\": \"Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner. Visible plain small wooden cup nested inside shallow wooden dogbowl being packed beside small corked waterflask, creamclothbread and2smallapples. Satchel softochrelinen roundedrectangularflap broadclothstrap leftshoulder→righthip,0.6Papatorsowidth/0.55height.\"}, \"transition\": {\"previousAction\": \"PinPin wrapped the bread. Papa tucked it into the bag beside two apples.\", \"nextAction\": \"Before they went outside, PinPin hugged Mama and gently touched PomPom’s paw. “I’ll tell you everything!”\", \"reasonForShotChange\": \"Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.\"}}.\nNo extra limbs, paws must visiblyattach. Infant neverfloats. Morning warmdaylight withsoftfill, no darkmask, no captions.\nPRIORITY FINAL STATE: Breakfast dishes and teapot absent. SAME small satchel now ontable with CLOSED cream breadbundle and2apples. Mama LEFT holds baby securely in ONE forearm againstchest and uses OTHER paw to set small corked flask inside bag. Papa RIGHT holds small wooden cup nested inside shallow wooden dogbowl beside bag, PinPin touches cork checkingit. Each actor only TWO arms. Frame mediumnear tabletop but all4facesvisible, clear support baby. Extra folded cream picniccloth remains tableleft. No dog indoors.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "Sole rendering authority; never import Elder, glasses or location",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "Exact four hedgehog identities/relative scale; no dog inside",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/wrap-bread-v2.png",
+      "role": "Exact preceding packing props and room. Advance action.",
+      "sha256": "5388514283499f6a7aa9adf786e1a738b2543b0d8c3cd816bc00f69574c39465"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "Accepted ochre linen satchel geometry and ridercontact; no extra dogs insidehouse",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:16:54.282785Z",
+  "output": "images/chapter-02-expanded/revision-06/family/water-packed-v2.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.",
+    "frameId": "K",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        2.7,
+        -4,
+        1.6
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        0.9
+      ],
+      "height": 1.6,
+      "framing": "Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Kitchen negativeY master half-space"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.",
+        "limbsContactSupport": "Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          -1.2,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.",
+        "limbsContactSupport": "Two arms only; one forearm continuously beneath infant torso/bottom; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0.9,
+          -0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.",
+        "limbsContactSupport": "Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          -1.1,
+          0,
+          0.7
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner.",
+        "limbsContactSupport": "Mama lap/forearm",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -4,
+          5,
+          0
+        ],
+        "bodyFacingTarget": "garden",
+        "headFacingTarget": "garden",
+        "eyeTarget": "garden",
+        "pose": "rests outside house",
+        "limbsContactSupport": "Four legs on ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCounter": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "playRug": [
+        -2,
+        -1,
+        0
+      ],
+      "satchel": [
+        0,
+        0,
+        0.85
+      ],
+      "bread": [
+        -0.4,
+        0,
+        0.85
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "Kitchen same geometry; meal clearing and baby transfers shown in prior beats; newpacking uses ochre satchel only.",
+      "after": "Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner. Visible plain small wooden cup nested inside shallow wooden dogbowl being packed beside small corked waterflask, creamclothbread and2smallapples. Satchel softochrelinen roundedrectangularflap broadclothstrap leftshoulder→righthip,0.6Papatorsowidth/0.55height."
+    },
+    "transition": {
+      "previousAction": "PinPin wrapped the bread. Papa tucked it into the bag beside two apples.",
+      "nextAction": "Before they went outside, PinPin hugged Mama and gently touched PomPom’s paw. “I’ll tell you everything!”",
+      "reasonForShotChange": "Tablemedium Mama left supportsbabyonearm otherpaw insertsstopperedplainbottle bag, Papa andchildrightlookcontents; breadlinen2applescreamliner."
+    }
+  },
+  "status": "creator-reviewed",
+  "requestPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/water-packed-v2.request.json",
+  "startedAt": "2026-09-22T04:17:09.177Z",
+  "finishedAt": "2026-09-22T04:18:09.323Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c74a-058e-7603-a917-810e97ab9b62/exec-92d697ee-4b24-4899-9559-1cec5dc682f7.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "603a8f6ae472bb1f7daa4e93f3d268e53f279933f9839ebb39401e8dfb63f9de",
+  "review": "Creator actual full-image PASS: Mama holds infant continuously with one forearm and inserts corkflask with otherpaw, child touches cork whilePapa watches holdingwoodcupnestedwooddogbowl. Closed cream breadbundle and2apples remaininsidebag frompreviouspacking. Four family, no extraarms. Lowerbody obscured, notcertified. Additional foldedcream picniccloth stays tableleft."
+}

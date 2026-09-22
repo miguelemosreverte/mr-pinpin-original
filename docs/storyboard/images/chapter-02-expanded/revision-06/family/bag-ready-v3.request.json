@@ -1,0 +1,163 @@
+{
+  "id": "bag-ready-v3",
+  "slug": "bag-ready",
+  "prompt": "Use case: precise-object-edit. LAST INPUT IMAGE IS EXACT EDIT TARGET. Preserve actors, expressions, anatomy, camera framing, room geometry, lighting and all other details. Change ONLY this: Reduce the satchel width and height by about25percent: it must be a small picnic satchel abouthalf Papa torso height, not a giant bag. Keep Papa hands on its rim and PinPin hands on side; adjust attached forearms naturally. Change two big loaves into three SMALL ROUND bread rolls like breakfast. Remove red stripes from cream cloth so plain cream linen. Preserve all4faces, infant support, camera, room and two apples.\nSupporting reference roles: [{\"image\": 1, \"role\": \"Exact edit target; preserve all actors/camera/lighting and change only stated correction\"}]\nNo text. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/bag-ready-v2.png",
+      "role": "Exact edit target; preserve all actors/camera/lighting and change only stated correction",
+      "sha256": "41e00fb0874022eb69e43b8e937c73f43a9f408ffcc49487a2453bbda113e9ab"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:13:45.360633Z",
+  "output": "images/chapter-02-expanded/revision-06/family/bag-ready-v3.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Kitchen mediumwide Papa setssmall ochre cloth satchel, one broad diagonal strap leftshoulder to righthip, rounded flap simple wooden toggle oncleartable, PinPin peersinside, Mamababywatchleft.",
+    "frameId": "K",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        2.7,
+        -4,
+        1.6
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        0.9
+      ],
+      "height": 1.6,
+      "framing": "Kitchen mediumwide Papa setssmall ochre cloth satchel, one broad diagonal strap leftshoulder to righthip, rounded flap simple wooden toggle oncleartable, PinPin peersinside, Mamababywatchleft.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Kitchen negativeY master half-space"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Kitchen mediumwide Papa setssmall ochre cloth satchel, one broad diagonal strap leftshoulder to righthip, rounded flap simple wooden toggle oncleartable, PinPin peersinside, Mamababywatchleft.",
+        "limbsContactSupport": "Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          -1.2,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Kitchen mediumwide Papa setssmall ochre cloth satchel, one broad diagonal strap leftshoulder to righthip, rounded flap simple wooden toggle oncleartable, PinPin peersinside, Mamababywatchleft.",
+        "limbsContactSupport": "Two arms only; one forearm continuously beneath infant torso/bottom; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0.9,
+          -0.8,
+          0
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Kitchen mediumwide Papa setssmall ochre cloth satchel, one broad diagonal strap leftshoulder to righthip, rounded flap simple wooden toggle oncleartable, PinPin peersinside, Mamababywatchleft.",
+        "limbsContactSupport": "Two arms only; two paws perform described action; both hindfeet or seated haunches visibly supported",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          -1.1,
+          0,
+          0.7
+        ],
+        "bodyFacingTarget": "table",
+        "headFacingTarget": "satchel",
+        "eyeTarget": "satchel",
+        "pose": "Kitchen mediumwide Papa setssmall ochre cloth satchel, one broad diagonal strap leftshoulder to righthip, rounded flap simple wooden toggle oncleartable, PinPin peersinside, Mamababywatchleft.",
+        "limbsContactSupport": "Mama lap/forearm",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -4,
+          5,
+          0
+        ],
+        "bodyFacingTarget": "garden",
+        "headFacingTarget": "garden",
+        "eyeTarget": "garden",
+        "pose": "rests outside house",
+        "limbsContactSupport": "Four legs on ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCounter": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "playRug": [
+        -2,
+        -1,
+        0
+      ],
+      "satchel": [
+        0,
+        0,
+        0.85
+      ],
+      "bread": [
+        -0.4,
+        0,
+        0.85
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "Kitchen same geometry; meal clearing and baby transfers shown in prior beats; newpacking uses ochre satchel only.",
+      "after": "Kitchen mediumwide Papa setssmall ochre cloth satchel, one broad diagonal strap leftshoulder to righthip, rounded flap simple wooden toggle oncleartable, PinPin peersinside, Mamababywatchleft."
+    },
+    "transition": {
+      "previousAction": "Papa looked at Mama. “I think it’s time PinPin met the Elder properly.” Mama smiled. “Yes. He’s ready.”",
+      "nextAction": "PinPin wrapped the bread. Papa tucked it into the bag beside two apples.",
+      "reasonForShotChange": "Kitchen mediumwide Papa setssmall ochre cloth satchel, one broad diagonal strap leftshoulder to righthip, rounded flap simple wooden toggle oncleartable, PinPin peersinside, Mamababywatchleft."
+    }
+  },
+  "status": "planned",
+  "requestPath": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/bag-ready-v3.request.json",
+  "provenanceNote": "Generated during resumption; renumbered to preserve older attempt discovered after stale results manifest."
+}

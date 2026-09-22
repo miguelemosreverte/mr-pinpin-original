@@ -1,0 +1,5 @@
+# Five-part title covers and miniatures
+
+Complete: 15 localized title images (RU/EN/ES) and five separately composed text-free miniatures. `results.json` explicitly selects versions; never select the highest filename automatically. Original PNGs remain in `images/covers/elder-r6-<part>/title/` and `miniature/`, with adjacent exact prompts, reference roles/hashes, UTC request times, dimensions, output SHA and actual creator inspection. The forest lane independently inspected all20 selections; its SHA-bound ledger is `../forest/independent-cover-review.json`.
+
+Selected exceptions to v1: family-morning English titlev2 and miniaturev2; beneath-roots English titlev2. Earlier attempts remain with their recorded dish/limb defects. All images1024×1536. Small-size browser inspection confirms readable family/action silhouettes; titles are full first pages, miniatures are separate compositions. User authorized publication on2026-09-22. Public full-resolution WebP derivatives are traced by `images/published/elder-cycle/export-manifest.json`; originals remain unchanged.

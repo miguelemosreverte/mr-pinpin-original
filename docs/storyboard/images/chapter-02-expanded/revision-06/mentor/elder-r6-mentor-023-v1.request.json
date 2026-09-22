@@ -1,0 +1,175 @@
+{
+  "id": "elder-r6-mentor-023-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 dimensional animated children's-book image, no text/panels. Established reference imagery governs expressive faces and warm sculpted materials, not photographs. EXACTLY TWO characters: silver-grey tipped mature Elder hedgehog with round gold spectacles and smaller reddish-quilled child PinPin without spectacles. No Papa/dog/Mama/baby indoors. Elder about1.55child standingheight, qualitative. Warm cream faces, readable brown/hazel iris/pupil separation, soft grouped quills. Two forepaws/two hindfeet each, realistic contact, naturally occluded limbs not duplicated. Afternoon soft daylight from existing left entrance, existing warm desk lamp; no new magic glow. Preserve tree-home deskWEST/book/lamp, wallmapNORTH/shelf, bedEAST/right, central fixedrug, rootnookbackRIGHT low ovalmat/stool, no artificialdoor/stairs. Specific shot: Close lively child's speaking face past mapedge, PinPin laughs recalling animals swimming/drinking. ONE forepaw curls gently near chest, OTHER rests tabletop, body safely on same stool feet belowtable naturally cropped. Elder softly visible left/background smiling watching childface, spectacles onlyElder. Child looks leftElder notcamera. Camera(-2.6,3.5,1.1) target(-1,3.5,.8),36degree; dominatechildexpression, avoid same widewhole-table. Maplakepaper foreground bottom recognizable, bookleft crops naturally. No literal otheranimals/swimming hallucinated into room. Bright warm afternoon calmhumor, no glow.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T02:56:10.050Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-022-v2.png",
+      "role": "cast/support/state",
+      "sha256": "9b8018fb3d58d581db47a139f5461ceaa9446984147b9e53568c14d31a5c5a48"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "styleauthority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    }
+  ],
+  "status": "planned",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "frameId": "Elder-home-H",
+    "units": "PinPin height approximate, not calibrated",
+    "purpose": "Everyone came back",
+    "camera": {
+      "positionXYZ": [
+        -2.6,
+        3.5,
+        1.1
+      ],
+      "targetXYZ": [
+        -1,
+        3.5,
+        0.8
+      ],
+      "height": 1.1,
+      "framing": "close lively child profile past map edge Elder smile visible background",
+      "fieldOfViewDegrees": 36,
+      "axisSide": "south of desk dialogue axis; named overhead/reverse framed within established room"
+    },
+    "actors": [
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          -2.8,
+          4.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "at existing west desk",
+        "limbsContactSupport": "two hindfeet floor or established desk stool; exactly two forepaws; close lively child profile past map edge Elder smile visible background",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          3.5,
+          0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "standing beside desk",
+        "limbsContactSupport": "two hindfeet floor; exactly two forepaws; close lively child profile past map edge Elder smile visible background",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          4,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside sleeping",
+        "limbsContactSupport": "seated ground moss rock",
+        "visibility": "offscreen outside"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          5,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside resting",
+        "limbsContactSupport": "lying ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "desk": [
+        -2,
+        4,
+        0
+      ],
+      "wallMap": [
+        -1,
+        8,
+        0
+      ],
+      "bed": [
+        4,
+        3,
+        0
+      ],
+      "rootNook": [
+        3,
+        8,
+        0
+      ],
+      "entrance": [
+        0,
+        0,
+        0
+      ],
+      "shelf": [
+        -3,
+        5,
+        0
+      ],
+      "portableMap": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "mapRoll": [
+        -3,
+        5,
+        0.9
+      ],
+      "childFinger": [
+        -1.5,
+        3.7,
+        0.9
+      ],
+      "childPaws": [
+        -1,
+        3.5,
+        1
+      ],
+      "goldenQuill": [
+        -0.8,
+        3.6,
+        0.9
+      ],
+      "mapPath": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "open map same place no imaginary animals in room",
+      "after": "open map same place no imaginary animals in room"
+    },
+    "transition": {
+      "previousAction": "prior story-plan scene",
+      "nextAction": "next story-plan scene",
+      "reasonForShotChange": "close lively child profile past map edge Elder smile visible background"
+    }
+  }
+}

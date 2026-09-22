@@ -1,0 +1,175 @@
+{
+  "id": "elder-r6-mentor-025-v2",
+  "prompt": "Use case: precise-object-edit. Image1target, image2 correct tabletopmap/bookstate. KEEP image1 all characters, expressivefaces, reciprocalgazelines, openElderpalm, camera, room. ONLY fix tabletop: the lake map is ONE THIN LOOSE PARCHMENT SHEET on right tablehalf, no binding, no stackedpages, no cover. Separate original open BOTANICAL BOOK stays to LEFT of map as image2, not connected. Put two small smoothstoneweights at mapcorners and two bookstones nearbook, tieaside ifvisible. Preserve black ink/feather and lamp. Map drawing blue lake/homes unchanged, just remove bookbinding beneath it. ONE1536x1024 no text.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T03:07:29.826Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-025-v1.png",
+      "role": "target mapbecamebook",
+      "sha256": "d5c70adc3c7c6313ad7b19fcd633a6450540506116bcaf54ac46aff199145502"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-018-v1.png",
+      "role": "correct separatebook/mapstate",
+      "sha256": "fa8c4de41327a0e2a8af9f77f369b906ab5f316e0a56962228010e4108137857"
+    }
+  ],
+  "status": "planned",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "frameId": "Elder-home-H",
+    "units": "PinPin height approximate, not calibrated",
+    "purpose": "Forest magic",
+    "camera": {
+      "positionXYZ": [
+        -1,
+        1.8,
+        1.1
+      ],
+      "targetXYZ": [
+        -2,
+        4,
+        1
+      ],
+      "height": 1.1,
+      "framing": "shared two-shot faces quiet wonder, child golden quill subtle visible, Elder open relaxed palm",
+      "fieldOfViewDegrees": 42,
+      "axisSide": "south of desk dialogue axis; named overhead/reverse framed within established room"
+    },
+    "actors": [
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          -2.8,
+          4.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "at existing west desk",
+        "limbsContactSupport": "two hindfeet floor or established desk stool; exactly two forepaws; shared two-shot faces quiet wonder, child golden quill subtle visible, Elder open relaxed palm",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          3.5,
+          0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "standing beside desk",
+        "limbsContactSupport": "two hindfeet floor; exactly two forepaws; shared two-shot faces quiet wonder, child golden quill subtle visible, Elder open relaxed palm",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          4,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside sleeping",
+        "limbsContactSupport": "seated ground moss rock",
+        "visibility": "offscreen outside"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          5,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside resting",
+        "limbsContactSupport": "lying ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "desk": [
+        -2,
+        4,
+        0
+      ],
+      "wallMap": [
+        -1,
+        8,
+        0
+      ],
+      "bed": [
+        4,
+        3,
+        0
+      ],
+      "rootNook": [
+        3,
+        8,
+        0
+      ],
+      "entrance": [
+        0,
+        0,
+        0
+      ],
+      "shelf": [
+        -3,
+        5,
+        0
+      ],
+      "portableMap": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "mapRoll": [
+        -3,
+        5,
+        0.9
+      ],
+      "childFinger": [
+        -1.5,
+        3.7,
+        0.9
+      ],
+      "childPaws": [
+        -1,
+        3.5,
+        1
+      ],
+      "goldenQuill": [
+        -0.8,
+        3.6,
+        0.9
+      ],
+      "mapPath": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "no training vow, no secret, no glowburst",
+      "after": "no training vow, no secret, no glowburst"
+    },
+    "transition": {
+      "previousAction": "prior story-plan scene",
+      "nextAction": "next story-plan scene",
+      "reasonForShotChange": "shared two-shot faces quiet wonder, child golden quill subtle visible, Elder open relaxed palm"
+    }
+  }
+}

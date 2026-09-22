@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#f4f1e8">
   <title>Мастерская глав · Мистер Пин-Пин</title>
-  <link rel="stylesheet" href="chapter-workshop.css">
-  <script src="chapter-workshop.js" defer></script>
+  <link rel="stylesheet" href="chapter-workshop.css?v=7">
+  <script src="chapter-workshop.js?v=7" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#content" data-copy="skip">К содержанию</a>
@@ -23,8 +23,9 @@
       <p class="preview-note" data-copy="notice">Предложения для просмотра. Ещё не опубликованы.</p>
     </section>
     <div class="workshop-controls">
-      <div class="revision-control"><label for="revision-select" data-copy="version">Версия</label><select id="revision-select"><option value="1">Предыдущее предложение</option><option value="2">Новое предложение</option><option value="3">Третье предложение · Старейшина</option><option value="4">Четвёртое предложение · Старейшина</option><option value="5">Пятое предложение · Старейшина</option></select></div>
+      <div class="revision-control"><label for="revision-select" data-copy="version">Версия</label><select id="revision-select"><option value="1">Предыдущее предложение</option><option value="2">Новое предложение</option><option value="3">Третье предложение · Старейшина</option><option value="4">Четвёртое предложение · Старейшина</option><option value="5">Пятое предложение · Старейшина</option><option value="6">Шестая версия · Пять глав</option></select></div>
       <div class="chapter-control"><label for="chapter-select" data-copy="chapter">Глава</label><select id="chapter-select"><option value="elder">Мудрость Старейшины</option><option value="academy">Лесная академия</option></select></div>
+      <div id="part-control" class="revision-control" hidden><label for="part-select" data-copy="part">Глава истории</label><select id="part-select"></select></div>
       <nav class="view-control" aria-label="View"><button data-view="reading" data-copy="reading">Читать</button><button data-view="preproduction" data-copy="preproduction">Подготовка</button><button data-view="production" data-copy="production">Разбор сцен</button></nav>
       <button id="refresh" class="refresh-button" data-copy="refresh">Обновить</button>
     </div>

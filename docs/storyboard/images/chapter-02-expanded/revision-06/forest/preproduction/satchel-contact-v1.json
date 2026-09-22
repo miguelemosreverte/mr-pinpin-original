@@ -1,0 +1,37 @@
+{
+  "id": "forest-satchel-contact-v1",
+  "stem": "preproduction/satchel-contact-v1",
+  "version": 1,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "Identity/relative scale and PRIMARY soft animated style for Papa (leftmost adult), PinPin (small standing child) and Scooby. Exclude Mama and baby from output.",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Papa adult identity/cream eye surrounds/hazel irises ONLY. Do not transfer dark vignette/background. No glasses.",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "prompt": "Use case: illustration-story. Asset: preproduction continuity study, landscape 3:2, exactly two large separate illustrations side by side on warm pale ivory, no text or labels. LEFT: fullbody adult hedgehog Papa wearing a small soft muted ochre linen crossbody satchel. Strap from HIS LEFT shoulder diagonally across cream chest to HIS RIGHT hip. Single plain rounded rectangular flap, broad soft cloth strap, no buckles or leather. Bag width about0.6Papa torso width, height0.55torso height, modest soft gusset. PinPin stands beside Papa, helps place tiny wooden cup nested in a shallow wood bowl into OPEN bag. Visible nearby on ground are cream linen folded bread parcel, TWO small apples and small corked water flask, all miniature compared to Papa. RIGHT: same Papa now wears CLOSED bag behind his RIGHT hip while seated astride Scooby behind PinPin. Dog shown fullbody gentle stationary profile so physical seating/support reads. PinPin sits just behind withers, thighs on opposite sides, two paws on shoulder. Papa one forearm around child lower torso, otherpaw braces back, hips firmly astride behind child. Satchel hangs from Papa alone, touches Papa flank, never dog neck/limbs or child. Scooby four grounded paws, one curled tail, attentively turns eyes toward child, not vacant. Adult Papa 1.6child standing height, dog shoulder2.7child heights. STYLE/IDENTITIES: image1 authoritative soft expressive animated children's-book proportions, grouped illustrative short fur, round soft forms, open readable amber/hazel iris around distinct pupil, cream facial planes without black masks. Papa mature broad torso and elongated adult muzzle, brown-grey cream-tipped quills, no glasses; PinPin small chestnut child. Scooby brown/brindle coat, white bib, cream-grey muzzle, short folded ears, curled tail, designed cute expression. Image2Papa identity only, avoid its darkbackground. No mother, baby or Elder. No clothes, saddle, reins, harness, humans, photorealisticfur, PBR headshots, darkbutton eyes, collars, labels or diagram arrows. Two deliberate prop/physical-contact studies, not narrative story montage. Daylight soft neutral warm illustration. Each hedgehog exactly two forepaws and two hindlegs; occluded limbs stay naturally hidden. Bag practical thin softstrap attached visibly at BOTH bag uppercorners. No extra bags. Rightpanel food already inside closed bag. Leftpanel items shown at plausible fit scale.",
+  "tool": "image_gen.imagegen",
+  "mode": "generate",
+  "requestedAt": "2026-09-22T01:35:04.618646+00:00",
+  "status": "rejected-contact",
+  "schemaVersion": 1,
+  "startedAt": "2026-09-22T01:43:20.816Z",
+  "finishedAt": "2026-09-22T01:43:54.047Z",
+  "completedAt": "2026-09-22T01:44:23.201402+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c6ba-ce3a-7982-b8e7-ca232b847164/exec-9fd9d90f-0dfd-46db-b86e-e6fb06bd737a.png",
+  "output": "images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v1.png",
+  "sha256": "474b38b91e90b71de19f76dd18a782b57d8a97b6e120cbb4d69dbbd87ec86128",
+  "width": 1536,
+  "height": 1024,
+  "review": "Actual full-image review: prop and soft identities good, but child nearfoot perched high on dog back rather than down-flank astride. Superseded v2 targeted correction.",
+  "timingSource": {
+    "source": "Date().toISOString immediately before and after awaited built-in tool call",
+    "scope": "observed request wall time, not model-only latency"
+  },
+  "reviewedAt": "2026-09-22T01:47:43.696264+00:00"
+}

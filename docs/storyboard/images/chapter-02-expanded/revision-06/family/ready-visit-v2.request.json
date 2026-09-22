@@ -1,0 +1,181 @@
+{
+  "id": "ready-visit-v2",
+  "slug": "ready-visit",
+  "prompt": "Use case: precise-object-edit. LAST INPUT IMAGE IS EXACT EDIT TARGET. Preserve actors, expressions, anatomy, camera framing, room geometry, lighting and all other details. Change ONLY this: ExactlyTHREE naturalunpaintedwoodcubes only: onePapa holds, onePinPin holds, onefloorbetween them. Removefourthblock andallotherloose toys/car/basketcontents. Removeallcups/bowlsfrombackgroundtable leavingbrownteapot andbreadplateonly. Preservefamilyposesandeyes.\nSupporting reference roles: [{\"image\": 1, \"role\": \"Sole rendering authority; never import Elder, glasses or location\"}, {\"image\": 2, \"role\": \"Exact four hedgehog identities/relative scale; no dog inside\"}, {\"image\": 3, \"role\": \"Kitchen geometry, fixed meal seats and tableware; pose changes per requested shot\"}, {\"image\": 4, \"role\": \"Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting\"}, {\"image\": 5, \"role\": \"Exact edit target; preserve all actors/camera/lighting and change only stated correction\"}]\nNo text. Landscape1536x1024.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "Sole rendering authority; never import Elder, glasses or location",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/family-style-v3.png",
+      "role": "Exact four hedgehog identities/relative scale; no dog inside",
+      "sha256": "89922a4294888921ddb32a5d83fb193f9af85f2950cdc843d5cfc7d62374173d"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-006-v1.png",
+      "role": "Kitchen geometry, fixed meal seats and tableware; pose changes per requested shot",
+      "sha256": "4e7c1c238a31f1c79cb8a31c1266d27fcab4b22fb5cdc174d5029aa5060347a7"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Isolated Papa mature hedgehog identity only; ignore dark studio background and lighting",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/family/ready-visit-v1.png",
+      "role": "Exact edit target; preserve all actors/camera/lighting and change only stated correction",
+      "sha256": "2c1034056e99e91b40d342a5b7192d76a5a94f9be3f6a6856bc50001478d6db8"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T03:13:43.813447Z",
+  "output": "images/chapter-02-expanded/revision-06/family/ready-visit-v2.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Floorgroup wide parents mutualeyes acrosschild: Papa leftMama rightbaby lap, childbetweenlooksPapa, blocks atfeet. Warmordinaryfamilydecisionno solemn initiation.",
+    "frameId": "K",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3.8,
+        -4.3,
+        1.2
+      ],
+      "targetXYZ": [
+        -1.8,
+        -0.8,
+        0.6
+      ],
+      "height": 1.2,
+      "framing": "Floorgroup wide parents mutualeyes acrosschild: Papa leftMama rightbaby lap, childbetweenlooksPapa, blocks atfeet. Warmordinaryfamilydecisionno solemn initiation.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Kitchen negativeY master half-space"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2,
+          -0.2,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "Mama",
+        "eyeTarget": "Mama",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Seated haunches on woven rug, two hindfeet on floor; two forearms perform described action",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          -1,
+          -0.2,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Seated haunches on woven rug, two hindfeet on floor; two forearms securely support infant",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1.7,
+          -1.3,
+          0
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Seated haunches on woven rug, two hindfeet on floor; two forearms perform described action",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          -1,
+          -0.4,
+          0.6
+        ],
+        "bodyFacingTarget": "playRug",
+        "headFacingTarget": "woodBlocks",
+        "eyeTarget": "woodBlocks",
+        "pose": "Seated at floor play area",
+        "limbsContactSupport": "Mama lap and forearm",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -4,
+          5,
+          0
+        ],
+        "bodyFacingTarget": "garden",
+        "headFacingTarget": "garden",
+        "eyeTarget": "garden",
+        "pose": "rests outside house",
+        "limbsContactSupport": "Four legs on ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "table": [
+        0,
+        0,
+        0.85
+      ],
+      "greenDoor": [
+        0,
+        3,
+        0
+      ],
+      "leftCounter": [
+        -3,
+        1,
+        0
+      ],
+      "stove": [
+        3,
+        1,
+        0
+      ],
+      "playRug": [
+        -2,
+        -1,
+        0
+      ],
+      "woodBlocks": [
+        -1.3,
+        -0.7,
+        0.15
+      ],
+      "bread": [
+        -3,
+        1,
+        0.85
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "Floor play area left of table. Infant holder explicitly specified; three wooden blocks only when block play sequence begins.",
+      "after": "Floorgroup wide parents mutualeyes acrosschild: Papa leftMama rightbaby lap, childbetweenlooksPapa, blocks atfeet. Warmordinaryfamilydecisionno solemn initiation."
+    },
+    "transition": {
+      "previousAction": "“Again?” said PinPin. This time he gave PomPom a block of his own.",
+      "nextAction": "“Today?” asked PinPin. “Today,” said Papa. “We’ll take our lunch.” He fetched the picnic bag.",
+      "reasonForShotChange": "Floorgroup wide parents mutualeyes acrosschild: Papa leftMama rightbaby lap, childbetweenlooksPapa, blocks atfeet. Warmordinaryfamilydecisionno solemn initiation."
+    }
+  },
+  "status": "planned"
+}

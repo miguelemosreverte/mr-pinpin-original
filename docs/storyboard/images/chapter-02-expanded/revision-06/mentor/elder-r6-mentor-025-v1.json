@@ -1,0 +1,183 @@
+{
+  "id": "elder-r6-mentor-025-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 dimensional animated children's-book image, no text/panels. Established reference imagery governs expressive faces and warm sculpted materials, not photographs. EXACTLY TWO characters: silver-grey tipped mature Elder hedgehog with round gold spectacles and smaller reddish-quilled child PinPin without spectacles. No Papa/dog/Mama/baby indoors. Elder about1.55child standingheight, qualitative. Warm cream faces, readable brown/hazel iris/pupil separation, soft grouped quills. Two forepaws/two hindfeet each, realistic contact, naturally occluded limbs not duplicated. Afternoon soft daylight from existing left entrance, existing warm desk lamp; no new magic glow. Preserve tree-home deskWEST/book/lamp, wallmapNORTH/shelf, bedEAST/right, central fixedrug, rootnookbackRIGHT low ovalmat/stool, no artificialdoor/stairs. Specific shot: Quiet shared two-shot at table, PinPin onstool lowerRIGHT facesElder with curious eyes, ElderLEFT answers naturally with ONE relaxed palmopen near table and other resting edge. Direct reciprocal gaze at differentheights, calmacknowledgement magicinforest, not training/ceremony/secret. Single golden taperedspine can be subtly seen upperback but no need show if anatomicallyhidden; no feathers or glow. Mapstillright/tablebookleft,ink/lampfixed. Slightlywider than precedingreverseclose to include forest light through entranceleft and both faces,44degree at childheadheight. Rootnookmatbackrightunchanged. No newanimal/props.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T03:03:07.990Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-024-v1.png",
+      "role": "current faces/table state",
+      "sha256": "c4d70e684473f494e43467718e8c300e7275a3415f9693f9ab7f69c8affe35ee"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "style/room authority",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    }
+  ],
+  "status": "rejected",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "frameId": "Elder-home-H",
+    "units": "PinPin height approximate, not calibrated",
+    "purpose": "Forest magic",
+    "camera": {
+      "positionXYZ": [
+        -1,
+        1.8,
+        1.1
+      ],
+      "targetXYZ": [
+        -2,
+        4,
+        1
+      ],
+      "height": 1.1,
+      "framing": "shared two-shot faces quiet wonder, child golden quill subtle visible, Elder open relaxed palm",
+      "fieldOfViewDegrees": 42,
+      "axisSide": "south of desk dialogue axis; named overhead/reverse framed within established room"
+    },
+    "actors": [
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          -2.8,
+          4.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "at existing west desk",
+        "limbsContactSupport": "two hindfeet floor or established desk stool; exactly two forepaws; shared two-shot faces quiet wonder, child golden quill subtle visible, Elder open relaxed palm",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          3.5,
+          0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "Elder",
+        "eyeTarget": "Elder",
+        "pose": "standing beside desk",
+        "limbsContactSupport": "two hindfeet floor; exactly two forepaws; shared two-shot faces quiet wonder, child golden quill subtle visible, Elder open relaxed palm",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          4,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside sleeping",
+        "limbsContactSupport": "seated ground moss rock",
+        "visibility": "offscreen outside"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          5,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside resting",
+        "limbsContactSupport": "lying ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "desk": [
+        -2,
+        4,
+        0
+      ],
+      "wallMap": [
+        -1,
+        8,
+        0
+      ],
+      "bed": [
+        4,
+        3,
+        0
+      ],
+      "rootNook": [
+        3,
+        8,
+        0
+      ],
+      "entrance": [
+        0,
+        0,
+        0
+      ],
+      "shelf": [
+        -3,
+        5,
+        0
+      ],
+      "portableMap": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "mapRoll": [
+        -3,
+        5,
+        0.9
+      ],
+      "childFinger": [
+        -1.5,
+        3.7,
+        0.9
+      ],
+      "childPaws": [
+        -1,
+        3.5,
+        1
+      ],
+      "goldenQuill": [
+        -0.8,
+        3.6,
+        0.9
+      ],
+      "mapPath": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "no training vow, no secret, no glowburst",
+      "after": "no training vow, no secret, no glowburst"
+    },
+    "transition": {
+      "previousAction": "prior story-plan scene",
+      "nextAction": "next story-plan scene",
+      "reasonForShotChange": "shared two-shot faces quiet wonder, child golden quill subtle visible, Elder open relaxed palm"
+    }
+  },
+  "startedAt": "2026-09-22T03:04:39.152Z",
+  "finishedAt": "2026-09-22T03:05:18.917Z",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c600-79e9-7ef1-bcf3-9c07d2a5d2dd/exec-3f3d2969-f1d7-4678-8b89-4304b87e809b.png",
+  "output": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-025-v1.png",
+  "sha256": "d5c70adc3c7c6313ad7b19fcd633a6450540506116bcaf54ac46aff199145502",
+  "review": "REJECT actual view: portable map became bound book and merged openbook layout, violates objectstate. Faces/eyelines pass; restore separate map sheet and open book.",
+  "width": 1536,
+  "height": 1024
+}

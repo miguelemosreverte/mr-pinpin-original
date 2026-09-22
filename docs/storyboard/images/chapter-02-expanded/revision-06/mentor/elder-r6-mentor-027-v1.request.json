@@ -1,0 +1,175 @@
+{
+  "id": "elder-r6-mentor-027-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 dimensional animated children's-book image, no text/panels. Established reference imagery governs expressive faces and warm sculpted materials, not photographs. EXACTLY TWO characters: silver-grey tipped mature Elder hedgehog with round gold spectacles and smaller reddish-quilled child PinPin without spectacles. No Papa/dog/Mama/baby indoors. Elder about1.55child standingheight, qualitative. Warm cream faces, readable brown/hazel iris/pupil separation, soft grouped quills. Two forepaws/two hindfeet each, realistic contact, naturally occluded limbs not duplicated. Afternoon soft daylight from existing left entrance, existing warm desk lamp; no new magic glow. Preserve tree-home deskWEST/book/lamp, wallmapNORTH/shelf, bedEAST/right, central fixedrug, rootnookbackRIGHT low ovalmat/stool, no artificialdoor/stairs. Specific shot: Medium SIDE practical transition toward LOW WEST SHELF. Elder and child have finished portablemap: Elder holds ONE rolledparchmentmap with both forepaws and slides it back into existing low shelf at easy chestheight. PinPin now on GROUND beside him, both hindfeet ground, one forepaw gestures to BIG WALLMAP above/back while looking up at it. Elder eyes maprollwhile shelving. Low desk in foreground LEFT still holds OPEN BOTANICALBOOK and blackinkfeather, NO portablemapleftontable; FOUR smallsmoothstones nowsetaside in same deskarea, loose tie can be around roll. Original near deskstool empty. Camera(-1,2.5,1.3) target(-3,5,1),48degree. Wallmap existing fixed, rootnookmat intact. This makes putaway action explicit before studying wallmap. No new mapbooks/characters.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T03:13:04.102Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-017-v1.png",
+      "role": "shelf/staging reverse action",
+      "sha256": "3a572649e793065d86e6353caf3d0b13491daae915002ac25990f0801a18b516"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-026-v1.png",
+      "role": "mapstory cast/currentstate",
+      "sha256": "19dc72c48e26acfd3d539870e375b0e77bcf1307a052c92829cbfe972102a8f4"
+    }
+  ],
+  "status": "planned",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "frameId": "Elder-home-H",
+    "units": "PinPin height approximate, not calibrated",
+    "purpose": "Books next",
+    "camera": {
+      "positionXYZ": [
+        -1,
+        2.5,
+        1.3
+      ],
+      "targetXYZ": [
+        -3,
+        5,
+        1
+      ],
+      "height": 1.3,
+      "framing": "Medium side view both characters return rolled map to shelf then turn toward existing wallmap",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "south of desk dialogue axis; named overhead/reverse framed within established room"
+    },
+    "actors": [
+      {
+        "name": "Elder",
+        "positionXYZ": [
+          -2.8,
+          4.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "mapRoll",
+        "eyeTarget": "mapRoll",
+        "pose": "at existing west desk",
+        "limbsContactSupport": "two hindfeet floor or established desk stool; exactly two forepaws; Medium side view both characters return rolled map to shelf then turn toward existing wallmap",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1,
+          3.5,
+          0
+        ],
+        "bodyFacingTarget": "Elder",
+        "headFacingTarget": "mapRoll",
+        "eyeTarget": "mapRoll",
+        "pose": "standing beside desk",
+        "limbsContactSupport": "two hindfeet floor; exactly two forepaws; Medium side view both characters return rolled map to shelf then turn toward existing wallmap",
+        "visibility": "visible natural crop"
+      },
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          4,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Scooby",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside sleeping",
+        "limbsContactSupport": "seated ground moss rock",
+        "visibility": "offscreen outside"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          5,
+          -1,
+          0
+        ],
+        "bodyFacingTarget": "Papa",
+        "headFacingTarget": "restpatch",
+        "eyeTarget": "closed sleeping",
+        "pose": "outside resting",
+        "limbsContactSupport": "lying ground",
+        "visibility": "offscreen outside"
+      }
+    ],
+    "staticLandmarks": {
+      "desk": [
+        -2,
+        4,
+        0
+      ],
+      "wallMap": [
+        -1,
+        8,
+        0
+      ],
+      "bed": [
+        4,
+        3,
+        0
+      ],
+      "rootNook": [
+        3,
+        8,
+        0
+      ],
+      "entrance": [
+        0,
+        0,
+        0
+      ],
+      "shelf": [
+        -3,
+        5,
+        0
+      ],
+      "portableMap": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "mapRoll": [
+        -3,
+        5,
+        0.9
+      ],
+      "childFinger": [
+        -1.5,
+        3.7,
+        0.9
+      ],
+      "childPaws": [
+        -1,
+        3.5,
+        1
+      ],
+      "goldenQuill": [
+        -0.8,
+        3.6,
+        0.9
+      ],
+      "mapPath": [
+        -1.8,
+        4,
+        0.9
+      ],
+      "restpatch": [
+        4,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "map roll moves to shelf before inherited book views; book untouched",
+      "after": "portable map returned shelf; openbook unchanged"
+    },
+    "transition": {
+      "previousAction": "prior story-plan scene",
+      "nextAction": "next story-plan scene",
+      "reasonForShotChange": "close tabletop hands rolling map leaving openbook fully accessible"
+    }
+  }
+}

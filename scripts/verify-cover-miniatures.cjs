@@ -6,7 +6,11 @@ const crypto = require('node:crypto');
 const base = path.resolve(__dirname, '../docs/storyboard');
 const {covers} = JSON.parse(fs.readFileSync(path.join(base, 'covers.json')));
 const release = process.argv.includes('--release');
-for (const [id, cover] of Object.entries(covers)) {
+// Public Elder WebP editions are validated by verify-elder-edition.cjs.
+const legacyIds = ['chapter-01', 'chapter-02', 'timber-tractor', 'home-sweet-home'];
+for (const id of legacyIds) {
+  const cover = covers[id];
+  assert.ok(cover, id + ' legacy cover remains registered');
   const mini = cover.miniature;
   assert.ok(mini && ['approved', 'proposed'].includes(mini.status), id + ' approval state');
   if (release) assert.equal(mini.status, 'approved', id + ' requires user approval');
@@ -23,8 +27,9 @@ for (const [id, cover] of Object.entries(covers)) {
   assert.ok(fs.readFileSync(file.replace(/\.png$/, '.md'), 'utf8').trim());
   // Folder reorganization preserves all published title bytes and their old URLs.
   for (const asset of Object.values(cover.assets)) {
-    const canonical = fs.readFileSync(path.join(base, asset));
-    const legacy = fs.readFileSync(path.join(base, asset.replace('/title/', '/')));
+    const canonicalAsset = asset.includes('/title/') ? asset : asset.replace(/\/title-([^/]+)$/, '/title/title-$1');
+    const canonical = fs.readFileSync(path.join(base, canonicalAsset));
+    const legacy = fs.readFileSync(path.join(base, canonicalAsset.replace('/title/', '/')));
     assert.ok(canonical.equals(legacy), id + ' title copy must preserve original bytes');
   }
 }

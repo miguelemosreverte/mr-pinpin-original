@@ -1,0 +1,151 @@
+{
+  "id": "departure-v1",
+  "slug": "departure",
+  "prompt": "Use case: precise-object-edit. Image1 controls small ochre satchel and riding anatomy. Image2 EXACT EDIT TARGET: preserve beautiful scene, allfour hedgehogs, softanimateddog, faces, dog grounded fourlegs andtail, doorway. Add ONLY small ochre linen crossbody satchel to Papa. Papa riding facingright: bag at near anatomical RIGHT hip behindhisnearleg awayfromchild, strap from anatomicalLEFT shoulder crosses chest diagonally. Maintain his supportingforearm aroundchild. Correct visible child near leg to hang naturally down dogflank, not stand on dogback; keep seatedstraddle. Same1536x1024 landscape no text.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "Accepted ochre linen satchel geometry and ridercontact; no extra dogs insidehouse",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/scenes/scene-015-v1.png",
+      "role": "Exact edit target action/contacts/camera; add satchel without changing anatomy",
+      "sha256": "9a6bf4ab96dbc03402d3ba9a8f32536c1311c3b5a9623ace6672715c06a49664"
+    }
+  ],
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T04:27:56.076618Z",
+  "output": "images/chapter-02-expanded/revision-06/family/departure-v1.png",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Gardendeparture rear3quarter: Papa behindchild onScooby back oneforearmsupportchildotherbracesback, ochre satchel closed securedcrossbody right hip awayfromchild; Mama baby doorway wavesonlyonefreehandwithbabysecure.",
+    "frameId": "H",
+    "units": "Approximate PinPin standing heights; illustrative art direction, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        3,
+        -5,
+        1.5
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        0.9
+      ],
+      "height": 1.5,
+      "framing": "Gardendeparture rear3quarter: Papa behindchild onScooby back oneforearmsupportchildotherbracesback, ochre satchel closed securedcrossbody right hip awayfromchild; Mama baby doorway wavesonlyonefreehandwithbabysecure.",
+      "fieldOfViewDegrees": 50,
+      "axisSide": "Exterior negativeY"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -2.2,
+          -2.2,
+          0
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Gardendeparture rear3quarter: Papa behindchild onScooby back oneforearmsupportchildotherbracesback, ochre satchel closed securedcrossbody right hip awayfromchild; Mama baby doorway wavesonlyonefreehandwithbabysecure.",
+        "limbsContactSupport": "Support child lower torso with one forearm; other braces dog during mounted departure; ochre bag hangs securely opposite child",
+        "visibility": "visible"
+      },
+      {
+        "name": "Mama",
+        "positionXYZ": [
+          0,
+          0.1,
+          0
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Gardendeparture rear3quarter: Papa behindchild onScooby back oneforearmsupportchildotherbracesback, ochre satchel closed securedcrossbody right hip awayfromchild; Mama baby doorway wavesonlyonefreehandwithbabysecure.",
+        "limbsContactSupport": "Both hindfeet on ground; two arms perform stated action",
+        "visibility": "visible"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -1.8,
+          -2,
+          1.3
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "Gardendeparture rear3quarter: Papa behindchild onScooby back oneforearmsupportchildotherbracesback, ochre satchel closed securedcrossbody right hip awayfromchild; Mama baby doorway wavesonlyonefreehandwithbabysecure.",
+        "limbsContactSupport": "Mountingstone then straddled dog behindwithers; never both feet on same top side",
+        "visibility": "visible"
+      },
+      {
+        "name": "PomPom",
+        "positionXYZ": [
+          0,
+          0.1,
+          0.9
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "Gardendeparture rear3quarter: Papa behindchild onScooby back oneforearmsupportchildotherbracesback, ochre satchel closed securedcrossbody right hip awayfromchild; Mama baby doorway wavesonlyonefreehandwithbabysecure.",
+        "limbsContactSupport": "Mama forearm and chest",
+        "visibility": "visible"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          -2,
+          -2,
+          0
+        ],
+        "bodyFacingTarget": "family group",
+        "headFacingTarget": "path",
+        "eyeTarget": "path",
+        "pose": "Gardendeparture rear3quarter: Papa behindchild onScooby back oneforearmsupportchildotherbracesback, ochre satchel closed securedcrossbody right hip awayfromchild; Mama baby doorway wavesonlyonefreehandwithbabysecure.",
+        "limbsContactSupport": "Four anatomically attached legs planted or natural gait, no saddle/reins",
+        "visibility": "visible"
+      }
+    ],
+    "staticLandmarks": {
+      "threshold": [
+        0,
+        0,
+        0
+      ],
+      "stone": [
+        -2,
+        -2,
+        0.35
+      ],
+      "dogBowl": [
+        2,
+        -2,
+        0
+      ],
+      "path": [
+        0,
+        -6,
+        0
+      ],
+      "family group": [
+        0,
+        -1,
+        0
+      ]
+    },
+    "objectStates": {
+      "before": "See scene action and sequential state ledger",
+      "after": "Gardendeparture rear3quarter: Papa behindchild onScooby back oneforearmsupportchildotherbracesback, ochre satchel closed securedcrossbody right hip awayfromchild; Mama baby doorway wavesonlyonefreehandwithbabysecure."
+    },
+    "transition": {
+      "previousAction": "“Comfortable?” asked Papa. “Very!” said PinPin. Scooby listened, ready to go.",
+      "nextAction": "Papa set the empty bag down. PinPin helped Mama fold the picnic cloth.",
+      "reasonForShotChange": "Gardendeparture rear3quarter: Papa behindchild onScooby back oneforearmsupportchildotherbracesback, ochre satchel closed securedcrossbody right hip awayfromchild; Mama baby doorway wavesonlyonefreehandwithbabysecure."
+    }
+  },
+  "status": "planned"
+}

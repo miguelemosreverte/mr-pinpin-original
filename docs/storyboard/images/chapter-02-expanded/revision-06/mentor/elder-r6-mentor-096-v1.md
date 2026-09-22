@@ -1,0 +1,7 @@
+# elder-r6-mentor-096-v1
+
+Use case: precise-object-edit. ONE landscape1536x1024. Image1 EDIT TARGET: preserve exact camera, all character faces/style/poses/gaze/feet/paw contacts, clothing-free animals, environmental geometry, lighting. Image2 is satchel PROP ONLY, do not copy its white background or change cast. Add ONE small muted ochre linen crossbody satchel worn ONLY by adult Papa hedgehog. Broad soft strap from Papa ANATOMICAL LEFT SHOULDER diagonally to ANATOMICAL RIGHT HIP; compact closed rounded flap bag rests at right hip, just behind hip during riding, away from child/supporting arm. Bagwidth about0.6Papa torso/height0.55. No duplicate straps or bag on dog/child; far side may naturally occlude. Strap follows body not quill spikes, does not replace or hide supporting paws. This is continuity of already packed picnicbag, no new action/props. Do not change feet positions or eye style. Keep soft animated Papa creamface and dog expressiveness. No text, no panels, no borders.
+
+Creator full-image PASS: compact ochre bag behind Papa near hip, partly occluded by dog curled tail; strap visible up side with far attachment hidden. Both riders/support arm, child's grounded near leg and raised attention, dog's original walking limbs, forest path and lighting unchanged. Small dark flap fastening appears, nonblocking detail; exact hidden strap routing not certified.
+
+SHA-256: e4492a80f52151ceb49a08e7bcf1d9b5f91b540c7316d1925e9381baf0c32b51

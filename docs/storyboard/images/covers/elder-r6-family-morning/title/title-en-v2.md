@@ -1,0 +1,5 @@
+# elder-r6-family-morning/title-en-v2
+
+Use case: precise-object-edit. Correct one missing table object in this portrait cover. Add Papa’s personal small porridge bowl on the tabletop directly before Papa, behind the large central serving bowl, slightly to its right but left of Papa’s cup; make its rim and porridge clearly visible. There must be exactly THREE small personal bowls (Mama, Papa, PinPin) plus ONE large central serving bowl. Keep all three cups, teapot, bread board, every character, bread handoff, visible paws, faces, gaze, typography, door and all background unchanged. Do not change framing or hide another bowl. Same portrait 1024x1536, exact title Mr. PinPin / A Morning Together unchanged.
+
+Full image inspected. Corrected Papa bowl clearly visible behind central serving dish, now exactly three personal bowls plus serving bowl and three cups. Four family members maintained, infant supported, bread handoff coherent, Papa watches bread while child looks to him. Soft animated faces and exact English title clear. Far bodies/arms obscured by table unverified. Selected proposed master v2.

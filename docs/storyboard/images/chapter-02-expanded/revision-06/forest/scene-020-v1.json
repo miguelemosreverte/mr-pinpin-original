@@ -1,0 +1,168 @@
+{
+  "id": "elder-r6-forest-020",
+  "stem": "scene-020-v1",
+  "version": 1,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-019-v1.png",
+      "role": "PRIMARY GEOGRAPHY AUTHORITY: second broad flat stone with Papa, child AND Scooby all supported ON TOP, not beside. Preserve same rock width/height, dog body toward left and tail at rear-right. Change only boarding stage/camera as described.",
+      "sha256": "2d0bd5ebf4cc001662d040b48bbebd3106449a7eec4eb184829b36391245b370"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "AUTHORITATIVE Papa/PinPin/Scooby identities and soft style, correct satchel contact/scale. NOT a montage layout to copy.",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/environments-v1.png",
+      "role": "Geography only. Use left stop/path for walking, right clearing for picnic. Not a split-panel layout; output ONE scene.",
+      "sha256": "8514a0e488ead46e8ed520fb526dfaf4b9e680084b3c831a4754e732fd621f6b"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Papa face/identity only, never transfer darkbackground or isolate as portrait.",
+      "sha256": "9466042928a9631a02254cea29406edca133abe2f025f9e83d017eda0e1f4344"
+    }
+  ],
+  "mode": "generate",
+  "prompt": "Use case: illustration-story. ONE full-bleed landscape 3:2 finished children's-book illustration, no text or panels. PRIMARY STYLE: luminous soft expressive animated forms consistent with approved study, cream face planes, readable hazel/amber iris around separate pupil, broad gentle lids, grouped sculpted short fur and quills. Mature Papa 1.6 times child height; dog shoulder 2.7 child heights. CRITICAL SCALE: when standing the dog shoulder is clearly HIGHER than Papa head, and its head is much higher; Papa reaches only dog shoulder lower edge. Never shrink Scooby to child-size companion. Papa hedgehog cream face, elongated mature muzzle and robust body, tipped brown-grey quills, NO glasses. PinPin small chestnut child. Scooby brown/brindle, white chest bib, cream-grey muzzle, short folded ears, curled tail, attentive meaningful gaze. All animals unclothed; ochre cloth bag is a carried prop, not clothing. No photoreal headshot/PBR materials, black button eyes, masks, saddles/reins/collars or humans. Exactly Papa, PinPin, Scooby; no Mama/baby/Elder copied from identity reference. Two forepaws and two hindlegs per hedgehog, four dog legs and one tail; occluded limbs stay hidden. Natural contact and believable support. Daylight only. No captions, borders, watermarks, montage, arrows or labels.\nREFERENCE ROLES: Image 1: PRIMARY GEOGRAPHY AUTHORITY: second broad flat stone with Papa, child AND Scooby all supported ON TOP, not beside. Preserve same rock width/height, dog body toward left and tail at rear-right. Change only boarding stage/camera as described.; Image 2: AUTHORITATIVE Papa/PinPin/Scooby identities and soft style, correct satchel contact/scale. NOT a montage layout to copy.; Image 3: Geography only. Use left stop/path for walking, right clearing for picnic. Not a split-panel layout; output ONE scene.; Image 4: Papa face/identity only, never transfer darkbackground or isolate as portrait.\nSHOT ACTION AND CAMERA: Medium contact from dog near flank. Papa BOTH feet planted on broad stone, one arm around child lower torso while child sits astride Scooby just behind withers, near hindleg hangs down flank, farleg occluded, two small forepaws on shoulder. Papa otherpaw braces dog back. Dog crouched stationary ON SAME BROAD FLAT STONE AS PAPA, softly watches child. Satchel behind Papa right hip away from child. No airborne child or Papa, no standing on dog.\nPERSISTED CAMERA/ACTOR RECORD (approximate art direction, not labels): {\"schemaVersion\": 1, \"purpose\": \"Papa helps him up: Scooby crouched. Papa helped PinPin onto his warm back and kept one paw around him.\", \"frameId\": \"S2\", \"units\": \"Approximate PinPin standing heights; illustrative, not measured geometry.\", \"camera\": {\"positionXYZ\": [-3, -3, 1.2], \"targetXYZ\": [-0.4, 0.2, 0.8], \"height\": 1.2, \"framing\": \"medium contact from near flank\", \"fieldOfViewDegrees\": 48, \"axisSide\": \"negative X unless named reverse; neutral establishing shot precedes new region\"}, \"actors\": [{\"name\": \"Papa\", \"positionXYZ\": [-1, 0, 0.35], \"bodyFacingTarget\": \"PinPin\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"feet stone one arm supports child lower torso other braces dog\", \"limbsContactSupport\": \"feet stone one arm supports child lower torso other braces dog\", \"visibility\": \"visible unless specified by purposeful crop\"}, {\"name\": \"PinPin\", \"positionXYZ\": [0, 0.4, 1.3], \"bodyFacingTarget\": \"PinPin\", \"headFacingTarget\": \"Papa\", \"eyeTarget\": \"Papa\", \"pose\": \"seated astride shoulder two forepaws back near hindlegdown farlegoccluded\", \"limbsContactSupport\": \"seated astride shoulder two forepaws back near hindlegdown farlegoccluded\", \"visibility\": \"visible unless specified by purposeful crop\"}, {\"name\": \"Scooby\", \"positionXYZ\": [0, 0, 0], \"bodyFacingTarget\": \"PinPin\", \"headFacingTarget\": \"PinPin\", \"eyeTarget\": \"PinPin\", \"pose\": \"crouched still\", \"limbsContactSupport\": \"crouched still\", \"visibility\": \"visible unless specified by purposeful crop\"}], \"staticLandmarks\": {\"path\": [0, 6, 0], \"fernDrop\": [-1, 1, 0.65], \"picnicLog\": [0, 1, 0.6], \"picnicCloth\": [0, 0, 0], \"bread\": [0, 0, 0.2], \"cup\": [0.1, -0.1, 0.2], \"bowl\": [2, -0.5, 0], \"threshold\": [0, 8, 0], \"stone\": [-1, 0, 0.35]}, \"objectStates\": {\"before\": \"All gear repacked; Papa again wears closed bag\", \"after\": \"Papa satchel right hip, walking or supported transfer\"}, \"transition\": {\"previous\": \"A ride for little feet\", \"next\": \"Together again\", \"reason\": \"Papa helps him up\"}}",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Papa helps him up: Scooby crouched. Papa helped PinPin onto his warm back and kept one paw around him.",
+    "frameId": "S2",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3,
+        -3,
+        1.2
+      ],
+      "targetXYZ": [
+        -0.4,
+        0.2,
+        0.8
+      ],
+      "height": 1.2,
+      "framing": "medium contact from near flank",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -1,
+          0,
+          0.35
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "feet stone one arm supports child lower torso other braces dog",
+        "limbsContactSupport": "feet stone one arm supports child lower torso other braces dog",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0,
+          0.4,
+          1.3
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "seated astride shoulder two forepaws back near hindlegdown farlegoccluded",
+        "limbsContactSupport": "seated astride shoulder two forepaws back near hindlegdown farlegoccluded",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          0,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "crouched still",
+        "limbsContactSupport": "crouched still",
+        "visibility": "visible unless specified by purposeful crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ]
+    },
+    "objectStates": {
+      "before": "All gear repacked; Papa again wears closed bag",
+      "after": "Papa satchel right hip, walking or supported transfer"
+    },
+    "transition": {
+      "previous": "A ride for little feet",
+      "next": "Together again",
+      "reason": "Papa helps him up"
+    }
+  },
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-22T02:47:43.138764+00:00",
+  "status": "rejected",
+  "schemaVersion": 1,
+  "startedAt": "2026-09-22T02:47:43.186Z",
+  "finishedAt": "2026-09-22T02:48:30.916Z",
+  "completedAt": "2026-09-22T02:49:29.392626+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c6e8-4236-7423-aba9-373f8983fcab/exec-f59caeab-2c03-4074-b855-9fd18c8d89fc.png",
+  "output": "images/chapter-02-expanded/revision-06/forest/scene-020-v1.png",
+  "sha256": "7d320f17f398cfdb14b5c31af5257aa4c01bf5cc4c6867cdeab0f81b97fd4951",
+  "width": 1536,
+  "height": 1024,
+  "review": "Wrong shoulder-side tail plus orphan extra leg; correction requested v2 before selection.",
+  "timingSource": {
+    "source": "Date().toISOString immediately before and after awaited built-in tool call",
+    "scope": "observed request wall time, not model-only latency"
+  }
+}

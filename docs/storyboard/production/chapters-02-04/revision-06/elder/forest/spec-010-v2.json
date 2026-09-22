@@ -1,0 +1,147 @@
+{
+  "id": "elder-r6-forest-010",
+  "stem": "scene-010-v2",
+  "version": 2,
+  "references": [
+    {
+      "path": "images/chapter-02-expanded/revision-06/forest/scene-010-v1.png",
+      "role": "EDIT TARGET: enlarge Scooby dog by approximately 60% while keeping paws on grass, Papa and child unchanged. Dog shoulder must rise above Papa head."
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "AUTHORITATIVE Papa/PinPin/Scooby identities and soft style, correct satchel contact/scale. NOT a montage layout to copy."
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-06/forest/preproduction/environments-v1.png",
+      "role": "Geography only. Use left stop/path for walking, right clearing for picnic. Not a split-panel layout; output ONE scene."
+    },
+    {
+      "path": "images/chapter-02-expanded/revision-05/preproduction/papa-style-v1.png",
+      "role": "Papa face/identity only, never transfer darkbackground or isolate as portrait."
+    }
+  ],
+  "mode": "edit",
+  "prompt": "Use case: precise-object-edit. EDIT first image. Preserve entire beautiful clearing, Papa and child identities, handholding, bag, camera, light and style. Correct ONLY dog SCALE: Scooby is currently too small. Enlarge the dog around its ground contact by 60%, so its shoulder is visibly slightly ABOVE Papa head and its head higher still. Same brown/brindle short soft stylized fur, bib, curled tail, exact four anatomically connected legs. Scooby turns head downward attentively toward child. Keep dog on their right, do not overlap their bodies or alter them. Supporting image2 is scale/identity reference; image3 environment, image4 Papa. Full single landscape scene, no text.",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Their lunch place: Beyond the ferns was a sunny patch of grass. \u201cShall we have our lunch here?\u201d",
+    "frameId": "P",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -5,
+        -7,
+        2
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "height": 2,
+      "framing": "wide clearing reveal",
+      "fieldOfViewDegrees": 65,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0.7,
+          0.4,
+          0
+        ],
+        "bodyFacingTarget": "picnicLog",
+        "headFacingTarget": "picnicLog",
+        "eyeTarget": "picnicLog",
+        "pose": "clearing",
+        "limbsContactSupport": "two hindfeet or seated hips on firm ground; exact paw action follows shot action",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          -0.7,
+          -0.7,
+          0
+        ],
+        "bodyFacingTarget": "picnicLog",
+        "headFacingTarget": "picnicLog",
+        "eyeTarget": "picnicLog",
+        "pose": "clearing",
+        "limbsContactSupport": "grounded child; exact paw action follows shot action",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          2.5,
+          0.5,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "resting/crouched",
+        "limbsContactSupport": "four anatomical limbs; no saddle/reins; visible paws contact ground, hidden limbs not certified",
+        "visibility": "visible unless specified by purposeful crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ]
+    },
+    "objectStates": {
+      "before": "Papa wears closed ochre crossbody satchel, left shoulder to right hip; food inside",
+      "after": "picnic state: clearing"
+    },
+    "transition": {
+      "previous": "PinPin helps too",
+      "next": "Together they spread the cloth",
+      "reason": "Their lunch place"
+    }
+  }
+}

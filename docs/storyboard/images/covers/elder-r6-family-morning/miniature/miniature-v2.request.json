@@ -1,0 +1,16 @@
+{
+  "id": "elder-r6-family-morning/miniature-v2",
+  "output": "images/covers/elder-r6-family-morning/miniature/miniature-v2.png",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/elder-r6-family-morning/miniature/miniature-v1.png",
+      "role": "Edit target for dish correction, preserve illustration.",
+      "sha256": "05693d74cf5d2fb9ce58a152114a7586cf3cc95d66344eb9cb3eb9ac3471ae6f"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. Correct only table inventory. REMOVE the extra cup at the VERY FRONT CENTER of table, restoring wood in its place. Keep the other three cups (left Mama, back center Papa, right PinPin). ADD Papa's small porridge bowl behind central large serving bowl between teapot and Papa's back-center cup, its rim and porridge clearly visible. Final exactly THREE personal bowls plus ONE large central serving bowl, THREE cups. Preserve every face, paw, infant support, bread handoff, all four hedgehogs, text-free layout, green door, lighting and camera. No other changes. Portrait 1024x1536.",
+  "startedAt": "2026-09-22T02:34:54.110264+00:00",
+  "tool": "built-in imagegen",
+  "status": "proposed",
+  "review": "Pending actual image inspection"
+}

@@ -1,0 +1,159 @@
+{
+  "id": "elder-r6-forest-021",
+  "stem": "scene-021-v2",
+  "version": 2,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-021-v1.png",
+      "role": "EDIT TARGET correct mirrored satchel; maintain all riding contacts",
+      "sha256": "5155f1dc85f7c935b2786684c952b67a9613f0b5d601a8753e562acc429486f8"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+      "role": "Anatomical carrier rule ONLY: left shoulder to right hip. Do not mirror to force visible bag.",
+      "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec"
+    }
+  ],
+  "mode": "edit",
+  "prompt": "Use case: precise-object-edit. Edit image1 only Papa bag/strap: this reverse camera views his LEFT side while he faces left, so bag incorrectly visible on near LEFT hip must be REMOVED from near/image-right hip. The same bag is on his anatomical RIGHT hip on FAR SIDE, fully OCCLUDED by his seated body in this view. Do not force bag visibility, do not put it on child or dog. Show only appropriate single ochre shoulder strap from HIS LEFT shoulder at image-upper-RIGHT of his chest, sloping down toward his RIGHT lower torso (image-lower-LEFT), with lower continuation hidden behind child. Remove old opposite diagonal strap. Preserve Papa/child/dog identities and poses, torso support hand, near hanging child leg, exactly four grounded dog legs on stone, curled tail, beautiful forest, light, camera. No other edits, no extra paws. Single landscape illustration.",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Together again: Papa settled behind him. “Comfortable?” “Yes!” Scooby stood up slowly.",
+    "frameId": "S2",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -4,
+        -3,
+        1.2
+      ],
+      "targetXYZ": [
+        0,
+        0,
+        1
+      ],
+      "height": 1.2,
+      "framing": "low three-quarter settled tandem",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          0,
+          -0.4,
+          2.7
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "seated behind child",
+        "limbsContactSupport": "One forearm supports child lower torso, other paw braces dog back",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0,
+          0.4,
+          2.7
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "seated astride behind withers",
+        "limbsContactSupport": "thighs straddle; two forepaws on dog shoulder",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          0,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "path",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "gentle walking",
+        "limbsContactSupport": "four anatomical limbs; no saddle/reins; visible paws contact ground, hidden limbs not certified",
+        "visibility": "visible unless specified by purposeful crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ]
+    },
+    "objectStates": {
+      "before": "All gear repacked; Papa again wears closed bag",
+      "after": "satchel on Papa, child seated in front"
+    },
+    "transition": {
+      "previous": "Papa helps him up",
+      "next": "The great tree",
+      "reason": "Together again"
+    }
+  },
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-22T03:34:52.662239+00:00",
+  "status": "ready",
+  "schemaVersion": 1,
+  "startedAt": "2026-09-22T03:34:52.688Z",
+  "finishedAt": "2026-09-22T03:35:48.714Z",
+  "completedAt": "2026-09-22T03:35:48.926303+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c6e8-4236-7423-aba9-373f8983fcab/exec-389817de-7d45-4cb2-bf30-5dc7c6ebf465.png",
+  "output": "images/chapter-02-expanded/revision-06/forest/scene-021-v2.png",
+  "sha256": "90a06c120bc7a0cc63893c38cc47df76f502e55d18586fb9341543206f6d3ac0",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator full-image review PASS corrected reverse carrier: wrong visible near-side hip bag removed. One ochre strap runs from visible left shoulder across chest toward far right torso, lower continuation hidden behind child. Far-side right-hip bag itself is occluded and its attachment not visually certified. Four grounded dog legs and tandem support/near child leg preserved; no extra limbs.",
+  "timingSource": {
+    "source": "Date().toISOString immediately before and after awaited built-in tool call",
+    "scope": "observed request wall time, not model-only latency"
+  },
+  "reviewedAt": "2026-09-22T03:37:32.757083+00:00"
+}

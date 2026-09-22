@@ -1,0 +1,22 @@
+{
+  "id": "study-table-map-v1",
+  "prompt": "Use case: illustration-story. ONE landscape1536x1024 preproduction environment/prop reference for this exact established Elder tree home. Image1 controls room geography, image2 finished style. NO characters. Retain desk foreground-left, warm amber lamp at far-left tabletop, existing open book left half, feather and inkwell foreground-left, north wall map and shelf, east bed right, small low natural root nook back-right with oval mat and stool, central large woven rug. The NEW PROP is one modest portable parchment map freshly unrolled on the EMPTY RIGHT HALF of the existing desk, separate from openbook/inkwell. Map has a simple blue lake shape, branching path and a few little cottage/tree drawings, no text. Show enough tabletop depth for small hedgehog hands to smooth it without overlapping book or lamp. Portable map is smaller than wallmap and obviously a separate sheet. Afternoon soft light same warm dimensional animated storybook rendering; no new door/stairs, no transformed room, no extra furniture. Camera slightly elevated above familiar southwest desk view showing fixed room and clear separate book/map working spaces. This is a practical staged prop reference, not dramatic magic.",
+  "tool": "built-in image_gen",
+  "plannedAt": "2026-09-22T02:23:15.575Z",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/preproduction/home-root-nook-v1.png",
+      "role": "fixed room geography",
+      "sha256": "fcfffd326c139beff1af7c442793f8530e602d15b306eb4fdb3bb616fd22ad01"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "role": "rendering style only",
+      "sha256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad"
+    }
+  ],
+  "status": "planned",
+  "cameraTransform": {
+    "purpose": "shared preproduction spatial/prop reference"
+  }
+}

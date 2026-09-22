@@ -1,0 +1,159 @@
+{
+  "id": "elder-r6-forest-020",
+  "stem": "scene-020-v2",
+  "version": 2,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-020-v1.png",
+      "role": "EDIT TARGET dog body/tail correction while retaining Papa and child contact",
+      "sha256": "7d320f17f398cfdb14b5c31af5257aa4c01bf5cc4c6867cdeab0f81b97fd4951"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/scene-003-v2.png",
+      "role": "Anatomy authority dog crouch with head right, body extends left and tail at left rear",
+      "sha256": "dbdcdcaf76b8792384b2e19311e90de8dcb760f377c46be8adccab74da453884"
+    }
+  ],
+  "mode": "edit",
+  "prompt": "Use case: precise-object-edit. Fix ONLY dog anatomy in first image. Its head faces right and its torso extends LEFT behind Papa. Therefore remove the wrong tail behind right shoulder entirely and draw ONE curled tail at LEFT REAR haunch, partially behind Papa far-left lower body as second image shows. Dog has exactly TWO FRONT PAWS extending forward toward right lower edge; REMOVE orphan extra paw at lowerleft underneath rider, replacing with continuous dog flank. Folded hindquarters at LEFT REAR can be partly hidden behind Papa. No separate hindquarters to right of shoulder. Keep child seated astride just behind withers, near leg hanging, both Papa feet firmly on same broad stone and supporting forepaws unchanged. Preserve all faces, style, bag, rock geometry, background and lighting. Single landscape, no text.",
+  "cameraTransform": {
+    "schemaVersion": 1,
+    "purpose": "Papa helps him up: Scooby crouched. Papa helped PinPin onto his warm back and kept one paw around him.",
+    "frameId": "S2",
+    "units": "Approximate PinPin standing heights; illustrative, not measured geometry.",
+    "camera": {
+      "positionXYZ": [
+        -3,
+        -3,
+        1.2
+      ],
+      "targetXYZ": [
+        -0.4,
+        0.2,
+        0.8
+      ],
+      "height": 1.2,
+      "framing": "medium contact from near flank",
+      "fieldOfViewDegrees": 48,
+      "axisSide": "negative X unless named reverse; neutral establishing shot precedes new region"
+    },
+    "actors": [
+      {
+        "name": "Papa",
+        "positionXYZ": [
+          -1,
+          0,
+          0.35
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "feet stone one arm supports child lower torso other braces dog",
+        "limbsContactSupport": "feet stone one arm supports child lower torso other braces dog",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "PinPin",
+        "positionXYZ": [
+          0,
+          0.4,
+          1.3
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "Papa",
+        "eyeTarget": "Papa",
+        "pose": "seated astride shoulder two forepaws back near hindlegdown farlegoccluded",
+        "limbsContactSupport": "seated astride shoulder two forepaws back near hindlegdown farlegoccluded",
+        "visibility": "visible unless specified by purposeful crop"
+      },
+      {
+        "name": "Scooby",
+        "positionXYZ": [
+          0,
+          0,
+          0
+        ],
+        "bodyFacingTarget": "PinPin",
+        "headFacingTarget": "PinPin",
+        "eyeTarget": "PinPin",
+        "pose": "crouched still",
+        "limbsContactSupport": "crouched still",
+        "visibility": "visible unless specified by purposeful crop"
+      }
+    ],
+    "staticLandmarks": {
+      "path": [
+        0,
+        6,
+        0
+      ],
+      "fernDrop": [
+        -1,
+        1,
+        0.65
+      ],
+      "picnicLog": [
+        0,
+        1,
+        0.6
+      ],
+      "picnicCloth": [
+        0,
+        0,
+        0
+      ],
+      "bread": [
+        0,
+        0,
+        0.2
+      ],
+      "cup": [
+        0.1,
+        -0.1,
+        0.2
+      ],
+      "bowl": [
+        2,
+        -0.5,
+        0
+      ],
+      "threshold": [
+        0,
+        8,
+        0
+      ],
+      "stone": [
+        -1,
+        0,
+        0.35
+      ]
+    },
+    "objectStates": {
+      "before": "All gear repacked; Papa again wears closed bag",
+      "after": "Papa satchel right hip, walking or supported transfer"
+    },
+    "transition": {
+      "previous": "A ride for little feet",
+      "next": "Together again",
+      "reason": "Papa helps him up"
+    }
+  },
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-22T02:50:23.684310+00:00",
+  "status": "ready",
+  "schemaVersion": 1,
+  "startedAt": "2026-09-22T02:50:23.767Z",
+  "finishedAt": "2026-09-22T02:50:56.051Z",
+  "completedAt": "2026-09-22T02:50:56.299077+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c6e8-4236-7423-aba9-373f8983fcab/exec-de85d1c9-21cf-4eca-b447-82d2449cacfa.png",
+  "output": "images/chapter-02-expanded/revision-06/forest/scene-020-v2.png",
+  "sha256": "038af67a3d7e3a83ac7ff9c565dfba45b67ac8e34a9cb7be89e1a3058ee416bc",
+  "width": 1536,
+  "height": 1024,
+  "review": "Creator full-image review PASS corrected anatomy: dog now continuous torso extending left, exactly two visible forepaws at right; wrong shoulder-tail and orphan paw removed. Rear limbs and tail hidden behind Papa, not independently certified. Papa both feet planted on broad stone and forepaw supports child torso; child near leg hangs. Scooby changed orientation on stone since019; subsequent021 is reverse view after Papa boards.",
+  "timingSource": {
+    "source": "Date().toISOString immediately before and after awaited built-in tool call",
+    "scope": "observed request wall time, not model-only latency"
+  },
+  "reviewedAt": "2026-09-22T02:51:10.267285+00:00"
+}

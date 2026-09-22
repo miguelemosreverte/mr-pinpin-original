@@ -1,0 +1,32 @@
+{
+  "id": "forest-satchel-contact-v2",
+  "stem": "preproduction/satchel-contact-v2",
+  "version": 2,
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v1.png",
+      "role": "EDIT TARGET preserve identities, bag, two-panel arrangement and all other props",
+      "sha256": "474b38b91e90b71de19f76dd18a782b57d8a97b6e120cbb4d69dbbd87ec86128"
+    }
+  ],
+  "prompt": "Use case: precise-object-edit. Make a minimal correction to this exact two-panel preproduction sheet. Preserve Papa, PinPin and Scooby faces, eyes, fur/quills, scale, bag design, objects, light and ivory background. RIGHT riding panel only: PinPin must sit astride Scooby shoulder rather than have his near foot resting high on top of Scooby. Move PinPin NEAR hindleg down along the near side of Scooby shoulder, little knee and shin curved naturally downward, foot below back ridge. Far hindleg stays occluded on far side. Keep child hips seated firmly, two front paws on shoulder, Papa arm around child lower torso, Papa already correct near hindleg and bag unchanged. LEFT packing panel: preserve held open bag pulled forward during packing; this is intentional. No new limbs, bags, people or text. Keep both panels otherwise exactly as shown. A subtle contact correction, not a new composition.",
+  "mode": "edit",
+  "tool": "image_gen.imagegen",
+  "requestedAt": "2026-09-22T01:46:11.840194+00:00",
+  "status": "ready",
+  "schemaVersion": 1,
+  "startedAt": "2026-09-22T01:46:23.718Z",
+  "finishedAt": "2026-09-22T01:47:06.584Z",
+  "completedAt": "2026-09-22T01:47:43.605527+00:00",
+  "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c6ba-ce3a-7982-b8e7-ca232b847164/exec-a0f69bc2-9706-4129-8fba-cd01c7dafe09.png",
+  "output": "images/chapter-02-expanded/revision-06/forest/preproduction/satchel-contact-v2.png",
+  "sha256": "1589a64581d77263677fd7ef5d8c9420f7b6772a9281d72e3e181bcebb5952ec",
+  "width": 1536,
+  "height": 1024,
+  "review": "Actual full-image creator PASS: Papa mature cream face separate hazel iris, no glasses; PinPin small chestnut; Scooby expressive soft brown/brindle, folded ears, four legs one curled tail. Left packing open bag pulled forward in Papa hands, strap from left shoulder; child two paws support wooden cup at bag mouth, bowl inside partly occluded, hidden fit not certified. Breadcloth, two apples, corkflask grounded. Right bag rests behind Papa near/right hip, strap obscured by quills/front child; hidden full strap route not certified. Papa near hindleg and corrected child near hindleg now hang down near dog flank, far legs occluded. Papa supporting arm crosses child lower torso, child forepaws shoulder. Food fit qualitative, not measured volume. Grounded dog, no saddle or extra cast.",
+  "timingSource": {
+    "source": "Date().toISOString immediately before and after awaited built-in tool call",
+    "scope": "observed request wall time, not model-only latency"
+  },
+  "reviewedAt": "2026-09-22T01:47:43.696920+00:00"
+}
