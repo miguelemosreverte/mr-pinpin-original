@@ -6,28 +6,29 @@ must never be overwritten or deleted.
 
 ## Where things belong
 
-- [Published books](https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/library.html)
-  and [atlas](https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/atlas-webgpu.html)
+- [Published books](https://mr-pinpin.github.io/storyboard/library.html)
+  and [atlas](https://mr-pinpin.github.io/storyboard/atlas-webgpu.html)
   are served by GitHub Pages.
-- [Authoring repository](https://github.com/miguelemosreverte/mr-pinpin-source)
+- [Authoring repository](https://github.com/mr-pinpin/mr-pinpin-source)
   holds source, story text, translations, provenance, and historical Git data.
-- [Official publishing repository](https://github.com/miguelemosreverte/mr-pinpin-official)
+- [Official publishing repository](https://github.com/mr-pinpin/mr-pinpin.github.io)
   holds deployment code and immutable release manifests, not binary artwork.
 - This bucket holds original assets, preservation copies, experiments, Blender
   authoring data, and complete release bundles.
 
 ## Inventories and restoration
 
-- [Production preservation manifest](https://github.com/miguelemosreverte/mr-pinpin-source/blob/main/tools/assets/production-preservation.json)
-- [Elder original PNG manifest](https://github.com/miguelemosreverte/mr-pinpin-source/blob/main/tools/assets/backup-publication-masters.json)
-- [Runtime and experimental asset manifest](https://github.com/miguelemosreverte/mr-pinpin-source/blob/main/assets/manifest.json)
-- [Asset restoration instructions](https://github.com/miguelemosreverte/mr-pinpin-source/blob/main/tools/assets/backup-publication.md)
-- [Publishing and rollback instructions](https://github.com/miguelemosreverte/mr-pinpin-source/blob/main/PUBLISHING.md)
-- [Release verification](https://github.com/miguelemosreverte/mr-pinpin-source/blob/main/tools/assets/verification-immutable-release.md)
+- [Production preservation manifest](https://github.com/mr-pinpin/mr-pinpin-source/blob/main/tools/assets/production-preservation.json)
+- [Elder original PNG manifest](https://github.com/mr-pinpin/mr-pinpin-source/blob/main/tools/assets/backup-publication-masters.json)
+- [Runtime and experimental asset manifest](https://github.com/mr-pinpin/mr-pinpin-source/blob/main/assets/manifest.json)
+- [Asset restoration instructions](https://github.com/mr-pinpin/mr-pinpin-source/blob/main/tools/assets/backup-publication.md)
+- [Publishing and rollback instructions](https://github.com/mr-pinpin/mr-pinpin-source/blob/main/PUBLISHING.md)
+- [Release verification](https://github.com/mr-pinpin/mr-pinpin-source/blob/main/tools/assets/verification-immutable-release.md)
 
 The bucket remains `miguelemosreverte/mr-pinpin-archive`. Former GitHub repo URLs
-redirect after renaming; old Pages URLs do not automatically redirect. The
-canonical reader website is https://miguelemosreverte.github.io/mr-pinpin-official/.
+redirect after renaming or transfer to the `mr-pinpin` organization; old Pages
+URLs do not automatically redirect. The
+canonical reader website is https://mr-pinpin.github.io/.
 Any source-repo site at `/mr-pinpin-source/` is noncanonical. Historical reports
 and immutable manifests retain their original recorded names and hashes.
 

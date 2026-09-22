@@ -2,7 +2,7 @@
 
 For the separate lightweight Pages repository and immutable release bundles,
 read [PUBLISHING.md](../PUBLISHING.md). The Git tracking statements below describe
-the `mr-pinpin-source` authoring repository, not `mr-pinpin-official`: the deployment repository holds
+the `mr-pinpin-source` authoring repository, not `mr-pinpin.github.io`: the deployment repository holds
 only code and release manifests. Preserving media in HF does not automatically
 remove its historical Git copies.
 
@@ -16,8 +16,8 @@ are archived in the public HF bucket `miguelemosreverte/mr-pinpin-archive` after
 verification. Public visibility was explicitly approved and enabled by the main
 operator on 2026-09-22, resolving the earlier private-storage quota blocker.
 
-Canonical reader site: https://miguelemosreverte.github.io/mr-pinpin-official/.
-Authoring source: https://github.com/miguelemosreverte/mr-pinpin-source.
+Canonical reader site: https://mr-pinpin.github.io/.
+Authoring source: https://github.com/mr-pinpin/mr-pinpin-source.
 Public store: https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive.
 The store name and existing hash keys are unchanged by repository renames.
 GitHub repo redirects do not automatically redirect old Pages URLs.

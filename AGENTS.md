@@ -1,15 +1,16 @@
 # Working in Mr. PinPin Source
 
-- Canonical source: `https://github.com/miguelemosreverte/mr-pinpin-source`, local
+- Canonical source: `https://github.com/mr-pinpin/mr-pinpin-source`, local
   `/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source`. Use this checkout
   for authoring; old local names are compatibility symlinks only.
-- Canonical reader site: `https://miguelemosreverte.github.io/mr-pinpin-official/`.
+- Canonical reader site: `https://mr-pinpin.github.io/`.
   Public storage stays `miguelemosreverte/mr-pinpin-archive`; do not rename its
   objects or rewrite historical reports/manifests to match repository renames.
-- Read `PUBLISHING.md` before releasing. The separate `mr-pinpin-official` repository
+- Read `PUBLISHING.md` before releasing. The separate `mr-pinpin/mr-pinpin.github.io` repository
   is a lightweight deployment ledger, not an authoring checkout. Never copy this
   repository's Git history or binary assets into it. Use the verified,
-  content-addressed release tools in `tools/publishing/`.
+  content-addressed release tools in `tools/publishing/`. Its local checkout remains
+  `/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-official`.
 - Preserve the original book and approved story/image content. Storage migration
   must not regenerate, resize, compress, or shorten the published book.
 - Keep source, recipes, provenance, and asset manifests in Git. Restore absent
@@ -31,6 +32,6 @@
 - Do not rewrite Git history to remove old assets without explicit approval.
 - Renamed GitHub repository URLs redirect; old Pages URLs do not automatically
   redirect. The source legacy site may deploy under `/mr-pinpin-source/`, but
-  link readers to `/mr-pinpin-official/`. A source push does not select an official
+  link readers to `https://mr-pinpin.github.io/`. A source push does not select an official
   release. Rollback explicitly selects an existing release SHA in the official
   checkout, with ordinary commits/pushes and retained archive objects.

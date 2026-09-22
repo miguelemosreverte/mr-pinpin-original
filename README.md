@@ -1,36 +1,38 @@
 # Mr. PinPin Source and Authoring
 
-[Read Mr. PinPin](https://miguelemosreverte.github.io/mr-pinpin-official/).
+[Read Mr. PinPin](https://mr-pinpin.github.io/).
 
-[Read the storyboard edition](https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/?chapter=1&lang=ru).
+[Read the storyboard edition](https://mr-pinpin.github.io/storyboard/?chapter=1&lang=ru).
 The storyboard edition and standalone family stories are developed alongside the
 original book. Chapter and language are preserved in the URL; the library shows
 the available editions.
 
-[Chapter library](https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/library.html)
-and [interactive atlas](https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/atlas-webgpu.html).
+[Chapter library](https://mr-pinpin.github.io/storyboard/library.html)
+and [interactive atlas](https://mr-pinpin.github.io/storyboard/atlas-webgpu.html).
 
 This repository is the source workspace, not the canonical reader website.
 
 | Role | Location | Contents |
 | --- | --- | --- |
-| Authoring | [mr-pinpin-source](https://github.com/miguelemosreverte/mr-pinpin-source) | Story text, translations, code, provenance, manifests, original history |
-| Reader releases | [mr-pinpin-official](https://github.com/miguelemosreverte/mr-pinpin-official) | Small deployment scripts and immutable release records |
+| Authoring | [mr-pinpin-source](https://github.com/mr-pinpin/mr-pinpin-source) | Story text, translations, code, provenance, manifests, original history |
+| Reader releases | [mr-pinpin.github.io](https://github.com/mr-pinpin/mr-pinpin.github.io) | Small deployment scripts and immutable release records |
 | Public storage | [mr-pinpin-archive](https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive) | Verified originals, experiments, preservation copies, release bundles |
 
 The official workflow verifies a selected public HF bundle before deploying;
 readers receive the resulting files from Pages. See [PUBLISHING.md](PUBLISHING.md)
 for release, restoration, and rollback instructions.
 
-The former GitHub repo URLs `mr-pinpin-original` and `mr-pinpin-pages` redirect
-to the renamed repositories. Old **Pages website URLs do not automatically
-redirect**. Use `/mr-pinpin-official/` for readers. The source repo's legacy
+Former GitHub repo URLs, including `mr-pinpin-original`, `mr-pinpin-pages`, and
+`mr-pinpin-official`, redirect to the repositories in the `mr-pinpin` organization.
+Old **Pages website URLs do not automatically redirect**. Use
+`https://mr-pinpin.github.io/` for readers. The source repo's legacy
 workflow may redeploy at `/mr-pinpin-source/`; that is not the canonical site.
 
 ## Quickstart
 
 Work in `/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source`. The sibling
-`mr-pinpin-official` is the deployment checkout. Old local directory names are
+`mr-pinpin-official` is the deployment checkout for `mr-pinpin/mr-pinpin.github.io`;
+local directory names have not changed with the organization move. Old local names are
 compatibility symlinks; use canonical paths for tools that reject symlink parents.
 
 ```sh
@@ -67,7 +69,7 @@ See [restoration instructions](tools/assets/backup-publication.md).
 | `tools/publishing/` | Package, upload, manifest selection and rollback tools |
 | `scripts/` | Authoring helpers and focused verification |
 
-Publishing requires an explicit release selection in `mr-pinpin-official`.
+Publishing requires an explicit release selection in `mr-pinpin/mr-pinpin.github.io`.
 Rollback selects a prior manifest with `publish.py select --pages-repo OFFICIAL_CLONE
 --release PREVIOUS_SHA --expected-current CURRENT_SHA`, followed by an ordinary
 commit/push there. Keep old manifests and HF objects; never force-push for rollback.

@@ -44,25 +44,27 @@ jobs:
 
 README = """# Mr. PinPin Official Reader Releases
 
-Public site: https://miguelemosreverte.github.io/mr-pinpin-official/
-Authoring repository: https://github.com/miguelemosreverte/mr-pinpin-source
+Public site: https://mr-pinpin.github.io/
+Authoring repository: https://github.com/mr-pinpin/mr-pinpin-source
 Public release bucket: https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive
 
-Deployment-only repository: miguelemosreverte/mr-pinpin-official. Source, asset
+Deployment-only repository: mr-pinpin/mr-pinpin.github.io. Source, asset
 authoring, and build history remain in the authoring repository. No site binaries
 or source history belong in this repo.
 
 Canonical local checkouts are siblings mr-pinpin-official and mr-pinpin-source
 under /Users/miguel_lemos/anastasia-pinpin-repos/. Former local names are symlink
 aliases; use canonical paths with the publishing tools. Old GitHub repository
-URLs redirect to these names, but old Pages URLs do not automatically redirect.
+URLs redirect to the mr-pinpin organization, but old Pages URLs do not automatically
+redirect. Local directory names stay unchanged: mr-pinpin-official checks out
+mr-pinpin/mr-pinpin.github.io.
 A legacy source site may redeploy at /mr-pinpin-source/; it is not canonical.
 The public HF bucket name, historical evidence, and release manifests stay unchanged.
 
 | Location | Role |
 | --- | --- |
 | mr-pinpin-source | Authoring, recipes, tests, provenance, preserved history |
-| mr-pinpin-official | Reader deployment scripts and immutable release records |
+| mr-pinpin/mr-pinpin.github.io | Reader deployment scripts and immutable release records |
 | mr-pinpin-archive on HF | Verified original media, experiments, release archives |
 
 release.json selects a SHA-256-addressed releases/<sha>.json. The manifest records
@@ -98,9 +100,10 @@ traffic, or redirect old Pages URLs. Operators manage those actions separately.
 
 AGENTS = """# Official publishing rules
 
-This is mr-pinpin-official, a deployment-only repo. Author in mr-pinpin-source:
-https://github.com/miguelemosreverte/mr-pinpin-source
-Canonical readers: https://miguelemosreverte.github.io/mr-pinpin-official/
+This is mr-pinpin/mr-pinpin.github.io, a deployment-only repo.
+The local checkout remains mr-pinpin-official. Author in mr-pinpin-source:
+https://github.com/mr-pinpin/mr-pinpin-source
+Canonical readers: https://mr-pinpin.github.io/
 Store: https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive
 Do not add authoring history or site binaries.
 Never edit/delete releases/<sha>.json or rewrite published HF objects. New

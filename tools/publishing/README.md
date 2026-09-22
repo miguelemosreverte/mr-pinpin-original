@@ -1,14 +1,15 @@
 # Immutable Pages publishing
 
-Author in [mr-pinpin-source](https://github.com/miguelemosreverte/mr-pinpin-source).
-Publish through [mr-pinpin-official](https://github.com/miguelemosreverte/mr-pinpin-official)
-to the [canonical reader site](https://miguelemosreverte.github.io/mr-pinpin-official/).
+Author in [mr-pinpin-source](https://github.com/mr-pinpin/mr-pinpin-source).
+Publish through [mr-pinpin.github.io](https://github.com/mr-pinpin/mr-pinpin.github.io)
+to the [canonical reader site](https://mr-pinpin.github.io/).
 The [public HF store](https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive)
 keeps its existing name and hash keys.
 
 Canonical local directories are
 `/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source` and its sibling
-`mr-pinpin-official`. Former local names are symlink aliases; use canonical paths
+`mr-pinpin-official` (the `mr-pinpin/mr-pinpin.github.io` checkout). The organization
+move leaves local directory names unchanged. Former local names are symlink aliases; use canonical paths
 with this CLI. Former GitHub repository URLs redirect, but old Pages URLs do not
 automatically redirect. Any legacy source site at `/mr-pinpin-source/` is not the
 canonical reader site. Preserve historical reports and release manifests as-is.
@@ -65,7 +66,7 @@ not symlink aliases. Output parents must exist; outputs themselves must be new.
    ```
 
    The operator reviews and copies its tiny contents to the fresh
-   `miguelemosreverte/mr-pinpin-official` clone. Do not copy the package/archive, the
+   `mr-pinpin/mr-pinpin.github.io` clone. Do not copy the package/archive, the
    source checkout, or its `.git` history. Template generation does not edit an
    existing clone. The template contains workflow, stdlib scripts, README/AGENTS,
    an immutable manifest, a selector, and ignore rules.

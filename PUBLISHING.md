@@ -1,16 +1,16 @@
 # Publishing Mr. PinPin
 
-Canonical reader site: https://miguelemosreverte.github.io/mr-pinpin-official/
+Canonical reader site: https://mr-pinpin.github.io/
 
-Books: https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/library.html
+Books: https://mr-pinpin.github.io/storyboard/library.html
 
-Atlas: https://miguelemosreverte.github.io/mr-pinpin-official/storyboard/atlas-webgpu.html
+Atlas: https://mr-pinpin.github.io/storyboard/atlas-webgpu.html
 
 ## Repository responsibilities
 
-- [mr-pinpin-source](https://github.com/miguelemosreverte/mr-pinpin-source): authoring source, story text,
+- [mr-pinpin-source](https://github.com/mr-pinpin/mr-pinpin-source): authoring source, story text,
   translations, artwork provenance, asset policies, and preserved Git history.
-- [mr-pinpin-official](https://github.com/miguelemosreverte/mr-pinpin-official): deployment code and small, versioned
+- [mr-pinpin.github.io](https://github.com/mr-pinpin/mr-pinpin.github.io): deployment code and small, versioned
   release records only. Do not commit artwork, videos, release archives, or
   authoring history to this repository.
 - Public Hugging Face bucket `miguelemosreverte/mr-pinpin-archive`: verified
@@ -21,9 +21,10 @@ The public bucket name is unchanged. Repository renames do not change release
 hashes, asset object keys, or preserved Git history. Keep historical reports and
 immutable release manifests exactly as recorded.
 
-GitHub repository URLs using the former `mr-pinpin-original` and `mr-pinpin-pages`
-names redirect to the renamed repositories. Their old Pages URLs do **not**
-automatically redirect. Link readers to `/mr-pinpin-official/`. The source repo's
+Former GitHub repository URLs, including `mr-pinpin-original`, `mr-pinpin-pages`,
+and `mr-pinpin-official`, redirect to the repositories in the `mr-pinpin` organization.
+Their old Pages URLs do **not** automatically redirect. Link readers to
+`https://mr-pinpin.github.io/`. The source repo's
 legacy Pages workflow may redeploy under `/mr-pinpin-source/`; it is a separate,
 noncanonical site and does not publish a release to the official repo.
 
@@ -31,7 +32,8 @@ Canonical local checkouts are
 `/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source` and
 `/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-official`. Old local names are
 symlink aliases only. Use canonical directories with the publishing CLI, which
-rejects symlink path components.
+rejects symlink path components. The organization move does not rename these local
+directories; `mr-pinpin-official` now checks out `mr-pinpin/mr-pinpin.github.io`.
 
 ## Commands and layout
 

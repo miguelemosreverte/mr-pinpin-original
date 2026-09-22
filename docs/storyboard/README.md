@@ -1,7 +1,7 @@
 # Mr. PinPin Storyboard Reader
 
 Published reader:
-https://miguelemosreverte.github.io/mr-pinpin-original/storyboard/?chapter=1&lang=en
+https://mr-pinpin.github.io/storyboard/?chapter=1&lang=en
 
 Chapter one is a six-scene candidate derived from the character investigation.
 Its new full-size illustrations live in `images/chapter-01-v2/`; earlier images

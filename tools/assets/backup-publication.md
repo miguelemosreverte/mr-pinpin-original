@@ -1,8 +1,8 @@
 # Publication preservation
 
-Run these tools in [mr-pinpin-source](https://github.com/miguelemosreverte/mr-pinpin-source),
-the authoring checkout. [mr-pinpin-official](https://github.com/miguelemosreverte/mr-pinpin-official)
-holds release records and serves the [canonical reader site](https://miguelemosreverte.github.io/mr-pinpin-official/).
+Run these tools in [mr-pinpin-source](https://github.com/mr-pinpin/mr-pinpin-source),
+the authoring checkout. [mr-pinpin.github.io](https://github.com/mr-pinpin/mr-pinpin.github.io)
+holds release records and serves the [canonical reader site](https://mr-pinpin.github.io/).
 The public store remains [mr-pinpin-archive](https://huggingface.co/buckets/miguelemosreverte/mr-pinpin-archive).
 
 `backup-publication.py` preserves production media and Elder original PNG masters
