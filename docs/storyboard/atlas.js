@@ -123,7 +123,18 @@
     if (viewport.dataset.coverConfidence!==confidence) viewport.dataset.coverConfidence=confidence;
     coverSelection.update(sample);
   }
-  function arrive() { chooseBook(); }
+  function arrive(point) {
+    const doorway=geometry.routes.find(route => route.id==='home-to-lake')?.points[0];
+    // Only the completed walk into the doorway enters the house, not the wider home region.
+    if (doorway && point && Math.hypot((point[0]-doorway[0])*geometry.width,(point[1]-doorway[1])*geometry.height)<=2) {
+      saveCamera(); state.lang=lang; save();
+      try { sessionStorage.setItem(returnStorageKey,JSON.stringify({place:'home',pending:false})); } catch { /* The menu URL preserves the language. */ }
+      const menu=new URL('../',location.href); menu.searchParams.set('lang',lang);
+      location.assign(menu.href);
+      return;
+    }
+    chooseBook();
+  }
   function showBook(id) {
     focused=id; viewport.dataset.focus=id || '';
     motion?.focus?.(id);

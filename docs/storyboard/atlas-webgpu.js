@@ -231,7 +231,18 @@ function syncCharacterCover() {
   if (viewport.dataset.coverConfidence!==confidence) viewport.dataset.coverConfidence=confidence;
   coverSelection.update(sample);
 }
-function arrive() { chooseBook(); }
+function arrive(point) {
+  const doorway=geometry.routes.find(route => route.id==='home-to-lake')?.points[0];
+  // Only the completed walk into the doorway enters the house, not the wider home region.
+  if (doorway && point && Math.hypot((point[0]-doorway[0])*geometry.width,(point[1]-doorway[1])*geometry.height)<=2) {
+    saveCamera(); state.lang=lang; save();
+    try { sessionStorage.setItem(returnStorageKey,JSON.stringify({place:'home',pending:false})); } catch { /* The menu URL preserves the language. */ }
+    const menu=new URL('../',location.href); menu.searchParams.set('lang',lang);
+    location.assign(menu.href);
+    return;
+  }
+  chooseBook();
+}
 function interact() { focusAllowed=true; targetPending=true; selection=null; arrival=null; }
 function startMove() {
   if (!cameraReady) return;
@@ -367,7 +378,7 @@ refresh();
 refreshStories();
 window.AtlasFocus.create(geometry).then(value => {
   detector=value; viewport.dataset.mask='ready';
-  if (motionCanvas.dataset.arrived==='true') arrive([Number(motionCanvas.dataset.x)/width,Number(motionCanvas.dataset.y)/height]);
+  // Restoring a parked character is not a new arrival into the house.
   chooseBook();
 }).catch(() => { viewport.dataset.mask='unavailable'; $('map-status').textContent=words[lang].unavailable; });
 try {

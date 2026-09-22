@@ -10,17 +10,15 @@
   <script src="home.js" defer></script>
 </head>
 <body>
-  <a class="skip-link" href="#destinations">Перейти к ссылкам</a>
-  <main class="home">
-    <header class="home-header">
-      <div class="welcome"><p class="eyebrow" data-text="welcome">Добро пожаловать</p><h1 data-text="title">Дом Мистера Пин-Пина</h1></div>
+  <a class="skip-link" href="#room">Перейти к комнате</a>
+  <main class="home" aria-label="Дом Мистера Пин-Пина">
       <nav class="language-picker" aria-label="Язык / Language / Idioma">
-        <a href="?lang=ru" lang="ru" data-language="ru" aria-label="Русский">RU</a>
-        <a href="?lang=en" lang="en" data-language="en" aria-label="English">EN</a>
-        <a href="?lang=es" lang="es" data-language="es" aria-label="Español">ES</a>
+        <a href="?lang=ru" lang="ru" data-language="ru" title="Русский" aria-label="Русский"></a>
+        <a href="?lang=en" lang="en" data-language="en" title="English" aria-label="English"></a>
+        <a href="?lang=es" lang="es" data-language="es" title="Español" aria-label="Español"></a>
       </nav>
-    </header>
-    <div class="room" id="room">
+    <div class="room-fit">
+    <div class="room" id="room" tabindex="-1">
       <img class="room-art" src="storyboard/images/house-menu/room-v1.webp" width="1536" height="1024" alt="Уютная комната Мистера Пин-Пина: дверь в лес слева и книжный шкаф справа." fetchpriority="high">
       <svg class="room-links" viewBox="0 0 1536 1024" xmlns="http://www.w3.org/2000/svg" aria-label="Выберите дверь или книжный шкаф" role="group">
         <a class="hotspot" id="door-link" href="storyboard/atlas-webgpu.html?lang=ru" aria-label="Открыть дверь в лес" data-destination="atlas">
@@ -30,17 +28,8 @@
           <path id="bookcase-contour" class="contour" d="M 976 629 L 976 227 C 976 178 1009 148 1040 140 L 1430 40 C 1472 27 1514 43 1533 63 L 1533 413 C 1493 410 1470 448 1482 475 L 1474 536 C 1446 558 1440 612 1458 654 L 976 629 Z"/>
         </a>
       </svg>
-      <a class="room-label door-label" href="storyboard/atlas-webgpu.html?lang=ru" data-destination="atlas" data-text="forest">В лес</a>
-      <a class="room-label bookcase-label" href="storyboard/library.html?lang=ru" data-destination="library" data-text="books">Книги</a>
     </div>
-    <footer class="home-footer">
-      <p class="invitation" data-text="invitation">Откройте дверь в лес или выберите книгу.</p>
-      <nav class="destinations" id="destinations" aria-label="Куда пойдём?">
-        <a href="storyboard/atlas-webgpu.html?lang=ru" data-destination="atlas" data-text="forest">В лес</a>
-        <a href="storyboard/library.html?lang=ru" data-destination="library" data-text="books">Книги</a>
-        <a href="original/" data-text="original">Оригинальная книга</a>
-      </nav>
-    </footer>
+    </div>
   </main>
 </body>
 </html>

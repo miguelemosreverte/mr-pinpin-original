@@ -7,7 +7,7 @@ const root=path.join(__dirname,'../docs/storyboard');
 const source=fs.readFileSync(path.join(root,'atlas-motion.js'),'utf8');
 const dist=(a,b) => Math.hypot(a[0]-b[0],a[1]-b[1]);
 const straight={width:1000,height:1000,routes:[{id:'home-to-lake',from:'home',to:'lake',points:[[.1,.5],[.9,.5]]}],sprite:{src:'old.png',columns:2,rows:2,frames:4,referenceWidth:100}};
-async function harness(geometry=straight,{reduced=false,directions,broken=[]}={}) {
+async function harness(geometry=straight,{reduced=false,directions,broken=[],onChange}={}) {
   const raf=new Map(), timers=new Map(), events={}, documentEvents={}, strokes=[], sprites=[];
   let clock=0, serial=0, preference=null;
   const ctx={save(){},restore(){},clearRect(){strokes.length=0;sprites.length=0;},translate(){},
@@ -26,7 +26,7 @@ async function harness(geometry=straight,{reduced=false,directions,broken=[]}={}
     Image:class {naturalWidth=400;naturalHeight=400;decode(){return broken.includes(this.src)?Promise.reject(new Error('missing')):Promise.resolve();}}});
   if (!geometry) { vm.runInContext(fs.readFileSync(path.join(root,'atlas-geometry.js'),'utf8'),context); geometry=context.window.atlasGeometry; }
   vm.runInContext(source,context);
-  const motion=context.window.AtlasMotion.create(canvas,geometry);
+  const motion=context.window.AtlasMotion.create(canvas,geometry,onChange);
   await Promise.resolve(); await Promise.resolve();
   function frame(ms=50) { clock+=ms; for(const [id,timer] of [...timers])if(timer.at<=clock){timers.delete(id);timer.fn();} const callbacks=[...raf.values()];raf.clear();callbacks.forEach(fn=>fn(clock)); }
   const advance=ms=>{for(let n=0;n<ms;n+=50)frame(Math.min(50,ms-n));};
@@ -527,4 +527,34 @@ test('hardware Chrome: registry covers save the selected place and browser Back 
     await page.reload();await ready();assert.deepEqual(await camera(),negative);
     await context.close();
   } finally {await browser.close();}
+});
+
+
+test('both atlases enter the main menu only after walking into the house, preserving language',async()=>{
+  for (const file of ['atlas-webgpu.js','atlas.js']) for (const lang of ['en','es','ru']) {
+    let context;
+    const h=await harness(straight,{onChange(event){if(event?.type==='arrival')context.arrive(event.point);}});
+    context=h.context;
+    const navigations=[],stored=new Map();
+    Object.assign(context,{geometry:straight,lang,state:{lang:'en'},returnStorageKey:'pinpin.atlas.return.v1',
+      URL,location:{href:'https://mr-pinpin.github.io/storyboard/'+file.replace('.js','.html')+'?lang='+lang,
+        assign(url){navigations.push(url);}},sessionStorage:{setItem(key,value){stored.set(key,value);}},
+      saveCamera(){},save(){},chooseBook(){}});
+    const runtime=fs.readFileSync(path.join(root,file),'utf8');
+    const start=runtime.indexOf('function arrive('),end=runtime.indexOf('\n'+(file==='atlas.js'?'  ':'')+'function ',start+1);
+    vm.runInContext(runtime.slice(start,end),context);
+    // Returning from the menu to a parked character must not bounce straight back.
+    h.motion.placeAtLocation('home'); h.advance(1000);
+    assert.deepEqual(navigations,[]);
+    h.motion.setTarget([.9,.5]); h.advance(22000);
+    assert.deepEqual(navigations,[],'another destination still selects its chapter');
+    h.motion.setTarget([.1,.5]); h.advance(1000);
+    assert.deepEqual(navigations,[],'starting the return walk cannot open the menu early');
+    h.advance(22000);
+    assert.deepEqual(navigations,['https://mr-pinpin.github.io/?lang='+lang]);
+    assert.equal(context.state.lang,lang);
+    assert.deepEqual(JSON.parse(stored.get('pinpin.atlas.return.v1')),{place:'home',pending:false});
+    context.arrive([.105,.5]);
+    assert.equal(navigations.length,1,'near the house is not inside its doorway');
+  }
 });
