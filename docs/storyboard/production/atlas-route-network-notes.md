@@ -1,4 +1,186 @@
-# Atlas route network v9
+# Atlas route network v13
+
+## V13 close foreground roadside lane
+
+The front road is now on the close wheel/trailer diagonal
+`y = 825 - .175 * (x - 1280)`. Actual centerline positions include
+(1340,814.5) and (1420,800.5), respectively 40.8px and 46.8px north of v12.
+The straight baked section runs from (1294.198272,822.515712) to
+(1443.803136,796.334080). Guides: the unchanged (1204.159488,845.648896)
+fork, (1244,845), (1280,825), (1460,793.5), (1505.000448,780), and the
+unchanged rear join (1505.000448,735.935488). The short entry guide preserves
+the existing fork's <=25deg turn bound over 0.75px travel. Corners use seven
+quadratic samples and <=28px setback. All eight original route objects,
+junction settings, and the exact north/rear arc remain hash-protected.
+
+`atlasGeometry.foregroundRoads[0]` is the shared depth/clearance contract:
+route `tractor-encircling-loop`, logical segments [8,32) only, world-space
+corridor polygon, `depthPolicy: 'foreground-road'`. Eligibility requires the
+same route ID, both endpoints inside the corridor, and both endpoints on one
+tagged logical segment (0.002px normalization tolerance). The helper
+`foregroundRoadForEdge` in `scripts/atlas-roadside-contact.test.cjs` implements
+that check for logical and production-derived edges. A corridor-box test alone
+is insufficient. Body overlap with the vehicle is legitimate only on those
+front-road segments; renderer integration is owned by the depth lane.
+
+All road feet are checked with a continuously swept capsule of x extent +/-12px
+and y extent +/-2px (horizontal spine +/-10px, radius 2px). Its minimum vehicle
+gap is 9.013793px, leaving 6.813793px after the retained 2.2px update reserve,
+above the required 6px. Outside the tagged foreground segments, both quantized
+heading bins, all gait frames and both directions retain full crop clearance:
+minimum 9.353010px, or 7.153010px after the update reserve. Picnic full-body
+clearance, banner exclusions, water exclusions, and turning limits are retained.
+
+Loop length is 627.872632px, down 45.532407px from v12. Graph size remains
+313 logical segments, 605 derived edges, 595 nodes. Focused contact, route,
+junction, and motion suites pass 50 tests with four opt-in browser tests skipped.
+The two broad browser verifiers now use the same scoped clearance contract,
+default to v13, and expect lower travel at y790..830. Broad route verification
+passes 13/13 checks at desktop 1440px and emulated phone 390px, including both
+loop directions and exact arrivals at the new east waypoint (1505,750).
+Report: `/tmp/atlas-tractor-loop-v13-browser.md`. The tractor-scene verifier
+was syntax checked but not run in this lane. Depth/sprite adjacency validation
+belongs to the parent; details are in `/tmp/atlas-roadside-geometry-v13.md`.
+No renderer, motion, sprite or source-image edits belong to this geometry lane.
+
+Geometry SHA256: `d0b1a47ca275c400cbddc4788062c78c2709f26cefd61becf10bc451dcfdc025`.
+Baseline: `/tmp/atlas-geometry-before-v13.js`. No commit or push.
+
+## Historical V12
+
+## V12 straight lower vehicle-side lane: geometry frozen
+
+Only the lower encircling road changes. The long lower perimeter is now one
+straight diagonal from (1293.365760,859.963392) to (1469.606400,842.339328),
+heading -5.710593deg, alongside the vehicle's longitudinal wheel axis. Its
+guide line is y=861.3-0.1*(x-1280). Entry/exit curves use the existing offline
+quadratic baker with seven samples and <=28px setback, guided by
+(1204.159488,845.648896), (1244,848), (1280,861.3), (1480,841.3), (1505,825),
+then the exact existing join (1505.000448,735.935488). Everything from that
+join through the north/rear arc is unchanged, as are the eight original routes,
+both forks, junction settings, sprite, renderer and depth treatment.
+
+Full bidirectional blended crop clearance, swept over every logical and derived
+edge including the east turn, is 8.378711px (v11: 8.374448px). Reserving the same
+2.2px update travel leaves 6.178711px against the unchanged 6px body requirement.
+Foot clearance remains 12.599084px; picnic and banner exclusions also pass.
+The regression checks every segment across x1330..1455 in both logical and
+derived geometry against the line within 0.01px and heading within 0.01deg.
+Exact v11 rear/north coordinates and junction settings are protected by hashes.
+All physical clearance and turning limits remain unchanged.
+
+Loop length: 680.501869 -> 673.405039px (7.096831px shorter). Maximum lower y:
+857.164800 -> 860.237824, at the curved entry; x1345 is approximately y854.8
+and x1430 y846.3. The old lumpy middle and east-end bulge are removed. Logical
+segments: 353 -> 313; derived edges/nodes: 645/635 -> 605/595. Existing graph
+budgets are unchanged. Focused route, junction and motion tests: 47 passed,
+four opt-in browser tests skipped, zero failures (6.26s).
+
+V12 browser walking passes ten sampled stops across desktop and emulated phone
+viewports, including reverse travel, with no visible-alpha sprite pixels inside
+the surveyed vehicle polygon. Art-size gap during these samples is >=13.26px.
+Results and actual screenshots: /tmp/atlas-lower-lane-v12-runtime/results.json.
+The before/after route guide at /tmp/atlas-lower-lane-v12-comparison.png was
+visually reviewed; it deliberately omits canopy masking to show the line shape.
+Production occlusion is unchanged: the middle stop is about 15% visible and the
+farther trailer-side stop is almost entirely hidden. This is a parallel-path
+geometry correction, not a claim of a fully visible roadside walk. Historical
+v11 broad browser results below do not certify v12.
+
+Frozen geometry SHA256:
+`f6f2dd9ef6c3fc285b10c003e823e441a1c74cc05f79be538f7187c27aae1dfc`.
+Baseline: `/tmp/atlas-geometry-before-v12.js`.
+Handoff: `/tmp/atlas-lower-lane-v12.md`. No commit or push.
+
+## Historical V11
+
+## V11 rear-trailer dirt lane: verified and frozen
+
+The encircling road now follows the south-side wheel/trailer diagonal instead
+of the flat y875 woodland detour. Its main-wheel section is near (1345,855),
+trailer section near (1430,846), and maximum south y is 857.1648. The visible
+adjacent section is now behind the trailer on clear dirt: north-to-east guides
+(1400,658), (1430,672), (1455,713), (1488,713), (1505,728). Actual baked stops
+include (1450,704.59), (1460,712.05), and (1470,713). The route is 680.5019px long.
+That is 32.8307px shorter than v9 (713.3326px), a 4.6024% reduction, and
+19.3439px shorter than v10 (699.8458px), a 2.7640% reduction. The visible rear
+road placement is the main improvement; total loop length is secondary.
+All eight previous route objects, both fork positions, all junction settings,
+and exact tractor/story return positions remain unchanged. The north minimum
+remains y658. No runtime, renderer, scale, asset or occlusion changes belong here.
+
+Tractor clearance now checks full crop rectangles for BOTH production-quantized
+heading bins, all gait frames, and both travel directions, swept continuously
+over every logical and derived segment. Minimum crop clearance is 8.374448px:
+6.174448px after reserving 2.2px for the 50ms sprite update at 44px/s. The required
+body margin is 6px. This replaces the unnecessarily tall all-heading union only
+for tractor clearance. Picnic retains that union and 14px, measuring 16.000768px.
+The helper is offline-only: `scripts/atlas-sprite-clearance.cjs`. No alpha threshold
+or visibility masking is used to make these collision assertions pass.
+
+Tractor foot clearance now requires the same 8.2px as the full body, measuring
+12.599084px; picnic foot clearance stays >=20px. Banner feet (1360,720)/(1348,720) retain their
+23px exclusion radii; minimum road gaps are 62.000128px / 61.820063px. Nine routes,
+seven rounded branches, 353 logical segments, 645 derived edges / 635 nodes.
+The logical budget is now 360 for the measured extra rear bend; derived budget650
+is unchanged. The rear parallel section has an explicit position regression test.
+Focused route, junction and motion checks pass 45 tests; four opt-in browser
+tests are skipped. Existing <=12.1deg segment turns and <=25deg over each 0.75px
+phase remain enforced, including all 42 directed branch pairs.
+
+The final actual-runtime adjacency check passes all 10 stops across desktop
+(1440px) and an emulated phone viewport (390px), including reverse travel.
+At (1450.818,705.755), the original 56px character is 82.89% / 83.51% visible
+in the two directions on both viewports, above the 75% required at this stop.
+The minimum actual alpha>15 sprite-to-vehicle gap during sampled movement is
+10.500064px, with zero overlap. The check tests sprite pixels before occlusion,
+then separately measures visibility with the unchanged production GPU depth mask.
+These are sampled runtime checks against the surveyed vehicle polygon; the
+continuous conservative crop proof above also covers every logical/derived edge.
+
+Results: `/tmp/atlas-tractor-adjacency-v11-final/results.json`. Inspected final
+GPU screenshots: `/tmp/atlas-tractor-adjacency-v11-final/1440-stop-1.png` and
+`/tmp/atlas-tractor-adjacency-v11-final/390-stop-3.png`. The lower foreground lane
+is still partly hidden by canopy; this does not certify an entirely visible loop.
+The east turnaround also has partial tree occlusion. No size or renderer change
+was used to achieve the clear rear-trailer stop. Parent reports all 38 integrated
+scene checks passing with stable sources. The broad route check initially passed
+11/13; its old lower-arc fixture required y>860, inconsistent with the intended
+new maximum857.1648. After correcting the expected corridor to835<y<860,
+the final rerun passes 13/13, including both complete-loop directions and
+native mouse/touch targeting. Report: /tmp/atlas-tractor-loop-v11-browser.md.
+
+Frozen geometry SHA256:
+`68a652a5a660512e6f182799822c1cdfe3e4cbf326095cc5c6ec6f349b048753`.
+Handoff: `/tmp/atlas-tractor-lane-v11.md`. No commit or push.
+
+## Historical V10
+
+## V10 modest north tightening
+
+Only the encircling road's north arc and approach change from approved v9
+`6132a6a`. North moves from y=644 to y=658; south y=875 and east x=1505 stay
+fixed. Revised north guide points are (1458,672), (1400,658), (1340,658), and
+(1296,664), with the same eight-sample quadratic corners. The outer road is
+699.8458px versus 713.3326px, a 13.4868px / 1.8907% reduction. This is a small
+visual trial; it does not change travel speed or controls.
+
+All eight previous route objects and both connection points remain exact.
+All 24 focused route and junction tests pass, including full-body clearance
+>=14px, foot clearance >=20px, and heading <=25deg over every 0.75px phase.
+Measured full-body gaps remain 15.000448px vehicle and 16.000768px picnic.
+Banner centerline gaps are 62.000128px at (1360,720) and 61.822452px at the
+(1348,720) fallback, both above the 17+6px reserved radius. The derived graph
+has 616 edges / 606 nodes; nine routes and seven rounded branches remain.
+
+[Comparison survey](/tmp/atlas-tractor-v10-survey.png) and
+[handoff](/tmp/atlas-tractor-v10.md). Independent Chrome WebGPU verification
+passes all 38 checks on desktop and two emulated phone widths, with stable
+sources, unchanged banner visibility, full-body clearance and native story
+return. Results: /tmp/atlas-tractor-scene-v10-review.md.
+Normal canopy occlusion and inferred woodland-ground limitations remain.
+
+## Historical V9
 
 ## Tractor encircling road
 

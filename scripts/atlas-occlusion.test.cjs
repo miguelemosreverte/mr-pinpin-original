@@ -57,5 +57,65 @@ test('ground texture and sprite allocation stay bounded and match calibration me
     assert.equal(layer.ground.width * layer.ground.height * 4, 4096);
     assert.equal(uploaded.data.length, 4096);
     assert.equal(layer.ready, false);
+    const family = createOcclusionLayer(1024, 3);
+    assert.equal(family.canvas.width, 384);
+    assert.equal(family.canvas.height, 128);
+    assert.equal(family.canvas.width * family.canvas.height * 4, 196608);
+    assert.equal(family.members.length, 3);
+    family.members[0].anchor[0] = 1;
+    assert.equal(family.members[1].anchor[0], 64);
+    assert.equal(family.members[2].ready, false);
+    for (const count of [0, 4, 1.5]) assert.throws(() => createOcclusionLayer(1024, count), RangeError);
   } finally { if (prior === undefined) delete global.document; else global.document = prior; }
+});
+
+test('sprite raster tiers are bounded and stable around both zoom thresholds', async () => {
+  const { spriteRasterScale } = await modulePromise;
+  assert.equal(spriteRasterScale(0.7), 1, 'mobile overview stays small');
+  assert.equal(spriteRasterScale(2), 2);
+  assert.equal(spriteRasterScale(4), 4);
+  assert.equal(spriteRasterScale(100), 4);
+  for (const demand of [0.86, 1, 1.12]) {
+    assert.equal(spriteRasterScale(demand, 1), 1);
+    assert.equal(spriteRasterScale(demand, 2), 2);
+  }
+  for (const demand of [1.71, 2, 2.24]) {
+    assert.equal(spriteRasterScale(demand, 2), 2);
+    assert.equal(spriteRasterScale(demand, 4), 4);
+  }
+  assert.equal(spriteRasterScale(0.84, 4), 1);
+  for (const demand of [NaN, Infinity, -1, 0]) assert.equal(spriteRasterScale(demand, 2), 2);
+});
+
+test('resize invalidates and synchronously repaints without replacing family slots or world anchors', async () => {
+  const { resizeSpriteRaster } = await modulePromise;
+  let calls = 0;
+  const members = Array.from({ length: 3 }, (_, i) => ({ x: i * 60, y: 100, footY: 212, ready: true, anchor: [64,112] }));
+  const layer = { canvas: { width: 384, height: 128 }, members, rasterScale: 1, rasterRevision: 0,
+    revision: 4, ready: true, imageKey: 'old', anchor: [64,112], x: 0, y: 100, footY: 212,
+    onRasterScaleChange(value) {
+      assert.equal(value, layer);
+      assert.equal(value.imageKey, null);
+      assert.equal(value.ready, false);
+      assert(value.members.every(member => !member.ready));
+      assert.equal(value.canvas.width, 384 * value.rasterScale);
+      assert.equal(value.canvas.height, 128 * value.rasterScale);
+      calls++;
+      value.ready = true;
+      value.members.forEach(member => { member.ready = true; });
+      value.revision++;
+    } };
+  assert.equal(resizeSpriteRaster(layer, 4), true);
+  assert.equal(layer.rasterRevision, 1);
+  assert.equal(layer.revision, 6);
+  assert.equal(layer.ready, true);
+  assert.equal(layer.members, members);
+  assert.deepEqual(layer.anchor, [64,112]);
+  assert.deepEqual(layer.members.map(member => [member.x, member.y, member.footY]), [[0,100,212],[60,100,212],[120,100,212]]);
+  for (let i = 0; i < 100; i++) assert.equal(resizeSpriteRaster(layer, 4), false);
+  assert.equal(calls, 1);
+  assert.equal(layer.revision, 6);
+  assert.equal(resizeSpriteRaster(layer, 1), true);
+  assert.equal(calls, 2);
+  for (const scale of [0, 3, 8, NaN]) assert.throws(() => resizeSpriteRaster(layer, scale), RangeError);
 });

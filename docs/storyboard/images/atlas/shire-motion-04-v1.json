@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "frame": 4,
+  "recordedAt": "2026-09-21T01:27:38.412Z",
+  "tool": "image_gen built-in",
+  "prompt": "Use case: precise-object-edit. Asset: animation frame 4 of a five-frame looping miniature atlas. Edit target is the supplied original map. Keep its camera, exact framing, dimensions, all landmarks, buildings, bridge, roads, shorelines, rocks, tree trunks and exposure completely fixed. A soft breeze is gently returning: ONLY tiny ripples and sun glints on the lake shift slightly leftward, stream foam slides downstream, canopy leaf tips gently drift back toward their starting position. Preserve every static element and exact illustration style. Very restrained motion suitable for a crossfade loop, with no large displaced objects. No animals, text, interface or blur. One full landscape map registered to the reference.",
+  "reference": "shire-v1.png",
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-1067aeb4-9ce6-46ec-b87c-00e2e971cdd6.png",
+  "review": "Subtle returning breeze and ripples; original geometry protected at runtime by motion mask."
+}

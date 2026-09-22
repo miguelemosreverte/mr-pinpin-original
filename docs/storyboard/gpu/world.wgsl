@@ -1,4 +1,9 @@
 // Composite all scene objects before the global lens pass.
+struct SpriteMember {
+  bounds: vec4f,
+  depths: vec4f, // corrected occlusion, lens, ordering, ready
+  slice: vec4f, // atlas U offset, U scale, reserved, reserved
+}
 struct Frame {
   camera: vec2f,
   viewport: vec2f,
@@ -12,7 +17,8 @@ struct Frame {
   sprite_bounds: vec4f,
   occlusion: vec4f, // foot depth, enabled, bias, feather
   animation: vec4f, // ready, cyclic phase, frame count, blend (video: one layer, full strength)
-  surface: vec4f, // character lens depth, optional banner lens depth (-1 unset)
+  surface: vec4f, // character lens depth, banner lens depth, sprite count, legacy foot depth
+  members: array<SpriteMember, 3>, // sorted back to front; slices retain original slots
 }
 @group(0) @binding(0) var<uniform> frame: Frame;
 @group(0) @binding(1) var art: texture_2d<f32>;
@@ -74,14 +80,28 @@ struct SceneOut {
   let moving = mix(linear(a.rgb), linear(b.rgb), smoothstep(0.0, 1.0, fract(frame.animation.y)));
   let base = vec4f(mix(linear(sharp.rgb), moving, mask.r * mask.a * frame.animation.x * frame.animation.w), sharp.a);
   var top = linear_premultiplied(textureSample(overlay, linear_sampler, uv));
-  let sprite_uv = (in.world - frame.sprite_bounds.xy) / frame.sprite_bounds.zw;
-  var character = linear_premultiplied(textureSample(sprite, linear_sampler, clamp(sprite_uv, vec2f(0.0), vec2f(1.0))));
-  character *= select(0.0, frame.sprite_ready, all(sprite_uv >= vec2f(0.0)) && all(sprite_uv < vec2f(1.0)));
+  var characters: array<vec4f, 3>;
+  var character_alpha = 0.0;
+  let member_count = min(3u, u32(frame.surface.z));
+  for (var i = 0u; i < member_count; i++) {
+    let member = frame.members[i];
+    let local_uv = (in.world - member.bounds.xy) / member.bounds.zw;
+    // Clamp to this cell's texel centers so linear filtering cannot leak a sibling.
+    let cell_pixels = vec2f(textureDimensions(sprite)) * vec2f(member.slice.y, 1.0);
+    let half_texel = vec2f(0.5) / cell_pixels;
+    let cell_uv = clamp(local_uv, half_texel, vec2f(1.0) - half_texel);
+    let atlas_uv = vec2f(member.slice.x + cell_uv.x * member.slice.y, cell_uv.y);
+    characters[i] = linear_premultiplied(textureSampleLevel(sprite, linear_sampler, atlas_uv, 0.0)) *
+      select(0.0, member.depths.w, all(local_uv >= vec2f(0.0)) && all(local_uv < vec2f(1.0)));
+    character_alpha += characters[i].a;
+  }
   var label = linear_premultiplied(textureSample(banner, linear_sampler, in.uv)) * frame.banner_ready;
   let label_depth = textureSample(banner_depth, linear_sampler, in.uv);
   label *= select(0.0, 1.0, label_depth.a > 0.0);
-  let trail_depth = textureSample(ground, linear_sampler, vec2f(0.5, uv.y)).r;
-  if (frame.occlusion.y > 0.0 && (top.a > 0.0 || character.a > 0.0 || label.a > 0.0)) {
+  let base_trail_depth = textureSample(ground, linear_sampler, vec2f(0.5, uv.y)).r;
+  let road_weight = tractor_ground_weight(in.world);
+  let trail_depth = tractor_ground_depth(base_trail_depth, road_weight);
+  if (frame.occlusion.y > 0.0 && (top.a > 0.0 || character_alpha > 0.0 || label.a > 0.0)) {
     // Smooth artistic shading in a small neighborhood before the deliberately
     // biased comparison to suppress holes from isolated dark or bright flecks.
     let step = vec2f(2.0) / vec2f(textureDimensions(depth));
@@ -93,26 +113,38 @@ struct SceneOut {
     }
     scene /= 9.0;
     top *= visibility(scene, trail_depth);
-    character *= visibility(scene, frame.occlusion.x);
+    for (var i = 0u; i < member_count; i++) {
+      characters[i] *= visibility(scene, frame.members[i].depths.x);
+    }
     label *= visibility(scene, label_depth.r);
   }
   let ground_composed = top + base * (1.0 - top.a);
   let plane = ground_plane(in.world.y);
-  var reference = trail_depth;
+  var reference = base_trail_depth;
   if (in.world.y < 205.0) { reference = mix(0.8, 111.0 / 255.0, clamp(in.world.y / 205.0, 0.0, 1.0)); }
   if (in.world.y > 740.0) { reference = mix(66.0 / 255.0, 0.08, clamp((in.world.y - 740.0) / 284.0, 0.0, 1.0)); }
   let scene_lens_depth = plane - clamp(0.30 * (reference - d), 0.0, 0.12);
   let label_lens_depth = select(plane - clamp(0.30 * (reference - label_depth.r), 0.0, 0.12),
     frame.surface.y, frame.surface.y >= 0.0);
   let ground_depth = mix(scene_lens_depth, plane, top.a);
-  // Banners and the character also share depth ordering with each other.
-  let label_front = label_depth.r <= frame.occlusion.x || character.a == 0.0;
-  let behind = select(label, character, label_front);
-  let front = select(character, label, label_front);
-  let behind_depth = select(label_lens_depth, frame.surface.x, label_front);
-  let front_depth = select(frame.surface.x, label_lens_depth, label_front);
-  let composed = front + (behind + ground_composed * (1.0 - behind.a)) * (1.0 - front.a);
-  let composed_depth = mix(mix(ground_depth, behind_depth, behind.a), front_depth, front.a);
+  // Insert the banner into the ordered family, preserving every object's lens depth.
+  var composed = ground_composed;
+  var composed_depth = ground_depth;
+  var label_pending = true;
+  for (var i = 0u; i < member_count; i++) {
+    if (label_pending && label_depth.r > frame.members[i].depths.z) {
+      composed = label + composed * (1.0 - label.a);
+      composed_depth = mix(composed_depth, label_lens_depth, label.a);
+      label_pending = false;
+    }
+    let character = characters[i];
+    composed = character + composed * (1.0 - character.a);
+    composed_depth = mix(composed_depth, frame.members[i].depths.y, character.a);
+  }
+  if (label_pending) {
+    composed = label + composed * (1.0 - label.a);
+    composed_depth = mix(composed_depth, label_lens_depth, label.a);
+  }
   let floral = textureSample(border, border_sampler, in.world / frame.border_tile_size);
   let inside = all(in.world >= vec2f(0.0)) && all(in.world < frame.world);
   var out: SceneOut;

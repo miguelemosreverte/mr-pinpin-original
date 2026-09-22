@@ -1,0 +1,41 @@
+# The cottage sleeps
+
+Status: review candidate, not approved
+
+- Reading order: 20
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T17:41:52.000Z
+- Completed (UTC): 2026-09-20T17:42:16.000Z
+- Wall time: 24 seconds
+- Saved image: /Users/miguel_lemos/.codex/tmp/pinpin-bedtime-chapter-03/candidates/bedtime-20-v1.png
+- Size: 1536 x 1024
+- SHA-256: 1d86ffddd74a2145d50708bbe0f5b68891b3fedf3a270681202b02f7f08e6295
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0bfe0-0db8-7741-9bdf-b4d48e50fc46/exec-d0a03208-1149-4940-8fa6-aacec3476624.png
+
+## Source Beat
+
+Same exterior as01, night stars and quiet woods, green door closed, faint warm round windows; no new buildings or animals.
+
+## Camera Direction
+
+Matching opening cottage exterior
+
+## Future Character Space
+
+Same exterior as01, night stars and quiet woods, green door closed, faint warm round windows; no new buildings or animals.
+
+## References
+
+- /Users/miguel_lemos/.codex/tmp/pinpin-bedtime-chapter-03/candidates/bedtime-01-v1.png: REFERENCE: exact established cottage exterior and camera
+
+## Exact Tool Prompt
+
+```text
+Use case: illustration-story. One new 1536x1024 landscape illustration for a quiet bedtime picture book. Input1 establishes cottage, change only time of day to night. Exterior at deep peaceful NIGHT. Match the reference cottage architecture and camera exactly: same moss roof, rounded GREEN front door closed, TWO circular windows, stone facade, winding stone path, large trees and ferns. Window glow now faint amber, moonlit blue forest and a few stars visible through canopy. No animals, people or extra buildings. Calm final closing view. No embedded text, collage, watermark, beaver, new cast, duplicate limbs, humanlike long arms or legs. Preserve soft restrained exposure without blown highlights.
+```
+
+## Visual Review
+
+Night exterior visually matches opening cottage and camera: rounded green door, two circular windows, moss roof, stone facade/path and forest foreground. Blue night replaces dusk; faint window glow, stars and moon. No actors or new buildings. User approval pending.
+
+Reviewed (UTC): 2026-09-20T17:48:36.224Z

@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mama",
+  "sheetId": "a",
+  "assetVersion": "v1",
+  "reviewStatus": "measured-scale-awaiting-visual-review",
+  "method": "Median same-heading body bounding area ratio to prepared Pinpin sheet; one fixed sheet referenceWidth. Runtime displayWidth supplies family proportions.",
+  "referenceFile": "pinpin-a-v1.json",
+  "referenceSha256": "ae95c02059f0af05a10fbabfaf354425b21ac1f7adbb434e8c82be5caa600b9c",
+  "referenceWidth": 294,
+  "chosenReferenceWidth": 281.616,
+  "rows": [
+    {
+      "angle": 0,
+      "bodyPixels": [
+        273.5,
+        194.5
+      ],
+      "referenceBodyPixels": [
+        281,
+        199
+      ],
+      "suggestedReferenceWidth": 286.75176545646536
+    },
+    {
+      "angle": 30,
+      "bodyPixels": [
+        236,
+        225.5
+      ],
+      "referenceBodyPixels": [
+        259.5,
+        233.5
+      ],
+      "suggestedReferenceWidth": 275.5272016981578
+    },
+    {
+      "angle": 60,
+      "bodyPixels": [
+        228,
+        250
+      ],
+      "referenceBodyPixels": [
+        229,
+        259.5
+      ],
+      "suggestedReferenceWidth": 287.9375705362878
+    },
+    {
+      "angle": 90,
+      "bodyPixels": [
+        202,
+        239
+      ],
+      "referenceBodyPixels": [
+        212,
+        257.5
+      ],
+      "suggestedReferenceWidth": 276.4810807628324
+    }
+  ],
+  "provenance": {
+    "generationLog": "production/mama-production-generations.json",
+    "generationLogSha256": "b35a38b8b9e4924a97f277c2593280108103ee81559f54f46c91252e64c82018",
+    "generationRecordSha256": "72f6261335e7e5d7bcf5b513b9ccbb85a487dc540136a0382afcbb1765db577b",
+    "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-fb40c5d6-d29d-406f-be10-4fd65e0fefc5.png",
+    "sourceSha256": "181cbfa6b39355a42b003b9a35b2ff1947434c662190ea420874e5bfc34d3e0d",
+    "requestedAngles": [
+      0,
+      30,
+      60,
+      90
+    ],
+    "started": "2026-09-21 11:14:19 UTC",
+    "completed": "2026-09-21 11:15:23 UTC",
+    "durationMilliseconds": 64000,
+    "timingNote": null,
+    "parentVisualReview": {
+      "status": "accepted-for-preparation",
+      "orientation": "Four distinct requested right/front heading rows preserved visually; angles approximate and unmeasured.",
+      "identity": "Mama adult body, long muzzle, expressive eyes consistent across rows.",
+      "gait": "Four varying target-like leg placements per row; playback and final phase verification deferred to preparation.",
+      "completeness": "Sixteen complete silhouettes; top-right nose has narrow but visible margin after retry.",
+      "issues": [
+        "Preview shows red/yellow fringe: alpha and gutter measurements still required.",
+        "Some similar support poses need temporal gait review; no exact phase certification."
+      ]
+    }
+  }
+}

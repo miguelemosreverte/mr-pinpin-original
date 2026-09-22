@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "status": "complete",
+  "model": "fal-ai/trellis-2",
+  "params": {
+    "resolution": "1536",
+    "texture_size": "2048",
+    "decimation_target": 200000,
+    "remesh": true,
+    "seed": 210926
+  },
+  "sourceImage": "/Volumes/TB4/mac-mini-storage/shared/pinpin-3d-study-v1/reference.png",
+  "referenceHash": "a70515bbc0a6997a17c4abe00a5f152dba313c1a9f5f1902749082ebc00af7cb",
+  "outputGLB": "/Volumes/TB4/mac-mini-storage/shared/pinpin-3d-study-v1/model.glb",
+  "configHash": "8b1fc92a2cdeeebcfe912967e3c331cdebbef89c2cf01df92140f556c2265729",
+  "prompt": "Image-conditioned reconstruction of reference.png. Trellis receives only the image and numeric parameters, no text prompt. Full reference-generation prompt is recorded beside reference.png in reference.md. Preserve Mr. PinPin's book identity for a static 3D inspection before rigging.",
+  "promptSentToModel": false,
+  "priceEstimate": {
+    "amount": 0.35,
+    "currency": "USD",
+    "quantity": 1,
+    "source": "https://fal.ai/models/fal-ai/trellis-2",
+    "notes": "Published generation price checked 2026-09-21; not a verified billed charge. Reference-image generation cost excluded."
+  },
+  "startedAt": "2026-09-21T22:19:29.667Z",
+  "submittedAt": "2026-09-21T22:19:35.139Z",
+  "generationCompletedAt": "2026-09-21T22:22:59.106Z",
+  "endedAt": "2026-09-21T22:23:46.391Z",
+  "requestId": "01a0c60d-9992-7b53-97ab-3cdda97d4690",
+  "updatedAt": "2026-09-21T22:23:46.391Z",
+  "imageUrl": "https://v3b.fal.media/files/b/0aab5e25/tS3mHGd-tpiCdI3b-xcga_pinpin-reference.png",
+  "queueStatus": "COMPLETED",
+  "downloadPart": null,
+  "metadata": {
+    "bytes": 9015168,
+    "sha256": "e6fe566a1b8daf0d7f4a8a5a57d648c3c0df8376f567fa2a1a3c33917eb0960e",
+    "version": 2,
+    "chunks": 2,
+    "validation": "container-only-not-mesh-or-visual-approval"
+  },
+  "modelUrl": "https://v3b.fal.media/files/b/0aab5e39/CwqaX-1ahKmzwBieq1HRT_trellis2_0bccc1dd009740528c70fd5763d65888.glb"
+}

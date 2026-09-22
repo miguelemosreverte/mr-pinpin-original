@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mr-pompom",
+  "sheetId": "d",
+  "assetVersion": "v1",
+  "reviewStatus": "measured-scale-awaiting-visual-review",
+  "method": "Median same-heading body bounding area ratio to prepared Pinpin sheet; one fixed sheet referenceWidth. Runtime displayWidth supplies family proportions.",
+  "referenceFile": "pinpin-d-v1.json",
+  "referenceSha256": "1894e0e09001f00ad557e53c12eb2942e7761625eebc449245272f539e5353d1",
+  "referenceWidth": 303.034,
+  "chosenReferenceWidth": 299.067,
+  "rows": [
+    {
+      "angle": 15,
+      "bodyPixels": [
+        269.5,
+        214
+      ],
+      "referenceBodyPixels": [
+        279,
+        213.5
+      ],
+      "suggestedReferenceWidth": 298.1786805192839
+    },
+    {
+      "angle": 45,
+      "bodyPixels": [
+        248,
+        243
+      ],
+      "referenceBodyPixels": [
+        257.5,
+        243
+      ],
+      "suggestedReferenceWidth": 297.3915210802736
+    },
+    {
+      "angle": 75,
+      "bodyPixels": [
+        229,
+        260
+      ],
+      "referenceBodyPixels": [
+        231.5,
+        262.5
+      ],
+      "suggestedReferenceWidth": 299.95466601112395
+    },
+    {
+      "angle": 105,
+      "bodyPixels": [
+        224,
+        259
+      ],
+      "referenceBodyPixels": [
+        226.5,
+        260.5
+      ],
+      "suggestedReferenceWidth": 300.48810349429766
+    }
+  ],
+  "provenance": {
+    "generationLog": "production/pompom-production-generations.json",
+    "generationLogSha256": "af010905239b52850e005c078eb4cb0f002d317ee5acb973a25e407e6674a90c",
+    "generationRecordSha256": "f3ce3403de0621bda6cfc9646d8552fbe4dcaee6ec5b63a80d9a4d2b1c060cac",
+    "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-3e6b7995-cc55-45a8-8203-94fe79a49b5e.png",
+    "sourceSha256": "d9f9a517d224a1fecd34ccd2ff6d811558d48083a07194457b72b46df92d92a5",
+    "requestedAngles": [
+      15,
+      45,
+      75,
+      105
+    ],
+    "started": "2026-09-21T11:18:20.957Z",
+    "completed": "2026-09-21T11:19:16.294Z",
+    "durationMilliseconds": 55337,
+    "timingNote": null,
+    "parentVisualReview": "Four intermediate forward headings preserved: near-right, front-right diagonal, nearly frontal/right, nearly frontal/left. Baby brown eyes with white sclera; mouth remains closed; distinct paws across columns."
+  }
+}

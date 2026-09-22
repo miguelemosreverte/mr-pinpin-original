@@ -1,0 +1,21 @@
+{
+  "id": "shire-routes-v3",
+  "status": "rejected-historical-exploration",
+  "rejection": "Miguel requested useful alternative roads between existing story locations, not outward spurs or incidental loops. Map-edge exits require explicit approval.",
+  "title": "Interconnected garden, meadow and forest walking network",
+  "tool": "built-in imagegen",
+  "generatedAtApproximate": "2026-09-21T05:11:00Z",
+  "references": [
+    {
+      "path": "docs/storyboard/images/atlas/shire-v1.png",
+      "role": "Edit target and terrain reference; preserve framing and landmarks"
+    }
+  ],
+  "output": "docs/storyboard/images/atlas/shire-routes-v3.png",
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-e7e1607f-310b-4f58-bab5-ab06184bc2dc.png",
+  "width": 1536,
+  "height": 1024,
+  "sha256": "b17eca712b1e28203613260777f42a2dde54d31ec103d1df2a7bb2d1f2eb8716",
+  "prompt": "Use case: precise-object-edit. Asset type: atlas route-planning reference, not replacement scenery.\nEdit the supplied map into an accurately registered walking-route planning plate. Preserve the exact framing, geometry, houses, lake, bridge, dock, trees and paths of the supplied map. Convert the map underneath to grayscale. Draw narrow solid colored route centerlines over walkable land, inspired by OpenStreetMap, with no labels, text, circles, arrows or extra scenery. Keep original landmarks clearly legible. The goal is a richly interconnected network of gentle walking paths, with junctions and loops rather than just one corridor.\nFollow existing visible dirt paths wherever possible. Include: the cottage front door to the south lake shore; a garden detour from the cottage left side past the garden and back into the south-shore path; a south meadow loop below the cottage connecting back to its eastern main path; the south lake path to the existing wooden bridge, across its deck and north to the elder tree door; the east-shore fork onto the little wooden dock; an upper meadow loop along land north of the lake to the elder path; the bridge's east bank to the picnic and through the open clearing to the red tractor, returning by the visible dirt track east of the picnic; a short southern forest spur following the tractor road. Make lines meet precisely at junctions and remain on ground, not through building interiors, rocks, tree trunks or open lake/stream. The existing wooden bridge is the only river crossing; do not invent bridges. Draw loops around vegetation rather than through trees. Use clearly distinguishable flat route colors. The centerlines should be about 5 pixels wide at 1536x1024. Preserve original 3:2 framing and do not move anything.",
+  "review": "Planning reference only: useful loops, but markers, roof/root crossings and gaps are not accepted runtime geometry. Runtime traces must be adjusted against original colour artwork. Does not replace scenery or video, and is not fetched by production map."
+}

@@ -6,36 +6,51 @@
   <meta name="theme-color" content="#fbfcfa">
   <title>The Shire - Mr. PinPin</title>
   <link rel="stylesheet" href="reader.css?v=timber-home-1">
-  <link rel="stylesheet" href="atlas.css?v=1">
+  <link rel="stylesheet" href="vendor/leaflet/leaflet.css">
+  <link rel="stylesheet" href="atlas.css?v=4">
+  <script src="vendor/leaflet/leaflet.js" defer></script>
   <script src="icons.js" defer></script>
-  <script src="atlas.js?v=1" defer></script>
+  <script src="atlas-geometry.js?v=4" defer></script>
+  <script src="atlas-directions.js?v=4" defer></script>
+  <script src="atlas-motion.js?v=4" defer></script>
+  <script src="atlas-focus.js?v=4" defer></script>
+  <script src="chapter-editions.js" defer></script>
+  <script src="standalone-stories.js" defer></script>
+  <script src="title-covers.js" defer></script>
+  <script src="atlas-stories.js" defer></script>
+  <script src="atlas-preview.js?v=4" defer></script>
+  <script src="atlas.js?v=4" defer></script>
 </head>
 <body class="atlas">
   <header class="atlas-heading">
     <div class="atlas-brand"><h1 id="atlas-title">The Shire</h1><p id="atlas-author">Mr. PinPin</p></div>
     <nav class="atlas-actions">
-      <div class="language-selector" role="group" aria-label="Language">
+      <button id="atlas-language-toggle" type="button" aria-label="Language" title="Language" aria-expanded="false" aria-controls="atlas-languages"></button>
+      <div id="atlas-languages" class="language-selector" role="group" aria-label="Language" hidden>
         <button type="button" data-lang="en" title="English" aria-label="English" aria-pressed="true"></button>
         <button type="button" data-lang="es" title="Español" aria-label="Español" aria-pressed="false"></button>
         <button type="button" data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="false"></button>
       </div>
-      <a id="atlas-library" class="icon-button" href="library.html?lang=en" aria-label="Library" title="Library"><i data-lucide="library-big" aria-hidden="true"></i></a>
+      <a id="atlas-library" class="icon-button" href="library.html?lang=en" aria-label="Library" title="Library" hidden inert tabindex="-1"><i data-lucide="library-big" aria-hidden="true"></i></a>
     </nav>
   </header>
   <main class="atlas-map" aria-labelledby="atlas-title">
-    <div id="map-viewport" tabindex="0" role="region" aria-label="The Shire">
-      <div class="map-stage">
-        <div id="map-scene">
-          <img id="map-art" src="images/atlas/shire-v1.png" width="1536" height="1024" alt="The Shire: Crystal Lake, the Elder's oak, home and the bridge" draggable="false">
-          <div id="map-pins"></div>
-        </div>
-      </div>
-    </div>
-    <div class="map-controls" role="group" aria-label="Map view">
+    <div id="map-viewport" tabindex="0" role="region" aria-label="The Shire"></div>
+    <nav id="map-regions" aria-label="Stories"></nav>
+    <p id="map-status" class="atlas-sr-only" role="status" aria-live="polite"></p>
+    <div class="map-controls" role="group" aria-label="Map view" hidden inert>
+      <button id="motion-toggle" type="button" class="icon-button" aria-label="Pause animation" title="Pause animation"><i data-lucide="pause" aria-hidden="true"></i></button>
       <button id="zoom-out" type="button" class="icon-button" aria-label="Zoom out" title="Zoom out"><i data-lucide="minus" aria-hidden="true"></i></button>
       <button id="zoom-in" type="button" class="icon-button" aria-label="Zoom in" title="Zoom in"><i data-lucide="plus" aria-hidden="true"></i></button>
       <button id="zoom-fit" type="button" class="icon-button" aria-label="Fit map" title="Fit map"><i data-lucide="scan" aria-hidden="true"></i></button>
     </div>
   </main>
+  <dialog id="story-preview" aria-labelledby="preview-title">
+    <div class="preview-heading">
+      <h2 id="preview-title"></h2>
+      <button id="preview-close" type="button">Back to map</button>
+    </div>
+    <a id="preview-open"><img id="preview-image" alt="" draggable="false"></a>
+  </dialog>
 </body>
 </html>

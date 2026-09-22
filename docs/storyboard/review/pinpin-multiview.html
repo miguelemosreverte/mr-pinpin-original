@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Mr. PinPin / Multiview review</title>
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  <link rel="stylesheet" href="pinpin-multiview.css">
+  <script src="pinpin-multiview.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Mr. PinPin / Multiview review</h1>
+    <nav aria-label="3D studies"><a href="pinpin-3d.html?model=v1">Trellis singleview</a><a href="pinpin-3d.html?model=v2">Tripo multiview</a></nav>
+  </header>
+  <main>
+    <section aria-labelledby="front-title">
+      <h2 id="front-title">FRONT</h2>
+      <figure><img data-src="../models/pinpin-v2/reference-front.png" alt="Mr. PinPin front source reference" hidden><figcaption role="status">Reference pending</figcaption></figure>
+    </section>
+    <section aria-labelledby="side-title">
+      <h2 id="side-title">SIDE</h2>
+      <figure><img data-src="../models/pinpin-v2/reference-left.png" alt="Mr. PinPin left-side source reference" hidden><figcaption role="status">Reference pending</figcaption></figure>
+    </section>
+    <section aria-labelledby="rear-title">
+      <h2 id="rear-title">REAR</h2>
+      <figure><img data-src="../models/pinpin-v2/reference-back.png" alt="Mr. PinPin rear source reference" hidden><figcaption role="status">Reference pending</figcaption></figure>
+    </section>
+    <section class="assessment" aria-labelledby="assessment-title">
+      <h2 id="assessment-title">Assessment / Rejected</h2>
+      <dl><div><dt>Tripo model</dt><dd id="model-state" role="status">Checking availability</dd></div><div><dt>Face consistency</dt><dd>Clear front face; duplicate face at rear</dd></div><div><dt>Feet and belly</dt><dd>Four feet visible; broad, smooth belly</dd></div><div><dt>Rear geometry</dt><dd>Extra muzzle and eye under quills; not accepted</dd></div></dl>
+      <figure class="evidence"><img src="pinpin-v2-rear-evidence.png" alt="Actual Tripo v2 rear render with an erroneous second face beneath the quills"><figcaption>Actual v2 rear (-X). Front is +X / 90 degrees.</figcaption></figure>
+    </section>
+  </main>
+</body>
+</html>

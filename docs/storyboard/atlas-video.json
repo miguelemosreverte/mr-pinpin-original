@@ -1,0 +1,103 @@
+{
+  "version": 1,
+  "duration": 10,
+  "fps": 24,
+  "world": [
+    1536,
+    1024
+  ],
+  "variants": [
+    {
+      "id": "mobile",
+      "src": "videos/shire-atlas-loop-mobile-v1.mp4",
+      "width": 1152,
+      "height": 768,
+      "bytes": 3630525
+    },
+    {
+      "id": "desktop",
+      "src": "videos/shire-atlas-loop-desktop-v1.mp4",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 7263569
+    }
+  ],
+  "registration": {
+    "baked": true,
+    "method": "fixed-affine-from-frame-zero-sift-ransac",
+    "source": "videos/shire-seedance1-pingpong-v1.mp4",
+    "sourceSize": [
+      1664,
+      1248
+    ],
+    "reference": "images/atlas/shire-v1.png",
+    "sourceToWorld": [
+      [
+        0.8323165929321774,
+        3.3577231617792132e-06,
+        74.95523279761129
+      ],
+      [
+        -3.958572945435865e-06,
+        0.8205001291134525,
+        -0.043513335422074584
+      ]
+    ],
+    "sourceCornersInWorld": [
+      [
+        74.95523071289062,
+        -0.04351333528757095
+      ],
+      [
+        1459.929931640625,
+        -0.05010040104389191
+      ],
+      [
+        1459.9342041015625,
+        1023.93408203125
+      ],
+      [
+        74.95941925048828,
+        1023.940673828125
+      ]
+    ],
+    "interpretation": "Horizontal crop with small anisotropic resampling; not full-world squeeze",
+    "borderFill": "original reference pixels outside fixed source coverage",
+    "staticFillPercent": 9.8307,
+    "temporalBlend": false,
+    "perFrameStabilization": false,
+    "motionGain": 1,
+    "landmarkToleranceWorldPixels": 10,
+    "sampleFrames": [
+      0,
+      12,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239
+    ],
+    "sourceLandmarkErrorWorldPixels": {
+      "median": 1.0,
+      "p95": 5.0,
+      "max": 5.6569
+    },
+    "decodedLandmarkErrorWorldPixels": {
+      "mobile": {
+        "median": 1.0,
+        "p95": 5.0,
+        "max": 6.4031
+      },
+      "desktop": {
+        "median": 1.0,
+        "p95": 5.0,
+        "max": 5.6569
+      }
+    }
+  }
+}

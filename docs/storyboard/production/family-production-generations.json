@@ -1,0 +1,95 @@
+{
+  "tool": "built-in image_gen",
+  "assets": [
+    {
+      "id": "pinpin",
+      "sheet": "a",
+      "angles": [
+        0,
+        30,
+        60,
+        90
+      ],
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-9e10151a-4ddc-4393-8448-13c2500b958a.png",
+      "prompt": "Use case: identity-preserve. Asset: transparent high-resolution game walking sprite sheet, 4 columns by 4 rows, 16 separate complete poses. Image 1 is the exact animation/layout edit target; image 2 is Mr. PinPin's authoritative book face. Keep the exact 16 body silhouettes, camera directions, leg positions, foot contact positions, scale, cell layout, and distinct walking phases of image 1. Change only the head/face rendering to faithfully match the tender detailed book character in image 2: warm chestnut irises surrounding dark pupils, a modest ivory sclera crescent, anatomically shaped expressive eyelids, fine cream facial fur, coherent eye reflections and soft friendly closed-mouth expression. The head and expression stay stable across all four gait columns; only the legs articulate through the existing four poses. Preserve the old walking cycle, not sixteen near-identical standing poses. Top row right profile 0 degrees, second row front-right 30, third row front-right 60, bottom row facing camera 90. Fixed elevated atlas camera. Exactly four anatomical limbs per animal, with natural occlusion. Crisp softly lit detailed fur and quills, no glow or overexposure. Real transparent alpha throughout the background. Generous transparent gutters and all noses, quills and feet entirely inside their own cells. No ground, shadows, labels, grid lines or text. Request a 2048 by 2048 square output to retain facial detail. Do not enlarge the eyes disproportionately. Face matches the book, walking anatomy matches the target.",
+      "started": "2026-09-21T10:56:25.744Z",
+      "completed": "2026-09-21T10:57:20.638Z"
+    },
+    {
+      "id": "pinpin",
+      "sheet": "b",
+      "file": "pinpin-directions-b-v1.png",
+      "angles": [
+        120,
+        150,
+        180,
+        210
+      ],
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-e2d78c6b-7a55-49cb-bf05-e72044dfa085.png",
+      "prompt": "Edit image 1 only: this is the walking sheet. Keep all 16 animals facing EXACTLY the same direction as they currently face in each cell. The first three rows face LEFT, NOT RIGHT; the last row walks away upper-left. Preserve every leg pose and all quills and positions. Only improve their facial rendering to match Mr. PinPin in image 2: warm brown iris distinct from pupil, a small white crescent at the side, expressive eyelids, cream facial fur. Same neutral pleasant closed mouth across all four columns, no smile animation. Preserve the original 4 by 4 grid, transparent alpha, intact feet and nose, and all clear gutters. Do not replace the left-facing poses with right-facing poses. This is a face-only edit of image 1, not a new character turnaround. Sharply detailed sprite artwork.",
+      "started": "2026-09-21T11:02:59.920Z",
+      "completed": "2026-09-21T11:04:19.356Z"
+    },
+    {
+      "id": "pinpin",
+      "sheet": "c",
+      "file": "pinpin-directions-c-v1.png",
+      "angles": [
+        240,
+        270,
+        300,
+        330
+      ],
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-47fbd3f0-0dfd-4922-83ec-8fb9c3a376c8.png",
+      "prompt": "Use case: identity-preserve. Asset: a transparent high-resolution 4-column by 4-row game sprite sheet with exactly sixteen complete walking poses. Image 1 is the animation and camera template to edit. Preserve its exact sixteen distinct leg phases, walking direction in every row, elevated camera, centering, foot contact, silhouette size and clear cell gutters. Image 2 supplies the book character identity; image 3 supplies the approved sprite rendering. The four columns are consecutive walking phases with planted paws travelling backward under the body and lifted paws swinging forward, not a static pose repeated. Keep the face neutral and identical through the four gait columns; no looping smile or mouth changes. Subject Mr. PinPin, the young hedgehog. Edit the face to the book's chestnut irises, dark pupils, subtle ivory sclera, shaped eyelids, cream fur and tender expression. Image 3 is the first corrected sprite sheet; match it across every view. Preserve rear-facing poses: when the camera sees quills, do not turn the head toward the viewer. Top-to-bottom row headings are 240, 270, 300, 330 degrees clockwise in image space, exactly as the template. Keep each row's camera elevation and each column's paw pose. Full true-alpha transparent background, no ground, no shadow, no labels, no grids. Request 2048-square output, intact noses and paws with transparent edge margin.",
+      "started": null,
+      "completed": null,
+      "timingNote": "Generated during interrupted batch; exact start/end were not retained."
+    },
+    {
+      "id": "pinpin",
+      "sheet": "d",
+      "file": "pinpin-directions-intermediate-a-v2.png",
+      "angles": [
+        15,
+        45,
+        75,
+        105
+      ],
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-255c5d89-d7c3-4784-a7a3-e9133b43b8c5.png",
+      "prompt": "Edit image 1 only, preserving its entire 4 by 4 transparent walking-sprite layout. Keep the exact pose, walking direction, legs, body size, quills, camera view and foot positions in every cell. Rows correspond to 15, 45, 75, 105 degrees, already shown correctly. Change only Mr. PinPin's facial rendering to match image 2, the book reference: warm chestnut irises around dark pupils, a modest white sclera crescent, detailed expressive eyelids, fine cream facial fur. Stable neutral pleasant closed mouth across all gait frames. Preserve the four visibly distinct walking phases in each row. Genuine alpha transparency, generous clear gutters; all noses and feet inside cells. No ground, labels, grids or new poses.",
+      "started": "2026-09-21T11:05:59.021Z",
+      "completed": "2026-09-21T11:07:07.311Z"
+    },
+    {
+      "id": "pinpin",
+      "sheet": "e",
+      "file": "pinpin-directions-intermediate-b-v1.png",
+      "angles": [
+        135,
+        165,
+        195,
+        225
+      ],
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-938ba5a8-d16a-4963-a869-46427e98102a.png",
+      "prompt": "Face-only edit of image 1, the exact animation template. Keep its 4x4 transparent sheet, every silhouette, paw pose, camera direction and position. Rows are 135, 165, 195, 225 degrees: left-facing obliques progressing to rear-left. They MUST keep facing left or away-left as in image 1. Image 2 supplies only facial style: Mr. PinPin's warm chestnut irises, distinct dark pupil, subtle ivory sclera crescent, shaped expressive eyelids, detailed cream fur. Neutral pleasant closed mouth stays the same across the four walk phases. Preserve the original distinct leg motion. Background truly transparent alpha, clear gutters, intact faces and feet inside cells; no new poses, ground, shadows, text or grids.",
+      "started": "2026-09-21T11:07:42.625Z",
+      "completed": "2026-09-21T11:08:37.517Z"
+    },
+    {
+      "id": "pinpin",
+      "sheet": "f",
+      "file": "pinpin-directions-intermediate-c-v1.png",
+      "angles": [
+        255,
+        285,
+        315,
+        345
+      ],
+      "source": "/Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-d5e0fe0f-0523-479c-b16e-90a4a80e5e16.png",
+      "prompt": "Face-only edit of image 1, the exact 4x4 transparent walking template. Preserve all body silhouettes, distinct paw phases, foot placement and camera directions. Four row headings 255, 285, 315, 345 degrees: rear-left, rear/up-right, rear-right and shallow rear-right exactly as image 1. Keep walking AWAY from the camera; mostly quills are visible, face only where originally visible. Only visible eyes/face should match image 2: chestnut iris, distinct pupil and subtle ivory crescent with delicate cream fur and shaped eyelid. Neutral closed mouth across all phases. Do not reveal a frontal face in rear views. Same transparent alpha, clear gutters, complete feet and noses inside cells, no ground shadows labels or grids.",
+      "started": "2026-09-21T11:09:03.653Z",
+      "completed": "2026-09-21T11:10:00.619Z"
+    }
+  ]
+}

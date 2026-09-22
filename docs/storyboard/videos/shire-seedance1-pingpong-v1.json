@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "status": "complete",
+  "createdAt": "2026-09-21T04:39:04.836Z",
+  "source": "shire-seedance1-steady-light-v1.mp4",
+  "sourceSha256": "580179b34287ffd8ecf87d983795e741b4f8b67ce011fa93f5e571468ceb00db",
+  "sourceRequestId": "01a0c219-1bda-7562-b88f-afef067706ea",
+  "sourceProvenance": "shire-seedance1-steady-light-v1.json",
+  "output": "shire-seedance1-pingpong-v1.mp4",
+  "operation": "forward-reverse",
+  "sourceFrameCount": 121,
+  "frameOrder": "0..120,119..1; repeat",
+  "duplicateTurnaroundFrames": false,
+  "interpolation": false,
+  "crossfade": false,
+  "newGenerationCostUsd": 0,
+  "filter": "[0:v]split=2[f][r];[f]setpts=N/(24*TB)[forward];[r]reverse,trim=start_frame=1:end_frame=120,setpts=N/(24*TB)[backward];[forward][backward]concat=n=2:v=1:a=0[out]",
+  "encoding": { "codec": "libx264", "preset": "veryfast", "crf": 18, "pixelFormat": "yuv420p", "faststart": true },
+  "metadata": {
+    "width": 1664, "height": 1248, "duration": 10,
+    "codec_name": "h264", "avg_frame_rate": "24/1", "frameCount": 240,
+    "hasAudio": false, "bytes": 33910054,
+    "sha256": "9356345b426d8f033ee059e4db88d4c0e7d94414ccf79f082c2f5954703a1657"
+  },
+  "review": { "status": "pending", "productionAtlasChanged": false, "caveat": "Flow and other motion reverse at each turnaround; visual review required." }
+}

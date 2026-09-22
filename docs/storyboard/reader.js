@@ -2,6 +2,40 @@
   const $ = id => document.getElementById(id);
   let artwork, translations, book, published, edition, story, language = 'ru', printing = false;
   let loadedKey, navigation = 0;
+  const navigationLabels = {
+    en:{map:'Map', back:'Back to map', language:'Language', navigation:'Book navigation', loading:'Loading the book…'},
+    es:{map:'Mapa', back:'Volver al mapa', language:'Idioma', navigation:'Navegación del libro', loading:'Cargando el libro…'},
+    ru:{map:'Карта', back:'Вернуться к карте', language:'Язык', navigation:'Навигация по книге', loading:'Загрузка книги…'}
+  };
+  const languageNames = {en:'English', es:'Español', ru:'Русский'};
+
+  function syncNavigation() {
+    const requested = new URL(location.href).searchParams.get('lang');
+    language = Object.hasOwn(navigationLabels, requested) ? requested : 'ru';
+    const labels = navigationLabels[language];
+    document.documentElement.lang = language;
+    const destination = new URL(location.href).searchParams.get('returnTo');
+    const map = new URL(['atlas-webgpu.html', 'atlas.html'].includes(destination) ? destination : 'atlas-webgpu.html', location.href);
+    map.searchParams.set('lang', language);
+    const returnPlace = new URL(location.href).searchParams.get('returnPlace');
+    if (['home', 'lake', 'elder', 'bridge'].includes(returnPlace)) map.searchParams.set('returnPlace', returnPlace);
+    ['reader-map', 'reader-map-end'].forEach(id => {
+      const link = $(id);
+      const label = id === 'reader-map' ? labels.map : labels.back;
+      link.href = map.href;
+      link.querySelector('span').textContent = label;
+      link.title = label;
+      link.setAttribute('aria-label', label);
+    });
+    $('reader-controls').setAttribute('aria-label', labels.navigation);
+    document.querySelector('.reader-footer').setAttribute('aria-label', labels.navigation);
+    $('reader-languages').setAttribute('aria-label', labels.language);
+    $('language-toggle').dataset.lang = language;
+    $('language-toggle').title = labels.language + ': ' + languageNames[language];
+    $('language-toggle').setAttribute('aria-label', $('language-toggle').title);
+    document.querySelectorAll('#reader-languages [data-lang]').forEach(button =>
+      button.setAttribute('aria-pressed', String(button.dataset.lang === language)));
+  }
 
   function route(lang) {
     const url = new URL(location.href);
@@ -24,20 +58,13 @@
     return node;
   }
 
-  function render(fraction = 0) {
+  function render(readingPosition = 0) {
     closeControls();
     edition = story || window.chapterEditions.resolve(new URL(location.href).searchParams.get('chapter'), published);
     const { id:chapterId, number:chapterNumber, spreads } = edition;
-    const requested = new URL(location.href).searchParams.get('lang');
-    language = ['ru', 'en', 'es'].includes(requested) ? requested : 'ru';
+    syncNavigation();
     history.replaceState(null, '', route(language));
     const ui = window.readerLabels[language];
-    document.querySelectorAll('.library-link').forEach(link => {
-      link.href = libraryURL(language);
-      link.title = ui.contents;
-      link.setAttribute('aria-label', ui.contents);
-    });
-    $('library-label').textContent = ui.contents;
     const preview = new URL(location.href).searchParams.get('view') === 'print';
     document.documentElement.classList.toggle('print-preview', preview);
     $('paper-styles').media = preview ? 'all' : 'print';
@@ -48,14 +75,13 @@
     const translated = story ? window.standaloneStories.edition(story, language) : translations[chapterId]?.[language];
     const scenes = translated?.scenes || artwork.scenes[chapterId];
     const images = story ? translated.images : artwork.chapters[chapterId];
+    const titleCover = window.titleCovers.resolve(chapterId, language);
     document.documentElement.lang = language;
     document.title = story ? translated.title : ui.book + ' - ' + ui.chapter + ' ' + chapterNumber;
     $('print').title = ui.print;
     $('print').setAttribute('aria-label', ui.print);
     $('print').disabled = false;
     $('export-status').textContent = '';
-    document.querySelectorAll('[data-lang]').forEach(button =>
-      button.setAttribute('aria-pressed', String(button.dataset.lang === language)));
     const article = element('article');
     if (story) {
       article.dataset.story = story.id;
@@ -66,6 +92,19 @@
     if (!story) header.append(element('p', 'eyebrow', ui.chapter + ' ' + chapterNumber));
     header.append(element('h1', '', translated?.title || (chapterNumber === 1 ? ui.title :
       book.chapters.find(chapter => chapter.id === chapterId).title.replace(/^Глава\s*\d*\s*:\s*/, ''))));
+    if (titleCover?.placement === 'prepend') {
+      const slot = element('div', 'page-slot title-cover-slot');
+      slot.dataset.paper = 'portrait';
+      const frame = element('div', 'page-frame');
+      const sheet = element('section', 'spread spread-cover paper-portrait');
+      sheet.id = 'title-cover';
+      sheet.setAttribute('aria-label', titleCover.title[language]);
+      const figure = element('figure', 'scene-art');
+      const image = element('img');
+      image.loading = 'eager'; image.decoding = 'async'; image.fetchPriority = 'high';
+      window.titleCovers.apply(image, titleCover, language, null, () => slot.remove());
+      figure.append(image); sheet.append(figure); frame.append(sheet); slot.append(frame); article.append(slot);
+    }
     spreads.forEach((spread, spreadIndex) => {
       const sheet = element('section', 'spread spread-' + spread.style + ' paper-' + spread.paper);
       sheet.id = 'spread-' + (spreadIndex + 1);
@@ -82,6 +121,9 @@
         image.alt = asset.alt[language] || asset.alt.en;
         image.width = asset.width;
         image.height = asset.height;
+        if (index === 0 && titleCover?.placement === 'replace') {
+          window.titleCovers.apply(image, titleCover, language, asset);
+        }
         image.loading = index === 0 || preview ? 'eager' : 'lazy';
         image.decoding = 'async';
         if (index === 0) image.fetchPriority = 'high';
@@ -119,19 +161,30 @@
     $('reader').replaceChildren(article);
     $('reader').setAttribute('aria-busy', 'false');
     requestAnimationFrame(() => {
+      if (!article.isConnected) return;
       resizePreview();
-      window.scrollTo(0, Math.max(0, document.documentElement.scrollHeight - innerHeight) * fraction);
+      restorePosition(readingPosition);
       updateProgress();
     });
   }
 
-  function libraryURL(lang) {
-    const url = new URL('library.html', location.href);
-    url.search = location.search;
-    url.searchParams.delete('story');
-    url.searchParams.delete('chapter');
-    url.searchParams.set('lang', lang);
-    return url.href;
+  function readingPosition() {
+    const scenes = [...document.querySelectorAll('#reader #title-cover, #reader .scene')];
+    const scene = scenes.find(node => node.getBoundingClientRect().bottom > 16) || scenes.at(-1);
+    if (!scene) return position();
+    const rect = scene.getBoundingClientRect();
+    return {id:scene.id, relative:(16 - rect.top) / rect.height, fraction:position()};
+  }
+
+  function restorePosition(saved) {
+    const scene = typeof saved === 'object' && $(saved.id);
+    if (scene) {
+      const rect = scene.getBoundingClientRect();
+      window.scrollTo(0, scrollY + rect.top + rect.height * saved.relative - 16);
+    } else {
+      const fraction = typeof saved === 'number' ? saved : saved.fraction;
+      window.scrollTo(0, Math.max(0, document.documentElement.scrollHeight - innerHeight) * fraction);
+    }
   }
 
   function position() {
@@ -139,21 +192,26 @@
     return range > 0 ? scrollY / range : 0;
   }
   function closeControls() {
-    document.documentElement.classList.remove('controls-open');
-    $('controls-toggle').setAttribute('aria-expanded', 'false');
+    $('reader-languages').hidden = true;
+    $('language-toggle').setAttribute('aria-expanded', 'false');
   }
-  $('controls-toggle').onclick = () => {
-    const open = document.documentElement.classList.toggle('controls-open');
-    $('controls-toggle').setAttribute('aria-expanded', String(open));
+  $('language-toggle').onclick = () => {
+    const open = $('reader-languages').hidden;
+    $('reader-languages').hidden = !open;
+    $('language-toggle').setAttribute('aria-expanded', String(open));
+    if (open) $('reader-languages').querySelector('[aria-pressed="true"]').focus({preventScroll:true});
   };
   addEventListener('keydown', event => {
-    if (event.key === 'Escape' && document.documentElement.classList.contains('controls-open')) {
+    if (event.key === 'Escape' && !$('reader-languages').hidden) {
       closeControls();
-      $('controls-toggle').focus();
+      $('language-toggle').focus({preventScroll:true});
     }
   });
   addEventListener('click', event => {
-    if (!event.target.closest('.toolbar,.controls-toggle')) closeControls();
+    if (!event.target.closest('#reader-controls')) closeControls();
+  });
+  $('reader-controls').addEventListener('focusout', event => {
+    if (!$('reader-controls').contains(event.relatedTarget)) closeControls();
   });
   function updateProgress() {
     $('progress').style.height = Math.min(100, Math.max(0, position() * 100)) + '%';
@@ -208,12 +266,18 @@
   };
   addEventListener('beforeprint', () =>
     document.querySelectorAll('.scene-art img').forEach(image => { image.loading = 'eager'; }));
-  document.querySelectorAll('[data-lang]').forEach(button => {
+  document.querySelectorAll('#reader-languages [data-lang]').forEach(button => {
     button.onclick = () => {
-      if (!artwork || printing) return;
-      const fraction = position();
-      history.pushState(null, '', route(button.dataset.lang));
-      render(fraction);
+      if (printing) return;
+      const saved = readingPosition();
+      closeControls();
+      $('language-toggle').focus({preventScroll:true});
+      if (button.dataset.lang === language) return;
+      const url = new URL(location.href);
+      url.searchParams.set('lang', button.dataset.lang);
+      history.pushState(null, '', url);
+      if (artwork) render(saved);
+      else openRoute();
     };
   });
   addEventListener('popstate', () => { if (!printing) openRoute(); });
@@ -223,6 +287,7 @@
   new ResizeObserver(() => { resizePreview(); updateProgress(); }).observe($('reader'));
 
   async function initialize(url) {
+    await window.titleCovers.load();
     const requestedStory = url.searchParams.get('story');
     if (requestedStory !== null) {
       const selected = await window.standaloneStories.load(requestedStory, url.searchParams.get('chapter'));
@@ -243,16 +308,10 @@
     $('print').disabled = true;
     $('preview').disabled = true;
     $('reader').setAttribute('aria-busy', 'false');
-    const requested = new URL(location.href).searchParams.get('lang');
-    const lang = ['en','es','ru'].includes(requested) ? requested : 'ru';
+    syncNavigation();
+    const lang = language;
     const ui = window.readerLabels[lang];
     document.documentElement.lang = lang;
-    document.querySelectorAll('.library-link').forEach(link => {
-      link.href = libraryURL(lang);
-      link.title = ui.contents;
-      link.setAttribute('aria-label', ui.contents);
-    });
-    $('library-label').textContent = ui.contents;
     const unavailable = {en:'This story is not available yet.', es:'Esta historia todavía no está disponible.', ru:'Эта история пока недоступна.'};
     const message = element('p', 'error', (new URL(location.href).searchParams.has('story') ? unavailable[lang] || unavailable.en : ui.loadError) + ' ');
     const retry = element('a', '', ui.retry);
@@ -264,10 +323,16 @@
 
   async function openRoute() {
     const current = ++navigation;
+    closeControls();
+    syncNavigation();
+    window.lucide?.createIcons();
     const url = new URL(location.href);
     const key = JSON.stringify([url.searchParams.get('story'), url.searchParams.get('chapter')]);
     if (loadedKey === key && artwork) { render(); return; }
     $('reader').setAttribute('aria-busy', 'true');
+    const loading = element('p', 'loading', navigationLabels[language].loading);
+    loading.setAttribute('role', 'status');
+    $('reader').replaceChildren(loading);
     $('print').disabled = true;
     $('preview').disabled = true;
     artwork = null;

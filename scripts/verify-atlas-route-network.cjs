@@ -3,12 +3,15 @@ const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
 const vm = require('node:vm');
+const {spriteCorners, TRACTOR_BODY_MARGIN, SPRITE_UPDATE_TRAVEL} = require('./atlas-sprite-clearance.cjs');
+const {capsuleClearance, foregroundRoadForEdge} = require('./atlas-roadside-contact.test.cjs');
 const { createHash } = require('node:crypto');
 const { chromium } = require(process.env.PLAYWRIGHT_MODULE || '/Users/miguel_lemos/.npm/_npx/705bc6b22212b352/node_modules/playwright');
 const root = path.resolve(__dirname, '../docs/storyboard');
 const base = process.env.ATLAS_BASE_URL || 'http://127.0.0.1:8767/storyboard/';
-const report = process.env.ATLAS_ROUTE_REPORT || '/tmp/atlas-tractor-loop-v9-browser.md';
-const output = process.env.ATLAS_ROUTE_SCREENSHOTS || '/tmp/atlas-tractor-loop-v9-browser';
+const surveyVersion = Number(process.env.ATLAS_ROUTE_SURVEY_VERSION || 13);
+const report = process.env.ATLAS_ROUTE_REPORT || `/tmp/atlas-tractor-loop-v${surveyVersion}-browser.md`;
+const output = process.env.ATLAS_ROUTE_SCREENSHOTS || `/tmp/atlas-tractor-loop-v${surveyVersion}-browser`;
 const fullRun = process.env.ATLAS_ROUTE_FULL === '1';
 const results = [], screenshots = [], sourceHashes = {};
 const hash = text => createHash('sha256').update(text).digest('hex');
@@ -84,6 +87,7 @@ function sweptRectangle(a, b, extent) {
 
 async function terrainSafety(page) {
   const data = await page.evaluate(() => ({ width: atlasGeometry.width, height: atlasGeometry.height,
+    foregroundRoads: atlasGeometry.foregroundRoads,
     routes: atlasGeometry.routes, directions: atlasDirections, navigation: atlasGpuDebug.motion.navigation }));
   for (const [id, expected] of Object.entries(retainedTraceHashes)) {
     assert.equal(hash(JSON.stringify(data.routes.find(r => r.id === id).points)), expected,
@@ -98,15 +102,28 @@ async function terrainSafety(page) {
     extent.up = Math.max(extent.up, frame.anchor[1] * scale);
     extent.down = Math.max(extent.down, (frame.rect[3] - frame.anchor[1]) * scale);
   }
-  let minimumVehicleGap = Infinity, minimumPicnicGap = Infinity;
+  let minimumVehicleGap = Infinity, minimumPicnicGap = Infinity, minimumFootGap = Infinity, foregroundEdges = 0;
   for (const route of data.navigation.edges.map(e => ({ id: e.route, points: [e.a, e.b] }))) {
     const points = route.points;
     for (let i = 1; i < points.length; i++) {
       const a = points[i - 1], b = points[i];
+      const edge = {route: route.id, a, b}, foreground = foregroundRoadForEdge(data, edge);
+      const footGap = capsuleClearance(edge, tractorBody, foreground?.contactCapsule);
+      minimumFootGap = Math.min(minimumFootGap, footGap);
+      assert(footGap >= TRACTOR_BODY_MARGIN + SPRITE_UPDATE_TRAVEL,
+        route.id + ': swept foot capsule must clear vehicle with update allowance; gap=' + footGap);
+      if (foreground) foregroundEdges++;
       const swept = sweptRectangle(a, b, extent);
-      const gap = polygonGap(swept, tractorBody);
-      minimumVehicleGap = Math.min(minimumVehicleGap, gap);
-      assert(gap >= 14, route.id + ': entire baked segment sprite envelope must clear vehicle by 14px; gap=' + gap);
+      const heading = Math.atan2(b[1] - a[1], b[0] - a[0]) * 180 / Math.PI;
+      for (const turn of [0,180]) {
+        const corners = spriteCorners(data.directions, heading + turn);
+        const directional = {left: -corners[0][0], right: corners[1][0], up: -corners[0][1], down: corners[2][1]};
+        const gap = polygonGap(sweptRectangle(a, b, directional), tractorBody);
+        if (foreground) continue;
+        minimumVehicleGap = Math.min(minimumVehicleGap, gap);
+        assert(gap >= TRACTOR_BODY_MARGIN + SPRITE_UPDATE_TRAVEL,
+          route.id + ': both blended-heading envelopes must clear vehicle with update allowance; gap=' + gap);
+      }
       const picnicGap = polygonGap(swept, picnicFood);
       minimumPicnicGap = Math.min(minimumPicnicGap, picnicGap);
       assert(picnicGap >= 14, route.id + ': entire baked segment sprite envelope must clear picnic by 14px; gap=' + picnicGap);
@@ -128,7 +145,7 @@ async function terrainSafety(page) {
   assert.deepEqual(waterCrossings, [], 'No water crossing outside the original bridge: ' + JSON.stringify(waterCrossings));
   assert(permittedBridgeCrossings.length, 'River survey intersects the known original bridge crossing');
   return { retainedTraceHashes, picnicFood, riverCenter, foodHits, waterCrossings, permittedBridgeCrossings,
-    tractorBody, spriteExtent: extent, minimumVehicleGap, minimumPicnicGap,
+    tractorBody, spriteExtent: extent, minimumVehicleGap, minimumPicnicGap, minimumFootGap, foregroundEdges,
     limits: 'Segment intersections against an independent manual food polygon and visible river centerline. Not a collision mask or proof of all vegetation/rock clearance; runtime closeups support aesthetic review.' };
 }
 
@@ -156,7 +173,7 @@ async function waitForWorkers() {
     const geometryData = sandbox.window.atlasGeometry;
     const routes = geometryData.routes;
     const additions = routes.filter(r => !originalIds.includes(r.id));
-    if (Date.now() - stableSince >= 10000 && geometryData.routeSurveyVersion === 9 &&
+    if (Date.now() - stableSince >= 10000 && geometryData.routeSurveyVersion === surveyVersion &&
         routes.some(r => r.id === 'tractor-encircling-loop') &&
         routes.some(r => r.id === 'tractor-west-to-picnic') &&
         !routes.some(r => ['home-lower-road-west-bank', 'right-bank-to-tractor-road', 'tractor-road-to-picnic'].includes(r.id)) &&
@@ -167,7 +184,7 @@ async function waitForWorkers() {
           routes.some(other => other !== r && other.points.some(q => Math.hypot((p[0] - q[0]) * 1536, (p[1] - q[1]) * 1024) < 12))))) {
       sourceHashes.geometry = hash(geometry); sourceHashes.motion = hash(motion); return;
     }
-    console.log('Waiting for v9 encircling road and ten seconds of source stability.');
+    console.log(`Waiting for v${surveyVersion} encircling road and ten seconds of source stability.`);
     await new Promise(resolve => setTimeout(resolve, 10000));
   }
   throw new Error('Timed out waiting for geometry and motion workers; no final browser validation performed.');
@@ -717,7 +734,7 @@ async function focusedActual(browser, width) {
       atlasGpuDebug.motionCanvas.dataset.sprite === 'ready' && atlasGpuDebug.renderer.stats.scenery.uploads > 3);
     assert.equal(await page.evaluate(() => atlasGpuDebug.renderer.backend), 'webgpu');
     await capture(page, width + '-default');
-    if (width === 1440) await check('v9 tractor encircling loop and full sprite clearance', async () => {
+    if (width === 1440) await check(`v${surveyVersion} tractor encircling loop and blended sprite clearance`, async () => {
       const graph = await topology(page), terrain = await terrainSafety(page);
       const metadata = await page.evaluate(() => ({ stories: atlasGeometry.regions.map(r => r.id),
         poi: atlasGeometry.navigationDestinations }));
@@ -834,8 +851,8 @@ async function focusedActual(browser, width) {
       const journeys=[];
       // The east waypoint selects the long perimeter; picnic alone correctly
       // chooses the retained, shorter west bypass.
-      for(const [name,target] of [['south-to-east',[1505,790]],['east-to-picnic',[1260,642]],
-        ['picnic-to-east',[1505,790]],['east-to-tractor',approvedPoi.tractor]]) {
+      for(const [name,target] of [['south-to-east',[1505,750]],['east-to-picnic',[1260,642]],
+        ['picnic-to-east',[1505,750]],['east-to-tractor',approvedPoi.tractor]]) {
         const before=await state(page),start=[Number(before.x),Number(before.y)];
         await page.evaluate(point=>{
           atlasGpuDebug.motion.setTarget([point[0]/1536,point[1]/1024]);
@@ -859,7 +876,7 @@ async function focusedActual(browser, width) {
         assert.equal(after.arrived,'true',name+': arrives');
         assert(distance(end,target)<1,name+': exact destination');
         assert(samples.some(p=>p[0]>1400),name+': actually uses east perimeter');
-        assert(samples.some(p=>name.includes('picnic')?p[0]>1300&&p[1]<675:p[0]>1300&&p[1]>860),
+        assert(samples.some(p=>name.includes('picnic')?p[0]>1300&&p[1]<675:p[0]>1300&&p[1]>790&&p[1]<830),
           name+': observed correct upper/lower arc');
         journeys.push({name,start,end,samples});
       }
@@ -945,7 +962,7 @@ function writeReport() {
       `Geometry: ${sourceHashes.geometry}; motion: ${sourceHashes.motion}.`, '',
       ...results.map(r => `- ${r.pass ? 'PASS' : 'FAIL'} ${r.name} (${(r.elapsedMs || 0).toFixed(1)}ms): ${JSON.stringify(r.pass ? r.detail : r.error.split('\n')[0])}`),
       '', '## Screenshots', '', ...screenshots.map(file => `- ${file}`), '',
-      'Scope: native lower-road pan/tap, tractor through-connection and loop, original two traces, full sprite clearance against picnic and tractor, sampled curved travel, and actual tractor/picnic travel in both directions. The public story regions remain unchanged.',
+      'Scope: native lower-road pan/tap, tractor through-connection and loop, original two traces, full sprite clearance against picnic and non-foreground vehicle edges, swept foot-capsule clearance on all vehicle edges, sampled curved travel, and actual tractor/picnic travel in both directions. Only authored front-road segments can overlap the vehicle with their bodies. The public story regions remain unchanged.',
       'Arrival timing is accelerated with the Playwright clock; wall and simulated time are separate. Existing motion tests cover direction/return behavior. Manual obstacle polygons and the visible river centerline do not certify all terrain or hidden water. No broad eight-route walk matrix, full control audit or performance benchmark was rerun.', ''].join('\n'));
     return;
   }

@@ -1,0 +1,16 @@
+{
+  "schemaVersion": 1,
+  "source": "images/covers/home-sweet-home/miniature/miniature-v1.png",
+  "sourceSha256": "c894462b0061fe27487c048cd626a73515f00fd46f3342df2955c54f5a66e26a",
+  "asset": "images/covers/home-sweet-home/miniature/miniature-v1-512.webp",
+  "sha256": "33f92e335ff5de0b67cce8bb56a18d3f5bec121cbd8abf6bb74b69d5162b3304",
+  "width": 512,
+  "height": 768,
+  "encoding": "lossy WebP",
+  "quality": 92,
+  "sharpYuv": true,
+  "alphaQuality": 100,
+  "resize": "Lanczos",
+  "build": "node scripts/build-atlas-miniatures.cjs",
+  "approval": "Inherits miniature approval; this derivative does not approve the source artwork."
+}

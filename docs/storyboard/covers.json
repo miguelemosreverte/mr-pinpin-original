@@ -1,0 +1,161 @@
+{
+  "schemaVersion": 1,
+  "covers": {
+    "chapter-01": {
+      "route": {
+        "chapter": "1"
+      },
+      "status": "approved",
+      "version": 1,
+      "width": 1024,
+      "height": 1536,
+      "placement": "prepend",
+      "title": {
+        "en": "Mr. PinPin and His Mysterious Forest",
+        "es": "El señor PinPin y su bosque misterioso",
+        "ru": "Мистер Пин-Пин и его загадочный лес"
+      },
+      "assets": {
+        "ru": "images/covers/chapter-01/title-ru-v1.png",
+        "en": "images/covers/chapter-01/title-en-v1.png",
+        "es": "images/covers/chapter-01/title-es-v1.png"
+      },
+      "alt": {
+        "en": "Title cover: PinPin holds a golden quill beside the restored lake, beneath the title Mr. PinPin and His Mysterious Forest.",
+        "es": "Portada: PinPin sostiene una pluma dorada junto al lago restaurado, bajo el título El señor PinPin y su bosque misterioso.",
+        "ru": "Обложка: Пин-Пин держит золотое перо у вновь наполненного озера под заголовком «Мистер Пин-Пин и его загадочный лес»."
+      },
+      "miniature": {
+        "status": "proposed",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/covers/chapter-01/miniature/miniature-v1.png",
+        "derivatives": [
+          {"src": "images/covers/chapter-01/miniature/miniature-v1-256.webp", "width": 256, "height": 384},
+          {"src": "images/covers/chapter-01/miniature/miniature-v1-512.webp", "width": 512, "height": 768},
+          {"src": "images/covers/chapter-01/miniature/miniature-v1-1024.webp", "width": 1024, "height": 1536}
+        ],
+        "textFree": true,
+        "languageIndependent": true
+      }
+    },
+    "chapter-02": {
+      "route": {
+        "chapter": "2"
+      },
+      "status": "approved",
+      "version": 1,
+      "width": 1024,
+      "height": 1536,
+      "placement": "prepend",
+      "title": {
+        "en": "The Elder's Wisdom",
+        "es": "La sabiduría del anciano",
+        "ru": "Мудрость Старейшины"
+      },
+      "assets": {
+        "ru": "images/covers/chapter-02/title-ru-v1.png",
+        "en": "images/covers/chapter-02/title-en-v1.png",
+        "es": "images/covers/chapter-02/title-es-v1.png"
+      },
+      "alt": {
+        "en": "Title cover: PinPin meets the bespectacled Elder beside a root burrow, beneath the title The Elder’s Wisdom.",
+        "es": "Portada: PinPin se encuentra con el anciano de gafas junto a una madriguera entre raíces, bajo el título La sabiduría del anciano.",
+        "ru": "Обложка: Пин-Пин встречает Старейшину в очках у норы среди корней под заголовком «Мудрость Старейшины»."
+      },
+      "miniature": {
+        "status": "proposed",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/covers/chapter-02/miniature/miniature-v1.png",
+        "derivatives": [
+          {"src": "images/covers/chapter-02/miniature/miniature-v1-256.webp", "width": 256, "height": 384},
+          {"src": "images/covers/chapter-02/miniature/miniature-v1-512.webp", "width": 512, "height": 768},
+          {"src": "images/covers/chapter-02/miniature/miniature-v1-1024.webp", "width": 1024, "height": 1536}
+        ],
+        "textFree": true,
+        "languageIndependent": true
+      }
+    },
+    "timber-tractor": {
+      "route": {
+        "story": "timber-tractor"
+      },
+      "status": "approved",
+      "version": 1,
+      "width": 1024,
+      "height": 1536,
+      "placement": "replace",
+      "title": {
+        "en": "Mr. PinPin and the Timber Tractor",
+        "es": "El señor PinPin y el tractor forestal",
+        "ru": "Мистер Пин-Пин и лесной трактор"
+      },
+      "assets": {
+        "ru": "images/covers/timber-tractor/title-ru-v1.png",
+        "en": "images/covers/timber-tractor/title-en-v1.png",
+        "es": "images/covers/timber-tractor/title-es-v1.png"
+      },
+      "alt": {
+        "en": "Cover: Mr. PinPin looks up at a parked red timber tractor on a woodland path.",
+        "es": "Portada: el señor PinPin mira un tractor forestal rojo estacionado en un sendero del bosque.",
+        "ru": "Обложка: мистер Пин-Пин смотрит на красный лесной трактор, стоящий на лесной дорожке."
+      },
+      "miniature": {
+        "status": "proposed",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/covers/timber-tractor/miniature/miniature-v1.png",
+        "derivatives": [
+          {"src": "images/covers/timber-tractor/miniature/miniature-v1-256.webp", "width": 256, "height": 384},
+          {"src": "images/covers/timber-tractor/miniature/miniature-v1-512.webp", "width": 512, "height": 768},
+          {"src": "images/covers/timber-tractor/miniature/miniature-v1-1024.webp", "width": 1024, "height": 1536}
+        ],
+        "textFree": true,
+        "languageIndependent": true
+      }
+    },
+    "home-sweet-home": {
+      "route": {
+        "story": "home-sweet-home"
+      },
+      "status": "approved",
+      "version": 1,
+      "width": 1024,
+      "height": 1536,
+      "placement": "replace",
+      "title": {
+        "en": "Home, Sweet Home",
+        "ru": "Дом, милый дом",
+        "es": "Hogar, dulce hogar"
+      },
+      "assets": {
+        "ru": "images/covers/home-sweet-home/title-ru-v1.png",
+        "en": "images/covers/home-sweet-home/title-en-v1.png",
+        "es": "images/covers/home-sweet-home/title-es-v1.png"
+      },
+      "alt": {
+        "en": "Mr. PinPin — Home, Sweet Home. Mama rinses PinPin in the wooden bath while little PomPom waits beside them in a towel.",
+        "es": "Señor PinPin — Hogar, dulce hogar. Mamá enjuaga a PinPin en la bañera de madera mientras el pequeño PomPom espera a su lado envuelto en una toalla.",
+        "ru": "Мистер Пин-Пин — Дом, милый дом. Мама ополаскивает Пин-Пина в деревянной ванночке, а маленький Пом-Пом сидит рядом, укутавшись в полотенце."
+      },
+      "miniature": {
+        "status": "approved",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/covers/home-sweet-home/miniature/miniature-v1.png",
+        "derivatives": [
+          {"src": "images/covers/home-sweet-home/miniature/miniature-v1-256.webp", "width": 256, "height": 384},
+          {"src": "images/covers/home-sweet-home/miniature/miniature-v1-512.webp", "width": 512, "height": 768},
+          {"src": "images/covers/home-sweet-home/miniature/miniature-v1-1024.webp", "width": 1024, "height": 1536}
+        ],
+        "textFree": true,
+        "languageIndependent": true
+      }
+    }
+  }
+}

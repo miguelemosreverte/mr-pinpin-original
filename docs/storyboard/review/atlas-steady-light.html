@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Shire | Steady daylight</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; color: #242824; background: #fafafa; font-family: system-ui, sans-serif; line-height: 1.5; letter-spacing: 0; }
+    main { padding: 24px 28px; }
+    h1 { font-size: 26px; line-height: 1.2; margin: 0 0 8px; }
+    h2 { font-size: 18px; margin: 0 0 4px; }
+    p { margin: 8px 0; }
+    .meta, .status { font-size: 14px; color: #606760; }
+    .comparison { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 24px; }
+    figure { margin: 0; min-width: 0; }
+    figcaption { min-height: 98px; overflow-wrap: anywhere; }
+    video { width: 100%; aspect-ratio: 4 / 3; object-fit: contain; display: block; background: #e9e9e9; }
+    .status { min-height: 21px; }
+    .notes { margin-top: 24px; padding-top: 20px; border-top: 1px solid #ddd; }
+    .notes p { max-width: 85ch; }
+    nav { display: flex; flex-wrap: wrap; gap: 16px 28px; margin-top: 24px; padding-top: 16px; border-top: 1px solid #ddd; }
+    a { color: #24583e; text-underline-offset: 4px; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+    @media (max-width: 760px) { main { padding: 20px 12px; } .comparison { grid-template-columns: minmax(0, 1fr); } h1 { font-size: 24px; } }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>The Shire / Steady daylight</h1>
+    <p class="meta">Seedance 1.0 Pro Fast / 5 seconds / 1080p requested / camera_fixed enabled</p>
+    <section class="comparison" aria-label="Lighting comparison">
+      <figure>
+        <figcaption><h2 id="new-title">New lighting pass</h2><p class="meta">No cloud shadows. Constant lighting, shadows, and exposure.</p></figcaption>
+        <video controls autoplay muted loop playsinline preload="metadata" src="../videos/shire-seedance1-steady-light-v1.mp4" poster="../images/atlas/shire-v1.png" aria-labelledby="new-title"></video>
+        <p class="status" role="status">Loading video...</p>
+      </figure>
+      <figure>
+        <figcaption><h2 id="old-title">Previous pass</h2><p class="meta">Pebble exclusion retained in both versions.</p></figcaption>
+        <video controls autoplay muted loop playsinline preload="metadata" src="../videos/shire-seedance1-no-pebbles-v1.mp4" poster="../images/atlas/shire-v1.png" aria-labelledby="old-title"></video>
+        <p class="status" role="status">Loading video...</p>
+      </figure>
+    </section>
+    <section class="notes" aria-labelledby="prompt-title">
+      <h2 id="prompt-title">Exact prompt</h2>
+      <p>The camera stays in exactly the same place for the entire shot. Locked overhead view, identical framing from first to last frame: no pan, tilt, zoom, rotation or reframing. Wind moves fine surface texture and reflected sunlight across the lake. Leaves flutter gently, and the existing stream flows continuously. Buildings, paths, bridge and shoreline stay fixed. Steady daylight. Do not throw pebbles at the lake. <strong>Do not add shadows from clouds. Keep the lighting, shadows, and exposure constant throughout the shot.</strong></p>
+      <p class="meta">One new generation, estimated $0.25. Billing unconfirmed. Different random samples, not a controlled same-seed test. Lighting approval pending; no upscaling.</p>
+    </section>
+    <nav aria-label="Review files">
+      <a href="atlas-no-pebbles.html">Previous comparison</a>
+      <a href="../videos/shire-seedance1-steady-light-v1.mp4">New clip</a>
+      <a href="../videos/shire-seedance1-no-pebbles-v1.mp4">Previous clip</a>
+      <a href="../images/atlas/shire-v1.png">Original map</a>
+    </nav>
+  </main>
+  <script>
+    document.querySelectorAll('video').forEach(video => {
+      const status = video.parentElement.querySelector('.status');
+      const update = () => {
+        status.textContent = video.error ? 'Video unavailable. Poster only.' :
+          video.readyState >= 3 ? (video.paused ? 'Ready / paused' : 'Playing') : 'Loading video...';
+      };
+      ['loadeddata', 'canplay', 'playing', 'pause', 'waiting', 'error'].forEach(event => video.addEventListener(event, update));
+      update();
+    });
+  </script>
+</body>
+</html>

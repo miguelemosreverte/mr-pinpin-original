@@ -1,0 +1,65 @@
+{
+  "schemaVersion": 1,
+  "status": "complete",
+  "model": "tripo3d/h3.1/multiview-to-3d",
+  "params": {
+    "texture": true,
+    "pbr": true,
+    "texture_quality": "detailed",
+    "geometry_quality": "detailed",
+    "texture_alignment": "original_image",
+    "orientation": "default",
+    "quad": false,
+    "face_limit": 150000,
+    "model_seed": 210926,
+    "texture_seed": 210926
+  },
+  "sourceImages": {
+    "front": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/models/pinpin-v2/reference-front.png",
+    "left": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/models/pinpin-v2/reference-left.png",
+    "back": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/models/pinpin-v2/reference-back.png"
+  },
+  "viewOrder": [
+    "front",
+    "left",
+    "back"
+  ],
+  "referenceHashes": {
+    "front": "18bbdca6deba54df5b9e83e711f1834550981a04261a716ab129d5c6678fc1dc",
+    "left": "d29169602e830d6364f54fc8fc673ff5526768ace1817e4588a1f94b6e9fdd1a",
+    "back": "ac0b00929e371e2023e42515e5840d365561044c9c8d4490e6f15bfe2835f686"
+  },
+  "outputGLB": "/Volumes/TB4/mac-mini-storage/shared/pinpin-3d-study-v2/model.glb",
+  "configHash": "28c624a04855ab35bfef008aaff2b378065013ccf342ad6a96028641b476dd3a",
+  "prompt": "Reconstruct Mr. PinPin from front, anatomical left profile (nose pointing right), and rear references in that order. Static quadruped model study. Exact reference-generation prompts are saved alongside each reference image. This endpoint receives ordered images and parameters, not this descriptive text.",
+  "promptSentToModel": false,
+  "priceEstimate": {
+    "amount": 0.6,
+    "currency": "USD",
+    "quantity": 1,
+    "source": "https://fal.ai/models/tripo3d/h3.1/multiview-to-3d",
+    "notes": "Published estimate checked 2026-09-21: HD textures 0.40 plus detailed geometry 0.20. Quad disabled. Not a verified billed charge; reference-image generation excluded."
+  },
+  "startedAt": "2026-09-22T00:44:48.881Z",
+  "submittedAt": "2026-09-22T00:44:59.539Z",
+  "generationCompletedAt": "2026-09-22T00:50:00.693Z",
+  "endedAt": "2026-09-22T00:50:03.850Z",
+  "requestId": "01a0c692-b95d-7382-9942-fc8dd436f7b9",
+  "updatedAt": "2026-09-22T00:50:03.850Z",
+  "imageUrls": {
+    "front": "https://v3b.fal.media/files/b/0aab618d/dxW_bq2hza7brGsu4hYls_pinpin-front.png",
+    "left": "https://v3b.fal.media/files/b/0aab618d/Ou-3yMslsVFZYHJIzaj-Q_pinpin-left.png",
+    "back": "https://v3b.fal.media/files/b/0aab618d/ohynDetuvL2BawskIKeew_pinpin-back.png"
+  },
+  "queueStatus": "COMPLETED",
+  "resultField": "model_urls.pbr_model",
+  "downloadPart": null,
+  "metadata": {
+    "bytes": 8624888,
+    "sha256": "0df04ecc28278fe6506ae78664711f7674e058a9d205dd518a0d4982032622a9",
+    "version": 2,
+    "chunks": 2,
+    "validation": "container-only-not-mesh-or-visual-approval"
+  },
+  "modelUrl": "https://v3b.fal.media/files/b/0aab61a6/GVqRnbFXoqxFGQfU8VML0_model.glb"
+}

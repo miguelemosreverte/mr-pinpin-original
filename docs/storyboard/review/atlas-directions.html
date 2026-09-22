@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>PinPin directions</title>
+  <script src="../icons.js" defer></script>
+  <script src="../atlas-directions.js" defer></script>
+  <style>
+    * {box-sizing:border-box;letter-spacing:0}
+    body {margin:0;background:#f5f7f6;color:#23372d;font:15px system-ui,sans-serif}
+    main {max-width:1040px;margin:auto;padding:20px}
+    header {display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:18px}
+    h1 {font-size:24px;margin:0 0 4px} p {margin:0;color:#5c665f}
+    nav {display:flex;align-items:center;gap:8px}
+    button,a {color:inherit} button {width:44px;height:44px;display:grid;place-items:center;border:1px solid #abbab0;border-radius:6px;background:white;cursor:pointer}
+    button:hover {background:#e4eee8} button:disabled {opacity:.4;cursor:default}
+    button:focus-visible,a:focus-visible {outline:3px solid #b95559;outline-offset:3px}
+    svg {width:20px;height:20px} output {width:26px;text-align:center;font-variant-numeric:tabular-nums}
+    #directions {display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+    figure {margin:0;min-width:0;border:1px solid #bdc9c1;border-radius:6px;overflow:hidden;background:white}
+    figcaption {display:flex;justify-content:space-between;padding:8px 10px;font-variant-numeric:tabular-nums}
+    figcaption span {color:#66736b;font-size:13px}
+    canvas {display:block;width:100%;height:144px;background:#d8e5de}
+    footer {display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:18px;font-size:13px}
+    #status {color:#94513f}
+    @media(max-width:850px) {#directions {grid-template-columns:repeat(3,minmax(0,1fr))}}
+    @media(max-width:600px) {main {padding:12px} #directions {grid-template-columns:repeat(2,minmax(0,1fr));gap:8px} h1 {font-size:22px}}
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <div><h1>PinPin directions</h1><p>Approximate azimuths</p></div>
+      <nav aria-label="Animation and scale">
+        <button id="play" aria-label="Pause" title="Pause"><i data-lucide="pause" aria-hidden="true"></i></button>
+        <button id="step" aria-label="Next frame" title="Next frame"><i data-lucide="step-forward" aria-hidden="true"></i></button>
+        <output id="frame" aria-label="Frame">1/4</output>
+        <button id="smaller" aria-label="Actual size" title="Actual size" disabled><i data-lucide="zoom-out" aria-hidden="true"></i></button>
+        <output id="scale" aria-label="Scale">1x</output>
+        <button id="larger" aria-label="Enlarge" title="Enlarge"><i data-lucide="zoom-in" aria-hidden="true"></i></button>
+      </nav>
+    </header>
+    <div id="directions"></div>
+    <footer><a href="../atlas-webgpu.html?spriteMode=crisp">The Shire</a><span>Artistic views; angle spacing is approximate</span><span id="status" role="status">Loading</span></footer>
+  </main>
+  <script>
+    addEventListener('DOMContentLoaded', async () => {
+      const spec=window.atlasDirections, reduced=matchMedia('(prefers-reduced-motion: reduce)');
+      const play=document.getElementById('play'), status=document.getElementById('status');
+      const images=new Map(), views=[];
+      let paused=reduced.matches, frame=0, zoom=1, request=0, last=0, elapsed=0, atlas;
+      function controls() {
+        const label=paused ? 'Play' : 'Pause';
+        play.setAttribute('aria-label',label); play.title=label;
+        play.innerHTML='<i data-lucide="'+(paused ? 'play' : 'pause')+'" aria-hidden="true"></i>';
+        document.getElementById('scale').textContent=zoom+'x';
+        document.getElementById('smaller').disabled=zoom===1;
+        document.getElementById('larger').disabled=zoom===2;
+        window.lucide.createIcons();
+      }
+      function draw() {
+        document.getElementById('frame').textContent=(frame+1)+'/4';
+        for (const {canvas,direction} of views) {
+          const width=canvas.clientWidth, height=canvas.clientHeight, ratio=devicePixelRatio || 1;
+          const pixelWidth=Math.round(width*ratio), pixelHeight=Math.round(height*ratio);
+          if (canvas.width!==pixelWidth || canvas.height!==pixelHeight) {canvas.width=pixelWidth;canvas.height=pixelHeight;}
+          const ctx=canvas.getContext('2d'); ctx.setTransform(ratio,0,0,ratio,0,0);
+          ctx.drawImage(atlas,600-width/2,660-height/2,width,height,0,0,width,height);
+          const {rect,anchor}=direction.frames[frame], scale=spec.displayWidth/direction.referenceWidth*zoom;
+          ctx.drawImage(images.get(direction.src),...rect,width/2-anchor[0]*scale,height/2+spec.displayWidth*zoom/2-anchor[1]*scale,rect[2]*scale,rect[3]*scale);
+          canvas.dataset.frame=String(frame); canvas.dataset.scale=String(zoom);
+        }
+      }
+      function tick(now) {
+        request=0;
+        if (paused || document.hidden) return;
+        elapsed+=last ? Math.min(now-last,80) : 0; last=now;
+        if (elapsed>=190) {elapsed%=190;frame=(frame+1)%4;draw();}
+        request=requestAnimationFrame(tick);
+      }
+      function run() {
+        cancelAnimationFrame(request);request=0;last=0;
+        if (!paused && !document.hidden) request=requestAnimationFrame(tick);
+      }
+      async function load(src) {const image=new Image();image.src='../'+src;await image.decode();return image;}
+      controls();
+      try {
+        atlas=await load('images/atlas/shire-v1.png');
+        for (const sheet of spec.sheets) images.set(sheet.src,await load(sheet.runtimeSrc || sheet.src));
+        for (const direction of spec.directions) {
+          const figure=document.createElement('figure'), caption=document.createElement('figcaption'), canvas=document.createElement('canvas');
+          caption.textContent=direction.angle+' deg';
+          const sheet=document.createElement('span');sheet.textContent=direction.angle%30 ? 'Intermediate' : 'Original';caption.append(sheet);
+          canvas.setAttribute('aria-label','PinPin heading '+direction.angle+' degrees');
+          figure.append(caption,canvas);document.getElementById('directions').append(figure);views.push({canvas,direction});
+        }
+        play.addEventListener('click',() => {paused=!paused;controls();run();});
+        document.getElementById('step').addEventListener('click',() => {paused=true;frame=(frame+1)%4;controls();draw();run();});
+        const resize=value => {zoom=value;controls();draw();};
+        document.getElementById('smaller').addEventListener('click',() => resize(1));
+        document.getElementById('larger').addEventListener('click',() => resize(2));
+        new ResizeObserver(draw).observe(document.getElementById('directions'));
+        document.addEventListener('visibilitychange',run);
+        reduced.addEventListener('change',event => {if(event.matches){paused=true;controls();run();}});
+        addEventListener('pagehide',() => cancelAnimationFrame(request));
+        addEventListener('pageshow',run);
+        status.textContent=spec.directions.reduce((sum,direction)=>sum+direction.frames.length,0)+' frames';document.body.dataset.ready='true';draw();run();
+      } catch(error) {status.textContent='Artwork unavailable';console.error(error);}
+    });
+  </script>
+</body>
+</html>

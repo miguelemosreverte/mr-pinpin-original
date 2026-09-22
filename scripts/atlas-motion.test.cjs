@@ -17,7 +17,7 @@ async function harness(geometry=straight,{reduced=false,directions,broken=[]}={}
   const canvas={dataset:{},getContext:()=>ctx};
   const media={matches:reduced,addEventListener(type,fn){this[type]=fn;}};
   const document={hidden:false,addEventListener(type,fn){documentEvents[type]=fn;}};
-  const context=vm.createContext({window:{atlasDirections:directions},document,matchMedia:()=>media,
+  const context=vm.createContext({window:{atlasDirections:directions,location:{search:'?spriteMode=crisp'}},URLSearchParams,document,matchMedia:()=>media,
     localStorage:{getItem:()=>preference,setItem:(key,value)=>{preference=value;}},
     addEventListener:(type,fn)=>{events[type]=fn;},
     requestAnimationFrame:fn=>{raf.set(++serial,fn);return serial;},cancelAnimationFrame:id=>raf.delete(id),

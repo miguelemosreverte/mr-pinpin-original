@@ -21,7 +21,7 @@ test('derived network is opt-in, bounded and replaces all seven branch centers',
   const raw=scope.window.graphFor(routes);
   assert.equal(raw.junctions.length,0,'generic/synthetic graph contract stays unchanged');
   assert.equal(graph.junctions.filter(j=>j.kind==='branch').length,7);
-  // The encircling road adds 100 baked segments and two three-way junctions.
+  // The contoured encircling road adds 129 baked segments and two three-way junctions.
   assert(graph.nodeCount<=650,'bounded initialization and planner work: '+graph.nodeCount);
   for(const junction of graph.junctions.filter(j=>j.kind==='branch')) {
     assert.equal(junction.paths.length,3,'one connection per approach/exit pair');

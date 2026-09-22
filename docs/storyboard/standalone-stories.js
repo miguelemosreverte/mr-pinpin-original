@@ -15,6 +15,7 @@
   }
 
   function complete(story, chapter = story?.number ?? 1) {
+    if (story?.id === 'home-sweet-home') return completeBedtime(story);
     const number = chapterNumber(chapter);
     if (!number || story?.id !== 'timber-tractor' ||
         (number === 1 ? story.number !== undefined && story.number !== 1 : story.number !== 2) ||
@@ -73,7 +74,39 @@
         ({...spread, scenes:spread.scenes.map(index => index + offset)}))]};
   }
 
+  function completeBedtime(story) {
+    const homePrefix = 'images/standalone/home-sweet-home/';
+    if (story?.id !== 'home-sweet-home' || story.number !== 3 || !localized(story.title) || !localized(story.cover) ||
+        !languages.every(lang => story.cover[lang] === homePrefix + `title-${lang}-v1.png`) ||
+        !Array.isArray(story.scenes) || story.scenes.length !== 21 ||
+        !Array.isArray(story.spreads) || story.spreads.length !== 21) return false;
+    return story.scenes.every((scene, index) => {
+      const id = index === 0 ? 'bedtime-cover' : 'bedtime-' + String(index).padStart(2, '0');
+      return scene?.id === id && typeof scene.image === 'string' &&
+        (index === 0 ? scene.image === story.cover.en :
+          [1, 2].some(version => scene.image === homePrefix + id + '-v' + version + '.png')) &&
+        scene.width === (index === 0 ? 1024 : 1536) && scene.height === (index === 0 ? 1536 : 1024) &&
+        localized(scene.alt) && languages.every(lang => Array.isArray(scene.paragraphs?.[lang]) &&
+          (index === 0 ? scene.paragraphs[lang].length === 0 : scene.paragraphs[lang].length > 0) &&
+          scene.paragraphs[lang].every(p => typeof p === 'string' && p.trim()));
+    }) && story.spreads.every((spread, index) => spread?.style === (index === 0 ? 'cover' : 'bedtime') &&
+      spread.paper === (index === 0 ? 'portrait' : 'landscape') &&
+      Array.isArray(spread.scenes) && spread.scenes.length === 1 && spread.scenes[0] === index);
+  }
+
   async function load(id, legacyChapter) {
+    if (id === 'home-sweet-home') {
+      try {
+        const response = await fetch('stories/home-sweet-home.json', {cache:'no-cache'});
+        if (!response.ok) return null;
+        const story = await response.json();
+        if (story.id !== id || !complete(story)) return null;
+        // A draft manifest alone must not unlock Home while its artwork is still arriving.
+        const assets = [...new Set([...Object.values(story.cover), ...story.scenes.map(scene => scene.image)])];
+        const ready = await Promise.all(assets.map(async src => (await fetch(src, {method:'HEAD'})).ok));
+        return ready.every(Boolean) ? story : null;
+      } catch { return null; }
+    }
     if (id !== 'timber-tractor' || !chapterNumber(legacyChapter)) return null;
     try {
       const parts = await Promise.all(['', '-chapter-02'].map(async suffix => {
@@ -89,9 +122,9 @@
     return {
       title:story.title[lang], scenes:story.scenes.map(scene => ({paragraphs:scene.paragraphs[lang]})),
       images:story.scenes.map((scene, index) => ({...scene, scene:index + 1,
-        src:index === 0 && (story.number ?? 1) === 1 ? story.cover[lang] : scene.image}))
+        src:index === 0 && story.spreads[0]?.style === 'cover' ? story.cover[lang] : scene.image}))
     };
   }
   window.standaloneStories = {complete, compose, load, edition,
-    available:async () => [await load('timber-tractor')].filter(Boolean)};
+    available:async () => (await Promise.all(['timber-tractor', 'home-sweet-home'].map(id => load(id)))).filter(Boolean)};
 })();

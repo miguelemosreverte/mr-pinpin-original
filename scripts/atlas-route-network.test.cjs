@@ -4,6 +4,8 @@ const fs=require('node:fs');
 const path=require('node:path');
 const vm=require('node:vm');
 const {createHash}=require('node:crypto');
+const {blendedDirections,crispDirections,spriteCorners,TRACTOR_BODY_MARGIN,SPRITE_UPDATE_TRAVEL}=require('./atlas-sprite-clearance.cjs');
+const {capsuleClearance,foregroundRoadForEdge}=require('./atlas-roadside-contact.test.cjs');
 const root=path.join(__dirname,'../docs/storyboard');
 const geometrySource=fs.readFileSync(path.join(root,'atlas-geometry.js'),'utf8');
 const motionSource=fs.readFileSync(path.join(root,'atlas-motion.js'),'utf8');
@@ -58,6 +60,9 @@ function storyPaths(network) {
 }
 
 test('first two v2 traces remain exact; picnic return moves clear of the blanket',()=>{
+  assert.equal(createHash('sha256').update(JSON.stringify(geometry.routes.slice(0,8))).digest('hex'),
+    '872521b308e61a89aaee3d89ad09472a51723f7f20aa30e2722cc5068549d259',
+    'all eight approved v9 routes remain exact');
   assert.equal(createHash('sha256').update(JSON.stringify(geometry.routes.slice(0,2))).digest('hex'),
     '6a600497abd28e5d5f24627a9a185927d5c4eeb51d28758b6ff12f75c8a5ee08',
     'Home/lake and lake/elder coordinates, identities, colors and endpoints stay unchanged');
@@ -76,7 +81,7 @@ test('first two v2 traces remain exact; picnic return moves clear of the blanket
 test('purposeful network stays interior, bounded and explicitly joined',()=>{
   assert.equal(geometry.routes.length,9);
   assert.equal(new Set(routes.map(r=>r.id)).size,routes.length);
-  assert(routes.reduce((count,r)=>count+r.points.length-1,0)<=350,'bounded baked-curve graph work, including the 100-segment encircling road');
+  assert(routes.reduce((count,r)=>count+r.points.length-1,0)<=360,'bounded baked-curve graph work, including the straight lower encircling road');
   for(const route of geometry.routes) for(const point of route.points) {
     assert.equal(point.length,2);
     assert(point.every(v=>Number.isFinite(v) && v>=0 && v<=1),route.id);
@@ -130,7 +135,31 @@ function polygonDistance(a,b) {
   return result;
 }
 
-test('all segments keep feet and the full directional sprite envelope clear of picnic and tractor',()=>{
+test('directional clearance includes crisp hysteresis candidates and every gait frame',()=>{
+  vm.runInNewContext(fs.readFileSync(path.join(root,'atlas-directions.js'),'utf8'),scope);
+  const metadata=scope.window.atlasDirections;
+  const angles=heading=>Array.from(blendedDirections(metadata,heading),d=>d.angle);
+  assert.deepEqual(angles(-10),[330,0]);
+  assert.deepEqual(angles(170),[150,180]);
+  assert.deepEqual(angles(29),[30,60],'quantization can cross the nominal heading boundary');
+  assert.deepEqual(angles(359),[0,30],'quantization wraps through zero');
+  assert.deepEqual(Array.from(crispDirections(metadata,350),d=>d.angle),[345]);
+  assert.deepEqual(Array.from(crispDirections(metadata,353),d=>d.angle),[0,345]);
+  const all=spriteCorners(metadata);
+  assert(-all[0][1]>57,'retain the full all-heading envelope for picnic');
+  for(let heading=0;heading<360;heading+=3.75){
+    const corners=spriteCorners(metadata,heading),[left,top]=corners[0],[right,bottom]=corners[2];
+    for(const d of crispDirections(metadata,heading))for(const f of d.frames){
+      const scale=metadata.displayWidth/d.referenceWidth;
+      assert(left<=-f.anchor[0]*scale && top<=-f.anchor[1]*scale);
+      assert(right>=(f.rect[2]-f.anchor[0])*scale && bottom>=(f.rect[3]-f.anchor[1])*scale);
+    }
+  }
+  assert.equal(TRACTOR_BODY_MARGIN,6);
+  assert.equal(SPRITE_UPDATE_TRAVEL,2.2);
+});
+
+test('all segments keep feet clear; only authored front-road bodies can occlude the tractor',()=>{
   // Original-art survey in world pixels: blanket, food, basket, benches and east stool.
   const picnic=[[1108,603],[1145,598],[1173,600],[1184,611],[1203,605],[1216,608],
     [1216,637],[1190,643],[1170,649],[1144,650],[1107,638]];
@@ -139,24 +168,32 @@ test('all segments keep feet and the full directional sprite envelope clear of p
     [1363,796],[1332,797],[1303,786],[1292,770]];
   vm.runInNewContext(fs.readFileSync(path.join(root,'atlas-directions.js'),'utf8'),scope);
   const metadata=scope.window.atlasDirections;
-  const extent={left:0,right:0,up:0,down:0};
-  for(const direction of metadata.directions) for(const frame of direction.frames) {
-    const scale=metadata.displayWidth/direction.referenceWidth;
-    extent.left=Math.max(extent.left,frame.anchor[0]*scale);
-    extent.right=Math.max(extent.right,(frame.rect[2]-frame.anchor[0])*scale);
-    extent.up=Math.max(extent.up,frame.anchor[1]*scale);
-    extent.down=Math.max(extent.down,(frame.rect[3]-frame.anchor[1])*scale);
-  }
-  assert(extent.up>40 && extent.left>=28,'check actual directional crops, not a foot-only proxy');
-  const corners=[[-extent.left,-extent.up],[extent.right,-extent.up],
-    [extent.right,extent.down],[-extent.left,extent.down]];
-  for(const [name,obstacle] of [['picnic',picnic],['tractor/trailer/boom',tractor]]) for(const {a,b} of [...graph.edges,...derived.edges]) {
+  const allCorners=spriteCorners(metadata);
+  let foregroundOverlaps=0,minimumOtherBody=Infinity;
+  for(const [name,obstacle] of [['picnic',picnic],['tractor/trailer/boom',tractor]]) for(const edge of [...graph.edges,...derived.edges]) {
+    const {a,b}=edge;
     const label=name+' '+JSON.stringify([a,b]);
-    assert(polygonDistance([a,b],obstacle)>=20,'foot clearance along entire segment: '+label);
-    const swept=hull([a,b].flatMap(p=>corners.map(c=>[p[0]+c[0],p[1]+c[1]])));
-    const gap=polygonDistance(swept,obstacle);
-    assert(gap>=14,'full sprite clearance '+gap.toFixed(2)+'px: '+label);
+    const footMargin=name==='picnic'?20:TRACTOR_BODY_MARGIN+SPRITE_UPDATE_TRAVEL;
+    assert(polygonDistance([a,b],obstacle)>=footMargin,'foot clearance along entire segment: '+label);
+    if(name!=='picnic'){
+      assert(capsuleClearance(edge,obstacle)>=footMargin,'swept foot capsule clearance: '+label);
+    }
+    const heading=Math.atan2(b[1]-a[1],b[0]-a[0])*180/Math.PI;
+    const envelopes=name==='picnic'?[allCorners]:[spriteCorners(metadata,heading),spriteCorners(metadata,heading+180)];
+    for(const corners of envelopes){
+      const swept=hull([a,b].flatMap(p=>corners.map(c=>[p[0]+c[0],p[1]+c[1]])));
+      const gap=polygonDistance(swept,obstacle);
+      const required=name==='picnic'?14:TRACTOR_BODY_MARGIN+SPRITE_UPDATE_TRAVEL;
+      if(name!=='picnic' && foregroundRoadForEdge(geometry,edge)){
+        if(gap===0)foregroundOverlaps++;
+        continue;
+      }
+      if(name!=='picnic')minimumOtherBody=Math.min(minimumOtherBody,gap);
+      assert(gap>=required,'full sprite clearance '+gap.toFixed(2)+'px (required '+required+'): '+label);
+    }
   }
+  assert(foregroundOverlaps>0,'close front-road body projection legitimately overlaps the vehicle');
+  console.log('minimum non-foreground body clearance:',minimumOtherBody,'foreground overlaps:',foregroundOverlaps);
 });
 
 test('lower road connects Home to tractor below the visible river with bank routes removed',()=>{
@@ -228,7 +265,30 @@ test('new road and retained west bypass genuinely encircle the whole vehicle',()
   const ring=[...loop.points,...west.points.slice(0,top).reverse(),...lower.points.slice(bottom).reverse()];
   for(const p of [[1302,760],[1350,775],[1370,690],[1450,749]])
     assert(inside(p,ring),'tractor front, wheels, raised boom and trailer must be enclosed: '+p);
-  for(const [x,y] of loop.points)assert(x>=1200 && x<=1505.01 && y>=643.99 && y<=875.01,
+  const shared=loop.points.filter(p=>routes.some(r=>r!==loop && r.points.some(q=>distance(p,q)<1e-6)));
+  assert.deepEqual(shared,[lower.points[bottom],west.points[top]],'exactly the two retained connection points');
+  const length=loop.points.slice(1).reduce((sum,p,i)=>sum+distance(p,loop.points[i]),0);
+  assert(length>=627 && length<=629,'bounded close roadside loop with the retained rear arc');
+  assert(Math.abs(Math.min(...loop.points.map(p=>p[1]))-658)<.01,'north arc moves 14px closer');
+  const southY=x=>{
+    for(let i=1;i<loop.points.length;i++){
+      const a=loop.points[i-1],b=loop.points[i];
+      if(a[1]>780 && b[1]>780 && a[0]<=x && b[0]>=x)
+        return a[1]+(b[1]-a[1])*(x-a[0])/(b[0]-a[0]);
+    }
+    assert.fail('missing south-side lane at x='+x);
+  };
+  assert(Math.abs(southY(1345)-813.625)<.01,'41.175px closer below the main wheels than v12');
+  assert(Math.abs(southY(1430)-798.75)<.01,'47.55px closer alongside the trailer than v12');
+  assert(southY(1345)-southY(1430)>=14,'south lane follows the diagonal vehicle underside');
+  assert(Math.max(...loop.points.map(p=>p[1]))<846,'front road never retreats toward the old y850 line');
+  const rear=loop.points.filter(([x,y])=>x>=1460 && x<=1485 && y<750);
+  assert(rear.length>=3,'continuous close rear-trailer section');
+  assert(rear.every(([,y])=>y>=710 && y<=715),'rear section follows the clear dirt directly above the trailer');
+  assert(rear.some(([x])=>x>=1475) && rear.some(([x])=>x<=1468),'useful length beside the trailer');
+  for(const {a,b} of derived.edges)for(const foot of [[1360,720],[1348,720]])
+    assert(pointSegment(foot,a,b)>=23,'banner foot retains its 17px radius plus 6px buffer');
+  for(const [x,y] of loop.points)assert(x>=1200 && x<=1505.01 && y>=657.99 && y<=875.01,
     'compact in-map perimeter, not an off-map spur');
   for(let i=1;i<loop.points.length-1;i++){
     const [a,b,c]=loop.points.slice(i-1,i+2);
@@ -236,6 +296,43 @@ test('new road and retained west bypass genuinely encircle the whole vehicle',()
       (b[1]-a[1])*(c[1]-b[1]))/(distance(a,b)*distance(b,c)))))*180/Math.PI;
     assert(turn<=12.1,'bounded heading along the encircling road: '+turn);
   }
+});
+
+test('lower tractor road is one straight diagonal in logical and production geometry',()=>{
+  const loop=routes.find(r=>r.id==='tractor-encircling-loop');
+  const expectedY=x=>825-(x-1280)*.175;
+  const expectedHeading=Math.atan(-.175)*180/Math.PI;
+  for(const network of [loop.points.slice(1).map((b,i)=>({a:loop.points[i],b})),derived.edges]){
+    const spans=[];
+    for(const edge of network){
+      const [a,b]=[edge.a,edge.b].sort((p,q)=>p[0]-q[0]);
+      if(a[1]<=790 || b[1]<=790 || b[0]<=1330 || a[0]>=1440)continue;
+      const left=Math.max(1330,a[0]),right=Math.min(1440,b[0]);
+      for(const x of [left,right]){
+        const y=a[1]+(b[1]-a[1])*(x-a[0])/(b[0]-a[0]);
+        assert(Math.abs(y-expectedY(x))<.01,'entire lower span follows one line, within normalization rounding');
+      }
+      const heading=Math.atan2(b[1]-a[1],b[0]-a[0])*180/Math.PI;
+      assert(Math.abs(heading-expectedHeading)<.01,'constant negative heading parallel to the wheel axis');
+      spans.push([left,right]);
+    }
+    let covered=1330;
+    for(const [left,right] of spans.sort((a,b)=>a[0]-b[0])){
+      assert(left<=covered+1e-6,'no gaps in the straight lower span');
+      covered=Math.max(covered,right);
+    }
+    assert.equal(covered,1440,'straightness covers the full x1330..1440 corridor before the smooth exit');
+  }
+});
+
+test('v13 retains the exact v11/v12 north/rear arc and fork settings',()=>{
+  const points=geometry.routes.find(r=>r.id==='tractor-encircling-loop').points;
+  const rearStart=points.findIndex(([x,y])=>x===.979818 && y===.718687);
+  assert(rearStart>=0,'retained northbound join near (1505,735)');
+  assert.equal(createHash('sha256').update(JSON.stringify(points.slice(rearStart))).digest('hex'),
+    'eb44d3d1f5334368f30da3b5199e9485c783601efadc4a0f2ddae7d76538ecdb');
+  assert.equal(createHash('sha256').update(JSON.stringify(geometry.junctions)).digest('hex'),
+    'eb0194611539a234623331762e3df5260fd7583b7c0268ffbfc8b85aa2d10f73');
 });
 
 test('simple-story-path coverage rejects a dangling lollipop even with no extra leaves',()=>{
@@ -262,7 +359,7 @@ test('home reaches every route vertex and segment midpoint through the productio
   }
 });
 
-test('v9 manual survey excludes rejected v3 from active provenance and runtime media',()=>{
+test('v13 manual survey excludes rejected v3 from active provenance and runtime media',()=>{
   const requests=[];
   const context={window:{},document:{hidden:false,addEventListener(){}},
     matchMedia:()=>({matches:true,addEventListener(){}}),
@@ -284,9 +381,9 @@ test('v9 manual survey excludes rejected v3 from active provenance and runtime m
   assert.equal(geometry.rejectedRoutePlanSource,'images/atlas/shire-routes-v3.png');
   assert(!geometry.generationReview.includes('images/atlas/shire-routes-v3.json'));
   assert.equal(geometry.routeSurveySource,'images/atlas/shire-v1.png');
-  assert.equal(geometry.routeSurveyVersion,9);
+  assert.equal(geometry.routeSurveyVersion,13);
   assert(geometry.routes.slice(2).every(r=>r.provenance===(r.id==='tractor-west-to-picnic'
     ? 'manual-original-art-survey-v7' : r.id==='tractor-encircling-loop'
-      ? 'manual-original-art-survey-v9' : 'manual-original-art-survey-v6')));
+      ? 'manual-original-art-survey-v13' : 'manual-original-art-survey-v6')));
   assert.deepEqual(requests,['images/atlas/pinpin-walk-v1.webp'],'only the existing fallback sprite is requested');
 });

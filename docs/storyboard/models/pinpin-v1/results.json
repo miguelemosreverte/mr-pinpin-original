@@ -1,0 +1,685 @@
+{
+  "url": "http://127.0.0.1:8767/storyboard/review/pinpin-3d.html",
+  "frontAzimuthDegrees": 0,
+  "model": {
+    "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/models/pinpin-v1/model.glb",
+    "bytes": 9015168,
+    "sha256": "e6fe566a1b8daf0d7f4a8a5a57d648c3c0df8376f567fa2a1a3c33917eb0960e",
+    "meshes": 1,
+    "materials": 1,
+    "images": 2,
+    "animations": 0,
+    "extensionsUsed": [
+      "EXT_texture_webp"
+    ],
+    "extensionsRequired": [
+      "EXT_texture_webp"
+    ],
+    "nodes": [
+      {
+        "index": 0,
+        "name": "world",
+        "mesh": null,
+        "skin": null,
+        "children": [
+          1
+        ]
+      },
+      {
+        "index": 1,
+        "name": "geometry_0",
+        "mesh": 0,
+        "skin": null,
+        "children": []
+      }
+    ],
+    "skins": [],
+    "meshDetails": [
+      {
+        "index": 0,
+        "name": "geometry_0",
+        "primitives": [
+          {
+            "mode": 4,
+            "material": 0,
+            "attributes": [
+              "POSITION",
+              "TEXCOORD_0",
+              "NORMAL"
+            ],
+            "positionCount": 172946,
+            "morphTargets": 0
+          }
+        ]
+      }
+    ],
+    "materialDetails": [
+      {
+        "index": 0,
+        "name": null,
+        "alphaMode": "OPAQUE",
+        "doubleSided": true,
+        "pbrMetallicRoughness": {
+          "baseColorTexture": {
+            "index": 0
+          },
+          "baseColorFactor": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "roughnessFactor": 1,
+          "metallicFactor": 1,
+          "metallicRoughnessTexture": {
+            "index": 1
+          }
+        },
+        "normalTexture": null,
+        "emissiveTexture": null,
+        "occlusionTexture": null,
+        "extensions": {}
+      }
+    ],
+    "imageDetails": [
+      {
+        "index": 0,
+        "name": null,
+        "mimeType": "image/webp",
+        "source": "embedded-bufferView",
+        "bufferView": 2
+      },
+      {
+        "index": 1,
+        "name": null,
+        "mimeType": "image/webp",
+        "source": "embedded-bufferView",
+        "bufferView": 3
+      }
+    ],
+    "textureDetails": [
+      {
+        "index": 0,
+        "source": null,
+        "webpSource": 0,
+        "extensions": {
+          "EXT_texture_webp": {
+            "source": 0
+          }
+        }
+      },
+      {
+        "index": 1,
+        "source": null,
+        "webpSource": 1,
+        "extensions": {
+          "EXT_texture_webp": {
+            "source": 1
+          }
+        }
+      }
+    ],
+    "animationDetails": [],
+    "separateEyeGeometry": "Not established; mesh names and rendered eye markings alone are not proof of independent eye geometry."
+  },
+  "views": [
+    {
+      "label": "desktop",
+      "width": 1440,
+      "errors": [],
+      "browserWarnings": [],
+      "failedRequests": [],
+      "httpErrors": [],
+      "screenshots": {
+        "front": {
+          "camera": {
+            "position": [
+              0,
+              1.4761870792485134,
+              6.630288482222495
+            ],
+            "target": [
+              0,
+              0.9457640006707135,
+              0
+            ],
+            "distance": 6.65147156648664
+          },
+          "azimuth": 0,
+          "pixels": {
+            "colors": 465,
+            "lumaRange": 234.66666666666669,
+            "modelPixels": 3729,
+            "bounds": {
+              "left": 89,
+              "top": 50,
+              "right": 151,
+              "bottom": 134
+            },
+            "hash": 4199525451
+          }
+        },
+        "side": {
+          "camera": {
+            "position": [
+              6.630288482222495,
+              1.4761870792485134,
+              4.0598807835886705e-16
+            ],
+            "target": [
+              0,
+              0.9457640006707135,
+              0
+            ],
+            "distance": 6.65147156648664
+          },
+          "azimuth": 1.5707963267948966,
+          "pixels": {
+            "colors": 304,
+            "lumaRange": 220.66666666666669,
+            "modelPixels": 4824,
+            "bounds": {
+              "left": 77,
+              "top": 51,
+              "right": 162,
+              "bottom": 132
+            },
+            "hash": 3266399386
+          }
+        },
+        "rear": {
+          "camera": {
+            "position": [
+              8.119761567177341e-16,
+              1.4761870792485134,
+              -6.630288482222495
+            ],
+            "target": [
+              0,
+              0.9457640006707135,
+              0
+            ],
+            "distance": 6.65147156648664
+          },
+          "azimuth": 3.141592653589793,
+          "pixels": {
+            "colors": 287,
+            "lumaRange": 224.66666666666669,
+            "modelPixels": 4123,
+            "bounds": {
+              "left": 87,
+              "top": 51,
+              "right": 152,
+              "bottom": 137
+            },
+            "hash": 1388506995
+          }
+        }
+      },
+      "passed": true,
+      "initial": {
+        "loaded": true,
+        "loading": false,
+        "meshes": 1,
+        "triangles": 195296,
+        "bounds": {
+          "min": [
+            -0.3749419152736664,
+            -0.39119502902030945,
+            -0.48889464139938354
+          ],
+          "max": [
+            0.3878030776977539,
+            0.38666632771492004,
+            0.4980678856372833
+          ],
+          "size": [
+            0.7627449929714203,
+            0.7778613567352295,
+            0.9869625270366669
+          ],
+          "center": [
+            0.006430581212043762,
+            -0.002264350652694702,
+            0.00458662211894989
+          ]
+        },
+        "modelUrl": "http://127.0.0.1:8767/storyboard/models/pinpin-v1/model.glb",
+        "error": null,
+        "frames": 14,
+        "autoRotate": true,
+        "animationsPlayed": 0,
+        "threeRevision": "180",
+        "viewAxes": {
+          "front": "+Z",
+          "rear": "-Z",
+          "left": "-X",
+          "right": "+X",
+          "underside": "-Y"
+        },
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "pixelRatio": 1
+        },
+        "floorVisible": true,
+        "camera": {
+          "position": [
+            4.04283418638929,
+            2.462870056988378,
+            5.059244504372818
+          ],
+          "target": [
+            0,
+            0.9457640006707135,
+            0
+          ],
+          "distance": 6.651471566486641
+        },
+        "displayedBounds": {
+          "min": [
+            -0.9273847451066396,
+            0,
+            -1.2
+          ],
+          "max": [
+            0.9273847451066396,
+            1.891528001341427,
+            1.2
+          ]
+        },
+        "animationsAvailable": 0
+      },
+      "orbit": {
+        "angleChange": 1.3069036554830697,
+        "pixelsChanged": true
+      },
+      "zoom": {
+        "method": "wheel",
+        "before": 6.651471566486642,
+        "after": 6.064852295316364
+      },
+      "inspection": {
+        "left": {
+          "camera": {
+            "position": [
+              -6.630288482222495,
+              1.4761870792485134,
+              4.0598807835886705e-16
+            ],
+            "target": [
+              0,
+              0.9457640006707135,
+              0
+            ],
+            "distance": 6.65147156648664
+          },
+          "pixels": {
+            "colors": 454,
+            "lumaRange": 233.33333333333334,
+            "modelPixels": 4805,
+            "bounds": {
+              "left": 78,
+              "top": 51,
+              "right": 162,
+              "bottom": 133
+            },
+            "hash": 2642666226
+          }
+        },
+        "underside": {
+          "camera": {
+            "position": [
+              0,
+              -5.70163395535466,
+              0.23275397743095985
+            ],
+            "target": [
+              0,
+              0.9457640006707135,
+              0
+            ],
+            "distance": 6.6514715664866415
+          },
+          "pixels": {
+            "colors": 226,
+            "lumaRange": 225.66666666666669,
+            "modelPixels": 4920,
+            "bounds": {
+              "left": 87,
+              "top": 41,
+              "right": 151,
+              "bottom": 142
+            },
+            "hash": 3886251678
+          }
+        }
+      },
+      "final": {
+        "loaded": true,
+        "loading": false,
+        "meshes": 1,
+        "triangles": 195296,
+        "bounds": {
+          "min": [
+            -0.3749419152736664,
+            -0.39119502902030945,
+            -0.48889464139938354
+          ],
+          "max": [
+            0.3878030776977539,
+            0.38666632771492004,
+            0.4980678856372833
+          ],
+          "size": [
+            0.7627449929714203,
+            0.7778613567352295,
+            0.9869625270366669
+          ],
+          "center": [
+            0.006430581212043762,
+            -0.002264350652694702,
+            0.00458662211894989
+          ]
+        },
+        "modelUrl": "http://127.0.0.1:8767/storyboard/models/pinpin-v1/model.glb",
+        "error": null,
+        "frames": 512,
+        "autoRotate": false,
+        "animationsPlayed": 0,
+        "threeRevision": "180",
+        "viewAxes": {
+          "front": "+Z",
+          "rear": "-Z",
+          "left": "-X",
+          "right": "+X",
+          "underside": "-Y"
+        },
+        "viewport": {
+          "width": 1440,
+          "height": 900,
+          "pixelRatio": 1
+        },
+        "floorVisible": false,
+        "camera": {
+          "position": [
+            0,
+            -5.70163395535466,
+            0.23275397743095985
+          ],
+          "target": [
+            0,
+            0.9457640006707135,
+            0
+          ],
+          "distance": 6.6514715664866415
+        },
+        "displayedBounds": {
+          "min": [
+            -0.9273847451066396,
+            0,
+            -1.2
+          ],
+          "max": [
+            0.9273847451066396,
+            1.891528001341427,
+            1.2
+          ]
+        },
+        "animationsAvailable": 0
+      }
+    },
+    {
+      "label": "mobile",
+      "width": 390,
+      "errors": [],
+      "browserWarnings": [],
+      "failedRequests": [],
+      "httpErrors": [],
+      "screenshots": {
+        "front": {
+          "camera": {
+            "position": [
+              0,
+              2.049708394191235,
+              13.799304919006508
+            ],
+            "target": [
+              0,
+              0.9457640006707135,
+              0
+            ],
+            "distance": 13.843392267493636
+          },
+          "azimuth": 0,
+          "pixels": {
+            "colors": 420,
+            "lumaRange": 209.33333333333331,
+            "modelPixels": 2845,
+            "bounds": {
+              "left": 68,
+              "top": 71,
+              "right": 171,
+              "bottom": 110
+            },
+            "hash": 970435456
+          }
+        },
+        "side": {
+          "camera": {
+            "position": [
+              13.799304919006508,
+              2.049708394191235,
+              8.449637299759823e-16
+            ],
+            "target": [
+              0,
+              0.9457640006707135,
+              0
+            ],
+            "distance": 13.843392267493636
+          },
+          "azimuth": 1.5707963267948966,
+          "pixels": {
+            "colors": 291,
+            "lumaRange": 195.66666666666666,
+            "modelPixels": 3719,
+            "bounds": {
+              "left": 49,
+              "top": 71,
+              "right": 188,
+              "bottom": 109
+            },
+            "hash": 1045077523
+          }
+        },
+        "rear": {
+          "camera": {
+            "position": [
+              1.6899274599519646e-15,
+              2.049708394191235,
+              -13.799304919006508
+            ],
+            "target": [
+              0,
+              0.9457640006707135,
+              0
+            ],
+            "distance": 13.843392267493636
+          },
+          "azimuth": 3.141592653589793,
+          "pixels": {
+            "colors": 277,
+            "lumaRange": 202.66666666666666,
+            "modelPixels": 3036,
+            "bounds": {
+              "left": 67,
+              "top": 71,
+              "right": 173,
+              "bottom": 110
+            },
+            "hash": 2408677712
+          }
+        }
+      },
+      "passed": true,
+      "initial": {
+        "loaded": true,
+        "loading": false,
+        "meshes": 1,
+        "triangles": 195296,
+        "bounds": {
+          "min": [
+            -0.3749419152736664,
+            -0.39119502902030945,
+            -0.48889464139938354
+          ],
+          "max": [
+            0.3878030776977539,
+            0.38666632771492004,
+            0.4980678856372833
+          ],
+          "size": [
+            0.7627449929714203,
+            0.7778613567352295,
+            0.9869625270366669
+          ],
+          "center": [
+            0.006430581212043762,
+            -0.002264350652694702,
+            0.00458662211894989
+          ]
+        },
+        "modelUrl": "http://127.0.0.1:8767/storyboard/models/pinpin-v1/model.glb",
+        "error": null,
+        "frames": 18,
+        "autoRotate": true,
+        "animationsPlayed": 0,
+        "threeRevision": "180",
+        "viewAxes": {
+          "front": "+Z",
+          "rear": "-Z",
+          "left": "-X",
+          "right": "+X",
+          "underside": "-Y"
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "pixelRatio": 2
+        },
+        "floorVisible": true,
+        "camera": {
+          "position": [
+            8.414159025591744,
+            4.10324487374751,
+            10.52956560831974
+          ],
+          "target": [
+            0,
+            0.9457640006707135,
+            0
+          ],
+          "distance": 13.843392267493638
+        },
+        "displayedBounds": {
+          "min": [
+            -0.9273847451066396,
+            0,
+            -1.2
+          ],
+          "max": [
+            0.9273847451066396,
+            1.891528001341427,
+            1.2
+          ]
+        },
+        "animationsAvailable": 0
+      },
+      "orbit": {
+        "angleChange": 0.37743890424235194,
+        "pixelsChanged": true
+      },
+      "zoom": {
+        "method": "two-finger pinch",
+        "before": 13.843392267493677,
+        "after": 8.652120167183547,
+        "pageScale": 1
+      },
+      "final": {
+        "loaded": true,
+        "loading": false,
+        "meshes": 1,
+        "triangles": 195296,
+        "bounds": {
+          "min": [
+            -0.3749419152736664,
+            -0.39119502902030945,
+            -0.48889464139938354
+          ],
+          "max": [
+            0.3878030776977539,
+            0.38666632771492004,
+            0.4980678856372833
+          ],
+          "size": [
+            0.7627449929714203,
+            0.7778613567352295,
+            0.9869625270366669
+          ],
+          "center": [
+            0.006430581212043762,
+            -0.002264350652694702,
+            0.00458662211894989
+          ]
+        },
+        "modelUrl": "http://127.0.0.1:8767/storyboard/models/pinpin-v1/model.glb",
+        "error": null,
+        "frames": 554,
+        "autoRotate": false,
+        "animationsPlayed": 0,
+        "threeRevision": "180",
+        "viewAxes": {
+          "front": "+Z",
+          "rear": "-Z",
+          "left": "-X",
+          "right": "+X",
+          "underside": "-Y"
+        },
+        "viewport": {
+          "width": 390,
+          "height": 844,
+          "pixelRatio": 2
+        },
+        "floorVisible": true,
+        "camera": {
+          "position": [
+            1.6899274599519646e-15,
+            2.049708394191235,
+            -13.799304919006508
+          ],
+          "target": [
+            0,
+            0.9457640006707135,
+            0
+          ],
+          "distance": 13.843392267493636
+        },
+        "displayedBounds": {
+          "min": [
+            -0.9273847451066396,
+            0,
+            -1.2
+          ],
+          "max": [
+            0.9273847451066396,
+            1.891528001341427,
+            1.2
+          ]
+        },
+        "animationsAvailable": 0
+      }
+    }
+  ],
+  "passed": true
+}

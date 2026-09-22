@@ -1,0 +1,4329 @@
+{
+  "version": 1,
+  "auditedAt": "2026-09-21 21:19:28 UTC",
+  "scope": "Current production PinPin, Mama, Mr. Pompom profiles 0 and 180, plus old PinPin 0. Four source frames each. No runtime or image-generation changes.",
+  "methodology": {
+    "type": "Manual landmark audit with source-pixel crosshair review; not frame-count or whole-image hash inference.",
+    "landmark": "Representative exposed distal toe-pad point on each visible paw, not an identified anatomical digit. Annotated crosshairs were visually reviewed.",
+    "sourceCoordinates": "Zero-origin PNG sheet pixels, x right, y down. Source originals are 1254x1254.",
+    "normalization": "bodyAnchorSource = cropRect.xy + frame.anchor. anchorRelativeXY = sourceXY - bodyAnchorSource; normalizedXY = anchorRelativeXY / direction.referenceWidth. For 180, forwardNormalizedX negates normalized x.",
+    "anchorCaveat": "The runtime anchor is authored near the feet, not an independently tracked hip/shoulder. Low anchor-relative y range partly reflects baseline alignment. Horizontal pose holding is more independent; no assertion of absolute anatomical immobility follows.",
+    "confidence": "Near toe location +/-3 source pixels per axis; partial far toe +/-5. These are visual picking bounds, not statistical confidence intervals. A near-toe range <=6 px is unresolved at this precision, not proof of exact zero.",
+    "limbs": "nearFore/nearHind name the visible near-side components. farFore is a probable attribution for underbelly/behind-forepaw patches; the hidden proximal connection prevents guaranteed identity continuity. Far hind toes are unobserved. Null is not a stationary coordinate.",
+    "missingData": "No interpolation, zero filling, or reuse of visible coordinates for hidden frames. Partial-sample ranges are not full-cycle ranges.",
+    "cycleCriterion": "Look for identifiable per-leg stance, lift, swing and return in frame order 0-1-2-3-0. Mere pixel differences, vertical bob or appearing/disappearing behind another limb do not certify a complete four-leg cycle.",
+    "pixelCheck": {
+      "measuredPoints": 76,
+      "minAlpha": 240,
+      "meaning": "All marked points land on colored paw pixels. This checks placement, not anatomical identity."
+    }
+  },
+  "independentBodyCrosscheck": {
+    "scope": "Bounded independent-landmark crosscheck only: PinPin 180 nearHind and Mama 0 nearFore, four frames each. Original toe picks unchanged.",
+    "landmark": "Manually picked center of visible near-ear inner concha (dark opening), source PNG pixels. Ear is independent of foot-based rendering anchor. Full-body 2x and ear-detail 4x grids reviewed, then ear/toe crosshair overlays reviewed.",
+    "uncertainty": {
+      "toePickingPxPerAxis": 3,
+      "earPickingPxPerAxis": 3,
+      "toeMinusEarWorstCasePxPerAxis": 6,
+      "peakToPeakWorstCasePxPerAxis": 12,
+      "interpretation": "Conservative additive picking bounds, not statistical confidence intervals. Values below these bounds cannot establish exact stillness or resolved small movement."
+    },
+    "limitation": "Ear is an independent visible head landmark, not a rigid skeletal hip/shoulder. Similar ear shape supports correspondence but cannot exclude subtle head rotation or body deformation. No hidden-leg inference or whole-cycle certification.",
+    "profiles": [
+      {
+        "id": "pinpin-180",
+        "leg": "nearHind",
+        "source": "images/atlas/family-production-v1/pinpin-b-v1.png",
+        "sha256": "b6c903cb1f2c03769e9622e23a210e0f258cbf05d779407da129593904b35c63",
+        "referenceWidth": 298.641,
+        "diagnostics": {
+          "bodyGrid": "/tmp/atlas-gait-audit/pinpin-180-body-grid.png",
+          "earDetail": "/tmp/atlas-gait-audit/pinpin-180-ear-detail.png",
+          "annotated": "/tmp/atlas-gait-audit/pinpin-180-ear-toe-landmarks.png"
+        },
+        "frames": [
+          {
+            "frame": 0,
+            "earVisibility": "visible",
+            "earIdentityConfidence": "high for same near-ear feature",
+            "earPositionConfidence": "manual +/-3 source px per axis",
+            "earSourceXY": [
+              100,
+              749
+            ],
+            "toeSourceXY": [
+              255,
+              861
+            ],
+            "toeMinusEarXY": [
+              155,
+              112
+            ],
+            "toeMinusEarNormalizedXY": [
+              0.519,
+              0.375
+            ],
+            "renderAnchorMinusEarXY": [
+              60,
+              120
+            ]
+          },
+          {
+            "frame": 1,
+            "earVisibility": "visible",
+            "earIdentityConfidence": "high for same near-ear feature",
+            "earPositionConfidence": "manual +/-3 source px per axis",
+            "earSourceXY": [
+              411,
+              749
+            ],
+            "toeSourceXY": [
+              566,
+              854
+            ],
+            "toeMinusEarXY": [
+              155,
+              105
+            ],
+            "toeMinusEarNormalizedXY": [
+              0.519,
+              0.3516
+            ],
+            "renderAnchorMinusEarXY": [
+              61,
+              114
+            ]
+          },
+          {
+            "frame": 2,
+            "earVisibility": "visible",
+            "earIdentityConfidence": "high for same near-ear feature",
+            "earPositionConfidence": "manual +/-3 source px per axis",
+            "earSourceXY": [
+              723,
+              749
+            ],
+            "toeSourceXY": [
+              882,
+              854
+            ],
+            "toeMinusEarXY": [
+              159,
+              105
+            ],
+            "toeMinusEarNormalizedXY": [
+              0.5324,
+              0.3516
+            ],
+            "renderAnchorMinusEarXY": [
+              61.5,
+              113
+            ]
+          },
+          {
+            "frame": 3,
+            "earVisibility": "visible",
+            "earIdentityConfidence": "high for same near-ear feature",
+            "earPositionConfidence": "manual +/-3 source px per axis",
+            "earSourceXY": [
+              1039,
+              749
+            ],
+            "toeSourceXY": [
+              1192,
+              855
+            ],
+            "toeMinusEarXY": [
+              153,
+              106
+            ],
+            "toeMinusEarNormalizedXY": [
+              0.5123,
+              0.3549
+            ],
+            "renderAnchorMinusEarXY": [
+              58.5,
+              113
+            ]
+          }
+        ],
+        "toeMinusEarRangePx": [
+          6,
+          7
+        ],
+        "toeMinusEarRangeNormalized": [
+          0.0201,
+          0.0234
+        ],
+        "toeMinusEarRangeWorldPx": [
+          1.1251,
+          1.3126
+        ],
+        "toeMinusEarRangeConservativeBoundsPx": [
+          [
+            0,
+            18
+          ],
+          [
+            0,
+            19
+          ]
+        ],
+        "renderAnchorMinusEarRangePx": [
+          3,
+          7
+        ],
+        "originalToeMinusRenderAnchorRangePx": [
+          3.5,
+          2
+        ],
+        "assessment": "Independent ear-relative excursion is 6 x 7 px, versus 3.5 x 2 relative to foot anchor. The anchor suppressed visible vertical bob: withdraw any implication of only 2 px body-relative movement. Limited-motion rear pose remains supported; exact freezing and resolution of this small movement are not established."
+      },
+      {
+        "id": "mama-0",
+        "leg": "nearFore",
+        "source": "images/atlas/family-production-v1/mama-a-v1.png",
+        "sha256": "181cbfa6b39355a42b003b9a35b2ff1947434c662190ea420874e5bfc34d3e0d",
+        "referenceWidth": 281.616,
+        "diagnostics": {
+          "bodyGrid": "/tmp/atlas-gait-audit/mama-0-body-grid.png",
+          "earDetail": "/tmp/atlas-gait-audit/mama-0-ear-detail.png",
+          "annotated": "/tmp/atlas-gait-audit/mama-0-ear-toe-landmarks.png"
+        },
+        "frames": [
+          {
+            "frame": 0,
+            "earVisibility": "visible",
+            "earIdentityConfidence": "high for same near-ear feature",
+            "earPositionConfidence": "manual +/-3 source px per axis",
+            "earSourceXY": [
+              209,
+              148
+            ],
+            "toeSourceXY": [
+              252,
+              262
+            ],
+            "toeMinusEarXY": [
+              43,
+              114
+            ],
+            "toeMinusEarNormalizedXY": [
+              0.1527,
+              0.4048
+            ],
+            "renderAnchorMinusEarXY": [
+              -39,
+              124
+            ]
+          },
+          {
+            "frame": 1,
+            "earVisibility": "visible",
+            "earIdentityConfidence": "high for same near-ear feature",
+            "earPositionConfidence": "manual +/-3 source px per axis",
+            "earSourceXY": [
+              519,
+              148
+            ],
+            "toeSourceXY": [
+              552,
+              268
+            ],
+            "toeMinusEarXY": [
+              33,
+              120
+            ],
+            "toeMinusEarNormalizedXY": [
+              0.1172,
+              0.4261
+            ],
+            "renderAnchorMinusEarXY": [
+              -37.5,
+              128
+            ]
+          },
+          {
+            "frame": 2,
+            "earVisibility": "visible",
+            "earIdentityConfidence": "high for same near-ear feature",
+            "earPositionConfidence": "manual +/-3 source px per axis",
+            "earSourceXY": [
+              832,
+              148
+            ],
+            "toeSourceXY": [
+              872,
+              262
+            ],
+            "toeMinusEarXY": [
+              40,
+              114
+            ],
+            "toeMinusEarNormalizedXY": [
+              0.142,
+              0.4048
+            ],
+            "renderAnchorMinusEarXY": [
+              -37.5,
+              127
+            ]
+          },
+          {
+            "frame": 3,
+            "earVisibility": "visible",
+            "earIdentityConfidence": "high for same near-ear feature",
+            "earPositionConfidence": "manual +/-3 source px per axis",
+            "earSourceXY": [
+              1145,
+              149
+            ],
+            "toeSourceXY": [
+              1180,
+              268
+            ],
+            "toeMinusEarXY": [
+              35,
+              119
+            ],
+            "toeMinusEarNormalizedXY": [
+              0.1243,
+              0.4226
+            ],
+            "renderAnchorMinusEarXY": [
+              -38.5,
+              129
+            ]
+          }
+        ],
+        "toeMinusEarRangePx": [
+          10,
+          6
+        ],
+        "toeMinusEarRangeNormalized": [
+          0.0355,
+          0.0213
+        ],
+        "toeMinusEarRangeWorldPx": [
+          2.9828,
+          1.7897
+        ],
+        "toeMinusEarRangeConservativeBoundsPx": [
+          [
+            0,
+            22
+          ],
+          [
+            0,
+            18
+          ]
+        ],
+        "renderAnchorMinusEarRangePx": [
+          1.5,
+          5
+        ],
+        "originalToeMinusRenderAnchorRangePx": [
+          11.5,
+          5
+        ],
+        "assessment": "Independent ear-relative excursion is 10 x 6 px, versus 11.5 x 5 relative to foot anchor. Small forward-pose wobble persists without foot-baseline normalization; no large stance/swing sweep observed. Picking bounds include zero, so no pixel-exact or statistically resolved small-motion claim."
+      }
+    ],
+    "conclusion": "Both bounded checks support small body-relative visible-paw excursion rather than a large walking sweep. PinPin vertical excursion is larger than foot-anchor measurement. Do not generalize these two independent checks to other legs/profiles, and do not claim pixel-identical freezing."
+  },
+  "conclusions": {
+    "confirmed": [
+      "The 180-degree near hind paw is practically held: PinPin 3.5x2 px; Mama and Mr. Pompom 6.5x1 px range relative to the authored anchor.",
+      "PinPin/Pompom 0-degree near forepaw horizontal motion is unresolved (4/2.5 px), despite vertical motion of 28/11 px. They bob; they are not wholly static.",
+      "Mama 0-degree near forepaw only wobbles 11.5x5 px while staying extended forward.",
+      "The 0-degree near hind paws and 180-degree near forepaws move appreciably: a blanket 'all legs frozen' claim is false.",
+      "Old PinPin 0 has the same weak fore-aft forepaw pattern (9x26 px) and near-hind shift (35x4 px); new PinPin inherits rather than fixes it."
+    ],
+    "unverifiable": [
+      "Pixel-exact immobility of any anatomical leg.",
+      "Motion of all far hind legs and every hidden/overlapped far forepaw sample.",
+      "Continuous anatomical identity of the underbelly paw across all frames.",
+      "A correct full four-leg forward gait cycle for any audited profile."
+    ],
+    "disposition": "Reject frame-index coverage as gait acceptance evidence. Visible pose holding is confirmed; a complete forward leg cycle is not demonstrated. This audit does not claim every leg is literally frozen.",
+    "firstRepairTargets": [
+      "180-degree visible near hind pose on all three characters.",
+      "0-degree visible near forepaw stance/swing range, especially Mama and Mr. Pompom.",
+      "Old PinPin 0 is not a gold-standard physical gait template."
+    ]
+  },
+  "profiles": [
+    {
+      "id": "pinpin-0",
+      "character": "pinpin",
+      "requestedHeadingDegrees": 0,
+      "source": "images/atlas/family-production-v1/pinpin-a-v1.png",
+      "runtimeSource": "images/atlas/family-production-v1/pinpin-a-v1.webp",
+      "sha256": "ae95c02059f0af05a10fbabfaf354425b21ac1f7adbb434e8c82be5caa600b9c",
+      "referenceWidth": 294,
+      "displayWidth": 56,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "diagnostic": {
+        "cropGrid": "/tmp/atlas-gait-audit/pinpin-0-legs.png",
+        "annotated": "/tmp/atlas-gait-audit/pinpin-0-landmarks.png"
+      },
+      "frames": [
+        {
+          "frame": 0,
+          "cropRect": [
+            23,
+            70,
+            290,
+            205
+          ],
+          "bodyAnchorLocal": [
+            145.5,
+            200
+          ],
+          "bodyAnchorSource": [
+            168.5,
+            270
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                256,
+                240
+              ],
+              "cropXY": [
+                233,
+                170
+              ],
+              "anchorRelativeXY": [
+                87.5,
+                -30
+              ],
+              "normalizedXY": [
+                0.2976,
+                -0.102
+              ],
+              "forwardNormalizedX": 0.2976,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                76,
+                32,
+                17,
+                250
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                50,
+                265
+              ],
+              "cropXY": [
+                27,
+                195
+              ],
+              "anchorRelativeXY": [
+                -118.5,
+                -5
+              ],
+              "normalizedXY": [
+                -0.4031,
+                -0.017
+              ],
+              "forwardNormalizedX": -0.4031,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                96,
+                55,
+                32,
+                244
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                164,
+                262
+              ],
+              "cropXY": [
+                141,
+                192
+              ],
+              "anchorRelativeXY": [
+                -4.5,
+                -8
+              ],
+              "normalizedXY": [
+                -0.0153,
+                -0.0272
+              ],
+              "forwardNormalizedX": -0.0153,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                83,
+                44,
+                23,
+                242
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "cropRect": [
+            335,
+            71,
+            291,
+            206
+          ],
+          "bodyAnchorLocal": [
+            145.5,
+            202
+          ],
+          "bodyAnchorSource": [
+            480.5,
+            273
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                569,
+                260
+              ],
+              "cropXY": [
+                234,
+                189
+              ],
+              "anchorRelativeXY": [
+                88.5,
+                -13
+              ],
+              "normalizedXY": [
+                0.301,
+                -0.0442
+              ],
+              "forwardNormalizedX": 0.301,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                115,
+                63,
+                37,
+                242
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                397,
+                265
+              ],
+              "cropXY": [
+                62,
+                194
+              ],
+              "anchorRelativeXY": [
+                -83.5,
+                -8
+              ],
+              "normalizedXY": [
+                -0.284,
+                -0.0272
+              ],
+              "forwardNormalizedX": -0.284,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                88,
+                46,
+                26,
+                251
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                503,
+                253
+              ],
+              "cropXY": [
+                168,
+                182
+              ],
+              "anchorRelativeXY": [
+                22.5,
+                -20
+              ],
+              "normalizedXY": [
+                0.0765,
+                -0.068
+              ],
+              "forwardNormalizedX": 0.0765,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                95,
+                46,
+                23,
+                251
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "cropRect": [
+            644,
+            71,
+            294,
+            213
+          ],
+          "bodyAnchorLocal": [
+            147.5,
+            208
+          ],
+          "bodyAnchorSource": [
+            791.5,
+            279
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                878,
+                238
+              ],
+              "cropXY": [
+                234,
+                167
+              ],
+              "anchorRelativeXY": [
+                86.5,
+                -41
+              ],
+              "normalizedXY": [
+                0.2942,
+                -0.1395
+              ],
+              "forwardNormalizedX": 0.2942,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                119,
+                67,
+                37,
+                249
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                688,
+                274
+              ],
+              "cropXY": [
+                44,
+                203
+              ],
+              "anchorRelativeXY": [
+                -103.5,
+                -5
+              ],
+              "normalizedXY": [
+                -0.352,
+                -0.017
+              ],
+              "forwardNormalizedX": -0.352,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                49,
+                25,
+                13,
+                251
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                796,
+                256
+              ],
+              "cropXY": [
+                152,
+                185
+              ],
+              "anchorRelativeXY": [
+                4.5,
+                -23
+              ],
+              "normalizedXY": [
+                0.0153,
+                -0.0782
+              ],
+              "forwardNormalizedX": 0.0153,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                97,
+                52,
+                23,
+                250
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "cropRect": [
+            961,
+            71,
+            289,
+            213
+          ],
+          "bodyAnchorLocal": [
+            144.5,
+            209
+          ],
+          "bodyAnchorSource": [
+            1105.5,
+            280
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                1196,
+                251
+              ],
+              "cropXY": [
+                235,
+                180
+              ],
+              "anchorRelativeXY": [
+                90.5,
+                -29
+              ],
+              "normalizedXY": [
+                0.3078,
+                -0.0986
+              ],
+              "forwardNormalizedX": 0.3078,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                88,
+                44,
+                27,
+                250
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                1001,
+                276
+              ],
+              "cropXY": [
+                40,
+                205
+              ],
+              "anchorRelativeXY": [
+                -104.5,
+                -4
+              ],
+              "normalizedXY": [
+                -0.3554,
+                -0.0136
+              ],
+              "forwardNormalizedX": -0.3554,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                80,
+                48,
+                28,
+                241
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                1156,
+                254
+              ],
+              "cropXY": [
+                195,
+                183
+              ],
+              "anchorRelativeXY": [
+                50.5,
+                -26
+              ],
+              "normalizedXY": [
+                0.1718,
+                -0.0884
+              ],
+              "forwardNormalizedX": 0.1718,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                117,
+                70,
+                40,
+                249
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        }
+      ],
+      "legs": {
+        "nearFore": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              4,
+              28
+            ],
+            "sampleRangeNormalized": [
+              0.0136,
+              0.0952
+            ],
+            "sampleRangeWorldPx": [
+              0.7619,
+              5.3333
+            ]
+          },
+          "motionClass": "primarily-vertical-bob",
+          "horizontalMotionResolved": false,
+          "verticalMotionResolved": true,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Horizontal endpoint held within manual uncertainty; visible vertical bob of 28 px, not a fully frozen paw. No clear fore-aft stance sweep."
+        },
+        "nearHind": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              35,
+              4
+            ],
+            "sampleRangeNormalized": [
+              0.119,
+              0.0136
+            ],
+            "sampleRangeWorldPx": [
+              6.6667,
+              0.7619
+            ]
+          },
+          "motionClass": "visible-position-change",
+          "horizontalMotionResolved": true,
+          "verticalMotionResolved": false,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "35 px fore-aft change, especially frame 1: not frozen. Toe remains near rendered baseline; full lift/contact cycle not demonstrated."
+        },
+        "farFore": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              55,
+              18
+            ],
+            "sampleRangeNormalized": [
+              0.1871,
+              0.0612
+            ],
+            "sampleRangeWorldPx": [
+              10.4762,
+              3.4286
+            ]
+          },
+          "motionClass": "visible-position-change",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Exposed underbelly paw changes position. Far-fore assignment probable, with proximal linkage hidden; frame 3 only partially exposed."
+        },
+        "farHind": {
+          "observedFrames": [],
+          "measurement": null,
+          "motionClass": "unverifiable-hidden",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "No separately identifiable far-hind toe in any frame."
+        }
+      }
+    },
+    {
+      "id": "pinpin-180",
+      "character": "pinpin",
+      "requestedHeadingDegrees": 180,
+      "source": "images/atlas/family-production-v1/pinpin-b-v1.png",
+      "runtimeSource": "images/atlas/family-production-v1/pinpin-b-v1.webp",
+      "sha256": "b6c903cb1f2c03769e9622e23a210e0f258cbf05d779407da129593904b35c63",
+      "referenceWidth": 298.641,
+      "displayWidth": 56,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "diagnostic": {
+        "cropGrid": "/tmp/atlas-gait-audit/pinpin-180-legs.png",
+        "annotated": "/tmp/atlas-gait-audit/pinpin-180-landmarks.png"
+      },
+      "frames": [
+        {
+          "frame": 0,
+          "cropRect": [
+            12,
+            650,
+            298,
+            224
+          ],
+          "bodyAnchorLocal": [
+            148,
+            219
+          ],
+          "bodyAnchorSource": [
+            160,
+            869
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                97,
+                852
+              ],
+              "cropXY": [
+                85,
+                202
+              ],
+              "anchorRelativeXY": [
+                -63,
+                -17
+              ],
+              "normalizedXY": [
+                -0.211,
+                -0.0569
+              ],
+              "forwardNormalizedX": 0.211,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                102,
+                48,
+                20,
+                251
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                255,
+                861
+              ],
+              "cropXY": [
+                243,
+                211
+              ],
+              "anchorRelativeXY": [
+                95,
+                -8
+              ],
+              "normalizedXY": [
+                0.3181,
+                -0.0268
+              ],
+              "forwardNormalizedX": -0.3181,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                116,
+                60,
+                33,
+                251
+              ]
+            },
+            "farFore": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "cropRect": [
+            322,
+            649,
+            300,
+            219
+          ],
+          "bodyAnchorLocal": [
+            150,
+            214
+          ],
+          "bodyAnchorSource": [
+            472,
+            863
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                401,
+                848
+              ],
+              "cropXY": [
+                79,
+                199
+              ],
+              "anchorRelativeXY": [
+                -71,
+                -15
+              ],
+              "normalizedXY": [
+                -0.2377,
+                -0.0502
+              ],
+              "forwardNormalizedX": 0.2377,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                94,
+                44,
+                21,
+                250
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                566,
+                854
+              ],
+              "cropXY": [
+                244,
+                205
+              ],
+              "anchorRelativeXY": [
+                94,
+                -9
+              ],
+              "normalizedXY": [
+                0.3148,
+                -0.0301
+              ],
+              "forwardNormalizedX": -0.3148,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                128,
+                69,
+                38,
+                250
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                381,
+                814
+              ],
+              "cropXY": [
+                59,
+                165
+              ],
+              "anchorRelativeXY": [
+                -91,
+                -49
+              ],
+              "normalizedXY": [
+                -0.3047,
+                -0.1641
+              ],
+              "forwardNormalizedX": 0.3047,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                130,
+                68,
+                35,
+                250
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "cropRect": [
+            635,
+            648,
+            300,
+            219
+          ],
+          "bodyAnchorLocal": [
+            149.5,
+            214
+          ],
+          "bodyAnchorSource": [
+            784.5,
+            862
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                707,
+                849
+              ],
+              "cropXY": [
+                72,
+                201
+              ],
+              "anchorRelativeXY": [
+                -77.5,
+                -13
+              ],
+              "normalizedXY": [
+                -0.2595,
+                -0.0435
+              ],
+              "forwardNormalizedX": 0.2595,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                142,
+                78,
+                43,
+                251
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                882,
+                854
+              ],
+              "cropXY": [
+                247,
+                206
+              ],
+              "anchorRelativeXY": [
+                97.5,
+                -8
+              ],
+              "normalizedXY": [
+                0.3265,
+                -0.0268
+              ],
+              "forwardNormalizedX": -0.3265,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                122,
+                67,
+                36,
+                250
+              ]
+            },
+            "farFore": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "cropRect": [
+            951,
+            649,
+            294,
+            218
+          ],
+          "bodyAnchorLocal": [
+            146.5,
+            213
+          ],
+          "bodyAnchorSource": [
+            1097.5,
+            862
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                1039,
+                847
+              ],
+              "cropXY": [
+                88,
+                198
+              ],
+              "anchorRelativeXY": [
+                -58.5,
+                -15
+              ],
+              "normalizedXY": [
+                -0.1959,
+                -0.0502
+              ],
+              "forwardNormalizedX": 0.1959,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                103,
+                48,
+                23,
+                252
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                1192,
+                855
+              ],
+              "cropXY": [
+                241,
+                206
+              ],
+              "anchorRelativeXY": [
+                94.5,
+                -7
+              ],
+              "normalizedXY": [
+                0.3164,
+                -0.0234
+              ],
+              "forwardNormalizedX": -0.3164,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                97,
+                46,
+                23,
+                251
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                1006,
+                816
+              ],
+              "cropXY": [
+                55,
+                167
+              ],
+              "anchorRelativeXY": [
+                -91.5,
+                -46
+              ],
+              "normalizedXY": [
+                -0.3064,
+                -0.154
+              ],
+              "forwardNormalizedX": 0.3064,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                131,
+                67,
+                33,
+                249
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        }
+      ],
+      "legs": {
+        "nearFore": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              19,
+              4
+            ],
+            "sampleRangeNormalized": [
+              0.0636,
+              0.0134
+            ],
+            "sampleRangeWorldPx": [
+              3.5628,
+              0.7501
+            ]
+          },
+          "motionClass": "visible-position-change",
+          "horizontalMotionResolved": true,
+          "verticalMotionResolved": false,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "19 px horizontal change: not frozen; only 4 px vertical range. No clear lift of this near paw."
+        },
+        "nearHind": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              3.5,
+              2
+            ],
+            "sampleRangeNormalized": [
+              0.0117,
+              0.0067
+            ],
+            "sampleRangeWorldPx": [
+              0.6563,
+              0.375
+            ]
+          },
+          "motionClass": "near-stationary-visible-pose",
+          "horizontalMotionResolved": false,
+          "verticalMotionResolved": false,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Near-stationary visible toe across all four frames: 3.5 x 2 px anchor-relative range, within manual picking resolution. No visible swing."
+        },
+        "farFore": {
+          "observedFrames": [
+            1,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              0.5,
+              3
+            ],
+            "sampleRangeNormalized": [
+              0.0017,
+              0.01
+            ],
+            "sampleRangeWorldPx": [
+              0.0938,
+              0.5625
+            ]
+          },
+          "motionClass": "partial-observation-no-full-cycle-inference",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Visible lifted paw in frames 1/3; hidden or overlapped in 0/2. Similar visible positions do not establish a stationary leg."
+        },
+        "farHind": {
+          "observedFrames": [],
+          "measurement": null,
+          "motionClass": "unverifiable-hidden",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "No separately identifiable far-hind toe in any frame."
+        }
+      }
+    },
+    {
+      "id": "mama-0",
+      "character": "mama",
+      "requestedHeadingDegrees": 0,
+      "source": "images/atlas/family-production-v1/mama-a-v1.png",
+      "runtimeSource": "images/atlas/family-production-v1/mama-a-v1.webp",
+      "sha256": "181cbfa6b39355a42b003b9a35b2ff1947434c662190ea420874e5bfc34d3e0d",
+      "referenceWidth": 281.616,
+      "displayWidth": 84,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "diagnostic": {
+        "cropGrid": "/tmp/atlas-gait-audit/mama-0-legs.png",
+        "annotated": "/tmp/atlas-gait-audit/mama-0-landmarks.png"
+      },
+      "frames": [
+        {
+          "frame": 0,
+          "cropRect": [
+            29,
+            76,
+            283,
+            201
+          ],
+          "bodyAnchorLocal": [
+            141,
+            196
+          ],
+          "bodyAnchorSource": [
+            170,
+            272
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                252,
+                262
+              ],
+              "cropXY": [
+                223,
+                186
+              ],
+              "anchorRelativeXY": [
+                82,
+                -10
+              ],
+              "normalizedXY": [
+                0.2912,
+                -0.0355
+              ],
+              "forwardNormalizedX": 0.2912,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                75,
+                41,
+                31,
+                250
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                54,
+                266
+              ],
+              "cropXY": [
+                25,
+                190
+              ],
+              "anchorRelativeXY": [
+                -116,
+                -6
+              ],
+              "normalizedXY": [
+                -0.4119,
+                -0.0213
+              ],
+              "forwardNormalizedX": -0.4119,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                62,
+                29,
+                16,
+                251
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                165,
+                265
+              ],
+              "cropXY": [
+                136,
+                189
+              ],
+              "anchorRelativeXY": [
+                -5,
+                -7
+              ],
+              "normalizedXY": [
+                -0.0178,
+                -0.0249
+              ],
+              "forwardNormalizedX": -0.0178,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                53,
+                21,
+                13,
+                250
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "cropRect": [
+            339,
+            75,
+            285,
+            206
+          ],
+          "bodyAnchorLocal": [
+            142.5,
+            201
+          ],
+          "bodyAnchorSource": [
+            481.5,
+            276
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                552,
+                268
+              ],
+              "cropXY": [
+                213,
+                193
+              ],
+              "anchorRelativeXY": [
+                70.5,
+                -8
+              ],
+              "normalizedXY": [
+                0.2503,
+                -0.0284
+              ],
+              "forwardNormalizedX": 0.2503,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                105,
+                62,
+                48,
+                252
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                395,
+                269
+              ],
+              "cropXY": [
+                56,
+                194
+              ],
+              "anchorRelativeXY": [
+                -86.5,
+                -7
+              ],
+              "normalizedXY": [
+                -0.3072,
+                -0.0249
+              ],
+              "forwardNormalizedX": -0.3072,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                86,
+                48,
+                36,
+                250
+              ]
+            },
+            "farFore": {
+              "visibility": "partial-fragment-no-separable-toe",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            },
+            "farHind": {
+              "visibility": "partial-fragment-no-separable-toe",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "cropRect": [
+            652,
+            76,
+            285,
+            204
+          ],
+          "bodyAnchorLocal": [
+            142.5,
+            199
+          ],
+          "bodyAnchorSource": [
+            794.5,
+            275
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                872,
+                262
+              ],
+              "cropXY": [
+                220,
+                186
+              ],
+              "anchorRelativeXY": [
+                77.5,
+                -13
+              ],
+              "normalizedXY": [
+                0.2752,
+                -0.0462
+              ],
+              "forwardNormalizedX": 0.2752,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                73,
+                40,
+                30,
+                244
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                685,
+                270
+              ],
+              "cropXY": [
+                33,
+                194
+              ],
+              "anchorRelativeXY": [
+                -109.5,
+                -5
+              ],
+              "normalizedXY": [
+                -0.3888,
+                -0.0178
+              ],
+              "forwardNormalizedX": -0.3888,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                61,
+                30,
+                20,
+                252
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                795,
+                264
+              ],
+              "cropXY": [
+                143,
+                188
+              ],
+              "anchorRelativeXY": [
+                0.5,
+                -11
+              ],
+              "normalizedXY": [
+                0.0018,
+                -0.0391
+              ],
+              "forwardNormalizedX": 0.0018,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                70,
+                37,
+                26,
+                250
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "cropRect": [
+            965,
+            76,
+            283,
+            207
+          ],
+          "bodyAnchorLocal": [
+            141.5,
+            202
+          ],
+          "bodyAnchorSource": [
+            1106.5,
+            278
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                1180,
+                268
+              ],
+              "cropXY": [
+                215,
+                192
+              ],
+              "anchorRelativeXY": [
+                73.5,
+                -10
+              ],
+              "normalizedXY": [
+                0.261,
+                -0.0355
+              ],
+              "forwardNormalizedX": 0.261,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                81,
+                44,
+                33,
+                251
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                1002,
+                273
+              ],
+              "cropXY": [
+                37,
+                197
+              ],
+              "anchorRelativeXY": [
+                -104.5,
+                -5
+              ],
+              "normalizedXY": [
+                -0.3711,
+                -0.0178
+              ],
+              "forwardNormalizedX": -0.3711,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                81,
+                46,
+                34,
+                250
+              ]
+            },
+            "farFore": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        }
+      ],
+      "legs": {
+        "nearFore": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              11.5,
+              5
+            ],
+            "sampleRangeNormalized": [
+              0.0408,
+              0.0178
+            ],
+            "sampleRangeWorldPx": [
+              3.4302,
+              1.4914
+            ]
+          },
+          "motionClass": "small-pose-wobble",
+          "horizontalMotionResolved": true,
+          "verticalMotionResolved": false,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Small 11.5 x 5 px wobble of the same forward-extended visible pose; not pixel-static, no convincing stance-to-swing displacement."
+        },
+        "nearHind": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              29.5,
+              2
+            ],
+            "sampleRangeNormalized": [
+              0.1048,
+              0.0071
+            ],
+            "sampleRangeWorldPx": [
+              8.7992,
+              0.5966
+            ]
+          },
+          "motionClass": "visible-position-change",
+          "horizontalMotionResolved": true,
+          "verticalMotionResolved": false,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "29.5 px horizontal displacement, especially frame 1: not frozen. No independently established lift phase."
+        },
+        "farFore": {
+          "observedFrames": [
+            0,
+            2
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              5.5,
+              4
+            ],
+            "sampleRangeNormalized": [
+              0.0195,
+              0.0142
+            ],
+            "sampleRangeWorldPx": [
+              1.6405,
+              1.1931
+            ]
+          },
+          "motionClass": "partial-observation-no-full-cycle-inference",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Underbelly distal paw is identifiable in 0/2. In frame 1 a dark sliver overlaps the near forepaw without a reliable separate toe; frame 3 hidden."
+        },
+        "farHind": {
+          "observedFrames": [],
+          "measurement": null,
+          "motionClass": "unverifiable-hidden",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "No reliable isolated toe. Frame 1 has a probable far-hind fragment behind the near hind leg, but the toe cannot be separated."
+        }
+      }
+    },
+    {
+      "id": "mama-180",
+      "character": "mama",
+      "requestedHeadingDegrees": 180,
+      "source": "images/atlas/family-production-v1/mama-b-v1.png",
+      "runtimeSource": "images/atlas/family-production-v1/mama-b-v1.webp",
+      "sha256": "3a9c04d7fa2b7c52b184032599da341fd39515f8108a16d4596853f31819d399",
+      "referenceWidth": 302.372,
+      "displayWidth": 84,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "diagnostic": {
+        "cropGrid": "/tmp/atlas-gait-audit/mama-180-legs.png",
+        "annotated": "/tmp/atlas-gait-audit/mama-180-landmarks.png"
+      },
+      "frames": [
+        {
+          "frame": 0,
+          "cropRect": [
+            8,
+            649,
+            302,
+            225
+          ],
+          "bodyAnchorLocal": [
+            150,
+            220
+          ],
+          "bodyAnchorSource": [
+            158,
+            869
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                93,
+                856
+              ],
+              "cropXY": [
+                85,
+                207
+              ],
+              "anchorRelativeXY": [
+                -65,
+                -13
+              ],
+              "normalizedXY": [
+                -0.215,
+                -0.043
+              ],
+              "forwardNormalizedX": 0.215,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                63,
+                30,
+                18,
+                245
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                265,
+                862
+              ],
+              "cropXY": [
+                257,
+                213
+              ],
+              "anchorRelativeXY": [
+                107,
+                -7
+              ],
+              "normalizedXY": [
+                0.3539,
+                -0.0232
+              ],
+              "forwardNormalizedX": -0.3539,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                108,
+                61,
+                44,
+                251
+              ]
+            },
+            "farFore": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "cropRect": [
+            318,
+            648,
+            304,
+            223
+          ],
+          "bodyAnchorLocal": [
+            150.5,
+            218
+          ],
+          "bodyAnchorSource": [
+            468.5,
+            866
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                409,
+                854
+              ],
+              "cropXY": [
+                91,
+                206
+              ],
+              "anchorRelativeXY": [
+                -59.5,
+                -12
+              ],
+              "normalizedXY": [
+                -0.1968,
+                -0.0397
+              ],
+              "forwardNormalizedX": 0.1968,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                64,
+                26,
+                15,
+                247
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                569,
+                859
+              ],
+              "cropXY": [
+                251,
+                211
+              ],
+              "anchorRelativeXY": [
+                100.5,
+                -7
+              ],
+              "normalizedXY": [
+                0.3324,
+                -0.0232
+              ],
+              "forwardNormalizedX": -0.3324,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                96,
+                52,
+                36,
+                250
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                388,
+                820
+              ],
+              "cropXY": [
+                70,
+                172
+              ],
+              "anchorRelativeXY": [
+                -80.5,
+                -46
+              ],
+              "normalizedXY": [
+                -0.2662,
+                -0.1521
+              ],
+              "forwardNormalizedX": 0.2662,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                119,
+                65,
+                46,
+                249
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "cropRect": [
+            631,
+            650,
+            304,
+            221
+          ],
+          "bodyAnchorLocal": [
+            151.5,
+            216
+          ],
+          "bodyAnchorSource": [
+            782.5,
+            866
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                703,
+                854
+              ],
+              "cropXY": [
+                72,
+                204
+              ],
+              "anchorRelativeXY": [
+                -79.5,
+                -12
+              ],
+              "normalizedXY": [
+                -0.2629,
+                -0.0397
+              ],
+              "forwardNormalizedX": 0.2629,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                93,
+                48,
+                33,
+                248
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                889,
+                858
+              ],
+              "cropXY": [
+                258,
+                208
+              ],
+              "anchorRelativeXY": [
+                106.5,
+                -8
+              ],
+              "normalizedXY": [
+                0.3522,
+                -0.0265
+              ],
+              "forwardNormalizedX": -0.3522,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                119,
+                67,
+                47,
+                250
+              ]
+            },
+            "farFore": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "cropRect": [
+            944,
+            649,
+            303,
+            222
+          ],
+          "bodyAnchorLocal": [
+            150.5,
+            217
+          ],
+          "bodyAnchorSource": [
+            1094.5,
+            866
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                1045,
+                851
+              ],
+              "cropXY": [
+                101,
+                202
+              ],
+              "anchorRelativeXY": [
+                -49.5,
+                -15
+              ],
+              "normalizedXY": [
+                -0.1637,
+                -0.0496
+              ],
+              "forwardNormalizedX": 0.1637,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                104,
+                55,
+                38,
+                249
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                1195,
+                859
+              ],
+              "cropXY": [
+                251,
+                210
+              ],
+              "anchorRelativeXY": [
+                100.5,
+                -7
+              ],
+              "normalizedXY": [
+                0.3324,
+                -0.0232
+              ],
+              "forwardNormalizedX": -0.3324,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                95,
+                51,
+                37,
+                251
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                1012,
+                829
+              ],
+              "cropXY": [
+                68,
+                180
+              ],
+              "anchorRelativeXY": [
+                -82.5,
+                -37
+              ],
+              "normalizedXY": [
+                -0.2728,
+                -0.1224
+              ],
+              "forwardNormalizedX": 0.2728,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                107,
+                55,
+                41,
+                249
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        }
+      ],
+      "legs": {
+        "nearFore": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              30,
+              3
+            ],
+            "sampleRangeNormalized": [
+              0.0992,
+              0.0099
+            ],
+            "sampleRangeWorldPx": [
+              8.3341,
+              0.8334
+            ]
+          },
+          "motionClass": "visible-position-change",
+          "horizontalMotionResolved": true,
+          "verticalMotionResolved": false,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "30 px horizontal change: definitely not frozen. Only 3 px vertical range, no clearly sampled lift of this near paw."
+        },
+        "nearHind": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              6.5,
+              1
+            ],
+            "sampleRangeNormalized": [
+              0.0215,
+              0.0033
+            ],
+            "sampleRangeWorldPx": [
+              1.8057,
+              0.2778
+            ]
+          },
+          "motionClass": "near-stationary-visible-pose",
+          "horizontalMotionResolved": true,
+          "verticalMotionResolved": false,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Near-stationary visible toe: 6.5 x 1 px anchor-relative range, just beyond the 6 px nominal manual uncertainty span. No visible swing."
+        },
+        "farFore": {
+          "observedFrames": [
+            1,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              2,
+              9
+            ],
+            "sampleRangeNormalized": [
+              0.0066,
+              0.0298
+            ],
+            "sampleRangeWorldPx": [
+              0.5556,
+              2.5002
+            ]
+          },
+          "motionClass": "partial-observation-no-full-cycle-inference",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Separate lifted paw in 1/3; no separate toe in 0/2. Occluded frames cannot be classified as stationary."
+        },
+        "farHind": {
+          "observedFrames": [],
+          "measurement": null,
+          "motionClass": "unverifiable-hidden",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "No separately identifiable far-hind toe in any frame."
+        }
+      }
+    },
+    {
+      "id": "mr-pompom-0",
+      "character": "mr-pompom",
+      "requestedHeadingDegrees": 0,
+      "source": "images/atlas/family-production-v1/mr-pompom-a-v1.png",
+      "runtimeSource": "images/atlas/family-production-v1/mr-pompom-a-v1.webp",
+      "sha256": "611f2a203382376e30b34e53ebf7512a84c2bdb4f3e41f5b48f839ac4678706a",
+      "referenceWidth": 284.724,
+      "displayWidth": 28,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "diagnostic": {
+        "cropGrid": "/tmp/atlas-gait-audit/mr-pompom-0-legs.png",
+        "annotated": "/tmp/atlas-gait-audit/mr-pompom-0-landmarks.png"
+      },
+      "frames": [
+        {
+          "frame": 0,
+          "cropRect": [
+            36,
+            63,
+            276,
+            207
+          ],
+          "bodyAnchorLocal": [
+            138,
+            202
+          ],
+          "bodyAnchorSource": [
+            174,
+            265
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                251,
+                249
+              ],
+              "cropXY": [
+                215,
+                186
+              ],
+              "anchorRelativeXY": [
+                77,
+                -16
+              ],
+              "normalizedXY": [
+                0.2704,
+                -0.0562
+              ],
+              "forwardNormalizedX": 0.2704,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                128,
+                74,
+                50,
+                252
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                63,
+                260
+              ],
+              "cropXY": [
+                27,
+                197
+              ],
+              "anchorRelativeXY": [
+                -111,
+                -5
+              ],
+              "normalizedXY": [
+                -0.3899,
+                -0.0176
+              ],
+              "forwardNormalizedX": -0.3899,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                86,
+                47,
+                30,
+                247
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                168,
+                258
+              ],
+              "cropXY": [
+                132,
+                195
+              ],
+              "anchorRelativeXY": [
+                -6,
+                -7
+              ],
+              "normalizedXY": [
+                -0.0211,
+                -0.0246
+              ],
+              "forwardNormalizedX": -0.0211,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                98,
+                56,
+                36,
+                250
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "cropRect": [
+            349,
+            63,
+            276,
+            210
+          ],
+          "bodyAnchorLocal": [
+            138,
+            205
+          ],
+          "bodyAnchorSource": [
+            487,
+            268
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                562,
+                259
+              ],
+              "cropXY": [
+                213,
+                196
+              ],
+              "anchorRelativeXY": [
+                75,
+                -9
+              ],
+              "normalizedXY": [
+                0.2634,
+                -0.0316
+              ],
+              "forwardNormalizedX": 0.2634,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                109,
+                63,
+                46,
+                249
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                395,
+                259
+              ],
+              "cropXY": [
+                46,
+                196
+              ],
+              "anchorRelativeXY": [
+                -92,
+                -9
+              ],
+              "normalizedXY": [
+                -0.3231,
+                -0.0316
+              ],
+              "forwardNormalizedX": -0.3231,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                87,
+                46,
+                31,
+                251
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                503,
+                254
+              ],
+              "cropXY": [
+                154,
+                191
+              ],
+              "anchorRelativeXY": [
+                16,
+                -14
+              ],
+              "normalizedXY": [
+                0.0562,
+                -0.0492
+              ],
+              "forwardNormalizedX": 0.0562,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                100,
+                54,
+                31,
+                249
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "cropRect": [
+            659,
+            63,
+            278,
+            208
+          ],
+          "bodyAnchorLocal": [
+            139.5,
+            202
+          ],
+          "bodyAnchorSource": [
+            798.5,
+            265
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                876,
+                245
+              ],
+              "cropXY": [
+                217,
+                182
+              ],
+              "anchorRelativeXY": [
+                77.5,
+                -20
+              ],
+              "normalizedXY": [
+                0.2722,
+                -0.0702
+              ],
+              "forwardNormalizedX": 0.2722,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                108,
+                64,
+                47,
+                248
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                689,
+                259
+              ],
+              "cropXY": [
+                30,
+                196
+              ],
+              "anchorRelativeXY": [
+                -109.5,
+                -6
+              ],
+              "normalizedXY": [
+                -0.3846,
+                -0.0211
+              ],
+              "forwardNormalizedX": -0.3846,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                90,
+                50,
+                32,
+                247
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                795,
+                260
+              ],
+              "cropXY": [
+                136,
+                197
+              ],
+              "anchorRelativeXY": [
+                -3.5,
+                -5
+              ],
+              "normalizedXY": [
+                -0.0123,
+                -0.0176
+              ],
+              "forwardNormalizedX": -0.0123,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                78,
+                41,
+                24,
+                248
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "cropRect": [
+            973,
+            63,
+            274,
+            209
+          ],
+          "bodyAnchorLocal": [
+            138,
+            204
+          ],
+          "bodyAnchorSource": [
+            1111,
+            267
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                1188,
+                249
+              ],
+              "cropXY": [
+                215,
+                186
+              ],
+              "anchorRelativeXY": [
+                77,
+                -18
+              ],
+              "normalizedXY": [
+                0.2704,
+                -0.0632
+              ],
+              "forwardNormalizedX": 0.2704,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                104,
+                62,
+                43,
+                251
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                1007,
+                261
+              ],
+              "cropXY": [
+                34,
+                198
+              ],
+              "anchorRelativeXY": [
+                -104,
+                -6
+              ],
+              "normalizedXY": [
+                -0.3653,
+                -0.0211
+              ],
+              "forwardNormalizedX": -0.3653,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                126,
+                78,
+                56,
+                250
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                1151,
+                252
+              ],
+              "cropXY": [
+                178,
+                189
+              ],
+              "anchorRelativeXY": [
+                40,
+                -15
+              ],
+              "normalizedXY": [
+                0.1405,
+                -0.0527
+              ],
+              "forwardNormalizedX": 0.1405,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                186,
+                128,
+                97,
+                252
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        }
+      ],
+      "legs": {
+        "nearFore": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              2.5,
+              11
+            ],
+            "sampleRangeNormalized": [
+              0.0088,
+              0.0386
+            ],
+            "sampleRangeWorldPx": [
+              0.2459,
+              1.0817
+            ]
+          },
+          "motionClass": "primarily-vertical-bob",
+          "horizontalMotionResolved": false,
+          "verticalMotionResolved": true,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Horizontal endpoint held (2.5 px range); 11 px vertical bob remains, so not entirely frozen. Only about 0.25 x 1.08 world pixels of motion."
+        },
+        "nearHind": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              19,
+              4
+            ],
+            "sampleRangeNormalized": [
+              0.0667,
+              0.014
+            ],
+            "sampleRangeWorldPx": [
+              1.8685,
+              0.3934
+            ]
+          },
+          "motionClass": "visible-position-change",
+          "horizontalMotionResolved": true,
+          "verticalMotionResolved": false,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "19 px horizontal displacement: not frozen; small at the 28-world-pixel display size."
+        },
+        "farFore": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              46,
+              10
+            ],
+            "sampleRangeNormalized": [
+              0.1616,
+              0.0351
+            ],
+            "sampleRangeWorldPx": [
+              4.5237,
+              0.9834
+            ]
+          },
+          "motionClass": "visible-position-change",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Underbelly paw moves visibly, but far-fore identity is probable rather than skeletal certainty. Frame 3 endpoint only partly exposed."
+        },
+        "farHind": {
+          "observedFrames": [],
+          "measurement": null,
+          "motionClass": "unverifiable-hidden",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "No separately identifiable far-hind toe in any frame."
+        }
+      }
+    },
+    {
+      "id": "mr-pompom-180",
+      "character": "mr-pompom",
+      "requestedHeadingDegrees": 180,
+      "source": "images/atlas/family-production-v1/mr-pompom-b-v1.png",
+      "runtimeSource": "images/atlas/family-production-v1/mr-pompom-b-v1.webp",
+      "sha256": "4aa03fbabcc4c5b0dbd682e54a7e36108ac6545798da90b57930322ccd3313a1",
+      "referenceWidth": 292.552,
+      "displayWidth": 28,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "diagnostic": {
+        "cropGrid": "/tmp/atlas-gait-audit/mr-pompom-180-legs.png",
+        "annotated": "/tmp/atlas-gait-audit/mr-pompom-180-landmarks.png"
+      },
+      "frames": [
+        {
+          "frame": 0,
+          "cropRect": [
+            20,
+            652,
+            288,
+            223
+          ],
+          "bodyAnchorLocal": [
+            143,
+            218
+          ],
+          "bodyAnchorSource": [
+            163,
+            870
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                102,
+                854
+              ],
+              "cropXY": [
+                82,
+                202
+              ],
+              "anchorRelativeXY": [
+                -61,
+                -16
+              ],
+              "normalizedXY": [
+                -0.2085,
+                -0.0547
+              ],
+              "forwardNormalizedX": 0.2085,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                104,
+                52,
+                32,
+                250
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                249,
+                863
+              ],
+              "cropXY": [
+                229,
+                211
+              ],
+              "anchorRelativeXY": [
+                86,
+                -7
+              ],
+              "normalizedXY": [
+                0.294,
+                -0.0239
+              ],
+              "forwardNormalizedX": -0.294,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                106,
+                52,
+                33,
+                251
+              ]
+            },
+            "farFore": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "cropRect": [
+            327,
+            652,
+            291,
+            218
+          ],
+          "bodyAnchorLocal": [
+            144.5,
+            213
+          ],
+          "bodyAnchorSource": [
+            471.5,
+            865
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                406,
+                850
+              ],
+              "cropXY": [
+                79,
+                198
+              ],
+              "anchorRelativeXY": [
+                -65.5,
+                -15
+              ],
+              "normalizedXY": [
+                -0.2239,
+                -0.0513
+              ],
+              "forwardNormalizedX": 0.2239,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                112,
+                57,
+                35,
+                250
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                563,
+                857
+              ],
+              "cropXY": [
+                236,
+                205
+              ],
+              "anchorRelativeXY": [
+                91.5,
+                -8
+              ],
+              "normalizedXY": [
+                0.3128,
+                -0.0273
+              ],
+              "forwardNormalizedX": -0.3128,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                114,
+                61,
+                39,
+                250
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                395,
+                819
+              ],
+              "cropXY": [
+                68,
+                167
+              ],
+              "anchorRelativeXY": [
+                -76.5,
+                -46
+              ],
+              "normalizedXY": [
+                -0.2615,
+                -0.1572
+              ],
+              "forwardNormalizedX": 0.2615,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                101,
+                47,
+                31,
+                251
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "cropRect": [
+            641,
+            653,
+            288,
+            219
+          ],
+          "bodyAnchorLocal": [
+            143.5,
+            215
+          ],
+          "bodyAnchorSource": [
+            784.5,
+            868
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                711,
+                856
+              ],
+              "cropXY": [
+                70,
+                203
+              ],
+              "anchorRelativeXY": [
+                -73.5,
+                -12
+              ],
+              "normalizedXY": [
+                -0.2512,
+                -0.041
+              ],
+              "forwardNormalizedX": 0.2512,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                134,
+                77,
+                55,
+                251
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                877,
+                861
+              ],
+              "cropXY": [
+                236,
+                208
+              ],
+              "anchorRelativeXY": [
+                92.5,
+                -7
+              ],
+              "normalizedXY": [
+                0.3162,
+                -0.0239
+              ],
+              "forwardNormalizedX": -0.3162,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                91,
+                42,
+                26,
+                252
+              ]
+            },
+            "farFore": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "cropRect": [
+            952,
+            653,
+            288,
+            218
+          ],
+          "bodyAnchorLocal": [
+            143.5,
+            213
+          ],
+          "bodyAnchorSource": [
+            1095.5,
+            866
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                1041,
+                850
+              ],
+              "cropXY": [
+                89,
+                197
+              ],
+              "anchorRelativeXY": [
+                -54.5,
+                -16
+              ],
+              "normalizedXY": [
+                -0.1863,
+                -0.0547
+              ],
+              "forwardNormalizedX": 0.1863,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                110,
+                54,
+                36,
+                252
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                1186,
+                859
+              ],
+              "cropXY": [
+                234,
+                206
+              ],
+              "anchorRelativeXY": [
+                90.5,
+                -7
+              ],
+              "normalizedXY": [
+                0.3093,
+                -0.0239
+              ],
+              "forwardNormalizedX": -0.3093,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                102,
+                48,
+                29,
+                250
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                1013,
+                819
+              ],
+              "cropXY": [
+                61,
+                166
+              ],
+              "anchorRelativeXY": [
+                -82.5,
+                -47
+              ],
+              "normalizedXY": [
+                -0.282,
+                -0.1607
+              ],
+              "forwardNormalizedX": 0.282,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                123,
+                67,
+                46,
+                252
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        }
+      ],
+      "legs": {
+        "nearFore": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              19,
+              4
+            ],
+            "sampleRangeNormalized": [
+              0.0649,
+              0.0137
+            ],
+            "sampleRangeWorldPx": [
+              1.8185,
+              0.3828
+            ]
+          },
+          "motionClass": "visible-position-change",
+          "horizontalMotionResolved": true,
+          "verticalMotionResolved": false,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "19 px horizontal change: not frozen. Only 4 px vertical range; lift phase not clearly present."
+        },
+        "nearHind": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              6.5,
+              1
+            ],
+            "sampleRangeNormalized": [
+              0.0222,
+              0.0034
+            ],
+            "sampleRangeWorldPx": [
+              0.6221,
+              0.0957
+            ]
+          },
+          "motionClass": "near-stationary-visible-pose",
+          "horizontalMotionResolved": true,
+          "verticalMotionResolved": false,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Near-stationary visible toe: 6.5 x 1 px range, about 0.62 x 0.10 world pixels. No visible swing."
+        },
+        "farFore": {
+          "observedFrames": [
+            1,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              6,
+              1
+            ],
+            "sampleRangeNormalized": [
+              0.0205,
+              0.0034
+            ],
+            "sampleRangeWorldPx": [
+              0.5743,
+              0.0957
+            ]
+          },
+          "motionClass": "partial-observation-no-full-cycle-inference",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Partly exposed lifted toe in 1/3, occluded in 0/2. Two close observed positions cannot prove freezing through the hidden frames."
+        },
+        "farHind": {
+          "observedFrames": [],
+          "measurement": null,
+          "motionClass": "unverifiable-hidden",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "No separately identifiable far-hind toe in any frame."
+        }
+      }
+    },
+    {
+      "id": "old-pinpin-0",
+      "character": "old-pinpin",
+      "requestedHeadingDegrees": 0,
+      "source": "images/atlas/pinpin-directions-a-v1.png",
+      "runtimeSource": "images/atlas/pinpin-directions-a-v1.webp",
+      "sha256": "8be56abd29348419d471151cf5092b41567ed73fe2a97a15b665c320357159c0",
+      "referenceWidth": 285,
+      "displayWidth": 56,
+      "sourceDimensions": [
+        1254,
+        1254
+      ],
+      "diagnostic": {
+        "cropGrid": "/tmp/atlas-gait-audit/old-pinpin-0-legs.png",
+        "annotated": "/tmp/atlas-gait-audit/old-pinpin-0-landmarks.png"
+      },
+      "frames": [
+        {
+          "frame": 0,
+          "cropRect": [
+            26,
+            82,
+            284,
+            191
+          ],
+          "bodyAnchorLocal": [
+            142,
+            186
+          ],
+          "bodyAnchorSource": [
+            168,
+            268
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                264,
+                233
+              ],
+              "cropXY": [
+                238,
+                151
+              ],
+              "anchorRelativeXY": [
+                96,
+                -35
+              ],
+              "normalizedXY": [
+                0.3368,
+                -0.1228
+              ],
+              "forwardNormalizedX": 0.3368,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                81,
+                33,
+                15,
+                250
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                50,
+                262
+              ],
+              "cropXY": [
+                24,
+                180
+              ],
+              "anchorRelativeXY": [
+                -118,
+                -6
+              ],
+              "normalizedXY": [
+                -0.414,
+                -0.0211
+              ],
+              "forwardNormalizedX": -0.414,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                129,
+                73,
+                37,
+                246
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                165,
+                260
+              ],
+              "cropXY": [
+                139,
+                178
+              ],
+              "anchorRelativeXY": [
+                -3,
+                -8
+              ],
+              "normalizedXY": [
+                -0.0105,
+                -0.0281
+              ],
+              "forwardNormalizedX": -0.0105,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                67,
+                25,
+                8,
+                246
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 1,
+          "cropRect": [
+            337,
+            82,
+            282,
+            195
+          ],
+          "bodyAnchorLocal": [
+            141,
+            190
+          ],
+          "bodyAnchorSource": [
+            478,
+            272
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                565,
+                259
+              ],
+              "cropXY": [
+                228,
+                177
+              ],
+              "anchorRelativeXY": [
+                87,
+                -13
+              ],
+              "normalizedXY": [
+                0.3053,
+                -0.0456
+              ],
+              "forwardNormalizedX": 0.3053,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                100,
+                52,
+                28,
+                243
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                395,
+                264
+              ],
+              "cropXY": [
+                58,
+                182
+              ],
+              "anchorRelativeXY": [
+                -83,
+                -8
+              ],
+              "normalizedXY": [
+                -0.2912,
+                -0.0281
+              ],
+              "forwardNormalizedX": -0.2912,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                79,
+                34,
+                14,
+                250
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                502,
+                253
+              ],
+              "cropXY": [
+                165,
+                171
+              ],
+              "anchorRelativeXY": [
+                24,
+                -19
+              ],
+              "normalizedXY": [
+                0.0842,
+                -0.0667
+              ],
+              "forwardNormalizedX": 0.0842,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                88,
+                39,
+                12,
+                249
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "cropRect": [
+            648,
+            81,
+            285,
+            200
+          ],
+          "bodyAnchorLocal": [
+            142.5,
+            195
+          ],
+          "bodyAnchorSource": [
+            790.5,
+            276
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                878,
+                237
+              ],
+              "cropXY": [
+                230,
+                156
+              ],
+              "anchorRelativeXY": [
+                87.5,
+                -39
+              ],
+              "normalizedXY": [
+                0.307,
+                -0.1368
+              ],
+              "forwardNormalizedX": 0.307,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                99,
+                55,
+                26,
+                240
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                687,
+                272
+              ],
+              "cropXY": [
+                39,
+                191
+              ],
+              "anchorRelativeXY": [
+                -103.5,
+                -4
+              ],
+              "normalizedXY": [
+                -0.3632,
+                -0.014
+              ],
+              "forwardNormalizedX": -0.3632,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                81,
+                40,
+                19,
+                250
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                794,
+                254
+              ],
+              "cropXY": [
+                146,
+                173
+              ],
+              "anchorRelativeXY": [
+                3.5,
+                -22
+              ],
+              "normalizedXY": [
+                0.0123,
+                -0.0772
+              ],
+              "forwardNormalizedX": 0.0123,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                63,
+                23,
+                6,
+                249
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "cropRect": [
+            965,
+            82,
+            281,
+            201
+          ],
+          "bodyAnchorLocal": [
+            141,
+            196
+          ],
+          "bodyAnchorSource": [
+            1106,
+            278
+          ],
+          "landmarks": {
+            "nearFore": {
+              "visibility": "visible",
+              "sourceXY": [
+                1200,
+                250
+              ],
+              "cropXY": [
+                235,
+                168
+              ],
+              "anchorRelativeXY": [
+                94,
+                -28
+              ],
+              "normalizedXY": [
+                0.3298,
+                -0.0982
+              ],
+              "forwardNormalizedX": 0.3298,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                90,
+                42,
+                18,
+                247
+              ]
+            },
+            "nearHind": {
+              "visibility": "visible",
+              "sourceXY": [
+                1002,
+                273
+              ],
+              "cropXY": [
+                37,
+                191
+              ],
+              "anchorRelativeXY": [
+                -104,
+                -5
+              ],
+              "normalizedXY": [
+                -0.3649,
+                -0.0175
+              ],
+              "forwardNormalizedX": -0.3649,
+              "pickingUncertaintyPx": 3,
+              "positionConfidence": "high",
+              "limbIdentityConfidence": "high for visible near-side component; anatomical continuity not independently proven",
+              "sampledRGBA": [
+                124,
+                69,
+                36,
+                247
+              ]
+            },
+            "farFore": {
+              "visibility": "partially-visible",
+              "sourceXY": [
+                1162,
+                253
+              ],
+              "cropXY": [
+                197,
+                171
+              ],
+              "anchorRelativeXY": [
+                56,
+                -25
+              ],
+              "normalizedXY": [
+                0.1965,
+                -0.0877
+              ],
+              "forwardNormalizedX": 0.1965,
+              "pickingUncertaintyPx": 5,
+              "positionConfidence": "medium",
+              "limbIdentityConfidence": "probable; proximal linkage occluded",
+              "sampledRGBA": [
+                84,
+                40,
+                17,
+                251
+              ]
+            },
+            "farHind": {
+              "visibility": "occluded-or-not-separable",
+              "sourceXY": null,
+              "cropXY": null,
+              "anchorRelativeXY": null,
+              "normalizedXY": null,
+              "forwardNormalizedX": null,
+              "pickingUncertaintyPx": null,
+              "positionConfidence": null,
+              "limbIdentityConfidence": "unverifiable",
+              "sampledRGBA": null
+            }
+          }
+        }
+      ],
+      "legs": {
+        "nearFore": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              9,
+              26
+            ],
+            "sampleRangeNormalized": [
+              0.0316,
+              0.0912
+            ],
+            "sampleRangeWorldPx": [
+              1.7684,
+              5.1088
+            ]
+          },
+          "motionClass": "primarily-vertical-bob",
+          "horizontalMotionResolved": true,
+          "verticalMotionResolved": true,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "9 px horizontal range versus 26 px vertical bob: predominantly held forward, not a full fore-aft sweep."
+        },
+        "nearHind": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              35,
+              4
+            ],
+            "sampleRangeNormalized": [
+              0.1228,
+              0.014
+            ],
+            "sampleRangeWorldPx": [
+              6.8772,
+              0.786
+            ]
+          },
+          "motionClass": "visible-position-change",
+          "horizontalMotionResolved": true,
+          "verticalMotionResolved": false,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "35 px horizontal motion, with frame 1 displaced forward: not frozen. The new PinPin closely retains this pattern."
+        },
+        "farFore": {
+          "observedFrames": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "measurement": {
+            "sampleRangePx": [
+              59,
+              17
+            ],
+            "sampleRangeNormalized": [
+              0.207,
+              0.0596
+            ],
+            "sampleRangeWorldPx": [
+              11.593,
+              3.3404
+            ]
+          },
+          "motionClass": "visible-position-change",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "Visible underbelly paw moves substantially, but its root is hidden. Probable far fore; no proven continuous anatomical track."
+        },
+        "farHind": {
+          "observedFrames": [],
+          "measurement": null,
+          "motionClass": "unverifiable-hidden",
+          "horizontalMotionResolved": null,
+          "verticalMotionResolved": null,
+          "fullFourLegCycleConfirmed": false,
+          "pixelExactFreezeConfirmed": false,
+          "assessment": "No separately identifiable far-hind toe in any frame."
+        }
+      }
+    }
+  ]
+}

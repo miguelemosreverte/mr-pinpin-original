@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mama",
+  "sheetId": "f",
+  "assetVersion": "v1",
+  "reviewStatus": "measured-scale-awaiting-visual-review",
+  "method": "Median same-heading body bounding area ratio to prepared Pinpin sheet; one fixed sheet referenceWidth. Runtime displayWidth supplies family proportions.",
+  "referenceFile": "pinpin-f-v1.json",
+  "referenceSha256": "e98ff4dba1baab84b3072944d2602157c0e0b800924597f4788c48bb229a5f92",
+  "referenceWidth": 261.818,
+  "chosenReferenceWidth": 290.261,
+  "rows": [
+    {
+      "angle": 255,
+      "bodyPixels": [
+        208.5,
+        256
+      ],
+      "referenceBodyPixels": [
+        185.5,
+        240.5
+      ],
+      "suggestedReferenceWidth": 286.38021842314936
+    },
+    {
+      "angle": 285,
+      "bodyPixels": [
+        225,
+        272
+      ],
+      "referenceBodyPixels": [
+        187.5,
+        248.5
+      ],
+      "suggestedReferenceWidth": 300.0622624623404
+    },
+    {
+      "angle": 315,
+      "bodyPixels": [
+        238,
+        270
+      ],
+      "referenceBodyPixels": [
+        216,
+        239.5
+      ],
+      "suggestedReferenceWidth": 291.80331891285863
+    },
+    {
+      "angle": 345,
+      "bodyPixels": [
+        275.5,
+        231.5
+      ],
+      "referenceBodyPixels": [
+        259,
+        202.5
+      ],
+      "suggestedReferenceWidth": 288.71769674220127
+    }
+  ],
+  "provenance": {
+    "generationLog": "production/mama-production-generations.json",
+    "generationLogSha256": "3b0751258c2f0e43eb4ae3f90d4e963ef7add0a07bf0ebdd5c1791131ef945fb",
+    "generationRecordSha256": "6c2503fb48db5d09637e5d994d447fc011ed4ff57acec6700b222616b51de31e",
+    "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c39b-adc0-7f52-bfce-ead6b5df291b/exec-c5fe97db-7c1c-4483-9a0d-acdc934838a2.png",
+    "sourceSha256": "195fdefc3ab8a41a589a3f4ce23cd608ea568f3bfbe59879d06fa9acec9de485",
+    "requestedAngles": [
+      255,
+      285,
+      315,
+      345
+    ],
+    "started": "2026-09-21 11:23:56 UTC",
+    "completed": "2026-09-21 11:24:49 UTC",
+    "durationMilliseconds": 53000,
+    "timingNote": null,
+    "parentVisualReview": {
+      "status": "accepted-for-preparation",
+      "orientation": "First row rear-left; remaining rows near-rear-right, diagonal rear-right, shallow rear-right. Faces never turn toward viewer. Matches target's visual bins, not measured angles.",
+      "identity": "Mama fur/spines and fuller body maintained; most facial features hidden in rear views.",
+      "gait": "Four varying target-like support positions per row; playback validation remains.",
+      "completeness": "Sixteen whole silhouettes and visible gutters.",
+      "issues": [
+        "Alpha/gutter pixel checks and temporal phase registration remain for preparation.",
+        "Some neighboring rear bins are visually similar, as in original templates; no exact 15-degree claim."
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+*{box-sizing:border-box;letter-spacing:0}
+:root{color-scheme:light;font:14px/1.4 system-ui,sans-serif;color:#25332f;background:#d7dfd9}
+html,body{width:100%;height:100%;margin:0;overflow:hidden}
+#studio{position:fixed;inset:0;isolation:isolate}
+canvas{display:block;width:100%;height:100%;touch-action:none;outline:none}
+canvas:focus-visible{outline:2px solid #357060;outline-offset:-4px}
+header{position:absolute;inset:max(18px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) auto max(20px,env(safe-area-inset-left));display:flex;align-items:flex-start;justify-content:space-between;gap:16px;pointer-events:none}
+header>div{min-width:0}h1{font-size:14px;font-weight:600;line-height:1.4;margin:0;overflow-wrap:anywhere}
+#status{font-size:12px;line-height:1.5;margin:5px 0 0;color:#52635a;max-width:240px;overflow-wrap:anywhere}
+#status[data-state="error"]{color:#803e43}
+#model-label{font-size:12px;line-height:1.5;margin:3px 0 0;color:#52635a}
+button{display:grid;place-items:center;flex:none;width:40px;height:40px;border:1px solid #acbdb2;border-radius:5px;background:#eef2efc9;color:#344d41;cursor:pointer;pointer-events:auto}
+button[aria-pressed="true"]{background:#c2d7ca;border-color:#6e9480}button:hover{background:#dae7de}button:disabled{opacity:.4;cursor:default}
+button svg{width:19px;height:19px}button:focus-visible{outline:3px solid #87526a;outline-offset:3px}
+@media(max-width:480px){header{inset:max(14px,env(safe-area-inset-top)) max(14px,env(safe-area-inset-right)) auto max(14px,env(safe-area-inset-left))}}

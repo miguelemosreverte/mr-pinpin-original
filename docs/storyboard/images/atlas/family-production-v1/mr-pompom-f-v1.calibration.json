@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mr-pompom",
+  "sheetId": "f",
+  "assetVersion": "v1",
+  "reviewStatus": "measured-scale-awaiting-visual-review",
+  "method": "Median same-heading body bounding area ratio to prepared Pinpin sheet; one fixed sheet referenceWidth. Runtime displayWidth supplies family proportions.",
+  "referenceFile": "pinpin-f-v1.json",
+  "referenceSha256": "e98ff4dba1baab84b3072944d2602157c0e0b800924597f4788c48bb229a5f92",
+  "referenceWidth": 261.818,
+  "chosenReferenceWidth": 264.291,
+  "rows": [
+    {
+      "angle": 255,
+      "bodyPixels": [
+        189.5,
+        239
+      ],
+      "referenceBodyPixels": [
+        185.5,
+        240.5
+      ],
+      "suggestedReferenceWidth": 263.79925292844393
+    },
+    {
+      "angle": 285,
+      "bodyPixels": [
+        195,
+        251
+      ],
+      "referenceBodyPixels": [
+        187.5,
+        248.5
+      ],
+      "suggestedReferenceWidth": 268.3427306682459
+    },
+    {
+      "angle": 315,
+      "bodyPixels": [
+        220,
+        240.5
+      ],
+      "referenceBodyPixels": [
+        216,
+        239.5
+      ],
+      "suggestedReferenceWidth": 264.782176251371
+    },
+    {
+      "angle": 345,
+      "bodyPixels": [
+        252,
+        208
+      ],
+      "referenceBodyPixels": [
+        259,
+        202.5
+      ],
+      "suggestedReferenceWidth": 261.7393641670204
+    }
+  ],
+  "provenance": {
+    "generationLog": "production/pompom-production-generations.json",
+    "generationLogSha256": "959ee47c50935c8d16cc9c1a1c36465b0c0d19d571b66108ab31da7adf4da4eb",
+    "generationRecordSha256": "ee20444650640246334f461d6b160259db3e3e242b7084446599a55db0d45720",
+    "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-fce55f51-30ec-41cc-a8d4-1fe75a5e578f.png",
+    "sourceSha256": "35dd4a51e7878ad92550d55d6a729e959bc98454ae5cb4371e47f1c08f4cf0e8",
+    "requestedAngles": [
+      255,
+      285,
+      315,
+      345
+    ],
+    "started": "2026-09-21T11:22:23.792Z",
+    "completed": "2026-09-21T11:23:07.363Z",
+    "durationMilliseconds": 43571,
+    "timingNote": null,
+    "parentVisualReview": "Rear-left, near-rear/right, rear-right diagonal and shallow rear-right preserved. Round baby body and distinct walking paws. Only side eye slivers visible, no turned frontal head."
+  }
+}

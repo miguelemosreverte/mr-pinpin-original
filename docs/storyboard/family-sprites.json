@@ -1,0 +1,781 @@
+{
+  "version": 1,
+  "reviewStatus": "candidate",
+  "angleConvention": "clockwise-image-plane",
+  "angles": [
+    15,
+    45,
+    75,
+    105
+  ],
+  "characters": [
+    {
+      "id": "pinpin",
+      "name": "Mr. Pinpin",
+      "displayWidth": 56,
+      "src": "images/atlas/family-proofs/pinpin-eyes-v1.png",
+      "runtimeSrc": "images/atlas/family-proofs/pinpin-eyes-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "referenceWidth": 309.702,
+      "grid": {
+        "x": [
+          0,
+          333,
+          645,
+          956,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          924,
+          1254
+        ]
+      },
+      "sha256": "b9a5fad4e24396dc4e2f2e6b428e5ec3a3b2b2a39ad7d01651969f4508ef1db2",
+      "reviewStatus": "candidate",
+      "headingAssessment": "Requested approximate azimuth bins, not certified angles.",
+      "preparation": "images/atlas/family-proofs/pinpin-eyes-v1.prepare.json",
+      "directions": [
+        {
+          "angle": 15,
+          "src": "images/atlas/family-proofs/pinpin-eyes-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/pinpin-eyes-v1.webp",
+          "referenceWidth": 309.702,
+          "frames": [
+            {
+              "rect": [
+                32,
+                53,
+                291,
+                223
+              ],
+              "anchor": [
+                146,
+                218
+              ]
+            },
+            {
+              "rect": [
+                344,
+                53,
+                290,
+                224
+              ],
+              "anchor": [
+                145,
+                219
+              ]
+            },
+            {
+              "rect": [
+                657,
+                53,
+                288,
+                224
+              ],
+              "anchor": [
+                144.5,
+                219
+              ]
+            },
+            {
+              "rect": [
+                968,
+                53,
+                279,
+                225
+              ],
+              "anchor": [
+                140,
+                220
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 45,
+          "src": "images/atlas/family-proofs/pinpin-eyes-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/pinpin-eyes-v1.webp",
+          "referenceWidth": 309.702,
+          "frames": [
+            {
+              "rect": [
+                37,
+                341,
+                273,
+                254
+              ],
+              "anchor": [
+                137,
+                249
+              ]
+            },
+            {
+              "rect": [
+                347,
+                341,
+                267,
+                256
+              ],
+              "anchor": [
+                134,
+                251
+              ]
+            },
+            {
+              "rect": [
+                660,
+                339,
+                264,
+                257
+              ],
+              "anchor": [
+                132,
+                253
+              ]
+            },
+            {
+              "rect": [
+                975,
+                341,
+                264,
+                255
+              ],
+              "anchor": [
+                131.5,
+                250
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 75,
+          "src": "images/atlas/family-proofs/pinpin-eyes-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/pinpin-eyes-v1.webp",
+          "referenceWidth": 309.702,
+          "frames": [
+            {
+              "rect": [
+                42,
+                637,
+                243,
+                274
+              ],
+              "anchor": [
+                121.5,
+                269
+              ]
+            },
+            {
+              "rect": [
+                353,
+                636,
+                245,
+                276
+              ],
+              "anchor": [
+                123,
+                271
+              ]
+            },
+            {
+              "rect": [
+                666,
+                637,
+                244,
+                276
+              ],
+              "anchor": [
+                122,
+                271
+              ]
+            },
+            {
+              "rect": [
+                981,
+                636,
+                247,
+                269
+              ],
+              "anchor": [
+                123,
+                264
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 105,
+          "src": "images/atlas/family-proofs/pinpin-eyes-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/pinpin-eyes-v1.webp",
+          "referenceWidth": 309.702,
+          "frames": [
+            {
+              "rect": [
+                44,
+                936,
+                240,
+                257
+              ],
+              "anchor": [
+                119.5,
+                252
+              ]
+            },
+            {
+              "rect": [
+                357,
+                936,
+                241,
+                273
+              ],
+              "anchor": [
+                120.5,
+                269
+              ]
+            },
+            {
+              "rect": [
+                669,
+                937,
+                243,
+                271
+              ],
+              "anchor": [
+                121,
+                266
+              ]
+            },
+            {
+              "rect": [
+                985,
+                937,
+                241,
+                273
+              ],
+              "anchor": [
+                120.5,
+                268
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mama",
+      "name": "Mama",
+      "displayWidth": 84,
+      "src": "images/atlas/family-proofs/mama-walk-v1.png",
+      "runtimeSrc": "images/atlas/family-proofs/mama-walk-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "referenceWidth": 314.958,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          925,
+          1254
+        ]
+      },
+      "sha256": "bff3ff1309d435c5e68bb664c2021221d4539acd7f23d891a425958e8338115c",
+      "reviewStatus": "candidate",
+      "headingAssessment": "Requested approximate azimuth bins, not certified angles. Parent notes the final 105-degree row is more oblique-left than requested.",
+      "preparation": "images/atlas/family-proofs/mama-walk-v1.prepare.json",
+      "directions": [
+        {
+          "angle": 15,
+          "src": "images/atlas/family-proofs/mama-walk-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/mama-walk-v1.webp",
+          "referenceWidth": 314.958,
+          "frames": [
+            {
+              "rect": [
+                24,
+                40,
+                283,
+                240
+              ],
+              "anchor": [
+                134.5,
+                235
+              ]
+            },
+            {
+              "rect": [
+                334,
+                40,
+                291,
+                243
+              ],
+              "anchor": [
+                139.5,
+                238
+              ]
+            },
+            {
+              "rect": [
+                645,
+                40,
+                292,
+                245
+              ],
+              "anchor": [
+                140,
+                240
+              ]
+            },
+            {
+              "rect": [
+                961,
+                40,
+                283,
+                234
+              ],
+              "anchor": [
+                138,
+                230
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 45,
+          "src": "images/atlas/family-proofs/mama-walk-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/mama-walk-v1.webp",
+          "referenceWidth": 314.958,
+          "frames": [
+            {
+              "rect": [
+                31,
+                322,
+                266,
+                275
+              ],
+              "anchor": [
+                129.5,
+                270
+              ]
+            },
+            {
+              "rect": [
+                339,
+                325,
+                276,
+                278
+              ],
+              "anchor": [
+                132.5,
+                273
+              ]
+            },
+            {
+              "rect": [
+                655,
+                323,
+                273,
+                275
+              ],
+              "anchor": [
+                130.5,
+                271
+              ]
+            },
+            {
+              "rect": [
+                967,
+                322,
+                271,
+                280
+              ],
+              "anchor": [
+                129.5,
+                275
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 75,
+          "src": "images/atlas/family-proofs/mama-walk-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/mama-walk-v1.webp",
+          "referenceWidth": 314.958,
+          "frames": [
+            {
+              "rect": [
+                42,
+                630,
+                241,
+                285
+              ],
+              "anchor": [
+                119,
+                280
+              ]
+            },
+            {
+              "rect": [
+                349,
+                630,
+                246,
+                288
+              ],
+              "anchor": [
+                122.5,
+                283
+              ]
+            },
+            {
+              "rect": [
+                661,
+                630,
+                244,
+                286
+              ],
+              "anchor": [
+                121.5,
+                281
+              ]
+            },
+            {
+              "rect": [
+                976,
+                633,
+                245,
+                283
+              ],
+              "anchor": [
+                121,
+                278
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 105,
+          "src": "images/atlas/family-proofs/mama-walk-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/mama-walk-v1.webp",
+          "referenceWidth": 314.958,
+          "frames": [
+            {
+              "rect": [
+                48,
+                932,
+                244,
+                277
+              ],
+              "anchor": [
+                122,
+                272
+              ]
+            },
+            {
+              "rect": [
+                352,
+                932,
+                248,
+                276
+              ],
+              "anchor": [
+                123.5,
+                272
+              ]
+            },
+            {
+              "rect": [
+                663,
+                933,
+                253,
+                276
+              ],
+              "anchor": [
+                126,
+                272
+              ]
+            },
+            {
+              "rect": [
+                973,
+                933,
+                242,
+                274
+              ],
+              "anchor": [
+                120.5,
+                269
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mr-pompom",
+      "name": "Mr. PomPom",
+      "displayWidth": 28,
+      "src": "images/atlas/family-proofs/pompom-walk-v1.png",
+      "runtimeSrc": "images/atlas/family-proofs/pompom-walk-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "referenceWidth": 300.673,
+      "grid": {
+        "x": [
+          0,
+          340,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ]
+      },
+      "sha256": "d34b7523e0440473671f8eaaeeb0fa5b6ec7d73942fd0597c5d4352431dbff7d",
+      "reviewStatus": "candidate",
+      "headingAssessment": "Requested approximate azimuth bins, not certified angles. Open and closed mouth vary across the gait cycle as a candidate artistic choice.",
+      "preparation": "images/atlas/family-proofs/pompom-walk-v1.prepare.json",
+      "directions": [
+        {
+          "angle": 15,
+          "src": "images/atlas/family-proofs/pompom-walk-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/pompom-walk-v1.webp",
+          "referenceWidth": 300.673,
+          "frames": [
+            {
+              "rect": [
+                43,
+                59,
+                278,
+                228
+              ],
+              "anchor": [
+                139,
+                223
+              ]
+            },
+            {
+              "rect": [
+                360,
+                59,
+                267,
+                226
+              ],
+              "anchor": [
+                133,
+                221
+              ]
+            },
+            {
+              "rect": [
+                670,
+                58,
+                261,
+                229
+              ],
+              "anchor": [
+                130,
+                224
+              ]
+            },
+            {
+              "rect": [
+                984,
+                57,
+                260,
+                231
+              ],
+              "anchor": [
+                129.5,
+                226
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 45,
+          "src": "images/atlas/family-proofs/pompom-walk-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/pompom-walk-v1.webp",
+          "referenceWidth": 300.673,
+          "frames": [
+            {
+              "rect": [
+                45,
+                342,
+                253,
+                255
+              ],
+              "anchor": [
+                125.5,
+                250
+              ]
+            },
+            {
+              "rect": [
+                361,
+                343,
+                250,
+                259
+              ],
+              "anchor": [
+                124.5,
+                254
+              ]
+            },
+            {
+              "rect": [
+                673,
+                345,
+                247,
+                258
+              ],
+              "anchor": [
+                122.5,
+                253
+              ]
+            },
+            {
+              "rect": [
+                988,
+                344,
+                245,
+                257
+              ],
+              "anchor": [
+                122.5,
+                252
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 75,
+          "src": "images/atlas/family-proofs/pompom-walk-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/pompom-walk-v1.webp",
+          "referenceWidth": 300.673,
+          "frames": [
+            {
+              "rect": [
+                49,
+                634,
+                235,
+                273
+              ],
+              "anchor": [
+                117,
+                268
+              ]
+            },
+            {
+              "rect": [
+                364,
+                634,
+                235,
+                272
+              ],
+              "anchor": [
+                117,
+                267
+              ]
+            },
+            {
+              "rect": [
+                678,
+                636,
+                231,
+                276
+              ],
+              "anchor": [
+                115,
+                271
+              ]
+            },
+            {
+              "rect": [
+                989,
+                635,
+                231,
+                277
+              ],
+              "anchor": [
+                115.5,
+                272
+              ]
+            }
+          ]
+        },
+        {
+          "angle": 105,
+          "src": "images/atlas/family-proofs/pompom-walk-v1.png",
+          "runtimeSrc": "images/atlas/family-proofs/pompom-walk-v1.webp",
+          "referenceWidth": 300.673,
+          "frames": [
+            {
+              "rect": [
+                55,
+                940,
+                235,
+                266
+              ],
+              "anchor": [
+                117.5,
+                261
+              ]
+            },
+            {
+              "rect": [
+                368,
+                940,
+                238,
+                263
+              ],
+              "anchor": [
+                119,
+                258
+              ]
+            },
+            {
+              "rect": [
+                682,
+                940,
+                237,
+                263
+              ],
+              "anchor": [
+                119,
+                258
+              ]
+            },
+            {
+              "rect": [
+                994,
+                941,
+                235,
+                264
+              ],
+              "anchor": [
+                117.5,
+                259
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

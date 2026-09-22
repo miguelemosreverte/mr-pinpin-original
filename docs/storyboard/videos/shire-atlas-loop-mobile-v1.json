@@ -1,0 +1,1813 @@
+{
+  "version": 1,
+  "source": "videos/shire-seedance1-pingpong-v1.mp4",
+  "sourceSha256": "9356345b426d8f033ee059e4db88d4c0e7d94414ccf79f082c2f5954703a1657",
+  "referenceSha256": "80af7f9eb7188f0a1f64969a22632d0ef9732284d027042222c1543879f03780",
+  "outputSha256": "21d7ae7ee2b83e9012cdaba99ed8d290f1032094f9c78c781c31975bc24980b9",
+  "registration": {
+    "baked": true,
+    "method": "fixed-affine-from-frame-zero-sift-ransac",
+    "source": "videos/shire-seedance1-pingpong-v1.mp4",
+    "sourceSize": [
+      1664,
+      1248
+    ],
+    "reference": "images/atlas/shire-v1.png",
+    "sourceToWorld": [
+      [
+        0.8323165929321774,
+        3.3577231617792132e-06,
+        74.95523279761129
+      ],
+      [
+        -3.958572945435865e-06,
+        0.8205001291134525,
+        -0.043513335422074584
+      ]
+    ],
+    "sourceCornersInWorld": [
+      [
+        74.95523071289062,
+        -0.04351333528757095
+      ],
+      [
+        1459.929931640625,
+        -0.05010040104389191
+      ],
+      [
+        1459.9342041015625,
+        1023.93408203125
+      ],
+      [
+        74.95941925048828,
+        1023.940673828125
+      ]
+    ],
+    "interpretation": "Horizontal crop with small anisotropic resampling; not full-world squeeze",
+    "borderFill": "original reference pixels outside fixed source coverage",
+    "staticFillPercent": 9.8307,
+    "temporalBlend": false,
+    "perFrameStabilization": false,
+    "motionGain": 1,
+    "landmarkToleranceWorldPixels": 10,
+    "sampleFrames": [
+      0,
+      12,
+      24,
+      48,
+      72,
+      96,
+      120,
+      144,
+      168,
+      192,
+      216,
+      239
+    ],
+    "sourceLandmarkErrorWorldPixels": {
+      "median": 1.0,
+      "p95": 5.0,
+      "max": 5.6569
+    }
+  },
+  "fitEvidence": {
+    "matches": 1859,
+    "inliers": 1857,
+    "modelsWorldPixelError": {
+      "fittedAffine": {
+        "median": 0.2189,
+        "p95": 0.601,
+        "max": 1.575
+      },
+      "blindFullWorldStretch": {
+        "median": 40.2717,
+        "p95": 72.1458,
+        "max": 75.4931
+      },
+      "idealCenteredFourByThreeCrop": {
+        "median": 5.4671,
+        "p95": 9.6079,
+        "max": 10.8307
+      }
+    }
+  },
+  "landmarksWorld": {
+    "cottage-door": [
+      300,
+      676
+    ],
+    "chimney": [
+      177,
+      626
+    ],
+    "dock": [
+      864,
+      304
+    ],
+    "bridge": [
+      972,
+      602
+    ],
+    "tree-door": [
+      1210,
+      192
+    ],
+    "left-shore-rock": [
+      385,
+      385
+    ],
+    "right-shore-rock": [
+      929,
+      458
+    ],
+    "picnic": [
+      1155,
+      622
+    ],
+    "tractor": [
+      1340,
+      760
+    ],
+    "bottom-rock": [
+      622,
+      966
+    ],
+    "top-rock": [
+      300,
+      89
+    ]
+  },
+  "sourceLandmarks": {
+    "0": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9321
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9495
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9728
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9582
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9747
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9598
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9588
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9239
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9501
+      },
+      "bottom-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9774
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9716
+      }
+    },
+    "12": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9341
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8967
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9145
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9178
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9617
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9443
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9484
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8718
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.9306
+      },
+      "bottom-rock": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.9524
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 2,
+        "error": 2.0,
+        "correlation": 0.9569
+      }
+    },
+    "24": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9276
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.9162
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9312
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8774
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 2,
+        "error": 2.0,
+        "correlation": 0.957
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9408
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9407
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8349
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.89
+      },
+      "bottom-rock": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.9387
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9485
+      }
+    },
+    "48": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.9278
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.9103
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9442
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8942
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9448
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9384
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9338
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8578
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.9014
+      },
+      "bottom-rock": {
+        "dx": -1,
+        "dy": -3,
+        "error": 3.1623,
+        "correlation": 0.9268
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 4,
+        "error": 4.0,
+        "correlation": 0.9458
+      }
+    },
+    "72": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.9214
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8751
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9369
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8944
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9428
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9342
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9227
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8254
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.8667
+      },
+      "bottom-rock": {
+        "dx": -1,
+        "dy": -4,
+        "error": 4.1231,
+        "correlation": 0.8785
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 5,
+        "error": 5.0,
+        "correlation": 0.93
+      }
+    },
+    "96": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.917
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.9036
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9354
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8702
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9466
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9371
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9182
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8004
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.9001
+      },
+      "bottom-rock": {
+        "dx": -4,
+        "dy": -4,
+        "error": 5.6569,
+        "correlation": 0.7756
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 5,
+        "error": 5.0,
+        "correlation": 0.9318
+      }
+    },
+    "120": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.913
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8977
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9374
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8794
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9471
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9354
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9182
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8038
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.8989
+      },
+      "bottom-rock": {
+        "dx": -2,
+        "dy": -5,
+        "error": 5.3852,
+        "correlation": 0.8617
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 5,
+        "error": 5.0,
+        "correlation": 0.9322
+      }
+    },
+    "144": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.916
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.9052
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9349
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8692
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9483
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.938
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9177
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8031
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.8998
+      },
+      "bottom-rock": {
+        "dx": -4,
+        "dy": -4,
+        "error": 5.6569,
+        "correlation": 0.773
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 5,
+        "error": 5.0,
+        "correlation": 0.9325
+      }
+    },
+    "168": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.9179
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8793
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9352
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8951
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9424
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.935
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9207
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8233
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.8693
+      },
+      "bottom-rock": {
+        "dx": -2,
+        "dy": -4,
+        "error": 4.4721,
+        "correlation": 0.8755
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 5,
+        "error": 5.0,
+        "correlation": 0.9309
+      }
+    },
+    "192": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.9276
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.9082
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9447
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8969
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9446
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9367
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9333
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8578
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.9017
+      },
+      "bottom-rock": {
+        "dx": -1,
+        "dy": -3,
+        "error": 3.1623,
+        "correlation": 0.9263
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 4,
+        "error": 4.0,
+        "correlation": 0.9428
+      }
+    },
+    "216": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9275
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.9196
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9347
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8706
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 2,
+        "error": 2.0,
+        "correlation": 0.957
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9407
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9396
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8388
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8839
+      },
+      "bottom-rock": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.9401
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9491
+      }
+    },
+    "239": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9388
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9503
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9721
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9585
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9734
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.958
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9574
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9233
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9507
+      },
+      "bottom-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9769
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.971
+      }
+    }
+  },
+  "decodedLandmarks": {
+    "0": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8811
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9048
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9348
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9116
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9548
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.937
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9304
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8822
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9119
+      },
+      "bottom-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9634
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9474
+      }
+    },
+    "12": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.893
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8764
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9054
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8966
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9506
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9318
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9296
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8559
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.9068
+      },
+      "bottom-rock": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.9457
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 2,
+        "error": 2.0,
+        "correlation": 0.9441
+      }
+    },
+    "24": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8902
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8829
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9083
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8675
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 2,
+        "error": 2.0,
+        "correlation": 0.948
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9304
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9277
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8234
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8831
+      },
+      "bottom-rock": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.9299
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9377
+      }
+    },
+    "48": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8925
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8893
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.915
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8774
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9439
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9253
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9219
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8378
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8923
+      },
+      "bottom-rock": {
+        "dx": -1,
+        "dy": -3,
+        "error": 3.1623,
+        "correlation": 0.9222
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 4,
+        "error": 4.0,
+        "correlation": 0.9378
+      }
+    },
+    "72": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8934
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8555
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9133
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8741
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9451
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9249
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9181
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8239
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.8705
+      },
+      "bottom-rock": {
+        "dx": -1,
+        "dy": -4,
+        "error": 4.1231,
+        "correlation": 0.8875
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 5,
+        "error": 5.0,
+        "correlation": 0.9248
+      }
+    },
+    "96": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8952
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8792
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9097
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8645
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9448
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9251
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9089
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8121
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.8889
+      },
+      "bottom-rock": {
+        "dx": -4,
+        "dy": -4,
+        "error": 5.6569,
+        "correlation": 0.7921
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 5,
+        "error": 5.0,
+        "correlation": 0.9241
+      }
+    },
+    "120": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8885
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8736
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9111
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8638
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9454
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9263
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9067
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8179
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.8901
+      },
+      "bottom-rock": {
+        "dx": -2,
+        "dy": -5,
+        "error": 5.3852,
+        "correlation": 0.8616
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 5,
+        "error": 5.0,
+        "correlation": 0.923
+      }
+    },
+    "144": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8921
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8821
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9114
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8584
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9456
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9265
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9058
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8122
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.8942
+      },
+      "bottom-rock": {
+        "dx": -4,
+        "dy": -5,
+        "error": 6.4031,
+        "correlation": 0.7909
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 5,
+        "error": 5.0,
+        "correlation": 0.9246
+      }
+    },
+    "168": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.894
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8685
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9102
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8695
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9441
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9255
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9096
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8131
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.8767
+      },
+      "bottom-rock": {
+        "dx": -2,
+        "dy": -4,
+        "error": 4.4721,
+        "correlation": 0.8729
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 5,
+        "error": 5.0,
+        "correlation": 0.9256
+      }
+    },
+    "192": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8932
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8783
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9146
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8819
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.943
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9238
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9188
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8439
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -2,
+        "error": 2.0,
+        "correlation": 0.8878
+      },
+      "bottom-rock": {
+        "dx": -1,
+        "dy": -3,
+        "error": 3.1623,
+        "correlation": 0.921
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 4,
+        "error": 4.0,
+        "correlation": 0.9339
+      }
+    },
+    "216": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8858
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8881
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 1,
+        "error": 1.0,
+        "correlation": 0.9156
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8484
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 2,
+        "error": 2.0,
+        "correlation": 0.9464
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9267
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9234
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.8381
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": -1,
+        "error": 1.0,
+        "correlation": 0.873
+      },
+      "bottom-rock": {
+        "dx": 0,
+        "dy": -3,
+        "error": 3.0,
+        "correlation": 0.9286
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 3,
+        "error": 3.0,
+        "correlation": 0.9367
+      }
+    },
+    "239": {
+      "cottage-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.8923
+      },
+      "chimney": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.896
+      },
+      "dock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9187
+      },
+      "bridge": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9007
+      },
+      "tree-door": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9493
+      },
+      "left-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9278
+      },
+      "right-shore-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9267
+      },
+      "picnic": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.859
+      },
+      "tractor": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9001
+      },
+      "bottom-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.9488
+      },
+      "top-rock": {
+        "dx": 0,
+        "dy": 0,
+        "error": 0.0,
+        "correlation": 0.943
+      }
+    }
+  },
+  "decodedLandmarkErrorWorldPixels": {
+    "median": 1.0,
+    "p95": 5.0,
+    "max": 6.4031
+  },
+  "measurement": "41x41 grayscale templates, +/-18 world pixel search, integer pixel offsets; mobile decoded frames resized to world for measurement",
+  "psnrBgrDbByFrame": {
+    "0": 31.6847,
+    "12": 30.7741,
+    "24": 30.8133,
+    "48": 30.8048,
+    "72": 30.8607,
+    "96": 30.8571,
+    "120": 31.022,
+    "144": 30.9458,
+    "168": 30.9894,
+    "192": 31.0368,
+    "216": 30.6092,
+    "239": 28.4727
+  },
+  "encoding": {
+    "codec": "libx264",
+    "crf": 26,
+    "preset": "medium",
+    "threads": 2,
+    "pixelFormat": "yuv420p",
+    "faststart": true,
+    "audio": false
+  },
+  "verified": {
+    "width": 1152,
+    "height": 768,
+    "duration": 10,
+    "fps": 24,
+    "decodedFrames": 240,
+    "bytes": 3630525
+  }
+}

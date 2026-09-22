@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "characterId": "mr-pompom",
+  "sheetId": "c",
+  "assetVersion": "v1",
+  "reviewStatus": "measured-scale-awaiting-visual-review",
+  "method": "Median same-heading body bounding area ratio to prepared Pinpin sheet; one fixed sheet referenceWidth. Runtime displayWidth supplies family proportions.",
+  "referenceFile": "pinpin-c-v1.json",
+  "referenceSha256": "97d362d7e9fc8222257f93884d77de88bd753b4d4f357bd990f33171d3fb2b60",
+  "referenceWidth": 285.979,
+  "chosenReferenceWidth": 271.187,
+  "rows": [
+    {
+      "angle": 240,
+      "bodyPixels": [
+        206,
+        230.5
+      ],
+      "referenceBodyPixels": [
+        217.5,
+        240
+      ],
+      "suggestedReferenceWidth": 272.7520144066986
+    },
+    {
+      "angle": 270,
+      "bodyPixels": [
+        175,
+        269
+      ],
+      "referenceBodyPixels": [
+        185.5,
+        285.5
+      ],
+      "suggestedReferenceWidth": 269.6213595564929
+    },
+    {
+      "angle": 300,
+      "bodyPixels": [
+        216,
+        239
+      ],
+      "referenceBodyPixels": [
+        225.5,
+        245.5
+      ],
+      "suggestedReferenceWidth": 276.16011056749477
+    },
+    {
+      "angle": 330,
+      "bodyPixels": [
+        231.5,
+        223.5
+      ],
+      "referenceBodyPixels": [
+        283,
+        230
+      ],
+      "suggestedReferenceWidth": 254.9712827263581
+    }
+  ],
+  "provenance": {
+    "generationLog": "production/pompom-production-generations.json",
+    "generationLogSha256": "b8633e5c1107d001a80073ada7c03ed6e8a7b67c9606d3eff2ce4d7144be8111",
+    "generationRecordSha256": "817d401b8138384eecca0bcaa773919c43d57cc49ebd9b4ecf526843adc7fd90",
+    "sourcePath": "/Users/miguel_lemos/.codex/generated_images/01a0c3a9-d003-7892-be07-9f98ef64f48f/exec-59ddc8eb-757a-4ec5-adc8-8dbe1a5d9c06.png",
+    "sourceSha256": "b5fd82d3b94ab3cb248eb1c3ff0aaeecf4912bfecf5e7db555bc6bbf88b19815",
+    "requestedAngles": [
+      240,
+      270,
+      300,
+      330
+    ],
+    "started": "2026-09-21T11:16:46.728Z",
+    "completed": "2026-09-21T11:17:48.009Z",
+    "durationMilliseconds": 61281,
+    "timingNote": null,
+    "parentVisualReview": "All rows rear-facing: rear-left, centered rear/up with face hidden, steep rear-right, shallow rear-right. Distinct walking paws. Visible eye slivers limited by rear camera; no front-facing head introduced."
+  }
+}

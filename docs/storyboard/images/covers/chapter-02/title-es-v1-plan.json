@@ -1,0 +1,10 @@
+{
+  "status": "PROPOSED",
+  "prompt": "Use case: text-localization\nAsset type: portrait storybook title cover, 1024x1536 pixels, full bleed.\nInput image: the supplied Russian chapter 2 cover is the EDIT TARGET, not merely a style reference.\nPrimary request: Change ONLY the upper-third typography from Russian into Spanish. Remove the existing Russian lettering cleanly and put the exact new title in the same upper-third open sky, preserving its dark forest-green, large elegant substantial storybook serif lettering and gentle arched layout. Text verbatim: first line \"El señor PinPin\"; below it \"La sabiduría del anciano\". The subtitle may wrap into two well-balanced lines. Preserve correct ñ in señor and í in sabiduría. No other text.\nInvariants: preserve the entire illustration composition, both hedgehog identities, face shapes, eyes, spectacles, positions, sizes, paws, staff, root burrow, foliage, flowers, lighting, colors, textures, framing and 1024x1536 portrait dimensions. Do not redraw, move, add or remove any object. This is a typography-only localization of the exact same artwork. No border, badge, chapter number, author, watermark or extra animal.",
+  "references": [
+    {
+      "path": "/tmp/pinpin-bedtime-release/docs/storyboard/images/covers/chapter-02/title-ru-v1.png",
+      "role": "edit target; preserve artwork, change typography only"
+    }
+  ]
+}

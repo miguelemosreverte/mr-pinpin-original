@@ -1,0 +1,444 @@
+{
+  "schemaVersion": 1,
+  "kind": "code-authored-static-prototype",
+  "seed": 210926,
+  "generatedAt": "2026-09-22T02:24:09.186330+00:00",
+  "blenderVersion": "4.5.14 LTS",
+  "startedAt": "2026-09-22T02:24:03.352806+00:00",
+  "commandArguments": [
+    "/Volumes/TB4/mac-mini-storage/tools/blender-4.5.14/Blender.app/Contents/MacOS/Blender",
+    "--background",
+    "--python",
+    "/Volumes/TB4/mac-mini-storage/shared/pinpin-blender-v3/pass-08/source/build.py",
+    "--",
+    "--output",
+    "/Volumes/TB4/mac-mini-storage/shared/pinpin-blender-v3/pass-08",
+    "--views",
+    "face-closeup,three-quarter,front,side,rear,underside",
+    "--size",
+    "1200",
+    "--samples",
+    "64"
+  ],
+  "renderSettings": {
+    "views": [
+      "face-closeup",
+      "three-quarter",
+      "front",
+      "side",
+      "rear",
+      "underside"
+    ],
+    "size": 1200,
+    "samples": 64
+  },
+  "params": {
+    "body_center": [
+      0,
+      0.32,
+      1
+    ],
+    "body_radii": [
+      0.83,
+      1.28,
+      0.77
+    ],
+    "head_center": [
+      0,
+      -0.86,
+      1.24
+    ],
+    "head_radii": [
+      0.6,
+      0.63,
+      0.56
+    ],
+    "leg_x": 0.54,
+    "front_leg_x": 0.45,
+    "rear_leg_x": 0.61,
+    "front_y": -0.65,
+    "rear_y": 1.01,
+    "voxel_size": 0.023,
+    "eye_x": 0.255,
+    "eye_y": -1.408,
+    "eye_z": 1.435,
+    "eye_width": 0.105,
+    "eye_height": 0.119,
+    "iris_radius": 0.106,
+    "pupil_radius": 0.077,
+    "ear_width": 0.144,
+    "ear_height": 0.158,
+    "ear_x": 0.515,
+    "ear_y": -0.86,
+    "ear_z": 1.675,
+    "quill_count": 3900,
+    "fur_count": 11000,
+    "nose_to_rump_m": 0.25,
+    "nose_front_y": -1.988,
+    "rump_y": 1.6
+  },
+  "metersPerWorkingUnit": 0.06967670011148272,
+  "noseToRumpMeters": 0.25,
+  "headMeshes": [
+    "Head"
+  ],
+  "limbMeshes": [
+    "Limb_Front_L",
+    "Limb_Front_R",
+    "Limb_Hind_L",
+    "Limb_Hind_R"
+  ],
+  "pawMeshes": [
+    "Paw_Front_L",
+    "Paw_Front_R",
+    "Paw_Hind_L",
+    "Paw_Hind_R"
+  ],
+  "separateEyeMeshes": [
+    "Eye_L_Iris",
+    "Eye_L_Lash",
+    "Eye_L_Lid_Lower",
+    "Eye_L_Lid_Upper",
+    "Eye_L_Pupil",
+    "Eye_L_Sclera",
+    "Eye_R_Iris",
+    "Eye_R_Lash",
+    "Eye_R_Lid_Lower",
+    "Eye_R_Lid_Upper",
+    "Eye_R_Pupil",
+    "Eye_R_Sclera"
+  ],
+  "armatures": [],
+  "animations": 0,
+  "skin": {
+    "continuousSkinComponentsBeforePartition": 1,
+    "method": "Voxel union, relax, subdivision, named surface partitions with shared boundary normals"
+  },
+  "quills": {
+    "count": 3900,
+    "rootBounds": [
+      [
+        -0.8278017044067383,
+        0.8277000188827515
+      ],
+      [
+        -0.8002925515174866,
+        1.594588279724121
+      ],
+      [
+        0.6364206075668335,
+        1.7852859497070312
+      ]
+    ],
+    "faceExclusionApplied": true,
+    "ventralExclusionApplied": true
+  },
+  "sourceModules": {
+    "build.py": "3e82e9426c2b645bd48cc2c3378c245afc946b5a9674a370d71dd30ce5c83c4f",
+    "config.py": "a3ae74ac539c52db15109a55a4a46469449f3981e1078b9ded4fbb2469f32db0",
+    "render.py": "7252f790d3a45ec27c81caf2403187607a86328a8ea5e3212c2c99a032b60006",
+    "anatomy.py": "1f88d73130efac82d1949eff392aa59fd2b20d455b455bb0f65162f071f528f7",
+    "groom.py": "7e961b3ccd9b091192c512a65cc5f060e0e97ade976340f3129dbe2ee964dc36",
+    "geometry.py": "1fc74593f7e301313b0dabc003106e051f1455cf95c28cbc55f10d17550965da",
+    "face.py": "bdb8a865d854bbd7f664b757fac6080f307d617e6152aacefe3b29206ac098e5"
+  },
+  "parts": [
+    {
+      "name": "Body",
+      "vertices": 121305,
+      "polygons": 120452
+    },
+    {
+      "name": "Head",
+      "vertices": 26943,
+      "polygons": 26738
+    },
+    {
+      "name": "Paw_Front_R",
+      "vertices": 4308,
+      "polygons": 4216
+    },
+    {
+      "name": "Limb_Front_R",
+      "vertices": 7234,
+      "polygons": 6952
+    },
+    {
+      "name": "Paw_Hind_R",
+      "vertices": 4265,
+      "polygons": 4182
+    },
+    {
+      "name": "Limb_Hind_R",
+      "vertices": 8772,
+      "polygons": 8503
+    },
+    {
+      "name": "Paw_Front_L",
+      "vertices": 4308,
+      "polygons": 4216
+    },
+    {
+      "name": "Limb_Front_L",
+      "vertices": 7234,
+      "polygons": 6952
+    },
+    {
+      "name": "Limb_Hind_L",
+      "vertices": 8772,
+      "polygons": 8503
+    },
+    {
+      "name": "Paw_Hind_L",
+      "vertices": 4265,
+      "polygons": 4182
+    },
+    {
+      "name": "Eye_L_Sclera",
+      "vertices": 1153,
+      "polygons": 1152
+    },
+    {
+      "name": "Eye_L_Iris",
+      "vertices": 1153,
+      "polygons": 1152
+    },
+    {
+      "name": "Eye_L_Pupil",
+      "vertices": 1153,
+      "polygons": 1152
+    },
+    {
+      "name": "Eye_L_Lid_Upper",
+      "vertices": 3850,
+      "polygons": 3840
+    },
+    {
+      "name": "Eye_L_Lid_Lower",
+      "vertices": 3850,
+      "polygons": 3840
+    },
+    {
+      "name": "Eye_L_Lash",
+      "vertices": 3850,
+      "polygons": 3840
+    },
+    {
+      "name": "Ear_L",
+      "vertices": 11520,
+      "polygons": 11264
+    },
+    {
+      "name": "Eye_R_Sclera",
+      "vertices": 1153,
+      "polygons": 1152
+    },
+    {
+      "name": "Eye_R_Iris",
+      "vertices": 1153,
+      "polygons": 1152
+    },
+    {
+      "name": "Eye_R_Pupil",
+      "vertices": 1153,
+      "polygons": 1152
+    },
+    {
+      "name": "Eye_R_Lid_Upper",
+      "vertices": 3850,
+      "polygons": 3840
+    },
+    {
+      "name": "Eye_R_Lid_Lower",
+      "vertices": 3850,
+      "polygons": 3840
+    },
+    {
+      "name": "Eye_R_Lash",
+      "vertices": 3850,
+      "polygons": 3840
+    },
+    {
+      "name": "Ear_R",
+      "vertices": 11520,
+      "polygons": 11264
+    },
+    {
+      "name": "Nose",
+      "vertices": 3706,
+      "polygons": 3700
+    },
+    {
+      "name": "Nostril_L",
+      "vertices": 362,
+      "polygons": 384
+    },
+    {
+      "name": "Nostril_R",
+      "vertices": 362,
+      "polygons": 384
+    },
+    {
+      "name": "Mouth_Closed_Smile",
+      "vertices": 730,
+      "polygons": 720
+    },
+    {
+      "name": "Muzzle_Philtrum",
+      "vertices": 370,
+      "polygons": 360
+    },
+    {
+      "name": "Whisker_L_0",
+      "vertices": 370,
+      "polygons": 360
+    },
+    {
+      "name": "Whisker_L_1",
+      "vertices": 370,
+      "polygons": 360
+    },
+    {
+      "name": "Whisker_L_2",
+      "vertices": 370,
+      "polygons": 360
+    },
+    {
+      "name": "Whisker_L_3",
+      "vertices": 370,
+      "polygons": 360
+    },
+    {
+      "name": "Whisker_R_0",
+      "vertices": 370,
+      "polygons": 360
+    },
+    {
+      "name": "Whisker_R_1",
+      "vertices": 370,
+      "polygons": 360
+    },
+    {
+      "name": "Whisker_R_2",
+      "vertices": 370,
+      "polygons": 360
+    },
+    {
+      "name": "Whisker_R_3",
+      "vertices": 370,
+      "polygons": 360
+    },
+    {
+      "name": "Nail_Front_L_1",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Front_L_2",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Front_L_3",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Front_L_4",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Hind_L_1",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Hind_L_2",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Hind_L_3",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Hind_L_4",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Front_R_1",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Front_R_2",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Front_R_3",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Front_R_4",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Hind_R_1",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Hind_R_2",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Hind_R_3",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Nail_Hind_R_4",
+      "vertices": 302,
+      "polygons": 320
+    },
+    {
+      "name": "Dorsal_Soft_Undercoat",
+      "vertices": 256280,
+      "polygons": 64070
+    },
+    {
+      "name": "Quills_Dorsal_Groom",
+      "vertices": 117000,
+      "polygons": 101400
+    },
+    {
+      "name": "Fur_Short_Cream",
+      "vertices": 330000,
+      "polygons": 330000
+    }
+  ],
+  "claims": {
+    "staticOnly": true,
+    "rigged": false,
+    "independentEyeGeometry": true,
+    "imageGenerationUsed": false,
+    "paidModelUsed": false,
+    "importedTripoGeometry": false,
+    "visualApproval": false,
+    "riggingReadyTopology": false,
+    "gazeReady": false
+  },
+  "glb": {
+    "bytes": 42055892,
+    "sha256": "3e97008d6fe125631f346b4635352ee0939cc607f965e1ba5122f0785b93b8a6"
+  },
+  "elapsedSecondsThroughExport": 44.13,
+  "exportCompletedAt": "2026-09-22T02:24:47.481712+00:00"
+}

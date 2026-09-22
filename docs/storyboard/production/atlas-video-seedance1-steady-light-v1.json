@@ -1,0 +1,16 @@
+{
+  "model": "fal-ai/bytedance/seedance/v1/pro/fast/image-to-video",
+  "sourceImage": "docs/storyboard/images/atlas/shire-v1.png",
+  "sourceImageField": "image_url",
+  "matchEndFrame": false,
+  "output": "docs/storyboard/videos/shire-seedance1-steady-light-v1.mp4",
+  "priceEstimate": {
+    "currency": "USD", "amount": 0.245388,
+    "basis": "Estimate based on prior delivered 1664 x 1248 and 121 frames at $1 per million video tokens. Actual dimensions and frame count determine cost. Not an invoice.",
+    "source": "https://fal.ai/models/fal-ai/bytedance/seedance/v1/pro/fast/image-to-video"
+  },
+  "input": {
+    "prompt": "The camera stays in exactly the same place for the entire shot. Locked overhead view, identical framing from first to last frame: no pan, tilt, zoom, rotation or reframing. Wind moves fine surface texture and reflected sunlight across the lake. Leaves flutter gently, and the existing stream flows continuously. Buildings, paths, bridge and shoreline stay fixed. Steady daylight. Do not throw pebbles at the lake. Do not add shadows from clouds. Keep the lighting, shadows, and exposure constant throughout the shot.",
+    "duration": "5", "resolution": "1080p", "aspect_ratio": "auto", "camera_fixed": true
+  }
+}

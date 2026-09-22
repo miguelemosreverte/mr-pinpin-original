@@ -1,0 +1,36 @@
+{
+  "status": "approved",
+  "tool": "built-in image_gen",
+  "use_case": "illustration-story",
+  "prompt": "Use case: illustration-story\nAsset type: finished portrait storybook chapter title cover, 1024x1536 pixels, full bleed.\nPrimary request: Make a beautiful warm dimensional woodland book cover for chapter 2 of Mr. PinPin. Exactly two hedgehogs, young PinPin and old Master Shipostav, have a kind quiet conversation outside the elder's root-burrow home at the foot of Burrow Hill.\nInput images: Image 1 is the style/layout/typography reference ONLY: match its rich dimensional woodland miniature realism, detailed plants, graceful substantial dark-green storybook serif title integrated into open sky in the upper third; do not include tractor or logs. Image 2 establishes Burrow Hill environment and the two-character size relationship. Image 3 establishes Master Shipostav's precise face, silver-gray quills, cream face, round gold spectacles, natural low hedgehog body and curved bramble staff resting nearby.\nScene/backdrop: Ferns, tiny white woodland flowers, mossy rocks, ancient oak roots framing a small natural burrow opening; the hill and distant leafy woodland beyond. Use a low animal-height camera, ground-level intimate storybook feeling, open softly blue sky upper third enclosed by leafy branches at edges.\nSubject: young PinPin on left and elderly Master Shipostav on right, facing each other with warm clear three-quarter faces, both faces visible, friendly attentive eyes. Elder slightly larger than young PinPin but both convincingly small hedgehogs among the flowers; naturally grounded bodies. PinPin has warm brown quills and cream face as in Image 1, no clothing or spectacles. Elder has silvery quills and round gold spectacles as in Image 3; his curved bramble staff leans beside the root entrance. Exactly two hedgehogs, each with coherent two forelimb and two hindlimb attachments, with natural occlusion; no human hands, no duplicate paws.\nComposition: typography occupies upper third; large richly drawn hedgehogs in lower-middle area, burrow behind elder, foreground moss/ferns/path along bottom. Match the reference cover's polished full-bleed depth, restrained natural contrast, believable warm sunlight and storybook charm. No panel, border, banner or blank white margins.\nText (verbatim), elegant large dark forest-green serif lettering integrated into sky: first line \"Мистер Пин-Пин\"; below it the chapter title \"Мудрость Старейшины\". The second title may wrap across two well-balanced lines. This is all text; no extra word, author, chapter number or badge. Spell every Cyrillic letter correctly. Clear readable title with ample breathing space and no branches crossing letters.\nConstraints: preserve the elder identity and established root-burrow setting, exactly two hedgehogs, no other animals, no tractor, no clothes, no extra limbs, no watermark.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/standalone/timber-tractor/title-ru-v1.png",
+      "role": "style, layout and typography reference only"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/chapter-02-direct/scene-03.png",
+      "role": "environment continuity and character scale"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-original/docs/storyboard/images/chapter-02-direct/scene-08.png",
+      "role": "elder identity, spectacles and staff"
+    }
+  ],
+  "generation_started_utc": "2026-09-20T19:37:02.081Z",
+  "generation_completed_utc": "2026-09-20T19:37:52.141Z",
+  "source_output": "/Users/miguel_lemos/.codex/generated_images/01a0c051-374f-7523-ac8a-364e2ab0f906/exec-bb97ce94-b802-453f-9e06-64dd32434367.png",
+  "saved_location": "/tmp/pinpin-bedtime-release/docs/storyboard/images/covers/chapter-02/title-ru-v1.png",
+  "review": "Full-image visual review: exact Russian title is readable and matches requested spelling. Two hedgehogs face each other; PinPin is smaller and brown-quilled, elder silver-quilled with round spectacles and nearby curved staff. Natural root burrow and distant hill retained. No visible duplicate forelimb attachments; hidden hindlimbs cannot be certified. Warm dimensional full-bleed style matches tractor cover. Candidate only.",
+  "dimensions": {
+    "width": 1024,
+    "height": 1536
+  },
+  "sha256": "de91546612898eca6dcdfe27eddf6e6735e283d8d1a7fc50bd082a64f993b657",
+  "tool_call_duration_seconds": 50.06,
+  "approval": {
+    "by": "Miguel",
+    "recordedAt": "2026-09-20T19:54:37.730198+00:00",
+    "evidence": "User accepted the presented chapter covers and standardization: perfect. good job."
+  }
+}

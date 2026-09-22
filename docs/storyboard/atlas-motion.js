@@ -224,6 +224,11 @@
   }
   window.AtlasMotion={create(canvas,geometry,onChange=() => {},onFrame=() => {}) {
     const ctx=canvas.getContext('2d'), reduced=matchMedia('(prefers-reduced-motion: reduce)');
+    const requestedMode=window.location?.search && new URLSearchParams(window.location.search).get('spriteMode');
+    const mode=['crisp','legacy'].includes(requestedMode) ? requestedMode : 'natural';
+    const familyEnabled=Boolean(window.AtlasFamily && new URLSearchParams(window.location?.search || '').get('family')==='1');
+    if(familyEnabled)canvas.dataset.family='true';
+    const legacy=mode==='legacy', natural=mode==='natural';
     canvas.width=geometry.width; canvas.height=geometry.height;
     const pathFor=points => {
       const path=new Path2D(); points.forEach(([x,y],i) => i ? path.lineTo(x,y) : path.moveTo(x,y)); return path;
@@ -240,16 +245,37 @@
     let version=0, lastTrailPoint=null, fallbackStarted=false, spriteLayer=null;
     let spriteSurface=null, spriteDirty=true, spriteSamples=[], spriteKey=null;
     let spritePhase=-1, spriteHeading=-1, spriteTick=-1, spriteMoving=false;
+    let selectedDirection=null;
+    let directionCandidate=null, candidateSince=0, turnSince=null, directionSince=-Infinity, transition=null;
+    let blendPairs=new Map();
+    const pairKey=(a,b) => a<b ? a+','+b : b+','+a;
+    let velocity=0, actualSpeed=0, spriteLift=0, naturalPaint=-Infinity;
     const spriteLoaded=() => { spriteDirty=true; draw(); };
+    const family=familyEnabled ? window.AtlasFamily.create({onReady:spriteLoaded}) : null;
+    function seedFamily() {
+      if(!family)return;
+      const destinations=routes.flatMap(r=>[r.points[0],r.points.at(-1)])
+        .sort((a,b)=>distance(b,point)-distance(a,point));
+      const back=graph.plan(point,destinations[0] || point);
+      family.seed(back?.points?.length ? back.points.slice().reverse() : [point]);
+    }
+    seedFamily();
     const data=(key,value) => { const text=String(value); if (canvas.dataset[key]!==text) canvas.dataset[key]=text; };
     try { paused=paused || localStorage.getItem(preferenceKey)==='paused'; } catch { /* Use system preference. */ }
     function syncDirections() {
+      if(family)return;
       const next=window.atlasDirections;
       if (next===metadata) return;
       metadata=next;
       spriteDirty=true;
+      selectedDirection=null;
+      directionCandidate=null; turnSince=null; transition=null; directionSince=-Infinity;
+      blendPairs=new Map((metadata?.blendTransitions || [])
+        .filter(t => Number.isFinite(t.from) && Number.isFinite(t.to))
+        .map(t => [pairKey(((t.from%360)+360)%360,((t.to%360)+360)%360),t]));
       directions=(metadata?.directions || []).filter(d => Number.isFinite(d.angle) && d.frames?.length)
-        .slice().sort((a,b) => a.angle-b.angle);
+        .map(d => ({...d,angle:((d.angle%360)+360)%360}))
+        .filter(d => !legacy || d.angle%30===0).sort((a,b) => a.angle-b.angle);
       directions.forEach(direction => preload(direction.runtimeSrc || direction.src,spriteLoaded));
     }
     function target(value) {
@@ -283,8 +309,25 @@
         });
       });
     }
+    function naturalDistance(delta) {
+      const length=Math.max(0,(journey?.length || 0)-travelled);
+      if (!length) { velocity=0; return 0; }
+      const count=Math.min(32,Math.max(1,Math.ceil(delta/16))), dt=delta/count/1000, acceleration=speed/.2;
+      let moved=0;
+      // Fixed work even after a long dropped frame; clamp the integrated distance at the endpoint.
+      for (let i=0;i<count && moved<length;i++) {
+        const phase=(walkTime+moved/speed*1000)/190;
+        const cruise=speed*(1+.11*Math.sin(phase*Math.PI*2));
+        const targetSpeed=Math.min(cruise,Math.sqrt(2*acceleration*(length-moved)));
+        const ramp=Math.min(dt,Math.abs(targetSpeed-velocity)/acceleration);
+        const next=velocity+Math.sign(targetSpeed-velocity)*acceleration*ramp;
+        moved=Math.min(length,moved+(velocity+next)*ramp/2+next*(dt-ramp));
+        velocity=moved===length ? 0 : next;
+      }
+      return moved;
+    }
     function advance(delta) {
-      let remaining=speed*delta/1000, moved=0;
+      let remaining=natural ? naturalDistance(delta) : speed*delta/1000, moved=0;
       while (journey && segment<journey.points.length) {
         const next=journey.points[segment], length=distance(point,next);
         if (length<1e-6) { point=next.slice(); segment++; continue; }
@@ -292,33 +335,88 @@
         heading=(Math.atan2(next[1]-point[1],next[0]-point[0])*180/Math.PI+360)%360;
         const step=Math.min(length,remaining), fraction=step/length;
         point=[point[0]+(next[0]-point[0])*fraction,point[1]+(next[1]-point[1])*fraction];
+        family?.append(point);
         remaining-=step; travelled+=step; moved+=step;
         if (step===length) segment++;
       }
       walkTime+=moved/speed*1000;
+      if (natural) actualSpeed=delta>0 ? moved/delta*1000 : 0;
+    }
+    function naturalDirection(candidate,available,moving,frame,canPaint) {
+      if (!selectedDirection || !available.includes(selectedDirection)) {
+        selectedDirection=candidate; directionSince=elapsed;
+        directionCandidate=null; turnSince=null; transition=null;
+      } else if (!moving) {
+        // Arrival commits the final heading once; an idle sprite never keeps chasing a turn.
+        selectedDirection=candidate; directionCandidate=null; turnSince=null; transition=null;
+      } else if (candidate===selectedDirection) {
+        directionCandidate=null; turnSince=null;
+      } else if (candidate) {
+        if (turnSince===null) turnSince=elapsed;
+        if (candidate!==directionCandidate) { directionCandidate=candidate; candidateSince=elapsed; }
+        if (canPaint && elapsed-directionSince>=150 &&
+            (elapsed-candidateSince>=120 || elapsed-turnSince>=240)) {
+          const previous=selectedDirection;
+          const rule=blendPairs.get(pairKey(previous.angle,candidate.angle));
+          const adjacent=Math.abs(((candidate.angle-previous.angle+540)%360)-180)===15;
+          const duration=Number.isFinite(rule?.durationMs) ? Math.min(80,Math.max(0,rule.durationMs)) : 80;
+          transition=rule?.allowed===true && adjacent && duration>0 ? {from:previous,to:candidate,start:elapsed,duration,frame} : null;
+          selectedDirection=candidate; directionSince=elapsed;
+          directionCandidate=null; turnSince=null;
+        }
+      }
+      if (transition && elapsed-transition.start>=transition.duration) transition=null;
+      return selectedDirection;
     }
     function sprite() {
+      if(family) {
+        const moving=Boolean(journey && segment<journey.points.length);
+        family.draw(spriteLayer,{point,heading,elapsed,walkTime,moving});
+        data('sprite',family.loaded ? 'ready' : family.error ? 'unavailable' : 'loading');
+        data('spriteMode','family');data('speed',moving ? actualSpeed : 0);
+        return;
+      }
       if (spriteLayer) {
         spriteLayer.x=point[0]-spriteLayer.anchor[0]; spriteLayer.y=point[1]-spriteLayer.anchor[1];
         spriteLayer.footY=point[1];
       }
       const moving=Boolean(journey && segment<journey.points.length);
-      const phaseBucket=moving ? Math.floor((walkTime+1e-7)/50) : 0;
-      const headingBucket=Math.round(heading/3.75)%96, tickBucket=Math.floor((elapsed+1e-7)/50);
+      const phaseBucket=moving ? Math.floor((walkTime+1e-7)/(legacy ? 50 : 190)) : 0;
+      const angle=legacy ? Math.round(heading/3.75)%96*3.75 : heading;
+      const angular=d => Math.abs(((angle-d.angle+540)%360)-180);
+      const available=legacy ? directions : directions.filter(d => images.get(d.runtimeSrc || d.src)?.ready);
+      let direction=available.reduce((best,d) => !best || angular(d)<angular(best) ? d : best,null);
+      // A 4-degree distance advantage moves the midpoint boundary by 2 degrees.
+      if (!legacy && direction && selectedDirection && available.includes(selectedDirection) &&
+          angular(selectedDirection)<=angular(direction)+4) direction=selectedDirection;
+      const canPaint=elapsed-naturalPaint>=50-1e-7;
+      if (natural) direction=naturalDirection(direction,available,moving,phaseBucket,canPaint);
+      else if (!legacy) selectedDirection=direction;
+      if (natural) {
+        data('speed',moving ? actualSpeed : 0);
+        data('turning',Boolean(directionCandidate || transition));
+      }
+      const headingBucket=legacy ? angle : direction?.angle ?? -1, tickBucket=Math.floor((elapsed+1e-7)/50);
       const unchanged=phaseBucket===spritePhase && headingBucket===spriteHeading;
-      if (spriteDirty || moving!==spriteMoving || (!unchanged && tickBucket!==spriteTick)) {
-        const angle=headingBucket*3.75, angular=d => Math.abs(((angle-d.angle+540)%360)-180);
-        const direction=directions.reduce((best,d) => !best || angular(d)<angular(best) ? d : best,null);
+      const refresh=natural ? canPaint && (moving || moving!==spriteMoving || !unchanged || transition) :
+        moving!==spriteMoving || (!unchanged && (!legacy || tickBucket!==spriteTick));
+      if (spriteDirty || refresh) {
+        if (!legacy && !direction && directions.some(d => {
+          const entry=images.get(d.runtimeSrc || d.src);
+          return entry && !entry.failed;
+        })) { data('sprite','loading'); return; }
         const directionSrc=direction && (direction.runtimeSrc || direction.src);
         const image=direction && preload(directionSrc);
         if (directionSrc && !image && !images.get(directionSrc)?.failed) { data('sprite','loading'); return; }
-        const phase=phaseBucket*50/190, frame=Math.floor(phase), mix=phase-frame, samples=[];
+        const phase=legacy ? phaseBucket*50/190 : phaseBucket;
+        const frame=natural && transition ? transition.frame : Math.floor(phase), mix=legacy ? phase-frame : 0, samples=[];
+        const lift=natural && moving ? .75*Math.sin(Math.PI*(walkTime/190%1))**2 : 0;
         function add(image,crop,anchor,scale,weight) {
           if (weight<=1e-7 || !crop?.every(Number.isFinite) || crop[2]<=0 || crop[3]<=0) return;
           samples.push({image,crop,anchor:anchor || [crop[2]/2,crop[3]],scale,weight});
         }
         function gait(image,count,weight,specFor) {
-          for (let i=0;i<2;i++) {
+          for (let i=0;i<(legacy ? 2 : 1);i++) {
             const contribution=weight*(i ? mix : 1-mix);
             if (contribution<=1e-7) continue;
             const spec=specFor((frame+i)%count);
@@ -335,8 +433,14 @@
           const blend=gap>0 && gap<=60 ? ((angle-lower.angle+360)%360)/gap : 0;
           const lowerImage=preload(lower.runtimeSrc || lower.src), upperImage=preload(upper.runtimeSrc || upper.src);
           // Never dissolve across missing headings or opposing silhouettes.
-          const headings=gap>0 && gap<=60 && lowerImage && upperImage
+          let headings=legacy && gap>0 && gap<=60 && lowerImage && upperImage
             ? [[lower,lowerImage,1-blend],[upper,upperImage,blend]] : [[direction,image,1]];
+          if (natural && transition) {
+            // End-of-display-interval weights keep an 80ms maximum fade inside the 20Hz upload budget.
+            const blend=Math.min(1,(elapsed-transition.start+50)/transition.duration);
+            headings=[[transition.from,preload(transition.from.runtimeSrc || transition.from.src),1-blend],
+              [transition.to,image,blend]];
+          }
           for (const [d,source,weight] of headings) {
             const scale=(metadata.displayWidth || 56)/(d.referenceWidth || metadata.referenceWidth || 425);
             gait(source,d.frames.length,weight,index => ({crop:d.frames[index].rect,anchor:d.frames[index].anchor,scale}));
@@ -364,18 +468,27 @@
           spriteSurface={canvas:surface,anchor:[64,112]};
         }
         const surface=spriteLayer || spriteSurface;
-        const key=samples.map(s => [s.image.src,...s.crop,...s.anchor,s.scale,s.weight].join(',')).join(';');
+        const imageKey=canvas.dataset.direction+';'+samples.map(s => [s.image.src,...s.crop,...s.anchor,s.scale,s.weight].join(',')).join(';');
+        const key=imageKey+(natural ? '|lift='+lift : '');
         if (key!==spriteKey) {
-          spriteSamples=samples; spriteKey=key;
+          spriteSamples=samples; spriteKey=key; spriteLift=lift;
           if (surface) {
             const context=surface.canvas.getContext('2d');
             context.clearRect(0,0,surface.canvas.width,surface.canvas.height);
+            const rasterScale=surface.rasterScale || 1;
+            context.save();
+            if (rasterScale!==1) context.setTransform(rasterScale,0,0,rasterScale,0,0);
             paintSprite(context,surface.anchor);
+            context.restore();
           }
-          if (spriteLayer) { spriteLayer.imageKey=key; spriteLayer.revision++; }
+          if (spriteLayer) { spriteLayer.imageKey=imageKey; spriteLayer.revision++; }
+          if (natural) naturalPaint=elapsed;
         }
         spritePhase=phaseBucket; spriteHeading=headingBucket; spriteTick=tickBucket; spriteMoving=moving; spriteDirty=false;
-        data('sprite','ready'); data('frame',frame%4);
+        data('sprite','ready'); data('frame',frame%4); data('spriteMode',mode);
+        if (natural) {
+          data('bob',lift); data('gaitDistance',walkTime*speed/1000); data('blending',samples.length>1);
+        }
       }
       if (spriteLayer) {
         spriteLayer.ready=Boolean(spriteKey);
@@ -384,13 +497,17 @@
     }
     function paintSprite(context,anchor) {
       context.save(); context.translate(...anchor);
+      if (natural && context.ellipse) {
+        context.globalCompositeOperation='source-over'; context.globalAlpha=.13; context.fillStyle='#20231c';
+        context.beginPath(); context.ellipse(0,0,9,1.7,0,0,Math.PI*2); context.fill();
+      }
       // Add weighted premultiplied RGBA on a transparent surface: source-over
       // would reduce opacity in overlapping pixels during the crossfade.
-      context.globalCompositeOperation='lighter';
+      context.globalCompositeOperation=legacy || spriteSamples.length>1 ? 'lighter' : 'source-over';
       for (const sample of spriteSamples) {
         const {image,crop,anchor,scale,weight}=sample;
         context.globalAlpha=weight;
-        context.drawImage(image,...crop,-anchor[0]*scale,-anchor[1]*scale,crop[2]*scale,crop[3]*scale);
+        context.drawImage(image,...crop,-anchor[0]*scale,-anchor[1]*scale-spriteLift,crop[2]*scale,crop[3]*scale);
       }
       context.restore();
     }
@@ -472,13 +589,33 @@
     addEventListener('storage',event => {
       if (event.key===preferenceKey) setPaused(reduced.matches || event.newValue==='paused',false);
     });
-    // Renderer-owned, fixed-size sprite surface; other consumers keep the original overlay.
-    canvas.atlasSetSpriteLayer=layer => { spriteLayer=layer; spriteDirty=true; spriteKey=null; draw(); };
+    function repaintSpriteRaster(layer) {
+      if (layer!==spriteLayer) return;
+      spriteDirty=true; spriteKey=null;
+      // Camera-only zoom must repaint even when the motion clock is paused.
+      draw();
+    }
+    // Renderer-owned raster size; positions and anchors remain in world pixels.
+    canvas.atlasSetSpriteLayer=layer => {
+      if (spriteLayer?.onRasterScaleChange===repaintSpriteRaster) spriteLayer.onRasterScaleChange=null;
+      spriteLayer=layer;
+      if (layer) layer.onRasterScaleChange=repaintSpriteRaster;
+      spriteDirty=true; spriteKey=null; draw();
+    };
     rebuild(); run();
     return {
       get version() { return version; },
       get navigation() { return {edges:graph.edges,junctions:graph.junctions,nodeCount:graph.nodeCount}; },
       get spriteLayer() { return spriteLayer; },
+      get familyState() { return family?.state || null; },
+      startFamilyPreview() {
+        if(!family)return false;
+        const plan=graph.plan(point,[1030,581]);
+        point=plan.target.slice();journey=null;pending=null;walkTime=0;travelled=0;segment=1;
+        seedFamily();target([1220,568]);
+        if(!reduced.matches)setPaused(false,false);else run();
+        return true;
+      },
       get paused() { return paused; },
       suspend(value) { if (suspended===Boolean(value)) return; suspended=Boolean(value); run(); },
       toggle() { setPaused(!paused); },
@@ -492,6 +629,8 @@
         if (!endpoint) return false;
         point=endpoint.slice(); journey=null; pending=null; segment=1; travelled=0;
         walkTime=0; accepted=-Infinity; cueUntil=0; delete canvas.dataset.cue;
+        if (natural) { velocity=0; actualSpeed=0; transition=null; directionCandidate=null; turnSince=null; spriteDirty=true; }
+        seedFamily();
         rebuild(); run();
         return true;
       },

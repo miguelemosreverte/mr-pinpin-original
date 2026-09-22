@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Mr. PinPin / 3D study</title>
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII=">
+  <link rel="stylesheet" href="pinpin-3d.css">
+  <script type="importmap">
+    {"imports":{"three":"../vendor/three/three.module.min.js","three/addons/":"../vendor/three/addons/"}}
+  </script>
+  <script src="../icons.js" defer></script>
+  <script type="module" src="pinpin-3d.js"></script>
+</head>
+<body>
+  <main id="studio" aria-label="Mr. PinPin 3D model viewer">
+    <canvas id="model-view" aria-label="Orbitable Mr. PinPin 3D model" tabindex="0"></canvas>
+    <header>
+      <div><h1>Mr. PinPin / 3D study</h1><p id="model-label">Trellis singleview</p><p id="status" role="status" aria-live="polite">Loading model</p></div>
+      <button id="rotate" type="button" title="Automatic rotation" aria-label="Automatic rotation" aria-pressed="false" disabled><i data-lucide="rotate-cw" aria-hidden="true"></i></button>
+    </header>
+  </main>
+</body>
+</html>

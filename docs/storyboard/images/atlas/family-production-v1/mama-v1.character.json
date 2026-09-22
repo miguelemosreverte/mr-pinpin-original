@@ -1,0 +1,1526 @@
+{
+  "id": "mama",
+  "name": "Mama",
+  "displayWidth": 84,
+  "fullCircle": true,
+  "reviewStatus": "prepared-awaiting-visual-review",
+  "productionReady": false,
+  "headingAssessment": "Requested approximate azimuth bins; no exact-angle certification.",
+  "readiness": {
+    "preparedDirections": 24,
+    "expectedDirections": 24,
+    "preparedFrames": 96,
+    "missingAngles": [],
+    "technicalInventoryComplete": true
+  },
+  "sheets": [
+    {
+      "src": "images/atlas/family-production-v1/mama-a-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-a-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ]
+      },
+      "referenceWidth": 281.616,
+      "sha256": "181cbfa6b39355a42b003b9a35b2ff1947434c662190ea420874e5bfc34d3e0d",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/mama-a-v1.json",
+      "prompt": "images/atlas/family-production-v1/mama-a-v1.md"
+    },
+    {
+      "src": "images/atlas/family-production-v1/mama-b-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-b-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          893,
+          1254
+        ]
+      },
+      "referenceWidth": 302.372,
+      "sha256": "3a9c04d7fa2b7c52b184032599da341fd39515f8108a16d4596853f31819d399",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/mama-b-v1.json",
+      "prompt": "images/atlas/family-production-v1/mama-b-v1.md"
+    },
+    {
+      "src": "images/atlas/family-production-v1/mama-c-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-c-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ]
+      },
+      "referenceWidth": 274.642,
+      "sha256": "311854c32c5749e75e2190ef5391c6fe80d4ab4d9e0971cb32fe1915b9aec8e6",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/mama-c-v1.json",
+      "prompt": "images/atlas/family-production-v1/mama-c-v1.md"
+    },
+    {
+      "src": "images/atlas/family-production-v1/mama-d-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-d-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          333,
+          645,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ]
+      },
+      "referenceWidth": 298.893,
+      "sha256": "9fee5f7da6635a8f87f380d45931fa7fd46c0efc627ce0472623524f04aaa7fd",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/mama-d-v1.json",
+      "prompt": "images/atlas/family-production-v1/mama-d-v1.md"
+    },
+    {
+      "src": "images/atlas/family-production-v1/mama-e-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-e-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          321,
+          635,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          887,
+          1254
+        ]
+      },
+      "referenceWidth": 310.301,
+      "sha256": "c2a73704c8d6eb43b58fd738407116c50619eb75f0512af3fdd1e728d7d4b81f",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/mama-e-v1.json",
+      "prompt": "images/atlas/family-production-v1/mama-e-v1.md"
+    },
+    {
+      "src": "images/atlas/family-production-v1/mama-f-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-f-v1.webp",
+      "width": 1254,
+      "height": 1254,
+      "grid": {
+        "x": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ],
+        "y": [
+          0,
+          313,
+          627,
+          940,
+          1254
+        ]
+      },
+      "referenceWidth": 290.261,
+      "sha256": "195fdefc3ab8a41a589a3f4ce23cd608ea568f3bfbe59879d06fa9acec9de485",
+      "reviewStatus": "awaiting-visual-review",
+      "preparation": "images/atlas/family-production-v1/mama-f-v1.json",
+      "prompt": "images/atlas/family-production-v1/mama-f-v1.md"
+    }
+  ],
+  "directions": [
+    {
+      "angle": 0,
+      "src": "images/atlas/family-production-v1/mama-a-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-a-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            29,
+            76,
+            283,
+            201
+          ],
+          "anchor": [
+            141,
+            196
+          ]
+        },
+        {
+          "rect": [
+            339,
+            75,
+            285,
+            206
+          ],
+          "anchor": [
+            142.5,
+            201
+          ]
+        },
+        {
+          "rect": [
+            652,
+            76,
+            285,
+            204
+          ],
+          "anchor": [
+            142.5,
+            199
+          ]
+        },
+        {
+          "rect": [
+            965,
+            76,
+            283,
+            207
+          ],
+          "anchor": [
+            141.5,
+            202
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 15,
+      "src": "images/atlas/family-production-v1/mama-d-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-d-v1.webp",
+      "referenceWidth": 298.893,
+      "frames": [
+        {
+          "rect": [
+            33,
+            53,
+            287,
+            225
+          ],
+          "anchor": [
+            143.5,
+            220
+          ]
+        },
+        {
+          "rect": [
+            347,
+            54,
+            286,
+            223
+          ],
+          "anchor": [
+            143.5,
+            218
+          ]
+        },
+        {
+          "rect": [
+            658,
+            54,
+            282,
+            225
+          ],
+          "anchor": [
+            141,
+            220
+          ]
+        },
+        {
+          "rect": [
+            971,
+            55,
+            276,
+            224
+          ],
+          "anchor": [
+            138.5,
+            219
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 30,
+      "src": "images/atlas/family-production-v1/mama-a-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-a-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            39,
+            355,
+            249,
+            228
+          ],
+          "anchor": [
+            124.5,
+            223
+          ]
+        },
+        {
+          "rect": [
+            352,
+            354,
+            252,
+            236
+          ],
+          "anchor": [
+            126,
+            231
+          ]
+        },
+        {
+          "rect": [
+            663,
+            356,
+            245,
+            237
+          ],
+          "anchor": [
+            122.5,
+            232
+          ]
+        },
+        {
+          "rect": [
+            977,
+            353,
+            244,
+            237
+          ],
+          "anchor": [
+            122.5,
+            232
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 45,
+      "src": "images/atlas/family-production-v1/mama-d-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-d-v1.webp",
+      "referenceWidth": 298.893,
+      "frames": [
+        {
+          "rect": [
+            39,
+            343,
+            263,
+            253
+          ],
+          "anchor": [
+            131,
+            248
+          ]
+        },
+        {
+          "rect": [
+            353,
+            343,
+            265,
+            257
+          ],
+          "anchor": [
+            132,
+            252
+          ]
+        },
+        {
+          "rect": [
+            666,
+            342,
+            260,
+            256
+          ],
+          "anchor": [
+            129.5,
+            252
+          ]
+        },
+        {
+          "rect": [
+            979,
+            344,
+            259,
+            253
+          ],
+          "anchor": [
+            129,
+            248
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 60,
+      "src": "images/atlas/family-production-v1/mama-a-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-a-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            51,
+            642,
+            238,
+            258
+          ],
+          "anchor": [
+            119,
+            253
+          ]
+        },
+        {
+          "rect": [
+            359,
+            641,
+            243,
+            263
+          ],
+          "anchor": [
+            122,
+            258
+          ]
+        },
+        {
+          "rect": [
+            671,
+            642,
+            240,
+            266
+          ],
+          "anchor": [
+            120,
+            261
+          ]
+        },
+        {
+          "rect": [
+            983,
+            641,
+            237,
+            253
+          ],
+          "anchor": [
+            118.5,
+            248
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 75,
+      "src": "images/atlas/family-production-v1/mama-d-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-d-v1.webp",
+      "referenceWidth": 298.893,
+      "frames": [
+        {
+          "rect": [
+            46,
+            636,
+            246,
+            275
+          ],
+          "anchor": [
+            122.5,
+            270
+          ]
+        },
+        {
+          "rect": [
+            362,
+            636,
+            244,
+            274
+          ],
+          "anchor": [
+            121,
+            269
+          ]
+        },
+        {
+          "rect": [
+            675,
+            637,
+            239,
+            273
+          ],
+          "anchor": [
+            118.5,
+            268
+          ]
+        },
+        {
+          "rect": [
+            989,
+            636,
+            242,
+            267
+          ],
+          "anchor": [
+            120.5,
+            262
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 90,
+      "src": "images/atlas/family-production-v1/mama-a-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-a-v1.webp",
+      "referenceWidth": 281.616,
+      "frames": [
+        {
+          "rect": [
+            58,
+            940,
+            218,
+            245
+          ],
+          "anchor": [
+            108,
+            240
+          ]
+        },
+        {
+          "rect": [
+            366,
+            942,
+            213,
+            250
+          ],
+          "anchor": [
+            105.5,
+            245
+          ]
+        },
+        {
+          "rect": [
+            680,
+            943,
+            215,
+            248
+          ],
+          "anchor": [
+            107.5,
+            244
+          ]
+        },
+        {
+          "rect": [
+            988,
+            940,
+            214,
+            253
+          ],
+          "anchor": [
+            106.5,
+            249
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 105,
+      "src": "images/atlas/family-production-v1/mama-d-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-d-v1.webp",
+      "referenceWidth": 298.893,
+      "frames": [
+        {
+          "rect": [
+            53,
+            940,
+            228,
+            242
+          ],
+          "anchor": [
+            113.5,
+            237
+          ]
+        },
+        {
+          "rect": [
+            367,
+            940,
+            229,
+            259
+          ],
+          "anchor": [
+            114.5,
+            254
+          ]
+        },
+        {
+          "rect": [
+            679,
+            940,
+            229,
+            255
+          ],
+          "anchor": [
+            114,
+            251
+          ]
+        },
+        {
+          "rect": [
+            993,
+            940,
+            230,
+            259
+          ],
+          "anchor": [
+            115,
+            254
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 120,
+      "src": "images/atlas/family-production-v1/mama-b-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-b-v1.webp",
+      "referenceWidth": 302.372,
+      "frames": [
+        {
+          "rect": [
+            40,
+            48,
+            256,
+            253
+          ],
+          "anchor": [
+            127.5,
+            248
+          ]
+        },
+        {
+          "rect": [
+            352,
+            47,
+            260,
+            254
+          ],
+          "anchor": [
+            129,
+            249
+          ]
+        },
+        {
+          "rect": [
+            663,
+            48,
+            259,
+            253
+          ],
+          "anchor": [
+            129.5,
+            248
+          ]
+        },
+        {
+          "rect": [
+            982,
+            48,
+            257,
+            253
+          ],
+          "anchor": [
+            128,
+            248
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 135,
+      "src": "images/atlas/family-production-v1/mama-e-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-e-v1.webp",
+      "referenceWidth": 310.301,
+      "frames": [
+        {
+          "rect": [
+            51,
+            44,
+            252,
+            268
+          ],
+          "anchor": [
+            125,
+            264
+          ]
+        },
+        {
+          "rect": [
+            365,
+            45,
+            250,
+            259
+          ],
+          "anchor": [
+            124,
+            254
+          ]
+        },
+        {
+          "rect": [
+            672,
+            44,
+            252,
+            267
+          ],
+          "anchor": [
+            125,
+            262
+          ]
+        },
+        {
+          "rect": [
+            985,
+            45,
+            251,
+            261
+          ],
+          "anchor": [
+            125,
+            256
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 150,
+      "src": "images/atlas/family-production-v1/mama-b-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-b-v1.webp",
+      "referenceWidth": 302.372,
+      "frames": [
+        {
+          "rect": [
+            28,
+            363,
+            282,
+            238
+          ],
+          "anchor": [
+            139.5,
+            233
+          ]
+        },
+        {
+          "rect": [
+            333,
+            363,
+            289,
+            236
+          ],
+          "anchor": [
+            143,
+            231
+          ]
+        },
+        {
+          "rect": [
+            644,
+            363,
+            289,
+            230
+          ],
+          "anchor": [
+            143.5,
+            225
+          ]
+        },
+        {
+          "rect": [
+            960,
+            363,
+            286,
+            238
+          ],
+          "anchor": [
+            141.5,
+            233
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 165,
+      "src": "images/atlas/family-production-v1/mama-e-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-e-v1.webp",
+      "referenceWidth": 310.301,
+      "frames": [
+        {
+          "rect": [
+            14,
+            342,
+            305,
+            251
+          ],
+          "anchor": [
+            150.5,
+            246
+          ]
+        },
+        {
+          "rect": [
+            324,
+            344,
+            306,
+            250
+          ],
+          "anchor": [
+            152,
+            245
+          ]
+        },
+        {
+          "rect": [
+            639,
+            345,
+            301,
+            242
+          ],
+          "anchor": [
+            149.5,
+            237
+          ]
+        },
+        {
+          "rect": [
+            952,
+            344,
+            300,
+            250
+          ],
+          "anchor": [
+            149,
+            245
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 180,
+      "src": "images/atlas/family-production-v1/mama-b-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-b-v1.webp",
+      "referenceWidth": 302.372,
+      "frames": [
+        {
+          "rect": [
+            8,
+            649,
+            302,
+            225
+          ],
+          "anchor": [
+            150,
+            220
+          ]
+        },
+        {
+          "rect": [
+            318,
+            648,
+            304,
+            223
+          ],
+          "anchor": [
+            150.5,
+            218
+          ]
+        },
+        {
+          "rect": [
+            631,
+            650,
+            304,
+            221
+          ],
+          "anchor": [
+            151.5,
+            216
+          ]
+        },
+        {
+          "rect": [
+            944,
+            649,
+            303,
+            222
+          ],
+          "anchor": [
+            150.5,
+            217
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 195,
+      "src": "images/atlas/family-production-v1/mama-e-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-e-v1.webp",
+      "referenceWidth": 310.301,
+      "frames": [
+        {
+          "rect": [
+            18,
+            635,
+            297,
+            236
+          ],
+          "anchor": [
+            147,
+            231
+          ]
+        },
+        {
+          "rect": [
+            333,
+            635,
+            295,
+            235
+          ],
+          "anchor": [
+            146,
+            230
+          ]
+        },
+        {
+          "rect": [
+            645,
+            633,
+            294,
+            237
+          ],
+          "anchor": [
+            146,
+            232
+          ]
+        },
+        {
+          "rect": [
+            960,
+            634,
+            291,
+            236
+          ],
+          "anchor": [
+            144.5,
+            231
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 210,
+      "src": "images/atlas/family-production-v1/mama-b-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-b-v1.webp",
+      "referenceWidth": 302.372,
+      "frames": [
+        {
+          "rect": [
+            52,
+            913,
+            259,
+            267
+          ],
+          "anchor": [
+            128,
+            262
+          ]
+        },
+        {
+          "rect": [
+            375,
+            914,
+            249,
+            264
+          ],
+          "anchor": [
+            123.5,
+            259
+          ]
+        },
+        {
+          "rect": [
+            688,
+            913,
+            248,
+            274
+          ],
+          "anchor": [
+            122.5,
+            269
+          ]
+        },
+        {
+          "rect": [
+            1002,
+            914,
+            247,
+            272
+          ],
+          "anchor": [
+            123,
+            267
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 225,
+      "src": "images/atlas/family-production-v1/mama-e-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-e-v1.webp",
+      "referenceWidth": 310.301,
+      "frames": [
+        {
+          "rect": [
+            46,
+            904,
+            265,
+            273
+          ],
+          "anchor": [
+            131,
+            269
+          ]
+        },
+        {
+          "rect": [
+            382,
+            906,
+            250,
+            277
+          ],
+          "anchor": [
+            123.5,
+            272
+          ]
+        },
+        {
+          "rect": [
+            693,
+            906,
+            247,
+            282
+          ],
+          "anchor": [
+            123.5,
+            277
+          ]
+        },
+        {
+          "rect": [
+            1008,
+            905,
+            241,
+            283
+          ],
+          "anchor": [
+            119.5,
+            278
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 240,
+      "src": "images/atlas/family-production-v1/mama-c-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-c-v1.webp",
+      "referenceWidth": 274.642,
+      "frames": [
+        {
+          "rect": [
+            81,
+            55,
+            220,
+            247
+          ],
+          "anchor": [
+            108.5,
+            242
+          ]
+        },
+        {
+          "rect": [
+            393,
+            55,
+            219,
+            242
+          ],
+          "anchor": [
+            109,
+            237
+          ]
+        },
+        {
+          "rect": [
+            703,
+            54,
+            219,
+            256
+          ],
+          "anchor": [
+            108.5,
+            251
+          ]
+        },
+        {
+          "rect": [
+            1017,
+            53,
+            220,
+            246
+          ],
+          "anchor": [
+            108.5,
+            241
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 255,
+      "src": "images/atlas/family-production-v1/mama-f-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-f-v1.webp",
+      "referenceWidth": 290.261,
+      "frames": [
+        {
+          "rect": [
+            61,
+            40,
+            222,
+            265
+          ],
+          "anchor": [
+            110,
+            261
+          ]
+        },
+        {
+          "rect": [
+            374,
+            41,
+            222,
+            266
+          ],
+          "anchor": [
+            110,
+            261
+          ]
+        },
+        {
+          "rect": [
+            691,
+            41,
+            220,
+            268
+          ],
+          "anchor": [
+            108.5,
+            263
+          ]
+        },
+        {
+          "rect": [
+            1008,
+            41,
+            219,
+            265
+          ],
+          "anchor": [
+            109,
+            260
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 270,
+      "src": "images/atlas/family-production-v1/mama-c-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-c-v1.webp",
+      "referenceWidth": 274.642,
+      "frames": [
+        {
+          "rect": [
+            67,
+            328,
+            189,
+            281
+          ],
+          "anchor": [
+            94.5,
+            276
+          ]
+        },
+        {
+          "rect": [
+            378,
+            329,
+            190,
+            282
+          ],
+          "anchor": [
+            95,
+            277
+          ]
+        },
+        {
+          "rect": [
+            691,
+            328,
+            192,
+            280
+          ],
+          "anchor": [
+            95.5,
+            276
+          ]
+        },
+        {
+          "rect": [
+            1007,
+            328,
+            190,
+            282
+          ],
+          "anchor": [
+            94.5,
+            278
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 285,
+      "src": "images/atlas/family-production-v1/mama-f-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-f-v1.webp",
+      "referenceWidth": 290.261,
+      "frames": [
+        {
+          "rect": [
+            47,
+            339,
+            244,
+            281
+          ],
+          "anchor": [
+            122.5,
+            276
+          ]
+        },
+        {
+          "rect": [
+            367,
+            339,
+            238,
+            283
+          ],
+          "anchor": [
+            119.5,
+            278
+          ]
+        },
+        {
+          "rect": [
+            672,
+            340,
+            239,
+            282
+          ],
+          "anchor": [
+            119.5,
+            277
+          ]
+        },
+        {
+          "rect": [
+            991,
+            340,
+            233,
+            282
+          ],
+          "anchor": [
+            116.5,
+            277
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 300,
+      "src": "images/atlas/family-production-v1/mama-c-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-c-v1.webp",
+      "referenceWidth": 274.642,
+      "frames": [
+        {
+          "rect": [
+            53,
+            646,
+            232,
+            254
+          ],
+          "anchor": [
+            116.5,
+            249
+          ]
+        },
+        {
+          "rect": [
+            364,
+            646,
+            231,
+            254
+          ],
+          "anchor": [
+            115,
+            249
+          ]
+        },
+        {
+          "rect": [
+            677,
+            646,
+            236,
+            257
+          ],
+          "anchor": [
+            118,
+            252
+          ]
+        },
+        {
+          "rect": [
+            992,
+            645,
+            233,
+            262
+          ],
+          "anchor": [
+            117.5,
+            257
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 315,
+      "src": "images/atlas/family-production-v1/mama-f-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-f-v1.webp",
+      "referenceWidth": 290.261,
+      "frames": [
+        {
+          "rect": [
+            37,
+            642,
+            252,
+            280
+          ],
+          "anchor": [
+            126.5,
+            275
+          ]
+        },
+        {
+          "rect": [
+            350,
+            640,
+            251,
+            277
+          ],
+          "anchor": [
+            125.5,
+            272
+          ]
+        },
+        {
+          "rect": [
+            663,
+            643,
+            246,
+            280
+          ],
+          "anchor": [
+            123,
+            275
+          ]
+        },
+        {
+          "rect": [
+            977,
+            642,
+            251,
+            280
+          ],
+          "anchor": [
+            125.5,
+            275
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 330,
+      "src": "images/atlas/family-production-v1/mama-c-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-c-v1.webp",
+      "referenceWidth": 274.642,
+      "frames": [
+        {
+          "rect": [
+            34,
+            960,
+            263,
+            232
+          ],
+          "anchor": [
+            132,
+            227
+          ]
+        },
+        {
+          "rect": [
+            343,
+            962,
+            267,
+            227
+          ],
+          "anchor": [
+            134,
+            222
+          ]
+        },
+        {
+          "rect": [
+            659,
+            960,
+            267,
+            232
+          ],
+          "anchor": [
+            133.5,
+            227
+          ]
+        },
+        {
+          "rect": [
+            974,
+            960,
+            263,
+            229
+          ],
+          "anchor": [
+            132,
+            224
+          ]
+        }
+      ]
+    },
+    {
+      "angle": 345,
+      "src": "images/atlas/family-production-v1/mama-f-v1.png",
+      "runtimeSrc": "images/atlas/family-production-v1/mama-f-v1.webp",
+      "referenceWidth": 290.261,
+      "frames": [
+        {
+          "rect": [
+            22,
+            959,
+            291,
+            245
+          ],
+          "anchor": [
+            148,
+            240
+          ]
+        },
+        {
+          "rect": [
+            336,
+            962,
+            285,
+            243
+          ],
+          "anchor": [
+            143.5,
+            238
+          ]
+        },
+        {
+          "rect": [
+            644,
+            962,
+            287,
+            242
+          ],
+          "anchor": [
+            144.5,
+            237
+          ]
+        },
+        {
+          "rect": [
+            949,
+            962,
+            287,
+            242
+          ],
+          "anchor": [
+            144,
+            237
+          ]
+        }
+      ]
+    }
+  ]
+}

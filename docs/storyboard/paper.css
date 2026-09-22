@@ -51,6 +51,8 @@ h1 { font-size:20pt; line-height:1.15; }
 [data-story] .spread-cover .folio { display:none; }
 [data-story] .spread-cover .scene { gap:0; }
 [data-story] .spread-cover .scene-art { height:100%; }
+.title-cover-slot .spread-cover { padding:0; gap:0; }
+.title-cover-slot .scene-art { height:100%; }
 [data-story] .paper-landscape .prose { max-width:255mm; font-size:15pt; }
 [data-story] .asterism { visibility:hidden; }
 [data-story] #scene-3 .prose p:last-child { font-style:normal; }

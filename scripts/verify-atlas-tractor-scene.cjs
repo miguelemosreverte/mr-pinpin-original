@@ -3,12 +3,14 @@ const fs = require('node:fs');
 const path = require('node:path');
 const {createHash} = require('node:crypto');
 const {spawnSync} = require('node:child_process');
+const {capsuleClearance, foregroundRoadForEdge} = require('./atlas-roadside-contact.test.cjs');
 const {chromium} = require(process.env.PLAYWRIGHT_MODULE || '/Users/miguel_lemos/.npm/_npx/705bc6b22212b352/node_modules/playwright');
 const baseline = process.argv.includes('--baseline');
 if (!baseline && process.env.ATLAS_TRACTOR_READY !== '1') throw new Error('Await READY; baseline is available with --baseline.');
 const base = process.env.ATLAS_BASE_URL || 'http://127.0.0.1:8767/storyboard/';
-const output = process.env.ATLAS_TRACTOR_OUTPUT || '/tmp/atlas-tractor-scene-v9';
-const report = '/tmp/atlas-tractor-scene-v9-review.md';
+const output = process.env.ATLAS_TRACTOR_OUTPUT || '/tmp/atlas-tractor-scene-v13';
+const report = process.env.ATLAS_TRACTOR_REPORT || '/tmp/atlas-tractor-scene-v13-review.md';
+const reviewLabel = process.env.ATLAS_TRACTOR_LABEL || 'v13';
 const root = path.resolve(__dirname, '../docs/storyboard');
 const phase = baseline ? 'before' : 'after';
 const results = [], screenshots = [];
@@ -53,28 +55,46 @@ function polygonGap(a, b) {
   }
   return gap;
 }
-async function roads(page, label) {
-  const data = await page.evaluate(() => ({edges: atlasGpuDebug.motion.navigation.edges,
-    junctions: atlasGpuDebug.motion.navigation.junctions, directions: atlasDirections}));
-  const branches = data.junctions.filter(j => j.kind === 'branch');
-  record(`${label} seven derived branch junctions`, branches.length === 7 && branches.every(j => j.paths.length === 3),
-    {branches: branches.length, totalIncludingBendsAndAnchors: data.junctions.length});
+function travelEnvelope(directions, heading) {
+  const angle = (Math.round(heading / 3.75) * 3.75 + 360) % 360;
+  const bins = directions.directions.slice().sort((a, b) => a.angle - b.angle);
+  const lower = bins.filter(d => d.angle <= angle).at(-1) || bins.at(-1);
+  const upper = bins.find(d => d.angle > angle) || bins[0];
   const extent = {left: 0, right: 0, up: 0, down: 0};
-  for (const d of data.directions.directions) for (const f of d.frames) {
-    const scale = data.directions.displayWidth / d.referenceWidth;
+  // Include both heading textures and all gait frames, matching production interpolation.
+  for (const d of [lower, upper]) for (const f of d.frames) {
+    const scale = directions.displayWidth / d.referenceWidth;
     extent.left = Math.max(extent.left, f.anchor[0] * scale);
     extent.right = Math.max(extent.right, (f.rect[2] - f.anchor[0]) * scale);
     extent.up = Math.max(extent.up, f.anchor[1] * scale);
     extent.down = Math.max(extent.down, (f.rect[3] - f.anchor[1]) * scale);
   }
-  let minimum = Infinity, closest;
+  return extent;
+}
+async function roads(page, label) {
+  const data = await page.evaluate(() => ({edges: atlasGpuDebug.motion.navigation.edges,
+    geometry: atlasGeometry,
+    junctions: atlasGpuDebug.motion.navigation.junctions, directions: atlasDirections}));
+  const branches = data.junctions.filter(j => j.kind === 'branch');
+  record(`${label} seven derived branch junctions`, branches.length === 7 && branches.every(j => j.paths.length === 3),
+    {branches: branches.length, totalIncludingBendsAndAnchors: data.junctions.length});
+  let minimum = Infinity, minimumFootGap = Infinity, foregroundEdges = 0, closest;
   for (const e of data.edges) {
-    const corners = [[-extent.left, -extent.up], [extent.right, -extent.up], [extent.right, extent.down], [-extent.left, extent.down]];
-    const swept = hull([e.a, e.b].flatMap(p => corners.map(c => p.map((n, i) => n + c[i]))));
-    const gap = polygonGap(swept, vehicle);
-    if (gap < minimum) { minimum = gap; closest = e; }
+    const foreground = foregroundRoadForEdge(data.geometry, e);
+    minimumFootGap = Math.min(minimumFootGap, capsuleClearance(e, vehicle, foreground?.contactCapsule));
+    if (foreground) { foregroundEdges++; continue; }
+    const heading = Math.atan2(e.b[1] - e.a[1], e.b[0] - e.a[0]) * 180 / Math.PI;
+    for (const turn of [0,180]) {
+      const extent = travelEnvelope(data.directions, heading + turn);
+      const corners = [[-extent.left, -extent.up], [extent.right, -extent.up], [extent.right, extent.down], [-extent.left, extent.down]];
+      const swept = hull([e.a, e.b].flatMap(p => corners.map(c => p.map((n, i) => n + c[i]))));
+      const gap = polygonGap(swept, vehicle);
+      if (gap < minimum) { minimum = gap; closest = {...e, heading: heading + turn, extent}; }
+    }
   }
-  record(`${label} all derived arcs vehicle clearance`, minimum >= 14, {minimum, extent, closest, edges: data.edges.length});
+  record(`${label} all derived arcs scoped vehicle clearance`, minimum >= 8.2 && minimumFootGap >= 8.2,
+    {minimumNonForegroundBodyGap: minimum, minimumFootGap, foregroundEdges,
+      bodyMargin: 6, updateTravelAllowance: 2.2, closest, edges: data.edges.length});
   // Fundamental cycles in the actual navigation graph, including rounded junction links.
   const key = p => p.map(n => n.toFixed(5)).join(',');
   const adjacency = new Map(), points = new Map();
@@ -248,10 +268,10 @@ async function main() {
   const stable = JSON.stringify(before) === JSON.stringify(signatures());
   record('sources stable during run', stable, {seconds: (Date.now() - started) / 1000});
   fs.writeFileSync(path.join(output, `${phase}.json`), JSON.stringify({phase, sources: before, results, screenshots}, null, 2) + '\n');
-  fs.writeFileSync(report, [`# Tractor scene v9 ${phase}`, '', baseline ? 'Provisional baseline only. Await READY before final conclusions.' : 'Focused desktop/mobile verification.',
+  fs.writeFileSync(report, [`# Tractor scene ${reviewLabel} ${phase}`, '', baseline ? 'Provisional baseline only. Await READY before final conclusions.' : 'Focused desktop/mobile verification.',
     '', ...results.map(r => `- ${r.pass ? 'PASS' : baseline ? 'BASELINE' : 'FAIL'} ${r.name}`), '',
     'Normal v2 is artistic view-space depth (depthScale 0.75); physical ground inclination cannot be inferred directly. Authored tilt is the perspective reference; screenshots still require terrain review. Lake water supplies the independently flat visual reference.',
-    'Dense visibility uses 40x60 alpha samples with the renderer occlusion function and nine scene-depth taps. Native hit bounds are independently projected from cover matrix corners. Road clearance uses every derived edge with the full direction/frame sprite envelope.',
+    'Dense visibility uses 40x60 alpha samples with the renderer occlusion function and nine scene-depth taps. Native hit bounds are independently projected from cover matrix corners. Road clearance checks a swept 12x2 foot capsule on every derived edge and the full bidirectional blended sprite envelope outside the authored foreground-road corridor.',
     baseline ? 'Baseline observation: tractor ring overlaps the crane boom; placement is pending. Mobile home is 74.4% visible at this camera, with 14.9% clipped; retained as baseline context, not a new frozen-coordinate defect.' : 'Story return uses the native banner, preview link, reader map link, and checks camera/selection restoration.',
     '', ...screenshots.map(file => `- ${file}`), '', `Measurements: ${path.join(output, phase + '.json')}`, ''].join('\n'));
   if (!baseline && results.some(r => !r.pass)) process.exitCode = 1;

@@ -1,0 +1,94 @@
+{
+  "version": 2,
+  "estimated": true,
+  "generatedAt": "2026-09-21T01:28:46.615Z",
+  "signature": "e6365be5fc3378104b6d7444cd9e90c831a6f1e855e2ce6e0493be4010500ff7",
+  "command": "node scripts/build-atlas-surface-passes.cjs",
+  "generatorSha256": "50668af7316060f7f647bb1a1034438d969f42876f9ac2805795cc2d3abde157",
+  "tools": {
+    "magick": "Version: ImageMagick 7.1.2-8 Q16-HDRI aarch64 23412 https://imagemagick.org",
+    "cwebp": "1.6.0\nlibsharpyuv: 0.4.2"
+  },
+  "sources": [
+    {
+      "file": "shire-v1.png",
+      "sha256": "80af7f9eb7188f0a1f64969a22632d0ef9732284d027042222c1543879f03780",
+      "width": 1536,
+      "height": 1024
+    },
+    {
+      "file": "shire-depth-v1.png",
+      "sha256": "bf30f8bebe002348d6e911a3a0fe5ef8a8b02d14a17d9dccb8ab4f59aee0e2ec",
+      "width": 1536,
+      "height": 1024
+    }
+  ],
+  "width": 1536,
+  "height": 1024,
+  "settings": {
+    "radius": 4,
+    "spatialSigma": 2.5,
+    "rangeSigma": 0.035,
+    "passes": 2,
+    "normalRadius": 3,
+    "edgeThreshold": 0.045,
+    "depthScale": 0.75,
+    "sampleWidth": 256,
+    "sampleHeight": 171,
+    "groundFar": 0.85,
+    "groundSpan": 0.65,
+    "occluderGain": 0.3,
+    "maxOccluderLift": 0.12
+  },
+  "oldGroundReference": [
+    [
+      0,
+      0.8
+    ],
+    [
+      205,
+      0.43529411764705883
+    ],
+    [
+      400,
+      0.49019607843137253
+    ],
+    [
+      575,
+      0.396078431372549
+    ],
+    [
+      640,
+      0.3568627450980392
+    ],
+    [
+      740,
+      0.25882352941176473
+    ],
+    [
+      1024,
+      0.08
+    ]
+  ],
+  "meaning": "Estimated linear luminance / bright specular-candidate weight from painted SDR color. Bright diffuse paint and reflections cannot be separated; not emission, light-source segmentation, radiance or HDR.",
+  "encoding": "GRAY8 = round(255 * (0.2126 Rlinear + 0.7152 Glinear + 0.0722 Blinear)); inverse-sRGB transfer applied to original RGB only. Sample as linear UNORM.",
+  "assumptions": "Orthographic P=(x-W/2,H/2-y,-s*H*d), s=0.75, d in [0,1]. N=normalize(s*H*dd/dx,-s*H*dd/dy,1). Arbitrary affine distance scale; no intrinsics or physical units. Depth offset does not affect N. Ground receding upward gives positive Ny; no extra global tilt applied. Silhouettes use lower-jump one-sided tangents, not cross-object slopes.",
+  "limitations": "Artistic recalibration, not geometry recovery. Monotonic ground plane intentionally replaces far-distance brightness bias. Bounded occluder lifts still inherit dark-paint/shadow errors and may miss bright occluders. Pixel grid/framing are registered; true silhouettes are not guaranteed. Water is assumed on the ground plane; waterfalls are not reconstructed. V1 stays authoritative for existing occlusion. Brightness does not recover actual emission.",
+  "outputs": [
+    {
+      "file": "shire-highlight-v2.png",
+      "bytes": 1202122,
+      "sha256": "0f1c66de7c5da3693760d717b45812b41134bed58fcaf54c2946b6bece526145"
+    },
+    {
+      "file": "shire-highlight-v2.webp",
+      "bytes": 1156664,
+      "sha256": "b3393386e2dae121708e05b6bb7117a7b3b4cf0d3d1b3956725462365c71e0d7"
+    },
+    {
+      "file": "shire-highlight-v2-preview.webp",
+      "bytes": 339902,
+      "sha256": "47dd358befd853f88c3a430c65d09f79541397c4be07937db7c4e3d5b90a5d87"
+    }
+  ]
+}

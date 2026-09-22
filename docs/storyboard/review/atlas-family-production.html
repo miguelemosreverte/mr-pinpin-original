@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Family production sprites</title>
+  <link rel="stylesheet" href="atlas-family-production.css">
+  <script src="../icons.js" defer></script>
+  <script src="../atlas-directions.js" defer></script>
+  <script src="../atlas-sprite-cache.js" defer></script>
+  <script src="../atlas-face-layer.js" defer></script>
+  <script src="../atlas-expression-motion.js" defer></script>
+  <script src="atlas-family-production-stage.js" defer></script>
+  <script src="atlas-family-production.js" defer></script>
+</head>
+<body>
+  <header class="page-heading">
+    <div><h1>Family production sprites</h1><p id="status" role="status">Loading manifest...</p></div>
+    <a href="../atlas-webgpu.html?family=1&amp;familyArt=production">Open atlas <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+  </header>
+  <main>
+    <section id="walking" class="walking" aria-labelledby="walking-title">
+      <div class="walking-heading"><h2 id="walking-title">Walking together</h2>
+        <div class="stage-controls">
+          <button id="angle-back" aria-label="Previous heading" title="Previous heading"><i data-lucide="chevron-left" aria-hidden="true"></i></button>
+          <output id="stage-angle">90&deg;</output>
+          <button id="angle-next" aria-label="Next heading" title="Next heading"><i data-lucide="chevron-right" aria-hidden="true"></i></button>
+          <output id="clock" aria-label="Active elapsed time">0.0 s</output>
+        </div>
+      </div>
+      <canvas id="walking-canvas" aria-label="PinPin, Mr. PomPom and Mama walking at 90 degrees"></canvas>
+      <p class="face-status">Facial work in progress. Unregistered or incomplete eye pairs remain neutral.</p>
+      <details id="face-diagnostics"><summary>Facial layer diagnostics</summary><pre id="face-data"></pre></details>
+    </section>
+    <details id="animation-controls" class="animation-controls">
+      <summary>Animation controls</summary>
+      <div class="toolbar">
+    <nav aria-label="Characters"><a href="#pinpin">PinPin</a><a href="#mama">Mama</a><a href="#mr-pompom">Mr. PomPom</a></nav>
+    <div class="transport">
+      <button id="previous" type="button" aria-label="Previous frame" title="Previous frame"><i data-lucide="step-back" aria-hidden="true"></i></button>
+      <button id="play" type="button" aria-label="Pause animation" title="Pause animation"><i data-lucide="pause" aria-hidden="true"></i></button>
+      <button id="next" type="button" aria-label="Next frame" title="Next frame"><i data-lucide="step-forward" aria-hidden="true"></i></button>
+      <fieldset class="frames"><legend class="sr-only">Frame</legend>
+        <label><input type="radio" name="frame" value="0" checked><span>1</span></label>
+        <label><input type="radio" name="frame" value="1"><span>2</span></label>
+        <label><input type="radio" name="frame" value="2"><span>3</span></label>
+        <label><input type="radio" name="frame" value="3"><span>4</span></label>
+      </fieldset>
+      <label class="timing">Frame ms <input id="duration" type="number" min="50" max="1000" step="10" value="190"></label>
+    </div>
+    <fieldset class="swatches"><legend class="sr-only">Canvas background</legend>
+      <label title="Light background"><input type="radio" name="background" value="light" checked><span class="light"><span class="sr-only">Light background</span></span></label>
+      <label title="Dark background"><input type="radio" name="background" value="dark"><span class="dark"><span class="sr-only">Dark background</span></span></label>
+      <label title="Transparency grid"><input type="radio" name="background" value="grid"><span class="grid"><span class="sr-only">Transparency grid</span></span></label>
+    </fieldset>
+    <button id="reload" type="button" aria-label="Reload production manifest" title="Reload production manifest"><i data-lucide="refresh-cw" aria-hidden="true"></i></button>
+      </div>
+    </details>
+    <div id="characters"></div>
+  </main>
+  <footer><a href="../family-production.json">Production manifest</a><a href="atlas-family.html">Earlier candidate review</a><span id="inventory"></span></footer>
+</body>
+</html>

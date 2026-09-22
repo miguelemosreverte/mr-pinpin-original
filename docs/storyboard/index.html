@@ -2,36 +2,40 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <meta name="theme-color" content="#fbfcfa">
   <meta name="description" content="Мистер Пин-Пин. Глава первая новой иллюстрированной книги.">
   <title>Мистер Пин-Пин</title>
   <link rel="stylesheet" href="reader.css?v=timber-home-1">
   <link rel="stylesheet" href="editorial.css?v=timber-tractor-1">
-  <link rel="stylesheet" href="edition.css?v=chapter-library">
-  <link id="paper-styles" rel="stylesheet" href="paper.css?v=timber-tractor-1" media="print">
+  <link rel="stylesheet" href="edition.css?v=title-covers-map-2">
+  <link id="paper-styles" rel="stylesheet" href="paper.css?v=title-covers-map-2" media="print">
   <link rel="stylesheet" href="print.css?v=chapter-library" media="print">
+  <link rel="stylesheet" href="reader-navigation.css?v=map-navigation-1">
   <script src="locale.js?v=margin-preview" defer></script>
   <script src="chapter-editions.js?v=chapter-two" defer></script>
-  <script src="standalone-stories.js?v=timber-pacing-1" defer></script>
-  <script src="reader.js?v=timber-continuous-1" defer></script>
+  <script src="standalone-stories.js?v=bedtime-cover-2" defer></script>
+  <script src="title-covers.js?v=title-covers-miniatures-2" defer></script>
+  <script src="reader.js?v=title-covers-map-2" defer></script>
 </head>
 <body>
-  <button id="controls-toggle" class="icon-button controls-toggle" aria-label="Book controls" title="Book controls" aria-expanded="false" aria-controls="reader-controls"><i data-lucide="ellipsis" aria-hidden="true"></i></button>
-  <aside id="reader-controls" class="toolbar" aria-label="Book controls">
-    <a class="icon-button library-link" href="library.html?lang=en" title="Chapters" aria-label="Chapters"><i data-lucide="library-big" aria-hidden="true"></i></a>
-    <div class="language-selector" role="group" aria-label="Language">
-      <button data-lang="en" title="English" aria-label="English" aria-pressed="false"></button>
-      <button data-lang="es" title="Español" aria-label="Español" aria-pressed="false"></button>
-      <button data-lang="ru" title="Русский" aria-label="Русский" aria-pressed="true"></button>
+  <aside id="reader-controls" class="toolbar" aria-label="Навигация по книге">
+    <a id="reader-map" href="atlas-webgpu.html?lang=ru"><i data-lucide="map" aria-hidden="true"></i><span>Карта</span></a>
+    <div class="language-selector reader-current-language">
+      <button id="language-toggle" type="button" data-lang="ru" title="Язык: Русский" aria-label="Язык: Русский" aria-expanded="false" aria-controls="reader-languages"></button>
     </div>
-    <button id="preview" class="icon-button" title="Print preview" aria-label="Print preview" aria-pressed="false" disabled><i data-lucide="book-open" aria-hidden="true"></i></button>
-    <button id="print" class="icon-button" title="Печать / PDF" aria-label="Печать / PDF" disabled><i data-lucide="printer" aria-hidden="true"></i></button>
+    <div id="reader-languages" class="language-selector" role="group" aria-label="Язык" hidden>
+      <button type="button" data-lang="en" lang="en" title="English" aria-label="English" aria-pressed="false"></button>
+      <button type="button" data-lang="es" lang="es" title="Español" aria-label="Español" aria-pressed="false"></button>
+      <button type="button" data-lang="ru" lang="ru" title="Русский" aria-label="Русский" aria-pressed="true"></button>
+    </div>
   </aside>
+  <button id="preview" hidden aria-pressed="false" disabled></button>
+  <button id="print" hidden disabled></button>
   <div class="reading-progress" aria-hidden="true"><div id="progress"></div></div>
   <p id="export-status" class="export-status" role="status" aria-live="polite"></p>
   <main id="reader" aria-busy="true"><p class="loading" role="status">Загрузка книги…</p></main>
-  <nav class="reader-footer" aria-label="Book navigation"><a class="library-link" href="library.html?lang=en"><i data-lucide="library-big" aria-hidden="true"></i><span id="library-label">Chapters</span></a></nav>
+  <nav class="reader-footer" aria-label="Навигация по книге"><a id="reader-map-end" href="atlas-webgpu.html?lang=ru"><i data-lucide="map" aria-hidden="true"></i><span>Вернуться к карте</span></a></nav>
 
   <script src="icons.js"></script>
 </body>

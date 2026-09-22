@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Shire in motion</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      padding: 32px 20px;
+      background: #fafafa;
+      color: #222;
+      font-family: system-ui, sans-serif;
+      line-height: 1.5;
+    }
+    main { width: 100%; max-width: 1200px; margin: 0 auto; }
+    h1 { margin: 0 0 20px; font-size: 28px; line-height: 1.2; }
+    figure { margin: 0; }
+    video {
+      display: block;
+      width: 100%;
+      aspect-ratio: 3 / 2;
+      object-fit: contain;
+      background: #111;
+    }
+    figcaption { margin-top: 12px; }
+    p { margin: 12px 0 0; }
+    a { color: #215e45; text-underline-offset: 3px; }
+    a:focus-visible { outline: 2px solid currentColor; outline-offset: 4px; }
+    @media (max-width: 480px) {
+      body { padding: 20px 12px; }
+      h1 { font-size: 24px; margin-bottom: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1 id="title">The Shire in motion</h1>
+    <figure>
+      <video controls autoplay muted loop playsinline preload="metadata"
+        poster="../images/atlas/shire-v1.webp"
+        aria-labelledby="title" aria-describedby="caption">
+        <source src="../videos/atlas-water-loop-v1.mp4" type="video/mp4">
+        <a href="../videos/atlas-water-loop-v1.mp4">Open video</a>
+      </video>
+      <figcaption id="caption">One complete 12-second loop. No depth of field or characters.</figcaption>
+    </figure>
+    <p><a href="../videos/atlas-water-loop-v1.mp4">Open video</a></p>
+  </main>
+</body>
+</html>

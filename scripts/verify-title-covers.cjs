@@ -1,0 +1,197 @@
+#!/usr/bin/env node
+// Dependency-free checks of the registry, assets, and actual reader/library scripts.
+const assert = require('node:assert/strict');
+const fs = require('node:fs');
+const path = require('node:path');
+const vm = require('node:vm');
+const crypto = require('node:crypto');
+const base = path.resolve(__dirname, '../docs/storyboard');
+const read = name => fs.readFileSync(path.join(base, name), 'utf8');
+const registry = JSON.parse(read('covers.json'));
+const languages = ['ru', 'en', 'es'];
+const ids = ['chapter-01', 'chapter-02', 'timber-tractor', 'home-sweet-home'];
+
+class Element {
+  constructor(tag = 'div') { this.tagName = tag; this.children = []; this.dataset = {}; this.style = {setProperty() {}}; this.attributes = {}; this.value = ''; this.options = []; this.classList = {toggle() {}, remove() {}, contains() { return false; }}; }
+  append(...nodes) { for (const node of nodes) { node.parent = this; this.children.push(node); } }
+  replaceChildren(...nodes) { this.children = []; this.append(...nodes); }
+  setAttribute(name, value) { this.attributes[name] = value; }
+  removeAttribute(name) { delete this.attributes[name]; }
+  addEventListener() {}
+  querySelector(selector) {
+    if (selector === 'span') {
+      let label = this.children.find(node => node.tagName === 'span');
+      if (!label) { label = new Element('span'); this.append(label); }
+      return label;
+    }
+    return null;
+  }
+  focus() {}
+  getBoundingClientRect() { return this.rect || {top:100, bottom:300, height:200}; }
+  get isConnected() { return true; }
+  remove() { if (this.parent) this.parent.children = this.parent.children.filter(node => node !== this); }
+  decode() { return Promise.resolve(); }
+}
+const descendants = node => node.children.flatMap(child => [child, ...descendants(child)]);
+const classIs = (node, value) => (node.className || '').split(' ').includes(value);
+const nodes = (page, root, predicate) => descendants(page.elements[root]).filter(predicate);
+
+async function page(kind, search, missingRegistry = false, registryOverride) {
+  const elements = {};
+  const frames = [];
+  const languageButtons = languages.map(lang => Object.assign(new Element('button'), {dataset:{lang}}));
+  const footer = new Element('nav');
+  const document = {documentElement:new Element('html'), fonts:{ready:Promise.resolve()},
+    getElementById:id => (elements.reader && descendants(elements.reader).find(node => node.id === id)) || (elements[id] ||= new Element()),
+    createElement:tag => new Element(tag),
+    createTextNode:text => Object.assign(new Element('#text'), {textContent:text}),
+    querySelector:selector => selector === '.reader-footer' ? footer : null,
+    querySelectorAll:selector => {
+      if (selector === '#reader-languages [data-lang]' || selector === '[data-lang]') return languageButtons;
+      if (selector === '#reader #title-cover, #reader .scene') return descendants(elements.reader).filter(node => node.id === 'title-cover' || classIs(node, 'scene'));
+      return [];
+    }};
+  document.documentElement.scrollHeight = 2000;
+  document.getElementById('chapter-filter').value = 'all';
+  const context = {URL, URLSearchParams, Set, Intl, document, location:new URL('https://example.test/storyboard/' + search),
+    fetch:async name => ({ok:!(missingRegistry && name === 'covers.json'), status:missingRegistry ? 404 : 200,
+      json:async () => name === 'covers.json' && registryOverride ? registryOverride : JSON.parse(read(name))}),
+    addEventListener() {}, requestAnimationFrame:callback => frames.push(callback), ResizeObserver:class { observe() {} },
+    innerHeight:800, scrollY:0, history:{}, console};
+  context.history.replaceState = context.history.pushState = (_, __, url) => { context.location = new URL(url, context.location); };
+  context.window = context;
+  context.scrollTo = (_, y) => { context.scrollY = y; };
+  vm.createContext(context);
+  for (const script of ['locale.js', 'chapter-editions.js', 'standalone-stories.js', 'title-covers.js', `${kind}.js`]) {
+    vm.runInContext(read(script), context, {filename:script});
+  }
+  for (let i = 0; i < 8; i++) await new Promise(resolve => setImmediate(resolve));
+  assert.equal(elements[kind === 'reader' ? 'reader' : 'chapter-library'].attributes['aria-busy'], 'false');
+  if (kind === 'reader') assert.equal(elements.reader.children[0].tagName, 'article', 'Reader must remain available');
+  return {context, elements, frames, languageButtons};
+}
+const readerImages = result => nodes(result, 'reader', node => node.tagName === 'img');
+const sceneSignature = result => nodes(result, 'reader', node => classIs(node, 'scene')).map(node => ({
+  id:node.id, sceneId:node.dataset.sceneId,
+  paragraphs:descendants(node).filter(child => child.tagName === 'p').map(child => ({text:child.textContent, children:child.children.map(item => item.textContent)}))
+}));
+const spreadSignature = result => nodes(result, 'reader', node => classIs(node, 'spread') && node.id !== 'title-cover').map(node => ({id:node.id, className:node.className}));
+
+(async () => {
+  assert.equal(registry.schemaVersion, 1);
+  assert.deepEqual(Object.keys(registry.covers).sort(), ids.slice().sort());
+  for (const id of ids) {
+    const cover = registry.covers[id];
+    assert.equal(cover.status, 'approved', `${id} release approval state`);
+    assert.deepEqual(cover.route, id.startsWith('chapter-') ? {chapter:String(Number(id.slice(-2)))} : {story:id});
+    assert.equal(cover.placement, id.startsWith('chapter-') ? 'prepend' : 'replace');
+    assert.equal(cover.width, 1024); assert.equal(cover.height, 1536);
+    for (const lang of languages) {
+      assert.ok(cover.title[lang]?.trim()); assert.ok(cover.alt[lang]?.trim());
+      assert.equal(cover.assets[lang], `images/covers/${id}/title-${lang}-v${cover.version}.png`);
+      const file = path.join(base, cover.assets[lang]);
+      const bytes = fs.readFileSync(file);
+      assert.equal(bytes.subarray(0, 8).toString('hex'), '89504e470d0a1a0a');
+      assert.equal(bytes.readUInt32BE(16), 1024); assert.equal(bytes.readUInt32BE(20), 1536);
+      const metadata = JSON.parse(fs.readFileSync(file.replace(/\.png$/, '.json'), 'utf8'));
+      assert.ok(fs.readFileSync(file.replace(/\.png$/, '.md'), 'utf8').trim());
+      const hash = crypto.createHash('sha256').update(bytes).digest('hex');
+      assert.equal(metadata.sha256, hash, `${id}/${lang}: asset hash matches its sidecar`);
+      assert.equal(metadata.status, cover.status, `${id}/${lang}: sidecar approval matches registry`);
+      const provenance = metadata.provenance;
+      if (provenance?.originalPath || provenance?.originalSha256 || provenance?.legacyURL) {
+        assert.equal(provenance.originalSha256, hash, 'Copied assets must be byte-identical');
+        assert.ok(provenance.originalPath && provenance.legacyURL);
+      }
+    }
+  }
+  // Exercise proposals independently of the release's actual approval state.
+  const proposedRegistry = structuredClone(registry);
+  for (const cover of Object.values(proposedRegistry.covers)) cover.status = 'proposed';
+  for (const testedRegistry of [registry, proposedRegistry]) for (const lang of languages) for (const preview of [false, true]) {
+    const search = `?lang=${lang}${preview ? '&coverPreview=1' : ''}`;
+    const library = await page('library', search, false, testedRegistry);
+    for (const id of ids) {
+      const cover = testedRegistry.covers[id];
+      const route = new URLSearchParams(cover.route).toString();
+      const reader = await page('reader', search + '&' + route, false, testedRegistry);
+      const baseline = await page('reader', search + '&' + route, true);
+      assert.deepEqual(sceneSignature(reader), sceneSignature(baseline), `${id}: scenes and prose stay intact`);
+      assert.deepEqual(spreadSignature(reader), spreadSignature(baseline), `${id}: spread IDs and styles stay intact`);
+      const firstImage = readerImages(reader)[0];
+      const root = id.startsWith('chapter-') ? 'chapter-library' : 'adventure-library';
+      const card = nodes(library, root, node => node.dataset.story === id || node.dataset.chapter === Number(cover.route.chapter))[0];
+      assert.ok(card, `${id} library card`);
+      const thumbnail = descendants(card).find(node => node.tagName === 'img');
+      const link = descendants(card).find(node => node.tagName === 'a');
+      assert.equal(new URL(link.href).searchParams.get('coverPreview'), preview ? '1' : null);
+      const enabled = preview || cover.status === 'approved';
+      assert.equal(firstImage.src, enabled ? cover.assets[lang] : readerImages(baseline)[0].src);
+      assert.equal(thumbnail.src, firstImage.src, `${id}/${lang}: reader and library agree`);
+      assert.equal(nodes(reader, 'reader', node => node.id === 'title-cover').length, id.startsWith('chapter-') && enabled ? 1 : 0);
+      if (id.startsWith('chapter-')) assert.equal(sceneSignature(reader).length, id === 'chapter-01' ? 15 : 16);
+      if (enabled) {
+        firstImage.onerror();
+        assert.equal(readerImages(reader)[0].src, readerImages(baseline)[0].src, `${id}: missing PNG falls back`);
+        assert.deepEqual(sceneSignature(reader), sceneSignature(baseline));
+        thumbnail.onerror();
+        assert.equal(thumbnail.src, readerImages(baseline)[0].src);
+      }
+    }
+  }
+  // A malformed entry also fails closed; only exact coverPreview=1 unlocks proposals.
+  const probe = await page('reader', '?chapter=1&lang=en', false, proposedRegistry);
+  assert.equal(probe.context.titleCovers.resolve('chapter-01', 'en'), null);
+  assert.equal(probe.context.titleCovers.resolve('chapter-01', 'en', '?coverPreview=true'), null);
+  assert.equal(probe.context.titleCovers.resolve('chapter-01', 'en', '?coverPreview=0'), null);
+  assert.equal(probe.context.titleCovers.resolve('chapter-01', 'en', '?coverPreview=1').src, registry.covers['chapter-01'].assets.en);
+  assert.equal(probe.context.titleCovers.resolve('chapter-01', 'xx', '?coverPreview=1'), null);
+  assert.equal(probe.context.titleCovers.resolve('missing', 'en', '?coverPreview=1'), null);
+  const malformed = structuredClone(registry);
+  malformed.covers['chapter-01'].assets.en = '../untrusted.png';
+  const invalid = await page('reader', '?chapter=1&lang=en&coverPreview=1', false, malformed);
+  assert.equal(invalid.context.titleCovers.resolve('chapter-01', 'en'), null);
+  assert.equal(nodes(invalid, 'reader', node => node.id === 'title-cover').length, 0);
+  const missingLibrary = await page('library', '?lang=en&coverPreview=1', true);
+  assert.equal(nodes(missingLibrary, 'adventure-library', node => node.tagName === 'img').length, 2);
+  // Covers and language changes must retain the atlas return route and position.
+  for (const [route, place] of [['chapter=1', 'lake'], ['story=home-sweet-home', 'home']]) {
+    const reader = await page('reader', `?${route}&lang=en&coverPreview=1&returnTo=atlas.html&returnPlace=${place}`);
+    const anchors = nodes(reader, 'reader', node => node.id === 'title-cover' || classIs(node, 'scene'));
+    anchors[0].rect = {top:-80, bottom:400, height:480};
+    reader.context.scrollY = 180;
+    reader.frames.length = 0;
+    reader.languageButtons.find(button => button.dataset.lang === 'es').onclick();
+    const coverId = place === 'lake' ? 'chapter-01' : 'home-sweet-home';
+    assert.equal(readerImages(reader)[0].src, registry.covers[coverId].assets.es);
+    assert.equal(reader.context.location.searchParams.get('lang'), 'es');
+    assert.equal(reader.context.location.searchParams.get('coverPreview'), '1');
+    assert.equal(reader.context.location.searchParams.get('returnTo'), 'atlas.html');
+    assert.equal(reader.context.location.searchParams.get('returnPlace'), place);
+    for (const id of ['reader-map', 'reader-map-end']) {
+      const destination = new URL(reader.elements[id].href);
+      assert.equal(destination.pathname, '/storyboard/atlas.html');
+      assert.equal(destination.searchParams.get('lang'), 'es');
+      assert.equal(destination.searchParams.get('returnPlace'), place);
+    }
+    const nextAnchor = nodes(reader, 'reader', node => node.id === 'title-cover' || classIs(node, 'scene'))[0];
+    nextAnchor.rect = {top:-80, bottom:400, height:480};
+    reader.context.document.documentElement.scrollHeight = 3000;
+    reader.frames.at(-1)();
+    assert.equal(reader.context.scrollY, 180, 'Language change retains the cover reading position');
+  }
+  const routedLibrary = await page('library', '?lang=ru&coverPreview=1&returnTo=atlas-webgpu.html&returnPlace=elder');
+  for (const root of ['chapter-library', 'adventure-library']) {
+    for (const link of nodes(routedLibrary, root, node => node.tagName === 'a')) {
+      const destination = new URL(link.href);
+      assert.equal(destination.searchParams.get('returnTo'), 'atlas-webgpu.html');
+      assert.equal(destination.searchParams.get('returnPlace'), 'elder');
+      assert.equal(destination.searchParams.get('coverPreview'), '1');
+    }
+  }
+  for (const file of ['index.html', 'library.html', 'reader.js', 'library.js']) {
+    assert.doesNotMatch(read(file), /(?:href\s*=\s*["']|\.href\s*=\s*['"])review\//, `${file}: no public links to excluded review pages`);
+  }
+  console.log('Atlas navigation verified: title localization, query preservation, map return links, and cover reading position.');
+  console.log('Title covers verified: 12 approved PNGs/sidecars; generated and copied asset hashes; 48 reader/library release and synthetic-proposal route-language-mode cases; original scene/prose/spread preservation; missing registry and missing image fallbacks.');
+})().catch(error => { console.error(error); process.exitCode = 1; });

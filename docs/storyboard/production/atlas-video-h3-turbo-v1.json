@@ -1,0 +1,19 @@
+{
+  "model": "minimax/h3-max-turbo/image-to-video",
+  "sourceImage": "docs/storyboard/images/atlas/shire-v1.png",
+  "sourceImageField": "image_url",
+  "matchEndFrame": false,
+  "output": "docs/storyboard/videos/shire-h3-turbo-motion-v1.mp4",
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 0.10,
+    "basis": "5 seconds at promotional 768P rate $0.02/second through September 30, 2026. Estimate, not invoice.",
+    "source": "https://fal.ai/models/minimax/h3-max-turbo/image-to-video"
+  },
+  "input": {
+    "prompt": "Fixed overhead camera watching this miniature forest map. A steady light breeze makes small ripples travel across the lake, with sunlight shimmering on the water. The stream flows beneath the bridge. Leaves and tree crowns sway gently. Houses, paths, bridge and shoreline remain still. Steady warm daylight throughout.",
+    "duration": 5,
+    "resolution": "768P",
+    "prompt_expansion_mode": "disabled"
+  }
+}

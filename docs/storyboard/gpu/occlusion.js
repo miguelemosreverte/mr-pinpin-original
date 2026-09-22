@@ -10,6 +10,32 @@ export const NEAR_OCCLUSION_FEATHER = 0.025;
 export const SPRITE_SIZE = 128;
 export const SPRITE_ANCHOR = [64, 112];
 
+export function spriteRasterScale(demand, current = 1) {
+  if (!Number.isFinite(demand) || demand <= 0) return current;
+  // Separate promotion/demotion thresholds keep pinch zoom from thrashing canvases.
+  while (current < 4 && demand > current * 1.125) current *= 2;
+  while (current > 1 && demand < current * 0.425) current /= 2;
+  return current;
+}
+
+export function resizeSpriteRaster(layer, scale) {
+  if (scale !== 1 && scale !== 2 && scale !== 4) throw new RangeError('Sprite raster scale must be 1, 2 or 4');
+  const width = SPRITE_SIZE * (layer.members?.length || 1) * scale;
+  const height = SPRITE_SIZE * scale;
+  if (layer.canvas.width === width && layer.canvas.height === height) return false;
+  layer.canvas.width = width;
+  layer.canvas.height = height;
+  layer.rasterScale = scale;
+  layer.rasterRevision++;
+  layer.revision++;
+  layer.imageKey = null;
+  layer.ready = false;
+  if (layer.members) for (const member of layer.members) member.ready = false;
+  // Painting is synchronous so paused characters survive a camera-only zoom.
+  layer.onRasterScaleChange?.(layer);
+  return true;
+}
+
 export function groundDepth(y) {
   if (y <= GROUND_SAMPLES[0][0]) return GROUND_SAMPLES[0][1];
   for (let i = 1; i < GROUND_SAMPLES.length; i++) {
@@ -29,9 +55,11 @@ export function visibility(sceneDepth, objectDepth) {
   return 1 - t * t * (3 - 2 * t);
 }
 
-export function createOcclusionLayer(worldHeight) {
+export function createOcclusionLayer(worldHeight, count = 1) {
+  if (!Number.isInteger(count) || count < 1 || count > 3) throw new RangeError('Sprite count must be between 1 and 3');
   const canvas = document.createElement('canvas');
-  canvas.width = canvas.height = SPRITE_SIZE;
+  canvas.width = SPRITE_SIZE * count;
+  canvas.height = SPRITE_SIZE;
   const ground = document.createElement('canvas');
   ground.width = 1; ground.height = worldHeight;
   const ctx = ground.getContext('2d'), pixels = ctx.createImageData(1, worldHeight);
@@ -40,5 +68,10 @@ export function createOcclusionLayer(worldHeight) {
     pixels.data.set([value, value, value, 255], y * 4);
   }
   ctx.putImageData(pixels, 0, 0);
-  return { canvas, ground, anchor: SPRITE_ANCHOR, x: 0, y: 0, footY: 0, ready: false, revision: 0, imageKey: null };
+  const layer = { canvas, ground, anchor: [...SPRITE_ANCHOR], x: 0, y: 0, footY: 0, ready: false, revision: 0, imageKey: null,
+    rasterScale: 1, rasterRevision: 0, onRasterScaleChange: null };
+  if (count > 1) layer.members = Array.from({ length: count }, () => ({
+    x: 0, y: 0, footY: 0, ready: false, anchor: [...SPRITE_ANCHOR]
+  }));
+  return layer;
 }

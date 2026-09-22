@@ -1,0 +1,98 @@
+{
+  "title": "The Shire: touch navigation and directional walking",
+  "report": "docs/storyboard/review/shire-navigation.html",
+  "workflow": "docs/storyboard/production/shire-navigation-notes.md",
+  "eyebrow": "The Shire / Navigation review",
+  "lead": "Explore first. Open a book deliberately.",
+  "statusLabel": "Local review candidates, not published.",
+  "scope": "Leaflet pan and pinch over the existing map. No new zoom-level imagery. White dashed routes, route-constrained walking at twice the previous speed, one focused book preview.",
+  "sourceHeading": "Existing Atlas",
+  "sourceNotes": [
+    "The approved map, segmentation mask and walkable path centerlines are retained.",
+    "The previous four-frame sprite is the identity reference for three independent directional sheets."
+  ],
+  "steps": [
+    "Generate and record three four-by-four directional sheets.",
+    "Inspect true transparency, grid bounds, headings and gait phases.",
+    "Use the appropriate rendered heading while moving along the path network.",
+    "Test map gestures separately from book preview and story opening."
+  ],
+  "planHeading": "Directional Sheets",
+  "carryForwardHeading": "Navigation Policy",
+  "carryForwardNotes": [
+    "Panning, pinching and map taps do not open stories.",
+    "A book icon appears only for a clearly focused available destination. Tap it to preview the opening image, then tap that image to read.",
+    "Progress changes only when the story is opened. PinPin follows the nearest reachable path without crossing the lake."
+  ],
+  "reviewHeading": "Review",
+  "conclusion": "Review the gestures, white route dashes, directional animation and localized story previews before publication.",
+  "footerNote": "Generated headings are requested 30-degree steps, not angles measured from a 3D model. Asset reviews document deviations. Recorded timing windows include a short orchestration interval before each tool handoff, not just image-tool execution; they are not compute or billing measurements. Desktop/mobile layouts and emulated touch gestures passed in Chrome; physical Safari devices remain untested.",
+  "navigation": [
+    {
+      "href": "../atlas.html?lang=en",
+      "label": "Try the atlas"
+    },
+    {
+      "href": "atlas-directions.html",
+      "label": "Twelve walking directions"
+    },
+    {
+      "href": "shire-interaction.html",
+      "label": "Previous segmentation review"
+    }
+  ],
+  "sourceLinks": [],
+  "shots": [
+    {
+      "id": "directions-a",
+      "order": 1,
+      "title": "Directional walking sheet A",
+      "beat": "Mr. PinPin follows the atlas paths in the direction of travel.",
+      "camera": "Row 1: walking exactly right, right-facing profile (0 degrees). Row 2: walking diagonally right and slightly toward the viewer, nose down-right at 30 degrees. Row 3: walking mostly toward the viewer and slightly right, nose down-right at 60 degrees, more frontal than row 2. Row 4: walking straight toward the viewer, nose toward the image bottom, symmetric front view (90 degrees).",
+      "staging": "Four rows of headings, four walking phases per row. Intended angular spacing requires visual inspection.",
+      "alt": "Mr. PinPin walking direction sheet A",
+      "references": [
+        {
+          "path": "docs/storyboard/images/atlas/pinpin-walk-v1.png",
+          "role": "Character identity and rendering reference"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Asset: transparent RGBA game sprite sheet for a beautiful children's story atlas. Image 1 is the identity/style reference for Mr. PinPin: the same small natural quadruped hedgehog, cream face, warm brown spines, friendly shiny eyes, four short natural paws. Render a 2048 by 2048 square with exactly FOUR ROWS and FOUR COLUMNS, 16 isolated sprites on genuine transparent background. Each cell has the same virtual scale and centered ground anchor, generous clear margins. Fixed elevated 55-degree camera looking down at the animal on a horizontal ground plane; rotate the actual animal's body direction between rows, not the flat artwork. Within each row show four successive clearly different walking gait phases from left to right, alternating fore and hind paws, all with the SAME heading. Soft warm storybook 3D lighting consistent across all cells, detailed fur and spines, crisp silhouette. Keep compact anatomy low to the ground. No text, numbers, grid lines, floor, backdrop, cast shadow or accessories. Heading convention is the direction the nose travels ON THE IMAGE, clockwise: right=0 degrees, toward bottom=90, left=180, toward top=270. Row 1: walking exactly right, right-facing profile (0 degrees). Row 2: walking diagonally right and slightly toward the viewer, nose down-right at 30 degrees. Row 3: walking mostly toward the viewer and slightly right, nose down-right at 60 degrees, more frontal than row 2. Row 4: walking straight toward the viewer, nose toward the image bottom, symmetric front view (90 degrees).",
+      "output": "docs/storyboard/images/atlas/pinpin-directions-a-v1.png"
+    },
+    {
+      "id": "directions-b",
+      "order": 2,
+      "title": "Directional walking sheet B",
+      "beat": "Mr. PinPin follows the atlas paths in the direction of travel.",
+      "camera": "Row 1: walking mostly toward the viewer and slightly left, nose down-left at 120 degrees. Row 2: walking diagonally left and slightly toward the viewer, nose down-left at 150 degrees, more profile than row 1. Row 3: walking exactly left, left-facing profile (180 degrees). Row 4: walking diagonally left and slightly away from the viewer, nose up-left at 210 degrees, rear three-quarter view.",
+      "staging": "Four rows of headings, four walking phases per row. Intended angular spacing requires visual inspection.",
+      "alt": "Mr. PinPin walking direction sheet B",
+      "references": [
+        {
+          "path": "docs/storyboard/images/atlas/pinpin-walk-v1.png",
+          "role": "Character identity and rendering reference"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Asset: transparent RGBA game sprite sheet for a beautiful children's story atlas. Image 1 is the identity/style reference for Mr. PinPin: the same small natural quadruped hedgehog, cream face, warm brown spines, friendly shiny eyes, four short natural paws. Render a 2048 by 2048 square with exactly FOUR ROWS and FOUR COLUMNS, 16 isolated sprites on genuine transparent background. Each cell has the same virtual scale and centered ground anchor, generous clear margins. Fixed elevated 55-degree camera looking down at the animal on a horizontal ground plane; rotate the actual animal's body direction between rows, not the flat artwork. Within each row show four successive clearly different walking gait phases from left to right, alternating fore and hind paws, all with the SAME heading. Soft warm storybook 3D lighting consistent across all cells, detailed fur and spines, crisp silhouette. Keep compact anatomy low to the ground. No text, numbers, grid lines, floor, backdrop, cast shadow or accessories. Heading convention is the direction the nose travels ON THE IMAGE, clockwise: right=0 degrees, toward bottom=90, left=180, toward top=270. Row 1: walking mostly toward the viewer and slightly left, nose down-left at 120 degrees. Row 2: walking diagonally left and slightly toward the viewer, nose down-left at 150 degrees, more profile than row 1. Row 3: walking exactly left, left-facing profile (180 degrees). Row 4: walking diagonally left and slightly away from the viewer, nose up-left at 210 degrees, rear three-quarter view.",
+      "output": "docs/storyboard/images/atlas/pinpin-directions-b-v1.png"
+    },
+    {
+      "id": "directions-c",
+      "order": 3,
+      "title": "Directional walking sheet C",
+      "beat": "Mr. PinPin follows the atlas paths in the direction of travel.",
+      "camera": "Row 1: walking mostly away from the viewer and slightly left, nose up-left at 240 degrees. Row 2: walking straight away from the viewer, nose toward the top, symmetric rear view (270 degrees), see spiny back and short walking hind paws. Row 3: walking mostly away from viewer and slightly right, nose up-right at 300 degrees. Row 4: walking diagonally right and slightly away from viewer, nose up-right at 330 degrees, more right-facing profile than row 3.",
+      "staging": "Four rows of headings, four walking phases per row. Intended angular spacing requires visual inspection.",
+      "alt": "Mr. PinPin walking direction sheet C",
+      "references": [
+        {
+          "path": "docs/storyboard/images/atlas/pinpin-walk-v1.png",
+          "role": "Character identity and rendering reference"
+        }
+      ],
+      "prompt": "Use case: stylized-concept. Asset: transparent RGBA game sprite sheet for a beautiful children's story atlas. Image 1 is the identity/style reference for Mr. PinPin: the same small natural quadruped hedgehog, cream face, warm brown spines, friendly shiny eyes, four short natural paws. Render a 2048 by 2048 square with exactly FOUR ROWS and FOUR COLUMNS, 16 isolated sprites on genuine transparent background. Each cell has the same virtual scale and centered ground anchor, generous clear margins. Fixed elevated 55-degree camera looking down at the animal on a horizontal ground plane; rotate the actual animal's body direction between rows, not the flat artwork. Within each row show four successive clearly different walking gait phases from left to right, alternating fore and hind paws, all with the SAME heading. Soft warm storybook 3D lighting consistent across all cells, detailed fur and spines, crisp silhouette. Keep compact anatomy low to the ground. No text, numbers, grid lines, floor, backdrop, cast shadow or accessories. Heading convention is the direction the nose travels ON THE IMAGE, clockwise: right=0 degrees, toward bottom=90, left=180, toward top=270. Row 1: walking mostly away from the viewer and slightly left, nose up-left at 240 degrees. Row 2: walking straight away from the viewer, nose toward the top, symmetric rear view (270 degrees), see spiny back and short walking hind paws. Row 3: walking mostly away from viewer and slightly right, nose up-right at 300 degrees. Row 4: walking diagonally right and slightly away from viewer, nose up-right at 330 degrees, more right-facing profile than row 3.",
+      "output": "docs/storyboard/images/atlas/pinpin-directions-c-v1.png"
+    }
+  ]
+}

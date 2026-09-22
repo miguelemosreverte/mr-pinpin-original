@@ -1,0 +1,41 @@
+# Grayscale route segmentation
+
+Status: review candidate, not approved
+
+- Reading order: 3
+- Tool: built-in imagegen
+- Started (UTC): 2026-09-20T15:10:15.700Z
+- Completed (UTC): 2026-09-20T15:11:09.294Z
+- Wall time: 53.594 seconds
+- Saved image: docs/storyboard/images/atlas/shire-routes-v1.png
+- Size: 1536 x 1024
+- SHA-256: 4312ecb98385684c20d44ef84ff067efe0810ba817662390c2d74f9042f9c23e
+- Original tool output: /Users/miguel_lemos/.codex/generated_images/01a0a355-7d5b-7ab2-b71b-90cf4df7313d/exec-6fcec4ac-e8c2-47b3-a812-afbe368defa0.png
+
+## Source Beat
+
+Separate flat-color paths encode story sequence while following the terrain.
+
+## Camera Direction
+
+Exactly preserve the original atlas frame, converted to neutral grayscale.
+
+## Future Character Space
+
+Red cottage-to-lakeshore route, purple lake-to-Elder route, cyan lakeshore branch across the footbridge to picnic.
+
+## References
+
+- docs/storyboard/images/atlas/shire-v1.png: Exact original atlas geometry, not the segmentation mask.
+
+## Exact Tool Prompt
+
+```text
+Use case: precise-object-edit. Edit THIS ORIGINAL ATLAS into a route-segmentation diagram. Keep the exact 1536x1024 image framing and ALL scenery geometry, convert the entire underlying landscape to neutral GRAYSCALE. Draw ONLY THREE brightly colored solid continuous walking-route lines on top, like an OpenStreetMap route layer. No other colored pixels. Lines are flat saturated color, around10pixels thick, smooth centerlines following the existing footpaths. No dash gaps, arrowheads, dots, endpoint circles, markers, labels or writing. RED #ff0000 route starts on the doorstep of the lower-left family cottage (x20%,y70%), follows the existing stepping stones right and northeast through the clearing (x29%,y73%, then x35%,y64%, then x37%,y56%), ending ON THE LAND at the southern lake shore (x44%,y52%). PURPLE #8000ff route starts at that same lakeshore point x44%,y52%, follows the existing dry shore path east around the OUTSIDE RIGHT bank of the lake (x53%,y52%, then x63%,y47%, then x70%,y38%, then x73%,y29%), ending at the oak-root burrow doorway x79%,y20% in the upper-right. This route never crosses lake water. CYAN #00ffff branch starts on that shore path near x56%,y52%, follows the dry land south-east to the wooden footbridge at x62%,y59%, then crosses the bridge deck and ends in the picnic clearing x75%,y61%. Place each line ON walking surfaces, never across trees, rooftops, open water or rocks. These percentages orient you; actual source footpaths take priority so route bends can follow visible ground. Preserve the full exact original map with no rearrangement, all features clearly recognizable in grayscale. Only the three routes have color. Flat continuous isolated route strokes, no glow, no color gradients.
+```
+
+## Visual Review
+
+Red follows the cottage stepping stones and lake approach well. Purple remains recognizable but shortcuts across the lake outlet; cyan also cuts across the stream before reaching the bridge. These are not acceptable walking trajectories. Preserve as first route-direction attempt; reroute through the actual wooden bridge before runtime use.
+
+Reviewed (UTC): 2026-09-20T15:11:57.658Z

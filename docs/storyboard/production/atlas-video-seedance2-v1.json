@@ -1,0 +1,19 @@
+{
+  "model": "bytedance/seedance-2.0/image-to-video",
+  "sourceImage": "docs/storyboard/images/atlas/shire-v1.png",
+  "sourceImageField": "image_url",
+  "output": "docs/storyboard/videos/shire-seedance2-loop-v1.mp4",
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 5.456,
+    "basis": "8 seconds at advertised 1080p rate $0.682/second. Actual token billing depends on delivered dimensions; estimate, not invoice.",
+    "source": "https://fal.ai/models/bytedance/seedance-2.0/image-to-video"
+  },
+  "input": {
+    "prompt": "Fixed overhead camera. Clearly visible ripples and shimmering reflections move across the lake. Water flows continuously down the waterfalls and beneath the bridge. Tree crowns and leaves sway in a breeze. Clear air, steady daylight. Seamless looping shot.",
+    "duration": "8",
+    "resolution": "1080p",
+    "aspect_ratio": "auto",
+    "generate_audio": false
+  }
+}

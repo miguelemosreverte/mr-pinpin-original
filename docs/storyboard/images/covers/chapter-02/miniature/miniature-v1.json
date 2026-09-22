@@ -1,0 +1,30 @@
+{
+  "id": "chapter-02/miniature-v1",
+  "status": "proposed",
+  "title": "The Elder’s Wisdom — text-free miniature",
+  "tool": "built-in image_gen.imagegen",
+  "mode": "generate-with-references",
+  "prompt": "Use case: illustration-story. Create one portrait 1024x1536 image, a text-free chapter miniature for a children's story, \"The Elder's Wisdom\".\nReference 1 is the character, setting, and rich dimensional woodland rendering reference: small young chestnut-quilled Mr. PinPin meets a larger kindly elderly hedgehog with silver-gray quills and delicate round gold spectacles outside his root burrow. Preserve both identities and warm natural fur textures. Reference 2 is ONLY a composition/readability benchmark: large expressive faces, fewer background distractions, beautiful tactile detail even when scaled to 96px. Do not include any characters, bath, indoor props, or lighting from reference 2.\nRecompose reference 1 as a close, intimate two-character encounter. Exactly two hedgehogs. Young PinPin at lower-left looks up with curiosity at the elder on the right; elder's larger face toward upper-right/center looks gently down to PinPin. Both faces dominate the portrait and remain entirely in frame; young PinPin is visibly smaller than the elder. Their bodies and distinct paws are grounded naturally on the path. Anatomically believable attachments with two forelimbs and two hindlimbs each, no extra paws. Keep their recognizable soft cream muzzles and brown noses, chestnut versus silver quill distinction, and elder's spectacles. A broad dark oval root-burrow entrance and mossy curving root remain behind the elder, with one crooked wooden staff leaning beside the entrance on the far right. Staff is a prop, not a limb.\nFill the whole picture with the encounter, without a blank title area. Small patch of softly blurred woodland green behind the heads; minimal sky, no distant scenic vista, no crowded flowers. Warm golden forest light and muted green-brown background make pale faces and warm quills clearly separate. Keep rich dimensional storybook fur, quills, bark and moss, not flat vector or plastic toy style. Strong readable silhouettes and gentle happy expressions; understandable at 96px width. NO TEXT anywhere, no lettering, numbers, logos, border or watermark.",
+  "references": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/chapter-02/title-ru-v1.png",
+      "role": "character identity, setting and visual style"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/home-sweet-home/textless-v1.png",
+      "role": "composition/readability benchmark only"
+    }
+  ],
+  "generatedFile": "/Users/miguel_lemos/.codex/generated_images/01a0c0bc-55ab-7051-b9c8-970fcb185d7f/exec-733e0ec9-5f7d-4452-aba7-920b49db1d50.png",
+  "output": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-cover-standard/docs/storyboard/images/covers/chapter-02/miniature/miniature-v1.png",
+  "startedAt": "2026-09-20T21:33:37.764Z",
+  "finishedAt": "2026-09-20T21:34:44.593Z",
+  "seconds": 66.829,
+  "review": "Full-resolution inspection: exactly two recognizable hedgehogs, young chestnut PinPin left and larger silver-quilled spectacled Elder right. Both faces are much larger than on the full title cover; they look toward each other. Elder's cream face is well separated from the dark root-burrow entrance, with crooked staff clearly separate at far right. Warm fur, quills, bark and moss preserve the existing dimensional style. No lettering or empty title zone. PinPin has two distinct front paws and one visible rear paw; Elder has two front paws, rear limbs hidden under the body. No obvious doubled limb attachments; hidden limbs cannot be verified. The elder is substantially larger, reinforcing age contrast; seated versus standing proportions cannot prove exact scale. Some detailed moss and foliage remain, but background softens above left and the faces dominate. Actual 96/160px browser inspection is pending coordinator's comparison.",
+  "reviewedAt": "2026-09-20T21:35:33.266Z",
+  "scope": "One 1024x1536 language-independent master, displayed with CSS at multiple sizes. Title covers unchanged.",
+  "width": 1024,
+  "height": 1536,
+  "bytes": 2951852,
+  "sha256": "45d4f3b0895426e72d575e7e5c33e456ec2e6df1665d5c8196c78fb4d8a91567"
+}

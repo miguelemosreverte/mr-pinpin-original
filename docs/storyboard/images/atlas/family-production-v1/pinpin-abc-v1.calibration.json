@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "characterId": "pinpin",
+  "assetVersion": "v1",
+  "reviewStatus": "measured-scale-awaiting-visual-review",
+  "method": "For each heading, take the median body width and median body height across four gait frames at alpha >127. Compute old referenceWidth * sqrt(new body bounding area / old body bounding area). Take the median of the four heading suggestions once per sheet. Apply a common baseline factor so existing production A stays at 294. No per-heading or per-frame scaling is applied.",
+  "baseline": {"sheet": "pinpin-a-v1.json", "referenceWidth": 294, "oldTemplateSuggestedWidth": 299.214, "commonReferenceWidthFactor": 0.9825743273472358},
+  "displayWidthUsedForComparison": 56,
+  "headingReview": {"status": "parent-reported-orientation-approved", "scope": ["b", "c"], "evidence": "Parent fleet handoff supplied B angles 120/150/180/210 and C angles 240/270/300/330 as approved orientation sources. This is not gait, scale, or full production approval."},
+  "sheets": [
+    {
+      "sheet": "pinpin-a-v1.json",
+      "sourceSha256": "ae95c02059f0af05a10fbabfaf354425b21ac1f7adbb434e8c82be5caa600b9c",
+      "template": "images/atlas/pinpin-directions-a-v1.png",
+      "templateSha256": "8be56abd29348419d471151cf5092b41567ed73fe2a97a15b665c320357159c0",
+      "templateReferenceWidth": 285,
+      "suggestedReferenceWidth": 299.214,
+      "chosenReferenceWidth": 294,
+      "rows": [
+        {"angle":0,"bodyPixels":[281,199],"templateBodyPixels":[272.5,187],"suggestedReferenceWidth":298.552},
+        {"angle":30,"bodyPixels":[259.5,233.5],"templateBodyPixels":[246.5,226],"suggestedReferenceWidth":297.231},
+        {"angle":60,"bodyPixels":[229,259.5],"templateBodyPixels":[213,252],"suggestedReferenceWidth":299.876},
+        {"angle":90,"bodyPixels":[212,257.5],"templateBodyPixels":[192,244.5],"suggestedReferenceWidth":307.335}
+      ]
+    },
+    {
+      "sheet": "pinpin-b-v1.json",
+      "sourceSha256": "b6c903cb1f2c03769e9622e23a210e0f258cbf05d779407da129593904b35c63",
+      "template": "images/atlas/pinpin-directions-b-v1.png",
+      "templateSha256": "6594c1b1cb8675f52e4408e0d4f7574ea5f157dde84b748d2f2923f92f526572",
+      "templateReferenceWidth": 292,
+      "suggestedReferenceWidth": 303.937,
+      "chosenReferenceWidth": 298.641,
+      "rows": [
+        {"angle":120,"bodyPixels":[235.5,236.5],"templateBodyPixels":[216.5,233.5],"suggestedReferenceWidth":306.494},
+        {"angle":150,"bodyPixels":[272.5,223],"templateBodyPixels":[264.5,213],"suggestedReferenceWidth":303.261},
+        {"angle":180,"bodyPixels":[288,209],"templateBodyPixels":[279,204],"suggestedReferenceWidth":300.286},
+        {"angle":210,"bodyPixels":[237,250.5],"templateBodyPixels":[224.5,243],"suggestedReferenceWidth":304.614}
+      ]
+    },
+    {
+      "sheet": "pinpin-c-v1.json",
+      "sourceSha256": "97d362d7e9fc8222257f93884d77de88bd753b4d4f357bd990f33171d3fb2b60",
+      "template": "images/atlas/pinpin-directions-c-v1.png",
+      "templateSha256": "08c80ee3dc504c7edae7c8ff0edfc707a3c2d3c2cb0c7262e8a9f033a5e2d52f",
+      "templateReferenceWidth": 263,
+      "suggestedReferenceWidth": 291.051,
+      "chosenReferenceWidth": 285.979,
+      "rows": [
+        {"angle":240,"bodyPixels":[217.5,240],"templateBodyPixels":[191.5,223.5],"suggestedReferenceWidth":290.448},
+        {"angle":270,"bodyPixels":[185.5,285.5],"templateBodyPixels":[165,261],"suggestedReferenceWidth":291.654},
+        {"angle":300,"bodyPixels":[225.5,245.5],"templateBodyPixels":[209,229.5],"suggestedReferenceWidth":282.547},
+        {"angle":330,"bodyPixels":[283,230],"templateBodyPixels":[245.5,209.5],"suggestedReferenceWidth":295.866}
+      ]
+    }
+  ]
+}
