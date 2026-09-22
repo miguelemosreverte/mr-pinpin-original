@@ -1,6 +1,27 @@
 # Asset migration integration verification
 
-Verified 2026-09-22. Archive migration completed; deployment verification follows.
+Verified 2026-09-22. Archive migration and live deployment completed.
+
+## Live publication
+
+GitHub Pages deployment for merge commit `bf08635` succeeded:
+https://github.com/miguelemosreverte/mr-pinpin-original/actions/runs/35688609195
+
+Live Chrome verification passed on the public GitHub Pages URL: WebGPU atlas
+rendered, all four destinations were available, and Chapter 1 (15 scenes),
+Chapter 2 (16 scenes), Timber Tractor (34 scenes), and Home Sweet Home (21 scenes,
+including its cover) opened successfully. Library rendered 34 chapter covers.
+No JavaScript errors or failing same-site resource responses occurred in those
+flows. The atlas and library were opened using the operating system `open` command.
+
+Before deployment, the production artifact also passed all four readers in all
+three languages, including localized approved title covers, and all four atlas
+cover previews. Mobile navigation passed at 320/390px and desktop at 1440px.
+
+The separate authoring backup is complete: 208 files / 799,047,393 bytes verified
+by full remote download and SHA-256, with sources retained. See
+`verification-authoring.md`. The public archive also contains a root guide and
+catalog; production readers make no archive requests.
 
 ## Cutover update
 

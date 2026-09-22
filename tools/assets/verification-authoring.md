@@ -1,7 +1,7 @@
 # Blender authoring preservation
 
-Status: all 208 authoring objects uploaded; roundtrip verification resumed on the
-mini, 2026-09-22. No success receipt yet.
+Status: COMPLETE, 2026-09-22. All 208 authoring objects were uploaded and freshly
+downloaded on the mini; all 799,047,393 bytes passed SHA-256 verification.
 
 - Source on mini: `/Volumes/TB4/mac-mini-storage/shared/pinpin-blender-v3`.
 - Approved public bucket: `miguelemosreverte/mr-pinpin-archive`.
@@ -16,14 +16,22 @@ mini, 2026-09-22. No success receipt yet.
 
 Job state and retained snapshot/roundtrip files:
 `/Volumes/TB4/mac-mini-storage/shared/pinpin-asset-cache/authoring-blender-v3-20260922/`.
-The external success receipt will be `authoring-upload-receipt.json` there.
+The published external success receipt is `authoring-upload-receipt.json` there:
+`/Volumes/TB4/mac-mini-storage/shared/pinpin-asset-cache/authoring-blender-v3-20260922/authoring-upload-receipt.json`.
+Receipt SHA-256:
+`5efecba2686f1fe2896161a5b4a02bcbd352802f36386af031758fa6ed3fe511`.
 `inventory.json` records every source path and hash; `progress.json` provides
 compact status, and `verified-progress.json` records completed roundtrip checks.
 The separate authoring receipt is not an `assets:sync` migration receipt.
 
-The job uses the installed HF SDK's cached authentication and
-`HF_HUB_DISABLE_PROGRESS_BARS=1`. It uploads only missing objects, refuses
-conflicting existing content, and downloads every object to the external SSD for
+Final receipt validation confirmed all 208 path/object/byte-count/SHA-256 records
+match the inventory, every entry has successful remote proof and a Xet identity,
+no excluded paths were uploaded, and every source file remains present. Remote
+Xet identities matched before and after each downloaded checksum verification.
+
+The job used the installed HF SDK's cached authentication and
+`HF_HUB_DISABLE_PROGRESS_BARS=1`, uploaded only missing objects, refused
+conflicting existing content, and downloaded every object to the external SSD for
 byte-count/SHA-256 verification before publishing the success receipt. Local
 sources and cached copies remain in place.
 
