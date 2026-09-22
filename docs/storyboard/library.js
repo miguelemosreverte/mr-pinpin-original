@@ -60,6 +60,11 @@
       image.width = cover.width; image.height = cover.height; image.decoding = 'async';
       const titleCover = window.titleCovers.resolve(story.id, lang);
       if (titleCover) window.titleCovers.apply(image, titleCover, lang, {...cover, src:story.cover[lang]});
+      if (story.id === 'one-day-in-the-forest' && titleCover?.miniature?.status === 'approved' &&
+          titleCover.miniature.asset === 'images/published/elder-cycle/papa-home-miniature.webp') {
+        image.src = titleCover.miniature.asset;
+        image.alt = story.title[lang];
+      }
       figure.style.aspectRatio = cover.width + ' / ' + cover.height;
       figure.append(image);
       const title = document.createElement('h3');

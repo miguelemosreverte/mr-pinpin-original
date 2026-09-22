@@ -1,0 +1,1635 @@
+{
+  "encoder": "cwebp -q 92 -m 4; full resolution; no crop, retouch or compositional change",
+  "assets": [
+    {
+      "source": "images/chapter-02-expanded/revision-05/scenes/scene-001-v2.png",
+      "sourceSHA256": "e2ccb4e55a0217f7b0b52d28abe83a0790a7397892e9cd9ad6297eef94892d92",
+      "target": "elder-r6-family-001.webp",
+      "webSHA256": "91ef3d7fe69f13fe5379c0abd941c63409d70b437ec8f851a5225b568f5e392d",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 543500
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-04/scenes/scene-004-v1.png",
+      "sourceSHA256": "a7e31586bb55abdbe88b8d5ed4ce4cfe589947fd49041aaabaf5917d41aeb769",
+      "target": "elder-r6-family-002.webp",
+      "webSHA256": "e370c47903fd6baf648cab6bc58d4e81ec2a6610b9132a4eeda2dcfece5cd13c",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 484432
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-04/style-tests/scene-002-style-v1.png",
+      "sourceSHA256": "f1fa54442881cda9e494270a8b4905a347d312f5747a92cedcac473378a858df",
+      "target": "elder-r6-family-003.webp",
+      "webSHA256": "a4b83c98d3f6488c653f80c5669b4907c99dafb93985cf782071c23f9860d6f1",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 566298
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-05/scenes/scene-003-v2.png",
+      "sourceSHA256": "7f4545db4867e9e56cf955d4f0c6fc1e3ae5e6fc4412dc242de1ad2de342d25e",
+      "target": "elder-r6-family-004.webp",
+      "webSHA256": "9b5c0802c0e0b82dc5f355cadeceaf0375c7037acec71d62e82c805e196e81fd",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 510714
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-05/scenes/scene-005-v3.png",
+      "sourceSHA256": "3709b93187a9b784150d3ad49d8a660045b3f65b03a16ba1aea1d02dff96a5e9",
+      "target": "elder-r6-family-005.webp",
+      "webSHA256": "832602fe1b6a489e09b3ee52499c813d0fa606a6b8854ee8e765cd9fa17fcd39",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 496454
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/handoff-v1.png",
+      "sourceSHA256": "d4894f088e8ed62e9295d1c69e4d3812cf874943ff4671509aee4739d17d401f",
+      "target": "elder-r6-family-006.webp",
+      "webSHA256": "98c30fef2f100ea9b5eb715172b4131d43120ba8fb4667dab6d1b47b14af4d25",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 522684
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/papa-cradle-v1.png",
+      "sourceSHA256": "928b59d72fba4602a6228028845febbcec6cce4d000ad6ea21a96d313aeddd9d",
+      "target": "elder-r6-family-007.webp",
+      "webSHA256": "b3519f59aa83aac8621fc33f6b288ac9afe7ca8b5095e34bc47803e30f799b09",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 505024
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/floor-settle-v2.png",
+      "sourceSHA256": "124358bc296e667489acf62203bfc105617c8e9a537613f1f6158b585f02efe6",
+      "target": "elder-r6-family-008.webp",
+      "webSHA256": "58df35b99ee8c55b0f0e4011aa2354a7e62820c0c7f261374ee9bb7d2db31565",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 444930
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/peekaboo-v2.png",
+      "sourceSHA256": "b0051350939a0d95b273ccd9dbb30384f15e0e133a0340e9a98c414497ca1e52",
+      "target": "elder-r6-family-009.webp",
+      "webSHA256": "d8354a985a58a171c87d169f9b2c7bd412e8de100be035a3f4aa18bfc6e2964d",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 445224
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/found-you-v2.png",
+      "sourceSHA256": "8ad89d34a871428e00ac340343a12dddbcc4576a67c69bd9df835415e7a37b6e",
+      "target": "elder-r6-family-010.webp",
+      "webSHA256": "76572a7cc71e4257d6066f98130e9ec29dea5942305c0ad34fbf6455ad4e7ec5",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 468892
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/bread-helper-v2.png",
+      "sourceSHA256": "525870ba353dfce66c7e1d8cccbd5c0fd712360e776d082ebfb2540135ae7b3f",
+      "target": "elder-r6-family-011.webp",
+      "webSHA256": "d750e0fc71427d87f3643cf4a7929e0b6c048836e9243ab6970481a82e02dcb6",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 423436
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/bread-table-v2.png",
+      "sourceSHA256": "911db9b9d7ab6d21af57d57a20df57c8a8d97f15de0a2259aa8d89015700ce2d",
+      "target": "elder-r6-family-012.webp",
+      "webSHA256": "b3d790fea44deef348a9162f686e38e84bd224405188366a9ffa345ae0082ce1",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 429750
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/baby-back-v3.png",
+      "sourceSHA256": "671db9f8cca45416bdce0a0501d9f6387a77546532c089452f9a4bb87a2e2c5d",
+      "target": "elder-r6-family-013.webp",
+      "webSHA256": "6c2bc216d2081742b36b1670052da3b1238078ec7036a5fb1dc5da705aa56b2b",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 462858
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/cups-ready-v2.png",
+      "sourceSHA256": "402b57ade823ad3f8fd54cea5af00c4e97ca6e9dce9d5841e784933885f241fe",
+      "target": "elder-r6-family-014.webp",
+      "webSHA256": "8cea91cf5a505afd41e8a306b6034998e9864d3ea660ab76c99201ca6cfd4dcb",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 432854
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-05/scenes/scene-006-v1.png",
+      "sourceSHA256": "4e7c1c238a31f1c79cb8a31c1266d27fcab4b22fb5cdc174d5029aa5060347a7",
+      "target": "elder-r6-family-015.webp",
+      "webSHA256": "076321ed693bb541c91d99b4ab6fbb7cf0c7ed19c0fcf2c0dfb70b1e668d428e",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 482926
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/lake-news-v3.png",
+      "sourceSHA256": "13dbb3a149f4d3e98b2b9b05d5e6ef75532f70967ada9c2488103515382caafb",
+      "target": "elder-r6-family-016.webp",
+      "webSHA256": "88d74c56a468e3f250b12dbcb5ecdb7b07bd1d789197663d8948ac199acd133d",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 452790
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/circle-telling-v3.png",
+      "sourceSHA256": "bcd568789c15ad66a4d2d555bb1b159b3945297e54a145d0eb5cc23f08f8f0b8",
+      "target": "elder-r6-family-017.webp",
+      "webSHA256": "b07012e00e3ffe23d061d833fe1eb61fef232f3aeb45d34a6d2c7ef0138b8936",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 460746
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/everyone-water-v1.png",
+      "sourceSHA256": "8509cbe2f3e425a22635c33109b13ce3b7ebb491dd162275f9cbcd770f041c0a",
+      "target": "elder-r6-family-018.webp",
+      "webSHA256": "c50bdeebb3fb9dd6d91c77ca142f959ab68add282e913b2b461de4c8f58eb2fe",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 455346
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/mama-bread-v6.png",
+      "sourceSHA256": "9a7d5fa7efbcae10570a634e550b02439e89d430aacf56e7b2ef44b5632cd0ed",
+      "target": "elder-r6-family-019.webp",
+      "webSHA256": "6f02e3d8a2893694f9602e9bf666e836e176c1e0437de31716467a03c507c7a1",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 411230
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/little-spill-v3.png",
+      "sourceSHA256": "83cd55c5ffbaf1fa3655c1801ba5dc2b635985bbf99201fc31df83980deed81f",
+      "target": "elder-r6-family-020.webp",
+      "webSHA256": "4a708368eafcba5ffd8c57cb04c0ada075c70c18ddbd2d8c22ff7769f1199507",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 459614
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/wipe-together-v2.png",
+      "sourceSHA256": "2dcc3f7aac1389372e8ef8db350a65c35610f27adafbbc0a1ac6a506367338ec",
+      "target": "elder-r6-family-021.webp",
+      "webSHA256": "be2f7bdd4e4581d08b2a2d4d37b68c9b17f8b9086ee9bffa7acec7b54d00bf03",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 476216
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/clear-table-v2.png",
+      "sourceSHA256": "99e0a5fe0ddbea54697885f659261b94532858620bacc37953f90b5f69340d82",
+      "target": "elder-r6-family-022.webp",
+      "webSHA256": "27558038af2c93c5f28b26b9ab66054d930d39706d1f06981954345a4b09a32e",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 478600
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/tower-build-v2.png",
+      "sourceSHA256": "e8c3d515bf53a564a692e64413cd4b2d7a1896a45eacdb94f978e6c71df5e2ab",
+      "target": "elder-r6-family-023.webp",
+      "webSHA256": "50309b8295139886b4f80a395e47ec6ff2d14ee64632d619832c365c12f1b259",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 457974
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/tower-topple-v2.png",
+      "sourceSHA256": "53204137642612845e776c9f9f406bece35b80884e96d802da7cff96646bb739",
+      "target": "elder-r6-family-024.webp",
+      "webSHA256": "639111eb2dd09f24aa02c7ff5db41ddaf0ca2738800458d236615ef5fadaa8d5",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 500582
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/build-again-v2.png",
+      "sourceSHA256": "d4e6bad7713d0dcb0c3e849f51c91a44d4807b31f9c5a246967268667c85e397",
+      "target": "elder-r6-family-025.webp",
+      "webSHA256": "0f21f55e97116bd5f414b60455cf55e01e8b76a990c035e95102920ae05156ee",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 481734
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/ready-visit-v2.png",
+      "sourceSHA256": "00ba869e8d1946e39014c298e1f0de202eb8332965a4d4f27ec0383911de40aa",
+      "target": "elder-r6-family-026.webp",
+      "webSHA256": "f256bf2b60eb4cffa1023e3cda9967935f4bf8df463b930c90f65bed00ef2d5c",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 477098
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/bag-ready-v3.png",
+      "sourceSHA256": "df8b15414aa32b97afece5e29f1387c53f59c55750e7dd56d07e860258800b13",
+      "target": "elder-r6-family-027.webp",
+      "webSHA256": "e932eddb3506edabbef58a69c8eb5031eaba4b037488dc563b303bbbaec0d0e1",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 464132
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/wrap-bread-v2.png",
+      "sourceSHA256": "5388514283499f6a7aa9adf786e1a738b2543b0d8c3cd816bc00f69574c39465",
+      "target": "elder-r6-family-028.webp",
+      "webSHA256": "7648b4f9e12312b0580391778e84d883d393fe31732492de1dcc4b22435ae17e",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 541508
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/water-packed-v2.png",
+      "sourceSHA256": "603a8f6ae472bb1f7daa4e93f3d268e53f279933f9839ebb39401e8dfb63f9de",
+      "target": "elder-r6-family-029.webp",
+      "webSHA256": "b1a2b377f2429b48b5a44834d0f3b841f7a7d3b370d6aac8dd1bd090804c1231",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 508668
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/goodbye-hug-v2.png",
+      "sourceSHA256": "ce5c1e39d5856b9d15da7ea11e506da5c79bcae3f960441841ce8275537de1d4",
+      "target": "elder-r6-family-030.webp",
+      "webSHA256": "da5a00a269cb7bff090bad0bce4ab1f1a77bd047804b21d85ac6b5e4b391e4ce",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 443652
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-05/scenes/scene-011-v1.png",
+      "sourceSHA256": "7c81f9046067c42b9bba38cb1df86e1f0cd93bab43f657bca2b4f7b41f55b833",
+      "target": "elder-r6-family-031.webp",
+      "webSHA256": "84116ddc2a2768dce46a023e3e7a95781908ccaac4c5f232b5811981c4c424f1",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 392834
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/boarding-help-v1.png",
+      "sourceSHA256": "32c9492b331bc9e0b9c1b083cb42c96859571f689094576718655d1a17feabac",
+      "target": "elder-r6-family-032.webp",
+      "webSHA256": "33ad5f708dd9392d5269738d80044ab44198eb21432b0e824fadb82278cbdfe4",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 465996
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/boarding-seat-v1.png",
+      "sourceSHA256": "1d2ae1b891e34db76f6a12507f70cfbaebd6fc6c4ced2ebceff1c38599744d7d",
+      "target": "elder-r6-family-033.webp",
+      "webSHA256": "2d9bded7e46cda7012a393e01127d87f727f12a617da599e42422c8c21b125fe",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 444596
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-05/scenes/scene-014-v1.png",
+      "sourceSHA256": "b7641fa34a6523d46854d44b882ff2d0922b8ca480203a428cfd6833d46dc8b7",
+      "target": "elder-r6-family-034.webp",
+      "webSHA256": "78720144c4e6e1d13b4a2f4279f158468bb410b2ead62f3e935171dae5689e2b",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 392178
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/departure-v1.png",
+      "sourceSHA256": "fdf4c2dce2dc972aecd38b3dd6b664f1e0102ce4dfc93073a0ea32da7ee6849c",
+      "target": "elder-r6-family-035.webp",
+      "webSHA256": "0a2396a9c2ef776930b92b593f2e57a36f767c79031dcfffd48fc0e8d072fdc5",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 532812
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-05/scenes/scene-016-v1.png",
+      "sourceSHA256": "dc4a9df72a30891d3062553528973d58f164bd0ce2ff30707ad43c4236b95f80",
+      "target": "elder-r6-forest-001.webp",
+      "webSHA256": "5049deed3f4673920ec53ac0290266df2a9208f5cdcd668339acd8da3149428c",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 425530
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-002-v1.png",
+      "sourceSHA256": "50bcf47ffce22c4cefb1fa28fbb4fca87fe2ca5e3406654c2b0e664be73cea81",
+      "target": "elder-r6-forest-002.webp",
+      "webSHA256": "a61e84707a9fdd714fb6dcab872879a6808f220108bc020783967b2f75d298a8",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 545316
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-003-v2.png",
+      "sourceSHA256": "dbdcdcaf76b8792384b2e19311e90de8dcb760f377c46be8adccab74da453884",
+      "target": "elder-r6-forest-003.webp",
+      "webSHA256": "a37e543595b418cf3b28dc0785514872e9f3c5095462ff711a93f320fa8de8ba",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 492678
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-004-v1.png",
+      "sourceSHA256": "2a52ca3253fd5fcacf2bed272a2e75189c54e6e258bce2e558f8201fc05a2d4b",
+      "target": "elder-r6-forest-004.webp",
+      "webSHA256": "2083dfd4f828b09c6071a4dde4d1e31977d82787972306b589ed2ae24fde8ad8",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 503418
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-005-v1.png",
+      "sourceSHA256": "0e61ac329b49ea65effcfcd99fc5ea72c0699cdce125819c3343f251cbfa0a96",
+      "target": "elder-r6-forest-005.webp",
+      "webSHA256": "76818bceb7b4fd16f65fe6d7e42e255d1f74f3c7afbf3c11adfb4a235d194a35",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 509356
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-006-v1.png",
+      "sourceSHA256": "412a3d697fd269102e6b7e04df3e822032fc600f76a6079435ecbeb2fc9e08de",
+      "target": "elder-r6-forest-006.webp",
+      "webSHA256": "b03646edef27d293e3ef4d7b97e87215482da94aec3417040f4bf7709e738684",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 415162
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-007-v1.png",
+      "sourceSHA256": "537a3284565d2a6bfacf07eb8f9def8c2e196fb18579d4dc02622b7164a19325",
+      "target": "elder-r6-forest-007.webp",
+      "webSHA256": "1c8c7eca820777358c815af176f5a944b1c7c1bbdcf4a3eb20d01522ab5f2f64",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 429554
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-008-v1.png",
+      "sourceSHA256": "b96c1fede0e94b688b084497944c50fd02ceacdf1a0139e13d761cc56bce754f",
+      "target": "elder-r6-forest-008.webp",
+      "webSHA256": "af8b5df48d4a2736d21017ec9fcd90a1d6a3daa14eb5e1033c2bdb4c5d3083aa",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 498302
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-009-v2.png",
+      "sourceSHA256": "a303288bcdc2fe77336a509cf920291e5a852efb0a99f85fd847cd6143c40307",
+      "target": "elder-r6-forest-009.webp",
+      "webSHA256": "81f2b30b605f05c946a40f142448d749a9e52399c6327740b40e2ba0ddb76d1d",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 480924
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-010-v2.png",
+      "sourceSHA256": "87a22d16fbc01edcb85991324ae0767bcaa80cef50d4e1d8a196762af9ffba80",
+      "target": "elder-r6-forest-010.webp",
+      "webSHA256": "226afabbd50e0396605d0748d815c18b675bd43e33287fd9f4d4b55d1112761e",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 617620
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-011-v1.png",
+      "sourceSHA256": "94537dffe45ef663dd82475de490d723a5cb69ad9daa16b4ad55b9365d9ca1d5",
+      "target": "elder-r6-forest-011.webp",
+      "webSHA256": "0f02fcc9670594b0d51bf94192fc1c0ae8fbb62ec105929432828e32a926fd62",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 589584
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-012-v2.png",
+      "sourceSHA256": "47274e6585cee29b9dfa70a19b7037b54f0f932f1aec2c364a6378863c635451",
+      "target": "elder-r6-forest-012.webp",
+      "webSHA256": "db969785f4263c825932d83babe96ed8e876157666568e1c3358990729717912",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 435308
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-013-v2.png",
+      "sourceSHA256": "d91f868cc5a73e3686d1d808dd753845d4646ec1dadd9efec97d01a74c1aca3e",
+      "target": "elder-r6-forest-013.webp",
+      "webSHA256": "61c03509495fc25db2ee1a39e42bc7cd3219e27dd61e2bf085bd6c92a41933d7",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 525288
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-014-v2.png",
+      "sourceSHA256": "8446865e80876ccef778ba74f877f8cfd4fef1bfc854381cd6764187af3c0480",
+      "target": "elder-r6-forest-014.webp",
+      "webSHA256": "0951a44ec8b17ab65c1ad12fbd8ff72522cd867f9a552c461a5047576d46d66e",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 536814
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-015-v3.png",
+      "sourceSHA256": "69e2fd98bf2979c5baa61e05199dd74fb5c8bce9d0cfca9785fb0696b96cf418",
+      "target": "elder-r6-forest-015.webp",
+      "webSHA256": "adc9e84d1788f545057945adcef1409eee2ae031b46211a47baee520fac604ea",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 444082
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-016-v1.png",
+      "sourceSHA256": "184ce12ec69124298536a4f9d80ead813503acc514586a115dc71b46b3e8c99a",
+      "target": "elder-r6-forest-016.webp",
+      "webSHA256": "0ddcc7eed8d541af20c74ef295825b570043432273be0698ae51778ef657739c",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 589410
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-017-v1.png",
+      "sourceSHA256": "1d54a5fff5e5bd3fbfe94d972318f1f3dfef5807dc7bd80c9119525dc29dc6a9",
+      "target": "elder-r6-forest-017.webp",
+      "webSHA256": "ec82e4c927b15f1e0b1c19ca786f5f88ddc3af1f6a1ee57c1b2f37ab10f81a1e",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 577630
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-018-v1.png",
+      "sourceSHA256": "6c1e871c657414018cbc5059b7960bfd880fa8852805e3f56b82a8c7fa3e829f",
+      "target": "elder-r6-forest-018.webp",
+      "webSHA256": "e517d6ca04cd705fb51bafa906b5bf59d362244256abd619ad81d4f6c4f1c739",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 596236
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-019-v1.png",
+      "sourceSHA256": "2d0bd5ebf4cc001662d040b48bbebd3106449a7eec4eb184829b36391245b370",
+      "target": "elder-r6-forest-019.webp",
+      "webSHA256": "f422a5ba6a438276920dab5f0776ca4891bb619513349dc4c046cbdd5a93c993",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 515654
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-020-v2.png",
+      "sourceSHA256": "038af67a3d7e3a83ac7ff9c565dfba45b67ac8e34a9cb7be89e1a3058ee416bc",
+      "target": "elder-r6-forest-020.webp",
+      "webSHA256": "6199f8952c177efcd91f8329f6b04aa57f229f73aa9d609616c77e102f8b9979",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 511288
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-021-v2.png",
+      "sourceSHA256": "90a06c120bc7a0cc63893c38cc47df76f502e55d18586fb9341543206f6d3ac0",
+      "target": "elder-r6-forest-021.webp",
+      "webSHA256": "496b4f5dd35b520c54fce130c4ace6758fc48b1efbabf1b1a06f5cd84aeedbe5",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 505342
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/forest/scene-022-v1.png",
+      "sourceSHA256": "f84cfceac8cefa005b68746981bdf968fbf13437be7de2e483e236802344aa40",
+      "target": "elder-r6-forest-022.webp",
+      "webSHA256": "f68b2da6f296b2fe2d3424f17faa41f15d6f597899892ec88c8bb546bd0017bb",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 595802
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-001-v1.png",
+      "sourceSHA256": "cf4b2f9f61fddb1321046db45281af32e7c008c6268c3b4d7db7a6404544f1d3",
+      "target": "elder-r6-mentor-001.webp",
+      "webSHA256": "0158473467dfdefdc0d4b986762c810805e906886825544020ab8a51d44167f2",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 495688
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-002-v1.png",
+      "sourceSHA256": "f564208764dca6e346a61b6e3dec9a727d2229721ec35ddb1a83b7e4e3b73429",
+      "target": "elder-r6-mentor-002.webp",
+      "webSHA256": "c746f0a3b02a824cfcbafc671a97aa1a53d47e0f6592afac1e21065740c8e111",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 480120
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-003-v1.png",
+      "sourceSHA256": "eca20ea6ae148b324aee20eaabadb8b91bc3f80f00dd2d126ec9570c72a9b413",
+      "target": "elder-r6-mentor-003.webp",
+      "webSHA256": "15a4a7ea805a8a45bb4f9b26f7c3b6e4fa2abe0696b3c5f3dfb14495a815497d",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 465668
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-004-v1.png",
+      "sourceSHA256": "642867dcac1598398edf10810d9a877fc4b355b5f93fe91091f4aca6d4268f12",
+      "target": "elder-r6-mentor-004.webp",
+      "webSHA256": "d2e31bcadea2f57cc60e375921475ea85df8892656609f0caa6d9ffdbe87c200",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 422762
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-05/scenes/scene-022-v1.png",
+      "sourceSHA256": "0bc549bcf634f26c84dc665d5dd2e12b174673d7b15c1747a864f762922d5396",
+      "target": "elder-r6-mentor-005.webp",
+      "webSHA256": "34fe5d8b02b1fd275488869ffa6884df88917eaeb1d5fcf38da92088dcfa1308",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 496350
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-006-v2.png",
+      "sourceSHA256": "15fb0c3953cc95508aeb6255ab87bf8e42dae3bc7e328bd217f05ae6b54a7042",
+      "target": "elder-r6-mentor-006.webp",
+      "webSHA256": "81d28e04277a8433d32aa6c4a0cf6931815372fd624ef7e41d6480a82466b155",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 469708
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-007-v1.png",
+      "sourceSHA256": "ea9afb864499532f9899e6b953b358e0d135f0ba537b5df8b8534821ca730a6f",
+      "target": "elder-r6-mentor-007.webp",
+      "webSHA256": "f2d92b66200392183f81f67db1213d01d89531419dd49ab082ef7a7169281665",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 552712
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-008-v2.png",
+      "sourceSHA256": "0f7aa18b09350b3529c1f880298673a35d2417c4374ddc60a2953ea81676706b",
+      "target": "elder-r6-mentor-008.webp",
+      "webSHA256": "45878f261e3341e0f46c2444e72ea075454005b2ed1c08cb34c14e96d31f3773",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 447462
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-009-v1.png",
+      "sourceSHA256": "bbcd2c35ffbeb606b0c5991be4147c8f585b8661f4866a1a8e16e7391d16e6a4",
+      "target": "elder-r6-mentor-009.webp",
+      "webSHA256": "e7f3e9be9a4e35ad47a0439390eff399742881de7583ff61840f95dd7f10e6a8",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 488534
+    },
+    {
+      "source": "images/chapter-02-expanded/scenes/scene-12-v1.png",
+      "sourceSHA256": "ab48d186e5ccfa310dc8c84c91da5bb2639a8e429ebb84244919ab9614e4f084",
+      "target": "elder-r6-mentor-010.webp",
+      "webSHA256": "c280ccc4320731ffc411bb705af8040408dd7b9c09605db7f4a05a4e1aba4636",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 680236
+    },
+    {
+      "source": "images/chapter-02-expanded/scenes/scene-17-v3.png",
+      "sourceSHA256": "7dfa5a853e3d924fea8c4ef1cc5b6dffc7b06e3a37f4a14efd9d0e96c5828817",
+      "target": "elder-r6-mentor-011.webp",
+      "webSHA256": "49c6f7a966366560756f458e00390814eabb0e4888b6f4fd1bdea90872588f2f",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 450762
+    },
+    {
+      "source": "images/chapter-02-expanded/scenes/scene-18-v1.png",
+      "sourceSHA256": "40c7ea2bbb90bfa8a4e8324c42f58dc06d14d3ba6fd440a015b328f2cd96c4a3",
+      "target": "elder-r6-mentor-012.webp",
+      "webSHA256": "d3f34005289c074308daaa767f1aa979aec02a3e37bd2728c72fe2eac7a8da53",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 515954
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-11-v1.png",
+      "sourceSHA256": "3822615194a72db50988a134643d6f24252298e3a64eeab92b4e983d88d18400",
+      "target": "elder-r6-mentor-013.webp",
+      "webSHA256": "b57ec47ae5dc8e6e33f85a73696f26f5c8cd13b20deb5f7cfc1ca1db94037de0",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 630244
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/preproduction/home-root-nook-v1.png",
+      "sourceSHA256": "fcfffd326c139beff1af7c442793f8530e602d15b306eb4fdb3bb616fd22ad01",
+      "target": "elder-r6-mentor-014.webp",
+      "webSHA256": "9a4902c24dd4ff7d822d655a40b9166a45a2165b1937a48f29baf46680aa2d60",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 524434
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-015-v1.png",
+      "sourceSHA256": "3fa3a5e87ce26c14c94737d8a2bd463de9efe63a8f97028051b5293478029b49",
+      "target": "elder-r6-mentor-015.webp",
+      "webSHA256": "112957b5689d2a122807c471fc170cc31c2f7109bab8fe74a19b237901851aa2",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 472302
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-016-v1.png",
+      "sourceSHA256": "743f6c1e8c14f72699e0fda31f6d684e9a527b4d1c45e6cc5b4e644037cfe234",
+      "target": "elder-r6-mentor-016.webp",
+      "webSHA256": "25cdedec5397b8a695bdbb8dc38668dfc2b0c2c2b59df4ce6acd76eb7e493522",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 410538
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-017-v1.png",
+      "sourceSHA256": "3a572649e793065d86e6353caf3d0b13491daae915002ac25990f0801a18b516",
+      "target": "elder-r6-mentor-017.webp",
+      "webSHA256": "d9d6ba0badd7a7f6db386cb064fa5a08a036df3d52c82a9b53b65b2a65e5db6c",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 500038
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-018-v1.png",
+      "sourceSHA256": "fa8c4de41327a0e2a8af9f77f369b906ab5f316e0a56962228010e4108137857",
+      "target": "elder-r6-mentor-018.webp",
+      "webSHA256": "4ae80f0c524802d370a24d7cc7862b5c60163dd4d6a6c7f11aa1b15f173cc232",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 505616
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-019-v1.png",
+      "sourceSHA256": "bcf258843aa0e2ad59308887dd154c98bc742e3dc5a9e02cafe7c835e944ddca",
+      "target": "elder-r6-mentor-019.webp",
+      "webSHA256": "52d1ea3a3d3f45bc71345c5a0c67e914f53589fbada367f155f693c3a56103e8",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 501768
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-020-v2.png",
+      "sourceSHA256": "b2dab340513e81534dbe36b87f70c354f32fd9a2af1cc2a3ab7629f2fc318c1f",
+      "target": "elder-r6-mentor-020.webp",
+      "webSHA256": "d1b61885f6b0dfe437033d059151dad91521b804ec161f65ca4c0dc192c926b2",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 485886
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-021-v1.png",
+      "sourceSHA256": "5908fa02906dd4b467375f2daaaea56f3f68d0b650386bc4814543a61e5f23e3",
+      "target": "elder-r6-mentor-021.webp",
+      "webSHA256": "972df0ae72a83549db2a134ccf68a0b2032ca8eabd84624806ddc6b7842e3274",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 403782
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-022-v2.png",
+      "sourceSHA256": "9b8018fb3d58d581db47a139f5461ceaa9446984147b9e53568c14d31a5c5a48",
+      "target": "elder-r6-mentor-022.webp",
+      "webSHA256": "f0d07c2329ead2ea3d151ff7143bbf2b8b2af39f31757bf00b787d221401a8ac",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 475518
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-023-v1.png",
+      "sourceSHA256": "179d8d3799c735d2b36e317269673e9bec52b458b77f558f0e4de0df6975060b",
+      "target": "elder-r6-mentor-023.webp",
+      "webSHA256": "7811b2432cb6896f8879f115cfb7718385fb0b3fc943aa8ddf5dfa6fdfa68b6c",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 456366
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-024-v1.png",
+      "sourceSHA256": "c4d70e684473f494e43467718e8c300e7275a3415f9693f9ab7f69c8affe35ee",
+      "target": "elder-r6-mentor-024.webp",
+      "webSHA256": "e71c98c80eeb01fec2ea835ce1e0ac92c8945c685a40ef16f8d8fd3ac725a209",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 428522
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-025-v2.png",
+      "sourceSHA256": "58ebae28d8d142b42eced7c16ecff69d3f5489c17a4b007da40939bec173b5a3",
+      "target": "elder-r6-mentor-025.webp",
+      "webSHA256": "6efa94307ae5b846445eb58176932081b460094341da3b20d14ec617735865db",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 453352
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-026-v1.png",
+      "sourceSHA256": "19dc72c48e26acfd3d539870e375b0e77bcf1307a052c92829cbfe972102a8f4",
+      "target": "elder-r6-mentor-026.webp",
+      "webSHA256": "d3ee1e25178f661393a653fb3148a9112e58ccf62c0c171bf2bb1db2ad566df6",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 439100
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-027-v1.png",
+      "sourceSHA256": "0abda23a98340ce9dd0e6d2cda61556362c0cd62bcf30eff78deea1e3cc43132",
+      "target": "elder-r6-mentor-027.webp",
+      "webSHA256": "5017ceede2b357a3cbd27bc882f789832281e8e973e5825c887a6d963d5b3d46",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 501144
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/home-edits/home-16-v1.png",
+      "sourceSHA256": "6017e2dbddb9f109241d45b1413fb3a493f4d2f613d173a86c294e13a2eb3691",
+      "target": "elder-r6-mentor-028.webp",
+      "webSHA256": "57c52e03fb098b145d1d0fdee643af7ae22d7aedbd10fbba20b1c6558c8f8a3f",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 484356
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/home-edits/home-13-v1.png",
+      "sourceSHA256": "900872dff68d542709b8114709a0a5fdc311e19ab838a58bf77a3ec951d05073",
+      "target": "elder-r6-mentor-029.webp",
+      "webSHA256": "251f8d98b9978bfec60526df49519fd5cedb5c9f6125bbc2d677e1af2696dc2c",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 488088
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/home-edits/home-14-v1.png",
+      "sourceSHA256": "a21ba95f4c98ea27378f48617d66ee602bd13daa71d9881309cb9fd72397936f",
+      "target": "elder-r6-mentor-030.webp",
+      "webSHA256": "ef91a918e5c76faca801dd9f65336d8d445f8a01ac68959e99359a862a671519",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 471984
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-15-v1.png",
+      "sourceSHA256": "92b249547914996ec0c9dc16e0cac71d03148085f0631e97e80f39de9a3c7fc1",
+      "target": "elder-r6-mentor-031.webp",
+      "webSHA256": "674f7c5ce4fc0b3144063ec271023003e11ccef9fdce34c1db94d667c5fc23b0",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 455112
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-17-v1.png",
+      "sourceSHA256": "9f060fd8267dd6ac8ddefb9acdf476ea8246ac5cf96ffd8819b94624f0c7b427",
+      "target": "elder-r6-mentor-032.webp",
+      "webSHA256": "39911c065914a6a8d3daf8b98d98fea5593608ec80844d3388fef71eec13305c",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 541662
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-18-v1.png",
+      "sourceSHA256": "f87610fc5e92d48ebfc3d752e87dbce4eb52f28b818a74afb9c369a53eab17fb",
+      "target": "elder-r6-mentor-033.webp",
+      "webSHA256": "8dd2318a732bf11ac7cfd1ab1936c32ec291670d433e7e7ff6d488aaa8059335",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 513808
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-19-v1.png",
+      "sourceSHA256": "5f129cfbc1cf38f6a84c9ac938accec2711302e7245efbb1e2896391c7d3539e",
+      "target": "elder-r6-mentor-034.webp",
+      "webSHA256": "68939745a2fb40e2b2b1af00fed05c2c20317e8087fcc20a396856df45560e74",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 493558
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-20-v1.png",
+      "sourceSHA256": "bb40dcd4154965e7f32a75a06400eac2f93007fdbf080fceda31f7aa7b1a39cf",
+      "target": "elder-r6-mentor-035.webp",
+      "webSHA256": "a54edabb5913fc00fe88301fb89f3f95513d789c634a21b10b18cdb8556ac477",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 452156
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-21-v1.png",
+      "sourceSHA256": "13bb78d4675c6ea3a014b8d7c233bd5f89177e602bc941307ea0cd1f96075604",
+      "target": "elder-r6-mentor-036.webp",
+      "webSHA256": "a7aa2924f8c5a3b4921d93e3c559b5c6c93a81d1e9f30c26c4caad98fca1423c",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 438064
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-22-v1.png",
+      "sourceSHA256": "25cc9a14c98766bffd8bfcad0a827b45f38567b7fc99098d1c6d262e158bb24d",
+      "target": "elder-r6-mentor-037.webp",
+      "webSHA256": "f8f56603dc2c27643b26add32fb63f25e7e19da58367114de20ba2053aa90724",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 460854
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-23-v1.png",
+      "sourceSHA256": "0e5da4d4ff276f42b7012bcf1b5cb14608b1d33a8bef4bedd3f85ccbda43f3a7",
+      "target": "elder-r6-mentor-038.webp",
+      "webSHA256": "275411743c00da009028fd0234773d6b2f46f6caa5060dc54055bcc47ee63b37",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 408974
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-24-v1.png",
+      "sourceSHA256": "48a104a065482f0c22ae6a94093970026799f1b7c1f1e6cd0b32286a3ce8e211",
+      "target": "elder-r6-mentor-039.webp",
+      "webSHA256": "f6147e85e561f5e90bcc3750f47cc7384e86fdbe55c7343cb224696386473e52",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 450278
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-25-v1.png",
+      "sourceSHA256": "dc3077712bd7179bcba9f2ae76b659d79c67f692c1ea01845c9df34f2bf0f4bc",
+      "target": "elder-r6-mentor-040.webp",
+      "webSHA256": "c166e328055f5763148886c547ebdc50cef0168134f25830ec8f69909a5991ad",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 445260
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-26-v1.png",
+      "sourceSHA256": "d952006c28fbf7ea0e6b374bf8cfa36f2db0e82a4527788797da4b0705b7363b",
+      "target": "elder-r6-mentor-041.webp",
+      "webSHA256": "5758fe6210671668ce1e0c7e03896cd5261c346c871a0b10b22d8829de62203b",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 471642
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-27-v1.png",
+      "sourceSHA256": "77311b4460f8301c7aad100885a696fe3b4b330e2f95b346b2649ccfc6d46084",
+      "target": "elder-r6-mentor-042.webp",
+      "webSHA256": "d294422fe85cacca814819f6872bafede2e585d391a96028fd74a0eaed10e1ae",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 452168
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-28-v1.png",
+      "sourceSHA256": "66e65e1ff320cfffdc864da723d34619bdbe4a1209e62461548f96a180ea1da8",
+      "target": "elder-r6-mentor-043.webp",
+      "webSHA256": "ec9aac22539c775cc889ba718a01d8c4d48a5ed73c61d66afa23d032f0592827",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 415482
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-29-v1.png",
+      "sourceSHA256": "c78c87baca6c836cbe3f8dda3e42c865cb69cbb952a41c1090038126bf33e3fc",
+      "target": "elder-r6-mentor-044.webp",
+      "webSHA256": "c952b9032da9fb31293c372dc76c0247adf26a30a2df3b3549df3ed335c0600a",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 449352
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-30-v1.png",
+      "sourceSHA256": "4376ba6b7889f26df725b83d1cf5f5c3927eb99fdf906c9293a973fd56d82941",
+      "target": "elder-r6-mentor-045.webp",
+      "webSHA256": "de5c3b65c93ed4fd87978f18038d971b7f5a89b1468abfb47a3875773a9a92f3",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 398998
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-31-v1.png",
+      "sourceSHA256": "c829a300374324b8ff90e9ddf735fb127e4269033c9cd26547b05005bd4cf425",
+      "target": "elder-r6-mentor-046.webp",
+      "webSHA256": "23b1e56057716fe47053b56978feb8c36c3acfa3ee37d5de1dd60cb657ce5189",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 405320
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-32-v3.png",
+      "sourceSHA256": "5d7195906550009398cb23fd6e2f007a45a068564868c9b67d33cda696fc4f45",
+      "target": "elder-r6-mentor-047.webp",
+      "webSHA256": "fab239959f872441dd64687523768a2a0c73b8bf6891be7753d624be4706fb1d",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 407734
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-33-v2.png",
+      "sourceSHA256": "e768c825ea69d6507000ff198fa2c83bbf8af10929393b06e9edab7e8fd251dd",
+      "target": "elder-r6-mentor-048.webp",
+      "webSHA256": "7657c588a54bf760b3e37f2367d362019554bbd1431399b7276b471bcc6988ea",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 403108
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-34-v3.png",
+      "sourceSHA256": "7307c8b364df282d6e6d5ae84a74759f400fb40e7470d6beceb5d639abfe824d",
+      "target": "elder-r6-mentor-049.webp",
+      "webSHA256": "e3863b6ed957f3f58485dcd1c05a054962f1e4e7fc9b94f442c32a21676230a2",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 378070
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-35-v1.png",
+      "sourceSHA256": "d165f1ec4928010c6caff70c810c2e16d604b9711b4c668c779940c632c3a2bc",
+      "target": "elder-r6-mentor-050.webp",
+      "webSHA256": "a8a8f4fc217d9f1b9501f5bec6bc94a1a7aed65d3fb72e39582121891ba623a6",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 476754
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-36-v2.png",
+      "sourceSHA256": "44671440096ddafe20e50702b99174030eac1f3bcbe02bf02c3bae1f28c37d03",
+      "target": "elder-r6-mentor-051.webp",
+      "webSHA256": "95a3d491f294b390f52ae360554cbef09fdd306bdc3aaa72a8e2904dc5bbf9b8",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 438998
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-37-v1.png",
+      "sourceSHA256": "6c8dba9678b34f87ae6ccd66bf1b7e981b13f8887a2b66c1d89526d9229846d2",
+      "target": "elder-r6-mentor-052.webp",
+      "webSHA256": "590b9275e72db3c0979d536064548bb9edb70d000720fedff764ceea341a48ea",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 505918
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-38-v1.png",
+      "sourceSHA256": "3b385be638b2f884252ce26c4d261786605aadd258618c3f53711cfc6287da1d",
+      "target": "elder-r6-mentor-053.webp",
+      "webSHA256": "b7bbc7b4ae756e828e0e8fbb2d05797547c7327a6f9e35dc3c522f03fb827cfb",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 471598
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-39-v1.png",
+      "sourceSHA256": "608d3d926090bc22054774ba6af730d01a845223820be8e662b3fb3be670a5f0",
+      "target": "elder-r6-mentor-054.webp",
+      "webSHA256": "68bd9c5a567d19c76f1820b1f2d90d5c570f38d1d89ba363cb2fa270f8b8c451",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 293038
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-40-v1.png",
+      "sourceSHA256": "f0a822b46e3b5793480c9f7b5658bc99ff01394c5d4011c20492c8b81d0f65f8",
+      "target": "elder-r6-mentor-055.webp",
+      "webSHA256": "13721cea9fbb32e038f485b2185ae986d93898b1a6cfaaacd500cace4b0045e0",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 479902
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-25-v1.png",
+      "sourceSHA256": "35afbfeb8d5bdede14c8cc9726c5b9e5c9e10adde6b194089e377d7ea36032f8",
+      "target": "elder-r6-mentor-056.webp",
+      "webSHA256": "f8a5c9ea6c41e0f2943f71364acba356c9931b94b119978d18a0169509ed975e",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 505410
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-26-v1.png",
+      "sourceSHA256": "042e247fea23907f0688bfd478fb8a2afeb9177b68f1977c86abaa3f67cec951",
+      "target": "elder-r6-mentor-057.webp",
+      "webSHA256": "8eed339bf3861b777c93f4f04a40a055bc386a69c4f0dda0331ed1cf0513105d",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 436956
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-43-v1.png",
+      "sourceSHA256": "a01f5985432efd69962089c8ed7a11a514d81a4b22d35f7b0b1b5cb640d4b9f9",
+      "target": "elder-r6-mentor-058.webp",
+      "webSHA256": "3882bc3353c45c83bbcb76578f8388975163b46fb5b56564176fbf48b6dccf91",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 372414
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-44-v1.png",
+      "sourceSHA256": "461a1cc0a0b0e92f0666cc722e621920930ff82d3171a56f49683bc09cd38045",
+      "target": "elder-r6-mentor-059.webp",
+      "webSHA256": "5a44d6409d927605a027612f4fbfadac796f82e0d7e093aa6b800ca62c5b4ae3",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 454324
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/preproduction/gaze-shared-v2.png",
+      "sourceSHA256": "defd6fbd5f1ad22da6b3045430b0337d5af90873e43281e5bca26a027e33b0a3",
+      "target": "elder-r6-mentor-060.webp",
+      "webSHA256": "00eb5c6ef796039d6ccb792bc8c6edbaa772dfded081136a1d41abcb2949243b",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 564540
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-27-v1.png",
+      "sourceSHA256": "70a865a96c104a0d8bf1ffce8b67805fa1bd3eee87bce275c6943cc47729d0bd",
+      "target": "elder-r6-mentor-061.webp",
+      "webSHA256": "3fba803f284feb23f9e95f2b87856b2937e1cc360314f1d7383fbd482f11cbe9",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 690468
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-28-v1.png",
+      "sourceSHA256": "a1d1ee011b1b218e5bb03805c431d036e6a8c47a7814629c8817b3fc1b51578c",
+      "target": "elder-r6-mentor-062.webp",
+      "webSHA256": "5b5be3057175c753571a5086d12f2fce7f37f8c46616a58a467e2c22fbbcc9e0",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 320414
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-29-v1.png",
+      "sourceSHA256": "d446a3250f4f379717833729aad375f1d2bfc4edeaed43ced2b075eab018f905",
+      "target": "elder-r6-mentor-063.webp",
+      "webSHA256": "e7436f0a8dacbc3d02637f7ae22cef4a92f136abbdd2c78b178c380f83861a7a",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 586532
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-30-v1.png",
+      "sourceSHA256": "6b86d006266cb5b727c7ffa2c326270d3e4e28ae8d0784c5332dc519fe9e5543",
+      "target": "elder-r6-mentor-064.webp",
+      "webSHA256": "5917718f74f27de0133d01fe491620595b6a16cfa970a13dd68e1b152c6f865f",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 560018
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-31-v1.png",
+      "sourceSHA256": "029995a07c9cf0ae4de8187cabc329ec0a52d810f8fc7cf968b7d6cd883707f8",
+      "target": "elder-r6-mentor-065.webp",
+      "webSHA256": "64dc2579b4a7440528e6cfd60cfa89c6c50de751ddb0bed561838cfee24868c3",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 454592
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-32-v1.png",
+      "sourceSHA256": "54e3c4f3359867a8828c669366ec8d139d8798299aa908e521284b4035a8a435",
+      "target": "elder-r6-mentor-066.webp",
+      "webSHA256": "002536dad9371ec1265279069cec67d980d1877f6b117b4f90239b9858f1a200",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 623222
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-33-v2.png",
+      "sourceSHA256": "e6d60349e531aa394050cf372d9a7a802308694478fb01288f780bd52f90dfb0",
+      "target": "elder-r6-mentor-067.webp",
+      "webSHA256": "e65fad7710051b5869e50fa7dd415b956b88d86a93c4ebc58f7374a3302a078f",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 449596
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-35-v1.png",
+      "sourceSHA256": "2c1174d2d59d97ea35aa13bdd684adb5867a0b72154930f83bb8098793b80513",
+      "target": "elder-r6-mentor-068.webp",
+      "webSHA256": "bb0fc73344445849467abd27a1e8a52dcd82456d3c8cd3bf769af01857db2b01",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 598230
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-36-v1.png",
+      "sourceSHA256": "9efba9ba5083cdbfd390c782766a851a4840480401825de788f18aa396e559fc",
+      "target": "elder-r6-mentor-069.webp",
+      "webSHA256": "9e0ef68fa854c8f02fe5ce3da08708c9246078be84d4df5945c02daa3ffa01fe",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 445820
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-38-v2.png",
+      "sourceSHA256": "5aae5c07edb4085d30023c6f33ad1e2a545b97c1c3fb16ba7b9b8803edd74180",
+      "target": "elder-r6-mentor-070.webp",
+      "webSHA256": "c35471c777c15a9f06b14850799e174344c95de3a9dd0cac354882f6ce56d732",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 633092
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-39-v1.png",
+      "sourceSHA256": "77efb9540d1b899ff31627c2fbcfd0ff72dcf2773bc382210ec13b314e2fe487",
+      "target": "elder-r6-mentor-071.webp",
+      "webSHA256": "27035e73d37398297eb57c165f0e5ba55ff0d6d87fa87f693397bd1e43d57be3",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 526844
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-40-v2.png",
+      "sourceSHA256": "999c4b8ccab439d0394244c44104b54b0b20fbc70cefa600953e75c5220012cf",
+      "target": "elder-r6-mentor-072.webp",
+      "webSHA256": "9dcff10ef87808092f83d8be295e87220f0313cf747d532db7e61d9026be5629",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 570712
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-41-v3.png",
+      "sourceSHA256": "42c1334e7a6ae881fb19bc6a692abfa122e4cc57d5ac3f456f2d997fb904d31f",
+      "target": "elder-r6-mentor-073.webp",
+      "webSHA256": "b204f5add48f91bf85e7d2d5ec4830c6889bca8ba83a0c590d647c2723a2d9cc",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 530446
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-42-v1.png",
+      "sourceSHA256": "c49ba3b1bd72844f634ac28f3bcf954375fe4c39b6858497e4a17a2ae5167779",
+      "target": "elder-r6-mentor-074.webp",
+      "webSHA256": "20e1d78e2312b07a4f1f193e0cfd764cbc94405bae4db924b135ad37d2766a1e",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 600278
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-02/scenes/scene-43-v1.png",
+      "sourceSHA256": "3434efff332698aebe8a1989eee10dc7fbf4105b4b97ac7d5db71c9b1972de3a",
+      "target": "elder-r6-mentor-075.webp",
+      "webSHA256": "66b412f4bd2bac978e8b034b873f04c4f3cabfa018bb833716760dfc9cb6ced1",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 650584
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/home-edits/cave-45-v1.png",
+      "sourceSHA256": "f9f38f8dc8793678f6229e292b4c0fa50ec1d803e9eb88fc4855ff83c404b261",
+      "target": "elder-r6-mentor-076.webp",
+      "webSHA256": "2c5966dc7ccfe48ab143eaf5016c83bcb8e14e6bd96678f715981514ae43cb75",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 385096
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-65-v2.png",
+      "sourceSHA256": "58ffb32a0e362fb83cb9c942611f251fc68b89d05fe0daf44b9304b3ce2bc4b9",
+      "target": "elder-r6-mentor-077.webp",
+      "webSHA256": "c632a510997f5c799b7319dab44e7fa6411ad4eea310c4acfb0391ff672fa590",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 465752
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-66-v7.png",
+      "sourceSHA256": "230086f04f60a67e41ed61cfe3c59bf7e4065346aa1ab0823bed1a862a9ae956",
+      "target": "elder-r6-mentor-078.webp",
+      "webSHA256": "e6814e16acfc0b0aff4a9fe48a69fd662f9fedf5f9f554eb7b1faa8df1de4e74",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 424216
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-67-v2.png",
+      "sourceSHA256": "bc91ebc6f14f5277533ce4c8f4310423e39a1f22c5fcef1cbc165a934630e5eb",
+      "target": "elder-r6-mentor-079.webp",
+      "webSHA256": "ced719b93c1bfe15e71bbe21f2a9ab02b7e2847e2cb18a148d859629e2a9bee0",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 350068
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-68-v1.png",
+      "sourceSHA256": "5280f5c4aa39e6f5b630a295f0670fc1aac1419a9026d81c32ef15acb2d1f770",
+      "target": "elder-r6-mentor-080.webp",
+      "webSHA256": "aca898b7998953b167d4727c7bf1a3093237023e87822130219c569820621191",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 427924
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-69-v5.png",
+      "sourceSHA256": "a2f097fef93e8488eb8c8951bfe617802d6ae5f0d2bf42f0ef7f6f78bd5bf261",
+      "target": "elder-r6-mentor-081.webp",
+      "webSHA256": "1ebd83f72bfa0a7f82ab8e4031bc84c65e00171108cb93a4aea6de7387767a11",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 392640
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-70-v2.png",
+      "sourceSHA256": "c4af61b8d8fef5249c899e22ba4dd8a4eac7c40937535f308e181bb1cb5f32ad",
+      "target": "elder-r6-mentor-082.webp",
+      "webSHA256": "e161412c4aa57d8b653b645013a62dc96125c00ac3286b5fc169c23d7c559827",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 431854
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-71-v1.png",
+      "sourceSHA256": "1b969b1efc8e42411f4bc5f09010bee3906c09884a9d2c7e5fc30beed2ebff05",
+      "target": "elder-r6-mentor-083.webp",
+      "webSHA256": "de0860b17bad8554e4ff50aea3522c87d078290d5640e36b1cca7bc8da60c9db",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 449322
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-72-v1.png",
+      "sourceSHA256": "b2d27e4f2fce82a29dc47cd828085c56502132303c83369c31433d969ba6a197",
+      "target": "elder-r6-mentor-084.webp",
+      "webSHA256": "fe3024ab7f261573ece76ef44d2b02e22a9ee1760e2bd4cdc43a174e2574eb0f",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 399032
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-73-v1.png",
+      "sourceSHA256": "dff97f38a07bf03b0c60dd072ae57d50b100518646b71f074d3929985dbab365",
+      "target": "elder-r6-mentor-085.webp",
+      "webSHA256": "158be98f72f1a37a7c8d0c173b494fa5f32e1e8a7dc74bd832c150ba0efbae2f",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 465650
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-74-v1.png",
+      "sourceSHA256": "c4897126ea506b2df666ba6d45c2840b317c28f8474489edad5a952629c310ad",
+      "target": "elder-r6-mentor-086.webp",
+      "webSHA256": "497d36401df6dbd609465fafe29d5b70d914cafca45d27799636162befbf862f",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 452434
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/scenes/scene-75-v1.png",
+      "sourceSHA256": "dc35d85062e1faa5c5812af6176734d9343bd33ce78b2ec62c86b67439e873ce",
+      "target": "elder-r6-mentor-087.webp",
+      "webSHA256": "f37eda5ad4e8479225362f1882839dcd08d66f417f2dbe7111e42ed089967e8d",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 564376
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/home-edits/home-51-v1.png",
+      "sourceSHA256": "8648141e39c7577a04328beb06bfc7f8cb223dea6d4c137ef049d9c6e6a691ad",
+      "target": "elder-r6-mentor-088.webp",
+      "webSHA256": "ee16445ecf2957e0cf52a4e6a667023718d02491b3ffec3f243ca10ec8c53ded",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 472262
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-03/home-edits/home-50-v1.png",
+      "sourceSHA256": "514c3ab9237ea0bf227b4e1cb16a93c11a56aeecc4a518701cc7a7acb4c97952",
+      "target": "elder-r6-mentor-089.webp",
+      "webSHA256": "66dcafd238a4c63b14f65bc0b0c8404ebe90ea9d3b010827b19ef6225d9351aa",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 453734
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-090-v1.png",
+      "sourceSHA256": "3469a2374263992f403014b8a9c47d3f1858f27f6534ce60c24ec193d906de0c",
+      "target": "elder-r6-mentor-090.webp",
+      "webSHA256": "6d83bbf1b856ad213e10fe8e400631fa4c670d421c95a82bdb9d33ba6eefcddb",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 523568
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-05/scenes/scene-094-v2.png",
+      "sourceSHA256": "420db97b753f9f54a8a695344a94b8ee88920a3d92b5cadab36c2a742b33edbd",
+      "target": "elder-r6-mentor-091.webp",
+      "webSHA256": "ce34cde380bc7bef666f9be8d318e66258899f1666b89db821b330431a8b58c6",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 458240
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-05/scenes/scene-095-v2.png",
+      "sourceSHA256": "4d19496635d320a98157110331e73e0f9f10bf68d7671f9d7bece6ca3f38cf71",
+      "target": "elder-r6-mentor-092.webp",
+      "webSHA256": "1aa30a9b1d9d4dde949d0a05089be20c691dcd057319ffac3d68c0268474ac58",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 510226
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-093-v1.png",
+      "sourceSHA256": "7d7743c0b5f6046c5b275ba740a75273d719cf3e587ec0393878d42daef260c4",
+      "target": "elder-r6-mentor-093.webp",
+      "webSHA256": "497d7ead5b20d082a2f889fb35d3751db1606def5744f84de2163341f496c4eb",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 494812
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-094-v1.png",
+      "sourceSHA256": "fac954c8b093eb96bab8fded216bfa677502ce10a96a1b3d804ae2ee29c5853e",
+      "target": "elder-r6-mentor-094.webp",
+      "webSHA256": "7c6fc6d45cad4ee6d990609bfcb48a5472620b88cf9ac4f2962b737d55de2a85",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 523876
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-095-v1.png",
+      "sourceSHA256": "d1e5d706d3be7e22bc9ffc14e7ea08a8ce864ee51f45365f6c0a952a3f935924",
+      "target": "elder-r6-mentor-095.webp",
+      "webSHA256": "1aa05f416c23789e8ed3fd8181bd1ea01f57659aa78d37bba913c558d9cbfd80",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 477952
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-096-v1.png",
+      "sourceSHA256": "e4492a80f52151ceb49a08e7bcf1d9b5f91b540c7316d1925e9381baf0c32b51",
+      "target": "elder-r6-mentor-096.webp",
+      "webSHA256": "7024e88ac77e7b2f496661b6aa0a9e67459af77e9d842414684955f46c360a1e",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 436254
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-097-v1.png",
+      "sourceSHA256": "332cef4b991ab0e49a582a20ce8da876509ada55f686bcc33618ebfdd3302c3d",
+      "target": "elder-r6-mentor-097.webp",
+      "webSHA256": "938800ebb6c2ebe126b0b6affc09d4d890a818f1d11155a8b617e6b50c2a007b",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 527020
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-098-v1.png",
+      "sourceSHA256": "42db6e17f3d4fa16d9d78fd103ddb36e0141060e2542b0d1d44d09cf826f3d80",
+      "target": "elder-r6-mentor-098.webp",
+      "webSHA256": "366ea570064f9d83bd899678d9d3720b8fae86ca8bfd2e92c30733b22e3c676c",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 545702
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-099-v1.png",
+      "sourceSHA256": "8579db015dbec62180a5740e0f746bde31983fd379480e79a8b95fee990c15b9",
+      "target": "elder-r6-mentor-099.webp",
+      "webSHA256": "965ae8ab7c6c640847905f762d1a34fe1e1bb89a2484a971fe887f749123f815",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 550018
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/mentor/elder-r6-mentor-100-v1.png",
+      "sourceSHA256": "6bcdbc106b03a48d6d00e1c37e385913b23ac6406bde61358d0430087768578d",
+      "target": "elder-r6-mentor-100.webp",
+      "webSHA256": "9e1b6cf1cc92b5bdf08da9c06f775aa9ed163131cefc237fe33b3cb176df8d59",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 459096
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-04/scenes/scene-103-v1.png",
+      "sourceSHA256": "03dd08758f949d7956648c2d32c9cd8826dfacea33f74f3825c984066f58df09",
+      "target": "elder-r6-mentor-101.webp",
+      "webSHA256": "9376f099356d177ca799f102f3577c1d195f161eea92a8f703fc03ace025dc10",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 369080
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/bag-home-v1.png",
+      "sourceSHA256": "183bc3182f71408df94d4bd2f955c7bf2ece9d2795cbb4a8ee158038a3e0c2a3",
+      "target": "elder-r6-family-036.webp",
+      "webSHA256": "8020bc2dafab0b87d10e4a776b1abd216b5901e5d875a10ce4de382d66c96821",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 464640
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/tell-mama-v3.png",
+      "sourceSHA256": "110563b1299f4ccef9a3009eacd9566683b7ee3232c7d4b9ff34be7384d87be2",
+      "target": "elder-r6-family-037.webp",
+      "webSHA256": "d4d8aaf7549a549b80b9786f6f6e8d42ba28981e15eb066d5ac55f499632bbbb",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 463412
+    },
+    {
+      "source": "images/chapter-02-expanded/revision-06/family/home-together-v1.png",
+      "sourceSHA256": "3cbce583649ddcb2f6ce527e5ddd3a2f1a79f192b8762d1301496577e56b5769",
+      "target": "elder-r6-family-038.webp",
+      "webSHA256": "80ab1aa3878e7496a6624a0fcb1e853f68f3cc9dad4a609eb427b742e7c1fcd8",
+      "width": 1536,
+      "height": 1024,
+      "bytes": 485638
+    },
+    {
+      "source": "images/covers/elder-r6-papa-home/title/title-en-v1.png",
+      "sourceSHA256": "75c2d2188c395ca9aade8c9cf9b81a3780c18cb75ff81f8594320d79367ba51e",
+      "target": "papa-home-title-en.webp",
+      "webSHA256": "53095d2176501b1267e786e10a99402455663aae4b006bcbfa0de11cf2f2a491",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 394392
+    },
+    {
+      "source": "images/covers/elder-r6-papa-home/title/title-ru-v1.png",
+      "sourceSHA256": "070fdae895e44e24b5d3fe350e3446c551f46d999ec88bc9e2965cc9a689d983",
+      "target": "papa-home-title-ru.webp",
+      "webSHA256": "761a879c3adae31b5e2abb85ec6d1941d4c284a68dd79604c1e95fd0c1ba4ad6",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 385922
+    },
+    {
+      "source": "images/covers/elder-r6-papa-home/title/title-es-v1.png",
+      "sourceSHA256": "708993034f1621e094fa5adb062edf34251eafea642dae9b0b2ba54cbc280255",
+      "target": "papa-home-title-es.webp",
+      "webSHA256": "5d1c06acc22241ec9e3e32c4b935ea5e2c59d5463f963767c577ed88528860d5",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 369846
+    },
+    {
+      "source": "images/covers/elder-r6-papa-home/miniature/miniature-v1.png",
+      "sourceSHA256": "92e5fd4f587f04b7cf5f05858a19f2943730813d31e01440a5dd05c50cbb0fa6",
+      "target": "papa-home-miniature.webp",
+      "webSHA256": "011164f381e3a6ad26df715e54eb799b8b2bc7ed6912ab534fa68f23acf1003d",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 422698
+    },
+    {
+      "source": "images/covers/elder-r6-family-morning/title/title-en-v2.png",
+      "sourceSHA256": "693fece84f974ebb1bc7edffddee5fea0ffffda9d9815fe2e152536a0466752a",
+      "target": "family-morning-title-en.webp",
+      "webSHA256": "c8799648b8d515ef71313f82b8a83a6572934dc834db903bcb8a34bbba3f7fca",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 411998
+    },
+    {
+      "source": "images/covers/elder-r6-family-morning/title/title-ru-v1.png",
+      "sourceSHA256": "da94a98c15893f50cfad12418970fb5d845548781d63877b8c708ccf9b65d027",
+      "target": "family-morning-title-ru.webp",
+      "webSHA256": "e8d29c9318737e8cada30340bb741d2d3821ce5984b934a0106f1806e24aa2dd",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 400094
+    },
+    {
+      "source": "images/covers/elder-r6-family-morning/title/title-es-v1.png",
+      "sourceSHA256": "ee7203d9e82fc34782f8cfa799443312fcac0a6d8bc5dcba4bcfbbbedaafaaae",
+      "target": "family-morning-title-es.webp",
+      "webSHA256": "4658a1be1045a029f9a9a7a810631640ff3e59f8f72653f2e8aab95f00ec33fb",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 403444
+    },
+    {
+      "source": "images/covers/elder-r6-family-morning/miniature/miniature-v2.png",
+      "sourceSHA256": "718cfc8a629b9431b631480c2976d9570ea8be710343351b6ca5ea0f289496a7",
+      "target": "family-morning-miniature.webp",
+      "webSHA256": "f30d0236d4b6ccd7a364be4b75ec764ea894029d576005af4e58464daf4fb94b",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 386156
+    },
+    {
+      "source": "images/covers/elder-r6-forest-path/title/title-en-v1.png",
+      "sourceSHA256": "5c1a233228214883fb6c8d4ec9106bf928f4aa36a7d83a1191f70fe29c626366",
+      "target": "forest-path-title-en.webp",
+      "webSHA256": "8464ffdff9df5d5d6dd082de78d6d3ba97a043dccd98b1355503aaa48281c04c",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 490010
+    },
+    {
+      "source": "images/covers/elder-r6-forest-path/title/title-ru-v1.png",
+      "sourceSHA256": "815dfe92a5eb1f1d0248c9b74d4fd81a86b2f8e1dce60d6a448c4aca40148078",
+      "target": "forest-path-title-ru.webp",
+      "webSHA256": "a5396c4136830a966d9345048967714206812cd2615b4b63ccd87f176e9a6fe1",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 474798
+    },
+    {
+      "source": "images/covers/elder-r6-forest-path/title/title-es-v1.png",
+      "sourceSHA256": "3c8c77770e7979c6667c6392003706e7c5fb9b9c567f56fbf6c1bd61ad7ae496",
+      "target": "forest-path-title-es.webp",
+      "webSHA256": "0b47511a64a618d6d98d3b1d2e2cd15e8f8b00e7a67b4056836b8a5d3e027666",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 480424
+    },
+    {
+      "source": "images/covers/elder-r6-forest-path/miniature/miniature-v1.png",
+      "sourceSHA256": "493cb20635b36ef7976c5ff0b42d9592cf3cd139686c0b3132ceb652aea19487",
+      "target": "forest-path-miniature.webp",
+      "webSHA256": "eb70c09f03d0a667d839529e9f926025df481d113d0d362ebce87d6b1b5a63ff",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 443426
+    },
+    {
+      "source": "images/covers/elder-r6-elder-house/title/title-en-v1.png",
+      "sourceSHA256": "5c8622e9bdf2eeb6927b4cad6304472cd5be2c18bbcbb5fed43342f53a5179cb",
+      "target": "elder-house-title-en.webp",
+      "webSHA256": "56b927533808f6c59a08e2e4a56e6fb8b5d4373432c7bc6d14c94d0f7221f92f",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 434352
+    },
+    {
+      "source": "images/covers/elder-r6-elder-house/title/title-ru-v1.png",
+      "sourceSHA256": "119b71bf7abafc57c0744ff370a68820f7d18e35ab0e68ee539c1f9a1ff1eb09",
+      "target": "elder-house-title-ru.webp",
+      "webSHA256": "7b326cb62c22a7bdbc64f6b927983bdd86fe34fe7b8834f6175e164da3611dba",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 421486
+    },
+    {
+      "source": "images/covers/elder-r6-elder-house/title/title-es-v1.png",
+      "sourceSHA256": "a1e9e54c5014d0f564e4e5cdbe4b662e0c9ecca705f783cf5ef2704c9ac09df0",
+      "target": "elder-house-title-es.webp",
+      "webSHA256": "a289d712d74c9e466862d416d200620fbbb785a4f8f630fef9e9a9aa2311decd",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 420400
+    },
+    {
+      "source": "images/covers/elder-r6-elder-house/miniature/miniature-v1.png",
+      "sourceSHA256": "e325220e3e110a400cd617b40a3b6f65c756b1bbc85ab6591a631073f184bc56",
+      "target": "elder-house-miniature.webp",
+      "webSHA256": "935a40145cab875b534ce53ae949be84d34e0869f5ab8d0033f04efd5c6d8214",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 429842
+    },
+    {
+      "source": "images/covers/elder-r6-beneath-roots/title/title-en-v2.png",
+      "sourceSHA256": "c2f6e9422672717939ccda5ebeb1c7d7dfc3153ca0f84956a68bfea6e370d2f1",
+      "target": "beneath-roots-title-en.webp",
+      "webSHA256": "f578c543889c9ac17ea61b5223789c4a45c17d350309ce60f1718cc25996babf",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 465142
+    },
+    {
+      "source": "images/covers/elder-r6-beneath-roots/title/title-ru-v1.png",
+      "sourceSHA256": "49effb3bd85484c060bbd87160840654f7bf7f8da804cc67cce6576b97336265",
+      "target": "beneath-roots-title-ru.webp",
+      "webSHA256": "a5d3191b9dbe463b4e7240146b407df4e3630b188355615fa54932bdac685a3d",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 432544
+    },
+    {
+      "source": "images/covers/elder-r6-beneath-roots/title/title-es-v1.png",
+      "sourceSHA256": "e096be24537b8ca37bbdbb778ee22d69fbf7fb9ce5c463ea2c4358b9aa86de97",
+      "target": "beneath-roots-title-es.webp",
+      "webSHA256": "b618cc92c7b6f417754c2adb7c971fe6b495df97bc22df26926d53d614995a81",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 446188
+    },
+    {
+      "source": "images/covers/elder-r6-beneath-roots/miniature/miniature-v1.png",
+      "sourceSHA256": "0065b5eb9ee2c47a54019a73f2d1afd3e46fcce011277ab55e5567324d32a8cd",
+      "target": "beneath-roots-miniature.webp",
+      "webSHA256": "53952222bccdc417c0b2db734533bd378924d7ee2ad2ce17d29e563b67b30415",
+      "width": 1024,
+      "height": 1536,
+      "bytes": 451290
+    }
+  ],
+  "missing": []
+}

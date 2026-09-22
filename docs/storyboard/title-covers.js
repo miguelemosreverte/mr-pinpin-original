@@ -3,12 +3,21 @@
   let registry = {}, pending;
   const localized = value => languages.every(lang => typeof value?.[lang] === 'string' && value[lang].trim());
 
+  const elderParts = ['papa-home', 'family-morning', 'forest-path', 'elder-house', 'beneath-roots'];
+  function assetMatches(id, cover, lang) {
+    const part = id === 'one-day-in-the-forest' ? 'papa-home' :
+      elderParts.find(part => id === 'elder-' + part);
+    if (part) return cover.assets[lang] === `images/published/elder-cycle/${part}-title-${lang}.webp`;
+    return cover.assets[lang] === `images/covers/${id}/title/title-${lang}-v${cover.version}.png` ||
+      cover.assets[lang] === `images/covers/${id}/title-${lang}-v${cover.version}.png`;
+  }
+
   function valid(id, cover) {
     return /^[a-z0-9-]+$/.test(id) && ['approved', 'proposed'].includes(cover?.status) &&
       Number.isInteger(cover.version) && cover.version > 0 && cover.width === 1024 && cover.height === 1536 &&
       ['prepend', 'replace'].includes(cover.placement) && localized(cover.title) && localized(cover.alt) &&
       localized(cover.assets) && languages.every(lang =>
-        cover.assets[lang] === `images/covers/${id}/title-${lang}-v${cover.version}.png`);
+        assetMatches(id, cover, lang));
   }
 
   // Covers are optional: a missing registry never makes an existing book unavailable.

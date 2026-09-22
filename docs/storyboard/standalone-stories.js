@@ -9,12 +9,59 @@
   ];
   const localized = value => languages.every(lang => typeof value?.[lang] === 'string' && value[lang].trim());
 
+  const elderParts = ['papa-home', 'family-morning', 'forest-path', 'elder-house', 'beneath-roots'];
+  const elderCounts = [15, 20, 22, 35, 69];
+  const elderIds = ['one-day-in-the-forest', ...elderParts.map(part => 'elder-' + part)];
+  const elderPrefix = 'images/published/elder-cycle/';
+  const elderPath = value => typeof value === 'string' &&
+    /^images\/published\/elder-cycle\/[a-z0-9-]+\.webp$/.test(value);
+
+  function completeElder(story) {
+    if (!elderIds.includes(story?.id) || story.editionVersion !== 1 ||
+        story.sourceChapter !== 'chapter-02' || !localized(story.title) || !localized(story.cover)) return false;
+    const parts = story.id === elderIds[0] ? elderParts : [story.id.slice(6)];
+    const expected = parts.reduce((sum, part) => sum + elderCounts[elderParts.indexOf(part)] + 1, 0);
+    if (!Array.isArray(story.scenes) || story.scenes.length !== expected ||
+        !Array.isArray(story.spreads) || story.spreads.length !== expected ||
+        !Array.isArray(story.chapterNav) || story.chapterNav.length !== parts.length ||
+        !languages.every(lang => story.cover[lang] === elderPrefix + parts[0] + '-title-' + lang + '.webp') ||
+        story.miniature !== elderPrefix + parts[0] + '-miniature.webp') return false;
+    let offset = 0;
+    const seen = new Set();
+    for (const [partIndex, part] of parts.entries()) {
+      const count = elderCounts[elderParts.indexOf(part)];
+      const nav = story.chapterNav[partIndex];
+      if (nav?.id !== part || nav.number !== elderParts.indexOf(part) + 1 || nav.storyId !== 'elder-' + part || nav.startScene !== offset || !localized(nav.title)) return false;
+      for (let local = 0; local <= count; local++) {
+        const index = offset + local, scene = story.scenes[index], spread = story.spreads[index];
+        if (!scene || seen.has(scene.id) || scene.part !== part || !elderPath(scene.image) || !localized(scene.alt) ||
+            !languages.every(lang => Array.isArray(scene.paragraphs?.[lang]) &&
+              scene.paragraphs[lang].every(p => typeof p === 'string' && p.trim())) ||
+            !spread || !Array.isArray(spread.scenes) || spread.scenes.length !== 1 || spread.scenes[0] !== index) return false;
+        seen.add(scene.id);
+        if (local === 0) {
+          if (scene.id !== 'elder-' + part + '-title' || scene.role !== 'title' ||
+              scene.width !== 1024 || scene.height !== 1536 || spread.style !== 'cover' || spread.paper !== 'portrait' ||
+              !localized(scene.images) || !languages.every(lang =>
+                scene.images[lang] === elderPrefix + part + '-title-' + lang + '.webp' && scene.paragraphs[lang].length === 0) ||
+              scene.image !== scene.images.en) return false;
+        } else if (!/^elder-r6-(family|forest|mentor)-[0-9]{3}$/.test(scene.id) ||
+            scene.image !== elderPrefix + scene.id + '.webp' || scene.role !== undefined || scene.images !== undefined ||
+            scene.width !== 1536 || scene.height !== 1024 || spread.style !== 'elder' || spread.paper !== 'landscape' ||
+            !languages.every(lang => scene.paragraphs[lang].length > 0)) return false;
+      }
+      offset += count + 1;
+    }
+    return true;
+  }
+
   function chapterNumber(value) {
     if (value === undefined || value === null) return 1;
     return value === 1 || value === '1' ? 1 : value === 2 || value === '2' ? 2 : null;
   }
 
   function complete(story, chapter = story?.number ?? 1) {
+    if (elderIds.includes(story?.id)) return completeElder(story);
     if (story?.id === 'home-sweet-home') return completeBedtime(story);
     const number = chapterNumber(chapter);
     if (!number || story?.id !== 'timber-tractor' ||
@@ -95,6 +142,14 @@
   }
 
   async function load(id, legacyChapter) {
+    if (elderIds.includes(id)) {
+      try {
+        const response = await fetch(`stories/${id}.json`, {cache:'no-cache'});
+        if (!response.ok) return null;
+        const story = await response.json();
+        return story.id === id && completeElder(story) ? story : null;
+      } catch { return null; }
+    }
     if (id === 'home-sweet-home') {
       try {
         const response = await fetch('stories/home-sweet-home.json', {cache:'no-cache'});
@@ -118,9 +173,9 @@
     return {
       title:story.title[lang], scenes:story.scenes.map(scene => ({paragraphs:scene.paragraphs[lang]})),
       images:story.scenes.map((scene, index) => ({...scene, scene:index + 1,
-        src:index === 0 && story.spreads[0]?.style === 'cover' ? story.cover[lang] : scene.image}))
+        src:scene.images?.[lang] || (index === 0 && story.spreads[0]?.style === 'cover' ? story.cover[lang] : scene.image)}))
     };
   }
-  window.standaloneStories = {complete, compose, load, edition,
-    available:async () => (await Promise.all(['timber-tractor', 'home-sweet-home'].map(id => load(id)))).filter(Boolean)};
+  window.standaloneStories = {complete, completeElder, compose, load, edition,
+    available:async () => (await Promise.all(['timber-tractor', 'home-sweet-home', 'one-day-in-the-forest'].map(id => load(id)))).filter(Boolean)};
 })();

@@ -24,6 +24,32 @@
         "en": "Title cover: PinPin holds a golden quill beside the restored lake, beneath the title Mr. PinPin and His Mysterious Forest.",
         "es": "Portada: PinPin sostiene una pluma dorada junto al lago restaurado, bajo el título El señor PinPin y su bosque misterioso.",
         "ru": "Обложка: Пин-Пин держит золотое перо у вновь наполненного озера под заголовком «Мистер Пин-Пин и его загадочный лес»."
+      },
+      "miniature": {
+        "status": "proposed",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/covers/chapter-01/miniature/miniature-v1.png",
+        "derivatives": [
+          {
+            "src": "images/covers/chapter-01/miniature/miniature-v1-256.webp",
+            "width": 256,
+            "height": 384
+          },
+          {
+            "src": "images/covers/chapter-01/miniature/miniature-v1-512.webp",
+            "width": 512,
+            "height": 768
+          },
+          {
+            "src": "images/covers/chapter-01/miniature/miniature-v1-1024.webp",
+            "width": 1024,
+            "height": 1536
+          }
+        ],
+        "textFree": true,
+        "languageIndependent": true
       }
     },
     "chapter-02": {
@@ -49,6 +75,32 @@
         "en": "Title cover: PinPin meets the bespectacled Elder beside a root burrow, beneath the title The Elder’s Wisdom.",
         "es": "Portada: PinPin se encuentra con el anciano de gafas junto a una madriguera entre raíces, bajo el título La sabiduría del anciano.",
         "ru": "Обложка: Пин-Пин встречает Старейшину в очках у норы среди корней под заголовком «Мудрость Старейшины»."
+      },
+      "miniature": {
+        "status": "proposed",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/covers/chapter-02/miniature/miniature-v1.png",
+        "derivatives": [
+          {
+            "src": "images/covers/chapter-02/miniature/miniature-v1-256.webp",
+            "width": 256,
+            "height": 384
+          },
+          {
+            "src": "images/covers/chapter-02/miniature/miniature-v1-512.webp",
+            "width": 512,
+            "height": 768
+          },
+          {
+            "src": "images/covers/chapter-02/miniature/miniature-v1-1024.webp",
+            "width": 1024,
+            "height": 1536
+          }
+        ],
+        "textFree": true,
+        "languageIndependent": true
       }
     },
     "timber-tractor": {
@@ -74,6 +126,32 @@
         "en": "Cover: Mr. PinPin looks up at a parked red timber tractor on a woodland path.",
         "es": "Portada: el señor PinPin mira un tractor forestal rojo estacionado en un sendero del bosque.",
         "ru": "Обложка: мистер Пин-Пин смотрит на красный лесной трактор, стоящий на лесной дорожке."
+      },
+      "miniature": {
+        "status": "proposed",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/covers/timber-tractor/miniature/miniature-v1.png",
+        "derivatives": [
+          {
+            "src": "images/covers/timber-tractor/miniature/miniature-v1-256.webp",
+            "width": 256,
+            "height": 384
+          },
+          {
+            "src": "images/covers/timber-tractor/miniature/miniature-v1-512.webp",
+            "width": 512,
+            "height": 768
+          },
+          {
+            "src": "images/covers/timber-tractor/miniature/miniature-v1-1024.webp",
+            "width": 1024,
+            "height": 1536
+          }
+        ],
+        "textFree": true,
+        "languageIndependent": true
       }
     },
     "home-sweet-home": {
@@ -99,6 +177,236 @@
         "en": "Mr. PinPin — Home, Sweet Home. Mama rinses PinPin in the wooden bath while little PomPom waits beside them in a towel.",
         "es": "Señor PinPin — Hogar, dulce hogar. Mamá enjuaga a PinPin en la bañera de madera mientras el pequeño PomPom espera a su lado envuelto en una toalla.",
         "ru": "Мистер Пин-Пин — Дом, милый дом. Мама ополаскивает Пин-Пина в деревянной ванночке, а маленький Пом-Пом сидит рядом, укутавшись в полотенце."
+      },
+      "miniature": {
+        "status": "approved",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/covers/home-sweet-home/miniature/miniature-v1.png",
+        "derivatives": [
+          {
+            "src": "images/covers/home-sweet-home/miniature/miniature-v1-256.webp",
+            "width": 256,
+            "height": 384
+          },
+          {
+            "src": "images/covers/home-sweet-home/miniature/miniature-v1-512.webp",
+            "width": 512,
+            "height": 768
+          },
+          {
+            "src": "images/covers/home-sweet-home/miniature/miniature-v1-1024.webp",
+            "width": 1024,
+            "height": 1536
+          }
+        ],
+        "textFree": true,
+        "languageIndependent": true
+      }
+    },
+    "elder-papa-home": {
+      "route": {
+        "story": "elder-papa-home"
+      },
+      "status": "approved",
+      "version": 1,
+      "width": 1024,
+      "height": 1536,
+      "placement": "replace",
+      "title": {
+        "en": "Papa Comes Home",
+        "ru": "Папа возвращается",
+        "es": "Papá vuelve a casa"
+      },
+      "assets": {
+        "en": "images/published/elder-cycle/papa-home-title-en.webp",
+        "ru": "images/published/elder-cycle/papa-home-title-ru.webp",
+        "es": "images/published/elder-cycle/papa-home-title-es.webp"
+      },
+      "alt": {
+        "en": "Title page: Papa Comes Home",
+        "ru": "Титульная страница: Папа возвращается",
+        "es": "Portada: Papá vuelve a casa"
+      },
+      "miniature": {
+        "status": "approved",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/published/elder-cycle/papa-home-miniature.webp",
+        "textFree": true,
+        "languageIndependent": true
+      }
+    },
+    "elder-family-morning": {
+      "route": {
+        "story": "elder-family-morning"
+      },
+      "status": "approved",
+      "version": 1,
+      "width": 1024,
+      "height": 1536,
+      "placement": "replace",
+      "title": {
+        "en": "A Morning Together",
+        "ru": "Утро всей семьёй",
+        "es": "Una mañana en familia"
+      },
+      "assets": {
+        "en": "images/published/elder-cycle/family-morning-title-en.webp",
+        "ru": "images/published/elder-cycle/family-morning-title-ru.webp",
+        "es": "images/published/elder-cycle/family-morning-title-es.webp"
+      },
+      "alt": {
+        "en": "Title page: A Morning Together",
+        "ru": "Титульная страница: Утро всей семьёй",
+        "es": "Portada: Una mañana en familia"
+      },
+      "miniature": {
+        "status": "approved",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/published/elder-cycle/family-morning-miniature.webp",
+        "textFree": true,
+        "languageIndependent": true
+      }
+    },
+    "elder-forest-path": {
+      "route": {
+        "story": "elder-forest-path"
+      },
+      "status": "approved",
+      "version": 1,
+      "width": 1024,
+      "height": 1536,
+      "placement": "replace",
+      "title": {
+        "en": "Through the Forest",
+        "ru": "Через лес",
+        "es": "Por el bosque"
+      },
+      "assets": {
+        "en": "images/published/elder-cycle/forest-path-title-en.webp",
+        "ru": "images/published/elder-cycle/forest-path-title-ru.webp",
+        "es": "images/published/elder-cycle/forest-path-title-es.webp"
+      },
+      "alt": {
+        "en": "Title page: Through the Forest",
+        "ru": "Титульная страница: Через лес",
+        "es": "Portada: Por el bosque"
+      },
+      "miniature": {
+        "status": "approved",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/published/elder-cycle/forest-path-miniature.webp",
+        "textFree": true,
+        "languageIndependent": true
+      }
+    },
+    "elder-elder-house": {
+      "route": {
+        "story": "elder-elder-house"
+      },
+      "status": "approved",
+      "version": 1,
+      "width": 1024,
+      "height": 1536,
+      "placement": "replace",
+      "title": {
+        "en": "The Elder’s House",
+        "ru": "Дом Старейшины",
+        "es": "La casa del Anciano"
+      },
+      "assets": {
+        "en": "images/published/elder-cycle/elder-house-title-en.webp",
+        "ru": "images/published/elder-cycle/elder-house-title-ru.webp",
+        "es": "images/published/elder-cycle/elder-house-title-es.webp"
+      },
+      "alt": {
+        "en": "Title page: The Elder’s House",
+        "ru": "Титульная страница: Дом Старейшины",
+        "es": "Portada: La casa del Anciano"
+      },
+      "miniature": {
+        "status": "approved",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/published/elder-cycle/elder-house-miniature.webp",
+        "textFree": true,
+        "languageIndependent": true
+      }
+    },
+    "elder-beneath-roots": {
+      "route": {
+        "story": "elder-beneath-roots"
+      },
+      "status": "approved",
+      "version": 1,
+      "width": 1024,
+      "height": 1536,
+      "placement": "replace",
+      "title": {
+        "en": "Beneath the Roots",
+        "ru": "Под корнями",
+        "es": "Bajo las raíces"
+      },
+      "assets": {
+        "en": "images/published/elder-cycle/beneath-roots-title-en.webp",
+        "ru": "images/published/elder-cycle/beneath-roots-title-ru.webp",
+        "es": "images/published/elder-cycle/beneath-roots-title-es.webp"
+      },
+      "alt": {
+        "en": "Title page: Beneath the Roots",
+        "ru": "Титульная страница: Под корнями",
+        "es": "Portada: Bajo las raíces"
+      },
+      "miniature": {
+        "status": "approved",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/published/elder-cycle/beneath-roots-miniature.webp",
+        "textFree": true,
+        "languageIndependent": true
+      }
+    },
+    "one-day-in-the-forest": {
+      "route": {
+        "story": "one-day-in-the-forest"
+      },
+      "status": "approved",
+      "version": 1,
+      "width": 1024,
+      "height": 1536,
+      "placement": "replace",
+      "title": {
+        "en": "One Day in the Forest",
+        "ru": "Один день в лесу",
+        "es": "Un día en el bosque"
+      },
+      "assets": {
+        "en": "images/published/elder-cycle/papa-home-title-en.webp",
+        "ru": "images/published/elder-cycle/papa-home-title-ru.webp",
+        "es": "images/published/elder-cycle/papa-home-title-es.webp"
+      },
+      "alt": {
+        "en": "Title page: Papa Comes Home",
+        "ru": "Титульная страница: Папа возвращается",
+        "es": "Portada: Papá vuelve a casa"
+      },
+      "miniature": {
+        "status": "approved",
+        "version": 1,
+        "width": 1024,
+        "height": 1536,
+        "asset": "images/published/elder-cycle/papa-home-miniature.webp",
+        "textFree": true,
+        "languageIndependent": true
       }
     }
   }

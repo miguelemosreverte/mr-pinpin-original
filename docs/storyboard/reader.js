@@ -80,6 +80,32 @@
       window.titleCovers.apply(image, titleCover, language, null, () => slot.remove());
       figure.append(image); sheet.append(figure); frame.append(sheet); slot.append(frame); article.append(slot);
     }
+    if (Array.isArray(story?.chapterNav) && story.chapterNav.length) {
+      const navigation = element('nav', 'story-chapter-nav');
+      navigation.setAttribute('aria-label', ui.contents);
+      navigation.append(element('h1', '', translated.title));
+      const list = element('div', 'story-chapter-links');
+      story.chapterNav.forEach((part, index) => {
+        const link = element('a');
+        const destination = new URL(location.href);
+        destination.search = new URLSearchParams({story:part.storyId, lang:language});
+        destination.hash = '';
+        link.href = destination;
+        if (part.storyId === story.id) link.setAttribute('aria-current', 'page');
+        const image = element('img');
+        image.src = `images/published/elder-cycle/${part.id}-miniature.webp`;
+        image.alt = ''; image.width = 1024; image.height = 1536;
+        link.append(image, element('span', '', `${part.number || index + 1}. ${part.title[language]}`));
+        list.append(link);
+      });
+      navigation.append(list);
+      if (story.id !== 'one-day-in-the-forest') {
+        const all = element('a', 'story-read-all', {ru:'Читать все пять глав',en:'Read all five chapters',es:'Leer los cinco capítulos'}[language]);
+        all.href = '?' + new URLSearchParams({story:'one-day-in-the-forest',lang:language});
+        navigation.append(all);
+      }
+      article.append(navigation);
+    }
     spreads.forEach((spread, spreadIndex) => {
       const sheet = element('section', 'spread spread-' + spread.style + ' paper-' + spread.paper);
       sheet.id = 'spread-' + (spreadIndex + 1);
