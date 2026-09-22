@@ -1,0 +1,28 @@
+{
+  "chapterId": "chapter-02",
+  "id": "scene-2",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "source": "docs/storyboard/images/chapter-02-direct/scene-16.png",
+  "sourceSha256": "2499684d397172d25d07598db6fb5cc8b2602c9d162b83f867b8d1f44029e985",
+  "sourceRole": "approved illustration; composition and identity reference",
+  "prompt": "Use case: style-transfer. Create one finished printable coloring-book page for a four-year-old child, portrait 1024x1536. Input image is the approved chapter illustration: preserve recognizable character identity, relationships and action, while simplifying it for crayons. Bold smooth BLACK outlines on pure WHITE paper, pure white object interiors, large CLOSED easy-to-color spaces. Use only black and white: no color, grey, shading, hatching, stippling, gradients, pencil texture or large solid black regions. Tiny solid black pupils and nostrils only are fine. Render hedgehog spines as about 12-18 large scalloped/pointed clusters, not hundreds of hairs; render foliage as a few broad leaves. All important figures and fillable objects fit inside generous white margins. No border, lettering, title, numbers, logo, watermark or explanatory text. The composition should fill the portrait page generously, not a tiny drawing lost in blank paper. Scene 16 adaptation: PinPin playfully peeks from the left through an arch formed by five large broad leaves, his friendly tilted face and two ears clearly visible. His body is naturally behind the leaf, not cut off by the paper edge. Show the simple winding path toward a distant hill with one small rounded tree through the opening. Enlarge PinPin face and broad leaf shapes; no fine veins, hairs or dense foliage. CRITICAL PRINT MARGIN: create a self-contained vignette, with the ENTIRE drawing including every leaf, rock, root and ground line inside at least 70 pixels of unmarked WHITE on ALL FOUR SIDES. No line or object may touch the paper edge. Every foreground leaf is whole and closed. Keep only a few plants, no decorative frame.",
+  "requestedDimensions": [
+    1024,
+    1536
+  ],
+  "referenceInspected": true,
+  "startedAt": "2026-09-22T11:02:43.352573+00:00",
+  "endedAt": "2026-09-22T11:03:34.211841+00:00",
+  "output": "docs/storyboard/production/house-menu-library-20260922/coloring/chapter-02/scene-2.png",
+  "generatedOriginal": "/Users/miguel_lemos/.codex/generated_images/01a0c81a-2b4a-7512-b5ee-baf6d034b770/exec-fe70dd4e-20bc-4f6c-8633-c6db45ebfc79.png",
+  "sha256": "15d7497e606ee0d3c7e1f15a544a858e7cbfcf1e4983c44a52a18f37e9c19310",
+  "bytes": 1451028,
+  "width": 1024,
+  "height": 1536,
+  "review": {
+    "status": "pass",
+    "notes": "Full visual review: playful tilted PinPin face peeks from left with both ears and two small paws holding the leaf; five large broad leaves frame a winding path and distant hill tree. No color, grey shading, text or fine fur detail. Face and all main leaves have clear broad spaces and remain inside the page.",
+    "reviewedAt": "2026-09-22T11:03:34.247365+00:00"
+  }
+}

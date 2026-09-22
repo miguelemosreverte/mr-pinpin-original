@@ -1,0 +1,28 @@
+{
+  "chapterId": "timber-tractor",
+  "id": "scene-2",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "source": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+  "sourceSha256": "cd6fc9a3e01decb743ce5c999fb4eca7ccfccd568115695c492ac9e9cacdaba4",
+  "sourceRole": "approved illustration; composition and identity reference",
+  "prompt": "Use case: style-transfer. Create one finished printable coloring-book page for a four-year-old child, portrait 1024x1536. Input image is the approved chapter illustration: preserve recognizable character identity, relationships and action, while simplifying it for crayons. Bold smooth BLACK outlines on pure WHITE paper, pure white object interiors, large CLOSED easy-to-color spaces. Use only black and white: no color, grey, shading, hatching, stippling, gradients, pencil texture or large solid black regions. Tiny solid black pupils and nostrils only are fine. Render hedgehog spines as about 12-18 large scalloped/pointed clusters, not hundreds of hairs; render foliage as a few broad leaves. All important figures and fillable objects fit inside generous white margins. No border, lettering, title, numbers, logo, watermark or explanatory text. The composition should fill the portrait page generously, not a tiny drawing lost in blank paper. Scene 3 adaptation: the friendly Beaver in his sleeveless work vest stands left with one broad flat tail, small PinPin sits right looking up at him; the parked tractor and EMPTY stake trailer sit behind them. Make the two animals the large foreground focus, with simplified tractor in upper background. Cab behind front bonnet, folded crane mounted directly behind cab before empty trailer. No logs, no cabin occupants. Broad clear shapes, few tire treads, no dense machinery lines, no fur hatching, only three broad leaf plants. Keep all figures complete within the portrait page. CRITICAL PRINT MARGIN: create a self-contained vignette, with the ENTIRE drawing including every leaf, rock, root and ground line inside at least 70 pixels of unmarked WHITE on ALL FOUR SIDES. No line or object may touch the paper edge. Every foreground leaf is whole and closed. Keep only a few plants, no decorative frame.",
+  "requestedDimensions": [
+    1024,
+    1536
+  ],
+  "referenceInspected": true,
+  "startedAt": "2026-09-22T11:06:12.191961+00:00",
+  "endedAt": "2026-09-22T11:07:45.383939+00:00",
+  "output": "docs/storyboard/production/house-menu-library-20260922/coloring/timber-tractor/scene-2.png",
+  "generatedOriginal": "/Users/miguel_lemos/.codex/generated_images/01a0c81a-2b4a-7512-b5ee-baf6d034b770/exec-1e90d9d4-f49a-4ca4-a50b-31bbfcd9ea84.png",
+  "sha256": "3a9d38c7dfe4bd7bdd81bc25e005f3ba691b8f3ed3dc8cc87ef4a6ecc189e156",
+  "bytes": 1682489,
+  "width": 1024,
+  "height": 1536,
+  "review": {
+    "status": "pass",
+    "notes": "Full visual review: two complete friendly animals, Beaver left in vest with flat tail, PinPin right looking up. Empty stake trailer and correctly positioned crane behind cab retained. Tractor simplified to large fillable areas; no text, colored fill or grey shading. Main objects stay inside page edges.",
+    "reviewedAt": "2026-09-22T11:07:45.422166+00:00"
+  }
+}

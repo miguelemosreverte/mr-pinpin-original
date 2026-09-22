@@ -1,0 +1,23 @@
+{
+  "chapter": "home-sweet-home",
+  "page": "scene-2",
+  "source": "docs/storyboard/images/standalone/home-sweet-home/bedtime-19-v1.png",
+  "prompt": "Use case: style-transfer. Edit the supplied approved illustration into ONE finished portrait 1024x1536 children's coloring page for a four-year-old using thick crayons. Keep the recognizable hedgehog characters, their sizes, emotions, and main action, while simplifying the composition for a tall page with generous white margins. BLACK clean bold smooth outlines only on a PURE WHITE page; all fur, faces, bodies, objects and background interiors remain WHITE for coloring. Use very large closed fillable shapes. Hedgehog quills become a simple scalloped/spiky outer silhouette and only a few large internal clusters; no individual hairs, stippling or tiny quill marks. No gray, shading, gradients, hatching, shadows, colored pixels, pencil texture, decorative border, logo or lettering. No solid black areas except tiny eye pupils and tiny nose centers. Remove ALL source words and numbers. Simplify environment to 2 or 3 iconic outlined props and leave broad open white areas. Maintain distinct complete bodies and natural paws; never fuse a baby into an adult. Scene: exactly three hedgehogs sleep side by side in one cozy bed: child PinPin at left, larger Mama in the middle, tiny baby PomPom at right. Preserve their closed eyes and peaceful smiles, separate faces above one broad plain quilt. Reframe the wooden bed as a simple frontal three-quarter portrait composition, centered, with two rounded posts and a broad curved headboard. Simplify the quilt to four or five very large plain panels; no embroidery, leaves, textile texture or small patterns. Keep a simple round window with three outlined stars at upper left and one small plain bedside lamp at upper right; otherwise empty white background. Their shoulders and pillow shapes should remain distinct. Calm, clear and very easy for a preschooler to color.",
+  "output": "docs/storyboard/production/house-menu-library-20260922/coloring/home-sweet-home/scene-2.png",
+  "generatedOriginal": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-07c14a06-125a-4361-b16f-d1b3088c04de.png",
+  "tool": "built-in image_gen__imagegen",
+  "sourceSha256": "c7b205da66caf68c4957c3447bf541d4371d2fdfb1c743bb739b4aea24aecac3",
+  "outputSha256": "bdb9a317ccba3a0047f3efd01ef973384771de7edbe3cb9ebc858194ce2d5c20",
+  "bytes": 1362690,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "visualReview": "Passed: bold black outlines, white fill areas, no lettering, readable distinct bodies and faithful action.",
+  "readOnlyPixelCheck": {
+    "nearWhiteFraction": 0.866719,
+    "nearBlackFraction": 0.100782,
+    "chromaticFraction": 5.2e-05,
+    "note": "No pixel processing applied; antialiased line edges and faint raster variation retained in generated original."
+  }
+}

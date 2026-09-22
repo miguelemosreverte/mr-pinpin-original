@@ -1,0 +1,52 @@
+{
+  "chapterId": "chapter-01",
+  "order": [
+    "cover",
+    "scene-1",
+    "scene-2"
+  ],
+  "pages": [
+    {
+      "id": "cover",
+      "output": "docs/storyboard/production/house-menu-library-20260922/coloring/chapter-01/cover.png",
+      "sha256": "f54665da65baf4e1c27c19dcce8acfd47eb53ecf686698083e60c831c1d82c9b",
+      "width": 1024,
+      "height": 1536,
+      "source": "docs/storyboard/images/covers/chapter-01/title-en-v1.png",
+      "sourceSha256": "f86d2976933a59ba1dd1a017d3aac3e276d10520a6ed127552a1dbce80f6fb88",
+      "review": {
+        "status": "pass",
+        "notes": "Full visual review of revision 2: PinPin, single spine, two water lilies and broad foreground flowers retained; complete foreground leaves and visible white margins on every side now replace the clipped first attempt. No title letters, color, grey shading or dense fur. Background branch contours remain stylized but do not meet the page edge.",
+        "reviewedAt": "2026-09-22T11:09:17.800025+00:00"
+      }
+    },
+    {
+      "id": "scene-1",
+      "output": "docs/storyboard/production/house-menu-library-20260922/coloring/chapter-01/scene-1.png",
+      "sha256": "2e4dda695a8576769558f921b91e5140b8a7d6a3275784df087cb4f88e421459",
+      "width": 1024,
+      "height": 1536,
+      "source": "docs/storyboard/images/chapter-01-direct/04.png",
+      "sourceSha256": "6347a525e67bef9d5eb5cdf5db3d2448b5c6055e5213cf0f8d313cc23790ee62",
+      "review": {
+        "status": "pass",
+        "notes": "Full visual review: recognizable PinPin drawing a clear circle, Lulu watches; clean bold black outlines, broad white spaces, no text or color, complete main figures and foreground leaves. Actual side margins are narrower than requested but artwork does not touch the edge.",
+        "reviewedAt": "2026-09-22T10:59:55.812736+00:00"
+      }
+    },
+    {
+      "id": "scene-2",
+      "output": "docs/storyboard/production/house-menu-library-20260922/coloring/chapter-01/scene-2.png",
+      "sha256": "1d5e5bdb773faa1e8f279367a8fe333bb74dcba00fbfc02134e59ff5b835fb7d",
+      "width": 1024,
+      "height": 1536,
+      "source": "docs/storyboard/images/chapter-01-landscapes/shot-09.png",
+      "sourceSha256": "2e6779fc7809a152751167fd46e975f615fe4bdc963d968a9ce19ec9182d8fce",
+      "review": {
+        "status": "pass",
+        "notes": "Full visual review: exactly four complete fish beneath a clear waterline and two lily flowers; simple white fish bodies, bold outlines, no shading or text. Foreground plants and main stones are complete. Background willow has more leaves than requested but remains clearly separated from the broad coloring areas.",
+        "reviewedAt": "2026-09-22T11:00:44.266053+00:00"
+      }
+    }
+  ]
+}

@@ -74,3 +74,20 @@ python3 tools/assets/hf_store.py pull \
 ```
 
 Run this on the mini when the cache resides on its SSD. PDFs stay outside the Pages bundle; the published catalog points directly to immutable archive objects. New PDF revisions must produce new content hashes and URLs, preserving old objects and receipts.
+
+## Three-page coloring edition
+
+```sh
+node scripts/export-chapter-pdfs.cjs \
+  --coloring-manifest docs/storyboard/production/house-menu-library-20260922/coloring-manifest.json \
+  --base-pdfs /Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export \
+  --out /Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export-coloring
+```
+
+This mode requires `pdfunite` and `pdfimages` in addition to the normal tools. The output directory must be new and outside the baseline PDF directory. It merges three independent, language-neutral portrait coloring pages onto each existing PDF, preserving the original story pages rather than reprinting them. Selected coloring PNGs are embedded without JPEG conversion. Every baseline file hash remains unchanged; original selectable text and embedded-image inventory must match. Expected new chapter counts are 19/20/37/24/31/24/26/39/73, totalling 879 pages across three languages. The new catalog records `storyPageCount`, `coloringPageCount:3`, and total `pageCount`.
+
+## Coloring edition completed and archived
+
+All 27 new PDFs passed append validation and fresh HF upload/readback verification. They contain 879 pages, including exactly three coloring pages in each of nine chapters and each language. The original 27 PDF files remain unchanged. All 879 page sizes were checked: original page dimensions match their baselines and all 81 appended pages are A4 portrait. Total new PDF storage: 641,834,981 bytes (612.1 MiB).
+
+`library-pdfs.json` and `assets/chapter-pdfs.json` now select the new content-addressed coloring editions, with top-level chapter `coloringPageCount:3`. Previous PDF objects, old export provenance, and the original upload receipt remain preserved. New proofs are `pdf-coloring-export-manifest.json`, `pdf-coloring-upload-receipt.json`, and `anonymous-coloring-pdf-cors.json` beside this report. The anonymous browser probe from the actual GitHub Pages origin fetched the full Russian Papa coloring edition (20,864,540 bytes) with HTTP 200, CORS-readable `application/pdf`, and exact SHA-256.

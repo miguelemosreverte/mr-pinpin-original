@@ -1,0 +1,23 @@
+{
+  "chapter": "elder-family-morning",
+  "page": "scene-2",
+  "source": "docs/storyboard/images/published/elder-cycle/elder-r6-family-028.webp",
+  "prompt": "Use case: style-transfer. Edit the supplied approved illustration into ONE finished portrait 1024x1536 children's coloring page for a four-year-old using thick crayons. Keep the recognizable hedgehog characters, their sizes, emotions, and main action, while simplifying the composition for a tall page with generous white margins. BLACK clean bold smooth outlines only on a PURE WHITE page; all fur, faces, bodies, objects and background interiors remain WHITE for coloring. Use very large closed fillable shapes. Hedgehog quills become a simple scalloped/spiky outer silhouette and only a few large internal clusters; no individual hairs, stippling or tiny quill marks. No gray, shading, gradients, hatching, shadows, colored pixels, pencil texture, decorative border, logo or lettering. No solid black areas except tiny eye pupils and tiny nose centers. Remove ALL source words and numbers. Simplify environment to 2 or 3 iconic outlined props and leave broad open white areas. Maintain distinct complete bodies and natural paws; never fuse a baby into an adult. Scene: Papa and child PinPin pack a picnic bag together. Exactly four hedgehogs: Papa at center-left gently lowers a plain cloth containing three large bread rolls into an open soft shoulder bag on the table; PinPin at right holds the other edge of the cloth with both paws. Two big apples are clearly visible inside the open bag below the bread, and the shoulder strap is one clean broad loop. Mama at far left watches while securely holding baby PomPom, whose separate head, torso, two paws and two feet are clearly outlined. Arrange the family compactly on a portrait sheet, chest-up around a broad SIMPLE table so NO table or chair legs appear. Add just one plain water flask and a simple cup on the otherwise empty tabletop. No patterns, woven fabric, seeds, woodgrain, rug, kitchen clutter, decorative pots or scenery. Remove all small detail; big closed shapes suitable for thick crayons and correct connected paws.",
+  "output": "docs/storyboard/production/house-menu-library-20260922/coloring/elder-family-morning/scene-2.png",
+  "generatedOriginal": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-2d152116-7a54-46cd-9b1a-5dff3692b2c0.png",
+  "tool": "built-in image_gen__imagegen",
+  "sourceSha256": "7648b4f9e12312b0580391778e84d883d393fe31732492de1dcc4b22435ae17e",
+  "outputSha256": "ca238dcca0630835e05197b9ac3502833c9d45091636ea978341dbf459fcde4f",
+  "bytes": 1406748,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "visualReview": "Passed: bold black outlines, white fill areas, no lettering, readable distinct bodies and faithful action.",
+  "readOnlyPixelCheck": {
+    "nearWhiteFraction": 0.887765,
+    "nearBlackFraction": 0.081844,
+    "chromaticFraction": 7.5e-05,
+    "note": "No pixel processing applied; antialiased line edges and faint raster variation retained in generated original."
+  }
+}

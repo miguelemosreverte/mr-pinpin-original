@@ -5,9 +5,10 @@
 const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm');
 const crypto=require('node:crypto'),cp=require('node:child_process'),assert=require('node:assert/strict');
 const {parseArgs}=require('node:util');
-const {values}=parseArgs({options:{out:{type:'string'},metadata:{type:'boolean'},help:{type:'boolean'}}});
-if(values.help||!values.out){console.log('Usage: node scripts/export-chapter-pdfs.cjs --out /external/export-dir [--metadata]\nRequires Chrome, Playwright, ImageMagick, pdfinfo, pdftotext. PLAYWRIGHT_MODULE overrides module location.');process.exit(values.help?0:2)}
+const {values}=parseArgs({options:{out:{type:'string'},metadata:{type:'boolean'},'coloring-manifest':{type:'string'},'base-pdfs':{type:'string'},help:{type:'boolean'}}});
+if(values.help||!values.out){console.log('Usage: node scripts/export-chapter-pdfs.cjs --out /external/export-dir [--metadata]\nColoring edition: add --coloring-manifest PLAN.json --base-pdfs /original/pdf-dir (new --out required).\nColoring mode additionally requires pdfunite and pdfimages.\nRequires Chrome, Playwright, ImageMagick, pdfinfo, pdftotext. PLAYWRIGHT_MODULE overrides module location.');process.exit(values.help?0:2)}
 const root=path.resolve(__dirname,'..'),storyboard=path.join(root,'docs/storyboard'),out=path.resolve(values.out);
+if(values['coloring-manifest']) { require('./append-chapter-coloring.cjs').run({root,out,base:values['base-pdfs'],manifest:values['coloring-manifest']}).catch(e=>{console.error(e);process.exitCode=1}); return; }
 const relative=path.relative(root,out);assert(relative==='..'||relative.startsWith('..'+path.sep)||path.isAbsolute(relative),'Output must be outside checkout');
 fs.mkdirSync(out,{recursive:true});const media=path.join(out,'jpeg-cache');fs.mkdirSync(media,{recursive:true});
 const read=f=>JSON.parse(fs.readFileSync(path.join(storyboard,f),'utf8'));

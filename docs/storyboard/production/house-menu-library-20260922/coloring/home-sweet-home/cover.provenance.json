@@ -1,0 +1,23 @@
+{
+  "chapter": "home-sweet-home",
+  "page": "cover",
+  "source": "docs/storyboard/images/covers/home-sweet-home/title-en-v1.png",
+  "prompt": "Use case: style-transfer. Edit the supplied approved illustration into ONE finished portrait 1024x1536 children's coloring page for a four-year-old using thick crayons. Keep the recognizable hedgehog characters, their sizes, emotions, and main action, while simplifying the composition for a tall page with generous white margins. BLACK clean bold smooth outlines only on a PURE WHITE page; all fur, faces, bodies, objects and background interiors remain WHITE for coloring. Use very large closed fillable shapes. Hedgehog quills become a simple scalloped/spiky outer silhouette and only a few large internal clusters; no individual hairs, stippling or tiny quill marks. No gray, shading, gradients, hatching, shadows, colored pixels, pencil texture, decorative border, logo or lettering. No solid black areas except tiny eye pupils and tiny nose centers. Remove ALL source words and numbers. Simplify environment to 2 or 3 iconic outlined props and leave broad open white areas. Maintain distinct complete bodies and natural paws; never fuse a baby into an adult. Scene: Mama stands behind a round wooden bathtub and tips a simple mug to rinse PinPin, who sits smiling inside the bath with two paws on the near rim. Baby PomPom sits clearly separate on the floor at the right, wrapped in a simple towel, with visible face, torso and two little feet. Keep exactly those three hedgehogs. Reduce the tub to five broad wooden panels and two wide bands. The water is a few broad wave curves, the pouring water one outlined ribbon. Keep one plain round window in the background, without texture or elaborate plants. Do not reproduce the title text. Friendly and uncluttered; characters and tub dominate the portrait.",
+  "output": "docs/storyboard/production/house-menu-library-20260922/coloring/home-sweet-home/cover.png",
+  "generatedOriginal": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-a0899a8c-9577-4831-80b4-3f07a9ca76b8.png",
+  "tool": "built-in image_gen__imagegen",
+  "sourceSha256": "9b4357178b7a77581b5615e9638288305ef07a8f8811e6e42401cacde3e95e2c",
+  "outputSha256": "b0b4d4894612f5cbe66ed548e4f98cdbfc72ff2193355eaa2e5ca28c5ab517ae",
+  "bytes": 1430985,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "visualReview": "Passed: bold black outlines, white fill areas, no lettering, distinct mother and two children, readable bath action.",
+  "readOnlyPixelCheck": {
+    "nearWhiteFraction": 0.869263,
+    "nearBlackFraction": 0.094669,
+    "chromaticFraction": 7.5e-05,
+    "note": "No pixel processing applied; antialiased line edges and faint raster variation retained in generated original."
+  }
+}

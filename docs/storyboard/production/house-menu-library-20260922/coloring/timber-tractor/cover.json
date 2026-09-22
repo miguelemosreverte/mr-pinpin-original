@@ -1,0 +1,28 @@
+{
+  "chapterId": "timber-tractor",
+  "id": "cover",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "source": "docs/storyboard/images/covers/timber-tractor/title-en-v1.png",
+  "sourceSha256": "7a1fe5c3178bdf0914c080440d15715416161be3f78566d2cfcc67197f585cd6",
+  "sourceRole": "approved illustration; composition and identity reference",
+  "prompt": "Use case: style-transfer. Create one finished printable coloring-book page for a four-year-old child, portrait 1024x1536. Input image is the approved chapter illustration: preserve recognizable character identity, relationships and action, while simplifying it for crayons. Bold smooth BLACK outlines on pure WHITE paper, pure white object interiors, large CLOSED easy-to-color spaces. Use only black and white: no color, grey, shading, hatching, stippling, gradients, pencil texture or large solid black regions. Tiny solid black pupils and nostrils only are fine. Render hedgehog spines as about 12-18 large scalloped/pointed clusters, not hundreds of hairs; render foliage as a few broad leaves. All important figures and fillable objects fit inside generous white margins. No border, lettering, title, numbers, logo, watermark or explanatory text. The composition should fill the portrait page generously, not a tiny drawing lost in blank paper. Cover adaptation: PinPin sits in the lower left looking up at the parked timber tractor in three-quarter front view. Tractor cab behind its front bonnet, large front and rear wheels, trailer with three round logs BEHIND the tractor, folded crane fixed IMMEDIATELY BEHIND THE CAB and IN FRONT OF the trailer logs. Preserve correct mechanical arrangement from the reference. Simplify into broad closed toy-like forms with only a few tire tread blocks, no grille mesh/hydraulic hoses/tiny bolts. Show the whole tractor and PinPin within margins, no figures inside cab. Remove all title lettering; a simple path and two tree silhouettes suffice. CRITICAL PRINT MARGIN: create a self-contained vignette, with the ENTIRE drawing including every leaf, rock, root and ground line inside at least 70 pixels of unmarked WHITE on ALL FOUR SIDES. No line or object may touch the paper edge. Every foreground leaf is whole and closed. Keep only a few plants, no decorative frame.",
+  "requestedDimensions": [
+    1024,
+    1536
+  ],
+  "referenceInspected": true,
+  "startedAt": "2026-09-22T11:03:34.278847+00:00",
+  "endedAt": "2026-09-22T11:04:57.279320+00:00",
+  "output": "docs/storyboard/production/house-menu-library-20260922/coloring/timber-tractor/cover.png",
+  "generatedOriginal": "/Users/miguel_lemos/.codex/generated_images/01a0c81a-2b4a-7512-b5ee-baf6d034b770/exec-24779679-7ce7-486d-ba93-5ca1024839a5.png",
+  "sha256": "3c601f57f31ec58e2a0cf0d7d61fd1199eb0821800e7f5582075b2dd0fb8d558",
+  "bytes": 1672775,
+  "width": 1024,
+  "height": 1536,
+  "review": {
+    "status": "pass",
+    "notes": "Full visual review: full PinPin, complete tractor silhouette, cab behind bonnet, folded crane directly behind cab before the three-log trailer. Broad white tires/windows/body panels and simplified tread shapes; no grille mesh, color or text. Selected anatomy remains coherent and objects are within page edges; actual margins are narrower than requested.",
+    "reviewedAt": "2026-09-22T11:04:57.320706+00:00"
+  }
+}

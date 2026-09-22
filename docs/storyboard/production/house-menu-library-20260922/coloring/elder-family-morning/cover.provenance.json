@@ -1,0 +1,23 @@
+{
+  "chapter": "elder-family-morning",
+  "page": "cover",
+  "source": "docs/storyboard/images/published/elder-cycle/family-morning-title-en.webp",
+  "prompt": "Use case: style-transfer. Edit the supplied approved illustration into ONE finished portrait 1024x1536 children's coloring page for a four-year-old using thick crayons. Keep the recognizable hedgehog characters, their sizes, emotions, and main action, while simplifying the composition for a tall page with generous white margins. BLACK clean bold smooth outlines only on a PURE WHITE page; all fur, faces, bodies, objects and background interiors remain WHITE for coloring. Use very large closed fillable shapes. Hedgehog quills become a simple scalloped/spiky outer silhouette and only a few large internal clusters; no individual hairs, stippling or tiny quill marks. No gray, shading, gradients, hatching, shadows, colored pixels, pencil texture, decorative border, logo or lettering. No solid black areas except tiny eye pupils and tiny nose centers. Remove ALL source words and numbers. Simplify environment to 2 or 3 iconic outlined props and leave broad open white areas. Maintain distinct complete bodies and natural paws; never fuse a baby into an adult. Scene: exactly four hedgehogs gathered happily at breakfast around a small round table: Mama at left holding baby PomPom with a distinct body in her lap, Papa in the center facing child PinPin at right. Preserve the affectionate interaction and character proportions from this title cover. The baby has its own outlined head, torso and tiny paws separate from Mama and is supported naturally. Table has a simple teapot, two broad cups and a plate with two bread rolls, all plain outlines without ornament. Use ONE sturdy central pedestal under the table rather than many legs. Compose compactly in portrait with faces large, broad white table and two plain round window outlines above. Completely remove the large source title and all small wood, textile, fur, floral and grain details. No added people, no extra limbs, no text.",
+  "output": "docs/storyboard/production/house-menu-library-20260922/coloring/elder-family-morning/cover.png",
+  "generatedOriginal": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-f26ea464-6dbd-48d5-87d6-ec0d7a106ca4.png",
+  "tool": "built-in image_gen__imagegen",
+  "sourceSha256": "c8799648b8d515ef71313f82b8a83a6572934dc834db903bcb8a34bbba3f7fca",
+  "outputSha256": "dde112511938188fbe49c875cf6afda9a44b581ec5e73744d446da772ab43103",
+  "bytes": 1510580,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "visualReview": "Passed: bold black outlines, white fill areas, no lettering, readable distinct bodies and faithful action.",
+  "readOnlyPixelCheck": {
+    "nearWhiteFraction": 0.846188,
+    "nearBlackFraction": 0.112966,
+    "chromaticFraction": 7.9e-05,
+    "note": "No pixel processing applied; antialiased line edges and faint raster variation retained in generated original."
+  }
+}

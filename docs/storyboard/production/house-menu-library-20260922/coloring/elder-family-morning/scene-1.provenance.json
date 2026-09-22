@@ -1,0 +1,23 @@
+{
+  "chapter": "elder-family-morning",
+  "page": "scene-1",
+  "source": "docs/storyboard/images/published/elder-cycle/elder-r6-family-023.webp",
+  "prompt": "Use case: style-transfer. Edit the supplied approved illustration into ONE finished portrait 1024x1536 children's coloring page for a four-year-old using thick crayons. Keep the recognizable hedgehog characters, their sizes, emotions, and main action, while simplifying the composition for a tall page with generous white margins. BLACK clean bold smooth outlines only on a PURE WHITE page; all fur, faces, bodies, objects and background interiors remain WHITE for coloring. Use very large closed fillable shapes. Hedgehog quills become a simple scalloped/spiky outer silhouette and only a few large internal clusters; no individual hairs, stippling or tiny quill marks. No gray, shading, gradients, hatching, shadows, colored pixels, pencil texture, decorative border, logo or lettering. No solid black areas except tiny eye pupils and tiny nose centers. Remove ALL source words and numbers. Simplify environment to 2 or 3 iconic outlined props and leave broad open white areas. Maintain distinct complete bodies and natural paws; never fuse a baby into an adult. Scene: family building blocks on the floor. Exactly four hedgehogs. Papa sits on the right and steadies the bottom of a tower of TWO large plain cubes with one paw; child PinPin stands at center-left and places a third plain cube on top with both paws. Mama sits behind at left holding baby PomPom clearly separate on her lap, smiling and watching the blocks. The baby's face, torso, paws and little feet are distinct and supported; no merged bodies. Reframe the compact family group vertically for portrait with full visible feet and a simple large oval rug underneath. Include one extra large cube on the rug. Every cube has correct simple three-dimensional edges, no letters or numbers. Background mostly empty white with only a plain rounded door outline high behind them. No rug weave, floorboards, tiny quill marks or decorative kitchen objects. Very large closed coloring shapes.",
+  "output": "docs/storyboard/production/house-menu-library-20260922/coloring/elder-family-morning/scene-1.png",
+  "generatedOriginal": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-b73ef55d-b864-41f6-879e-6dc5ed775c97.png",
+  "tool": "built-in image_gen__imagegen",
+  "sourceSha256": "50309b8295139886b4f80a395e47ec6ff2d14ee64632d619832c365c12f1b259",
+  "outputSha256": "72fdea127631021c95c926c30602a0b4100b006d4371a58e4cd0a81daddc035d",
+  "bytes": 1432462,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "visualReview": "Passed: bold black outlines, white fill areas, no lettering, readable distinct bodies and faithful action.",
+  "readOnlyPixelCheck": {
+    "nearWhiteFraction": 0.867204,
+    "nearBlackFraction": 0.095168,
+    "chromaticFraction": 7.6e-05,
+    "note": "No pixel processing applied; antialiased line edges and faint raster variation retained in generated original."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "chapterId": "chapter-02",
+  "order": [
+    "cover",
+    "scene-1",
+    "scene-2"
+  ],
+  "pages": [
+    {
+      "id": "cover",
+      "output": "docs/storyboard/production/house-menu-library-20260922/coloring/chapter-02/cover.png",
+      "sha256": "e68885f9e51154c2988add126b7c81c6516a052fd3873bb5257416128a1b060c",
+      "width": 1024,
+      "height": 1536,
+      "source": "docs/storyboard/images/covers/chapter-02/title-en-v1.png",
+      "sourceSha256": "6391b25525e92fa4294472af7098f0ed7141fc6791e0a965d63d8be6d4e8da36",
+      "review": {
+        "status": "pass",
+        "notes": "Full visual review: two complete hedgehogs with correct small-left/large-right cover relationship, round Elder spectacles, one staff and broad outlined root entrance. Clear smiling eye contact; all lettering removed, bold black contours and broad white spaces. Main figures and foreground flowers are uncut.",
+        "reviewedAt": "2026-09-22T11:01:44.780501+00:00"
+      }
+    },
+    {
+      "id": "scene-1",
+      "output": "docs/storyboard/production/house-menu-library-20260922/coloring/chapter-02/scene-1.png",
+      "sha256": "a84e76746d6c9e85caaa9006b82663790a8b08bafb222becc906c2867b53dac1",
+      "width": 1024,
+      "height": 1536,
+      "source": "docs/storyboard/images/chapter-02-direct/scene-07.png",
+      "sourceSha256": "7e84f07482f6dd6c9521e1041045c2f4ee3fa8af0a31d84e90eccbe12da01f9b",
+      "review": {
+        "status": "pass",
+        "notes": "Full visual review: Elder left with round spectacles, child right, clear mutual attention, one staff and outlined white root entrance. Bold black-only contours with broad body/root/flower coloring spaces; no lettering or grey shading. Full animals remain inside the page; peripheral foliage is simplified.",
+        "reviewedAt": "2026-09-22T11:02:43.320909+00:00"
+      }
+    },
+    {
+      "id": "scene-2",
+      "output": "docs/storyboard/production/house-menu-library-20260922/coloring/chapter-02/scene-2.png",
+      "sha256": "15d7497e606ee0d3c7e1f15a544a858e7cbfcf1e4983c44a52a18f37e9c19310",
+      "width": 1024,
+      "height": 1536,
+      "source": "docs/storyboard/images/chapter-02-direct/scene-16.png",
+      "sourceSha256": "2499684d397172d25d07598db6fb5cc8b2602c9d162b83f867b8d1f44029e985",
+      "review": {
+        "status": "pass",
+        "notes": "Full visual review: playful tilted PinPin face peeks from left with both ears and two small paws holding the leaf; five large broad leaves frame a winding path and distant hill tree. No color, grey shading, text or fine fur detail. Face and all main leaves have clear broad spaces and remain inside the page.",
+        "reviewedAt": "2026-09-22T11:03:34.247365+00:00"
+      }
+    }
+  ]
+}

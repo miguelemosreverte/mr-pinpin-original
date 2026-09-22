@@ -1,0 +1,23 @@
+{
+  "chapter": "elder-papa-home",
+  "page": "cover",
+  "source": "docs/storyboard/images/published/elder-cycle/papa-home-title-en.webp",
+  "prompt": "Use case: style-transfer. Edit the supplied approved illustration into ONE finished portrait 1024x1536 children's coloring page for a four-year-old using thick crayons. Keep the recognizable hedgehog characters, their sizes, emotions, and main action, while simplifying the composition for a tall page with generous white margins. BLACK clean bold smooth outlines only on a PURE WHITE page; all fur, faces, bodies, objects and background interiors remain WHITE for coloring. Use very large closed fillable shapes. Hedgehog quills become a simple scalloped/spiky outer silhouette and only a few large internal clusters; no individual hairs, stippling or tiny quill marks. No gray, shading, gradients, hatching, shadows, colored pixels, pencil texture, decorative border, logo or lettering. No solid black areas except tiny eye pupils and tiny nose centers. Remove ALL source words and numbers. Simplify environment to 2 or 3 iconic outlined props and leave broad open white areas. Maintain distinct complete bodies and natural paws; never fuse a baby into an adult. Scene: affectionate homecoming family group adapted from this title cover. Exactly four hedgehogs, with Papa at right gently embracing child PinPin, Mama at left holding baby PomPom in her clearly separate arms. Keep their happy mutual gazes, round snouts and size hierarchy. The baby must have a clearly separate little head, torso, two tiny paws and two little feet, visibly supported by Mama's arms, not an extra face on her body. Preserve the overall arrangement and hug while making the four bodies readable. Background only a plain rounded cottage doorway and one large simple daisy beside the doorstep. Remove every title word and all background texture. Full family large and centered on the portrait page, huge white fill areas and very simple quill outlines.",
+  "output": "docs/storyboard/production/house-menu-library-20260922/coloring/elder-papa-home/cover.png",
+  "generatedOriginal": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-9e779bf9-010b-4353-a9e6-4a576573924c.png",
+  "tool": "built-in image_gen__imagegen",
+  "sourceSha256": "53095d2176501b1267e786e10a99402455663aae4b006bcbfa0de11cf2f2a491",
+  "outputSha256": "6615838b7b052330871634a45d0fb5411ec6f661d5795e8b24ef7adb1e33d990",
+  "bytes": 1410677,
+  "dimensions": [
+    1024,
+    1536
+  ],
+  "visualReview": "Passed: bold black outlines, white fill areas, no lettering, readable distinct bodies and faithful action.",
+  "readOnlyPixelCheck": {
+    "nearWhiteFraction": 0.86261,
+    "nearBlackFraction": 0.104565,
+    "chromaticFraction": 0.000295,
+    "note": "No pixel processing applied; antialiased line edges and faint raster variation retained in generated original."
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "chapterId": "timber-tractor",
+  "id": "scene-1",
+  "tool": "image_gen.imagegen",
+  "mode": "built-in",
+  "source": "docs/storyboard/images/standalone/timber-tractor/scene-14.png",
+  "sourceSha256": "9fd2f88c8e3838266190392535b69acc5adb5294a1c6e3e47d3639920fea9e98",
+  "sourceRole": "approved illustration; composition and identity reference",
+  "prompt": "Use case: precise-object-edit. This is a printable coloring page for a four-year-old child. Preserve this exact black-and-white illustration, character identities, poses, large shapes and clear bold outline style. Make ONE targeted revision: pull back the ENTIRE drawing so it fits in a centered portrait 1024x1536 page with a clearly visible blank WHITE margin of at least 80 pixels on every side. Complete or remove the currently cropped peripheral tree canopy, background leaves, side stones and foreground leaves so EVERY drawn shape ends before that white margin and all foreground leaves have closed complete outlines. No line should reach the page edges. The full main figures and the main scene must remain intact and large. Pure white background and interiors, black outlines only, no color, grey, shading, hatching, text or added characters. Keep the same scene and simplify the outer plants if necessary. Do not add a frame.",
+  "requestedDimensions": [
+    1024,
+    1536
+  ],
+  "referenceInspected": true,
+  "version": 2,
+  "editTarget": "docs/storyboard/production/house-menu-library-20260922/coloring/timber-tractor/scene-1-v1.png",
+  "editTargetSha256": "fd48db168923a84b3bfa8cd7370ccd42b3695562595a24104ff0ab7c0df0b750",
+  "startedAt": "2026-09-22T11:09:17.831247+00:00"
+}

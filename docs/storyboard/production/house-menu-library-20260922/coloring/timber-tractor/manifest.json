@@ -1,0 +1,52 @@
+{
+  "chapterId": "timber-tractor",
+  "order": [
+    "cover",
+    "scene-1",
+    "scene-2"
+  ],
+  "pages": [
+    {
+      "id": "cover",
+      "output": "docs/storyboard/production/house-menu-library-20260922/coloring/timber-tractor/cover.png",
+      "sha256": "3c601f57f31ec58e2a0cf0d7d61fd1199eb0821800e7f5582075b2dd0fb8d558",
+      "width": 1024,
+      "height": 1536,
+      "source": "docs/storyboard/images/covers/timber-tractor/title-en-v1.png",
+      "sourceSha256": "7a1fe5c3178bdf0914c080440d15715416161be3f78566d2cfcc67197f585cd6",
+      "review": {
+        "status": "pass",
+        "notes": "Full visual review: full PinPin, complete tractor silhouette, cab behind bonnet, folded crane directly behind cab before the three-log trailer. Broad white tires/windows/body panels and simplified tread shapes; no grille mesh, color or text. Selected anatomy remains coherent and objects are within page edges; actual margins are narrower than requested.",
+        "reviewedAt": "2026-09-22T11:04:57.320706+00:00"
+      }
+    },
+    {
+      "id": "scene-1",
+      "output": "docs/storyboard/production/house-menu-library-20260922/coloring/timber-tractor/scene-1.png",
+      "sha256": "0f4be6b9838f9c38bf5d8966e37be1dc5554aed7aa43a4af3c2f6d08b6f9bd4a",
+      "width": 1024,
+      "height": 1536,
+      "source": "docs/storyboard/images/standalone/timber-tractor/scene-14.png",
+      "sourceSha256": "9fd2f88c8e3838266190392535b69acc5adb5294a1c6e3e47d3639920fea9e98",
+      "review": {
+        "status": "pass",
+        "notes": "Full visual review of revision 2: complete tree canopy, side stones and foreground leaves now fit inside white margins; PinPin on near bridge and Beaver on far bank retained. Two coherent handrails, broad planks, clear white body areas and black outlines. No color, grey shading or text. Tail cross-lines depict the beaver tail shape, not shaded fill.",
+        "reviewedAt": "2026-09-22T11:10:46.816137+00:00"
+      }
+    },
+    {
+      "id": "scene-2",
+      "output": "docs/storyboard/production/house-menu-library-20260922/coloring/timber-tractor/scene-2.png",
+      "sha256": "3a9d38c7dfe4bd7bdd81bc25e005f3ba691b8f3ed3dc8cc87ef4a6ecc189e156",
+      "width": 1024,
+      "height": 1536,
+      "source": "docs/storyboard/images/standalone/timber-tractor/scene-03.png",
+      "sourceSha256": "cd6fc9a3e01decb743ce5c999fb4eca7ccfccd568115695c492ac9e9cacdaba4",
+      "review": {
+        "status": "pass",
+        "notes": "Full visual review: two complete friendly animals, Beaver left in vest with flat tail, PinPin right looking up. Empty stake trailer and correctly positioned crane behind cab retained. Tractor simplified to large fillable areas; no text, colored fill or grey shading. Main objects stay inside page edges.",
+        "reviewedAt": "2026-09-22T11:07:45.422166+00:00"
+      }
+    }
+  ]
+}
