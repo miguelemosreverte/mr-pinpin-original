@@ -1,5 +1,9 @@
 // Independent depth mesh math. World coordinates and UVs share a top-left origin.
-export const WIDTH = 1536, HEIGHT = 1024, COLS = 64, ROWS = 44;
+import {SCENE} from './home-scene.js?v=expanded-20260922';
+export const WIDTH = SCENE.width, HEIGHT = SCENE.height;
+// Keep cells roughly square while bounding the total mesh size.
+export const COLS = Math.max(24,Math.round(64*Math.min(1,WIDTH/HEIGHT)));
+export const ROWS = Math.max(24,Math.round(64*Math.min(1,HEIGHT/WIDTH)));
 export function createMesh(depth) {
   const count=(COLS+1)*(ROWS+1), source=new Float32Array(count*5), indices=[];
   for(let j=0;j<=ROWS;j++)for(let i=0;i<=COLS;i++){
@@ -16,10 +20,10 @@ export function projectMesh(mesh,camera) {
   for(let strength=1;strength>=.0625;strength/=2){
     for(let k=0;k<mesh.source.length;k+=5){
       const [x,y,,,d]=mesh.source.subarray(k,k+5);
-      const edge=Math.min(1,x/120,(WIDTH-x)/120,y/100,(HEIGHT-y)/100);
+      const edge=Math.min(1,x/(WIDTH*.078),(WIDTH-x)/(WIDTH*.078),y/(HEIGHT*.098),(HEIGHT-y)/(HEIGHT*.098));
       const z=d-.28, gain=edge*strength;
-      mesh.vertices[k]=x+gain*(-vx*52*z+vy*5*z*(x/WIDTH-.5));
-      mesh.vertices[k+1]=y+gain*(-vy*36*z+vx*7*z*(y/HEIGHT-.5));
+      mesh.vertices[k]=x+gain*(-vx*WIDTH*.034*z+vy*WIDTH*.0033*z*(x/WIDTH-.5));
+      mesh.vertices[k+1]=y+gain*(-vy*HEIGHT*.035*z+vx*HEIGHT*.0068*z*(y/HEIGHT-.5));
     }
     let safe=true;
     for(let i=0;i<mesh.indices.length;i+=3){

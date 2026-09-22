@@ -1,0 +1,308 @@
+{
+  "sourceBlend": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-panorama-20260922/blockout/room-blockout.blend",
+  "sourceBlendSha256": "0ed90368d488f2eac537967f4a8d2ad18dcc3e9081cb5f53e16374561324cc7c",
+  "projection": "six direct perspective renders of one locked Blender scene",
+  "worldConvention": {
+    "forward": "+Y",
+    "right": "+X",
+    "up": "+Z"
+  },
+  "cameraOriginMeters": [
+    0.0,
+    0.0,
+    1.149999976158142
+  ],
+  "imageUVOrigin": "top-left",
+  "pixelCenterUV": "((x+0.5)/1024,(y+0.5)/1024)",
+  "rayFormula": "normalize(forward + (2*u-1)*imageRight + (1-2*v)*imageUp)",
+  "fovDegrees": 90,
+  "renderSamples": 24,
+  "denoising": true,
+  "renderSeed": 0,
+  "faces": [
+    {
+      "name": "front",
+      "file": "front.png",
+      "forward": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "imageRight": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cameraEulerXYZRadians": [
+        1.5707963705062866,
+        -0.0,
+        0.0
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ]
+      ],
+      "fovHorizontalDegrees": 90,
+      "fovVerticalDegrees": 90,
+      "width": 1024,
+      "height": 1024,
+      "bytes": 870827,
+      "sha256": "c86a1ebbea04463bced159f5c340fea691ce614cac01ae45a5fa4952ec9e5358"
+    },
+    {
+      "name": "back",
+      "file": "back.png",
+      "forward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "imageRight": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cameraEulerXYZRadians": [
+        1.5707963705062866,
+        -0.0,
+        3.141592502593994
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          -1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ]
+      ],
+      "fovHorizontalDegrees": 90,
+      "fovVerticalDegrees": 90,
+      "width": 1024,
+      "height": 1024,
+      "bytes": 830568,
+      "sha256": "f1d54a2403662e3253ea6657d420adc66dc1112006cf68e22901b299506e7e7d"
+    },
+    {
+      "name": "right",
+      "file": "right.png",
+      "forward": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "imageRight": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cameraEulerXYZRadians": [
+        1.5707963705062866,
+        -0.0,
+        -1.5707963705062866
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ]
+      ],
+      "fovHorizontalDegrees": 90,
+      "fovVerticalDegrees": 90,
+      "width": 1024,
+      "height": 1024,
+      "bytes": 820984,
+      "sha256": "778fc7fb7721a7532a6f5084eae82cb3f102af87a52cd486217b8c757d2696f4"
+    },
+    {
+      "name": "left",
+      "file": "left.png",
+      "forward": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "imageRight": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cameraEulerXYZRadians": [
+        1.5707963705062866,
+        -0.0,
+        1.5707963705062866
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ]
+      ],
+      "fovHorizontalDegrees": 90,
+      "fovVerticalDegrees": 90,
+      "width": 1024,
+      "height": 1024,
+      "bytes": 785667,
+      "sha256": "8c1460946a6504e06e1649f071f4ae557738ae53af113327175a1ffacb3c0a8a"
+    },
+    {
+      "name": "up",
+      "file": "up.png",
+      "forward": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "imageRight": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "cameraEulerXYZRadians": [
+        3.141592502593994,
+        -0.0,
+        0.0
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "fovHorizontalDegrees": 90,
+      "fovVerticalDegrees": 90,
+      "width": 1024,
+      "height": 1024,
+      "bytes": 777604,
+      "sha256": "38796c997f102b5fa7bed91ad7fe25b4f8cb2d1863c3d0be124e1630d1b9fc82"
+    },
+    {
+      "name": "down",
+      "file": "down.png",
+      "forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "imageRight": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "cameraEulerXYZRadians": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "fovHorizontalDegrees": 90,
+      "fovVerticalDegrees": 90,
+      "width": 1024,
+      "height": 1024,
+      "bytes": 718136,
+      "sha256": "cce93736ccb7c785bfdab57e1c1828a6047f7c808d0b66c8af17d3fbe7b521ef"
+    }
+  ],
+  "complete": true,
+  "rigSha256": "d3018f897f4377f0a52bf7d422cae2c858dc4ff0abef9d94870c78e5420175ed"
+}

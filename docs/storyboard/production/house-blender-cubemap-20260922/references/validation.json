@@ -1,0 +1,71 @@
+{
+  "verified": true,
+  "files": 6,
+  "dimensions": [
+    1024,
+    1024
+  ],
+  "matchingGeometricEdgePairs": [
+    {
+      "first": "front.left",
+      "second": "left.right",
+      "reverseEdgeTraversal": false
+    },
+    {
+      "first": "front.right",
+      "second": "right.left",
+      "reverseEdgeTraversal": false
+    },
+    {
+      "first": "front.top",
+      "second": "up.bottom",
+      "reverseEdgeTraversal": false
+    },
+    {
+      "first": "front.bottom",
+      "second": "down.top",
+      "reverseEdgeTraversal": false
+    },
+    {
+      "first": "back.left",
+      "second": "right.right",
+      "reverseEdgeTraversal": false
+    },
+    {
+      "first": "back.right",
+      "second": "left.left",
+      "reverseEdgeTraversal": false
+    },
+    {
+      "first": "back.top",
+      "second": "up.top",
+      "reverseEdgeTraversal": true
+    },
+    {
+      "first": "back.bottom",
+      "second": "down.bottom",
+      "reverseEdgeTraversal": true
+    },
+    {
+      "first": "right.top",
+      "second": "up.right",
+      "reverseEdgeTraversal": true
+    },
+    {
+      "first": "right.bottom",
+      "second": "down.right",
+      "reverseEdgeTraversal": false
+    },
+    {
+      "first": "left.top",
+      "second": "up.left",
+      "reverseEdgeTraversal": false
+    },
+    {
+      "first": "left.bottom",
+      "second": "down.left",
+      "reverseEdgeTraversal": true
+    }
+  ],
+  "sourceBlendSha256": "0ed90368d488f2eac537967f4a8d2ad18dcc3e9081cb5f53e16374561324cc7c"
+}

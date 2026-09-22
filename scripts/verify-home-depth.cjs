@@ -8,6 +8,9 @@ const out=process.env.VERIFICATION_DIR;
 if(!out)throw Error('Set VERIFICATION_DIR to an external evidence directory');
 fs.mkdirSync(out,{recursive:true});
 const checks=[];
+// Normalized visual landmarks, reviewed alongside any replacement room artwork.
+const LANDMARKS={outside:[510/1254,490/1254],near:[615/1254,530/1254],rug:[680/1254,900/1254]};
+async function worldPoints(page,points){return page.evaluate(points=>{const w=document.querySelector('.room-fit').cameraState.world;return points.map(p=>[p[0]*w.width,p[1]*w.height]);},points);}
 const near=(a,b,tolerance,message)=>assert(Math.abs(a-b)<=tolerance,`${message}: ${a} vs ${b}`);
 const state=page=>page.evaluate(()=>document.querySelector('.room-fit').depthView?.snapshot);
 async function settle(page){await page.waitForTimeout(650);}
@@ -35,7 +38,7 @@ async function reveal(page,id){
 // Compare the actual projected SVG path to independent samples of its source path.
 async function contours(page){
  return page.evaluate(async()=>{
-  const html=await (await fetch(location.href)).text(),doc=new DOMParser().parseFromString(html,'text/html'),room=document.querySelector('.room').getBoundingClientRect(),scale=room.width/1536,result=[];
+  const html=await (await fetch(location.href)).text(),doc=new DOMParser().parseFromString(html,'text/html'),room=document.querySelector('.room').getBoundingClientRect(),scale=document.querySelector('.room-fit').cameraState.scale,result=[];
   for(const id of ['door-contour','bookcase-contour']){
    const original=doc.getElementById(id),actual=document.getElementById(id),length=original.getTotalLength(),actualLength=actual.getTotalLength();let worst=0;
    const samples=Array.from({length:801},(_,i)=>actual.getPointAtLength(actualLength*i/800));
@@ -55,13 +58,16 @@ async function imageStats(page,png,regions){
   return regions.map(r=>{let energy=0,count=0;const left=Math.max(1,Math.floor(r.x-r.radius)),right=Math.min(image.width-2,Math.ceil(r.x+r.radius)),top=Math.max(1,Math.floor(r.y-r.radius)),bottom=Math.min(image.height-2,Math.ceil(r.y+r.radius));for(let y=top;y<bottom;y++)for(let x=left;x<right;x++){energy+=Math.abs(lum(x+1,y)-lum(x,y))+Math.abs(lum(x,y+1)-lum(x,y));count++;}return {name:r.name,gradient:energy/Math.max(1,count),pixels:count};});
  },{data:png.toString('base64'),regions});
 }
-async function projected(page,points){return page.evaluate(points=>{const r=document.querySelector('.room').getBoundingClientRect(),scale=r.width/1536;return points.map(p=>{const q=document.querySelector('.room-fit').depthView.project(p);return {source:p,room:q,screen:{x:r.x+q[0]*scale,y:r.y+q[1]*scale},affine:{x:r.x+p[0]*scale,y:r.y+p[1]*scale}};});},points);}
+async function projected(page,points){return page.evaluate(points=>{const r=document.querySelector('.room').getBoundingClientRect(),scale=document.querySelector('.room-fit').cameraState.scale;return points.map(p=>{const q=document.querySelector('.room-fit').depthView.project(p);return {source:p,room:q,screen:{x:r.x+q[0]*scale,y:r.y+q[1]*scale},affine:{x:r.x+p[0]*scale,y:r.y+p[1]*scale}};});},points);}
 // Runtime interface adapters are intentionally limited to observation; all camera/focus input uses real browser events.
 async function focusCase(browser){
  const context=await browser.newContext({viewport:{width:1440,height:900},deviceScaleFactor:1}),page=await context.newPage();
  try{
   await page.goto(base+'?lang=en');await page.waitForFunction(()=>document.querySelector('.room-fit').depthView?.snapshot?.backend==='active');await settle(page);
-  const mapped=await projected(page,[[400,350],[800,830],[1220,340]]);
+  // At minimum zoom both destinations fit the fixed desktop focus-comparison camera.
+  await page.mouse.move(720,450);await page.mouse.wheel(0,10000);await settle(page);
+  const bookcase=await page.evaluate(()=>document.querySelector('.room-fit').cameraState.anchors['bookcase-link']);
+  const mapped=await projected(page,await worldPoints(page,[LANDMARKS.outside,LANDMARKS.rug,bookcase]));
   const regions=[{name:'outside',...mapped[0].screen,radius:45},{name:'rug',...mapped[1].screen,radius:50}];
   await page.mouse.move(mapped[0].screen.x,mapped[0].screen.y);await settle(page);
   const farState=await state(page),far=await page.screenshot({style:".contour{fill:transparent!important;transition:none!important}"});fs.writeFileSync(path.join(out,'focus-far-door.png'),far);
@@ -83,7 +89,7 @@ async function gpuCase(browser,viewport,mobile){
   await page.goto(base+'?lang=ru');await page.waitForFunction(()=>document.querySelector('.room-fit').depthView?.snapshot?.backend==='active');await settle(page);await fill(page);await capture(page,name+'-depth-initial');
   const before=await state(page);assert.equal(before.backend,'active','Actual GPU renderer active');
   await page.evaluate(()=>{window.depthFrameIntervals=[];let last;const tick=now=>{if(last)window.depthFrameIntervals.push(now-last);last=now;window.depthFrameRequest=requestAnimationFrame(tick);};window.depthFrameRequest=requestAnimationFrame(tick);});
-  const points=[[400,350],[210,390],[780,830]],baseline=await projected(page,points);
+  const points=await worldPoints(page,[LANDMARKS.outside,LANDMARKS.near,LANDMARKS.rug]),baseline=await projected(page,points);
   if(mobile)await pinch(cdp,{x:viewport.width*.5,y:viewport.height*.5});else{await page.mouse.move(viewport.width/2,viewport.height/2);await page.mouse.wheel(0,-200);}
   await settle(page);await fill(page);
   for(const direction of [1,-1]){
@@ -105,7 +111,8 @@ async function gpuCase(browser,viewport,mobile){
   // Pointer/touch navigation uses warped native anchor hit regions after movement.
   for(const id of ['door-link','bookcase-link']){
    await page.goto(base+'?lang=ru');await page.waitForFunction(()=>document.querySelector('.room-fit').depthView?.snapshot?.backend==='active');await reveal(page,id);
-   const point=(await projected(page,[id==='door-link'?[350,360]:[1220,340]]))[0].screen;
+   const anchor=await page.evaluate(id=>{const c=document.querySelector('.room-fit').cameraState,a=c.anchors[id];return[a[0]*c.world.width,a[1]*c.world.height];},id);
+   const point=(await projected(page,[anchor]))[0].screen;
    assert.equal(await page.evaluate(p=>document.elementFromPoint(p.x,p.y)?.closest('a')?.id,point),id,'Projected artwork and hit region agree');
    if(mobile)await page.touchscreen.tap(point.x,point.y);else await page.mouse.click(point.x,point.y);
    await page.waitForURL(new URL((id==='door-link'?'storyboard/atlas-webgpu.html':'storyboard/library.html')+'?lang=ru',base).href);
@@ -116,7 +123,7 @@ async function gpuCase(browser,viewport,mobile){
 async function fallbackCase(browser,mode){
  const context=await browser.newContext({viewport:{width:390,height:844},isMobile:true,hasTouch:true,reducedMotion:mode==='reduced-motion'?'reduce':'no-preference'}),page=await context.newPage();
  try{
-  if(mode==='missing-depth')await page.route('**/room-depth-v1.webp*',route=>route.abort());
+  if(mode==='missing-depth')await page.route('**/images/house-menu/*depth*.webp*',route=>route.abort());
   if(mode==='no-gpu')await page.addInitScript(()=>{const original=HTMLCanvasElement.prototype.getContext;HTMLCanvasElement.prototype.getContext=function(type,...args){if(type==='webgl'||type==='webgl2')return null;return original.call(this,type,...args);};});
   await page.goto(base+'?lang=es');await page.locator('.room-art').evaluate(image=>image.decode());await settle(page);
   if(mode==='context-loss'){

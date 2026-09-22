@@ -1,0 +1,41 @@
+{
+  "resolution": [
+    2048,
+    1024
+  ],
+  "aspectRatio": 2.0,
+  "seamAdjacentPixelMeanAbsoluteDifferenceLinear01": [
+    0.0053883274958934635,
+    0.0048406863934360445,
+    0.005415134801296517
+  ],
+  "cameraForward": [
+    0.0,
+    1.0,
+    4.371138828673793e-08
+  ],
+  "cameraUp": [
+    0.0,
+    -4.371138828673793e-08,
+    1.0
+  ],
+  "cameraPosition": [
+    0.0,
+    0.0,
+    1.149999976158142
+  ],
+  "files": {
+    "room-blockout-equirectangular.png": {
+      "bytes": 1611318,
+      "sha256": "604d32e7044bc90b2927ec8e9656103d990688addccb534bd4afdf14144c816e"
+    },
+    "room-blockout.blend": {
+      "bytes": 1535727,
+      "sha256": "0ed90368d488f2eac537967f4a8d2ad18dcc3e9081cb5f53e16374561324cc7c"
+    },
+    "build_room.py": {
+      "bytes": 10236,
+      "sha256": "b53496b72bc5a71b09e46ae8db7b1102dc8ad6778fc8c5d3eba39d13c5b854ee"
+    }
+  }
+}

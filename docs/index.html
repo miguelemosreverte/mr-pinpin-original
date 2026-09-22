@@ -6,10 +6,11 @@
   <meta name="theme-color" content="#302519">
   <meta name="description" content="Come inside Mr. PinPin’s home. Open a book or step through the door into the forest.">
   <title>Дом Мистера Пин-Пина</title>
-  <link rel="stylesheet" href="home.css">
-  <script src="home.js" defer></script>
-  <script src="home-camera.js" defer></script>
-  <script type="module" src="home-depth.js"></script>
+  <link rel="stylesheet" href="home.css?v=expanded-20260922">
+  <script src="home.js?v=expanded-20260922" defer></script>
+  <script type="module" src="home-camera.js?v=expanded-20260922"></script>
+  <script type="module" src="home-depth.js?v=expanded-20260922"></script>
+  <script type="module" src="home-panorama.js?v=panorama-20260922"></script>
 </head>
 <body>
   <a class="skip-link" href="#room">Перейти к комнате</a>
@@ -21,13 +22,13 @@
       </nav>
     <div class="room-fit">
     <div class="room" id="room" tabindex="-1">
-      <img class="room-art" draggable="false" src="storyboard/images/house-menu/room-v1.webp" width="1536" height="1024" alt="Уютная комната Мистера Пин-Пина: дверь в лес слева и книжный шкаф справа." fetchpriority="high">
-      <svg class="room-links" viewBox="0 0 1536 1024" xmlns="http://www.w3.org/2000/svg" aria-label="Выберите дверь или книжный шкаф" role="group">
+      <img class="room-art" draggable="false" src="storyboard/images/house-menu/room-expanded-v2.webp" width="1254" height="1254" alt="Уютная комната Мистера Пин-Пина: дверь в лес между двумя круглыми окнами, книжный шкаф справа." fetchpriority="high">
+      <svg class="room-links" viewBox="0 0 1254 1254" xmlns="http://www.w3.org/2000/svg" aria-label="Выберите дверь или книжный шкаф" role="group">
         <a class="hotspot" id="door-link" href="storyboard/atlas-webgpu.html?lang=ru" aria-label="Открыть дверь в лес" data-destination="atlas">
-          <path id="door-contour" class="contour" d="M 146 658 L 141 266 C 144 170 158 56 199 38 C 239 21 265 52 278 104 C 351 59 426 80 489 151 C 549 215 574 303 570 404 L 565 625 L 276 642 Z"/>
+          <path id="door-contour" class="contour" d="M 395 704 L 395 442 C 395 388 431 343 482 333 C 527 321 574 341 599 384 C 603 360 607 342 616 343 C 637 346 640 385 640 431 L 640 696 L 608 713 L 594 705 Z"/>
         </a>
         <a class="hotspot" id="bookcase-link" href="storyboard/library.html?lang=ru" aria-label="Открыть книжный шкаф" data-destination="library">
-          <path id="bookcase-contour" class="contour" d="M 976 629 L 976 227 C 976 178 1009 148 1040 140 L 1430 40 C 1472 27 1514 43 1533 63 L 1533 413 C 1493 410 1470 448 1482 475 L 1474 536 C 1446 558 1440 612 1458 654 L 976 629 Z"/>
+          <path id="bookcase-contour" class="contour" d="M 1053 743 L 1053 346 C 1053 314 1067 298 1094 291 L 1199 269 C 1229 263 1246 277 1246 307 L 1246 761 L 1211 764 Z"/>
         </a>
       </svg>
     </div>

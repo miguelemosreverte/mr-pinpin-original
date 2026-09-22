@@ -1,3 +1,4 @@
+import {SCENE} from './home-scene.js?v=expanded-20260922';
 // Small WebGL renderer; no external rendering runtime or borrowed shaders.
 const vertex=`attribute vec2 aPosition;attribute vec2 aUV;attribute float aDepth;
 uniform vec2 uSize;uniform vec2 uCenter;uniform float uScale;
@@ -40,7 +41,7 @@ export function createRenderer(canvas,color,depth,mesh){
    gl.viewport(0,0,w,h);gl.useProgram(program);
    if(geometryDirty){gl.bindBuffer(gl.ARRAY_BUFFER,vertices);gl.bufferSubData(gl.ARRAY_BUFFER,0,mesh.vertices);}
    gl.uniform2f(size,camera.width,camera.height);gl.uniform2f(center,camera.x,camera.y);gl.uniform1f(scale,camera.scale);
-   gl.uniform2f(radius,3.2/(camera.scale*1536),3.2/(camera.scale*1024));gl.uniform1f(focus,focusDepth);
+   gl.uniform2f(radius,3.2/(camera.scale*SCENE.width),3.2/(camera.scale*SCENE.height));gl.uniform1f(focus,focusDepth);
    gl.drawElements(gl.TRIANGLES,mesh.indices.length,gl.UNSIGNED_SHORT,0);
   },
   destroy(){gl.deleteBuffer(vertices);gl.deleteBuffer(indices);textures.forEach(t=>gl.deleteTexture(t));shaders.forEach(s=>gl.deleteShader(s));gl.deleteProgram(program);}

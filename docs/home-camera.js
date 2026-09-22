@@ -1,19 +1,27 @@
+import {SCENE,WORLD} from './home-scene.js?v=expanded-20260922';
 (() => {
   'use strict';
   const viewport = document.querySelector('.room-fit');
   const room = document.querySelector('.room');
-  const world = {width:1536, height:1024};
+  const world = WORLD;
+  const art = room.querySelector('.room-art');
+  if(art.getAttribute('src')!==SCENE.color)art.src=SCENE.color;
+  art.width=world.width;art.height=world.height;
+  room.style.width = world.width+'px';
+  room.style.height = world.height+'px';
+  room.querySelector('.room-links').setAttribute('viewBox',`0 0 ${world.width} ${world.height}`);
   const pointers = new Map();
-  let width = 0, height = 0, scale = 1, x = 768, y = 512;
+  let width = 0, height = 0, scale = 1, x = world.width/2, y = world.height/2;
   let origin, pinch, blocked = false, keyboard = false;
+  const enabled = () => !['panorama','cubemap'].includes(viewport.dataset.view);
   const cover = () => Math.max(width / world.width, height / world.height);
   const limit = (value, min, max) => Math.max(min, Math.min(max, value));
   function draw() {
-    scale = limit(scale, cover(), cover() * 3);
+    scale = limit(scale, cover()*SCENE.zoom.min, cover()*SCENE.zoom.max);
     x = limit(x, width / (2 * scale), world.width - width / (2 * scale));
     y = limit(y, height / (2 * scale), world.height - height / (2 * scale));
     room.style.transform = `translate(${width / 2 - x * scale}px, ${height / 2 - y * scale}px) scale(${scale})`;
-    viewport.cameraState = {width,height,x,y,scale};
+    viewport.cameraState = {width,height,x,y,scale,world,zoom:SCENE.zoom,anchors:SCENE.anchors};
     viewport.dispatchEvent(new CustomEvent('roomcamerachange', {detail:viewport.cameraState}));
   }
   function local(event) {
@@ -22,7 +30,7 @@
   }
   const toWorld = p => ({x:x + (p.x - width / 2) / scale, y:y + (p.y - height / 2) / scale});
   function anchored(anchor, at, nextScale) {
-    scale = limit(nextScale, cover(), cover() * 3);
+    scale = limit(nextScale, cover()*SCENE.zoom.min, cover()*SCENE.zoom.max);
     x = anchor.x - (at.x - width / 2) / scale;
     y = anchor.y - (at.y - height / 2) / scale;
     draw();
@@ -45,6 +53,7 @@
     viewport.classList.remove('is-dragging');
   }
   viewport.addEventListener('pointerdown', event => {
+    if(!enabled())return;
     if (event.pointerType === 'mouse' && event.button !== 0) return;
     keyboard = false;
     if (!pointers.size) blocked = false;
@@ -82,10 +91,12 @@
   }
   for (const type of ['pointerup','pointercancel','lostpointercapture']) window.addEventListener(type, release);
   viewport.addEventListener('click', event => {
+    if(!enabled())return;
     if (blocked && event.detail !== 0) {event.preventDefault();event.stopImmediatePropagation();}
   }, true);
   viewport.addEventListener('dragstart', event => event.preventDefault());
   viewport.addEventListener('wheel', event => {
+    if(!enabled())return;
     event.preventDefault();
     if (pointers.size) return;
     const p = local(event);
@@ -99,7 +110,7 @@
     if (!link || (!keyboard && !link.matches(':focus-visible'))) return;
     reset();
     const bounds = link.getBBox();
-    scale = Math.min(scale, Math.max(cover(), Math.min(width/(bounds.width+40),height/(bounds.height+40))));
+    scale = Math.min(scale, Math.max(cover()*SCENE.zoom.min, Math.min(width/(bounds.width+world.width*.026),height/(bounds.height+world.height*.039))));
     x = bounds.x+bounds.width/2;
     y = bounds.y+bounds.height/2;
     draw();
@@ -112,17 +123,22 @@
     else if (['+','=','-'].includes(event.key)) {event.preventDefault();scale*=event.key==='-'?1/1.2:1.2;draw();}
   });
   function resize() {
+    if(!enabled())return;
     const previousCover = width && height ? cover() : 0;
-    const zoom = previousCover ? scale/previousCover : 1;
+    const zoom = previousCover ? scale/previousCover : SCENE.zoom.initial;
     const rect = viewport.getBoundingClientRect();
     width = Math.max(1,rect.width); height = Math.max(1,rect.height);
-    if (!previousCover) x = width < height ? world.width * .30 : world.width/2;
+    if (!previousCover) {
+      const center = width < height ? SCENE.centers.portrait : SCENE.centers.landscape;
+      x = world.width*center[0]; y = world.height*center[1];
+    }
     reset(); blocked = true;
     scale = cover()*zoom;
     draw();
     viewport.scrollLeft = viewport.scrollTop = 0;
   }
   window.addEventListener('blur', () => {blocked=true;reset();});
+  viewport.addEventListener('roomviewchange',()=>{reset();if(enabled())resize();});
   new ResizeObserver(resize).observe(viewport);
   resize();
 })();

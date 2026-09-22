@@ -1,0 +1,56 @@
+{
+  "method": "Pure WebGL perspective reprojection using frozen runtime renderer; no artwork edits",
+  "source": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/house-menu/room-panorama-v3.webp",
+  "sourceSha256": "efc3a9ddf626ce3cd411e1cfd57945854f220eea3b0cf29d5117a7bfa80d1187",
+  "shaderSource": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/home-panorama-gl.js",
+  "shaderSha256": "49f92c303cb34b87fafa30d339943d128ae697a47510d8f438f468fdd01494e8",
+  "devicePixelRatio": 1,
+  "textureFilter": "LINEAR",
+  "textureWrap": "CLAMP_TO_EDGE",
+  "faces": [
+    {
+      "name": "front",
+      "file": "front.png",
+      "yawRadians": 0,
+      "pitchRadians": 0,
+      "fovDegrees": 110,
+      "width": 1024,
+      "height": 1024,
+      "bytes": 2018977,
+      "sha256": "8138091765caba90cc24e23f1808b0362d55068c743ae62e5420604209e1719e"
+    },
+    {
+      "name": "rear",
+      "file": "rear.png",
+      "yawRadians": 3.141592653589793,
+      "pitchRadians": 0,
+      "fovDegrees": 110,
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1631329,
+      "sha256": "9949c769a2b47cd694a6719de85ec879d47a332ba02d8886f429f66d3e1a192f"
+    },
+    {
+      "name": "up",
+      "file": "up.png",
+      "yawRadians": 0,
+      "pitchRadians": 1.5707963267948966,
+      "fovDegrees": 110,
+      "width": 1024,
+      "height": 1024,
+      "bytes": 1727894,
+      "sha256": "348bcb4fe97347da178baa1053022b9ef131e6f310783fa0d028782335be336a"
+    },
+    {
+      "name": "down",
+      "file": "down.png",
+      "yawRadians": 0,
+      "pitchRadians": -1.5707963267948966,
+      "fovDegrees": 110,
+      "width": 1024,
+      "height": 1024,
+      "bytes": 2160596,
+      "sha256": "d43be9eb67be6a7555314633ea572430a30a95b0de5fd67f7315af8194b98df3"
+    }
+  ]
+}

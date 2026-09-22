@@ -14,13 +14,13 @@ async function measure(page) {
     const rect=selector=>{const r=document.querySelector(selector).getBoundingClientRect();return{x:r.x,y:r.y,width:r.width,height:r.height,right:r.right,bottom:r.bottom};};
     return {room:rect('.room'),art:rect('.room-art'),links:rect('.room-links'),flags:rect('.language-picker'),
       width:innerWidth,height:innerHeight,scrollWidth:document.documentElement.scrollWidth,scrollHeight:document.documentElement.scrollHeight,
-      browserScale:visualViewport.scale,lang:document.documentElement.lang};
+      browserScale:visualViewport.scale,lang:document.documentElement.lang,camera:document.querySelector('.room-fit').cameraState};
   });
 }
 async function filled(page) {
   const m=await measure(page);
   assert(m.art.x<=1&&m.art.y<=1&&m.art.right>=m.width-1&&m.art.bottom>=m.height-1,'Artwork fills viewport without empty bands');
-  close(m.art.width/m.art.height,1.5,'Artwork native aspect',.001);
+  close(m.art.width/m.art.height,m.camera.world.width/m.camera.world.height,'Artwork native aspect',.001);
   for(const field of ['x','y','width','height'])close(m.art[field],m.links[field],'SVG registration '+field,.2);
   assert(m.scrollWidth<=m.width&&m.scrollHeight<=m.height,'No document overflow');
   close(m.browserScale,1,'Browser viewport remains unzoomed',.01);
@@ -31,6 +31,7 @@ async function home(page,lang) {
   const url=new URL(base);url.searchParams.set('lang',lang);
   await page.goto(url.href);
   await page.locator('.room-art').evaluate(image=>image.decode());
+  await page.waitForFunction(()=>document.querySelector('.room-fit').cameraState);
   await page.waitForTimeout(100);
   return filled(page);
 }
@@ -57,8 +58,7 @@ async function keyboardReveal(page,id) {
   await filled(page);
 }
 async function hotspotPoint(page,id) {
-  const world=id==='door-link'?[350,360]:[1220,340];
-  const m=await measure(page),point={x:m.room.x+world[0]*m.room.width/1536,y:m.room.y+world[1]*m.room.height/1024};
+  const point=await page.evaluate(id=>{const viewport=document.querySelector('.room-fit'),c=viewport.cameraState,a=c.anchors[id],source=[a[0]*c.world.width,a[1]*c.world.height],p=viewport.depthView?.project(source)||source;return{x:(p[0]-c.x)*c.scale+c.width/2,y:(p[1]-c.y)*c.scale+c.height/2};},id);
   assert.equal(await page.evaluate(p=>document.elementFromPoint(p.x,p.y)?.closest('a')?.id,point),id,'Visible touch target matches artwork');
   return point;
 }
@@ -69,7 +69,9 @@ async function verify(viewport,lang,mobile) {
   page.on('pageerror',error=>errors.push(error.message));
   const cdp=await context.newCDPSession(page),name=viewport.width+'x'+viewport.height;
   try {
-    const initial=await home(page,lang),minimum=initial.room.width;
+    const initial=await home(page,lang),coverWidth=Math.max(viewport.width/initial.camera.world.width,viewport.height/initial.camera.world.height)*initial.camera.world.width,minimum=coverWidth*initial.camera.zoom.min;
+    close(initial.room.width,coverWidth*initial.camera.zoom.initial,'Configured initial zoom');
+    assert(initial.room.width>viewport.width+2&&initial.room.height>viewport.height+2,'Initial camera permits travel on both axes');
     await page.screenshot({path:path.join(out,name+'-initial.png')});
     const anchor={x:viewport.width*.5,y:viewport.height*.4};
     if(mobile)await pinch(cdp,anchor,40,60);
@@ -105,10 +107,12 @@ async function verify(viewport,lang,mobile) {
     }
     if(mobile) {
       for(let i=0;i<3;i++)await pinch(cdp,anchor,20,100);
-      close((await filled(page)).room.width,minimum*3,'Maximum zoom clamp',3);
+      close((await filled(page)).room.width,coverWidth*initial.camera.zoom.max,'Maximum zoom clamp',3);
       for(let i=0;i<4;i++)await pinch(cdp,anchor,100,20);
     } else {await page.mouse.wheel(0,100000);await page.waitForTimeout(100);}
-    close((await filled(page)).room.width,minimum,'Minimum cover zoom clamp');
+    const minimumView=await filled(page);
+    close(minimumView.room.width,minimum,'Configured minimum zoom clamp');
+    assert(minimumView.room.width>viewport.width+2&&minimumView.room.height>viewport.height+2,'Both axes remain pannable at minimum zoom');
     // An actual touch drag starting on each link cannot follow that link.
     for(const id of ['door-link','bookcase-link']) {
       await home(page,lang);await keyboardReveal(page,id);
@@ -128,10 +132,10 @@ async function verify(viewport,lang,mobile) {
     if(mobile) {
       await pinch(cdp,anchor,40,60);
       await drag(cdp,{x:viewport.width*.2,y:viewport.height*.5},{x:viewport.width*.8,y:viewport.height*.7});
-      const beforeRotate=await filled(page),zoomBefore=beforeRotate.room.width/(Math.max(viewport.width/1536,viewport.height/1024)*1536);
+      const beforeRotate=await filled(page),zoomBefore=beforeRotate.room.width/(Math.max(viewport.width/beforeRotate.camera.world.width,viewport.height/beforeRotate.camera.world.height)*beforeRotate.camera.world.width);
       await page.setViewportSize({width:viewport.height,height:viewport.width});
       await page.waitForTimeout(150);const rotated=await filled(page);
-      close(rotated.room.width/(Math.max(viewport.height/1536,viewport.width/1024)*1536),zoomBefore,'Rotation retains zoom while clamping position',.02);
+      close(rotated.room.width/(Math.max(viewport.height/rotated.camera.world.width,viewport.width/rotated.camera.world.height)*rotated.camera.world.width),zoomBefore,'Rotation retains zoom while clamping position',.02);
       await page.screenshot({path:path.join(out,name+'-rotated.png')});
     }
     for(const next of ['ru','en','es']) {

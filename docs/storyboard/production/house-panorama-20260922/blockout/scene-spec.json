@@ -1,0 +1,48 @@
+{
+  "roomMeters": [
+    6,
+    6
+  ],
+  "eavesHeight": 2.7,
+  "ridgeHeight": 3.5,
+  "cameraPosition": [
+    0,
+    0,
+    1.15
+  ],
+  "forwardWorldAxis": "+Y",
+  "frontUV": [
+    0.5,
+    0.5
+  ],
+  "projection": "EQUIRECTANGULAR",
+  "longitudeRange": [
+    -3.141592653589793,
+    3.141592653589793
+  ],
+  "latitudeRange": [
+    -1.5707963267948966,
+    1.5707963267948966
+  ],
+  "resolution": [
+    2048,
+    1024
+  ],
+  "windowCenters": [
+    [
+      -1.15,
+      3,
+      1.4
+    ],
+    [
+      1.15,
+      3,
+      1.4
+    ]
+  ],
+  "windowDiameter": 0.85,
+  "doorWidth": 1,
+  "doorCrownHeight": 2.2,
+  "renderSamples": 48,
+  "seed": 0
+}
