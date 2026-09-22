@@ -1,0 +1,11 @@
+
+> build:pages
+> node tools/assets/build-pages.cjs --check
+
+{
+  "files": 598,
+  "managedProduction": 502,
+  "bytes": 755844681,
+  "budget": 950000000,
+  "check": true
+}

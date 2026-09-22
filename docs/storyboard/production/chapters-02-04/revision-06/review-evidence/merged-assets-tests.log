@@ -1,0 +1,89 @@
+
+> test:assets
+> node --test tools/assets/*.test.cjs scripts/atlas-camera-return.test.cjs
+
+✔ camera storage rejects malformed, non-finite, nonnumeric and out-of-range values (7.119375ms)
+✔ boot cannot overwrite stored camera before restore; zoom is relative to cover (1.330375ms)
+✔ family preview never overwrites the saved reading camera (0.426583ms)
+✔ a stored overview restores using explicit fit semantics (0.547ms)
+✔ camera storage accepts negative and expanded positions through the full navigation bounds (2.159917ms)
+﹣ hardware Chrome: reload, clamping, language menu, preview and wheel anchor (0.120541ms) # SKIP
+✔ production-only stage preserves code, runtime JSON/fonts and assets without HF or local archives (12.666416ms)
+✔ generation metadata sidecars stay local while runtime focus data ships (4.925667ms)
+✔ checks every managed production file including unreferenced files (2.372458ms)
+✔ missing production fails but unavailable archives do not (1.294375ms)
+✔ unmanaged binary fails closed (1.576542ms)
+✔ rejects selected symlinks but does not follow excluded archive links (2.225291ms)
+✔ budget is strictly below the cap and cannot be raised (2.249333ms)
+✔ rejects malformed, duplicate, unsafe and excluded production manifest entries (1.960125ms)
+✔ HTML, CSS, module, runtime JSON and srcset dangling references fail with file/line (7.275167ms)
+✔ JSON provenance can point to an archive; live paths and query strings still checked (2.556ms)
+✔ story image URLs resolve against the document and focus data against its JSON (2.557708ms)
+✔ direct runtime and fallback references cannot silently use default-archived assets (2.797042ms)
+✔ never replaces existing destinations or writes into source trees (4.329417ms)
+✔ catalog hashes binary assets, totals Pages files, and produces content-addressed keys (10.8615ms)
+✔ unclassified additions fail; explicit archive assignment refreshes the catalog (3.912458ms)
+✔ structured manifests discover new production, preserve every cover status, and ignore source-video metadata (3.757083ms)
+✔ opt-in unreferenced archives need no path entry and promote when registered (4.998625ms)
+✔ new story manifests and sprite frame keys extend production automatically (2.023375ms)
+✔ missing archives retain their exact previous identities, missing production fails (2.653ms)
+✔ missing production manifest references fail even if prior archives exist (2.584375ms)
+✔ managed symlink directories retain logical paths and absent targets can use archived identities (2.731167ms)
+✔ unmanaged links, cycles, and broken first-time managed targets fail (1.764209ms)
+✔ skip bytecode and backups but keep provenance outside the binary catalog (3.177458ms)
+✔ previous manifest validation rejects unsafe paths, duplicate paths, identities, and bucket mismatch (1.619542ms)
+✔ generated ignore is root-anchored and verification plan is not a success receipt (1.588958ms)
+{
+  "production": {
+    "files": 1,
+    "bytes": 10
+  },
+  "archive": {
+    "files": 1,
+    "bytes": 7
+  },
+  "retainedMissingArchiveFiles": 0,
+  "nonAssetFiles": 1,
+  "nonAssetBytes": 21,
+  "projectedPagesBytes": 31
+}
+{
+  "production": {
+    "files": 1,
+    "bytes": 10
+  },
+  "archive": {
+    "files": 1,
+    "bytes": 7
+  },
+  "retainedMissingArchiveFiles": 0,
+  "nonAssetFiles": 1,
+  "nonAssetBytes": 21,
+  "projectedPagesBytes": 31
+}
+✔ CLI refresh and check are deterministic; stale output and unknown additions do not write (4.91925ms)
+✔ missing, incomplete, or mismatched receipts refuse all Git changes (44.767834ms)
+✔ receipt verification covers every archive and no production or extra paths (34.92175ms)
+✔ path traversal, absolute paths, secret paths, and malformed objects fail closed (33.030084ms)
+✔ local edits after upload abort before index or ignore changes, even at equal size (55.931792ms)
+✔ unverified staged archive bytes are preserved even when working bytes match the receipt (80.35875ms)
+✔ verified staged modifications untrack while working files and production remain (175.4175ms)
+✔ missing locally archived files are accepted with a complete verified receipt (94.977917ms)
+✔ dry-run application makes no filesystem or index changes (67.311583ms)
+✔ outside ignore content is preserved and metacharacter paths are exact (121.467916ms)
+✔ fully archived managed directory symlink is ignored and untracked without deleting target or link (135.26925ms)
+✔ changed staged managed link target is retained even when current archive bytes verify (99.3895ms)
+✔ unknown files or production children prevent ignoring or untracking a parent symlink (253.2915ms)
+✔ unmanaged symlinks and .gitignore symlinks cannot cause writes outside root (74.640584ms)
+✔ no archives pending means no Git writes or blanket git rm (29.229083ms)
+✔ cache must be outside the checkout, including aliases through a symlink (30.556209ms)
+✔ CLI apply-receipt reports a missing receipt without modifying Git (60.572083ms)
+✔ CLI dry-run uses current catalog in memory without writing a manifest or contacting HF (88.329417ms)
+ℹ tests 49
+ℹ suites 0
+ℹ pass 48
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 1
+ℹ todo 0
+ℹ duration_ms 1534.2915
