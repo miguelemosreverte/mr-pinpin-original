@@ -1,0 +1,2871 @@
+{
+  "schemaVersion": 1,
+  "started": "2026-09-22T10:46:02.885Z",
+  "sourceRoot": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source",
+  "sourceCommit": "42f820d93d8e012527d409b9a98c0d21b53b2f41",
+  "encoding": {
+    "format": "JPEG",
+    "quality": 92,
+    "resize": false,
+    "originalsModified": false
+  },
+  "artwork": [
+    {
+      "source": "images/covers/chapter-01/title-en-v1.png",
+      "sourceSha256": "f86d2976933a59ba1dd1a017d3aac3e276d10520a6ed127552a1dbce80f6fb88",
+      "sourceBytes": 2996200,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f86d2976933a59ba1dd1a017d3aac3e276d10520a6ed127552a1dbce80f6fb88.jpg",
+      "sha256": "2d1f4f5b2f3b0fff02ae6c9c91175f89e1e18141e74ab801ff44b9eb2606ae96",
+      "bytes": 848731,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/chapter-01-direct/01a.png",
+      "sourceSha256": "fa4d444d6c879bab8fa520e4aaaa84a87f79d4ddd3377dfa1bf45d3da1b3fb6a",
+      "sourceBytes": 3440282,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/fa4d444d6c879bab8fa520e4aaaa84a87f79d4ddd3377dfa1bf45d3da1b3fb6a.jpg",
+      "sha256": "737c9e2da9ad73c8a48c4d39857c9f7a2a62d85569242b44dd178564162e7fe6",
+      "bytes": 907036,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-direct/01b-anatomy-v2.png",
+      "sourceSha256": "05453b3a9070b43ca81c0d55b8c7c6ead960279843924d7c7c1fba0de0b9d14b",
+      "sourceBytes": 3320205,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/05453b3a9070b43ca81c0d55b8c7c6ead960279843924d7c7c1fba0de0b9d14b.jpg",
+      "sha256": "6d817da240f8c93544709a776e68f65c2c24bfa22a0f7880a95ba03d100fbb8c",
+      "bytes": 820797,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-direct/01c.png",
+      "sourceSha256": "7c29f1a56f2e2b8202eba8634e86a9dbc41fd6d9603d3ffc3ea0dfeb567c8c3f",
+      "sourceBytes": 3385080,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/7c29f1a56f2e2b8202eba8634e86a9dbc41fd6d9603d3ffc3ea0dfeb567c8c3f.jpg",
+      "sha256": "f0eee3bbe12d64c065f30c9c262daff0c2180aa0369a33005baea775a407e434",
+      "bytes": 833091,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-direct/02-anatomy-v2.png",
+      "sourceSha256": "abbc9180f31b8c930264777108e391c12977981e0e49d29375ffa1d2c2163c1b",
+      "sourceBytes": 3256800,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/abbc9180f31b8c930264777108e391c12977981e0e49d29375ffa1d2c2163c1b.jpg",
+      "sha256": "ee2ea528e9cc9d373e560801a3123878e8e4ca933dfd1fbc84e218e3fb805f41",
+      "bytes": 746329,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-direct/03.png",
+      "sourceSha256": "14531764fb1e29909146b68461849d5ba51f65a84732804f4da95740fa562b83",
+      "sourceBytes": 3558123,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/14531764fb1e29909146b68461849d5ba51f65a84732804f4da95740fa562b83.jpg",
+      "sha256": "90d9972b52de5109feece83df7f48ce72b477242aa3d6d8ceafbea890487585b",
+      "bytes": 853966,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-direct/04.png",
+      "sourceSha256": "6347a525e67bef9d5eb5cdf5db3d2448b5c6055e5213cf0f8d313cc23790ee62",
+      "sourceBytes": 3522125,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6347a525e67bef9d5eb5cdf5db3d2448b5c6055e5213cf0f8d313cc23790ee62.jpg",
+      "sha256": "18ff90b2a5e2273ba62c1eb98a223a6da015ac2d24568f635f7286ac93eecd59",
+      "bytes": 839242,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-direct/05.png",
+      "sourceSha256": "d6c12cebd00c35627dad9ad1699298004f1b5872b2462661219176b43b73cdc4",
+      "sourceBytes": 3420971,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d6c12cebd00c35627dad9ad1699298004f1b5872b2462661219176b43b73cdc4.jpg",
+      "sha256": "9388475b88b4ddd26e089432cb8693a512020969fc32bccf4cee3bad6216a52f",
+      "bytes": 827139,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-direct/06.png",
+      "sourceSha256": "247b6ff66079b50d1a00327fe15903322e1799a3488f5e75521d055ad1ff7c5b",
+      "sourceBytes": 3274783,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/247b6ff66079b50d1a00327fe15903322e1799a3488f5e75521d055ad1ff7c5b.jpg",
+      "sha256": "5309dde2e5f05af9ee00851ff82439ee80e3487146f6bbdc0506fb151efdba46",
+      "bytes": 796353,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-direct/07.png",
+      "sourceSha256": "b5c5be53e0601118d02d89ada94480c59fa6fa00e7219c72fd1f304e768a2659",
+      "sourceBytes": 3047799,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b5c5be53e0601118d02d89ada94480c59fa6fa00e7219c72fd1f304e768a2659.jpg",
+      "sha256": "d5c6a2006dc95e7f6a89ecd234e1a87bd163cec244b219bf92fc0fc4c9529542",
+      "bytes": 732472,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-direct/08.png",
+      "sourceSha256": "04fb1f25083db7f968fcf17087d2eed5d8b89f152c96bd412a07986553ca437e",
+      "sourceBytes": 2929021,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/04fb1f25083db7f968fcf17087d2eed5d8b89f152c96bd412a07986553ca437e.jpg",
+      "sha256": "ec23e03e5f2744680589828d0fd41efc38129e469b2d85f30b51eb812ed407ce",
+      "bytes": 738472,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-landscapes/shot-09.png",
+      "sourceSha256": "2e6779fc7809a152751167fd46e975f615fe4bdc963d968a9ce19ec9182d8fce",
+      "sourceBytes": 2963460,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/2e6779fc7809a152751167fd46e975f615fe4bdc963d968a9ce19ec9182d8fce.jpg",
+      "sha256": "d7a833e188fc89b119aed288d3aed6878b954027a6bb48ed2d1adc33b14abb68",
+      "bytes": 760764,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-landscapes/shot-10.png",
+      "sourceSha256": "d79564c62359dfd19f5042ea4aa9882c5ffefa5619ade375e9ceacb76ffd86cd",
+      "sourceBytes": 3009536,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d79564c62359dfd19f5042ea4aa9882c5ffefa5619ade375e9ceacb76ffd86cd.jpg",
+      "sha256": "119844825a526b3e5911c16160bc7866edc9d7968988ad2043ce3328a973d910",
+      "bytes": 779713,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-landscapes/shot-11.png",
+      "sourceSha256": "1aded5b89f874bb13a60990767b8af68f032c4c31adbf55d0f43abeceae1a1a3",
+      "sourceBytes": 3146521,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/1aded5b89f874bb13a60990767b8af68f032c4c31adbf55d0f43abeceae1a1a3.jpg",
+      "sha256": "14193c9a2a3d3ba3a6f905a37b61db9a1c634bfbef71f4fe71689d94e0155292",
+      "bytes": 824014,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-landscapes/shot-12.png",
+      "sourceSha256": "b1dda48aad24105ff100a0ed809c3cc7b723013263c3a2c6b6a2005adf9e9bbe",
+      "sourceBytes": 3079696,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b1dda48aad24105ff100a0ed809c3cc7b723013263c3a2c6b6a2005adf9e9bbe.jpg",
+      "sha256": "0525c36e760d83499bdbaba767d6e0a1d5cc745906f8a12804e20339c6c0a324",
+      "bytes": 825027,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-01-direct/12-wet-hello.png",
+      "sourceSha256": "432055d7de586ac289d202a8d4d7604f0798110dc57c0d192f7b32515eb40a9a",
+      "sourceBytes": 2867243,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/432055d7de586ac289d202a8d4d7604f0798110dc57c0d192f7b32515eb40a9a.jpg",
+      "sha256": "ea82140db932fa6ac1c1413eb252bf233a82a9c36c4436c5fc698a501de7ceb8",
+      "bytes": 718594,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/covers/chapter-01/title-ru-v1.png",
+      "sourceSha256": "5f519b21218b7b4d402dc0fd267f4dc75c94a5e0bf06d98d532c473d2cb411b6",
+      "sourceBytes": 3058401,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/5f519b21218b7b4d402dc0fd267f4dc75c94a5e0bf06d98d532c473d2cb411b6.jpg",
+      "sha256": "77a3b47123535e504b89ae68e874086b7472755a641e901aef65508b0e501225",
+      "bytes": 879782,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/covers/chapter-01/title-es-v1.png",
+      "sourceSha256": "bda3f2f92cf50df3c19b9d265d24c6398421cb6d313f538dfceed3a73862d6bb",
+      "sourceBytes": 2993019,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/bda3f2f92cf50df3c19b9d265d24c6398421cb6d313f538dfceed3a73862d6bb.jpg",
+      "sha256": "11406e87af6dafd4d1ebb3903ef587f8b3f2d3e5f32cc3c17323d1dd2de1badd",
+      "bytes": 848857,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/covers/chapter-02/title-en-v1.png",
+      "sourceSha256": "6391b25525e92fa4294472af7098f0ed7141fc6791e0a965d63d8be6d4e8da36",
+      "sourceBytes": 3105051,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6391b25525e92fa4294472af7098f0ed7141fc6791e0a965d63d8be6d4e8da36.jpg",
+      "sha256": "534f23ea3a78bbb7bba6818a24fe314c02567d6dd38c17a4dfcfd15791da6be5",
+      "bytes": 889772,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-01.png",
+      "sourceSha256": "981faf03fa57ad8d62b0fd5582e824909441a46b3ab63276ddbb51fc2dd95cf2",
+      "sourceBytes": 3580882,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/981faf03fa57ad8d62b0fd5582e824909441a46b3ab63276ddbb51fc2dd95cf2.jpg",
+      "sha256": "d683a154af87cebd4ad2e32920a6bbbed5e7c99aeb43b310895c21fa5c1c334c",
+      "bytes": 954230,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-02.png",
+      "sourceSha256": "fb291a687655256d0939e9225c3d44ef70adce798e27e269a5a5f98f410d5922",
+      "sourceBytes": 3034433,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/fb291a687655256d0939e9225c3d44ef70adce798e27e269a5a5f98f410d5922.jpg",
+      "sha256": "d15a1a37831e8f77732bd7f60bd48e0abd06aad72a5b84121f55b9894a250e2b",
+      "bytes": 756152,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-03.png",
+      "sourceSha256": "5928f1ed8d76494092917b9e952a5ccd3517bbc3afb113705bf7a315a297e0c5",
+      "sourceBytes": 3237306,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/5928f1ed8d76494092917b9e952a5ccd3517bbc3afb113705bf7a315a297e0c5.jpg",
+      "sha256": "919afca7622e60af83d834265f8f0c1763ddca4f641b1965b1ad45cbbbe4136f",
+      "bytes": 860646,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-04.png",
+      "sourceSha256": "6da2507ed872edcb1d06002a225e8e5d7fe0e362813caa5e7ff38c3650c7842e",
+      "sourceBytes": 3335453,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6da2507ed872edcb1d06002a225e8e5d7fe0e362813caa5e7ff38c3650c7842e.jpg",
+      "sha256": "c6de0f0e373f2bfc4358c752d3c8b74ee2a4cb46542bd33964797ec5ee34c91b",
+      "bytes": 865240,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-05.png",
+      "sourceSha256": "b0bfd5c627b9545813ad7b9fb00e627c98dc7ffb341624a0d3d32fec27fe438a",
+      "sourceBytes": 3388861,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b0bfd5c627b9545813ad7b9fb00e627c98dc7ffb341624a0d3d32fec27fe438a.jpg",
+      "sha256": "2ccc5ce44c9c24407c2b097353c8e3dd9fcf456c4d16e4fae8b8d97e30fb0782",
+      "bytes": 887445,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-landscapes/shot-07.png",
+      "sourceSha256": "a7d4dfb718ce516bd2074ca5d0a4a6d8a3b41d8d8b63dd64234a05a5a1e2cd06",
+      "sourceBytes": 3314643,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a7d4dfb718ce516bd2074ca5d0a4a6d8a3b41d8d8b63dd64234a05a5a1e2cd06.jpg",
+      "sha256": "f72437973cb968128113b5a787be6c884f4a3729720c7631bb18791716aaaf28",
+      "bytes": 927573,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-07.png",
+      "sourceSha256": "7e84f07482f6dd6c9521e1041045c2f4ee3fa8af0a31d84e90eccbe12da01f9b",
+      "sourceBytes": 3285542,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/7e84f07482f6dd6c9521e1041045c2f4ee3fa8af0a31d84e90eccbe12da01f9b.jpg",
+      "sha256": "423638e58b533872860576e18f2fd1b2477a9e26d45ba57245efa0849fa7e367",
+      "bytes": 856905,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-08.png",
+      "sourceSha256": "75be3463d9b0f1d375ed4d3be319fa18e8836828ad43fd83d555618ca5882626",
+      "sourceBytes": 3145868,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/75be3463d9b0f1d375ed4d3be319fa18e8836828ad43fd83d555618ca5882626.jpg",
+      "sha256": "8363ffe7229318dec24356edf77d38191a4383e8e22aa066d19bf3fe9f2713e4",
+      "bytes": 745072,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-09.png",
+      "sourceSha256": "0c6980bfa7278e8f4402b6526784efde08d8d8904720d1d4794191a79075e2ad",
+      "sourceBytes": 3461190,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/0c6980bfa7278e8f4402b6526784efde08d8d8904720d1d4794191a79075e2ad.jpg",
+      "sha256": "415bab23e273bcb981d16ebe5e5b103afb5b353f4a7071a4219d2b94bc639855",
+      "bytes": 959886,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-10-v2.png",
+      "sourceSha256": "011518e7465d8f30651d2b76cdac1639d75502419f30a36997414bcf530d5ebd",
+      "sourceBytes": 3180749,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/011518e7465d8f30651d2b76cdac1639d75502419f30a36997414bcf530d5ebd.jpg",
+      "sha256": "54d0d0d5660b1bbbf0e492e01ea6f12a9c6ecf50299d7cb05d184954f6c2cffc",
+      "bytes": 853745,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-11.png",
+      "sourceSha256": "478c566352c9138bb31659323e918b44305bad238a3d145f0f8901aef32cea0b",
+      "sourceBytes": 3186817,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/478c566352c9138bb31659323e918b44305bad238a3d145f0f8901aef32cea0b.jpg",
+      "sha256": "ebd54ba718e25bd0f700d5efa048540bcf4fc80c09af47f3a85a557dc54761a7",
+      "bytes": 766737,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-12-v3.png",
+      "sourceSha256": "2f54b2e08b9ed4912df510bd2b235292209a18bc00cee666215f0920d66c3077",
+      "sourceBytes": 3118478,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/2f54b2e08b9ed4912df510bd2b235292209a18bc00cee666215f0920d66c3077.jpg",
+      "sha256": "4832cd63057510a4fab2a0fdcde368875035410ca6dd51f9c9d62426abba578a",
+      "bytes": 813865,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-landscapes/shot-11.png",
+      "sourceSha256": "ed8c8cd5aec094c7376611b4e795e52bf7f981bb6374713464bdad6776941ac2",
+      "sourceBytes": 3346789,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ed8c8cd5aec094c7376611b4e795e52bf7f981bb6374713464bdad6776941ac2.jpg",
+      "sha256": "c879d66c5dc61e966103750a27a4953b74d49506d2e405a8177a08da9b4c8311",
+      "bytes": 891539,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-14.png",
+      "sourceSha256": "b6055c20c54deaf4395ec046b235270b0643912c8f854273c9df68e125df0d9d",
+      "sourceBytes": 3246442,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b6055c20c54deaf4395ec046b235270b0643912c8f854273c9df68e125df0d9d.jpg",
+      "sha256": "2415dcbeeb3245534321d1ec770ba50aefe33d99b60aafafcaf2b7e50b4bb2b8",
+      "bytes": 905013,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-landscapes/shot-12.png",
+      "sourceSha256": "be3ad4fb9bf49d1a0edf01f55cd4687cfe7aa82180569f67e1b47de9e3806b07",
+      "sourceBytes": 2922111,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/be3ad4fb9bf49d1a0edf01f55cd4687cfe7aa82180569f67e1b47de9e3806b07.jpg",
+      "sha256": "f0f65e424319a951353cd4402e2d3def013334d8a3aaf07853afd983795589ac",
+      "bytes": 728239,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/chapter-02-direct/scene-16.png",
+      "sourceSha256": "2499684d397172d25d07598db6fb5cc8b2602c9d162b83f867b8d1f44029e985",
+      "sourceBytes": 2851243,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/2499684d397172d25d07598db6fb5cc8b2602c9d162b83f867b8d1f44029e985.jpg",
+      "sha256": "d113a64e41e994b126065a536e6b13713b9d07f9ce066f02b297f939a671476f",
+      "bytes": 702424,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/covers/chapter-02/title-ru-v1.png",
+      "sourceSha256": "de91546612898eca6dcdfe27eddf6e6735e283d8d1a7fc50bd082a64f993b657",
+      "sourceBytes": 3199768,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/de91546612898eca6dcdfe27eddf6e6735e283d8d1a7fc50bd082a64f993b657.jpg",
+      "sha256": "225e04c903efc6b79f1bb8faedde2f5b75c78f742d00f0726680dbea6427d386",
+      "bytes": 924322,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/covers/chapter-02/title-es-v1.png",
+      "sourceSha256": "f3c7dfd4d73f74b48700e0f75bad286fe11d83ca2a46d4cccfaf96a43cc2c3b7",
+      "sourceBytes": 3124674,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f3c7dfd4d73f74b48700e0f75bad286fe11d83ca2a46d4cccfaf96a43cc2c3b7.jpg",
+      "sha256": "b735b62e6e6a3b195a8acfb3de3ca4adff5602cd71e17dd459058203e4c30321",
+      "bytes": 898298,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/covers/timber-tractor/title-en-v1.png",
+      "sourceSha256": "7a1fe5c3178bdf0914c080440d15715416161be3f78566d2cfcc67197f585cd6",
+      "sourceBytes": 3215667,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/7a1fe5c3178bdf0914c080440d15715416161be3f78566d2cfcc67197f585cd6.jpg",
+      "sha256": "9d689d497e6e5ff5a8e1c9034059154eb39698d6bcc08ae127f5eb0db5140be6",
+      "bytes": 905537,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-02.png",
+      "sourceSha256": "371c5ce2a70bb2acc32460826ce765356b3173a6f12470755d40697673af5b4a",
+      "sourceBytes": 3612436,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/371c5ce2a70bb2acc32460826ce765356b3173a6f12470755d40697673af5b4a.jpg",
+      "sha256": "0f9fc04b9457cd0c4afe3f7ceb04e1b84b81dcfb733642e214d3c144549dfbf7",
+      "bytes": 1040588,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-03.png",
+      "sourceSha256": "cd6fc9a3e01decb743ce5c999fb4eca7ccfccd568115695c492ac9e9cacdaba4",
+      "sourceBytes": 3523708,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/cd6fc9a3e01decb743ce5c999fb4eca7ccfccd568115695c492ac9e9cacdaba4.jpg",
+      "sha256": "0a692e0471c1100f7a1584047a98a5cc4dbc4190b6b12d583405e4b5b81c66c7",
+      "bytes": 1016764,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-04.png",
+      "sourceSha256": "264af70e3a8b5b7dcff141722a2a1e7396dc217cce7daab4e644480bd162688a",
+      "sourceBytes": 3844330,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/264af70e3a8b5b7dcff141722a2a1e7396dc217cce7daab4e644480bd162688a.jpg",
+      "sha256": "a784aad3d7f281547b2387755bf87a630de36d2bb0ec0381df44c270a91dacdc",
+      "bytes": 1088893,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-05-v4.png",
+      "sourceSha256": "c82468829d505d5728ed8e006bd1f98f02581147cf3e74efe3b7962f7ec14b56",
+      "sourceBytes": 2440025,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/c82468829d505d5728ed8e006bd1f98f02581147cf3e74efe3b7962f7ec14b56.jpg",
+      "sha256": "3b05101331389d04b195c210dbe5ab41f0b8af5a9661b4d246d13a8fb58ec40e",
+      "bytes": 587041,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-06-v2.png",
+      "sourceSha256": "6fa560eed0544f10150de9b99e2f667dc794b54ec43ed8e084d5c19084bea81b",
+      "sourceBytes": 3185930,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6fa560eed0544f10150de9b99e2f667dc794b54ec43ed8e084d5c19084bea81b.jpg",
+      "sha256": "5c7ed0669ca7725a941168c33b9d2d45e2b75b8359803c92b91d0031c60f7058",
+      "bytes": 863283,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-07-v4.png",
+      "sourceSha256": "5f14370771d4986a89d2ae8aea91f97362678e6debe84b5adfc085ae0a4899e4",
+      "sourceBytes": 3373938,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/5f14370771d4986a89d2ae8aea91f97362678e6debe84b5adfc085ae0a4899e4.jpg",
+      "sha256": "f28119834896cf16866e777cbab8df89b8aae79a19e5ca7d90d3af793ffc437f",
+      "bytes": 955509,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-08-v2.png",
+      "sourceSha256": "716ac1c3e43c6dabd18fb0a7c7af9e680e83642c8ef2cb8c1c0a8a267d8dc0cc",
+      "sourceBytes": 3298556,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/716ac1c3e43c6dabd18fb0a7c7af9e680e83642c8ef2cb8c1c0a8a267d8dc0cc.jpg",
+      "sha256": "dcd335857759b7bc77fe391a7314b72d5c3b208427dd5f2b8d39e015ef682809",
+      "bytes": 927136,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-09-v4.png",
+      "sourceSha256": "04b62cb8ced82d42fb14aae72b4c4d08a5fece00435d6310dd9ae729846b441b",
+      "sourceBytes": 2898650,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/04b62cb8ced82d42fb14aae72b4c4d08a5fece00435d6310dd9ae729846b441b.jpg",
+      "sha256": "9d38a6603d637992532882307b4b0598072824cc1411c7ed8cf8a44d5fbb5051",
+      "bytes": 771003,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-10-v3.png",
+      "sourceSha256": "a081167d830721304e2d1fc74c9aa88a645bb083e762e3f386cd4805d877ae1f",
+      "sourceBytes": 2845335,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a081167d830721304e2d1fc74c9aa88a645bb083e762e3f386cd4805d877ae1f.jpg",
+      "sha256": "babceada194cfe5d9e53de15e68f4cb900a11611ad70d7cc53d23c1091238165",
+      "bytes": 750216,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-11-v3.png",
+      "sourceSha256": "71e90389e3eef15f84f51656da5732f8c45d62588c4d1285d85b587c52330856",
+      "sourceBytes": 3567317,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/71e90389e3eef15f84f51656da5732f8c45d62588c4d1285d85b587c52330856.jpg",
+      "sha256": "0ac27ab5a300df4b833060c07787ecba15cbcf909541007d2002dcb5afa128c1",
+      "bytes": 995952,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-12.png",
+      "sourceSha256": "4dc43a8a1c31de0337c24011f6795927a02dcf7187048e3ce5cf5487641119f7",
+      "sourceBytes": 3399844,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/4dc43a8a1c31de0337c24011f6795927a02dcf7187048e3ce5cf5487641119f7.jpg",
+      "sha256": "4f0940e4f08eb069aeacefa8d69f0f018d3075e67efca4045da10b4a3dbc27b1",
+      "bytes": 885625,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-13.png",
+      "sourceSha256": "41a1857ff7fa48046e1dccd317a729ff8d2ac2b3d92fc6087d508e932a85ad3a",
+      "sourceBytes": 3509923,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/41a1857ff7fa48046e1dccd317a729ff8d2ac2b3d92fc6087d508e932a85ad3a.jpg",
+      "sha256": "63f741c07dfc344c44f4cece317d1517b8c3e57889feb51d11ba988aa4a07a2c",
+      "bytes": 945796,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-14.png",
+      "sourceSha256": "9fd2f88c8e3838266190392535b69acc5adb5294a1c6e3e47d3639920fea9e98",
+      "sourceBytes": 3589253,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/9fd2f88c8e3838266190392535b69acc5adb5294a1c6e3e47d3639920fea9e98.jpg",
+      "sha256": "8eb01af68f58033121d7f19b1dd68bd9c95b11a58e6ba6209a4cfc868dd3c0ab",
+      "bytes": 996283,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-19-v2.png",
+      "sourceSha256": "fdf6ff363728df2aab9944b75a0927d0a23af43a68523edfa17f4e1ecad172d5",
+      "sourceBytes": 3133510,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/fdf6ff363728df2aab9944b75a0927d0a23af43a68523edfa17f4e1ecad172d5.jpg",
+      "sha256": "bcbf5227349a602a5eb5443ddd1dfcf8ab699588647e0abc7a27d96240a30226",
+      "bytes": 847885,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-21-v1.png",
+      "sourceSha256": "ac70c8270a1e606980554a272696f63760c8a22d466063a1756d72520c74873c",
+      "sourceBytes": 3374378,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ac70c8270a1e606980554a272696f63760c8a22d466063a1756d72520c74873c.jpg",
+      "sha256": "314b77b354528141a3f3545f3b7fd6e6918c708cd8f07099fb34e831bf6f3dac",
+      "bytes": 952631,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-22-v1.png",
+      "sourceSha256": "9ef3a0bdbd0f1e5f1379855164e0086c1ce763109d5e38cd3d96a7e3f623bf34",
+      "sourceBytes": 2925600,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/9ef3a0bdbd0f1e5f1379855164e0086c1ce763109d5e38cd3d96a7e3f623bf34.jpg",
+      "sha256": "6e385147873640d73f1d90dcdb5cb472ad34ef5b0a945239aa1c7981b219f362",
+      "bytes": 805249,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-20-v2.png",
+      "sourceSha256": "d2bcc1ed0eb74c209c9cce3418154f88a23e6eaa0090ad1d8038a7187f51bc50",
+      "sourceBytes": 2877064,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d2bcc1ed0eb74c209c9cce3418154f88a23e6eaa0090ad1d8038a7187f51bc50.jpg",
+      "sha256": "2e6c7e7d0790ec5becdcf71082f6288c8a42f91d61407973b0f7259a6bd66cfd",
+      "bytes": 814575,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-23-v5.png",
+      "sourceSha256": "a98a8ae75e1654191dabab4a0c41d49a9c1f1f99e5754b0b39819063aba02c20",
+      "sourceBytes": 2789188,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a98a8ae75e1654191dabab4a0c41d49a9c1f1f99e5754b0b39819063aba02c20.jpg",
+      "sha256": "d4999354d057a6b2a2665f0aba1027e0fba0d845f5db10acd11ad9264ebaee8b",
+      "bytes": 747740,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-24-v1.png",
+      "sourceSha256": "5f23c12886b6a0771496136cd5c5989f0a2ec7c07fe6d74468cda2822b60e123",
+      "sourceBytes": 3294888,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/5f23c12886b6a0771496136cd5c5989f0a2ec7c07fe6d74468cda2822b60e123.jpg",
+      "sha256": "796ac26b2233d268bf06162eb998e025b47079214d532f46229476d556f4dac5",
+      "bytes": 915529,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-15-v2.png",
+      "sourceSha256": "6aae27bc0d7907250962bf12d16227af6a797349e4c66e360d704e3e67f58539",
+      "sourceBytes": 3503637,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6aae27bc0d7907250962bf12d16227af6a797349e4c66e360d704e3e67f58539.jpg",
+      "sha256": "45a562ad7c694ad81be8560dcd2bfdad2735964e6fb18929673b36a725e51d36",
+      "bytes": 936366,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-16.png",
+      "sourceSha256": "fba4c9a4a96613912eded4c4a8298c53680c58bef726b6968191b0f14cdbe543",
+      "sourceBytes": 3059895,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/fba4c9a4a96613912eded4c4a8298c53680c58bef726b6968191b0f14cdbe543.jpg",
+      "sha256": "2c1c786c0e393c959fb207b680925297db99a98e8ca966e4aa7d9f2597cde3e5",
+      "bytes": 681876,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-17.png",
+      "sourceSha256": "936784e4124c850eea6a8a927805edb499b5a6be0c1d79b6da545c7934eae003",
+      "sourceBytes": 2759931,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/936784e4124c850eea6a8a927805edb499b5a6be0c1d79b6da545c7934eae003.jpg",
+      "sha256": "25f10c5d22f9cf2a4f663e020c6e2d67950821ee143cef2c9d4c7ed2c522c16c",
+      "bytes": 621485,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/scene-18-v3.png",
+      "sourceSha256": "e09d535c6fee130b5ac5764ef6ec25230c73aa56d72e75bdb2a9485623e9f8f7",
+      "sourceBytes": 3347236,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e09d535c6fee130b5ac5764ef6ec25230c73aa56d72e75bdb2a9485623e9f8f7.jpg",
+      "sha256": "3c810b0b4835846c4ab3c99bcd46ecc7fe02575d679c8be01621327bf6b4b66b",
+      "bytes": 908474,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/chapter-02/scene-01.png",
+      "sourceSha256": "2ddc688505374f005f32a85e03c1d8ce21af871b4ea5fd65765232ebe23b1e83",
+      "sourceBytes": 3203898,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/2ddc688505374f005f32a85e03c1d8ce21af871b4ea5fd65765232ebe23b1e83.jpg",
+      "sha256": "7c72a2be850b20c7b093f979a60dc9639ec0221128fc2b0d1b95e1a6e3bc4247",
+      "bytes": 822569,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/chapter-02/scene-02.png",
+      "sourceSha256": "8f7b9f98a337bc2d442590db2fb7077535876a8784ef0e8cfa7b84d975576e75",
+      "sourceBytes": 3150676,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/8f7b9f98a337bc2d442590db2fb7077535876a8784ef0e8cfa7b84d975576e75.jpg",
+      "sha256": "0664e439b02f5b65990aaa1fdd0aafdc3b883b902ea96c96cfa98adada1355b6",
+      "bytes": 860811,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/chapter-02/scene-03.png",
+      "sourceSha256": "04a6110bd719e9a38d0b8182430bfcedbb2d5a14d5c5b9fc6e2a23ecfafbd42d",
+      "sourceBytes": 3020762,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/04a6110bd719e9a38d0b8182430bfcedbb2d5a14d5c5b9fc6e2a23ecfafbd42d.jpg",
+      "sha256": "8f14635b13f7e8c739af8f618e8f1b94d5fc98703c07abba80bbd019b125a486",
+      "bytes": 819440,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/chapter-02/scene-04.png",
+      "sourceSha256": "8b94dfb04c7a626fe47ef31fb10048121e6a612e98f4b92cd43fa04e22191ffe",
+      "sourceBytes": 2784335,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/8b94dfb04c7a626fe47ef31fb10048121e6a612e98f4b92cd43fa04e22191ffe.jpg",
+      "sha256": "c6b1e48abbc808b89fd8e02906d1e85c3248b8f6a3a389f004c9ccd353accded",
+      "bytes": 727997,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/chapter-02/scene-05.png",
+      "sourceSha256": "e6321575e525f1e111b2756c3a654ba4f1bc1efdeeecc03e8b09809ce5249d99",
+      "sourceBytes": 3084100,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e6321575e525f1e111b2756c3a654ba4f1bc1efdeeecc03e8b09809ce5249d99.jpg",
+      "sha256": "4d814af31194c9e7a4a3b86c7e49d448828322c2e2b8b473236dc23da0f8711c",
+      "bytes": 786498,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/chapter-02/scene-06.png",
+      "sourceSha256": "3174322821b8ae6ca38a8c477f407f6768af9f178f059a339ce829539c66c119",
+      "sourceBytes": 2895031,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/3174322821b8ae6ca38a8c477f407f6768af9f178f059a339ce829539c66c119.jpg",
+      "sha256": "27438a95149aba175ab6ab3efcfd82bb48f8fffc92a00779ddcd301d175a3e0c",
+      "bytes": 780672,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/chapter-02/scene-07.png",
+      "sourceSha256": "ae8b1bcfa197cb3079460c1cdc635c033baeed74678c9eb9c0108d1ef9f5f3f3",
+      "sourceBytes": 2895612,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ae8b1bcfa197cb3079460c1cdc635c033baeed74678c9eb9c0108d1ef9f5f3f3.jpg",
+      "sha256": "577af6d302c6abf2b62ed4b7f876c0fbc4e23a4ded7d8c39f5cf14d28017ede9",
+      "bytes": 737255,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/chapter-02/scene-08-v2.png",
+      "sourceSha256": "0bce6b2d501bd373c6e4585febf0f827cbc080447c833dec277e254a5de0904d",
+      "sourceBytes": 2412788,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/0bce6b2d501bd373c6e4585febf0f827cbc080447c833dec277e254a5de0904d.jpg",
+      "sha256": "9547a95ecf922c86e7559a96984c684b7b1131def2cc1b417319719795ebf4f3",
+      "bytes": 577205,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/chapter-02/scene-09-v2.png",
+      "sourceSha256": "33612b7ffeb6560b4cbea2bce0e9ffe51818eb1d9eea0add7c73aad87a9d6944",
+      "sourceBytes": 2361341,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/33612b7ffeb6560b4cbea2bce0e9ffe51818eb1d9eea0add7c73aad87a9d6944.jpg",
+      "sha256": "0f0992e3d17e049970b6c2e874646b5b8f142878f79bd9b38d5e0788d7426240",
+      "bytes": 595191,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/timber-tractor/chapter-02/scene-10.png",
+      "sourceSha256": "f43f0601ef20791ce84164446a1c0dccf6f5ce3f1e6fd2b5acd66a041290adab",
+      "sourceBytes": 2317993,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f43f0601ef20791ce84164446a1c0dccf6f5ce3f1e6fd2b5acd66a041290adab.jpg",
+      "sha256": "27f5ecb4b0ff608c5a2e73221ba06f39a831935e2e2652c79a44006665587519",
+      "bytes": 527613,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/covers/timber-tractor/title-ru-v1.png",
+      "sourceSha256": "a191c3145352c8415cba67b66b14a2051fdd88fdcb648980085eb23f6579c16b",
+      "sourceBytes": 3115379,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a191c3145352c8415cba67b66b14a2051fdd88fdcb648980085eb23f6579c16b.jpg",
+      "sha256": "a7bc82bb6854b8d058b0da55aa5346ff0b875a771a126c2b9784732cc3b6a13a",
+      "bytes": 865629,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/covers/timber-tractor/title-es-v1.png",
+      "sourceSha256": "924f2a721335e4e2b42e73952017a9a546d421952137c7080d80932303573b0d",
+      "sourceBytes": 3102703,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/924f2a721335e4e2b42e73952017a9a546d421952137c7080d80932303573b0d.jpg",
+      "sha256": "a1d5d0e6d2c46ec59dd71d08c7e04f94c028f0d454ba21de522bfd2bc51e0b92",
+      "bytes": 858126,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/covers/home-sweet-home/title-en-v1.png",
+      "sourceSha256": "9b4357178b7a77581b5615e9638288305ef07a8f8811e6e42401cacde3e95e2c",
+      "sourceBytes": 2424160,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/9b4357178b7a77581b5615e9638288305ef07a8f8811e6e42401cacde3e95e2c.jpg",
+      "sha256": "2c1a351a9571489c9751d7411fc85656f765abbda11f9ac503722b0c17c5f59a",
+      "bytes": 649681,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-01-v1.png",
+      "sourceSha256": "60a39cfa8b283d79ed23a28d5ca4744cfd8a58a0959ef40af0c35a8cc70723f8",
+      "sourceBytes": 2777850,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/60a39cfa8b283d79ed23a28d5ca4744cfd8a58a0959ef40af0c35a8cc70723f8.jpg",
+      "sha256": "12aa605970336c96e50fdd0e8c2e8587f48f7a45c05dd7b193825fa33e58e0ce",
+      "bytes": 664902,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-02-v2.png",
+      "sourceSha256": "1ca11dd88fbbde4b1db46bb03adf28e2c44b066692f0e9b390fb6764cc1d7c2a",
+      "sourceBytes": 2480797,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/1ca11dd88fbbde4b1db46bb03adf28e2c44b066692f0e9b390fb6764cc1d7c2a.jpg",
+      "sha256": "9c7a447e1e36e687e4cb9de6d72e27f897bb1e325ffc340741e667c18b8df0de",
+      "bytes": 629805,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-03-v1.png",
+      "sourceSha256": "ef11e62b60c25e3c78565ee2b97179270fda7ebeadb9f4e5d4955aecdb7b8a87",
+      "sourceBytes": 2335227,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ef11e62b60c25e3c78565ee2b97179270fda7ebeadb9f4e5d4955aecdb7b8a87.jpg",
+      "sha256": "3c56f117076391030ef79c78e9c6bc1abdde17ada08d2dc18bf55e03fcf484b0",
+      "bytes": 572000,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-04-v1.png",
+      "sourceSha256": "d0b983b6d17fe69517b21ec873112965d8217911c9628c8175eaf9cd0814a197",
+      "sourceBytes": 2346942,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d0b983b6d17fe69517b21ec873112965d8217911c9628c8175eaf9cd0814a197.jpg",
+      "sha256": "7da576c32e8f1ada2ec964252b73c6ff885e6050adc84af0a2eedf4e5bba6eaa",
+      "bytes": 582072,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-05-v1.png",
+      "sourceSha256": "4612de5e87413ff0d9bef15786e66bf501ca12c387e3956cc690448392fdc972",
+      "sourceBytes": 2557110,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/4612de5e87413ff0d9bef15786e66bf501ca12c387e3956cc690448392fdc972.jpg",
+      "sha256": "4c913bc47ec146693e27a648d5165415596400fe6ada7d694d65862b6d41bfaf",
+      "bytes": 662304,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-06-v1.png",
+      "sourceSha256": "6bde6a109a3c94eac2d309650111332cc40309819a3c8337a356f4b518743936",
+      "sourceBytes": 2309465,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6bde6a109a3c94eac2d309650111332cc40309819a3c8337a356f4b518743936.jpg",
+      "sha256": "4b3f3e2421aa2145a4eb805652949132e0b45f34d084c069845977d68cf7d2af",
+      "bytes": 548966,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-07-v1.png",
+      "sourceSha256": "3e01db42f209a586a36555cfd817f3280851cfd39132b0381384a2f921675ddb",
+      "sourceBytes": 2387818,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/3e01db42f209a586a36555cfd817f3280851cfd39132b0381384a2f921675ddb.jpg",
+      "sha256": "a5a353cee0561b8ce5490956e3b702b7ce1168ab3683f0e8982f2af640ea25ad",
+      "bytes": 595329,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-08-v2.png",
+      "sourceSha256": "c6e3deefa1acc93dadb3467931719f080a81ab8807dbff960bca6c225f07635d",
+      "sourceBytes": 2323256,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/c6e3deefa1acc93dadb3467931719f080a81ab8807dbff960bca6c225f07635d.jpg",
+      "sha256": "ecc7ae2f2f9c61bda56bdce833f228a7743f21594d2b5a31f16b4af93d3dfb6e",
+      "bytes": 561102,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-09-v1.png",
+      "sourceSha256": "8e43102a34aaa37b274dbfec9916aa5960d13232ae25d9a7488af13793ec67f9",
+      "sourceBytes": 2395055,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/8e43102a34aaa37b274dbfec9916aa5960d13232ae25d9a7488af13793ec67f9.jpg",
+      "sha256": "71ebcf088125072512ae3501e78a322663ca589a91695ff290388c4a9568530a",
+      "bytes": 600448,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-10-v1.png",
+      "sourceSha256": "ca0e6539b720fb0fe161f0411a6e678dad26803e0aefc5739c7b202369107823",
+      "sourceBytes": 2463403,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ca0e6539b720fb0fe161f0411a6e678dad26803e0aefc5739c7b202369107823.jpg",
+      "sha256": "8a5de8829793ea6de315eb8c28e43a4f050c435deda741fd1d9f8bde33ece51b",
+      "bytes": 618775,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-11-v1.png",
+      "sourceSha256": "66a68f0b190c84110359e9becd8d93385445753f4e4fbfaefa8a3c1f38e65e8e",
+      "sourceBytes": 2491183,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/66a68f0b190c84110359e9becd8d93385445753f4e4fbfaefa8a3c1f38e65e8e.jpg",
+      "sha256": "24ead0185fefbeb7b2af840670657610fa4c875b805492548c6293848dfa8a65",
+      "bytes": 600845,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-12-v2.png",
+      "sourceSha256": "4dabd4d4fc4c4dbc2d89a8fe902c788f18b586823e160324781de431e8304911",
+      "sourceBytes": 2265129,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/4dabd4d4fc4c4dbc2d89a8fe902c788f18b586823e160324781de431e8304911.jpg",
+      "sha256": "83a87f18c8f3e0dfa77bbe154ced9ad46bc840252a98d868ee5c9675c97a8575",
+      "bytes": 539834,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-13-v1.png",
+      "sourceSha256": "d0e1985351ab6ae54241955835f0499da3d40bd416c2ba21cd99d734cce55399",
+      "sourceBytes": 2422551,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d0e1985351ab6ae54241955835f0499da3d40bd416c2ba21cd99d734cce55399.jpg",
+      "sha256": "3160488f61405790db3b798de8ac859a323522ec481f197ee7616e50dd67d034",
+      "bytes": 601354,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-14-v1.png",
+      "sourceSha256": "b698dc3c87800724b671ee2fc6f6b8d4f0baab2c93be5ed8e1b436a0d0c59c0d",
+      "sourceBytes": 2534282,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b698dc3c87800724b671ee2fc6f6b8d4f0baab2c93be5ed8e1b436a0d0c59c0d.jpg",
+      "sha256": "ddb43cc381f2becf08ad836ef97e85ee6d80e92c4ef4e5c974b67d5eac7dbdab",
+      "bytes": 603668,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-15-v2.png",
+      "sourceSha256": "f8c36c4f307fdb6260b715b4e877b3a6dc1fd31fcc4a2da94324953c771ccb95",
+      "sourceBytes": 2281219,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f8c36c4f307fdb6260b715b4e877b3a6dc1fd31fcc4a2da94324953c771ccb95.jpg",
+      "sha256": "9edb710787e6aab6dc53f25163b260a2ef8c2b82624ab2bc1ccdad712a9dc07f",
+      "bytes": 543529,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-16-v2.png",
+      "sourceSha256": "fe6f438464b4f38d0b81b82bd78e6d5aadebf99b76732ef3504616c2f3d0f5f7",
+      "sourceBytes": 2537770,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/fe6f438464b4f38d0b81b82bd78e6d5aadebf99b76732ef3504616c2f3d0f5f7.jpg",
+      "sha256": "3d720cb9b21b58eceabd7b5c5887f56911ffd55d605789a8a5aa61dba76efebd",
+      "bytes": 623263,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-17-v2.png",
+      "sourceSha256": "e37fd9cccf68330ba62763958199839692e77c3c0092a5d4b5efa1db5835ff73",
+      "sourceBytes": 2294087,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e37fd9cccf68330ba62763958199839692e77c3c0092a5d4b5efa1db5835ff73.jpg",
+      "sha256": "cd616db55022ade14de7ddf59ddc8d3c897b223c95e9a20568e4b593ec2c48ac",
+      "bytes": 526986,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-18-v1.png",
+      "sourceSha256": "ec53c6c5ab330f8bef95dfafd88054360964a1b75479aca171f524ad714185a8",
+      "sourceBytes": 2511576,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ec53c6c5ab330f8bef95dfafd88054360964a1b75479aca171f524ad714185a8.jpg",
+      "sha256": "0c48a0be753c4f3092455b0c64422c397ea11ad983df61c70a4b553fbe9bcccb",
+      "bytes": 585012,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-19-v1.png",
+      "sourceSha256": "c7b205da66caf68c4957c3447bf541d4371d2fdfb1c743bb739b4aea24aecac3",
+      "sourceBytes": 2435278,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/c7b205da66caf68c4957c3447bf541d4371d2fdfb1c743bb739b4aea24aecac3.jpg",
+      "sha256": "5d6208c47412f474c2689b8e7a2a7990600f02f5359d806160614cca119e6037",
+      "bytes": 562225,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/standalone/home-sweet-home/bedtime-20-v1.png",
+      "sourceSha256": "1d86ffddd74a2145d50708bbe0f5b68891b3fedf3a270681202b02f7f08e6295",
+      "sourceBytes": 2554016,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/1d86ffddd74a2145d50708bbe0f5b68891b3fedf3a270681202b02f7f08e6295.jpg",
+      "sha256": "88ffc18b9a75b91c276094e23457e8c0d78574d2fc874f053e10f4cacfab8f3a",
+      "bytes": 552092,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/covers/home-sweet-home/title-ru-v1.png",
+      "sourceSha256": "2dbab0b356f9107d73e7ee48ddc1af24bb5fc3fce3e95811b6967c7c784b8cd7",
+      "sourceBytes": 2540307,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/2dbab0b356f9107d73e7ee48ddc1af24bb5fc3fce3e95811b6967c7c784b8cd7.jpg",
+      "sha256": "0043e4c595929562ef327a15fc0720fd0c11a0d3e541b158da7cfdd20c33bb38",
+      "bytes": 685492,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/covers/home-sweet-home/title-es-v1.png",
+      "sourceSha256": "b65ba6470e021257412fee6bf4736b0e68cd6d431c6aeb865f50b1b21dfce54d",
+      "sourceBytes": 2427643,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b65ba6470e021257412fee6bf4736b0e68cd6d431c6aeb865f50b1b21dfce54d.jpg",
+      "sha256": "78616700ea8f6c178e081cefcb661190c019c7e99e39b687b9730d7fceb5f51b",
+      "bytes": 647847,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-home-title-en.webp",
+      "sourceSha256": "53095d2176501b1267e786e10a99402455663aae4b006bcbfa0de11cf2f2a491",
+      "sourceBytes": 394392,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/53095d2176501b1267e786e10a99402455663aae4b006bcbfa0de11cf2f2a491.jpg",
+      "sha256": "94993bbfb7533670395d09ad0391ac73448cedc3c60a58ce2219abddff59d5e1",
+      "bytes": 581144,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-001.webp",
+      "sourceSha256": "91ef3d7fe69f13fe5379c0abd941c63409d70b437ec8f851a5225b568f5e392d",
+      "sourceBytes": 543500,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/91ef3d7fe69f13fe5379c0abd941c63409d70b437ec8f851a5225b568f5e392d.jpg",
+      "sha256": "4cf660a78f728f5f9b6a23b9b2de090431265bc92255c609cf1a7d655f3c5cd2",
+      "bytes": 698490,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-family-002-window-v2.webp",
+      "sourceSha256": "f51aa9cdc09a9e523e89d5711bdec83150bc7670ac1b3e738c404e2b4fb27f59",
+      "sourceBytes": 1871018,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f51aa9cdc09a9e523e89d5711bdec83150bc7670ac1b3e738c404e2b4fb27f59.jpg",
+      "sha256": "adf6ae6c637336015cf3fae6f302aca56e36ebc643c5f623cd6e079e97807fca",
+      "bytes": 635469,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-01-v4.webp",
+      "sourceSha256": "88ebe1d1822e1a76cfcfd4e894f878ffa206e16db86ed61659544fc537511a13",
+      "sourceBytes": 1692872,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/88ebe1d1822e1a76cfcfd4e894f878ffa206e16db86ed61659544fc537511a13.jpg",
+      "sha256": "8519902c764c726f72765c921c72f90637816940c7e08168d8755e1dbd5838f3",
+      "bytes": 564932,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-02-v4.webp",
+      "sourceSha256": "79fcd16a5a1146ad0f585447288a8bc8d11d67343194c3f1610f2649b3d53285",
+      "sourceBytes": 1607470,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/79fcd16a5a1146ad0f585447288a8bc8d11d67343194c3f1610f2649b3d53285.jpg",
+      "sha256": "2272054dcaa57e3b3ff6918807929af527e2a3507ea059225334a90d180a38fe",
+      "bytes": 546092,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-03-v5.webp",
+      "sourceSha256": "74d950a027c944f00ad0c0cbee5126dfb521bf80d3ae0f9706a188ebbbe6db00",
+      "sourceBytes": 1419594,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/74d950a027c944f00ad0c0cbee5126dfb521bf80d3ae0f9706a188ebbbe6db00.jpg",
+      "sha256": "e928abfe62af8d088b7aca4c8518be0280489958f6b620f25650ae2e00166758",
+      "bytes": 452456,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-04.webp",
+      "sourceSha256": "a88fd0a562009c889e0a17e62fbdacf49cfcf9ad6709e63d4fa10459f77e691f",
+      "sourceBytes": 1643490,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a88fd0a562009c889e0a17e62fbdacf49cfcf9ad6709e63d4fa10459f77e691f.jpg",
+      "sha256": "83dd061e0e1b3e65f713983181a6d661c047b78c0b5694d3d4d956a13e970955",
+      "bytes": 568264,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-003.webp",
+      "sourceSha256": "a4b83c98d3f6488c653f80c5669b4907c99dafb93985cf782071c23f9860d6f1",
+      "sourceBytes": 566298,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a4b83c98d3f6488c653f80c5669b4907c99dafb93985cf782071c23f9860d6f1.jpg",
+      "sha256": "a6cce24d6f890ce86eba70aa8519cd11f8aacc9311490f8e7982246c10c7e9e8",
+      "bytes": 724443,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-004.webp",
+      "sourceSha256": "9b5c0802c0e0b82dc5f355cadeceaf0375c7037acec71d62e82c805e196e81fd",
+      "sourceBytes": 510714,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/9b5c0802c0e0b82dc5f355cadeceaf0375c7037acec71d62e82c805e196e81fd.jpg",
+      "sha256": "cb178d12aa410e0c130b8374a8548c0ed131de8f48f0a65d299c6f3aa0e5b867",
+      "bytes": 667710,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp",
+      "sourceSha256": "0c475ab6702d45d9ae00a64c90d59adfe0a980dd5a594cacbbd2ced5f63342ea",
+      "sourceBytes": 1751408,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/0c475ab6702d45d9ae00a64c90d59adfe0a980dd5a594cacbbd2ced5f63342ea.jpg",
+      "sha256": "2073b64b5d9fb46ed8730d61a67ff801c11235dc5c367fc157fbd2a9a31e07ae",
+      "bytes": 619567,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-06.webp",
+      "sourceSha256": "d468d318e77630d1621b1b2d1757e6ca399604cb7624fec7750ce673307a013c",
+      "sourceBytes": 1834386,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d468d318e77630d1621b1b2d1757e6ca399604cb7624fec7750ce673307a013c.jpg",
+      "sha256": "30537ffe23bcd9b0d902d166ed9f258b4f19588f2273e9218416ab0c4037cbf3",
+      "bytes": 644556,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-07.webp",
+      "sourceSha256": "6af330b84c2e513eb082e35d0431f867f613b9396d751ae945c2063b5b232209",
+      "sourceBytes": 1614632,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6af330b84c2e513eb082e35d0431f867f613b9396d751ae945c2063b5b232209.jpg",
+      "sha256": "cbd008d851ae30267c589b01d48f125043d4056c9f48139570cf08f30fad170a",
+      "bytes": 507238,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-08.webp",
+      "sourceSha256": "edc6bb4c3ded2327ea0ff9194f7c79ecae5712a3bd414ee39df466b90db20953",
+      "sourceBytes": 1807512,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/edc6bb4c3ded2327ea0ff9194f7c79ecae5712a3bd414ee39df466b90db20953.jpg",
+      "sha256": "32886a1a2adbf2d4defcdb81cb1d43894c66aabd9a1a3f49481975a853ba98aa",
+      "bytes": 638167,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-09-v2.webp",
+      "sourceSha256": "fd994b602031e2db2d2b66dfd60bd0923b1a6854ef68ca9b7909418236801096",
+      "sourceBytes": 1921044,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/fd994b602031e2db2d2b66dfd60bd0923b1a6854ef68ca9b7909418236801096.jpg",
+      "sha256": "7f850b45a45abe0e9158ca56165fa135bdca364392fa3735f6a98b4a55994ac2",
+      "bytes": 674434,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-10-v3.webp",
+      "sourceSha256": "19062792782ff1efadcf957c24b4856101922c3282c62416400ef98c78dd16f4",
+      "sourceBytes": 1791178,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/19062792782ff1efadcf957c24b4856101922c3282c62416400ef98c78dd16f4.jpg",
+      "sha256": "a5e42a26d0b5345f467bae1b135116c9ac5a9775df62b75df5968096eeac6fb8",
+      "bytes": 643256,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-11-v2.webp",
+      "sourceSha256": "b5d119343e5c18aac4f5a2d21c253a254f792095541e5f4e68f9ac703eb678e1",
+      "sourceBytes": 1828336,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b5d119343e5c18aac4f5a2d21c253a254f792095541e5f4e68f9ac703eb678e1.jpg",
+      "sha256": "d26254b76748dbbe24e022ec117446f46a203395872b4e803c631b5031fab6dc",
+      "bytes": 634560,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-arrival-20260922-arrival-12-v2.webp",
+      "sourceSha256": "12f7544d1a88963538f2984f41d0e33bfef93301ba07d8b6ecf47345648bb042",
+      "sourceBytes": 1955460,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/12f7544d1a88963538f2984f41d0e33bfef93301ba07d8b6ecf47345648bb042.jpg",
+      "sha256": "5ff5d80220cd0f9426fb28dc29d2daa2fb27fe6d0f4b216d90c15f470b9e8623",
+      "bytes": 707275,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-005.webp",
+      "sourceSha256": "832602fe1b6a489e09b3ee52499c813d0fa606a6b8854ee8e765cd9fa17fcd39",
+      "sourceBytes": 496454,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/832602fe1b6a489e09b3ee52499c813d0fa606a6b8854ee8e765cd9fa17fcd39.jpg",
+      "sha256": "8e6c7b1390c18838dd76b07b84a8d2fe40b5c780e2f5dd3686a9a90b13a11eeb",
+      "bytes": 671865,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-006.webp",
+      "sourceSha256": "98c30fef2f100ea9b5eb715172b4131d43120ba8fb4667dab6d1b47b14af4d25",
+      "sourceBytes": 522684,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/98c30fef2f100ea9b5eb715172b4131d43120ba8fb4667dab6d1b47b14af4d25.jpg",
+      "sha256": "83b4a71c451e8154b8915589a8aa1e8c86dedd01730ca56ea1c9db4085b97c2d",
+      "bytes": 697759,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-007.webp",
+      "sourceSha256": "b3519f59aa83aac8621fc33f6b288ac9afe7ca8b5095e34bc47803e30f799b09",
+      "sourceBytes": 505024,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b3519f59aa83aac8621fc33f6b288ac9afe7ca8b5095e34bc47803e30f799b09.jpg",
+      "sha256": "a2311e27f9cc04f53f8203e63125fde6a80c48ad5b7ed04a58e01e85d1d9c063",
+      "bytes": 674241,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-008.webp",
+      "sourceSha256": "58df35b99ee8c55b0f0e4011aa2354a7e62820c0c7f261374ee9bb7d2db31565",
+      "sourceBytes": 444930,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/58df35b99ee8c55b0f0e4011aa2354a7e62820c0c7f261374ee9bb7d2db31565.jpg",
+      "sha256": "5d5fb742fd11569de25b2adf58bb1f4826953453f8c786fbcb243fc6b220fcd2",
+      "bytes": 620555,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-009.webp",
+      "sourceSha256": "d8354a985a58a171c87d169f9b2c7bd412e8de100be035a3f4aa18bfc6e2964d",
+      "sourceBytes": 445224,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d8354a985a58a171c87d169f9b2c7bd412e8de100be035a3f4aa18bfc6e2964d.jpg",
+      "sha256": "3a124b0ab1edd94bd62bf17a0ea9884c3824ca7cb4264dad31116c727114f3e1",
+      "bytes": 632602,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-010.webp",
+      "sourceSha256": "76572a7cc71e4257d6066f98130e9ec29dea5942305c0ad34fbf6455ad4e7ec5",
+      "sourceBytes": 468892,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/76572a7cc71e4257d6066f98130e9ec29dea5942305c0ad34fbf6455ad4e7ec5.jpg",
+      "sha256": "d4071644218e7241fbe3afce497dbcb45319574ed57ba2810a0783040bf9eba8",
+      "bytes": 652769,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-011.webp",
+      "sourceSha256": "d750e0fc71427d87f3643cf4a7929e0b6c048836e9243ab6970481a82e02dcb6",
+      "sourceBytes": 423436,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d750e0fc71427d87f3643cf4a7929e0b6c048836e9243ab6970481a82e02dcb6.jpg",
+      "sha256": "2a8cfba7f8d3b0e8bab78d5688c74c587b561b19bae8a33b4a17039117bec7c1",
+      "bytes": 603230,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-012.webp",
+      "sourceSha256": "b3d790fea44deef348a9162f686e38e84bd224405188366a9ffa345ae0082ce1",
+      "sourceBytes": 429750,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b3d790fea44deef348a9162f686e38e84bd224405188366a9ffa345ae0082ce1.jpg",
+      "sha256": "cd3d4cdccce40eba9cbffac1b94a421186da30a1638bc21164f8cf9d3212cb66",
+      "bytes": 610282,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-013.webp",
+      "sourceSha256": "6c2bc216d2081742b36b1670052da3b1238078ec7036a5fb1dc5da705aa56b2b",
+      "sourceBytes": 462858,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6c2bc216d2081742b36b1670052da3b1238078ec7036a5fb1dc5da705aa56b2b.jpg",
+      "sha256": "f0fb65299e5b350b5644263d332cc1306a576fa356f6f96c9af82b009a6ae801",
+      "bytes": 640281,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-014.webp",
+      "sourceSha256": "8cea91cf5a505afd41e8a306b6034998e9864d3ea660ab76c99201ca6cfd4dcb",
+      "sourceBytes": 432854,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/8cea91cf5a505afd41e8a306b6034998e9864d3ea660ab76c99201ca6cfd4dcb.jpg",
+      "sha256": "246f482a19e5c2b1334af4d6532443f044f7af35a2ac4c0fb4243e74b16623e7",
+      "bytes": 624136,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-015.webp",
+      "sourceSha256": "076321ed693bb541c91d99b4ab6fbb7cf0c7ed19c0fcf2c0dfb70b1e668d428e",
+      "sourceBytes": 482926,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/076321ed693bb541c91d99b4ab6fbb7cf0c7ed19c0fcf2c0dfb70b1e668d428e.jpg",
+      "sha256": "1fa2aba39764c6c3bc8d00e522ad7135e46a3b3ecb213a37f00f1d34c3820a80",
+      "bytes": 666247,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-home-title-ru.webp",
+      "sourceSha256": "761a879c3adae31b5e2abb85ec6d1941d4c284a68dd79604c1e95fd0c1ba4ad6",
+      "sourceBytes": 385922,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/761a879c3adae31b5e2abb85ec6d1941d4c284a68dd79604c1e95fd0c1ba4ad6.jpg",
+      "sha256": "f3f1ad8486ac78704ea93798fd51767bb29a51930a9cc492830c71ba009c7a6c",
+      "bytes": 568539,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/papa-home-title-es.webp",
+      "sourceSha256": "5d1c06acc22241ec9e3e32c4b935ea5e2c59d5463f963767c577ed88528860d5",
+      "sourceBytes": 369846,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/5d1c06acc22241ec9e3e32c4b935ea5e2c59d5463f963767c577ed88528860d5.jpg",
+      "sha256": "d05778e8b397163a6c785555f8a2155d16f45e026a0b459018d9dbe7070b282b",
+      "bytes": 551580,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/family-morning-title-en.webp",
+      "sourceSha256": "c8799648b8d515ef71313f82b8a83a6572934dc834db903bcb8a34bbba3f7fca",
+      "sourceBytes": 411998,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/c8799648b8d515ef71313f82b8a83a6572934dc834db903bcb8a34bbba3f7fca.jpg",
+      "sha256": "2ef1892fb872dab20d564e4e5d0bed64214bd8d10e6feb81c0df3ecfc45bab7e",
+      "bytes": 596810,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-016.webp",
+      "sourceSha256": "88d74c56a468e3f250b12dbcb5ecdb7b07bd1d789197663d8948ac199acd133d",
+      "sourceBytes": 452790,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/88d74c56a468e3f250b12dbcb5ecdb7b07bd1d789197663d8948ac199acd133d.jpg",
+      "sha256": "8d1d2a312f7bcab91b535e37c63fc7942bdc887c7bf4d7839eabd16cf0324757",
+      "bytes": 636996,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-017.webp",
+      "sourceSha256": "b07012e00e3ffe23d061d833fe1eb61fef232f3aeb45d34a6d2c7ef0138b8936",
+      "sourceBytes": 460746,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b07012e00e3ffe23d061d833fe1eb61fef232f3aeb45d34a6d2c7ef0138b8936.jpg",
+      "sha256": "d5e73070869ce19a85a54b4091eaf843f04e2aaad4eac09d765d48bbbb97eaa7",
+      "bytes": 648120,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-018.webp",
+      "sourceSha256": "c50bdeebb3fb9dd6d91c77ca142f959ab68add282e913b2b461de4c8f58eb2fe",
+      "sourceBytes": 455346,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/c50bdeebb3fb9dd6d91c77ca142f959ab68add282e913b2b461de4c8f58eb2fe.jpg",
+      "sha256": "5664d114681a3596688b36b9633883361c0a22b956885cecc794043d13f5fcc0",
+      "bytes": 642773,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-019.webp",
+      "sourceSha256": "6f02e3d8a2893694f9602e9bf666e836e176c1e0437de31716467a03c507c7a1",
+      "sourceBytes": 411230,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6f02e3d8a2893694f9602e9bf666e836e176c1e0437de31716467a03c507c7a1.jpg",
+      "sha256": "43508ae20b69931f9d6754f483cd27c700718206552f720fa0e9e6127e479895",
+      "bytes": 596323,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-020.webp",
+      "sourceSha256": "4a708368eafcba5ffd8c57cb04c0ada075c70c18ddbd2d8c22ff7769f1199507",
+      "sourceBytes": 459614,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/4a708368eafcba5ffd8c57cb04c0ada075c70c18ddbd2d8c22ff7769f1199507.jpg",
+      "sha256": "cd6af4f6fec19860d9a46a363d6b9104c1ff5f6fbb41eb1c8fb5fc91211056a6",
+      "bytes": 644869,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-021.webp",
+      "sourceSha256": "be2f7bdd4e4581d08b2a2d4d37b68c9b17f8b9086ee9bffa7acec7b54d00bf03",
+      "sourceBytes": 476216,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/be2f7bdd4e4581d08b2a2d4d37b68c9b17f8b9086ee9bffa7acec7b54d00bf03.jpg",
+      "sha256": "92e0f9275fb9495f8015a7c8893c7d9180eb699dd2be6bb75a73de21da48e335",
+      "bytes": 654259,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-022.webp",
+      "sourceSha256": "27558038af2c93c5f28b26b9ab66054d930d39706d1f06981954345a4b09a32e",
+      "sourceBytes": 478600,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/27558038af2c93c5f28b26b9ab66054d930d39706d1f06981954345a4b09a32e.jpg",
+      "sha256": "13f9fbdad229cd22c30f9c88ea49547498fbed2010b5d32e008f20f64f8390c1",
+      "bytes": 654868,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-023.webp",
+      "sourceSha256": "50309b8295139886b4f80a395e47ec6ff2d14ee64632d619832c365c12f1b259",
+      "sourceBytes": 457974,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/50309b8295139886b4f80a395e47ec6ff2d14ee64632d619832c365c12f1b259.jpg",
+      "sha256": "53a4b4ac9862f882d70f0eac6e4863c372884a653a863ff5156a4d7f702cbdad",
+      "bytes": 641570,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-024.webp",
+      "sourceSha256": "639111eb2dd09f24aa02c7ff5db41ddaf0ca2738800458d236615ef5fadaa8d5",
+      "sourceBytes": 500582,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/639111eb2dd09f24aa02c7ff5db41ddaf0ca2738800458d236615ef5fadaa8d5.jpg",
+      "sha256": "7dff3948953d562c7f9cf72e91f15de53165e09d489e341206c522ff2c76fc52",
+      "bytes": 684843,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-025.webp",
+      "sourceSha256": "0f21f55e97116bd5f414b60455cf55e01e8b76a990c035e95102920ae05156ee",
+      "sourceBytes": 481734,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/0f21f55e97116bd5f414b60455cf55e01e8b76a990c035e95102920ae05156ee.jpg",
+      "sha256": "52a2766f1f1230155b3f56e923f6f4d44a43919bf5cb6eb4c5cbad3cc3fe7e0c",
+      "bytes": 663359,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-026.webp",
+      "sourceSha256": "f256bf2b60eb4cffa1023e3cda9967935f4bf8df463b930c90f65bed00ef2d5c",
+      "sourceBytes": 477098,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f256bf2b60eb4cffa1023e3cda9967935f4bf8df463b930c90f65bed00ef2d5c.jpg",
+      "sha256": "e5b208dca8b6dcedbe98d0001cf02e2470cc4c10930a77717121f2bcb7f43f1a",
+      "bytes": 664921,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-027.webp",
+      "sourceSha256": "e932eddb3506edabbef58a69c8eb5031eaba4b037488dc563b303bbbaec0d0e1",
+      "sourceBytes": 464132,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e932eddb3506edabbef58a69c8eb5031eaba4b037488dc563b303bbbaec0d0e1.jpg",
+      "sha256": "a1acb3b65ad02a630ccc9fa57ecafd67e8edbcfc39d93cf8caa44dd55510bbd4",
+      "bytes": 643648,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-028.webp",
+      "sourceSha256": "7648b4f9e12312b0580391778e84d883d393fe31732492de1dcc4b22435ae17e",
+      "sourceBytes": 541508,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/7648b4f9e12312b0580391778e84d883d393fe31732492de1dcc4b22435ae17e.jpg",
+      "sha256": "40eb83199993900cc1c62b33566aeb6d6813e1fb4f7e14ec9219e3652ffb5b61",
+      "bytes": 707022,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-029.webp",
+      "sourceSha256": "b1a2b377f2429b48b5a44834d0f3b841f7a7d3b370d6aac8dd1bd090804c1231",
+      "sourceBytes": 508668,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b1a2b377f2429b48b5a44834d0f3b841f7a7d3b370d6aac8dd1bd090804c1231.jpg",
+      "sha256": "fcc2e389c3329a1f8e23e989bc90dc58eeb7d67389dfa07f9081c684e4e7df69",
+      "bytes": 680739,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-030.webp",
+      "sourceSha256": "da5a00a269cb7bff090bad0bce4ab1f1a77bd047804b21d85ac6b5e4b391e4ce",
+      "sourceBytes": 443652,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/da5a00a269cb7bff090bad0bce4ab1f1a77bd047804b21d85ac6b5e4b391e4ce.jpg",
+      "sha256": "2c5d402da863b3db2151147208d1e8e4c4df3d58d3cd512a51259339c16baa60",
+      "bytes": 620488,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-031.webp",
+      "sourceSha256": "84116ddc2a2768dce46a023e3e7a95781908ccaac4c5f232b5811981c4c424f1",
+      "sourceBytes": 392834,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/84116ddc2a2768dce46a023e3e7a95781908ccaac4c5f232b5811981c4c424f1.jpg",
+      "sha256": "3b8e883330bbf7881bc67edc91db31fdb8cb601c9ee0e15eef3723f058d3fbd2",
+      "bytes": 549860,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-032.webp",
+      "sourceSha256": "33ad5f708dd9392d5269738d80044ab44198eb21432b0e824fadb82278cbdfe4",
+      "sourceBytes": 465996,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/33ad5f708dd9392d5269738d80044ab44198eb21432b0e824fadb82278cbdfe4.jpg",
+      "sha256": "91967494559d72fefe054ac85bc3f143c2175f7e00a5d7da7f2505798f8c7e9b",
+      "bytes": 629018,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-033.webp",
+      "sourceSha256": "2d9bded7e46cda7012a393e01127d87f727f12a617da599e42422c8c21b125fe",
+      "sourceBytes": 444596,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/2d9bded7e46cda7012a393e01127d87f727f12a617da599e42422c8c21b125fe.jpg",
+      "sha256": "0313850d6e3befef9b70e5289e15217c9784e038c7c6fa026d567562f498b7e2",
+      "bytes": 608018,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-034.webp",
+      "sourceSha256": "78720144c4e6e1d13b4a2f4279f158468bb410b2ead62f3e935171dae5689e2b",
+      "sourceBytes": 392178,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/78720144c4e6e1d13b4a2f4279f158468bb410b2ead62f3e935171dae5689e2b.jpg",
+      "sha256": "cbde87ff3637ce2d31df0197ae2ea8214eadd1514e496e4eadf9b3aeabedb0a4",
+      "bytes": 550564,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-035.webp",
+      "sourceSha256": "0a2396a9c2ef776930b92b593f2e57a36f767c79031dcfffd48fc0e8d072fdc5",
+      "sourceBytes": 532812,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/0a2396a9c2ef776930b92b593f2e57a36f767c79031dcfffd48fc0e8d072fdc5.jpg",
+      "sha256": "42fcb2c1dc61e6ef4b53c34358bcb4912164b932ec90b50e12ffe3d9bce1d128",
+      "bytes": 704770,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/family-morning-title-ru.webp",
+      "sourceSha256": "e8d29c9318737e8cada30340bb741d2d3821ce5984b934a0106f1806e24aa2dd",
+      "sourceBytes": 400094,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e8d29c9318737e8cada30340bb741d2d3821ce5984b934a0106f1806e24aa2dd.jpg",
+      "sha256": "8b939e46f65250c6adae574fe6f2f66243883ea70ebc787e50412b6fac10fd31",
+      "bytes": 587145,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/family-morning-title-es.webp",
+      "sourceSha256": "4658a1be1045a029f9a9a7a810631640ff3e59f8f72653f2e8aab95f00ec33fb",
+      "sourceBytes": 403444,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/4658a1be1045a029f9a9a7a810631640ff3e59f8f72653f2e8aab95f00ec33fb.jpg",
+      "sha256": "5881f4dcc447a9fca7a5f6fba0b4c54b94c023322a8357687cd5189171eb745b",
+      "bytes": 590664,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/forest-path-title-en.webp",
+      "sourceSha256": "8464ffdff9df5d5d6dd082de78d6d3ba97a043dccd98b1355503aaa48281c04c",
+      "sourceBytes": 490010,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/8464ffdff9df5d5d6dd082de78d6d3ba97a043dccd98b1355503aaa48281c04c.jpg",
+      "sha256": "13369ef5952707f4e906160411581eced0ac323531fe8a2cee7327cdf674a3f8",
+      "bytes": 676033,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-001.webp",
+      "sourceSha256": "5049deed3f4673920ec53ac0290266df2a9208f5cdcd668339acd8da3149428c",
+      "sourceBytes": 425530,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/5049deed3f4673920ec53ac0290266df2a9208f5cdcd668339acd8da3149428c.jpg",
+      "sha256": "95c7630b34002d40519447f66326b593714f3a0d592528cd228c09f49f12a8c6",
+      "bytes": 599504,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-002.webp",
+      "sourceSha256": "a61e84707a9fdd714fb6dcab872879a6808f220108bc020783967b2f75d298a8",
+      "sourceBytes": 545316,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a61e84707a9fdd714fb6dcab872879a6808f220108bc020783967b2f75d298a8.jpg",
+      "sha256": "13840cf0e6f41130159a7f82f6c71c6267ae23bf75a763a45aa5d2b93e37f519",
+      "bytes": 720087,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-003.webp",
+      "sourceSha256": "a37e543595b418cf3b28dc0785514872e9f3c5095462ff711a93f320fa8de8ba",
+      "sourceBytes": 492678,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a37e543595b418cf3b28dc0785514872e9f3c5095462ff711a93f320fa8de8ba.jpg",
+      "sha256": "f424afabb4ae8abbfd490722d3e8a53130fe1694217131858d49a8b46fa95e14",
+      "bytes": 660475,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-004.webp",
+      "sourceSha256": "2083dfd4f828b09c6071a4dde4d1e31977d82787972306b589ed2ae24fde8ad8",
+      "sourceBytes": 503418,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/2083dfd4f828b09c6071a4dde4d1e31977d82787972306b589ed2ae24fde8ad8.jpg",
+      "sha256": "70e8d4a9b90972a0d55c5b04d16ecd32137897943bdbc3457fe96cbeba704302",
+      "bytes": 665014,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-005.webp",
+      "sourceSha256": "76818bceb7b4fd16f65fe6d7e42e255d1f74f3c7afbf3c11adfb4a235d194a35",
+      "sourceBytes": 509356,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/76818bceb7b4fd16f65fe6d7e42e255d1f74f3c7afbf3c11adfb4a235d194a35.jpg",
+      "sha256": "e2220e642d16eda455df570b329855ef48d00e92f8a4f9a6b0a3130044f95749",
+      "bytes": 676559,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-006.webp",
+      "sourceSha256": "b03646edef27d293e3ef4d7b97e87215482da94aec3417040f4bf7709e738684",
+      "sourceBytes": 415162,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b03646edef27d293e3ef4d7b97e87215482da94aec3417040f4bf7709e738684.jpg",
+      "sha256": "51f6f70a2df390675b847968aab24a245dd156eb485cfc74c36b2ca23b531456",
+      "bytes": 577907,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-007.webp",
+      "sourceSha256": "1c8c7eca820777358c815af176f5a944b1c7c1bbdcf4a3eb20d01522ab5f2f64",
+      "sourceBytes": 429554,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/1c8c7eca820777358c815af176f5a944b1c7c1bbdcf4a3eb20d01522ab5f2f64.jpg",
+      "sha256": "5d864140763cc3dc91d177f73afca3b2a12a3d8b969bc70f76163a12b50c1d21",
+      "bytes": 594859,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-008.webp",
+      "sourceSha256": "af8b5df48d4a2736d21017ec9fcd90a1d6a3daa14eb5e1033c2bdb4c5d3083aa",
+      "sourceBytes": 498302,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/af8b5df48d4a2736d21017ec9fcd90a1d6a3daa14eb5e1033c2bdb4c5d3083aa.jpg",
+      "sha256": "08c7d475aaa5fa9815aeffc1511e4d027fb65838b170dda72f97d92ba94c2eb5",
+      "bytes": 664361,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-009.webp",
+      "sourceSha256": "81f2b30b605f05c946a40f142448d749a9e52399c6327740b40e2ba0ddb76d1d",
+      "sourceBytes": 480924,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/81f2b30b605f05c946a40f142448d749a9e52399c6327740b40e2ba0ddb76d1d.jpg",
+      "sha256": "6fe3e8d2a60b073c9402bcfd960df5647109f2518fa636dedab01ec639e19455",
+      "bytes": 663649,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-010.webp",
+      "sourceSha256": "226afabbd50e0396605d0748d815c18b675bd43e33287fd9f4d4b55d1112761e",
+      "sourceBytes": 617620,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/226afabbd50e0396605d0748d815c18b675bd43e33287fd9f4d4b55d1112761e.jpg",
+      "sha256": "12e261aa036032a4549d10f370f83dbfc62311678b29ec11ef07765fd6d85f39",
+      "bytes": 794819,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-011.webp",
+      "sourceSha256": "0f02fcc9670594b0d51bf94192fc1c0ae8fbb62ec105929432828e32a926fd62",
+      "sourceBytes": 589584,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/0f02fcc9670594b0d51bf94192fc1c0ae8fbb62ec105929432828e32a926fd62.jpg",
+      "sha256": "477da560206ea58a4fbe1b36e646b03f6e44ba22f7f8c34c932591ac60eacbe0",
+      "bytes": 751057,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-012.webp",
+      "sourceSha256": "db969785f4263c825932d83babe96ed8e876157666568e1c3358990729717912",
+      "sourceBytes": 435308,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/db969785f4263c825932d83babe96ed8e876157666568e1c3358990729717912.jpg",
+      "sha256": "4de8a04c200e573554c8515aa3f4d6077a137fa1db66aa6b48602c3ae33e4659",
+      "bytes": 599618,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-013.webp",
+      "sourceSha256": "61c03509495fc25db2ee1a39e42bc7cd3219e27dd61e2bf085bd6c92a41933d7",
+      "sourceBytes": 525288,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/61c03509495fc25db2ee1a39e42bc7cd3219e27dd61e2bf085bd6c92a41933d7.jpg",
+      "sha256": "a774cfa8a7a720dbf529bbe104d1067105dc5ebcb02645374b0aa1888e344372",
+      "bytes": 699718,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-014.webp",
+      "sourceSha256": "0951a44ec8b17ab65c1ad12fbd8ff72522cd867f9a552c461a5047576d46d66e",
+      "sourceBytes": 536814,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/0951a44ec8b17ab65c1ad12fbd8ff72522cd867f9a552c461a5047576d46d66e.jpg",
+      "sha256": "ad73511854777bef550de30c9d6555701cf55eb5960918c586ef939544c5e306",
+      "bytes": 708965,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-015.webp",
+      "sourceSha256": "adc9e84d1788f545057945adcef1409eee2ae031b46211a47baee520fac604ea",
+      "sourceBytes": 444082,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/adc9e84d1788f545057945adcef1409eee2ae031b46211a47baee520fac604ea.jpg",
+      "sha256": "7f7180420f34ef693f451e8ec57c4080a67875d4d1e949b9801452ba1c1cb9cf",
+      "bytes": 621075,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-016.webp",
+      "sourceSha256": "0ddcc7eed8d541af20c74ef295825b570043432273be0698ae51778ef657739c",
+      "sourceBytes": 589410,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/0ddcc7eed8d541af20c74ef295825b570043432273be0698ae51778ef657739c.jpg",
+      "sha256": "1c6517f3c954cd6af380abd0c1ed902357d6b83d1f48378a48d67e6dadfc8a49",
+      "bytes": 772484,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-017.webp",
+      "sourceSha256": "ec82e4c927b15f1e0b1c19ca786f5f88ddc3af1f6a1ee57c1b2f37ab10f81a1e",
+      "sourceBytes": 577630,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ec82e4c927b15f1e0b1c19ca786f5f88ddc3af1f6a1ee57c1b2f37ab10f81a1e.jpg",
+      "sha256": "7bc59fd392bffcddb07220686e5b73410e83845323e6bf3f1d24b5d4a03bc3a2",
+      "bytes": 745478,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-018.webp",
+      "sourceSha256": "e517d6ca04cd705fb51bafa906b5bf59d362244256abd619ad81d4f6c4f1c739",
+      "sourceBytes": 596236,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e517d6ca04cd705fb51bafa906b5bf59d362244256abd619ad81d4f6c4f1c739.jpg",
+      "sha256": "f6272a3c76278a1b4f7664d778207872a2f1da228545508dd1d409684de6944e",
+      "bytes": 771786,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-019.webp",
+      "sourceSha256": "f422a5ba6a438276920dab5f0776ca4891bb619513349dc4c046cbdd5a93c993",
+      "sourceBytes": 515654,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f422a5ba6a438276920dab5f0776ca4891bb619513349dc4c046cbdd5a93c993.jpg",
+      "sha256": "35695adf93fbe0494919aae2ad5eba85c1a9a82c64847f0996c55b6e57ced87c",
+      "bytes": 682066,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-020.webp",
+      "sourceSha256": "6199f8952c177efcd91f8329f6b04aa57f229f73aa9d609616c77e102f8b9979",
+      "sourceBytes": 511288,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6199f8952c177efcd91f8329f6b04aa57f229f73aa9d609616c77e102f8b9979.jpg",
+      "sha256": "f434cc7ca386cb84fe34247670fb8169ca3c286dae04d9943b25c896fccf4453",
+      "bytes": 685385,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-021.webp",
+      "sourceSha256": "496b4f5dd35b520c54fce130c4ace6758fc48b1efbabf1b1a06f5cd84aeedbe5",
+      "sourceBytes": 505342,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/496b4f5dd35b520c54fce130c4ace6758fc48b1efbabf1b1a06f5cd84aeedbe5.jpg",
+      "sha256": "49cb068cb6fc508056bb3e20025ec69d40353bb4055dfb1e594885c10af2c766",
+      "bytes": 687635,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-forest-022.webp",
+      "sourceSha256": "f68b2da6f296b2fe2d3424f17faa41f15d6f597899892ec88c8bb546bd0017bb",
+      "sourceBytes": 595802,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f68b2da6f296b2fe2d3424f17faa41f15d6f597899892ec88c8bb546bd0017bb.jpg",
+      "sha256": "b47daf84b93fd391630dea2ddcf03077f3b2dc22da81af458f00efdb6962bf20",
+      "bytes": 796494,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/forest-path-title-ru.webp",
+      "sourceSha256": "a5396c4136830a966d9345048967714206812cd2615b4b63ccd87f176e9a6fe1",
+      "sourceBytes": 474798,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a5396c4136830a966d9345048967714206812cd2615b4b63ccd87f176e9a6fe1.jpg",
+      "sha256": "02b6d4358d0a4eba8a752ce40f2ce44de98144be9aec51fa8270017dc83c6691",
+      "bytes": 657838,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/forest-path-title-es.webp",
+      "sourceSha256": "0b47511a64a618d6d98d3b1d2e2cd15e8f8b00e7a67b4056836b8a5d3e027666",
+      "sourceBytes": 480424,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/0b47511a64a618d6d98d3b1d2e2cd15e8f8b00e7a67b4056836b8a5d3e027666.jpg",
+      "sha256": "13b41ef41ba8476e54e3feaf31e7af07703580aaa3cc8a57527f10c44cb4def1",
+      "bytes": 663215,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-house-title-en.webp",
+      "sourceSha256": "56b927533808f6c59a08e2e4a56e6fb8b5d4373432c7bc6d14c94d0f7221f92f",
+      "sourceBytes": 434352,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/56b927533808f6c59a08e2e4a56e6fb8b5d4373432c7bc6d14c94d0f7221f92f.jpg",
+      "sha256": "c787e2b576d0aa4cee583fc09e43ab0b92b60c57f457276cb2bffca2ade2e97f",
+      "bytes": 616285,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-001.webp",
+      "sourceSha256": "0158473467dfdefdc0d4b986762c810805e906886825544020ab8a51d44167f2",
+      "sourceBytes": 495688,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/0158473467dfdefdc0d4b986762c810805e906886825544020ab8a51d44167f2.jpg",
+      "sha256": "4e6af7f584f6b030c44f055e645304eabc923daa22c7545b4cef9d0279689092",
+      "bytes": 674452,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-002.webp",
+      "sourceSha256": "c746f0a3b02a824cfcbafc671a97aa1a53d47e0f6592afac1e21065740c8e111",
+      "sourceBytes": 480120,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/c746f0a3b02a824cfcbafc671a97aa1a53d47e0f6592afac1e21065740c8e111.jpg",
+      "sha256": "fb01e0707e7cc207b5d61e3b01a0838644d7c55ec3f297ff0d81f1eeefc6bac5",
+      "bytes": 661706,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-003.webp",
+      "sourceSha256": "15a4a7ea805a8a45bb4f9b26f7c3b6e4fa2abe0696b3c5f3dfb14495a815497d",
+      "sourceBytes": 465668,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/15a4a7ea805a8a45bb4f9b26f7c3b6e4fa2abe0696b3c5f3dfb14495a815497d.jpg",
+      "sha256": "8ed525c04ad847843c51c303cc8e09b6e6f72ca239a1cddd5ab1c1b413cad7dd",
+      "bytes": 652484,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-004.webp",
+      "sourceSha256": "d2e31bcadea2f57cc60e375921475ea85df8892656609f0caa6d9ffdbe87c200",
+      "sourceBytes": 422762,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d2e31bcadea2f57cc60e375921475ea85df8892656609f0caa6d9ffdbe87c200.jpg",
+      "sha256": "4632cd1a6945660f0d1472b12cfe96f114897a0720cf331b02af0e30ea38d64a",
+      "bytes": 596214,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-005.webp",
+      "sourceSha256": "34fe5d8b02b1fd275488869ffa6884df88917eaeb1d5fcf38da92088dcfa1308",
+      "sourceBytes": 496350,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/34fe5d8b02b1fd275488869ffa6884df88917eaeb1d5fcf38da92088dcfa1308.jpg",
+      "sha256": "76c4cdfbc9bfe2ca5c5a4374cd52ffce0be9a22a204277663b473d1c8c523d05",
+      "bytes": 687109,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-006.webp",
+      "sourceSha256": "81d28e04277a8433d32aa6c4a0cf6931815372fd624ef7e41d6480a82466b155",
+      "sourceBytes": 469708,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/81d28e04277a8433d32aa6c4a0cf6931815372fd624ef7e41d6480a82466b155.jpg",
+      "sha256": "1cd9ff791d13682ee7c8a400be755ba8a2f60e228dfeef108b8e92673bf34bb4",
+      "bytes": 655684,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-007.webp",
+      "sourceSha256": "f2d92b66200392183f81f67db1213d01d89531419dd49ab082ef7a7169281665",
+      "sourceBytes": 552712,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f2d92b66200392183f81f67db1213d01d89531419dd49ab082ef7a7169281665.jpg",
+      "sha256": "1962d24d5de614f004ae262c69de26147451e4211cd07846a3adc067bfafc35e",
+      "bytes": 747076,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-008.webp",
+      "sourceSha256": "45878f261e3341e0f46c2444e72ea075454005b2ed1c08cb34c14e96d31f3773",
+      "sourceBytes": 447462,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/45878f261e3341e0f46c2444e72ea075454005b2ed1c08cb34c14e96d31f3773.jpg",
+      "sha256": "c2a4d1f87aedb6542754380204b212200bb2788d19b9c8646ddf8ff2e769d0c7",
+      "bytes": 619839,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-009.webp",
+      "sourceSha256": "e7f3e9be9a4e35ad47a0439390eff399742881de7583ff61840f95dd7f10e6a8",
+      "sourceBytes": 488534,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e7f3e9be9a4e35ad47a0439390eff399742881de7583ff61840f95dd7f10e6a8.jpg",
+      "sha256": "963a625f4d9d7f5d7e3c2fe88a58b5a71b9d6d07d4be2e103d811b5a70826970",
+      "bytes": 665644,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-010.webp",
+      "sourceSha256": "c280ccc4320731ffc411bb705af8040408dd7b9c09605db7f4a05a4e1aba4636",
+      "sourceBytes": 680236,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/c280ccc4320731ffc411bb705af8040408dd7b9c09605db7f4a05a4e1aba4636.jpg",
+      "sha256": "f7904e88d3dd71a3f1de3624801cca437ad3ae61926426d2ea597e1354a5d7a6",
+      "bytes": 862886,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-011.webp",
+      "sourceSha256": "49c6f7a966366560756f458e00390814eabb0e4888b6f4fd1bdea90872588f2f",
+      "sourceBytes": 450762,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/49c6f7a966366560756f458e00390814eabb0e4888b6f4fd1bdea90872588f2f.jpg",
+      "sha256": "35d6322d6f45e2fc4e9bfc10f6604816bfc0e257f7e53ce6a87ce12f75fe0700",
+      "bytes": 615820,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-012.webp",
+      "sourceSha256": "d3f34005289c074308daaa767f1aa979aec02a3e37bd2728c72fe2eac7a8da53",
+      "sourceBytes": 515954,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d3f34005289c074308daaa767f1aa979aec02a3e37bd2728c72fe2eac7a8da53.jpg",
+      "sha256": "eba01365596e2a01b5ff40eec6ef7ca9fac1cac6b73aaa7cd2f67ca2253cfb58",
+      "bytes": 689805,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-013.webp",
+      "sourceSha256": "b57ec47ae5dc8e6e33f85a73696f26f5c8cd13b20deb5f7cfc1ca1db94037de0",
+      "sourceBytes": 630244,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b57ec47ae5dc8e6e33f85a73696f26f5c8cd13b20deb5f7cfc1ca1db94037de0.jpg",
+      "sha256": "5e3bf88cfb8bcfc65a74f6c6f21b2f4b36db791e8589fa9ea344a79ff7554360",
+      "bytes": 809117,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-014.webp",
+      "sourceSha256": "9a4902c24dd4ff7d822d655a40b9166a45a2165b1937a48f29baf46680aa2d60",
+      "sourceBytes": 524434,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/9a4902c24dd4ff7d822d655a40b9166a45a2165b1937a48f29baf46680aa2d60.jpg",
+      "sha256": "f0f972189e798f2c7f2690493b457a243ee9e55d742705a67ac1c0800c1ccced",
+      "bytes": 664864,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-015.webp",
+      "sourceSha256": "112957b5689d2a122807c471fc170cc31c2f7109bab8fe74a19b237901851aa2",
+      "sourceBytes": 472302,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/112957b5689d2a122807c471fc170cc31c2f7109bab8fe74a19b237901851aa2.jpg",
+      "sha256": "0474872c933e3d5ce5c288121548371a91b45ecc79fce610003811b89088dc98",
+      "bytes": 643998,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-016.webp",
+      "sourceSha256": "25cdedec5397b8a695bdbb8dc38668dfc2b0c2c2b59df4ce6acd76eb7e493522",
+      "sourceBytes": 410538,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/25cdedec5397b8a695bdbb8dc38668dfc2b0c2c2b59df4ce6acd76eb7e493522.jpg",
+      "sha256": "8e372f60655777a895122dfba77531db764722f465328330a9de2a03f9e76d36",
+      "bytes": 578197,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-017.webp",
+      "sourceSha256": "d9d6ba0badd7a7f6db386cb064fa5a08a036df3d52c82a9b53b65b2a65e5db6c",
+      "sourceBytes": 500038,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d9d6ba0badd7a7f6db386cb064fa5a08a036df3d52c82a9b53b65b2a65e5db6c.jpg",
+      "sha256": "864bdae267ea6cd81333d0328c6913857f86e2c1a5be13d2499dcdee868399f2",
+      "bytes": 678464,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-018.webp",
+      "sourceSha256": "4ae80f0c524802d370a24d7cc7862b5c60163dd4d6a6c7f11aa1b15f173cc232",
+      "sourceBytes": 505616,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/4ae80f0c524802d370a24d7cc7862b5c60163dd4d6a6c7f11aa1b15f173cc232.jpg",
+      "sha256": "74cb52b3a97795354620fae5e54c3dfbe355943574c5c488a1682053a6e4412c",
+      "bytes": 681263,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-019.webp",
+      "sourceSha256": "52d1ea3a3d3f45bc71345c5a0c67e914f53589fbada367f155f693c3a56103e8",
+      "sourceBytes": 501768,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/52d1ea3a3d3f45bc71345c5a0c67e914f53589fbada367f155f693c3a56103e8.jpg",
+      "sha256": "c0f07401edd33dfe3e94c9f32aca4c541c5445f83a26c42037d550f2e77d089c",
+      "bytes": 689908,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-020.webp",
+      "sourceSha256": "d1b61885f6b0dfe437033d059151dad91521b804ec161f65ca4c0dc192c926b2",
+      "sourceBytes": 485886,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d1b61885f6b0dfe437033d059151dad91521b804ec161f65ca4c0dc192c926b2.jpg",
+      "sha256": "079f1958f3745cc0f22406a13c93ca3b35820177481033755794c6800e861636",
+      "bytes": 670047,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-021.webp",
+      "sourceSha256": "972df0ae72a83549db2a134ccf68a0b2032ca8eabd84624806ddc6b7842e3274",
+      "sourceBytes": 403782,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/972df0ae72a83549db2a134ccf68a0b2032ca8eabd84624806ddc6b7842e3274.jpg",
+      "sha256": "5aee01682c319ef88d8198762d281f8a8c4953dffc6d2cd9aef5a964d3610bc2",
+      "bytes": 581453,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-022.webp",
+      "sourceSha256": "f0d07c2329ead2ea3d151ff7143bbf2b8b2af39f31757bf00b787d221401a8ac",
+      "sourceBytes": 475518,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f0d07c2329ead2ea3d151ff7143bbf2b8b2af39f31757bf00b787d221401a8ac.jpg",
+      "sha256": "18a4d3a261c93e6bd7826fd5757ec14ebcdd14aa8b3018dc1934e2b3c0893b4c",
+      "bytes": 658446,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-023.webp",
+      "sourceSha256": "7811b2432cb6896f8879f115cfb7718385fb0b3fc943aa8ddf5dfa6fdfa68b6c",
+      "sourceBytes": 456366,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/7811b2432cb6896f8879f115cfb7718385fb0b3fc943aa8ddf5dfa6fdfa68b6c.jpg",
+      "sha256": "92983b437edb455bb5e6646ce146ce9f35bb7aa1323a41b1761cfdb575999019",
+      "bytes": 634317,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-024.webp",
+      "sourceSha256": "e71c98c80eeb01fec2ea835ce1e0ac92c8945c685a40ef16f8d8fd3ac725a209",
+      "sourceBytes": 428522,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e71c98c80eeb01fec2ea835ce1e0ac92c8945c685a40ef16f8d8fd3ac725a209.jpg",
+      "sha256": "5c80cc78da61501f64abb4d06918119b7f9657d6528f3dd60102ae7f1654a9a0",
+      "bytes": 617830,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-025.webp",
+      "sourceSha256": "6efa94307ae5b846445eb58176932081b460094341da3b20d14ec617735865db",
+      "sourceBytes": 453352,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6efa94307ae5b846445eb58176932081b460094341da3b20d14ec617735865db.jpg",
+      "sha256": "39027e6ddbc3431651da2383e84ab6e10f0a4f756c90117bd139f938e9ba9563",
+      "bytes": 639937,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-026.webp",
+      "sourceSha256": "d3ee1e25178f661393a653fb3148a9112e58ccf62c0c171bf2bb1db2ad566df6",
+      "sourceBytes": 439100,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d3ee1e25178f661393a653fb3148a9112e58ccf62c0c171bf2bb1db2ad566df6.jpg",
+      "sha256": "3f6148ac0b22329a34f1df9c9c08e30f84be47a1c574188d8f8b90c501bbac82",
+      "bytes": 628939,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-027.webp",
+      "sourceSha256": "5017ceede2b357a3cbd27bc882f789832281e8e973e5825c887a6d963d5b3d46",
+      "sourceBytes": 501144,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/5017ceede2b357a3cbd27bc882f789832281e8e973e5825c887a6d963d5b3d46.jpg",
+      "sha256": "f6d422a0086364d7d6e2df5d4769dd5d9d1cc155f0123f690d4daae1195985ed",
+      "bytes": 684108,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-028.webp",
+      "sourceSha256": "57c52e03fb098b145d1d0fdee643af7ae22d7aedbd10fbba20b1c6558c8f8a3f",
+      "sourceBytes": 484356,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/57c52e03fb098b145d1d0fdee643af7ae22d7aedbd10fbba20b1c6558c8f8a3f.jpg",
+      "sha256": "91efc37caa698225773d284f17ef1613441c3055cdeed7e9d2a50e7aaa2f3a52",
+      "bytes": 653975,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-029.webp",
+      "sourceSha256": "251f8d98b9978bfec60526df49519fd5cedb5c9f6125bbc2d677e1af2696dc2c",
+      "sourceBytes": 488088,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/251f8d98b9978bfec60526df49519fd5cedb5c9f6125bbc2d677e1af2696dc2c.jpg",
+      "sha256": "15507de6192029b987157054969f3b529ea97026b66c9daaa6ecf4dbb4b985d6",
+      "bytes": 648910,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-030.webp",
+      "sourceSha256": "ef91a918e5c76faca801dd9f65336d8d445f8a01ac68959e99359a862a671519",
+      "sourceBytes": 471984,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ef91a918e5c76faca801dd9f65336d8d445f8a01ac68959e99359a862a671519.jpg",
+      "sha256": "aa6e9c8b6251e84a30d6419ab07fcd1efa7ea9341a36054679b03b225f079601",
+      "bytes": 641313,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-031.webp",
+      "sourceSha256": "674f7c5ce4fc0b3144063ec271023003e11ccef9fdce34c1db94d667c5fc23b0",
+      "sourceBytes": 455112,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/674f7c5ce4fc0b3144063ec271023003e11ccef9fdce34c1db94d667c5fc23b0.jpg",
+      "sha256": "8b9817b8ed3424237206b891803ea21c22de7f4342f3cc3d414a6de8d7d30cbe",
+      "bytes": 609411,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-032.webp",
+      "sourceSha256": "39911c065914a6a8d3daf8b98d98fea5593608ec80844d3388fef71eec13305c",
+      "sourceBytes": 541662,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/39911c065914a6a8d3daf8b98d98fea5593608ec80844d3388fef71eec13305c.jpg",
+      "sha256": "8a10662d05ab5bb29c9013f64d0d193b3367c5a937213a33318779e010bcba09",
+      "bytes": 697710,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-033.webp",
+      "sourceSha256": "8dd2318a732bf11ac7cfd1ab1936c32ec291670d433e7e7ff6d488aaa8059335",
+      "sourceBytes": 513808,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/8dd2318a732bf11ac7cfd1ab1936c32ec291670d433e7e7ff6d488aaa8059335.jpg",
+      "sha256": "a93a549b11b1c50109f99a8f7f0ef57e6a69720f19827da3b02ec8f2bc79737a",
+      "bytes": 659553,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-034.webp",
+      "sourceSha256": "68939745a2fb40e2b2b1af00fed05c2c20317e8087fcc20a396856df45560e74",
+      "sourceBytes": 493558,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/68939745a2fb40e2b2b1af00fed05c2c20317e8087fcc20a396856df45560e74.jpg",
+      "sha256": "6264825abc0530134edae4ab979e34f6697e8f0af81d320e13cf3e6cceb927e2",
+      "bytes": 658030,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-035.webp",
+      "sourceSha256": "a54edabb5913fc00fe88301fb89f3f95513d789c634a21b10b18cdb8556ac477",
+      "sourceBytes": 452156,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a54edabb5913fc00fe88301fb89f3f95513d789c634a21b10b18cdb8556ac477.jpg",
+      "sha256": "592afd860fb142aa8b32ef5b5cb7c52ebda7bf9d01ea35f86022e089396b4df8",
+      "bytes": 610466,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-house-title-ru.webp",
+      "sourceSha256": "7b326cb62c22a7bdbc64f6b927983bdd86fe34fe7b8834f6175e164da3611dba",
+      "sourceBytes": 421486,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/7b326cb62c22a7bdbc64f6b927983bdd86fe34fe7b8834f6175e164da3611dba.jpg",
+      "sha256": "9eec050beed30b08690829fdb0a20acfc83e1e14c98307129ad97b175dbab90f",
+      "bytes": 604263,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-house-title-es.webp",
+      "sourceSha256": "a289d712d74c9e466862d416d200620fbbb785a4f8f630fef9e9a9aa2311decd",
+      "sourceBytes": 420400,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a289d712d74c9e466862d416d200620fbbb785a4f8f630fef9e9a9aa2311decd.jpg",
+      "sha256": "c657b1c53666ee0289dddbb9860dfbf9cc6c8e22581bfcd246789e1d92f443c3",
+      "bytes": 603466,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/beneath-roots-title-en.webp",
+      "sourceSha256": "f578c543889c9ac17ea61b5223789c4a45c17d350309ce60f1718cc25996babf",
+      "sourceBytes": 465142,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f578c543889c9ac17ea61b5223789c4a45c17d350309ce60f1718cc25996babf.jpg",
+      "sha256": "f142dcd5531fd87f4dc1995298a1a5822dc63dba5a7feb254087bdbd24c3061b",
+      "bytes": 639549,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-036.webp",
+      "sourceSha256": "a7aa2924f8c5a3b4921d93e3c559b5c6c93a81d1e9f30c26c4caad98fca1423c",
+      "sourceBytes": 438064,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a7aa2924f8c5a3b4921d93e3c559b5c6c93a81d1e9f30c26c4caad98fca1423c.jpg",
+      "sha256": "8792fab414f3bb7541b8eab77219fe7c6ed713519ae3c8772d1498321441b4fc",
+      "bytes": 596436,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-037.webp",
+      "sourceSha256": "f8f56603dc2c27643b26add32fb63f25e7e19da58367114de20ba2053aa90724",
+      "sourceBytes": 460854,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f8f56603dc2c27643b26add32fb63f25e7e19da58367114de20ba2053aa90724.jpg",
+      "sha256": "fd73faeea8659a06cb87309fffebd5022607a8465b251d830acbff8f4a3415a0",
+      "bytes": 626908,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-038.webp",
+      "sourceSha256": "275411743c00da009028fd0234773d6b2f46f6caa5060dc54055bcc47ee63b37",
+      "sourceBytes": 408974,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/275411743c00da009028fd0234773d6b2f46f6caa5060dc54055bcc47ee63b37.jpg",
+      "sha256": "6e0e2167ac735095c5755d914ebc2202f06756ce74f345cdf42ba34aa739f87c",
+      "bytes": 577468,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-039.webp",
+      "sourceSha256": "f6147e85e561f5e90bcc3750f47cc7384e86fdbe55c7343cb224696386473e52",
+      "sourceBytes": 450278,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f6147e85e561f5e90bcc3750f47cc7384e86fdbe55c7343cb224696386473e52.jpg",
+      "sha256": "e27ec6eb65793d069eca9d8a1cdb0a987896c02d47c08557aa071d303a721507",
+      "bytes": 610830,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-040.webp",
+      "sourceSha256": "c166e328055f5763148886c547ebdc50cef0168134f25830ec8f69909a5991ad",
+      "sourceBytes": 445260,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/c166e328055f5763148886c547ebdc50cef0168134f25830ec8f69909a5991ad.jpg",
+      "sha256": "c07d53afc4eaadafc23e39d59e4ce391da6b77a322b17867045b732280555e26",
+      "bytes": 603197,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-041.webp",
+      "sourceSha256": "5758fe6210671668ce1e0c7e03896cd5261c346c871a0b10b22d8829de62203b",
+      "sourceBytes": 471642,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/5758fe6210671668ce1e0c7e03896cd5261c346c871a0b10b22d8829de62203b.jpg",
+      "sha256": "923bae8dc863729a980b0dd59b8ef3555f9dc00346f071b159cc40cf4336f371",
+      "bytes": 634184,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-042.webp",
+      "sourceSha256": "d294422fe85cacca814819f6872bafede2e585d391a96028fd74a0eaed10e1ae",
+      "sourceBytes": 452168,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d294422fe85cacca814819f6872bafede2e585d391a96028fd74a0eaed10e1ae.jpg",
+      "sha256": "644e3dd483ae241094d1bb9f67524f76f0f683de7f5cedc36b5f587dd27bab29",
+      "bytes": 610150,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-043.webp",
+      "sourceSha256": "ec9aac22539c775cc889ba718a01d8c4d48a5ed73c61d66afa23d032f0592827",
+      "sourceBytes": 415482,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ec9aac22539c775cc889ba718a01d8c4d48a5ed73c61d66afa23d032f0592827.jpg",
+      "sha256": "a41122b98ec8f393c30b546bd4da4eaebd86ebee8abfdb82161911552e89eafb",
+      "bytes": 576779,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-044.webp",
+      "sourceSha256": "c952b9032da9fb31293c372dc76c0247adf26a30a2df3b3549df3ed335c0600a",
+      "sourceBytes": 449352,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/c952b9032da9fb31293c372dc76c0247adf26a30a2df3b3549df3ed335c0600a.jpg",
+      "sha256": "b32c644d54b4e5234bb2947e51f81ac324c88d8ff9e81cfcf5017a373f84051f",
+      "bytes": 608168,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-045.webp",
+      "sourceSha256": "de5c3b65c93ed4fd87978f18038d971b7f5a89b1468abfb47a3875773a9a92f3",
+      "sourceBytes": 398998,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/de5c3b65c93ed4fd87978f18038d971b7f5a89b1468abfb47a3875773a9a92f3.jpg",
+      "sha256": "3e758d0655cbb252a54f2dd00b15ee051b15e21c7d33e1b33a46b7f7398d9283",
+      "bytes": 552793,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-046.webp",
+      "sourceSha256": "23b1e56057716fe47053b56978feb8c36c3acfa3ee37d5de1dd60cb657ce5189",
+      "sourceBytes": 405320,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/23b1e56057716fe47053b56978feb8c36c3acfa3ee37d5de1dd60cb657ce5189.jpg",
+      "sha256": "24392a7a0e90b45c8597d1fe658a053732c07d85d7297321d64c8b33f7e3ca2f",
+      "bytes": 564328,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-047.webp",
+      "sourceSha256": "fab239959f872441dd64687523768a2a0c73b8bf6891be7753d624be4706fb1d",
+      "sourceBytes": 407734,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/fab239959f872441dd64687523768a2a0c73b8bf6891be7753d624be4706fb1d.jpg",
+      "sha256": "24faf615cdf6e9160c2399b1b05e13bb7688a3bb8df6e3c480585281d547d7a1",
+      "bytes": 578370,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-048.webp",
+      "sourceSha256": "7657c588a54bf760b3e37f2367d362019554bbd1431399b7276b471bcc6988ea",
+      "sourceBytes": 403108,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/7657c588a54bf760b3e37f2367d362019554bbd1431399b7276b471bcc6988ea.jpg",
+      "sha256": "938d91dcff7de02d720363163057709fd42366755afa6ebe4624124f117052b4",
+      "bytes": 571978,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-049.webp",
+      "sourceSha256": "e3863b6ed957f3f58485dcd1c05a054962f1e4e7fc9b94f442c32a21676230a2",
+      "sourceBytes": 378070,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e3863b6ed957f3f58485dcd1c05a054962f1e4e7fc9b94f442c32a21676230a2.jpg",
+      "sha256": "2a794a3dcf74d132aa6fe2ec0858db6e7cb8ee93f83e0a234b2e597e9931a1eb",
+      "bytes": 531977,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-050.webp",
+      "sourceSha256": "a8a8f4fc217d9f1b9501f5bec6bc94a1a7aed65d3fb72e39582121891ba623a6",
+      "sourceBytes": 476754,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a8a8f4fc217d9f1b9501f5bec6bc94a1a7aed65d3fb72e39582121891ba623a6.jpg",
+      "sha256": "1ab82349b9f0f6d805345c3f63f37e91353f1ee838102d2ebae286f833ae5c90",
+      "bytes": 617346,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-051.webp",
+      "sourceSha256": "95a3d491f294b390f52ae360554cbef09fdd306bdc3aaa72a8e2904dc5bbf9b8",
+      "sourceBytes": 438998,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/95a3d491f294b390f52ae360554cbef09fdd306bdc3aaa72a8e2904dc5bbf9b8.jpg",
+      "sha256": "cad071641694274701d67d8147843c479012621efcc6acb5029a2ec18368fc49",
+      "bytes": 586931,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-052.webp",
+      "sourceSha256": "590b9275e72db3c0979d536064548bb9edb70d000720fedff764ceea341a48ea",
+      "sourceBytes": 505918,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/590b9275e72db3c0979d536064548bb9edb70d000720fedff764ceea341a48ea.jpg",
+      "sha256": "3175c535cd8c3cba41bd53c9d60773a7c4f3b355726d3db6adc57acd574de08a",
+      "bytes": 670196,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-053.webp",
+      "sourceSha256": "b7bbc7b4ae756e828e0e8fbb2d05797547c7327a6f9e35dc3c522f03fb827cfb",
+      "sourceBytes": 471598,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b7bbc7b4ae756e828e0e8fbb2d05797547c7327a6f9e35dc3c522f03fb827cfb.jpg",
+      "sha256": "e7ebb6c2edcba262b3ef57bd5ad053d175634744c03fb34bebd4c7cea4e2b992",
+      "bytes": 610501,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-054.webp",
+      "sourceSha256": "68bd9c5a567d19c76f1820b1f2d90d5c570f38d1d89ba363cb2fa270f8b8c451",
+      "sourceBytes": 293038,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/68bd9c5a567d19c76f1820b1f2d90d5c570f38d1d89ba363cb2fa270f8b8c451.jpg",
+      "sha256": "f3a0edcf9bfec66bbbd25148f02a1a11e043b0e3c2c637a2e87ba71c291e564d",
+      "bytes": 448466,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-055.webp",
+      "sourceSha256": "13721cea9fbb32e038f485b2185ae986d93898b1a6cfaaacd500cace4b0045e0",
+      "sourceBytes": 479902,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/13721cea9fbb32e038f485b2185ae986d93898b1a6cfaaacd500cace4b0045e0.jpg",
+      "sha256": "0a94a3affcbf9ebd6bcd14a146b13552b835aceced9b8573576363b8a52dd715",
+      "bytes": 626855,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-056.webp",
+      "sourceSha256": "f8a5c9ea6c41e0f2943f71364acba356c9931b94b119978d18a0169509ed975e",
+      "sourceBytes": 505410,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f8a5c9ea6c41e0f2943f71364acba356c9931b94b119978d18a0169509ed975e.jpg",
+      "sha256": "809130b52f703f4ede8b10a6f0d19a6155bda258b1e7792aa748b7ee5bc97bd7",
+      "bytes": 656763,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-057.webp",
+      "sourceSha256": "8eed339bf3861b777c93f4f04a40a055bc386a69c4f0dda0331ed1cf0513105d",
+      "sourceBytes": 436956,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/8eed339bf3861b777c93f4f04a40a055bc386a69c4f0dda0331ed1cf0513105d.jpg",
+      "sha256": "87c315cb7930706523a9792f118e6b51372b76eb8e994bafba656ff52eed11fa",
+      "bytes": 578233,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-058.webp",
+      "sourceSha256": "3882bc3353c45c83bbcb76578f8388975163b46fb5b56564176fbf48b6dccf91",
+      "sourceBytes": 372414,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/3882bc3353c45c83bbcb76578f8388975163b46fb5b56564176fbf48b6dccf91.jpg",
+      "sha256": "dc9601b932f781b642fd0c8dd96b048516c0f79d62d7a708cb90889698355254",
+      "bytes": 534848,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-059.webp",
+      "sourceSha256": "5a44d6409d927605a027612f4fbfadac796f82e0d7e093aa6b800ca62c5b4ae3",
+      "sourceBytes": 454324,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/5a44d6409d927605a027612f4fbfadac796f82e0d7e093aa6b800ca62c5b4ae3.jpg",
+      "sha256": "2d4e646ca92b13a454e4bdb61e4d166d9d12723929b4dabb8924831f91bca4d1",
+      "bytes": 623032,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-060.webp",
+      "sourceSha256": "00eb5c6ef796039d6ccb792bc8c6edbaa772dfded081136a1d41abcb2949243b",
+      "sourceBytes": 564540,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/00eb5c6ef796039d6ccb792bc8c6edbaa772dfded081136a1d41abcb2949243b.jpg",
+      "sha256": "d1b387db0568199bd32f160edaedb5198d8b0e0e4b89ed6462644dbfa3b7248d",
+      "bytes": 708778,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-061.webp",
+      "sourceSha256": "3fba803f284feb23f9e95f2b87856b2937e1cc360314f1d7383fbd482f11cbe9",
+      "sourceBytes": 690468,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/3fba803f284feb23f9e95f2b87856b2937e1cc360314f1d7383fbd482f11cbe9.jpg",
+      "sha256": "91b0d0d6c3cbee5a9fa2c8363a78ff84dfb76f5fd28690c0be6160d66fadfaef",
+      "bytes": 821855,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-062.webp",
+      "sourceSha256": "5b5be3057175c753571a5086d12f2fce7f37f8c46616a58a467e2c22fbbcc9e0",
+      "sourceBytes": 320414,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/5b5be3057175c753571a5086d12f2fce7f37f8c46616a58a467e2c22fbbcc9e0.jpg",
+      "sha256": "b9cdc1ceb3d8f30d35636d834fcfbe94532fc8ab36531a24692af0bf6f4eeb68",
+      "bytes": 480997,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-063.webp",
+      "sourceSha256": "e7436f0a8dacbc3d02637f7ae22cef4a92f136abbdd2c78b178c380f83861a7a",
+      "sourceBytes": 586532,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e7436f0a8dacbc3d02637f7ae22cef4a92f136abbdd2c78b178c380f83861a7a.jpg",
+      "sha256": "10628d9bb055a7f4709e603b3e51f34dd2781a02e2428a0fb60f1e62a8203db8",
+      "bytes": 729767,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-064.webp",
+      "sourceSha256": "5917718f74f27de0133d01fe491620595b6a16cfa970a13dd68e1b152c6f865f",
+      "sourceBytes": 560018,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/5917718f74f27de0133d01fe491620595b6a16cfa970a13dd68e1b152c6f865f.jpg",
+      "sha256": "8c94468423bbc77a0c95d8c91c3a1d205ae0f0fa88402637972b063b060fcedf",
+      "bytes": 704949,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-065.webp",
+      "sourceSha256": "64dc2579b4a7440528e6cfd60cfa89c6c50de751ddb0bed561838cfee24868c3",
+      "sourceBytes": 454592,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/64dc2579b4a7440528e6cfd60cfa89c6c50de751ddb0bed561838cfee24868c3.jpg",
+      "sha256": "5334ba946a2496a55685bd1c0ea3c30391ad25a6e211f54b0defa1fb07f6e739",
+      "bytes": 625601,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-066.webp",
+      "sourceSha256": "002536dad9371ec1265279069cec67d980d1877f6b117b4f90239b9858f1a200",
+      "sourceBytes": 623222,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/002536dad9371ec1265279069cec67d980d1877f6b117b4f90239b9858f1a200.jpg",
+      "sha256": "7b590bedcfd824b664420a6002337bb04a8aaacf552924a87aacac23598d636e",
+      "bytes": 757247,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-067.webp",
+      "sourceSha256": "e65fad7710051b5869e50fa7dd415b956b88d86a93c4ebc58f7374a3302a078f",
+      "sourceBytes": 449596,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e65fad7710051b5869e50fa7dd415b956b88d86a93c4ebc58f7374a3302a078f.jpg",
+      "sha256": "29d29459e9edc4e8837eb61c33fec00348d1bc9f95f93aa451b2a977d603aa00",
+      "bytes": 608852,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-068.webp",
+      "sourceSha256": "bb0fc73344445849467abd27a1e8a52dcd82456d3c8cd3bf769af01857db2b01",
+      "sourceBytes": 598230,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/bb0fc73344445849467abd27a1e8a52dcd82456d3c8cd3bf769af01857db2b01.jpg",
+      "sha256": "cfad05826e6e92c8496ee6a71fe81770e9ddb49a4639240364a4d083355d9b69",
+      "bytes": 741780,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-069.webp",
+      "sourceSha256": "9e0ef68fa854c8f02fe5ce3da08708c9246078be84d4df5945c02daa3ffa01fe",
+      "sourceBytes": 445820,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/9e0ef68fa854c8f02fe5ce3da08708c9246078be84d4df5945c02daa3ffa01fe.jpg",
+      "sha256": "ab4afd1c87ed1ad506a6eca00f999f93c8d8405e2281a1f79eec40f462af3d30",
+      "bytes": 607677,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-070.webp",
+      "sourceSha256": "c35471c777c15a9f06b14850799e174344c95de3a9dd0cac354882f6ce56d732",
+      "sourceBytes": 633092,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/c35471c777c15a9f06b14850799e174344c95de3a9dd0cac354882f6ce56d732.jpg",
+      "sha256": "68bacabafd4f354e85ba66e1297eb2f40c96231ba2b663d52010a5e57afcdec7",
+      "bytes": 792752,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-071.webp",
+      "sourceSha256": "27035e73d37398297eb57c165f0e5ba55ff0d6d87fa87f693397bd1e43d57be3",
+      "sourceBytes": 526844,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/27035e73d37398297eb57c165f0e5ba55ff0d6d87fa87f693397bd1e43d57be3.jpg",
+      "sha256": "25474f5ee699d429b3b9b4ac497db63a075b4b3ea96cf01da8a361ccec21d328",
+      "bytes": 671058,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-072.webp",
+      "sourceSha256": "9dcff10ef87808092f83d8be295e87220f0313cf747d532db7e61d9026be5629",
+      "sourceBytes": 570712,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/9dcff10ef87808092f83d8be295e87220f0313cf747d532db7e61d9026be5629.jpg",
+      "sha256": "8da89d3dd567183fb6715240843a8c2fdea698bf558f4b799ab7bda2327093dd",
+      "bytes": 719181,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-073.webp",
+      "sourceSha256": "b204f5add48f91bf85e7d2d5ec4830c6889bca8ba83a0c590d647c2723a2d9cc",
+      "sourceBytes": 530446,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b204f5add48f91bf85e7d2d5ec4830c6889bca8ba83a0c590d647c2723a2d9cc.jpg",
+      "sha256": "df27098f53409d522b37703a903e7b56ea50a8d77afec9721e8bb016b4cdaf0d",
+      "bytes": 686540,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-074.webp",
+      "sourceSha256": "20e1d78e2312b07a4f1f193e0cfd764cbc94405bae4db924b135ad37d2766a1e",
+      "sourceBytes": 600278,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/20e1d78e2312b07a4f1f193e0cfd764cbc94405bae4db924b135ad37d2766a1e.jpg",
+      "sha256": "792c212a10be12da6d8abbdb69de18f98f839836a7295265185d4503bd47dda1",
+      "bytes": 731255,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-075.webp",
+      "sourceSha256": "66b412f4bd2bac978e8b034b873f04c4f3cabfa018bb833716760dfc9cb6ced1",
+      "sourceBytes": 650584,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/66b412f4bd2bac978e8b034b873f04c4f3cabfa018bb833716760dfc9cb6ced1.jpg",
+      "sha256": "f7e848d14eb982e8c74dbb2499fb06bc14416f67d014fced312dde25312529b6",
+      "bytes": 784975,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-076.webp",
+      "sourceSha256": "2c5966dc7ccfe48ab143eaf5016c83bcb8e14e6bd96678f715981514ae43cb75",
+      "sourceBytes": 385096,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/2c5966dc7ccfe48ab143eaf5016c83bcb8e14e6bd96678f715981514ae43cb75.jpg",
+      "sha256": "d693d7c70351db3c3dd3e2ff7fbe16f37f1309475329178fa172faeb3579d5ce",
+      "bytes": 546313,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-077.webp",
+      "sourceSha256": "c632a510997f5c799b7319dab44e7fa6411ad4eea310c4acfb0391ff672fa590",
+      "sourceBytes": 465752,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/c632a510997f5c799b7319dab44e7fa6411ad4eea310c4acfb0391ff672fa590.jpg",
+      "sha256": "5b73a17a643978713acf6fd22489dbf33fbdd9d56de9d5946f920da22ea60929",
+      "bytes": 606739,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-078.webp",
+      "sourceSha256": "e6814e16acfc0b0aff4a9fe48a69fd662f9fedf5f9f554eb7b1faa8df1de4e74",
+      "sourceBytes": 424216,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e6814e16acfc0b0aff4a9fe48a69fd662f9fedf5f9f554eb7b1faa8df1de4e74.jpg",
+      "sha256": "b0537abdee78d90fded4750b40a05e31a2f846474eff6a8c66670ac4c32f7f6a",
+      "bytes": 589013,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-079.webp",
+      "sourceSha256": "ced719b93c1bfe15e71bbe21f2a9ab02b7e2847e2cb18a148d859629e2a9bee0",
+      "sourceBytes": 350068,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ced719b93c1bfe15e71bbe21f2a9ab02b7e2847e2cb18a148d859629e2a9bee0.jpg",
+      "sha256": "0ae6bb50ed1554f7decb91fdd510221fdc41213b8707d5bb3738f323f77b7718",
+      "bytes": 508488,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-080.webp",
+      "sourceSha256": "aca898b7998953b167d4727c7bf1a3093237023e87822130219c569820621191",
+      "sourceBytes": 427924,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/aca898b7998953b167d4727c7bf1a3093237023e87822130219c569820621191.jpg",
+      "sha256": "18ab1ae3f90c667effbac2942aad6391382c48f5f458310ba51bb01a50a643f8",
+      "bytes": 577875,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-081.webp",
+      "sourceSha256": "1ebd83f72bfa0a7f82ab8e4031bc84c65e00171108cb93a4aea6de7387767a11",
+      "sourceBytes": 392640,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/1ebd83f72bfa0a7f82ab8e4031bc84c65e00171108cb93a4aea6de7387767a11.jpg",
+      "sha256": "fe688da778fe9a8cee9af8a760ed8305c0658608291bd48b9069d377da6a0382",
+      "bytes": 556704,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-082.webp",
+      "sourceSha256": "e161412c4aa57d8b653b645013a62dc96125c00ac3286b5fc169c23d7c559827",
+      "sourceBytes": 431854,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/e161412c4aa57d8b653b645013a62dc96125c00ac3286b5fc169c23d7c559827.jpg",
+      "sha256": "9f24fd5040f6a39fbc478c84fffc78a66f07db31d1e63207d03884da63bed48c",
+      "bytes": 601757,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-083.webp",
+      "sourceSha256": "de0860b17bad8554e4ff50aea3522c87d078290d5640e36b1cca7bc8da60c9db",
+      "sourceBytes": 449322,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/de0860b17bad8554e4ff50aea3522c87d078290d5640e36b1cca7bc8da60c9db.jpg",
+      "sha256": "0ffbd7588e8ea7fe499af7b4095e0f3ac13fd12521f1daac4fe93af48c2c1797",
+      "bytes": 595899,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-084.webp",
+      "sourceSha256": "fe3024ab7f261573ece76ef44d2b02e22a9ee1760e2bd4cdc43a174e2574eb0f",
+      "sourceBytes": 399032,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/fe3024ab7f261573ece76ef44d2b02e22a9ee1760e2bd4cdc43a174e2574eb0f.jpg",
+      "sha256": "e0c66da7d4066e7819e33a2413df44965f09a995417cf4aadb47d08c221b25e5",
+      "bytes": 556814,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-085.webp",
+      "sourceSha256": "158be98f72f1a37a7c8d0c173b494fa5f32e1e8a7dc74bd832c150ba0efbae2f",
+      "sourceBytes": 465650,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/158be98f72f1a37a7c8d0c173b494fa5f32e1e8a7dc74bd832c150ba0efbae2f.jpg",
+      "sha256": "0c3ffe1e411251e7c3fb414f80141334e6d78b0726c363c6b253760c8a5dcef1",
+      "bytes": 615168,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-086.webp",
+      "sourceSha256": "497d36401df6dbd609465fafe29d5b70d914cafca45d27799636162befbf862f",
+      "sourceBytes": 452434,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/497d36401df6dbd609465fafe29d5b70d914cafca45d27799636162befbf862f.jpg",
+      "sha256": "9a451b10d63896c2c2432c8d63095fce755d242067546def8c7b51895e42b853",
+      "bytes": 602226,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-087.webp",
+      "sourceSha256": "f37eda5ad4e8479225362f1882839dcd08d66f417f2dbe7111e42ed089967e8d",
+      "sourceBytes": 564376,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/f37eda5ad4e8479225362f1882839dcd08d66f417f2dbe7111e42ed089967e8d.jpg",
+      "sha256": "3d96ac4721acbb5e3a9cd1026dcb171c96d668800187007ef8495baae8f6a4c6",
+      "bytes": 717843,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-088.webp",
+      "sourceSha256": "ee16445ecf2957e0cf52a4e6a667023718d02491b3ffec3f243ca10ec8c53ded",
+      "sourceBytes": 472262,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ee16445ecf2957e0cf52a4e6a667023718d02491b3ffec3f243ca10ec8c53ded.jpg",
+      "sha256": "967fd259bf6842d43929707f8ac5417043713950b5dc58d3064ad07f49ed2e9d",
+      "bytes": 643227,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-089.webp",
+      "sourceSha256": "66dcafd238a4c63b14f65bc0b0c8404ebe90ea9d3b010827b19ef6225d9351aa",
+      "sourceBytes": 453734,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/66dcafd238a4c63b14f65bc0b0c8404ebe90ea9d3b010827b19ef6225d9351aa.jpg",
+      "sha256": "2c66a16756e3bfed08b05c675c92e4b69ee12ae91509f1938f305cda98dc4c3a",
+      "bytes": 620219,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-090.webp",
+      "sourceSha256": "6d83bbf1b856ad213e10fe8e400631fa4c670d421c95a82bdb9d33ba6eefcddb",
+      "sourceBytes": 523568,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/6d83bbf1b856ad213e10fe8e400631fa4c670d421c95a82bdb9d33ba6eefcddb.jpg",
+      "sha256": "1887bbfb8aae73b3598a646a18c445f006221396ebe229a03722dfc019ced25f",
+      "bytes": 710957,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-091.webp",
+      "sourceSha256": "ce34cde380bc7bef666f9be8d318e66258899f1666b89db821b330431a8b58c6",
+      "sourceBytes": 458240,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/ce34cde380bc7bef666f9be8d318e66258899f1666b89db821b330431a8b58c6.jpg",
+      "sha256": "37425737d5f407d958f9f7cc21d6fc7489a8326a06aa7d99f6eb616543b50963",
+      "bytes": 645176,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-092.webp",
+      "sourceSha256": "1aa30a9b1d9d4dde949d0a05089be20c691dcd057319ffac3d68c0268474ac58",
+      "sourceBytes": 510226,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/1aa30a9b1d9d4dde949d0a05089be20c691dcd057319ffac3d68c0268474ac58.jpg",
+      "sha256": "f5a90865f171a1c54157046425a06919b20e1af6d21ce2f5af526636680cf4e3",
+      "bytes": 695253,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-093.webp",
+      "sourceSha256": "497d7ead5b20d082a2f889fb35d3751db1606def5744f84de2163341f496c4eb",
+      "sourceBytes": 494812,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/497d7ead5b20d082a2f889fb35d3751db1606def5744f84de2163341f496c4eb.jpg",
+      "sha256": "00593a7973ab137ccdde93659e362a0a3f9d78db0d8923708563df5d33991d80",
+      "bytes": 682500,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-094.webp",
+      "sourceSha256": "7c6fc6d45cad4ee6d990609bfcb48a5472620b88cf9ac4f2962b737d55de2a85",
+      "sourceBytes": 523876,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/7c6fc6d45cad4ee6d990609bfcb48a5472620b88cf9ac4f2962b737d55de2a85.jpg",
+      "sha256": "b7194f26389e3a7b03f27b83a0d70ee3b46ec02938d0a3282fddc2d1f71feca9",
+      "bytes": 702009,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-095.webp",
+      "sourceSha256": "1aa05f416c23789e8ed3fd8181bd1ea01f57659aa78d37bba913c558d9cbfd80",
+      "sourceBytes": 477952,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/1aa05f416c23789e8ed3fd8181bd1ea01f57659aa78d37bba913c558d9cbfd80.jpg",
+      "sha256": "dda0cbf428e3880116f4f832dc8e74885da9699e5d8ffe1a5eedd083f2c65d23",
+      "bytes": 646530,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-096.webp",
+      "sourceSha256": "7024e88ac77e7b2f496661b6aa0a9e67459af77e9d842414684955f46c360a1e",
+      "sourceBytes": 436254,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/7024e88ac77e7b2f496661b6aa0a9e67459af77e9d842414684955f46c360a1e.jpg",
+      "sha256": "447e93cde9b925a8d04bee55d8d514477af2d4233e9985c4bd3d99b16f2ddea4",
+      "bytes": 613614,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-097.webp",
+      "sourceSha256": "938800ebb6c2ebe126b0b6affc09d4d890a818f1d11155a8b617e6b50c2a007b",
+      "sourceBytes": 527020,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/938800ebb6c2ebe126b0b6affc09d4d890a818f1d11155a8b617e6b50c2a007b.jpg",
+      "sha256": "639527db4190e18693885404fececad4fb4bf0e41190bb24a067cec417f9af11",
+      "bytes": 711958,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-098.webp",
+      "sourceSha256": "366ea570064f9d83bd899678d9d3720b8fae86ca8bfd2e92c30733b22e3c676c",
+      "sourceBytes": 545702,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/366ea570064f9d83bd899678d9d3720b8fae86ca8bfd2e92c30733b22e3c676c.jpg",
+      "sha256": "41506e2e99b0a02eaaf87f0029f120954c058d39f6108d5f94ee8c3dc842d083",
+      "bytes": 718556,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-099.webp",
+      "sourceSha256": "965ae8ab7c6c640847905f762d1a34fe1e1bb89a2484a971fe887f749123f815",
+      "sourceBytes": 550018,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/965ae8ab7c6c640847905f762d1a34fe1e1bb89a2484a971fe887f749123f815.jpg",
+      "sha256": "67ac05101851c69d140404d03b6a7c4421b6c8e3f7dd1175fb4acef17f6c1f28",
+      "bytes": 726935,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-100.webp",
+      "sourceSha256": "9e1b6cf1cc92b5bdf08da9c06f775aa9ed163131cefc237fe33b3cb176df8d59",
+      "sourceBytes": 459096,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/9e1b6cf1cc92b5bdf08da9c06f775aa9ed163131cefc237fe33b3cb176df8d59.jpg",
+      "sha256": "32945adbbcfdb667c808d02942f9e9296327bf9205030fb6f0667808ad09da59",
+      "bytes": 627774,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-mentor-101.webp",
+      "sourceSha256": "9376f099356d177ca799f102f3577c1d195f161eea92a8f703fc03ace025dc10",
+      "sourceBytes": 369080,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/9376f099356d177ca799f102f3577c1d195f161eea92a8f703fc03ace025dc10.jpg",
+      "sha256": "511046160fac72505c523491708f43e2fb09fbd6c6dffec85e76a2cf8791e54a",
+      "bytes": 522681,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-036.webp",
+      "sourceSha256": "8020bc2dafab0b87d10e4a776b1abd216b5901e5d875a10ce4de382d66c96821",
+      "sourceBytes": 464640,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/8020bc2dafab0b87d10e4a776b1abd216b5901e5d875a10ce4de382d66c96821.jpg",
+      "sha256": "85ea95e05fa55b1ddb2617401d2282504b81539c68cce0368ca78ba16730f51f",
+      "bytes": 633749,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-037.webp",
+      "sourceSha256": "d4d8aaf7549a549b80b9786f6f6e8d42ba28981e15eb066d5ac55f499632bbbb",
+      "sourceBytes": 463412,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/d4d8aaf7549a549b80b9786f6f6e8d42ba28981e15eb066d5ac55f499632bbbb.jpg",
+      "sha256": "dafff7377a3483759c33b444a51c2c040c91e0a963176dd8dcaa6ba807146758",
+      "bytes": 643728,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/elder-r6-family-038.webp",
+      "sourceSha256": "80ab1aa3878e7496a6624a0fcb1e853f68f3cc9dad4a609eb427b742e7c1fcd8",
+      "sourceBytes": 485638,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/80ab1aa3878e7496a6624a0fcb1e853f68f3cc9dad4a609eb427b742e7c1fcd8.jpg",
+      "sha256": "2a9ba889b6425e1da03a99ee95a0b47dc16b515d63caf8acab276d26117b381c",
+      "bytes": 677919,
+      "dimensions": "1536x1024"
+    },
+    {
+      "source": "images/published/elder-cycle/beneath-roots-title-ru.webp",
+      "sourceSha256": "a5d3191b9dbe463b4e7240146b407df4e3630b188355615fa54932bdac685a3d",
+      "sourceBytes": 432544,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/a5d3191b9dbe463b4e7240146b407df4e3630b188355615fa54932bdac685a3d.jpg",
+      "sha256": "d3bd246916bc867d9393fc97ca7c7bdeea44f18b39b16878aa05846a360345ae",
+      "bytes": 617366,
+      "dimensions": "1024x1536"
+    },
+    {
+      "source": "images/published/elder-cycle/beneath-roots-title-es.webp",
+      "sourceSha256": "b618cc92c7b6f417754c2adb7c971fe6b495df97bc22df26926d53d614995a81",
+      "sourceBytes": 446188,
+      "derivative": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/jpeg-cache/b618cc92c7b6f417754c2adb7c971fe6b495df97bc22df26926d53d614995a81.jpg",
+      "sha256": "bb7a866915c3440402330a9e0d6ca0a9fd0b5d9eade50a4bef0c2fd9902cc22f",
+      "bytes": 621512,
+      "dimensions": "1024x1536"
+    }
+  ],
+  "pdfs": [
+    {
+      "id": "chapter-01",
+      "lang": "en",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/chapter-01-en.pdf",
+      "filename": "chapter-01-en.pdf",
+      "bytes": 12894445,
+      "sha256": "3935575e67bb499f8d33f168bdd58746cc70be7dca0b26142c944557cd49708f",
+      "pageCount": 16,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "chapter-01",
+      "lang": "ru",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/chapter-01-ru.pdf",
+      "filename": "chapter-01-ru.pdf",
+      "bytes": 12929030,
+      "sha256": "a6fea70049fa21f7f52a73a9f088b5fc09d3148695cb86a72707ff38e0ce24ef",
+      "pageCount": 16,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "chapter-01",
+      "lang": "es",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/chapter-01-es.pdf",
+      "filename": "chapter-01-es.pdf",
+      "bytes": 12896273,
+      "sha256": "4928687022c017e7d2dde0109b9937232b05907b61c13a574c8b176e1f524fd6",
+      "pageCount": 16,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "chapter-02",
+      "lang": "en",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/chapter-02-en.pdf",
+      "filename": "chapter-02-en.pdf",
+      "bytes": 14413569,
+      "sha256": "1d450ff21e5b1d4a88c13e03d8735538efc52c6b5fd7916499700331953cc01f",
+      "pageCount": 17,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "chapter-02",
+      "lang": "ru",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/chapter-02-ru.pdf",
+      "filename": "chapter-02-ru.pdf",
+      "bytes": 14450460,
+      "sha256": "7f5d3740c1e6dc1e5b69e7fe8091edae92e122214793d5f0213a2748b7bf8abb",
+      "pageCount": 17,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "chapter-02",
+      "lang": "es",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/chapter-02-es.pdf",
+      "filename": "chapter-02-es.pdf",
+      "bytes": 14421843,
+      "sha256": "350121f6bbd8a855c238ed39ed964a537bcd0986cda60888d06c3932e58b9393",
+      "pageCount": 17,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "timber-tractor",
+      "lang": "en",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/timber-tractor-en.pdf",
+      "filename": "timber-tractor-en.pdf",
+      "bytes": 28282601,
+      "sha256": "de9aa1995409f57f8d1f3ef70203efcbfe76af08f385d99d4c5b228b15b7b1f7",
+      "pageCount": 34,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "timber-tractor",
+      "lang": "ru",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/timber-tractor-ru.pdf",
+      "filename": "timber-tractor-ru.pdf",
+      "bytes": 28243707,
+      "sha256": "7e5ccc459c155b9aff5272e4cfe786cbb525abbae172954065a9d0c4807cf839",
+      "pageCount": 34,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "timber-tractor",
+      "lang": "es",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/timber-tractor-es.pdf",
+      "filename": "timber-tractor-es.pdf",
+      "bytes": 28236090,
+      "sha256": "0dc1a46d0b8c5707fda387f2ab6695c4dddca8b40d18b96c6d7a092ed3089470",
+      "pageCount": 34,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "home-sweet-home",
+      "lang": "en",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/home-sweet-home-en.pdf",
+      "filename": "home-sweet-home-en.pdf",
+      "bytes": 12480910,
+      "sha256": "8db05d1f9eb74d6ee7a4b2fb3d819f7f9448996536ebd2f7cc6441717f67f10b",
+      "pageCount": 21,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "home-sweet-home",
+      "lang": "ru",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/home-sweet-home-ru.pdf",
+      "filename": "home-sweet-home-ru.pdf",
+      "bytes": 12514993,
+      "sha256": "0bb1dafcd4220dc8a2694e3bad1bb8a24cadaabba75019c571cdae6bc1bbb44a",
+      "pageCount": 21,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "home-sweet-home",
+      "lang": "es",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/home-sweet-home-es.pdf",
+      "filename": "home-sweet-home-es.pdf",
+      "bytes": 12478999,
+      "sha256": "afe7c2d7802c1aae7aed94589ab84fec4624e4c41bef492c35541567885c64cd",
+      "pageCount": 21,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-papa-home",
+      "lang": "en",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-papa-home-en.pdf",
+      "filename": "elder-papa-home-en.pdf",
+      "bytes": 17662284,
+      "sha256": "50404fb7547858267da773404ed4df9e9813493dca71f2c054b350ce35575f46",
+      "pageCount": 28,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-papa-home",
+      "lang": "ru",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-papa-home-ru.pdf",
+      "filename": "elder-papa-home-ru.pdf",
+      "bytes": 17651012,
+      "sha256": "18e735ab46d2cf0dc904eba3b3585de63ea50765829e673ad060a33555731552",
+      "pageCount": 28,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-papa-home",
+      "lang": "es",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-papa-home-es.pdf",
+      "filename": "elder-papa-home-es.pdf",
+      "bytes": 17634236,
+      "sha256": "f27b60eff49a9715d02be192262fc3dff74766552b4f0fffd97430eefd3ce37f",
+      "pageCount": 28,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-family-morning",
+      "lang": "en",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-family-morning-en.pdf",
+      "filename": "elder-family-morning-en.pdf",
+      "bytes": 13476407,
+      "sha256": "299708262a9e050f554aee6873d8d667afd929b987f879adcd30ce37c81edaa5",
+      "pageCount": 21,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-family-morning",
+      "lang": "ru",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-family-morning-ru.pdf",
+      "filename": "elder-family-morning-ru.pdf",
+      "bytes": 13466882,
+      "sha256": "75f436a8c6eae14d12586cf33917b605b2f017da28ee9c45732dd48148981f04",
+      "pageCount": 21,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-family-morning",
+      "lang": "es",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-family-morning-es.pdf",
+      "filename": "elder-family-morning-es.pdf",
+      "bytes": 13470472,
+      "sha256": "1ef8e854e9c3cffbe5293c52b3fbafe840b1dc71856fa50580727eba7a0fc023",
+      "pageCount": 21,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-forest-path",
+      "lang": "en",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-forest-path-en.pdf",
+      "filename": "elder-forest-path-en.pdf",
+      "bytes": 15869195,
+      "sha256": "d56dd4b60362489e98087b8ee9c4178ad9ddb2a691b2db5fc0dbae79669e9864",
+      "pageCount": 23,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-forest-path",
+      "lang": "ru",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-forest-path-ru.pdf",
+      "filename": "elder-forest-path-ru.pdf",
+      "bytes": 15853007,
+      "sha256": "a15160ac6329d0e03f82ecaf3f94a302d4c07861e7abb3ca345ea2063db2a1b4",
+      "pageCount": 23,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-forest-path",
+      "lang": "es",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-forest-path-es.pdf",
+      "filename": "elder-forest-path-es.pdf",
+      "bytes": 15857128,
+      "sha256": "1c8ef68cd19fe2167790b4a92b86f35b6f2bc4ad5ea3617d71824c704e081469",
+      "pageCount": 23,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-elder-house",
+      "lang": "en",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-elder-house-en.pdf",
+      "filename": "elder-elder-house-en.pdf",
+      "bytes": 23863645,
+      "sha256": "f8d627c30edc57bd43494cc4280854b5ffebde53486736859e1814cb83dae8d9",
+      "pageCount": 36,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-elder-house",
+      "lang": "ru",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-elder-house-ru.pdf",
+      "filename": "elder-elder-house-ru.pdf",
+      "bytes": 23852363,
+      "sha256": "db6f90aba97e96a3b0447d14dc1f2577c0584e66388ff3b013d74a9f43995a53",
+      "pageCount": 36,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-elder-house",
+      "lang": "es",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-elder-house-es.pdf",
+      "filename": "elder-elder-house-es.pdf",
+      "bytes": 23851415,
+      "sha256": "39d4bbd3432d8d0e52d37fe587200cf3a4974688792d8b4ffc29d31d139361b4",
+      "pageCount": 36,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-beneath-roots",
+      "lang": "en",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-beneath-roots-en.pdf",
+      "filename": "elder-beneath-roots-en.pdf",
+      "bytes": 44438796,
+      "sha256": "d7b9f6ee2f55186ab82e54ea3d8ece4caf43aa309c7d9e0d320f2f93a264e3bb",
+      "pageCount": 70,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-beneath-roots",
+      "lang": "ru",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-beneath-roots-ru.pdf",
+      "filename": "elder-beneath-roots-ru.pdf",
+      "bytes": 44419140,
+      "sha256": "2e12a721ae2a88de349b75bb29177f9056ad97b1da3b3229ebc2435a5ed71749",
+      "pageCount": 70,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    },
+    {
+      "id": "elder-beneath-roots",
+      "lang": "es",
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-library-20260922/pdf-export/elder-beneath-roots-es.pdf",
+      "filename": "elder-beneath-roots-es.pdf",
+      "bytes": 44421823,
+      "sha256": "7903acd277c055cc95578f77254810f2fcc9fa274fd4b2c7bbd31b3cf9bb6f9a",
+      "pageCount": 70,
+      "allParagraphsSelectable": true,
+      "layoutChecked": true
+    }
+  ],
+  "finished": "2026-09-22T10:48:49.013Z",
+  "pass": true
+}

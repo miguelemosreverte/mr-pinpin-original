@@ -1,4 +1,6 @@
 (() => {
+  // PDF routes are handled before reader initialization or story asset fetches.
+  if (window.pinpinPDFRoute?.active) return;
   const $ = id => document.getElementById(id);
   let artwork, translations, book, published, edition, story, language = 'ru', printing = false;
   let loadedKey, navigation = 0;
