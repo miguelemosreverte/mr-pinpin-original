@@ -1,7 +1,38 @@
 # Hybrid sprite study
 
-Status: offline experiment, not production approval. No runtime, production
+Status: historical rig-guided workflow, rejected by the user on 2026-09-22.
+Retained as experimental evidence, not the current recommendation. No runtime, production
 inventory, published media, or production asset manifest changes are part of this study.
+
+## Current direction
+
+The user rejected the Blender proxy and the rig-derived appearance workflow.
+The next bounded experiment is one fresh AI walking reference using ONLY the
+two original book illustrations: Timber Tractor scene 17 for the face and
+chapter-two scene 10 v2 for the body. Do not supply the neutral rig, its pose
+guides, prior rig-derived anchors, or previous generated derivatives as inputs.
+Subsequently the user authorized exactly ONE book-only PixVerse v6 transition
+submission: one second, 720p, 16:9, estimated USD 0.045, using the original
+1672x941 RGBA still unchanged as both endpoints. The saved provider record logs
+submission at 2026-09-22T09:58:13.032Z. This is a single-view motion test, not an
+angle transition or permission for additional calls. No retries or expansion
+are authorized by that one-call scope.
+
+The fresh reference and exact two-input image-generation record are
+`book-only-walk-reference-v01.png` and `.md` in the external
+`pinpin-video-sprite-trial-20260922/` directory; the video submission record is
+`book-only-walk-pixverse-v01.json`. Model, reference, and duration all differ
+from the rejected LTX trials, so this is not a controlled demonstration that the
+rig caused all earlier failures.
+
+The historical reports, prompts, native outputs, and archives below remain
+unchanged as evidence. The new book-only image, its exact submitted prompt, and
+its two actual input images are shown first in `review-book-only-v1/index.html`.
+Existing
+guide requirements in the old hybrid planner describe that rejected experiment;
+they are not prerequisites for the new book-only trial. The standalone review
+builder already accepts a missing guide. Do not reuse historical rig-lineage
+wording to describe the new inputs.
 
 ## Proposal, recommendation, implementation
 
@@ -10,7 +41,7 @@ appearance, then explore progressively denser sprite animation. Low-resolution
 motion and high-resolution appearance keys are possible ingredients, not proof
 that detail or temporal consistency will survive the combination.
 
-**Recommendation:** start with one character, one camera angle, and four sampled
+**Historical recommendation (superseded):** start with one character, one camera angle, and four sampled
 poses. Compare an eight-pose guide from the exact same rig action and cycle
 duration. Review before expanding to 16 and 30 frames, then more headings and
 characters. Keep the current atlas untouched until offline results are approved.

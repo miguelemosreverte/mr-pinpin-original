@@ -1,0 +1,22 @@
+{
+  "model": "fal-ai/pixverse/v6/transition",
+  "sourceImage": "/Volumes/TB4/mac-mini-storage/shared/pinpin-video-sprite-trial-20260922/book-only-walk-reference-v01.png",
+  "sourceImageField": "first_image_url",
+  "matchEndFrame": true,
+  "output": "/Volumes/TB4/mac-mini-storage/shared/pinpin-video-sprite-trial-20260922/book-only-walk-pixverse-v01.mp4",
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 0.045,
+    "basis": "Official endpoint tier pricing checked 2026-09-22: one second at 720p without audio, $0.045/second. One submission only, authorization ceiling $0.10. No retries, upscale or fallback. Estimate, not invoice.",
+    "source": "https://fal.ai/models/fal-ai/pixverse/v6/transition"
+  },
+  "input": {
+    "prompt": "Mr. PinPin walks naturally in place on all four short legs, completing one full, smooth walking cycle in one second and returning to his starting pose. His paws alternate stepping and supporting his low body. Fixed camera, constant heading and size, gentle expression, plain white background and steady lighting.",
+    "duration": 1,
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "generate_audio_switch": false,
+    "generate_multi_clip_switch": false,
+    "thinking_type": "disabled"
+  }
+}

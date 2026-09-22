@@ -18,7 +18,8 @@ const INPUT_FIELDS = new Set(('prompt negative_prompt duration aspect_ratio reso
   + 'output_format output_quality creativity mode model version strength motion_bucket_id '
   + 'noise_aug_strength loop H264_output recover_detail noise halo compression grain '
   + 'upscale_mode target_resolution noise_scale output_write_mode sync_mode prompt_expansion_mode '
-  + 'audio enable_prompt_expansion enable_thinking').split(' '));
+  + 'audio enable_prompt_expansion enable_thinking first_image_url generate_audio_switch '
+  + 'generate_multi_clip_switch thinking_type').split(' '));
 const SCHEMA_FIELDS = new Set(['title', 'description', 'type', 'properties', 'required', 'items',
   'enum', 'default', 'minimum', 'maximum', 'additionalProperties', '$schema', ...INPUT_FIELDS]);
 class WorkflowError extends Error {}
@@ -99,8 +100,8 @@ function readConfig(filename) {
   const resolve = name => path.resolve(name);
   if (/^[a-z]+:\/\//i.test(config.output)) fail('Output must be a local .mp4 path.');
   if (config.sourceImage !== undefined && typeof config.sourceImage !== 'string') fail('sourceImage must be a local path.');
-  if (config.sourceImageField !== undefined && !['image_url', 'start_image_url'].includes(config.sourceImageField)) {
-    fail('sourceImageField must be image_url or start_image_url.');
+  if (config.sourceImageField !== undefined && !['image_url', 'start_image_url', 'first_image_url'].includes(config.sourceImageField)) {
+    fail('sourceImageField must be image_url, start_image_url or first_image_url.');
   }
   if (config.sourceVideo !== undefined && typeof config.sourceVideo !== 'string') fail('sourceVideo must be a local path.');
   if (config.matchEndFrame !== undefined && typeof config.matchEndFrame !== 'boolean') fail('matchEndFrame must be boolean.');

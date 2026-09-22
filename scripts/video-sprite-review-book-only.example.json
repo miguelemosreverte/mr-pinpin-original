@@ -1,0 +1,46 @@
+{
+  "version": 1,
+  "title": "Mr. PinPin / book-only input and one-view video",
+  "verdict": "rejected-gait",
+  "reviewNotes": "105 nominal degrees: repeated front-paw motion, not one complete four-legged gait. 120 nominal degrees: paw-to-chin gesture with largely static hind legs. Generated anchor anatomy was itself unapproved and far-side feet are partly occluded. No angle-transition video has been submitted.",
+  "guidePair": "anchors-v01/boundary-phase0-105-120.png",
+  "appearancePair": "appearance-pair-v01.png",
+  "appearanceRecord": "appearance-pair-v01.md",
+  "bookReferences": [
+    "input-book-face-scene17.png",
+    "input-book-body-scene10-v2.png"
+  ],
+  "angles": [
+    {
+      "degrees": 105,
+      "nativeVideo": "video-angle105-ltx23-v01.mp4",
+      "anchor": "appearance-angle105.png",
+      "submission": "video-angle105-ltx23-v01.json",
+      "contacts": [
+        "video-angle105-ltx23-v01-contact.jpg"
+      ],
+      "cycle": null
+    },
+    {
+      "degrees": 120,
+      "nativeVideo": "video-angle120-ltx23-v01.mp4",
+      "anchor": "appearance-angle120.png",
+      "submission": "video-angle120-ltx23-v01.json",
+      "contacts": [
+        "video-angle120-ltx23-v01-contact.jpg"
+      ],
+      "cycle": null
+    }
+  ],
+  "bookOnly": {
+    "image": "book-only-walk-reference-v01.png",
+    "record": "book-only-walk-reference-v01.md",
+    "references": [
+      "input-book-face-scene17.png",
+      "input-book-body-scene10-v2.png"
+    ],
+    "video": "book-only-walk-pixverse-v01.mp4",
+    "submission": "book-only-walk-pixverse-v01.json",
+    "reviewNotes": "Native artifact review: the prompt requested a white background, but the output is black. Transparency was not preserved, and red/yellow fringes are visible under the feet and around edges. Poor handling of the RGBA input is a hypothesis, not a proven cause. Limb motion looks more natural to the reviewer, but correct four-paw gait, seamless closure, and production readiness remain uncertified. The unedited native output is shown; no background removal, fringe repair, or normalization has been applied. No further generation is authorized."
+  }
+}

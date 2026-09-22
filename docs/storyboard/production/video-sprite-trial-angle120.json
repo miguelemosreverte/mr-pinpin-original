@@ -1,0 +1,21 @@
+{
+  "model": "fal-ai/ltx-2.3/image-to-video/fast",
+  "sourceImage": "/Volumes/TB4/mac-mini-storage/shared/pinpin-video-sprite-trial-20260922/appearance-angle120.png",
+  "sourceImageField": "image_url",
+  "matchEndFrame": true,
+  "output": "/Volumes/TB4/mac-mini-storage/shared/pinpin-video-sprite-trial-20260922/video-angle120-ltx23-v01.mp4",
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 0.36,
+    "basis": "6 seconds at 1080p, $0.06/second, confirmed by authenticated pricing API on 2026-09-22. Two approved single submissions would estimate $0.72 total. Estimate, not invoice; no automatic retries.",
+    "source": "https://fal.ai/models/fal-ai/ltx-2.3/image-to-video/fast"
+  },
+  "input": {
+    "prompt": "Fixed orthographic camera. The character keeps the exact heading and appearance shown in the reference for the entire shot. Perform one very slow, complete four-legged walking cycle in place over the full six seconds. The paws alternate lifting, swinging forward, placing and supporting the body, completing one cycle and returning to the initial pose at the end. The body stays centered at the same scale and ground anchor. Keep the warm face and lighting constant, with a calm, steady head. Preserve the reference background and framing throughout.",
+    "duration": 6,
+    "resolution": "1080p",
+    "aspect_ratio": "auto",
+    "fps": 24,
+    "generate_audio": false
+  }
+}

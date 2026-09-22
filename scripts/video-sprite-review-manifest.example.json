@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "title": "Mr. PinPin / exact video inputs and outputs",
+  "verdict": "rejected-gait",
+  "reviewNotes": "105 nominal degrees: repeated front-paw motion, not one complete four-legged gait. 120 nominal degrees: paw-to-chin gesture with largely static hind legs. Generated anchor anatomy was itself unapproved and far-side feet are partly occluded. No angle-transition video has been submitted.",
+  "guidePair": "anchors-v01/boundary-phase0-105-120.png",
+  "appearancePair": "appearance-pair-v01.png",
+  "appearanceRecord": "appearance-pair-v01.md",
+  "bookReferences": [
+    "input-book-face-scene17.png",
+    "input-book-body-scene10-v2.png"
+  ],
+  "angles": [
+    {
+      "degrees": 105,
+      "nativeVideo": "video-angle105-ltx23-v01.mp4",
+      "anchor": "appearance-angle105.png",
+      "submission": "video-angle105-ltx23-v01.json",
+      "contacts": [
+        "video-angle105-ltx23-v01-contact.jpg"
+      ],
+      "cycle": null
+    },
+    {
+      "degrees": 120,
+      "nativeVideo": "video-angle120-ltx23-v01.mp4",
+      "anchor": "appearance-angle120.png",
+      "submission": "video-angle120-ltx23-v01.json",
+      "contacts": [
+        "video-angle120-ltx23-v01-contact.jpg"
+      ],
+      "cycle": null
+    }
+  ]
+}

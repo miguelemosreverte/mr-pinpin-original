@@ -1,5 +1,109 @@
 # Neutral sprite pose study
 
+## Native video extraction and review
+
+`video_derivatives.py` reads two original MP4s without modifying them and writes
+only into a new output directory. Native files are hashed before and after.
+Each angle gets one diagnostic whole-clip one-second retime (24 fps, maximum
+512px dimensions), six or twelve sample cells, and an exact first/last pair.
+`--sprites` adds one 24-frame 256px-cell sheet per angle, not 48 loose PNGs.
+No endpoint is deliberately removed as a duplicate; retimes resample the full
+native timeline. Retiming is not cycle detection, motion repair, or gait approval.
+
+```sh
+python3 video_derivatives.py --angle105 NATIVE_105.mp4 --angle120 NATIVE_120.mp4 \
+  --output NEW_SSD_DIRECTORY --samples 12 --sample-size 384 --sprites
+```
+
+Uses installed FFmpeg/ffprobe (mini defaults `/opt/homebrew/bin/`), no Python
+dependencies. The version-1 `video-derivatives-manifest.json` records native
+absolute paths, hashes, actual decoded counts/timestamps, derivative relative
+paths/hashes, sheet grid/ordering, and review fields. Archive handoff is separate
+from production approval; `archive_ready` stays false pending operator signoff.
+No direct peer-send tool exists in this lane; main relays the manifest to the
+storage/review owner (Dewey/Pauli).
+
+Completed run: external video-trial root `diagnostics-v01/`, with eight image/video
+derivatives plus manifest and `visual-review.md`. Both native clips are 1920x1080,
+24 fps, 145 frames, 6.041667 seconds. Both diagnostic retimes verify as 24 frames
+and one second. Twelve native samples and first/last pairs were inspected:
+
+- 105: repeated forepaw actions; coordinated four-leg walking is not demonstrated.
+  Exact valid gait-cycle count is unknown; no purported single-cycle crop exported.
+- 120: repeated paw-to-chin gestures, largely static hind feet; not walking.
+- Both have visually close endpoint poses, consistent with endpoint conditioning
+  helping closure. Decoded hashes differ; neither exact duplication nor seamless
+  gait closure is claimed. Both clip quill tops; 120 also clips the near hind foot.
+- Diagnostic-only rejection for gait and framing. No paid retries or production
+changes. Original downloads and provider sidecars remain untouched.
+
+The external `visual-review.md` records the exact input chain separately from
+output failures: neutral guide + book face `timber-tractor/scene-17.png` + book
+body `chapter-02-direct/scene-10-v2.png` went to imagegen, whose pose changed;
+the two exact appearance crops then went individually to LTX as first/last
+stills with a text prompt. The videos never received rig animation or foot
+trajectories. Anchor anatomy was not validated; video gestures and clipping
+are additional failures. Exact prompts/settings are linked to retained sidecars.
+
+Five unit tests pass (three gait tests plus two sample-index tests); actual
+FFmpeg extraction succeeded. Full pixel/hash/timing provenance and detailed
+observations are in the external manifest/report. Archive those as failed-study
+evidence only after the operator's browser/storage handoff.
+
+## Two-camera video boundary trial
+
+New external root:
+`/Volumes/TB4/mac-mini-storage/shared/pinpin-video-sprite-trial-20260922/`
+
+`anchors-v01/boundary-phase0-105-120.png` is the single horizontal 1024x512
+reference sheet: left panel 105 degrees, right panel 120 degrees, both phase 0.
+Separate 512x512 guides are `boundary-phase0-angle105.png` and
+`boundary-phase0-angle120.png`. These have an opaque neutral ground backdrop and
+contact shadows, unlike the previous transparent motion frames.
+Sheet SHA-256: `8b9a700779c7d7aefb75e9f88a8c87896dc36491fcdc973451ff6267d1d61430`.
+
+`boundary_anchors.py` reuses the previous verified `.blend` and analytic `pose`
+function, rendering only these two phase-zero images. Both cameras use 30-degree
+elevation, orthographic scale 4.8, and target `(0, -0.12, 1)`; ground is z=0.
+Azimuth 0 is front (-Y), 90 is anatomical left (+X), and 105/120 turn toward
+the rear (+Y). This is not a camera orbit: each video should hold its angle
+fixed, complete one gait cycle, then switch views at the shared phase boundary.
+A requested slow six-second native cycle would be retimed to one second only
+after checking that the delivered video actually contains one complete cycle.
+Neither timing nor video closure is established by these still guides.
+
+At phase 0, root travel is zero and all upper/lower/foot bone positions are
+identical between angles. Feet/anchors in authored units:
+
+| Chain | Leg phase | State | Foot center (x,y,z) | Ground anchor |
+| --- | --- | --- | --- | --- |
+| front_L | 0 | contact | (0.45,-0.87,0.09) | (0.45,-0.87,0) |
+| front_R | 0.5 | contact | (-0.45,-0.503333,0.09) | (-0.45,-0.503333,0) |
+| rear_L | 0.75 | lift | (0.61,1.094190,0.260711) | none; sole above ground |
+| rear_R | 0.25 | contact | (-0.61,0.973333,0.09) | (-0.61,0.973333,0) |
+
+`anchors-v01/boundary-anchors.json` contains unrounded hip/knee/foot positions,
+every evaluated bone head/tail, both camera matrices, and image/blend/input
+hashes. Bone equality across views and foot-target agreement passed; both
+guides passed contrast checks and were visually inspected for complete body,
+feet, and consistent framing. `boundary-anchors.blend` retains the grounded
+scene. No imagegen, video generation, production changes, or edits to original
+inputs were performed. Subsequent native-video extraction/audit must write new
+outputs and retain the original downloads unchanged.
+
+Run from a mini-side copy of this folder:
+
+```sh
+"$BLENDER" --background --python-exit-code 1 --python boundary_anchors.py -- \
+  --source-study /Volumes/TB4/mac-mini-storage/shared/pinpin-sprite-pose-study-20260922/control-4-angle105-v01 \
+  --output /Volumes/TB4/mac-mini-storage/shared/pinpin-video-sprite-trial-20260922/NEW-anchors
+```
+
+`BLENDER` is defined in the Run on the mini section below. The initial copied
+script inputs are retained under the new external root's `scripts/` directory.
+
+## Control scope
+
 Offline articulated **control proxy**, not final PinPin art. This builds new
 primitive geometry using proportions from `../blender-pinpin/config.py`.
 It does not import, modify, or claim to rig the existing static v3 model.

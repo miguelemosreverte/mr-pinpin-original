@@ -71,6 +71,42 @@ test('Seedance uses image_url and matching end frame without Kling start_image_u
   assert.equal(state.input.image_url, state.input.end_image_url);
 });
 
+test('PixVerse preserves first/end image conditioning and explicit one-second controls', async t => {
+  for (const matchEndFrame of [true, false]) {
+    const h = await fixture(t, { model: 'fal-ai/pixverse/v6/transition',
+      sourceImageField: 'first_image_url', matchEndFrame,
+      input: { prompt: 'One natural four-legged walking cycle in place.', duration: 1,
+        resolution: '720p', aspect_ratio: '16:9', generate_audio_switch: false,
+        generate_multi_clip_switch: false, thinking_type: 'disabled' } });
+    const image = path.join(h.dir, 'book-only.png');
+    await fs.writeFile(image, 'book-only reference');
+    const config = JSON.parse(await fs.readFile(h.configPath));
+    config.sourceImage = image;
+    await fs.writeFile(h.configPath, JSON.stringify(config));
+    let calls = 0;
+    const state = await run('submit', h.configPath, { client: {
+      storage: { upload: async () => 'https://example.test/book-only.png' },
+      queue: { submit: async (model, { input }) => {
+        calls++;
+        assert.equal(model, 'fal-ai/pixverse/v6/transition');
+        assert.equal(input.first_image_url, 'https://example.test/book-only.png');
+        assert.equal(input.end_image_url, matchEndFrame ? input.first_image_url : undefined);
+        for (const field of ['image_url', 'start_image_url', 'last_image_url']) assert.equal(input[field], undefined);
+        assert.equal(input.duration, 1);
+        return { request_id: 'pixverse-test' };
+      } }
+    } });
+    assert.equal(calls, 1);
+    assert.equal(state.config.sourceImageField, 'first_image_url');
+    assert.equal(state.input.first_image_url, 'https://example.test/book-only.png');
+    assert.equal(state.input.end_image_url, matchEndFrame ? state.input.first_image_url : undefined);
+    assert.equal(state.input.generate_audio_switch, false);
+    assert.equal(state.input.generate_multi_clip_switch, false);
+    assert.equal(state.input.thinking_type, 'disabled');
+    assert.equal(state.input.duration, 1);
+  }
+});
+
 test('motion trials can omit end conditioning and preserve prompt expansion settings', async t => {
   const h = await fixture(t, { sourceImageField: 'image_url', matchEndFrame: false,
     input: { prompt: 'Wind ripples', prompt_expansion_mode: 'disabled',
