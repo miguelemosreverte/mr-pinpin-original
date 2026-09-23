@@ -1,0 +1,27 @@
+Use case: style-transfer / sketch-to-render.
+EDIT TARGET INPUT 1: the ENTIRE grayscale Blender cubemap atlas, one single image containing SIX exact square90-degree camera views of ONE enclosed cottage. Apply the artistic finish to this COMPLETE cubemap in ONE coordinated operation.
+INPUT 2: MATERIAL AND STYLE REFERENCE ONLY, the approved warm children's-storybook cottage. It supplies the amber wood, cream plaster, soft rounded crafted detail, green door, gentle sunlight, illustrated books and orange braided rug. Its framing, camera and architecture must NOT replace the geometry in input1.
+
+DELIVER ONE 3:2 cubemap atlas, preferably3072×2048 or higher native resolution, with EXACTLY3 equal columns and2 equal rows. No gutters, borders, labels or padding. GRID IS IMMUTABLE. Top row: FRONT, RIGHT, BACK. Bottom row: LEFT, UP, DOWN. Each tile is square with90-degree rectilinear perspective. NEVER turn this into one continuous frontal panorama, a collage with unequal panels, separate files, or six independently redesigned rooms. These six views are adjacent camera directions from the SAME exact point inside ONE room.
+
+GEOMETRY IS LOCKED TO INPUT1: retain the location of every pixel silhouette, wall corner, rafter junction, floorboard direction, door/window aperture, stove outline, shelf edge, tableleg, rug outline, and all edge intersections in ALL six tiles. Apply colors, materials and fine surface detail onto those shapes, without zooming, reframing, moving, widening or adding objects. Preserve the compact6×6m cottage and fixed eyeheight1.15m. The first four directions rotate only; UP looks straight at roof, DOWN straight at floor.
+STYLE: beautiful warm softly rendered children's book illustration matchinginput2, tactile honey-colored timber and warm cream plaster, rounded wood edges, inviting soft light. Not gritty, not photorealistic, no heavy outlines. Use the SAME materials, SAME exposure and ONE coherent lighting setup across all six tiles. Sun enters only through the FRONT door and its two windows, with consistent soft bounce elsewhere.
+
+ROOM CONTENT LOCK:
+FRONT/top-left: exactly ONE arched green open door with right-jamb hinges, OUTWARD swing followingthegrayleafsilhouette, and ONE brassknob at freeedge. Exactly TWO circular glazed windows, oneeachside ofdoor. Window detail must be EIGHT wooden radial spokes around a round transparentcenter, whilekeepingframesizepositionexactly. Soft woodlandgarden seen throughtheseopenings ONLY. Small castironstove at rightedge matches SAME stove inRIGHT tile; darkmetalbody, subtlefirewindow andcopperkettle, allguidepositions unchanged.
+RIGHT/top-middle: the ONE wooden bookcase full of illustrated children's books, exactframe/shelfplacementasguide. The partialstove at left is THE SAME objectasfronttile, notanotherstove. Keepeverysharedoutline/pipe/stonebase aligned. No extra furniture, windows, doors, ornaments or plants.
+BACK/top-right: ONE woodenfamilytable, benchwithgreencushion, ONE ceramicmug andONE smallclosedbook positionedasininput1. No windowsor doors.
+LEFT/bottom-left: SAME kitchen cupboardsandpottery shelveswithsamepots, breadbowl onworktop, low woodenchestwithgreencushion. No windowsor doors. Keep the cupboard's shared corner identicaltofronttile.
+UP/bottom-middle: ONLY the existing roofgeometry inwarmwoodandcreamplaster. Clean plausiblejointswheretheguidebeamsmeet, no pinching, no chandelier, no newlyinventedbeams. Preserve all edge intersectionpositions.
+DOWN/bottom-right: ONE perfectlyflat orange/ochre/brown braidedrug with orderlyconcentricrows, EXACT grayrugoutline andplacement onstraight timberfloor. A smoothwoven center, no vortex/star/funnel. The partialrug visible at bottomofwalltiles is this SAMErug, samebraidscale andcolors. Do not enlarge it or move itsboundary.
+
+CRITICAL CUBEMAP CONTINUITY: Physical cube-edge pairs must match exactly in geometry, material, lighting and color, though their packed rectangles may not be adjacent. Keep the Blender geometry untouched, so only paint needs to be continuous. With edge traversal top-to-bottom forleft/right andleft-to-right fortop/bottom:
+front.left = left.right; front.right = right.left;
+front.top = up.bottom; front.bottom = down.top;
+back.left = right.right; back.right = left.left;
+back.top = reversed(up.top); back.bottom = reversed(down.bottom);
+right.top = reversed(up.right); right.bottom = down.right;
+left.top = up.left; left.bottom = reversed(down.left).
+Floorplanks, timbergrain and shading across these edges belong to SINGLE connected surfaces. No independent per-panel colorgrading or relighting. Where an object crosses a cubeface border, it has precisely one shared silhouette, not two alternatives.
+
+No new plants, stools, baskets, shelves, lamps or decoration copied frominput2. No people, no animals, no extra doors/windows, no text, labels, gridlines, UI, logos, borders or watermarks. Return the complete finished atlas only.

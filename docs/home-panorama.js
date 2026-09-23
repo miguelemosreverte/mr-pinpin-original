@@ -1,12 +1,14 @@
 import {CUBEMAP} from './home-cubemap-config.js?v=cubemap-styled-20260922';
+import {UNIFIED} from './home-unified-config.js?v=unified-v2-20260922';
+import {unifiedRenderer} from './home-unified-gl.js?v=unified-20260922';
 import {cubemapRenderer} from './home-cubemap-gl.js?v=cubemap-ownership-20260922';
 import {PANORAMA} from './home-panorama-config.js?v=panorama-v3-20260922';
 import {project,polygonPath} from './home-panorama-math.js?v=panorama-20260922';
 import {panoramaRenderer} from './home-panorama-gl.js?v=panorama-20260922';
 import {panoramaControls} from './home-panorama-controls.js?v=panorama-20260922';
 const view=new URLSearchParams(location.search).get('view');
-if(['panorama','cubemap'].includes(view)){
- const config=view==='cubemap'?CUBEMAP:PANORAMA;
+if(['panorama','cubemap','cubemap-unified'].includes(view)){
+ const config=view==='cubemap-unified'?UNIFIED:view==='cubemap'?CUBEMAP:PANORAMA;
  const viewport=document.querySelector('.room-fit'),reduced=matchMedia('(prefers-reduced-motion: reduce)');
  let backend='loading',stage,canvas,renderer,controls,current,frame=0,draws=0,version=0,imageSize=null,patches=[],faces=[];
  const links=[];
@@ -27,6 +29,9 @@ if(['panorama','cubemap'].includes(view)){
    if(view==='cubemap'){
     await Promise.all(Object.entries(config.faces).map(async([id,url])=>{const face=new Image();face.src=url;await face.decode();if(face.naturalWidth!==face.naturalHeight)throw Error('Cube face must be square');faceImages[id]=face;faces.push({id,url,yaw:orientations[id][0],pitch:orientations[id][1],fov:config.faceFov,width:face.naturalWidth,height:face.naturalHeight});}));
     imageSize={width:faceImages.front.naturalWidth,height:faceImages.front.naturalHeight};
+   }else if(view==='cubemap-unified'){
+    image=new Image();image.src=config.asset;await image.decode();imageSize={width:image.naturalWidth,height:image.naturalHeight};if(Math.abs(imageSize.width/3-imageSize.height/2)>.5)throw Error('Atlas must contain six square tiles');
+    faces=Object.entries(config.tiles).map(([id,tile])=>({id,tile:[...tile],url:config.asset,yaw:orientations[id][0],pitch:orientations[id][1],fov:90,width:imageSize.width/3,height:imageSize.height/2}));
    }else{
     image=new Image();image.src=config.asset;await image.decode();imageSize={width:image.naturalWidth,height:image.naturalHeight};if(Math.abs(imageSize.width/imageSize.height-2)>.025)throw Error('Panorama must be2:1');
     await Promise.all(Object.entries(config.repairs.assets).map(async([id,url])=>{try{const patch=new Image();patch.src=url;await patch.decode();if(patch.naturalWidth!==patch.naturalHeight)throw Error('Repair must be square');repairs[id]=patch;patches.push({id,url,yaw:orientations[id][0],pitch:orientations[id][1],fov:config.repairs.fov,width:patch.naturalWidth,height:patch.naturalHeight});}catch{/* Optional repair failure leaves the spherical base usable. */}}));
@@ -39,7 +44,7 @@ if(['panorama','cubemap'].includes(view)){
     const source=document.getElementById(hotspot.source),link=document.createElementNS(svg.namespaceURI,'a'),path=document.createElementNS(svg.namespaceURI,'path');
     link.id='panorama-'+hotspot.id+'-link';link.dataset.panoramaHotspot=hotspot.id;link.setAttribute('href',source.getAttribute('href'));link.setAttribute('aria-label',source.getAttribute('aria-label'));link.setAttribute('tabindex','0');link.classList.add('hotspot');path.classList.add('contour');link.append(path);svg.append(link);links.push({path,hotspot});
    }
-   renderer=view==='cubemap'?cubemapRenderer(canvas,faceImages,config):panoramaRenderer(canvas,image,repairs,config);document.querySelector('.skip-link').setAttribute('href','#panorama-room');viewport.append(stage);viewport.dataset.view=view;viewport.dispatchEvent(new Event('roomviewchange'));
+   renderer=view==='cubemap-unified'?unifiedRenderer(canvas,image):view==='cubemap'?cubemapRenderer(canvas,faceImages,config):panoramaRenderer(canvas,image,repairs,config);document.querySelector('.skip-link').setAttribute('href','#panorama-room');viewport.append(stage);viewport.dataset.view=view;viewport.dispatchEvent(new Event('roomviewchange'));
    canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();fallback('context-lost');});
    controls=panoramaControls(stage,config,state=>{svg.setAttribute('viewBox',`0 0 ${state.width} ${state.height}`);update(state);});backend='active';
   }catch{fallback('fallback');}

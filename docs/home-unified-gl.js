@@ -1,0 +1,16 @@
+// Single-image cubemap atlas. Tile pixels keep their original face orientation.
+export function unifiedRenderer(canvas,image){
+ const gl=canvas.getContext('webgl',{alpha:false,antialias:false,powerPreference:'low-power'});if(!gl)throw Error('WebGL unavailable');
+ const shaders=[];function shader(type,source){const s=gl.createShader(type);gl.shaderSource(s,source);gl.compileShader(s);if(!gl.getShaderParameter(s,gl.COMPILE_STATUS))throw Error('Atlas shader unavailable');shaders.push(s);return s;}
+ const program=gl.createProgram();gl.attachShader(program,shader(gl.VERTEX_SHADER,'attribute vec2 aPosition;varying vec2 p;void main(){p=aPosition;gl_Position=vec4(aPosition,0.,1.);}'));
+ gl.attachShader(program,shader(gl.FRAGMENT_SHADER,`precision highp float;varying vec2 p;uniform vec4 uCamera;uniform vec2 uHalfTexel;uniform sampler2D uAtlas;
+ void main(){vec3 r=normalize(vec3(p.x*uCamera.w*uCamera.z,p.y*uCamera.z,1.));float cy=cos(uCamera.x),sy=sin(uCamera.x),cp=cos(uCamera.y),sp=sin(uCamera.y);float y=r.y*cp+r.z*sp,z=r.z*cp-r.y*sp;vec3 w=vec3(r.x*cy+z*sy,y,z*cy-r.x*sy),a=abs(w),local;vec2 tile;
+ if(a.y>=a.x&&a.y>=a.z){if(w.y>=0.){local=vec3(w.x,-w.z,w.y);tile=vec2(1.,1.);}else{local=vec3(w.x,w.z,-w.y);tile=vec2(2.,1.);}}
+ else if(a.x>=a.z){if(w.x>=0.){local=vec3(-w.z,w.y,w.x);tile=vec2(1.,0.);}else{local=vec3(w.z,w.y,-w.x);tile=vec2(0.,1.);}}
+ else{if(w.z>=0.){local=w;tile=vec2(0.,0.);}else{local=vec3(-w.x,w.y,-w.z);tile=vec2(2.,0.);}}
+ vec2 cell=vec2(.5+.5*local.x/local.z,.5-.5*local.y/local.z);vec2 grid=vec2(3.,2.),lo=tile/grid+uHalfTexel,hi=(tile+1.)/grid-uHalfTexel;vec2 uv=clamp((tile+cell)/grid,lo,hi);gl_FragColor=vec4(texture2D(uAtlas,uv).rgb,1.);}`));
+ gl.linkProgram(program);if(!gl.getProgramParameter(program,gl.LINK_STATUS))throw Error('Atlas renderer unavailable');gl.useProgram(program);
+ const buffer=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,buffer);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,1,-1,-1,1,1,1]),gl.STATIC_DRAW);const position=gl.getAttribLocation(program,'aPosition');gl.enableVertexAttribArray(position);gl.vertexAttribPointer(position,2,gl.FLOAT,false,0,0);
+ const texture=gl.createTexture();gl.bindTexture(gl.TEXTURE_2D,texture);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MIN_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_MAG_FILTER,gl.LINEAR);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_S,gl.CLAMP_TO_EDGE);gl.texParameteri(gl.TEXTURE_2D,gl.TEXTURE_WRAP_T,gl.CLAMP_TO_EDGE);gl.texImage2D(gl.TEXTURE_2D,0,gl.RGBA,gl.RGBA,gl.UNSIGNED_BYTE,image);gl.uniform1i(gl.getUniformLocation(program,'uAtlas'),0);gl.uniform2f(gl.getUniformLocation(program,'uHalfTexel'),.5/image.naturalWidth,.5/image.naturalHeight);const camera=gl.getUniformLocation(program,'uCamera');
+ return{draw(s){const ratio=Math.min(devicePixelRatio||1,1.5,Math.sqrt(2000000/(s.width*s.height))),w=Math.round(s.width*ratio),h=Math.round(s.height*ratio);if(canvas.width!==w||canvas.height!==h){canvas.width=w;canvas.height=h;}gl.viewport(0,0,w,h);gl.uniform4f(camera,s.yaw,s.pitch,Math.tan(s.fov*Math.PI/360),s.width/s.height);gl.drawArrays(gl.TRIANGLE_STRIP,0,4);},destroy(){gl.deleteTexture(texture);gl.deleteBuffer(buffer);shaders.forEach(s=>gl.deleteShader(s));gl.deleteProgram(program);}};
+}

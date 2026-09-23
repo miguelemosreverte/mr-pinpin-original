@@ -1,0 +1,25 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "sourceOutput": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-cad390fe-593c-40dd-9095-178771cbf4f8.png",
+  "sha256": "3a55d6329e4edbead0a155ca18ea4aef123a7bb1cc509ec2bcfab9a31c6b73a6",
+  "actualWidth": 1536,
+  "actualHeight": 1024,
+  "nativeFacePixels": 512,
+  "layout": [
+    [
+      "front",
+      "right",
+      "back"
+    ],
+    [
+      "left",
+      "up",
+      "down"
+    ]
+  ],
+  "fovDegrees": 90,
+  "prompt": "room-unified-cubemap-v1.prompt.txt",
+  "generationScope": "entire atlas in one joint generation; no separately styled faces",
+  "selectedForComparison": false,
+  "selectedAsMainMenu": false
+}

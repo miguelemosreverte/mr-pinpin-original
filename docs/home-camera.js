@@ -13,7 +13,7 @@ import {SCENE,WORLD} from './home-scene.js?v=expanded-20260922';
   const pointers = new Map();
   let width = 0, height = 0, scale = 1, x = world.width/2, y = world.height/2;
   let origin, pinch, blocked = false, keyboard = false;
-  const enabled = () => !['panorama','cubemap'].includes(viewport.dataset.view);
+  const enabled = () => !['panorama','cubemap','cubemap-unified'].includes(viewport.dataset.view);
   const cover = () => Math.max(width / world.width, height / world.height);
   const limit = (value, min, max) => Math.max(min, Math.min(max, value));
   function draw() {

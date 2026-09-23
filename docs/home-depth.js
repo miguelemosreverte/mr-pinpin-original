@@ -20,7 +20,7 @@ function flat(reason){
  cancelAnimationFrame(frame);frame=0;viewport.classList.remove('has-depth');viewport.dataset.depth=reason;
  contours.forEach(c=>c.path.setAttribute('d',c.original));
 }
-function schedule(){if(!['panorama','cubemap'].includes(viewport.dataset.view)&&!frame&&ready&&!reduced.matches&&!failed)frame=requestAnimationFrame(render);}
+function schedule(){if(!['panorama','cubemap','cubemap-unified'].includes(viewport.dataset.view)&&!frame&&ready&&!reduced.matches&&!failed)frame=requestAnimationFrame(render);}
 function render(time){
  frame=0;const camera=viewport.cameraState;if(!camera)return;
  try{
@@ -38,7 +38,7 @@ function render(time){
 }
 async function load(){
  const token=++version;
- if(['panorama','cubemap'].includes(viewport.dataset.view)){flat('panorama-paused');return;}
+ if(['panorama','cubemap','cubemap-unified'].includes(viewport.dataset.view)){flat('panorama-paused');return;}
  if(reduced.matches){flat('reduced-motion');return;}
  if(ready){schedule();return;}
  try{
@@ -46,7 +46,7 @@ async function load(){
   if(art.naturalWidth!==WIDTH||art.naturalHeight!==HEIGHT)throw Error('Color dimensions do not match');
   const depth=new Image();depth.src=SCENE.depth;await depth.decode();
   if(depth.naturalWidth!==WIDTH||depth.naturalHeight!==HEIGHT)throw Error('Depth dimensions do not match');
-  if(token!==version||reduced.matches||['panorama','cubemap'].includes(viewport.dataset.view))return;
+  if(token!==version||reduced.matches||['panorama','cubemap','cubemap-unified'].includes(viewport.dataset.view))return;
   const sample=document.createElement('canvas');sample.width=COLS+1;sample.height=ROWS+1;
   const ctx=sample.getContext('2d',{willReadFrequently:true});ctx.drawImage(depth,0,0,sample.width,sample.height);
   const pixels=ctx.getImageData(0,0,sample.width,sample.height).data;
@@ -64,5 +64,5 @@ room.addEventListener('focusin',event=>{const path=event.target.closest('.hotspo
 canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();failed=true;flat('context-lost');});
 canvas.addEventListener('webglcontextrestored',()=>{renderer?.destroy();renderer=null;ready=false;failed=false;load();});
 reduced.addEventListener('change',()=>{if(reduced.matches){version++;flat('reduced-motion');}else {geometryDirty=true;load();}});
-viewport.addEventListener('roomviewchange',()=>{if(['panorama','cubemap'].includes(viewport.dataset.view)){version++;flat('panorama-paused');}else {geometryDirty=true;load();}});
+viewport.addEventListener('roomviewchange',()=>{if(['panorama','cubemap','cubemap-unified'].includes(viewport.dataset.view)){version++;flat('panorama-paused');}else {geometryDirty=true;load();}});
 load();

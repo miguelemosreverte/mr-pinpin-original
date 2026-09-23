@@ -1,0 +1,698 @@
+{
+  "version": 1,
+  "method": "Lossless deterministic assembly of six direct Blender camera renders; no creative generation, resizing, rotation or color adjustment",
+  "atlas": {
+    "file": "room-cubemap-atlas-gray-v1.png",
+    "width": 3072,
+    "height": 2048,
+    "columns": 3,
+    "rows": 2,
+    "faceSize": 1024,
+    "bytes": 3465854,
+    "sha256": "8e2f7b59aab59069e59ab4ef17b40a53f3d2bc034d1950209d2f5bf564576dc4",
+    "layout": [
+      [
+        "front",
+        "right",
+        "back"
+      ],
+      [
+        "left",
+        "up",
+        "down"
+      ]
+    ],
+    "gutters": 0,
+    "labels": false
+  },
+  "sourceBlendSha256": "0ed90368d488f2eac537967f4a8d2ad18dcc3e9081cb5f53e16374561324cc7c",
+  "cameraOriginMeters": [
+    0.0,
+    0.0,
+    1.149999976158142
+  ],
+  "worldConvention": {
+    "forward": "+Y",
+    "right": "+X",
+    "up": "+Z"
+  },
+  "fovDegrees": 90,
+  "imageUVOrigin": "top-left",
+  "faceRayFormula": "normalize(forward + (2*u-1)*imageRight + (1-2*v)*imageUp)",
+  "atlasUVFormula": "((column+faceU)/3,(row+faceV)/2)",
+  "edgeSafeFaceUVClamp": [
+    0.00048828125,
+    0.99951171875
+  ],
+  "tiles": [
+    {
+      "face": "front",
+      "column": 0,
+      "row": 0,
+      "pixelRect": [
+        0,
+        0,
+        1024,
+        1024
+      ],
+      "atlasUVRect": [
+        0.0,
+        0.0,
+        0.3333333333333333,
+        0.5
+      ],
+      "sourceFile": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-panorama-20260922/blender-cubemap-reference/faces-90/front.png",
+      "sourceSha256": "c86a1ebbea04463bced159f5c340fea691ce614cac01ae45a5fa4952ec9e5358",
+      "decodedRGBSha256": "503b19beeb07fcb6e1fd9bee3cc2b5d508b1b76bac20e6f62223aaee9a44271d",
+      "forward": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "imageRight": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ]
+      ],
+      "cameraEulerXYZRadians": [
+        1.5707963705062866,
+        -0.0,
+        0.0
+      ]
+    },
+    {
+      "face": "right",
+      "column": 1,
+      "row": 0,
+      "pixelRect": [
+        1024,
+        0,
+        1024,
+        1024
+      ],
+      "atlasUVRect": [
+        0.3333333333333333,
+        0.0,
+        0.3333333333333333,
+        0.5
+      ],
+      "sourceFile": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-panorama-20260922/blender-cubemap-reference/faces-90/right.png",
+      "sourceSha256": "778fc7fb7721a7532a6f5084eae82cb3f102af87a52cd486217b8c757d2696f4",
+      "decodedRGBSha256": "c27a6abb6be98e1c123a255a38265232892f886aa06987fb2e92394ec969f3ac",
+      "forward": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "imageRight": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        [
+          -1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ]
+      ],
+      "cameraEulerXYZRadians": [
+        1.5707963705062866,
+        -0.0,
+        -1.5707963705062866
+      ]
+    },
+    {
+      "face": "back",
+      "column": 2,
+      "row": 0,
+      "pixelRect": [
+        2048,
+        0,
+        1024,
+        1024
+      ],
+      "atlasUVRect": [
+        0.6666666666666666,
+        0.0,
+        0.3333333333333333,
+        0.5
+      ],
+      "sourceFile": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-panorama-20260922/blender-cubemap-reference/faces-90/back.png",
+      "sourceSha256": "f1d54a2403662e3253ea6657d420adc66dc1112006cf68e22901b299506e7e7d",
+      "decodedRGBSha256": "88d155f8d5cccb1985b89d70376e5df807d1f959b5a372248e37f6f8157684fc",
+      "forward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "imageRight": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          -1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ]
+      ],
+      "cameraEulerXYZRadians": [
+        1.5707963705062866,
+        -0.0,
+        3.141592502593994
+      ]
+    },
+    {
+      "face": "left",
+      "column": 0,
+      "row": 1,
+      "pixelRect": [
+        0,
+        1024,
+        1024,
+        1024
+      ],
+      "atlasUVRect": [
+        0.0,
+        0.5,
+        0.3333333333333333,
+        0.5
+      ],
+      "sourceFile": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-panorama-20260922/blender-cubemap-reference/faces-90/left.png",
+      "sourceSha256": "8c1460946a6504e06e1649f071f4ae557738ae53af113327175a1ffacb3c0a8a",
+      "decodedRGBSha256": "b652d441f2a69279f07cb0afecd43e1bb041e50f94a572ac38cdbc3ef333b398",
+      "forward": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "imageRight": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          0.0,
+          0.0,
+          1.0
+        ],
+        [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ]
+      ],
+      "cameraEulerXYZRadians": [
+        1.5707963705062866,
+        -0.0,
+        1.5707963705062866
+      ]
+    },
+    {
+      "face": "up",
+      "column": 1,
+      "row": 1,
+      "pixelRect": [
+        1024,
+        1024,
+        1024,
+        1024
+      ],
+      "atlasUVRect": [
+        0.3333333333333333,
+        0.5,
+        0.3333333333333333,
+        0.5
+      ],
+      "sourceFile": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-panorama-20260922/blender-cubemap-reference/faces-90/up.png",
+      "sourceSha256": "38796c997f102b5fa7bed91ad7fe25b4f8cb2d1863c3d0be124e1630d1b9fc82",
+      "decodedRGBSha256": "dadd133f3b0814fe94728f530f9c9b195a3db2c24e8bb3446fa328b0cd12c397",
+      "forward": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "imageRight": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          -1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0
+        ]
+      ],
+      "cameraEulerXYZRadians": [
+        3.141592502593994,
+        -0.0,
+        0.0
+      ]
+    },
+    {
+      "face": "down",
+      "column": 2,
+      "row": 1,
+      "pixelRect": [
+        2048,
+        1024,
+        1024,
+        1024
+      ],
+      "atlasUVRect": [
+        0.6666666666666666,
+        0.5,
+        0.3333333333333333,
+        0.5
+      ],
+      "sourceFile": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-panorama-20260922/blender-cubemap-reference/faces-90/down.png",
+      "sourceSha256": "cce93736ccb7c785bfdab57e1c1828a6047f7c808d0b66c8af17d3fbe7b521ef",
+      "decodedRGBSha256": "de8e43f2d1c0fd653ca061520169d164d4799700796c91cfea44f0d5799fdeb7",
+      "forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "imageRight": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "imageUp": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "cameraRotationMatrixRows": [
+        [
+          1.0,
+          0.0,
+          -0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "cameraEulerXYZRadians": [
+        0.0,
+        -0.0,
+        0.0
+      ]
+    }
+  ],
+  "edgePairs": [
+    {
+      "first": "front.left",
+      "second": "left.right",
+      "reverseEdgeTraversal": false,
+      "firstAtlasEndpoints": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.5
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          0.3333333333333333,
+          0.5
+        ],
+        [
+          0.3333333333333333,
+          1.0
+        ]
+      ]
+    },
+    {
+      "first": "front.right",
+      "second": "right.left",
+      "reverseEdgeTraversal": false,
+      "firstAtlasEndpoints": [
+        [
+          0.3333333333333333,
+          0.0
+        ],
+        [
+          0.3333333333333333,
+          0.5
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          0.3333333333333333,
+          0.0
+        ],
+        [
+          0.3333333333333333,
+          0.5
+        ]
+      ]
+    },
+    {
+      "first": "front.top",
+      "second": "up.bottom",
+      "reverseEdgeTraversal": false,
+      "firstAtlasEndpoints": [
+        [
+          0.0,
+          0.0
+        ],
+        [
+          0.3333333333333333,
+          0.0
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          0.3333333333333333,
+          1.0
+        ],
+        [
+          0.6666666666666666,
+          1.0
+        ]
+      ]
+    },
+    {
+      "first": "front.bottom",
+      "second": "down.top",
+      "reverseEdgeTraversal": false,
+      "firstAtlasEndpoints": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.3333333333333333,
+          0.5
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          0.6666666666666666,
+          0.5
+        ],
+        [
+          1.0,
+          0.5
+        ]
+      ]
+    },
+    {
+      "first": "back.left",
+      "second": "right.right",
+      "reverseEdgeTraversal": false,
+      "firstAtlasEndpoints": [
+        [
+          0.6666666666666666,
+          0.0
+        ],
+        [
+          0.6666666666666666,
+          0.5
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          0.6666666666666666,
+          0.0
+        ],
+        [
+          0.6666666666666666,
+          0.5
+        ]
+      ]
+    },
+    {
+      "first": "back.right",
+      "second": "left.left",
+      "reverseEdgeTraversal": false,
+      "firstAtlasEndpoints": [
+        [
+          1.0,
+          0.0
+        ],
+        [
+          1.0,
+          0.5
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "first": "back.top",
+      "second": "up.top",
+      "reverseEdgeTraversal": true,
+      "firstAtlasEndpoints": [
+        [
+          0.6666666666666666,
+          0.0
+        ],
+        [
+          1.0,
+          0.0
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          0.3333333333333333,
+          0.5
+        ],
+        [
+          0.6666666666666666,
+          0.5
+        ]
+      ]
+    },
+    {
+      "first": "back.bottom",
+      "second": "down.bottom",
+      "reverseEdgeTraversal": true,
+      "firstAtlasEndpoints": [
+        [
+          0.6666666666666666,
+          0.5
+        ],
+        [
+          1.0,
+          0.5
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          0.6666666666666666,
+          1.0
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "first": "right.top",
+      "second": "up.right",
+      "reverseEdgeTraversal": true,
+      "firstAtlasEndpoints": [
+        [
+          0.3333333333333333,
+          0.0
+        ],
+        [
+          0.6666666666666666,
+          0.0
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          0.6666666666666666,
+          0.5
+        ],
+        [
+          0.6666666666666666,
+          1.0
+        ]
+      ]
+    },
+    {
+      "first": "right.bottom",
+      "second": "down.right",
+      "reverseEdgeTraversal": false,
+      "firstAtlasEndpoints": [
+        [
+          0.3333333333333333,
+          0.5
+        ],
+        [
+          0.6666666666666666,
+          0.5
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          1.0,
+          0.5
+        ],
+        [
+          1.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "first": "left.top",
+      "second": "up.left",
+      "reverseEdgeTraversal": false,
+      "firstAtlasEndpoints": [
+        [
+          0.0,
+          0.5
+        ],
+        [
+          0.3333333333333333,
+          0.5
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          0.3333333333333333,
+          0.5
+        ],
+        [
+          0.3333333333333333,
+          1.0
+        ]
+      ]
+    },
+    {
+      "first": "left.bottom",
+      "second": "down.left",
+      "reverseEdgeTraversal": true,
+      "firstAtlasEndpoints": [
+        [
+          0.0,
+          1.0
+        ],
+        [
+          0.3333333333333333,
+          1.0
+        ]
+      ],
+      "secondAtlasEndpoints": [
+        [
+          0.6666666666666666,
+          0.5
+        ],
+        [
+          0.6666666666666666,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "validation": {
+    "allSixDecodedTilesExactlyMatchSourcePixels": true,
+    "sourcePNGSha256MatchesLockedManifest": true,
+    "matchingGeometricEdgePairs": 12
+  }
+}

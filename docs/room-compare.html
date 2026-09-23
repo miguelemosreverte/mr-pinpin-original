@@ -3,9 +3,10 @@
 <head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>PinPin room · A/B review</title><link rel="stylesheet" href="room-compare.css"></head>
 <body>
 <header>
- <div class="heading"><h1>Room experiment · A / B</h1><a id="home-link" href="./">Main menu</a></div>
- <p>Drag either room to compare the same direction and zoom. These are review versions; the main menu remains separate.</p>
+ <div class="heading"><h1 id="review-title">Room experiment · A / B</h1><a id="home-link" href="./">Main menu</a></div>
+ <p>Drag either view; direction and zoom stay linked. The main menu remains separate.</p>
  <div class="controls" aria-label="Shared camera controls">
+  <label>Compare A with <select id="candidate"><option value="separate">B · Six images</option><option value="unified">C · One image</option></select></label>
   <button data-view="front">Front</button><button data-view="rear">Rear</button><button data-view="left">Left corner</button><button data-view="right">Right corner</button><button data-view="up">Ceiling</button><button data-view="down">Floor</button>
   <label>View angle <input id="fov" type="range" min="40" max="90" value="72"><output id="fov-value" for="fov">72°</output></label>
   <button id="reload">Reload views</button>
@@ -14,7 +15,7 @@
 </header>
 <main class="comparison" data-selected="a">
  <section class="panel" data-panel="a"><h2>A · Panorama with repaired views <span id="status-a" role="status">Loading…</span></h2><iframe id="frame-a" title="A: panoramic room with repaired views" allow="fullscreen"></iframe></section>
- <section class="panel" data-panel="b"><h2>B · Six Blender views <span id="status-b" role="status">Loading…</span></h2><iframe id="frame-b" title="B: room from six Blender camera views" allow="fullscreen"></iframe></section>
+ <section class="panel" data-panel="b"><h2><span id="candidate-title">B · Six Blender views</span> <span id="status-b" role="status">Loading…</span></h2><iframe id="frame-b" title="B: room from six Blender camera views" allow="fullscreen"></iframe></section>
 </main>
 <script type="module" src="room-compare.js"></script>
 </body></html>
