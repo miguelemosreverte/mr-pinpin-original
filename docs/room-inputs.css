@@ -1,0 +1,15 @@
+#room-inputs{width:min(1060px,calc(100vw - 24px));max-height:calc(100svh - 24px);padding:0;border:1px solid #b59c73;border-radius:12px;background:#fff9ed;color:#382714;overflow:hidden}
+#room-inputs[open]{display:flex;flex-direction:column}
+#room-inputs::backdrop{background:rgb(28 20 11 / 72%)}
+.inputs-heading{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 16px;border-bottom:1px solid #ceb995;flex-shrink:0}
+.inputs-heading h2{font-size:18px;padding:0}
+.inputs-content{overflow:auto;overscroll-behavior:contain;padding:0 16px 20px;min-height:0}
+.inputs-content h3{font-size:16px;margin:22px 0 8px}
+.inputs-content p{max-width:78ch}
+.input-grid{display:grid;gap:14px;grid-template-columns:1fr}
+.input-grid.repairs{grid-template-columns:repeat(2,minmax(0,1fr))}
+.input-grid figure{margin:0;min-width:0}
+.input-grid a{display:block;border:1px solid #ceb995;border-radius:8px;overflow:hidden;background:#efe6d5}
+.input-grid img{display:block;width:100%;height:auto;min-height:80px;object-fit:contain}
+.input-grid figcaption{padding:9px 12px;font-size:13px}
+@media(max-width:500px){.inputs-heading{padding:10px}.inputs-heading h2{font-size:15px}.inputs-content{padding:0 10px 16px}.input-grid.repairs{grid-template-columns:1fr}}
