@@ -1,0 +1,89 @@
+{
+  "source_sha256": "7688f1ee5030de0385d5e9a77017a127591f010c5bd304bc6a91160b1ad732bf",
+  "frames": 25,
+  "fps": 24,
+  "no_native_edits": true,
+  "endpoints_pixel_identical": false,
+  "endpoint_fullframe_mae": 3.0862525318287037,
+  "endpoint_foreground_union_mae": 8.425253363583538,
+  "foreground_union_definition": "Any channel <245 in first or last native frame; includes shadow, not anatomy",
+  "foreground_union_pixels": 275921,
+  "intervals": [
+    {
+      "from": 0,
+      "to": 1,
+      "foreground_rgb_mae": 12.421647258937643,
+      "flow_median_pixels_per_frame": 1.1982226371765137,
+      "flow_p95_pixels_per_frame": 2.7360053062438965,
+      "flow_mean_xy_pixels_per_frame": [
+        0.5476938486099243,
+        0.4644484519958496
+      ]
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "foreground_rgb_mae": 19.709845692547262,
+      "flow_median_pixels_per_frame": 2.1864120960235596,
+      "flow_p95_pixels_per_frame": 4.300373077392578,
+      "flow_mean_xy_pixels_per_frame": [
+        0.9027314782142639,
+        0.20478412508964539
+      ]
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "foreground_rgb_mae": 21.813822313874866,
+      "flow_median_pixels_per_frame": 2.413614511489868,
+      "flow_p95_pixels_per_frame": 6.024877548217773,
+      "flow_mean_xy_pixels_per_frame": [
+        0.012265047058463097,
+        1.739917278289795
+      ]
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "foreground_rgb_mae": 19.258953347757753,
+      "flow_median_pixels_per_frame": 2.20975399017334,
+      "flow_p95_pixels_per_frame": 4.314003944396973,
+      "flow_mean_xy_pixels_per_frame": [
+        0.4555847942829132,
+        1.1303610801696777
+      ]
+    },
+    {
+      "from": 24,
+      "to": 0,
+      "foreground_rgb_mae": 8.425253363583538,
+      "flow_median_pixels_per_frame": 0.556318461894989,
+      "flow_p95_pixels_per_frame": 1.0525296926498413,
+      "flow_mean_xy_pixels_per_frame": [
+        -0.24266552925109863,
+        -0.25315040349960327
+      ]
+    }
+  ],
+  "boundary_incoming_outgoing": {
+    "compared_moving_pixels": 229654,
+    "mean_vector_cosine": 0.9327274560928345,
+    "opposing_direction_fraction": 0.0006139670983305321
+  },
+  "opencv": "4.13.0",
+  "flow": {
+    "method": "Farneback",
+    "pyr_scale": 0.5,
+    "levels": 3,
+    "winsize": 15,
+    "iterations": 3,
+    "poly_n": 5,
+    "poly_sigma": 1.2,
+    "flags": 0
+  },
+  "limitations": "Dense image flow and same-coordinate comparison are diagnostics, not anatomical or physical paw velocity. Texture, occlusion, generation and compression affect them. No seamless-loop certification.",
+  "artifacts": {
+    "native-all25.png": "63036be15f296cb4f2826d1fea0c8ebf9eec855a2165eedae17aef8c0b9cd3ff",
+    "native-boundary-four.png": "04e0ceb12b643367f137444e644b80ec6027dde12d8e8e35619d41f42e0c14a5"
+  }
+}
