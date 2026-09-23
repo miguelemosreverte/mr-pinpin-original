@@ -1,0 +1,32 @@
+{
+  "model": "fal-ai/pixverse/v6/transition",
+  "sourceImage": "/Volumes/TB4/mac-mini-storage/shared/atlas-neighbor-turn-20260923/heading015-reference-v01.png",
+  "sourceImageField": "first_image_url",
+  "matchEndFrame": false,
+  "output": "/Volumes/TB4/mac-mini-storage/shared/atlas-neighbor-turn-20260923/turn-015-to-000-v01.mp4",
+  "preparation": {
+    "status": "Ready: inspected opaque anchors and uploaded bytes verified",
+    "startHeading": "015",
+    "endHeading": "000",
+    "endImageLocal": "/Volumes/TB4/mac-mini-storage/shared/atlas-topdown-walk-20260923/topdown-reference-v01.png",
+    "startImageSha256": "37ec95e70d26e6393e39a225e836008092b9ef4437d87ea2c17fb1927bda79ad",
+    "endImageSha256": "cabe37ed98075c90c1990860e8128ecf6f66916219e1dd4ec5b6ee76002d2836",
+    "notes": "End-image URL explicitly set for directed turns. Metadata preserved in source; existing runner unchanged."
+  },
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 0.045,
+    "basis": "Exactly one 1-second 720p silent request for this config. Three authorized requests total estimated $0.135, aggregate ceiling $0.20. No retries, upscale, fallback model or extra generations without main. Current same-day official tier confirmed by main; estimate, not invoice.",
+    "source": "https://fal.ai/models/fal-ai/pixverse/v6/transition"
+  },
+  "input": {
+    "prompt": "Mr. PinPin walks comfortably in place while gently turning fifteen degrees away from the viewer, from the starting image's heading back to the ending image's right-facing heading, over one second. His four short paws step naturally through the turn. Steady elevated camera, centered body and constant size, gentle expression, soft white background and steady lighting.",
+    "duration": 1,
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "generate_audio_switch": false,
+    "generate_multi_clip_switch": false,
+    "thinking_type": "disabled",
+    "end_image_url": "https://v3b.fal.media/files/b/0aab9f74/83Y7ivZmU_EKUw9CpPLv2_heading-000.png"
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "native_and_matte_checks": [
+    {
+      "clip": "heading-015-loop-v01",
+      "verified_rgba_frames": 25,
+      "native_sha256": "2ec30ca9eddeff6309cf8d238acf3173ef3c1fa463aab249789de5e7c2e43d89",
+      "three_preview_videos_verified": true,
+      "retiming": false
+    },
+    {
+      "clip": "turn-000-to-015-v01",
+      "verified_rgba_frames": 25,
+      "native_sha256": "7cdc2669205a27a6956535c805628f166faa25c1b67393dbe0160ec2e3267172",
+      "three_preview_videos_verified": true,
+      "retiming": false
+    },
+    {
+      "clip": "turn-015-to-000-v01",
+      "verified_rgba_frames": 25,
+      "native_sha256": "243b77495a9b5bee5b504482c237eefe29207cffa59fa79b08625737ce7123f9",
+      "three_preview_videos_verified": true,
+      "retiming": false
+    }
+  ],
+  "rgba_total": 75,
+  "prior000_unchanged": true,
+  "local_processing_note": "Reverse batch wrote all 25 frames, complete metadata/contact/comparison, then exited SIGABRT with recursive_mutex error during shutdown. No batch rerun. Outputs independently verified and standalone render.py succeeded.",
+  "automatic_repairs": false,
+  "demo_policy": "Frames 0..23 at 24fps; frame24 retained in native/full matte only. Main/Dewey own demo derivatives."
+}

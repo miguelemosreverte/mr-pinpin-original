@@ -1,0 +1,31 @@
+{
+  "model": "fal-ai/pixverse/v6/transition",
+  "sourceImage": "/Volumes/TB4/mac-mini-storage/shared/atlas-neighbor-turn-20260923/heading015-reference-v01.png",
+  "sourceImageField": "first_image_url",
+  "matchEndFrame": true,
+  "output": "/Volumes/TB4/mac-mini-storage/shared/atlas-neighbor-turn-20260923/heading-015-loop-v01.mp4",
+  "preparation": {
+    "status": "Ready: inspected opaque anchors and uploaded bytes verified",
+    "startHeading": "015",
+    "endHeading": "015",
+    "endImageLocal": "/Volumes/TB4/mac-mini-storage/shared/atlas-neighbor-turn-20260923/heading015-reference-v01.png",
+    "startImageSha256": "37ec95e70d26e6393e39a225e836008092b9ef4437d87ea2c17fb1927bda79ad",
+    "endImageSha256": "37ec95e70d26e6393e39a225e836008092b9ef4437d87ea2c17fb1927bda79ad",
+    "notes": "End-image URL explicitly set for directed turns. Metadata preserved in source; existing runner unchanged."
+  },
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 0.045,
+    "basis": "Exactly one 1-second 720p silent request for this config. Three authorized requests total estimated $0.135, aggregate ceiling $0.20. No retries, upscale, fallback model or extra generations without main. Current same-day official tier confirmed by main; estimate, not invoice.",
+    "source": "https://fal.ai/models/fal-ai/pixverse/v6/transition"
+  },
+  "input": {
+    "prompt": "Mr. PinPin walks comfortably in place on all four short paws, completing one natural walking cycle in one second and returning to his starting pose. His paws alternate stepping and supporting his body. Steady elevated camera, constant heading, centered body and constant size, gentle expression, soft white background and steady lighting.",
+    "duration": 1,
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "generate_audio_switch": false,
+    "generate_multi_clip_switch": false,
+    "thinking_type": "disabled"
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "version": 1,
+  "root": "/Volumes/TB4/mac-mini-storage/shared/atlas-neighbor-turn-20260923",
+  "submitted_count": 3,
+  "estimated_total_usd": 0.135,
+  "budget_ceiling_usd": 0.2,
+  "billing_verified": false,
+  "additional_generation_authorized": false,
+  "requests": [
+    {
+      "name": "heading-015-loop-v01",
+      "requestId": "01a0d005-ff2d-77f0-8773-f08506184f32",
+      "submittedAt": "2026-09-23T20:47:28.911Z",
+      "collectedAt": "2026-09-23T20:48:29.780Z",
+      "status": "complete",
+      "estimatedUSD": 0.045,
+      "metadata": {
+        "width": 1280,
+        "height": 720,
+        "duration": 1.041667,
+        "codec_name": "h264",
+        "avg_frame_rate": "24/1",
+        "frameCount": 25,
+        "hasAudio": false,
+        "bytes": 506567,
+        "sha256": "2ec30ca9eddeff6309cf8d238acf3173ef3c1fa463aab249789de5e7c2e43d89"
+      },
+      "startLocal": "/Volumes/TB4/mac-mini-storage/shared/atlas-neighbor-turn-20260923/heading015-reference-v01.png",
+      "endLocal": "/Volumes/TB4/mac-mini-storage/shared/atlas-neighbor-turn-20260923/heading015-reference-v01.png",
+      "startSha256": "37ec95e70d26e6393e39a225e836008092b9ef4437d87ea2c17fb1927bda79ad",
+      "endSha256": "37ec95e70d26e6393e39a225e836008092b9ef4437d87ea2c17fb1927bda79ad",
+      "matteDirectory": "heading-015-loop-v01-matte"
+    },
+    {
+      "name": "turn-000-to-015-v01",
+      "requestId": "01a0d006-652b-7611-9c28-1b76d222fe9e",
+      "submittedAt": "2026-09-23T20:47:55.025Z",
+      "collectedAt": "2026-09-23T20:48:30.405Z",
+      "status": "complete",
+      "estimatedUSD": 0.045,
+      "metadata": {
+        "width": 1280,
+        "height": 720,
+        "duration": 1.041667,
+        "codec_name": "h264",
+        "avg_frame_rate": "24/1",
+        "frameCount": 25,
+        "hasAudio": false,
+        "bytes": 548469,
+        "sha256": "7cdc2669205a27a6956535c805628f166faa25c1b67393dbe0160ec2e3267172"
+      },
+      "startLocal": "/Volumes/TB4/mac-mini-storage/shared/atlas-topdown-walk-20260923/topdown-reference-v01.png",
+      "endLocal": "/Volumes/TB4/mac-mini-storage/shared/atlas-neighbor-turn-20260923/heading015-reference-v01.png",
+      "startSha256": "cabe37ed98075c90c1990860e8128ecf6f66916219e1dd4ec5b6ee76002d2836",
+      "endSha256": "37ec95e70d26e6393e39a225e836008092b9ef4437d87ea2c17fb1927bda79ad",
+      "matteDirectory": "turn-000-to-015-v01-matte"
+    },
+    {
+      "name": "turn-015-to-000-v01",
+      "requestId": "01a0d006-85d5-7950-b5aa-b5ecc156a76c",
+      "submittedAt": "2026-09-23T20:48:03.384Z",
+      "collectedAt": "2026-09-23T20:49:55.289Z",
+      "status": "complete",
+      "estimatedUSD": 0.045,
+      "metadata": {
+        "width": 1280,
+        "height": 720,
+        "duration": 1.041667,
+        "codec_name": "h264",
+        "avg_frame_rate": "24/1",
+        "frameCount": 25,
+        "hasAudio": false,
+        "bytes": 581211,
+        "sha256": "243b77495a9b5bee5b504482c237eefe29207cffa59fa79b08625737ce7123f9"
+      },
+      "startLocal": "/Volumes/TB4/mac-mini-storage/shared/atlas-neighbor-turn-20260923/heading015-reference-v01.png",
+      "endLocal": "/Volumes/TB4/mac-mini-storage/shared/atlas-topdown-walk-20260923/topdown-reference-v01.png",
+      "startSha256": "37ec95e70d26e6393e39a225e836008092b9ef4437d87ea2c17fb1927bda79ad",
+      "endSha256": "cabe37ed98075c90c1990860e8128ecf6f66916219e1dd4ec5b6ee76002d2836",
+      "matteDirectory": "turn-015-to-000-v01-matte"
+    }
+  ],
+  "matting": {
+    "recipe_source": "docs/storyboard/production/white-background-matte-v01/",
+    "adaptations": "Only native basename and SHA changed in preview.py/batch.py; render.py unchanged",
+    "model": "u2netp",
+    "alpha_matting": true,
+    "foreground_threshold": 240,
+    "background_threshold": 10,
+    "erode_size": 10,
+    "automatic_repairs": false,
+    "retiming": false
+  },
+  "prior000Preservation": "tools/assets/atlas-topdown-walk-preservation.json"
+}
