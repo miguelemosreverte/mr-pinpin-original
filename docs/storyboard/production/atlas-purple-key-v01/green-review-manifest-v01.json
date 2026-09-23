@@ -1,0 +1,15 @@
+{
+  "input":"green-reference-v01.png",
+  "video":"green-walk-pixverse-v01.mp4",
+  "record":"green-walk-pixverse-v01.json",
+  "imagePromptRecord":"green-reference-v01.md",
+  "keyedVideo":"green-key-despill-v01/dark.mp4",
+  "keyedLabel":"Software key + despill / dark composite",
+  "findings":"The baseline RGB key leaves a conspicuous green fringe around the muzzle and whiskers. The displayed despill pass reduces that green; residual yellow-green fringe remains visible, and dark or gray edge residue may remain; this is not a perfect key. Despill changes RGB but preserves the baseline alpha exactly. The dark nose is visible in the frame-000 crops below; this is not certification of every whisker or anatomical feature. The earlier white-background and new green-background clips are different generated samples, not a controlled proof that background color alone caused any change. Key: sampled native border RGB (0,209,0), FFmpeg colorkey similarity 0.08, blend 0.12; then despill type=green, mix=1, expand=0, green=-1, alpha=0. All 25 native samples are retained at 24fps; no loop repair.",
+  "noseViews":[
+    {"path":"nose-audit-v01/white000-nose-native-matte.png","label":"Earlier white-background frame 000: native, dark/green matte, alpha. Different generated clip; comparison is not pixel-matched."},
+    {"path":"key-evidence-v01/nose-frame000.png","label":"Green frame 000, full muzzle/nose crop: native, baseline key on dark, despill on dark, unchanged alpha."},
+    {"path":"key-evidence-v01/nose-all25.png","label":"All 25 green frames: native / baseline key / despill nose crops. No corrected or substituted frames."}
+  ],
+  "auditRecord":"key-evidence-v01/evidence.json"
+}

@@ -1,0 +1,29 @@
+{
+  "model": "fal-ai/pixverse/v6/transition",
+  "sourceImage": "/Volumes/TB4/mac-mini-storage/shared/atlas-purple-key-20260923/green-reference-v01.png",
+  "sourceImageField": "first_image_url",
+  "matchEndFrame": true,
+  "output": "/Volumes/TB4/mac-mini-storage/shared/atlas-purple-key-20260923/green-walk-pixverse-v01.mp4",
+  "preparation": {
+    "status": "Ready: main inspected anchor; full opacity and hash verified. Actual green border is not exact #00FF00; original unchanged.",
+    "startHeading": "000",
+    "endHeading": "000",
+    "startImageSha256": "7bc8c69f083516af9a0e685c8678a1c250eeefe47ba219722e068e77b80573cf",
+    "endImageSha256": "7bc8c69f083516af9a0e685c8678a1c250eeefe47ba219722e068e77b80573cf"
+  },
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 0.045,
+    "basis": "Exactly one authorized 1-second 720p silent request, estimate $0.045, ceiling $0.07. No retries, upscale, fallback models, new angles or extra generations. Estimate is not verified billing.",
+    "source": "https://fal.ai/models/fal-ai/pixverse/v6/transition"
+  },
+  "input": {
+    "prompt": "Mr. PinPin walks comfortably in place on all four short paws, completing one natural walking cycle in one second and returning to his starting pose. His paws alternate stepping and supporting his body. Steady elevated camera, constant heading, centered body and constant size, gentle expression, flat green background and steady neutral illumination.",
+    "duration": 1,
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "generate_audio_switch": false,
+    "generate_multi_clip_switch": false,
+    "thinking_type": "disabled"
+  }
+}

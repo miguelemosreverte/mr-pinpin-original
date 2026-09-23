@@ -1,0 +1,40 @@
+{
+  "method": "First decoded frame, no editing, scaling or AI",
+  "software_sha256": "e8fabb7f2f4e6659c2e71d17ea5545fbea3d989502c5a3a9635a5c1d86feb412",
+  "posters": [
+    {
+      "source": "green-walk-pixverse-v01.mp4",
+      "source_sha256": "100ca33283c3dcd71da48ff91a570d7c28dc6a6a0a623527f4beda7ea8103b4f",
+      "poster": "native-first.png",
+      "poster_sha256": "cfaa8bfa49e5298e4466d5e7a61f0787175f0c6af03f5739dd9eae9ead0c1636",
+      "command": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "/Volumes/TB4/mac-mini-storage/shared/atlas-purple-key-20260923/green-walk-pixverse-v01.mp4",
+        "-frames:v",
+        "1",
+        "/Volumes/TB4/mac-mini-storage/shared/atlas-purple-key-20260923/review-posters-v01/native-first.png"
+      ]
+    },
+    {
+      "source": "green-key-despill-v01/dark.mp4",
+      "source_sha256": "a4e1d24acde5541817ae56ac457e149f2fd48826e09f97d24c76a97378febdec",
+      "poster": "keyed-first.png",
+      "poster_sha256": "0be2e52fe6a2d4c1e1e74c452c1af7a23721be4ef699f0f3ad35aebd4a5b123f",
+      "command": [
+        "/opt/homebrew/bin/ffmpeg",
+        "-v",
+        "error",
+        "-n",
+        "-i",
+        "/Volumes/TB4/mac-mini-storage/shared/atlas-purple-key-20260923/green-key-despill-v01/dark.mp4",
+        "-frames:v",
+        "1",
+        "/Volumes/TB4/mac-mini-storage/shared/atlas-purple-key-20260923/review-posters-v01/keyed-first.png"
+      ]
+    }
+  ]
+}

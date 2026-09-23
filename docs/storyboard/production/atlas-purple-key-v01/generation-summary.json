@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "experiment": "green-key (directory retains earlier purple name)",
+  "model": "fal-ai/pixverse/v6/transition",
+  "requestId": "01a0d07a-7fe9-7a20-a8cc-faca24ff19f9",
+  "submittedAt": "2026-09-23T22:54:44.236Z",
+  "collectedAt": "2026-09-23T22:55:52.591Z",
+  "status": "complete",
+  "submitted_count": 1,
+  "estimated_total_usd": 0.045,
+  "budget_ceiling_usd": 0.07,
+  "billing_verified": false,
+  "retries": 0,
+  "sourceImage": "green-reference-v01.png",
+  "sourceSha256": "7bc8c69f083516af9a0e685c8678a1c250eeefe47ba219722e068e77b80573cf",
+  "first_end_urls_equal": true,
+  "native": "green-walk-pixverse-v01.mp4",
+  "metadata": {
+    "width": 1280,
+    "height": 720,
+    "duration": 1.041667,
+    "codec_name": "h264",
+    "avg_frame_rate": "24/1",
+    "frameCount": 25,
+    "hasAudio": false,
+    "bytes": 647642,
+    "sha256": "100ca33283c3dcd71da48ff91a570d7c28dc6a6a0a623527f4beda7ea8103b4f"
+  },
+  "keying": "Owned by Parfit; no rembg or keying performed by generation lane.",
+  "archive": "Pending finalized new keyed/review outputs; old white assets excluded."
+}
