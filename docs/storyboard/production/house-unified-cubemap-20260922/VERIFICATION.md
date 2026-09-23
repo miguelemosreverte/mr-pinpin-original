@@ -44,3 +44,11 @@ Evidence JSON: `final-v2-qa/results.json`, `comparison-final-v2/results.json`, a
 `docs/room-compare.html`, `docs/room-compare.css`, `docs/room-compare.js`, `scripts/verify-room-compare.cjs`, `scripts/verify-home-unified.cjs`, and this report. Runtime renderer/configuration and artwork were handled by the other lanes. This lane performed no Git or publishing changes.
 
 Selected atlas SHA-256: `a240b1b6f2726d4f108cf00a4f586d7dfc735171c9aa0bd1bad567b50f99a982`.
+
+## D — pure Blender diagnostic view
+
+The comparison selector now includes **D · Pure Blender**, directly available at `room-compare.html?candidate=gray&lang=ru`. It uses the unaltered gray Blender atlas through exactly the same single-atlas90° projection as C, without imagegen styling. The review-only **Blender source atlas** link opens the lossless flat six-face image. Switching C/D at a fixed camera lets the reader distinguish source-render geometry from changes introduced during stylization; A remains the left baseline and the original A/B URL remains valid.
+
+Actual gray-mode comparison passed1440×1000,390×844 and320×568, including native drag in either frame, shared presets/FOV, mobile toggle/rotation, D→B→D switching with camera retained, actual mode assertions, no overflow and no browser errors. The lossless source-atlas link returned successfully. Desktop and mobile gray screenshots were visually inspected. Evidence: `comparison-gray-mode-final/results.json` and corresponding PNGs. No further full scene/PDF checks were repeated.
+
+Gray atlas SHA-256: `65267888c17c2ae16027357d373a302afef9be8cbc94c464bc92d52cfc197e36`.

@@ -2,7 +2,7 @@ const query=new URLSearchParams(location.search),lang=['ru','en','es'].includes(
 const frames={a:document.getElementById('frame-a'),b:document.getElementById('frame-b')},views={a:'panorama',b:'cubemap'};
 const statuses={a:document.getElementById('status-a'),b:document.getElementById('status-b')},main=document.querySelector('main'),fov=document.getElementById('fov'),output=document.getElementById('fov-value');
 const candidate=document.getElementById('candidate');
-candidate.value=query.get('candidate')==='unified'?'unified':'separate';
+candidate.value=['unified','gray'].includes(query.get('candidate'))?query.get('candidate'):'separate';
 let active='a',camera={yaw:0,pitch:0,fov:72};const sent={},bound={};
 document.getElementById('home-link').href='./?lang='+lang;
 const differs=(a,b)=>!a||Math.abs(a.yaw-b.yaw)>1e-6||Math.abs(a.pitch-b.pitch)>1e-6||Math.abs(a.fov-b.fov)>1e-5;
@@ -14,9 +14,10 @@ for(const button of document.querySelectorAll('button[data-panel]'))button.addEv
 const presets={front:[0,0],rear:[Math.PI,0],left:[-Math.PI/4,0],right:[Math.PI/4,0],up:[0,65*Math.PI/180],down:[0,-65*Math.PI/180]};
 for(const button of document.querySelectorAll('[data-view]'))button.addEventListener('click',()=>{const[yaw,pitch]=presets[button.dataset.view];setCamera({yaw,pitch,fov:camera.fov});});
 fov.addEventListener('input',()=>setCamera({...camera,fov:Number(fov.value)}));
-function candidateLabels(){const unified=candidate.value==='unified',letter=unified?'C':'B';views.b=unified?'cubemap-unified':'cubemap';document.getElementById('review-title').textContent='Room experiment · A / '+letter;document.title='PinPin room · A/'+letter+' review';document.getElementById('candidate-title').textContent=unified?'C · One image, six views':'B · Six Blender views';document.querySelector('.mobile-tabs button[data-panel=b]').textContent=unified?'C · One image':'B · Blender faces';frames.b.title=unified?'C: six Blender views styled in one image':'B: room from six separately styled Blender views';}
+const candidates={separate:{letter:'B',view:'cubemap',label:'Six Blender views',tab:'Blender faces',description:'six separately styled Blender views'},unified:{letter:'C',view:'cubemap-unified',label:'One image, six views',tab:'One image',description:'six Blender views styled in one image'},gray:{letter:'D',view:'cubemap-gray',label:'Pure Blender',tab:'Pure Blender',description:'unaltered gray Blender render'}};
+function candidateLabels(){const option=candidates[candidate.value];views.b=option.view;document.getElementById('review-title').textContent='Room experiment · A / '+option.letter;document.title='PinPin room · A/'+option.letter+' review';document.getElementById('candidate-title').textContent=option.letter+' · '+option.label;document.querySelector('.mobile-tabs button[data-panel=b]').textContent=option.letter+' · '+option.tab;frames.b.title=option.letter+': '+option.description;}
 candidateLabels();
-candidate.addEventListener('change',()=>{candidateLabels();active='a';sent.b=null;bound.b=null;statuses.b.textContent='Loading…';frames.b.src='./?view='+views.b+'&lang='+lang+'&review=1';const url=new URL(location.href);if(candidate.value==='unified')url.searchParams.set('candidate','unified');else url.searchParams.delete('candidate');history.replaceState(null,'',url);});
+candidate.addEventListener('change',()=>{candidateLabels();active='a';sent.b=null;bound.b=null;statuses.b.textContent='Loading…';frames.b.src='./?view='+views.b+'&lang='+lang+'&review=1';const url=new URL(location.href);if(candidate.value!=='separate')url.searchParams.set('candidate',candidate.value);else url.searchParams.delete('candidate');history.replaceState(null,'',url);});
 function reload(){for(const[id,frame]of Object.entries(frames)){sent[id]=null;bound[id]=null;statuses[id].textContent='Loading…';frame.src='./?view='+views[id]+'&lang='+lang+'&review=1';}camera={yaw:0,pitch:0,fov:72};showAngle();}
 document.getElementById('reload').addEventListener('click',reload);
 for(const[id,frame]of Object.entries(frames))frame.addEventListener('load',()=>{sent[id]=null;bound[id]=null;});

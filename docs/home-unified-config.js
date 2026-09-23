@@ -13,3 +13,11 @@ export const UNIFIED=Object.freeze({
   {id:'bookcase',source:'bookcase-link',anchor:anchor('right',[194/512,230/512]),polygon:polygon('right',pixels([[105,348],[105,122],[107,112],[281,112],[283,121],[283,348]]))}
  ]
 });
+// Pure Blender control uses the guide geometry, not the stylized C targets.
+export const GRAY=Object.freeze({
+ ...UNIFIED,asset:'storyboard/images/house-menu/room-blender-gray-v1.webp',
+ hotspots:[
+  {id:'door',source:'door-link',anchor:anchor('front',[.5,.51]),polygon:polygon('front',[[.4167,.6917],[.4167,.4083],[.423,.376],[.441,.349],[.469,.331],[.5,.325],[.531,.331],[.559,.349],[.577,.376],[.5833,.4083],[.5833,.6917]])},
+  {id:'bookcase',source:'bookcase-link',anchor:anchor('right',[.37,.5]),polygon:polygon('right',[[.21,.736],[.21,.268],[.535,.268],[.535,.736]])}
+ ]
+});
