@@ -1,0 +1,48 @@
+{
+  "pass": true,
+  "freshRoot": "/Volumes/TB4/mac-mini-storage/shared/pinpin-location-portability-20260923/fresh-root",
+  "sourceMediaCopied": false,
+  "historicalProductionPacksPresent": false,
+  "savedBlenderMasterRequired": false,
+  "restoredAssets": 6,
+  "restoreReceipt": "/Volumes/TB4/mac-mini-storage/shared/pinpin-location-portability-20260923/restore-receipt.json",
+  "restoreMethod": "Verified cached content-addressed objects materialized by documented hf_store pull; fresh remote verification belongs to root archive receipt.",
+  "jobsValidated": [
+    "pinpin-house-common-room",
+    "pinpin-house-cubemap-bath",
+    "pinpin-house-front-exterior",
+    "pinpin-house-hall-through-closed-doors",
+    "pinpin-house-bedroom",
+    "pinpin-house-bathroom",
+    "pinpin-house-cubemap-common",
+    "pinpin-house-cubemap-bedroom",
+    "pinpin-house-hall-through-open-doors"
+  ],
+  "relocatedRealRender": {
+    "pass": true,
+    "artifactCount": 1
+  },
+  "prepared": {
+    "pass": true,
+    "artifactCount": 3
+  },
+  "allPreparedImagePathsWithinFreshWorkRoot": true,
+  "preparedImagePaths": [
+    "/Volumes/TB4/mac-mini-storage/shared/pinpin-location-portability-20260923/fresh-prepared/geometry-reference.png",
+    "/Volumes/TB4/mac-mini-storage/shared/pinpin-location-portability-20260923/fresh-root/docs/storyboard/images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp"
+  ],
+  "geometrySha256": "88b75878ba78d8227c4ec062088d86171ee1ef837b68009022a94d019d3b6038",
+  "promptSha256": "bec54a131a10b9bf5ffeadd97b287a18616ff52f45d98bafcdcec50701a5c9a1",
+  "runtimeHashes": {
+    "tools/locations/blender_worker.py": "15a8eb6673217f1f6c15fc941c9e20a2801dbd2d6374d645ba1a849afe2fc48c",
+    "tools/locations/png_atlas.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+    "tools/locations/cli.py": "360f97e1afa245c5be10824d4a235f85d896b692261f5839ed9291ab38f7b481",
+    "tools/locations/contracts.py": "9cd6002a280d6b6234878439e667a934629f377ae87aeb8fdbc04d0eb1f38b5c",
+    "tools/locations/tests/test_contracts.py": "d5b9441767992ce8dbc13e6a0e087124cef2b7d80f720adb16fb836116a70e8e",
+    "tools/locations/tests/blender_door_state.py": "771e77287731df8cb74ea996210c045c46bea3ac2e2737269ff773daa6725fed",
+    "tools/locations/builder/build_house.py": "34946231d4922c0454064b3c5961dd6ce448bdf2ef5ec9c6326bb41af38f8d1b",
+    "tools/locations/builder/plan_geometry.py": "f80c11e855deec10e7ce07d4114fd2a410af50d9e85713b43efc606fc4619912"
+  },
+  "newBlenderRenderPerformed": false,
+  "reason": "Existing actual render inputs and image bytes verified at relocated root; all runtime dependencies restored/staged. No further geometry changed."
+}

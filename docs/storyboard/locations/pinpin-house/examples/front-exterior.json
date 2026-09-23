@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "pinpin-house-front-exterior",
+  "location": "docs/storyboard/locations/pinpin-house/location.json",
+  "camera": {
+    "position": [
+      -0.4,
+      -7.5,
+      1.4
+    ],
+    "target": [
+      -0.4,
+      -2.8,
+      1.2
+    ],
+    "lensMm": 25,
+    "width": 1400,
+    "height": 1000,
+    "allowOutside": true
+  },
+  "doorStates": {
+    "door-front": 0,
+    "door-bath": 0,
+    "door-bedroom": 0
+  },
+  "prompt": {
+    "template": "still",
+    "intent": "Outside front, facing north/+Y: front door flanked by two round windows.",
+    "characters": "No characters; empty architectural location study.",
+    "action": "No action; preserve all furnishings and openings.",
+    "lighting": "Warm gentle daytime with soft fill; maintain the rendered direction of window illumination."
+  }
+}

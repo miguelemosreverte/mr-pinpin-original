@@ -1,0 +1,21 @@
+Use case: style-transfer
+Asset type: ONE complete cubemap atlas, stylized in ONE image-generation call.
+Location: ${location_id}, version ${location_version}.
+Geometry/edit target: ${geometry_reference}
+Supporting image roles: ${style_reference_roles}
+Camera origin and orientation: ${camera_record}
+Door states in degrees: ${door_states}
+Intent: ${intent}
+Characters: ${characters}
+Action: ${action}
+Lighting: ${lighting}
+
+The first image is six true 90-degree perspective views rendered from ONE identical origin in the fixed Blender house, assembled as a 3-column by 2-row atlas. Keep the exact aspect ratio, equal square cells, no gutters, labels or borders. Top row: FRONT, RIGHT, BACK. Bottom row: LEFT, UP, DOWN. These are face names for orientation only: render no lettering. Preserve every face's rotation and field of view. Front is world +Y, right +X, back -Y, left -X, up +Z, down -Z. Up screen-top points -Y; down screen-top points +Y. Do not turn the atlas into a panorama or six editorial compositions.
+
+Stylize ALL SIX FACES TOGETHER. Preserve perspective rays, curved wall outline, opening locations/counts, door states, furniture footprints, occlusions, ceiling and floor. Match surface appearance across paired cube edges, including non-adjacent atlas cells; atlas adjacency is not always spatial adjacency. Maintain continuous illumination, material scale and orientation at all twelve cube seams. Keep the ceiling above and floor below; no pinched panorama poles. Closed doors stay closed, and open leaves reveal only modeled adjacent rooms.
+
+Semantic fixture key (world meters, not on-image labels): common-room west shelf unit at (-3.87,-0.59) is the BOOKCASE; low round west/front proxy at (-3.04,-1.96) is the STOVE, never a barrel; center round top at (-0.30,-1.09) is the dining TABLE with four low stools; long east unit at (2.77,-1.27) is the KITCHEN COUNTER. Bathroom broad low oval at (-3.74,2.67) is the wooden BATHTUB, with its oval mat below and small WASHSTAND at (-5.11,2.26). Bedroom rectangular raised form at (2.46,1.64) is the BED with north headboard. Render these identities only where visible in the guide, keeping their locations and occupied volumes; do not add text labels.
+
+Apply the supplied book’s warm softly stylized illustration language consistently: honey timber, gentle plaster, rounded crafted furniture, readable forms. The style references do not redefine this three-room layout. Never import the older single-room kitchen cubemap's geometry. No new openings, duplicate handles, extra furniture, text, watermarks or characters unless the job explicitly specifies them.
+
+The output is a review candidate. It will be inspected inside a cubemap viewer and compared with the gray atlas before selection. A correct-looking atlas does not prove that AI preserved geometry.

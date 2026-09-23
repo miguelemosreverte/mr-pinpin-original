@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Codex visual inspection",
+  "status": "selected-workflow-example",
+  "approvedForChapter": false,
+  "sourceRevision": "visibility-revision.json",
+  "checks": {
+    "inventedRightCounterRemoved": true,
+    "bookStyleBroadlyMatches": true,
+    "emptyRoomRequestedAndProduced": true,
+    "mainFixtureArrangementBroadlyMatches": true
+  },
+  "limitations": [
+    "Artistic proportions, materials and decorative details are not exact Blender geometry.",
+    "No chapter publication or user approval is implied."
+  ]
+}

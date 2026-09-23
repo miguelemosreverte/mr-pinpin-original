@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "pinpin-house-cubemap-bedroom",
+  "location": "docs/storyboard/locations/pinpin-house/location.json",
+  "camera": {
+    "position": [
+      1.45,
+      1.2,
+      1.15
+    ]
+  },
+  "faceSize": 1024,
+  "doorStates": {
+    "door-front": 0,
+    "door-bath": 0,
+    "door-bedroom": 0
+  },
+  "prompt": {
+    "template": "cubemap",
+    "intent": "Whole bedroom room from one fixed origin.",
+    "characters": "No characters.",
+    "action": "Empty location study.",
+    "lighting": "Warm soft daylight, stable across all six directions."
+  }
+}

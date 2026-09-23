@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "reviewer": "Codex visual inspection",
+  "status": "needs-visual-revision",
+  "approvedForChapter": false,
+  "checks": {
+    "bookStyleBroadlyMatches": true,
+    "emptyRoomRequestedAndProduced": true,
+    "mainFixtureArrangementBroadlyMatches": true,
+    "visibleArchitectureAndFurnitureExactlyPreserved": false
+  },
+  "findings": [
+    "Visible kitchen counter added at right edge where the geometry guide shows wall.",
+    "Decorative surface details are generated; they are not established reusable geometry."
+  ],
+  "interpretation": "Tool execution and artifact integrity passed. Visual fidelity remains a separate review criterion."
+}

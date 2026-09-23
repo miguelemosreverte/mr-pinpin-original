@@ -1,0 +1,550 @@
+{
+  "schemaVersion": 1,
+  "kind": "lossless-render-review-derivative",
+  "status": "geometry-evidence-not-illustrated-story-art",
+  "locationId": "pinpin-house",
+  "locationVersion": "1.0.0",
+  "jobId": "pinpin-house-cubemap-bedroom",
+  "jobSha256": "ec6f423e662c6f60fdf149ec910495f72984f8087f7053f0f3434141aeab8d8d",
+  "inputs": {
+    "docs/storyboard/locations/pinpin-house/location.json": "3fe9e9a0e0ebaff2299ad358cc564d2010fb2eadf02fa3d6064525888582c73f",
+    "docs/storyboard/locations/pinpin-house/scene/house-plan.json": "cab510b31c13e85beaa689edb54005223412a988f640724e56b9d95dba20c28c",
+    "docs/storyboard/locations/pinpin-house/scene/merged-semantic-plan.png": "317c3447d13d915b7072cc096e641e37c33233d3ce4390ec163cf07ca49dd8c2",
+    "tools/locations/builder/build_house.py": "34946231d4922c0454064b3c5961dd6ce448bdf2ef5ec9c6326bb41af38f8d1b",
+    "tools/locations/builder/plan_geometry.py": "f80c11e855deec10e7ce07d4114fd2a410af50d9e85713b43efc606fc4619912",
+    "tools/locations/blender_worker.py": "15a8eb6673217f1f6c15fc941c9e20a2801dbd2d6374d645ba1a849afe2fc48c",
+    "tools/locations/png_atlas.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+    "tools/locations/cli.py": "360f97e1afa245c5be10824d4a235f85d896b692261f5839ed9291ab38f7b481",
+    "tools/locations/contracts.py": "9cd6002a280d6b6234878439e667a934629f377ae87aeb8fdbc04d0eb1f38b5c",
+    "tools/locations/tests/test_contracts.py": "d5b9441767992ce8dbc13e6a0e087124cef2b7d80f720adb16fb836116a70e8e",
+    "tools/locations/tests/blender_door_state.py": "771e77287731df8cb74ea996210c045c46bea3ac2e2737269ff773daa6725fed",
+    "docs/storyboard/locations/pinpin-house/examples/cubemap-bedroom.json": "ec6f423e662c6f60fdf149ec910495f72984f8087f7053f0f3434141aeab8d8d"
+  },
+  "cameraCheck": {
+    "pass": true,
+    "minimumSurfaceMarginM": 0.035,
+    "objectsChecked": 45,
+    "allowOutside": false
+  },
+  "cameras": [
+    {
+      "position": [
+        1.4500000476837158,
+        1.2000000476837158,
+        1.149999976158142
+      ],
+      "quaternionWXYZ": [
+        0.7071067690849304,
+        0.7071067690849304,
+        -0.0,
+        0.0
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.4500000476837158
+        ],
+        [
+          0.0,
+          -1.3435885648505064e-07,
+          -1.0000001192092896,
+          1.2000000476837158
+        ],
+        [
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          1.149999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lensMm": 18.0,
+      "horizontalFovDegrees": 90.00000250447816,
+      "width": 1024,
+      "height": 1024,
+      "id": "front",
+      "tile": [
+        0,
+        0
+      ],
+      "forward": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "right": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "position": [
+        1.4500000476837158,
+        1.2000000476837158,
+        1.149999976158142
+      ],
+      "quaternionWXYZ": [
+        0.5,
+        0.5,
+        -0.5,
+        -0.5
+      ],
+      "matrixWorld": [
+        [
+          -2.220446049250313e-16,
+          0.0,
+          -1.0,
+          1.4500000476837158
+        ],
+        [
+          -1.0,
+          -2.220446049250313e-16,
+          0.0,
+          1.2000000476837158
+        ],
+        [
+          0.0,
+          1.0,
+          -2.220446049250313e-16,
+          1.149999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lensMm": 18.0,
+      "horizontalFovDegrees": 90.00000250447816,
+      "width": 1024,
+      "height": 1024,
+      "id": "right",
+      "tile": [
+        1,
+        0
+      ],
+      "forward": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "right": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "position": [
+        1.4500000476837158,
+        1.2000000476837158,
+        1.149999976158142
+      ],
+      "quaternionWXYZ": [
+        0.0,
+        0.0,
+        0.7071067690849304,
+        0.7071067690849304
+      ],
+      "matrixWorld": [
+        [
+          -1.000000238418579,
+          0.0,
+          0.0,
+          1.4500000476837158
+        ],
+        [
+          0.0,
+          -1.3435885648505064e-07,
+          1.0000001192092896,
+          1.2000000476837158
+        ],
+        [
+          0.0,
+          1.0000001192092896,
+          -1.3435885648505064e-07,
+          1.149999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lensMm": 18.0,
+      "horizontalFovDegrees": 90.00000250447816,
+      "width": 1024,
+      "height": 1024,
+      "id": "back",
+      "tile": [
+        2,
+        0
+      ],
+      "forward": [
+        0.0,
+        -1.0,
+        0.0
+      ],
+      "right": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "position": [
+        1.4500000476837158,
+        1.2000000476837158,
+        1.149999976158142
+      ],
+      "quaternionWXYZ": [
+        0.5,
+        0.5,
+        0.5,
+        0.5
+      ],
+      "matrixWorld": [
+        [
+          -2.220446049250313e-16,
+          0.0,
+          1.0,
+          1.4500000476837158
+        ],
+        [
+          1.0,
+          -2.220446049250313e-16,
+          0.0,
+          1.2000000476837158
+        ],
+        [
+          0.0,
+          1.0,
+          -2.220446049250313e-16,
+          1.149999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lensMm": 18.0,
+      "horizontalFovDegrees": 90.00000250447816,
+      "width": 1024,
+      "height": 1024,
+      "id": "left",
+      "tile": [
+        0,
+        1
+      ],
+      "forward": [
+        -1.0,
+        0.0,
+        0.0
+      ],
+      "right": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "up": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "position": [
+        1.4500000476837158,
+        1.2000000476837158,
+        1.149999976158142
+      ],
+      "quaternionWXYZ": [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.4500000476837158
+        ],
+        [
+          0.0,
+          -1.0,
+          0.0,
+          1.2000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          -1.0,
+          1.149999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lensMm": 18.0,
+      "horizontalFovDegrees": 90.00000250447816,
+      "width": 1024,
+      "height": 1024,
+      "id": "up",
+      "tile": [
+        1,
+        1
+      ],
+      "forward": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "right": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "up": [
+        0.0,
+        -1.0,
+        0.0
+      ]
+    },
+    {
+      "position": [
+        1.4500000476837158,
+        1.2000000476837158,
+        1.149999976158142
+      ],
+      "quaternionWXYZ": [
+        1.0,
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          1.4500000476837158
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          1.2000000476837158
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          1.149999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "lensMm": 18.0,
+      "horizontalFovDegrees": 90.00000250447816,
+      "width": 1024,
+      "height": 1024,
+      "id": "down",
+      "tile": [
+        2,
+        1
+      ],
+      "forward": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "right": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "up": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    }
+  ],
+  "doorStates": [
+    {
+      "id": "door-front",
+      "angleDegrees": 0,
+      "signedAngleDegrees": 0,
+      "hingeWorld": [
+        -0.6962748765945435,
+        -2.957864999771118,
+        0.0
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          -2.317848668553779e-08,
+          0.0,
+          -0.6962748765945435
+        ],
+        [
+          2.317848668553779e-08,
+          1.0,
+          0.0,
+          -2.957864999771118
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "door-bath",
+      "angleDegrees": 0,
+      "signedAngleDegrees": 0,
+      "hingeWorld": [
+        -2.0239672660827637,
+        0.6366258859634399,
+        0.0
+      ],
+      "matrixWorld": [
+        [
+          0.8411785960197449,
+          -0.5407573580741882,
+          0.0,
+          -2.0239672660827637
+        ],
+        [
+          0.5407573580741882,
+          0.8411785960197449,
+          0.0,
+          0.6366258859634399
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "door-bedroom",
+      "angleDegrees": 0,
+      "signedAngleDegrees": 0,
+      "hingeWorld": [
+        1.039655089378357,
+        0.4985438883304596,
+        0.0
+      ],
+      "matrixWorld": [
+        [
+          0.7090891003608704,
+          0.7051188945770264,
+          0.0,
+          1.039655089378357
+        ],
+        [
+          -0.7051188945770264,
+          0.7090891003608704,
+          0.0,
+          0.4985438883304596
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "sceneSourceSha256": "b1f0108066e974dadbc07a36dcadf50a30d91ee9650bbd5ca0eb838b27176e03",
+  "cubeLayout": "top:front/right/back;bottom:left/up/down",
+  "singleScene": true,
+  "blenderVersion": "4.5.14 LTS",
+  "artifacts": [
+    {
+      "path": "cube-atlas.webp",
+      "sha256": "c6a402e849bea18f97420dd4ce85ac34a88900721afe656519ba1490a0218652",
+      "bytes": 2271574,
+      "dimensions": [
+        3072,
+        2048
+      ]
+    }
+  ],
+  "conversion": {
+    "sourceRaster": {
+      "path": "cube-atlas.png",
+      "sha256": "3157b2b983992148cc72c18b7ea16e0cdba46ab20295d82cd8852f3ad7783565",
+      "bytes": 3351691
+    },
+    "sourceManifest": {
+      "path": "source-cubemap-manifest.json",
+      "sha256": "5933b8aeb255738c507b6b594c3874424fe4f0c0e963d8f789be5f9b4d4d0f31"
+    },
+    "decodedRGBIdentical": true,
+    "dimensionsUnchanged": true,
+    "method": "Lossless WebP derivative; verified decoded RGB equal to original Blender PNG. Original raw PNG and source execution manifest retained externally.",
+    "externalMasterDirectory": "/Volumes/TB4/mac-mini-storage/shared/pinpin-location-workflow-20260923/bedroom-cubemap"
+  },
+  "validationScope": "Local review artifact identities and decoded source-pixel equality. source-* manifest is immutable original execution evidence; its raw PNG artifacts are external, so do not claim CLI validate passes it in this review folder. Re-run the saved job to obtain a complete local CLI render directory."
+}

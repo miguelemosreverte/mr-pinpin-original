@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "layout": [
+    [
+      "front",
+      "right",
+      "back"
+    ],
+    [
+      "left",
+      "up",
+      "down"
+    ]
+  ],
+  "faceFovDegrees": 90,
+  "faceSize": "job.faceSize",
+  "pixelConvention": "u grows screen-right; v grows screen-down. Direction = normalize(forward+(2u-1)*right+(1-2v)*up).",
+  "faces": [
+    {
+      "id": "front",
+      "forward": [
+        0,
+        1,
+        0
+      ],
+      "right": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "right",
+      "forward": [
+        1,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        -1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "back",
+      "forward": [
+        0,
+        -1,
+        0
+      ],
+      "right": [
+        -1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "left",
+      "forward": [
+        -1,
+        0,
+        0
+      ],
+      "right": [
+        0,
+        1,
+        0
+      ],
+      "up": [
+        0,
+        0,
+        1
+      ]
+    },
+    {
+      "id": "up",
+      "forward": [
+        0,
+        0,
+        1
+      ],
+      "right": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        -1,
+        0
+      ]
+    },
+    {
+      "id": "down",
+      "forward": [
+        0,
+        0,
+        -1
+      ],
+      "right": [
+        1,
+        0,
+        0
+      ],
+      "up": [
+        0,
+        1,
+        0
+      ]
+    }
+  ],
+  "edgeParameter": "On left/right, parameter t grows bottom-to-top; on top/bottom it grows left-to-right. reverseParameter reverses t for the paired edge.",
+  "edges": [
+    {
+      "a": {
+        "face": "front",
+        "edge": "left"
+      },
+      "b": {
+        "face": "left",
+        "edge": "right"
+      },
+      "reverseParameter": false
+    },
+    {
+      "a": {
+        "face": "front",
+        "edge": "right"
+      },
+      "b": {
+        "face": "right",
+        "edge": "left"
+      },
+      "reverseParameter": false
+    },
+    {
+      "a": {
+        "face": "front",
+        "edge": "top"
+      },
+      "b": {
+        "face": "up",
+        "edge": "bottom"
+      },
+      "reverseParameter": false
+    },
+    {
+      "a": {
+        "face": "front",
+        "edge": "bottom"
+      },
+      "b": {
+        "face": "down",
+        "edge": "top"
+      },
+      "reverseParameter": false
+    },
+    {
+      "a": {
+        "face": "right",
+        "edge": "right"
+      },
+      "b": {
+        "face": "back",
+        "edge": "left"
+      },
+      "reverseParameter": false
+    },
+    {
+      "a": {
+        "face": "right",
+        "edge": "top"
+      },
+      "b": {
+        "face": "up",
+        "edge": "right"
+      },
+      "reverseParameter": false
+    },
+    {
+      "a": {
+        "face": "right",
+        "edge": "bottom"
+      },
+      "b": {
+        "face": "down",
+        "edge": "right"
+      },
+      "reverseParameter": true
+    },
+    {
+      "a": {
+        "face": "back",
+        "edge": "right"
+      },
+      "b": {
+        "face": "left",
+        "edge": "left"
+      },
+      "reverseParameter": false
+    },
+    {
+      "a": {
+        "face": "back",
+        "edge": "top"
+      },
+      "b": {
+        "face": "up",
+        "edge": "top"
+      },
+      "reverseParameter": true
+    },
+    {
+      "a": {
+        "face": "back",
+        "edge": "bottom"
+      },
+      "b": {
+        "face": "down",
+        "edge": "bottom"
+      },
+      "reverseParameter": true
+    },
+    {
+      "a": {
+        "face": "left",
+        "edge": "top"
+      },
+      "b": {
+        "face": "up",
+        "edge": "left"
+      },
+      "reverseParameter": true
+    },
+    {
+      "a": {
+        "face": "left",
+        "edge": "bottom"
+      },
+      "b": {
+        "face": "down",
+        "edge": "left"
+      },
+      "reverseParameter": false
+    }
+  ]
+}

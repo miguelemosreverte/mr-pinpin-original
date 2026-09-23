@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 1,
+  "location": "docs/storyboard/locations/pinpin-house/location.json",
+  "coordinateFrame": "meters, right-handed, +X east/right in top-down, +Y north/rear, +Z up",
+  "sensorWidthMm": 36,
+  "presets": [
+    {
+      "id": "common-room",
+      "room": "common",
+      "camera": {
+        "position": [
+          1.1,
+          -1.8,
+          1.15
+        ],
+        "target": [
+          -1.3,
+          -0.6,
+          1.0
+        ],
+        "lensMm": 24,
+        "width": 1400,
+        "height": 1000
+      },
+      "doorStates": {
+        "door-front": 0,
+        "door-bath": 0,
+        "door-bedroom": 0
+      },
+      "notes": "Common room from southeast, looking across table toward west furnishings."
+    },
+    {
+      "id": "bathroom",
+      "room": "bath",
+      "camera": {
+        "position": [
+          -1.97,
+          1.28,
+          1.4
+        ],
+        "target": [
+          -3.738022,
+          2.66629,
+          0.3
+        ],
+        "lensMm": 16,
+        "width": 1400,
+        "height": 1000
+      },
+      "doorStates": {
+        "door-front": 0,
+        "door-bath": 75,
+        "door-bedroom": 0
+      },
+      "notes": "Validated bathroom eye camera beyond open leaf; broad tub and mat."
+    },
+    {
+      "id": "bedroom",
+      "room": "bedroom",
+      "camera": {
+        "position": [
+          1.2,
+          0.8,
+          1.15
+        ],
+        "target": [
+          2.5,
+          1.8,
+          0.75
+        ],
+        "lensMm": 24,
+        "width": 1400,
+        "height": 1000
+      },
+      "doorStates": {
+        "door-front": 0,
+        "door-bath": 0,
+        "door-bedroom": 0
+      },
+      "notes": "Bedroom southwest corner toward bed. Check near-plane/occlusion on first render."
+    },
+    {
+      "id": "hall-through-open-doors",
+      "room": "common",
+      "camera": {
+        "position": [
+          0,
+          -2.4,
+          1.15
+        ],
+        "target": [
+          0,
+          1,
+          1.1
+        ],
+        "lensMm": 18,
+        "width": 1400,
+        "height": 1000
+      },
+      "doorStates": {
+        "door-front": 0,
+        "door-bath": 75,
+        "door-bedroom": 75
+      },
+      "notes": "Common-room circulation view toward both private-room openings. Hall is a camera description, not an invented fourth room."
+    },
+    {
+      "id": "front-exterior",
+      "room": "outside",
+      "camera": {
+        "position": [
+          -0.4,
+          -7.5,
+          1.4
+        ],
+        "target": [
+          -0.4,
+          -2.8,
+          1.2
+        ],
+        "lensMm": 25,
+        "width": 1400,
+        "height": 1000,
+        "allowOutside": true
+      },
+      "doorStates": {
+        "door-front": 0,
+        "door-bath": 0,
+        "door-bedroom": 0
+      },
+      "notes": "Outside front, facing north/+Y: front door flanked by two round windows."
+    }
+  ],
+  "cubemapPositions": {
+    "common": [
+      1.1,
+      -1.8,
+      1.15
+    ],
+    "bath": [
+      -2.4,
+      2.0,
+      1.15
+    ],
+    "bedroom": [
+      1.45,
+      1.2,
+      1.15
+    ]
+  },
+  "validation": "Current common still, matched hall open/closed cameras and three room cubemap positions were rendered and checked; see examples/render-evidence.json. Bathroom still camera derives from prior validated family blocking. Bedroom and exterior still presets remain proposed starting views until run."
+}

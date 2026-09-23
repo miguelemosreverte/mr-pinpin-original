@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "pinpin-house-hall-through-open-doors",
+  "location": "docs/storyboard/locations/pinpin-house/location.json",
+  "camera": {
+    "position": [
+      0,
+      -2.4,
+      1.15
+    ],
+    "target": [
+      0,
+      1,
+      1.1
+    ],
+    "lensMm": 18,
+    "width": 1400,
+    "height": 1000
+  },
+  "doorStates": {
+    "door-front": 0,
+    "door-bath": 75,
+    "door-bedroom": 75
+  },
+  "prompt": {
+    "template": "still",
+    "intent": "Common-room circulation view toward both private-room openings. Hall is a camera description, not an invented fourth room.",
+    "characters": "No characters; empty architectural location study.",
+    "action": "No action; preserve all furnishings and openings.",
+    "lighting": "Warm gentle daytime with soft fill; maintain the rendered direction of window illumination."
+  }
+}

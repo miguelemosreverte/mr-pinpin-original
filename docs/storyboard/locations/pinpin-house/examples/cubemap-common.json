@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "pinpin-house-cubemap-common",
+  "location": "docs/storyboard/locations/pinpin-house/location.json",
+  "camera": {
+    "position": [
+      1.1,
+      -1.8,
+      1.15
+    ]
+  },
+  "faceSize": 1024,
+  "doorStates": {
+    "door-front": 0,
+    "door-bath": 75,
+    "door-bedroom": 75
+  },
+  "prompt": {
+    "template": "cubemap",
+    "intent": "Whole common room from one fixed origin, with both private-room doors open to reveal the adjoining modeled rooms where visible through those apertures.",
+    "characters": "No characters.",
+    "action": "Empty location study.",
+    "lighting": "Warm soft daylight, stable across all six directions."
+  }
+}

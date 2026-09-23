@@ -1,0 +1,75 @@
+{
+  "schemaVersion": 1,
+  "pathBase": "repository-root",
+  "selectionRule": "Geometry from pinned plan and current job render; book references provide only their listed roles. Legacy artwork never overrides geometry.",
+  "rights": "See LICENSE, CONTENT-LICENSE.md and THIRD-PARTY-NOTICES.md; reference listing is not a new license grant.",
+  "references": [
+    {
+      "id": "bathroom-book",
+      "path": "docs/storyboard/images/standalone/home-sweet-home/bedtime-08-v2.png",
+      "sha256": "c6e3deefa1acc93dadb3467931719f080a81ab8807dbff960bca6c225f07635d",
+      "bytes": 2323256,
+      "roles": [
+        "style",
+        "characters",
+        "bath-prop-design"
+      ],
+      "notes": "Actual approved bedtime scene08: broad low wooden tub, braided mat, Mama with PinPin and PomPom, warm timber/plaster, round window. Current room dimensions and placement come from plan, not this perspective."
+    },
+    {
+      "id": "bedroom-book",
+      "path": "docs/storyboard/images/standalone/home-sweet-home/bedtime-17-v2.png",
+      "sha256": "e37fd9cccf68330ba62763958199839692e77c3c0092a5d4b5efa1db5835ff73",
+      "bytes": 2294087,
+      "roles": [
+        "style",
+        "characters",
+        "bed-prop-design"
+      ],
+      "notes": "Actual approved bedtime scene17: Mama between boys, wooden bed, soft quilt, warm lantern and expressive gentle faces. Do not copy apparent window placement over current geometry."
+    },
+    {
+      "id": "common-book",
+      "path": "docs/storyboard/images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp",
+      "sha256": "0c475ab6702d45d9ae00a64c90d59adfe0a980dd5a594cacbbd2ced5f63342ea",
+      "bytes": 1751408,
+      "roles": [
+        "style",
+        "characters",
+        "entrance-design"
+      ],
+      "notes": "Actual approved Papa arrival05: green arched entry, two round radial windows, amber light, gentle stylized faces; its furnishing arrangement does not override the measured current plan."
+    },
+    {
+      "id": "exterior-book",
+      "path": "docs/storyboard/images/standalone/home-sweet-home/bedtime-01-v1.png",
+      "sha256": "60a39cfa8b283d79ed23a28d5ca4744cfd8a58a0959ef40af0c35a8cc70723f8",
+      "bytes": 2777850,
+      "roles": [
+        "style",
+        "exterior-design-motif"
+      ],
+      "notes": "Actual approved bedtime scene01: low mossy roof, round windows and green arched entry in woodland. Exact tree/roof/lantern positions are not a recovered survey."
+    },
+    {
+      "id": "legacy-common-cubemap",
+      "path": "docs/storyboard/images/house-menu/room-unified-cubemap-v2.webp",
+      "sha256": "a240b1b6f2726d4f108cf00a4f586d7dfc735171c9aa0bd1bad567b50f99a982",
+      "bytes": 1733940,
+      "roles": [
+        "legacy-style-example"
+      ],
+      "notes": "Retained successful whole-cubemap illustration of the OLD single common/kitchen room. Different footprint, furniture positions and openings. NEVER use as current geometry, room topology or direct panorama source."
+    },
+    {
+      "id": "current-plan-underlay",
+      "path": "docs/storyboard/locations/pinpin-house/scene/merged-semantic-plan.png",
+      "sha256": "317c3447d13d915b7072cc096e641e37c33233d3ce4390ec163cf07ca49dd8c2",
+      "bytes": 26265,
+      "roles": [
+        "geometry-underlay"
+      ],
+      "notes": "Rasterized same-frame diagram of the finalized measured plan. The JSON is authoritative; no texture projection from this image."
+    }
+  ]
+}

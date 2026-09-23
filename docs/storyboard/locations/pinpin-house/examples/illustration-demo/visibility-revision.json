@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "id": "pinpin-house-common-room-visibility-revision",
+  "location": "docs/storyboard/locations/pinpin-house/location.json",
+  "camera": {
+    "position": [
+      1.1,
+      -1.8,
+      1.15
+    ],
+    "target": [
+      -1.3,
+      -0.6,
+      1.0
+    ],
+    "lensMm": 24,
+    "width": 1400,
+    "height": 1000
+  },
+  "doorStates": {
+    "door-front": 0,
+    "door-bath": 0,
+    "door-bedroom": 0
+  },
+  "prompt": {
+    "template": "still",
+    "intent": "Match the current Blender camera and only its visible furniture. In an earlier illustration an extra kitchen counter was invented along the right edge, where the guide shows bare wall. Keep that right-hand wall area clear, as rendered. The fixture catalog identifies the house contents; it is not an instruction to place off-camera objects into this shot.",
+    "characters": "No characters; empty architectural location study.",
+    "action": "No characters. Preserve the exact visible table, stools, stove, bookcase and closed arched door. Finish their surfaces and the room in the book style. Do not add visible furniture beyond the guide, including any counter along the right wall.",
+    "lighting": "Warm gentle daytime with soft fill; maintain the rendered direction of window illumination."
+  }
+}

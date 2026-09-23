@@ -1,5 +1,11 @@
 # Working in Mr. PinPin Source
 
+- For house scenes, camera changes, and room panoramas, start with
+  `docs/storyboard/locations/AGENTS.md` and the selected location's `README.md`.
+  Use the reusable renderer in `tools/locations/` and its recorded jobs. Keep
+  geometry references distinct from illustration/style references, and record
+  generated derivatives with their input hashes and review status.
+
 - Read `LICENSE`, `CONTENT-LICENSE.md`, and `THIRD-PARTY-NOTICES.md`. MIT covers
   owned software only, never creative content merely because it is in JS/JSON/HTML.
   Preserve upstream terms and prior grants; do not claim rights in unprotectable
