@@ -1,0 +1,111 @@
+{
+  "version": 1,
+  "native_size": [
+    1280,
+    720
+  ],
+  "native_frame_indices": [
+    0,
+    24
+  ],
+  "native_timestamps_seconds": [
+    0,
+    1
+  ],
+  "method": "FFmpeg exact native frame selection and RGB24 decode. No resize, registration, color/background correction, warping, or endpoint replacement. Compare identical pixel coordinates.",
+  "pixel_scale": "MAE averaged across R,G,B in 8-bit units; normalized divides by 255",
+  "foreground_mask_definition": "Union where ANY RGB channel is below 245 in either endpoint. Heuristic includes dark shadows; not anatomical segmentation.",
+  "foreground_roi_bbox_inclusive": [
+    232,
+    86,
+    1010,
+    609
+  ],
+  "foreground_mask_fraction": 0.3340668402777778,
+  "background_mask_fraction": 0.6659331597222222,
+  "full_frame": {
+    "pixels": 921600,
+    "exact_pixels": 76423,
+    "max_channel_difference": 167,
+    "mae_rgb_0_255": 3.750314308449074,
+    "mae_normalized": 0.014707114935094408,
+    "mae_per_channel": [
+      3.8596571180555554,
+      3.618869357638889,
+      3.772416449652778
+    ],
+    "exact_pixel_fraction": 0.08292426215277778
+  },
+  "foreground_bbox_roi": {
+    "pixels": 408196,
+    "exact_pixels": 16106,
+    "max_channel_difference": 167,
+    "mae_rgb_0_255": 7.291061156895217,
+    "mae_normalized": 0.028592396693706734,
+    "mae_per_channel": [
+      7.500445864241688,
+      7.013015806132348,
+      7.359721800311615
+    ],
+    "exact_pixel_fraction": 0.03945653558584602
+  },
+  "foreground_mask": {
+    "pixels": 307876,
+    "exact_pixels": 4145,
+    "max_channel_difference": 167,
+    "mae_rgb_0_255": 9.292344970052879,
+    "mae_normalized": 0.03644056851001129,
+    "mae_per_channel": [
+      9.550981564006289,
+      8.955082565708272,
+      9.370970780444075
+    ],
+    "exact_pixel_fraction": 0.01346321246216009
+  },
+  "near_white_background_mask": {
+    "pixels": 613724,
+    "exact_pixels": 72278,
+    "max_channel_difference": 10,
+    "mae_rgb_0_255": 0.9701423875661807,
+    "mae_normalized": 0.003804479951239924,
+    "mae_per_channel": [
+      1.0045916405420026,
+      0.9419462168662135,
+      0.9638893052903259
+    ],
+    "exact_pixel_fraction": 0.11776955113373438
+  },
+  "endpoints_pixel_identical": false,
+  "decoded_rgb_sha256": [
+    "32effa6973e36590f9d4adbdb5eb1bacff7b6fc69b1ba2f3dfc2fba79127effc",
+    "940b04244fab26abf55021f8bfdff02725b42eecc65d92f2feb7128626dd1c47"
+  ],
+  "submission": {
+    "model": "fal-ai/pixverse/v6/transition",
+    "request_id": "01a0cfbe-6dd7-7030-965f-6da1e87387ad",
+    "first_end_url_equal": true,
+    "matchEndFrame": true,
+    "recorded_source_sha256": "49a7d64954735a18aa1be03b5e0b9e27728627514e74de717d9621655e0f1098",
+    "current_source_sha256": "49a7d64954735a18aa1be03b5e0b9e27728627514e74de717d9621655e0f1098",
+    "source_hash_matches": true,
+    "evidence": "../white-walk-pixverse-v01.json"
+  },
+  "native_mp4_sha256": "7ca187118f003e7b0d7ace3a16fa5f0bc03eead0115c4adee1f0428c92495877",
+  "files": [
+    {
+      "path": "first-native-frame000.png",
+      "bytes": 602911,
+      "sha256": "caf0a38c2543709114fbf42f70b190e2be997e8eebaf9cdb3602e5e782e5f359"
+    },
+    {
+      "path": "last-native-frame024.png",
+      "bytes": 574510,
+      "sha256": "fa300fda5eda251f95a14bea9a9ea2cc6f49ef62bffbb3f4b3708a10a00ac898"
+    },
+    {
+      "path": "first-last-native.png",
+      "bytes": 1175869,
+      "sha256": "9a4139e3793de4e6edbe2487b7ed3a2d7aad954f2ab94073539f9a2b27164f81"
+    }
+  ]
+}

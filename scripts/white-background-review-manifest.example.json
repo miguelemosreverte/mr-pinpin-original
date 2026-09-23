@@ -1,0 +1,23 @@
+{
+  "version": 1,
+  "previous": {
+    "image": "previous-inputs/book-only-walk-reference-v01.png",
+    "video": "previous-inputs/book-only-walk-pixverse-v01.mp4",
+    "submission": "previous-inputs/book-only-walk-pixverse-v01.json",
+    "opacityAudit": "baseline-opacity.json",
+    "notes": "Previous native artifact: black background and visible red/yellow fringes. Input-alpha handling was a hypothesis, not a proved cause."
+  },
+  "current": {
+    "image": "white-reference-v01.png",
+    "video": "white-walk-pixverse-v01.mp4",
+    "submission": "white-walk-pixverse-v01.json",
+    "editRecord": "white-reference-v01.md",
+    "opacityAudit": "white-reference-opacity.json",
+    "contacts": [],
+    "notes": "The input pixel audit confirms an opaque RGB image with near-white borders. The native video is shown unchanged for review; this does not establish accepted gait or seamless closure."
+  },
+  "bookReferences": [
+    "previous-inputs/input-book-face-scene17.png",
+    "previous-inputs/input-book-body-scene10-v2.png"
+  ]
+}

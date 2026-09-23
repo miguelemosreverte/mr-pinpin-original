@@ -1,0 +1,38 @@
+{
+  "source": "/Volumes/TB4/mac-mini-storage/shared/pinpin-white-background-trial-20260923/white-walk-pixverse-v01.mp4",
+  "source_sha256": "7ca187118f003e7b0d7ace3a16fa5f0bc03eead0115c4adee1f0428c92495877",
+  "frame_index": 0,
+  "method": "u2netp + rembg alpha_matting_cutout / PyMatting closed-form alpha and foreground ML",
+  "foreground_threshold": 240,
+  "background_threshold": 10,
+  "erode_size": 10,
+  "model": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-matting-models/models/u2netp/u2netp.onnx",
+      "bytes": 4574861,
+      "sha256": "309c8469258dda742793dce0ebea8e6dd393174f89934733ecc8b14c76f4ddd8"
+    }
+  ],
+  "versions": {
+    "rembg": "2.0.85",
+    "pymatting": "1.1.16",
+    "onnxruntime": "1.30.0",
+    "numpy": "2.5.3",
+    "pillow": "12.3.0"
+  },
+  "seconds_including_model_setup": 1.583,
+  "alpha_counts": {
+    "zero": 630203,
+    "opaque": 255270,
+    "partial": 36127
+  },
+  "paid_api_calls": 0,
+  "temporal_consistency": "Not assessed; one-frame probe only",
+  "outputs": {
+    "frame-000.model-mask.png": "43d9dcdc5add7eb5bd5ef5ef86341e6d8d1bd7424d1f5aa5264414b93868936a",
+    "frame-000.alpha.png": "4e8c924bc98ab5bbd28ddcc912a81c8405177e55b9b430ee5bb06f06005767eb",
+    "frame-000.rgba.png": "86ea4dce498513c2f5b67f7b58b1cbe9d9c800dba388a891ebb0599178c8347d",
+    "frame-000.original.png": "b21dcbdb4eeeea52a12eeae6275675e6a2bd0856522745076a05edc3646a8326",
+    "frame-000.preview.png": "8c678ca1f2343cb528973d4b2574629ca71c51ca3879ee1fc658605096e56344"
+  }
+}
