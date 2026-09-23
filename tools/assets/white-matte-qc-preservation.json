@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "bucket": "miguelemosreverte/mr-pinpin-archive",
+  "assets": [
+    {
+      "path": "matte-independent-validation-v01/report.md",
+      "role": "archive",
+      "bytes": 3509,
+      "sha256": "a8f299e8de3249bffcfd1a2c0da6c8e682669fd41e3ff60323532ffa7c9b6886",
+      "object": "sha256/a8/a8f299e8de3249bffcfd1a2c0da6c8e682669fd41e3ff60323532ffa7c9b6886/report.md"
+    },
+    {
+      "path": "matte-qc-v01/corrected-dark.mp4",
+      "role": "archive",
+      "bytes": 577116,
+      "sha256": "6f606a0fda3cd01f9a5320010110717a7c663a619f45092bfac9ed4091bf0e0b",
+      "object": "sha256/6f/6f606a0fda3cd01f9a5320010110717a7c663a619f45092bfac9ed4091bf0e0b/corrected-dark.mp4"
+    },
+    {
+      "path": "matte-qc-v01/corrected-green.mp4",
+      "role": "archive",
+      "bytes": 563494,
+      "sha256": "51fda1dca86df1c3db1524df7aa2bb536ecd8cf40a6cdb12958e8ecad4cdc53f",
+      "object": "sha256/51/51fda1dca86df1c3db1524df7aa2bb536ecd8cf40a6cdb12958e8ecad4cdc53f/corrected-green.mp4"
+    },
+    {
+      "path": "matte-qc-v01/f014-c0003-before-after.png",
+      "role": "archive",
+      "bytes": 71957,
+      "sha256": "01d6d5889de0cdc8bda45d984f64563f08a069d9dd33509c3eb2ca7a4688a205",
+      "object": "sha256/01/01d6d5889de0cdc8bda45d984f64563f08a069d9dd33509c3eb2ca7a4688a205/f014-c0003-before-after.png"
+    },
+    {
+      "path": "matte-qc-v01/masks/014.png",
+      "role": "archive",
+      "bytes": 1151,
+      "sha256": "abc1d3b6cce902fe4d66aa338825c91ff9d376b00520c5cc51e5db0cc8cb45d3",
+      "object": "sha256/ab/abc1d3b6cce902fe4d66aa338825c91ff9d376b00520c5cc51e5db0cc8cb45d3/014.png"
+    },
+    {
+      "path": "matte-qc-v01/qc.json",
+      "role": "archive",
+      "bytes": 160975,
+      "sha256": "0232f0bddb5bd3518b7788f697c810f11c831942af932f781a3fdbb67f352154",
+      "object": "sha256/02/0232f0bddb5bd3518b7788f697c810f11c831942af932f781a3fdbb67f352154/qc.json"
+    },
+    {
+      "path": "matte-qc-v01/reviewed-selection.json",
+      "role": "archive",
+      "bytes": 2256,
+      "sha256": "6d590dade4a7320ebbe3a6a93a21f951785af8919205a11da3156eb982803a52",
+      "object": "sha256/6d/6d590dade4a7320ebbe3a6a93a21f951785af8919205a11da3156eb982803a52/reviewed-selection.json"
+    },
+    {
+      "path": "matte-qc-v01/rgba-frames/014.png",
+      "role": "archive",
+      "bytes": 792945,
+      "sha256": "a3a41679e9ff96d6a29505faaa2b0b3ad4b43b7c6f3ff4d349d67d426f080b09",
+      "object": "sha256/a3/a3a41679e9ff96d6a29505faaa2b0b3ad4b43b7c6f3ff4d349d67d426f080b09/014.png"
+    },
+    {
+      "path": "matte-temporal-audit-v01/evidence.json",
+      "role": "archive",
+      "bytes": 1505,
+      "sha256": "463ba276ec8120984449874ba495703272df77368c5d463a8f77d47c4763012c",
+      "object": "sha256/46/463ba276ec8120984449874ba495703272df77368c5d463a8f77d47c4763012c/evidence.json"
+    },
+    {
+      "path": "matte-temporal-audit-v01/frame014-alpha-hind-crop.png",
+      "role": "archive",
+      "bytes": 8162,
+      "sha256": "901cfd9466b552551b6f047d553d646549fe45ef0d02e795bc0460db6b338907",
+      "object": "sha256/90/901cfd9466b552551b6f047d553d646549fe45ef0d02e795bc0460db6b338907/frame014-alpha-hind-crop.png"
+    },
+    {
+      "path": "matte-temporal-audit-v01/frame014-matte-hind-crop.png",
+      "role": "archive",
+      "bytes": 59673,
+      "sha256": "f4555c4b5b50dc6526527fe0d5a4195b008442fae471fdb735fc8a8b1c95cb47",
+      "object": "sha256/f4/f4555c4b5b50dc6526527fe0d5a4195b008442fae471fdb735fc8a8b1c95cb47/frame014-matte-hind-crop.png"
+    },
+    {
+      "path": "matte-temporal-audit-v01/frame014-native-hind-crop.png",
+      "role": "archive",
+      "bytes": 40586,
+      "sha256": "0d661de287c7a8b153ae611ddb77e8d84d5170044c8c8344c3216fded814dfc7",
+      "object": "sha256/0d/0d661de287c7a8b153ae611ddb77e8d84d5170044c8c8344c3216fded814dfc7/frame014-native-hind-crop.png"
+    },
+    {
+      "path": "matte-temporal-audit-v01/frames012-016-native-matte-alpha.png",
+      "role": "archive",
+      "bytes": 427903,
+      "sha256": "4e67b04d64625a9cee352270ba5625811b2a14b8cce9c65ec3735df648eb85e3",
+      "object": "sha256/4e/4e67b04d64625a9cee352270ba5625811b2a14b8cce9c65ec3735df648eb85e3/frames012-016-native-matte-alpha.png"
+    },
+    {
+      "path": "matte-temporal-audit-v01/hind-region-all25.png",
+      "role": "archive",
+      "bytes": 918868,
+      "sha256": "6552457d731209cdf25f2d2d40d4ad7af1a4f07769145c73e7c93097d1b13738",
+      "object": "sha256/65/6552457d731209cdf25f2d2d40d4ad7af1a4f07769145c73e7c93097d1b13738/hind-region-all25.png"
+    },
+    {
+      "path": "matte-temporal-audit-v01/report.md",
+      "role": "archive",
+      "bytes": 3126,
+      "sha256": "2b87cf62aa91acf3afc12f7ae7161e405afc5e5a7213a5f78697c733cd25dd56",
+      "object": "sha256/2b/2b87cf62aa91acf3afc12f7ae7161e405afc5e5a7213a5f78697c733cd25dd56/report.md"
+    }
+  ],
+  "parent_manifest": {
+    "path": "tools/assets/white-matte-preservation.json",
+    "sha256": "d7acf6f8cd8fd4d2fe4ae46c83e0f160badbb362cc1a701fbeb2daf97274c7dd"
+  },
+  "reconstruction": {
+    "parent_frames": "matte-v01/rgba-frames",
+    "output_frames": "matte-qc-v01/rgba-frames",
+    "overlay_frames": [
+      "014.png"
+    ],
+    "expected_frames": 25,
+    "output_hash_record": "matte-qc-v01/qc.json",
+    "note": "Restore both manifests into a new external root. For frames other than 014, copy the parent PNG into the corrected sequence without overwriting any existing file. Keep the delta 014 PNG and verify every corrected frame against qc.json outputs. The adapter does not automatically reconstruct these omitted parent files."
+  }
+}
