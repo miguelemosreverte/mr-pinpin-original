@@ -19,3 +19,11 @@ Outputs:
 - `down-weight.png`: grayscale raw down alpha before normalized blending; diagnostic, not art.
 
 Inspection confirms the downward repair has a different tub silhouette and rug placement. Its blend introduces the broken metal band and doubled rug visible in the current stack. The no-down variant restores the tub locally, but does not establish that the floor pole elsewhere can safely lose its repair. The UI lane is evaluating a bounded mask. These exports preserve the before state and do not select a fix.
+
+## Lower-angle rug repair input
+
+The later `rug-repair-before.png` uses the already selected tub fix: `downMaskX=[0,.08]`. Its camera is yaw **1.66785 radians**, pitch **−1.10346 radians**, square FOV **90°**, size **1400×1400**. This is a diagnostic of the actual current composite, not the unmasked previous stack. It was not selected as the model input because the relevant ghost lay near its right edge. The remaining central rug convergence is visible beneath the tub.
+
+Run `extract_rug.py --config rug-input-config.json --out <external-directory>` with the same four verified textures. `rug-extraction.json` records hashes and settings; `runtime-panorama-gl-mask-v1.js` and `runtime-room-config-mask-v1.js` freeze the current masked runtime separately from the original diagnostic snapshots. This preparation is deterministic; any later generated repair and its overlay selection have their own records.
+
+The actual repair target is the recentered `rug-join-target.png`: yaw **3.0 radians**, pitch **−0.95 radians**, square FOV **90°**, **1400×1400**. This brings the rug/floor ghost beneath the basket into the image center. `extract_join_target.py`, `rug-join-input-config.json` and `rug-join-extraction.json` preserve that exact extraction independently. A subsequent registered overlay must use this latter camera basis.

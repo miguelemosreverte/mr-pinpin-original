@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "operation": "matching perspective exports of frozen runtime texture stack",
+  "config": {
+    "schemaVersion": 1,
+    "inputs": {
+      "base": {
+        "file": "../inputs/panorama-door-v2.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/panorama-door-v2.png",
+        "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/panorama-door-v2.png",
+        "sha256": "b333b967832c5f592c78356609b424212b07c589a0dc2ff6cb4e6e00a93623b8",
+        "bytes": 10493930
+      },
+      "front": {
+        "file": "../inputs/front-v1.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/front-v1.png",
+        "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/front-v1.png",
+        "sha256": "da4931926e4cebd359f696f09b3b02d29245029c15864401a0065170eaa934ea",
+        "bytes": 1919470
+      },
+      "rear": {
+        "file": "../inputs/rear-v1.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/rear-v1.png",
+        "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/rear-v1.png",
+        "sha256": "1a11ca75153188efa7672a0956458705d8394e99f62a18bf62741818f00f1ec2",
+        "bytes": 1965024
+      },
+      "down": {
+        "file": "../inputs/down-v3.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/down-v3.png",
+        "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/down-v3.png",
+        "sha256": "3731add957ba3d23e4e5663009b947980c47c8c209b2ca7bf99d101e5db690f3",
+        "bytes": 1962203
+      }
+    },
+    "camera": {
+      "yawRadians": 1.66785,
+      "pitchRadians": -1.10346,
+      "fovDegrees": 90,
+      "size": 1400
+    },
+    "repairs": {
+      "fovDegrees": 110,
+      "frontMask": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "downMaskX": [
+        0,
+        0.08
+      ]
+    }
+  },
+  "configSha256": "c0d3866a98ae79f027d23a429a11fbb901c4878e3ed9ca209861179ce15545c4",
+  "scriptSha256": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+  "runtimeShaderSha256": "2faf2ffd651928e2cea9f188d3cca82252e5ac908afd8df95e2f19640e35ee51",
+  "runtimeConfigSha256": "fbd65e6b1d3efdfd783ea6a3a60c6a20f5091a9dc22cb34bb0b4e69c6b7f75f5",
+  "helperSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "pngHelperSha256": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+  "outputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-bath-join-20260924/rug-repair-before.png",
+      "sha256": "4943718124813362e47f6fab7e5c98d24bc240f3bd8977407395d530ad1271a8",
+      "size": [
+        1400,
+        1400
+      ],
+      "enabledRepairs": [
+        "front",
+        "rear",
+        "down"
+      ]
+    }
+  ],
+  "sampling": "Encoded RGB, GL LINEAR equivalent bilinear clamp-to-edge; fract base longitude before filtering; pixel-center rays. No color grading or paint.",
+  "frame": "Renderer x right,y up,z front = world X,Z,Y; yaw radians0 front,pi rear; pitch radians positive up; square vertical and horizontal FOV equal.",
+  "caution": "Matches blend formula/orientation; float64 CPU quantization may differ from GPU by small rounding. Base-only and down-only are diagnostic layer variants, not proposed new artwork."
+}

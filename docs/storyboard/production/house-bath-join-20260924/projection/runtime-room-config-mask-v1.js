@@ -137,7 +137,6 @@ export const ROOMS={
     ]
   },
   "bath": {
-    "details": {"asset": "storyboard/production/house-bath-join-20260924/rug-join-v1.png", "yaw": 3, "pitch": -0.95, "fov": 90, "mask": [0.04, 0.08, 0.25, 0.26]},
     "name": "Bathroom",
     "asset": "storyboard/production/house-image-tour-20260924/bath/panorama-door-v2.png",
     "initialView": {
