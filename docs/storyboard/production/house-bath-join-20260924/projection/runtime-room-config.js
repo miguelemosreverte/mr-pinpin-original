@@ -156,8 +156,7 @@ export const ROOMS={
         "front": "storyboard/production/house-image-tour-20260924/bath/front-v1.png",
         "rear": "storyboard/production/house-image-tour-20260924/bath/rear-v1.png",
         "down": "storyboard/production/house-image-tour-20260924/bath/down-v3.png"
-      },
-      "downMaskX": [0, 0.08]
+      }
     },
     "doors": [
       {

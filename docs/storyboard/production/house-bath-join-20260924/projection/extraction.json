@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "operation": "matching perspective exports of frozen runtime texture stack",
+  "config": {
+    "schemaVersion": 1,
+    "inputs": {
+      "base": {
+        "file": "../inputs/panorama-door-v2.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/panorama-door-v2.png",
+        "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/panorama-door-v2.png",
+        "sha256": "b333b967832c5f592c78356609b424212b07c589a0dc2ff6cb4e6e00a93623b8",
+        "bytes": 10493930
+      },
+      "front": {
+        "file": "../inputs/front-v1.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/front-v1.png",
+        "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/front-v1.png",
+        "sha256": "da4931926e4cebd359f696f09b3b02d29245029c15864401a0065170eaa934ea",
+        "bytes": 1919470
+      },
+      "rear": {
+        "file": "../inputs/rear-v1.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/rear-v1.png",
+        "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/rear-v1.png",
+        "sha256": "1a11ca75153188efa7672a0956458705d8394e99f62a18bf62741818f00f1ec2",
+        "bytes": 1965024
+      },
+      "down": {
+        "file": "../inputs/down-v3.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/down-v3.png",
+        "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/down-v3.png",
+        "sha256": "3731add957ba3d23e4e5663009b947980c47c8c209b2ca7bf99d101e5db690f3",
+        "bytes": 1962203
+      }
+    },
+    "camera": {
+      "yawRadians": 1.9,
+      "pitchRadians": -0.5,
+      "fovDegrees": 90,
+      "size": 1400
+    },
+    "repairs": {
+      "fovDegrees": 110,
+      "frontMask": [
+        0,
+        0,
+        2,
+        2
+      ]
+    }
+  },
+  "configSha256": "c31e3a47e2ecf93c15883e7229606e4775e58068115624c587a74a3522878672",
+  "scriptSha256": "06963da973f1fc7fce5c8728cc80b748b8b7b0a536eda8eac2eb335ca9fd5e4c",
+  "runtimeShaderSha256": "05088621dfb0d0e7f8c9abbb40bac68b01e2a2459e499c2a0012ea0a67e89eb4",
+  "runtimeConfigSha256": "4132596c8a52291b2573c5137a4609edae1608c88936b690c71e4c2da0b0d63f",
+  "helperSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "pngHelperSha256": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+  "outputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-bath-join-20260924/current-stack-before.png",
+      "sha256": "3886c17e83cd9b8a0119bd7f801fb858faf3045077ea093ca94e30d9907300e8",
+      "size": [
+        1400,
+        1400
+      ],
+      "enabledRepairs": [
+        "front",
+        "rear",
+        "down"
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-bath-join-20260924/down-weight.png",
+      "sha256": "e93c8b2c95684408932bf0d11a2f0c42ea2612b5f322fa299b028cf38a7100d7",
+      "size": [
+        1400,
+        1400
+      ],
+      "role": "diagnostic raw down-patch alpha before normalized blend, not artwork"
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-bath-join-20260924/base-only-before.png",
+      "sha256": "60645ef7790fe3bb05c86306782917b718e28848cae05b4be32284e433a860c8",
+      "size": [
+        1400,
+        1400
+      ],
+      "enabledRepairs": []
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-bath-join-20260924/down-only-before.png",
+      "sha256": "89d03e4ea74fde2cbe445f4cb6cd0e36adb715d078a124cf81381b2e16b676bf",
+      "size": [
+        1400,
+        1400
+      ],
+      "enabledRepairs": [
+        "down"
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-bath-join-20260924/without-down-before.png",
+      "sha256": "83da209f5e1041c3b967c9f3c08e97a321374563d1353ffe200e8f75da659965",
+      "size": [
+        1400,
+        1400
+      ],
+      "enabledRepairs": [
+        "front",
+        "rear"
+      ]
+    }
+  ],
+  "sampling": "Encoded RGB, GL LINEAR equivalent bilinear clamp-to-edge; fract base longitude before filtering; pixel-center rays. No color grading or paint.",
+  "frame": "Renderer x right,y up,z front = world X,Z,Y; yaw radians0 front,pi rear; pitch radians positive up; square vertical and horizontal FOV equal.",
+  "caution": "Matches blend formula/orientation; float64 CPU quantization may differ from GPU by small rounding. Base-only and down-only are diagnostic layer variants, not proposed new artwork."
+}

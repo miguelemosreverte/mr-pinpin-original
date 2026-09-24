@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "inputs": {
+    "base": {
+      "file": "../inputs/panorama-door-v2.png",
+      "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/panorama-door-v2.png",
+      "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/panorama-door-v2.png",
+      "sha256": "b333b967832c5f592c78356609b424212b07c589a0dc2ff6cb4e6e00a93623b8",
+      "bytes": 10493930
+    },
+    "front": {
+      "file": "../inputs/front-v1.png",
+      "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/front-v1.png",
+      "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/front-v1.png",
+      "sha256": "da4931926e4cebd359f696f09b3b02d29245029c15864401a0065170eaa934ea",
+      "bytes": 1919470
+    },
+    "rear": {
+      "file": "../inputs/rear-v1.png",
+      "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/rear-v1.png",
+      "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/rear-v1.png",
+      "sha256": "1a11ca75153188efa7672a0956458705d8394e99f62a18bf62741818f00f1ec2",
+      "bytes": 1965024
+    },
+    "down": {
+      "file": "../inputs/down-v3.png",
+      "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/down-v3.png",
+      "sourceExternalPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/down-v3.png",
+      "sha256": "3731add957ba3d23e4e5663009b947980c47c8c209b2ca7bf99d101e5db690f3",
+      "bytes": 1962203
+    }
+  },
+  "camera": {
+    "yawRadians": 1.9,
+    "pitchRadians": -0.5,
+    "fovDegrees": 90,
+    "size": 1400
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ]
+  }
+}
