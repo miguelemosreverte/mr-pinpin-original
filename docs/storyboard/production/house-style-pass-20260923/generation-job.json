@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "status": "executed-one-built-in-call",
+  "experiment": "Common-room final appearance pass with existing panorama and one actual book reference",
+  "tool": "image_gen__imagegen",
+  "promptPath": "docs/storyboard/production/house-style-pass-20260923/prompt.txt",
+  "promptSha256": "7327b9ba60eef34e588c22613e100b07dc38f8eea569ecc268d9d80d38264c20",
+  "promptWordCount": 311,
+  "inputImages": [
+    {
+      "order": 1,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/illustrated/common/panorama-v1.png",
+      "portablePath": "docs/storyboard/production/house-tour-20260923/illustrated/common/panorama-v1.png",
+      "sha256": "98eb7d2124b906c9f24039479a63ed93638dbf0c4209ae1f07a397f19f984bdc",
+      "actualWidth": 1774,
+      "actualHeight": 887,
+      "role": "Edit target: spherical camera, openings, connections and object placement; surface/faceted appearance may change",
+      "visuallyInspected": true
+    },
+    {
+      "order": 2,
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp",
+      "portablePath": "docs/storyboard/images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp",
+      "sha256": "0c475ab6702d45d9ae00a64c90d59adfe0a980dd5a594cacbbd2ced5f63342ea",
+      "actualWidth": 1536,
+      "actualHeight": 1024,
+      "role": "Sole appearance reference: approved book craftsmanship, shape language, materials and light; not layout or characters",
+      "visuallyInspected": true
+    }
+  ],
+  "requestedOutput": {
+    "projection": "2:1 full-sphere equirectangular",
+    "width": 2048,
+    "height": 1024
+  },
+  "canonicalSceneChanged": false,
+  "noGrayInput": true,
+  "oneWholeImagePerCall": true,
+  "toolArguments": {
+    "prompt": "Use case: style-transfer / precise-object-edit\n\nReillustrate Image 1 as an empty room belonging to the children's book in Image 2. This is ONE complete 2:1 equirectangular panorama, not a new room layout.\n\nImage 1 is the edit target and authority for camera, projection, opening positions and room connections. Image 2 is the SOLE appearance authority: its lovingly crafted, softly rounded storybook forms, tactile warm timber, luminous green paint, creamy walls and generous golden daylight. Do not copy its characters, furniture arrangement or frontal camera.\n\nKeep Image 1's exact viewpoint, horizon and spherical directions. Keep the centers and sizes of all existing doorways/windows, hinge sides and leaf states: front door closed, both private-room doors open. Preserve their neighboring-room glimpses. Keep the same furniture locations and counts, including the off-center table/stools, bookcase, counter and low stove.\n\nWithin that placement, replace the dull blockout-like finish with the book's expressive craftsmanship. Smooth the obvious polygonal wall panels into a continuous organic plaster surface; soften abrupt faceted wall/ceiling transitions. Do NOT faithfully retain cheap primitive shapes or beveled-box furniture. Give the existing woodwork rounded, hand-worked edges, rich restrained grain and convincing joints; give existing frames and green doors the reference's warmth and depth. Refine the same low stove as crafted iron. These are improvements to existing forms, not extra objects.\n\nUse Image 2's lively, nuanced warm materials and soft dimensional daylight, with gentle filled shadows and inviting highlights. Avoid a uniform orange wash, generic flat game-room surfaces or photographic showroom polish. Do not add characters, openings, furniture, rugs, plants or props from the reference.\n\nPaint the entire sphere coherently: left and right borders wrap into the same room, ceiling and floor continue through the poles without pinching, seams or duplicated objects. Preserve true equirectangular curvature rather than straightening a frontal view. Return only one finished 2:1 full-sphere panorama, target 2048\u00d71024, with no text, labels or grid.\n",
+    "referenced_image_paths": [
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/illustrated/common/panorama-v1.png",
+      "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp"
+    ]
+  },
+  "reviewStatus": "reviewed-appearance-proposal-remaining-issues",
+  "actualOutput": {
+    "path": "docs/storyboard/production/house-style-pass-20260923/panorama-v1.png",
+    "width": 1774,
+    "height": 887,
+    "sha256": "5c9f0fd1bc30f2566fc4790f901b1fe3093fca5f69707c354598a056578f5a48"
+  },
+  "generationRecord": "generation-result.json",
+  "artReview": "ART-REVIEW.md"
+}
