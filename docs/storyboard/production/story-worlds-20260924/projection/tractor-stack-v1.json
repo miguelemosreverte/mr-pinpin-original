@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "tractor-initial",
+  "selectionStatus": "initial master awaiting spherical review",
+  "inputs": {
+    "base": {
+      "file": "../tractor/panorama-v1.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/tractor/panorama-v1.png",
+      "sha256": "d6584fdb738f7fb5ee64f62eea47d92575450a22ad9001f351fa44e59e7545ba"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {}
+  }
+}

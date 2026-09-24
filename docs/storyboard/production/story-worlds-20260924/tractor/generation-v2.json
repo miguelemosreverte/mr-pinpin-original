@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "selected-reviewed-prototype",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-77cc72d0-5f34-4dd4-80ef-35be0d64ff0f.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "prompt-v2.txt",
+    "sha256": "5533b15971eada30d1fee21a31e5f8667a0369509b59aa40e034a58af8556311",
+    "text": "Use case: illustration-story.\nCreate ONE complete continuous 360\u00b0 by 180\u00b0 EQUIRECTANGULAR environment panorama, EXACT 2:1 aspect ratio, ideally 2048\u00d71024. It will be wrapped around a sphere and viewed through a normal perspective camera. This is NOT a panoramic perspective photograph, NOT a six-face grid, NOT multiple panels. Mid-row is the level horizon; center longitude is forward, left/right edges are the SAME backward direction and must meet seamlessly. Zenith at top is overhead sky/leaves, nadir at bottom is the ground directly under the single stationary camera. Give natural spherical distortion appropriate to latitude. No radial floor star, mirrored ground, hard seam, duplicated landmarks or artificial frame.\nREFERENCE ROLES: Image 1 is the successful finished kitchen 360 panorama. It supplies ONLY full-sphere projection, continuous wrap, consistent horizon, overhead/underfoot organization and polished illustration quality. NO indoor content may transfer: no walls, roof, beams, furniture, rugs, windows or doors. Replace overhead with outdoor canopy/sky and underfoot with forest soil. Image 2 is the approved bridge-worksite image and AUTHORITY for the stream, wooden footbridge, mixed woodland, mossy trunks, fern banks, warm sunlight and red logging tractor. Image 3 supplies the SAME approved machine's anatomy and materials only; ignore its loaded cargo state. All reference characters must be omitted.\nBuild one empty stationary setting after work has paused. Camera stands on the dry near bank clearing at child height about0.6 m, several metres from machinery. At forward center see a small readable wooden FOOTBRIDGE crossing a narrow clear stream, its plank deck now complete and simple wooden railings matched to image 2. The bridge carries pedestrians only: no vehicle on it. The stream flows naturally from right-side woodland behind stones through the center and toward left-side reeds; it must not form duplicate disconnected rivers. Woodlandpath continues across bridge into layered ferns and trees. In the front-left midground, park ONE red logging tractor entirely on firm ground away from bridge, engine off, cab empty, no humans/animals. Show its recognizable profile/threequartershape large enough to read yet entirely within a single broad viewing direction, not cut by back wrap or poles.\nMachinery correctness is crucial: red hood and cab, dark grille/front weight, NO front bucket or backhoe; two axles/four tractor wheels with large rears. ONE yellow articulated loggingcrane has its pedestal directly BEHIND the cab and BEFORE the logging trailer load bed/headboard. Continuous hinge/boom/hose connections, folded and rested securely over the EMPTY dark log trailer, black grapple closed and resting, not suspended mid-action. Trailer attached behind tractor with visible believable hitch, exactly two axles/tandem bogie, uprights/red-tippedstakes and empty bed. No crane at far rear of trailer, no extra crane, no disconnected boom, no floating tires. A small tidy pile of cut timber can lie safely beside worksite, away from pedestrian path. Do not place freshly felled trees across traffic.\nAround right/rear directions continue SAME sunlit forest clearing: fern-lined track with tire marks, moss, roots, wildflowers, reeds and stones, tall tree layers beyond; unobtrusive rear wrap through simple irregular soil/foliage, not through tractor or bridge. Overhead natural green canopy with blue sky gaps; under camera unbroken soil/leaves/tiny flowers, no radial star or warped wheel. Preserve warm polished dimensional storybook finish, tactile bark/moss/wood, rounded inviting shapes and natural depth, no grey blockout/faceted geometry/plastic shine. No characters, people, animals, signage, lettering, logos, watermark or frozen action.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/kitchen-bootstrap.png",
+      "role": "successful spherical projection only, not house content",
+      "sha256": "fbf70ac4415fbc9e63febdc756af4a512ee9b7cd29e693fa4423e65608178184"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/standalone/timber-tractor/scene-11-v3.png",
+      "role": "published bridge setting and machine",
+      "sha256": "71e90389e3eef15f84f51656da5732f8c45d62588c4d1285d85b587c52330856"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/standalone/timber-tractor/scene-09-v4.png",
+      "role": "same machinery identity, not loadedcargo/characters",
+      "sha256": "04b62cb8ced82d42fb14aae72b4c4d08a5fece00435d6310dd9ae729846b441b"
+    }
+  ],
+  "output": {
+    "path": "panorama-v2.png",
+    "sha256": "35a06d283b5cb58f62dd063597c3a9fb47f22f3ff838e7f007d9e1ee75145869",
+    "width": 1774,
+    "height": 887
+  },
+  "camera": null,
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": true,
+    "result": "cardinal and oblique views pass; no obvious hard seam or pole pinch; minor illustration softness remains",
+    "measuredGeometryClaim": false
+  }
+}

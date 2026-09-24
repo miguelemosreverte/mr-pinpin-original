@@ -1,5 +1,10 @@
 # Working in Mr. PinPin Source
 
+- For explicitly image-led 360° illustrations, panorama variations and derived
+  cubemaps, use `docs/storyboard/panorama-workflow/README.md` and
+  `tools/panoramas/README.md`. Keep these artistic studies separate from the
+  measured location packs; the user’s chosen workflow takes precedence.
+
 - For house scenes, camera changes, and room panoramas, start with
   `docs/storyboard/locations/AGENTS.md` and the selected location's `README.md`.
   Use the reusable renderer in `tools/locations/` and its recorded jobs. Keep

@@ -1,5 +1,11 @@
 # Reusable locations
 
+For a user-requested image-led 360° experiment, follow
+`../panorama-workflow/README.md` in a separate production pack. The measured
+geometry rules below apply to this location system; they do not require a new
+Blender render for that explicitly chosen image-led route. Do not change the
+canonical location definition to match an inferred image-model viewpoint.
+
 Start with [README.md](README.md), then the selected pack’s `location.json`, `references.json` and `README.md`. Use `tools/locations/cli.py`; its interface is documented in `tools/locations/README.md`. The first pack is `pinpin-house`.
 
 - Geometry authority is the hash-pinned plan and builder. Render a new camera from that scene for every changed viewpoint, including translation. Do not imitate camera motion by reprojecting an old illustration onto geometry.

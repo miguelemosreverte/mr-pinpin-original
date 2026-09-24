@@ -1,0 +1,9 @@
+Use case: illustration-story.
+Output: one continuous 360×180° equirectangular panorama on an exact 2:1 canvas, not a cube grid or ordinary wide photograph.
+Input roles: [book references: scene and object identity]; [successful panorama: projection/style only, not its unrelated layout].
+Scene and story moment: [location and selected moment].
+Camera: [level eye-height intention and clear standing position]. Front/midpoint: [landmark]; left/right/rear: [supported or explicitly inferred surroundings].
+Preserve: [critical architecture, machinery anatomy, materials, lighting and style].
+Continue unseen scenery coherently without inventing major story landmarks. [Characters absent unless specifically needed.]
+Projection: horizon at middle row, continuous rear wrap at both outer edges, coherent sky/ceiling and ground poles. No hard seams, duplicated objects, grids, text or faceted blockout artifacts.
+Return the whole 2:1 panorama. Preserve the returned original and record actual dimensions.

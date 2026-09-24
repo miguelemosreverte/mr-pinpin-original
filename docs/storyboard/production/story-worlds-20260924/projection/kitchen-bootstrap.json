@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "id": "selected-kitchen-bootstrap",
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "down": "down"
+    }
+  },
+  "inputs": {
+    "base": {
+      "file": "../inputs/common-table-v1.png",
+      "sha256": "814527dd312530e644d1271ce97704d5619ddc69e3dace6ce5b101d7e39259be",
+      "sourcePath": "docs/storyboard/production/house-variants-20260924/common-table-v1.png"
+    },
+    "down": {
+      "file": "../inputs/common-table-down-v1.png",
+      "sha256": "617057b75065bac83649205b4ffa3e5f14ed62a31a41c38e451b0df9f1258984",
+      "sourcePath": "docs/storyboard/production/house-variants-20260924/common-table-down-v1.png"
+    }
+  }
+}

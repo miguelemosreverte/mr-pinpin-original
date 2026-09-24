@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "selected-reviewed-prototype",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-e610e2e7-c0ca-4e89-8e25-1d02fb109944.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "up-v2.prompt.txt",
+    "sha256": "32faba2ed750dfb1b928bdf69fc31f9a5a26079913c54acd91421e35d02739cd",
+    "text": "Use case: precise-object-edit.\nEdit this extracted square110-degree normal perspective from the finished illustrated outdoor sphere. Same exact camera/framing/lighting and rich detailed warm storybook style. Keep outermost15percent of borders registered for blending, and reconstruct the faulty central material naturally. Return the same square ordinary perspective, not a new panorama. No text, characters, structures, new landmarks, borders or diagrams.\nThe camera looks STRAIGHT UP at the tree canopy and sky. Remove the pinched radial star/whirlpool of foliage and impossible converging branches at the center. Rebuild natural believable branching with many individually readable leaves, irregular blue-sky gaps and organic overlapping canopy viewed from below. Each branch joins a plausible parent branch; no foliage spokes, circular rosette, central hole or central artificial disk. Keep the existing major canopy masses, sky opening, sun direction and surrounding tree identities/positions, but allow small central twigs/leaves to move enough to remove the projection pinch. No roof or indoor material. The output should look like an ordinary well-drawn upward wide-angle forest view.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/up-input-v2.png",
+      "role": "current base plus repaired rear upward view",
+      "sha256": "733a8257c5f729388e3fda1fca9e16cc77221196d60d4873dc92b262646f61a0"
+    }
+  ],
+  "output": {
+    "path": "up-v2.png",
+    "sha256": "33ed2e5ea4ddabe5974affb0f53fef2cee5fb8b5e210aa3e9256072daacacfe0",
+    "width": 1254,
+    "height": 1254
+  },
+  "camera": {
+    "yawDegrees": 0,
+    "pitchDegrees": 90,
+    "fovDegrees": 110
+  },
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": true,
+    "result": "cardinal and oblique views pass; no obvious hard seam or pole pinch; minor illustration softness remains",
+    "measuredGeometryClaim": false
+  }
+}

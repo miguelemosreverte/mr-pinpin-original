@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "selected-reviewed-prototype",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-6d2644ae-8ef3-41d8-8542-0b4b4b94912b.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "down-v2.prompt.txt",
+    "sha256": "d1882a10ab79ba336f491f3d42e6cd898526c39a7cf0eabe79b786cbdd69db7f",
+    "text": "Use case: precise-object-edit.\nEdit this extracted square110-degree normal perspective from the finished illustrated outdoor sphere. Same exact camera/framing/lighting and rich detailed warm storybook style. Keep outermost15percent of borders registered for blending, and reconstruct the faulty central material naturally. Return the same square ordinary perspective, not a new panorama. No text, characters, structures, new landmarks, borders or diagrams.\nThe camera looks STRAIGHT DOWN at natural forest worksite ground. Remove the pinched central soil/moss rosette and warped concentric mound caused by the original spherical pole. Rebuild continuous physically FLAT irregular earth/pebbles/leaves/moss with natural roots, coherent individual stones and ordinary grounded vegetation. No radial symmetry, starburst, miniatureplanet, whirlpool or new decorative medallion. Preserve the existing tire-track path, larger roots, ferns, tiny wildflowers, rocks and log ends near the surrounding edges. The center must remain flat dry soil/leaf litter; no water, rug, paving or new objects. Keep all tractor parts at the edges unchanged. Maintain all natural cast shadows and warm lighting. The center is plain varied soil and moss, not an object hiding the defect.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/down-input-v2.png",
+      "role": "current base plus repaired rear downward view",
+      "sha256": "62b34e62cd0de0a7c29c865a8e974d3ab6750dd7b084b8973f3e860ec59a8c40"
+    }
+  ],
+  "output": {
+    "path": "down-v2.png",
+    "sha256": "bfcda19c5c1d300403ec0e446002e2b9351866e59dc13b045e77a4bf5c98ce00",
+    "width": 1254,
+    "height": 1254
+  },
+  "camera": {
+    "yawDegrees": 0,
+    "pitchDegrees": -90,
+    "fovDegrees": 110
+  },
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": true,
+    "result": "cardinal and oblique views pass; no obvious hard seam or pole pinch; minor illustration softness remains",
+    "measuredGeometryClaim": false
+  }
+}

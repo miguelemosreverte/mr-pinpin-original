@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "operation": "export",
+  "scriptSha256": "d5b7d058797892056801a01a5e091a4acadce96f27ce18e87dcfa5a161db83fe",
+  "helpers": {
+    "export_rooms.py": "2c1110429b07709679206b60b464d7ef34099c264499f775ae61994ad833150a",
+    "stack_math.py": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+    "trusted_reproject.py": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+    "png_io.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d"
+  },
+  "orientation": {
+    "worldAxes": "X right, Y front, Z up",
+    "panorama": "front u=.5; right u=.75; rear wraps u=0/1; up v=0",
+    "cubeLayout": [
+      [
+        "front",
+        "right",
+        "back"
+      ],
+      [
+        "left",
+        "up",
+        "down"
+      ]
+    ],
+    "faceBases": [
+      {
+        "id": "front",
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "right",
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "back",
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "right": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "left",
+        "forward": [
+          -1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "up",
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "id": "down",
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "noNewArtOrGeometry": true,
+  "outputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/panorama-assembled-v1.png",
+      "sha256": "2661ecb67019860b1d72099dd6a1672837006324af52561b65ce6240c8b0a6f9",
+      "bytes": 12703820,
+      "size": [
+        3072,
+        1536
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/faces-v1/front.png",
+      "sha256": "2fc35200703b93396cf151ec8a4113e1f2dba6503d9c8932f2e402358456817c",
+      "bytes": 2790973,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/faces-v1/right.png",
+      "sha256": "1c4b43811f73d81a833dca28d16cb2bbde9240aff9c12ae24b94f10c5f8fe12e",
+      "bytes": 2808647,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/faces-v1/back.png",
+      "sha256": "19c42b46a5fa5202344c5ead756c1b90d9078bbfee613d39b61a8ec43da94dce",
+      "bytes": 2947004,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/faces-v1/left.png",
+      "sha256": "89ba951c54f1d91aa142f23e4b7b89e55d7a492156dd5b60e91e9a6e88f87830",
+      "bytes": 2955350,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/faces-v1/up.png",
+      "sha256": "331981299b906e8e3d70b4580bfd9614de1d69b026621cede834b0f9044ca998",
+      "bytes": 2584743,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/faces-v1/down.png",
+      "sha256": "aa2b399731623af6b0352ae854c0e661d0f73d3970434e0f524eabf6676e0779",
+      "bytes": 2923115,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/cube-atlas-v1.png",
+      "sha256": "bc4939765c6b62ee10464d766d28f72da9d52cdd5f541f229e45ed9d7ae48107",
+      "bytes": 17476212,
+      "size": [
+        3072,
+        2048
+      ]
+    }
+  ],
+  "config": {
+    "schemaVersion": 1,
+    "id": "lake-selected-final",
+    "selectionStatus": "selected after actual viewer overlaps and poles review; minor detail softness variation remains",
+    "inputs": {
+      "base": {
+        "file": "../lake/panorama-v2.png",
+        "sourcePath": "docs/storyboard/production/story-worlds-20260924/lake/panorama-v2.png",
+        "sha256": "53a67c9bae7db2123fb48e2795e36eb16770e1d6759c64ba793cff5e01e41acf"
+      },
+      "rear": {
+        "file": "../lake/rear-v2.png",
+        "sourcePath": "docs/storyboard/production/story-worlds-20260924/lake/rear-v2.png",
+        "sha256": "3d6c5d66fc103e1d6680556a4f0a8b7c8e08d8a0bb9a13be18ad645cd8a840ca"
+      },
+      "up": {
+        "file": "../lake/up-v2.png",
+        "sourcePath": "docs/storyboard/production/story-worlds-20260924/lake/up-v2.png",
+        "sha256": "33ed2e5ea4ddabe5974affb0f53fef2cee5fb8b5e210aa3e9256072daacacfe0"
+      },
+      "down": {
+        "file": "../lake/down-v2.png",
+        "sourcePath": "docs/storyboard/production/story-worlds-20260924/lake/down-v2.png",
+        "sha256": "174e85f376baef6a7a926bd9928c03eb36403af4dab621a6bb3b24319bea2041"
+      }
+    },
+    "repairs": {
+      "fovDegrees": 110,
+      "frontMask": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "assets": {
+        "rear": "rear",
+        "up": "up",
+        "down": "down"
+      }
+    }
+  },
+  "configSha256": "f205eed33e97572c7bed2ce0e05e6931a7acd9de27b5a43331e73ebda4f101e6",
+  "verification": {
+    "pass": true,
+    "edges": [
+      {
+        "faces": [
+          "front:left",
+          "left:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:right",
+          "right:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:bottom",
+          "down:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:top",
+          "up:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:right",
+          "back:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:bottom",
+          "down:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:top",
+          "up:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:right",
+          "left:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:bottom",
+          "down:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:top",
+          "up:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:bottom",
+          "down:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:top",
+          "up:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      }
+    ],
+    "note": "Exact shared angular boundaries sample the same panorama. Neighboring output texel centers have different directions; no edge pixels are painted/copied.",
+    "allSixAtlasTilesEqualFaceFiles": true
+  },
+  "sampling": "Same runtime normalized cardinal patch blend and optional registered detail; encoded RGB bilinear interpolation. Cube derived from final assembled panorama; no artistic seam repair. Same-ray boundary equality verifies projection only, not source visual continuity."
+}

@@ -1,0 +1,358 @@
+{
+  "schemaVersion": 1,
+  "operation": "export",
+  "scriptSha256": "d5b7d058797892056801a01a5e091a4acadce96f27ce18e87dcfa5a161db83fe",
+  "helpers": {
+    "export_rooms.py": "2c1110429b07709679206b60b464d7ef34099c264499f775ae61994ad833150a",
+    "stack_math.py": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+    "trusted_reproject.py": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+    "png_io.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d"
+  },
+  "orientation": {
+    "worldAxes": "X right, Y front, Z up",
+    "panorama": "front u=.5; right u=.75; rear wraps u=0/1; up v=0",
+    "cubeLayout": [
+      [
+        "front",
+        "right",
+        "back"
+      ],
+      [
+        "left",
+        "up",
+        "down"
+      ]
+    ],
+    "faceBases": [
+      {
+        "id": "front",
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "right",
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "back",
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "right": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "left",
+        "forward": [
+          -1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "up",
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "id": "down",
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "noNewArtOrGeometry": true,
+  "outputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/panorama-assembled-v1.png",
+      "sha256": "84dbfe633a8f3c9282f9dd23406324c983c85ae19a9a488178b2b7976cae35fe",
+      "bytes": 13010775,
+      "size": [
+        3072,
+        1536
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/faces-v1/front.png",
+      "sha256": "2d28f1582e9fc6ec06c54a39456a1c85ab818e3bd136c440bf9aa9a0a40562c8",
+      "bytes": 2965741,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/faces-v1/right.png",
+      "sha256": "131479227fc9d70d75de216f304567ea295dc70152055d104d4ba83b58eb8319",
+      "bytes": 2951508,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/faces-v1/back.png",
+      "sha256": "1f937736356f12cbe86e7d5983edcb23b48819917729c00d8b9f658e9d8bd3c4",
+      "bytes": 2844044,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/faces-v1/left.png",
+      "sha256": "4a53128c7fcfb919674c64de33e98c791cf2c4e78f30c4fe0fdd3bbb71d2b314",
+      "bytes": 2878098,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/faces-v1/up.png",
+      "sha256": "b315a0b5b9ff15173b42df0ff4084155ad89b08ba791783e5fab4f28391746c5",
+      "bytes": 2878670,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/faces-v1/down.png",
+      "sha256": "550b5f109ab35f19893c00895f31dfd61805413e30ed8d3bc29c9f338cab8215",
+      "bytes": 2955119,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/cube-atlas-v1.png",
+      "sha256": "727ae23d08afe13eaabfb3ed4490ffc1428d6ff997efe892c860c21cf08d7d44",
+      "bytes": 17756081,
+      "size": [
+        3072,
+        2048
+      ]
+    }
+  ],
+  "config": {
+    "schemaVersion": 1,
+    "id": "tractor-selected-final",
+    "selectionStatus": "selected after actual viewer poles and overlaps review; minor texture softness variation remains",
+    "inputs": {
+      "base": {
+        "file": "../tractor/panorama-v2.png",
+        "sourcePath": "docs/storyboard/production/story-worlds-20260924/tractor/panorama-v2.png",
+        "sha256": "35a06d283b5cb58f62dd063597c3a9fb47f22f3ff838e7f007d9e1ee75145869"
+      },
+      "rear": {
+        "file": "../tractor/rear-v2.png",
+        "sourcePath": "docs/storyboard/production/story-worlds-20260924/tractor/rear-v2.png",
+        "sha256": "99fcd18d2a4008c24d0af0b5825a7fd206a0b88a5fb5f05a87f04f666872deea"
+      },
+      "up": {
+        "file": "../tractor/up-v2.png",
+        "sourcePath": "docs/storyboard/production/story-worlds-20260924/tractor/up-v2.png",
+        "sha256": "79ec5ac931dd7f128ac5ac8a73e53520ef8b164d19f527f6e9aa512c4142b0f5"
+      },
+      "down": {
+        "file": "../tractor/down-v2.png",
+        "sourcePath": "docs/storyboard/production/story-worlds-20260924/tractor/down-v2.png",
+        "sha256": "bfcda19c5c1d300403ec0e446002e2b9351866e59dc13b045e77a4bf5c98ce00"
+      }
+    },
+    "repairs": {
+      "fovDegrees": 110,
+      "frontMask": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "assets": {
+        "rear": "rear",
+        "up": "up",
+        "down": "down"
+      }
+    }
+  },
+  "configSha256": "8fd7335ebb2049368c1a1a431a3cd6feaac6d0df64d5bda5d04fb14a28f59aeb",
+  "verification": {
+    "pass": true,
+    "edges": [
+      {
+        "faces": [
+          "front:left",
+          "left:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:right",
+          "right:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:bottom",
+          "down:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:top",
+          "up:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:right",
+          "back:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:bottom",
+          "down:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:top",
+          "up:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:right",
+          "left:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:bottom",
+          "down:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:top",
+          "up:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:bottom",
+          "down:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:top",
+          "up:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      }
+    ],
+    "note": "Exact shared angular boundaries sample the same panorama. Neighboring output texel centers have different directions; no edge pixels are painted/copied.",
+    "allSixAtlasTilesEqualFaceFiles": true
+  },
+  "sampling": "Same runtime normalized cardinal patch blend and optional registered detail; encoded RGB bilinear interpolation. Cube derived from final assembled panorama; no artistic seam repair. Same-ray boundary equality verifies projection only, not source visual continuity."
+}

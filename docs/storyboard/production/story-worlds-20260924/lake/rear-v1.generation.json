@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "retained-superseded-experiment",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-8567fc58-0760-456d-84e5-d47cfa8c5a12.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "rear-v1.prompt.txt",
+    "sha256": "bf44488bb48f78a8c1714382690b29bfa40687bbabd9795a016356f609e10d1e",
+    "text": "Use case: precise-object-edit.\nThis is a square110-degree ordinary perspective extracted from the selected whole360 illustrated outdoor environment. Repair its displayed continuity error while keeping exactly the same camera, crop, rich warm dimensional storybook style, sunlight and scene identities. Return one square normal perspective, never a new panorama or grid. Keep the outermost15percent along each border registered for blending into the unchanged sphere, except the tiny seam continuation itself. No characters, text, annotations or added structures.\nRepair ONLY the straight vertical split through the middle of the rear forest view: make the tree trunk/bark, roots, path, moss, plants, light and shadows join naturally. Reconstruct continuous surfaces across the old cut without hiding it behind another tree or adding an object. Preserve the one existing path and all surrounding trees/ferns/flowers. Ground remains irregular natural soil with coherent roots; no mirror effect or radial ornament.\nPreserve the lake/shore layout and any willow branches or water at the edges. No new lake, path branch, animal or furniture.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/rear-input.png",
+      "sha256": "f82d8de0572c6c042e926c763c8ee52d19724961c01f1930ae37383d6c4d4dc0",
+      "role": "exact rear perspective seam repair target"
+    }
+  ],
+  "output": {
+    "path": "rear-v1.png",
+    "sha256": "5030db94f5abe76e09afb855c7cb4ed659ec33baefdbd714c81e650878a3720f",
+    "width": 1254,
+    "height": 1254
+  },
+  "camera": {
+    "yawDegrees": 180,
+    "pitchDegrees": 0,
+    "fovDegrees": 110
+  },
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": false,
+    "result": "preserved v1 history; excluded from selected v2 stack",
+    "measuredGeometryClaim": false
+  }
+}

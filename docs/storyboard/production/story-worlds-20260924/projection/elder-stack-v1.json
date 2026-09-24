@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-initial",
+  "selectionStatus": "initial master awaiting spherical review",
+  "inputs": {
+    "base": {
+      "file": "../elder/panorama-v1.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/elder/panorama-v1.png",
+      "sha256": "2fe55b6606d1872d605fa71502558906a0f205aced568df90f3f27cbb29eef46"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {}
+  }
+}

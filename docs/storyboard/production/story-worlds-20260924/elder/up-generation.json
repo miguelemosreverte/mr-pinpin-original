@@ -1,0 +1,30 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T11:54:30.172467+00:00",
+  "prompt": "Use case: precise-object-edit. Correct this square 110-degree perspective looking straight UP inside the Elder's organic tree-root home. The roots at the exact center are pinched into a radial knotted mound by the spherical pole. Replace that pinched zone with a natural overhead arch of a few continuous irregular roots and softly lit earth/plaster pockets between them. Roots should span the ceiling smoothly with coherent bark, not converge into a central lump, rosette, star, hole or artificial hub. Preserve the same camera, perimeter roots, ivy, open entrance light on the left, wall map at bottom edge, shelves/lanterns at outer edges, and warm illustrated storybook rendering. No new openings, props, furniture, regular wooden beams or characters. Keep the exact square view framing; fix the central projection distortion only. Output one square image.\n",
+  "promptSha256": "28f02f92a388302eb8311e5d5a98614d45b763c2dbc8560f1d1232440d257f30",
+  "inputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/elder/up-input.png",
+      "sha256": "8b0d578af886c1186b6f938a4cfab852ca118674f07759c5a86d4b6e515d05d0",
+      "bytes": 4861010
+    }
+  ],
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/elder/up-v1.png",
+    "sha256": "b251d85efee18daf5f50944b6fc177fbec5fe843147533d553872a673cf03ae4",
+    "bytes": 2699595
+  },
+  "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-ac613e52-4da3-4229-a211-58f6fe67b28e.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "camera": {
+    "yawDegrees": 0,
+    "pitchDegrees": 90,
+    "fovDegrees": 110
+  },
+  "status": "candidate awaiting assembled browser review",
+  "imageCalls": 1
+}

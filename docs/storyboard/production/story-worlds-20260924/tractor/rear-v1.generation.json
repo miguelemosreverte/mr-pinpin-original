@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "retained-superseded-experiment",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-51d4b529-346c-4bda-95c7-213b672ab1f8.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "rear-v1.prompt.txt",
+    "sha256": "a95d359346684296c180e6c9ba34d21fda89f36c139bf77a9f3a8685eedadca0",
+    "text": "Use case: precise-object-edit.\nThis is a square110-degree ordinary perspective extracted from the selected whole360 illustrated outdoor environment. Repair its displayed continuity error while keeping exactly the same camera, crop, rich warm dimensional storybook style, sunlight and scene identities. Return one square normal perspective, never a new panorama or grid. Keep the outermost15percent along each border registered for blending into the unchanged sphere, except the tiny seam continuation itself. No characters, text, annotations or added structures.\nRepair ONLY the straight vertical split through the middle of the rear forest view: make the tree trunk/bark, roots, path, moss, plants, light and shadows join naturally. Reconstruct continuous surfaces across the old cut without hiding it behind another tree or adding an object. Preserve the one existing path and all surrounding trees/ferns/flowers. Ground remains irregular natural soil with coherent roots; no mirror effect or radial ornament.\nPreserve every visible part of the parked red tractor, wheels, front grille/weight and timber exactly. Do not redesign or move the vehicle, add a bucket, crane, wheel or character. The seam repair is in the forest/tree/ground, not machinery.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/rear-input.png",
+      "sha256": "b1fd84d4a4f74de9d4d573cdaf3af751dd422dd9b03b416f2a67bff3121a9b30",
+      "role": "exact rear perspective seam repair target"
+    }
+  ],
+  "output": {
+    "path": "rear-v1.png",
+    "sha256": "fce510af38317e2b5e30d686ad9a637f0c983d0bc0066a6bfefc3f65f58d5ab6",
+    "width": 1254,
+    "height": 1254
+  },
+  "camera": {
+    "yawDegrees": 180,
+    "pitchDegrees": 0,
+    "fovDegrees": 110
+  },
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": false,
+    "result": "preserved v1 history; excluded from selected v2 stack",
+    "measuredGeometryClaim": false
+  }
+}

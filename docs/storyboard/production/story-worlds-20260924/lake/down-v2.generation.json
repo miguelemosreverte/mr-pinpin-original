@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "selected-reviewed-prototype",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-2a6d25ca-5c3b-48ba-8ad6-04f36a83b6e7.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "down-v2.prompt.txt",
+    "sha256": "15d770d0d2082f9640280518579969768a8e7400279649622c2d04c27956fa5d",
+    "text": "Use case: precise-object-edit.\nEdit this extracted square110-degree normal perspective from the finished illustrated outdoor sphere. Same exact camera/framing/lighting and rich detailed warm storybook style. Keep outermost15percent of borders registered for blending, and reconstruct the faulty central material naturally. Return the same square ordinary perspective, not a new panorama. No text, characters, structures, new landmarks, borders or diagrams.\nThe camera looks STRAIGHT DOWN at natural lakeshore ground. Remove the pinched central soil/moss rosette and warped concentric mound caused by the original spherical pole. Rebuild continuous physically FLAT irregular earth/pebbles/leaves/moss with natural roots, coherent individual stones and ordinary grounded vegetation. No radial symmetry, starburst, miniatureplanet, whirlpool or new decorative medallion. Preserve shoreline water/reeds and larger rocks at the surrounding edges, preserving camera position on dry ground just beside the water; no new island, no lake in the central soil. Maintain all natural cast shadows and warm lighting. The center is plain varied soil and moss, not an object hiding the defect.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/down-input-v2.png",
+      "role": "current base plus repaired rear downward view",
+      "sha256": "9c91ff2697abcfc5e16ed4611d4652f4dc2d763b8d2238ef14700103c979c9aa"
+    }
+  ],
+  "output": {
+    "path": "down-v2.png",
+    "sha256": "174e85f376baef6a7a926bd9928c03eb36403af4dab621a6bb3b24319bea2041",
+    "width": 1254,
+    "height": 1254
+  },
+  "camera": {
+    "yawDegrees": 0,
+    "pitchDegrees": -90,
+    "fovDegrees": 110
+  },
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": true,
+    "result": "cardinal and oblique views pass; no obvious hard seam or pole pinch; minor illustration softness remains",
+    "measuredGeometryClaim": false
+  }
+}

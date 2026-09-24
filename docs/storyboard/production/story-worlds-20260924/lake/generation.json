@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "retained-superseded-experiment",
+  "calls": 1,
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-f6f3504c-db78-48f9-b81f-6ff41f6df4b5.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "prompt.txt",
+    "text": "Use case: illustration-story.\nCreate ONE complete continuous 360\u00b0 by 180\u00b0 EQUIRECTANGULAR environment panorama, EXACT 2:1 aspect ratio, ideally 2048\u00d71024. It will be wrapped around a sphere and viewed through a normal perspective camera. This is NOT a panoramic perspective photograph, NOT a six-face grid, NOT multiple panels. Mid-row is the level horizon; center longitude is forward, left/right edges are the SAME backward direction and must meet seamlessly. Zenith at top is overhead sky/leaves, nadir at bottom is the ground directly under the single stationary camera. Give natural spherical distortion appropriate to latitude. No radial floor star, mirrored ground, hard seam, duplicated landmarks or artificial frame.\nReference image1 is the published Chapter1 restored lake environment: exact place, willow tree, cleargreen water, lilies, reeds, rounded stones, surrounding forest and golden light. Reference image2 supplies the same lake and rich dimensional children's-book illustration; OMIT every character and animal from image2. Do not copy lens droplets. This is the RESTORED lake after the story's magic, not the dried/cracked lakebed.\nPlace the single camera on a small dry mossy shoreline clearing at friendly child/hedgehog viewing height about0.6 m, safely outside water. Looking forward through the center half of the panorama, see the beautiful calm lake opening across the midground, gentle ripples and lily pads, reeds and rounded pale boulders on the opposite shore, layered trees far beyond. Keep the recognizably large graceful drooping willow on the front-left bank, with a few hanging leaves overhead but broad readable sky above the lake. Water is the central destination, not a tiny puddle. Rightside has ferns, white flowers and rocks along a curving bank. Behind the camera, continue the SAME clearing into a quiet fern-lined woodland path between mature trunks and mossy roots; this unseen rear is a plausible continuation, not another lake or another identical willow. The rear wrap joins through irregular low moss/foliage and simple path soil, without splitting a trunk or landmark. At bottom, coherent mossy earth, tiny pebbles/leaves and roots nearby, no giant stretched flowers; at top, blue sky and naturally connected branch canopy.\nKeep the sophisticated warm tactile picture-book look of the references: detailed soft foliage, inviting rounded shapes, luminous natural colors, wood/bark/stone textures with controlled highlights, deep near/mid/far staging, no fog hiding details. Fully empty setting: no people, hedgehogs, rabbits, other animals, fish closeups, boats, buildings, machines, text, labels, logos or magical glowing objects. One coherent location and one coherent sun direction around all 360 degrees.\n",
+    "sha256": "caea13f126cbbee058701186e36db8d4c03c2fb7e58a476b2ff641c50af610eb"
+  },
+  "references": [
+    {
+      "path": "docs/storyboard/images/chapter-01-landscapes/shot-12.png",
+      "sha256": "b1dda48aad24105ff100a0ed809c3cc7b723013263c3a2c6b6a2005adf9e9bbe",
+      "role": "published location/style and machine identity; characters omitted"
+    },
+    {
+      "path": "docs/storyboard/images/chapter-01-direct/08.png",
+      "sha256": "04fb1f25083db7f968fcf17087d2eed5d8b89f152c96bd412a07986553ca437e",
+      "role": "published location/style and machine identity; characters omitted"
+    }
+  ],
+  "output": {
+    "path": "panorama-v1.png",
+    "sha256": "718189da46476d5185b05c340f6beb1d0e1dcd1a390b47d9708038a9d701dbe9",
+    "width": 1774,
+    "height": 887
+  },
+  "projection": {
+    "type": "equirectangular",
+    "frontU": 0.5,
+    "horizonV": 0.5,
+    "unseenRear": "inferred extension, not book canon"
+  },
+  "newBlender": false,
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": false,
+    "result": "preserved v1 history; excluded from selected v2 stack",
+    "measuredGeometryClaim": false
+  }
+}

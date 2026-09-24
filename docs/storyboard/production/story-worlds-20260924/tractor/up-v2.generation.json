@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "selected-reviewed-prototype",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-8ec536af-31cd-4ca9-b10d-9ebc3e59d96f.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "up-v2.prompt.txt",
+    "sha256": "f359382b245dc92b5dea24ae31a9dbea80a289f23b661dd2c9273c85e9d5b3d8",
+    "text": "Use case: precise-object-edit.\nEdit this extracted square110-degree normal perspective from the finished illustrated outdoor sphere. Same exact camera/framing/lighting and rich detailed warm storybook style. Keep outermost15percent of borders registered for blending, and reconstruct the faulty central material naturally. Return the same square ordinary perspective, not a new panorama. No text, characters, structures, new landmarks, borders or diagrams.\nThe camera looks STRAIGHT UP at the tree canopy and sky. Remove the pinched radial star/whirlpool of foliage and impossible converging branches at the center. Rebuild natural believable branching with many individually readable leaves, irregular blue-sky gaps and organic overlapping canopy viewed from below. Each branch joins a plausible parent branch; no foliage spokes, circular rosette, central hole or central artificial disk. Keep the existing major canopy masses, sky opening, sun direction and surrounding tree identities/positions, but allow small central twigs/leaves to move enough to remove the projection pinch. No roof or indoor material. The output should look like an ordinary well-drawn upward wide-angle forest view.\nKeep any small yellow crane/vehicle fragments near the border unchanged; do not introduce machinery into the sky.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/up-input-v2.png",
+      "role": "current base plus repaired rear upward view",
+      "sha256": "bcffe87fbe6155622b2e521cd66d7e849bcbc37ced59d2a63d63862019342d03"
+    }
+  ],
+  "output": {
+    "path": "up-v2.png",
+    "sha256": "79ec5ac931dd7f128ac5ac8a73e53520ef8b164d19f527f6e9aa512c4142b0f5",
+    "width": 1254,
+    "height": 1254
+  },
+  "camera": {
+    "yawDegrees": 0,
+    "pitchDegrees": 90,
+    "fovDegrees": 110
+  },
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": true,
+    "result": "cardinal and oblique views pass; no obvious hard seam or pole pinch; minor illustration softness remains",
+    "measuredGeometryClaim": false
+  }
+}

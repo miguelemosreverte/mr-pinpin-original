@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-selected-final",
+  "selectionStatus": "selected after actual viewer overlap review; minor rug scale transition disclosed",
+  "inputs": {
+    "base": {
+      "file": "../elder/panorama-v1.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/elder/panorama-v1.png",
+      "sha256": "2fe55b6606d1872d605fa71502558906a0f205aced568df90f3f27cbb29eef46"
+    },
+    "rear": {
+      "file": "../elder/rear-v1.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/elder/rear-v1.png",
+      "sha256": "71acdad90487b4840c38ee681063fa6e41680fc3a5b4b96b9460f63e239f16cb"
+    },
+    "up": {
+      "file": "../elder/up-v1.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/elder/up-v1.png",
+      "sha256": "b251d85efee18daf5f50944b6fc177fbec5fe843147533d553872a673cf03ae4"
+    },
+    "down": {
+      "file": "../elder/down-v1.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/elder/down-v1.png",
+      "sha256": "c4866070268342d44cfe139beb9aee456056b8969e2f47d27ce11c9d82992be6"
+    },
+    "detail": {
+      "file": "../elder/rear-detail-v1.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/elder/rear-detail-v1.png",
+      "sha256": "86866056f626b316ae24fcb45db091d84618b1417ada2de07bd12f5c832de59f"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "rear": "rear",
+      "up": "up",
+      "down": "down"
+    }
+  },
+  "details": {
+    "yaw": 3.141592653589793,
+    "pitch": -0.7,
+    "fov": 90,
+    "mask": [
+      -0.05,
+      0.1,
+      0.32,
+      0.36
+    ]
+  }
+}

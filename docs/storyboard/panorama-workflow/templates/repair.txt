@@ -1,0 +1,5 @@
+Use case: precise-object-edit.
+Input: one registered square perspective extracted from the current assembled panorama, [FOV] degrees, centered on [defect].
+Correct only [visible defect and exact location]. Make [surfaces/edges] continuous and physically plausible without doubled outlines, ghost textures or a new cut.
+Preserve the exact camera, framing, object positions, lighting, style and outer image perimeter. Do not change the scene or add props.
+Output one square corrected image. Preserve it separately, register with the recorded camera, and inspect its overlap with the existing layers in the real viewer.

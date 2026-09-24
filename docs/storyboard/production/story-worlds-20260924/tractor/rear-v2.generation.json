@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "selected-reviewed-prototype",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-82c47e72-ded3-46e3-93aa-e1cbe385febf.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "rear-v2.prompt.txt",
+    "sha256": "a95d359346684296c180e6c9ba34d21fda89f36c139bf77a9f3a8685eedadca0",
+    "text": "Use case: precise-object-edit.\nThis is a square110-degree ordinary perspective extracted from the selected whole360 illustrated outdoor environment. Repair its displayed continuity error while keeping exactly the same camera, crop, rich warm dimensional storybook style, sunlight and scene identities. Return one square normal perspective, never a new panorama or grid. Keep the outermost15percent along each border registered for blending into the unchanged sphere, except the tiny seam continuation itself. No characters, text, annotations or added structures.\nRepair ONLY the straight vertical split through the middle of the rear forest view: make the tree trunk/bark, roots, path, moss, plants, light and shadows join naturally. Reconstruct continuous surfaces across the old cut without hiding it behind another tree or adding an object. Preserve the one existing path and all surrounding trees/ferns/flowers. Ground remains irregular natural soil with coherent roots; no mirror effect or radial ornament.\nPreserve every visible part of the parked red tractor, wheels, front grille/weight and timber exactly. Do not redesign or move the vehicle, add a bucket, crane, wheel or character. The seam repair is in the forest/tree/ground, not machinery.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/tractor/rear-input-v2.png",
+      "role": "exact rear v2 perspective",
+      "sha256": "6a968a5d4eab85d20736797b06ed6c0ab4d60251130d006417263137d63e7de8"
+    }
+  ],
+  "output": {
+    "path": "rear-v2.png",
+    "sha256": "99fcd18d2a4008c24d0af0b5825a7fd206a0b88a5fb5f05a87f04f666872deea",
+    "width": 1254,
+    "height": 1254
+  },
+  "camera": {
+    "yawDegrees": 180,
+    "pitchDegrees": 0,
+    "fovDegrees": 110
+  },
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": true,
+    "result": "cardinal and oblique views pass; no obvious hard seam or pole pinch; minor illustration softness remains",
+    "measuredGeometryClaim": false
+  }
+}

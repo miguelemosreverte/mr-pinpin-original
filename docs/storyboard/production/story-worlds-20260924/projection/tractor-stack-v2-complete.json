@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "tractor-v2-complete-repair-stack",
+  "selectionStatus": "all v2 cardinal repairs present; final visual review pending",
+  "inputs": {
+    "base": {
+      "file": "../tractor/panorama-v2.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/tractor/panorama-v2.png",
+      "sha256": "35a06d283b5cb58f62dd063597c3a9fb47f22f3ff838e7f007d9e1ee75145869"
+    },
+    "rear": {
+      "file": "../tractor/rear-v2.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/tractor/rear-v2.png",
+      "sha256": "99fcd18d2a4008c24d0af0b5825a7fd206a0b88a5fb5f05a87f04f666872deea"
+    },
+    "up": {
+      "file": "../tractor/up-v2.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/tractor/up-v2.png",
+      "sha256": "79ec5ac931dd7f128ac5ac8a73e53520ef8b164d19f527f6e9aa512c4142b0f5"
+    },
+    "down": {
+      "file": "../tractor/down-v2.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/tractor/down-v2.png",
+      "sha256": "bfcda19c5c1d300403ec0e446002e2b9351866e59dc13b045e77a4bf5c98ce00"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "rear": "rear",
+      "up": "up",
+      "down": "down"
+    }
+  }
+}

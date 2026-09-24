@@ -1,0 +1,47 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T11:37:09.960882+00:00",
+  "prompt": "Use case: illustration-story.\nCreate one complete 360 by 180 degree EQUIRECTANGULAR spherical panorama, a single exact 2:1 image, of the Elder's house INSIDE the roots of an ancient living tree, matching the supplied published book illustrations.\nReference roles: Image1 is the authoritative empty wide interior: preserve its actual identity, furniture designs, organic root structure, earth/plaster walls, warm daylight and rich illustrated details. Image2 clarifies the same bookcase, rolled maps, wall map and leaf-screened low root nook; omit all characters. Image3 clarifies the exterior root doorway and forest light; omit characters. Image4 is ONLY an example of successful continuous spherical projection and rendering finish. Do NOT copy Image4's domestic kitchen, green door, round windows, dining table, smooth floorboards or room plan into the Elder's home.\nScene: a quiet scholar's lived-in woodland home. Stand at a level modest eye height in the clear central area beside the woven rectangular rug, not inside furniture. Face the parchment lake/forest map and low bookshelves shown in Image1. To the left is the single open organic root entrance looking onto sunlit ferns and mossy stones; beside it is the dark writing desk with an open botanical book, black inkwell and quill, smooth stones, amber lamp and one small wooden stool. Keep the shelf's shell, pinecone, tiny specimen box, old books and rolled maps. To the right is the low wooden bed with layered handmade quilt and pillow, small stool and pottery shelves. The low leaf-covered recess between roots remains a subtle nook near the back/right, without an official door, stairs or a revealed temple. Continue the unseen rear into consistent curving roots, earth/plaster, modest book/pottery shelves and floor; this is a plausible continuation, not extra rooms.\nMatch the warmly illustrated tactile children's-book look: natural irregular roots intertwined overhead, soft amber sunlight from the open entrance, gentle lantern glow, detailed paper/wood/fiber/leaf textures, cozy but spacious enough to walk through. Floor is earth/stone with the woven rug; no polished board-floor kitchen. Preserve the reference's character, scale, furnishing relationships and color palette. Empty environment only; no people, animals, readable labels, text, watermarks or grids.\nProjection requirements: one continuous spherical image with a level horizon exactly halfway down. Full ceiling/root canopy at top and ground beneath camera at bottom. The left and right edges are one identical rear direction and must meet continuously in roots, lighting and ground; no abrupt join, split scene, duplicated furnishings, faceted geometry or cube panels. Keep both poles coherent rather than pinched decorative vortices. Midpoint longitude faces the map/bookcase; entrance is to the left, bed to the right. Output the complete 2:1 panorama, preferably 3072x1536 if supported.\n",
+  "promptSha256": "6b0327b6aca249ee017a63fb5777102ac4a4adc7e34caa4207fd59681ffd4d86",
+  "inputs": [
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-mentor-014.webp",
+      "role": "primary empty room identity and furnishings",
+      "bytes": 524434,
+      "sha256": "9a4902c24dd4ff7d822d655a40b9166a45a2165b1937a48f29baf46680aa2d60"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-mentor-027.webp",
+      "role": "wall map/books/root nook details; omit characters",
+      "bytes": 501144,
+      "sha256": "5017ceede2b357a3cbd27bc882f789832281e8e973e5825c887a6d963d5b3d46"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-mentor-013.webp",
+      "role": "root entrance and exterior light; omit characters",
+      "bytes": 630244,
+      "sha256": "b57ec47ae5dc8e6e33f85a73696f26f5c8cd13b20deb5f7cfc1ca1db94037de0"
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/kitchen-bootstrap.png",
+      "role": "projection/style bootstrap only; NOT Elder architecture",
+      "bytes": 10310835,
+      "sha256": "fbf70ac4415fbc9e63febdc756af4a512ee9b7cd29e693fa4423e65608178184"
+    }
+  ],
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/elder/panorama-v1.png",
+    "role": "original unmodified master",
+    "bytes": 2885922,
+    "sha256": "2fe55b6606d1872d605fa71502558906a0f205aced568df90f3f27cbb29eef46"
+  },
+  "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-b524f153-7bb4-492d-b976-56bea29014d9.png",
+  "dimensions": [
+    1774,
+    887
+  ],
+  "status": "candidate awaiting spherical review",
+  "projection": "2:1 equirectangular360x180",
+  "imageCalls": 1,
+  "inferred": "Unseen rear root wall/shelves and whole360 layout are artistic continuations, not measured book geometry."
+}

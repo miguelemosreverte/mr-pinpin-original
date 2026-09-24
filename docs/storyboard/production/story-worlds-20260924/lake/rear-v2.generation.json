@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "selected-reviewed-prototype",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-310ea3da-0f81-485e-aca5-efea6f5c9c80.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "rear-v2.prompt.txt",
+    "sha256": "bf44488bb48f78a8c1714382690b29bfa40687bbabd9795a016356f609e10d1e",
+    "text": "Use case: precise-object-edit.\nThis is a square110-degree ordinary perspective extracted from the selected whole360 illustrated outdoor environment. Repair its displayed continuity error while keeping exactly the same camera, crop, rich warm dimensional storybook style, sunlight and scene identities. Return one square normal perspective, never a new panorama or grid. Keep the outermost15percent along each border registered for blending into the unchanged sphere, except the tiny seam continuation itself. No characters, text, annotations or added structures.\nRepair ONLY the straight vertical split through the middle of the rear forest view: make the tree trunk/bark, roots, path, moss, plants, light and shadows join naturally. Reconstruct continuous surfaces across the old cut without hiding it behind another tree or adding an object. Preserve the one existing path and all surrounding trees/ferns/flowers. Ground remains irregular natural soil with coherent roots; no mirror effect or radial ornament.\nPreserve the lake/shore layout and any willow branches or water at the edges. No new lake, path branch, animal or furniture.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/lake/rear-input-v2.png",
+      "role": "exact rear perspective v2 seam edit target",
+      "sha256": "7b4929a460d52545d6031cada0d24bd89aa581ec4c3b3721431ac2d68bdcd14e"
+    }
+  ],
+  "output": {
+    "path": "rear-v2.png",
+    "sha256": "3d6c5d66fc103e1d6680556a4f0a8b7c8e08d8a0bb9a13be18ad645cd8a840ca",
+    "width": 1254,
+    "height": 1254
+  },
+  "camera": {
+    "yawDegrees": 180,
+    "pitchDegrees": 0,
+    "fovDegrees": 110
+  },
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": true,
+    "result": "cardinal and oblique views pass; no obvious hard seam or pole pinch; minor illustration softness remains",
+    "measuredGeometryClaim": false
+  }
+}

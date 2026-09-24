@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "lake-selected-final",
+  "selectionStatus": "selected after actual viewer overlaps and poles review; minor detail softness variation remains",
+  "inputs": {
+    "base": {
+      "file": "../lake/panorama-v2.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/lake/panorama-v2.png",
+      "sha256": "53a67c9bae7db2123fb48e2795e36eb16770e1d6759c64ba793cff5e01e41acf"
+    },
+    "rear": {
+      "file": "../lake/rear-v2.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/lake/rear-v2.png",
+      "sha256": "3d6c5d66fc103e1d6680556a4f0a8b7c8e08d8a0bb9a13be18ad645cd8a840ca"
+    },
+    "up": {
+      "file": "../lake/up-v2.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/lake/up-v2.png",
+      "sha256": "33ed2e5ea4ddabe5974affb0f53fef2cee5fb8b5e210aa3e9256072daacacfe0"
+    },
+    "down": {
+      "file": "../lake/down-v2.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/lake/down-v2.png",
+      "sha256": "174e85f376baef6a7a926bd9928c03eb36403af4dab621a6bb3b24319bea2041"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "rear": "rear",
+      "up": "up",
+      "down": "down"
+    }
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "retained-superseded-experiment",
+  "calls": 1,
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-f5566980-ac35-4a26-ba95-c6ef7261107e.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "prompt.txt",
+    "text": "Use case: illustration-story.\nCreate ONE complete continuous 360\u00b0 by 180\u00b0 EQUIRECTANGULAR environment panorama, EXACT 2:1 aspect ratio, ideally 2048\u00d71024. It will be wrapped around a sphere and viewed through a normal perspective camera. This is NOT a panoramic perspective photograph, NOT a six-face grid, NOT multiple panels. Mid-row is the level horizon; center longitude is forward, left/right edges are the SAME backward direction and must meet seamlessly. Zenith at top is overhead sky/leaves, nadir at bottom is the ground directly under the single stationary camera. Give natural spherical distortion appropriate to latitude. No radial floor star, mirrored ground, hard seam, duplicated landmarks or artificial frame.\nReference image1 is the current approved bridge-worksite story image: authoritative stream, wooden footbridge, mixed green woodland, mossy trunks, fern banks, warm sunlight and recognizable red timber tractor. Reference image2 supplies the SAME approved machine's physical anatomy and materials only. No reference characters may appear, and do not copy its loaded cargo state.\nBuild one empty stationary setting after work has paused. Camera stands on the dry near bank clearing at child height about0.6 m, several metres from machinery. At forward center see a small readable wooden FOOTBRIDGE crossing a narrow clear stream, its plank deck now complete and simple wooden railings matched to image1. The bridge carries pedestrians only: no vehicle on it. The stream flows naturally from right-side woodland behind stones through the center and toward left-side reeds; it must not form duplicate disconnected rivers. Woodlandpath continues across bridge into layered ferns and trees. In the front-left midground, park ONE red logging tractor entirely on firm ground away from bridge, engine off, cab empty, no humans/animals. Show its recognizable profile/threequartershape large enough to read yet entirely within a single broad viewing direction, not cut by back wrap or poles.\nMachinery correctness is crucial: red hood and cab, dark grille/front weight, NO front bucket or backhoe; two axles/four tractor wheels with large rears. ONE yellow articulated loggingcrane has its pedestal directly BEHIND the cab and BEFORE the logging trailer load bed/headboard. Continuous hinge/boom/hose connections, folded and rested securely over the EMPTY dark log trailer, black grapple closed and resting, not suspended mid-action. Trailer attached behind tractor with visible believable hitch, exactly two axles/tandem bogie, uprights/red-tippedstakes and empty bed. No crane at far rear of trailer, no extra crane, no disconnected boom, no floating tires. A small tidy pile of cut timber can lie safely beside worksite, away from pedestrian path. Do not place freshly felled trees across traffic.\nAround right/rear directions continue SAME sunlit forest clearing: fern-lined track with tire marks, moss, roots, wildflowers, reeds and stones, tall tree layers beyond; unobtrusive rear wrap through simple irregular soil/foliage, not through tractor or bridge. Overhead natural green canopy with blue sky gaps; under camera unbroken soil/leaves/tiny flowers, no radial star or warped wheel. Preserve warm polished dimensional storybook finish, tactile bark/moss/wood, rounded inviting shapes and natural depth, no grey blockout/faceted geometry/plastic shine. No characters, people, animals, signage, lettering, logos, watermark or frozen action.\n",
+    "sha256": "e359393bc614ceb94f84afa55c19d11c9bcc99453b3cb7b37d5d23058bd8260e"
+  },
+  "references": [
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-11-v3.png",
+      "sha256": "71e90389e3eef15f84f51656da5732f8c45d62588c4d1285d85b587c52330856",
+      "role": "published location/style and machine identity; characters omitted"
+    },
+    {
+      "path": "docs/storyboard/images/standalone/timber-tractor/scene-09-v4.png",
+      "sha256": "04b62cb8ced82d42fb14aae72b4c4d08a5fece00435d6310dd9ae729846b441b",
+      "role": "published location/style and machine identity; characters omitted"
+    }
+  ],
+  "output": {
+    "path": "panorama-v1.png",
+    "sha256": "d6584fdb738f7fb5ee64f62eea47d92575450a22ad9001f351fa44e59e7545ba",
+    "width": 1774,
+    "height": 887
+  },
+  "projection": {
+    "type": "equirectangular",
+    "frontU": 0.5,
+    "horizonV": 0.5,
+    "unseenRear": "inferred extension, not book canon"
+  },
+  "newBlender": false,
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": false,
+    "result": "preserved v1 history; excluded from selected v2 stack",
+    "measuredGeometryClaim": false
+  }
+}

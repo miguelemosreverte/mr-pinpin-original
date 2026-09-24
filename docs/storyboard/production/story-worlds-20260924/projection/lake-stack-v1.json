@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "lake-initial",
+  "selectionStatus": "initial master awaiting spherical review",
+  "inputs": {
+    "base": {
+      "file": "../lake/panorama-v1.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/lake/panorama-v1.png",
+      "sha256": "718189da46476d5185b05c340f6beb1d0e1dcd1a390b47d9708038a9d701dbe9"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {}
+  }
+}

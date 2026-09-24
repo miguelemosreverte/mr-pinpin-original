@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen.imagegen",
+  "status": "selected-reviewed-prototype",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-52ae886d-9c63-4de4-a88f-fd7c980fcc0b.png",
+  "originalPreserved": true,
+  "prompt": {
+    "path": "prompt-v2.txt",
+    "sha256": "d72f4a1b50401457295a7bf0d8dd75f62286d6813497c28bd1f8954ada31a52b",
+    "text": "Use case: illustration-story, multi-reference environment transfer.\nCreate ONE beautiful complete continuous 360\u00d7180-degree EQUIRECTANGULAR panorama, exact 2:1 canvas. Reuse the successful panoramic presentation of image 1 to build an entirely new OUTDOOR lake setting from images 2\u20133. Do not start from a conventional wide-angle photograph.\nREFERENCE ROLES:\nImage 1 is our successful finished 360 panorama. It supplies ONLY the full-sphere projection, consistent horizon, how left/right wrap together, coherent overhead/underfoot coverage, and polished tangible illustrated quality. NONE of its house content belongs in the new scene: no interior enclosure, wall, ceiling beams, floorboards, door, window, table, stool, carpet, kitchen or furniture. Its overhead zone becomes open sky/canopy and underfoot becomes natural forest shore.\nImage 2 is the published Chapter 1 restored lake and is the AUTHORITY for the place: drooping willow, clear green water, white water lilies, reeds, round pale shore rocks, fern-lined forest and golden sunlight.\nImage 3 is the same published restored lake, supporting the place and rich illustrated details. Omit its animals/characters completely. This is after the lake is restored, not dry/cracked earth. No lens droplets.\n\nArrange a coherent full spherical world from ONE level camera about 0.6 m high on a dry mossy shoreline clearing. Forward center at longitude 0 (image center) looks across the lake, with ripples/lilies in front, distant reeds/boulders and layered woodland beyond. Large recognizable graceful willow stands front-left, leaning over water; shore rocks and reeds on front-right. Turning around reveals the SAME clearing continuing into a fern-lined woodland path and mature trees behind the camera. This rear is a plausible new extension, not another lake. Distinct near/middle/far depth, natural tree scale, readable horizons, golden soft afternoon light in one consistent direction.\n\nFollow image 1's complete sphere logic: exact middle row is the level horizon; left/right edges are the same rear direction and must meet naturally, with continuous bark/soil/foliage/light across the join. Top is sky directly overhead with coherent connected canopy: no foliage whirlpool, radial star or stretched trunks. Bottom is continuous flat mossy soil/pebbles/leaves directly below the camera, not a globe mound, pinched rosette or decorative circle. Keep major landmarks away from rear wrap and poles. Gentle authentic equirectangular latitude distortion, but no perspective-photo center frame or stitched panels. Center forward full lake; rear quiet path.\n\nMatch the books' warm detailed dimensional illustration, rich bark/moss/stone textures, inviting soft shapes, clear watercolor-green water, little white flowers and lush natural foliage. Keep small detail crisp without photorealistic HDR harshness or faceted polygons. A peaceful empty location: no people, hedgehogs, rabbits, animals, boats, machinery, buildings, furniture, signs, text, labels, watermark, borders or collage. Return only one 2:1 full sphere image.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/kitchen-bootstrap.png",
+      "role": "successful full spherical projection only; no house content",
+      "sha256": "fbf70ac4415fbc9e63febdc756af4a512ee9b7cd29e693fa4423e65608178184"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/chapter-01-landscapes/shot-12.png",
+      "role": "authoritative published lake environment",
+      "sha256": "b1dda48aad24105ff100a0ed809c3cc7b723013263c3a2c6b6a2005adf9e9bbe"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/chapter-01-direct/08.png",
+      "role": "same published place and style; omit all cast",
+      "sha256": "04fb1f25083db7f968fcf17087d2eed5d8b89f152c96bd412a07986553ca437e"
+    }
+  ],
+  "output": {
+    "path": "panorama-v2.png",
+    "sha256": "53a67c9bae7db2123fb48e2795e36eb16770e1d6759c64ba793cff5e01e41acf",
+    "width": 1774,
+    "height": 887
+  },
+  "experiment": "successful spherical reference plus target book reference, not book references alone",
+  "newBlender": false,
+  "review": {
+    "report": "../OUTDOORS.md",
+    "actualSphereChecked": true,
+    "result": "cardinal and oblique views pass; no obvious hard seam or pole pinch; minor illustration softness remains",
+    "measuredGeometryClaim": false
+  }
+}

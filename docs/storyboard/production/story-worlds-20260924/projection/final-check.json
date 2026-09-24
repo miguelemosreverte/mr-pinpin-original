@@ -1,0 +1,29 @@
+{
+  "pass": true,
+  "mediaCount": 58,
+  "mediaBytes": 290320329,
+  "allSourceMediaPathsCovered": true,
+  "generatedMasterCount": 17,
+  "mastersMatchGenerationRecords": true,
+  "originalToolFiles": "Generation authors preserved originals and recorded hashes; this final pass verifies retained master identities against those records without dereferencing the stalled Air mount.",
+  "exports": [
+    {
+      "scene": "elder",
+      "pass": true,
+      "assembledSha256": "1d8f53ac8d13af3a79c516c36cd13d6d60f786c9551d401622ae0f16dac62fba",
+      "atlasWebpSha256": "c0347288b32e15d9ee2833c67d7c2bfd1951f95f4352630765baa1bf544dd11d"
+    },
+    {
+      "scene": "lake",
+      "pass": true,
+      "assembledSha256": "2661ecb67019860b1d72099dd6a1672837006324af52561b65ce6240c8b0a6f9",
+      "atlasWebpSha256": "f6002a8f46e942a6ddc90ee26ba5e05e1e8665b746e6c3f5ffc541add9c38244"
+    },
+    {
+      "scene": "tractor",
+      "pass": true,
+      "assembledSha256": "84dbfe633a8f3c9282f9dd23406324c983c85ae19a9a488178b2b7976cae35fe",
+      "atlasWebpSha256": "faa53152a3267457a0223388d1aacbda35cddf0e1501bf549339ec2ffac80d70"
+    }
+  ]
+}

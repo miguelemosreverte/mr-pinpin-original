@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "lake-base-v2",
+  "selectionStatus": "projection-reference trial awaiting spherical selection",
+  "inputs": {
+    "base": {
+      "file": "../lake/panorama-v2.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/lake/panorama-v2.png",
+      "sha256": "53a67c9bae7db2123fb48e2795e36eb16770e1d6759c64ba793cff5e01e41acf"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {}
+  }
+}

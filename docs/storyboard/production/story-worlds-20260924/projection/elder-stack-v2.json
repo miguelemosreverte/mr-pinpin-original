@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "elder-after-rear",
+  "selectionStatus": "rear selected; poles pending",
+  "inputs": {
+    "base": {
+      "file": "../elder/panorama-v1.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/elder/panorama-v1.png",
+      "sha256": "2fe55b6606d1872d605fa71502558906a0f205aced568df90f3f27cbb29eef46"
+    },
+    "rear": {
+      "file": "../elder/rear-v1.png",
+      "sourcePath": "docs/storyboard/production/story-worlds-20260924/elder/rear-v1.png",
+      "sha256": "71acdad90487b4840c38ee681063fa6e41680fc3a5b4b96b9460f63e239f16cb"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "rear": "rear"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T12:01:50.676947+00:00",
+  "prompt": "Use case: precise-object-edit. This is a registered 90-degree square view inside the Elder's illustrated tree-root home. Correct only the doubled/translucent outlines in the central foreground still-life: the dark kettle, its handle and spout, the wooden bowl, basket of scrolls and the stone stand underneath them. Each object must have one solid coherent silhouette, believable separate placement and uninterrupted material, with no ghost copies or smeared stripes across its middle. The trailing ivy on the stand should have compact distinct leaves rather than long stretched streaks. Keep the exact camera, framing, dimensions and positions of all objects. Preserve the table and open book at right, potted stump at left, background shelves and rugs, lighting and richly textured storybook style. Do not add or remove props, alter the room or redesign furniture. Preserve the outer image perimeter for registration. Return one square image.",
+  "promptSha256": "c13ad46b75c829e4c06365ccebb5ab269d04a33ba1af3b530e1cd51e406c6d32",
+  "inputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/elder/rear-detail-input.png",
+      "sha256": "a88e4f57538af1654089f3fca75f41ab02321ccdc1202f14a2cb1aad5abad500",
+      "bytes": 5009704
+    }
+  ],
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-story-worlds-20260924/elder/rear-detail-v1.png",
+    "sha256": "86866056f626b316ae24fcb45db091d84618b1417ada2de07bd12f5c832de59f",
+    "bytes": 2361296
+  },
+  "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-ef5a187c-eac8-42d8-a22b-65d86d0fe4fa.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "camera": {
+    "yawDegrees": 180,
+    "pitchDegrees": -40.1070457,
+    "fovDegrees": 90
+  },
+  "status": "candidate awaiting assembled browser review",
+  "imageCalls": 1
+}

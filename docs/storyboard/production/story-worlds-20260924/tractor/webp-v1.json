@@ -1,0 +1,15 @@
+{
+  "operation": "lossless WebP viewer derivative",
+  "encoder": "Pillow WEBP lossless=True exact=True method=6",
+  "pillowVersion": "12.3.0",
+  "libwebpVersion": "1.6.0",
+  "inputSha256": "727ae23d08afe13eaabfb3ed4490ffc1428d6ff997efe892c860c21cf08d7d44",
+  "outputSha256": "faa53152a3267457a0223388d1aacbda35cddf0e1501bf549339ec2ffac80d70",
+  "bytes": 7495656,
+  "size": [
+    3072,
+    2048
+  ],
+  "decodedRGBIdentical": true,
+  "processing": "mini SSD directly; isolated encoder-env, no global dependency changes"
+}
