@@ -1,9 +1,10 @@
-import {panoramaRenderer} from './home-panorama-gl.js';
+import {panoramaRenderer} from './home-panorama-gl.js?v=bath-join-2b04c95';
 import {panoramaControls} from './home-panorama-controls.js';
 import {project,polygonPath} from './home-panorama-math.js';
-import {ROOMS} from './house-image-tour-config.js';
+import {ROOMS} from './house-image-tour-config.js?v=bath-join-2b04c95';
 const $=id=>document.getElementById(id),stage=$('image-tour-stage'),canvas=stage.querySelector('canvas'),cache=new Map(),NS='http://www.w3.org/2000/svg';
 const controlsConfig={yaw:0,pitch:0,fov:72,minFov:40,maxFov:90,maxPitch:89,hotspots:[]};
+const REVISION='bath-join-2b04c95';stage.dataset.renderRevision=REVISION;$('loaded-revision').textContent='Loaded viewer revision: '+REVISION;
 let renderer,controls,room='common',backend='loading',pending=true,entries=[],ticket=0,draws=0,urlTimer;
 const uv=(yaw,pitch)=>[.5+yaw/(2*Math.PI),.5-pitch/Math.PI];
 function loadImage(src){if(!cache.has(src)){const img=new Image();img.src=src;cache.set(src,img.decode().then(()=>img).catch(e=>{cache.delete(src);throw e;}));}return cache.get(src);}
@@ -26,5 +27,5 @@ controls=panoramaControls(stage,controlsConfig,draw);
 $('reset').addEventListener('click',()=>controls.setCamera(initialView(room)));$('room-picker').addEventListener('change',e=>enter(e.target.value,{push:true}));
 $('fullscreen').addEventListener('click',async()=>{try{if(document.fullscreenElement)await document.exitFullscreen();else await stage.requestFullscreen();}catch{}});
 window.addEventListener('popstate',()=>{const p=parsed();enter(p.room,{camera:p.camera});});canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();renderer=null;state('fallback','Interactive view paused. The flat panorama remains available.');});canvas.addEventListener('webglcontextrestored',()=>enter(room,{camera:controls.snapshot}));
-Object.defineProperty(stage,'tourView',{value:Object.freeze({get snapshot(){return{room,backend,pending,draws,asset:ROOMS[room].asset,repairs:ROOMS[room].repairs.assets,doors:entries.map(e=>({id:e.id,to:e.to,anchor:e.anchor,visible:e.visible})),...controls.snapshot};},setCamera(c){controls.setCamera(c);},project(point){return project(point,controls.snapshot);}})});
+Object.defineProperty(stage,'tourView',{value:Object.freeze({get snapshot(){return{revision:REVISION,downMaskX:ROOMS[room].repairs.downMaskX||null,room,backend,pending,draws,asset:ROOMS[room].asset,repairs:ROOMS[room].repairs.assets,doors:entries.map(e=>({id:e.id,to:e.to,anchor:e.anchor,visible:e.visible})),...controls.snapshot};},setCamera(c){controls.setCamera(c);},project(point){return project(point,controls.snapshot);}})});
 const initial=parsed();enter(initial.room,{camera:initial.camera}).then(()=>{for(const data of Object.values(ROOMS)){loadImage(data.asset).catch(()=>{});for(const src of Object.values(data.repairs.assets))loadImage(src).catch(()=>{});}});

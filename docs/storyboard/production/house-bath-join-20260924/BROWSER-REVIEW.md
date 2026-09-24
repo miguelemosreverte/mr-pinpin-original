@@ -17,3 +17,9 @@ Evidence: /Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/
 Scoped source changes: optional downMaskX in home-panorama-gl.js; bath-only house-image-tour-config.js opt-in; tour evidence link; house-bath-join.html/.css and this report. No Git/publishing or other room art changes.
 
 The before/after report also passed at1400px and390px: all four images and source links load, with no horizontal overflow. Desktop mouse activation of the revealed bath→common door passed. Evidence final-proof/report-check.json and report-{1400,390}.png. The corrected user-camera view was opened in Chrome.
+
+## Exact user-camera cache check
+
+The reported active camera (yaw1.89000rad, pitch−0.72162rad, FOV75.96421°) renders a clean continuous tub in a fresh browser context. This supports a stale loaded module graph as the likely explanation for the old open tab, but that tab’s JavaScript state was not directly inspected: Chrome AppleScript JavaScript execution is disabled and was not enabled. No artwork or mask was changed during this follow-up.
+
+The HTML entry script, panorama renderer import and room-config import now all request revision bath-join-2b04c95. A fresh request trace confirms all three versioned URLs; the active snapshot reports that revision and downMaskX [0,0.08]. The evidence panel also displays the loaded revision. The exact-camera versioned view was captured and opened in Chrome with a unique rev query. Proof is external at bath-overlap-check/exact-user/versioned-check.json and versioned-exact-camera.png; the initial fresh-context capture is retained alongside it.
