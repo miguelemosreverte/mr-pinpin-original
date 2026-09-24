@@ -1,0 +1,141 @@
+{
+  "schemaVersion": 1,
+  "operation": "pano-to-cube",
+  "input": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-native-panorama-20260923/panorama-v1.png",
+  "inputSha256": "5299c3fe2c6791bf556e9cdcdd7caec379a747b4bc0113ab972d04c8632b1f00",
+  "inputSize": [
+    1774,
+    887
+  ],
+  "output": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-native-panorama-20260923/cube-atlas-v1.png",
+  "outputSha256": "c33612423b5b359ce7e60af34d90f737742604c0dee38e6387f088584effd64e",
+  "outputSize": [
+    1536,
+    1024
+  ],
+  "scriptSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "sampling": "Bilinear encodedRGB, pixel centers, no color grading; tile-clamped cube; longitude-wrapped and latitude-clamped panorama",
+  "panoramaConvention": "+Y front at(u=.5,v=.5); +X at u=.75; +Z top; image rows downward",
+  "cubeLayout": [
+    [
+      "front",
+      "right",
+      "back"
+    ],
+    [
+      "left",
+      "up",
+      "down"
+    ]
+  ],
+  "verification": {
+    "pass": true,
+    "edges": [
+      {
+        "faces": [
+          "front:left",
+          "left:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:right",
+          "right:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:bottom",
+          "down:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:top",
+          "up:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:right",
+          "back:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:bottom",
+          "down:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:top",
+          "up:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:right",
+          "left:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:bottom",
+          "down:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:top",
+          "up:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:bottom",
+          "down:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:top",
+          "up:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      }
+    ],
+    "note": "Exact shared angular boundaries sample the same panorama. Neighboring output texel centers have different directions; no edge pixels are painted/copied."
+  },
+  "runtimeDerivative": {
+    "path": "docs/storyboard/production/house-native-panorama-20260923/cube-atlas-v1.webp",
+    "sha256": "8cfa5729e97c439574bc865123cd3591018a240136824f551bba16b128caa383",
+    "bytes": 1882988,
+    "decodedRGBExact": true
+  },
+  "reviewStatus": "Uncorrected one-call experiment; no architecture approval",
+  "knownSemanticDrift": "Parent visual review identifies bath/bedroom substitution and stove changed to flower barrel. No repair performed."
+}

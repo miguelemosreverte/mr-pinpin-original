@@ -1,0 +1,7 @@
+Turn Image 1 into a finished illustration of the same room, belonging unmistakably to the children's book shown in Image 2.
+
+Image 1 is a Blender geometry guide, not an appearance reference. Preserve its camera position, full-sphere equirectangular projection, horizon, room connections, opening locations and sizes, door hinge sides and open/closed states, and major furniture placement. Its crude primitives and polygon facets are placeholders, not finished architecture.
+
+Image 2 is the visual authority. Infer the finished room from it: carry over its organic craftsmanship, architectural detailing, materials, color, lighting, decorative richness and lived-in warmth throughout the room. Complete the missing detail naturally, including its botanical and domestic character, without needing an object-by-object specification. Resolve the guide's doors, walls and furnishings as beautifully crafted counterparts in this book's world. Preserve the guide's spatial arrangement while replacing its blockout appearance completely. Do not import the reference's characters or camera composition. Keep doorways usable and unobscured.
+
+Return ONE finished 2:1 equirectangular panorama, 2048×1024, showing the entire 360°×180° sphere. Retain the guide's spherical distortion: this is not a wide-angle frontal illustration. Left and right borders meet continuously; the ceiling and floor converge coherently at their poles. No panels, borders, labels or text.

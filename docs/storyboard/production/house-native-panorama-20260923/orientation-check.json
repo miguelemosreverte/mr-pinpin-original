@@ -1,0 +1,14 @@
+{
+  "pass": true,
+  "nativeAgainstIndependentCubeMeanRGBErrors255": {
+    "canonical": 0.7305503554697953,
+    "yaw-plus90": 28.4488180069784,
+    "yaw-minus90": 28.45056389814333,
+    "yaw180": 29.23180172146608,
+    "up-down-flip": 31.987143892716986
+  },
+  "raysCompared": 43560,
+  "canonicalCameraBasisVerified": true,
+  "yawUndoRadians": 0,
+  "note": "Direct Cycles pixels compare against separately rendered cube faces at identical world rays. Different denoising and angular sampling cause small expected differences."
+}

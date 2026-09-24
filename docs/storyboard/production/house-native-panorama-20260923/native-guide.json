@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "method": "One direct native Cycles EQUIRECTANGULAR render, no cube reprojection",
+  "baseBlendSha256": "b1f0108066e974dadbc07a36dcadf50a30d91ee9650bbd5ca0eb838b27176e03",
+  "scriptSha256": "deaae0302cdc9f2dd3fa112f36e28b9a88293951704d262b26b7b86f41bb160a",
+  "frozenWorkerSha256": "15a8eb6673217f1f6c15fc941c9e20a2801dbd2d6374d645ba1a849afe2fc48c",
+  "planSha256": "cab510b31c13e85beaa689edb54005223412a988f640724e56b9d95dba20c28c",
+  "camera": {
+    "position": [
+      -1.3,
+      -1.3,
+      1.15
+    ],
+    "rotationEulerXYZ": [
+      1.5707963705062866,
+      0.0,
+      0.0
+    ],
+    "matrixWorld": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        -1.2999999523162842
+      ],
+      [
+        0.0,
+        -4.371138828673793e-08,
+        -1.0,
+        -1.2999999523162842
+      ],
+      [
+        0.0,
+        1.0,
+        -4.371138828673793e-08,
+        1.149999976158142
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "yawOffsetRadians": 0,
+    "canonicalFrontUV": [
+      0.5,
+      0.5
+    ],
+    "forward": "+Y",
+    "right": "+X",
+    "up": "+Z",
+    "wrapDirection": "-Y quiet front-wall strip between door and window"
+  },
+  "wrapWallProbes": [
+    {
+      "yaw": 3.101592653589793,
+      "hit": "House structural walls",
+      "point": [
+        -1.2386736869812012,
+        -2.8323397636413574,
+        1.149999976158142
+      ]
+    },
+    {
+      "yaw": 3.141592653589793,
+      "hit": "House structural walls",
+      "point": [
+        -1.2999999523162842,
+        -2.8323402404785156,
+        1.149999976158142
+      ]
+    },
+    {
+      "yaw": 3.181592653589793,
+      "hit": "House structural walls",
+      "point": [
+        -1.3613262176513672,
+        -2.8323402404785156,
+        1.149999976158142
+      ]
+    }
+  ],
+  "doorStates": [
+    {
+      "id": "door-front",
+      "angleDegrees": 0,
+      "signedAngleDegrees": 0,
+      "hingeWorld": [
+        -0.6962748765945435,
+        -2.957864999771118,
+        0.0
+      ],
+      "matrixWorld": [
+        [
+          1.0,
+          -2.317848668553779e-08,
+          0.0,
+          -0.6962748765945435
+        ],
+        [
+          2.317848668553779e-08,
+          1.0,
+          0.0,
+          -2.957864999771118
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "door-bath",
+      "angleDegrees": 75,
+      "signedAngleDegrees": 75,
+      "hingeWorld": [
+        -2.0239672660827637,
+        0.6366258859634399,
+        0.0
+      ],
+      "matrixWorld": [
+        [
+          -0.3046184480190277,
+          -0.9524744749069214,
+          0.0,
+          -2.0239672660827637
+        ],
+        [
+          0.9524744749069214,
+          -0.3046184480190277,
+          0.0,
+          0.6366258859634399
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    },
+    {
+      "id": "door-bedroom",
+      "angleDegrees": 75,
+      "signedAngleDegrees": 75,
+      "hingeWorld": [
+        1.039655089378357,
+        0.4985438883304596,
+        0.0
+      ],
+      "matrixWorld": [
+        [
+          0.8646183013916016,
+          -0.5024292469024658,
+          0.0,
+          1.039655089378357
+        ],
+        [
+          0.5024292469024658,
+          0.8646183013916016,
+          0.0,
+          0.4985438883304596
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ]
+    }
+  ],
+  "cameraClearance": {
+    "pass": true,
+    "minimumSurfaceMarginM": 0.035,
+    "objectsChecked": 45,
+    "allowOutside": false
+  },
+  "resolution": [
+    2048,
+    1024
+  ],
+  "samples": 24,
+  "seed": 7,
+  "output": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-native-panorama-20260923/native-guide.png",
+  "outputSha256": "a2133ba0b01637e01820bb80bfcc838c0c2a58bd0476bb058e583e2760690b2f",
+  "blenderVersion": "4.5.14 LTS"
+}
