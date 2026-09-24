@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "room": "common",
+  "version": 3,
+  "status": "frozen-inputs-ready-for-built-in-tool",
+  "tool": "image_gen__imagegen",
+  "promptPath": "docs/storyboard/production/house-tour-20260923/prompts/common-v3.txt",
+  "promptSha256": "71a1c00dc42b293570b3e186feb8f14c59fac1293d513b9e7af4baea389b85b6",
+  "inputImages": [
+    {
+      "order": 1,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/common/cube-atlas.png",
+      "sha256": "103ff8b8ae6a9699168604a682f13ab9fd09f100176804f7774c64e6cdd54ce7",
+      "role": "exact gray geometry"
+    },
+    {
+      "order": 2,
+      "path": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-9845089c-d323-4f96-9734-d75938affb9b.png",
+      "sha256": "51630e5238815e3e233aa30412373fa0aa480ba7f514afa9948565fbb701f2fd",
+      "role": "previous illustrated candidate; preserve except stated correction"
+    }
+  ],
+  "toolArguments": {
+    "prompt": "Use case: precise-object-edit\nMake ONE tiny material correction in the complete common-room cubemap. Image1 is the fixed gray guide; Image2 is the current V2 illustration, whose corrected geometry and appearance must remain unchanged.\n\nIn FRONT (top-left cell), through the LEFT open bathroom doorway, the small clipped bathtub fragment is incorrectly WHITE CERAMIC. Change only that visible fragment to the SAME broad LOW honey-oak stave bathtub used in this house: warm wooden vertical staves, wood rim and dark thin iron hoop. Keep its precise current clipping, silhouette, position, height and small visible area. No new fixture, no bathroom window, no fuller bath composition.\n\nPreserve absolutely every other part of Image2's six-face layout: the newly correct mostly-empty DOWN face with right-clipped table/stools, closed green frontdoor in BACK, low cylindrical iron stove with NO pipe in LEFT, books, bed glimpse, floorboards, door angles and lighting. The small bathtub recoloring must not trigger any redesign or recentering of another face. Both internal leaves stay75degrees open; front leaf closed0degrees.\n\nReturn ONE full3x2 atlas, top FRONT/RIGHT/BACK, bottom LEFT/UP/DOWN, all six90degree square faces, same orientation and crop. Match existing warm book-style material finish. No text, borders or people. This is a local surface correction only, not a new room generation.\n",
+    "referenced_image_paths": [
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/common/cube-atlas.png",
+      "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-9845089c-d323-4f96-9734-d75938affb9b.png"
+    ]
+  },
+  "oneWholeAtlasPerCall": true,
+  "outputStatus": "proposal-needs-art-review"
+}

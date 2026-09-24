@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "room": "bedroom",
+  "version": 1,
+  "imageSha256": "1556fb8ffefd7b483f3110d68f9ae693af436f2fa34d51f14f84ff72d27ccb28",
+  "reviewScope": "Direct full-atlas/gray comparison. Full12edge viewer review pending.",
+  "strengths": [
+    "Bed/quilt palette and broad bedroom layout retained",
+    "Down bed edge remains cropped to right broadly like gray"
+  ],
+  "failures": [
+    {
+      "face": "left",
+      "issue": "Neighboring common-room stove incorrectly has tall pipe/expanded silhouette; inconsistent with actual gray and corrected common V2."
+    }
+  ],
+  "status": "portal-correction-required",
+  "actualWidth": 1536,
+  "actualHeight": 1024,
+  "requestedAtlasWidth": 3072,
+  "requestedAtlasHeight": 2048
+}

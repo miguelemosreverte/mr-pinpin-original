@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "room": "common",
+  "version": 2,
+  "imageSha256": "51630e5238815e3e233aa30412373fa0aa480ba7f514afa9948565fbb701f2fd",
+  "reviewScope": "Direct full-atlas/gray comparison. Full12edge viewer review pending.",
+  "strengths": [
+    "Down face returned to mostly empty floor with right-clipped table/stool fragments",
+    "Closed front green door restored",
+    "Stove matches low cylindrical volume without pipe"
+  ],
+  "failures": [
+    {
+      "face": "front",
+      "issue": "Small bathroom tub fragment is white ceramic, inconsistent with wooden stave tub in bathroom and art lock."
+    }
+  ],
+  "status": "material-correction-required",
+  "actualWidth": 1536,
+  "actualHeight": 1024,
+  "requestedAtlasWidth": 3072,
+  "requestedAtlasHeight": 2048
+}

@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "operation": "cube-to-pano",
+  "input": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bath/cube-atlas.png",
+  "inputSha256": "8a3f31df60643c416918d4547d4412d48646875787d0728e2359d09c9100f911",
+  "inputSize": [
+    3072,
+    2048
+  ],
+  "output": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bath-gray-equirect.png",
+  "outputSha256": "8c3e1ce974c097cace581d947bdbcb1763702ce2bb11366b174e85653abbdf22",
+  "outputSize": [
+    3072,
+    1536
+  ],
+  "scriptSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "sampling": "Bilinear encodedRGB, pixel centers, no color grading; tile-clamped cube; longitude-wrapped and latitude-clamped panorama",
+  "panoramaConvention": "+Y front at(u=.5,v=.5); +X at u=.75; +Z top; image rows downward",
+  "cubeLayout": [
+    [
+      "front",
+      "right",
+      "back"
+    ],
+    [
+      "left",
+      "up",
+      "down"
+    ]
+  ],
+  "verification": {
+    "warning": "Reprojection preserves any source face discontinuities; this does not repair illustration seams."
+  }
+}

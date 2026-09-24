@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "room": "bedroom",
+  "version": 2,
+  "status": "prepared-not-executed",
+  "tool": "image_gen__imagegen",
+  "promptPath": "docs/storyboard/production/house-tour-20260923/prompts/bedroom-v2.txt",
+  "promptSha256": "6746078d89647dc7fbe5fbfba508d13ab825a808f5850682eba0905753b661df",
+  "inputImages": [
+    {
+      "order": 1,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bedroom/cube-atlas.png",
+      "sha256": "b2348e61f25e5c8429420331de278071bd8c84c2d7c95214437e77460fd8476f",
+      "role": "exact gray geometry"
+    },
+    {
+      "order": 2,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/illustrated/bedroom/cube-atlas-v1.png",
+      "sha256": "1556fb8ffefd7b483f3110d68f9ae693af436f2fa34d51f14f84ff72d27ccb28",
+      "role": "previous illustrated candidate; preserve except stated correction"
+    }
+  ],
+  "toolArguments": {
+    "prompt": "Use case: precise-object-edit\nRevise ONE complete bedroom cubemap with a narrow neighboring-room correction. Image1 is the exact gray geometry; Image2 is the current illustrated bedroom. Keep the pleasing honey-wood bed, fitted sage quilt, cream pillows/plaster, green leaf and warm light from Image2.\n\nIn LEFT (bottom-left cell), the open bedroom doorway reveals part of the common room. Follow Image1's literal visible geometry. The stove seen beyond is a LOW ROUND CYLINDRICAL body, not a tall chimney/fireplace. Remove the invented tall stovepipe and raised ornamental stove/hearth silhouette from Image2's doorway glimpse. Give only the existing clipped cylinder a matte charcoal iron finish with a modest ember detail, matching the corrected common-room stove. Preserve the gray table/stool fragments and any bookcase portion only where the guide actually reveals them. Do not rearrange the common-room view into an attractive miniature scene or add a larger visible window. No new cabinet, fireplace, plant, lamp or counter.\n\nRetain the near leaf's exact75degree open angle, hinge and thin profile, using Image1's silhouette. CRITICAL BACK\u2013LEFT EDGE: Image2 currently has a broken seam with TWO differently placed green leaves, TWO frames and TWO brass knobs meeting at this cube boundary. Reconstruct the SINGLE continuous doorway and SINGLE thin hinged leaf from Image1. Portions on BACK(top-right) and LEFT(bottom-left) must be projections of that ONE plane at the SAME75degree angle, not independent door paintings. Across this edge the jamb, arch, leaf outline and any visible hardware must align exactly. There is one physical knob on the visible side, not one knob per tile. Delete the duplicate large green slab that blocks the left half of the opening. Do not keep a vertical stitch between two incompatible door views. The aperture remains open with the exact gray visibility; do not replace it with a closed slab.\n\nKeep all other bedroom geometry exactly aligned to Image1: bed footprint/headboard/window, cropped bed edge in DOWN, room's curved wall/ceiling outlines and the window fragment at the UP boundary. No changed viewpoint, recentered bed, enlarged window or extra furniture. Preserve the current warm material style with floorboards continuing in world+Y. A correction of the glimpse must not redesign the bed or ceiling.\n\nReturn ONE complete3columns x2rows atlas, top FRONT/RIGHT/BACK, bottom LEFT/UP/DOWN, six true90degree square views from the SAME origin. No gutters/text/people. All twelve edge joins must continue the guide's silhouettes and the current materials.\n",
+    "referenced_image_paths": [
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bedroom/cube-atlas.png",
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/illustrated/bedroom/cube-atlas-v1.png"
+    ]
+  },
+  "oneWholeAtlasPerCall": true,
+  "outputStatus": "proposal-needs-art-review",
+  "notExecutedReason": "Switched to one continuous panorama repair before calling this atlas revision."
+}

@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "operation": "pano-to-cube",
+  "input": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/common-gray-equirect.png",
+  "inputSha256": "afaa90e3097459d1dca98342b73cc08fcfdcc05517bc2759bfc6a9b920723425",
+  "inputSize": [
+    3072,
+    1536
+  ],
+  "output": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/common-gray-roundtrip.png",
+  "outputSha256": "61df05c8293a4e3609b2cfdc88c85eb606bc2b2ceb30904bd68e8c8139948655",
+  "outputSize": [
+    3072,
+    2048
+  ],
+  "scriptSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "sampling": "Bilinear encodedRGB, pixel centers, no color grading; tile-clamped cube; longitude-wrapped and latitude-clamped panorama",
+  "panoramaConvention": "+Y front at(u=.5,v=.5); +X at u=.75; +Z top; image rows downward",
+  "cubeLayout": [
+    [
+      "front",
+      "right",
+      "back"
+    ],
+    [
+      "left",
+      "up",
+      "down"
+    ]
+  ],
+  "verification": {
+    "pass": true,
+    "edges": [
+      {
+        "faces": [
+          "front:left",
+          "left:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:right",
+          "right:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:bottom",
+          "down:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:top",
+          "up:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:right",
+          "back:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:bottom",
+          "down:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:top",
+          "up:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:right",
+          "left:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:bottom",
+          "down:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:top",
+          "up:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:bottom",
+          "down:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:top",
+          "up:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      }
+    ],
+    "note": "Exact shared angular boundaries sample the same panorama. Neighboring output texel centers have different directions; no edge pixels are painted/copied."
+  }
+}

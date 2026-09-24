@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "room": "bath",
+  "version": 1,
+  "status": "rejected-revision-required",
+  "reviewScope": "Direct gray/illustration full-atlas comparison. Full12edge viewer inspection pending; no seam pass claimed.",
+  "imageSha256": "ca401eb5aef9030886cadefc5016009d74d353f3a9db221675a86fbec91d80e7",
+  "graySha256": "8a3f31df60643c416918d4547d4412d48646875787d0728e2359d09c9100f911",
+  "strengths": [
+    "Rich tub/water/textile and cream-plaster style",
+    "Broad arrangement recognizable"
+  ],
+  "failures": [
+    {
+      "face": "back",
+      "issue": "Doorway invents stove/pipe left, moves full round window right, and loses visible closed front arch; gray instead has clipped left window, table/stools and closed frontdoor right."
+    },
+    {
+      "faces": [
+        "front",
+        "left",
+        "down"
+      ],
+      "issue": "Tub/mat visible contours expand relative to gray crop; need literal silhouette matching."
+    }
+  ],
+  "ceilingNuance": "Gray UP has a real top-left junction/notch; wood-facing that existing feature alone is not an invented new beam. Added coving must not change silhouette.",
+  "nextPrompt": "../prompts/bath-v2.txt",
+  "actualWidth": 1536,
+  "actualHeight": 1024,
+  "requestedAtlasWidth": 3072,
+  "requestedAtlasHeight": 2048
+}

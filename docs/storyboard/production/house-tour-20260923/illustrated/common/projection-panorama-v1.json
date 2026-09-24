@@ -1,0 +1,139 @@
+{
+  "schemaVersion": 1,
+  "operation": "pano-to-cube",
+  "input": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/illustrated/common/panorama-v1.png",
+  "inputSha256": "98eb7d2124b906c9f24039479a63ed93638dbf0c4209ae1f07a397f19f984bdc",
+  "inputSize": [
+    1774,
+    887
+  ],
+  "output": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/illustrated/common/cube-from-panorama-v1.png",
+  "outputSha256": "7482c5d4e0cd97ad0e90b3bd2bf1002fdffbbe962701c31c902319edaa912e3b",
+  "outputSize": [
+    1536,
+    1024
+  ],
+  "scriptSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "sampling": "Bilinear encodedRGB, pixel centers, no color grading; tile-clamped cube; longitude-wrapped and latitude-clamped panorama",
+  "panoramaConvention": "+Y front at(u=.5,v=.5); +X at u=.75; +Z top; image rows downward",
+  "cubeLayout": [
+    [
+      "front",
+      "right",
+      "back"
+    ],
+    [
+      "left",
+      "up",
+      "down"
+    ]
+  ],
+  "verification": {
+    "pass": true,
+    "edges": [
+      {
+        "faces": [
+          "front:left",
+          "left:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:right",
+          "right:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:bottom",
+          "down:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:top",
+          "up:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:right",
+          "back:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:bottom",
+          "down:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:top",
+          "up:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:right",
+          "left:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:bottom",
+          "down:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:top",
+          "up:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:bottom",
+          "down:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:top",
+          "up:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      }
+    ],
+    "note": "Exact shared angular boundaries sample the same panorama. Neighboring output texel centers have different directions; no edge pixels are painted/copied."
+  },
+  "runtimeDerivative": {
+    "path": "docs/storyboard/production/house-tour-20260923/illustrated/common/cube-atlas.webp",
+    "sha256": "147ce0ce9b0cb750a72da122deb555efc9624ffac5abaa5c0625afce1a5dbca4",
+    "bytes": 1237354,
+    "decodedRGBExact": true
+  }
+}

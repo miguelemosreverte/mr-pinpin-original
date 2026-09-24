@@ -1,0 +1,585 @@
+{
+  "schemaVersion": 1,
+  "room": "bedroom",
+  "pass": true,
+  "origin": [
+    1.4500000476837158,
+    1.2000000476837158,
+    1.149999976158142
+  ],
+  "sixTrue90Faces": true,
+  "twelveSharedEdges": true,
+  "tilePixelEquality": true,
+  "webpRGBEquality": true,
+  "sourceSceneSha256": "b1f0108066e974dadbc07a36dcadf50a30d91ee9650bbd5ca0eb838b27176e03",
+  "sourceAtlasPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bedroom/cube-atlas.png",
+  "sourceAtlasSha256": "b2348e61f25e5c8429420331de278071bd8c84c2d7c95214437e77460fd8476f",
+  "sourceManifestPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bedroom/cubemap-manifest.json",
+  "sourceManifestSha256": "708dfaaf4bedd359bae0a2757e93de3a935eedc8b4273cb70025c429e7f83920",
+  "sourceManifest": {
+    "schemaVersion": 1,
+    "stage": "cubemap",
+    "locationId": "pinpin-house",
+    "locationVersion": "1.0.0",
+    "jobId": "house-tour-bedroom",
+    "jobSha256": "769b133e84b42d37dc52f0c1f42436ac3850ad37e9fb31bc4e0483b080120ec6",
+    "inputs": {
+      "docs/storyboard/locations/pinpin-house/location.json": "3fe9e9a0e0ebaff2299ad358cc564d2010fb2eadf02fa3d6064525888582c73f",
+      "docs/storyboard/locations/pinpin-house/scene/house-plan.json": "cab510b31c13e85beaa689edb54005223412a988f640724e56b9d95dba20c28c",
+      "docs/storyboard/locations/pinpin-house/scene/merged-semantic-plan.png": "317c3447d13d915b7072cc096e641e37c33233d3ce4390ec163cf07ca49dd8c2",
+      "tools/locations/builder/build_house.py": "34946231d4922c0454064b3c5961dd6ce448bdf2ef5ec9c6326bb41af38f8d1b",
+      "tools/locations/builder/plan_geometry.py": "f80c11e855deec10e7ce07d4114fd2a410af50d9e85713b43efc606fc4619912",
+      "tools/locations/blender_worker.py": "15a8eb6673217f1f6c15fc941c9e20a2801dbd2d6374d645ba1a849afe2fc48c",
+      "tools/locations/png_atlas.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+      "tools/locations/cli.py": "360f97e1afa245c5be10824d4a235f85d896b692261f5839ed9291ab38f7b481",
+      "tools/locations/contracts.py": "9cd6002a280d6b6234878439e667a934629f377ae87aeb8fdbc04d0eb1f38b5c",
+      "tools/locations/tests/test_contracts.py": "d5b9441767992ce8dbc13e6a0e087124cef2b7d80f720adb16fb836116a70e8e",
+      "tools/locations/tests/blender_door_state.py": "771e77287731df8cb74ea996210c045c46bea3ac2e2737269ff773daa6725fed",
+      "docs/storyboard/production/house-tour-20260923/geometry/jobs/cubemap-bedroom.json": "769b133e84b42d37dc52f0c1f42436ac3850ad37e9fb31bc4e0483b080120ec6"
+    },
+    "cameraCheck": {
+      "pass": true,
+      "minimumSurfaceMarginM": 0.035,
+      "objectsChecked": 45,
+      "allowOutside": false
+    },
+    "doorStates": [
+      {
+        "id": "door-front",
+        "angleDegrees": 0,
+        "signedAngleDegrees": 0,
+        "hingeWorld": [
+          -0.6962748765945435,
+          -2.957864999771118,
+          0.0
+        ],
+        "matrixWorld": [
+          [
+            1.0,
+            -2.317848668553779e-08,
+            0.0,
+            -0.6962748765945435
+          ],
+          [
+            2.317848668553779e-08,
+            1.0,
+            0.0,
+            -2.957864999771118
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "id": "door-bath",
+        "angleDegrees": 75,
+        "signedAngleDegrees": 75,
+        "hingeWorld": [
+          -2.0239672660827637,
+          0.6366258859634399,
+          0.0
+        ],
+        "matrixWorld": [
+          [
+            -0.3046184480190277,
+            -0.9524744749069214,
+            0.0,
+            -2.0239672660827637
+          ],
+          [
+            0.9524744749069214,
+            -0.3046184480190277,
+            0.0,
+            0.6366258859634399
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      {
+        "id": "door-bedroom",
+        "angleDegrees": 75,
+        "signedAngleDegrees": 75,
+        "hingeWorld": [
+          1.039655089378357,
+          0.4985438883304596,
+          0.0
+        ],
+        "matrixWorld": [
+          [
+            0.8646183013916016,
+            -0.5024292469024658,
+            0.0,
+            1.039655089378357
+          ],
+          [
+            0.5024292469024658,
+            0.8646183013916016,
+            0.0,
+            0.4985438883304596
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    ],
+    "cameras": [
+      {
+        "position": [
+          1.4500000476837158,
+          1.2000000476837158,
+          1.149999976158142
+        ],
+        "quaternionWXYZ": [
+          0.7071067690849304,
+          0.7071067690849304,
+          -0.0,
+          0.0
+        ],
+        "matrixWorld": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.4500000476837158
+          ],
+          [
+            0.0,
+            -1.3435885648505064e-07,
+            -1.0000001192092896,
+            1.2000000476837158
+          ],
+          [
+            0.0,
+            1.0000001192092896,
+            -1.3435885648505064e-07,
+            1.149999976158142
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lensMm": 18.0,
+        "horizontalFovDegrees": 90.00000250447816,
+        "width": 1024,
+        "height": 1024,
+        "id": "front",
+        "tile": [
+          0,
+          0
+        ],
+        "forward": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "position": [
+          1.4500000476837158,
+          1.2000000476837158,
+          1.149999976158142
+        ],
+        "quaternionWXYZ": [
+          0.5,
+          0.5,
+          -0.5,
+          -0.5
+        ],
+        "matrixWorld": [
+          [
+            -2.220446049250313e-16,
+            0.0,
+            -1.0,
+            1.4500000476837158
+          ],
+          [
+            -1.0,
+            -2.220446049250313e-16,
+            0.0,
+            1.2000000476837158
+          ],
+          [
+            0.0,
+            1.0,
+            -2.220446049250313e-16,
+            1.149999976158142
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lensMm": 18.0,
+        "horizontalFovDegrees": 90.00000250447816,
+        "width": 1024,
+        "height": 1024,
+        "id": "right",
+        "tile": [
+          1,
+          0
+        ],
+        "forward": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "right": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "position": [
+          1.4500000476837158,
+          1.2000000476837158,
+          1.149999976158142
+        ],
+        "quaternionWXYZ": [
+          0.0,
+          0.0,
+          0.7071067690849304,
+          0.7071067690849304
+        ],
+        "matrixWorld": [
+          [
+            -1.000000238418579,
+            0.0,
+            0.0,
+            1.4500000476837158
+          ],
+          [
+            0.0,
+            -1.3435885648505064e-07,
+            1.0000001192092896,
+            1.2000000476837158
+          ],
+          [
+            0.0,
+            1.0000001192092896,
+            -1.3435885648505064e-07,
+            1.149999976158142
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lensMm": 18.0,
+        "horizontalFovDegrees": 90.00000250447816,
+        "width": 1024,
+        "height": 1024,
+        "id": "back",
+        "tile": [
+          2,
+          0
+        ],
+        "forward": [
+          0.0,
+          -1.0,
+          0.0
+        ],
+        "right": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "position": [
+          1.4500000476837158,
+          1.2000000476837158,
+          1.149999976158142
+        ],
+        "quaternionWXYZ": [
+          0.5,
+          0.5,
+          0.5,
+          0.5
+        ],
+        "matrixWorld": [
+          [
+            -2.220446049250313e-16,
+            0.0,
+            1.0,
+            1.4500000476837158
+          ],
+          [
+            1.0,
+            -2.220446049250313e-16,
+            0.0,
+            1.2000000476837158
+          ],
+          [
+            0.0,
+            1.0,
+            -2.220446049250313e-16,
+            1.149999976158142
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lensMm": 18.0,
+        "horizontalFovDegrees": 90.00000250447816,
+        "width": 1024,
+        "height": 1024,
+        "id": "left",
+        "tile": [
+          0,
+          1
+        ],
+        "forward": [
+          -1.0,
+          0.0,
+          0.0
+        ],
+        "right": [
+          0.0,
+          1.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          0.0,
+          1.0
+        ]
+      },
+      {
+        "position": [
+          1.4500000476837158,
+          1.2000000476837158,
+          1.149999976158142
+        ],
+        "quaternionWXYZ": [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        "matrixWorld": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.4500000476837158
+          ],
+          [
+            0.0,
+            -1.0,
+            0.0,
+            1.2000000476837158
+          ],
+          [
+            0.0,
+            0.0,
+            -1.0,
+            1.149999976158142
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lensMm": 18.0,
+        "horizontalFovDegrees": 90.00000250447816,
+        "width": 1024,
+        "height": 1024,
+        "id": "up",
+        "tile": [
+          1,
+          1
+        ],
+        "forward": [
+          0.0,
+          0.0,
+          1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          -1.0,
+          0.0
+        ]
+      },
+      {
+        "position": [
+          1.4500000476837158,
+          1.2000000476837158,
+          1.149999976158142
+        ],
+        "quaternionWXYZ": [
+          1.0,
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "matrixWorld": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            1.4500000476837158
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            1.2000000476837158
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            1.149999976158142
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "lensMm": 18.0,
+        "horizontalFovDegrees": 90.00000250447816,
+        "width": 1024,
+        "height": 1024,
+        "id": "down",
+        "tile": [
+          2,
+          1
+        ],
+        "forward": [
+          0.0,
+          0.0,
+          -1.0
+        ],
+        "right": [
+          1.0,
+          0.0,
+          0.0
+        ],
+        "up": [
+          0.0,
+          1.0,
+          0.0
+        ]
+      }
+    ],
+    "artifacts": [
+      {
+        "path": "front.png",
+        "sha256": "527bccaa5601e4a6deb62d685c6c964284da913404e40d3c1d9acd9540b5ae66",
+        "bytes": 734601
+      },
+      {
+        "path": "right.png",
+        "sha256": "79769f2d9863bbf80c6a80f83b3e42af55dd5779c3423ee21a466eb479af8989",
+        "bytes": 783733
+      },
+      {
+        "path": "back.png",
+        "sha256": "85b599d8097b0ba351da4332ae1df7c0ee8f4be5c5bd8d64559d19ffba5a9950",
+        "bytes": 752413
+      },
+      {
+        "path": "left.png",
+        "sha256": "dcc0a24c326c7b4157792a249a5dde76152e1360d2ca0a089432463ef1e83af7",
+        "bytes": 776133
+      },
+      {
+        "path": "up.png",
+        "sha256": "524a630c2f06f99d588588277afa522ba647a63e3abd195054bf0064dfac2a26",
+        "bytes": 813462
+      },
+      {
+        "path": "down.png",
+        "sha256": "cb316d9f10735577caece29c729343a42ad09b8811bfa3e194d06b08c87ce693",
+        "bytes": 802503
+      },
+      {
+        "path": "cube-atlas.png",
+        "sha256": "b2348e61f25e5c8429420331de278071bd8c84c2d7c95214437e77460fd8476f",
+        "bytes": 3466241
+      }
+    ],
+    "sceneSourceSha256": "b1f0108066e974dadbc07a36dcadf50a30d91ee9650bbd5ca0eb838b27176e03",
+    "cubeLayout": "top:front/right/back;bottom:left/up/down",
+    "singleScene": true,
+    "blenderVersion": "4.5.14 LTS"
+  },
+  "artifacts": [
+    {
+      "path": "cube-atlas.webp",
+      "sha256": "7dd9e56b9932edc8ba20020b6b196120caaef6eaf47dc4f02b71bbdfaa165370",
+      "bytes": 2334810
+    }
+  ]
+}

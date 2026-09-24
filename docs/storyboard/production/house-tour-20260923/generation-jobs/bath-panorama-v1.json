@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "room": "bath",
+  "strategy": "continuous-equirectangular-repair-then-deterministic-cube",
+  "status": "executed-built-in-tool-output-reviewed",
+  "tool": "image_gen__imagegen",
+  "promptPath": "docs/storyboard/production/house-tour-20260923/prompts/bath-panorama-v1.txt",
+  "promptSha256": "8c6c33d1358edb24ca2c03c7129213b7f31a7377719d91bf0ed8e54e6c0b9e4b",
+  "inputRoles": [
+    "Current gray whole sphere; sole geometry/camera authority",
+    "Current illustrated whole sphere; material appearance and discontinuities to repair"
+  ],
+  "projection": "2:1 equirectangular complete sphere",
+  "oneWholePanoramaPerCall": true,
+  "outputStatus": "local-review-candidate-with-visible-limitations",
+  "inputImages": [
+    {
+      "order": 1,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bath-gray-equirect.png",
+      "sha256": "8c3e1ce974c097cace581d947bdbcb1763702ce2bb11366b174e85653abbdf22",
+      "dimensions": [
+        3072,
+        1536
+      ],
+      "role": "Current gray whole sphere; sole geometry/camera authority"
+    },
+    {
+      "order": 2,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bath-v2-equirect.png",
+      "sha256": "d9ff7d701fec6e962563606f784b37b74368a42009cab702217cea1fca18605d",
+      "dimensions": [
+        3072,
+        1536
+      ],
+      "role": "Current illustrated whole sphere; material appearance and discontinuities to repair"
+    }
+  ],
+  "mapping": {
+    "frontPositiveY": [
+      0.5,
+      0.5
+    ],
+    "rightPositiveX": [
+      0.75,
+      0.5
+    ],
+    "rearNegativeY": "u0/1,v.5",
+    "leftNegativeX": [
+      0.25,
+      0.5
+    ],
+    "upPositiveZ": "v0",
+    "downNegativeZ": "v1"
+  },
+  "toolArguments": {
+    "prompt": "Use case: precise-object-edit\nRepair ONE continuous360-degree equirectangular panorama. Image1 is the direct gray geometry projected from the fixed Blender camera; it is the sole authority for silhouettes, room shape, camera and occlusion. Image2 is the current illustrated panorama, with good book materials but broken joins inherited from independent cube-face interpretations.\n\nReturn ONE true2:1 full spherical image with the same orientation and viewpoint as Image1. Full width is one360degree turn, horizon at midheight, ceiling pole at top and floor pole at bottom. Keep the gray image's necessary spherical curvature instead of straightening or recomposing it. LEFT and RIGHT edges are neighboring rays and must wrap continuously. Do not output a cubemap, contact sheet or editorial panorama with missing ceiling/floor.\n\nRestore one continuous space over the whole image: every floor/wall/ceiling contour, door edge, furniture crop and light/material region follows Image1 across all former cube boundaries. Do not preserve a discontinuity just because it exists in Image2. Use its warm honey oak, cream plaster, olive leaves and softly stylized book finish only where those surfaces belong in the gray scene.\n\nBoth private-room doors are OPEN and the outside/front door CLOSED, exactly as the guide shows. The return doorway is ONE aperture and ONE thin hinged leaf, not a pair of independently painted doors. Reconcile its arch, leaf and visible knob across any old seam. Do not add a second knob, widen the opening or close it. Through it, show only the literal neighboring-room fragments visible in Image1: never invent furniture to make a more attractive glimpse.\n\nKeep one coherent warm daylight field and consistent wood/plaster colors. No sudden tone changes across former face borders. Floorboard scale and direction remain continuous. At top/bottom avoid pinched stars, duplicated fans or abrupt pole patches; preserve the guide's geometry and expected spherical distortion. No people, text, new lamps, plants, cabinets or decorative freestanding objects.\n\nCURRENT ROOM: bathroom. Restore the exact broad LOW oval tub, fitted oval mat and small washstand silhouettes from the gray image, including their clipping near the bottom of the spherical view. Do not center the tub beneath the camera or expand the mat to fill empty floor. Tub is honey-oak staves with dark hoops and calm water below its rim; mat muted terracotta/ochre/cream/charcoal braid; washstand warm wood and cream basin. Keep the circular bathroom window as the SAME single opening when its projection crosses former face edges, not two halves with different size/frame. Tub rim, waterline and mat rings must continue as one object everywhere, without a splice or doubled contour.\n\nThe return view into the common room must match the gray aperture exactly: clipped table/stools, only the actually visible clipped round window, and the CLOSED green front-door surface where the guide shows it. Remove any invented stove/chimney or relocated full window from this particular view. Preserve the actual ceiling junction, without importing an old vaulted roof or new crossbeam.\n\nReturn one complete2:1 spherical panorama, target2048x1024, no cropping or borders. This is an illustrated geometry repair, not a new room design.\n",
+    "referenced_image_paths": [
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bath-gray-equirect.png",
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bath-v2-equirect.png"
+    ]
+  },
+  "artReview": "art-review/continuous-v1.json"
+}

@@ -1,0 +1,16 @@
+Use case: precise-object-edit
+Repair ONE continuous360-degree equirectangular panorama. Image1 is the direct gray geometry projected from the fixed Blender camera; it is the sole authority for silhouettes, room shape, camera and occlusion. Image2 is the current illustrated panorama, with good book materials but broken joins inherited from independent cube-face interpretations.
+
+Return ONE true2:1 full spherical image with the same orientation and viewpoint as Image1. Full width is one360degree turn, horizon at midheight, ceiling pole at top and floor pole at bottom. Keep the gray image's necessary spherical curvature instead of straightening or recomposing it. LEFT and RIGHT edges are neighboring rays and must wrap continuously. Do not output a cubemap, contact sheet or editorial panorama with missing ceiling/floor.
+
+Restore one continuous space over the whole image: every floor/wall/ceiling contour, door edge, furniture crop and light/material region follows Image1 across all former cube boundaries. Do not preserve a discontinuity just because it exists in Image2. Use its warm honey oak, cream plaster, olive leaves and softly stylized book finish only where those surfaces belong in the gray scene.
+
+Both private-room doors are OPEN and the outside/front door CLOSED, exactly as the guide shows. The return doorway is ONE aperture and ONE thin hinged leaf, not a pair of independently painted doors. Reconcile its arch, leaf and visible knob across any old seam. Do not add a second knob, widen the opening or close it. Through it, show only the literal neighboring-room fragments visible in Image1: never invent furniture to make a more attractive glimpse.
+
+Keep one coherent warm daylight field and consistent wood/plaster colors. No sudden tone changes across former face borders. Floorboard scale and direction remain continuous. At top/bottom avoid pinched stars, duplicated fans or abrupt pole patches; preserve the guide's geometry and expected spherical distortion. No people, text, new lamps, plants, cabinets or decorative freestanding objects.
+
+CURRENT ROOM: bathroom. Restore the exact broad LOW oval tub, fitted oval mat and small washstand silhouettes from the gray image, including their clipping near the bottom of the spherical view. Do not center the tub beneath the camera or expand the mat to fill empty floor. Tub is honey-oak staves with dark hoops and calm water below its rim; mat muted terracotta/ochre/cream/charcoal braid; washstand warm wood and cream basin. Keep the circular bathroom window as the SAME single opening when its projection crosses former face edges, not two halves with different size/frame. Tub rim, waterline and mat rings must continue as one object everywhere, without a splice or doubled contour.
+
+The return view into the common room must match the gray aperture exactly: clipped table/stools, only the actually visible clipped round window, and the CLOSED green front-door surface where the guide shows it. Remove any invented stove/chimney or relocated full window from this particular view. Preserve the actual ceiling junction, without importing an old vaulted roof or new crossbeam.
+
+Return one complete2:1 spherical panorama, target2048x1024, no cropping or borders. This is an illustrated geometry repair, not a new room design.

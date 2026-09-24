@@ -1,0 +1,35 @@
+{
+  "pass": true,
+  "jobs": [
+    {
+      "room": "common",
+      "manifest": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/prepared/common/prepared-manifest.json",
+      "promptSha256": "1149c51e3d282466f274f85e7d06b1214cf8cea40a3c80a8d4c691ce9e44564f",
+      "references": [
+        "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/prepared/common/geometry-reference.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp"
+      ],
+      "note": "Baseline canonical CLI prompt; final tour art direction is separately supervised."
+    },
+    {
+      "room": "bath",
+      "manifest": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/prepared/bath/prepared-manifest.json",
+      "promptSha256": "ee1a70ffafac5161bba98d8d046350cbcec608130a28d9b75a8625355b7e2933",
+      "references": [
+        "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/prepared/bath/geometry-reference.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/standalone/home-sweet-home/bedtime-08-v2.png"
+      ],
+      "note": "Baseline canonical CLI prompt; final tour art direction is separately supervised."
+    },
+    {
+      "room": "bedroom",
+      "manifest": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/prepared/bedroom/prepared-manifest.json",
+      "promptSha256": "0d33877483d42d142cc53ad4f078fe5232165f93b61eb67dd3ee71b57cde01b9",
+      "references": [
+        "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/prepared/bedroom/geometry-reference.png",
+        "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/standalone/home-sweet-home/bedtime-17-v2.png"
+      ],
+      "note": "Baseline canonical CLI prompt; final tour art direction is separately supervised."
+    }
+  ]
+}

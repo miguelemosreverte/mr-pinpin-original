@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "room": "bath",
+  "version": 2,
+  "status": "frozen-inputs-ready-for-built-in-tool",
+  "tool": "image_gen__imagegen",
+  "promptPath": "docs/storyboard/production/house-tour-20260923/prompts/bath-v2.txt",
+  "promptSha256": "6bd4517f6ef949956846b1749905431af17b3611bb009ea54892fd92bf687886",
+  "inputImages": [
+    {
+      "order": 1,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bath/cube-atlas.png",
+      "sha256": "8a3f31df60643c416918d4547d4412d48646875787d0728e2359d09c9100f911",
+      "role": "exact gray geometry"
+    },
+    {
+      "order": 2,
+      "path": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-71e077b4-3be7-47e6-bbeb-63973b228056.png",
+      "sha256": "ca401eb5aef9030886cadefc5016009d74d353f3a9db221675a86fbec91d80e7",
+      "role": "v1 MATERIAL appearance only; known portal errors"
+    }
+  ],
+  "toolArguments": {
+    "prompt": "Use case: precise-object-edit\nCorrect ONE whole bathroom cubemap. Image1 is the authoritative direct Blender gray atlas at the fixed camera. Image2 is the previous warm illustrated atlas: preserve its pleasing wood, cream plaster, water, olive door and braided-mat materials, but restore the exact silhouettes and visible neighboring room from Image1.\n\nKeep exact3columns x2rows, six90degree square faces: top FRONT/RIGHT/BACK, bottom LEFT/UP/DOWN. One camera, one connected house, no gutters/text. Never recompose a tile or change field of view. The geometry takes priority over the previous illustration.\n\nPRIMARY CORRECTION: BACK, top-right cell, looking through the open bathroom doorway into the common room. Copy the gray aperture's actual content literally. It shows the same clipped dining table and its stool fragments; at the LEFT edge of that distant view is only a partially clipped circular WINDOW. At the RIGHT/back of that view is the tall arched CLOSED FRONT DOOR surface. That closed front door must be olive-green wood, keeping exactly its gray arch silhouette. Image2 incorrectly adds a dark stove/chimney at the left of this doorway and moves a complete bright round window to the right. REMOVE that invented stove/pipe from this view. REMOVE the incorrectly placed full right window. Restore the clipped left window and the closed green front arch at their Image1 positions. Do not remove these fixtures from the actual house: only show the ones that this camera can see. No extra furniture, lamps or objects beyond the aperture.\n\nThe near bathroom leaf retains its exact gray75degree open angle and hinge side, with thin olive wood surface and one brass knob. All internal leaves remain open75degrees throughout the house; the exterior/front leaf remains closed0degrees. Do not widen the doorway to improve the view.\n\nSECONDARY CORRECTION: match Image1's visible TUB and MAT silhouettes exactly in FRONT(top-left), LEFT(bottom-left) and DOWN(bottom-right). The gray guide intentionally crops these at tile edges. Do not enlarge the tub, raise the rim or spread the mat to fill the composition. Style only the occupied gray shapes: broad LOW honey-wood tub with dark hoops, calm water below its rim; fitted oval terracotta/ochre/cream/charcoal braided mat. Keep the washstand's small gray body and cream basin at their exact position, without a wider cabinet or extra accessories.\n\nThe gray UP face includes an actual small top-left ceiling junction/notch; preserve that exact profile. Do not add a new beam crossing or change the ceiling to the old book's vaulted roof. Thin warm surface trim may follow existing joints only, without widening structural silhouettes.\n\nRetain the previous soft luminous children's-book material finish. Cream walls and ceiling, honey-oak floor with consistent world+Y board direction, restrained olive doors, same warm daytime illumination in the adjoining common room. No orange wash, black void, plastic gloss or extra scene decorations. Empty house; no figures.\n\nInspect the whole atlas while rendering: all twelve cube-edge joins must preserve the gray ceiling/wall/floor outlines and the continuous tub rim/mat contours. Same3:2 aspect, all six faces, target3072x2048. Output one complete revised atlas, not separate face images.\n",
+    "referenced_image_paths": [
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bath/cube-atlas.png",
+      "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-71e077b4-3be7-47e6-bbeb-63973b228056.png"
+    ]
+  },
+  "oneWholeAtlasPerCall": true,
+  "outputStatus": "proposal-needs-art-review"
+}

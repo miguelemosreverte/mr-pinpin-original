@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "house-tour-bedroom",
+  "location": "docs/storyboard/locations/pinpin-house/location.json",
+  "camera": {
+    "position": [
+      1.45,
+      1.2,
+      1.15
+    ]
+  },
+  "faceSize": 1024,
+  "doorStates": {
+    "door-front": 0,
+    "door-bath": 75,
+    "door-bedroom": 75
+  },
+  "prompt": {
+    "template": "cubemap",
+    "intent": "Connected bedroom room: preserve every aperture and the exact adjacent-room sightlines shown by the one-scene Blender guide. Six 90-degree faces are one whole atlas; no independent face redesign. Coordinate all twelve shared cube edges, including ceiling and floor.",
+    "characters": "No characters.",
+    "action": "Empty location study.",
+    "lighting": "Warm soft daylight, stable across all six directions."
+  }
+}

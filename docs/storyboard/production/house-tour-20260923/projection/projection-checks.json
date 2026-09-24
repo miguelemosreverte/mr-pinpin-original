@@ -1,0 +1,33 @@
+{
+  "meanRGBError255": 0.24050633112589517,
+  "p95RGBError255": 1.0,
+  "maxRGBError255": 59.0,
+  "note": "Resampling loss is expected; originals preserved. This checks projection orientation across all pixels.",
+  "analyticCardinalDirections": [
+    {
+      "face": "front",
+      "maxRGBError": 0.0
+    },
+    {
+      "face": "right",
+      "maxRGBError": 0.0
+    },
+    {
+      "face": "back",
+      "maxRGBError": 0.0
+    },
+    {
+      "face": "left",
+      "maxRGBError": 0.0
+    },
+    {
+      "face": "up",
+      "maxRGBError": 0.5
+    },
+    {
+      "face": "down",
+      "maxRGBError": 0.5
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,28 @@
+Use case: style-transfer
+Asset type: ONE complete six-face cubemap atlas for an empty illustrated children's-book house.
+
+REFERENCE ROLES, IN ORDER
+Image 1 is the current room's direct Blender gray cubemap: the sole geometry, camera and composition authority.
+Image 2 is an OLD 2:1 equirectangular illustrated panorama: use ONLY its warm material quality and polished storybook rendering, never its one-room layout, projection, furniture locations or open exterior door.
+Image 3 is an OLD 110-degree perspective front repair: use ONLY its close material/color quality, never its camera, architecture or framing.
+Image 4 is the room-specific approved book still: use its specified surface/fixture design and gentle illustration style, never its characters, old staging or window positions.
+
+LOCK THE WHOLE CUBE
+Return ONE seamless 3-column by 2-row atlas, identical layout/aspect to Image 1, equal square cells, no gutters. Top row FRONT / RIGHT / BACK; bottom row LEFT / UP / DOWN. Names are orientation instructions, NOT lettering to draw. Each face retains its exact90-degree rays and rotation. Front world+Y, right+X, back-Y, left-X, up+Z, down-Z; up screen-top points-Y, down screen-top points+Y. Preserve the gray silhouette and occlusion of every opening, wall junction, furniture body, door leaf and threshold. Do not turn the atlas into an equirectangular panorama or six independently composed pictures. No camera zoom, perspective correction, moved horizon, room widening or face rotation.
+
+ONE CONNECTED HOUSE
+All three rooms use the same frozen measured plan. The common room is south; bathroom northwest, bedroom northeast, with an OUTDOOR recess separating the private rooms. Only the common room connects to each private room. Both internal door leaves are physically open75degrees in EVERY room atlas; front/exterior leaf is closed0degrees. Keep their exact hinge side, angle, arch/aperture size and visible jamb surfaces. Do not cover an opening with a new closed door, enlarge it, add a window, or invent a direct bath-bedroom passage. Through a doorway, depict only the neighboring surfaces and fixtures actually visible along the gray guide's rays. Do not decorate an occluded neighbor into visibility.
+
+GLOBAL MATERIAL AND FIXTURE LOCK
+Use softly stylized, rich children's-book craftsmanship, with readable rounded forms and gentle warm light, as in the illustrated references. Warm honey-brown oak floors and furnishings, light creamy plaster, restrained olive-green door leaves, dark iron hardware and a single small brass knob on the visible side of each modeled door. Use the same finishes in all rooms and both sides of each doorway. Floorboard long axes run world+Y throughout the house; board scale and lighting continue across thresholds and cube edges. The ceiling keeps the guide's actual profile; give its plaster the same soft finish, without importing the OLD reference's vaulted roof or adding beams that change the silhouette. No harsh plastic gloss, gray unstyled surfaces, orange color wash or crushed black shadows.
+
+Fixed fixture identities at worldXY meters: common-room west bookcase(-3.87,-0.59), low rounded iron STOVE(-3.04,-1.96), central round dining table(-0.30,-1.09) with FOUR existing low stools, east kitchen counter(2.77,-1.27). Bathroom broad low wooden tub(-3.74,2.67), oval mat(-3.59,2.55), small washstand(-5.11,2.26). Bedroom wood bed(2.46,1.64), headboard north. Identify the stove proxy correctly; it is not a barrel. Show a fixture ONLY if present in that face's gray view, at the same size/location. No second counter, extra table/bench, new cabinet, fireplace, plants, hanging lamps or freestanding objects. Books may fill the existing bookcase shelves without readable text; these and fitted bed textiles are surface design of modeled fixtures, not new room furnishings.
+
+Lighting is gentle warm daytime, with luminous existing windows and soft filled shadows. Maintain one consistent illumination field across faces and across open thresholds; do not paint a different time of day or sun direction per tile. Keep adjacent-room materials consistent rather than a dark empty void or an unrelated room photograph.
+
+SEAM AND VISIBILITY REQUIREMENTS
+All twelve cube-edge pairs must join, including non-neighboring atlas cells: ceiling-wall profiles, floorboard lines, door edges, furniture contours, material scale and light should continue without jumps. Up/down remain real perspective cube faces, not pinched spherical poles. Keep corners/cell boundaries exact and unframed. No text, arrows, watermarks or people. This is a single empty-house location study; do not copy characters from the book still.
+
+CURRENT ROOM: common kitchen/living room, camera at(-1.3,-1.3,1.15)m. Preserve both open private-room apertures and the real glimpses beyond them. The stove is matte dark iron with a small restrained ember treatment within its existing body; the bookcase is warm oak with softly colored book spines. Dining tabletop and exactly four stools remain simple honey oak. Kitchen counter stays ONLY on the modeled east wall; the old panorama's left-side kitchen is not a placement guide. The book still supplies expressive warm surface rendering, round wood-framed glazed windows and olive door paint; no family appears. Do not add the older common-room giant rug: only the actual modeled bath mat exists in this plan.
+
+Target output:3072x2048, six1024-square cells, same composition as the guide. If the tool returns another resolution, retain the exact3:2 atlas ratio and complete six-cell structure; never crop or omit a face.

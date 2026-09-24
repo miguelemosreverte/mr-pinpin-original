@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "room": "common",
+  "version": 1,
+  "status": "rejected-revision-required",
+  "reviewScope": "Direct side-by-side full-atlas inspection versus gray. Obvious silhouette failures found; full12edge viewer inspection not claimed.",
+  "imageSha256": "e82be7995efd5867afc0cc187e899eec8f56098fb08fe3e9f805e6865996532e",
+  "graySha256": "103ff8b8ae6a9699168604a682f13ab9fd09f100176804f7774c64e6cdd54ce7",
+  "strengths": [
+    "Warm wood and plaster finish matches target broadly",
+    "Main room silhouette recognizable"
+  ],
+  "failures": [
+    {
+      "face": "down",
+      "issue": "Complete table/four stools recentered under camera instead of mostly empty floor with clipped fixture fragments onright."
+    },
+    {
+      "face": "back",
+      "issue": "Closed front leaf remains cream plaster niche instead of a recognizable closed green door."
+    },
+    {
+      "face": "front",
+      "issue": "Bath aperture invents a round window and bath staging where gray shows plain wall and clipped low-tub fragment."
+    },
+    {
+      "face": "left",
+      "issue": "Stove sprouts a tall pipe and enlarged hearth/mantel silhouette not in gray proxy."
+    }
+  ],
+  "nextPrompt": "../prompts/common-v2.txt",
+  "actualWidth": 1536,
+  "actualHeight": 1024,
+  "requestedAtlasWidth": 3072,
+  "requestedAtlasHeight": 2048
+}

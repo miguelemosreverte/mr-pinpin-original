@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "room": "common",
+  "strategy": "continuous-equirectangular-repair-then-deterministic-cube",
+  "status": "executed-built-in-tool-output-reviewed",
+  "tool": "image_gen__imagegen",
+  "promptPath": "docs/storyboard/production/house-tour-20260923/prompts/common-panorama-v1.txt",
+  "promptSha256": "d916d6e2971c7902e757bd967a4bb2a98ed638dd8ef7ea0e79ab1ca029224ac5",
+  "inputRoles": [
+    "Current gray whole sphere; sole geometry/camera authority",
+    "Current illustrated whole sphere; material appearance and discontinuities to repair"
+  ],
+  "projection": "2:1 equirectangular complete sphere",
+  "oneWholePanoramaPerCall": true,
+  "outputStatus": "local-review-candidate-with-visible-limitations",
+  "inputImages": [
+    {
+      "order": 1,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/common-gray-equirect.png",
+      "sha256": "afaa90e3097459d1dca98342b73cc08fcfdcc05517bc2759bfc6a9b920723425",
+      "dimensions": [
+        3072,
+        1536
+      ],
+      "role": "Current gray whole sphere; sole geometry/camera authority"
+    },
+    {
+      "order": 2,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/common-v3-equirect.png",
+      "sha256": "c08d642fd935616b86cb464d37ac9811f5fba7dcdec89b82391095757d76fc1b",
+      "dimensions": [
+        3072,
+        1536
+      ],
+      "role": "Current illustrated whole sphere; material appearance and discontinuities to repair"
+    }
+  ],
+  "mapping": {
+    "frontPositiveY": [
+      0.5,
+      0.5
+    ],
+    "rightPositiveX": [
+      0.75,
+      0.5
+    ],
+    "rearNegativeY": "u0/1,v.5",
+    "leftNegativeX": [
+      0.25,
+      0.5
+    ],
+    "upPositiveZ": "v0",
+    "downNegativeZ": "v1"
+  },
+  "toolArguments": {
+    "prompt": "Use case: precise-object-edit\nRepair ONE continuous360-degree equirectangular panorama of the common room. Image1 is the mathematically projected gray geometry from the fixed Blender camera. Image2 is the corresponding illustrated panorama, whose warm materials are good but whose previous cube faces disagree. Use the single continuous gray space to repair ALL those geometric/color breaks together.\n\nReturn a true2:1 full spherical panorama, not a collage or cubemap. Keep exactly the same projection, camera origin, horizon and world orientation as Image1. Its full width is one360-degree turn and its full height covers zenith to nadir. Do not straighten the expected equirectangular curvature or recompose an attractive frontal view. The LEFT and RIGHT edges are adjacent rays in the SAME room; they must wrap without a line, mismatched fixture or duplicate door.\n\nPreserve Image1's exact continuous silhouettes and occlusions: curved room walls, ceiling boundary, three doorway/leaf locations, two front round windows, table and stool fragments, bookcase, counter and low stove. Trace the gray object boundaries through the entire panorama. Reconcile the fractured contours/colors visible in Image2 instead of retaining seams from its former six tiles.\n\nThe round dining table remains beside the camera at its gray position; do NOT move it directly under the camera. At the floor pole there is open floor with only the same off-center clipped table/stool parts as Image1. Keep all four stools at their actual locations, even if partly obscured. Match the single low cylindrical charcoal-iron stove, with NO tall stovepipe, enlarged hearth or replacement barrel. Counter only at the gray east-wall position; no extra furniture.\n\nBoth internal doors are open75degrees; the exterior/front door is closed0degrees. Every door has ONE correctly hinged leaf and one visible-side knob, not repeated hardware at an old cube boundary. The closed front leaf is olive wood, not a plaster niche. Match the literal gray view THROUGH each internal aperture: bathroom glimpse contains only its small visible WOODEN stave-tub fragment and plain wall, no invented round window; bedroom glimpse contains only the visible bed/window fragments. Do not enlarge these apertures or add attractive neighboring-room content that is actually occluded.\n\nPreserve Image2's pleasing softly stylized book materials: warm honey oak, creamy plaster, olive-green leaves, restrained dark iron/brass, readable book spines. The tiny tub glimpse must be honey-oak staves and dark hoop, never white ceramic. Floorboards follow one world direction and consistent scale. Maintain one continuous warm daytime illumination field across the whole room. Remove sudden brightness/material changes inherited from cube edges.\n\nGive the zenith continuous quiet ceiling and the nadir continuous floor: no starburst, pinched knot, duplicated texture fan or abrupt pole color. Keep ordinary spherical foreshortening from Image1; don't paint another room at a pole. No people, new objects, text, labels, border or six-face grid. The sole output is ONE corrected2:1 full-sphere panorama, target2048x1024. This remains an illustrated derivative of the gray geometry, not a new room design.\n",
+    "referenced_image_paths": [
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/common-gray-equirect.png",
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/common-v3-equirect.png"
+    ]
+  },
+  "artReview": "art-review/continuous-v1.json"
+}

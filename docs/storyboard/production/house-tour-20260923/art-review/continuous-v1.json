@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "status": "local-review-candidate-with-visible-limitations",
+  "approvedChapterArt": false,
+  "exactGeometryCertified": false,
+  "reviewMethod": "Actual tour WebGL screenshots, gray/art paired at all 12 edge directions and six face centers per room. Visual inspection via 1000px contact sheets; bedroom up also inspected as original 1000x696 screenshot. No generated art changed.",
+  "capturedInputs": {
+    "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.webp": {
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/review-check/continuous-v1/common-gray.webp",
+      "sha256": "22d2b61affed9dd6a6483da3f21132c7c4a204f94289f8a083c546eb49b1faa0"
+    },
+    "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas.webp": {
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/review-check/continuous-v1/common-illustrated.webp",
+      "sha256": "147ce0ce9b0cb750a72da122deb555efc9624ffac5abaa5c0625afce1a5dbca4"
+    },
+    "storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.webp": {
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/review-check/continuous-v1/bath-gray.webp",
+      "sha256": "3476344f40167822b38162e0f4108d3109e6eba040aab84de667712fa87ce223"
+    },
+    "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas.webp": {
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/review-check/continuous-v1/bath-illustrated.webp",
+      "sha256": "5b6cf2e4f5e6a143b7df075cb9c91879c7cbd9dcd4c50ca06774cba3ba00cddc"
+    },
+    "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/cube-atlas.webp": {
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/review-check/continuous-v1/bedroom-gray.webp",
+      "sha256": "7dd9e56b9932edc8ba20020b6b196120caaef6eaf47dc4f02b71bbdfaa165370"
+    },
+    "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas.webp": {
+      "file": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/review-check/continuous-v1/bedroom-illustrated.webp",
+      "sha256": "8b2f02e453488dbed10b488d8a8deadbe500faa6755782ea605e8fc6eb854ef4"
+    }
+  },
+  "captureRoot": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/review-check/continuous-v1",
+  "actualGeneratedPanoramaDimensions": [
+    1774,
+    887
+  ],
+  "requestedPanoramaDimensions": [
+    2048,
+    1024
+  ],
+  "earlierGeneratedAtlasDimensions": [
+    1536,
+    1024
+  ],
+  "earlierRequestedAtlasDimensions": [
+    3072,
+    2048
+  ],
+  "poleLimitDegrees": 89,
+  "rooms": {
+    "common": {
+      "edgeViews": [
+        {
+          "id": "front-right",
+          "inspected": true,
+          "observation": "Bedroom aperture, single leaf and bed/window glimpse coherent; furniture outlines approximate gray.",
+          "grayScreenshot": "common-gray-front-right.png",
+          "illustratedScreenshot": "common-illustrated-front-right.png"
+        },
+        {
+          "id": "front-left",
+          "inspected": true,
+          "observation": "One bath leaf and wooden tub fragment; bookcase size/edge differs from gray.",
+          "grayScreenshot": "common-gray-front-left.png",
+          "illustratedScreenshot": "common-illustrated-front-left.png"
+        },
+        {
+          "id": "back-right",
+          "inspected": true,
+          "observation": "Closed front leaf and round window continuous.",
+          "grayScreenshot": "common-gray-back-right.png",
+          "illustratedScreenshot": "common-illustrated-back-right.png"
+        },
+        {
+          "id": "back-left",
+          "inspected": true,
+          "observation": "Previous vertical split removed; stove noticeably shorter than gray cylinder.",
+          "grayScreenshot": "common-gray-back-left.png",
+          "illustratedScreenshot": "common-illustrated-back-left.png"
+        },
+        {
+          "id": "front-up",
+          "inspected": true,
+          "observation": "Previous ceiling patch removed; continuous ceiling, slightly softened profile.",
+          "grayScreenshot": "common-gray-front-up.png",
+          "illustratedScreenshot": "common-illustrated-front-up.png"
+        },
+        {
+          "id": "down-front",
+          "inspected": true,
+          "observation": "Previous floor/table cut removed; off-center stool/table retained.",
+          "grayScreenshot": "common-gray-down-front.png",
+          "illustratedScreenshot": "common-illustrated-down-front.png"
+        },
+        {
+          "id": "back-up",
+          "inspected": true,
+          "observation": "Door/window upper contours continuous.",
+          "grayScreenshot": "common-gray-back-up.png",
+          "illustratedScreenshot": "common-illustrated-back-up.png"
+        },
+        {
+          "id": "back-down",
+          "inspected": true,
+          "observation": "Floor/threshold continuous at sampled view.",
+          "grayScreenshot": "common-gray-back-down.png",
+          "illustratedScreenshot": "common-illustrated-back-down.png"
+        },
+        {
+          "id": "right-up",
+          "inspected": true,
+          "observation": "Ceiling edge continuous; painted wall profile approximate.",
+          "grayScreenshot": "common-gray-right-up.png",
+          "illustratedScreenshot": "common-illustrated-right-up.png"
+        },
+        {
+          "id": "down-right",
+          "inspected": true,
+          "observation": "Table/stools now continuous across edge; tabletop shape and trim differ from proxy.",
+          "grayScreenshot": "common-gray-down-right.png",
+          "illustratedScreenshot": "common-illustrated-down-right.png"
+        },
+        {
+          "id": "left-up",
+          "inspected": true,
+          "observation": "Ceiling/bookcase area continuous.",
+          "grayScreenshot": "common-gray-left-up.png",
+          "illustratedScreenshot": "common-illustrated-left-up.png"
+        },
+        {
+          "id": "down-left",
+          "inspected": true,
+          "observation": "Floor continuous; faint wall material bands remain.",
+          "grayScreenshot": "common-gray-down-left.png",
+          "illustratedScreenshot": "common-illustrated-down-left.png"
+        }
+      ],
+      "faceCentersInspected": [
+        "front",
+        "right",
+        "back",
+        "left",
+        "up",
+        "down"
+      ],
+      "screenshotSha256": {
+        "common-gray-front-right.png": "52a83a05a5fa037c3a10a0654ba57bf8bcfdfc1a7e8ca7edd72ee53cacede43a",
+        "common-gray-front-left.png": "4b17e8eb27c92820258fca17741c18c871efdf4fbd68c0f7b712cd51e7c714b5",
+        "common-gray-back-right.png": "1d0eec69f853dec2834afed6366edcacf3b4baf57be02e0f8a6df5039ef8ee95",
+        "common-gray-back-left.png": "498528f866aa939fafd1ef23774bc9acc13744e1cc9f449afdc87601537f006d",
+        "common-gray-front-up.png": "300bd89cbf24bf548ce341aa620cb8aa285f41b941fe49304924d2da20e79a88",
+        "common-gray-down-front.png": "63d1a7fdae920e86f9ce8fc0861c66b2b252cca34143678926f827fda5d5b333",
+        "common-gray-back-up.png": "e3a6eb71980539008401ecc76fc9e43acae2c18cc0bec15012f4a1daa777930d",
+        "common-gray-back-down.png": "ddf311a8561db1e7285f96e60ea2a155d6e18e0d4a88c9a2d2a144351694fc1f",
+        "common-gray-right-up.png": "114ab6a5446f836f04089d09c80ae551eb7f005ea32ed885c22fabd935b579db",
+        "common-gray-down-right.png": "f8e837a75b3a381c750181eb92f1acc45c5bb0ed100123ddee78a9ad83c88a4c",
+        "common-gray-left-up.png": "fcc7b173dda8aa381407ea66a8d55ad3626b66cd7ebf2fb8a41fcba8bc4d09ad",
+        "common-gray-down-left.png": "20b75d11d4ddd707dde84626d11594d12684d4b2d16b6e951ac2cbab9b4fb67a",
+        "common-gray-front.png": "16270dbe773da6daf94d886c99730cb8a35eb5f90faf0d60b310567a74e97604",
+        "common-gray-right.png": "78d2ea1fe55f73d87c442caafeea2edb2d30b8fea0448c0be0d68218bfcfb710",
+        "common-gray-back.png": "e185b6fca941eb3f988c8af78126144ce56a48d289cf9e7740ce6f3933a55f58",
+        "common-gray-left.png": "b20df67e612acdbd949d13cec76642d5ea726b9b38bc8853fc35ae12276e40fd",
+        "common-gray-up.png": "1487a8b95705950df50d8050071f7829e01a8be5d83b49e0e25a2f86e3460c5d",
+        "common-gray-down.png": "f53af8a2989002be83e70a19e77a28552c62e4370f84b25caa84740bef93e185",
+        "common-illustrated-front-right.png": "4e437f712117c97ce2a19820c2846aa26d82e7b5ca4838f5943e179aaff86a4c",
+        "common-illustrated-front-left.png": "4f173200eea48f4f0eff2c74f83b66ce0b960fb072f5de1bd30dd7e90dd7d977",
+        "common-illustrated-back-right.png": "fa0bb016161ec506eb92ad73ed299a747d11f3827724b45d5a8cb1b319865212",
+        "common-illustrated-back-left.png": "2b9167b3d3d5f049aa9ca67a12c571d8c516d6fc3ef5c44372eb363b64646bc8",
+        "common-illustrated-front-up.png": "524d3dddf939e58f4bc9802c220c7e0474266f5562b3ab337ff57bc95f482f6a",
+        "common-illustrated-down-front.png": "c0e8bd250f52ce7fb64a05aff3f3335c9b1253ce171a8500a5b3f861e88a4766",
+        "common-illustrated-back-up.png": "a0431b300b053906de95bc0cb948678b8c68dbff46e417cc40bf8923ba7870eb",
+        "common-illustrated-back-down.png": "54393f4e7d08dba03d9a904fceb18cd882903037b3cbfae05877dda82fcc05a0",
+        "common-illustrated-right-up.png": "f04738a9f9ec5a88042742e21890a4e8aa114e743a444144bf2372e6919aca86",
+        "common-illustrated-down-right.png": "afe867fd23e31962938c0deec4d0302191d939a748b34e1274decf3d04bfff0f",
+        "common-illustrated-left-up.png": "c7e205b170fdf447af3829d0757d992304ac722fad6d3117ef8dd3d7e85b7d47",
+        "common-illustrated-down-left.png": "87618b36656acf709d2610b57415ce2e2d00b84db7185a883b2c3d6bdcaf6a52",
+        "common-illustrated-front.png": "158437df54ad8f8fd407f6b907370a8f34602e95a03c8ce7fb064a1227f4fc98",
+        "common-illustrated-right.png": "d3410301dc7351a9fb58ddd2aaa90886c33c3f03040dbf7d96c7eae91a2b2433",
+        "common-illustrated-back.png": "087ec249dea5b1b8b0f019b409ee2054c66078f33f20c793f70f629d2284e7b3",
+        "common-illustrated-left.png": "d650d72f1742c5e3d90e399b225596139fd69a7d9cc41fd8539f162f5adb3328",
+        "common-illustrated-up.png": "0c76e7b3477161567cd69de791d535530f7203fab51554f27dfdb0d657390436",
+        "common-illustrated-down.png": "2161a3beadd28bdad151bbf53dd7260a82f2619d21233e062f0d00bef62f33e2"
+      }
+    },
+    "bath": {
+      "edgeViews": [
+        {
+          "id": "front-right",
+          "inspected": true,
+          "observation": "Continuous plaster and light, no old rectangular split.",
+          "grayScreenshot": "bath-gray-front-right.png",
+          "illustratedScreenshot": "bath-illustrated-front-right.png"
+        },
+        {
+          "id": "front-left",
+          "inspected": true,
+          "observation": "Window/tub now uninterrupted; tub rim and window frame change proxy silhouettes.",
+          "grayScreenshot": "bath-gray-front-left.png",
+          "illustratedScreenshot": "bath-illustrated-front-left.png"
+        },
+        {
+          "id": "back-right",
+          "inspected": true,
+          "observation": "Single open return leaf and common table/closed-front-door glimpse coherent; added timber cornice.",
+          "grayScreenshot": "bath-gray-back-right.png",
+          "illustratedScreenshot": "bath-illustrated-back-right.png"
+        },
+        {
+          "id": "back-left",
+          "inspected": true,
+          "observation": "Continuous wall/post treatment, but post is illustrated finish absent in gray.",
+          "grayScreenshot": "bath-gray-back-left.png",
+          "illustratedScreenshot": "bath-illustrated-back-left.png"
+        },
+        {
+          "id": "front-up",
+          "inspected": true,
+          "observation": "Continuous curved cornice; added timber is not shared across all room finishes.",
+          "grayScreenshot": "bath-gray-front-up.png",
+          "illustratedScreenshot": "bath-illustrated-front-up.png"
+        },
+        {
+          "id": "down-front",
+          "inspected": true,
+          "observation": "Tub/rug/floor join repaired; braided mat follows broad oval.",
+          "grayScreenshot": "bath-gray-down-front.png",
+          "illustratedScreenshot": "bath-illustrated-down-front.png"
+        },
+        {
+          "id": "back-up",
+          "inspected": true,
+          "observation": "Door arch and ceiling continuous, visible upper trim addition.",
+          "grayScreenshot": "bath-gray-back-up.png",
+          "illustratedScreenshot": "bath-illustrated-back-up.png"
+        },
+        {
+          "id": "back-down",
+          "inspected": true,
+          "observation": "Single leaf and floor threshold coherent.",
+          "grayScreenshot": "bath-gray-back-down.png",
+          "illustratedScreenshot": "bath-illustrated-back-down.png"
+        },
+        {
+          "id": "right-up",
+          "inspected": true,
+          "observation": "Ceiling line continuous at sampled angle.",
+          "grayScreenshot": "bath-gray-right-up.png",
+          "illustratedScreenshot": "bath-illustrated-right-up.png"
+        },
+        {
+          "id": "down-right",
+          "inspected": true,
+          "observation": "Wall/floor join continuous.",
+          "grayScreenshot": "bath-gray-down-right.png",
+          "illustratedScreenshot": "bath-illustrated-down-right.png"
+        },
+        {
+          "id": "left-up",
+          "inspected": true,
+          "observation": "Continuous cornice with added timber post.",
+          "grayScreenshot": "bath-gray-left-up.png",
+          "illustratedScreenshot": "bath-illustrated-left-up.png"
+        },
+        {
+          "id": "down-left",
+          "inspected": true,
+          "observation": "Tub/rug no broad split; fixture dimensions only approximately follow gray.",
+          "grayScreenshot": "bath-gray-down-left.png",
+          "illustratedScreenshot": "bath-illustrated-down-left.png"
+        }
+      ],
+      "faceCentersInspected": [
+        "front",
+        "right",
+        "back",
+        "left",
+        "up",
+        "down"
+      ],
+      "screenshotSha256": {
+        "bath-gray-front-right.png": "e4f44337b94b8a7a9a27feee70ba8e3e7a1aa303fc73410fd69cae19e4b81598",
+        "bath-gray-front-left.png": "3b441f7f96c4f29d5f6371bb103bd614f2979a688e53a2545b0c111eda3aa371",
+        "bath-gray-back-right.png": "e8abbd6a7c0cedea3225c1f60d62ff7cc4e01d9deea83efd259a40c4643008a5",
+        "bath-gray-back-left.png": "b241a61d3c836181ddc78cd0a449cff67b5c8cc63cea1fb21e99e84c70a6741c",
+        "bath-gray-front-up.png": "fad1dc20d62f2d5c5f70a5326e7ab61e0d931cc054546e1c9077c4b72de4e814",
+        "bath-gray-down-front.png": "842d90c5b5e4fb702eb8a059db96bde2a7e67e66e74a6dd7491b2840eaeaf775",
+        "bath-gray-back-up.png": "59f12e5d701ffa4d6d0c187e631502fce2c4ddc2e94ba9d32a00e5a2fea65313",
+        "bath-gray-back-down.png": "24508459483f82303387e67409df71071d8f942fa5eb48b691224b665597cd53",
+        "bath-gray-right-up.png": "07473c302a967f71ef24973034aaca6eaea5f1c7d392372d25543ace15e38cb9",
+        "bath-gray-down-right.png": "73f9013094b77f8b6cfa08346b2d6b0579303eac97401f9200d2cf36ca1d4112",
+        "bath-gray-left-up.png": "b6bf93273509e5d6a339ca8613b8976a836a94c66fd9788af7ce164a365849cc",
+        "bath-gray-down-left.png": "bfd706f0e143ac0948e45246aa2f0c3909e59f0a2d7b2b3aee9426c6ecd13517",
+        "bath-gray-front.png": "c34b2a4f7514cfcce90a8a9617a6c735298915c6bdbbd5955c5d60b3dbb9e7d9",
+        "bath-gray-right.png": "c333cce21d0253ab4b898d04ba90679c0c169463b2b3ecd68e1e5bc8aea27e6a",
+        "bath-gray-back.png": "5652567408663be3343510482ab845ec4e5562b6a7164f9bbc747872b73211e5",
+        "bath-gray-left.png": "efddeddcfd062727239438d5b5a81acf9575f356d8ea1480b52ed70bede117ac",
+        "bath-gray-up.png": "0b149463fdc5d5fbf947f233a9a949ce2374c938e79f2a2d6f9c5473cdd52755",
+        "bath-gray-down.png": "5f46cd71015d753f32541859cda5986390afee37d0618c548aa185de41e1ddb2",
+        "bath-illustrated-front-right.png": "84ab33669a92286569f1f1086c3965df9ec0872b718f45523fc8151c42458b53",
+        "bath-illustrated-front-left.png": "083bdf9dba233e4ea796e26918981a210e5bdfba3a5d324b10fa185eea9f53f1",
+        "bath-illustrated-back-right.png": "18a41b7c21f87e9b59ad79bf794e48a7f4753613035361fa643b1bd635128101",
+        "bath-illustrated-back-left.png": "08e963907483bdc03b427d0f2219474a7b4031f53dd95cceb39ff374c7a4692b",
+        "bath-illustrated-front-up.png": "cd188fd1e49202b7257fd4dcd6f957e867782dad9fa159fc2ae25d87c3fc1028",
+        "bath-illustrated-down-front.png": "8ad045035d50429ab4a74b39cc2d87442e48013792cd1107d2c45d5e7cc102b4",
+        "bath-illustrated-back-up.png": "fc79e2fd0f595a0beab77d15198a3f8fc06d5884211dfba994d06b98e96c3d8a",
+        "bath-illustrated-back-down.png": "4e99b302a41cadc2212bbb9f6698ca82ace09769ba7cb00f008b493b46fda6b6",
+        "bath-illustrated-right-up.png": "fcb7a2b7c22954792f847fd2c0694c6cdf198346848130620b7b0c297c490d57",
+        "bath-illustrated-down-right.png": "a99040e028bf3fb9cd7bc3e006ef013fa07a0bdd3c6f314fa90422fc2d075ade",
+        "bath-illustrated-left-up.png": "603dcdaa33147abe5588ca7abfb68cbe6a3fe7e5a0acd2e51f9cb81411e138d1",
+        "bath-illustrated-down-left.png": "50e19b512a86ed33feb134748cd2526d70eedd792c9bed52894087982c5e26f0",
+        "bath-illustrated-front.png": "322e14bca80684ad33d4e8ff1b2930b37a67f54140be66ea5446cf9600fa433c",
+        "bath-illustrated-right.png": "83dd455c43a3df704e0d39532e96af3a7980d5683dc79c9e7b451ebb25ba76d6",
+        "bath-illustrated-back.png": "10fb5b6b10e95ec864d33fa56f45518bb31df350b33f1a6dd4542007b28386aa",
+        "bath-illustrated-left.png": "14fac1de38f453ea974b8a4efc349f7e3ea32334e8b3c1e6bf9c3dd15905400e",
+        "bath-illustrated-up.png": "e1c15567fac0aa89b27d5beaf309308b11eda4e22a42f3ce8725bcbc8c1a4e01",
+        "bath-illustrated-down.png": "b0bc2265cf5d48b4b7b7790bdaf62261b8c2a4d42a4ec492ac715c30af8528c2"
+      }
+    },
+    "bedroom": {
+      "edgeViews": [
+        {
+          "id": "front-right",
+          "inspected": true,
+          "observation": "Window/headboard coherent, window rim and bed silhouette differ from proxy.",
+          "grayScreenshot": "bedroom-gray-front-right.png",
+          "illustratedScreenshot": "bedroom-illustrated-front-right.png"
+        },
+        {
+          "id": "front-left",
+          "inspected": true,
+          "observation": "Broad wall seam removed; texture/light continuous.",
+          "grayScreenshot": "bedroom-gray-front-left.png",
+          "illustratedScreenshot": "bedroom-illustrated-front-left.png"
+        },
+        {
+          "id": "back-right",
+          "inspected": true,
+          "observation": "Wall corner coherent; light patch is decorative, not a measured light proof.",
+          "grayScreenshot": "bedroom-gray-back-right.png",
+          "illustratedScreenshot": "bedroom-illustrated-back-right.png"
+        },
+        {
+          "id": "back-left",
+          "inspected": true,
+          "observation": "Former doubled door resolved to one leaf/knob; low stove/table glimpse instead of invented tall pipe.",
+          "grayScreenshot": "bedroom-gray-back-left.png",
+          "illustratedScreenshot": "bedroom-illustrated-back-left.png"
+        },
+        {
+          "id": "front-up",
+          "inspected": true,
+          "observation": "Continuous curved ceiling profile.",
+          "grayScreenshot": "bedroom-gray-front-up.png",
+          "illustratedScreenshot": "bedroom-illustrated-front-up.png"
+        },
+        {
+          "id": "down-front",
+          "inspected": true,
+          "observation": "Former cut bed/floor repaired.",
+          "grayScreenshot": "bedroom-gray-down-front.png",
+          "illustratedScreenshot": "bedroom-illustrated-down-front.png"
+        },
+        {
+          "id": "back-up",
+          "inspected": true,
+          "observation": "Narrow vertical discontinuity remains across ceiling/wall near rear wrap.",
+          "grayScreenshot": "bedroom-gray-back-up.png",
+          "illustratedScreenshot": "bedroom-illustrated-back-up.png"
+        },
+        {
+          "id": "back-down",
+          "inspected": true,
+          "observation": "Threshold/leaf continuous; some trim width differs from gray.",
+          "grayScreenshot": "bedroom-gray-back-down.png",
+          "illustratedScreenshot": "bedroom-illustrated-back-down.png"
+        },
+        {
+          "id": "right-up",
+          "inspected": true,
+          "observation": "Ceiling continuous in this view.",
+          "grayScreenshot": "bedroom-gray-right-up.png",
+          "illustratedScreenshot": "bedroom-illustrated-right-up.png"
+        },
+        {
+          "id": "down-right",
+          "inspected": true,
+          "observation": "Bed and quilt continuous, broadened frame relative to gray.",
+          "grayScreenshot": "bedroom-gray-down-right.png",
+          "illustratedScreenshot": "bedroom-illustrated-down-right.png"
+        },
+        {
+          "id": "left-up",
+          "inspected": true,
+          "observation": "Single arch and leaf coherent.",
+          "grayScreenshot": "bedroom-gray-left-up.png",
+          "illustratedScreenshot": "bedroom-illustrated-left-up.png"
+        },
+        {
+          "id": "down-left",
+          "inspected": true,
+          "observation": "Floor and doorway continuous; adjoining stool/stove approximately positioned.",
+          "grayScreenshot": "bedroom-gray-down-left.png",
+          "illustratedScreenshot": "bedroom-illustrated-down-left.png"
+        }
+      ],
+      "faceCentersInspected": [
+        "front",
+        "right",
+        "back",
+        "left",
+        "up",
+        "down"
+      ],
+      "screenshotSha256": {
+        "bedroom-gray-front-right.png": "1150f788bfa4aa7366ad6bde0b4bcf60d60c81ddc826f0e1e83ca189b3cdaa24",
+        "bedroom-gray-front-left.png": "e5e7e58a547f99f360d744fec1479b2f959a45f822298b77c94d7a7ef6814b79",
+        "bedroom-gray-back-right.png": "4afecae957e104306a0f1ae1c7a31805a7d3c13617f8d0df7fc542567a7cccc2",
+        "bedroom-gray-back-left.png": "b4d65fe2daabe6bee3e8eb2831aeb28b8848e57b8ea6d651cb04d89e41f65bf3",
+        "bedroom-gray-front-up.png": "553852aba8c9d17d931297911f653eec421fffbef465ad35530cb3f918053183",
+        "bedroom-gray-down-front.png": "86a8cf62c5cd25cab0167af034ec19ae2d1cc0690221a95c369dcc2675ff4777",
+        "bedroom-gray-back-up.png": "2209f43700d1d707e2265524b7aab7162d62e18bc86991a9c2b8bb9c73cec073",
+        "bedroom-gray-back-down.png": "091b45e413f0613d4b72fc3005194aa44f3a3f2f3e196e5658be36ddf2355621",
+        "bedroom-gray-right-up.png": "93f2e701b4e3e14712dc9a6745045c92996de2927aa44754c73ed6e9f468da9f",
+        "bedroom-gray-down-right.png": "e8c9d450ee3e38152d39fb625328d520237c1db406be6186e39fb16c9e2c6576",
+        "bedroom-gray-left-up.png": "89218e7f9676178d1dcc3cd1a966a9747aca2b2977d690953b0e76b6b22e23dc",
+        "bedroom-gray-down-left.png": "ccb928897247ac3d8ce7d5eaf9df7eea44861fafe7a85f8c3afa58fe70f5b5fc",
+        "bedroom-gray-front.png": "87b338774d1f672e0f80fb3fabcf18011efe76d9d197dc1413d6a63ebf3b9d54",
+        "bedroom-gray-right.png": "9b8c5df457071c37fa37abf9a6b6890861d01fdd261c7f52df0231a02a875d00",
+        "bedroom-gray-back.png": "86537865f6a29e1ae4418d390bdde1cf801fa2f8993b33c3467c9bb075d36087",
+        "bedroom-gray-left.png": "c8e5f8b86b5a76b7045321916f700fe248ddcdef90d33ac6f831726790f47918",
+        "bedroom-gray-up.png": "1b65fd6b3a8edd89230025a741a31e012ee5231121ce1bc49960e95168aa6b96",
+        "bedroom-gray-down.png": "08fa676b63ca93ae20544c94c7c9d66d772fa221eac5a1daea90216dfe504259",
+        "bedroom-illustrated-front-right.png": "627ec4b4b59a60b7419b6e2de057db35180d17d84cfd3816bb9cbbbab70ac178",
+        "bedroom-illustrated-front-left.png": "b1f066424b0ab21113758981e89550e141e26b1e5daca25ad295753fc676448a",
+        "bedroom-illustrated-back-right.png": "6807b3b3fc8275c2ac74090a0009ae7f13b4d67ce2a9d2ede6426d1b1a2a8a5a",
+        "bedroom-illustrated-back-left.png": "c2aae4e9ba73c7c1bd4baf0d84abb29bd318efdfb0f74c70d7b59544c678c462",
+        "bedroom-illustrated-front-up.png": "07c86de1f75fd3a25ce42830bf3225209cf7cb61a2623b1386b3a1c8cebb5b2c",
+        "bedroom-illustrated-down-front.png": "d2a8e91807fb6aa325682f398d75e4f9b9bde6a7db862faee1f01704c30777cb",
+        "bedroom-illustrated-back-up.png": "dfff3040202bb4578dca19754f79fddc9a97bad40b51f06e4edc7c9dba2641b8",
+        "bedroom-illustrated-back-down.png": "18810b62faba0118753efdb869c210a7de165f0acd1ddc3b71cd1c96ec396e5c",
+        "bedroom-illustrated-right-up.png": "1f245e8ca866b7bbad2a8fde33564f5d0d460ecc0e8d812160eeb50947db0611",
+        "bedroom-illustrated-down-right.png": "911d28b6d26a826e979b15b19a94e35a5122553db1c75ab9dd073066e395284c",
+        "bedroom-illustrated-left-up.png": "8d778883746ac059a29d3306d07c4f0b947b1366a9b77545bf566887351e036b",
+        "bedroom-illustrated-down-left.png": "77146a1601f07915463507055ebdad3bbfe8e22a168055cc57b91d6d3836eeb7",
+        "bedroom-illustrated-front.png": "94712b793337644cae6257331aba85fac635775a0982880edb3d39f7c5afb740",
+        "bedroom-illustrated-right.png": "ad6d926767de0550503422c9dd9eb1da0db9ae9b6ffcdf7acca5faa2d151a436",
+        "bedroom-illustrated-back.png": "2c05ead68cd7a585573e0de8a4617d116a8132c8f1e541e925dcfc12549c1419",
+        "bedroom-illustrated-left.png": "f7075b8477a326fda066906f0943d86e6d81e8e6b6807a734edab65f0fbdad72",
+        "bedroom-illustrated-up.png": "5d6df18bdcb26b5ae3273572aa373d2943590ef303c3f04e068de0fd07149762",
+        "bedroom-illustrated-down.png": "d886c6bf25df8f36a0cad3c24ac6ebc0a341af281d14903173c733948c82beea"
+      }
+    }
+  },
+  "limits": [
+    "Imagegen output is an approximate painted view, not faithful editable geometry.",
+    "Sampling all 12 edge centers is not pixel-by-pixel or all-angle proof.",
+    "1774x887 originals are visibly softer than gray guides; conversion does not restore detail.",
+    "Narrow bedroom ceiling/wrap discontinuity remains.",
+    "Bathroom timber cornice/posts differ from the common-room finish.",
+    "No physical camera translation or photogrammetric consistency is implied by switching fixed panorama stations."
+  ]
+}

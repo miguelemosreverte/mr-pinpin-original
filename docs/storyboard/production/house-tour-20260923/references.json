@@ -1,0 +1,165 @@
+{
+  "schemaVersion": 1,
+  "pathBase": "repository-root",
+  "geometryAuthority": {
+    "path": "docs/storyboard/locations/pinpin-house/scene/house-plan.json",
+    "sha256": "cab510b31c13e85beaa689edb54005223412a988f640724e56b9d95dba20c28c",
+    "rule": "Current room-specific whole gray atlas and its recorded camera/door state take priority over all style references."
+  },
+  "benchmark": {
+    "base": "prior-panorama",
+    "repairs": [
+      "prior-front-repair",
+      "prior-rear-repair",
+      "prior-up-repair",
+      "prior-down-repair"
+    ],
+    "renderer": "docs/home-panorama-gl.js",
+    "configuration": "docs/home-panorama-config.js",
+    "repairFovDegrees": 110,
+    "frontMask": [
+      0.102,
+      -0.028,
+      0.075,
+      0.075
+    ],
+    "label": "Prior refined illustrated panorama, previous one-room layout",
+    "historicalProvenance": "The v3 record names an older Blender spherical guide plus illustrated material reference. It is not described as measured current geometry or an entirely geometry-free generation."
+  },
+  "references": [
+    {
+      "id": "prior-panorama",
+      "path": "docs/storyboard/images/house-menu/room-panorama-v3.webp",
+      "sha256": "efc3a9ddf626ce3cd411e1cfd57945854f220eea3b0cf29d5117a7bfa80d1187",
+      "bytes": 2020370,
+      "dimensions": [
+        1774,
+        887
+      ],
+      "projection": "2:1 equirectangular panorama",
+      "roles": [
+        "style",
+        "benchmark-base"
+      ],
+      "visuallyInspected": true,
+      "notes": "Warm refined illustration from the earlier one-room experiment. This image used the older spherical Blender guide; not the current measured house, not a new cube projection."
+    },
+    {
+      "id": "prior-front-repair",
+      "path": "docs/storyboard/images/house-menu/room-cube-front-v1.webp",
+      "sha256": "109a9aa49599c197c5f8878792b8a0d7a8da1e2654ee781cace1769be5ee175c",
+      "bytes": 1391254,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "projection": "110-degree square perspective",
+      "roles": [
+        "style-detail",
+        "benchmark-repair"
+      ],
+      "visuallyInspected": true,
+      "notes": "Olive door, warm timber, cream plaster, coherent window light. At runtime only the narrow calibrated front repair mask contributes. The old open front door and furnishings are NOT current geometry."
+    },
+    {
+      "id": "prior-rear-repair",
+      "path": "docs/storyboard/images/house-menu/room-cube-rear-v1.webp",
+      "sha256": "0bb26a9090fbb8fd9cb132d7ea3669b18c4bab0c786e121912168c970d3cc08f",
+      "bytes": 1241870,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "projection": "110-degree square perspective",
+      "roles": [
+        "benchmark-repair"
+      ],
+      "visuallyInspected": true,
+      "notes": "Corrected rear wall/table treatment. Use material quality only; do not add its bench or second table."
+    },
+    {
+      "id": "prior-up-repair",
+      "path": "docs/storyboard/images/house-menu/room-cube-up-v1.webp",
+      "sha256": "32edeea516f3bbc15341372dcf7cd9238210eb0575df13595d4342269b5a7d79",
+      "bytes": 1231868,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "projection": "110-degree square perspective",
+      "roles": [
+        "benchmark-repair"
+      ],
+      "visuallyInspected": true,
+      "notes": "Ceiling repair without the base panorama pole pinch. Its old timber roof structure must not replace the current gray ceiling."
+    },
+    {
+      "id": "prior-down-repair",
+      "path": "docs/storyboard/images/house-menu/room-cube-down-v1.webp",
+      "sha256": "a49c2550009e354f14ea03225695001a48f915153c5bdb624eb46c6ba403121a",
+      "bytes": 1608808,
+      "dimensions": [
+        1254,
+        1254
+      ],
+      "projection": "110-degree square perspective",
+      "roles": [
+        "benchmark-repair"
+      ],
+      "visuallyInspected": true,
+      "notes": "Floor and braided rug repair. Rug style applies only to the existing bath mat; do not add a giant common-room rug absent from the plan."
+    },
+    {
+      "id": "common-book",
+      "path": "docs/storyboard/images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp",
+      "sha256": "0c475ab6702d45d9ae00a64c90d59adfe0a980dd5a594cacbbd2ced5f63342ea",
+      "bytes": 1751408,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "projection": "landscape story still",
+      "roles": [
+        "book-style",
+        "common-fixture-design"
+      ],
+      "visuallyInspected": true,
+      "notes": "Actual approved book rendering style, green arched door, radial wood windows and warm surfaces. Story cast and different arrangement are excluded."
+    },
+    {
+      "id": "bath-book",
+      "path": "docs/storyboard/images/standalone/home-sweet-home/bedtime-08-v2.png",
+      "sha256": "c6e3deefa1acc93dadb3467931719f080a81ab8807dbff960bca6c225f07635d",
+      "bytes": 2323256,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "projection": "landscape story still",
+      "roles": [
+        "book-style",
+        "bath-fixture-design"
+      ],
+      "visuallyInspected": true,
+      "notes": "Broad low wooden tub, braided oval mat, cream basin and timber/plaster treatment. People and staging are not part of this empty-house tour."
+    },
+    {
+      "id": "bedroom-book",
+      "path": "docs/storyboard/images/standalone/home-sweet-home/bedtime-17-v2.png",
+      "sha256": "e37fd9cccf68330ba62763958199839692e77c3c0092a5d4b5efa1db5835ff73",
+      "bytes": 2294087,
+      "dimensions": [
+        1536,
+        1024
+      ],
+      "projection": "landscape story still",
+      "roles": [
+        "book-style",
+        "bed-fixture-design"
+      ],
+      "visuallyInspected": true,
+      "notes": "Warm wood bed, cream pillows and sage quilt. Family characters and original window position are excluded."
+    }
+  ],
+  "rights": "Repository LICENSE/CONTENT-LICENSE.md/THIRD-PARTY-NOTICES.md apply. These roles and hashes do not grant new rights."
+}

@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "room": "bedroom",
+  "strategy": "continuous-equirectangular-repair-then-deterministic-cube",
+  "status": "executed-built-in-tool-output-reviewed",
+  "tool": "image_gen__imagegen",
+  "promptPath": "docs/storyboard/production/house-tour-20260923/prompts/bedroom-panorama-v1.txt",
+  "promptSha256": "6f257257a025675c23c89421727bb1b2dd151b37185f635f4d7c4f86cc4b4303",
+  "inputRoles": [
+    "Current gray whole sphere; sole geometry/camera authority",
+    "Current illustrated whole sphere; material appearance and discontinuities to repair"
+  ],
+  "projection": "2:1 equirectangular complete sphere",
+  "oneWholePanoramaPerCall": true,
+  "outputStatus": "local-review-candidate-with-visible-limitations",
+  "inputImages": [
+    {
+      "order": 1,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bedroom-gray-equirect.png",
+      "sha256": "9a6c010b4e952797be3a10c8952737b4d4716f0225949fb6f76d8f9efbe732bd",
+      "dimensions": [
+        3072,
+        1536
+      ],
+      "role": "Current gray whole sphere; sole geometry/camera authority"
+    },
+    {
+      "order": 2,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bedroom-v1-equirect.png",
+      "sha256": "20517410eddf431c491580f14008430fa4ce270a6f1a30fc9623043df0c2cf99",
+      "dimensions": [
+        3072,
+        1536
+      ],
+      "role": "Current illustrated whole sphere; material appearance and discontinuities to repair"
+    }
+  ],
+  "mapping": {
+    "frontPositiveY": [
+      0.5,
+      0.5
+    ],
+    "rightPositiveX": [
+      0.75,
+      0.5
+    ],
+    "rearNegativeY": "u0/1,v.5",
+    "leftNegativeX": [
+      0.25,
+      0.5
+    ],
+    "upPositiveZ": "v0",
+    "downNegativeZ": "v1"
+  },
+  "toolArguments": {
+    "prompt": "Use case: precise-object-edit\nRepair ONE continuous360-degree equirectangular panorama. Image1 is the direct gray geometry projected from the fixed Blender camera; it is the sole authority for silhouettes, room shape, camera and occlusion. Image2 is the current illustrated panorama, with good book materials but broken joins inherited from independent cube-face interpretations.\n\nReturn ONE true2:1 full spherical image with the same orientation and viewpoint as Image1. Full width is one360degree turn, horizon at midheight, ceiling pole at top and floor pole at bottom. Keep the gray image's necessary spherical curvature instead of straightening or recomposing it. LEFT and RIGHT edges are neighboring rays and must wrap continuously. Do not output a cubemap, contact sheet or editorial panorama with missing ceiling/floor.\n\nRestore one continuous space over the whole image: every floor/wall/ceiling contour, door edge, furniture crop and light/material region follows Image1 across all former cube boundaries. Do not preserve a discontinuity just because it exists in Image2. Use its warm honey oak, cream plaster, olive leaves and softly stylized book finish only where those surfaces belong in the gray scene.\n\nBoth private-room doors are OPEN and the outside/front door CLOSED, exactly as the guide shows. The return doorway is ONE aperture and ONE thin hinged leaf, not a pair of independently painted doors. Reconcile its arch, leaf and visible knob across any old seam. Do not add a second knob, widen the opening or close it. Through it, show only the literal neighboring-room fragments visible in Image1: never invent furniture to make a more attractive glimpse.\n\nKeep one coherent warm daylight field and consistent wood/plaster colors. No sudden tone changes across former face borders. Floorboard scale and direction remain continuous. At top/bottom avoid pinched stars, duplicated fans or abrupt pole patches; preserve the guide's geometry and expected spherical distortion. No people, text, new lamps, plants, cabinets or decorative freestanding objects.\n\nCURRENT ROOM: bedroom. Restore the bed and headboard's exact continuous footprint from the gray image. Keep honey-oak wood, a fitted sage quilt and cream pillows; do not swing the bed to another angle at the floor boundary. Every bed edge, mattress corner and quilt edge must remain the same physical contour across the entire sphere. Keep the circular bedroom window at its one actual location; do not repeat it above the doorway.\n\nThe return doorway was split into two incompatible green leaves in the previous cube. Replace that with the ONE exact gray aperture/leaf, leaving the actual view into the common room. Preserve only the visible table/stool fragments and low cylindrical stove body. The stove has a charcoal iron surface and restrained ember detail, NO tall pipe/fireplace/hearth absent from gray. Keep any bookcase portion only if actually visible. Do not import a second doorway, a second knob or a decorative sky window over the arch.\n\nReturn one complete2:1 spherical panorama, target2048x1024, no cropping or borders. This is an illustrated geometry repair, not a new room design.\n",
+    "referenced_image_paths": [
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bedroom-gray-equirect.png",
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bedroom-v1-equirect.png"
+    ]
+  },
+  "artReview": "art-review/continuous-v1.json"
+}

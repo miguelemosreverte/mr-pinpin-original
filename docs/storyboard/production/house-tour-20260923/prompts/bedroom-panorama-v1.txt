@@ -1,0 +1,16 @@
+Use case: precise-object-edit
+Repair ONE continuous360-degree equirectangular panorama. Image1 is the direct gray geometry projected from the fixed Blender camera; it is the sole authority for silhouettes, room shape, camera and occlusion. Image2 is the current illustrated panorama, with good book materials but broken joins inherited from independent cube-face interpretations.
+
+Return ONE true2:1 full spherical image with the same orientation and viewpoint as Image1. Full width is one360degree turn, horizon at midheight, ceiling pole at top and floor pole at bottom. Keep the gray image's necessary spherical curvature instead of straightening or recomposing it. LEFT and RIGHT edges are neighboring rays and must wrap continuously. Do not output a cubemap, contact sheet or editorial panorama with missing ceiling/floor.
+
+Restore one continuous space over the whole image: every floor/wall/ceiling contour, door edge, furniture crop and light/material region follows Image1 across all former cube boundaries. Do not preserve a discontinuity just because it exists in Image2. Use its warm honey oak, cream plaster, olive leaves and softly stylized book finish only where those surfaces belong in the gray scene.
+
+Both private-room doors are OPEN and the outside/front door CLOSED, exactly as the guide shows. The return doorway is ONE aperture and ONE thin hinged leaf, not a pair of independently painted doors. Reconcile its arch, leaf and visible knob across any old seam. Do not add a second knob, widen the opening or close it. Through it, show only the literal neighboring-room fragments visible in Image1: never invent furniture to make a more attractive glimpse.
+
+Keep one coherent warm daylight field and consistent wood/plaster colors. No sudden tone changes across former face borders. Floorboard scale and direction remain continuous. At top/bottom avoid pinched stars, duplicated fans or abrupt pole patches; preserve the guide's geometry and expected spherical distortion. No people, text, new lamps, plants, cabinets or decorative freestanding objects.
+
+CURRENT ROOM: bedroom. Restore the bed and headboard's exact continuous footprint from the gray image. Keep honey-oak wood, a fitted sage quilt and cream pillows; do not swing the bed to another angle at the floor boundary. Every bed edge, mattress corner and quilt edge must remain the same physical contour across the entire sphere. Keep the circular bedroom window at its one actual location; do not repeat it above the doorway.
+
+The return doorway was split into two incompatible green leaves in the previous cube. Replace that with the ONE exact gray aperture/leaf, leaving the actual view into the common room. Preserve only the visible table/stool fragments and low cylindrical stove body. The stove has a charcoal iron surface and restrained ember detail, NO tall pipe/fireplace/hearth absent from gray. Keep any bookcase portion only if actually visible. Do not import a second doorway, a second knob or a decorative sky window over the arch.
+
+Return one complete2:1 spherical panorama, target2048x1024, no cropping or borders. This is an illustrated geometry repair, not a new room design.

@@ -1,0 +1,84 @@
+{
+  "pass": true,
+  "rooms": [
+    {
+      "schemaVersion": 1,
+      "room": "common",
+      "pass": true,
+      "origin": [
+        -1.2999999523162842,
+        -1.2999999523162842,
+        1.149999976158142
+      ],
+      "sixTrue90Faces": true,
+      "twelveSharedEdges": true,
+      "tilePixelEquality": true,
+      "webpRGBEquality": true,
+      "sourceSceneSha256": "b1f0108066e974dadbc07a36dcadf50a30d91ee9650bbd5ca0eb838b27176e03",
+      "sourceAtlasPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/common/cube-atlas.png",
+      "sourceAtlasSha256": "103ff8b8ae6a9699168604a682f13ab9fd09f100176804f7774c64e6cdd54ce7",
+      "sourceManifestPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/common/cubemap-manifest.json",
+      "sourceManifestSha256": "068b373d368752249e3c2f37c054f3403473fa046cf33d89f3a813fdbf4a9098",
+      "artifacts": [
+        {
+          "path": "cube-atlas.webp",
+          "sha256": "22d2b61affed9dd6a6483da3f21132c7c4a204f94289f8a083c546eb49b1faa0",
+          "bytes": 2751404
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "room": "bath",
+      "pass": true,
+      "origin": [
+        -2.4000000953674316,
+        2.0,
+        1.149999976158142
+      ],
+      "sixTrue90Faces": true,
+      "twelveSharedEdges": true,
+      "tilePixelEquality": true,
+      "webpRGBEquality": true,
+      "sourceSceneSha256": "b1f0108066e974dadbc07a36dcadf50a30d91ee9650bbd5ca0eb838b27176e03",
+      "sourceAtlasPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bath/cube-atlas.png",
+      "sourceAtlasSha256": "8a3f31df60643c416918d4547d4412d48646875787d0728e2359d09c9100f911",
+      "sourceManifestPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bath/cubemap-manifest.json",
+      "sourceManifestSha256": "247ee470089d65839470119cfb64ed70fdaafb30217a877ac9313d8c1fb33dbe",
+      "artifacts": [
+        {
+          "path": "cube-atlas.webp",
+          "sha256": "3476344f40167822b38162e0f4108d3109e6eba040aab84de667712fa87ce223",
+          "bytes": 2373174
+        }
+      ]
+    },
+    {
+      "schemaVersion": 1,
+      "room": "bedroom",
+      "pass": true,
+      "origin": [
+        1.4500000476837158,
+        1.2000000476837158,
+        1.149999976158142
+      ],
+      "sixTrue90Faces": true,
+      "twelveSharedEdges": true,
+      "tilePixelEquality": true,
+      "webpRGBEquality": true,
+      "sourceSceneSha256": "b1f0108066e974dadbc07a36dcadf50a30d91ee9650bbd5ca0eb838b27176e03",
+      "sourceAtlasPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bedroom/cube-atlas.png",
+      "sourceAtlasSha256": "b2348e61f25e5c8429420331de278071bd8c84c2d7c95214437e77460fd8476f",
+      "sourceManifestPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bedroom/cubemap-manifest.json",
+      "sourceManifestSha256": "708dfaaf4bedd359bae0a2757e93de3a935eedc8b4273cb70025c429e7f83920",
+      "artifacts": [
+        {
+          "path": "cube-atlas.webp",
+          "sha256": "7dd9e56b9932edc8ba20020b6b196120caaef6eaf47dc4f02b71bbdfaa165370",
+          "bytes": 2334810
+        }
+      ]
+    }
+  ],
+  "note": "Raw individual faces and complete executable output manifests remain in external output directories."
+}

@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "status": "executed-on-continuous-v1-see-versioned-results",
+  "method": "Viewer side-by-side gray/current-illustration at six face centers and all12 cube edge midpoints. Square viewport;85degree edge FOV includes corners. No source image edits.",
+  "viewerHook": "document.querySelector(\"#tour-stage\").tourView.snapshot and .setCamera({yaw,pitch,fov})",
+  "angleUnitsInTable": "degrees; viewer state API yaw/pitch normally radians, convert explicitly.",
+  "edges": [
+    {
+      "id": "front-right",
+      "yawDegrees": 45,
+      "pitchDegrees": 0,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    },
+    {
+      "id": "front-left",
+      "yawDegrees": -45,
+      "pitchDegrees": 0,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    },
+    {
+      "id": "back-right",
+      "yawDegrees": 135,
+      "pitchDegrees": 0,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    },
+    {
+      "id": "back-left",
+      "yawDegrees": -135,
+      "pitchDegrees": 0,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    },
+    {
+      "id": "front-up",
+      "yawDegrees": 0,
+      "pitchDegrees": 45,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    },
+    {
+      "id": "front-down",
+      "yawDegrees": 0,
+      "pitchDegrees": -45,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    },
+    {
+      "id": "back-up",
+      "yawDegrees": 180,
+      "pitchDegrees": 45,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    },
+    {
+      "id": "back-down",
+      "yawDegrees": 180,
+      "pitchDegrees": -45,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    },
+    {
+      "id": "right-up",
+      "yawDegrees": 90,
+      "pitchDegrees": 45,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    },
+    {
+      "id": "right-down",
+      "yawDegrees": 90,
+      "pitchDegrees": -45,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    },
+    {
+      "id": "left-up",
+      "yawDegrees": -90,
+      "pitchDegrees": 45,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    },
+    {
+      "id": "left-down",
+      "yawDegrees": -90,
+      "pitchDegrees": -45,
+      "fovDegrees": 85,
+      "status": "inspected-in-all-three-rooms-results-not-unconditional-pass"
+    }
+  ],
+  "faceCenters": [
+    {
+      "id": "front",
+      "yawDegrees": 0,
+      "pitchDegrees": 0,
+      "fovDegrees": 80
+    },
+    {
+      "id": "right",
+      "yawDegrees": 90,
+      "pitchDegrees": 0,
+      "fovDegrees": 80
+    },
+    {
+      "id": "back",
+      "yawDegrees": 180,
+      "pitchDegrees": 0,
+      "fovDegrees": 80
+    },
+    {
+      "id": "left",
+      "yawDegrees": -90,
+      "pitchDegrees": 0,
+      "fovDegrees": 80
+    },
+    {
+      "id": "up",
+      "yawDegrees": 0,
+      "pitchDegrees": 90,
+      "fovDegrees": 80
+    },
+    {
+      "id": "down",
+      "yawDegrees": 0,
+      "pitchDegrees": -90,
+      "fovDegrees": 80
+    }
+  ],
+  "checks": [
+    "apertureCountAndSilhouette",
+    "hingeSideAndOpen75State",
+    "adjacentRoomContentMatchesGrayVisibility",
+    "permanentFixtureCountAndPlacement",
+    "sameMaterialsAcrossAllRooms",
+    "all12EdgeGeometryAndColorContinuity",
+    "ceilingAndFloorNoWarpOrPinch",
+    "actualThreeByTwoAtlasNoCrop"
+  ],
+  "limits": "Pixel identity of a gray atlas does not certify generated artwork. Report uninspected or occluded regions; do not mark all edges passed from a single front view.",
+  "results": "continuous-v1.json"
+}

@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "status": "frozen-inputs-ready-for-built-in-tool",
+  "room": "bedroom",
+  "tool": "image_gen__imagegen",
+  "promptPath": "docs/storyboard/production/house-tour-20260923/prompts/bedroom-v1.txt",
+  "geometryReference": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bedroom/cube-atlas.png",
+  "geometryManifest": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bedroom/cubemap-manifest.json",
+  "cameraPosition": [
+    1.45,
+    1.2,
+    1.15
+  ],
+  "doorStates": {
+    "door-front": 0,
+    "door-bath": 75,
+    "door-bedroom": 75
+  },
+  "orderedReferenceIds": [
+    "current-gray-bedroom",
+    "prior-panorama",
+    "prior-front-repair",
+    "bedroom-book"
+  ],
+  "oneWholeAtlasPerCall": true,
+  "expectedProjection": "six90-degree cubemap faces,3x2 atlas",
+  "actualInputHashesPending": false,
+  "outputStatus": "proposal-needs-art-review",
+  "sourceReviewDerivative": "docs/storyboard/production/house-tour-20260923/geometry/rooms/bedroom/cube-atlas.webp",
+  "promptSha256": "a6593eb49c2178feb30af2a4eb45c402b8e19fb65c9a9a36bb12b57ef9e16120",
+  "geometryManifestSha256": "708dfaaf4bedd359bae0a2757e93de3a935eedc8b4273cb70025c429e7f83920",
+  "sceneSourceSha256": "b1f0108066e974dadbc07a36dcadf50a30d91ee9650bbd5ca0eb838b27176e03",
+  "inputImages": [
+    {
+      "order": 1,
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bedroom/cube-atlas.png",
+      "sha256": "b2348e61f25e5c8429420331de278071bd8c84c2d7c95214437e77460fd8476f",
+      "bytes": 3466241,
+      "role": "sole geometry/current camera"
+    },
+    {
+      "order": 2,
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/house-menu/room-panorama-v3.webp",
+      "sha256": "efc3a9ddf626ce3cd411e1cfd57945854f220eea3b0cf29d5117a7bfa80d1187",
+      "bytes": 2020370,
+      "role": "old equirectangular STYLE only"
+    },
+    {
+      "order": 3,
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/house-menu/room-cube-front-v1.webp",
+      "sha256": "109a9aa49599c197c5f8878792b8a0d7a8da1e2654ee781cace1769be5ee175c",
+      "bytes": 1391254,
+      "role": "old perspective STYLE detail only"
+    },
+    {
+      "order": 4,
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/standalone/home-sweet-home/bedtime-17-v2.png",
+      "sha256": "e37fd9cccf68330ba62763958199839692e77c3c0092a5d4b5efa1db5835ff73",
+      "bytes": 2294087,
+      "role": "room-specific book STYLE only"
+    }
+  ],
+  "toolArguments": {
+    "prompt": "Use case: style-transfer\nAsset type: ONE complete six-face cubemap atlas for an empty illustrated children's-book house.\n\nREFERENCE ROLES, IN ORDER\nImage 1 is the current room's direct Blender gray cubemap: the sole geometry, camera and composition authority.\nImage 2 is an OLD 2:1 equirectangular illustrated panorama: use ONLY its warm material quality and polished storybook rendering, never its one-room layout, projection, furniture locations or open exterior door.\nImage 3 is an OLD 110-degree perspective front repair: use ONLY its close material/color quality, never its camera, architecture or framing.\nImage 4 is the room-specific approved book still: use its specified surface/fixture design and gentle illustration style, never its characters, old staging or window positions.\n\nLOCK THE WHOLE CUBE\nReturn ONE seamless 3-column by 2-row atlas, identical layout/aspect to Image 1, equal square cells, no gutters. Top row FRONT / RIGHT / BACK; bottom row LEFT / UP / DOWN. Names are orientation instructions, NOT lettering to draw. Each face retains its exact90-degree rays and rotation. Front world+Y, right+X, back-Y, left-X, up+Z, down-Z; up screen-top points-Y, down screen-top points+Y. Preserve the gray silhouette and occlusion of every opening, wall junction, furniture body, door leaf and threshold. Do not turn the atlas into an equirectangular panorama or six independently composed pictures. No camera zoom, perspective correction, moved horizon, room widening or face rotation.\n\nONE CONNECTED HOUSE\nAll three rooms use the same frozen measured plan. The common room is south; bathroom northwest, bedroom northeast, with an OUTDOOR recess separating the private rooms. Only the common room connects to each private room. Both internal door leaves are physically open75degrees in EVERY room atlas; front/exterior leaf is closed0degrees. Keep their exact hinge side, angle, arch/aperture size and visible jamb surfaces. Do not cover an opening with a new closed door, enlarge it, add a window, or invent a direct bath-bedroom passage. Through a doorway, depict only the neighboring surfaces and fixtures actually visible along the gray guide's rays. Do not decorate an occluded neighbor into visibility.\n\nGLOBAL MATERIAL AND FIXTURE LOCK\nUse softly stylized, rich children's-book craftsmanship, with readable rounded forms and gentle warm light, as in the illustrated references. Warm honey-brown oak floors and furnishings, light creamy plaster, restrained olive-green door leaves, dark iron hardware and a single small brass knob on the visible side of each modeled door. Use the same finishes in all rooms and both sides of each doorway. Floorboard long axes run world+Y throughout the house; board scale and lighting continue across thresholds and cube edges. The ceiling keeps the guide's actual profile; give its plaster the same soft finish, without importing the OLD reference's vaulted roof or adding beams that change the silhouette. No harsh plastic gloss, gray unstyled surfaces, orange color wash or crushed black shadows.\n\nFixed fixture identities at worldXY meters: common-room west bookcase(-3.87,-0.59), low rounded iron STOVE(-3.04,-1.96), central round dining table(-0.30,-1.09) with FOUR existing low stools, east kitchen counter(2.77,-1.27). Bathroom broad low wooden tub(-3.74,2.67), oval mat(-3.59,2.55), small washstand(-5.11,2.26). Bedroom wood bed(2.46,1.64), headboard north. Identify the stove proxy correctly; it is not a barrel. Show a fixture ONLY if present in that face's gray view, at the same size/location. No second counter, extra table/bench, new cabinet, fireplace, plants, hanging lamps or freestanding objects. Books may fill the existing bookcase shelves without readable text; these and fitted bed textiles are surface design of modeled fixtures, not new room furnishings.\n\nLighting is gentle warm daytime, with luminous existing windows and soft filled shadows. Maintain one consistent illumination field across faces and across open thresholds; do not paint a different time of day or sun direction per tile. Keep adjacent-room materials consistent rather than a dark empty void or an unrelated room photograph.\n\nSEAM AND VISIBILITY REQUIREMENTS\nAll twelve cube-edge pairs must join, including non-neighboring atlas cells: ceiling-wall profiles, floorboard lines, door edges, furniture contours, material scale and light should continue without jumps. Up/down remain real perspective cube faces, not pinched spherical poles. Keep corners/cell boundaries exact and unframed. No text, arrows, watermarks or people. This is a single empty-house location study; do not copy characters from the book still.\n\nCURRENT ROOM: bedroom, camera at(1.45,1.2,1.15)m. Keep the existing north-headboard wood bed at the exact modeled position and size. Dress its existing mattress with a soft sage-green quilt, cream edging and cream pillows, contained within the bed volume. Maintain the room's circular window and the true open doorway back into the common room. Visible neighboring table, counter or shelving must match the same world-positioned fixtures from the other atlases; do not invent furniture beyond the aperture. The book still provides warm wood and quilt material treatment only, not its family, old camera angle, original window location or extra bedside lamps.\n\nTarget output:3072x2048, six1024-square cells, same composition as the guide. If the tool returns another resolution, retain the exact3:2 atlas ratio and complete six-cell structure; never crop or omit a face.\n",
+    "referenced_image_paths": [
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bedroom/cube-atlas.png",
+      "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/house-menu/room-panorama-v3.webp",
+      "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/house-menu/room-cube-front-v1.webp",
+      "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/standalone/home-sweet-home/bedtime-17-v2.png"
+    ]
+  }
+}
