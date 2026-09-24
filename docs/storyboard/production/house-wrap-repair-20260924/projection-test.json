@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "operation": "composite",
+  "input": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-native-panorama-20260923/panorama-v1.png",
+  "inputSha256": "5299c3fe2c6791bf556e9cdcdd7caec379a747b4bc0113ab972d04c8632b1f00",
+  "inputSize": [
+    1774,
+    887
+  ],
+  "scriptSha256": "417729ff23a03abeb6b3f2e48b940c54cb8fa3f12e3a7e6d4ef86046d153f3d5",
+  "helperSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "pngHelperSha256": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+  "camera": {
+    "yawRadians": 3.141592653589793,
+    "pitchRadians": 0,
+    "horizontalFovDegrees": 110,
+    "verticalFovDegrees": 110,
+    "forward": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "right": [
+      -1.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "sampling": "Bilinear encodedRGB; panorama longitude wraps,latitude clamps; pixel-center rays. No color correction or creative paint.",
+  "mathematicalChecks": {
+    "perspectiveInverseMaxError": 1.1102230246251565e-16,
+    "centerWorldDirection": [
+      0,
+      -1,
+      0
+    ],
+    "pass": true
+  },
+  "wrapAdjacentColumnComparison": {
+    "latitudeBandDegrees": [
+      -40,
+      40
+    ],
+    "sampledRows": 395,
+    "units": "8-bit RGB absolute per-channel difference, flattened across rows/channels",
+    "before": {
+      "meanAbsoluteChannelDifference": 42.99071729957806,
+      "p95AbsoluteChannelDifference": 127.0,
+      "maxAbsoluteChannelDifference": 167.0
+    },
+    "after": {
+      "meanAbsoluteChannelDifference": 31.568776371308015,
+      "p95AbsoluteChannelDifference": 92.79999999999995,
+      "maxAbsoluteChannelDifference": 123.0
+    },
+    "fullyOpaqueAtBothColumnsInBand": true,
+    "interpretation": "Adjacent raster columns sample distinct but neighboring longitudes; lower difference supports local continuity but can also reflect smoothing. This is not a full-sphere seam or artistic-quality certificate."
+  },
+  "unchangedPolarCapsAbsLatitudeGE55Degrees": true,
+  "patch": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-wrap-repair-20260924/repair-view-before.png",
+  "patchSha256": "028548c4536ca9b3e720838ee91de086d93632849a4f648b5a930892a6689c2c",
+  "patchSize": [
+    1400,
+    1400
+  ],
+  "mask": {
+    "horizontalFull": 0.45,
+    "horizontalZero": 0.8,
+    "verticalFull": 0.75,
+    "verticalZero": 0.98,
+    "coordinates": "Normalized perspective plane,fullinputbounds\u00b11",
+    "formula": "horizontal smoothstep falloff multiplied by vertical falloff; rear-facing rays only"
+  },
+  "coverage": {
+    "supportedPixels": 241226,
+    "changedPixels": 151466,
+    "totalPixels": 1573538,
+    "changedFraction": 0.09625824098305856,
+    "supportBoundingBoxesInclusive": [
+      {
+        "xMin": 0,
+        "xMax": 240,
+        "yMin": 175,
+        "yMax": 711
+      },
+      {
+        "xMin": 1533,
+        "xMax": 1773,
+        "yMin": 175,
+        "yMax": 711
+      }
+    ],
+    "maxLongitudeFromRearDegrees": 48.805657464479104,
+    "maxLatitudeAtRearDegrees": 54.45428851039175
+  },
+  "unchangedOutsideMaskDecodedRGB": true,
+  "polesAndOppositeMeridianUnchanged": true,
+  "alphaPreviewPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-wrap-repair-20260924/verification/roundtrip-alpha.png",
+  "alphaPreviewSha256": "f086e83b48b67e540c994bd90cfb8bd27cb2c6343b1c964abb55b5662a7a241f",
+  "note": "AlphaPNG is quantized preview; actual compositing uses float64 analytic alpha. Projectionchecks do not certify a painted patch, feature registration or feather boundary quality.",
+  "output": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-wrap-repair-20260924/verification/roundtrip.png",
+  "outputSha256": "023ffee3dcd11ee97b9902461b512225226c02002d9ee627c9e99cab7cd93ab3",
+  "outputSize": [
+    1774,
+    887
+  ],
+  "purpose": "Projection-only roundtrip using UNEDITED extracted input, not a repaired result"
+}

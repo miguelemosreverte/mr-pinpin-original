@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "status": "executed-one-built-in-call",
+  "tool": "image_gen__imagegen",
+  "toolArguments": {
+    "prompt": "Repair the conspicuous vertical discontinuity running through the center of this image. This is one ordinary perspective view extracted from an existing illustrated 360-degree room; the two sides of the break belong to the same continuous room.\n\nReconstruct the interrupted wall, timber, shelving and vegetation coherently across the break. Match the existing illustration's craftsmanship, materials, light and sharpness. Do not disguise the break with an added post, curtain, object, blur or dark stripe.\n\nKeep this exact camera and composition, the existing door and window positions, and all unaffected room details. Concentrate changes around the central discontinuity; preserve the outer portions of all four edges as closely as possible for reintegration into the room. Do not redesign or redecorate the room.\n\nReturn one square perspective image matching the input framing, with no text, borders or panels. This output is not a flattened panorama or cubemap.\n",
+    "referenced_image_paths": [
+      "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-wrap-repair-20260924/repair-view-before.png"
+    ]
+  },
+  "promptPath": "docs/storyboard/production/house-wrap-repair-20260924/prompt.txt",
+  "promptSha256": "5cf85997f80bb36c462ce0465ba5fd9e44cb90a7c160e59525cac3c094322a11",
+  "promptWordCount": 144,
+  "inputImages": [
+    {
+      "order": 1,
+      "portablePath": "docs/storyboard/production/house-wrap-repair-20260924/repair-view-before.png",
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-wrap-repair-20260924/repair-view-before.png",
+      "sha256": "028548c4536ca9b3e720838ee91de086d93632849a4f648b5a930892a6689c2c",
+      "role": "Edit target: ordinary perspective across the original panorama wrap; preserve appearance, camera and peripheral details",
+      "visuallyInspected": true
+    }
+  ],
+  "requestedOutput": {
+    "projection": "rectilinear perspective",
+    "aspectRatio": "1:1",
+    "horizontalFovDegrees": 110,
+    "verticalFovDegrees": 110
+  },
+  "bookReferenceUsed": false,
+  "explanation": "Appearance already comes from the existing illustrated room. This call repairs continuity rather than repeating style transfer.",
+  "generationRecord": "generation-result.json"
+}

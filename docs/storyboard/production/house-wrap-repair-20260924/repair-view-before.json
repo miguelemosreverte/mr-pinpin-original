@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "operation": "extract",
+  "input": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-native-panorama-20260923/panorama-v1.png",
+  "inputSha256": "5299c3fe2c6791bf556e9cdcdd7caec379a747b4bc0113ab972d04c8632b1f00",
+  "inputSize": [
+    1774,
+    887
+  ],
+  "scriptSha256": "417729ff23a03abeb6b3f2e48b940c54cb8fa3f12e3a7e6d4ef86046d153f3d5",
+  "helperSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "pngHelperSha256": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+  "camera": {
+    "yawRadians": 3.141592653589793,
+    "pitchRadians": 0,
+    "horizontalFovDegrees": 110,
+    "verticalFovDegrees": 110,
+    "forward": [
+      0.0,
+      -1.0,
+      0.0
+    ],
+    "right": [
+      -1.0,
+      0.0,
+      0.0
+    ],
+    "up": [
+      0.0,
+      0.0,
+      1.0
+    ]
+  },
+  "sampling": "Bilinear encodedRGB; panorama longitude wraps,latitude clamps; pixel-center rays. No color correction or creative paint.",
+  "mathematicalChecks": {
+    "perspectiveInverseMaxError": 1.1102230246251565e-16,
+    "centerWorldDirection": [
+      0,
+      -1,
+      0
+    ],
+    "pass": true
+  },
+  "output": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-wrap-repair-20260924/repair-view-before.png",
+  "outputSha256": "028548c4536ca9b3e720838ee91de086d93632849a4f648b5a930892a6689c2c",
+  "outputSize": [
+    1400,
+    1400
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "sessionId": "01a0be6f-b832-7d93-95df-9d2ff5f69dc1",
+  "sessionFile": "rollout-2026-09-20T07-49-47-01a0be6f-b832-7d93-95df-9d2ff5f69dc1.jsonl",
+  "timezone": "UTC",
+  "date": "2026-09-22",
+  "request": "2026-09-22T15:52:05.936+00:00",
+  "calls": [
+    {
+      "name": "panorama-v1",
+      "dispatchTimestamp": "2026-09-22T15:53:33.929+00:00",
+      "completionTimestamp": "2026-09-22T15:54:04.597+00:00",
+      "observedSecondsSinceDispatch": 30.668,
+      "dispatchLine": 18686,
+      "completionLine": 18688,
+      "generationId": "exec-37ec7b29-8666-4fd3-9b28-3998e5a1a432",
+      "selected": false,
+      "dispatchScope": "single imagegen request"
+    },
+    {
+      "name": "panorama-v2",
+      "dispatchTimestamp": "2026-09-22T15:54:59.800+00:00",
+      "completionTimestamp": "2026-09-22T15:55:40.541+00:00",
+      "observedSecondsSinceDispatch": 40.741,
+      "dispatchLine": 18709,
+      "completionLine": 18711,
+      "generationId": "exec-85c2525d-7596-4139-b4c0-e0dadd9c8cfc",
+      "selected": false,
+      "dispatchScope": "single imagegen request"
+    },
+    {
+      "name": "panorama-v3",
+      "dispatchTimestamp": "2026-09-22T16:02:44.194+00:00",
+      "completionTimestamp": "2026-09-22T16:03:22.678+00:00",
+      "observedSecondsSinceDispatch": 38.484,
+      "dispatchLine": 18931,
+      "completionLine": 18933,
+      "generationId": "exec-b83c1627-b38a-45a9-8b0f-e8f263f3d162",
+      "selected": true,
+      "dispatchScope": "single imagegen request"
+    },
+    {
+      "name": "front-repair",
+      "dispatchTimestamp": "2026-09-22T16:10:01.918+00:00",
+      "completionTimestamp": "2026-09-22T16:11:05.297+00:00",
+      "observedSecondsSinceDispatch": 63.379,
+      "dispatchLine": 19090,
+      "completionLine": 19092,
+      "generationId": "exec-b0a4b49a-35f7-43d4-97be-1ff3468c555b",
+      "selected": true,
+      "dispatchScope": "four-request Promise.allSettled batch"
+    },
+    {
+      "name": "rear-repair",
+      "dispatchTimestamp": "2026-09-22T16:10:01.918+00:00",
+      "completionTimestamp": "2026-09-22T16:11:47.325+00:00",
+      "observedSecondsSinceDispatch": 105.407,
+      "dispatchLine": 19090,
+      "completionLine": 19093,
+      "generationId": "exec-30d4afef-6d73-4d37-a7a6-9d202085d0dd",
+      "selected": true,
+      "dispatchScope": "four-request Promise.allSettled batch"
+    },
+    {
+      "name": "up-repair",
+      "dispatchTimestamp": "2026-09-22T16:10:01.918+00:00",
+      "completionTimestamp": "2026-09-22T16:12:25.578+00:00",
+      "observedSecondsSinceDispatch": 143.66,
+      "dispatchLine": 19090,
+      "completionLine": 19106,
+      "generationId": "exec-0d5fdcf5-e817-4279-8c5e-1306d3dbd1ce",
+      "selected": true,
+      "dispatchScope": "four-request Promise.allSettled batch"
+    },
+    {
+      "name": "down-repair",
+      "dispatchTimestamp": "2026-09-22T16:10:01.918+00:00",
+      "completionTimestamp": "2026-09-22T16:12:57.925+00:00",
+      "observedSecondsSinceDispatch": 176.007,
+      "dispatchLine": 19090,
+      "completionLine": 19116,
+      "generationId": "exec-a1e0a529-4763-4b99-9d6a-83dc12c76d22",
+      "selected": true,
+      "dispatchScope": "four-request Promise.allSettled batch"
+    }
+  ],
+  "repairBatchSeconds": 176.007,
+  "requestToAllAImagesSeconds": 1251.989,
+  "observedNonoverlappingImageRequestSpansSeconds": 285.9,
+  "retainedOutputRequestSpansSeconds": 214.491,
+  "finalRetainedBlenderRenderSeconds": 57.18,
+  "internalPerRepairModelDurationsAvailable": false,
+  "notes": [
+    "Image request latencies are not model-only compute or billing durations.",
+    "The four repair latencies share one batch start and must not be added.",
+    "Positive user feedback followed opening the still-unrepaired prototype, not a logged final-patch approval.",
+    "Later comparison/QA/publication include separate B work."
+  ]
+}

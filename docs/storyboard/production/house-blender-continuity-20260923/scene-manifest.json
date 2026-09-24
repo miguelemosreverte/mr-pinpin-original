@@ -1,0 +1,211 @@
+{
+  "sourceBlend": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-panorama-20260922/blockout/room-blockout.blend",
+  "sourceSha256": "0ed90368d488f2eac537967f4a8d2ad18dcc3e9081cb5f53e16374561324cc7c",
+  "method": "One fixed Blender scene, procedural materials and modeled primitives only; no image generation or external textures",
+  "seed": 23,
+  "objects": 391,
+  "windowSpokesPerWindow": 8,
+  "clearCenterPanes": true,
+  "doorKnobCount": 1,
+  "doorHingeEuler": [
+    0.0,
+    0.0,
+    -1.2217304706573486
+  ],
+  "cameraConvention": {
+    "forward": "+Y",
+    "right": "+X",
+    "up": "+Z",
+    "frontUV": [
+      0.5,
+      0.5
+    ]
+  },
+  "renders": [
+    {
+      "file": "room-storybook-color-equirectangular.png",
+      "position": [
+        0.0,
+        0.0,
+        1.149999976158142
+      ],
+      "rotationEulerXYZ": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "matrixWorldRows": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          1.149999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection": "PANO",
+      "resolution": [
+        2048,
+        1024
+      ],
+      "lensMm": null,
+      "sha256": "0e06184ff319f23ae18d9f413f9c6aae18d5c930928508d2e3068ea35db9ddd4"
+    },
+    {
+      "file": "perspective-center.png",
+      "position": [
+        0.0,
+        0.0,
+        1.149999976158142
+      ],
+      "rotationEulerXYZ": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "matrixWorldRows": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          1.149999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection": "PERSP",
+      "resolution": [
+        1200,
+        900
+      ],
+      "lensMm": 22.0,
+      "sha256": "071a1c6986b0e5108a379dff77c584513cc97f7dc27663a55976129ebc1ba549"
+    },
+    {
+      "file": "perspective-shift-right.png",
+      "position": [
+        0.5,
+        0.0,
+        1.149999976158142
+      ],
+      "rotationEulerXYZ": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "matrixWorldRows": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.5
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          1.149999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection": "PERSP",
+      "resolution": [
+        1200,
+        900
+      ],
+      "lensMm": 22.0,
+      "sha256": "62628df1cb56d0e51f0f9358ac9aaabdd681dcc3642c0916412b9d5aec2324ea"
+    },
+    {
+      "file": "room-storybook-gray-equirectangular.png",
+      "position": [
+        0.0,
+        0.0,
+        1.149999976158142
+      ],
+      "rotationEulerXYZ": [
+        1.5707963705062866,
+        0.0,
+        0.0
+      ],
+      "matrixWorldRows": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          -4.371138828673793e-08,
+          -1.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          -4.371138828673793e-08,
+          1.149999976158142
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "projection": "PANO",
+      "resolution": [
+        2048,
+        1024
+      ],
+      "lensMm": null,
+      "sha256": "e59d850d5cd6547a11ebd7faaccc7174983cfc1a7170c3679ce9ecaef3544898"
+    }
+  ],
+  "complete": true
+}

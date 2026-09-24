@@ -26,3 +26,9 @@ A large hard vertical wrap join cuts plaster and foliage beside the front door. 
 This is a useful documented single-call experiment, unsuitable as a continuity-correct, seamless replacement for the tour. This UI task performed no extra generation or repair. The independent `ART-REVIEW.md` supplies the full visual assessment.
 
 Owned files: `docs/house-native-panorama.html`, `.css`, `.js`, this report, and small navigation links in `house-process.html` and `house-style-review.html`. No Git or publishing actions.
+
+## Full-window cubemap demo
+
+`/house-native-demo.html` displays only the resulting cubemap across the full viewport, with compact Report, Reset and Fullscreen controls. Entry-facing start; native drag, pinch/wheel and keyboard look controls. A prominent link in the report opens it.
+
+Bounded checks passed at 1440×900 and 390×844: active GPU rendering, exact viewport coverage without scrolling, desktop drag/keyboard/fullscreen entry and exit, actual mobile drag/pinch, Reset and the report link. Screenshots `demo-1440.png` and `demo-390.png` were visually inspected; `demo-results.json` records the checks. This viewer uses the unchanged candidate texture and therefore exposes the same documented image defects.

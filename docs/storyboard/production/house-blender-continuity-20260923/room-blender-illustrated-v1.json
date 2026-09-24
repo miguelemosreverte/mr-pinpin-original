@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "sourceOutput": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-b2f7dae9-4964-439f-9a7e-77e95dcec7d8.png",
+  "sha256": "fe72b560578018b42d605a532dfca8f413d59d73afe11b4058f68b2cf3463885",
+  "actualWidth": 1774,
+  "actualHeight": 887,
+  "projection": "equirectangular",
+  "prompt": "room-blender-illustrated-v1.prompt.txt",
+  "referenceRoles": {
+    "room-storybook-color-equirectangular.png": "authoritative Blender colored geometry/projection target",
+    "../../images/house-menu/room-expanded-v2.webp": "style only"
+  },
+  "generationScope": "one complete spherical image, no independently generated cube faces",
+  "selectedForComparison": false,
+  "selectedAsMainMenu": false
+}

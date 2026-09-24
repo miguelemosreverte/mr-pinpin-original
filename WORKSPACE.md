@@ -28,7 +28,7 @@ files. Neither is the default place for new authoring.
 
 | Directory | Branch | Why it is retained |
 | --- | --- | --- |
-| `mr-pinpin-cover-standard/` | `draft/book-workshop-backup-20260921` | Full Elder production history: original PNGs, rejected attempts, prompts, reviews and chapter plans; includes commits not on main |
+| `mr-pinpin-cover-standard/` (compatibility symlink) | `draft/book-workshop-backup-20260921` | Full Elder production history, including branch-only commits; physical worktree is `/Volumes/TB4/mac-mini-storage/shared/pinpin-retained-worktrees/mr-pinpin-cover-standard`, retained and locked for external storage |
 | `mr-pinpin-elder-release/` | `publish/elder-five-chapters-20260922` | Earlier release integration and verification work; inspection on 2026-09-22 found an uncommitted `scripts/verify-title-covers.cjs` edit |
 
 The published Elder story JSON and selected WebP files on main are reader assets,
@@ -41,6 +41,12 @@ Do not blindly change main to the draft branch or copy the whole draft over main
 Before retiring any worktree, inspect `git worktree list`, its current status and
 branch-only commits. Clean working files alone do not mean its work is merged.
 The observations above are a dated inventory, not a permanent status guarantee.
+
+The cover-standard worktree was copied and hash-verified as a complete directory
+before relocation on 2026-09-24. Its old path remains a compatibility symlink;
+the TB4 mount must be available to use it. Git history and worktree metadata remain
+with the canonical source checkout on the Air. Git's worktree registration was
+repaired for the physical path and locked to protect it while the share is absent.
 
 ## Migration snapshots
 

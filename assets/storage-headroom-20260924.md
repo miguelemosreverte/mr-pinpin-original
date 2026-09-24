@@ -1,0 +1,11 @@
+# Air storage headroom — 2026-09-24
+
+Moved the retained `mr-pinpin-cover-standard` worktree to the mini’s TB4 storage: **2,065,677,986 bytes across 3,007 filesystem entries**. Available Air space immediately after releasing the verified local duplicate was **3,326,427,136 bytes (3.10 GiB)**. Logical offload and available space are separate measurements; APFS/cache activity changes the latter.
+
+The complete source and destination path sets, file types, modes, sizes, SHA-256 hashes and symlink targets matched. A second full source check confirmed no change during copying. Hidden files and the complete working tree were included. The original path is now a compatibility directory symlink to the physical worktree documented in [WORKSPACE.md](../WORKSPACE.md).
+
+Preserved HEAD `7f269751b84f3fa313848ff30f06e10d1e877855`, branch `draft/book-workshop-backup-20260921`, all seven branch-only commits, and the source repository’s Git history. The pre-move status was clean. Git repair, physical top-level path, common Git directory, HEAD, symbolic branch and external-storage lock were verified. A redundant full post-move status scan over SMB was stopped after it ran slowly; no completed post-move status result is claimed. The complete byte/mode/path identity check provides the preservation evidence.
+
+The move follows Git’s documented [manual relocation repair and portable-storage lock](https://git-scm.com/docs/git-worktree) workflow. The lock prevents worktree metadata pruning when TB4 is unavailable. The working tree requires the mount; Git history remains on the Air. No branch removal, reset, prune, archive visibility change or new upload occurred. Other worktrees, caches and Downloads were left alone.
+
+Detailed inventories, verification receipts, before-status and move receipt are external under `/Volumes/TB4/mac-mini-storage/shared/pinpin-air-headroom-20260924/`, especially `worktree-before.json`, `worktree-source-verified.json`, `worktree-target-verified.json` and `worktree-move-receipt.json`. An initial generated-image candidate was found already on TB4 through its parent symlink; that attempted relocation was reverted and contributed zero Air savings. Its detailed correction record remains external.

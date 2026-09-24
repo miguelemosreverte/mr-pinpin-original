@@ -1,0 +1,17 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "sourceOutput": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-92a9db8a-8b87-4f6b-a008-5f5861b0d5f9.png",
+  "sha256": "64f6c82283184b82159899c0020ba8f2d393658d2f3c0bb8ec72657774d1dd56",
+  "actualWidth": 1774,
+  "actualHeight": 887,
+  "projection": "equirectangular",
+  "prompt": "room-blender-illustrated-v2.prompt.txt",
+  "referenceRoles": {
+    "room-blender-illustrated-v1.png": "edit target",
+    "room-storybook-color-equirectangular.png": "Blender geometry/projection lock",
+    "../../images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp": "actual book art style only"
+  },
+  "generationScope": "one complete spherical style refinement; no independent cube faces",
+  "selectedForComparison": true,
+  "selectedAsMainMenu": false
+}

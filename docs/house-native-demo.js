@@ -1,6 +1,8 @@
 import {unifiedRenderer} from './home-unified-gl.js';
 import {panoramaControls} from './home-panorama-controls.js';
-const ASSET='storyboard/production/house-native-panorama-20260923/cube-atlas-v1.webp';
+const VARIANTS={native:{asset:'storyboard/production/house-native-panorama-20260923/cube-atlas-v1.webp',report:'house-native-panorama.html#interactive'},'wrap-repair':{asset:'storyboard/production/house-wrap-repair-20260924/cube-atlas-v1.webp',report:'house-wrap-repair.html#interactive'}};
+const requested=new URLSearchParams(location.search).get('variant'),variant=requested==='wrap-repair'?requested:'native',ASSET=VARIANTS[variant].asset;
+document.getElementById('back-report').href=VARIANTS[variant].report;
 const stage=document.getElementById('room'),canvas=stage.querySelector('canvas'),status=document.getElementById('status');
 const initial={yaw:Math.PI,pitch:0,fov:75},config={...initial,minFov:40,maxFov:95,maxPitch:89,hotspots:[]};
 let renderer,image,backend='loading',draws=0;
@@ -15,5 +17,5 @@ fullscreen.addEventListener('click',async()=>{try{if(document.fullscreenElement)
 document.addEventListener('fullscreenchange',()=>fullscreen.textContent=document.fullscreenElement?'Exit fullscreen':'Fullscreen');
 canvas.addEventListener('webglcontextlost',event=>{event.preventDefault();renderer=null;state('fallback','Interactive view paused. The flat cubemap is shown.');});
 canvas.addEventListener('webglcontextrestored',load);
-Object.defineProperty(window,'nativeCubeDemo',{value:Object.freeze({get snapshot(){return{backend,asset:ASSET,draws,...controls.snapshot};},setCamera(camera){controls.setCamera(camera);}})});
+Object.defineProperty(window,'nativeCubeDemo',{value:Object.freeze({get snapshot(){return{variant,backend,asset:ASSET,draws,...controls.snapshot};},setCamera(camera){controls.setCamera(camera);}})});
 load();
