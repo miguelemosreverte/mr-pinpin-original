@@ -1,0 +1,29 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T02:37:17.103839+00:00",
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-0b209113-9962-405b-b9d1-bc1dcac95dd9.png",
+  "output": "rear-v1.png",
+  "sha256": "63b441b1038ca99afdb8d2c10ffd019d31c7d89deacc162ccc79fc5608555def",
+  "prompt": "Use case: precise-object-edit. This is an extracted 110-degree square perspective from a finished illustrated spherical room. Return the same exact camera and square framing, matching its warm, rich storybook finish. Repair only the specified continuity fault. Keep the outermost 15 percent on each edge aligned to the input because the result will blend into that existing sphere. Do not add objects, text, borders or change illumination. Repair the straight vertical discontinuity at the middle of the rear bedroom wall, between the round window and the fern picture/dresser. Reconstruct continuous plaster, timber and floor across the line. Make the central timber post a plausible single continuous support instead of an abrupt cut through the window trim and dresser corner, keeping its outer endpoints aligned. Preserve window position, dresser, bench, plants and framed fern. Do not hide the problem behind new furniture or an additional beam.",
+  "promptSha256": "3ce7fa8855a1db093bf7be9599aa4873013424ec231890ba7e1425059ce744b1",
+  "inputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bedroom/rear-before.png",
+      "sha256": "5272d2506896fab3461752341355a4347462fe00dde80d5db193058c3a932a0c"
+    }
+  ],
+  "status": "candidate",
+  "projection": {
+    "type": "perspective",
+    "horizontalFovDegrees": 110,
+    "face": "rear"
+  },
+  "dimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "bytes": 1739102,
+  "referenceRoles": [
+    "edit target"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T02:37:13.626130+00:00",
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-70e20e4c-fa78-447e-8435-f6335cbfb39d.png",
+  "output": "down-v1.png",
+  "sha256": "abb2c5c9f0c98191cec23ccb7d3d2db9d94221b721280b23f82d082cb7bbca9d",
+  "prompt": "Use case: precise-object-edit. This is an extracted 110-degree square perspective from a finished illustrated spherical room. Return the same exact camera and square framing, matching its warm, rich storybook finish. Repair only the specified continuity fault. Keep the outermost 15 percent on each edge aligned to the input because the result will blend into that existing sphere. Do not add objects, text, borders or change illumination. This camera looks straight DOWN beside the foot of the wooden bed. Repair the central pinched floorboard and rug geometry: make a flat wooden floor with orderly continuous straight parallel planks and natural butt joints. The braided rug is an oval lying flat under the bed; its exposed outer edge makes a gentle smooth curve, never a cusp or vortex at the center. Preserve bed footboard, posts, quilt, rug colors, dresser and other peripheral furnishings in their exact positions. Correct the central floor/rug transition without changing the room.",
+  "promptSha256": "7462a1191bcba6d89fce2cd1901044e9c97b2b66d861c2e0dc6da89bddddecdf",
+  "inputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bedroom/down-before.png",
+      "sha256": "13f5b396c5e5fb6cc352da4998393689ac520716b2e8ab72082ebdfb8a5332f0"
+    }
+  ],
+  "status": "candidate",
+  "projection": {
+    "type": "perspective",
+    "horizontalFovDegrees": 110,
+    "face": "down"
+  },
+  "dimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "bytes": 2166446,
+  "referenceRoles": [
+    "edit target"
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T02:26:54.317962+00:00",
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-2863f84a-d27e-40a0-b055-5e101a562474.png",
+  "output": "rear-v1.png",
+  "sha256": "24dfcc1e31962c3ecbcaa7d517edc43927d8752a05a1cbb22a5d33f5c285592f",
+  "promptSha256": "7158b4173f13999ec9d5d1d42dea750353c93031b60a28f41efbd89e0cb47d2e",
+  "inputs": [
+    {
+      "path": "docs/storyboard/images/house-menu/room-cube-rear-v1.webp",
+      "sha256": "0bb26a9090fbb8fd9cb132d7ea3669b18c4bab0c786e121912168c970d3cc08f"
+    },
+    {
+      "path": "docs/storyboard/images/standalone/home-sweet-home/bedtime-08-v2.png",
+      "sha256": "c6e3deefa1acc93dadb3467931719f080a81ab8807dbff960bca6c225f07635d"
+    },
+    {
+      "path": "docs/storyboard/images/standalone/home-sweet-home/bedtime-17-v2.png",
+      "sha256": "e37fd9cccf68330ba62763958199839692e77c3c0092a5d4b5efa1db5835ff73"
+    }
+  ],
+  "status": "candidate",
+  "projection": {
+    "type": "perspective",
+    "yawDegrees": 180,
+    "pitchDegrees": 0,
+    "horizontalFovDegrees": 110
+  },
+  "dimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "bytes": 1846583,
+  "prompt": "Use case: precise-object-edit. Edit target: image 1 is the existing 110-degree square perspective view of the REAR wall of Mr PinPin's illustrated common room. Images 2 and 3 are reference-only bathroom and bedroom book illustrations; use their room designs, omit all characters.\nCreate a natural architectural continuation of this exact cozy house by adding TWO usable open arched timber doorways to this rear wall. Left opening reveals the broad low wooden bathtub standing on a braided mat with space around it, cream towels and warm lamp. Right opening reveals the carved wooden family bed with green quilt and soft pillows. Both rooms are empty. Match the existing handmade timber arches, amber plaster, soft storybook materials and rounded detail. Doors are natural honey wood, hinged open inward into their respective rooms, each has a single brass knob. Clearly visible thresholds and clear paths through each doorway.\nKeep both whole openings safely inside the central 70 percent of the image; their thresholds must be above the bottom quarter. Replace the large central table and bench with a narrow little plant console between the openings so neither entry is obstructed. Keep the outermost image edges, roof rafters and foreground floor perfectly aligned and unchanged so this image can be blended back into its parent panorama. Preserve this exact fixed camera, 110-degree perspective, illumination, plaster texture and charming illustrated finish. No angular low-poly surfaces, no extra windows, no people, no signs or lettering. Output one square image.",
+  "referenceRoles": [
+    "edit target: original rear perspective",
+    "bathroom book design",
+    "bedroom book design"
+  ]
+}

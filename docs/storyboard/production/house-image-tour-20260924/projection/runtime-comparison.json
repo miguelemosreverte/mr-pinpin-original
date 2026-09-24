@@ -1,0 +1,37 @@
+{
+  "cases": [
+    {
+      "view": "front",
+      "meanAbsoluteChannelError": 0.02899169921875,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "rear",
+      "meanAbsoluteChannelError": 0.019846598307291668,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "up",
+      "meanAbsoluteChannelError": 0.021631876627604168,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "down",
+      "meanAbsoluteChannelError": 0.021748860677083332,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "overlap",
+      "meanAbsoluteChannelError": 0.0255889892578125,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    }
+  ],
+  "interpretation": "Same orientations, blend formula, texture filtering and masks; GPU float/texture filtering versus float64 CPU may differ by quantization. Not an art-quality check.",
+  "pass": true,
+  "projectScriptSha256": "0f2f1d244bd214b8ab7088aee9cc2f1f0a6290ed7bafbc99c02991b76d341df2"
+}

@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "operation": "extract",
+  "scriptSha256": "0f2f1d244bd214b8ab7088aee9cc2f1f0a6290ed7bafbc99c02991b76d341df2",
+  "pngHelperSha256": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+  "samplingHelperSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "noCreativeEditing": true,
+  "input": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/panorama-v1.png",
+    "sha256": "01af210b8a91d343f3b32f6a80d68a3bc817fe006f30f67f608728a3d95c1ae2",
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  "camera": {
+    "yawDegrees": 0.0,
+    "pitchDegrees": 90.0,
+    "horizontalFovDegrees": 110.0,
+    "verticalFovDegrees": 110.0,
+    "size": 1254
+  },
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/up-before.png",
+    "sha256": "7f81f31fa0c3fcc452c81535c2e2cf90586b26272e9979569a696e214bde2353",
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "orientation": "Front +Y at panorama u=.5; right +X at u=.75; rear \u2212Y at u=0/1; up +Z at v=0. Renderer coordinates [X,Z,Y]."
+}

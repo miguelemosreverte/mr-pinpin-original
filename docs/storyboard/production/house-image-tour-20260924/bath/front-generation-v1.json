@@ -1,0 +1,29 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T02:37:18.609219+00:00",
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-012bc197-fdd3-4958-93e1-a3a0bbbb9ee9.png",
+  "output": "front-v1.png",
+  "sha256": "da4931926e4cebd359f696f09b3b02d29245029c15864401a0065170eaa934ea",
+  "prompt": "Use case: precise-object-edit. This is an extracted 110-degree square perspective from a finished illustrated spherical room. Return the same exact camera and square framing, matching its warm, rich storybook finish. Repair only the specified continuity fault. Keep the outermost 15 percent on each edge aligned to the input because the result will blend into that existing sphere. Do not add objects, text, borders or change illumination. Correct ONLY the bathroom doorway's door leaf and hardware. We are inside the bathroom looking back into the common room. The honey-wood door must hinge on the RIGHT jamb as viewed here and swing toward the camera into the bathroom, resting close to the right wall without intersecting the washstand. Remove the incorrect leaf from the left side, restore the exposed left plaster/jamb/floor, and place one properly fitted arched leaf on the RIGHT, with exactly one visible brass knob near its free edge, coherent hinge thickness. Keep the actual arched opening in its EXACT current place and size and keep its view of the common room/green entry/two round windows/red rug unchanged. Keep all washstand, bowl, jug, lamp and tub in their positions. Do not mirror or reframe the whole image.",
+  "promptSha256": "727b8a95aef8c439f2022f7269d224197825d4b8ae7b2a713f26cbadffa70a8e",
+  "inputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/front-before.png",
+      "sha256": "14051114b1367fa3c63cd75d18a278da8073ba5d64c0af628decbbe2136f977a"
+    }
+  ],
+  "status": "candidate",
+  "projection": {
+    "type": "perspective",
+    "horizontalFovDegrees": 110,
+    "face": "front"
+  },
+  "dimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "bytes": 1919470,
+  "referenceRoles": [
+    "edit target"
+  ]
+}

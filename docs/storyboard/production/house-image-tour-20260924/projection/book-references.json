@@ -1,0 +1,30 @@
+{
+  "source": "docs/storyboard/locations/pinpin-house/references.json",
+  "references": [
+    {
+      "id": "bathroom-book",
+      "path": "docs/storyboard/images/standalone/home-sweet-home/bedtime-08-v2.png",
+      "sha256": "c6e3deefa1acc93dadb3467931719f080a81ab8807dbff960bca6c225f07635d",
+      "bytes": 2323256,
+      "roles": [
+        "style",
+        "characters",
+        "bath-prop-design"
+      ],
+      "notes": "Actual approved bedtime scene08: broad low wooden tub, braided mat, Mama with PinPin and PomPom, warm timber/plaster, round window. Current room dimensions and placement come from plan, not this perspective."
+    },
+    {
+      "id": "bedroom-book",
+      "path": "docs/storyboard/images/standalone/home-sweet-home/bedtime-17-v2.png",
+      "sha256": "e37fd9cccf68330ba62763958199839692e77c3c0092a5d4b5efa1db5835ff73",
+      "bytes": 2294087,
+      "roles": [
+        "style",
+        "characters",
+        "bed-prop-design"
+      ],
+      "notes": "Actual approved bedtime scene17: Mama between boys, wooden bed, soft quilt, warm lantern and expressive gentle faces. Do not copy apparent window placement over current geometry."
+    }
+  ],
+  "identitiesVerified": true
+}

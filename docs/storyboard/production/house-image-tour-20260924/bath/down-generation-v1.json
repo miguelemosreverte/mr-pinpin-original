@@ -1,0 +1,29 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T02:37:11.737033+00:00",
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-3b2c6021-1818-4b03-8453-ebb1764241e2.png",
+  "output": "down-v1.png",
+  "sha256": "b6a2ac752279bfb680297a51ef6fed9e12f10d9a3564fdfff41ffd7aacb838a4",
+  "prompt": "Use case: precise-object-edit. This is an extracted 110-degree square perspective from a finished illustrated spherical room. Return the same exact camera and square framing, matching its warm, rich storybook finish. Repair only the specified continuity fault. Keep the outermost 15 percent on each edge aligned to the input because the result will blend into that existing sphere. Do not add objects, text, borders or change illumination. This camera looks straight DOWN beside the broad wooden bathtub. Repair the central pinched floorboard and rug geometry: the floor must be a flat wooden plane with orderly continuous straight parallel planks and natural butt joints, and the braided rug's edge should be a smooth broad oval curve around the tub, lying flat, never drawn into a cusp or funnel at image center. Preserve tub position and rim, clear water, rug colors, wicker basket, stools and threshold near the boundaries. Only correct the warped central floor/rug transition.",
+  "promptSha256": "8da551a8b206445817ba41bd70ab709851f04bd899abee53cfb8a8e9971f4521",
+  "inputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/down-before.png",
+      "sha256": "f4e526d3f3a3188d1bec1bbd810284a46ff7e21be1b36d92697fffea1994af9c"
+    }
+  ],
+  "status": "candidate",
+  "projection": {
+    "type": "perspective",
+    "horizontalFovDegrees": 110,
+    "face": "down"
+  },
+  "dimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "bytes": 2041950,
+  "referenceRoles": [
+    "edit target"
+  ]
+}

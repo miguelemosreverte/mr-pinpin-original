@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "operation": "historical-view",
+  "scriptSha256": "0f2f1d244bd214b8ab7088aee9cc2f1f0a6290ed7bafbc99c02991b76d341df2",
+  "pngHelperSha256": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+  "samplingHelperSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "noCreativeEditing": true,
+  "inputs": [
+    {
+      "role": "base",
+      "sourceRepoPath": "docs/storyboard/images/house-menu/room-panorama-v3.webp",
+      "sha256": "efc3a9ddf626ce3cd411e1cfd57945854f220eea3b0cf29d5117a7bfa80d1187",
+      "decodedSha256": "5741d23226ed73490e6c774acb6487905e58cc237bc82c0364532b561fc6f6a8",
+      "dimensions": [
+        1774,
+        887
+      ]
+    },
+    {
+      "role": "front",
+      "sourceRepoPath": "docs/storyboard/images/house-menu/room-cube-front-v1.webp",
+      "sha256": "109a9aa49599c197c5f8878792b8a0d7a8da1e2654ee781cace1769be5ee175c",
+      "decodedSha256": "d12809f935faba65d54cb3badab709939676178fddcff9d13cf316146de70a83",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "role": "rear",
+      "sourceRepoPath": "docs/storyboard/images/house-menu/room-cube-rear-v1.webp",
+      "sha256": "0bb26a9090fbb8fd9cb132d7ea3669b18c4bab0c786e121912168c970d3cc08f",
+      "decodedSha256": "e26630e417ee80eef86deffaa6aadd1f803c39b214e2d1729883faa6d005e761",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "role": "up",
+      "sourceRepoPath": "docs/storyboard/images/house-menu/room-cube-up-v1.webp",
+      "sha256": "32edeea516f3bbc15341372dcf7cd9238210eb0575df13595d4342269b5a7d79",
+      "decodedSha256": "d8211151aa4736823e445cd819adbaea099cd34c69d7e0f342f9ffa7f43aa1f1",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    },
+    {
+      "role": "down",
+      "sourceRepoPath": "docs/storyboard/images/house-menu/room-cube-down-v1.webp",
+      "sha256": "a49c2550009e354f14ea03225695001a48f915153c5bdb624eb46c6ba403121a",
+      "decodedSha256": "6eb341cff8ba1aa0d12a000a7e967faffd9fc6d927610e09458f2f140c74d9c3",
+      "dimensions": [
+        1254,
+        1254
+      ]
+    }
+  ],
+  "runtimeShaderSha256": "05088621dfb0d0e7f8c9abbb40bac68b01e2a2459e499c2a0012ea0a67e89eb4",
+  "runtimeConfigSha256": "b1dbb3b4802a8ac64af0784e23ddbf25ed07e8ef50746c2bfc009785bd551982",
+  "patchFovDegrees": 110,
+  "frontMask": [
+    0.102,
+    -0.028,
+    0.075,
+    0.075
+  ],
+  "blend": "edge=1-smoothstep(.70,.96,max(abs(q))); front*=1-smoothstep(.60,1,max(abs((q-center)/extent))); base=1-max(patch alphas); normalized sum of encoded RGB weighted by base/alphas",
+  "textureSampling": "GL LINEAR pixel-center bilinear, CLAMP_TO_EDGE on all source textures; base longitude fract before sampling",
+  "camera": {
+    "yawDegrees": 0.0,
+    "pitchDegrees": 0.0,
+    "horizontalFovDegrees": 100.0,
+    "verticalFovDegrees": 100.0,
+    "size": 1400
+  },
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/common-forward-reference.png",
+    "sha256": "53803d47d95d4ed26c39e38a201ddab2967095331fd197d20297bd8024b76d59",
+    "dimensions": [
+      1400,
+      1400
+    ]
+  },
+  "orientation": "Front +Y at panorama u=.5; right +X at u=.75; rear \u2212Y at u=0/1; up +Z at v=0. Renderer coordinates [X,Z,Y]."
+}

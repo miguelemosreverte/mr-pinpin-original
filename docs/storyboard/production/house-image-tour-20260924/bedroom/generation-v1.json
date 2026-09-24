@@ -1,0 +1,35 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T02:30:00.021062+00:00",
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-84d63658-2a48-44aa-aaf5-27f3c4461dbf.png",
+  "output": "panorama-v1.png",
+  "sha256": "c8008660725856b30f2f352fb293f6810b0f6246216d5b00f53dec952f150883",
+  "promptSha256": "c2aace6b8efde3f14a518a123c14ccb24fff0f8b1fe07e223197cd379ccee14f",
+  "inputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/common-bootstrap.png",
+      "sha256": "4ba4d60530d3325b49d653269d51a9d1ff07190a76e2edeb84b261e48618e981"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/production/house-image-tour-20260924/common/rear-v1.png",
+      "sha256": "24dfcc1e31962c3ecbcaa7d517edc43927d8752a05a1cbb22a5d33f5c285592f"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/standalone/home-sweet-home/bedtime-17-v2.png",
+      "sha256": "e37fd9cccf68330ba62763958199839692e77c3c0092a5d4b5efa1db5835ff73"
+    }
+  ],
+  "status": "candidate",
+  "projection": "equirectangular 360x180 requested; actual door longitude requires calibration",
+  "dimensions": {
+    "width": 1774,
+    "height": 887
+  },
+  "bytes": 2401498,
+  "prompt": "Use case: illustration-story. Asset: a single seamless full-sphere 360 by 180 degree EQUIRECTANGULAR panorama, exactly 2:1 landscape, for an interactive room viewer, not an ordinary wide-angle photograph or cubemap grid.\nImage 1 is the successful illustrated common-room spherical panorama: match its projection, richly furnished storybook appearance, rounded timber construction, golden plaster, natural wood, plants and warm soft light. Image 2 shows the TWO newly created doorways in that common room: use it to keep the adjoining room and return doorway consistent. Image 3 is the book's room-specific design reference; omit all people and animals.\nBuild an empty adjoining room in this same small woodland home. Camera is one fixed point at small-person eye level, with a full sphere around it. The exact center of the panorama (u=.5,v=.5, yaw0) looks through ONE OPEN honey-wood arched doorway BACK INTO the common room: glimpses of its red braided rug, honey floorboards, timber/plaster and distant green outdoor entry with round windows. The door has one brass knob, one hinge side, visible wooden thickness and threshold; no extra doorway, no door floating off its hinges. Furnish the room naturally as a real continuous space around that viewpoint.\nKeep the panorama's left and right edges perfectly continuous in geometry, lighting and texture; choose a quiet plaster/wood part of the room for that seam. Top and bottom are the true ceiling and flat floor poles: physically sensible continuous surfaces, not a tunnel, swirl, starburst or radial funnel. Fully illustrate and soften all architecture with the same finished style as image1, no gray guides, no facets, no cube-face boundaries. No lettering or diagram overlays.\nRoom: the BEDROOM reached by the RIGHT doorway in image2. Preserve the book's generous carved wooden FAMILY BED with rounded headboard and footboard, warm sage-green floral quilt, cream pillows and sheets. Bed stands against a wall in the right half of this panorama, with clear walking space to both sides and the foot, braided rug, simple wooden bedside stands, warm brass wall lantern, small framed fern, flowers and a trailing plant, one round radial timber window with forest beyond. Warm daylight consistent with the common room. One return door only; no bathtub, no people. Match the actual bed glimpse seen through image2's right opening. Finish all unseen walls with the same natural furnished book style, no empty gray surfaces.",
+  "referenceRoles": [
+    "projection and appearance bootstrap: historical A composite",
+    "doorway and adjoining room continuity reference",
+    "room-specific book design reference"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "operation": "registered front repair reprojected into downward repair",
+  "original": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/down-v1.png",
+    "sha256": "b6a2ac752279bfb680297a51ef6fed9e12f10d9a3564fdfff41ffd7aacb838a4"
+  },
+  "front": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/front-v1.png",
+    "sha256": "da4931926e4cebd359f696f09b3b02d29245029c15864401a0065170eaa934ea"
+  },
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/down-door-v2.png",
+    "sha256": "330071f7e149c8988937f84df43bbb50799c91ba47e6f4e7ab21d5e8a15dbce2",
+    "size": [
+      1254,
+      1254
+    ]
+  },
+  "camera": {
+    "downYawDegrees": 0,
+    "downPitchDegrees": -90,
+    "frontYawDegrees": 0,
+    "frontPitchDegrees": 0,
+    "bothFovDegrees": 110
+  },
+  "mask": {
+    "frontFullWeightMaxAbsQ": 0.94,
+    "frontZeroWeightMaxAbsQ": 0.995,
+    "forwardRaysOnly": true
+  },
+  "supportedPixels": 373922,
+  "changedPixels": 371077,
+  "outsideMaskDecodedRGBIdentical": true,
+  "sourceOriginalsUnchanged": true,
+  "scriptSha256": "b646304f28d540f4b0511143d1784964b1dfb6029e062aefe7dd71b7e36b2787",
+  "note": "No artistic paint or new generation. Same existing front priority mask, evaluated in registered front-ray coordinates."
+}

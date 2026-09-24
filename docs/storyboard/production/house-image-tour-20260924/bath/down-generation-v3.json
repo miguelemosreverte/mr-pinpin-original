@@ -1,0 +1,28 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T02:53:48.049999+00:00",
+  "source": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-bcb9f383-9917-4ced-adca-5ef0d62e6962.png",
+  "output": "down-v3.png",
+  "sha256": "3731add957ba3d23e4e5663009b947980c47c8c209b2ca7bf99d101e5db690f3",
+  "bytes": 1962203,
+  "dimensions": {
+    "width": 1254,
+    "height": 1254
+  },
+  "prompt": "Use case: precise-object-edit. Make one very small cleanup to this exact downward 110-degree square perspective image. There is a leftover detached triangular piece of the OLD door floating above the floor in the upper-left quadrant, around x=300,y=330 of this1254-square image, with an unnatural blurry horizontal patch above it. Remove that small detached triangle and the local blurry scar, restoring continuous flat honey-wood floorboards and the existing soft sunlight there. Keep the actual open door at upper RIGHT unchanged. Preserve absolutely all other geometry: bathtub at right, water, rug, basket, stools, threshold, correct right-hand door and outer image boundaries. Keep the exact camera framing, wood texture, colors and warm storybook style. No extra objects, no text. Output same square image.",
+  "promptSha256": "04fbdf13ec6427cbb1e3a3996cd13bf0d21cf45def3588a00c508af74bfb1717",
+  "inputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-image-tour-20260924/bath/down-door-v2.png",
+      "sha256": "330071f7e149c8988937f84df43bbb50799c91ba47e6f4e7ab21d5e8a15dbce2",
+      "role": "edit target: registered down-view composite"
+    }
+  ],
+  "status": "candidate",
+  "projection": {
+    "type": "perspective",
+    "horizontalFovDegrees": 110,
+    "yawDegrees": 0,
+    "pitchDegrees": -90
+  }
+}
