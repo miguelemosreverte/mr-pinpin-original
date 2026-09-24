@@ -1,0 +1,31 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T06:24:14.344614+00:00",
+  "prompt": "Use case: precise-object-edit. This is a square rectilinear 110-degree perspective repair view looking DOWN in an illustrated room panorama. Keep this exact downward camera, framing, lighting, table position, four round stool seats, woven rug and surrounding wooden floor. Repair the impossible supports under the two foreground stools: their wooden legs currently form stretched crossing fans pointing into the center of the rug. Give each stool a believable compact set of three short, sturdy wooden legs standing directly beneath its own seat, with small local contact shadows. The two stools must be separate objects, with a clear unobstructed rug gap between them; no legs meeting each other, no long diagonal rails crossing the center. Fix the central table pedestal into a believable simple solid support with short stable feet resting on the rug, keeping its visible position and size. Restore the rug weave where removed erroneous rails were. All furniture must stand naturally on the same flat floor. Preserve the tabletop, all seat positions and sizes, outer rug silhouette and exact image perimeter; make no other design, composition or camera changes. Retain the rich warm illustrated children's-book appearance and fine tactile detail. Output one square image, no text.\n",
+  "promptSha256": "4dc031f21a1cf6a3d851081933d4bd43f733b35840478fd2d3de2d2d691c3b62",
+  "inputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/common-table-down-input.png",
+      "bytes": 4257337,
+      "sha256": "2f12fc19f210162fb73872309b326abcb3ec9e9abd0f930a11c95582d815d5a8"
+    }
+  ],
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/common-table-down-v1.png",
+    "bytes": 1956776,
+    "sha256": "617057b75065bac83649205b4ffa3e5f14ed62a31a41c38e451b0df9f1258984"
+  },
+  "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-2597b6a6-6f3b-415d-a73c-91c672117097.png",
+  "dimensions": [
+    1254,
+    1254
+  ],
+  "status": "selected for separate local comparison; assembled browser views visually reviewed; awaiting user feedback",
+  "projection": "square perspective registered as downward repair",
+  "camera": {
+    "yaw": 0,
+    "pitch": -1.5707963267948966,
+    "fov": 110
+  },
+  "imageCalls": 1
+}

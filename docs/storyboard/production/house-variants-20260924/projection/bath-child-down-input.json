@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "operation": "deterministic current candidate base+selected rear repair perspective",
+  "inputs": {
+    "base": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-child-v1.png",
+      "sha256": "d69c9360d051ecefe5458401faf8b4976e6d7809a22c77ecdcc57e471b596891"
+    },
+    "rear": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-child-rear-v1.png",
+      "sha256": "3472decda87c686ece6ed74157175bd3baba782f5f2338d25acd42121fe218ee"
+    }
+  },
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-child-down-input.png",
+    "sha256": "4faa00bf18ee562c0bf78a81bfd7092b180298e77f06ddc288c84a508eea18af",
+    "size": [
+      1400,
+      1400
+    ]
+  },
+  "camera": {
+    "yawDegrees": 0.0,
+    "pitchDegrees": -90.0,
+    "horizontalFovDegrees": 110.0,
+    "verticalFovDegrees": 110.0
+  },
+  "rearPatch": {
+    "yawDegrees": 180,
+    "pitchDegrees": 0,
+    "fovDegrees": 110,
+    "edgeFull": 0.7,
+    "edgeZero": 0.96,
+    "blend": "Same existing normalized runtime repair blend"
+  },
+  "scriptSha256": "cabade149f31a6287773112bd0ea8dba64c3ed9b7ebe07908eafd39a847cf5e5",
+  "stackMathSha256": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+  "noArtisticEditing": true,
+  "orientation": "Cardinaldown yaw0/pitch-90: image right+X,up+Y,view-Z. Includes repaired rear in overlap; original inputs unchanged."
+}

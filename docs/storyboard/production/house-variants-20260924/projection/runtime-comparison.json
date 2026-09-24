@@ -1,0 +1,67 @@
+{
+  "cases": [
+    {
+      "view": "common-level",
+      "meanAbsoluteChannelError": 0.022282918294270832,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "common-down",
+      "meanAbsoluteChannelError": 0.025410970052083332,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "common-up",
+      "meanAbsoluteChannelError": 0.024393717447916668,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "bath-level",
+      "meanAbsoluteChannelError": 0.029963175455729168,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "bath-down",
+      "meanAbsoluteChannelError": 0.023518880208333332,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "bath-up",
+      "meanAbsoluteChannelError": 0.024342854817708332,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "bath-detail",
+      "meanAbsoluteChannelError": 0.027567545572916668,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "bedroom-level",
+      "meanAbsoluteChannelError": 0.030431111653645832,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "bedroom-down",
+      "meanAbsoluteChannelError": 0.0242462158203125,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    },
+    {
+      "view": "bedroom-up",
+      "meanAbsoluteChannelError": 0.0286865234375,
+      "p99AbsoluteChannelError": 1.0,
+      "maxAbsoluteChannelError": 1.0
+    }
+  ],
+  "pass": true,
+  "scriptSha256": "56aab0ec1beef83ae16cf11902960faeaa57d19ea696e797cbb33fff27384315",
+  "interpretation": "GPU/CPU comparison of identical frozen runtime stacks, including bath detail. Small filtering/float quantization differences are expected; this is not an art approval."
+}

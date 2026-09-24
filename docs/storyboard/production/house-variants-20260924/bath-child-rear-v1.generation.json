@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "selected-for-review-prototype",
+  "tool": "image_gen.imagegen",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-338dc482-ca04-4936-a4cd-d5218458786c.png",
+  "prompt": {
+    "path": "bath-child-rear-v1.prompt.txt",
+    "sha256": "e4df1c7e13da53f6433414ae45659d7ef4836ddc364ea43263e9d80776caa228",
+    "text": "Use case: precise-object-edit.\nEdit this ordinary square 110-degree perspective view extracted from an illustrated 360 panorama at CHILD eye height. It is the exact edit target, not a loose style reference.\nRepair the vertical panorama wrap seam crossing the rear wall and basket and continuing into the floor. Make the plaster, basket weave, plant stems, floor boards and light/shadow continuous across the join, with one coherent rear wall and one intact basket. Where necessary repaint only enough surrounding material to make the construction plausible. Preserve the room objects, their approximate positions, all existing warm storybook detail, and the exact low viewpoint, perspective, crop and lighting. Preserve the tub's solid near side and rim: the camera remains below its rim and NO WATER SURFACE must become visible. Do not enlarge the tub, lift the camera, add props or characters, or change the design.\nDo not conceal the join behind an added post or furnishing. Keep the outermost 15 percent border region registered to the input so this repaired perspective view can blend back into the same room. No graphic seam, mirror symmetry, collage, captions or annotations. Return one square perspective image, NOT an equirectangular panorama or a cubemap grid.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-child-rear-input.png",
+      "sha256": "e84d9bd53c409813e9f2f083138f5d10e96c85d09c4b4c321ac4a8c9da5e8617",
+      "role": "exact110degree rear perspective seam repair target"
+    }
+  ],
+  "output": {
+    "path": "bath-child-rear-v1.png",
+    "sha256": "3472decda87c686ece6ed74157175bd3baba782f5f2338d25acd42121fe218ee",
+    "width": 1254,
+    "height": 1254
+  },
+  "camera": {
+    "yawDegrees": 180,
+    "pitchDegrees": 0,
+    "fovDegrees": 110
+  },
+  "originalPreserved": true,
+  "review": {
+    "report": "CHILD-VIEWS.md",
+    "metricTranslationVerified": false,
+    "originalTourReplaced": false,
+    "result": "final selected low-eye view and bathroom repair stack visually reviewed"
+  }
+}

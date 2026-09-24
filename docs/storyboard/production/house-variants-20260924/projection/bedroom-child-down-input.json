@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "operation": "deterministic current candidate base+selected rear repair perspective",
+  "inputs": {
+    "base": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bedroom-child-v1.png",
+      "sha256": "bf3f47c0d25328473c50657f002a0a62928ecc0ea11f03a92eed94a6d1c0880a"
+    },
+    "rear": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bedroom-child-rear-v1.png",
+      "sha256": "59753739a4d11405052b1c2db1cd760251bc8b356b17644206e27527ee8a75b5"
+    }
+  },
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bedroom-child-down-input.png",
+    "sha256": "6d7809736d1116e6382793437f639763b18d2e5ac87cda43ebf038148b98d191",
+    "size": [
+      1400,
+      1400
+    ]
+  },
+  "camera": {
+    "yawDegrees": 0.0,
+    "pitchDegrees": -90.0,
+    "horizontalFovDegrees": 110.0,
+    "verticalFovDegrees": 110.0
+  },
+  "rearPatch": {
+    "yawDegrees": 180,
+    "pitchDegrees": 0,
+    "fovDegrees": 110,
+    "edgeFull": 0.7,
+    "edgeZero": 0.96,
+    "blend": "Same existing normalized runtime repair blend"
+  },
+  "scriptSha256": "cabade149f31a6287773112bd0ea8dba64c3ed9b7ebe07908eafd39a847cf5e5",
+  "stackMathSha256": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+  "noArtisticEditing": true,
+  "orientation": "Cardinaldown yaw0/pitch-90: image right+X,up+Y,view-Z. Includes repaired rear in overlap; original inputs unchanged."
+}

@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 1,
+  "operation": "deterministic current runtime stack bake, including optional final registered detail",
+  "room": "common",
+  "config": {
+    "initialView": {
+      "yaw": 3.1415927,
+      "pitch": 0,
+      "fov": 72
+    },
+    "repairs": {
+      "fov": 110,
+      "frontMask": [
+        0.102,
+        -0.028,
+        0.075,
+        0.075
+      ],
+      "assets": {
+        "front": "storyboard/images/house-menu/room-cube-front-v1.webp",
+        "rear": "storyboard/production/house-image-tour-20260924/common/rear-v1.png",
+        "up": "storyboard/images/house-menu/room-cube-up-v1.webp",
+        "down": "storyboard/images/house-menu/room-cube-down-v1.webp"
+      },
+      "fovDegrees": 110
+    },
+    "inputs": {
+      "base": {
+        "file": "../inputs/efc3a9ddf626-room-panorama-v3.webp",
+        "sourceRepoPath": "docs/storyboard/images/house-menu/room-panorama-v3.webp",
+        "sha256": "efc3a9ddf626ce3cd411e1cfd57945854f220eea3b0cf29d5117a7bfa80d1187",
+        "bytes": 2020370
+      },
+      "front": {
+        "file": "../inputs/109a9aa49599-room-cube-front-v1.webp",
+        "sourceRepoPath": "docs/storyboard/images/house-menu/room-cube-front-v1.webp",
+        "sha256": "109a9aa49599c197c5f8878792b8a0d7a8da1e2654ee781cace1769be5ee175c",
+        "bytes": 1391254
+      },
+      "rear": {
+        "file": "../inputs/24dfcc1e3196-rear-v1.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/common/rear-v1.png",
+        "sha256": "24dfcc1e31962c3ecbcaa7d517edc43927d8752a05a1cbb22a5d33f5c285592f",
+        "bytes": 1846583
+      },
+      "up": {
+        "file": "../inputs/32edeea516f3-room-cube-up-v1.webp",
+        "sourceRepoPath": "docs/storyboard/images/house-menu/room-cube-up-v1.webp",
+        "sha256": "32edeea516f3bbc15341372dcf7cd9238210eb0575df13595d4342269b5a7d79",
+        "bytes": 1231868
+      },
+      "down": {
+        "file": "../inputs/a49c2550009e-room-cube-down-v1.webp",
+        "sourceRepoPath": "docs/storyboard/images/house-menu/room-cube-down-v1.webp",
+        "sha256": "a49c2550009e354f14ea03225695001a48f915153c5bdb624eb46c6ba403121a",
+        "bytes": 1608808
+      }
+    }
+  },
+  "configSha256": "37628d9f029efe2761244c417fde514c3149914dcdc02b5c6fda639e3c3fe33d",
+  "scriptSha256": "56aab0ec1beef83ae16cf11902960faeaa57d19ea696e797cbb33fff27384315",
+  "stackMathSha256": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+  "samplingHelperSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "pngHelperSha256": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+  "runtimeShaderSha256": "694350965ac5a9bd28f78528bd26518aa0542b053cdbbc7ee092d226c8b336ef",
+  "runtimeConfigSha256": "a3db0b6fa7d91979bb9509672f33384288c66ddfe9b3e5922d743b9c2ba52006",
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/common-current.png",
+    "sha256": "285ecb4fd4d2c92a1aff4c936aa47607f8d7db14100e34abace6f17db995e1f2",
+    "size": [
+      3072,
+      1536
+    ]
+  },
+  "levelProof": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/common-level-reference.png",
+    "sha256": "6c580ea8946b1b4813c5a10f156f232d267a4a1dc755bd658907feac0f025ea9",
+    "size": [
+      1024,
+      1024
+    ],
+    "camera": {
+      "yawRadians": 3.1415927,
+      "pitchRadians": 0,
+      "fovDegrees": 100,
+      "size": 1024
+    }
+  },
+  "orientation": "World+Yfront u=.5; +Xrightu=.75; \u2212Yrearwrap; +Zupv=0. Rendererinternalaxes[X,Z,Y].",
+  "sampling": "Pixel-center rays, encoded RGB linear filtering, source textures clamp-to-edge; base longitude fract before sampling. Same normalized repair blend and registered detail mix as frozen shader.",
+  "noNewGeometryOrArt": true,
+  "noCameraTranslation": true,
+  "note": "This preserves the current image-led view; lowering a future generated view is an artistic proposal, not a recovered metric camera move."
+}

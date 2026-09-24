@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "status": "selected-for-review-prototype",
+  "tool": "image_gen.imagegen",
+  "calls": 1,
+  "recordedAt": "2026-09-24T06:22:34.089869+00:00",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-dcede8f2-4cc4-43e5-9cb6-07ddb91c4c28.png",
+  "prompt": {
+    "path": "bath-child-v1.prompt.txt",
+    "sha256": "d6d776a787716de62354752028bb309b45bccb086c8581f87b2ba3ca94744ab6",
+    "text": "Use case: precise-object-edit.\nAsset type: one complete continuous 360 x 180 degree EQUIRECTANGULAR illustrated room panorama, exact 2:1 canvas, ideally 2048 x 1024. Not a perspective photograph, not a cubemap grid.\nInput image 1 is the assembled current room: EDIT TARGET and authority for its layout, furnishing identities, warm storybook illustration, wood/plaster/textile detail, lighting and colors.\nPrimary change: lower the physical camera eye point vertically to a small child's eye height, approximately 0.55 m above the SAME floor, at the SAME horizontal room position. Keep the camera LEVEL. This is a different low viewpoint, NOT tilting downward, zooming, cropping, shifting the old panorama vertically, or making the furniture taller. Re-imagine the new occlusions and visible lower surfaces from that lower eye point.\nProjection: retain the exact azimuth convention of the input. Each wall and opening remains in the same left/right compass direction. Horizon is exactly the middle row, y=50%, for the LEVEL low camera. Full longitude 360 degrees, ceiling zenith at top and floor nadir at bottom; both horizontal edges are the SAME rear direction and must join naturally in material, furniture, lighting, floor and ceiling. No hard seam, borders or stitched panels. No pinched/star-shaped poles.\nBathroom-specific low-view proof: the camera eye is BELOW the existing wooden tub rim (treat the unchanged rim as approximately 0.70 m high). From this level low eye, the near solid tub wall and rim OCCLUDE the water surface: show NO broad visible water ellipse and preferably no water surface at all. Do not look down into the tub. Its front wooden staves and iron band are the dominant visible bath surfaces; the rim is viewed from below/side, above the horizon. Keep the tub's same real size and floor position; obtain this obstruction by lowering the camera, not by enlarging the tub or inventing a lid. Naturally see more of the underside of the existing washstand, stool and shelving where that low point reveals them. The round clear-center window, towels, plants, basket, lanterns, rug, return doorway, corrected right-side door leaf and the glimpse of the common room remain the SAME objects in the SAME places. No new props, people or animals.\nPreserve the illustrated rich tactile style and soft warm light exactly; no grayscale blockout, faceted/voxel geometry, photorealistic material switch, text, labels, arrows or watermark. Produce only this single complete low-eye panorama.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-current.png",
+      "role": "assembled current room edit target",
+      "sha256": "7e7f6866fd5e5289ffca86329cd5807bb32071f0c508087658184b0f3e624eec"
+    }
+  ],
+  "output": {
+    "path": "bath-child-v1.png",
+    "sha256": "d69c9360d051ecefe5458401faf8b4976e6d7809a22c77ecdcc57e471b596891",
+    "width": 1774,
+    "height": 887
+  },
+  "cameraIntent": {
+    "change": "lower physical eye point, level camera, same horizontal origin",
+    "requestedHeightMetres": 0.55,
+    "metricStatus": "artistic inference; not measured 3D reconstruction"
+  },
+  "originalPreserved": true,
+  "review": {
+    "report": "CHILD-VIEWS.md",
+    "metricTranslationVerified": false,
+    "originalTourReplaced": false,
+    "result": "final selected low-eye view and bathroom repair stack visually reviewed"
+  }
+}

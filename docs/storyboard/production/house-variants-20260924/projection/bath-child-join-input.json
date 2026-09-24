@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "operation": "candidate full base+rear+down perspective extraction for registered detail",
+  "inputs": {
+    "base": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-child-v1.png",
+      "sha256": "d69c9360d051ecefe5458401faf8b4976e6d7809a22c77ecdcc57e471b596891"
+    },
+    "rear": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-child-rear-v1.png",
+      "sha256": "3472decda87c686ece6ed74157175bd3baba782f5f2338d25acd42121fe218ee"
+    },
+    "down": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-child-down-v1.png",
+      "sha256": "afa79cf1ca32cfeca40dcd4f9a978825d28173f3324b4f9585a32fb810e23115"
+    }
+  },
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-child-join-input.png",
+    "sha256": "60f2db28e793b6f5efb923fc249851025d7e6328eb6cfe6954da4ca7ad253dc3",
+    "size": [
+      1400,
+      1400
+    ]
+  },
+  "camera": {
+    "yawRadians": 3.141592653589793,
+    "pitchRadians": -0.7,
+    "horizontalFovDegrees": 90,
+    "verticalFovDegrees": 90
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "edgeFull": 0.7,
+    "edgeZero": 0.96,
+    "blend": "Normalized runtime blend, base=1-max(repair weights), no directional down mask in child candidate"
+  },
+  "scriptSha256": "dda985cfd16dc72a406bd7a364e09701a8290012c4d35a3f04fb693af631253c",
+  "stackMathSha256": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+  "noArtisticEditing": true
+}

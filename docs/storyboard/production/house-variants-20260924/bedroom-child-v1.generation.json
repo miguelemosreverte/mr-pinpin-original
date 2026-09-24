@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "status": "selected-for-review-prototype",
+  "tool": "image_gen.imagegen",
+  "calls": 1,
+  "recordedAt": "2026-09-24T06:22:35.682322+00:00",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-51596df7-9ffe-453f-a8ea-68a928e3a9af.png",
+  "prompt": {
+    "path": "bedroom-child-v1.prompt.txt",
+    "sha256": "407ae7eb5e29087b33cd337602068ec69029484ed6ab05d4a5840aa7015c32df",
+    "text": "Use case: precise-object-edit.\nAsset type: one complete continuous 360 x 180 degree EQUIRECTANGULAR illustrated room panorama, exact 2:1 canvas, ideally 2048 x 1024. Not a perspective photograph, not a cubemap grid.\nInput image 1 is the assembled current room: EDIT TARGET and authority for its layout, furnishing identities, warm storybook illustration, wood/plaster/textile detail, lighting and colors.\nPrimary change: lower the physical camera eye point vertically to a small child's eye height, approximately 0.55 m above the SAME floor, at the SAME horizontal room position. Keep the camera LEVEL. This is a different low viewpoint, NOT tilting downward, zooming, cropping, shifting the old panorama vertically, or making the furniture taller. Re-imagine the new occlusions and visible lower surfaces from that lower eye point.\nProjection: retain the exact azimuth convention of the input. Each wall and opening remains in the same left/right compass direction. Horizon is exactly the middle row, y=50%, for the LEVEL low camera. Full longitude 360 degrees, ceiling zenith at top and floor nadir at bottom; both horizontal edges are the SAME rear direction and must join naturally in material, furniture, lighting, floor and ceiling. No hard seam, borders or stitched panels. No pinched/star-shaped poles.\nBedroom-specific low-view proof: the bed footboard and mattress edge rise above the child's level horizon and obscure much more of the upper quilt surface than in the input. Do not produce the same high view with its broad top-down bed ellipse. Keep the bed and all furniture the SAME size and SAME floor positions. From the low eye naturally show more of the bed legs, lower frame and plausible shadowed space beneath it where visible; bedside cabinets and the chest also read from below their top surfaces. The canopy-free wooden bed, green patterned quilt, pillows, lanterns, plants, round clear-center window, dresser, wardrobe, woven mat and open return doorway into the common room all keep their identity, design and azimuth. Keep the existing door hinge side and leaf placement. Do not invent characters, toys, extra beds or furniture.\nPreserve the illustrated rich tactile style and soft warm light exactly; no grayscale blockout, faceted/voxel geometry, photorealistic material switch, text, labels, arrows or watermark. Produce only this single complete low-eye panorama.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bedroom-current.png",
+      "role": "assembled current room edit target",
+      "sha256": "908e2426a0dec0756c1c3eb5904e0c1af6a7c36088e11bd5ac41cb738a371a85"
+    }
+  ],
+  "output": {
+    "path": "bedroom-child-v1.png",
+    "sha256": "bf3f47c0d25328473c50657f002a0a62928ecc0ea11f03a92eed94a6d1c0880a",
+    "width": 1774,
+    "height": 887
+  },
+  "cameraIntent": {
+    "change": "lower physical eye point, level camera, same horizontal origin",
+    "requestedHeightMetres": 0.55,
+    "metricStatus": "artistic inference; not measured 3D reconstruction"
+  },
+  "originalPreserved": true,
+  "review": {
+    "report": "CHILD-VIEWS.md",
+    "metricTranslationVerified": false,
+    "originalTourReplaced": false,
+    "result": "final selected low-eye view and bathroom repair stack visually reviewed"
+  }
+}

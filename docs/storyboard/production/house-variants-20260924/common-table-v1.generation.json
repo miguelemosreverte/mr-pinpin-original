@@ -1,0 +1,35 @@
+{
+  "tool": "image_gen__imagegen",
+  "recordedAt": "2026-09-24T06:18:28.414075+00:00",
+  "prompt": "Use case: precise-object-edit.\nAsset: one complete 360-degree by 180-degree equirectangular spherical panorama, 2:1 width-to-height ratio, not a six-face atlas, not a perspective crop.\nInput 1 is the approved assembled common kitchen/living room panorama. It is the authority for room appearance, windows, doorways, shelves, stove, plants, timber, light and world directions. Input 2 is a published breakfast illustration: use ONLY the round wooden family table and low round stool design, not the characters or camera/layout.\nCreate a separate furnished version of input 1: put ONE welcoming round family dining table centrally in the room on the central braided rug, inspired by input 2: thick smoothly rounded honey-colored wooden planks, one substantial pedestal with stable splayed supports, four separate low round wooden stools around it. A small brown ceramic teapot and two simple cups suffice. Keep the room empty of characters. The table should belong naturally to the same richly illustrated storybook style, not photorealism.\nPlace the table ahead of the viewing point toward the green entrance (the middle longitude of the panorama), close enough to clearly occupy the central floor, while the panorama camera remains standing BESIDE the table in the circulation space, never inside the table or pedestal. Preserve the existing panorama camera height, level horizon exactly at the horizontal middle, azimuth orientation, outer architecture and all three doorways: green outside entrance flanked by its two circular windows, and the two open rear passages. Keep access to all doors and the bookshelf clear. Fit the table and stools into the existing room; don't enlarge or rebuild the house. Only necessary occlusion from the added furniture should obscure existing content.\nProduce one continuous spherical image. Preserve the input's longitude placement. The left and right edges represent one identical joined direction and must meet seamlessly, including floor planks, walls and ceiling. Model the floor under the viewing point as a continuous surface at the nadir; no radial rug rosette or doubled furnishings. Retain the warm soft amber daylight, handmade uneven timber, subtle plaster, plants, decorative detail and gentle animated-book finish. No text, labels, outlines, visible seams, grid or split panels. Output the full 2:1 equirectangular image.\n",
+  "promptSha256": "69bf4ca53fd9e8555ba83ce66245a5f9da16b7082941ba65e127754f461c06ec",
+  "inputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/common-current.png",
+      "role": "edit target: approved assembled common room",
+      "bytes": 10874113,
+      "sha256": "285ecb4fd4d2c92a1aff4c936aa47607f8d7db14100e34abace6f17db995e1f2"
+    },
+    {
+      "path": "/Users/miguel_lemos/anastasia-pinpin-repos/mr-pinpin-source/docs/storyboard/images/published/elder-cycle/elder-r6-family-016.webp",
+      "role": "table and stool design only",
+      "bytes": 452790,
+      "sha256": "88d74c56a468e3f250b12dbcb5ecdb7b07bd1d789197663d8948ac199acd133d"
+    }
+  ],
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/common-table-v1.png",
+    "role": "original unmodified imagegen master",
+    "bytes": 2308254,
+    "sha256": "814527dd312530e644d1271ce97704d5619ddc69e3dace6ce5b101d7e39259be"
+  },
+  "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-b9c203ac-049b-4db3-970a-2f27b1575f80.png",
+  "dimensions": [
+    1774,
+    887
+  ],
+  "status": "selected for separate local comparison; assembled browser views visually reviewed; awaiting user feedback",
+  "projection": "equirectangular 360x180",
+  "imageCalls": 1,
+  "geometryClaim": "image-inferred furnishing placement, no measured Blender geometry"
+}

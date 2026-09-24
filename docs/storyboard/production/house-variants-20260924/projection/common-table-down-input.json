@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "operation": "deterministic equirectangular to perspective extraction",
+  "input": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/common-table-v1.png",
+    "sha256": "814527dd312530e644d1271ce97704d5619ddc69e3dace6ce5b101d7e39259be",
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/common-table-down-input.png",
+    "sha256": "2f12fc19f210162fb73872309b326abcb3ec9e9abd0f930a11c95582d815d5a8",
+    "dimensions": [
+      1400,
+      1400
+    ]
+  },
+  "camera": {
+    "yawDegrees": 0.0,
+    "pitchDegrees": -90.0,
+    "horizontalFovDegrees": 110.0,
+    "verticalFovDegrees": 110.0
+  },
+  "sampling": "EncodedRGB bilinear, pixel-center rays, panorama longitude wraps and latitude clamps",
+  "orientation": "Renderer[x,up,forward]=world[X,Z,Y]; down at yaw0/pitch-90 uses right+X, imageup+Y, viewforward-Z; compatible with repairs.down",
+  "scriptSha256": "13248b7660dbbedc3a42b07d69d29a26def423ffeabf64ae06c8011394ef137c",
+  "stackMathSha256": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+  "helperSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "noArtisticEditing": true
+}

@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "status": "selected-for-review-prototype",
+  "tool": "image_gen.imagegen",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-98734825-493b-4852-b7df-d7b73cc95a27.png",
+  "prompt": {
+    "path": "bath-child-rug-v1.prompt.txt",
+    "sha256": "c7f6649b36527c242dff3b30980ae189fb6ccbabc114a575c6a3bc9e4de2ae73",
+    "text": "Use case: precise-object-edit.\nThis is a registered square 90-degree perspective view of a finished illustrated bathroom from a LOW CHILD eye point, looking partly down. Make ONE small local correction only: the oval braided mat's outer edge below/in front of the basket abruptly changes from an unnaturally straight cut into a curved foreground braid, with a blurred/double edge at the join. Repaint that narrow transition so it becomes one smoothly curving, continuous, natural oval rug boundary; individual thick woven strands continue clearly with no doubled weave, cut, kink or ghost border. The exposed floorboards immediately beside it must also continue coherently.\nKeep EVERYTHING else unchanged: camera angle and exact framing, tub silhouette/body/rim, basket size and position, plant, stool, towels, lighting and warm highly detailed storybook style. Do not move furniture or repaint the whole floor. Do not add rugs, props, shadows to conceal errors, text or characters. The eye remains BELOW the tub rim; no water surface may appear. Keep the outermost 15 percent of the image registered to the input, and preserve all pixels away from this small rug-edge correction as closely as possible. Return the same square perspective view, not a panorama.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-child-join-input.png",
+      "sha256": "60f2db28e793b6f5efb923fc249851025d7e6328eb6cfe6954da4ca7ad253dc3",
+      "role": "exact90degree oblique rear/down perspective from assembled candidate base plus rear plus down"
+    }
+  ],
+  "output": {
+    "path": "bath-child-rug-v1.png",
+    "sha256": "1ba0ebfa8099a608c11795651c8ce741d16d9d35c9c9001baed607a1a96046c1",
+    "width": 1254,
+    "height": 1254
+  },
+  "camera": {
+    "yawRadians": 3.141592653589793,
+    "pitchRadians": -0.7,
+    "fovDegrees": 90
+  },
+  "scope": "local rug edge join only; register as detail after main repair stack",
+  "originalPreserved": true,
+  "review": {
+    "report": "CHILD-VIEWS.md",
+    "metricTranslationVerified": false,
+    "originalTourReplaced": false,
+    "result": "final selected low-eye view and bathroom repair stack visually reviewed"
+  }
+}

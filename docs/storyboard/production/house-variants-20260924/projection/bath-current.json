@@ -1,0 +1,109 @@
+{
+  "schemaVersion": 1,
+  "operation": "deterministic current runtime stack bake, including optional final registered detail",
+  "room": "bath",
+  "config": {
+    "initialView": {
+      "yaw": 1.9,
+      "pitch": -0.25,
+      "fov": 72
+    },
+    "repairs": {
+      "fov": 110,
+      "frontMask": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "assets": {
+        "front": "storyboard/production/house-image-tour-20260924/bath/front-v1.png",
+        "rear": "storyboard/production/house-image-tour-20260924/bath/rear-v1.png",
+        "down": "storyboard/production/house-image-tour-20260924/bath/down-v3.png"
+      },
+      "downMaskX": [
+        0,
+        0.08
+      ],
+      "fovDegrees": 110
+    },
+    "details": {
+      "asset": "storyboard/production/house-bath-join-20260924/rug-join-v1.png",
+      "yaw": 3,
+      "pitch": -0.95,
+      "fov": 90,
+      "mask": [
+        0.04,
+        0.08,
+        0.25,
+        0.26
+      ]
+    },
+    "inputs": {
+      "base": {
+        "file": "../inputs/b333b967832c-panorama-door-v2.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/panorama-door-v2.png",
+        "sha256": "b333b967832c5f592c78356609b424212b07c589a0dc2ff6cb4e6e00a93623b8",
+        "bytes": 10493930
+      },
+      "front": {
+        "file": "../inputs/da4931926e4c-front-v1.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/front-v1.png",
+        "sha256": "da4931926e4cebd359f696f09b3b02d29245029c15864401a0065170eaa934ea",
+        "bytes": 1919470
+      },
+      "rear": {
+        "file": "../inputs/1a11ca751531-rear-v1.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/rear-v1.png",
+        "sha256": "1a11ca75153188efa7672a0956458705d8394e99f62a18bf62741818f00f1ec2",
+        "bytes": 1965024
+      },
+      "down": {
+        "file": "../inputs/3731add957ba-down-v3.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bath/down-v3.png",
+        "sha256": "3731add957ba3d23e4e5663009b947980c47c8c209b2ca7bf99d101e5db690f3",
+        "bytes": 1962203
+      },
+      "detail": {
+        "file": "../inputs/81131050483a-rug-join-v1.png",
+        "sourceRepoPath": "docs/storyboard/production/house-bath-join-20260924/rug-join-v1.png",
+        "sha256": "81131050483ad3bc3da8e7785dcd9c843b264c69d816d127d97d3f0c219f11cc",
+        "bytes": 1863356
+      }
+    }
+  },
+  "configSha256": "37628d9f029efe2761244c417fde514c3149914dcdc02b5c6fda639e3c3fe33d",
+  "scriptSha256": "56aab0ec1beef83ae16cf11902960faeaa57d19ea696e797cbb33fff27384315",
+  "stackMathSha256": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+  "samplingHelperSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "pngHelperSha256": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+  "runtimeShaderSha256": "694350965ac5a9bd28f78528bd26518aa0542b053cdbbc7ee092d226c8b336ef",
+  "runtimeConfigSha256": "a3db0b6fa7d91979bb9509672f33384288c66ddfe9b3e5922d743b9c2ba52006",
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-current.png",
+    "sha256": "7e7f6866fd5e5289ffca86329cd5807bb32071f0c508087658184b0f3e624eec",
+    "size": [
+      3072,
+      1536
+    ]
+  },
+  "levelProof": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-level-reference.png",
+    "sha256": "48bb149e46ba50110df709313d3bfdc6715463485fc55a7a872601f4c3f7414a",
+    "size": [
+      1024,
+      1024
+    ],
+    "camera": {
+      "yawRadians": 1.9,
+      "pitchRadians": 0,
+      "fovDegrees": 100,
+      "size": 1024
+    }
+  },
+  "orientation": "World+Yfront u=.5; +Xrightu=.75; \u2212Yrearwrap; +Zupv=0. Rendererinternalaxes[X,Z,Y].",
+  "sampling": "Pixel-center rays, encoded RGB linear filtering, source textures clamp-to-edge; base longitude fract before sampling. Same normalized repair blend and registered detail mix as frozen shader.",
+  "noNewGeometryOrArt": true,
+  "noCameraTranslation": true,
+  "note": "This preserves the current image-led view; lowering a future generated view is an artistic proposal, not a recovered metric camera move."
+}

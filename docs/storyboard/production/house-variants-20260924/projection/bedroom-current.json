@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "operation": "deterministic current runtime stack bake, including optional final registered detail",
+  "room": "bedroom",
+  "config": {
+    "initialView": {
+      "yaw": 1.35,
+      "pitch": -0.15,
+      "fov": 72
+    },
+    "repairs": {
+      "fov": 110,
+      "frontMask": [
+        0,
+        0,
+        1,
+        1
+      ],
+      "assets": {
+        "rear": "storyboard/production/house-image-tour-20260924/bedroom/rear-v1.png",
+        "down": "storyboard/production/house-image-tour-20260924/bedroom/down-v1.png"
+      },
+      "fovDegrees": 110
+    },
+    "inputs": {
+      "base": {
+        "file": "../inputs/c80086607258-panorama-v1.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bedroom/panorama-v1.png",
+        "sha256": "c8008660725856b30f2f352fb293f6810b0f6246216d5b00f53dec952f150883",
+        "bytes": 2401498
+      },
+      "rear": {
+        "file": "../inputs/63b441b1038c-rear-v1.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bedroom/rear-v1.png",
+        "sha256": "63b441b1038ca99afdb8d2c10ffd019d31c7d89deacc162ccc79fc5608555def",
+        "bytes": 1739102
+      },
+      "down": {
+        "file": "../inputs/abb2c5c9f0c9-down-v1.png",
+        "sourceRepoPath": "docs/storyboard/production/house-image-tour-20260924/bedroom/down-v1.png",
+        "sha256": "abb2c5c9f0c98191cec23ccb7d3d2db9d94221b721280b23f82d082cb7bbca9d",
+        "bytes": 2166446
+      }
+    }
+  },
+  "configSha256": "37628d9f029efe2761244c417fde514c3149914dcdc02b5c6fda639e3c3fe33d",
+  "scriptSha256": "56aab0ec1beef83ae16cf11902960faeaa57d19ea696e797cbb33fff27384315",
+  "stackMathSha256": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+  "samplingHelperSha256": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+  "pngHelperSha256": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d",
+  "runtimeShaderSha256": "694350965ac5a9bd28f78528bd26518aa0542b053cdbbc7ee092d226c8b336ef",
+  "runtimeConfigSha256": "a3db0b6fa7d91979bb9509672f33384288c66ddfe9b3e5922d743b9c2ba52006",
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bedroom-current.png",
+    "sha256": "908e2426a0dec0756c1c3eb5904e0c1af6a7c36088e11bd5ac41cb738a371a85",
+    "size": [
+      3072,
+      1536
+    ]
+  },
+  "levelProof": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bedroom-level-reference.png",
+    "sha256": "7298c666f146f4b7a5aa612d2b5073bc81a5f42c8979b48aafa82f62efbb305d",
+    "size": [
+      1024,
+      1024
+    ],
+    "camera": {
+      "yawRadians": 1.35,
+      "pitchRadians": 0,
+      "fovDegrees": 100,
+      "size": 1024
+    }
+  },
+  "orientation": "World+Yfront u=.5; +Xrightu=.75; \u2212Yrearwrap; +Zupv=0. Rendererinternalaxes[X,Z,Y].",
+  "sampling": "Pixel-center rays, encoded RGB linear filtering, source textures clamp-to-edge; base longitude fract before sampling. Same normalized repair blend and registered detail mix as frozen shader.",
+  "noNewGeometryOrArt": true,
+  "noCameraTranslation": true,
+  "note": "This preserves the current image-led view; lowering a future generated view is an artistic proposal, not a recovered metric camera move."
+}

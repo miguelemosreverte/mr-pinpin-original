@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "status": "selected-for-review-prototype",
+  "tool": "image_gen.imagegen",
+  "originalOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c874-13fb-7b41-ac82-c7ed209f37ce/exec-bf8bc56e-a1ab-4c40-ba87-23fb1813c095.png",
+  "prompt": {
+    "path": "bath-child-down-v1.prompt.txt",
+    "sha256": "a220a6f58b7d31a4142b20b96dc1ebb4b9f2708f5e8bfafe3d5b3f02f102c799",
+    "text": "Use case: precise-object-edit.\nEdit this square 110-degree downward perspective extracted from the current CHILD-HEIGHT illustrated bathroom, with its newly repaired rear wall already incorporated. Return exactly the same downward camera and framing. This is a local floor-continuity repair, NOT a new room and NOT a panorama.\nRepair the remaining straight vertical wrap join / abruptly chopped rug boundary in the floor. Reconstruct coherent existing warm wooden floorboards across the old seam, and give the thick braided oval bath mat one natural smoothly curving outer boundary. Do not leave a ruler-straight cut through the woven mat. Keep the mat large and in its existing position beneath the tub. Where the join passes through braid or wood, continue the same strand direction, board construction, light and shadow naturally. Remove pinching or radial star shapes at the bottom-view center without adding a medallion or hiding the defect with new objects.\nPreserve the exact positions, silhouettes and warm storybook finish of the existing tub side, stool feet, doorway/doorleaf, basket and any other visible furnishings. Preserve the low viewpoint: the camera is BELOW the tub rim, so no water surface can become visible. Keep the outside 15 percent of each edge aligned to the input for registered blending back into the same sphere, except the tiny seam continuation itself if it meets a border. No new props, characters, text, labels, frame, photorealism, geometry grid or collage.\n"
+  },
+  "references": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-house-variants-20260924/bath-child-down-input.png",
+      "sha256": "4faa00bf18ee562c0bf78a81bfd7092b180298e77f06ddc288c84a508eea18af",
+      "role": "exact110degree downward perspective from base plus selected rear correction"
+    }
+  ],
+  "output": {
+    "path": "bath-child-down-v1.png",
+    "sha256": "afa79cf1ca32cfeca40dcd4f9a978825d28173f3324b4f9585a32fb810e23115",
+    "width": 1254,
+    "height": 1254
+  },
+  "camera": {
+    "yawDegrees": 0,
+    "pitchDegrees": -90,
+    "fovDegrees": 110
+  },
+  "originalPreserved": true,
+  "review": {
+    "report": "CHILD-VIEWS.md",
+    "metricTranslationVerified": false,
+    "originalTourReplaced": false,
+    "result": "final selected low-eye view and bathroom repair stack visually reviewed"
+  }
+}
