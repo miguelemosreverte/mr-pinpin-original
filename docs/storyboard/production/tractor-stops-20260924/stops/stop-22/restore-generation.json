@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "stop": "stop-22",
+  "tool": "image_gen__imagegen",
+  "mode": "built-in edit",
+  "callCount": 1,
+  "prompt": "restore-prompt.txt",
+  "promptSha256": "c43f110ae526f06f237053b6d4605e7abf3cc6ebdb84b3456e5a59c8d56a9831",
+  "inputs": [
+    {
+      "order": 1,
+      "role": "sole edit target: exact extracted orbit frame",
+      "path": "stops/stop-22/source.png",
+      "sha256": "c5ae16ca4c8906b175db717a2a4e72b93cae46c00404407d5b6c3d191b055967",
+      "bytes": 1233007,
+      "width": 1280,
+      "height": 720
+    }
+  ],
+  "output": {
+    "path": "stops/stop-22/restored-v1.png",
+    "sha256": "6eb84efc55819a595ef8724b7f715e336e938382a08aa2261f8fc6a02677288f",
+    "bytes": 2872165,
+    "width": 1672,
+    "height": 941
+  },
+  "transport": "Returned image_url PNG data URL decoded in sequential base64 chunks directly to mini SSD; exact bytes retained.",
+  "recordedAt": "2026-09-24T13:44:04.923560+00:00",
+  "status": "restored candidate; not an accepted panorama",
+  "visualReview": "Source and returned image inspected: same overall vehicle viewpoint and composition; blur reduced, details synthesized. Exact pixel or metric geometry identity is not claimed."
+}

@@ -1,0 +1,68 @@
+{
+  "schemaVersion": 1,
+  "operation": "Generated-V2-only triangular monotone inverse projection; no original-frame texture, color blending or painting",
+  "input": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/pilot/panorama-v2.png",
+    "sha256": "93542403af245904ed2a32f696fa116cea50e18b7a4adf76622a985c5152f493",
+    "width": 1774,
+    "height": 887
+  },
+  "registrationSha256": "0f3febc92044821fc85b5bf88dad1b3e3e9bb0837cd1e293971f51b097864755",
+  "camera": {
+    "yawRadians": 0,
+    "pitchRadians": 0,
+    "verticalFovDegrees": 65,
+    "aspect": 1.7777777777777777,
+    "status": "Authored display lens; not measured video lens"
+  },
+  "output": {
+    "path": "panorama-projection-v3.png",
+    "sha256": "cad6e2dbca18eca40fad3e4961f5989af4ef3ee775d25ed0c92b3abbfc6ffbdc",
+    "width": 3072,
+    "height": 1536
+  },
+  "mapping": {
+    "longitude": "Raw-frame x at mid-row mapped by homography into V2, composed with tan(target longitude), positive-derivative integrated-exponential C1 bridges to unchanged rear20-degree bands",
+    "latitude": "Full homography y for current source column, composed with perspective tan(latitude)/cos(longitude); per-column positive-derivative C1 bridges to identity13.5-degree polar latitude caps; smooth weight to identity rear",
+    "omission": "Small homography x/y cross-coupling omitted to keep longitude independent of latitude and guarantee positive determinant",
+    "horizon": "Perspective center row maps continuously through homography; no detached rectangular overlay",
+    "checks": {
+      "positiveJacobianLowerBound": 1.3674791214463197e-06,
+      "minimumLongitudeDerivative": 0.03781502101073079,
+      "minimumLatitudeDerivative": 3.6162326104705045e-05,
+      "longitudeStrictlyIncreasingEveryOutputRow": true,
+      "latitudeStrictlyIncreasingEveryOutputColumn": true,
+      "rearPixelMaxDiffVsIdentity": 0,
+      "polarLatitudeCoordinateMaxError": 0.0,
+      "rearUVMaxError": 0.0,
+      "polarCapPixelMaxDiffVsIdentity": 0,
+      "polarBlendProof": "Longitude becomes identity inside4.5-degree polar caps via smooth transition within9-degree latitude-identity caps. There latitude derivative wrt longitude is zero; determinant remains positive."
+    },
+    "longitudeBridgeRecords": [
+      {
+        "label": "left longitude",
+        "targetSpan": 1.9450443839741656,
+        "transitionScale": 0.19450443839741657,
+        "minimumDerivativeBound": 0.041447084688552877,
+        "endpointDerivatives": [
+          3.9066128146385015,
+          1.0
+        ]
+      },
+      {
+        "label": "right longitude",
+        "targetSpan": 1.9450443839741656,
+        "transitionScale": 0.3112071014358665,
+        "minimumDerivativeBound": 0.03781502101073079,
+        "endpointDerivatives": [
+          2.863029295973906,
+          1.0
+        ]
+      }
+    ],
+    "verticalBridgeMinimumScale": 0.019012194151230254,
+    "proof": "Triangular map away from polar transition; within the transition latitude is identity, so the extra longitude/latitude cross term has no determinant contribution. Core rational/tangent derivatives have positive analytic bounds; bridge derivatives are a positive constant plus two positive exponentials with recorded lower bounds."
+  },
+  "scriptSha256": "861b00241572108e22a581ace8bbe055f6c096b6078848e0bc85f41c99b2eb8d",
+  "limits": "Image-model redraw differences remain. Rear20-degree bands and true4.5-degree polar caps are coordinate/pixel identical to identity resampling. The9-degree polar transition changes azimuth continuously, not source art. Surroundings have changed angular spacing. This is not recovery of a physical camera."
+}

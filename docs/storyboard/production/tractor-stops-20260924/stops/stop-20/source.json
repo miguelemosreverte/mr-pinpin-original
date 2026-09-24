@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-20",
+  "source": {
+    "path": "source.png",
+    "sha256": "9ae2de759b086d702132c14987940b9950ce8d2cd0d5f3ab320fd203d74ae1ba",
+    "width": 1280,
+    "height": 720,
+    "videoTimestampSeconds": 9.5,
+    "videoFrameIndex": 228,
+    "originalExtractionPath": "../../frames/stop-20/original.png"
+  },
+  "camera": {
+    "yawRadians": 0,
+    "pitchRadians": 0,
+    "verticalFovDegrees": 45,
+    "aspectPolicy": "Retain actual restored-image aspect; nominal16:9",
+    "status": "Authored registration convention, not a measured video camera"
+  },
+  "files": {
+    "restored": "restored-v1.png",
+    "guide": "guide-v1.png",
+    "panorama": "panorama-v1.png"
+  },
+  "note": "File names reserve destinations; no restoration or panorama readiness is implied. Original extraction remains unchanged."
+}

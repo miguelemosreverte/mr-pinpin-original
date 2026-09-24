@@ -1,0 +1,179 @@
+{
+  "schemaVersion": 1,
+  "status": "selected timestamps after visual contact-sheet inspection; angular spacing approximate",
+  "video": {
+    "sourcePath": "docs/storyboard/production/tractor-orbit-20260924/orbit-v1.mp4",
+    "sha256": "172af688f536364ca766a517d94fd9b849585a128bbc192e2713b67ce6e4a83d"
+  },
+  "rationale": "Nonuniform time selection reduces the initial and closing near-duplicate holds and samples the faster rear/opposite-side circuit more densely. These are24 sampled stops, not calibrated15-degree positions. Prior half-second contact sheet inspected. Pixel motion includes model deformation; no angle recovery claimed.",
+  "stops": [
+    {
+      "id": "stop-00",
+      "frameIndex": 0,
+      "timestampSeconds": 0,
+      "visualSector": "starting front-quarter",
+      "pilot": false
+    },
+    {
+      "id": "stop-01",
+      "frameIndex": 60,
+      "timestampSeconds": 2.5,
+      "visualSector": "near-side approach",
+      "pilot": false
+    },
+    {
+      "id": "stop-02",
+      "frameIndex": 72,
+      "timestampSeconds": 3,
+      "visualSector": "near-side approach",
+      "pilot": false
+    },
+    {
+      "id": "stop-03",
+      "frameIndex": 84,
+      "timestampSeconds": 3.5,
+      "visualSector": "near-side approach",
+      "pilot": false
+    },
+    {
+      "id": "stop-04",
+      "frameIndex": 96,
+      "timestampSeconds": 4,
+      "visualSector": "near-side restoration pilot",
+      "pilot": true
+    },
+    {
+      "id": "stop-05",
+      "frameIndex": 114,
+      "timestampSeconds": 4.75,
+      "visualSector": "near side toward trailer",
+      "pilot": false
+    },
+    {
+      "id": "stop-06",
+      "frameIndex": 126,
+      "timestampSeconds": 5.25,
+      "visualSector": "near side toward trailer",
+      "pilot": false
+    },
+    {
+      "id": "stop-07",
+      "frameIndex": 135,
+      "timestampSeconds": 5.625,
+      "visualSector": "near side toward trailer",
+      "pilot": false
+    },
+    {
+      "id": "stop-08",
+      "frameIndex": 144,
+      "timestampSeconds": 6,
+      "visualSector": "trailer rear approach",
+      "pilot": false
+    },
+    {
+      "id": "stop-09",
+      "frameIndex": 153,
+      "timestampSeconds": 6.375,
+      "visualSector": "trailer rear approach",
+      "pilot": false
+    },
+    {
+      "id": "stop-10",
+      "frameIndex": 159,
+      "timestampSeconds": 6.625,
+      "visualSector": "trailer rear approach",
+      "pilot": false
+    },
+    {
+      "id": "stop-11",
+      "frameIndex": 165,
+      "timestampSeconds": 6.875,
+      "visualSector": "trailer rear approach",
+      "pilot": false
+    },
+    {
+      "id": "stop-12",
+      "frameIndex": 171,
+      "timestampSeconds": 7.125,
+      "visualSector": "rear through opposite side",
+      "pilot": false
+    },
+    {
+      "id": "stop-13",
+      "frameIndex": 177,
+      "timestampSeconds": 7.375,
+      "visualSector": "rear through opposite side",
+      "pilot": false
+    },
+    {
+      "id": "stop-14",
+      "frameIndex": 183,
+      "timestampSeconds": 7.625,
+      "visualSector": "rear through opposite side",
+      "pilot": false
+    },
+    {
+      "id": "stop-15",
+      "frameIndex": 189,
+      "timestampSeconds": 7.875,
+      "visualSector": "rear through opposite side",
+      "pilot": false
+    },
+    {
+      "id": "stop-16",
+      "frameIndex": 195,
+      "timestampSeconds": 8.125,
+      "visualSector": "rear through opposite side",
+      "pilot": false
+    },
+    {
+      "id": "stop-17",
+      "frameIndex": 201,
+      "timestampSeconds": 8.375,
+      "visualSector": "rear through opposite side",
+      "pilot": false
+    },
+    {
+      "id": "stop-18",
+      "frameIndex": 210,
+      "timestampSeconds": 8.75,
+      "visualSector": "opposite side toward front",
+      "pilot": false
+    },
+    {
+      "id": "stop-19",
+      "frameIndex": 219,
+      "timestampSeconds": 9.125,
+      "visualSector": "opposite side toward front",
+      "pilot": false
+    },
+    {
+      "id": "stop-20",
+      "frameIndex": 228,
+      "timestampSeconds": 9.5,
+      "visualSector": "opposite side toward front",
+      "pilot": false
+    },
+    {
+      "id": "stop-21",
+      "frameIndex": 237,
+      "timestampSeconds": 9.875,
+      "visualSector": "opposite side toward front",
+      "pilot": false
+    },
+    {
+      "id": "stop-22",
+      "frameIndex": 246,
+      "timestampSeconds": 10.25,
+      "visualSector": "front toward starting quarter",
+      "pilot": false
+    },
+    {
+      "id": "stop-23",
+      "frameIndex": 255,
+      "timestampSeconds": 10.625,
+      "visualSector": "front toward starting quarter",
+      "pilot": false
+    }
+  ]
+}

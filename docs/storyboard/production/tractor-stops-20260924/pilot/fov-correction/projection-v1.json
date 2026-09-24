@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "operation": "Generated-V2-only triangular monotone inverse projection; no original-frame texture, color blending or painting",
+  "input": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/pilot/panorama-v2.png",
+    "sha256": "93542403af245904ed2a32f696fa116cea50e18b7a4adf76622a985c5152f493",
+    "width": 1774,
+    "height": 887
+  },
+  "registrationSha256": "0f3febc92044821fc85b5bf88dad1b3e3e9bb0837cd1e293971f51b097864755",
+  "camera": {
+    "yawRadians": 0,
+    "pitchRadians": 0,
+    "verticalFovDegrees": 45,
+    "aspect": 1.7777777777777777,
+    "status": "Authored display lens; not measured video lens"
+  },
+  "output": {
+    "path": "panorama-projection-v1.png",
+    "sha256": "a024ecb2cbb69077cb61d887f742b5b1f86140d3cde7c9a434083d90b28e813e",
+    "width": 3072,
+    "height": 1536
+  },
+  "mapping": {
+    "longitude": "Raw-frame x at mid-row mapped by homography into V2, composed with tan(target longitude), monotone PCHIP to unchanged rear15-degree bands",
+    "latitude": "Full homography y for current source column, composed with perspective tan(latitude)/cos(longitude); per-column monotone PCHIP to identity9-degree polar latitude caps; smooth weight to identity rear",
+    "omission": "Small homography x/y cross-coupling omitted to keep longitude independent of latitude and guarantee positive determinant",
+    "horizon": "Perspective center row maps continuously through homography; no detached rectangular overlay",
+    "checks": {
+      "positiveJacobianLowerBound": 0.036075780207378325,
+      "minimumLongitudeDerivative": 0.22767455890283,
+      "minimumLatitudeDerivative": 0.15845327814064297,
+      "longitudeStrictlyIncreasingEveryOutputRow": true,
+      "latitudeStrictlyIncreasingEveryOutputColumn": true,
+      "rearPixelMaxDiffVsIdentity": 0,
+      "polarLatitudeCoordinateMaxError": 0.0,
+      "rearUVMaxError": 0.0
+    },
+    "proof": "Triangular Jacobian determinant = strictly positive longitude derivative times strictly positive per-column latitude derivative; analytic piecewise-polynomial minima checked including segment extrema"
+  },
+  "scriptSha256": "2d0265a2c9297c297314e212e36fea2bcc5812f8ac72c480bf485a9525886216",
+  "limits": "Image-model redraw differences remain. Pole latitude and wrap are preserved; polar azimuth is monotonically relabeled, not repaired. Surroundings have changed angular spacing. This is not recovery of a physical camera."
+}

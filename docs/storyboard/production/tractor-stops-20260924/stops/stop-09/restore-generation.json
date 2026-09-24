@@ -1,0 +1,28 @@
+{
+  "tool": "image_gen__imagegen",
+  "operation": "illustrated-frame-restoration",
+  "imageCalls": 1,
+  "recordedAt": "2026-09-24T13:37:20.609880+00:00",
+  "prompt": "Use case: precise-object-edit.\nEdit the supplied video frame to remove its motion blur and restore clean, legible illustration detail. This is a restoration-only pass BEFORE a separate panorama generation. Keep this exact 16:9 conventional perspective view, camera position, field of view, crop, image edges and all object positions. Do not outpaint, reframe, zoom, rotate, mirror, move the vehicle or alter the background composition.\nPreserve the single parked red tractor and empty stake trailer exactly: same side profile, hood and cab silhouette, four tractor wheels, yellow crane directly behind the cab and before the trailer, arm and grapple in the same pose, two tandem trailer axles, same tire centers and ground contact. No driver, people, animals, new attachments or extra wheels. Keep the same forest trees, sunlight, background, foreground stones/leaves, colors and illustrated medium.\nRecover restrained sharp tire tread, grille, cab glass and framing, metal edges, hoses, leaves, bark and ground texture from the existing forms. Remove directional smearing and motion blur without inventing extra mechanical parts, changing proportions or turning the scene photorealistic. Preserve the original lighting and warm finish. Sharpen coherent existing shapes rather than adding halos or heavy outlines. The output must align closely with the input frame when overlaid at the same size. No text, labels, watermark or border. Output one restored 16:9 frame.",
+  "promptSha256": "1fc3c7016a09a98cae600828f699f40c0b6de0d9c0cedc6773e7ec60dbeb121e",
+  "inputs": [
+    {
+      "path": "source.png",
+      "sha256": "faa540eb736ce13458ac08eb37296109329181cb487cec94fd44d688e78d224c",
+      "role": "Exact original video frame; composition and machinery authority"
+    }
+  ],
+  "output": {
+    "path": "restored-v1.png",
+    "sha256": "993a3bd812ced3fe069a2514f992e3d3124497e62300156d2759023e83679780",
+    "bytes": 2628105,
+    "dimensions": [
+      1672,
+      941
+    ]
+  },
+  "transport": "Unmodified built-in PNG data URL decoded directly through SSH to mini; no output hint returned",
+  "status": "retained-restoration-candidate-batch-paused-by-user",
+  "note": "Restoration synthesizes detail; source frame retained unchanged. No panorama generated in this call.",
+  "review": "Motion blur reduced; broad view and crane/trailer arrangement retained. Generated tire, fastener, foliage and metal details are inferred and are not original video pixels. Original frame remains authority; no exact pixel registration claimed."
+}

@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "operation": "one model edit of geometrically corrected V3 to repair stretched surroundings",
+  "imageCalls": 1,
+  "executedBy": "root coordinator",
+  "promptFile": "repair-v4-prompt.txt",
+  "promptFileSha256": "a26a2c706df9188fbe719605d43978389cd3635f8d140aaa7004604091992259",
+  "promptTextWithoutTerminalNewlineSha256": "268c1170167f3016301b6ba62fb91a80f4c8271f979ac5435deb9725c02111ce",
+  "prompt": "Use case: precise-object-edit. Image 1 is the EDIT TARGET: a 2:1 full 360x180 equirectangular environment texture whose central tractor is correctly calibrated but whose surrounding forest, sky and ground have ugly stretched/smeared pixels. Image 2 is the original perspective video frame, REFERENCE ONLY for rich natural sunlight, indirect lighting, contact shadows, glass and metal reflections, materials, forest detail. Repair image 1 into a clean seamless equirectangular panorama. CRITICAL: preserve exactly the position, silhouette, scale, angular occupancy and appearance of the small central red tractor, yellow crane and empty timber trailer in image 1. Do not enlarge the tractor or fill the canvas with it. Preserve the central intact scene; replace the stretched radial/horizontal/vertical streaks around it with continuous richly detailed forest, ground and sky. This is a spherical environment texture, not a wide-angle photograph. Top edge is sky zenith, bottom edge ground nadir; left and right edges join seamlessly at the rear. Maintain a level horizon at middle height, coherent tree trunks and continuous ground. Eliminate rectangular boundary bands, smeared leaves, stretched stones, duplicated machinery and bent transitions. Do not add labels, grids, frames, UI, people, or a second vehicle. Match the source reference rendering and golden lighting closely. Output one full 2:1 equirectangular image with no margins.",
+  "inputs": [
+    {
+      "path": "panorama-projection-v3.png",
+      "sha256": "cad6e2dbca18eca40fad3e4961f5989af4ef3ee775d25ed0c92b3abbfc6ffbdc",
+      "role": "First input; edit target and corrected central geometry/placement"
+    },
+    {
+      "path": "../../stops/stop-04/source.png",
+      "sha256": "a521421a10d6335ea01421245ec619175568aa8954d0715c1cd3d45b90141c15",
+      "role": "Second input; raw t4/frame96 appearance reference"
+    }
+  ],
+  "output": {
+    "path": "panorama-repaired-v4.png",
+    "durablePath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/pilot/fov-correction/panorama-repaired-v4.png",
+    "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-63b83831-4aa0-42fc-94ad-f2ba638522d2.png",
+    "sha256": "7af1d1f029f4f8d0e68a41777b0d48598bce49a8a9eb708693bc163d357b4890",
+    "bytes": 3290812,
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  "status": "generated-candidate-browser-and-registration-review-pending",
+  "note": "Model-authored repair, distinct from deterministic V3 remapping. Original outputs retained; no pixel-preservation claim.",
+  "promptSha256": "268c1170167f3016301b6ba62fb91a80f4c8271f979ac5435deb9725c02111ce",
+  "promptIdentity": "Coordinator confirmed exact tool text equals prompt file with terminal newline removed.",
+  "reportedToolDurationSeconds": 47.5,
+  "registrationReview": {
+    "path": "v4-fit-raw/fit.json",
+    "status": "feature fit remains close to intended 0/0/65 entry; visual perimeter review separate"
+  }
+}

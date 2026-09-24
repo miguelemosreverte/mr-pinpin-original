@@ -1,0 +1,27 @@
+{
+  "tool": "image_gen__imagegen",
+  "operation": "illustrated-frame-restoration",
+  "imageCalls": 1,
+  "recordedAt": "2026-09-24T13:22:27.125039+00:00",
+  "prompt": "Use case: precise-object-edit.\nEdit the supplied video frame to remove its motion blur and restore clean, legible illustration detail. This is a restoration-only pass BEFORE a separate panorama generation. Keep this exact 16:9 conventional perspective view, camera position, field of view, crop, image edges and all object positions. Do not outpaint, reframe, zoom, rotate, mirror, move the vehicle or alter the background composition.\nPreserve the single parked red tractor and empty stake trailer exactly: same side profile, hood and cab silhouette, four tractor wheels, yellow crane directly behind the cab and before the trailer, arm and grapple in the same pose, two tandem trailer axles, same tire centers and ground contact. No driver, people, animals, new attachments or extra wheels. Keep the same forest trees, sunlight, background, foreground stones/leaves, colors and illustrated medium.\nRecover restrained sharp tire tread, grille, cab glass and framing, metal edges, hoses, leaves, bark and ground texture from the existing forms. Remove directional smearing and motion blur without inventing extra mechanical parts, changing proportions or turning the scene photorealistic. Preserve the original lighting and warm finish. Sharpen coherent existing shapes rather than adding halos or heavy outlines. The output must align closely with the input frame when overlaid at the same size. No text, labels, watermark or border. Output one restored 16:9 frame.",
+  "promptSha256": "1fc3c7016a09a98cae600828f699f40c0b6de0d9c0cedc6773e7ec60dbeb121e",
+  "inputs": [
+    {
+      "path": "/tmp/pinpin-tractor-stops-inputs/pilot-near-t4.png",
+      "sha256": "a521421a10d6335ea01421245ec619175568aa8954d0715c1cd3d45b90141c15",
+      "role": "Exact original video frame96 at4 seconds; camera, silhouette and composition authority"
+    }
+  ],
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/pilot/restored-v1.png",
+    "sha256": "f6a3e454f750b8b1e4c8425a43f7f438554cd126b90b30ba2f0314073539fda0",
+    "bytes": 2832345,
+    "dimensions": [
+      1672,
+      941
+    ]
+  },
+  "transport": "Unmodified PNG decoded from built-in tool data URL; no filesystem output hint returned. Saved through SSH to mini.",
+  "status": "pilot-restoration-reviewed-awaiting-projection",
+  "review": "Broad wheel centers, crane pose and frame composition closely retained; tire, cab and foliage detail clearer. Fine texture is inferred image-model reconstruction, not recovered ground truth."
+}

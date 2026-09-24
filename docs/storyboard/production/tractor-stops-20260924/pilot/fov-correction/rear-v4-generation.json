@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "operation": "one localized rear-wrap repair of V4 extracted perspective",
+  "executedBy": "root coordinator",
+  "imageCalls": 1,
+  "correctionPhaseTotalImageCalls": 2,
+  "reportedToolDurationSeconds": 35.1,
+  "promptFile": "rear-v4-prompt.txt",
+  "promptFileSha256": "a96e47ba69af152f8d66a583025cf44ec16ebafde7969d2ca80dfd69395f6641",
+  "promptSha256": "db12e49b15580b7e9a54d2f5ef2c62c1b280d64d0296e7885278e0f555daf654",
+  "prompt": "Use case: precise-object-edit. Edit this exact square 110-degree perspective forest view to repair the vertical stitching seam at its center. Preserve the camera, field of view, horizon, composition, colors and rich golden lighting. Make the central tree trunk, rocks, ferns, stream and foreground ground meet naturally across the seam, with no straight split, duplicated edges, blur stripe or inconsistent heights. Preserve all surrounding forest and outer edges as closely as possible so this image can be registered back into the panorama as a local repair. Same rendering style and materials. No new objects, no vehicle, no text, no crop, no camera change. One square repaired image.",
+  "promptIdentity": "Coordinator confirmed exact call text equals file without terminal newline.",
+  "inputs": [
+    {
+      "path": "rear-v4-input.png",
+      "sha256": "bb4e1e902baf53a27d4ba455f846cad06591e2a203b7e96c9fd019c6f000b5c6",
+      "bytes": 5397616,
+      "dimensions": [
+        1400,
+        1400
+      ],
+      "role": "Only input; exact V4 perspective at yaw180/pitch0/FOV110"
+    }
+  ],
+  "output": {
+    "path": "rear-v4-repair.png",
+    "sha256": "3d62e73591146277fb40e20f3fcf81baf460dd08108253e716548e1c94dc17f2",
+    "bytes": 3126385,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0be6f-b832-7d93-95df-9d2ff5f69dc1/exec-fcd1d162-46c2-40a9-9052-5ed20b6821c9.png"
+  },
+  "registration": {
+    "yawDegrees": 180,
+    "pitchDegrees": 0,
+    "fovDegrees": 110,
+    "intendedRuntimeSlot": "repairs.rear"
+  },
+  "status": "coordinator-inspected-center-seam-repaired-runtime-overlap-review-pending",
+  "limits": "Generated local artwork can differ from the input; registered overlap still requires actual browser review. Original V4 and original tool output are preserved."
+}

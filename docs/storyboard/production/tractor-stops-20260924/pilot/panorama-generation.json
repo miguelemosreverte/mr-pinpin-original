@@ -1,0 +1,38 @@
+{
+  "tool": "image_gen__imagegen",
+  "operation": "guide-constrained-spherical-outpainting",
+  "imageCalls": 1,
+  "pilotCumulativeCalls": 2,
+  "recordedAt": "2026-09-24T13:27:17.595345+00:00",
+  "prompt": "Use case: illustration-story.\nPrimary request: complete ONE continuous 2:1 equirectangular full-sphere environment around the supplied locked view, preserving its geometric placement.\nIMAGE 1 is the PRIMARY EDIT TARGET and PROJECTION GUIDE: a 2:1 latitude-longitude canvas with the restored video frame already projected into its correct central spherical region. Preserve that illustrated central region, especially the tractor silhouette, wheel centers, crane pose, trailer, their apparent sizes and position. The neutral unpainted region outside it is UNKNOWN SCENERY TO FILL, not a wall, fog, border or desired background. Keep exactly this 2:1 canvas and the projected core's scale; do not enlarge the tractor or convert the canvas back into a flat wide photo.\nIMAGE 2 is the clean RESTORED PERSPECTIVE FRAME before projection. It supplies clear detail and confirms the exact side profile, crop, camera height and machinery design. It is not a second tractor to place elsewhere. IMAGE 1 dictates where its content belongs on the sphere. The projection uses an authored 45-degree vertical field of view, yaw0/pitch0, so this frame should be recovered when the final panorama is viewed forward with that field of view.\nIMAGE 3 is the already successful full panorama of the SAME forest worksite. It supplies full-sphere organization, coherent sky/canopy and ground, sunlight and illustrated finish. Its older camera angle and vehicle placement MUST NOT override the primary projected view. Never copy its tractor as an extra object.\nFill the unknown sphere with a natural continuation of the sunlit woodland clearing at this new viewing point: nearby dirt/leaves/stones, middle-ground ferns, tall trees, stream/bridge context where plausible, distant forest and sky. Exactly ONE stationary red tractor and attached empty stake trailer remain in the central forward sector in the side profile shown in images1\u20132. Keep four tractor wheels, TWO tandem trailer axles, yellow crane mounted directly BEHIND THE CAB and BEFORE THE TRAILER, same raised arm/grapple and tire-ground contact. No driver, people, animals, new attachments or mechanical redesign. No moving or turning the machine.\nThe horizon remains at the middle row. Front is longitude center u=.5; rear joins the outer left and right edges. Make those edges continuous through quiet woodland behind the camera. Give the zenith coherent canopy/sky and the nadir one coherent patch of forest floor without radial starbursts, spokes or holes. Maintain one scene around the full360 by180degrees. Remove all neutral guide background by filling unseen surroundings; retain the projected illustrated core. No text, labels, watermark, border, panel layout or hard pasted frame edge. Output one finished 2:1 equirectangular panorama.",
+  "promptSha256": "031667e772a2083e25cf423d3c6a9ce350f31fb0cc5477a8e6bf9324d0e05be5",
+  "inputs": [
+    {
+      "path": "/tmp/pinpin-tractor-stops-inputs/pilot-guide-equirect.png",
+      "sha256": "5e5955bdf5ae64618c4249e047d49746a1fece76303addf4eb7593310323d18e",
+      "role": "Primary edit target; deterministic central projection of restored frame, authored verticalFOV45\u00b0"
+    },
+    {
+      "path": "/tmp/pinpin-pilot-restored-v1.png",
+      "sha256": "f6a3e454f750b8b1e4c8425a43f7f438554cd126b90b30ba2f0314073539fda0",
+      "role": "Restored perspective; detail and exact machinery/view identity"
+    },
+    {
+      "path": "/tmp/pinpin-tractor-stops-inputs/selected-tractor-panorama.png",
+      "sha256": "84dbfe633a8f3c9282f9dd23406324c983c85ae19a9a488178b2b7976cae35fe",
+      "role": "Successful sphere; same-place context and projection finish only"
+    }
+  ],
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/pilot/panorama-v1.png",
+    "sha256": "26b2c7875500c0c5c5a2c6b433ea7fbd77046a35f28f3086bd5acf7e5f9d7869",
+    "bytes": 3460529,
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  "transport": "Unmodified PNG decoded from builtin tool data URL; no filesystem output hint returned; saved viaSSH.",
+  "status": "retained-pilot-not-source-registered-production-held",
+  "review": "Guide core enlarged; camera-fit central scale only approximate, outer wheels distort and scenery/detail differ. User source-fidelity/style hold. No panorama batch."
+}

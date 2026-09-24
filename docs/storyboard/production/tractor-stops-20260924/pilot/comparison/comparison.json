@@ -1,0 +1,24 @@
+{
+  "operation": "Generated sphere sampled at the exact authored guide camera; no alignment optimization",
+  "panorama": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/pilot/panorama-v1.png",
+    "sha256": "26b2c7875500c0c5c5a2c6b433ea7fbd77046a35f28f3086bd5acf7e5f9d7869"
+  },
+  "guideSha256": "30ac7e0bb87360c7222fa2fdea2c5e5048404f316e1bdbe9ee4ac4b50bea1165",
+  "camera": {
+    "yawRadians": 0,
+    "pitchRadians": 0,
+    "verticalFovDegrees": 45,
+    "aspect": 1.7768331562167907,
+    "horizontalFovDegrees": 72.70527373089243,
+    "lensStatus": "Authored reconstruction convention; video lens not measured; actual source aspect retained, nominal16:9"
+  },
+  "output": {
+    "path": "panorama-forward45.png",
+    "width": 1672,
+    "height": 941,
+    "sha256": "609c6900a937291546ad6f7750b7d5d7bee6aa508c60df505940a188293badb4"
+  },
+  "scriptSha256": "8697d2f9d4bde6e20268d63f519c684cfe69348eccd767e6af9539c1cf89b20c",
+  "note": "Visual comparison required; this output does not assert correspondence."
+}

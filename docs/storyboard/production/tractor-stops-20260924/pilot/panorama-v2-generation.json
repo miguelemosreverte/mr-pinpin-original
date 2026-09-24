@@ -1,0 +1,47 @@
+{
+  "tool": "image_gen__imagegen",
+  "operation": "single-revised-spherical-extension-appearance-fidelity-trial",
+  "imageCalls": 1,
+  "pilotCallsIncludingV1": 3,
+  "prompt": "Use case: precise-object-edit.\nCreate ONE complete 2:1 equirectangular 360° environment by faithfully extending the rendering seen in IMAGE 1. Preserve its physical lighting, material response and camera/vehicle identity throughout the whole sphere.\nREFERENCE PRIORITY:\n1. IMAGE 1, the ORIGINAL VIDEO FRAME, is the sole authority for the desired appearance: the same naturally rendered red tractor in a sunlit forest, with believable three-dimensional surfaces, nuanced indirect light, material roughness, reflections, shadows, exposure, color grading and atmospheric depth. Preserve its near-side profile and relative shapes. Reconstruct clear detail consistent with its rendering; do not copy motion blur.\n2. IMAGE 2 is a sharpened version of that same frame. Use it only to resolve small mechanical details obscured by blur: hoses, cab edges, tire tread and fasteners. IMAGE 1 remains authoritative for lighting, materials, colors, tone and proportions. Do not adopt a more uniformly crisp, glossy or simplified appearance from image 2.\n3. IMAGE 3 is a GEOMETRIC PLACEMENT GUIDE ONLY: the central view has been mapped into a 2:1 spherical canvas at yaw0/pitch0, verticalFOV45°, horizontalFOV72.734°. The gray area is unseen scenery to complete. Keep the central vehicle's angular position, scale and geometry as shown by this guide, so looking forward with that lens resembles image 1. Do not enlarge the tractor or leave any gray/blank region. The guide is not a lighting/style reference.\n4. IMAGE 4 demonstrates ONLY the output's 360° spherical organization, edge wrapping and pole coverage. It has NO authority over style, lighting, materials, color palette, contrast, tractor design or viewpoint. Do not transfer its flatter painted surface treatment, its old tractor angle, or its different placement of objects. Its function is projection reference alone.\nAPPEARANCE TO PRESERVE FROM IMAGE 1: physically rendered illumination with warm filtered sunlight, soft contact shadows beneath each tire and chassis, ambient occlusion in joints and under the trailer, diffuse light bouncing from sandy ground into shaded surfaces, the source frame's paint clearcoat highlights and forest reflections, cab glass that both reflects the forest and transmits the visible interior, varied roughness across dusty rubber/paint/steel/bark/soil, gentle specular highlights without plastic sheen, and soft light gradients that explain rounded volume. Keep shadow detail and the original balance of warm sunlight and cooler indirect light. Sun, shadows and bounce must describe one consistent forest setting around the observer. Retain layered depth and natural material variation instead of flattening surfaces into outlined color patches or uniform decorative foliage. Preserve the source's apparent path-traced quality without assuming a particular rendering engine or adding a new photorealism upgrade. This should look like the same physically rendered scene viewed in every direction, with the same rendering quality as the original frame.\nGEOMETRY: exactly one stationary empty red tractor with its attached empty stake trailer, four tractor wheels, two trailer axles/tandem bogie, yellow logging crane mounted directly behind the cab and before the trailer, arm/grapple in the original pose. Preserve wheel centers, tire sizes, hood/cab shape and trailer spacing. No driver, characters, new attachments or duplicated machinery. Keep the machine in the central forward sector with tires planted on ground.\nExtend the original clearing, trees, ferns, stream/bridge context, sky and forest floor naturally into unseen directions. Horizon at the middle row; forward at longitude center u=.5. Outer left/right edges meet continuously behind the observer. Zenith has plausible canopy/sky; nadir has one coherent dirt/leaf surface without radial pinches. No collage, cube panels, text, watermark, border or composited frame edge. Output one continuous finished 2:1 spherical image, preserving the original frame's lighting/material rendering as the overriding visual standard.",
+  "promptSha256": "ef50470f421a19a1e90bd0d8273e03cbd1210bb39e1561c12b75885216f16de3",
+  "inputs": [
+    {
+      "path": "/tmp/pinpin-tractor-stops-inputs/pilot-near-t4.png",
+      "sha256": "a521421a10d6335ea01421245ec619175568aa8954d0715c1cd3d45b90141c15",
+      "role": "PRIMARY: original video frame96/time4s, sole authority for source appearance, geometry and camera"
+    },
+    {
+      "path": "/tmp/pinpin-pilot-restored-v1.png",
+      "sha256": "f6a3e454f750b8b1e4c8425a43f7f438554cd126b90b30ba2f0314073539fda0",
+      "role": "SECONDARY: small mechanical detail only; cannot override raw-frame lighting/materials"
+    },
+    {
+      "path": "/tmp/pinpin-tractor-stops-inputs/pilot-raw-guide.png",
+      "durablePath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/pilot/style-v2/raw-guide/guide-equirect.png",
+      "identityRecord": "style-v2/raw-guide/guide.json#/outputs/0",
+      "sourceFrameSha256": "a521421a10d6335ea01421245ec619175568aa8954d0715c1cd3d45b90141c15",
+      "role": "GEOMETRY ONLY: raw-frame projection, authored verticalFOV45°,horizontalFOV72.7343514°,yaw0/pitch0",
+      "hashNote": "Exact output hash is recorded in the adjacent projection record; duplicating it here was blocked by OS35 process exhaustion. No hash inferred from a resized preview."
+    },
+    {
+      "path": "/tmp/pinpin-tractor-stops-inputs/selected-tractor-panorama.png",
+      "sha256": "84dbfe633a8f3c9282f9dd23406324c983c85ae19a9a488178b2b7976cae35fe",
+      "role": "PROJECTION ONLY: sphere/wrap/poles organization; explicitly no style, material, light or color authority"
+    }
+  ],
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/pilot/panorama-v2.png",
+    "localReviewCopy": "/tmp/pinpin-pilot-panorama-v2.png",
+    "sha256": "93542403af245904ed2a32f696fa116cea50e18b7a4adf76622a985c5152f493",
+    "bytes": 3167296,
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  "transport": "Exact PNG bytes decoded from built-in tool data URL and saved viaSSH; no filesystem output hint returned. No resampling, painting or front-patch compositing.",
+  "status": "retained-revised-candidate-not-approved-for-batch",
+  "review": "Flat appearance closer to original frame's dimensional lighting/materials thanV1; coordinator independently agreed. Vehicle angular size enlarged further relative guide. Appearance and registration are separate outcomes; no one-shot reliability or geometry guarantee.",
+  "callScope": "Exactly one V2 call; no repair or retry. All24 production held."
+}

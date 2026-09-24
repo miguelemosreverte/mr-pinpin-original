@@ -1,0 +1,15 @@
+# Revised panorama pilot V2
+
+One additional built-in image call; no restoration rerun, patch compositing or repair. V1 and all original inputs remain unchanged. The panorama batch remains held.
+
+The old panorama prompt explicitly gave the older sphere authority over “sunlight and illustrated finish.” Its illustration taxonomy and the restoration prompt’s instruction against photorealism could compete with the raw frame’s desired light/material treatment. This is a plausible reference-authority conflict, not a proven sole cause: earlier orbit prompts also used storybook language, yet the resulting video is the desired appearance reference.
+
+V2 makes the original t4 frame the sole authority for lighting, materials, geometry and camera. It asks for the same warm backlit atmosphere, shaded volume, soft contact shadows, indirect ground bounce, paint clearcoat highlights, glass reflection/transmission and rough rubber. The restored image supplies small mechanical detail only. The guide is projected from the raw frame. The accepted sphere demonstrates projection/wrap/poles only, with no style or material authority. The prompt does not claim a particular source rendering engine or request an unrelated photorealistic upgrade.
+
+Exact submitted prompt: `pilot/panorama-v2-prompt.txt`. Ordered references: raw t4 frame, restored frame, raw projection guide, accepted tractor sphere. All were inspected before submission.
+
+The returned master is `pilot/panorama-v2.png`,1774×887, SHA-256 `93542403af245904ed2a32f696fa116cea50e18b7a4adf76622a985c5152f493`,3167296 bytes. Unmodified PNG bytes were decoded from the built-in tool’s data URL and preserved via SSH on mini, with a local review copy at `/tmp/pinpin-pilot-panorama-v2.png`. No filesystem output hint was returned. No resampling or replacement pixels were applied.
+
+Flat inspection suggests more dimensional tractor surfaces, warmer backlit depth and graduated light/shadow than V1. This is an appearance judgment, not a resolution diagnosis. The machine retains its near-side orientation, rear-cab crane and empty tandem trailer. It is enlarged further relative to the raw placement guide, so appearance improvement and geometric registration need separate verdicts. The projection lane is preparing forward-view comparisons. No one-shot alignment pass or full-sphere seamlessness claim is supported yet.
+
+The output, literal prompt and `pilot/panorama-v2-generation.json` are saved. The record contains exact prompt/output/reference identities; the raw-guide output hash remains referenced through its existing `style-v2/raw-guide/guide.json` instead of being duplicated. Air process exhaustion (OS35) prevented that read and the final report mirror, so direct file patches were used for source metadata. The image itself is safe on mini and locally. The coordinator also inspected V2 and judged appearance closer while framing remained enlarged. Preserve this candidate for comparison; no further call or24-stop batch is authorized by this result.
