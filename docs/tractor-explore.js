@@ -1,0 +1,45 @@
+import {panoramaRenderer} from './home-panorama-gl.js?v=bath-rug-detail-v1';
+import {clamp,wrap,RAD} from './home-panorama-math.js';
+import {exploreGestures} from './tractor-explore-gestures.js?v=explore-single-v1';
+import {STOPS,ORBIT} from './tractor-explore.config.js?v=explore-single-v1';
+const $=id=>document.getElementById(id),stage=$('stage'),video=$('video'),canvas=stage.querySelector('canvas'),slider=$('progress');
+const available=STOPS.filter(s=>s.ready),images=new Map(),views=new Map();
+let mode='orbit',ready=false,epoch=0,renderer=null,renderedStop=null,active=null,desired=null,seekFrame=0,draws=0,snap=null;
+let camera={yaw:0,pitch:0,fov:75,width:1,height:1},queued={yaw:0,pitch:0,zoom:0};
+video.loop=true;
+const progress=()=>ready?(desired===null?video.currentTime:desired)/video.duration:0;
+function image(src){if(!images.has(src)){const i=new Image();i.src=src;images.set(src,i.decode().then(()=>i).catch(e=>{images.delete(src);throw e;}));}return images.get(src);}
+function status(text){$('status').textContent=text;}
+function labels(){stage.dataset.mode=mode;$('active').textContent=mode==='orbit'?'Orbit · drag to move':`${mode==='snapping'?'Moving to':'Looking around'} · ${active.label} · video ${active.time.toFixed(1)} s`;$('percentage').value=Math.round(progress()*100)+'%';slider.value=progress()*100;$('time').textContent=ready?`${video.currentTime.toFixed(1)} / ${video.duration.toFixed(1)} s`:'';}
+function draw(){camera.width=stage.clientWidth;camera.height=stage.clientHeight;if(mode==='look'&&renderer){renderer.draw(camera);draws++;views.set(active.id,{...camera});}}
+new ResizeObserver(draw).observe(stage);
+function pump(){seekFrame=0;if(!ready||desired===null||video.seeking)return;const t=desired;desired=null;if(Math.abs(video.currentTime-t)>.001)video.currentTime=t;else labels();}
+function seek(p){if(!ready)return;video.pause();desired=Math.min(((p%1)+1)%1*video.duration,video.duration-.001);if(!seekFrame)seekFrame=requestAnimationFrame(pump);labels();}
+video.addEventListener('seeked',()=>{if(desired!==null&&!seekFrame)seekFrame=requestAnimationFrame(pump);else labels();});
+video.addEventListener('timeupdate',labels);video.addEventListener('play',()=>{$('play').textContent='Pause orbit';});video.addEventListener('pause',()=>{$('play').textContent='Play orbit';});
+function orbit(p=null){epoch++;mode='orbit';queued={yaw:0,pitch:0,zoom:0};snap=null;video.pause();if(p!==null)seek(p);labels();status('One finger or left drag moves around. Two fingers, touchpad scroll or right drag looks around.');}
+function nearest(p){return available.reduce((best,s)=>{const distance=Math.abs((((s.time/video.duration-p)+.5)%1+1)%1-.5);return !best||distance<best.distance?{stop:s,distance}:best;},null)?.stop;}
+async function snapTo(stop,own,from){const target=stop.time/video.duration,delta=(((target-from+.5)%1)+1)%1-.5;const start=performance.now(),duration=matchMedia('(prefers-reduced-motion:reduce)').matches?0:clamp(Math.abs(delta)*2400,220,1200);snap={from,target,delta,duration};await new Promise(resolve=>{function tick(now){if(own!==epoch)return resolve();const t=duration?Math.min(1,(now-start)/duration):1,e=t*t*(3-2*t);seek(from+delta*e);if(t<1)requestAnimationFrame(tick);else resolve();}requestAnimationFrame(tick);});if(own!==epoch)return;seek(target);await new Promise((resolve,reject)=>{const end=performance.now()+2500;function check(){if(own!==epoch)return resolve();if(!video.seeking&&desired===null&&Math.abs(video.currentTime-stop.time)<.04)return resolve();if(performance.now()>end)return reject(Error('Video stop did not settle'));requestAnimationFrame(check);}check();});}
+async function loadRenderer(stop,own){if(renderedStop===stop.id&&renderer)return;const [base,detail,...repairs]=await Promise.all([image(stop.asset),stop.details?image(stop.details.asset):null,...Object.values(stop.repairs.assets).map(image)]);if(own!==epoch)return;renderer?.destroy();renderer=panoramaRenderer(canvas,base,Object.fromEntries(Object.keys(stop.repairs.assets).map((k,i)=>[k,repairs[i]])),stop,detail);renderedStop=stop.id;}
+function applyQueued(){camera.yaw=wrap(camera.yaw+queued.yaw);camera.pitch=clamp(camera.pitch+queued.pitch,-89*RAD,89*RAD);camera.fov=clamp(camera.fov*Math.exp(queued.zoom*.0025),40,100);queued={yaw:0,pitch:0,zoom:0};draw();}
+async function look(from=null,forced=null){
+  if(!ready||!available.length){status('The look-around panorama is not available yet.');return;}
+  if(!forced&&mode!=='orbit')return;
+  const origin=from===null?progress():from,stop=forced||nearest(origin),own=++epoch;
+  video.pause();active=stop;camera={...(views.get(stop.id)||stop.face),width:stage.clientWidth,height:stage.clientHeight};queued={yaw:0,pitch:0,zoom:0};mode='snapping';$('stop').value=stop.id;labels();status('Moving along the shortest route to the available viewpoint. Your head movement begins on arrival.');
+  try{await Promise.all([snapTo(stop,own,origin),loadRenderer(stop,own)]);if(own!==epoch)return;mode='look';applyQueued();labels();status('Look around this fixed viewpoint. Its camera differs from the video; left drag returns to orbit.');}catch{if(own!==epoch)return;orbit();status('The panorama could not load. Orbit remains available.');}
+}
+function head(yaw,pitch,zoom=0){if(mode==='orbit')look();if(mode==='orbit')return;queued.yaw+=Number.isFinite(yaw)?yaw:0;queued.pitch+=Number.isFinite(pitch)?pitch:0;queued.zoom+=Number.isFinite(zoom)?zoom:0;if(mode==='snapping'){queued.yaw=clamp(queued.yaw,-Math.PI,Math.PI);queued.pitch=clamp(queued.pitch,-Math.PI/2,Math.PI/2);queued.zoom=clamp(queued.zoom,-250,250);}if(mode==='look')applyQueued();}
+const gestures=exploreGestures(stage,{progress,orbit,startLook:look,drag:(dx,dy)=>head(-dx/stage.clientHeight*camera.fov*RAD,dy/stage.clientHeight*camera.fov*RAD),wheel:(dx,dy)=>head(dx*.003,-dy*.003),zoom:delta=>head(0,0,delta)});
+$('look').addEventListener('click',()=>look());$('orbit').addEventListener('click',()=>orbit());$('face').addEventListener('click',()=>{if(mode==='orbit'){views.delete(nearest(progress()).id);look();}else{camera={...active.face,width:stage.clientWidth,height:stage.clientHeight};queued={yaw:0,pitch:0,zoom:0};draw();}});
+slider.addEventListener('input',()=>{const p=Number(slider.value)/100;orbit();seek(p===1?(video.duration-.001)/video.duration:p);});
+$('stop').addEventListener('change',()=>look(null,available.find(s=>s.id===$('stop').value)));
+$('play').addEventListener('click',async()=>{if(!ready)return;if(!video.paused){video.pause();return;}orbit();try{await video.play();}catch{status('Playback unavailable; drag to choose a view.');}});
+stage.addEventListener('keydown',e=>{if(!ready)return;if(e.key==='Escape'){e.preventDefault();orbit();}else if(e.key.toLowerCase()==='l'){e.preventDefault();look();}else if(e.code==='Space'){e.preventDefault();$('play').click();}else if(['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key)){e.preventDefault();if(mode==='orbit')orbit(progress()+(e.key==='ArrowLeft'?-.01:e.key==='ArrowRight'?.01:0));else head((e.key==='ArrowRight'?1:e.key==='ArrowLeft'?-1:0)*8*RAD,(e.key==='ArrowUp'?1:e.key==='ArrowDown'?-1:0)*8*RAD);}else if(e.key==='Home'){e.preventDefault();mode==='orbit'?orbit(0):$('face').click();}else if(e.key==='End'&&mode==='orbit'){e.preventDefault();orbit((video.duration-.001)/video.duration);}});
+for(const stop of STOPS){const o=new Option(`${stop.label} · ${stop.time}s${stop.ready?'':' (pending)'}`,stop.id);o.disabled=!stop.ready;$('stop').append(o);if(stop.ready){const f=document.createElement('figure');f.innerHTML=`<a href="${stop.asset}" target="_blank" rel="noopener"><img src="${stop.asset}" loading="lazy" alt="Existing tractor panorama for the available look-around viewpoint"></a><figcaption>${stop.label}: approximate video anchor at ${stop.time}s.</figcaption><nav><a href="${stop.prompt}" target="_blank" rel="noopener">Exact panorama prompt</a><a href="${stop.record}" target="_blank" rel="noopener">Generation record</a></nav>`;$('evidence').append(f);}}
+$('stop-label').hidden=available.length<2;
+video.addEventListener('loadedmetadata',()=>{ready=Number.isFinite(video.duration)&&video.duration>0;for(const id of['orbit','play','progress'])$(id).disabled=!ready;for(const id of['look','face','stop'])$(id).disabled=!ready||!available.length;labels();status('Ready. Orbit now, or look around from the available fixed viewpoint.');});
+video.addEventListener('error',()=>status('The orbit clip is unavailable; reload when the local review server is ready.'));
+canvas.addEventListener('webglcontextlost',e=>{e.preventDefault();renderer=null;renderedStop=null;orbit();status('Panorama rendering paused. Orbit remains available.');});
+Object.defineProperty(window,'tractorExplore',{value:Object.freeze({get snapshot(){return{ready,mode,stop:active?.id||null,time:video.currentTime,progress:progress(),seeking:video.seeking,queuedSeek:desired,snap,queuedHead:{...queued},camera:{...camera},draws,gestures:gestures.state};},setCamera(c){if(mode==='look'){Object.assign(camera,c);camera.pitch=clamp(camera.pitch,-89*RAD,89*RAD);draw();}}})});
+video.src=ORBIT;video.load();

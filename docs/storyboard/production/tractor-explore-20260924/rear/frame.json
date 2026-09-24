@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "operation": "exact original decoded video frame extraction; no image-model change",
+  "stop": "rear",
+  "sourceVideo": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-v1.mp4",
+  "sourceVideoSha256": "172af688f536364ca766a517d94fd9b849585a128bbc192e2713b67ce6e4a83d",
+  "requestedTimeSeconds": 7,
+  "frameIndex": 168,
+  "sourceFps": "24/1",
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-explore-20260924/rear/video-frame.png",
+    "sha256": "d160225f790f4a31f2c700d5941dcff1a8274f15c4fa33c79437ace05b3feb06",
+    "size": [
+      1280,
+      720
+    ]
+  },
+  "command": [
+    "/opt/homebrew/bin/ffmpeg",
+    "-v",
+    "error",
+    "-i",
+    "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-v1.mp4",
+    "-vf",
+    "select=eq(n\\,168)",
+    "-frames:v",
+    "1",
+    "-n",
+    "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-explore-20260924/rear/video-frame.png"
+  ],
+  "futurePanoramaFrame": "Each panorama has local forward+Y at u=.5 pointed toward the vehicle in this frame; backgrounds beyond this view are inferred, not recovered geometry."
+}

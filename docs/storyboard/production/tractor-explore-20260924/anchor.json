@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "status": "single existing panorama selected; new four-panorama generation cancelled",
+  "id": "existing-tractor",
+  "videoTimeSeconds": 0,
+  "video": "storyboard/production/tractor-orbit-20260924/orbit-scrub-v1.mp4",
+  "videoSourceRecord": "storyboard/production/tractor-orbit-20260924/orbit-v1.json",
+  "panorama": {
+    "asset": "storyboard/production/story-worlds-20260924/tractor/panorama-v2.png",
+    "repairs": {
+      "fov": 110,
+      "frontMask": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "assets": {
+        "rear": "storyboard/production/story-worlds-20260924/tractor/rear-v2.png",
+        "up": "storyboard/production/story-worlds-20260924/tractor/up-v2.png",
+        "down": "storyboard/production/story-worlds-20260924/tractor/down-v2.png"
+      }
+    },
+    "assembled": "storyboard/production/story-worlds-20260924/tractor/panorama-assembled-v1.png",
+    "assembledSha256": "84dbfe633a8f3c9282f9dd23406324c983c85ae19a9a488178b2b7976cae35fe",
+    "exportRecord": "storyboard/production/story-worlds-20260924/tractor/exports-v1.json"
+  },
+  "tractorFacingSuggestion": {
+    "yaw": -1.8325957145940461,
+    "pitch": -0.08726646259971647,
+    "unit": "radians",
+    "status": "approximate initial direction, not measured camera alignment"
+  },
+  "limitations": [
+    "Existing panorama and generated video have different camera placement and apparent vehicle scale.",
+    "The transition to panorama may jump; smooth video travel to time zero does not establish geometric alignment.",
+    "Four deterministic frame extractions do not constitute four available panoramic stops."
+  ],
+  "projectionLaneNewImagegenCalls": 0,
+  "projectionLaneNewVideoCalls": 0
+}

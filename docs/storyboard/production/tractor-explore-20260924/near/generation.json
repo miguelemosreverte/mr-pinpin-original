@@ -1,0 +1,31 @@
+{
+  "tool": "image_gen__imagegen",
+  "imageCalls": 1,
+  "recordedAt": "2026-09-24T13:01:36.511534+00:00",
+  "prompt": "Use case: illustration-story.\nAsset type: one continuous 2:1 equirectangular 360-degree panorama for interactive look-around from a stationary viewpoint.\nInput image 1 is the EXACT TARGET VIEW from an existing orbit video, showing the tractor from the near-side profile. It is authoritative for the camera's horizontal position, level height, visible side of the machine, viewing direction, relative size, machinery silhouette, foreground and near surroundings. Place this exact view at the FRONT CENTER of the spherical panorama (longitude center u=.5, level horizon v=.5). Do not return to the vehicle angle of image 2.\nInput image 2 is the successful complete spherical panorama of this same illustrated forest worksite. Use it as a reference for full-sphere projection, continuous ground/canopy, place, warm sunlight, forest species and finished illustration style. It does not override image 1's new viewpoint or turn the tractor back toward the old view.\nExpand image 1 into the complete environment around its camera, looking all 360 degrees horizontally and from sky above to ground directly below. The whole SINGLE parked tractor and attached empty logging trailer remain in the central forward sector in the exact side-view orientation seen in image 1. Keep red hood/cab, front grille and weight, four tractor wheels, yellow crane mounted immediately BEHIND THE CAB and BEFORE THE TRAILER, crane arm over the empty stake trailer, and TWO trailer axles with tandem wheels. No driver, people, animals, moving parts or duplicate machinery. Preserve one coherent rigid vehicle rather than stretching it around the horizon. Keep its tire contact with the ground. Render neighboring forest, stream/bridge context and clearing from this inferred new point; unseen scenery should be a plausible continuation of the same place, not another location.\nProjection requirements: genuine 2:1 latitude-longitude image for a full sphere, not a cropped wide photograph, collage or six-panel cube. Center row is the level horizon. The outer left/right edges meet naturally through quiet woodland behind the camera, with continuous trees and ground. Above is coherent tree canopy and open sky, below is a single natural patch of dirt, roots and leaves without radial starbursts or a hole. Preserve rich illustrated color and detail; no text, labels, frame or watermark. Do not move or rotate the parked machine to fake the requested camera location. Output one landscape 2:1 panorama.\n",
+  "promptSha256": "1910b1e4ff0304e029ffc893a0f89510d6b7ccc11dfb1ceefb75cc72d43b3d5f",
+  "inputs": [
+    {
+      "path": "/tmp/pinpin-tractor-explore-inputs/near.png",
+      "sha256": "a521421a10d6335ea01421245ec619175568aa8954d0715c1cd3d45b90141c15",
+      "role": "Exact video frame96/time4s; target camera and vehicle identity"
+    },
+    {
+      "path": "/tmp/pinpin-tractor-explore-inputs/selected-tractor-panorama.png",
+      "sha256": "84dbfe633a8f3c9282f9dd23406324c983c85ae19a9a488178b2b7976cae35fe",
+      "role": "Successful assembled sphere; projection and same-place context"
+    }
+  ],
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-explore-20260924/near/panorama-v1.png",
+    "sha256": "691a24dc8221f09331478b7e5068ca7baeaaee8ce7ab59edd3e912bdc94fe961",
+    "bytes": 3323790,
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  "status": "unused-superseded-by-user-single-anchor-scope",
+  "transport": "Exact PNG bytes decoded from built-in tool data URL and stored via SSH on mini; no tool filesystem output path was returned. No image conversion or retouch.",
+  "review": "Generation returned immediately before scope correction. Preserved only, not selected or integrated; no repairs or further generation performed."
+}
