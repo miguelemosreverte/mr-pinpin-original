@@ -1,0 +1,73 @@
+{
+  "before": {
+    "ready": true,
+    "sourceLock": true,
+    "displayedMediaTime": 4,
+    "displayedFrame": 1,
+    "mode": "orbit",
+    "stop": null,
+    "time": 4,
+    "progress": 0.3321799216005558,
+    "seeking": false,
+    "queuedSeek": null,
+    "snap": null,
+    "wheelQuietUntil": 0,
+    "bridgeTime": 0,
+    "pendingOrbit": null,
+    "available": [
+      "stop-04",
+      "stop-13"
+    ],
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "fov": 75,
+      "width": 1280,
+      "height": 720
+    },
+    "draws": 0,
+    "gestures": {
+      "kind": "idle",
+      "pointers": 0,
+      "accepted": false
+    }
+  },
+  "after": {
+    "ready": true,
+    "sourceLock": true,
+    "displayedMediaTime": 4,
+    "displayedFrame": 1,
+    "mode": "look",
+    "stop": "stop-04",
+    "time": 4,
+    "progress": 0.3321799216005558,
+    "seeking": false,
+    "queuedSeek": null,
+    "snap": {
+      "from": 0.3321799216005558,
+      "target": 0.3321799216005558,
+      "delta": 0,
+      "duration": 220
+    },
+    "wheelQuietUntil": 773.5,
+    "bridgeTime": 0,
+    "pendingOrbit": null,
+    "available": [
+      "stop-04",
+      "stop-13"
+    ],
+    "camera": {
+      "yaw": 0.003557808640356198,
+      "pitch": 0.0009270482291129821,
+      "fov": 65.41537697357725,
+      "width": 1280,
+      "height": 720
+    },
+    "draws": 1,
+    "gestures": {
+      "kind": "idle",
+      "pointers": 0,
+      "accepted": false
+    }
+  }
+}

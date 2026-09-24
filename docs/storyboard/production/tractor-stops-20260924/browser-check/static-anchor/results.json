@@ -1,0 +1,39 @@
+{
+  "proof": {
+    "region": [
+      39,
+      22,
+      1241,
+      698
+    ],
+    "width": 1280,
+    "height": 720,
+    "maximumRGBError": 1,
+    "meanRGBError": 0.004549042194632877,
+    "channelsOver1": 0,
+    "comparedChannels": 2437656,
+    "note": "Interior full-weight source field only; WebGL bilinear sampling/roundoff may differ by one channel level."
+  },
+  "errors": [],
+  "snapshot": {
+    "ready": true,
+    "mode": "anchor",
+    "camera": {
+      "yaw": 0,
+      "pitch": 0,
+      "fov": 65,
+      "width": 358,
+      "height": 201.375,
+      "totalYaw": 0
+    },
+    "anchor": {
+      "yaw": 0,
+      "pitch": 0,
+      "fov": 65,
+      "aspect": 1.7777777777777777,
+      "featherStart": 0.94
+    },
+    "source": "stops/stop-04/source.png",
+    "panorama": "stops/stop-04/pilot-static-v1/panorama-v1.png"
+  }
+}

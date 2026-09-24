@@ -1,0 +1,90 @@
+{
+  "schemaVersion": 1,
+  "status": "rejected-motion",
+  "requestId": "01a0d559-385b-7702-9e90-f8f5f004a427",
+  "model": "fal-ai/pixverse/v6/transition",
+  "settings": {
+    "prompt": "A locked-off static camera throughout this one-second transition. Preserve the supplied framing, camera position, perspective, scale and object positions. No camera movement, translation, rotation, orbit, zoom, dolly, parallax drift, reframing or settling. The tractor and trailer remain completely parked and rigid in exactly the same place for the entire clip. All four visible wheel hubs stay fixed; tires stay planted on the same ground contacts and never roll or rotate. The crane boom, joints, cables and grapple are locked absolutely still. No component moves, bends, expands, shrinks or morphs, including at intermediate frames. Only surface appearance and rendering refinement change gently from the first supplied image to the final supplied image, under unchanged steady daylight. Preserve the exact machine silhouette and stable background. Begin at the supplied first image and end at the supplied last image with no intermediate motion overshoot. No cuts or added objects.",
+    "negative_prompt": "camera motion, camera settling, camera drift, zoom, rotation, pan, dolly, driving, wheel rotation, moving wheel hubs, tire sliding, suspension motion, moving crane, swinging grapple, machinery animation, bending metal, growing or shrinking machine, morphing geometry, motion overshoot, parallax drift, cuts, new objects, people, text",
+    "duration": 1,
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "generate_audio_switch": false,
+    "generate_multi_clip_switch": false,
+    "thinking_type": "disabled"
+  },
+  "metadata": {
+    "width": 1280,
+    "height": 720,
+    "duration": 1.041667,
+    "codec_name": "h264",
+    "avg_frame_rate": "24/1",
+    "frameCount": 25,
+    "hasAudio": false,
+    "bytes": 1236162,
+    "sha256": "863764ec62413714b0e2ad66aa24aeffdd5e5be3391c8552827dc11a71e16848"
+  },
+  "events": [
+    {
+      "at": "2026-09-24T21:36:27.682Z",
+      "type": "submitting"
+    },
+    {
+      "at": "2026-09-24T21:36:28.660Z",
+      "type": "source_uploaded"
+    },
+    {
+      "at": "2026-09-24T21:36:29.369Z",
+      "type": "submitted"
+    },
+    {
+      "at": "2026-09-24T21:37:35.992Z",
+      "type": "completed"
+    },
+    {
+      "at": "2026-09-24T21:37:38.094Z",
+      "type": "complete"
+    }
+  ],
+  "endpoints": {
+    "schemaVersion": 1,
+    "start": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-04/source.png",
+      "bytes": 1315914,
+      "sha256": "a521421a10d6335ea01421245ec619175568aa8954d0715c1cd3d45b90141c15",
+      "width": 1280,
+      "height": 720
+    },
+    "end": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-04/pilot-static-v1/fit-v1/fitted-view.png",
+      "bytes": 1469079,
+      "sha256": "181614f9702a131736cf174d30e6752a8556a7f60506de2c53736938d6220786",
+      "width": 1280,
+      "height": 720
+    },
+    "prompt": "A locked-off static camera throughout this one-second transition. Preserve the supplied framing, camera position, perspective, scale and object positions. No camera movement, translation, rotation, orbit, zoom, dolly, parallax drift, reframing or settling. The tractor and trailer remain completely parked and rigid in exactly the same place for the entire clip. All four visible wheel hubs stay fixed; tires stay planted on the same ground contacts and never roll or rotate. The crane boom, joints, cables and grapple are locked absolutely still. No component moves, bends, expands, shrinks or morphs, including at intermediate frames. Only surface appearance and rendering refinement change gently from the first supplied image to the final supplied image, under unchanged steady daylight. Preserve the exact machine silhouette and stable background. Begin at the supplied first image and end at the supplied last image with no intermediate motion overshoot. No cuts or added objects.",
+    "negativePrompt": "camera motion, camera settling, camera drift, zoom, rotation, pan, dolly, driving, wheel rotation, moving wheel hubs, tire sliding, suspension motion, moving crane, swinging grapple, machinery animation, bending metal, growing or shrinking machine, morphing geometry, motion overshoot, parallax drift, cuts, new objects, people, text",
+    "model": "fal-ai/pixverse/v6/transition",
+    "durationRequested": 1,
+    "authorizedCalls": 1
+  },
+  "motionSummary": {
+    "maxEndpointBoxOvershootPixels": [
+      24.470962524414062,
+      14.936777834738251,
+      3.321868896484375,
+      5.702773894074362
+    ],
+    "horizontalOuterHubSpanFirst": 805.0,
+    "horizontalOuterHubSpanLast": 804.2567138671875,
+    "horizontalOuterHubSpanMin": 804.2567138671875,
+    "horizontalOuterHubSpanMax": 843.5074005126953,
+    "spanOvershootBeyondEndpoints": 38.50740051269531
+  },
+  "files": {
+    "bridge-raw-v2.mp4": "863764ec62413714b0e2ad66aa24aeffdd5e5be3391c8552827dc11a71e16848",
+    "bridge-in-v2.mp4": "85d3e501308198552f24f05b0e2b975d2ae06eb2a2b525caf08b61554d6b7fe1",
+    "bridge-out-v2.mp4": "aa489b208bbbd1130eee32c2fd4b5be780576712df8bb253b386f1051d462011"
+  },
+  "note": "One authorized static pilot. No retry. Main demo unchanged. Raw operational receipts and upload URLs remain private on mini."
+}

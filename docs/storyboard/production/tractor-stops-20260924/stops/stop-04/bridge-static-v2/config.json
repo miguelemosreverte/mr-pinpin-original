@@ -1,0 +1,31 @@
+{
+  "model": "fal-ai/pixverse/v6/transition",
+  "sourceImage": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-04/source.png",
+  "sourceImageField": "first_image_url",
+  "endImage": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-04/pilot-static-v1/fit-v1/fitted-view.png",
+  "matchEndFrame": false,
+  "output": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-04/bridge-static-v2/bridge-raw-v2.mp4",
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 0.045,
+    "quantity": 1,
+    "total": 0.045,
+    "basis": "Official720p silent per-second tier checked2026-09-24; shortest supported1second. One authorized bridge request; no paid retry. Estimate notinvoice.",
+    "source": "https://fal.ai/models/fal-ai/pixverse/v6/transition"
+  },
+  "input": {
+    "prompt": "A locked-off static camera throughout this one-second transition. Preserve the supplied framing, camera position, perspective, scale and object positions. No camera movement, translation, rotation, orbit, zoom, dolly, parallax drift, reframing or settling. The tractor and trailer remain completely parked and rigid in exactly the same place for the entire clip. All four visible wheel hubs stay fixed; tires stay planted on the same ground contacts and never roll or rotate. The crane boom, joints, cables and grapple are locked absolutely still. No component moves, bends, expands, shrinks or morphs, including at intermediate frames. Only surface appearance and rendering refinement change gently from the first supplied image to the final supplied image, under unchanged steady daylight. Preserve the exact machine silhouette and stable background. Begin at the supplied first image and end at the supplied last image with no intermediate motion overshoot. No cuts or added objects.",
+    "negative_prompt": "camera motion, camera settling, camera drift, zoom, rotation, pan, dolly, driving, wheel rotation, moving wheel hubs, tire sliding, suspension motion, moving crane, swinging grapple, machinery animation, bending metal, growing or shrinking machine, morphing geometry, motion overshoot, parallax drift, cuts, new objects, people, text",
+    "duration": 1,
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "generate_audio_switch": false,
+    "generate_multi_clip_switch": false,
+    "thinking_type": "disabled"
+  },
+  "authorization": {
+    "scope": "one revised stop04 static pilot",
+    "bulkHeld": true,
+    "paidRetries": 0
+  }
+}

@@ -1,5 +1,7 @@
 # Image-led 360° scenes and cubemaps
 
+For video-to-panorama entry that must preserve the subject's visible geometry, see the [source-frame projection workflow](source-frame-lock.md).
+
 This is the reusable workflow established with PinPin’s house and tested on the Elder’s home and outdoor story settings. It produces illustrated fixed viewpoints that can be explored in any direction. It is separate from the measured Blender location workflow: changing a camera’s physical position with the image model is an artistic reconstruction, not a recovered 3D translation.
 
 ## What worked

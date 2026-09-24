@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-04-approved-v4",
+  "inputs": {
+    "base": {
+      "file": "../../pilot/fov-correction/panorama-repaired-v4.png",
+      "sha256": "7af1d1f029f4f8d0e68a41777b0d48598bce49a8a9eb708693bc163d357b4890"
+    },
+    "rear": {
+      "file": "../../pilot/fov-correction/rear-v4-repair.png",
+      "sha256": "3d62e73591146277fb40e20f3fcf81baf460dd08108253e716548e1c94dc17f2"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "rear": "rear"
+    }
+  }
+}

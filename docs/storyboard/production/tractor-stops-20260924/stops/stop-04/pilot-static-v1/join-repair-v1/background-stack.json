@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-04-source-anchor-perimeter-v1",
+  "inputs": {
+    "base": {
+      "file": "../../panorama-assembled-v1.png",
+      "sha256": "25987eb4d26f9f47dc226e6365ed3e3c023495ba0770b6144b7b95d8f156df3b"
+    },
+    "front": {
+      "file": "front-repair-v1.png",
+      "sha256": "64d9b531fc0b876fb89bbabe5d2409e19bc96d8d98cf4c812c2e192634a397a4"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 130,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "front": "front"
+    }
+  }
+}

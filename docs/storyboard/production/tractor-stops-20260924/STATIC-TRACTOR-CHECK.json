@@ -1,0 +1,166 @@
+{
+  "schemaVersion": 1,
+  "video": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-04/bridge/bridge-in-v1.mp4",
+    "sha256": "98814760b7135a39abe491d8ec23650f7d5ca8ec0234ea996d470bb44ba6b41c",
+    "frames": 25,
+    "dimensions": [
+      1280,
+      720
+    ],
+    "fps": 24
+  },
+  "method": "Manually seeded landmarks tracked consecutively by pyramidal Lucas-Kanade; forward/backward checks. Pixel shifts are screen-space, not inferred physical displacement.",
+  "landmarks": [
+    {
+      "landmark": "front hub",
+      "startXY": [
+        272.0,
+        474.0
+      ],
+      "endXY": [
+        278.3924560546875,
+        469.0469970703125
+      ],
+      "endDeltaXY": [
+        6.3924560546875,
+        -4.9530029296875
+      ],
+      "maxExcursionPixels": 26.28679084777832,
+      "maxExcursionPercentWidth": 2.0536553859710693,
+      "maxExcursionFrame": 20,
+      "forwardBackwardConsistentAllSteps": true,
+      "maxStepForwardBackwardErrorPixels": 0.19749487936496735
+    },
+    {
+      "landmark": "rear hub",
+      "startXY": [
+        535.0,
+        447.0
+      ],
+      "endXY": [
+        528.3757934570312,
+        447.183837890625
+      ],
+      "endDeltaXY": [
+        -6.62420654296875,
+        0.183837890625
+      ],
+      "maxExcursionPixels": 20.439956665039062,
+      "maxExcursionPercentWidth": 1.5968716144561768,
+      "maxExcursionFrame": 20,
+      "forwardBackwardConsistentAllSteps": true,
+      "maxStepForwardBackwardErrorPixels": 0.19895853102207184
+    },
+    {
+      "landmark": "trailer first hub",
+      "startXY": [
+        925.0,
+        475.0
+      ],
+      "endXY": [
+        927.0909423828125,
+        473.7920837402344
+      ],
+      "endDeltaXY": [
+        2.0909423828125,
+        -1.207916259765625
+      ],
+      "maxExcursionPixels": 5.587192535400391,
+      "maxExcursionPercentWidth": 0.4364994466304779,
+      "maxExcursionFrame": 16,
+      "forwardBackwardConsistentAllSteps": true,
+      "maxStepForwardBackwardErrorPixels": 0.15452460944652557
+    },
+    {
+      "landmark": "trailer second hub",
+      "startXY": [
+        1078.0,
+        477.0
+      ],
+      "endXY": [
+        1092.0047607421875,
+        473.9161682128906
+      ],
+      "endDeltaXY": [
+        14.0047607421875,
+        -3.083831787109375
+      ],
+      "maxExcursionPixels": 14.340270042419434,
+      "maxExcursionPercentWidth": 1.1203335523605347,
+      "maxExcursionFrame": 24,
+      "forwardBackwardConsistentAllSteps": true,
+      "maxStepForwardBackwardErrorPixels": 0.2033054530620575
+    },
+    {
+      "landmark": "cab roof center",
+      "startXY": [
+        443.0,
+        193.0
+      ],
+      "endXY": [
+        615.5725708007812,
+        206.05130004882812
+      ],
+      "endDeltaXY": [
+        172.57257080078125,
+        13.051300048828125
+      ],
+      "maxExcursionPixels": 173.0653839111328,
+      "maxExcursionPercentWidth": 13.520732879638672,
+      "maxExcursionFrame": 24,
+      "forwardBackwardConsistentAllSteps": false,
+      "maxStepForwardBackwardErrorPixels": 19.481563568115234
+    },
+    {
+      "landmark": "crane upper pivot",
+      "startXY": [
+        740.0,
+        137.0
+      ],
+      "endXY": [
+        701.0162963867188,
+        147.37088012695312
+      ],
+      "endDeltaXY": [
+        -38.98370361328125,
+        10.370880126953125
+      ],
+      "maxExcursionPixels": 41.066741943359375,
+      "maxExcursionPercentWidth": 3.208339214324951,
+      "maxExcursionFrame": 22,
+      "forwardBackwardConsistentAllSteps": true,
+      "maxStepForwardBackwardErrorPixels": 0.8380782604217529
+    },
+    {
+      "landmark": "grapple top",
+      "startXY": [
+        997.0,
+        265.0
+      ],
+      "endXY": [
+        999.2967529296875,
+        260.593505859375
+      ],
+      "endDeltaXY": [
+        2.2967529296875,
+        -4.406494140625
+      ],
+      "maxExcursionPixels": 14.017058372497559,
+      "maxExcursionPercentWidth": 1.0950827598571777,
+      "maxExcursionFrame": 8,
+      "forwardBackwardConsistentAllSteps": true,
+      "maxStepForwardBackwardErrorPixels": 0.2488240748643875
+    }
+  ],
+  "groundTexture": {
+    "seedCount": 80,
+    "consistentTrackCount": 1,
+    "medianEndDeltaXYConsistent": [
+      817.2842407226562,
+      -39.94696044921875
+    ],
+    "medianMaxExcursionConsistent": 854.8295288085938
+  },
+  "limitations": "Optical flow can follow a morphing patch; hub track does not prove wheel nonrotation. Ground correspondence unreliable when generated texture changes. Inconsistent landmarks must not be treated as precise measurements."
+}

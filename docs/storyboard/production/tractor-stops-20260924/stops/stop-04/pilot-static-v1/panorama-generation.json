@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "imageCalls": 1,
+  "promptFile": "panorama-prompt.txt",
+  "prompt": "Use case: precise-object-edit\nEdit IMAGE 1 by OUTPAINTING ONLY ITS NEUTRAL GRAY REGIONS. Keep the existing central colored scene exactly at its current size, pixel positions and curved outline. The central colored region is already mathematically projected correctly into an equirectangular sphere. Do not reframe, zoom, enlarge, move, straighten or redraw its tractor, crane, trailer, wheels, lighting, foliage or road. This is completion of an existing projection, not composition of a new wide photograph.\n\nImage 1 is the actual EDIT TARGET: a 2:1 360\u00b0\u00d7180\u00b0 equirectangular canvas with a projected video frame embedded at its proper angular scale. Replace only the gray unknown area with coherent forest scenery continuing the existing edges.\nImage 2 is the native video frame shown only to clarify detail, materials and light within the small projected center. Do not copy its rectangle or its large on-screen tractor scale into the output. Its viewpoint is already encoded in image 1.\nImage 3 is a successful full panorama for understanding spherical wrap and pole continuity only. Do not replace the image-1 near-side profile with image3's different vehicle rendering. Do not borrow its vehicle location, camera position, lighting or material shading.\n\nThe camera is fixed. Image1 center is forward yaw0/pitch0. Its already-projected central field comes from a 16:9 perspective at65\u00b0 VERTICAL field of view (97.1143\u00b0 horizontal). The tractor is intentionally small within the full360\u00b0 picture. Preserve that exact angular footprint: no hero enlargement. When viewed through a65\u00b0 vertical-FOV16:9 window it must match image2, with the whole machine and surroundings visible. Do not change central pixels to make them look like a normal flat photograph; the curved projection is intentional.\n\nComplete the unseen scene in the neutral area: natural warm sunlit forest clearing, connected dirt road, fern banks, stones, tall trees, stream context, sky/canopy above and continuous soil beneath the camera. Preserve image1's golden backlighting, soft contact shadows, reflective red paint/glass, rough rubber and atmospheric depth. Infer the unseen environment without adding another tractor, characters or buildings. No new bucket or machinery. Extend content naturally with depth; never smear or stretch existing border pixels.\n\nReturn only a completed2:1 equirectangular image with the original colored central scene unchanged. Outer left/right edges must form a coherent rear wrap; sky and soil poles must not have radial starbursts or pinching. No gray region, outline, frame, mask, text, grid or watermark. Main constraint: fill the gray, preserve the colored core exactly.",
+  "promptSha256": "c5c6e03fdc2f31fc2c1d1d69cbc64062c8facbce4c02e809b44c37321a5788e9",
+  "inputs": [
+    {
+      "path": "guide65/guide-equirect.png",
+      "role": "first: mathematical raw65 guide; gray-only outpaint target",
+      "sha256": "daf6bca88162d904e4d02785edbd50705e239b2e1133483c36c7cfe0137835d0",
+      "bytes": 1170510,
+      "dimensions": [
+        3072,
+        1536
+      ]
+    },
+    {
+      "path": "../source.png",
+      "role": "second: raw source frame, sole lighting/material/geometry authority",
+      "sha256": "a521421a10d6335ea01421245ec619175568aa8954d0715c1cd3d45b90141c15",
+      "bytes": 1315914,
+      "dimensions": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "../../../pilot/fov-correction/accepted-reference.png",
+      "role": "third: accepted V4 sphere, projection and finish reference only",
+      "sha256": "25987eb4d26f9f47dc226e6365ed3e3c023495ba0770b6144b7b95d8f156df3b",
+      "bytes": 12792190,
+      "dimensions": [
+        3072,
+        1536
+      ]
+    }
+  ],
+  "output": {
+    "path": "panorama-v1.png",
+    "sha256": "ef4db0c6422a5ed21690ea183ad57a063ce39175b09682139e6df3248f154ea9",
+    "bytes": 3194244,
+    "dimensions": [
+      1774,
+      887
+    ],
+    "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c89a-b0d5-7372-a22a-6528d59c7ee2/exec-ce2fb38b-4e22-47ea-8a73-a72e11a84544.png"
+  },
+  "status": "retained-pilot-approved-for-empirical-bridge-test-not-rigid-endpoint-proof",
+  "scope": "Built-in image generation; unmodified master retained. Inferred scenery and redrawn details are not physical reconstruction.",
+  "review": "Near65deg framing, but independently inspected machine redraw offsets remain; no repair or further image call authorized in this pilot."
+}

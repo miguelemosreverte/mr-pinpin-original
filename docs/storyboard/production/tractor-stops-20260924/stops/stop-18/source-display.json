@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-18",
+  "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+  "video": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+    "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+  },
+  "targetSeconds": 8.75,
+  "decoded": {
+    "mediaTime": 8.75,
+    "presentedFrames": 19,
+    "width": 1280,
+    "height": 720
+  },
+  "output": {
+    "path": "stops/stop-18/source-display.png",
+    "sha256": "9f219459b9f7cff96a7d7c2b281fcbb3e910e91d40f7881cd7251f2068fd0714"
+  },
+  "software": {
+    "browser": "153.0.8010.54",
+    "platform": "darwin"
+  },
+  "originalFramePreserved": true
+}

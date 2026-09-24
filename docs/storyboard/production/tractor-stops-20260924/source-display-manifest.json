@@ -1,0 +1,606 @@
+{
+  "schemaVersion": 1,
+  "count": 24,
+  "frames": [
+    {
+      "schemaVersion": 1,
+      "id": "stop-04",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 4,
+      "decoded": {
+        "mediaTime": 4,
+        "presentedFrames": 1,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-04/source-display.png",
+        "sha256": "451f19ac6078eb6bd90ac4c8ce93a28d3f4a1c3ed36acb68cb092cc10ae573f4"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-00",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 0,
+      "decoded": {
+        "mediaTime": 0,
+        "presentedFrames": 2,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-00/source-display.png",
+        "sha256": "b6bfb71be960fdc68311f847ab0e950cba380cb6f4b2823fe451cd05fc0da7b4"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-01",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 2.5,
+      "decoded": {
+        "mediaTime": 2.5,
+        "presentedFrames": 3,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-01/source-display.png",
+        "sha256": "eb0490feffebe3615b1b4d344097b2fcbdd600ddfb5907324e9f8e86e36cd149"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-02",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 3,
+      "decoded": {
+        "mediaTime": 3,
+        "presentedFrames": 4,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-02/source-display.png",
+        "sha256": "67ec0db9d56bb70c46c96fb2197c65b431ee419e3dc4ba406bbd27217625ecd6"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-03",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 3.5,
+      "decoded": {
+        "mediaTime": 3.5,
+        "presentedFrames": 5,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-03/source-display.png",
+        "sha256": "aaa3d3211a27252aced2ca7a5dc23890fcb68e730e85c7ce1511e319fd94e9ea"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-05",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 4.75,
+      "decoded": {
+        "mediaTime": 4.75,
+        "presentedFrames": 6,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-05/source-display.png",
+        "sha256": "622ea2200cbdebb5e07ea16aacf917725777102d731fc4a35cb625455144bb28"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-06",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 5.25,
+      "decoded": {
+        "mediaTime": 5.25,
+        "presentedFrames": 7,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-06/source-display.png",
+        "sha256": "d5a9610563f2fa42b0ba7195121eec519c17329552e57cefed49920684dab1b4"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-07",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 5.625,
+      "decoded": {
+        "mediaTime": 5.625,
+        "presentedFrames": 8,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-07/source-display.png",
+        "sha256": "d2e867d286b6fe32d389150d1b93cdc76922f405d49ae4883ed58ed936f5c370"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-08",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 6,
+      "decoded": {
+        "mediaTime": 6,
+        "presentedFrames": 9,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-08/source-display.png",
+        "sha256": "db059d5dc7cde85f268f401adbae1e8cc1955ab0b9eae1cd7243c5fbd2e1538f"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-09",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 6.375,
+      "decoded": {
+        "mediaTime": 6.375,
+        "presentedFrames": 10,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-09/source-display.png",
+        "sha256": "edfc4ae471a0358db681081382b206c532d34cdfb00fcf31f2a2278a112ca121"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-10",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 6.625,
+      "decoded": {
+        "mediaTime": 6.625,
+        "presentedFrames": 11,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-10/source-display.png",
+        "sha256": "fb2a046834053bb9fa00e299efbd2b57dd384e9ca329a2fdcf6fde79cd79e19c"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-11",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 6.875,
+      "decoded": {
+        "mediaTime": 6.875,
+        "presentedFrames": 12,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-11/source-display.png",
+        "sha256": "20f62f33302244e2d6754932020e686dcf51dada43f774ccdd68dcfe968f0aa4"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-12",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 7.125,
+      "decoded": {
+        "mediaTime": 7.125,
+        "presentedFrames": 13,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-12/source-display.png",
+        "sha256": "28f471c18b0f30979f359b25e5aee4f06ff58a3a8f1ab604cf7cfc2779f2b9c7"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-13",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 7.375,
+      "decoded": {
+        "mediaTime": 7.375,
+        "presentedFrames": 14,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-13/source-display.png",
+        "sha256": "6b8627d663c61914689423cb537224916e0c8bfe4d9f2bb0b20b33c81288cebf"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-14",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 7.625,
+      "decoded": {
+        "mediaTime": 7.625,
+        "presentedFrames": 15,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-14/source-display.png",
+        "sha256": "d28881bf99b93492f70d0a0e4348378fae23676e83f6c81056e41e9be8c40e5f"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-15",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 7.875,
+      "decoded": {
+        "mediaTime": 7.875,
+        "presentedFrames": 16,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-15/source-display.png",
+        "sha256": "4b253d6e9b8d38865f4a4d2d01b99cf8e71865c12290d003054df4c5deaf9355"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-16",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 8.125,
+      "decoded": {
+        "mediaTime": 8.125,
+        "presentedFrames": 17,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-16/source-display.png",
+        "sha256": "378a60ade1b8188782a42bc89cd84a6ce41d413d73b97eb2c9f14c2e9c1a53be"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-17",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 8.375,
+      "decoded": {
+        "mediaTime": 8.375,
+        "presentedFrames": 18,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-17/source-display.png",
+        "sha256": "52d91b96dee2e2c2b3115e5ce229c95d5a51916837d4084215729dc982f158b4"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-18",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 8.75,
+      "decoded": {
+        "mediaTime": 8.75,
+        "presentedFrames": 19,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-18/source-display.png",
+        "sha256": "9f219459b9f7cff96a7d7c2b281fcbb3e910e91d40f7881cd7251f2068fd0714"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-19",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 9.125,
+      "decoded": {
+        "mediaTime": 9.125,
+        "presentedFrames": 20,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-19/source-display.png",
+        "sha256": "829fdf06a27390a193a472470f122e78428a843212ca2e94122bbb89f1f8a9f4"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-20",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 9.5,
+      "decoded": {
+        "mediaTime": 9.5,
+        "presentedFrames": 21,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-20/source-display.png",
+        "sha256": "7a51f39f69bc701ec93d618567286899d2436be1506cdbcd8cf28eb3b086ba5d"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-21",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 9.875,
+      "decoded": {
+        "mediaTime": 9.875,
+        "presentedFrames": 22,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-21/source-display.png",
+        "sha256": "af0819d064a66358b3d5c6218323a3021d2ae4683f173fc902350fc4c8e08e03"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-22",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 10.25,
+      "decoded": {
+        "mediaTime": 10.25,
+        "presentedFrames": 23,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-22/source-display.png",
+        "sha256": "e643c3567d91574d292786227997ca593ee8be9373a9161cb764505785c30345"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    },
+    {
+      "schemaVersion": 1,
+      "id": "stop-23",
+      "operation": "HTMLVideoElement seek; requestVideoFrameCallback confirms decoded target; canvas2D drawImage at native1280x720; no filters",
+      "video": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+        "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de"
+      },
+      "targetSeconds": 10.625,
+      "decoded": {
+        "mediaTime": 10.625,
+        "presentedFrames": 24,
+        "width": 1280,
+        "height": 720
+      },
+      "output": {
+        "path": "stops/stop-23/source-display.png",
+        "sha256": "863732154dea988c72f5bd90bbd36ca982faf1768871e3cec331a393e4b1cd7f"
+      },
+      "software": {
+        "browser": "153.0.8010.54",
+        "platform": "darwin"
+      },
+      "originalFramePreserved": true
+    }
+  ]
+}

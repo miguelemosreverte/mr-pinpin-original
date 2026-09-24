@@ -1,0 +1,5 @@
+// A generated clip is played forward or as a separately encoded exact reverse.
+export function bridgePlayer(video){let serial=0;
+ async function waitFor(test,valid,timeout=12000){const end=performance.now()+timeout;while(!test()){if(!valid())return false;if(performance.now()>end)throw Error('Bridge media timed out');await new Promise(r=>setTimeout(r,20));}return valid();}
+ return{get time(){return video.currentTime||0;},get duration(){return video.duration||0;},cancel(){serial++;video.pause();},async play(src,{from=0,valid,onReady}={}){const own=++serial,alive=()=>own===serial&&valid();video.pause();if(video.getAttribute('src')!==src){video.src=src;video.load();}if(!await waitFor(()=>video.readyState>=2,alive))return false;video.currentTime=Math.min(Math.max(0,from),Math.max(0,video.duration-.001));if(!await waitFor(()=>!video.seeking,alive))return false;if(!alive())return false;onReady?.();await video.play();if(!await waitFor(()=>video.ended,alive,Math.max(12000,video.duration*2000)))return false;return true;}};
+}
