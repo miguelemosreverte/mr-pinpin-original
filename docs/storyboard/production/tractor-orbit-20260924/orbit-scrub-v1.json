@@ -1,0 +1,47 @@
+{
+  "operation": "all-intra decode-friendly derivative; raw provider output retained unchanged",
+  "input": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-v1.mp4",
+    "sha256": "172af688f536364ca766a517d94fd9b849585a128bbc192e2713b67ce6e4a83d"
+  },
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4",
+    "sha256": "5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de",
+    "bytes": 23520738,
+    "width": 1280,
+    "height": 720,
+    "duration": 12.041667,
+    "codec": "h264",
+    "fps": "24/1",
+    "frameCount": 289,
+    "allFramesKeyframes": true,
+    "hasAudio": false
+  },
+  "command": [
+    "/opt/homebrew/bin/ffmpeg",
+    "-v",
+    "error",
+    "-i",
+    "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-v1.mp4",
+    "-an",
+    "-c:v",
+    "libx264",
+    "-preset",
+    "veryfast",
+    "-crf",
+    "18",
+    "-g",
+    "1",
+    "-keyint_min",
+    "1",
+    "-sc_threshold",
+    "0",
+    "-pix_fmt",
+    "yuv420p",
+    "-movflags",
+    "+faststart",
+    "-n",
+    "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-orbit-20260924/orbit-scrub-v1.mp4"
+  ],
+  "noMotionInterpolation": true
+}

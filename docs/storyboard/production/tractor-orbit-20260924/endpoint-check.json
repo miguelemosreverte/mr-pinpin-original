@@ -1,0 +1,17 @@
+{
+  "operation": "decoded endpoint pixel difference, diagnostic only; not a proof of continuous camera motion",
+  "sourceSha256": "172af688f536364ca766a517d94fd9b849585a128bbc192e2713b67ce6e4a83d",
+  "frameIndices": [
+    0,
+    1,
+    287,
+    288
+  ],
+  "meanAbsoluteRGB0to255": {
+    "lastToFirst": 10.745915436921296,
+    "firstToNext": 7.136254701967592,
+    "penultimateToLast": 0.8453718171296297
+  },
+  "halfSecondContactSheet": "contact-sheet-half-seconds.jpg",
+  "halfSecondContactSheetNote": "ffmpeg fps=2 thumbnails; time labels are approximate sampling positions, not separately verified camera angles"
+}
