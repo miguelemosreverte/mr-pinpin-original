@@ -1,0 +1,9 @@
+# Review working-media offload — 2026-09-24
+
+Completed local workspace offload: **130 files, 266,196,774 logical bytes (253.9 MiB)** moved from the Air to the mini’s TB4 storage. Each original docs path now resolves through a symlink. This is offloaded file content, not a claim of an equal increase in APFS free space; available space fluctuates. At report time the Air had 393,457,664 available bytes (375.2 MiB).
+
+Every file was an untracked experimental archive asset with an exact matching successful Hugging Face remote-verification receipt. Before replacement, the transfer checked source size/SHA-256, copied destination size/SHA-256, unchanged source identity, and untracked Git status; afterward it checked the working symlink and resolved SHA-256. All 130 transfers completed. Tracked files, official production-role assets, existing symlinks, and the current native-panorama review pack were excluded. The bounded eligible set was below the requested 500 MB target; no unrelated cleanup was performed.
+
+Per-file source paths, destinations, hashes and backing receipts: `/Volumes/TB4/mac-mini-storage/shared/pinpin-review-working-media/storage-move-agent-20260924.json`. Eligibility inventory: `/Volumes/TB4/mac-mini-storage/shared/pinpin-review-working-media/eligible-offload-20260924.json`. The coordinator’s earlier `storage-move-20260924.json` was preserved separately.
+
+These links require the TB4 mount for local review. Portable archive catalogs still describe ordinary restorable files; no catalog or global policy changed. Before restoring one of these paths as a regular local file, verify its retained target/remote identity, detach only the selected symlink (never its target), and use the existing archive restore workflow with enough local space. A clean restored checkout avoids carrying these workspace-only links into a portable build.
