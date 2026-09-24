@@ -1,0 +1,1950 @@
+{
+  "schemaVersion": 1,
+  "title": "How the three-room house tour was made",
+  "intro": "The actual sequence from one Blender house to three illustrated room views: gray geometry, whole-atlas attempts, continuous-panorama repair, then deterministic runtime projection. This report exposes the executed prompts and ordered inputs; it does not describe a new artwork fix.",
+  "overview": "The actual sequence from one Blender house to three illustrated room views: gray geometry, whole-atlas attempts, continuous-panorama repair, then deterministic runtime projection. This report exposes the executed prompts and ordered inputs; it does not describe a new artwork fix.",
+  "urlBase": "docs/",
+  "status": "reviewed-local-proposals-with-remaining-issues",
+  "rooms": [
+    {
+      "id": "common",
+      "title": "Common room",
+      "summary": "Broad table/floor and ceiling joins now coherent; faint wall bands and approximate fixture proportions remain.",
+      "camera": {
+        "position": [
+          -1.3,
+          -1.3,
+          1.15
+        ]
+      },
+      "doorStates": {
+        "door-front": 0,
+        "door-bath": 75,
+        "door-bedroom": 75
+      },
+      "steps": [
+        {
+          "id": "gray",
+          "title": "1. Render the actual Blender room",
+          "kind": "blender",
+          "operation": "blender",
+          "status": "verified-geometry",
+          "summary": "Camera [-1.3, -1.3, 1.15] m. Six 90° views are assembled into one 3072×2048 atlas: front/right/back above left/up/down. Front door closed; both internal doors open 75°. Existing polygonal wall facets and proxy silhouettes are visible in this guide and are inherited by the illustration; this process does not redesign or smooth the model.",
+          "description": "Camera [-1.3, -1.3, 1.15] m. Six 90° views are assembled into one 3072×2048 atlas: front/right/back above left/up/down. Front door closed; both internal doors open 75°. Existing polygonal wall facets and proxy silhouettes are visible in this guide and are inherited by the illustration; this process does not redesign or smooth the model.",
+          "inputs": [],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "label": "Blender gray guide: six directions from one camera",
+              "alt": "Blender gray guide: six directions from one camera",
+              "role": "geometry authority",
+              "sha256": "103ff8b8ae6a9699168604a682f13ab9fd09f100176804f7774c64e6cdd54ce7",
+              "bytes": 4251715,
+              "width": 3072,
+              "height": 2048
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "label": "Blender gray guide: six directions from one camera",
+              "alt": "Blender gray guide: six directions from one camera",
+              "role": "geometry authority",
+              "sha256": "103ff8b8ae6a9699168604a682f13ab9fd09f100176804f7774c64e6cdd54ce7",
+              "bytes": 4251715,
+              "width": 3072,
+              "height": 2048
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-common.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-common.json",
+              "label": "Actual camera and door-state job"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/common/provenance.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/rooms/common/provenance.json",
+              "label": "Full render provenance"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "href": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "label": "Geometry and reproduction"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-common.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-common.json",
+              "label": "Actual camera and door-state job"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/common/provenance.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/rooms/common/provenance.json",
+              "label": "Full render provenance"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "href": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "label": "Geometry and reproduction"
+            }
+          ],
+          "command": "python3 tools/locations/cli.py cubemap --job docs/storyboard/production/house-tour-20260923/geometry/jobs/cubemap-common.json --out /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/common --host mini"
+        },
+        {
+          "id": "atlas-v1",
+          "title": "2. Generate the whole illustrated atlas",
+          "kind": "imagegen",
+          "operation": "imagegen",
+          "status": "rejected",
+          "summary": "Rejected: table moved into the down face, front door became plaster, and the bathroom glimpse invented content. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "description": "Rejected: table moved into the down face, front door became plaster, and the bathroom glimpse invented content. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "label": "Input 1: sole geometry/current camera",
+              "alt": "Input 1: sole geometry/current camera",
+              "role": "sole geometry/current camera",
+              "sha256": "103ff8b8ae6a9699168604a682f13ab9fd09f100176804f7774c64e6cdd54ce7",
+              "bytes": 4251715,
+              "width": 3072,
+              "height": 2048,
+              "order": 1
+            },
+            {
+              "url": "storyboard/images/house-menu/room-panorama-v3.webp",
+              "src": "storyboard/images/house-menu/room-panorama-v3.webp",
+              "label": "Input 2: old equirectangular STYLE only",
+              "alt": "Input 2: old equirectangular STYLE only",
+              "role": "old equirectangular STYLE only",
+              "sha256": "efc3a9ddf626ce3cd411e1cfd57945854f220eea3b0cf29d5117a7bfa80d1187",
+              "bytes": 2020370,
+              "width": 1774,
+              "height": 887,
+              "order": 2
+            },
+            {
+              "url": "storyboard/images/house-menu/room-cube-front-v1.webp",
+              "src": "storyboard/images/house-menu/room-cube-front-v1.webp",
+              "label": "Input 3: old perspective STYLE detail only",
+              "alt": "Input 3: old perspective STYLE detail only",
+              "role": "old perspective STYLE detail only",
+              "sha256": "109a9aa49599c197c5f8878792b8a0d7a8da1e2654ee781cace1769be5ee175c",
+              "bytes": 1391254,
+              "width": 1254,
+              "height": 1254,
+              "order": 3
+            },
+            {
+              "url": "storyboard/images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp",
+              "src": "storyboard/images/published/elder-cycle/papa-arrival-20260922-arrival-05.webp",
+              "label": "Input 4: room-specific book STYLE only",
+              "alt": "Input 4: room-specific book STYLE only",
+              "role": "room-specific book STYLE only",
+              "sha256": "0c475ab6702d45d9ae00a64c90d59adfe0a980dd5a594cacbbd2ced5f63342ea",
+              "bytes": 1751408,
+              "width": 1536,
+              "height": 1024,
+              "order": 4
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v1.png",
+              "label": "Illustrated atlas V1: 1536×1024",
+              "alt": "Illustrated atlas V1: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "e82be7995efd5867afc0cc187e899eec8f56098fb08fe3e9f805e6865996532e",
+              "bytes": 2404132,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v1.png",
+              "label": "Illustrated atlas V1: 1536×1024",
+              "alt": "Illustrated atlas V1: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "e82be7995efd5867afc0cc187e899eec8f56098fb08fe3e9f805e6865996532e",
+              "bytes": 2404132,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/common-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/common-v1.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/generation-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/common/generation-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/common-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/common-v1.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/generation-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/common/generation-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "prompt": {
+            "url": "storyboard/production/house-tour-20260923/prompts/common-v1.txt",
+            "src": "storyboard/production/house-tour-20260923/prompts/common-v1.txt",
+            "sha256": "3b70e1248d7510d3e1f5bd38866222bad255fbee631a3f61fb7709ec46af8818"
+          },
+          "tool": "image_gen__imagegen",
+          "executed": true
+        },
+        {
+          "id": "atlas-v2",
+          "title": "3. Revise the whole atlas: V2",
+          "kind": "imagegen",
+          "operation": "imagegen",
+          "status": "superseded",
+          "summary": "Superseded: composition improved, but the bath glimpse turned white and major cube boundaries still disagreed. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "description": "Superseded: composition improved, but the bath glimpse turned white and major cube boundaries still disagreed. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "label": "Input 1: exact gray geometry",
+              "alt": "Input 1: exact gray geometry",
+              "role": "exact gray geometry",
+              "sha256": "103ff8b8ae6a9699168604a682f13ab9fd09f100176804f7774c64e6cdd54ce7",
+              "bytes": 4251715,
+              "width": 3072,
+              "height": 2048,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v1.png",
+              "label": "Input 2: v1 MATERIAL appearance only; known geometric failures",
+              "alt": "Input 2: v1 MATERIAL appearance only; known geometric failures",
+              "role": "v1 MATERIAL appearance only; known geometric failures",
+              "sha256": "e82be7995efd5867afc0cc187e899eec8f56098fb08fe3e9f805e6865996532e",
+              "bytes": 2404132,
+              "width": 1536,
+              "height": 1024,
+              "order": 2
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v2.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v2.png",
+              "label": "Illustrated atlas V2: 1536×1024",
+              "alt": "Illustrated atlas V2: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "51630e5238815e3e233aa30412373fa0aa480ba7f514afa9948565fbb701f2fd",
+              "bytes": 2374424,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v2.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v2.png",
+              "label": "Illustrated atlas V2: 1536×1024",
+              "alt": "Illustrated atlas V2: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "51630e5238815e3e233aa30412373fa0aa480ba7f514afa9948565fbb701f2fd",
+              "bytes": 2374424,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/common-v2.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/common-v2.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/generation-v2.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/common/generation-v2.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/common-v2.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/common-v2.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/generation-v2.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/common/generation-v2.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "prompt": {
+            "url": "storyboard/production/house-tour-20260923/prompts/common-v2.txt",
+            "src": "storyboard/production/house-tour-20260923/prompts/common-v2.txt",
+            "sha256": "c164b7c63dd675cbf379a50b7a210daa90939b12ca69754dee7ca09749b0470a"
+          },
+          "tool": "image_gen__imagegen",
+          "executed": true
+        },
+        {
+          "id": "atlas-v3",
+          "title": "4. Revise the whole atlas: V3",
+          "kind": "imagegen",
+          "operation": "imagegen",
+          "status": "superseded",
+          "summary": "Superseded: tub wood was corrected, but broad floor/table and ceiling discontinuities remained. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "description": "Superseded: tub wood was corrected, but broad floor/table and ceiling discontinuities remained. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "label": "Input 1: exact gray geometry",
+              "alt": "Input 1: exact gray geometry",
+              "role": "exact gray geometry",
+              "sha256": "103ff8b8ae6a9699168604a682f13ab9fd09f100176804f7774c64e6cdd54ce7",
+              "bytes": 4251715,
+              "width": 3072,
+              "height": 2048,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v2.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v2.png",
+              "label": "Input 2: previous illustrated candidate; preserve except stated correction",
+              "alt": "Input 2: previous illustrated candidate; preserve except stated correction",
+              "role": "previous illustrated candidate; preserve except stated correction",
+              "sha256": "51630e5238815e3e233aa30412373fa0aa480ba7f514afa9948565fbb701f2fd",
+              "bytes": 2374424,
+              "width": 1536,
+              "height": 1024,
+              "order": 2
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v3.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v3.png",
+              "label": "Illustrated atlas V3: 1536×1024",
+              "alt": "Illustrated atlas V3: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "bc24b3d60e2cf9fc40a2204530a2120f18bed5ad1071b41029c5e2295c768941",
+              "bytes": 2106186,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v3.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v3.png",
+              "label": "Illustrated atlas V3: 1536×1024",
+              "alt": "Illustrated atlas V3: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "bc24b3d60e2cf9fc40a2204530a2120f18bed5ad1071b41029c5e2295c768941",
+              "bytes": 2106186,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/common-v3.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/common-v3.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/generation-v3.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/common/generation-v3.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/common-v3.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/common-v3.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/generation-v3.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/common/generation-v3.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "prompt": {
+            "url": "storyboard/production/house-tour-20260923/prompts/common-v3.txt",
+            "src": "storyboard/production/house-tour-20260923/prompts/common-v3.txt",
+            "sha256": "71a1c00dc42b293570b3e186feb8f14c59fac1293d513b9e7af4baea389b85b6"
+          },
+          "tool": "image_gen__imagegen",
+          "executed": true
+        },
+        {
+          "id": "project-inputs",
+          "title": "5. Reproject both atlases into continuous spheres",
+          "kind": "deterministic",
+          "operation": "deterministic",
+          "status": "verified-transform",
+          "summary": "Pure geometric resampling into matching3072×1536 equirectangular panoramas. No image model is called and no seam is painted here; the old discontinuities remain visible for the next repair.",
+          "description": "Pure geometric resampling into matching3072×1536 equirectangular panoramas. No image model is called and no seam is painted here; the old discontinuities remain visible for the next repair.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png",
+              "label": "Blender gray guide: six directions from one camera",
+              "alt": "Blender gray guide: six directions from one camera",
+              "role": "geometry authority",
+              "sha256": "103ff8b8ae6a9699168604a682f13ab9fd09f100176804f7774c64e6cdd54ce7",
+              "bytes": 4251715,
+              "width": 3072,
+              "height": 2048
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v3.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v3.png",
+              "label": "Last illustrated atlas V3",
+              "alt": "Last illustrated atlas V3",
+              "role": "art to reproject",
+              "sha256": "bc24b3d60e2cf9fc40a2204530a2120f18bed5ad1071b41029c5e2295c768941",
+              "bytes": 2106186,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/common-gray-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/common-gray-equirect.png",
+              "label": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "alt": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "role": "Current gray whole sphere; sole geometry/camera authority",
+              "sha256": "afaa90e3097459d1dca98342b73cc08fcfdcc05517bc2759bfc6a9b920723425",
+              "bytes": 2462764,
+              "width": 3072,
+              "height": 1536,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/common-v3-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/common-v3-equirect.png",
+              "label": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "alt": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "role": "Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "sha256": "c08d642fd935616b86cb464d37ac9811f5fba7dcdec89b82391095757d76fc1b",
+              "bytes": 7258986,
+              "width": 3072,
+              "height": 1536,
+              "order": 2
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/common-gray-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/common-gray-equirect.png",
+              "label": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "alt": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "role": "Current gray whole sphere; sole geometry/camera authority",
+              "sha256": "afaa90e3097459d1dca98342b73cc08fcfdcc05517bc2759bfc6a9b920723425",
+              "bytes": 2462764,
+              "width": 3072,
+              "height": 1536,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/common-v3-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/common-v3-equirect.png",
+              "label": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "alt": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "role": "Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "sha256": "c08d642fd935616b86cb464d37ac9811f5fba7dcdec89b82391095757d76fc1b",
+              "bytes": 7258986,
+              "width": 3072,
+              "height": 1536,
+              "order": 2
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/common-gray-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/common-gray-equirect.json",
+              "label": "Gray conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/common-v3-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/common-v3-equirect.json",
+              "label": "Art conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "href": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "label": "Actual deterministic projection script"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/common-gray-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/common-gray-equirect.json",
+              "label": "Gray conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/common-v3-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/common-v3-equirect.json",
+              "label": "Art conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "href": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "label": "Actual deterministic projection script"
+            }
+          ],
+          "command": "python3 docs/storyboard/production/house-tour-20260923/projection/reproject.py cube-to-pano --input docs/storyboard/production/house-tour-20260923/geometry/rooms/common/cube-atlas.png --output /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/common-gray-equirect.png --width 3072\npython3 docs/storyboard/production/house-tour-20260923/projection/reproject.py cube-to-pano --input docs/storyboard/production/house-tour-20260923/illustrated/common/cube-atlas-v3.png --output /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/common-v3-equirect.png --width 3072"
+        },
+        {
+          "id": "panorama-repair",
+          "title": "6. Repair one continuous panorama",
+          "kind": "imagegen",
+          "operation": "imagegen",
+          "status": "reviewed-proposal-remaining-issues",
+          "summary": "One built-in imagegen call sees the entire sphere. Input1 fixes geometry/camera; input2 supplies materials and the discontinuities to repair. Requested 2048×1024; actual 1774×887. Broad table/floor and ceiling joins now coherent; faint wall bands and approximate fixture proportions remain.",
+          "description": "One built-in imagegen call sees the entire sphere. Input1 fixes geometry/camera; input2 supplies materials and the discontinuities to repair. Requested 2048×1024; actual 1774×887. Broad table/floor and ceiling joins now coherent; faint wall bands and approximate fixture proportions remain.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/common-gray-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/common-gray-equirect.png",
+              "label": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "alt": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "role": "Current gray whole sphere; sole geometry/camera authority",
+              "sha256": "afaa90e3097459d1dca98342b73cc08fcfdcc05517bc2759bfc6a9b920723425",
+              "bytes": 2462764,
+              "width": 3072,
+              "height": 1536,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/common-v3-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/common-v3-equirect.png",
+              "label": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "alt": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "role": "Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "sha256": "c08d642fd935616b86cb464d37ac9811f5fba7dcdec89b82391095757d76fc1b",
+              "bytes": 7258986,
+              "width": 3072,
+              "height": 1536,
+              "order": 2
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/panorama-v1.png",
+              "label": "Repaired whole panorama: 1774×887",
+              "alt": "Repaired whole panorama: 1774×887",
+              "role": "selected generated panorama",
+              "sha256": "98eb7d2124b906c9f24039479a63ed93638dbf0c4209ae1f07a397f19f984bdc",
+              "bytes": 1820743,
+              "width": 1774,
+              "height": 887
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/panorama-v1.png",
+              "label": "Repaired whole panorama: 1774×887",
+              "alt": "Repaired whole panorama: 1774×887",
+              "role": "selected generated panorama",
+              "sha256": "98eb7d2124b906c9f24039479a63ed93638dbf0c4209ae1f07a397f19f984bdc",
+              "bytes": 1820743,
+              "width": 1774,
+              "height": 887
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/common-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/common-panorama-v1.json",
+              "label": "Exact prompt and two ordered inputs"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/generation-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/common/generation-panorama-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/common-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/common-panorama-v1.json",
+              "label": "Exact prompt and two ordered inputs"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/generation-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/common/generation-panorama-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "prompt": {
+            "url": "storyboard/production/house-tour-20260923/prompts/common-panorama-v1.txt",
+            "src": "storyboard/production/house-tour-20260923/prompts/common-panorama-v1.txt",
+            "sha256": "d916d6e2971c7902e757bd967a4bb2a98ed638dd8ef7ea0e79ab1ca029224ac5"
+          },
+          "tool": "image_gen__imagegen",
+          "executed": true
+        },
+        {
+          "id": "cube-output",
+          "title": "7. Convert the panorama back to the runtime cube",
+          "kind": "deterministic",
+          "operation": "deterministic",
+          "status": "verified-transform",
+          "summary": "Mathematical pano-to-cube projection yields six 512×512 faces in a 1536×1024 atlas. Lossless WebP encoding preserves decoded RGB. Neither step adds detail or repairs the artwork. Same-ray edge checks prove the mapping, not artistic continuity.",
+          "description": "Mathematical pano-to-cube projection yields six 512×512 faces in a 1536×1024 atlas. Lossless WebP encoding preserves decoded RGB. Neither step adds detail or repairs the artwork. Same-ray edge checks prove the mapping, not artistic continuity.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/panorama-v1.png",
+              "label": "Repaired whole panorama: 1774×887",
+              "alt": "Repaired whole panorama: 1774×887",
+              "role": "selected generated panorama",
+              "sha256": "98eb7d2124b906c9f24039479a63ed93638dbf0c4209ae1f07a397f19f984bdc",
+              "bytes": 1820743,
+              "width": 1774,
+              "height": 887
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-from-panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-from-panorama-v1.png",
+              "label": "Deterministic cubemap PNG: 1536×1024",
+              "alt": "Deterministic cubemap PNG: 1536×1024",
+              "role": "projection result",
+              "sha256": "7482c5d4e0cd97ad0e90b3bd2bf1002fdffbbe962701c31c902319edaa912e3b",
+              "bytes": 3236294,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas.webp",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas.webp",
+              "label": "Current runtime WebP: 1536×1024",
+              "alt": "Current runtime WebP: 1536×1024",
+              "role": "lossless runtime derivative",
+              "sha256": "147ce0ce9b0cb750a72da122deb555efc9624ffac5abaa5c0625afce1a5dbca4",
+              "bytes": 1237354,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-from-panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-from-panorama-v1.png",
+              "label": "Deterministic cubemap PNG: 1536×1024",
+              "alt": "Deterministic cubemap PNG: 1536×1024",
+              "role": "projection result",
+              "sha256": "7482c5d4e0cd97ad0e90b3bd2bf1002fdffbbe962701c31c902319edaa912e3b",
+              "bytes": 3236294,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas.webp",
+              "src": "storyboard/production/house-tour-20260923/illustrated/common/cube-atlas.webp",
+              "label": "Current runtime WebP: 1536×1024",
+              "alt": "Current runtime WebP: 1536×1024",
+              "role": "lossless runtime derivative",
+              "sha256": "147ce0ce9b0cb750a72da122deb555efc9624ffac5abaa5c0625afce1a5dbca4",
+              "bytes": 1237354,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/projection-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/common/projection-panorama-v1.json",
+              "label": "Conversion hashes, sizes and shared-ray checks"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/README.md",
+              "href": "storyboard/production/house-tour-20260923/projection/README.md",
+              "label": "Projection convention and execution environment"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/common/projection-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/common/projection-panorama-v1.json",
+              "label": "Conversion hashes, sizes and shared-ray checks"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/README.md",
+              "href": "storyboard/production/house-tour-20260923/projection/README.md",
+              "label": "Projection convention and execution environment"
+            }
+          ],
+          "command": "python3 docs/storyboard/production/house-tour-20260923/projection/reproject.py pano-to-cube --input docs/storyboard/production/house-tour-20260923/illustrated/common/panorama-v1.png --output /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/illustrated/common/cube-from-panorama-v1.png --face-size 512"
+        },
+        {
+          "id": "review",
+          "title": "8. Compare the painted view with the gray room",
+          "kind": "review",
+          "operation": "review",
+          "status": "reviewed-proposal-remaining-issues",
+          "summary": "Six face centers and twelve edge directions were inspected for this room in the actual viewer. Broad table/floor and ceiling joins now coherent; faint wall bands and approximate fixture proportions remain. This is a local review candidate, not exact geometry certification or approved chapter art.",
+          "description": "Six face centers and twelve edge directions were inspected for this room in the actual viewer. Broad table/floor and ceiling joins now coherent; faint wall bands and approximate fixture proportions remain. This is a local review candidate, not exact geometry certification or approved chapter art.",
+          "inputs": [],
+          "outputs": [],
+          "images": [],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "href": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "label": "Final art review"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "href": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "label": "Versioned edge-by-edge evidence"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "href": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "label": "Final art review"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "href": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "label": "Versioned edge-by-edge evidence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bath",
+      "title": "Bathroom",
+      "summary": "Window/tub/mat joins are substantially improved; added timber trim and fixture silhouettes differ from the gray guide and other rooms.",
+      "camera": {
+        "position": [
+          -2.4,
+          2,
+          1.15
+        ]
+      },
+      "doorStates": {
+        "door-front": 0,
+        "door-bath": 75,
+        "door-bedroom": 75
+      },
+      "steps": [
+        {
+          "id": "gray",
+          "title": "1. Render the actual Blender room",
+          "kind": "blender",
+          "operation": "blender",
+          "status": "verified-geometry",
+          "summary": "Camera [-2.4, 2, 1.15] m. Six 90° views are assembled into one 3072×2048 atlas: front/right/back above left/up/down. Front door closed; both internal doors open 75°. Existing polygonal wall facets and proxy silhouettes are visible in this guide and are inherited by the illustration; this process does not redesign or smooth the model.",
+          "description": "Camera [-2.4, 2, 1.15] m. Six 90° views are assembled into one 3072×2048 atlas: front/right/back above left/up/down. Front door closed; both internal doors open 75°. Existing polygonal wall facets and proxy silhouettes are visible in this guide and are inherited by the illustration; this process does not redesign or smooth the model.",
+          "inputs": [],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.png",
+              "label": "Blender gray guide: six directions from one camera",
+              "alt": "Blender gray guide: six directions from one camera",
+              "role": "geometry authority",
+              "sha256": "8a3f31df60643c416918d4547d4412d48646875787d0728e2359d09c9100f911",
+              "bytes": 3605542,
+              "width": 3072,
+              "height": 2048
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.png",
+              "label": "Blender gray guide: six directions from one camera",
+              "alt": "Blender gray guide: six directions from one camera",
+              "role": "geometry authority",
+              "sha256": "8a3f31df60643c416918d4547d4412d48646875787d0728e2359d09c9100f911",
+              "bytes": 3605542,
+              "width": 3072,
+              "height": 2048
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-bath.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-bath.json",
+              "label": "Actual camera and door-state job"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bath/provenance.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/rooms/bath/provenance.json",
+              "label": "Full render provenance"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "href": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "label": "Geometry and reproduction"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-bath.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-bath.json",
+              "label": "Actual camera and door-state job"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bath/provenance.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/rooms/bath/provenance.json",
+              "label": "Full render provenance"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "href": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "label": "Geometry and reproduction"
+            }
+          ],
+          "command": "python3 tools/locations/cli.py cubemap --job docs/storyboard/production/house-tour-20260923/geometry/jobs/cubemap-bath.json --out /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bath --host mini"
+        },
+        {
+          "id": "atlas-v1",
+          "title": "2. Generate the whole illustrated atlas",
+          "kind": "imagegen",
+          "operation": "imagegen",
+          "status": "rejected",
+          "summary": "Rejected: adjacent-room details and objects drifted; faces did not form a coherent window/tub/mat. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "description": "Rejected: adjacent-room details and objects drifted; faces did not form a coherent window/tub/mat. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.png",
+              "label": "Input 1: sole geometry/current camera",
+              "alt": "Input 1: sole geometry/current camera",
+              "role": "sole geometry/current camera",
+              "sha256": "8a3f31df60643c416918d4547d4412d48646875787d0728e2359d09c9100f911",
+              "bytes": 3605542,
+              "width": 3072,
+              "height": 2048,
+              "order": 1
+            },
+            {
+              "url": "storyboard/images/house-menu/room-panorama-v3.webp",
+              "src": "storyboard/images/house-menu/room-panorama-v3.webp",
+              "label": "Input 2: old equirectangular STYLE only",
+              "alt": "Input 2: old equirectangular STYLE only",
+              "role": "old equirectangular STYLE only",
+              "sha256": "efc3a9ddf626ce3cd411e1cfd57945854f220eea3b0cf29d5117a7bfa80d1187",
+              "bytes": 2020370,
+              "width": 1774,
+              "height": 887,
+              "order": 2
+            },
+            {
+              "url": "storyboard/images/house-menu/room-cube-front-v1.webp",
+              "src": "storyboard/images/house-menu/room-cube-front-v1.webp",
+              "label": "Input 3: old perspective STYLE detail only",
+              "alt": "Input 3: old perspective STYLE detail only",
+              "role": "old perspective STYLE detail only",
+              "sha256": "109a9aa49599c197c5f8878792b8a0d7a8da1e2654ee781cace1769be5ee175c",
+              "bytes": 1391254,
+              "width": 1254,
+              "height": 1254,
+              "order": 3
+            },
+            {
+              "url": "storyboard/images/standalone/home-sweet-home/bedtime-08-v2.png",
+              "src": "storyboard/images/standalone/home-sweet-home/bedtime-08-v2.png",
+              "label": "Input 4: room-specific book STYLE only",
+              "alt": "Input 4: room-specific book STYLE only",
+              "role": "room-specific book STYLE only",
+              "sha256": "c6e3deefa1acc93dadb3467931719f080a81ab8807dbff960bca6c225f07635d",
+              "bytes": 2323256,
+              "width": 1536,
+              "height": 1024,
+              "order": 4
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v1.png",
+              "label": "Illustrated atlas V1: 1536×1024",
+              "alt": "Illustrated atlas V1: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "ca401eb5aef9030886cadefc5016009d74d353f3a9db221675a86fbec91d80e7",
+              "bytes": 2297485,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v1.png",
+              "label": "Illustrated atlas V1: 1536×1024",
+              "alt": "Illustrated atlas V1: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "ca401eb5aef9030886cadefc5016009d74d353f3a9db221675a86fbec91d80e7",
+              "bytes": 2297485,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/bath-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/bath-v1.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/generation-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bath/generation-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/bath-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/bath-v1.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/generation-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bath/generation-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "prompt": {
+            "url": "storyboard/production/house-tour-20260923/prompts/bath-v1.txt",
+            "src": "storyboard/production/house-tour-20260923/prompts/bath-v1.txt",
+            "sha256": "5a75809adbe6061d856b91a067699d834522580fc30a91b9bf0076d87d266dfc"
+          },
+          "tool": "image_gen__imagegen",
+          "executed": true
+        },
+        {
+          "id": "atlas-v2",
+          "title": "3. Revise the whole atlas: V2",
+          "kind": "imagegen",
+          "operation": "imagegen",
+          "status": "superseded",
+          "summary": "Superseded: targeted corrections did not remove broad window, tub and mat splits at cube boundaries. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "description": "Superseded: targeted corrections did not remove broad window, tub and mat splits at cube boundaries. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.png",
+              "label": "Input 1: exact gray geometry",
+              "alt": "Input 1: exact gray geometry",
+              "role": "exact gray geometry",
+              "sha256": "8a3f31df60643c416918d4547d4412d48646875787d0728e2359d09c9100f911",
+              "bytes": 3605542,
+              "width": 3072,
+              "height": 2048,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v1.png",
+              "label": "Input 2: v1 MATERIAL appearance only; known portal errors",
+              "alt": "Input 2: v1 MATERIAL appearance only; known portal errors",
+              "role": "v1 MATERIAL appearance only; known portal errors",
+              "sha256": "ca401eb5aef9030886cadefc5016009d74d353f3a9db221675a86fbec91d80e7",
+              "bytes": 2297485,
+              "width": 1536,
+              "height": 1024,
+              "order": 2
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v2.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v2.png",
+              "label": "Illustrated atlas V2: 1536×1024",
+              "alt": "Illustrated atlas V2: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "b26a321ebc90c7f3eddd662cc05973e9a55dde471050f3c990d72f36965275b9",
+              "bytes": 2141288,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v2.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v2.png",
+              "label": "Illustrated atlas V2: 1536×1024",
+              "alt": "Illustrated atlas V2: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "b26a321ebc90c7f3eddd662cc05973e9a55dde471050f3c990d72f36965275b9",
+              "bytes": 2141288,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/bath-v2.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/bath-v2.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/generation-v2.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bath/generation-v2.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/bath-v2.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/bath-v2.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/generation-v2.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bath/generation-v2.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "prompt": {
+            "url": "storyboard/production/house-tour-20260923/prompts/bath-v2.txt",
+            "src": "storyboard/production/house-tour-20260923/prompts/bath-v2.txt",
+            "sha256": "6bd4517f6ef949956846b1749905431af17b3611bb009ea54892fd92bf687886"
+          },
+          "tool": "image_gen__imagegen",
+          "executed": true
+        },
+        {
+          "id": "project-inputs",
+          "title": "4. Reproject both atlases into continuous spheres",
+          "kind": "deterministic",
+          "operation": "deterministic",
+          "status": "verified-transform",
+          "summary": "Pure geometric resampling into matching3072×1536 equirectangular panoramas. No image model is called and no seam is painted here; the old discontinuities remain visible for the next repair.",
+          "description": "Pure geometric resampling into matching3072×1536 equirectangular panoramas. No image model is called and no seam is painted here; the old discontinuities remain visible for the next repair.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.png",
+              "label": "Blender gray guide: six directions from one camera",
+              "alt": "Blender gray guide: six directions from one camera",
+              "role": "geometry authority",
+              "sha256": "8a3f31df60643c416918d4547d4412d48646875787d0728e2359d09c9100f911",
+              "bytes": 3605542,
+              "width": 3072,
+              "height": 2048
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v2.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v2.png",
+              "label": "Last illustrated atlas V2",
+              "alt": "Last illustrated atlas V2",
+              "role": "art to reproject",
+              "sha256": "b26a321ebc90c7f3eddd662cc05973e9a55dde471050f3c990d72f36965275b9",
+              "bytes": 2141288,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bath-gray-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bath-gray-equirect.png",
+              "label": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "alt": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "role": "Current gray whole sphere; sole geometry/camera authority",
+              "sha256": "8c3e1ce974c097cace581d947bdbcb1763702ce2bb11366b174e85653abbdf22",
+              "bytes": 2116342,
+              "width": 3072,
+              "height": 1536,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bath-v2-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bath-v2-equirect.png",
+              "label": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "alt": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "role": "Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "sha256": "d9ff7d701fec6e962563606f784b37b74368a42009cab702217cea1fca18605d",
+              "bytes": 7681366,
+              "width": 3072,
+              "height": 1536,
+              "order": 2
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bath-gray-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bath-gray-equirect.png",
+              "label": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "alt": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "role": "Current gray whole sphere; sole geometry/camera authority",
+              "sha256": "8c3e1ce974c097cace581d947bdbcb1763702ce2bb11366b174e85653abbdf22",
+              "bytes": 2116342,
+              "width": 3072,
+              "height": 1536,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bath-v2-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bath-v2-equirect.png",
+              "label": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "alt": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "role": "Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "sha256": "d9ff7d701fec6e962563606f784b37b74368a42009cab702217cea1fca18605d",
+              "bytes": 7681366,
+              "width": 3072,
+              "height": 1536,
+              "order": 2
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bath-gray-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/bath-gray-equirect.json",
+              "label": "Gray conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bath-v2-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/bath-v2-equirect.json",
+              "label": "Art conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "href": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "label": "Actual deterministic projection script"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bath-gray-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/bath-gray-equirect.json",
+              "label": "Gray conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bath-v2-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/bath-v2-equirect.json",
+              "label": "Art conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "href": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "label": "Actual deterministic projection script"
+            }
+          ],
+          "command": "python3 docs/storyboard/production/house-tour-20260923/projection/reproject.py cube-to-pano --input docs/storyboard/production/house-tour-20260923/geometry/rooms/bath/cube-atlas.png --output /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bath-gray-equirect.png --width 3072\npython3 docs/storyboard/production/house-tour-20260923/projection/reproject.py cube-to-pano --input docs/storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas-v2.png --output /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bath-v2-equirect.png --width 3072"
+        },
+        {
+          "id": "panorama-repair",
+          "title": "5. Repair one continuous panorama",
+          "kind": "imagegen",
+          "operation": "imagegen",
+          "status": "reviewed-proposal-remaining-issues",
+          "summary": "One built-in imagegen call sees the entire sphere. Input1 fixes geometry/camera; input2 supplies materials and the discontinuities to repair. Requested 2048×1024; actual 1774×887. Window/tub/mat joins are substantially improved; added timber trim and fixture silhouettes differ from the gray guide and other rooms.",
+          "description": "One built-in imagegen call sees the entire sphere. Input1 fixes geometry/camera; input2 supplies materials and the discontinuities to repair. Requested 2048×1024; actual 1774×887. Window/tub/mat joins are substantially improved; added timber trim and fixture silhouettes differ from the gray guide and other rooms.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bath-gray-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bath-gray-equirect.png",
+              "label": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "alt": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "role": "Current gray whole sphere; sole geometry/camera authority",
+              "sha256": "8c3e1ce974c097cace581d947bdbcb1763702ce2bb11366b174e85653abbdf22",
+              "bytes": 2116342,
+              "width": 3072,
+              "height": 1536,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bath-v2-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bath-v2-equirect.png",
+              "label": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "alt": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "role": "Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "sha256": "d9ff7d701fec6e962563606f784b37b74368a42009cab702217cea1fca18605d",
+              "bytes": 7681366,
+              "width": 3072,
+              "height": 1536,
+              "order": 2
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/panorama-v1.png",
+              "label": "Repaired whole panorama: 1774×887",
+              "alt": "Repaired whole panorama: 1774×887",
+              "role": "selected generated panorama",
+              "sha256": "e6e0d666b132bc85068096435c426e6eea82ab90d9fc48bf67acb3a750e4eb7e",
+              "bytes": 1933544,
+              "width": 1774,
+              "height": 887
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/panorama-v1.png",
+              "label": "Repaired whole panorama: 1774×887",
+              "alt": "Repaired whole panorama: 1774×887",
+              "role": "selected generated panorama",
+              "sha256": "e6e0d666b132bc85068096435c426e6eea82ab90d9fc48bf67acb3a750e4eb7e",
+              "bytes": 1933544,
+              "width": 1774,
+              "height": 887
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/bath-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/bath-panorama-v1.json",
+              "label": "Exact prompt and two ordered inputs"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/generation-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bath/generation-panorama-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/bath-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/bath-panorama-v1.json",
+              "label": "Exact prompt and two ordered inputs"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/generation-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bath/generation-panorama-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "prompt": {
+            "url": "storyboard/production/house-tour-20260923/prompts/bath-panorama-v1.txt",
+            "src": "storyboard/production/house-tour-20260923/prompts/bath-panorama-v1.txt",
+            "sha256": "8c6c33d1358edb24ca2c03c7129213b7f31a7377719d91bf0ed8e54e6c0b9e4b"
+          },
+          "tool": "image_gen__imagegen",
+          "executed": true
+        },
+        {
+          "id": "cube-output",
+          "title": "6. Convert the panorama back to the runtime cube",
+          "kind": "deterministic",
+          "operation": "deterministic",
+          "status": "verified-transform",
+          "summary": "Mathematical pano-to-cube projection yields six 512×512 faces in a 1536×1024 atlas. Lossless WebP encoding preserves decoded RGB. Neither step adds detail or repairs the artwork. Same-ray edge checks prove the mapping, not artistic continuity.",
+          "description": "Mathematical pano-to-cube projection yields six 512×512 faces in a 1536×1024 atlas. Lossless WebP encoding preserves decoded RGB. Neither step adds detail or repairs the artwork. Same-ray edge checks prove the mapping, not artistic continuity.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/panorama-v1.png",
+              "label": "Repaired whole panorama: 1774×887",
+              "alt": "Repaired whole panorama: 1774×887",
+              "role": "selected generated panorama",
+              "sha256": "e6e0d666b132bc85068096435c426e6eea82ab90d9fc48bf67acb3a750e4eb7e",
+              "bytes": 1933544,
+              "width": 1774,
+              "height": 887
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/cube-from-panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/cube-from-panorama-v1.png",
+              "label": "Deterministic cubemap PNG: 1536×1024",
+              "alt": "Deterministic cubemap PNG: 1536×1024",
+              "role": "projection result",
+              "sha256": "e8f9fc7bb9c5a1dea33d36a53c5660b4188f97c970132b6efdc6a1a5272b1e29",
+              "bytes": 3358675,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas.webp",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas.webp",
+              "label": "Current runtime WebP: 1536×1024",
+              "alt": "Current runtime WebP: 1536×1024",
+              "role": "lossless runtime derivative",
+              "sha256": "5b6cf2e4f5e6a143b7df075cb9c91879c7cbd9dcd4c50ca06774cba3ba00cddc",
+              "bytes": 1296324,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/cube-from-panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/cube-from-panorama-v1.png",
+              "label": "Deterministic cubemap PNG: 1536×1024",
+              "alt": "Deterministic cubemap PNG: 1536×1024",
+              "role": "projection result",
+              "sha256": "e8f9fc7bb9c5a1dea33d36a53c5660b4188f97c970132b6efdc6a1a5272b1e29",
+              "bytes": 3358675,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas.webp",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bath/cube-atlas.webp",
+              "label": "Current runtime WebP: 1536×1024",
+              "alt": "Current runtime WebP: 1536×1024",
+              "role": "lossless runtime derivative",
+              "sha256": "5b6cf2e4f5e6a143b7df075cb9c91879c7cbd9dcd4c50ca06774cba3ba00cddc",
+              "bytes": 1296324,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/projection-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bath/projection-panorama-v1.json",
+              "label": "Conversion hashes, sizes and shared-ray checks"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/README.md",
+              "href": "storyboard/production/house-tour-20260923/projection/README.md",
+              "label": "Projection convention and execution environment"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bath/projection-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bath/projection-panorama-v1.json",
+              "label": "Conversion hashes, sizes and shared-ray checks"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/README.md",
+              "href": "storyboard/production/house-tour-20260923/projection/README.md",
+              "label": "Projection convention and execution environment"
+            }
+          ],
+          "command": "python3 docs/storyboard/production/house-tour-20260923/projection/reproject.py pano-to-cube --input docs/storyboard/production/house-tour-20260923/illustrated/bath/panorama-v1.png --output /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/illustrated/bath/cube-from-panorama-v1.png --face-size 512"
+        },
+        {
+          "id": "review",
+          "title": "7. Compare the painted view with the gray room",
+          "kind": "review",
+          "operation": "review",
+          "status": "reviewed-proposal-remaining-issues",
+          "summary": "Six face centers and twelve edge directions were inspected for this room in the actual viewer. Window/tub/mat joins are substantially improved; added timber trim and fixture silhouettes differ from the gray guide and other rooms. This is a local review candidate, not exact geometry certification or approved chapter art.",
+          "description": "Six face centers and twelve edge directions were inspected for this room in the actual viewer. Window/tub/mat joins are substantially improved; added timber trim and fixture silhouettes differ from the gray guide and other rooms. This is a local review candidate, not exact geometry certification or approved chapter art.",
+          "inputs": [],
+          "outputs": [],
+          "images": [],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "href": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "label": "Final art review"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "href": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "label": "Versioned edge-by-edge evidence"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "href": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "label": "Final art review"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "href": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "label": "Versioned edge-by-edge evidence"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bedroom",
+      "title": "Bedroom",
+      "summary": "Doubled doorway repaired; a narrow ceiling/wrap line and approximate bed/frame proportions remain.",
+      "camera": {
+        "position": [
+          1.45,
+          1.2,
+          1.15
+        ]
+      },
+      "doorStates": {
+        "door-front": 0,
+        "door-bath": 75,
+        "door-bedroom": 75
+      },
+      "steps": [
+        {
+          "id": "gray",
+          "title": "1. Render the actual Blender room",
+          "kind": "blender",
+          "operation": "blender",
+          "status": "verified-geometry",
+          "summary": "Camera [1.45, 1.2, 1.15] m. Six 90° views are assembled into one 3072×2048 atlas: front/right/back above left/up/down. Front door closed; both internal doors open 75°. Existing polygonal wall facets and proxy silhouettes are visible in this guide and are inherited by the illustration; this process does not redesign or smooth the model.",
+          "description": "Camera [1.45, 1.2, 1.15] m. Six 90° views are assembled into one 3072×2048 atlas: front/right/back above left/up/down. Front door closed; both internal doors open 75°. Existing polygonal wall facets and proxy silhouettes are visible in this guide and are inherited by the illustration; this process does not redesign or smooth the model.",
+          "inputs": [],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/cube-atlas.png",
+              "label": "Blender gray guide: six directions from one camera",
+              "alt": "Blender gray guide: six directions from one camera",
+              "role": "geometry authority",
+              "sha256": "b2348e61f25e5c8429420331de278071bd8c84c2d7c95214437e77460fd8476f",
+              "bytes": 3466241,
+              "width": 3072,
+              "height": 2048
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/cube-atlas.png",
+              "label": "Blender gray guide: six directions from one camera",
+              "alt": "Blender gray guide: six directions from one camera",
+              "role": "geometry authority",
+              "sha256": "b2348e61f25e5c8429420331de278071bd8c84c2d7c95214437e77460fd8476f",
+              "bytes": 3466241,
+              "width": 3072,
+              "height": 2048
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-bedroom.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-bedroom.json",
+              "label": "Actual camera and door-state job"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/provenance.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/provenance.json",
+              "label": "Full render provenance"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "href": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "label": "Geometry and reproduction"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-bedroom.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/jobs/cubemap-bedroom.json",
+              "label": "Actual camera and door-state job"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/provenance.json",
+              "href": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/provenance.json",
+              "label": "Full render provenance"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "href": "storyboard/production/house-tour-20260923/geometry/GEOMETRY.md",
+              "label": "Geometry and reproduction"
+            }
+          ],
+          "command": "python3 tools/locations/cli.py cubemap --job docs/storyboard/production/house-tour-20260923/geometry/jobs/cubemap-bedroom.json --out /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/rooms/bedroom --host mini"
+        },
+        {
+          "id": "atlas-v1",
+          "title": "2. Generate the whole illustrated atlas",
+          "kind": "imagegen",
+          "operation": "imagegen",
+          "status": "rejected",
+          "summary": "Rejected: back/left directions disagreed about the doorway, producing doubled leaves; bed and ceiling joins also broke. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "description": "Rejected: back/left directions disagreed about the doorway, producing doubled leaves; bed and ceiling joins also broke. One complete atlas per built-in imagegen call, never six independent face calls. Requested 3072×2048; actual 1536×1024.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/cube-atlas.png",
+              "label": "Input 1: sole geometry/current camera",
+              "alt": "Input 1: sole geometry/current camera",
+              "role": "sole geometry/current camera",
+              "sha256": "b2348e61f25e5c8429420331de278071bd8c84c2d7c95214437e77460fd8476f",
+              "bytes": 3466241,
+              "width": 3072,
+              "height": 2048,
+              "order": 1
+            },
+            {
+              "url": "storyboard/images/house-menu/room-panorama-v3.webp",
+              "src": "storyboard/images/house-menu/room-panorama-v3.webp",
+              "label": "Input 2: old equirectangular STYLE only",
+              "alt": "Input 2: old equirectangular STYLE only",
+              "role": "old equirectangular STYLE only",
+              "sha256": "efc3a9ddf626ce3cd411e1cfd57945854f220eea3b0cf29d5117a7bfa80d1187",
+              "bytes": 2020370,
+              "width": 1774,
+              "height": 887,
+              "order": 2
+            },
+            {
+              "url": "storyboard/images/house-menu/room-cube-front-v1.webp",
+              "src": "storyboard/images/house-menu/room-cube-front-v1.webp",
+              "label": "Input 3: old perspective STYLE detail only",
+              "alt": "Input 3: old perspective STYLE detail only",
+              "role": "old perspective STYLE detail only",
+              "sha256": "109a9aa49599c197c5f8878792b8a0d7a8da1e2654ee781cace1769be5ee175c",
+              "bytes": 1391254,
+              "width": 1254,
+              "height": 1254,
+              "order": 3
+            },
+            {
+              "url": "storyboard/images/standalone/home-sweet-home/bedtime-17-v2.png",
+              "src": "storyboard/images/standalone/home-sweet-home/bedtime-17-v2.png",
+              "label": "Input 4: room-specific book STYLE only",
+              "alt": "Input 4: room-specific book STYLE only",
+              "role": "room-specific book STYLE only",
+              "sha256": "e37fd9cccf68330ba62763958199839692e77c3c0092a5d4b5efa1db5835ff73",
+              "bytes": 2294087,
+              "width": 1536,
+              "height": 1024,
+              "order": 4
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas-v1.png",
+              "label": "Illustrated atlas V1: 1536×1024",
+              "alt": "Illustrated atlas V1: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "1556fb8ffefd7b483f3110d68f9ae693af436f2fa34d51f14f84ff72d27ccb28",
+              "bytes": 2387318,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas-v1.png",
+              "label": "Illustrated atlas V1: 1536×1024",
+              "alt": "Illustrated atlas V1: 1536×1024",
+              "role": "historical generated candidate",
+              "sha256": "1556fb8ffefd7b483f3110d68f9ae693af436f2fa34d51f14f84ff72d27ccb28",
+              "bytes": 2387318,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/bedroom-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/bedroom-v1.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/generation-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bedroom/generation-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/bedroom-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/bedroom-v1.json",
+              "label": "Exact imagegen job and ordered references"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/generation-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bedroom/generation-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "prompt": {
+            "url": "storyboard/production/house-tour-20260923/prompts/bedroom-v1.txt",
+            "src": "storyboard/production/house-tour-20260923/prompts/bedroom-v1.txt",
+            "sha256": "a6593eb49c2178feb30af2a4eb45c402b8e19fb65c9a9a36bb12b57ef9e16120"
+          },
+          "tool": "image_gen__imagegen",
+          "executed": true
+        },
+        {
+          "id": "project-inputs",
+          "title": "3. Reproject both atlases into continuous spheres",
+          "kind": "deterministic",
+          "operation": "deterministic",
+          "status": "verified-transform",
+          "summary": "Pure geometric resampling into matching3072×1536 equirectangular panoramas. No image model is called and no seam is painted here; the old discontinuities remain visible for the next repair.",
+          "description": "Pure geometric resampling into matching3072×1536 equirectangular panoramas. No image model is called and no seam is painted here; the old discontinuities remain visible for the next repair.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/cube-atlas.png",
+              "src": "storyboard/production/house-tour-20260923/geometry/rooms/bedroom/cube-atlas.png",
+              "label": "Blender gray guide: six directions from one camera",
+              "alt": "Blender gray guide: six directions from one camera",
+              "role": "geometry authority",
+              "sha256": "b2348e61f25e5c8429420331de278071bd8c84c2d7c95214437e77460fd8476f",
+              "bytes": 3466241,
+              "width": 3072,
+              "height": 2048
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas-v1.png",
+              "label": "Last illustrated atlas V1",
+              "alt": "Last illustrated atlas V1",
+              "role": "art to reproject",
+              "sha256": "1556fb8ffefd7b483f3110d68f9ae693af436f2fa34d51f14f84ff72d27ccb28",
+              "bytes": 2387318,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bedroom-gray-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bedroom-gray-equirect.png",
+              "label": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "alt": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "role": "Current gray whole sphere; sole geometry/camera authority",
+              "sha256": "9a6c010b4e952797be3a10c8952737b4d4716f0225949fb6f76d8f9efbe732bd",
+              "bytes": 2029685,
+              "width": 3072,
+              "height": 1536,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bedroom-v1-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bedroom-v1-equirect.png",
+              "label": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "alt": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "role": "Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "sha256": "20517410eddf431c491580f14008430fa4ce270a6f1a30fc9623043df0c2cf99",
+              "bytes": 7687401,
+              "width": 3072,
+              "height": 1536,
+              "order": 2
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bedroom-gray-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bedroom-gray-equirect.png",
+              "label": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "alt": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "role": "Current gray whole sphere; sole geometry/camera authority",
+              "sha256": "9a6c010b4e952797be3a10c8952737b4d4716f0225949fb6f76d8f9efbe732bd",
+              "bytes": 2029685,
+              "width": 3072,
+              "height": 1536,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bedroom-v1-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bedroom-v1-equirect.png",
+              "label": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "alt": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "role": "Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "sha256": "20517410eddf431c491580f14008430fa4ce270a6f1a30fc9623043df0c2cf99",
+              "bytes": 7687401,
+              "width": 3072,
+              "height": 1536,
+              "order": 2
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bedroom-gray-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/bedroom-gray-equirect.json",
+              "label": "Gray conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bedroom-v1-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/bedroom-v1-equirect.json",
+              "label": "Art conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "href": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "label": "Actual deterministic projection script"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bedroom-gray-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/bedroom-gray-equirect.json",
+              "label": "Gray conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bedroom-v1-equirect.json",
+              "href": "storyboard/production/house-tour-20260923/projection/bedroom-v1-equirect.json",
+              "label": "Art conversion record"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "href": "storyboard/production/house-tour-20260923/projection/reproject.py",
+              "label": "Actual deterministic projection script"
+            }
+          ],
+          "command": "python3 docs/storyboard/production/house-tour-20260923/projection/reproject.py cube-to-pano --input docs/storyboard/production/house-tour-20260923/geometry/rooms/bedroom/cube-atlas.png --output /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bedroom-gray-equirect.png --width 3072\npython3 docs/storyboard/production/house-tour-20260923/projection/reproject.py cube-to-pano --input docs/storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas-v1.png --output /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/projection/bedroom-v1-equirect.png --width 3072"
+        },
+        {
+          "id": "panorama-repair",
+          "title": "4. Repair one continuous panorama",
+          "kind": "imagegen",
+          "operation": "imagegen",
+          "status": "reviewed-proposal-remaining-issues",
+          "summary": "One built-in imagegen call sees the entire sphere. Input1 fixes geometry/camera; input2 supplies materials and the discontinuities to repair. Requested 2048×1024; actual 1774×887. Doubled doorway repaired; a narrow ceiling/wrap line and approximate bed/frame proportions remain.",
+          "description": "One built-in imagegen call sees the entire sphere. Input1 fixes geometry/camera; input2 supplies materials and the discontinuities to repair. Requested 2048×1024; actual 1774×887. Doubled doorway repaired; a narrow ceiling/wrap line and approximate bed/frame proportions remain.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bedroom-gray-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bedroom-gray-equirect.png",
+              "label": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "alt": "Input 1: Current gray whole sphere; sole geometry/camera authority",
+              "role": "Current gray whole sphere; sole geometry/camera authority",
+              "sha256": "9a6c010b4e952797be3a10c8952737b4d4716f0225949fb6f76d8f9efbe732bd",
+              "bytes": 2029685,
+              "width": 3072,
+              "height": 1536,
+              "order": 1
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/bedroom-v1-equirect.png",
+              "src": "storyboard/production/house-tour-20260923/projection/bedroom-v1-equirect.png",
+              "label": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "alt": "Input 2: Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "role": "Current illustrated whole sphere; material appearance and discontinuities to repair",
+              "sha256": "20517410eddf431c491580f14008430fa4ce270a6f1a30fc9623043df0c2cf99",
+              "bytes": 7687401,
+              "width": 3072,
+              "height": 1536,
+              "order": 2
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bedroom/panorama-v1.png",
+              "label": "Repaired whole panorama: 1774×887",
+              "alt": "Repaired whole panorama: 1774×887",
+              "role": "selected generated panorama",
+              "sha256": "45cd0f5121de6c9081191c3717af73a0381c3a53855e99cd76350aa3694e6a87",
+              "bytes": 1885333,
+              "width": 1774,
+              "height": 887
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bedroom/panorama-v1.png",
+              "label": "Repaired whole panorama: 1774×887",
+              "alt": "Repaired whole panorama: 1774×887",
+              "role": "selected generated panorama",
+              "sha256": "45cd0f5121de6c9081191c3717af73a0381c3a53855e99cd76350aa3694e6a87",
+              "bytes": 1885333,
+              "width": 1774,
+              "height": 887
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/bedroom-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/bedroom-panorama-v1.json",
+              "label": "Exact prompt and two ordered inputs"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/generation-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bedroom/generation-panorama-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/generation-jobs/bedroom-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/generation-jobs/bedroom-panorama-v1.json",
+              "label": "Exact prompt and two ordered inputs"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/generation-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bedroom/generation-panorama-v1.json",
+              "label": "Generation provenance"
+            }
+          ],
+          "prompt": {
+            "url": "storyboard/production/house-tour-20260923/prompts/bedroom-panorama-v1.txt",
+            "src": "storyboard/production/house-tour-20260923/prompts/bedroom-panorama-v1.txt",
+            "sha256": "6f257257a025675c23c89421727bb1b2dd151b37185f635f4d7c4f86cc4b4303"
+          },
+          "tool": "image_gen__imagegen",
+          "executed": true
+        },
+        {
+          "id": "cube-output",
+          "title": "5. Convert the panorama back to the runtime cube",
+          "kind": "deterministic",
+          "operation": "deterministic",
+          "status": "verified-transform",
+          "summary": "Mathematical pano-to-cube projection yields six 512×512 faces in a 1536×1024 atlas. Lossless WebP encoding preserves decoded RGB. Neither step adds detail or repairs the artwork. Same-ray edge checks prove the mapping, not artistic continuity.",
+          "description": "Mathematical pano-to-cube projection yields six 512×512 faces in a 1536×1024 atlas. Lossless WebP encoding preserves decoded RGB. Neither step adds detail or repairs the artwork. Same-ray edge checks prove the mapping, not artistic continuity.",
+          "inputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bedroom/panorama-v1.png",
+              "label": "Repaired whole panorama: 1774×887",
+              "alt": "Repaired whole panorama: 1774×887",
+              "role": "selected generated panorama",
+              "sha256": "45cd0f5121de6c9081191c3717af73a0381c3a53855e99cd76350aa3694e6a87",
+              "bytes": 1885333,
+              "width": 1774,
+              "height": 887
+            }
+          ],
+          "outputs": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-from-panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-from-panorama-v1.png",
+              "label": "Deterministic cubemap PNG: 1536×1024",
+              "alt": "Deterministic cubemap PNG: 1536×1024",
+              "role": "projection result",
+              "sha256": "d75caf9efdc157f6f9f056e76ac68fd451c44b2f6f9aa54cf1ccfc03d167f173",
+              "bytes": 3258311,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas.webp",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas.webp",
+              "label": "Current runtime WebP: 1536×1024",
+              "alt": "Current runtime WebP: 1536×1024",
+              "role": "lossless runtime derivative",
+              "sha256": "8b2f02e453488dbed10b488d8a8deadbe500faa6755782ea605e8fc6eb854ef4",
+              "bytes": 1276286,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "images": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-from-panorama-v1.png",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-from-panorama-v1.png",
+              "label": "Deterministic cubemap PNG: 1536×1024",
+              "alt": "Deterministic cubemap PNG: 1536×1024",
+              "role": "projection result",
+              "sha256": "d75caf9efdc157f6f9f056e76ac68fd451c44b2f6f9aa54cf1ccfc03d167f173",
+              "bytes": 3258311,
+              "width": 1536,
+              "height": 1024
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas.webp",
+              "src": "storyboard/production/house-tour-20260923/illustrated/bedroom/cube-atlas.webp",
+              "label": "Current runtime WebP: 1536×1024",
+              "alt": "Current runtime WebP: 1536×1024",
+              "role": "lossless runtime derivative",
+              "sha256": "8b2f02e453488dbed10b488d8a8deadbe500faa6755782ea605e8fc6eb854ef4",
+              "bytes": 1276286,
+              "width": 1536,
+              "height": 1024
+            }
+          ],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/projection-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bedroom/projection-panorama-v1.json",
+              "label": "Conversion hashes, sizes and shared-ray checks"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/README.md",
+              "href": "storyboard/production/house-tour-20260923/projection/README.md",
+              "label": "Projection convention and execution environment"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/illustrated/bedroom/projection-panorama-v1.json",
+              "href": "storyboard/production/house-tour-20260923/illustrated/bedroom/projection-panorama-v1.json",
+              "label": "Conversion hashes, sizes and shared-ray checks"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/projection/README.md",
+              "href": "storyboard/production/house-tour-20260923/projection/README.md",
+              "label": "Projection convention and execution environment"
+            }
+          ],
+          "command": "python3 docs/storyboard/production/house-tour-20260923/projection/reproject.py pano-to-cube --input docs/storyboard/production/house-tour-20260923/illustrated/bedroom/panorama-v1.png --output /Volumes/TB4/mac-mini-storage/shared/pinpin-house-tour-20260923/illustrated/bedroom/cube-from-panorama-v1.png --face-size 512"
+        },
+        {
+          "id": "review",
+          "title": "6. Compare the painted view with the gray room",
+          "kind": "review",
+          "operation": "review",
+          "status": "reviewed-proposal-remaining-issues",
+          "summary": "Six face centers and twelve edge directions were inspected for this room in the actual viewer. Doubled doorway repaired; a narrow ceiling/wrap line and approximate bed/frame proportions remain. This is a local review candidate, not exact geometry certification or approved chapter art.",
+          "description": "Six face centers and twelve edge directions were inspected for this room in the actual viewer. Doubled doorway repaired; a narrow ceiling/wrap line and approximate bed/frame proportions remain. This is a local review candidate, not exact geometry certification or approved chapter art.",
+          "inputs": [],
+          "outputs": [],
+          "images": [],
+          "provenance": [
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "href": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "label": "Final art review"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "href": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "label": "Versioned edge-by-edge evidence"
+            }
+          ],
+          "links": [
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "href": "storyboard/production/house-tour-20260923/art-review/ART-REVIEW.md",
+              "label": "Final art review"
+            },
+            {
+              "url": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "href": "storyboard/production/house-tour-20260923/art-review/continuous-v1.json",
+              "label": "Versioned edge-by-edge evidence"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "Gray facets belong to the existing modeled room and remained in the guide; these calls did not remodel the house.",
+    "All nine executed imagegen calls operated on a whole atlas or a whole panorama, never six independent face generations.",
+    "The prepared bedroom-v2 atlas revision was not executed; the continuous strategy replaced it.",
+    "Full prompts are the original text files, with SHA-256; reference roles distinguish geometry from style.",
+    "Reprojection checks certify mapping, not absence of painted seams or exact geometry."
+  ],
+  "unusedPreparedJobs": [
+    {
+      "id": "bedroom-v2",
+      "status": "prepared-not-executed",
+      "url": "storyboard/production/house-tour-20260923/generation-jobs/bedroom-v2.json",
+      "reason": "Switched to continuous panorama before this call."
+    }
+  ],
+  "assetManifest": "../assets/house-tour.json",
+  "documentation": "storyboard/production/house-tour-20260923/PROCESS.md"
+}

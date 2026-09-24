@@ -1,5 +1,7 @@
 # Connected three-room house tour
 
+Open the [visual process report](../../../house-process.html) for each room’s Blender guide, ordered reference images, exact prompts, retained revisions and final cubemap. The report documents the existing results; it does not regenerate the artwork.
+
 The selected local tour uses three illustrated panoramas derived from the same Blender house with both internal doors open. The continuous-panorama revisions substantially improve the earlier cube-panel discontinuities. They remain reviewed proposals with visible limits: a narrow bedroom ceiling/wrap line, softened detail, approximate fixture silhouettes and some cross-room trim differences. See [the art review](art-review/ART-REVIEW.md) before treating them as final designs.
 
 - `geometry/`: direct Blender atlases, camera transforms, jobs and portal visibility evidence.
