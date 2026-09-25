@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "operation": "raw-frame-authoritative spherical extension",
+  "imageCalls": 1,
+  "prompt": "Use case: precise-object-edit.\nCreate one complete 2:1 equirectangular 360\u00d7180\u00b0 panorama by extending the known central view in IMAGE 2 into its gray unknown surroundings.\nIMAGE 1 is the original video frame and the SOLE authority for this viewpoint, vehicle geometry, crop, lighting and material appearance. This stop looks directly at the REAR of the empty timber trailer, toward the red tractor cab and folded yellow crane beyond it. Keep that exact rear-facing view, occlusion, wheel positions, crane silhouette and distance. Resolve motion blur naturally without changing machine design. Preserve dimensional sunlight, indirect light, contact shadows, reflective cab glass, painted metal, dusty rubber and natural forest texture.\nIMAGE 2 is the mathematical PLACEMENT/PROJECTION GUIDE and the canvas to complete. Its central curved rectangle is image 1 projected with a 65\u00b0 vertical field of view, 16:9 aspect, forward yaw0/pitch0. Preserve the central vehicle's EXACT position, silhouette, angular size and occupancy within this 2:1 canvas. The narrow rear-view vehicle must stay SMALL at the canvas center, at the same size as the guide. Do not enlarge it or turn it into a wide landscape photograph. Retain the guide's existing scene geometry while completing all gray areas with coherent inferred surroundings; no gray remains.\nIMAGE 3 demonstrates successful full-sphere organization and finish ONLY. Do not copy its SIDE VIEW of the tractor, its vehicle placement or its particular surrounding layout. The only vehicle is the rear-facing one from images 1 and 2.\nComplete the same sunlit forest clearing and distant mountains around the observer: continuous natural ground, ferns, rocks, trunks, sky and canopy. Unseen scenery is a plausible continuation. Horizon stays at the middle row, forward at u=.5. Left and right canvas edges meet seamlessly behind the observer. Zenith and nadir must form coherent surfaces without starbursts, pinches, radial smears or poles made from converging tree trunks. This is a spherical texture, not a fisheye photo or collage. No rectangular guide boundary, stretched border, second machine, people, lettering or watermark. Output one seamless full 2:1 sphere, keeping the central rear-facing machine's guide footprint unchanged.",
+  "promptSha256": "87ad4b3f75ead3889380bccb80921ef1a571ca68d0fedfe32ac1453960c834a1",
+  "inputs": [
+    {
+      "path": "source.png",
+      "sha256": "905d215bcadf9540d3dd8b9d83c5eacb52e5c3ffc1ccdad3daee64d5a0376bf8",
+      "role": "First; sole viewpoint, geometry, lighting and materials authority"
+    },
+    {
+      "path": "guide65/guide-equirect.png",
+      "sha256": "e8b77977728e339a988710a01ccf51e90f5aa1bfd6f73685226fdc9e27c42ed0",
+      "role": "Second; authored65\u00b0 mathematical placement guide made from raw frame"
+    },
+    {
+      "path": "../../pilot/fov-correction/accepted-reference.png",
+      "sha256": "25987eb4d26f9f47dc226e6365ed3e3c023495ba0770b6144b7b95d8f156df3b",
+      "role": "Third; accepted V4+rear sphere projection and finish reference, not tractor angle"
+    }
+  ],
+  "output": {
+    "path": "panorama-v1.png",
+    "sha256": "9e18426ab3735c11063e54f99f2de90c0d21ea2e346e86000c957c2e032fa02b",
+    "bytes": 3295853,
+    "dimensions": [
+      1774,
+      887
+    ],
+    "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c89a-b0d5-7372-a22a-6528d59c7ee2/exec-8e86171a-ab0d-4574-b750-b4f21d979d0e.png"
+  },
+  "status": "candidate-framing-and-sphere-review-in-progress",
+  "note": "Unseen surroundings inferred; no physical 3D reconstruction or pixel identity claimed."
+}

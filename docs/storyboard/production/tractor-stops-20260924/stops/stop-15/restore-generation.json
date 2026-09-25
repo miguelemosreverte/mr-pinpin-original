@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "imageCalls": 1,
+  "promptFile": "restore-prompt.txt",
+  "prompt": "Use case: precise-object-edit. Restore motion-blurred detail in this exact conventional 16:9 video frame. Preserve the camera, field of view, crop, all image edges, machine silhouette, wheel centers and every object position. Keep this same rear three-quarter view of the stationary red tractor and attached empty stake trailer, yellow crane/grapple behind the cab, current tire and axle arrangement. Do not invent or rearrange mechanical parts. Keep the original dimensional sunlight, bounce light, shadows, materials, colors, glass reflections and forest composition; do not flatten it into outlined illustration or add glossy plastic surfaces. Resolve restrained tread, glass, metal, bark and leaf detail consistent with existing forms, removing directional motion blur without halos or over-sharpening. No zoom, outpainting, new objects, people, letters or borders. Output one restored 16:9 frame aligned to the input.",
+  "promptSha256": "cb003edda08fc9ecb3e9c7219a1f1cab43d233f5cbbd90f6ebb3543c3d102e12",
+  "inputs": [
+    {
+      "path": "source.png",
+      "role": "only input: raw frame; restoration authority",
+      "sha256": "25e1e4800e8d3753d00588a721e5171088b88f3a5df4302fb5ce140ee4bcbd04",
+      "bytes": 1190650,
+      "dimensions": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "output": {
+    "path": "restored-v1.png",
+    "sha256": "f023f4231951a28a999c0347cf61cb84440674fd697a8bbb9787d07db4755847",
+    "bytes": 2788994,
+    "dimensions": [
+      1672,
+      941
+    ],
+    "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c89a-b0d5-7372-a22a-6528d59c7ee2/exec-559a7f47-eec8-4585-b8c9-f6b2e1938a54.png"
+  },
+  "status": "retained-candidate-batch-held-by-coordinator",
+  "scope": "Built-in image generation; unmodified master retained. Inferred scenery and redrawn details are not physical reconstruction.",
+  "holdReason": "User rejected machine motion in pilot bridge; endpoint locking under revision. No further calls after hold."
+}

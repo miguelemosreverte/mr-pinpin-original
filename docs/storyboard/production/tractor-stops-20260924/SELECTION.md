@@ -1,5 +1,7 @@
 # Orbit frame selection
 
+The extraction history below is retained. Current production uses the source-frame workflow in `BATCHES.md` and `BRIDGE-EXPANSION.md`; the historical 45-degree restoration guide is superseded.
+
 Selected **24 sampled stops**, extracted from the preserved provider video, before restoration or panorama generation. These are visually distributed viewpoints, **not measured 15° camera positions**. The video has nonuniform motion, changing detail and some machinery deformation, so timestamps do not establish true orbit angles.
 
 The original half-second contact sheet showed almost stationary front-quarter views through the opening two seconds and again near the end. Selection removes most of those holds and samples the faster rear/opposite-side circuit more densely. The final 24-frame contact sheet was inspected: it follows the near side, trailer rear, opposite side, front, and back toward the starting quarter. Spacing remains approximate; restoration cannot make these a calibrated reconstruction.

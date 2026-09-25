@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-11",
+  "status": "reviewed",
+  "panorama": "stops/stop-11/panorama-assembled-v1.png",
+  "camera": {
+    "yaw": -0.000180566182859437,
+    "pitch": -0.0017245108183319832,
+    "fov": 70.75155142545375
+  },
+  "sourceCamera": {
+    "yaw": -0.000180566182859437,
+    "pitch": -0.0017245108183319832,
+    "fov": 70.75155142545375
+  },
+  "authoredGuideCamera": {
+    "yaw": 0,
+    "pitch": 0,
+    "fov": 65
+  },
+  "forward": "stops/stop-11/forward.png",
+  "stack": "stops/stop-11/selected-stack.json",
+  "exports": "stops/stop-11/exports-v1.json",
+  "prompt": "stops/stop-11/panorama-prompt.txt",
+  "record": "stops/stop-11/panorama-generation.json",
+  "review": "stops/stop-11/review.md",
+  "forwardSha256": "686723e6faac71d282f618cff37d40b6a936cc07c9064a7fed33b949e9516cdd",
+  "panoramaSha256": "45b27c821b80bf1b66a55601df0ab85ef275e664534062714551260c36d8dd01",
+  "sourceLockStatus": "experimental",
+  "sourceLockReview": "stops/stop-11/source-lock-review.md",
+  "sourceAnchor": {
+    "asset": "stops/stop-11/source-display.png",
+    "camera": {
+      "yaw": -0.000180566182859437,
+      "pitch": -0.0017245108183319832,
+      "fov": 70.75155142545375
+    },
+    "aspect": 1.7777777777777777,
+    "featherStart": 0.94
+  },
+  "anchoredPanorama": "stops/stop-11/panorama-source-locked-final-v1.png",
+  "anchoredExports": "stops/stop-11/source-locked-exports-v1/exports-v1.json",
+  "anchoredCube": "stops/stop-11/source-locked-exports-v1/cube-atlas-v1.png"
+}

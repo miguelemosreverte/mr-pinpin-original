@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "operation": "Rectangular 16:9 spherical perspective extraction; no artistic changes",
+  "input": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-10/panorama-assembled-v1.png",
+    "sha256": "c06fa5b74095b3648c49e71142b2a479b267d48ca530039ce4f96889ec7ca6a2"
+  },
+  "camera": {
+    "yaw": 0.0024651035739673283,
+    "pitch": -0.05383098800653681,
+    "fov": 66.79897340375926
+  },
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-10/forward.png",
+    "width": 1280,
+    "height": 720,
+    "sha256": "bfe3979bf9cc8a6d808b49f2aebaf712e547d40a27a53452d7a60d5779ddf50f"
+  },
+  "scriptSha256": "e98eaab17706d7fc34cc02aef550875a60d4f32dd6fd2a8ed85e5659c871e6da"
+}

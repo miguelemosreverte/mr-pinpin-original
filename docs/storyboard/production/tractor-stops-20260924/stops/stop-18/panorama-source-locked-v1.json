@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "operation": "Same ray projection and rectangular smoothstep mask as tractor-panorama-anchor.js; bilinear sampling, no art edits",
+  "inputs": {
+    "panorama": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-18/panorama-assembled-v1.png",
+      "sha256": "5ad97c08844ae36baad660fb31e720a499ef2725611dd94a0c5e38e3aeb542e7"
+    },
+    "source": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-18/source-display.png",
+      "sha256": "9f219459b9f7cff96a7d7c2b281fcbb3e910e91d40f7881cd7251f2068fd0714"
+    }
+  },
+  "camera": {
+    "yaw": -0.002282039075500103,
+    "pitch": 0.004709563971631517,
+    "fov": 65.12704858381771,
+    "aspect": 1.7777777777777777,
+    "featherStart": 0.94
+  },
+  "output": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-18/panorama-source-locked-v1.png",
+    "width": 4096,
+    "height": 2048,
+    "sha256": "c3416e2af27c088f1c5781701727644b9f24842cc5af35ab848da0a8222ce564"
+  },
+  "sampling": "Pixel centers; clamp-to-edge bilinear; encoded RGB mix; source full weight to edge .94, smoothstep to zero at1.0",
+  "limitations": "Baked sphere resamples the source; it is not byte-identical to native source or a second runtime projection. Generated scenery boundary mismatch is preserved.",
+  "software": {
+    "opencv": "5.0.0",
+    "numpy": "2.5.3"
+  },
+  "scriptSha256": "71e5512b03212412bbb1b49241c69a1a946a7a409403af08f8d53f0f3d3b3e57"
+}

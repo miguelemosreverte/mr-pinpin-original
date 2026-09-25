@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "tool": "built-in image_gen",
+  "calls": 1,
+  "status": "candidate-until-source-anchor-reviewed",
+  "recordedAt": "2026-09-24T22:54:02.810647+00:00",
+  "exactPrompt": {
+    "file": "panorama-v2-prompt.txt",
+    "sha256": "382aa23c0523cbabb48de0122a1a9ffaa6aa2e818a2c2839ce8fd0e8d6a2212f"
+  },
+  "inputs": [
+    {
+      "path": "stops/stop-05/display-guide65-v1/guide-equirect.png",
+      "sha256": "e452a5c34af634e4952dc13555f374b9d2230acb5605e851c756420e2e595806",
+      "role": "literal projected edit target65degree"
+    },
+    {
+      "path": "stops/stop-05/source-display.png",
+      "sha256": "622ea2200cbdebb5e07ea16aacf917725777102d731fc4a35cb625455144bb28",
+      "role": "browser-decoded source camera/material/light authority"
+    }
+  ],
+  "output": {
+    "file": "panorama-v2.png",
+    "sha256": "e363021c533e47e50d6970afcd5f2c4ba8da8436529a34520dde2e3c57b7411b",
+    "bytes": 3027792,
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  "generatedSource": "exec-12d999df-2511-4cfe-b7d2-6b9991515074.png",
+  "note": "Unmodified returned master. Authored guide is65degrees; final fitted camera is recorded separately."
+}

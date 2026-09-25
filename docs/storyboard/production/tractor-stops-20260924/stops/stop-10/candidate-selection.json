@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-10",
+  "status": "candidate-until-source-anchor-reviewed",
+  "panorama": "stops/stop-10/panorama-assembled-v1.png",
+  "camera": {
+    "yaw": 0.0024651035739673283,
+    "pitch": -0.05383098800653681,
+    "fov": 66.79897340375926
+  },
+  "sourceCamera": {
+    "yaw": 0.0024651035739673283,
+    "pitch": -0.05383098800653681,
+    "fov": 66.79897340375926
+  },
+  "authoredGuideCamera": {
+    "yaw": 0,
+    "pitch": 0,
+    "fov": 65
+  },
+  "forward": "stops/stop-10/forward.png",
+  "stack": "stops/stop-10/selected-stack.json",
+  "exports": "stops/stop-10/exports-v1.json",
+  "prompt": "stops/stop-10/panorama-prompt.txt",
+  "record": "stops/stop-10/panorama-generation.json",
+  "review": "stops/stop-10/review.md",
+  "forwardSha256": "bfe3979bf9cc8a6d808b49f2aebaf712e547d40a27a53452d7a60d5779ddf50f",
+  "panoramaSha256": "c06fa5b74095b3648c49e71142b2a479b267d48ca530039ce4f96889ec7ca6a2"
+}

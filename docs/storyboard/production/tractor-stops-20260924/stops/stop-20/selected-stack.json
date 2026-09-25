@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-20",
+  "inputs": {
+    "base": {
+      "file": "panorama-v1.png",
+      "sha256": "335d0269ec4f24eacd1205fb74573161150fba3090c703d8ba3a3556e4326b90"
+    },
+    "rear": {
+      "file": "rear-v1.png",
+      "sha256": "cefd7f5e6fb08402987bc89e499491ded47c6d8603b90d05d2c7a0da05162a46"
+    },
+    "up": {
+      "file": "up-v1.png",
+      "sha256": "3f865f328fba4da9b25d29bb39140a0b17a59469e4e6691df803d154b6965d48"
+    },
+    "down": {
+      "file": "down-v1.png",
+      "sha256": "80c9f5160328a5d89c6bbadda6e815cbfd69a3aa14f7e51eaf18050de6be04df"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "rear": "rear",
+      "up": "up",
+      "down": "down"
+    }
+  }
+}

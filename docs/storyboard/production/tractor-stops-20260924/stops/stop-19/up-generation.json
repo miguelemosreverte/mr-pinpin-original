@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "imageCalls": 1,
+  "promptFile": "up-prompt.txt",
+  "prompt": "Use case: precise-object-edit\nEdit this actual 110-degree square perspective view, preserving its exact camera, border content, light, materials and scenery. This is a registered texture repair for a 360 panorama, not a new composition. Remove the radial starburst/pinching in the central overhead canopy. Replace the converging leaf streaks with coherent natural branches and leaves crossing overhead and continuous blue sky/clouds between them. Preserve the surrounding trees and sky at the outer border so this repair blends into the existing view. No new structures, machine, text or frame. Return only the repaired square image.",
+  "promptSha256": "86db250b06f6119790e40add416679ff7160391cb73fb6a2002567d27d46c127",
+  "inputs": [
+    {
+      "path": "up-input-v2.png",
+      "role": "Exact registered 110-degree pole view, extracted after rear repair; sole image-generation input.",
+      "sha256": "2109c7c75e4a6721105299c59f932d7558e0f43ab2686f8d5193d56c60f46c91",
+      "bytes": 4874390,
+      "dimensions": [
+        1400,
+        1400
+      ]
+    }
+  ],
+  "output": {
+    "path": "up-v1.png",
+    "sha256": "6efff2a38ec426873248329f4c5a07e57474a160c5b8c9852a55a81e0e91f820",
+    "bytes": 2919872,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "originalToolOutput": "Unmodified returned PNG; invocation mapping verified by coordinator from original tool-call record at2026-09-24T23:04:45.857Z"
+  },
+  "status": "candidate-awaiting-direction-and-overlap-review",
+  "scope": "Built-in image generation; unmodified master retained. Inferred scenery and redrawn details are not physical reconstruction."
+}

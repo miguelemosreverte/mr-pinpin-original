@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "imageCalls": 1,
+  "promptFile": "up-prompt.txt",
+  "prompt": "Use case: precise-object-edit. Repair this exact square110-degree view looking straight up in the existing golden sunlit forest. Remove the central radial foliage starburst and squeezed branches; create natural coherent canopy, separate branch silhouettes and continuous blue sky. Preserve the tree trunks, light direction, camera, field of view and outer-edge foliage closely for registered blending. Do not add a central trunk, circular ornament, labels or new objects. Keep the same image style and soft depth. Output one square repaired upward view.",
+  "promptSha256": "11d17e0d5c4bc7b26586892de566c83745358418a4f441226147c6241cb5531a",
+  "inputs": [
+    {
+      "path": "up-input.png",
+      "role": "Exact registered 110-degree pole view; camera and outer edges preserved.",
+      "sha256": "0f4203995bcd20161b8383ecb1df134d3eddfe56d67e5cd040fc3f1eb22381a0",
+      "bytes": 4943342,
+      "dimensions": [
+        1400,
+        1400
+      ]
+    }
+  ],
+  "output": {
+    "path": "up-v1.png",
+    "sha256": "511cafc974c00f34f12a129d249d21a2bb71e21577a7c0060b6a5bb1bc993cd5",
+    "bytes": 2689797,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "originalToolOutput": "Exact returned PNG data URL decoded unchanged"
+  },
+  "status": "reviewed-background-source-lock-experimental-blur-deferred",
+  "scope": "Built-in image generation; unmodified master retained. Inferred scenery and redrawn details are not physical reconstruction.",
+  "review": "review.md"
+}

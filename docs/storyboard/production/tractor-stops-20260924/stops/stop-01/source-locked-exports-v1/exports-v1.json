@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "operation": "export",
+  "scriptSha256": "d5b7d058797892056801a01a5e091a4acadce96f27ce18e87dcfa5a161db83fe",
+  "helpers": {
+    "export_rooms.py": "2c1110429b07709679206b60b464d7ef34099c264499f775ae61994ad833150a",
+    "stack_math.py": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+    "trusted_reproject.py": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+    "png_io.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d"
+  },
+  "orientation": {
+    "worldAxes": "X right, Y front, Z up",
+    "panorama": "front u=.5; right u=.75; rear wraps u=0/1; up v=0",
+    "cubeLayout": [
+      [
+        "front",
+        "right",
+        "back"
+      ],
+      [
+        "left",
+        "up",
+        "down"
+      ]
+    ],
+    "faceBases": [
+      {
+        "id": "front",
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "right",
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "back",
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "right": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "left",
+        "forward": [
+          -1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "up",
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "id": "down",
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "noNewArtOrGeometry": true,
+  "outputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-01/source-locked-exports-v1/panorama-assembled-v1.png",
+      "sha256": "52768d46f3eca6508262a421eae9b335ed67ee8314ce6947b769e7de51228f8c",
+      "bytes": 21970860,
+      "size": [
+        4096,
+        2048
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-01/source-locked-exports-v1/faces-v1/front.png",
+      "sha256": "1754632b37487c1c4b09b3e7784e65c34c68211d26484d13235cf2ace97d3609",
+      "bytes": 2635221,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-01/source-locked-exports-v1/faces-v1/right.png",
+      "sha256": "bb58d3f845c94aa9339b589cd04e7f7dc7b4630e0383156248b83cde18cf7504",
+      "bytes": 2811484,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-01/source-locked-exports-v1/faces-v1/back.png",
+      "sha256": "a9b7ebafd2bb0fe2e3d61eefedad85a16bbc2fac441db10619224bc5aed6cd8c",
+      "bytes": 2889322,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-01/source-locked-exports-v1/faces-v1/left.png",
+      "sha256": "9d14967c86bd4040d6ee03b23cdeefecc1bc5b891826f9b0bb5ac066cdc3db2c",
+      "bytes": 2891800,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-01/source-locked-exports-v1/faces-v1/up.png",
+      "sha256": "f28cd9c19a94486bb9a9b5bbc88c5e6f3357dbc5e5eb18bbbd467d005720da20",
+      "bytes": 2761625,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-01/source-locked-exports-v1/faces-v1/down.png",
+      "sha256": "4f64eda9ee5bcf45d8c2241d988b07844afdf2c7f4222c206adce73ec2703c81",
+      "bytes": 2935525,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-01/source-locked-exports-v1/cube-atlas-v1.png",
+      "sha256": "13c809e3c9b874c4f11ce726b2ea8225eb886ed92ecd5b319894fe6c04832f88",
+      "bytes": 17282873,
+      "size": [
+        3072,
+        2048
+      ]
+    }
+  ],
+  "input": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-01/panorama-source-locked-v1.png",
+    "sha256": "16b46782eb7dc6fa6e5db7a7a41a16811f4e5a54cdb741d3fbc2d7d197275c72",
+    "size": [
+      4096,
+      2048
+    ]
+  },
+  "verification": {
+    "pass": true,
+    "edges": [
+      {
+        "faces": [
+          "front:left",
+          "left:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:right",
+          "right:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:bottom",
+          "down:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:top",
+          "up:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:right",
+          "back:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:bottom",
+          "down:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:top",
+          "up:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:right",
+          "left:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:bottom",
+          "down:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:top",
+          "up:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:bottom",
+          "down:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:top",
+          "up:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      }
+    ],
+    "note": "Exact shared angular boundaries sample the same panorama. Neighboring output texel centers have different directions; no edge pixels are painted/copied.",
+    "allSixAtlasTilesEqualFaceFiles": true
+  },
+  "sampling": "Same runtime normalized cardinal patch blend and optional registered detail; encoded RGB bilinear interpolation. Cube derived from final assembled panorama; no artistic seam repair. Same-ray boundary equality verifies projection only, not source visual continuity."
+}

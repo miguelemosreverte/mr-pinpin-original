@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "stop09-selected-stack.json",
+  "inputs": {
+    "base": {
+      "file": "panorama-v1.png",
+      "sha256": "c8e2539705c1f3c8ca3fe9bc2eb19a24016949e2838796d70acf891d0fd58a2f"
+    },
+    "rear": {
+      "file": "rear-v1.png",
+      "sha256": "6e1399fe87dcf4d8249969ef14e7ea8c4223033a77776ea0e262df6e84ae7013"
+    },
+    "up": {
+      "file": "up-v1.png",
+      "sha256": "e273a203a0f4b04c6dd3420ed2e8d9ec2d8d0f67912d97abb886db3eb8192018"
+    },
+    "down": {
+      "file": "down-v1.png",
+      "sha256": "48de4d06cb01d0a7ca9eeb6b5a1fde4aba9a0922886e4f3c08ae6b8ec06dfa52"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "rear": "rear",
+      "up": "up",
+      "down": "down"
+    }
+  }
+}

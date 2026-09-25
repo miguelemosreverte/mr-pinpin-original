@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "imageCalls": 1,
+  "promptFile": "up-prompt.txt",
+  "prompt": "Use case: precise-object-edit. Repair the center of this exact upward-looking square 110-degree forest perspective. Remove the artificial radial pole pinch where many leaves and branches converge at one point. Replace it with natural branching canopy and open blue sky, continuous with the existing surrounding treetops. Preserve this straight-up camera, projection, outer edges, tree identities, lighting and rich rendered materials. Trees grow from the perimeter upward naturally; they must not all meet at the center. Do not add a central trunk, kaleidoscope, spiral, labels or new objects. Keep the surrounding composition and colors so this remains a registered local patch. Output one square repaired view.",
+  "promptSha256": "d602ab984788e0852dc90e2bd8d5e9f813bda845a631693734898460b66edf37",
+  "inputs": [
+    {
+      "path": "up-input.png",
+      "role": "only edit target; exact current base+rear perspective",
+      "sha256": "233c774fa1bca5c028244e9d283619a43fc4439be5383f87af89bc806375a1ec",
+      "bytes": 4757714,
+      "dimensions": [
+        1400,
+        1400
+      ]
+    }
+  ],
+  "output": {
+    "path": "up-v1.png",
+    "sha256": "828746f13d88c90c0174d5d23c16182a5cb23670008e54afeafce7deb3e95994",
+    "bytes": 2682121,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c89a-b0d5-7372-a22a-6528d59c7ee2/exec-a94d07a6-7164-4f91-9656-63712e51fbb4.png"
+  },
+  "status": "candidate-awaiting-direction-and-overlap-review",
+  "scope": "Built-in image generation; unmodified master retained. Inferred scenery and redrawn details are not physical reconstruction."
+}

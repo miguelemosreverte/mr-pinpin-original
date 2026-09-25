@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "id": "stop11-base-stack.json",
+  "inputs": {
+    "base": {
+      "file": "panorama-v1.png",
+      "sha256": "795b8f9ce1994bd442e02666c1e65e62882e5d9beccc5030fac9b93a09719938"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {}
+  }
+}

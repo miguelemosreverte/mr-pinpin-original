@@ -1,0 +1,91 @@
+{
+  "schemaVersion": 1,
+  "status": "complete",
+  "model": "fal-ai/pixverse/v6/transition",
+  "input": {
+    "prompt": "A single one-second continuous camera settling movement between the supplied first and last frames. Begin exactly at the first image, the paused orbit view, and end exactly at the last image, the fixed look-around viewpoint. Gently settle the camera position and framing toward the final view with smooth natural perspective and stable daylight. Keep the red tractor, empty stake trailer, yellow crane and grapple completely stationary: tires remain planted and do not rotate, crane does not move. Preserve the same machine identity, coherent wheels, rigid body and trailer, forest clearing, stream, warm physically lit illustrated materials and shadows. Only the camera and small view-dependent details adjust. No cut, crossfade, dissolve, new objects, driving, machinery animation, dramatic zoom or added camera orbit. One quiet continuous transition with a gentle stop at the final frame.",
+    "negative_prompt": "crossfade, dissolve, cuts, driving, wheel rotation, moving crane, rubber machinery, object morphing, new parts, extra wheels, people, text, camera shake, zoom burst, different lighting",
+    "duration": 1,
+    "resolution": "720p",
+    "aspect_ratio": "16:9",
+    "generate_audio_switch": false,
+    "generate_multi_clip_switch": false,
+    "thinking_type": "disabled",
+    "end_image_url": "https://v3b.fal.media/files/b/0aabc1fe/hCsUlc_SQcSKeLpv8SAhg_panorama-opening.png",
+    "first_image_url": "https://v3b.fal.media/files/b/0aabc1fe/CfNnFCBQSHczlkuk80uex_approved-map.png"
+  },
+  "config": {
+    "model": "fal-ai/pixverse/v6/transition",
+    "input": {
+      "prompt": "A single one-second continuous camera settling movement between the supplied first and last frames. Begin exactly at the first image, the paused orbit view, and end exactly at the last image, the fixed look-around viewpoint. Gently settle the camera position and framing toward the final view with smooth natural perspective and stable daylight. Keep the red tractor, empty stake trailer, yellow crane and grapple completely stationary: tires remain planted and do not rotate, crane does not move. Preserve the same machine identity, coherent wheels, rigid body and trailer, forest clearing, stream, warm physically lit illustrated materials and shadows. Only the camera and small view-dependent details adjust. No cut, crossfade, dissolve, new objects, driving, machinery animation, dramatic zoom or added camera orbit. One quiet continuous transition with a gentle stop at the final frame.",
+      "negative_prompt": "crossfade, dissolve, cuts, driving, wheel rotation, moving crane, rubber machinery, object morphing, new parts, extra wheels, people, text, camera shake, zoom burst, different lighting",
+      "duration": 1,
+      "resolution": "720p",
+      "aspect_ratio": "16:9",
+      "generate_audio_switch": false,
+      "generate_multi_clip_switch": false,
+      "thinking_type": "disabled",
+      "end_image_url": "https://v3b.fal.media/files/b/0aabc1fe/hCsUlc_SQcSKeLpv8SAhg_panorama-opening.png"
+    },
+    "output": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-13/bridge/bridge-raw-v1.mp4",
+    "sourceImage": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-13/source.png",
+    "sourceImageField": "first_image_url",
+    "matchEndFrame": false,
+    "priceEstimate": {
+      "currency": "USD",
+      "amount": 0.045,
+      "quantity": 1,
+      "total": 0.045,
+      "basis": "Official720p silent per-second tier checked2026-09-24; shortest supported1second. One authorized bridge request; no paid retry. Estimate notinvoice.",
+      "source": "https://fal.ai/models/fal-ai/pixverse/v6/transition"
+    }
+  },
+  "configPath": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-13/bridge/.private/execution.json",
+  "sourceHash": "905d215bcadf9540d3dd8b9d83c5eacb52e5c3ffc1ccdad3daee64d5a0376bf8",
+  "createdAt": "2026-09-24T21:19:48.202Z",
+  "events": [
+    {
+      "at": "2026-09-24T21:19:48.202Z",
+      "type": "submitting"
+    },
+    {
+      "at": "2026-09-24T21:19:49.161Z",
+      "type": "source_uploaded"
+    },
+    {
+      "at": "2026-09-24T21:19:49.853Z",
+      "type": "submitted"
+    },
+    {
+      "at": "2026-09-24T21:20:35.820Z",
+      "type": "completed"
+    },
+    {
+      "at": "2026-09-24T21:20:38.165Z",
+      "type": "complete"
+    }
+  ],
+  "priceEstimate": {
+    "currency": "USD",
+    "amount": 0.045,
+    "quantity": 1,
+    "total": 0.045,
+    "basis": "Official720p silent per-second tier checked2026-09-24; shortest supported1second. One authorized bridge request; no paid retry. Estimate notinvoice.",
+    "source": "https://fal.ai/models/fal-ai/pixverse/v6/transition"
+  },
+  "updatedAt": "2026-09-24T21:20:38.165Z",
+  "requestId": "01a0d549-f802-7053-8511-aaf96f4f5e98",
+  "queueStatus": "COMPLETED",
+  "metadata": {
+    "width": 1280,
+    "height": 720,
+    "duration": 1.041667,
+    "codec_name": "h264",
+    "avg_frame_rate": "24/1",
+    "frameCount": 25,
+    "hasAudio": false,
+    "bytes": 1189039,
+    "sha256": "b3db07cd9e73e0c7a31eb3415ae1425f4b8e8f1b67259c24b69584e60cad6c93"
+  },
+  "videoUrl": "https://v3b.fal.media/files/b/0aabc201/itR5YVCXaoCfgwDeuPK10_output.mp4"
+}

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-18",
+  "status": "reviewed",
+  "sourceLockStatus": "experimental",
+  "panorama": "stops/stop-18/panorama-assembled-v1.png",
+  "camera": {
+    "yaw": -0.002282039075500103,
+    "pitch": 0.004709563971631517,
+    "fov": 65.12704858381771
+  },
+  "sourceCamera": {
+    "yaw": -0.002282039075500103,
+    "pitch": 0.004709563971631517,
+    "fov": 65.12704858381771
+  },
+  "authoredGuideCamera": {
+    "yaw": 0,
+    "pitch": 0,
+    "fov": 65
+  },
+  "sourceAnchor": {
+    "asset": "stops/stop-18/source-display.png",
+    "camera": {
+      "yaw": -0.002282039075500103,
+      "pitch": 0.004709563971631517,
+      "fov": 65.12704858381771
+    },
+    "aspect": 1.7777777777777777,
+    "featherStart": 0.94
+  },
+  "anchoredPanorama": "stops/stop-18/panorama-source-locked-v1.png",
+  "anchoredCube": "stops/stop-18/source-locked-exports-v1/cube-atlas-v1.png",
+  "anchoredExports": "stops/stop-18/source-locked-exports-v1/exports-v1.json",
+  "exports": "stops/stop-18/source-locked-exports-v1/exports-v1.json",
+  "forward": "stops/stop-18/forward-source-locked.png",
+  "backgroundForward": "stops/stop-18/forward.png",
+  "stack": "stops/stop-18/selected-stack.json",
+  "prompt": "stops/stop-18/panorama-prompt.txt",
+  "record": "stops/stop-18/panorama-generation.json",
+  "review": "stops/stop-18/review.md",
+  "sourceLockReview": "stops/stop-18/source-lock-review.md",
+  "panoramaSha256": "5ad97c08844ae36baad660fb31e720a499ef2725611dd94a0c5e38e3aeb542e7",
+  "forwardSha256": "7e166978c7ad871787373d9f59542cfa1988c820c722df5cc211ed48a3ceee71"
+}

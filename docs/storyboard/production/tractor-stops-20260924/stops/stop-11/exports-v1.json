@@ -1,0 +1,353 @@
+{
+  "schemaVersion": 1,
+  "operation": "export",
+  "scriptSha256": "d5b7d058797892056801a01a5e091a4acadce96f27ce18e87dcfa5a161db83fe",
+  "helpers": {
+    "export_rooms.py": "2c1110429b07709679206b60b464d7ef34099c264499f775ae61994ad833150a",
+    "stack_math.py": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+    "trusted_reproject.py": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+    "png_io.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d"
+  },
+  "orientation": {
+    "worldAxes": "X right, Y front, Z up",
+    "panorama": "front u=.5; right u=.75; rear wraps u=0/1; up v=0",
+    "cubeLayout": [
+      [
+        "front",
+        "right",
+        "back"
+      ],
+      [
+        "left",
+        "up",
+        "down"
+      ]
+    ],
+    "faceBases": [
+      {
+        "id": "front",
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "right",
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "back",
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "right": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "left",
+        "forward": [
+          -1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "up",
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "id": "down",
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "noNewArtOrGeometry": true,
+  "outputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-11/panorama-assembled-v1.png",
+      "sha256": "45b27c821b80bf1b66a55601df0ab85ef275e664534062714551260c36d8dd01",
+      "bytes": 12724996,
+      "size": [
+        3072,
+        1536
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-11/faces-v1/front.png",
+      "sha256": "87e94b3abeca321254f824d30e60352540fdabdfd559a42b8b4042e748e18750",
+      "bytes": 2632561,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-11/faces-v1/right.png",
+      "sha256": "8c71aa24948d956b51d2f72a42c5f526e38d1005aee8c1ec4e60ac7979cfe570",
+      "bytes": 2893571,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-11/faces-v1/back.png",
+      "sha256": "04c1b5dcdfffa5aa71383512d60a1698aa862898fd3a165c3a41cef0feafca21",
+      "bytes": 2871233,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-11/faces-v1/left.png",
+      "sha256": "257c7b27df2c0e82845456255be79b5e43dfea0c7da3b14095a3507042bbb8b2",
+      "bytes": 2847489,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-11/faces-v1/up.png",
+      "sha256": "b7baaf8af3089e57dd408ac0e9fb512d5077a4892b28c0e1d09fb4158719459e",
+      "bytes": 2790026,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-11/faces-v1/down.png",
+      "sha256": "33dbc296b6f14f94dbd9e053e2d7740ba857d0d4446b6339c0d65ca101da99a5",
+      "bytes": 2986596,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-11/cube-atlas-v1.png",
+      "sha256": "e4a7e1e033410cc09fb9abd8806e9d10f689c5f440430cee5801bcfbc25903d9",
+      "bytes": 17406118,
+      "size": [
+        3072,
+        2048
+      ]
+    }
+  ],
+  "config": {
+    "schemaVersion": 1,
+    "id": "stop11-selected-stack.json",
+    "inputs": {
+      "base": {
+        "file": "panorama-v1.png",
+        "sha256": "795b8f9ce1994bd442e02666c1e65e62882e5d9beccc5030fac9b93a09719938"
+      },
+      "rear": {
+        "file": "rear-v1.png",
+        "sha256": "cf6870929c81e7aa520a76750b9cc0855c6be8363c762c33bd2bb6d9e6dae950"
+      },
+      "up": {
+        "file": "up-v1.png",
+        "sha256": "508b491a3e808eb08aa9bea03c687544790a5461a915125984777822e6777eb6"
+      },
+      "down": {
+        "file": "down-v1.png",
+        "sha256": "2cf3a60a46c5290ab25952b3c46527e5d802ace467059d03253d2d53738786bb"
+      }
+    },
+    "repairs": {
+      "fovDegrees": 110,
+      "frontMask": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "assets": {
+        "rear": "rear",
+        "up": "up",
+        "down": "down"
+      }
+    }
+  },
+  "configSha256": "2efd0664c5986e5ac2168ddf2f6e3d3aa6f29c1e945b225d69dcff8dbea7ed7b",
+  "verification": {
+    "pass": true,
+    "edges": [
+      {
+        "faces": [
+          "front:left",
+          "left:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:right",
+          "right:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:bottom",
+          "down:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:top",
+          "up:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:right",
+          "back:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:bottom",
+          "down:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:top",
+          "up:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:right",
+          "left:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:bottom",
+          "down:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:top",
+          "up:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:bottom",
+          "down:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:top",
+          "up:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      }
+    ],
+    "note": "Exact shared angular boundaries sample the same panorama. Neighboring output texel centers have different directions; no edge pixels are painted/copied.",
+    "allSixAtlasTilesEqualFaceFiles": true
+  },
+  "sampling": "Same runtime normalized cardinal patch blend and optional registered detail; encoded RGB bilinear interpolation. Cube derived from final assembled panorama; no artistic seam repair. Same-ray boundary equality verifies projection only, not source visual continuity."
+}

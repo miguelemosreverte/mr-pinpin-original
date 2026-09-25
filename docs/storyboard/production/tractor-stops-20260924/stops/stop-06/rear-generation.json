@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "tool": "built-in image_gen",
+  "calls": 1,
+  "status": "candidate-until-source-anchor-reviewed",
+  "recordedAt": "2026-09-24T22:13:25.833196+00:00",
+  "exactPrompt": {
+    "file": "rear-prompt.txt",
+    "sha256": "1dc2c842d7e0868999e1d2b4e6aeda1f24d1206a57f104c95ab23c994b9578f4"
+  },
+  "inputs": [
+    {
+      "path": "stops/stop-06/rear-input-v1.png",
+      "sha256": "233079e78ec7a62448299a419a0ccc345b9312e6c54595e752ff6feddf638928",
+      "role": "current base rear perspective110degree"
+    }
+  ],
+  "output": {
+    "file": "rear-v1.png",
+    "sha256": "59d089de341b0e50853ffa03aceb771137be64cd972e97e71ac6e9d49c0ebec7",
+    "bytes": 3102830,
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "generatedSource": "built-in image_gen returned PNG data URL; saved exact bytes",
+  "note": "Unmodified returned master. Authored guide is65degrees; final fitted camera is recorded separately.",
+  "camera": {
+    "yawDegrees": 180,
+    "pitchDegrees": 0,
+    "fovDegrees": 110
+  }
+}

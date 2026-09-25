@@ -1,0 +1,6 @@
+"""Record existing built-in generation bytes; does not call a model."""
+import argparse,hashlib,json,pathlib,struct
+p=argparse.ArgumentParser();p.add_argument('--directory',required=True);p.add_argument('--output',required=True);p.add_argument('--prompt',required=True);p.add_argument('--record',required=True);p.add_argument('--original',required=True);p.add_argument('--inputs',required=True);a=p.parse_args();d=pathlib.Path(a.directory);sha=lambda b:hashlib.sha256(b).hexdigest();text=(d/a.prompt).read_text();b=(d/a.output).read_bytes();inputs=json.loads(a.inputs)
+for x in inputs:
+ q=(d/x['path']).resolve();z=q.read_bytes();x.update(sha256=sha(z),bytes=len(z));x['dimensions']=list(struct.unpack('>II',z[16:24])) if z[:8]==b'\x89PNG\r\n\x1a\n' else None
+r={'schemaVersion':1,'tool':'image_gen__imagegen','imageCalls':1,'promptFile':a.prompt,'prompt':text,'promptSha256':sha(text.encode()),'inputs':inputs,'output':{'path':a.output,'sha256':sha(b),'bytes':len(b),'dimensions':list(struct.unpack('>II',b[16:24])),'originalToolOutput':a.original},'status':'candidate-awaiting-direction-and-overlap-review','scope':'Built-in image generation; unmodified master retained. Inferred scenery and redrawn details are not physical reconstruction.'};(d/a.record).write_text(json.dumps(r,indent=2)+'\n');print(json.dumps(r['output']))

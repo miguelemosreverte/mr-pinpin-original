@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "stop01-after-rear-stack.json",
+  "inputs": {
+    "base": {
+      "file": "panorama-v1.png",
+      "sha256": "297ef6db2f1e81d64d54e47f797129c172d0304b889c656731ff3d9564cebab8"
+    },
+    "rear": {
+      "file": "rear-v1.png",
+      "sha256": "9451ad00b94e1503107bf70ffd1cd559f5f86570b54e2e5a6a5871da6f5e73dd"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "rear": "rear"
+    }
+  }
+}

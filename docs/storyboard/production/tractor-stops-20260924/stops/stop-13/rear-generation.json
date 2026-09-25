@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "imageCalls": 1,
+  "promptFile": "rear-prompt.txt",
+  "prompt": "Use case: precise-object-edit. Repair this exact square 110-degree forest perspective. Remove the hard vertical panorama stitching join through the center tree/canopy and ground: make one coherent natural trunk, continuous forest depth, ferns, rocks and stream, without duplicated edges or rectangular bands. Preserve camera, field of view, horizon, scene layout, golden illumination, material rendering and all outer-edge content closely, so this image remains a registered local patch. Resolve the seam, not the viewpoint. No new objects, vehicles, people, labels, crop, blur stripe or style change. Output one square repaired view.",
+  "promptSha256": "b9e5b655b696d24d7d05a5f8b1f9d5fec5f32be7f53f87a9b203a13baebc5e10",
+  "inputs": [
+    {
+      "path": "rear-input.png",
+      "role": "exact current rear110 perspective; sole edit target",
+      "sha256": "cf7b6ce70431c2dd9544d17ae486a48e97653439bbd9f0a858fc4a1d29ec65fa",
+      "bytes": 5316837,
+      "dimensions": [
+        1400,
+        1400
+      ]
+    }
+  ],
+  "output": {
+    "path": "rear-v1.png",
+    "sha256": "40ef9fa0ea87c9a3d06b63571377025b80a908f72285a640ef6d759bcfe5ed49",
+    "bytes": 3042245,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c89a-b0d5-7372-a22a-6528d59c7ee2/exec-73ec2b93-d437-46ce-bf04-89c43fd09b4b.png"
+  },
+  "status": "candidate-awaiting-direction-and-overlap-review",
+  "scope": "Built-in image generation; unmodified master retained. Inferred scenery and redrawn details are not physical reconstruction."
+}

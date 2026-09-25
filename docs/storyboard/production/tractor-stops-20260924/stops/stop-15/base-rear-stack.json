@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-15-base-rear",
+  "inputs": {
+    "base": {
+      "file": "panorama-v1.png",
+      "sha256": "a8cc161996e767ca358da93a50ba798d8862bbaf6efec8d1aad26c8e6a348a8d"
+    },
+    "rear": {
+      "file": "rear-v1.png",
+      "sha256": "764bc59e8f517ba2905295bbb0913125249cd8bc9b973782cd378dce5e2fa5ad"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "rear": "rear"
+    }
+  }
+}

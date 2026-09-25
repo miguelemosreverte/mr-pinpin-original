@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "start": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-13/source.png",
+    "bytes": 1172088,
+    "sha256": "905d215bcadf9540d3dd8b9d83c5eacb52e5c3ffc1ccdad3daee64d5a0376bf8",
+    "width": 1280,
+    "height": 720
+  },
+  "end": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-13/forward.png",
+    "bytes": 2343535,
+    "sha256": "6351d5fb8202775d6da28bdcd60839e26e10450f181d81f554fe2758d62c64ff",
+    "width": 1280,
+    "height": 720
+  },
+  "prompt": "A single one-second continuous camera settling movement between the supplied first and last frames. Begin exactly at the first image, the paused orbit view, and end exactly at the last image, the fixed look-around viewpoint. Gently settle the camera position and framing toward the final view with smooth natural perspective and stable daylight. Keep the red tractor, empty stake trailer, yellow crane and grapple completely stationary: tires remain planted and do not rotate, crane does not move. Preserve the same machine identity, coherent wheels, rigid body and trailer, forest clearing, stream, warm physically lit illustrated materials and shadows. Only the camera and small view-dependent details adjust. No cut, crossfade, dissolve, new objects, driving, machinery animation, dramatic zoom or added camera orbit. One quiet continuous transition with a gentle stop at the final frame.",
+  "negativePrompt": "crossfade, dissolve, cuts, driving, wheel rotation, moving crane, rubber machinery, object morphing, new parts, extra wheels, people, text, camera shake, zoom burst, different lighting",
+  "model": "fal-ai/pixverse/v6/transition",
+  "durationRequested": 1,
+  "authorizedCalls": 1
+}

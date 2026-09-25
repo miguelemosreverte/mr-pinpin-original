@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-13",
+  "inputs": {
+    "base": {
+      "file": "panorama-v1.png",
+      "sha256": "9e18426ab3735c11063e54f99f2de90c0d21ea2e346e86000c957c2e032fa02b"
+    },
+    "rear": {
+      "file": "rear-v1.png",
+      "sha256": "40ef9fa0ea87c9a3d06b63571377025b80a908f72285a640ef6d759bcfe5ed49"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "rear": "rear"
+    }
+  }
+}

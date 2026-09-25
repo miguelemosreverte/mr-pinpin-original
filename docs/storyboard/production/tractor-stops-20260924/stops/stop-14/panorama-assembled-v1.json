@@ -1,0 +1,187 @@
+{
+  "schemaVersion": 1,
+  "operation": "assemble",
+  "scriptSha256": "d5b7d058797892056801a01a5e091a4acadce96f27ce18e87dcfa5a161db83fe",
+  "helpers": {
+    "export_rooms.py": "2c1110429b07709679206b60b464d7ef34099c264499f775ae61994ad833150a",
+    "stack_math.py": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+    "trusted_reproject.py": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+    "png_io.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d"
+  },
+  "orientation": {
+    "worldAxes": "X right, Y front, Z up",
+    "panorama": "front u=.5; right u=.75; rear wraps u=0/1; up v=0",
+    "cubeLayout": [
+      [
+        "front",
+        "right",
+        "back"
+      ],
+      [
+        "left",
+        "up",
+        "down"
+      ]
+    ],
+    "faceBases": [
+      {
+        "id": "front",
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "right",
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "back",
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "right": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "left",
+        "forward": [
+          -1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "up",
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "id": "down",
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "noNewArtOrGeometry": true,
+  "outputs": [
+    {
+      "path": "stops/stop-14/panorama-assembled-v1.png",
+      "sha256": "163cacf244766326bc34edbd50cb170bc55edfd5e35a97b27e500da590bff923",
+      "bytes": 11599236,
+      "size": [
+        3072,
+        1536
+      ]
+    }
+  ],
+  "config": {
+    "schemaVersion": 1,
+    "id": "stop-14",
+    "inputs": {
+      "base": {
+        "file": "panorama-v1.png",
+        "sha256": "4c3b1a9cbe06609be0dfc19da9b90dc7d9ec5fe3c5b63d224b7b4d7451038622"
+      },
+      "rear": {
+        "file": "rear-v1.png",
+        "sha256": "31edc4fee5d13aaa28a7b1c81a0ac799c385328fc8863fef06cefcc75ccfa8ef"
+      },
+      "up": {
+        "file": "up-v1.png",
+        "sha256": "61e44925cf8e8e6893b981921e7278f4827d33b2fa0162aa95cdd63aae101397"
+      },
+      "down": {
+        "file": "down-v1.png",
+        "sha256": "dc876a2c028e26ac5f5316e607979b472de9d7bf4c03d050d8ca01f33ac879ef"
+      }
+    },
+    "repairs": {
+      "fovDegrees": 110,
+      "frontMask": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "assets": {
+        "rear": "rear",
+        "up": "up",
+        "down": "down"
+      }
+    }
+  },
+  "configSha256": "34a8bee30720d0b8ea3f9e450fac0a3c383b18aae587da1d53a6e751e05807c7",
+  "sampling": "Same runtime normalized cardinal patch blend and optional registered detail; encoded RGB bilinear interpolation. Cube derived from final assembled panorama; no artistic seam repair. Same-ray boundary equality verifies projection only, not source visual continuity."
+}

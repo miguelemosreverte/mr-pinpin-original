@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-13",
+  "status": "candidate-awaiting-final-review",
+  "sourceLockStatus": "pending",
+  "panorama": "stops/stop-13/panorama-assembled-v2.png",
+  "camera": {
+    "yaw": -0.007228364232123481,
+    "pitch": 0.011612421549519707,
+    "fov": 67.81814975074039
+  },
+  "sourceAnchor": {
+    "asset": "stops/stop-13/source-display.png",
+    "camera": {
+      "yaw": -0.007228364232123481,
+      "pitch": 0.011612421549519707,
+      "fov": 67.81814975074039
+    },
+    "aspect": 1.7777777777777777,
+    "featherStart": 0.94
+  },
+  "anchoredPanorama": "stops/stop-13/panorama-source-locked-v2.png",
+  "anchoredCube": "stops/stop-13/source-locked-exports-v2/cube-atlas-v1.png",
+  "forward": "stops/stop-13/forward-source-locked-v2.png",
+  "stack": "stops/stop-13/selected-stack-v2.json",
+  "exports": "stops/stop-13/source-locked-exports-v2/exports-v1.json",
+  "prompt": "stops/stop-13/panorama-v2-prompt.txt",
+  "record": "stops/stop-13/panorama-v2-generation.json",
+  "review": "stops/stop-13/review.md",
+  "sourceLockReview": "stops/stop-13/review.md"
+}

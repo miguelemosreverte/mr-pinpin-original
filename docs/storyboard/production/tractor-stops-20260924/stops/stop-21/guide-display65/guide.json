@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "operation": "Bilinear perspective-to-equirectangular guide; unknown region neutral RGB192; no generative fill",
+  "input": {
+    "path": "stops/stop-21/source-display.png",
+    "sha256": "af0819d064a66358b3d5c6218323a3021d2ae4683f173fc902350fc4c8e08e03",
+    "width": 1280,
+    "height": 720
+  },
+  "camera": {
+    "yawRadians": 0,
+    "pitchRadians": 0,
+    "verticalFovDegrees": 65.0,
+    "aspect": 1.7777777777777777,
+    "horizontalFovDegrees": 97.11433166531434,
+    "lensStatus": "Authored reconstruction convention; video lens not measured; actual source aspect retained, nominal16:9"
+  },
+  "panorama": {
+    "width": 3072,
+    "height": 1536,
+    "convention": "+Y front at u=.5,v=.5; +X right at u=.75; +Z up at v=0"
+  },
+  "knownPixelBoundsInclusive": [
+    1122,
+    491,
+    1949,
+    1044
+  ],
+  "outputs": [
+    {
+      "path": "guide-equirect.png",
+      "sha256": "1b49f38c7b96055523cf7cf38a30933147f5e47cb1f5c2c9d9d93702c9704791"
+    },
+    {
+      "path": "guide-known-mask.png",
+      "sha256": "76570d603ab47bd103e3709fe858f71a3becda46d40e8ad99004207ff73844a3"
+    },
+    {
+      "path": "guide-roundtrip.png",
+      "sha256": "1fb06301cdb0064427f26a5e7ec173d54af89946b1d64d70b4b1c4378a157b45"
+    }
+  ],
+  "roundtrip": {
+    "meanAbsRGB255Excluding8pxBorder": 1.4400093947784811,
+    "p95AbsRGB255Excluding8pxBorder": 6.0,
+    "note": "Two bilinear resamplings soften detail; no source byte identity claimed. Native source retained separately."
+  },
+  "scriptSha256": "a4f7db3e472d18b082ba234e22ce0eb5104eecd030ec20ffe7e5aee3e877379c",
+  "helperHashes": {
+    "trusted_reproject.py": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+    "png_io.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d"
+  },
+  "scope": "Guide anchors the visible rectangle. Unknown sphere is not reconstructed geometry; later generated background and camera alignment require review."
+}

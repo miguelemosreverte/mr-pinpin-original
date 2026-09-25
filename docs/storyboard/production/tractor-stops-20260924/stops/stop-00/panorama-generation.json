@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-00-panorama-v1",
+  "tool": "built-in image_gen",
+  "calls": 1,
+  "status": "candidate-awaiting-perspective-review",
+  "recordedAt": "2026-09-24T21:00:34.604948+00:00",
+  "exactPrompt": {
+    "file": "panorama-prompt.txt",
+    "sha256": "550504998c0bbc349b5768dc2dcf17d1c23d472a6d433b8db9fb74d03491011d"
+  },
+  "inputs": [
+    {
+      "path": "docs/storyboard/production/tractor-stops-20260924/stops/stop-00/source.png",
+      "sha256": "60ff3118c28079a44f66ba6b913caf51430fc50853005285a42f700a84e19f81",
+      "role": "raw frame: sole camera/vehicle/material/light authority"
+    },
+    {
+      "path": "docs/storyboard/production/tractor-stops-20260924/stops/stop-00/raw-guide65-v1/guide-equirect.png",
+      "sha256": "63ad00e805b9d2bc7a3056cf397e1d50fcc8fc1594f0f63476619cdeaacc0938",
+      "role": "mathematical65degree placement edit canvas"
+    },
+    {
+      "path": "docs/storyboard/production/tractor-stops-20260924/pilot/fov-correction/accepted-reference.png",
+      "sha256": "25987eb4d26f9f47dc226e6365ed3e3c023495ba0770b6144b7b95d8f156df3b",
+      "role": "acceptedV4+rear: spherical quality/projection only"
+    }
+  ],
+  "output": {
+    "file": "panorama-v1.png",
+    "sha256": "abe0c26c17f1142e8fc633904d3608675ff93cd12497c56b12275e52b61e9f20",
+    "bytes": 3470954,
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  "generatedSource": "exec-e6ec7e0f-997f-4d7b-8adc-e7135fc7978b.png",
+  "note": "One new sphere; no restored image or post-generation warp supplied. Authored65degree lens, not measured video calibration."
+}

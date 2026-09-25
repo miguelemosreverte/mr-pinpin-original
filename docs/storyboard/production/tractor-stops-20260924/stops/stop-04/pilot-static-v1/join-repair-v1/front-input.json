@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "operation": "Existing panorama plus rectangular source texture sampled by perspective rays; no artistic changes",
+  "inputs": {
+    "base": {
+      "path": "stops/stop-04/panorama-assembled-v1.png",
+      "sha256": "25987eb4d26f9f47dc226e6365ed3e3c023495ba0770b6144b7b95d8f156df3b"
+    },
+    "source": {
+      "path": "stops/stop-04/source.png",
+      "sha256": "a521421a10d6335ea01421245ec619175568aa8954d0715c1cd3d45b90141c15"
+    },
+    "selectionSha256": "4de9a505b7c36bc841cda6d9063d4dbd6da38200a580fb9b4e68b289fecc9e0c"
+  },
+  "sourceCamera": {
+    "yaw": 0.003557808640356198,
+    "pitch": 0.0009270482291129821,
+    "fov": 65.41537697357725,
+    "aspect": 1.7777777777777777,
+    "featherStart": 0.94
+  },
+  "outputCamera": {
+    "yaw": 0,
+    "pitch": 0,
+    "fov": 130,
+    "aspect": 1
+  },
+  "output": {
+    "path": "front-input.png",
+    "width": 1400,
+    "height": 1400,
+    "sha256": "955903ba211b3722e345c1c3203c87112fb895d74840564e887f4eb6445531dd"
+  },
+  "sampling": "OpenCV bilinear encoded RGB; same projection and feather equations as runtime source anchor; no claim CPU/WebGL bit identity",
+  "scriptSha256": "d3a9c9684923dcc7dc4fafc97e11d2f91dbd656702628623e6de5c236e871e16"
+}

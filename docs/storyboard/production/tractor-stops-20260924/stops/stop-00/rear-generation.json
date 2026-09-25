@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "tool": "built-in image_gen",
+  "calls": 1,
+  "status": "candidate-perspective-repair",
+  "prompt": {
+    "file": "rear-prompt.txt",
+    "sha256": "faf1858a696fd42f549995daa5b039debcb93dde224be2cac0666c90f114116a"
+  },
+  "inputs": [
+    {
+      "file": "rear-input-v1.png",
+      "sha256": "00b02e82877ee7f958340e8386934e72997c8ee2f852e8f88d14fd36f6b32a2a"
+    }
+  ],
+  "output": {
+    "file": "rear-v1.png",
+    "sha256": "bf24e117abb0a452bfd39d9f77e2f291fecd312fcc2f65db4334ba1a1f20d72d",
+    "bytes": 3047154,
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "camera": {
+    "yawDegrees": 180,
+    "pitchDegrees": 0,
+    "fovDegrees": 110
+  },
+  "generatedSource": "exec-bc3b3191-7a32-4bf5-a05e-8bf4a205672b.png"
+}

@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 1,
+  "tool": "built-in image_gen",
+  "calls": 1,
+  "status": "candidate-until-source-anchor-reviewed",
+  "recordedAt": "2026-09-24T22:26:58.131343+00:00",
+  "exactPrompt": {
+    "file": "panorama-prompt.txt",
+    "sha256": "b70263c763ac251e4915eec613fc6362a26d579ac1b1d8891c107c4432ad10ed"
+  },
+  "inputs": [
+    {
+      "path": "stops/stop-09/raw-guide65-v1/guide-equirect.png",
+      "sha256": "88000f7a4ac057fdbf75b818539eb68cfb4ebd317d31e9a2d94059d57d23caff",
+      "role": "literal projected edit target65degree"
+    },
+    {
+      "path": "stops/stop-09/source.png",
+      "sha256": "faa540eb736ce13458ac08eb37296109329181cb487cec94fd44d688e78d224c",
+      "role": "raw source camera/material/light authority"
+    },
+    {
+      "path": "pilot/fov-correction/accepted-reference.png",
+      "sha256": "25987eb4d26f9f47dc226e6365ed3e3c023495ba0770b6144b7b95d8f156df3b",
+      "role": "sphere continuity only"
+    }
+  ],
+  "output": {
+    "file": "panorama-v1.png",
+    "sha256": "c8e2539705c1f3c8ca3fe9bc2eb19a24016949e2838796d70acf891d0fd58a2f",
+    "bytes": 3213836,
+    "dimensions": [
+      1774,
+      887
+    ]
+  },
+  "generatedSource": "built-in image_gen returned PNG data URL; saved exact bytes",
+  "note": "Unmodified returned master. Authored guide is65degrees; final fitted camera is recorded separately."
+}

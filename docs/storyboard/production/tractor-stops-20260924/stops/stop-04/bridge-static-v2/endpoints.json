@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "start": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-04/source.png",
+    "bytes": 1315914,
+    "sha256": "a521421a10d6335ea01421245ec619175568aa8954d0715c1cd3d45b90141c15",
+    "width": 1280,
+    "height": 720
+  },
+  "end": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-04/pilot-static-v1/fit-v1/fitted-view.png",
+    "bytes": 1469079,
+    "sha256": "181614f9702a131736cf174d30e6752a8556a7f60506de2c53736938d6220786",
+    "width": 1280,
+    "height": 720
+  },
+  "prompt": "A locked-off static camera throughout this one-second transition. Preserve the supplied framing, camera position, perspective, scale and object positions. No camera movement, translation, rotation, orbit, zoom, dolly, parallax drift, reframing or settling. The tractor and trailer remain completely parked and rigid in exactly the same place for the entire clip. All four visible wheel hubs stay fixed; tires stay planted on the same ground contacts and never roll or rotate. The crane boom, joints, cables and grapple are locked absolutely still. No component moves, bends, expands, shrinks or morphs, including at intermediate frames. Only surface appearance and rendering refinement change gently from the first supplied image to the final supplied image, under unchanged steady daylight. Preserve the exact machine silhouette and stable background. Begin at the supplied first image and end at the supplied last image with no intermediate motion overshoot. No cuts or added objects.",
+  "negativePrompt": "camera motion, camera settling, camera drift, zoom, rotation, pan, dolly, driving, wheel rotation, moving wheel hubs, tire sliding, suspension motion, moving crane, swinging grapple, machinery animation, bending metal, growing or shrinking machine, morphing geometry, motion overshoot, parallax drift, cuts, new objects, people, text",
+  "model": "fal-ai/pixverse/v6/transition",
+  "durationRequested": 1,
+  "authorizedCalls": 1
+}

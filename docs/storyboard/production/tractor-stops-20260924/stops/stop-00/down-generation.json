@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "tool": "built-in image_gen",
+  "calls": 1,
+  "status": "candidate-perspective-repair",
+  "prompt": {
+    "file": "down-prompt.txt",
+    "sha256": "6ab7d4afcb0271ca195cb316ef9a92b3e0e3d01d426990fc5ca18a8ffdd79b34"
+  },
+  "inputs": [
+    {
+      "file": "down-input-v2.png",
+      "sha256": "d0cd0dfd42510f72c46ae3716532605bbf7868dc27be0a6b53d81522664b0524"
+    }
+  ],
+  "output": {
+    "file": "down-v1.png",
+    "sha256": "6e3c43f99e9c56d481673976ee805cafd357f7b94600de0900e0fd22976352ad",
+    "bytes": 3236322,
+    "dimensions": [
+      1254,
+      1254
+    ]
+  },
+  "camera": {
+    "yawDegrees": 0,
+    "pitchDegrees": -90,
+    "fovDegrees": 110
+  },
+  "generatedSource": "exec-3a9a4d07-2ac6-45df-9549-a5326eaec2fc.png",
+  "note": "Input incorporates selected rear repair; image edit corrects pole pinching."
+}

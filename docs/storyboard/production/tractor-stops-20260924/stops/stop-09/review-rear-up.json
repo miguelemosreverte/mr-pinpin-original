@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "operation": "extract",
+  "scriptSha256": "d5b7d058797892056801a01a5e091a4acadce96f27ce18e87dcfa5a161db83fe",
+  "helpers": {
+    "export_rooms.py": "2c1110429b07709679206b60b464d7ef34099c264499f775ae61994ad833150a",
+    "stack_math.py": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+    "trusted_reproject.py": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+    "png_io.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d"
+  },
+  "orientation": {
+    "worldAxes": "X right, Y front, Z up",
+    "panorama": "front u=.5; right u=.75; rear wraps u=0/1; up v=0",
+    "cubeLayout": [
+      [
+        "front",
+        "right",
+        "back"
+      ],
+      [
+        "left",
+        "up",
+        "down"
+      ]
+    ],
+    "faceBases": [
+      {
+        "id": "front",
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "right",
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "back",
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "right": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "left",
+        "forward": [
+          -1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "up",
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "id": "down",
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "noNewArtOrGeometry": true,
+  "outputs": [
+    {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-09/review-rear-up.png",
+      "sha256": "d6c9db6dd219b0e852e7c1899a816f4485880bbda779be171553e6459a525061",
+      "bytes": 2243034,
+      "size": [
+        900,
+        900
+      ]
+    }
+  ],
+  "config": {
+    "schemaVersion": 1,
+    "id": "stop09-selected-stack.json",
+    "inputs": {
+      "base": {
+        "file": "panorama-v1.png",
+        "sha256": "c8e2539705c1f3c8ca3fe9bc2eb19a24016949e2838796d70acf891d0fd58a2f"
+      },
+      "rear": {
+        "file": "rear-v1.png",
+        "sha256": "6e1399fe87dcf4d8249969ef14e7ea8c4223033a77776ea0e262df6e84ae7013"
+      },
+      "up": {
+        "file": "up-v1.png",
+        "sha256": "e273a203a0f4b04c6dd3420ed2e8d9ec2d8d0f67912d97abb886db3eb8192018"
+      },
+      "down": {
+        "file": "down-v1.png",
+        "sha256": "48de4d06cb01d0a7ca9eeb6b5a1fde4aba9a0922886e4f3c08ae6b8ec06dfa52"
+      }
+    },
+    "repairs": {
+      "fovDegrees": 110,
+      "frontMask": [
+        0,
+        0,
+        2,
+        2
+      ],
+      "assets": {
+        "rear": "rear",
+        "up": "up",
+        "down": "down"
+      }
+    }
+  },
+  "configSha256": "bd05e9d6fc30e15e6681daae6478255dede718bbb0bb98b0345c495a353d7779",
+  "camera": {
+    "yawDegrees": 180.0,
+    "pitchDegrees": 45.0,
+    "fovDegrees": 90.0
+  },
+  "sampling": "Same runtime normalized cardinal patch blend and optional registered detail; encoded RGB bilinear interpolation. Cube derived from final assembled panorama; no artistic seam repair. Same-ray boundary equality verifies projection only, not source visual continuity."
+}

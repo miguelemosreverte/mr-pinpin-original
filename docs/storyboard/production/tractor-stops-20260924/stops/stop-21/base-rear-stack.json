@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "id": "stop-21-base-rear",
+  "inputs": {
+    "base": {
+      "file": "panorama-v1.png",
+      "sha256": "0afef0b989798028304537fed64675e48121a5487b682b82fd101b107299e07b"
+    },
+    "rear": {
+      "file": "rear-v1.png",
+      "sha256": "56f5a18474d85ade559c1cc320c462641ef6259a62bd63c0c990a61b171ea20f"
+    }
+  },
+  "repairs": {
+    "fovDegrees": 110,
+    "frontMask": [
+      0,
+      0,
+      2,
+      2
+    ],
+    "assets": {
+      "rear": "rear"
+    }
+  }
+}

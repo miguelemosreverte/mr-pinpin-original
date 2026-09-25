@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "imageCalls": 1,
+  "promptFile": "down-prompt.txt",
+  "prompt": "Use case: precise-object-edit. Repair only the unnatural radial pinch at the center of this exact square 110-degree straight-down ground view. Make a continuous ordinary sandy forest floor with irregular pebbles, leaf litter and sparse low plants, with coherent shadows and texture scale. Remove the starburst/converging texture, not the surrounding scene. Preserve the exact camera, field of view, outer boundary, tire tracks, visible rocks, branches, existing plant masses and any vehicle fragment at the edge. No zoom, rotation, added vehicle, new large object, circular pattern, blur patch or text. Match existing warm sunlight and dimensional materials. Output one square registered ground repair.",
+  "promptSha256": "143763aafe261feca86979262b45a420f0de0239bb312c8d710eadf8658a0c7b",
+  "inputs": [
+    {
+      "path": "down-input.png",
+      "role": "only edit target; exact current base+rear perspective",
+      "sha256": "e6cfcada64420930a658c49425c11b56886fccb4b1ce6746955b80b34bc0413b",
+      "bytes": 5374660,
+      "dimensions": [
+        1400,
+        1400
+      ]
+    }
+  ],
+  "output": {
+    "path": "down-v1.png",
+    "sha256": "cf45f68655fc2601d35d90aa5e1a611bd2fb2483fc5fb909fa052ab2f85be7d1",
+    "bytes": 2885938,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "originalToolOutput": "/Users/miguel_lemos/.codex/generated_images/01a0c89a-b0d5-7372-a22a-6528d59c7ee2/exec-916d2474-4e5b-4e33-ba67-17e16add0169.png"
+  },
+  "status": "candidate-awaiting-direction-and-overlap-review",
+  "scope": "Built-in image generation; unmodified master retained. Inferred scenery and redrawn details are not physical reconstruction."
+}

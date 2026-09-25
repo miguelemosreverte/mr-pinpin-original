@@ -1,0 +1,97 @@
+{
+  "input": "stops/stop-22/panorama-v1.png",
+  "sha256": "ed4a3c295767e612d81e027837e425a36b27b40cc5e5032052e06e9fbfbf616a",
+  "operation": "Perspective sampling for review, labels only on contact sheet",
+  "views": [
+    {
+      "id": "front",
+      "yaw": 0,
+      "pitch": 0,
+      "fov": 65,
+      "size": [
+        640,
+        360
+      ]
+    },
+    {
+      "id": "right",
+      "yaw": 1.5707963267948966,
+      "pitch": 0,
+      "fov": 90,
+      "size": [
+        640,
+        360
+      ]
+    },
+    {
+      "id": "rear",
+      "yaw": 3.141592653589793,
+      "pitch": 0,
+      "fov": 90,
+      "size": [
+        640,
+        360
+      ]
+    },
+    {
+      "id": "left",
+      "yaw": -1.5707963267948966,
+      "pitch": 0,
+      "fov": 90,
+      "size": [
+        640,
+        360
+      ]
+    },
+    {
+      "id": "up",
+      "yaw": 0,
+      "pitch": 1.5707963267948966,
+      "fov": 110,
+      "size": [
+        640,
+        360
+      ]
+    },
+    {
+      "id": "down",
+      "yaw": 0,
+      "pitch": -1.5707963267948966,
+      "fov": 110,
+      "size": [
+        640,
+        360
+      ]
+    },
+    {
+      "id": "rear-up",
+      "yaw": 3.141592653589793,
+      "pitch": 0.8,
+      "fov": 90,
+      "size": [
+        640,
+        360
+      ]
+    },
+    {
+      "id": "rear-down",
+      "yaw": 3.141592653589793,
+      "pitch": -0.8,
+      "fov": 90,
+      "size": [
+        640,
+        360
+      ]
+    },
+    {
+      "id": "front-down",
+      "yaw": 0,
+      "pitch": -0.8,
+      "fov": 90,
+      "size": [
+        640,
+        360
+      ]
+    }
+  ]
+}

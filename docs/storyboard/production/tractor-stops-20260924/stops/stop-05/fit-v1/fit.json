@@ -1,0 +1,185 @@
+{
+  "schemaVersion": 1,
+  "operation": "SIFT ratio matches, RANSAC homography filtering, robust3-parameter spherical pinhole fit; no image warp or edits",
+  "inputs": {
+    "reference": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-05/source-display.png",
+      "sha256": "622ea2200cbdebb5e07ea16aacf917725777102d731fc4a35cb625455144bb28"
+    },
+    "panorama": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-05/panorama-v1.png",
+      "sha256": "86f118cbf051443000487e5865c397e0e2246d0742603fcd278c32c37aadd90f"
+    }
+  },
+  "camera": {
+    "yawRadians": 0.011028468808103209,
+    "pitchRadians": 0.006579337837416587,
+    "verticalFovDegrees": 61.76446879297418,
+    "aspect": 1.7777777777777777
+  },
+  "features": {
+    "ratioMatches": 57,
+    "ransacInliers": 13,
+    "physicalFitInliersBelow8px": 8,
+    "medianResidualPixelsAt1280": 5.595862553308886,
+    "p90ResidualPixelsAt1280": 29.897308727999718,
+    "referenceInlierBoundsNormalized": [
+      0.21151189804077147,
+      0.1839749230278863,
+      0.7136291980743408,
+      0.6719244215223524
+    ]
+  },
+  "correspondences": [
+    {
+      "referenceXY": [
+        270.7352294921875,
+        406.91497802734375
+      ],
+      "searchXY": [
+        386.1080017089844,
+        386.1778259277344
+      ],
+      "fitErrorPixels": 7.058369347663843
+    },
+    {
+      "referenceXY": [
+        615.6338500976562,
+        230.3240203857422
+      ],
+      "searchXY": [
+        621.7911376953125,
+        262.5736083984375
+      ],
+      "fitErrorPixels": 8.062066354952092
+    },
+    {
+      "referenceXY": [
+        619.3842163085938,
+        234.07139587402344
+      ],
+      "searchXY": [
+        624.3711547851562,
+        264.9586486816406
+      ],
+      "fitErrorPixels": 8.329588782732161
+    },
+    {
+      "referenceXY": [
+        627.0775756835938,
+        325.50543212890625
+      ],
+      "searchXY": [
+        631.4009399414062,
+        332.7789001464844
+      ],
+      "fitErrorPixels": 5.595862553308886
+    },
+    {
+      "referenceXY": [
+        703.6507568359375,
+        136.60711669921875
+      ],
+      "searchXY": [
+        689.73876953125,
+        198.13702392578125
+      ],
+      "fitErrorPixels": 1.3933300815809966
+    },
+    {
+      "referenceXY": [
+        703.6507568359375,
+        136.60711669921875
+      ],
+      "searchXY": [
+        689.73876953125,
+        198.13702392578125
+      ],
+      "fitErrorPixels": 1.3933300815809966
+    },
+    {
+      "referenceXY": [
+        703.6507568359375,
+        136.60711669921875
+      ],
+      "searchXY": [
+        689.73876953125,
+        198.13702392578125
+      ],
+      "fitErrorPixels": 1.3933300815809966
+    },
+    {
+      "referenceXY": [
+        703.6507568359375,
+        136.60711669921875
+      ],
+      "searchXY": [
+        689.73876953125,
+        198.13702392578125
+      ],
+      "fitErrorPixels": 1.3933300815809966
+    },
+    {
+      "referenceXY": [
+        724.676025390625,
+        132.46194458007812
+      ],
+      "searchXY": [
+        704.061767578125,
+        195.00051879882812
+      ],
+      "fitErrorPixels": 1.9490634378119998
+    },
+    {
+      "referenceXY": [
+        731.4706420898438,
+        145.83993530273438
+      ],
+      "searchXY": [
+        707.9682006835938,
+        205.3987579345703
+      ],
+      "fitErrorPixels": 3.6979349673806063
+    },
+    {
+      "referenceXY": [
+        907.4066162109375,
+        483.78558349609375
+      ],
+      "searchXY": [
+        858.2174682617188,
+        444.6869812011719
+      ],
+      "fitErrorPixels": 31.063491128879537
+    },
+    {
+      "referenceXY": [
+        907.4066162109375,
+        483.78558349609375
+      ],
+      "searchXY": [
+        858.2174682617188,
+        444.6869812011719
+      ],
+      "fitErrorPixels": 31.063491128879537
+    },
+    {
+      "referenceXY": [
+        913.4453735351562,
+        419.7408447265625
+      ],
+      "searchXY": [
+        858.5332641601562,
+        399.5377502441406
+      ],
+      "fitErrorPixels": 25.23257912448042
+    }
+  ],
+  "scriptSha256": "39ea7ce223e020e5dd6f5bb379658da0ca13fbf66db32dc1ca938d8670527f33",
+  "software": {
+    "opencv": "5.0.0",
+    "numpy": "2.5.3"
+  },
+  "status": "candidate fit; visual registration and boundary review required",
+  "note": "Feature inliers can cluster on one object and do not guarantee whole-scene registration. Generation can change machinery geometry."
+}

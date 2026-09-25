@@ -1,6 +1,6 @@
 # Source-frame projection in the tractor tour
 
-The optional `tractor-tour.html?sourceLock=1&stop=stop-04&mode=look` trial uses the same orbit/look controls. The original default remains available for comparison. Only reviewed stop descriptors enable source projection; extracted source frames alone do not enable a viewpoint.
+The optional `tractor-tour.html?sourceLock=1&stop=stop-04&mode=look` trial uses the same orbit/look controls. The original default remains available for comparison. Only descriptors explicitly marked reviewed or experimental for sourceLock enable source projection; extracted source frames alone do not enable a viewpoint.
 
 The initial integration uses the accepted stop-04 assembled V4 panorama with its rear repair, and registers the source frame at the selected yaw, pitch and vertical FOV, with 16:9 aspect and .94→1 rectangular feather. It does not use the unrepaired new outpaint. Both rejected generated bridges are bypassed. On exit, the view first recenters to the canonical tractor-facing camera, then returns to the same orbit timestamp before resuming a queued drag.
 
@@ -14,7 +14,7 @@ Turning 30° or 60° still reveals a visible scenery join near the registered so
 
 ## Deterministic export helper
 
-`source_anchor.py` reproduces the same world-ray inverse camera transform, rectangular source frustum and smoothstep feather, with clamp-to-edge bilinear sampling. CLI takes `--panorama`, `--source`, `--camera` JSON, `--output` and `--width 3072` or `--width 4096`. It writes source/output hashes and projection metadata and refuses overwrites. Baked panoramas resample the native source; they are not byte-identical source images. Runtime keeps the native source separately. No 24-stop export batch has run.
+`source_anchor.py` reproduces the same world-ray inverse camera transform, rectangular source frustum and smoothstep feather, with clamp-to-edge bilinear sampling. CLI takes `--panorama`, `--source`, `--camera` JSON, `--output` and `--width 3072` or `--width 4096`. It writes source/output hashes and projection metadata and refuses overwrites. Baked panoramas resample the native source; they are not byte-identical source images. Runtime keeps the native source separately. The initial pilot preceded the 24-stop export batch; see `BATCHES.md` and per-stop `selected.json` for current exports and review status.
 
 ## Final sourceLock v3 display proof
 

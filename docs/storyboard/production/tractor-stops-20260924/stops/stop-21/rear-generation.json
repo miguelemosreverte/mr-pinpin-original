@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "imageCalls": 1,
+  "promptFile": "rear-prompt.txt",
+  "prompt": "Use case: precise-object-edit. Repair this exact square 110-degree forest perspective. Remove the hard vertical panorama stitching join through the center tree/canopy and ground: make one coherent natural trunk, continuous forest depth, ferns, rocks and stream, without duplicated edges or rectangular bands. Preserve camera, field of view, horizon, scene layout, golden illumination, material rendering and all outer-edge content closely, so this image remains a registered local patch. Resolve the seam, not the viewpoint. No new objects, vehicles, people, labels, crop, blur stripe or style change. Output one square repaired view.",
+  "promptSha256": "b9e5b655b696d24d7d05a5f8b1f9d5fec5f32be7f53f87a9b203a13baebc5e10",
+  "inputs": [
+    {
+      "path": "rear-input.png",
+      "role": "registered110deg rear edit target",
+      "sha256": "d8739f788af20c7be0f984a02d16e4ac75c05f6ded86bf248aa98ed31d004649",
+      "bytes": 5379401,
+      "dimensions": [
+        1400,
+        1400
+      ]
+    }
+  ],
+  "output": {
+    "path": "rear-v1.png",
+    "sha256": "56f5a18474d85ade559c1cc320c462641ef6259a62bd63c0c990a61b171ea20f",
+    "bytes": 3013006,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "originalToolOutput": "Exact returned PNG data URL decoded unchanged"
+  },
+  "status": "reviewed-background-source-lock-experimental-blur-deferred",
+  "scope": "Built-in image generation; unmodified master retained. Inferred scenery and redrawn details are not physical reconstruction.",
+  "review": "review.md"
+}

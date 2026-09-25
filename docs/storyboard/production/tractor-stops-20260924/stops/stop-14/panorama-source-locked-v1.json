@@ -1,0 +1,34 @@
+{
+  "schemaVersion": 1,
+  "operation": "Same ray projection and rectangular smoothstep mask as tractor-panorama-anchor.js; bilinear sampling, no art edits",
+  "inputs": {
+    "panorama": {
+      "path": "stops/stop-14/panorama-assembled-v1.png",
+      "sha256": "163cacf244766326bc34edbd50cb170bc55edfd5e35a97b27e500da590bff923"
+    },
+    "source": {
+      "path": "stops/stop-14/source-display.png",
+      "sha256": "d28881bf99b93492f70d0a0e4348378fae23676e83f6c81056e41e9be8c40e5f"
+    }
+  },
+  "camera": {
+    "yaw": 0.0005541549646781967,
+    "pitch": 0.0013918269099158131,
+    "fov": 65.38628371752745,
+    "aspect": 1.7777777777777777,
+    "featherStart": 0.94
+  },
+  "output": {
+    "path": "stops/stop-14/panorama-source-locked-v1.png",
+    "width": 4096,
+    "height": 2048,
+    "sha256": "23ab50607b0507e4b0c45c66120e9f4bbe307eb4d25e5b0e002706b901e40464"
+  },
+  "sampling": "Pixel centers; clamp-to-edge bilinear; encoded RGB mix; source full weight to edge .94, smoothstep to zero at1.0",
+  "limitations": "Baked sphere resamples the source; it is not byte-identical to native source or a second runtime projection. Generated scenery boundary mismatch is preserved.",
+  "software": {
+    "opencv": "5.0.0",
+    "numpy": "2.5.3"
+  },
+  "scriptSha256": "71e5512b03212412bbb1b49241c69a1a946a7a409403af08f8d53f0f3d3b3e57"
+}

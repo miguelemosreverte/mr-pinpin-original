@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "imageCalls": 1,
+  "promptFile": "down-prompt.txt",
+  "prompt": "Use case: precise-object-edit. Repair this exact square110-degree view looking straight down at the existing forest dirt road. Remove the central pinched starburst and radial spoke pattern; make continuous natural soil, small stones, scattered leaves and low plants with coherent size and perspective. Keep existing larger rocks and branch positions, light direction, shadows, camera and all outer-edge content closely for registered blending. No added object, circular decorative pattern, labels, crop or style change. Output one square repaired downward view.",
+  "promptSha256": "b5013c6129cf06747c05cb4946ced03fea74c292dfd8919b60ced1a8f649c1a2",
+  "inputs": [
+    {
+      "path": "down-input.png",
+      "role": "Exact registered 110-degree pole view; camera and outer edges preserved.",
+      "sha256": "4e1262505305281530f5ab15f811684f09dc423bc9d805800e9bc08951d58526",
+      "bytes": 5213739,
+      "dimensions": [
+        1400,
+        1400
+      ]
+    }
+  ],
+  "output": {
+    "path": "down-v1.png",
+    "sha256": "d812969e0ebf15323e2695f0e484b373275ad634f2f1530a5692bc6121d97aa4",
+    "bytes": 2834179,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "originalToolOutput": "Exact returned PNG data URL decoded unchanged"
+  },
+  "status": "reviewed-background-source-lock-experimental-blur-deferred",
+  "scope": "Built-in image generation; unmodified master retained. Inferred scenery and redrawn details are not physical reconstruction.",
+  "review": "review.md"
+}

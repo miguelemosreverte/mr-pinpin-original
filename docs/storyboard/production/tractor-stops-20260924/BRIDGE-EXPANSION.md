@@ -2,6 +2,10 @@
 
 ## Current decision after the moving-tractor feedback
 
+### User acceptance of source matching and priority for completion
+
+The user subsequently confirmed seeing one-to-one matching between the video frame and cubemap and accepted it. They explicitly deferred refinement of the original video's motion blur until **all cubemaps are achieved**. Preserve the exact source frame and its blur; do not delay the 24-viewpoint expansion to remove blur or polish focus transitions. Actual geometric cuts, duplicate subject fragments, rear wrap seams and pole defects still need review. This acceptance does not revive the rejected generated bridges or authorize official publication.
+
 The historical plan below is superseded for transitions. The user rejected visible tractor movement during the first generated bridge. One revised locked-camera prompt was tested, but it deformed the vehicle more: outer wheel-center span overshoot increased from 27.1 to 38.5 pixels. Both stop-04 clips are retained as rejected attempts. A stop-13 request completed before the hold; it is not activated. Further paid bridge generation is stopped.
 
 The active alternative projects the exact browser-decoded orbit frame into the spherical background, with identical opening camera and source camera. The optional `tractor-tour.html?sourceLock=1` review uses the same WebGL color path for orbit and panorama. At the exact 4-second anchor, the protected inner 88% has zero measured RGB difference. This preserves visible tractor geometry without a generated morph. It does not guarantee continuity in the surrounding forest: the first wider perimeter repair still has visible field-boundary joins after reapplying the original frame and is not selected.

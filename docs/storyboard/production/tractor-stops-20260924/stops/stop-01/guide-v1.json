@@ -1,0 +1,54 @@
+{
+  "schemaVersion": 1,
+  "operation": "Bilinear perspective-to-equirectangular guide; unknown region neutral RGB192; no generative fill",
+  "input": {
+    "path": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/stops/stop-01/restored-v1.png",
+    "sha256": "869c472835c486686945b3363b51d2414509fd8e59a20e8d27085c21fd20c0be",
+    "width": 1672,
+    "height": 941
+  },
+  "camera": {
+    "yawRadians": 0,
+    "pitchRadians": 0,
+    "verticalFovDegrees": 45,
+    "aspect": 1.7768331562167907,
+    "horizontalFovDegrees": 72.70527373089243,
+    "lensStatus": "Authored reconstruction convention; video lens not measured; actual source aspect retained, nominal16:9"
+  },
+  "panorama": {
+    "width": 4096,
+    "height": 2048,
+    "convention": "+Y front at u=.5,v=.5; +X right at u=.75; +Z up at v=0"
+  },
+  "knownPixelBoundsInclusive": [
+    1634,
+    768,
+    2461,
+    1279
+  ],
+  "outputs": [
+    {
+      "path": "guide-equirect.png",
+      "sha256": "18b476d0e4e9f2b6dd0d9e3dfba68b7c0a9e41f27d76bdb187d854bb6fd27c02"
+    },
+    {
+      "path": "guide-known-mask.png",
+      "sha256": "a3006e8ba8291268683333b304feee80481280fc00a9c9bd4ed1776ba9741206"
+    },
+    {
+      "path": "guide-roundtrip.png",
+      "sha256": "8fbc8a78b12b3cd87c7ce46ef55e88865e3246d2fdf606088a360a1fb19ccb3f"
+    }
+  ],
+  "roundtrip": {
+    "meanAbsRGB255Excluding8pxBorder": 6.539597205901554,
+    "p95AbsRGB255Excluding8pxBorder": 26.0,
+    "note": "Two bilinear resamplings soften detail; no source byte identity claimed. Native source retained separately."
+  },
+  "scriptSha256": "a4f7db3e472d18b082ba234e22ce0eb5104eecd030ec20ffe7e5aee3e877379c",
+  "helperHashes": {
+    "trusted_reproject.py": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+    "png_io.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d"
+  },
+  "scope": "Guide anchors the visible rectangle. Unknown sphere is not reconstructed geometry; later generated background and camera alignment require review."
+}

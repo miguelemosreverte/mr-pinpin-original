@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "tool": "image_gen__imagegen",
+  "imageCalls": 1,
+  "promptFile": "down-prompt.txt",
+  "prompt": "Use case: precise-object-edit\nEdit this actual 110-degree square perspective view, preserving its exact camera, border content, light, materials and scenery. This is a registered texture repair for a 360 panorama, not a new composition. Remove the radial pinching/streaks at the center of the ground. Make the dirt, small stones and natural leaf litter continuous, with ordinary texture scale and coherent sunlight/shadows. Keep all large perimeter rocks, fern beds, ground slope and outer border positions unchanged. Do not invent objects, footprints, tractor parts or a circular decorative pattern. Return only the repaired square image.",
+  "promptSha256": "c8ed62e2f6c375b3ebf5b1f9b1aff5d4fe16fd20c4ea6ba143514b2e7428a59a",
+  "inputs": [
+    {
+      "path": "down-input-v2.png",
+      "role": "Exact registered 110-degree pole view, extracted after rear repair; sole image-generation input.",
+      "sha256": "47c460cc7fd4958fe8302fc38c00e37b1bc43f686bba2c033523c48fa0eea312",
+      "bytes": 5344427,
+      "dimensions": [
+        1400,
+        1400
+      ]
+    }
+  ],
+  "output": {
+    "path": "down-v1.png",
+    "sha256": "05828e0308a77bf192f32597d702524d29407fae8b152254c6807e22a8c78fe0",
+    "bytes": 2973357,
+    "dimensions": [
+      1254,
+      1254
+    ],
+    "originalToolOutput": "Unmodified returned PNG; invocation mapping verified by coordinator from original tool-call record at2026-09-24T23:04:45.857Z"
+  },
+  "status": "candidate-awaiting-direction-and-overlap-review",
+  "scope": "Built-in image generation; unmodified master retained. Inferred scenery and redrawn details are not physical reconstruction."
+}

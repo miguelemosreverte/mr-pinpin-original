@@ -1,0 +1,324 @@
+{
+  "schemaVersion": 1,
+  "operation": "export",
+  "scriptSha256": "d5b7d058797892056801a01a5e091a4acadce96f27ce18e87dcfa5a161db83fe",
+  "helpers": {
+    "export_rooms.py": "2c1110429b07709679206b60b464d7ef34099c264499f775ae61994ad833150a",
+    "stack_math.py": "2579477611f9ef808ae5e981dfff9c565d93237ffdf05631b099a73db79b1c33",
+    "trusted_reproject.py": "59419f205f89677b7544a2ba3dccaccf342d656c17683150d0abeae0169a8d1b",
+    "png_io.py": "7eb3ce2e2ccf61532e26955fac9d58f7dad69c0e7acb5701f1a02aeebca4e48d"
+  },
+  "orientation": {
+    "worldAxes": "X right, Y front, Z up",
+    "panorama": "front u=.5; right u=.75; rear wraps u=0/1; up v=0",
+    "cubeLayout": [
+      [
+        "front",
+        "right",
+        "back"
+      ],
+      [
+        "left",
+        "up",
+        "down"
+      ]
+    ],
+    "faceBases": [
+      {
+        "id": "front",
+        "forward": [
+          0,
+          1,
+          0
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "right",
+        "forward": [
+          1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          -1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "back",
+        "forward": [
+          0,
+          -1,
+          0
+        ],
+        "right": [
+          -1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "left",
+        "forward": [
+          -1,
+          0,
+          0
+        ],
+        "right": [
+          0,
+          1,
+          0
+        ],
+        "up": [
+          0,
+          0,
+          1
+        ]
+      },
+      {
+        "id": "up",
+        "forward": [
+          0,
+          0,
+          1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "id": "down",
+        "forward": [
+          0,
+          0,
+          -1
+        ],
+        "right": [
+          1,
+          0,
+          0
+        ],
+        "up": [
+          0,
+          1,
+          0
+        ]
+      }
+    ]
+  },
+  "noNewArtOrGeometry": true,
+  "outputs": [
+    {
+      "path": "stops/stop-14/source-locked-exports-v1/panorama-assembled-v1.png",
+      "sha256": "16bffe8df171686653085502aea1b3b0286a95517d70cb087e67c331b7aa3ad6",
+      "bytes": 19781110,
+      "size": [
+        4096,
+        2048
+      ]
+    },
+    {
+      "path": "stops/stop-14/source-locked-exports-v1/faces-v1/front.png",
+      "sha256": "85a5315765ef9a035911702ff0c950e1810486b1d0b6327a79a54d4f0e957b2f",
+      "bytes": 2414061,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "stops/stop-14/source-locked-exports-v1/faces-v1/right.png",
+      "sha256": "3da37c91948158548693efb6351c38b2e488214b292cc58434c437a3d65c11df",
+      "bytes": 2860964,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "stops/stop-14/source-locked-exports-v1/faces-v1/back.png",
+      "sha256": "1b87dda73f81454a2779fb2fe7c35db065380e1902c1abaed17e91282dcb5bae",
+      "bytes": 2853570,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "stops/stop-14/source-locked-exports-v1/faces-v1/left.png",
+      "sha256": "ee9763dfe44a719ba0ddeeab065850135af9222ca47e45bb02a3b1a7e87f36a6",
+      "bytes": 2869316,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "stops/stop-14/source-locked-exports-v1/faces-v1/up.png",
+      "sha256": "9c6ec8d4f9207a67f28c1e1b80ecab8f80c9b0ef5fe0c7ecd8c4c27052a42362",
+      "bytes": 2312470,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "stops/stop-14/source-locked-exports-v1/faces-v1/down.png",
+      "sha256": "717f28a6bfeb59c5cfe4d0350a436af535fd52e3e95d0f810ba2288ee36c2a4f",
+      "bytes": 2973830,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "path": "stops/stop-14/source-locked-exports-v1/cube-atlas-v1.png",
+      "sha256": "bb8c835495765de43b8c9e3fb0a7febea5f9696471f0e8be9a94d59f19518094",
+      "bytes": 16708481,
+      "size": [
+        3072,
+        2048
+      ]
+    }
+  ],
+  "input": {
+    "path": "stops/stop-14/panorama-source-locked-v1.png",
+    "sha256": "23ab50607b0507e4b0c45c66120e9f4bbe307eb4d25e5b0e002706b901e40464",
+    "size": [
+      4096,
+      2048
+    ]
+  },
+  "verification": {
+    "pass": true,
+    "edges": [
+      {
+        "faces": [
+          "front:left",
+          "left:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:right",
+          "right:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:bottom",
+          "down:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "front:top",
+          "up:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:right",
+          "back:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:bottom",
+          "down:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "right:top",
+          "up:right"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:right",
+          "left:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:bottom",
+          "down:bottom"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "back:top",
+          "up:top"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:bottom",
+          "down:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      },
+      {
+        "faces": [
+          "left:top",
+          "up:left"
+        ],
+        "samples": 257,
+        "maxRGBErrorAtSameRay": 0.0
+      }
+    ],
+    "note": "Exact shared angular boundaries sample the same panorama. Neighboring output texel centers have different directions; no edge pixels are painted/copied.",
+    "allSixAtlasTilesEqualFaceFiles": true
+  },
+  "sampling": "Same runtime normalized cardinal patch blend and optional registered detail; encoded RGB bilinear interpolation. Cube derived from final assembled panorama; no artistic seam repair. Same-ray boundary equality verifies projection only, not source visual continuity."
+}

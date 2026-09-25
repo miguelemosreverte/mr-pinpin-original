@@ -1,0 +1,20 @@
+{
+  "schemaVersion": 1,
+  "operation": "Rectangular 16:9 spherical perspective extraction; no artistic changes",
+  "input": {
+    "path": "stops/stop-13/panorama-v1.png",
+    "sha256": "9e18426ab3735c11063e54f99f2de90c0d21ea2e346e86000c957c2e032fa02b"
+  },
+  "camera": {
+    "yaw": 0,
+    "pitch": 0,
+    "fov": 80
+  },
+  "output": {
+    "path": "stops/stop-13/forward-review80.png",
+    "width": 1280,
+    "height": 720,
+    "sha256": "75b689ab66f19b724bd1436eab4e84bd99322aead86fd42574c043d909337a75"
+  },
+  "scriptSha256": "e98eaab17706d7fc34cc02aef550875a60d4f32dd6fd2a8ed85e5659c871e6da"
+}

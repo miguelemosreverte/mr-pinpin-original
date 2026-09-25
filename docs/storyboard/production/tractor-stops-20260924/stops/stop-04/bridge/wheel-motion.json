@@ -1,4 +1,17 @@
 {
+  "summary": {
+    "maxEndpointBoxOvershootPixels": [
+      22.789518289754565,
+      13.61224365234375,
+      3.2614045941227516,
+      1.910491943359375
+    ],
+    "horizontalOuterHubSpanFirst": 805.0,
+    "horizontalOuterHubSpanLast": 808.7989196777344,
+    "horizontalOuterHubSpanMin": 805.0,
+    "horizontalOuterHubSpanMax": 835.8715362548828,
+    "spanOvershootBeyondEndpoints": 27.072616577148438
+  },
   "method": "Manually seeded visible wheel hubs; pyramidal Lucas-Kanade image-space tracking,41px window. This estimates hub motion, not measured 3D motion or wheel rotation. Coordinates1280x720.",
   "order": [
     "tractorFront",

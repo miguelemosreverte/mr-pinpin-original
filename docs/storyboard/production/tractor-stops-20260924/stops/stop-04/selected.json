@@ -17,5 +17,23 @@
   "approval": "User approved calibrated V4 on 2026-09-24; this is deterministic assembly of same base plus rear repair, not new artwork.",
   "sourceLockStatus": "experimental",
   "sourceLockReview": "STATIC-INTEGRATION.md",
-  "sourceLockLimitation": "Protected-center source geometry/display passes; scenery boundary remains visible."
+  "sourceLockLimitation": "Protected-center source geometry/display passes; scenery boundary remains visible.",
+  "sourceCamera": {
+    "yaw": 0.003557808640356198,
+    "pitch": 0.0009270482291129821,
+    "fov": 65.41537697357725
+  },
+  "sourceAnchor": {
+    "asset": "stops/stop-04/source-display.png",
+    "camera": {
+      "yaw": 0.003557808640356198,
+      "pitch": 0.0009270482291129821,
+      "fov": 65.41537697357725
+    },
+    "aspect": 1.7777777777777777,
+    "featherStart": 0.94
+  },
+  "anchoredPanorama": "stops/stop-04/panorama-source-locked-v1.png",
+  "anchoredExports": "stops/stop-04/source-locked-exports-v1/exports-v1.json",
+  "anchoredCube": "stops/stop-04/source-locked-exports-v1/cube-atlas-v1.png"
 }
