@@ -17,8 +17,10 @@ const EXCLUDED = ['docs/comparison', 'docs/storyboard/review', 'docs/storyboard/
 const STATIC = new Set(['.html','.css','.js','.mjs','.cjs','.json','.txt','.md','.xml','.webmanifest','.wgsl','.license','.map']);
 const URL_EXT = /\.(?:html?|css|[cm]?js|json|png|jpe?g|webp|avif|gif|svg|ico|mp4|webm|mp3|wav|ogg|glb|bin(?:\.gz)?|wgsl|woff2?|ttf|otf)(?:[?#].*)?$/i;
 const METADATA = new Set(['generationReview','rejectedRoutePlanSource','routeSurveySource','provenance','registration','preparation','prompt','generationLog','reference','sourceMask','sourceDraft','logs']);
+const RUNTIME_IMAGE_JSON = new Set(['docs/storyboard/images/atlas/shire-focus-field-v1.json',
+  'docs/storyboard/images/atlas/walk/manifest.json']);
 const excluded = name => EXCLUDED.some(prefix => name === prefix || name.startsWith(prefix + '/')) ||
-  (/^docs\/storyboard\/(images|videos)\/.*\.(json|md|html)$/.test(name) && !name.endsWith('/shire-focus-field-v1.json'));
+  (/^docs\/storyboard\/(images|videos)\/.*\.(json|md|html)$/.test(name) && !RUNTIME_IMAGE_JSON.has(name));
 const hash = file => crypto.createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 
 function safePath(name) {
@@ -126,7 +128,7 @@ function references(source, filename) {
     visit(tree);
   } else if (ext === '.css') css(source,filename);
   else if (['.js','.mjs'].includes(ext) && !filename.includes('/vendor/')) js(source,filename);
-  else if ((ext === '.json' && !filename.includes('/images/') && !filename.includes('/videos/')) || filename.endsWith('/shire-focus-field-v1.json')) {
+  else if ((ext === '.json' && !filename.includes('/images/') && !filename.includes('/videos/')) || RUNTIME_IMAGE_JSON.has(filename)) {
     // Runtime registries use document-relative paths; focus-field data uses JSON-relative paths.
     const base = filename.includes('/stories/') ? 'docs/storyboard/index.html' : filename;
     function visit(value, keys = []) {

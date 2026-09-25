@@ -32,6 +32,13 @@
   cursor: pointer;
 }
 .atlas-debug input[type="range"]:focus-visible { outline: 2px solid #317456; outline-offset: 2px; }
+.atlas-debug-trial select { display: block; min-height: 44px; width: 100%; margin: 4px 0 12px; font: inherit; }
+.atlas-debug-trigger { display: none; }
 @media (max-width: 767px), (hover: none), (pointer: coarse), (pointer: none) {
   .atlas-debug { display: none; }
+  .atlas-debug-trial:not([hidden]) { display: block; top: auto; bottom: 72px; }
+  .atlas-debug-trigger { display: grid; place-items: center; position: fixed; z-index: 1001;
+    bottom: 16px; right: 16px; width: 44px; height: 44px; padding: 10px; border: 1px solid #aeb8b0;
+    border-radius: 4px; background: #fff; color: #253c32; }
+  .atlas-debug-trigger svg { width: 22px; height: 22px; }
 }

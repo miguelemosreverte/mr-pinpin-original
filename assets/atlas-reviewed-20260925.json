@@ -1,0 +1,594 @@
+{
+  "version": 1,
+  "bucket": "miguelemosreverte/mr-pinpin-archive",
+  "assets": [
+    {
+      "path": "docs/storyboard/images/atlas/shire-body-v1a.png",
+      "role": "archive",
+      "bytes": 561728,
+      "sha256": "9ca7b250b45cd03aa93421d07c3b76c4ba53653c7a395c2c27c2fe37cada4716",
+      "object": "sha256/9c/9ca7b250b45cd03aa93421d07c3b76c4ba53653c7a395c2c27c2fe37cada4716/shire-body-v1a.png"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/shire-body-v1b.png",
+      "role": "archive",
+      "bytes": 563161,
+      "sha256": "145c7d3436b7c0992b3c55d0d9862ea9173ffbd119c5a1e95202e5393b4b6fd5",
+      "object": "sha256/14/145c7d3436b7c0992b3c55d0d9862ea9173ffbd119c5a1e95202e5393b4b6fd5/shire-body-v1b.png"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/shire-field-v1.png",
+      "role": "archive",
+      "bytes": 460769,
+      "sha256": "db824559d60de6fabeebc3e4d69e7b8b93b65176886fc920a8232fef649a8b60",
+      "object": "sha256/db/db824559d60de6fabeebc3e4d69e7b8b93b65176886fc920a8232fef649a8b60/shire-field-v1.png"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/shire-ground-sdf-v4.png",
+      "role": "archive",
+      "bytes": 603523,
+      "sha256": "88d37064cf43be7a03923905d64ee51051e10b8f1252a64d7fcd960e6a94ba02",
+      "object": "sha256/88/88d37064cf43be7a03923905d64ee51051e10b8f1252a64d7fcd960e6a94ba02/shire-ground-sdf-v4.png"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/shire-object-ground-v2.png",
+      "role": "archive",
+      "bytes": 3357,
+      "sha256": "c3e1a45275537805494a6cb0b961769052d8e13c0c7c34dcd979a85c4d1f12eb",
+      "object": "sha256/c3/c3e1a45275537805494a6cb0b961769052d8e13c0c7c34dcd979a85c4d1f12eb/shire-object-ground-v2.png"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/shire-object-instances-v2.png",
+      "role": "archive",
+      "bytes": 163165,
+      "sha256": "6d4723e1b843c3f1f9694ec6cff8c68b08591e878fd8ca33f93d54d9afe0acc9",
+      "object": "sha256/6d/6d4723e1b843c3f1f9694ec6cff8c68b08591e878fd8ca33f93d54d9afe0acc9/shire-object-instances-v2.png"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/shire-tone-v1.png",
+      "role": "archive",
+      "bytes": 417873,
+      "sha256": "ed2ace45b7661584143fcbe3a0edd3b3ddcacce953e6f3a5b0e6b444289ef99c",
+      "object": "sha256/ed/ed2ace45b7661584143fcbe3a0edd3b3ddcacce953e6f3a5b0e6b444289ef99c/shire-tone-v1.png"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/shire-walk-v1.png",
+      "role": "archive",
+      "bytes": 1824321,
+      "sha256": "9db333f82a5634f18d91b0e310976d3236eaa2fb02973664a19c87e15af49116",
+      "object": "sha256/9d/9db333f82a5634f18d91b0e310976d3236eaa2fb02973664a19c87e15af49116/shire-walk-v1.png"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/about000180.webp",
+      "role": "archive",
+      "bytes": 476318,
+      "sha256": "02999250326ed5a6f2fb8fe53141225c0c9bdc191df2e4350421fa96dfa11101",
+      "object": "sha256/02/02999250326ed5a6f2fb8fe53141225c0c9bdc191df2e4350421fa96dfa11101/about000180.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/about045225.webp",
+      "role": "archive",
+      "bytes": 399500,
+      "sha256": "ecb039e7acd2c51798c27f51acc650255a688834517e18d12a767f86d435d0c6",
+      "object": "sha256/ec/ecb039e7acd2c51798c27f51acc650255a688834517e18d12a767f86d435d0c6/about045225.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/about135315.webp",
+      "role": "archive",
+      "bytes": 402876,
+      "sha256": "a5598ef5c22e02f331649c86ef08e0cb9d9e85b135a7cf39d6d667c4ffe369fd",
+      "object": "sha256/a5/a5598ef5c22e02f331649c86ef08e0cb9d9e85b135a7cf39d6d667c4ffe369fd/about135315.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/about270090.webp",
+      "role": "archive",
+      "bytes": 402522,
+      "sha256": "580d3d4fce91bc13e876e9f8d0a79f4d4a80ab7308f4bc6732ee0adf2873d428",
+      "object": "sha256/58/580d3d4fce91bc13e876e9f8d0a79f4d4a80ab7308f4bc6732ee0adf2873d428/about270090.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop000.webp",
+      "role": "archive",
+      "bytes": 552840,
+      "sha256": "af1aa5fbb6d2b116051773eeea8cdcecbef3fd7d7e7ec8f27767dd5f8f280f8a",
+      "object": "sha256/af/af1aa5fbb6d2b116051773eeea8cdcecbef3fd7d7e7ec8f27767dd5f8f280f8a/loop000.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop015.webp",
+      "role": "archive",
+      "bytes": 421872,
+      "sha256": "f267e607a1f1a943c5b8287c0f96bde219dfaf3811b4ab8b1ce65236bc795f75",
+      "object": "sha256/f2/f267e607a1f1a943c5b8287c0f96bde219dfaf3811b4ab8b1ce65236bc795f75/loop015.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop030.webp",
+      "role": "archive",
+      "bytes": 438704,
+      "sha256": "746a7b6c29d47cfb7a4b93b6d82fc46adab654bdd310738a0e40aabc0d89d4e5",
+      "object": "sha256/74/746a7b6c29d47cfb7a4b93b6d82fc46adab654bdd310738a0e40aabc0d89d4e5/loop030.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop045.webp",
+      "role": "archive",
+      "bytes": 432848,
+      "sha256": "382c8962a92e3c713cd1096e657081e15ead73b77a650798a5351e5484584162",
+      "object": "sha256/38/382c8962a92e3c713cd1096e657081e15ead73b77a650798a5351e5484584162/loop045.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop060.webp",
+      "role": "archive",
+      "bytes": 423358,
+      "sha256": "2f3341174c9866e798663a59cb504a6120eaa43d32d6333aa253b7ac6477a484",
+      "object": "sha256/2f/2f3341174c9866e798663a59cb504a6120eaa43d32d6333aa253b7ac6477a484/loop060.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop075.webp",
+      "role": "archive",
+      "bytes": 401254,
+      "sha256": "a35e1c379e3be6834bca40118c13e3f97267696869e8485c99c0836f3b9e7979",
+      "object": "sha256/a3/a35e1c379e3be6834bca40118c13e3f97267696869e8485c99c0836f3b9e7979/loop075.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop090.webp",
+      "role": "archive",
+      "bytes": 376240,
+      "sha256": "5f9b87a3b31a9910803065c715d818cd03de70def98ff955ac65a4329dccc4f5",
+      "object": "sha256/5f/5f9b87a3b31a9910803065c715d818cd03de70def98ff955ac65a4329dccc4f5/loop090.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop105.webp",
+      "role": "archive",
+      "bytes": 383338,
+      "sha256": "17fbbd6bcf4dc4d4e2cf363235c63e0b4db6e63179c425ccdc769636a59ae739",
+      "object": "sha256/17/17fbbd6bcf4dc4d4e2cf363235c63e0b4db6e63179c425ccdc769636a59ae739/loop105.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop120.webp",
+      "role": "archive",
+      "bytes": 381268,
+      "sha256": "12639d8419fe4ac10d93551f4481890d8bbc7ca61227617e3279fb7143c3d8fd",
+      "object": "sha256/12/12639d8419fe4ac10d93551f4481890d8bbc7ca61227617e3279fb7143c3d8fd/loop120.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop135.webp",
+      "role": "archive",
+      "bytes": 437460,
+      "sha256": "388d33f7c6155d5d32d26f565715b22a6f3a7c64816882ee7197906b3817ace3",
+      "object": "sha256/38/388d33f7c6155d5d32d26f565715b22a6f3a7c64816882ee7197906b3817ace3/loop135.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop150.webp",
+      "role": "archive",
+      "bytes": 474430,
+      "sha256": "ffbb39d346332a87da9d0c824d95abd38cc9fde67517e551c6210aed8f5e127f",
+      "object": "sha256/ff/ffbb39d346332a87da9d0c824d95abd38cc9fde67517e551c6210aed8f5e127f/loop150.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop165.webp",
+      "role": "archive",
+      "bytes": 455300,
+      "sha256": "5699a1a049b80a5d305388229c855efff9b3d003a9f8d10c3449b23ecd8fe5ae",
+      "object": "sha256/56/5699a1a049b80a5d305388229c855efff9b3d003a9f8d10c3449b23ecd8fe5ae/loop165.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop180.webp",
+      "role": "archive",
+      "bytes": 557370,
+      "sha256": "6d950c6f01a241bcf323f9c04610af2e82fef9b9cebac7348289b833c1fff2b4",
+      "object": "sha256/6d/6d950c6f01a241bcf323f9c04610af2e82fef9b9cebac7348289b833c1fff2b4/loop180.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop195.webp",
+      "role": "archive",
+      "bytes": 494476,
+      "sha256": "6ffe098246e7faaf84ca4473665f2201253a3960c0cfec9d8b9f9a573af6ed68",
+      "object": "sha256/6f/6ffe098246e7faaf84ca4473665f2201253a3960c0cfec9d8b9f9a573af6ed68/loop195.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop210.webp",
+      "role": "archive",
+      "bytes": 474584,
+      "sha256": "ffdd7224cb067ae0999f0277bee4648ff749fd67711f93ed4c684aece2583f9c",
+      "object": "sha256/ff/ffdd7224cb067ae0999f0277bee4648ff749fd67711f93ed4c684aece2583f9c/loop210.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop225.webp",
+      "role": "archive",
+      "bytes": 453688,
+      "sha256": "3b7b1de1cfa941125deae3b822540f690b0cfc0289d93812a10c9ca110911521",
+      "object": "sha256/3b/3b7b1de1cfa941125deae3b822540f690b0cfc0289d93812a10c9ca110911521/loop225.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop240.webp",
+      "role": "archive",
+      "bytes": 483388,
+      "sha256": "0f06530c95d441d4493502f497e315de3b683bc9776010e38c2bfde420a66798",
+      "object": "sha256/0f/0f06530c95d441d4493502f497e315de3b683bc9776010e38c2bfde420a66798/loop240.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop255.webp",
+      "role": "archive",
+      "bytes": 424610,
+      "sha256": "8552d43e3453065c6d2a81b28cac1cc19ce2ed5dc36ce89dc680fcda2f1c30a3",
+      "object": "sha256/85/8552d43e3453065c6d2a81b28cac1cc19ce2ed5dc36ce89dc680fcda2f1c30a3/loop255.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop270.webp",
+      "role": "archive",
+      "bytes": 427440,
+      "sha256": "6f30f0dd056f2e6e1aee5840826eeb9bc0ae0c62089b4c04e730e2aeb72fb01c",
+      "object": "sha256/6f/6f30f0dd056f2e6e1aee5840826eeb9bc0ae0c62089b4c04e730e2aeb72fb01c/loop270.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop285.webp",
+      "role": "archive",
+      "bytes": 467762,
+      "sha256": "0faec6eea3cf8c06384c0691050cfb87f81becb56631b615178059c88b715873",
+      "object": "sha256/0f/0faec6eea3cf8c06384c0691050cfb87f81becb56631b615178059c88b715873/loop285.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop300.webp",
+      "role": "archive",
+      "bytes": 489456,
+      "sha256": "efdd5512213730f713dade7ee086c190ccdd3efdb5925d826740e2b6498813d0",
+      "object": "sha256/ef/efdd5512213730f713dade7ee086c190ccdd3efdb5925d826740e2b6498813d0/loop300.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop315.webp",
+      "role": "archive",
+      "bytes": 488814,
+      "sha256": "113cfff95cadf444e2f274082f330a1311815460f94c8e675f98260d566a7770",
+      "object": "sha256/11/113cfff95cadf444e2f274082f330a1311815460f94c8e675f98260d566a7770/loop315.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop330.webp",
+      "role": "archive",
+      "bytes": 493744,
+      "sha256": "df3d311cdd6ac53862b9745c10d6b5dc5546ee182b6e9f8f48f65661a0ad3fa9",
+      "object": "sha256/df/df3d311cdd6ac53862b9745c10d6b5dc5546ee182b6e9f8f48f65661a0ad3fa9/loop330.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/loop345.webp",
+      "role": "archive",
+      "bytes": 514828,
+      "sha256": "575493efb361c722020483f8d5fc972968ff3cb41eb9234d70b2828728f52831",
+      "object": "sha256/57/575493efb361c722020483f8d5fc972968ff3cb41eb9234d70b2828728f52831/loop345.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn000015.webp",
+      "role": "archive",
+      "bytes": 514206,
+      "sha256": "ddcfa0c524cda875d2f5cc7f4025485190b65d11d9427b01b239583764d9a5cc",
+      "object": "sha256/dd/ddcfa0c524cda875d2f5cc7f4025485190b65d11d9427b01b239583764d9a5cc/turn000015.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn000345.webp",
+      "role": "archive",
+      "bytes": 566290,
+      "sha256": "56ea83cf2bcfad60541224d19410041fbf39d57c4d05ef9d21fdb139873a9389",
+      "object": "sha256/56/56ea83cf2bcfad60541224d19410041fbf39d57c4d05ef9d21fdb139873a9389/turn000345.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn015000.webp",
+      "role": "archive",
+      "bytes": 480760,
+      "sha256": "0cea8d2c5ba608ccb511ae37d9bcee6a617b95588259769d4443e60015aae41a",
+      "object": "sha256/0c/0cea8d2c5ba608ccb511ae37d9bcee6a617b95588259769d4443e60015aae41a/turn015000.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn015030.webp",
+      "role": "archive",
+      "bytes": 427584,
+      "sha256": "4e343f01a380e3aafad56b1341f9145f190d3801279c32c178668e7274f69153",
+      "object": "sha256/4e/4e343f01a380e3aafad56b1341f9145f190d3801279c32c178668e7274f69153/turn015030.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn030015.webp",
+      "role": "archive",
+      "bytes": 435220,
+      "sha256": "9a3a4d72a4ec18c610f9d477abf6abadf596478378f73caeb14a5ba7b699257c",
+      "object": "sha256/9a/9a3a4d72a4ec18c610f9d477abf6abadf596478378f73caeb14a5ba7b699257c/turn030015.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn030045.webp",
+      "role": "archive",
+      "bytes": 433822,
+      "sha256": "9d7717abb2a718619fcd4cf75d19129d7356fcb165ce1243fd978a0275ef8771",
+      "object": "sha256/9d/9d7717abb2a718619fcd4cf75d19129d7356fcb165ce1243fd978a0275ef8771/turn030045.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn045030.webp",
+      "role": "archive",
+      "bytes": 435522,
+      "sha256": "3c3c864881e2aed4d13c1c733969e78b4f3c48860cb37da6a1b5d003b7d06ff4",
+      "object": "sha256/3c/3c3c864881e2aed4d13c1c733969e78b4f3c48860cb37da6a1b5d003b7d06ff4/turn045030.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn045060.webp",
+      "role": "archive",
+      "bytes": 431336,
+      "sha256": "51a8a7ab866a55562fe1160312614131b740b05b9af1dcbf04fcd23c92e096ea",
+      "object": "sha256/51/51a8a7ab866a55562fe1160312614131b740b05b9af1dcbf04fcd23c92e096ea/turn045060.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn060045.webp",
+      "role": "archive",
+      "bytes": 427792,
+      "sha256": "8d3ab025d53933f91ee691bd20bfd5ad4491cf8b0d21930db880bea2cee72e42",
+      "object": "sha256/8d/8d3ab025d53933f91ee691bd20bfd5ad4491cf8b0d21930db880bea2cee72e42/turn060045.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn060075.webp",
+      "role": "archive",
+      "bytes": 421722,
+      "sha256": "4feb45b057c772bee6a3e1657056cc055ab01ffd53e17c0fcbaa480a0ff8c1d1",
+      "object": "sha256/4f/4feb45b057c772bee6a3e1657056cc055ab01ffd53e17c0fcbaa480a0ff8c1d1/turn060075.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn075060.webp",
+      "role": "archive",
+      "bytes": 405158,
+      "sha256": "886946db39e1dcec9f70e4784ccc422f45cff91b9721839fbecd5387310a597b",
+      "object": "sha256/88/886946db39e1dcec9f70e4784ccc422f45cff91b9721839fbecd5387310a597b/turn075060.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn075090.webp",
+      "role": "archive",
+      "bytes": 378710,
+      "sha256": "6cb89dda0b5ff0a0e3c72e600dc10b0af8eabacf75895ed6886296cd7fd8708e",
+      "object": "sha256/6c/6cb89dda0b5ff0a0e3c72e600dc10b0af8eabacf75895ed6886296cd7fd8708e/turn075090.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn090075.webp",
+      "role": "archive",
+      "bytes": 377464,
+      "sha256": "e6604adc6bf76f7a1358d61ab705864a73050bf6d4cdfd6e62bf01abf79386c8",
+      "object": "sha256/e6/e6604adc6bf76f7a1358d61ab705864a73050bf6d4cdfd6e62bf01abf79386c8/turn090075.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn090105.webp",
+      "role": "archive",
+      "bytes": 365260,
+      "sha256": "ec1e688bba4cbb48f44ff916fa41c1cfad4dd3ea4d663ca0ff6dadced9d61cab",
+      "object": "sha256/ec/ec1e688bba4cbb48f44ff916fa41c1cfad4dd3ea4d663ca0ff6dadced9d61cab/turn090105.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn105090.webp",
+      "role": "archive",
+      "bytes": 365112,
+      "sha256": "f2b2fbb769d1fa07f5bda1dc6a3b339dd7bf7cc02b163ba0991a6eac15c4cfcb",
+      "object": "sha256/f2/f2b2fbb769d1fa07f5bda1dc6a3b339dd7bf7cc02b163ba0991a6eac15c4cfcb/turn105090.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn105120.webp",
+      "role": "archive",
+      "bytes": 386494,
+      "sha256": "911f0d68c106cb94ad92a9792b769e852c7786a2321e2b36af0753cd9112b5e0",
+      "object": "sha256/91/911f0d68c106cb94ad92a9792b769e852c7786a2321e2b36af0753cd9112b5e0/turn105120.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn120105.webp",
+      "role": "archive",
+      "bytes": 382342,
+      "sha256": "8866836d94e9f404857325ad93e1162772f1feb7dece0aaefab589be152a3cf5",
+      "object": "sha256/88/8866836d94e9f404857325ad93e1162772f1feb7dece0aaefab589be152a3cf5/turn120105.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn120135.webp",
+      "role": "archive",
+      "bytes": 381392,
+      "sha256": "afdb629a6c98eec79138d3021347cad08097a2a7afb697434f2e9d5350ee44db",
+      "object": "sha256/af/afdb629a6c98eec79138d3021347cad08097a2a7afb697434f2e9d5350ee44db/turn120135.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn135120.webp",
+      "role": "archive",
+      "bytes": 411030,
+      "sha256": "08ba43c22fbfb2eec5514810386163ce66e078c21aafd40dc86ba15955a1a1ac",
+      "object": "sha256/08/08ba43c22fbfb2eec5514810386163ce66e078c21aafd40dc86ba15955a1a1ac/turn135120.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn135150.webp",
+      "role": "archive",
+      "bytes": 427580,
+      "sha256": "01715babf00c5d1a3c1697bc749e474a9249fbfc96e33daef2cbabcc2654eba7",
+      "object": "sha256/01/01715babf00c5d1a3c1697bc749e474a9249fbfc96e33daef2cbabcc2654eba7/turn135150.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn150135.webp",
+      "role": "archive",
+      "bytes": 451708,
+      "sha256": "7a83c4fe38f7d508345765c5e52b61ada2b6c3cc6688eca132446ae6ff0fd5e9",
+      "object": "sha256/7a/7a83c4fe38f7d508345765c5e52b61ada2b6c3cc6688eca132446ae6ff0fd5e9/turn150135.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn150165.webp",
+      "role": "archive",
+      "bytes": 471250,
+      "sha256": "5dabc0a6934ca1b739993e656809cc632b0a8f57873db070ae418110b7cfca2e",
+      "object": "sha256/5d/5dabc0a6934ca1b739993e656809cc632b0a8f57873db070ae418110b7cfca2e/turn150165.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn165150.webp",
+      "role": "archive",
+      "bytes": 448224,
+      "sha256": "8f4a2304518594ade1726d56ad2725c4e2091515420a6ebdc2ce66ec3520b37a",
+      "object": "sha256/8f/8f4a2304518594ade1726d56ad2725c4e2091515420a6ebdc2ce66ec3520b37a/turn165150.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn165180.webp",
+      "role": "archive",
+      "bytes": 473432,
+      "sha256": "ca0a9cbd76bf1e63571fc4e0a5bbebe9c6248c3d4cb9d9b8666f566be75eadc0",
+      "object": "sha256/ca/ca0a9cbd76bf1e63571fc4e0a5bbebe9c6248c3d4cb9d9b8666f566be75eadc0/turn165180.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn180165.webp",
+      "role": "archive",
+      "bytes": 504760,
+      "sha256": "1482c9d031043a028d17f1a28752c71a32948320c4f427797096905682efa0d4",
+      "object": "sha256/14/1482c9d031043a028d17f1a28752c71a32948320c4f427797096905682efa0d4/turn180165.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn180195.webp",
+      "role": "archive",
+      "bytes": 540226,
+      "sha256": "782299c367126482ceb23cf2699bcec1504647cbd966c3618936850dd4b96a99",
+      "object": "sha256/78/782299c367126482ceb23cf2699bcec1504647cbd966c3618936850dd4b96a99/turn180195.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn195180.webp",
+      "role": "archive",
+      "bytes": 508156,
+      "sha256": "731c0786d8e587e664e236c392abfc6c8f3fd0c4b2e3c1ca3a94db68255a92e0",
+      "object": "sha256/73/731c0786d8e587e664e236c392abfc6c8f3fd0c4b2e3c1ca3a94db68255a92e0/turn195180.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn195210.webp",
+      "role": "archive",
+      "bytes": 490138,
+      "sha256": "09f09806b3c504e2397b86b6ece0b31f32630ab0382128cbe92b02ce862a7373",
+      "object": "sha256/09/09f09806b3c504e2397b86b6ece0b31f32630ab0382128cbe92b02ce862a7373/turn195210.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn210195.webp",
+      "role": "archive",
+      "bytes": 470384,
+      "sha256": "c449c1c572685f85fa050acda40d12d57cdea27c9b8c80afa2259678b634341b",
+      "object": "sha256/c4/c449c1c572685f85fa050acda40d12d57cdea27c9b8c80afa2259678b634341b/turn210195.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn210225.webp",
+      "role": "archive",
+      "bytes": 465996,
+      "sha256": "02d0fa9d7058e55482d0fcfb3e5b823bdb4b2f4b0e4f3f72022995a07f7f6e97",
+      "object": "sha256/02/02d0fa9d7058e55482d0fcfb3e5b823bdb4b2f4b0e4f3f72022995a07f7f6e97/turn210225.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn225210.webp",
+      "role": "archive",
+      "bytes": 448204,
+      "sha256": "1c6b39e4ba437d0ba04b9df9015af3886ed7f2f1f732c8ae73c8520e4d8d28ce",
+      "object": "sha256/1c/1c6b39e4ba437d0ba04b9df9015af3886ed7f2f1f732c8ae73c8520e4d8d28ce/turn225210.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn225240.webp",
+      "role": "archive",
+      "bytes": 457586,
+      "sha256": "99d6b3f15e590611ba7cee5bdde5f381d761888a0e63a2428381ff26d6ecfb47",
+      "object": "sha256/99/99d6b3f15e590611ba7cee5bdde5f381d761888a0e63a2428381ff26d6ecfb47/turn225240.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn240225.webp",
+      "role": "archive",
+      "bytes": 477384,
+      "sha256": "df50e98795ba444c7da847463a26db080fb3e449e371034f5cc58c6458383d84",
+      "object": "sha256/df/df50e98795ba444c7da847463a26db080fb3e449e371034f5cc58c6458383d84/turn240225.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn240255.webp",
+      "role": "archive",
+      "bytes": 463432,
+      "sha256": "8e64df25ce18325d10a90fc9406abbaca7cf9204ae39df151ad4ef4e9abaad4f",
+      "object": "sha256/8e/8e64df25ce18325d10a90fc9406abbaca7cf9204ae39df151ad4ef4e9abaad4f/turn240255.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn255240.webp",
+      "role": "archive",
+      "bytes": 431080,
+      "sha256": "ddbb33e58322a0ef640f80b897ecd0a5e27722a26faea020ee4b8f1b4faca26a",
+      "object": "sha256/dd/ddbb33e58322a0ef640f80b897ecd0a5e27722a26faea020ee4b8f1b4faca26a/turn255240.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn255270.webp",
+      "role": "archive",
+      "bytes": 421646,
+      "sha256": "41fafbef912555657ec0f6950467b94227b32458e0c2d33b37d5fb5173c3ebad",
+      "object": "sha256/41/41fafbef912555657ec0f6950467b94227b32458e0c2d33b37d5fb5173c3ebad/turn255270.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn270255.webp",
+      "role": "archive",
+      "bytes": 425670,
+      "sha256": "fa60dfedadaeacdfcae59fed133439660ce1ecd46a0ff24d71c7f74224a83cbc",
+      "object": "sha256/fa/fa60dfedadaeacdfcae59fed133439660ce1ecd46a0ff24d71c7f74224a83cbc/turn270255.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn270285.webp",
+      "role": "archive",
+      "bytes": 414280,
+      "sha256": "5d39eb760f5b7208075fd4493c72509364dabbedc7803a0daeaa35c2bc1f478c",
+      "object": "sha256/5d/5d39eb760f5b7208075fd4493c72509364dabbedc7803a0daeaa35c2bc1f478c/turn270285.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn285270.webp",
+      "role": "archive",
+      "bytes": 441814,
+      "sha256": "3aa8eb14b247dabeb4d68f482b628097901ac3498e3984d6414a320c81e25aae",
+      "object": "sha256/3a/3aa8eb14b247dabeb4d68f482b628097901ac3498e3984d6414a320c81e25aae/turn285270.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn285300.webp",
+      "role": "archive",
+      "bytes": 462802,
+      "sha256": "2ac6709607cd98123cc47f53c18485ff28f2498fbe30e31dde7006fb2075827b",
+      "object": "sha256/2a/2ac6709607cd98123cc47f53c18485ff28f2498fbe30e31dde7006fb2075827b/turn285300.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn300285.webp",
+      "role": "archive",
+      "bytes": 486242,
+      "sha256": "c6c4220a050ff5438eff60fb2d351a1e2936671ccc4ca6ae3747932e3035c4cb",
+      "object": "sha256/c6/c6c4220a050ff5438eff60fb2d351a1e2936671ccc4ca6ae3747932e3035c4cb/turn300285.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn300315.webp",
+      "role": "archive",
+      "bytes": 469532,
+      "sha256": "0fa8c03f8da63c1d2c04eab9b1a963a5c1226213b99582b0b5b6a9ab3533ba29",
+      "object": "sha256/0f/0fa8c03f8da63c1d2c04eab9b1a963a5c1226213b99582b0b5b6a9ab3533ba29/turn300315.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn315300.webp",
+      "role": "archive",
+      "bytes": 476790,
+      "sha256": "8d422d351de118fc7e3c98b2ebec13b4d0206477242cf38254b9c0d7447669c7",
+      "object": "sha256/8d/8d422d351de118fc7e3c98b2ebec13b4d0206477242cf38254b9c0d7447669c7/turn315300.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn315330.webp",
+      "role": "archive",
+      "bytes": 484096,
+      "sha256": "171a7ab6c175c1926530b057c82f752b0a423b510773a71587a8cf0e393acc44",
+      "object": "sha256/17/171a7ab6c175c1926530b057c82f752b0a423b510773a71587a8cf0e393acc44/turn315330.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn330315.webp",
+      "role": "archive",
+      "bytes": 490282,
+      "sha256": "bc77ca35ac9c2d60f5034623c5903804bc71169861ba508cccbf018f82671f11",
+      "object": "sha256/bc/bc77ca35ac9c2d60f5034623c5903804bc71169861ba508cccbf018f82671f11/turn330315.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn330345.webp",
+      "role": "archive",
+      "bytes": 479060,
+      "sha256": "dbc3ce888bc9fd086c0ae03586f237d2026e33075a18171243210b70715ecd49",
+      "object": "sha256/db/dbc3ce888bc9fd086c0ae03586f237d2026e33075a18171243210b70715ecd49/turn330345.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn345000.webp",
+      "role": "archive",
+      "bytes": 510574,
+      "sha256": "257332103e446336f2d6f79c60a5019e9fdc1b4a7c64dd692af52fc2ba3f5ce4",
+      "object": "sha256/25/257332103e446336f2d6f79c60a5019e9fdc1b4a7c64dd692af52fc2ba3f5ce4/turn345000.webp"
+    },
+    {
+      "path": "docs/storyboard/images/atlas/walk/sheets/turn345330.webp",
+      "role": "archive",
+      "bytes": 512876,
+      "sha256": "a5fc9c4ef94e49f86b34a18078bacaa6f8faadd574aaa8ea49d685282c4f7824",
+      "object": "sha256/a5/a5fc9c4ef94e49f86b34a18078bacaa6f8faadd574aaa8ea49d685282c4f7824/turn345330.webp"
+    }
+  ]
+}

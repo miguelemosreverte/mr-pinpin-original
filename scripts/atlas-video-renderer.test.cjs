@@ -11,7 +11,7 @@ const source = fs.readFileSync(rendererPath, 'utf8')
   .replace(/^export default .*;$/gm, '')
   .replace(/^export /gm, '');
 
-async function harness({ gpu = true, spriteCount = 1, dpr = 2 } = {}) {
+async function harness({ gpu = true, spriteCount = 1, dpr = 2, objectFailure = false } = {}) {
   const raf = new Map(), events = new Map(), textures = [], copies = [], uniforms = [], errors = [], passes = [];
   let serial = 0, now = 0, lose, submissions = 0, lensPasses = 0, failVideoCopy = false;
   const spriteDraws = [];
@@ -70,7 +70,9 @@ async function harness({ gpu = true, spriteCount = 1, dpr = 2 } = {}) {
     requestAnimationFrame(fn) { raf.set(++serial, fn); return serial; },
     cancelAnimationFrame: id => raf.delete(id),
     depthLookup: () => () => 0.5, groundDepthV2: y => y, lensDepthV2: d => d, groundDepth: () => 0.5,
-    tractorGroundDepth: (x,y,depth) => depth, TRACTOR_GROUND_WGSL: '',
+    loadObjectOcclusion: async () => { if (objectFailure) throw Error('Object texture unavailable'); return {}; },
+    uploadObjectOcclusion: () => ({ instances:device.createTexture({size:[1,1]}),
+      ground:device.createTexture({size:[1,1]}),bytes:8 }),
     createLens: async () => ({ setStrength() {}, destroy() {}, stats: {},
       frame: () => ({ focus: 0.5, attachments: [{ color: true }, { depth: true }], needsFrame: false }),
       encode() { lensPasses++; } })
@@ -105,6 +107,41 @@ function media(width = 1536, height = 1024) {
     active, destroyed: 0, setActive(value) { active.push(value); }, destroy() { this.destroyed++; },
     get stats() { return { active: active.at(-1), paused: !active.at(-1), currentTime: this.video.currentTime, decodedFrames: 7 }; } };
 }
+
+test('hybrid occlusion mode is reported; missing data is surfaced without losing WebGPU', async () => {
+  for (const objectFailure of [false, true]) {
+    const h = await harness({ objectFailure });
+    h.layer.ready = true; h.render();
+    assert.equal(h.renderer.backend, 'webgpu');
+    assert.equal(h.renderer.stats.occlusion.state, objectFailure ? 'failed' : 'ready');
+    assert.equal(h.renderer.stats.occlusion.available, !objectFailure);
+    assert.equal(h.renderer.stats.occlusion.model, 'hybrid-profile-canopy-v2');
+    assert.equal(h.uniforms.at(-1)[16], objectFailure ? 0 : 1, 'semantic character ordering flag');
+    assert.equal(h.uniforms.at(-1)[17], 1, 'banner retains its legacy ordering regardless of semantic data');
+    if (objectFailure) assert.match(h.errors[0].message, /Object texture unavailable/);
+    else assert.deepEqual(h.errors, []);
+    h.renderer.setOcclusion(false); h.render();
+    assert.equal(h.uniforms.at(-1)[16], 0);
+    assert.equal(h.uniforms.at(-1)[17], 0);
+    h.renderer.destroy();
+  }
+});
+
+test('each family member supplies its own legacy ground depth for canopy comparison',async()=>{
+  const h=await harness({spriteCount:3}),ys=[400,700,900];
+  h.layer.ready=true;
+  for(const [i,member] of h.layer.members.entries()) {
+    member.x=100+i*150;member.y=ys[i]-112;member.footY=ys[i];member.ready=true;
+  }
+  h.render();
+  const values=h.uniforms.at(-1),depths=[];
+  const legacy=await import('data:text/javascript;base64,'+Buffer.from(fs.readFileSync(path.join(__dirname,'../docs/storyboard/gpu/occlusion.js'),'utf8')).toString('base64'));
+  for(let i=0;i<3;i++) {
+    const start=28+i*12,footY=values[start+11],depth=values[start+6];
+    assert(Math.abs(depth-legacy.groundDepth(footY))<1e-6);depths.push(depth);
+  }
+  assert.equal(new Set(depths).size,3);h.renderer.destroy();
+});
 
 test('zoom reallocates sprite textures only for new raster tiers, releasing old textures with fixed world bounds', async () => {
   for (const spriteCount of [1, 3]) {

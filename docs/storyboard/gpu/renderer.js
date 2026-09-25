@@ -2,7 +2,7 @@ import { depthLookup } from './dof.js';
 import { createLens } from './lens.js';
 import { groundDepthV2, lensDepthV2 } from './surface.js';
 import { createOcclusionLayer, groundDepth, OCCLUSION_BIAS, OCCLUSION_FEATHER, SPRITE_SIZE, spriteRasterScale, resizeSpriteRaster } from './occlusion.js';
-import { tractorGroundDepth, TRACTOR_GROUND_WGSL } from './tractor-ground.js';
+import { loadObjectOcclusion, uploadObjectOcclusion } from './object-occlusion.js';
 
 export const WORLD_WIDTH = 1536;
 export const WORLD_HEIGHT = 1024;
@@ -26,7 +26,7 @@ async function shader(name) {
 }
 
 export async function createRenderer({ canvas, artSrc, depthSrc, overlayCanvas,
-  borderSrc = DEFAULT_BORDER_SRC, onError = () => {} }) {
+  borderSrc = DEFAULT_BORDER_SRC, objectOcclusionSources, onError = () => {} }) {
   if (!canvas || !artSrc) throw new TypeError('canvas and artSrc are required');
   const spriteCount = overlayCanvas?.dataset?.family === 'true' ? 3 : 1;
   const report = error => { try { onError(error); } catch (ignored) { console.error(ignored); } };
@@ -74,6 +74,8 @@ export async function createRenderer({ canvas, artSrc, depthSrc, overlayCanvas,
   const lookup = depth ? depthLookup(depth, WORLD_WIDTH, WORLD_HEIGHT) : () => 0.5;
   let device, context, pipeline, uniform, sampler, borderSampler, artTexture, depthTexture, overlayTexture, borderTexture, spriteTexture, groundTexture, lens;
   let bannerTexture, bannerDepthTexture, sceneryTexture, sceneryMaskTexture;
+  let instanceTexture, objectGroundTexture, objectOcclusionBytes = 0;
+  let objectOcclusionState = 'loading', objectOcclusionError = null;
   let bannerLayer = null, bannerRevision, bannerUploads = 0, bannerReady = false;
   let scenery = null, sceneryElapsed = 0, sceneryTime = null, animate = true, sceneryUploads = 0;
   let sceneryVideo = null, videoActive = null, videoDirty = false, videoRevision = 0;
@@ -150,9 +152,10 @@ export async function createRenderer({ canvas, artSrc, depthSrc, overlayCanvas,
     lens?.destroy();
     lens = null;
     for (const resource of [uniform, artTexture, depthTexture, overlayTexture, borderTexture, spriteTexture, groundTexture,
-      bannerTexture, bannerDepthTexture, sceneryTexture, sceneryMaskTexture]) resource?.destroy();
+      bannerTexture, bannerDepthTexture, sceneryTexture, sceneryMaskTexture, instanceTexture, objectGroundTexture]) resource?.destroy();
     uniform = artTexture = depthTexture = overlayTexture = borderTexture = spriteTexture = groundTexture = null;
     bannerTexture = bannerDepthTexture = sceneryTexture = sceneryMaskTexture = null;
+    instanceTexture = objectGroundTexture = null; objectOcclusionBytes = 0;
     scenery = null;
     context?.unconfigure();
     device?.destroy();
@@ -198,7 +201,7 @@ export async function createRenderer({ canvas, artSrc, depthSrc, overlayCanvas,
     const ownedDevice = device;
     device.pushErrorScope('validation');
     const [worldSource, lensSource] = await Promise.all([shader('world.wgsl'), shader('lens.wgsl')]);
-    const worldModule = device.createShaderModule({ code: worldSource + TRACTOR_GROUND_WGSL, label: 'Rectangular atlas world' });
+    const worldModule = device.createShaderModule({ code: worldSource, label: 'Rectangular atlas world' });
     const format = navigator.gpu.getPreferredCanvasFormat();
     pipeline = await device.createRenderPipelineAsync({ layout: 'auto',
       vertex: { module: worldModule, entryPoint: 'vs_main' },
@@ -217,6 +220,16 @@ export async function createRenderer({ canvas, artSrc, depthSrc, overlayCanvas,
     spriteAllocations++;
     spriteRevision = occlusion.revision;
     groundTexture = texture(occlusion.ground);
+    try {
+      const objectImages = await loadObjectOcclusion({ width:WORLD_WIDTH, height:WORLD_HEIGHT, ...objectOcclusionSources });
+      const uploaded = uploadObjectOcclusion(device, objectImages);
+      instanceTexture = uploaded.instances; objectGroundTexture = uploaded.ground;
+      objectOcclusionBytes = uploaded.bytes; objectOcclusionState = 'ready';
+    } catch (error) {
+      objectOcclusionState = 'failed'; objectOcclusionError = error.message;
+      instanceTexture = texture(blank); objectGroundTexture = texture(blank);
+      report(error);
+    }
     bannerTexture = texture(blank, true);
     bannerDepthTexture = texture(blank);
     sceneryTexture = device.createTexture({ size: [1, 1, 1], format: 'rgba8unorm',
@@ -284,12 +297,12 @@ export async function createRenderer({ canvas, artSrc, depthSrc, overlayCanvas,
     needsFrame = false;
   }
 
-  function draw(now) {
+  function draw(now, force = false) {
     raf = 0;
     if (destroyed || suspended || document.hidden) return;
     // A DOF RAF may precede the controller in this display frame. Keep its latest
     // camera/overlay state for the next RAF instead of submitting a second pass.
-    if (now === lastDrawTime) { wake(); return; }
+    if (!force && now === lastDrawTime) { wake(); return; }
     lastDrawTime = now;
     const { width, height } = dimensions();
     try {
@@ -350,7 +363,7 @@ export async function createRenderer({ canvas, artSrc, depthSrc, overlayCanvas,
         uniformData.set([camera.x, camera.y, camera.width, camera.height, WORLD_WIDTH, WORLD_HEIGHT,
           camera.scale, state.focus, bokehStrength, bannerReady ? 1 : 0, BORDER_TILE_SIZE, occlusion.ready ? 1 : 0,
           occlusion.x, occlusion.y, SPRITE_SIZE, SPRITE_SIZE,
-          tractorGroundDepth(occlusion.x + occlusion.anchor[0], occlusion.footY, groundDepth(occlusion.footY)),
+          objectOcclusionState === 'ready' && occlusionEnabled ? 1 : 0,
           depth && occlusionEnabled ? 1 : 0, OCCLUSION_BIAS, OCCLUSION_FEATHER,
           scenery ? 1 : 0, phase, scenery?.count || 1, scenery?.kind === 'video' ? 1 : 0.35,
           miniatureGroundDepth(occlusion.footY), Number.isFinite(bannerLayer?.lensDepth) ? bannerLayer.lensDepth : -1,
@@ -358,16 +371,16 @@ export async function createRenderer({ canvas, artSrc, depthSrc, overlayCanvas,
         orderedSprites().forEach(({ slot, member, orderDepth }, index) => {
           const x = member?.x ?? 0, y = member?.y ?? 0, footY = member?.footY ?? 0;
           uniformData.set([x, y, SPRITE_SIZE, SPRITE_SIZE,
-            tractorGroundDepth(x + (member?.anchor?.[0] ?? 64), footY, orderDepth),
+            orderDepth,
             miniatureGroundDepth(footY), orderDepth, member?.ready ? 1 : 0,
-            slot / spriteCount, 1 / spriteCount, 0, 0], 28 + index * 12);
+            slot / spriteCount, 1 / spriteCount, x + (member?.anchor?.[0] ?? 64), footY], 28 + index * 12);
         });
         if (!uniformWritten || uniformData.some((value, i) => value !== previousUniform[i])) {
           device.queue.writeBuffer(uniform, 0, uniformData);
           previousUniform.set(uniformData); uniformWritten = true;
         }
         const textures = [artTexture, bannerTexture, bannerDepthTexture, depthTexture, overlayTexture,
-          borderTexture, spriteTexture, groundTexture, sceneryTexture, sceneryMaskTexture];
+          borderTexture, spriteTexture, groundTexture, sceneryTexture, sceneryMaskTexture, instanceTexture, objectGroundTexture];
         if (!bindGroup || textures.some((value, i) => value !== boundTextures[i])) {
           const view = value => {
             if (!textureViews.has(value)) textureViews.set(value, value.createView());
@@ -382,7 +395,9 @@ export async function createRenderer({ canvas, artSrc, depthSrc, overlayCanvas,
             { binding: 9, resource: view(spriteTexture) },
             { binding: 10, resource: view(groundTexture) },
             { binding: 11, resource: sceneryTexture.createView({ dimension: '2d-array' }) },
-            { binding: 12, resource: view(sceneryMaskTexture) }
+            { binding: 12, resource: view(sceneryMaskTexture) },
+            { binding: 13, resource: view(instanceTexture) },
+            { binding: 14, resource: view(objectGroundTexture) }
           ] });
           boundTextures = textures;
         }
@@ -414,6 +429,33 @@ export async function createRenderer({ canvas, artSrc, depthSrc, overlayCanvas,
   document.addEventListener('visibilitychange', visibility);
 
   const api = {
+    captureReviewFrame({maxEdge = 1600, snapshot} = {}) {
+      if (destroyed || suspended || document.hidden) throw new Error('Atlas renderer is not visible');
+      if (snapshot) api.render(snapshot, {overlayDirty: false});
+      cancelAnimationFrame(raf); raf = 0;
+      const before = draws;
+      draw(performance.now(), true);
+      if (draws === before) throw new Error('Atlas frame was not painted');
+      const source = backend === 'canvas2d' ? fallbackCanvas : canvas;
+      const scale = Math.min(1, Math.max(1, Math.min(1600, maxEdge)) / Math.max(source.width, source.height));
+      const copy = document.createElement('canvas');
+      copy.width = Math.max(1, Math.round(source.width * scale));
+      copy.height = Math.max(1, Math.round(source.height * scale));
+      const ctx = copy.getContext('2d');
+      // Copy immediately after submit, before WebGPU's presented drawing buffer is cleared.
+      ctx.drawImage(source, 0, 0, copy.width, copy.height);
+      const capturedAtMs = Date.now();
+      const jpeg = new Promise((resolve, reject) => copy.toBlob(blob => {
+        if (!blob) { reject(new Error('Atlas JPEG encoding failed')); return; }
+        const reader = new FileReader();
+        reader.onload = () => resolve(reader.result);
+        reader.onerror = () => reject(new Error('Atlas JPEG read failed'));
+        reader.readAsDataURL(blob);
+      }, 'image/jpeg', .8));
+      return {jpeg,width: copy.width,height: copy.height,
+        sourceWidth: source.width,sourceHeight: source.height,backend,
+        capturedAt: new Date(capturedAtMs).toISOString(),capturedAtMs,camera: {...camera}};
+    },
     render(snapshot, options = {}) {
       if (destroyed) return false;
       if (snapshot) {
@@ -562,13 +604,14 @@ export async function createRenderer({ canvas, artSrc, depthSrc, overlayCanvas,
         uploadedRevision: videoUploadedRevision, mediaTime: videoUploadedTime,
         phase: scenery?.kind === 'frames' ? sceneryElapsed / scenery.duration : 0, animate,
         textureBytes: scenery?.textureBytes || 0 },
-      occlusion: { available: backend === 'webgpu' && Boolean(depth),
-        enabled: backend === 'webgpu' && Boolean(depth) && occlusionEnabled,
-        approximate: true, model: 'calibrated-ground-y', spriteReady: occlusion.ready,
+      occlusion: { available: backend === 'webgpu' && objectOcclusionState === 'ready',
+        enabled: backend === 'webgpu' && objectOcclusionState === 'ready' && occlusionEnabled,
+        state: objectOcclusionState, error: objectOcclusionError,
+        approximate: true, model: 'hybrid-profile-canopy-v2', spriteReady: occlusion.ready,
         spriteCount, memberReady: orderedSprites().filter(({ member }) => member?.ready).length,
         rasterScale: occlusion.rasterScale, rasterRevision: occlusion.rasterRevision,
         spriteWidth: occlusion.canvas.width, spriteHeight: occlusion.canvas.height, spriteAllocations,
-        extraTextureBytes: backend === 'webgpu' ? (occlusion.canvas.width * occlusion.canvas.height + WORLD_HEIGHT) * 4 : 0 } }; },
+        extraTextureBytes: backend === 'webgpu' ? (occlusion.canvas.width * occlusion.canvas.height + WORLD_HEIGHT) * 4 + objectOcclusionBytes : 0 } }; },
     destroy() {
       if (destroyed) return;
       destroyed = true;

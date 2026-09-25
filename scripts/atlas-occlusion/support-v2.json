@@ -1,0 +1,19 @@
+{
+  "version": "v2",
+  "status": "profile-overlay-approved-by-main-for-candidate-bake",
+  "method": "Piecewise-linear physical support contacts with constant endpoint extension; world pixel centers; no body-bottom or test-position knots.",
+  "instances": {
+    "tractor": {
+      "contact": "support-line",
+      "class": "vehicle",
+      "front": [[1320.0, 794.5], [1356.0, 787.5], [1403.5, 778.5], [1440.0, 774.5]],
+      "authoring": {
+        "source": "Original map wheel-ground contacts visually inspected against v1 registered mask overlay",
+        "numericEvidence": "V1 tire-bottom plateaus: columns1316..1323 Y794.5;1353..1358 Y787.5;1402..1404 Y778.5;1437..1442 Y774.5. Anchors use plateau median pixel centers.",
+        "uncertainty": "2D artistic contact estimates, not measured terrain. Main approval required. Last contact extends beneath rear overhang.",
+        "selection": "Wheel contacts, not saved user marks or desired visibility outcomes"
+      }
+    }
+  },
+  "unchanged": "All instance mask bytes and other LUT rows, including house, remain v1. Generic support-line mode can accept separately reviewed foundation contacts later."
+}

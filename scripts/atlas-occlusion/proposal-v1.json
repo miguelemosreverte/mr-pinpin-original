@@ -1,0 +1,30 @@
+{
+  "world": [1536, 1024],
+  "version": "v1",
+  "discoverComponents": true,
+  "paletteCount": 64,
+  "componentContact": "root-bottom",
+  "minComponentPixels": 256,
+  "fragmentReassignRadius": 4,
+  "rootQuantile": 0.999,
+  "maxPaletteError": 100,
+  "maxUnknownFraction": 0.02,
+  "instances": [
+    {"name": "house", "class": "foundation", "color": [255, 0, 0], "primaryBox": [110, 550, 445, 725], "contact": "silhouette-bottom", "fillEnclosedHoles": true, "maxHolePixels": 64},
+    {"name": "tractor", "class": "vehicle", "color": [0, 255, 255], "primaryBox": [1290, 680, 1465, 805], "contact": "silhouette-bottom"},
+    {"name": "elder", "class": "single-root-tree", "color": [255, 0, 255], "primaryBox": [1020, 0, 1450, 265], "contact": "root-bottom", "rootQuantile": 0.999}
+  ],
+  "registration": {
+    "probes": [
+      {"pixel": [300, 600], "instance": "house"},
+      {"pixel": [1420, 747], "instance": "tractor"},
+      {"pixel": [1200, 40], "instance": "elder"},
+      {"pixel": [600, 400], "instance": "open"}
+    ]
+  },
+  "diagnosticCrops": {
+    "house": [110, 540, 510, 760],
+    "tractor": [1260, 660, 1490, 825],
+    "elder": [1010, 0, 1470, 275]
+  }
+}

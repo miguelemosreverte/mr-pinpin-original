@@ -1,0 +1,446 @@
+{
+  "version": 4,
+  "status": "candidate; numerical checks passed; browser validation pending",
+  "acceptance_failures": [],
+  "width": 1536,
+  "height": 1024,
+  "units": "full-resolution world pixels",
+  "coordinates": "top-left origin; x right; y down; integer coordinates sample pixel centers",
+  "mask": {
+    "src": "shire-ground-mask-v4.png",
+    "sha256": "14a71abb14a20df50199a0fc0023642915dd588c37c91816e8783756ed37cf5b",
+    "white": "walkable",
+    "black": "blocked",
+    "processing": "byte-for-byte source copy",
+    "threshold": null,
+    "classification": "binary source unchanged"
+  },
+  "sdf": {
+    "src": "shire-ground-sdf-v4.png",
+    "sha256": "88d37064cf43be7a03923905d64ee51051e10b8f1252a64d7fcd960e6a94ba02",
+    "mode": "RGB PNG; implicit alpha 255; no ICC/gamma profile",
+    "encoding": "uint16 = round(distance * 16 + 32768); R=high byte; G=low byte; B=0",
+    "decode": "((R * 256 + G) - 32768) / 16",
+    "scale": 16,
+    "bias": 32768,
+    "positive": "walkable",
+    "negative": "blocked",
+    "rounding": "nearest, ties to even (numpy.rint)",
+    "quantization_px": 0.0625,
+    "maximum_rounding_error_px": 0.03125,
+    "representable_range_px": [
+      -2048,
+      2047.9375
+    ],
+    "saturation": "none; overflow rejected",
+    "actual_range_px": [
+      -122.08874336577564,
+      280.2436553156634
+    ]
+  },
+  "distance_method": {
+    "implementation": "scipy.ndimage.distance_transform_edt",
+    "scipy_version": "1.17.1",
+    "metric": "exact Euclidean distance to nearest opposite-class pixel center",
+    "boundary_offset_px": 0.5,
+    "formula": "walkable: EDT(walk)-0.5; blocked: 0.5-EDT(blocked)",
+    "corner_limit": "half-pixel offset convention; not exact distance to pixel-square polygon edges",
+    "world_edges": "no padding or invented exterior obstacles; runtime enforces world bounds"
+  },
+  "runtime_contract": {
+    "src": "images/atlas/shire-ground-sdf-v4.png",
+    "scale": 16,
+    "bias": 32768,
+    "clearance": 3,
+    "softRange": 18
+  },
+  "counts": {
+    "walkable": 1227932,
+    "blocked": 344932,
+    "total": 1572864
+  },
+  "source": {
+    "fence-roi-classified-v4.png": {
+      "sha256": "14a71abb14a20df50199a0fc0023642915dd588c37c91816e8783756ed37cf5b",
+      "bytes": 17063,
+      "original_path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/fence-v4/derived/fence-roi-classified-v4.png"
+    },
+    "map.png": {
+      "sha256": "e008f5ed5acd4dcb39510d2dbf539f7962d9aed1cb70ad96fb3d7fa2bec11da3",
+      "bytes": 3700857,
+      "original_path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/source/map.png"
+    },
+    "ground-mask-fence-v4.prompt.md": {
+      "sha256": "f8e6a8a4c4c564f4e257a0680a35bbb125cda2354a361f027e555bbd2c3edcbe",
+      "bytes": 1388,
+      "original_path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/ground-mask-fence-v4.prompt.md"
+    },
+    "generated-mask.png": {
+      "sha256": "dc83567490304e2e1411c7bc23d7b25054333c81f7c641511cd2ea48fb74bdb6",
+      "bytes": 1085028,
+      "original_path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/fence-v4/source/generated-mask.png"
+    },
+    "shire-ground-mask-v3.png": {
+      "sha256": "fb10587331c85a6f6a15a990e48ebd83d434bc78c8aea060076fad02d49dfe45",
+      "bytes": 17211,
+      "original_path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/reviewed/shire-ground-mask-v3.png"
+    },
+    "shire-ground-sdf-v3.png": {
+      "sha256": "51350112a41c3acf732d926b088826f6de95e26cb9f5b4a7dab32d087ca196fb",
+      "bytes": 604003,
+      "original_path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/reviewed/shire-ground-sdf-v3.png"
+    },
+    "occupancy-derivation-v4.json": {
+      "sha256": "926eb170be79b9e798d49b6eb3eee87a16c8f6c09e0c8ee081db5729df0a1715",
+      "bytes": 4149,
+      "original_path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/fence-v4/derived/occupancy-derivation-v4.json"
+    },
+    "build-fence-v4.py": {
+      "sha256": "d45445cd5cbc56ba2d922ae1df1eabeb3003771a4753fd16cbd7b0296ea9f8f4",
+      "bytes": 8634,
+      "original_path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/build-fence-v4.py"
+    }
+  },
+  "source_mask": "fence-roi-classified-v4.png",
+  "source_map": "map.png",
+  "source_prompt": "ground-mask-fence-v4.prompt.md",
+  "source_archive_directory": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/fence-v4/diagnostics/v4/source-inputs",
+  "exact_source_prompt": "Edit Image 1, the 1536x1024 black-and-white ground occupancy mask. Image 2 is the exact unchanged scene reference. White means ground a tiny hedgehog can walk on; black means a solid footprint at ground level, NOT an elevated object silhouette.\n\nChange ONLY the small fence immediately to the LEFT of the red tractor in the lower-right corner: bounding rectangle x1210..1300, y735..812 in this same 1536x1024 coordinate system. The elevated sloping horizontal rails currently form black diagonal stripes in the mask. Remove those elevated rail stripes so the ground underneath the rails is WHITE and continuous. Keep SMALL BLACK FOOTPRINTS at the actual bases of the upright posts, using their ground contact locations in the scene reference. The hedgehog must be able to cross the ground under these elevated rails, between post bases. The narrow under-rail ground near x1260,y772 must be white. This is a ground-plane semantic classification, not a silhouette.\n\nEverything outside this fence rectangle must be preserved exactly as in Image 1: same size, alignment, lake, river, rocks, bridge and its open deck, cottage, elder house, picnic, tractor, wheels, trailer, crane, and all other classifications. Do not alter the tractor silhouette. No labels, no text, no borders, no new objects, no grayscale shading. Return ONLY the edited black-white occupancy mask, with original framing.\n",
+  "source_processing_history": "Main supplied one imagegen EDIT, raw PNG preserved unchanged. Explicitly authorized numerical occupancy derivation: classify generated L/255 >= 0.5 only within half-open ROI [1210,735,1300,812]; copy v3 occupancy outside byte-for-byte. See occupancy-derivation-v4.json for source hashes, prompt and ROI evidence. The existing baker consumes this binary derived input without further classification.",
+  "baker_sha256": "5ebfd141ba3d76da27feeb967ef547642c8a76b1ada1279e09511a4ac929079c",
+  "diagnostics_directory": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/fence-v4/diagnostics/v4",
+  "known_source_limits": [
+    "Sparse numerical probes do not prove full semantic correctness or pixel registration; review overlays.",
+    "No source corrections are performed by this baker; image generation correction belongs to the main agent."
+  ],
+  "validation": {
+    "passages": {
+      "forest": {
+        "bounds_xyxy": [
+          700,
+          820,
+          1200,
+          1010
+        ],
+        "start_xy": [
+          730,
+          880
+        ],
+        "end_xy": [
+          1160,
+          930
+        ],
+        "start_distance_px": 94.53683496413377,
+        "end_distance_px": 119.45415791042844,
+        "connected_at_0px": true,
+        "connected_at_3px": true,
+        "maximum_path_clearance_px": 94.53683496413377,
+        "connectivity": "4-neighbor; reverse direction equivalent"
+      },
+      "tractor_front": {
+        "bounds_xyxy": [
+          1200,
+          796,
+          1510,
+          875
+        ],
+        "start_xy": [
+          1240,
+          835
+        ],
+        "end_xy": [
+          1480,
+          815
+        ],
+        "start_distance_px": 30.804951684997057,
+        "end_distance_px": 56.35068161420758,
+        "connected_at_0px": true,
+        "connected_at_3px": true,
+        "maximum_path_clearance_px": 30.804951684997057,
+        "connectivity": "4-neighbor; reverse direction equivalent"
+      },
+      "tractor_behind": {
+        "bounds_xyxy": [
+          1200,
+          650,
+          1510,
+          741
+        ],
+        "start_xy": [
+          1240,
+          690
+        ],
+        "end_xy": [
+          1480,
+          700
+        ],
+        "start_distance_px": 64.55382386916237,
+        "end_distance_px": 48.540799340956916,
+        "connected_at_0px": true,
+        "connected_at_3px": true,
+        "maximum_path_clearance_px": 34.5,
+        "connectivity": "4-neighbor; reverse direction equivalent"
+      },
+      "bridge": {
+        "bounds_xyxy": [
+          825,
+          535,
+          1110,
+          685
+        ],
+        "start_xy": [
+          845,
+          630
+        ],
+        "end_xy": [
+          1080,
+          570
+        ],
+        "start_distance_px": 32.62099032335839,
+        "end_distance_px": 44.098206241955516,
+        "connected_at_0px": true,
+        "connected_at_3px": true,
+        "maximum_path_clearance_px": 5.5,
+        "connectivity": "4-neighbor; reverse direction equivalent"
+      }
+    },
+    "probes": {
+      "lake": {
+        "xy": [
+          650,
+          370
+        ],
+        "distance_px": -98.95853407325085
+      },
+      "stream": {
+        "xy": [
+          1050,
+          730
+        ],
+        "distance_px": -14.5
+      },
+      "house": {
+        "xy": [
+          300,
+          675
+        ],
+        "distance_px": -17.527756377319946
+      },
+      "lake_visible_under_canopy": {
+        "xy": [
+          445,
+          320
+        ],
+        "distance_px": -23.686773244895647
+      },
+      "lake_visible_under_canopy_second": {
+        "xy": [
+          460,
+          300
+        ],
+        "distance_px": -46.62748667179272
+      },
+      "elder_trunk": {
+        "xy": [
+          1220,
+          120
+        ],
+        "distance_px": -36.94329045369811
+      },
+      "tractor": {
+        "xy": [
+          1340,
+          767
+        ],
+        "distance_px": -8.44427190999916
+      },
+      "trailer": {
+        "xy": [
+          1415,
+          750
+        ],
+        "distance_px": -3.5
+      },
+      "forest_floor": {
+        "xy": [
+          980,
+          900
+        ],
+        "distance_px": 118.36967653695369
+      },
+      "tractor_front": {
+        "xy": [
+          1370,
+          815
+        ],
+        "distance_px": 29.114185789921695
+      },
+      "tractor_behind": {
+        "xy": [
+          1450,
+          705
+        ],
+        "distance_px": 25.919689627245813
+      },
+      "bridge_deck": {
+        "xy": [
+          965,
+          605
+        ],
+        "distance_px": 5.824555320336759
+      }
+    }
+  },
+  "occupancy_derivation": {
+    "version": 4,
+    "kind": "versioned numerical occupancy derivation",
+    "roi_xyxy": [
+      1210,
+      735,
+      1300,
+      812
+    ],
+    "roi_convention": "half-open: 1210 <= x < 1300; 735 <= y < 812",
+    "classification": "Pillow convert L; L/255 >= 0.5 (L>=128) is walkable",
+    "composition": "copy v3 binary occupancy; replace only ROI with classified raw generation",
+    "geometry_processing": "no resize, blur, morphology, manual carving, or source-image alteration",
+    "raw": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/fence-v4/source/generated-mask.png",
+      "bytes": 1085028,
+      "sha256": "dc83567490304e2e1411c7bc23d7b25054333c81f7c641511cd2ea48fb74bdb6"
+    },
+    "previous_mask": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/reviewed/shire-ground-mask-v3.png",
+      "bytes": 17211,
+      "sha256": "fb10587331c85a6f6a15a990e48ebd83d434bc78c8aea060076fad02d49dfe45"
+    },
+    "previous_sdf": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/reviewed/shire-ground-sdf-v3.png",
+      "bytes": 604003,
+      "sha256": "51350112a41c3acf732d926b088826f6de95e26cb9f5b4a7dab32d087ca196fb"
+    },
+    "registered_map": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/source/map.png",
+      "bytes": 3700857,
+      "sha256": "e008f5ed5acd4dcb39510d2dbf539f7962d9aed1cb70ad96fb3d7fa2bec11da3"
+    },
+    "exact_prompt": "Edit Image 1, the 1536x1024 black-and-white ground occupancy mask. Image 2 is the exact unchanged scene reference. White means ground a tiny hedgehog can walk on; black means a solid footprint at ground level, NOT an elevated object silhouette.\n\nChange ONLY the small fence immediately to the LEFT of the red tractor in the lower-right corner: bounding rectangle x1210..1300, y735..812 in this same 1536x1024 coordinate system. The elevated sloping horizontal rails currently form black diagonal stripes in the mask. Remove those elevated rail stripes so the ground underneath the rails is WHITE and continuous. Keep SMALL BLACK FOOTPRINTS at the actual bases of the upright posts, using their ground contact locations in the scene reference. The hedgehog must be able to cross the ground under these elevated rails, between post bases. The narrow under-rail ground near x1260,y772 must be white. This is a ground-plane semantic classification, not a silhouette.\n\nEverything outside this fence rectangle must be preserved exactly as in Image 1: same size, alignment, lake, river, rocks, bridge and its open deck, cottage, elder house, picnic, tractor, wheels, trailer, crane, and all other classifications. Do not alter the tractor silhouette. No labels, no text, no borders, no new objects, no grayscale shading. Return ONLY the edited black-white occupancy mask, with original framing.\n",
+    "prompt": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/ground-mask-fence-v4.prompt.md",
+      "bytes": 1388,
+      "sha256": "f8e6a8a4c4c564f4e257a0680a35bbb125cda2354a361f027e555bbd2c3edcbe"
+    },
+    "recipe": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/build-fence-v4.py",
+      "bytes": 8634,
+      "sha256": "d45445cd5cbc56ba2d922ae1df1eabeb3003771a4753fd16cbd7b0296ea9f8f4"
+    },
+    "baker": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/build-ground-sdf.py",
+      "bytes": 14867,
+      "sha256": "5ebfd141ba3d76da27feeb967ef547642c8a76b1ada1279e09511a4ac929079c"
+    },
+    "derived_mask": {
+      "path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/fence-v4/derived/fence-roi-classified-v4.png",
+      "bytes": 17063,
+      "sha256": "14a71abb14a20df50199a0fc0023642915dd588c37c91816e8783756ed37cf5b"
+    },
+    "outside_mask_changed_pixels": 0,
+    "outside_occupancy_bytes_sha256": "7d0b6510b0b681a39b370eb7cdb65f3047100485b84ed3fe9ce14a978772d7b5",
+    "ignored_raw_classification_changes_outside_roi": 5154,
+    "changed_pixels_inside_roi": 560,
+    "opened_pixels": 556,
+    "closed_pixels": 4,
+    "preserved_post_base_probes_xy": [
+      [
+        1224,
+        807
+      ],
+      [
+        1241,
+        790
+      ],
+      [
+        1286,
+        766
+      ]
+    ]
+  },
+  "fence_v4_validation": {
+    "checks": {
+      "derived_mask_matches_output": {
+        "passed": true,
+        "details": null
+      },
+      "outside_roi_occupancy_byte_identical": {
+        "passed": true,
+        "details": null
+      },
+      "roi_exactly_generated_classification": {
+        "passed": true,
+        "details": null
+      },
+      "target_1260_772_at_3px": {
+        "passed": true,
+        "details": 17.5
+      },
+      "post_bases_blocked": {
+        "passed": true,
+        "details": [
+          {
+            "xy": [
+              1224,
+              807
+            ],
+            "distance_px": -0.5
+          },
+          {
+            "xy": [
+              1241,
+              790
+            ],
+            "distance_px": -0.5
+          },
+          {
+            "xy": [
+              1286,
+              766
+            ],
+            "distance_px": -0.5
+          }
+        ]
+      },
+      "under_rail_connected_at_3px": {
+        "passed": true,
+        "details": null
+      },
+      "bridge_sdf_unchanged": {
+        "passed": true,
+        "details": null
+      },
+      "water_probes_unchanged_and_blocked": {
+        "passed": true,
+        "details": null
+      },
+      "raw_v3_and_source_unchanged": {
+        "passed": true,
+        "details": null
+      }
+    },
+    "failures": [],
+    "sdf_changed_pixels_outside_roi": 23753,
+    "sdf_note": "EDT is recomputed globally; distance changes outside the ROI are legitimate, occupancy changes are not",
+    "artifacts": {
+      "mask": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/fence-v4/output/shire-ground-mask-v4.png",
+        "bytes": 17063,
+        "sha256": "14a71abb14a20df50199a0fc0023642915dd588c37c91816e8783756ed37cf5b"
+      },
+      "sdf": {
+        "path": "/Volumes/TB4/mac-mini-storage/shared/atlas-ground-sdf-20260924/fence-v4/output/shire-ground-sdf-v4.png",
+        "bytes": 603523,
+        "sha256": "88d37064cf43be7a03923905d64ee51051e10b8f1252a64d7fcd960e6a94ba02"
+      }
+    }
+  }
+}

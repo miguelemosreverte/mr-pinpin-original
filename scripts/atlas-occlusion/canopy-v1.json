@@ -1,0 +1,13 @@
+{
+  "protectedIds": [1, 2, 79, 81],
+  "protectedIdMeaning": {"1": "verified house", "2": "verified whole tractor/trailer", "79": "reviewed house low bush", "81": "reviewed house low bush"},
+  "limitations": ["Approximate AI annotation, not exact silhouette or measured geometry", "Some bare trunks included; legacy per-pixel depth still controls occlusion inside the gate", "First forest mark has 82.98 percent reconstructed body gate coverage; remaining pixels require browser review", "Only reviewed house low bushes are explicitly protected; other low vegetation exclusions rely on the proposal"],
+  "otherExclusions": "Low shrubs/flowerbeds/rocks/fences/root bases must be excluded by reviewed annotation; root-bottom is not a canopy classifier.",
+  "maxColoredFraction": 0.01,
+  "diagnosticCrops": {
+    "house": [100, 540, 530, 770],
+    "vehicle": [1260, 650, 1490, 825],
+    "forest1": [900, 735, 1120, 970],
+    "forest23": [1160, 605, 1370, 805]
+  }
+}

@@ -6,7 +6,8 @@ function strengthValue(value) {
   return typeof value === 'number' && Number.isFinite(value) ? Math.max(0, Math.min(4, value)) : 1;
 }
 
-export function createAtlasDebug({ onStrengthChange = () => {}, getStrength, onLensChange, getLens } = {}) {
+export function createAtlasDebug({ onStrengthChange = () => {}, getStrength, onLensChange, getLens,
+  spriteTrial=false,getSpriteSet,onSpriteSetChange,getWalkMode,onWalkModeChange } = {}) {
   const desktop = window.matchMedia(desktopQuery);
   const panel = document.createElement('section');
   panel.className = 'atlas-debug';
@@ -33,6 +34,35 @@ export function createAtlasDebug({ onStrengthChange = () => {}, getStrength, onL
   output.htmlFor = range.id;
   row.append(label, output);
   panel.append(row, range, status);
+  let spriteSelect=null,trigger=null;
+  if(spriteTrial) {
+    panel.classList.add('atlas-debug-trial');
+    const spriteLabel=document.createElement('label');
+    spriteSelect=document.createElement('select');spriteSelect.id=`atlas-debug-sprites-${nextId}`;
+    spriteLabel.htmlFor=spriteSelect.id;spriteLabel.textContent='Sprites';
+    for(const [value,text] of [['original','Original'],['video','Video trial']]) {
+      const option=document.createElement('option');option.value=value;option.textContent=text;spriteSelect.append(option);
+    }
+    spriteSelect.addEventListener('change',()=>{onSpriteSetChange?.(spriteSelect.value);spriteSelect.value=getSpriteSet?.() || 'original';});
+    panel.prepend(spriteLabel,spriteSelect);
+    // Sandbox only: switch between soft steering, the walkable-area planner and freeform walking.
+    if(getWalkMode?.()) {
+      const walkLabel=document.createElement('label'),walkSelect=document.createElement('select');
+      walkSelect.id=`atlas-debug-walk-${nextId}`;walkLabel.htmlFor=walkSelect.id;walkLabel.textContent='Walk';
+      for(const [value,text] of [['steer','Steer (soft)'],['field','Walkable area'],['free','Freeform']]) {
+        const option=document.createElement('option');option.value=value;option.textContent=text;walkSelect.append(option);
+      }
+      walkSelect.value=getWalkMode();
+      walkSelect.addEventListener('change',()=>{onWalkModeChange?.(walkSelect.value);walkSelect.value=getWalkMode() || 'steer';});
+      spriteSelect.after(walkLabel,walkSelect);
+    }
+    trigger=document.createElement('button');trigger.type='button';trigger.className='atlas-debug-trigger';
+    trigger.title='Atlas settings';trigger.setAttribute('aria-label','Atlas settings');trigger.setAttribute('aria-expanded','false');
+    const icon=document.createElement('i');icon.dataset.lucide='sliders-horizontal';icon.setAttribute('aria-hidden','true');trigger.append(icon);
+    trigger.addEventListener('click',()=>panel.hidden ? open() : close({restore:true}));
+    document.body.append(trigger);
+    window.lucide?.createIcons();
+  }
   const lensControls=[];
   if (onLensChange) for (const spec of [
     {key:'focusOffset',name:'Focus offset',min:-0.25,max:0.25,step:0.005,value:0},
@@ -105,6 +135,7 @@ export function createAtlasDebug({ onStrengthChange = () => {}, getStrength, onL
     if (cancel) resetLens(true);
     else for (const control of lensControls) control.commit();
     panel.hidden = true;
+    trigger?.setAttribute('aria-expanded','false');
     if (restore && previousFocus?.isConnected) previousFocus.focus({ preventScroll: true });
     previousFocus = null;
   }
@@ -115,7 +146,9 @@ export function createAtlasDebug({ onStrengthChange = () => {}, getStrength, onL
     resetLens();
     previousFocus = document.activeElement;
     panel.hidden = false;
-    (range.disabled ? panel : range).focus({ preventScroll: true });
+    if(spriteSelect)spriteSelect.value=getSpriteSet?.() || 'original';
+    trigger?.setAttribute('aria-expanded','true');
+    (spriteSelect || (range.disabled ? panel : range)).focus({ preventScroll: true });
   }
 
   function popupOpen() {
@@ -123,13 +156,13 @@ export function createAtlasDebug({ onStrengthChange = () => {}, getStrength, onL
   }
 
   function keydown(event) {
-    if (destroyed || !desktop.matches || event.defaultPrevented || event.isComposing || popupOpen()) return;
+    if (destroyed || (!desktop.matches && !spriteTrial) || event.defaultPrevented || event.isComposing || popupOpen()) return;
     if (event.key === 'Escape' && !panel.hidden) {
       event.preventDefault();
       close({ restore: true });
       return;
     }
-    if (event.key !== 'Tab' || event.shiftKey || event.altKey || event.ctrlKey || event.metaKey || event.repeat) return;
+    if (!desktop.matches || event.key !== 'Tab' || event.shiftKey || event.altKey || event.ctrlKey || event.metaKey || event.repeat) return;
     const target = event.composedPath()[0];
     if (!(target instanceof Element) || panel.contains(target) || target.isContentEditable || target.closest('[inert], dialog, #atlas-languages')) return;
     // The map is focusable for camera keys, but still owns the debug shortcut.
@@ -157,7 +190,7 @@ export function createAtlasDebug({ onStrengthChange = () => {}, getStrength, onL
   function mediaChange() {
     range.disabled = !available || !desktop.matches;
     for (const control of lensControls) control.input.disabled=range.disabled;
-    if (!desktop.matches) close({ cancel: true, restore: panel.contains(document.activeElement) });
+    if (!desktop.matches && !spriteTrial) close({ cancel: true, restore: panel.contains(document.activeElement) });
   }
 
   document.addEventListener('keydown', keydown);
@@ -189,6 +222,7 @@ export function createAtlasDebug({ onStrengthChange = () => {}, getStrength, onL
       range.removeEventListener('input', input);
       range.removeEventListener('change', change);
       panel.remove();
+      trigger?.remove();
     }
   };
 }

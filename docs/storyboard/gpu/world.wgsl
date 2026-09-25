@@ -1,8 +1,8 @@
 // Composite all scene objects before the global lens pass.
 struct SpriteMember {
   bounds: vec4f,
-  depths: vec4f, // corrected occlusion, lens, ordering, ready
-  slice: vec4f, // atlas U offset, U scale, reserved, reserved
+  depths: vec4f, // reserved ordering, lens, ordering, ready
+  slice: vec4f, // atlas U offset, U scale, world foot X, world foot Y
 }
 struct Frame {
   camera: vec2f,
@@ -15,7 +15,7 @@ struct Frame {
   border_tile_size: f32,
   sprite_ready: f32,
   sprite_bounds: vec4f,
-  occlusion: vec4f, // foot depth, enabled, bias, feather
+  occlusion: vec4f, // instance occlusion ready/enabled, legacy overlay enabled, bias, feather
   animation: vec4f, // ready, cyclic phase, frame count, blend (video: one layer, full strength)
   surface: vec4f, // character lens depth, banner lens depth, sprite count, legacy foot depth
   members: array<SpriteMember, 3>, // sorted back to front; slices retain original slots
@@ -33,6 +33,8 @@ struct Frame {
 @group(0) @binding(10) var ground: texture_2d<f32>;
 @group(0) @binding(11) var scenery: texture_2d_array<f32>;
 @group(0) @binding(12) var scenery_mask: texture_2d<f32>;
+@group(0) @binding(13) var object_instances: texture_2d<f32>;
+@group(0) @binding(14) var object_ground: texture_2d<f32>;
 struct VertexOut {
   @builtin(position) position: vec4f,
   @location(0) world: vec2f,
@@ -63,6 +65,22 @@ fn visibility(scene: f32, object: f32) -> f32 {
 }
 fn ground_plane(y: f32) -> f32 {
   return 0.85 - 0.65 * clamp(y / frame.world.y, 0.0, 1.0);
+}
+fn object_visibility(instance: vec4f, foot: vec2f, scene: f32, foot_depth: f32) -> f32 {
+  // Authored canopy pixels may have ID0; mode selection precedes profile lookup.
+  if (i32(round(instance.b * 255.0)) == 1) {
+    return 1.0 - instance.g * (1.0 - visibility(scene, foot_depth));
+  }
+  let id = i32(round(instance.r * 255.0));
+  if (id == 0 || instance.g == 0.0) { return 1.0; }
+  let size = vec2i(textureDimensions(object_ground));
+  let x = clamp(i32(floor(foot.x)), 0, size.x - 1);
+  if (id >= size.y) { return 1.0; }
+  let profile = textureLoad(object_ground, vec2i(x, id), 0);
+  if (profile.b < 0.5) { return 1.0; }
+  let base_y = (round(profile.r * 255.0) * 256.0 + round(profile.g * 255.0)) / 16.0;
+  // Only silhouette coverage antialiases the edge. Feet choose an opaque ordering.
+  return select(1.0 - instance.g, 1.0, foot.y >= base_y);
 }
 struct SceneOut {
   @location(0) color: vec4f,
@@ -99,23 +117,37 @@ struct SceneOut {
   let label_depth = textureSample(banner_depth, linear_sampler, in.uv);
   label *= select(0.0, 1.0, label_depth.a > 0.0);
   let base_trail_depth = textureSample(ground, linear_sampler, vec2f(0.5, uv.y)).r;
-  let road_weight = tractor_ground_weight(in.world);
-  let trail_depth = tractor_ground_depth(base_trail_depth, road_weight);
-  if (frame.occlusion.y > 0.0 && (top.a > 0.0 || character_alpha > 0.0 || label.a > 0.0)) {
-    // Smooth artistic shading in a small neighborhood before the deliberately
-    // biased comparison to suppress holes from isolated dark or bright flecks.
+  let semantic_overlap = frame.occlusion.x > 0.0 && (character_alpha > 0.0 || top.a > 0.0);
+  var instance = vec4f(0.0);
+  if (semantic_overlap) {
+    let size = vec2i(textureDimensions(object_instances));
+    let point = clamp(vec2i(floor(in.world)), vec2i(0), size - vec2i(1));
+    instance = textureLoad(object_instances, point, 0);
+  }
+  let legacy_overlay = frame.occlusion.y > 0.0 &&
+    (label.a > 0.0 || (frame.occlusion.x == 0.0 && top.a > 0.0));
+  var scene = 0.0;
+  if (legacy_overlay || (semantic_overlap && i32(round(instance.b * 255.0)) == 1)) {
+    // Share the legacy neighborhood across canopy members and banner/ground overlays.
     let step = vec2f(2.0) / vec2f(textureDimensions(depth));
-    var scene = 0.0;
     for (var y = -1; y <= 1; y++) {
       for (var x = -1; x <= 1; x++) {
         scene += textureSampleLevel(depth, linear_sampler, uv + vec2f(f32(x), f32(y)) * step, 0.0).r;
       }
     }
     scene /= 9.0;
-    top *= visibility(scene, trail_depth);
+  }
+  if (semantic_overlap) {
+    if (top.a > 0.0) { top *= object_visibility(instance, in.world, scene, base_trail_depth); }
     for (var i = 0u; i < member_count; i++) {
-      characters[i] *= visibility(scene, frame.members[i].depths.x);
+      if (characters[i].a > 0.0) {
+        characters[i] *= object_visibility(instance, frame.members[i].slice.zw, scene, frame.members[i].depths.z);
+      }
     }
+  }
+  if (legacy_overlay) {
+    // Preserve banner ordering; legacy trails are only used without semantic profiles.
+    if (frame.occlusion.x == 0.0) { top *= visibility(scene, base_trail_depth); }
     label *= visibility(scene, label_depth.r);
   }
   let ground_composed = top + base * (1.0 - top.a);

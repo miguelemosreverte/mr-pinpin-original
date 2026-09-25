@@ -58,6 +58,17 @@ test('generation metadata sidecars stay local while runtime focus data ships', t
   assert(fs.existsSync(path.join(f.root,'docs/storyboard/images/covers/chapter-01/production.html')));
 });
 
+test('production walk manifest ships and validates sheet references without admitting other sidecars',t=>{
+  const f=fixture(t),base='docs/storyboard/images/atlas/walk/';
+  f.write(base+'manifest.json',JSON.stringify({clips:{loop000:{sheet:'./sheets/loop000.webp'}}}));
+  f.write(base+'authoring.json','{"source":"/private/draft.png"}');
+  assert.throws(()=>f.build({check:true}),/dangling local reference.*loop000/);
+  f.asset(base+'sheets/loop000.webp');
+  const {dest}=f.build();
+  assert(fs.existsSync(path.join(dest,base.slice(5)+'manifest.json')));
+  assert(!fs.existsSync(path.join(dest,base.slice(5)+'authoring.json')));
+});
+
 test('checks every managed production file including unreferenced files', t => {
   const f = fixture(t); f.asset('docs/images/other.png');
   f.write('docs/images/other.png','wrong');

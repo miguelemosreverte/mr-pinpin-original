@@ -536,7 +536,7 @@ test('both atlases enter the main menu only after walking into the house, preser
     const h=await harness(straight,{onChange(event){if(event?.type==='arrival')context.arrive(event.point);}});
     context=h.context;
     const navigations=[],stored=new Map();
-    Object.assign(context,{geometry:straight,lang,state:{lang:'en'},returnStorageKey:'pinpin.atlas.return.v1',
+    Object.assign(context,{geometry:straight,width:straight.width,height:straight.height,motion:h.motion,lang,state:{lang:'en'},returnStorageKey:'pinpin.atlas.return.v1',
       URL,location:{href:'https://mr-pinpin.github.io/storyboard/'+file.replace('.js','.html')+'?lang='+lang,
         assign(url){navigations.push(url);}},sessionStorage:{setItem(key,value){stored.set(key,value);}},
       saveCamera(){},save(){},chooseBook(){}});

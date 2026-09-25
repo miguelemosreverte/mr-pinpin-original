@@ -15,10 +15,21 @@ import {createRenderer} from './gpu/renderer.js';
 import {createAtlasDebug} from './atlas-debug.js';
 import {loadScenery} from './atlas-scenery.js';
 import {loadSurfaceSampler} from './gpu/surface.js';
+import {resolveAtlasRuntime} from './atlas-production.js';
 
 const $=id => document.getElementById(id);
 const storageKey='pinpin.atlas.v1', languages=['en','es','ru'];
 const cameraStorageKey='pinpin.atlas.camera.v1';
+const spriteTrial=new URLSearchParams(location.search).get('spriteTrial')==='1';
+const runtime=resolveAtlasRuntime(location.search,location.hostname);
+if(runtime.videoEnabled)await import('./atlas-video-sprite.js');
+if(runtime.groundEnabled)await import('./atlas-field.js');
+// Sprite trial: walk-speed turns from the movement lab (stepping gate + catch-up); ?turnWalk=0 restores pivot-in-place.
+if(runtime.turnWalk) {
+  const gaitName=runtime.gaitModule;
+  const [{integrateWalkTurn,turnRate},{turnGait}]=await Promise.all([import('./sprite-turn-profile.mjs'),import('./'+gaitName)]);
+  window.AtlasTurnWalk={integrateWalkTurn,gait:turnGait,turnRate};
+}
 const familyPreview=new URLSearchParams(location.search).get('familyPreview')==='1' && new URLSearchParams(location.search).get('family')==='1';
 const returnStorageKey='pinpin.atlas.return.v1', places=['home','lake','elder','bridge'];
 const words={
@@ -35,7 +46,7 @@ motionCanvas.id='map-motion'; motionCanvas.width=width; motionCanvas.height=heig
 const world=point => [point[0]*width,point[1]*height];
 const normalized=point => [point[0]/width,point[1]/height];
 let state={version:1,lang:'en',opened:[]}, lang='en';
-let camera, renderer, motion, detector, frame=0, settleTimer=0;
+let camera, renderer, motion, detector, reviewRecorder=null, frame=0, settleTimer=0;
 let moving=false, focusAllowed=false, targetPending=false, selection=null, arrival=null;
 let focused=null, anchor=null, keyboardRequest=null, dof=true, renderCount=0;
 let bookRequest=0, previewPending=false, bookPress=null;
@@ -58,6 +69,9 @@ try {
   }
 } catch { /* Debug adjustments still work when storage is blocked. */ }
 const debugPanel=createAtlasDebug({getStrength:() => bokehStrength,getLens:() => lensOptions,
+spriteTrial,getSpriteSet:()=>motion?.spriteSet || 'original',onSpriteSetChange:value=>motion?.setSpriteSet(value),
+getWalkMode:()=>new URLSearchParams(location.search).get('sandbox')==='1' ? motion?.walkMode || new URLSearchParams(location.search).get('walk') || 'steer' : null,
+onWalkModeChange:value=>motion?.setWalkMode(value),
 onLensChange(value) { lensOptions={...lensOptions,...value}; renderer?.setLensOptions(lensOptions); },onStrengthChange(value) {
   bokehStrength=value;
   renderer?.setBokehStrength(value);
@@ -232,9 +246,15 @@ function syncCharacterCover() {
   coverSelection.update(sample);
 }
 function arrive(point) {
+  if (new URLSearchParams(location.search).get('spriteTrial')==='1' && new URLSearchParams(location.search).get('sandbox')==='1') return; // Sandbox never enters places.
   const doorway=geometry.routes.find(route => route.id==='home-to-lake')?.points[0];
   // Only the completed walk into the doorway enters the house, not the wider home region.
-  if (doorway && point && Math.hypot((point[0]-doorway[0])*geometry.width,(point[1]-doorway[1])*geometry.height)<=2) {
+  const entry=motion?.reviewDiagnostics?.planner?.endpoint;
+  const requested=motion?.reviewDiagnostics?.planner?.goal;
+  const projectedDoor=entry && requested && doorway &&
+    Math.hypot(requested[0]-doorway[0]*width,requested[1]-doorway[1]*height)<=2 &&
+    point && Math.hypot(point[0]*width-entry[0],point[1]*height-entry[1])<=4;
+  if (doorway && point && (projectedDoor || Math.hypot((point[0]-doorway[0])*geometry.width,(point[1]-doorway[1])*geometry.height)<=2)) {
     saveCamera(); state.lang=lang; save();
     try { sessionStorage.setItem(returnStorageKey,JSON.stringify({place:'home',pending:false})); } catch { /* The menu URL preserves the language. */ }
     const menu=new URL('../',location.href); menu.searchParams.set('lang',lang);
@@ -320,8 +340,9 @@ function resize() { camera?.resize(); positionBook(); invalidate(); settle(); }
 motion=window.AtlasMotion.create(motionCanvas,geometry,event => {
   if (event?.type==='arrival') arrive(event.point); else renderMotion();
   invalidate();
-},() => { syncCharacterCover(); invalidate(); });
-restoreReturnPlace();
+},() => { syncCharacterCover(); invalidate(); },runtime);
+if(runtime.production)motion.ready.then(restoreReturnPlace);
+else restoreReturnPlace();
 camera=createCamera(canvas,{worldWidth:width,worldHeight:height,
   onChange() { saveCamera(); positionBook(); invalidate(); },onMoveStart:startMove,onMoveKindChange:startMove,onMoveEnd:settle,
   onTap(point,event) { if (bookPress?.pointerId===event.pointerId) openBook(bookPress.id); else tap(point); },
@@ -369,6 +390,7 @@ document.addEventListener('visibilitychange',() => {
   if (document.hidden) { cancelAnimationFrame(frame); frame=0; } else invalidate();
 });
 window.atlasGpuDebug=Object.freeze({camera,motion,motionCanvas,preview,facade,world,normalized,focusDestination,covers,coverSelection,debugPanel,
+  get recorder() { return reviewRecorder; },
   get renderer() { return renderer; },get detector() { return detector; },
   get focus() { return {id:focused,semantic:detector?.diagnostic}; },get moving() { return moving; },
   get selection() { return selection; },get dof() { return dof; },get renderCount() { return renderCount; },
@@ -399,6 +421,13 @@ try {
   positionBook();
   ensureScenery();
   viewport.dataset.backend=renderer.backend; renderBokeh(); invalidate();
+  if(runtime.reviewCapture) {
+    // Optional local tool, deliberately outside the production dependency closure.
+    const recorderSrc='./atlas-review-recorder'+'.js';
+    import(recorderSrc).then(({createReviewRecorder}) =>
+      createReviewRecorder({camera,motion,renderer,canvas,viewport})).then(value => {reviewRecorder=value;})
+      .catch(error => {console.warn('Review recorder unavailable:',error.message);});
+  }
   if(familyPreview) {
     motion.startFamilyPreview();
     camera.focus([1030,570],Math.min(innerWidth/410,2.6));
