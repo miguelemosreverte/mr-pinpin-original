@@ -1023,12 +1023,15 @@
       if (paused || hidden || suspended || failed) return;
       const delta=last===null ? 0 : Math.max(0,now-last); last=now; elapsed+=delta;
       if (pending && elapsed-accepted>=220) { const next=pending; pending=null; target(next); }
-      if(sandbox && walkMode==='steer')steer(delta);
-      const wasArrived=!journey || segment>=journey.points.length;
+      const steering=sandbox && walkMode==='steer';
+      // A steering goal spans many short journeys; only its completion is an arrival.
+      const wasArrived=steering ? !aimPoint : !journey || segment>=journey.points.length;
+      if(steering)steer(delta);
       advance(delta);
       if (cueUntil && elapsed>=cueUntil) { cueUntil=0; delete canvas.dataset.cue; }
       draw();
-      if (!wasArrived && (!journey || segment>=journey.points.length)) {
+      const isArrived=steering ? !aimPoint && !groundHeld : !journey || segment>=journey.points.length;
+      if (!wasArrived && isArrived) {
         onChange({type:'arrival',point:[point[0]/geometry.width,point[1]/geometry.height]});
       }
       if (!failed) { data('running',true); schedule(); }

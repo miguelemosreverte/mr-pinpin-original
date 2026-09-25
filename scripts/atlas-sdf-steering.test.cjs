@@ -48,7 +48,7 @@ function metricField(signedDistance,width=400,height=600) {
   return fieldFromPixels(dataRGBA,width,height,base);
 }
 
-async function harness({field=ground(()=>100),query='',deferred=false,missing=false,video=true,turnWalk,reducedMotion=false,storedPause=false,runtime=null,search}={}) {
+async function harness({field=ground(()=>100),query='',deferred=false,missing=false,video=true,turnWalk,reducedMotion=false,storedPause=false,runtime=null,search,onChange}={}) {
   if(!turnWalk) {
     const profile=await import('../docs/storyboard/sprite-turn-profile.mjs');
     turnWalk={integrateWalkTurn:profile.integrateWalkTurn,turnRate:profile.turnRate,gait:{}};
@@ -75,7 +75,7 @@ async function harness({field=ground(()=>100),query='',deferred=false,missing=fa
   vm.runInContext(source,context);
   const motion=context.window.AtlasMotion.create(canvas,{width:1000,height:1000,
     routes:[{id:'home-to-lake',from:'home',to:'lake',points:[[.1,.5],[.9,.5]]}],
-    sprite:{src:'original.png',columns:1,rows:1,frames:1,referenceWidth:4}},undefined,undefined,runtime);
+    sprite:{src:'original.png',columns:1,rows:1,frames:1,referenceWidth:4}},onChange,undefined,runtime);
   async function frame(ms=25) {
     await flush();clock+=ms;
     for(const [id,timer] of [...timers])if(timer.at<=clock) {timers.delete(id);timer.fn();}
@@ -150,6 +150,36 @@ test('queryless production config activates the accepted motion and keeps reader
   h.motion.toggle();h.target([300,500]);await h.advance(1200);assert(h.point()[0]>108);
   assert.equal(h.motion.placeAtLocation('home'),true);assert.deepEqual(h.point(),[108,500]);
   await h.advance(1200);assert.deepEqual(h.point(),[108,500],'return cancels old sticky aim without bouncing into home');
+});
+
+test('actual steering completion emits once per goal and projected home arrival enters the menu',async()=>{
+  const {resolveAtlasRuntime}=await import('../docs/storyboard/atlas-production.js');
+  const runtime=resolveAtlasRuntime('','mr-pinpin.github.io'),events=[],navigations=[];
+  let arrival;
+  const h=await harness({field:metricField(x=>x-105),runtime,search:'',storedPause:true,
+    onChange:event=>{if(event?.type==='arrival'){events.push(event);arrival?.(event.point);}}});
+  const page=fs.readFileSync(require.resolve('../docs/storyboard/atlas-webgpu.js'),'utf8');
+  const start=page.indexOf('function arrive('),end=page.indexOf('\nfunction interact()',start);
+  const context=vm.createContext({URL,URLSearchParams,width:1000,height:1000,
+    geometry:{width:1000,height:1000,routes:[{id:'home-to-lake',points:[[.1,.5]]}]},
+    motion:h.motion,state:{},lang:'es',returnStorageKey:'return',sessionStorage:{setItem(){}},
+    saveCamera(){},save(){},chooseBook(){},
+    location:{search:'',href:'https://mr-pinpin.github.io/storyboard/atlas-webgpu.html',assign:u=>navigations.push(u)}});
+  vm.runInContext(page.slice(start,end),context);arrival=context.arrive;
+  h.target([160,500]);h.motion.toggle();await h.advance(8000);
+  assert.equal(events.length,1,'lookahead segment ends are not destination arrivals');
+  assert.equal(navigations.length,0,'ordinary nearby ground does not enter the house');
+  h.target([100,500]);await h.advance(12000);
+  assert.equal(h.motion.reviewDiagnostics.planner.reason,'projected-arrival');
+  assert.equal(events.length,2,'projected completion emits an arrival even after the last short segment ended');
+  assert.deepEqual(navigations,['https://mr-pinpin.github.io/?lang=es']);
+  await h.advance(2000);assert.equal(events.length,2);assert.equal(navigations.length,1);
+});
+
+test('blocked steering completion does not emit a destination arrival',async()=>{
+  const events=[],h=await harness({field:ground(()=>-40),onChange:event=>{if(event?.type==='arrival')events.push(event);}});
+  h.motion.placeAt([100,500]);h.target([200,500]);await h.advance(2000);
+  assert.equal(h.motion.groundFieldStatus.held,true);assert.equal(events.length,0);
 });
 
 test('loading holds the initial spawn and latest target; failure is visible; free stays unrestricted',async()=>{
