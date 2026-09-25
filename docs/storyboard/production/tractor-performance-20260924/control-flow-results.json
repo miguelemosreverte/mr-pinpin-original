@@ -1,0 +1,87 @@
+{
+  "startedAt": "2026-09-25T00:52:14.432Z",
+  "sourceHashes": {
+    "tractor-tour.js": "bd2d7e8746b1aaaa523f58632948f12144aecb67d855b67894207feb98bd2236",
+    "tractor-tour-gestures.js": "6ad32469e00b9bc146850c253f3facab9b32236e1ab37dffab43b131c3ce5b7d",
+    "tractor-tour.html": "1584d792defe26e31fd1fd1b2eb535a7f1816dcca1343142c79715c55666c67f",
+    "tractor-tour-cache.js": "de01ac15ff159e9e07120b77128b9632da1ea81b7afa4a2f8b5be62dd7141871",
+    "tractor-tour-video.js": "cbc11da6a62ce3f7bc86d50a8ce967718b65cf19e1154c58de11fd3992385e48",
+    "tractor-panorama-anchor.js": "16e06e3fca3bd032ffe13b3f0d0fc34a019296e54c377e29f70e8043250fb2ec"
+  },
+  "checks": [
+    {
+      "name": "hover orbit without button; jitter and warp ignored",
+      "pass": true,
+      "before": 0,
+      "after": 0.61437
+    },
+    {
+      "name": "stage controls and outside page wheel remain untouched",
+      "pass": true
+    },
+    {
+      "name": "continuous wheel stream spans entry without restart",
+      "pass": true,
+      "first": {
+        "stop": "stop-03",
+        "time": 3.5,
+        "camera": {
+          "yaw": -0.06232821136102864,
+          "pitch": -0.037833019365505996,
+          "fov": 79.34758860049769,
+          "width": 1372,
+          "height": 772
+        }
+      },
+      "yawDelta": 0.4050000000000131
+    },
+    {
+      "name": "same right drag spans snap without another pointerdown",
+      "pass": true,
+      "yawDelta": -0.08873422613644248
+    },
+    {
+      "name": "same-stop no-op snap keeps exact first frame",
+      "pass": true,
+      "elapsedMs": 162,
+      "snapDuration": 0,
+      "decoded": 0
+    },
+    {
+      "name": "return cancels buffered entry movement",
+      "pass": true
+    },
+    {
+      "name": "Face tractor cancels pending input flush",
+      "pass": true
+    },
+    {
+      "name": "held two-touch entry then two→one→two without lift-all",
+      "pass": true,
+      "first": {
+        "stop": "stop-03",
+        "time": 3.5,
+        "camera": {
+          "yaw": -0.06232821136102864,
+          "pitch": -0.037833019365505996,
+          "fov": 79.34758860049769,
+          "width": 358,
+          "height": 201
+        }
+      },
+      "duringReturn": "recentering",
+      "pinch": true
+    },
+    {
+      "name": "touch cancellation discards buffered look motion",
+      "pass": true
+    },
+    {
+      "name": "cancel deferred two-finger intent during return",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "pass": true,
+  "completedAt": "2026-09-25T00:52:22.787Z"
+}

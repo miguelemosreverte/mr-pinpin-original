@@ -1,0 +1,89 @@
+{
+  "asset": "/storyboard/production/tractor-stops-20260924/stops/stop-06/panorama-assembled-v1.png",
+  "oldFirst": {
+    "status": 200,
+    "bodyBytes": 12761928,
+    "elapsedMs": 17.37,
+    "etag": null,
+    "cacheControl": "no-cache",
+    "contentRange": null
+  },
+  "oldRepeat": {
+    "status": 200,
+    "bodyBytes": 12761928,
+    "elapsedMs": 12.43,
+    "etag": null,
+    "cacheControl": "no-cache",
+    "contentRange": null
+  },
+  "newFirst": {
+    "status": 200,
+    "bodyBytes": 12761928,
+    "elapsedMs": 55.7,
+    "etag": "\"59fca67fa53a08b29f59fd728b8654f4f6fe4f38bef7bf4f13ff5590afa69e73\"",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "contentRange": null
+  },
+  "newRepeat": {
+    "status": 304,
+    "bodyBytes": 0,
+    "elapsedMs": 1.51,
+    "etag": "\"59fca67fa53a08b29f59fd728b8654f4f6fe4f38bef7bf4f13ff5590afa69e73\"",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "contentRange": null
+  },
+  "videoRange": {
+    "status": 206,
+    "bodyBytes": 1024,
+    "elapsedMs": 23.83,
+    "etag": "\"5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de\"",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "contentRange": "bytes 0-1023/23520738"
+  },
+  "sourceRevalidation": {
+    "status": 200,
+    "bodyBytes": 17478,
+    "elapsedMs": 1.15,
+    "etag": null,
+    "cacheControl": "no-cache",
+    "contentRange": null
+  },
+  "warmedServerFirst": {
+    "status": 200,
+    "bodyBytes": 12761928,
+    "elapsedMs": 32.47,
+    "etag": "\"59fca67fa53a08b29f59fd728b8654f4f6fe4f38bef7bf4f13ff5590afa69e73\"",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "contentRange": null
+  },
+  "warmedServerRepeat": {
+    "status": 304,
+    "bodyBytes": 0,
+    "elapsedMs": 1.27,
+    "etag": "\"59fca67fa53a08b29f59fd728b8654f4f6fe4f38bef7bf4f13ff5590afa69e73\"",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "contentRange": null
+  },
+  "activeVideoRange": {
+    "status": 206,
+    "bodyBytes": 1024,
+    "elapsedMs": 1.04,
+    "etag": "\"5c30e3ee490785285db00041d0b7a90fcc0e1c10e38535ac6aea6521b326a9de\"",
+    "cacheControl": "public, max-age=0, must-revalidate",
+    "contentRange": "bytes 0-1023/23520738"
+  },
+  "serverSha256": "0d47cd4b80af3a38819d4dc0364d3d477affdbd85e4d0e6bf76548dbcd24baf2",
+  "fixtureChecks": {
+    "passed": true,
+    "checks": [
+      "first200",
+      "conditional304",
+      "same-size-media-change200",
+      "source-update200",
+      "range206",
+      "suffix-range",
+      "if-range-invalidation",
+      "range416"
+    ]
+  }
+}

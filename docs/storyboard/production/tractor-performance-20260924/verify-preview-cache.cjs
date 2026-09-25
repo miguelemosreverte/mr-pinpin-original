@@ -1,0 +1,42 @@
+const assert=require('node:assert/strict'),fs=require('node:fs/promises');
+const os=require('node:os'),path=require('node:path');
+const {createReviewServer}=require('./preview-server-cache.cjs');
+(async()=>{
+ const root=await fs.mkdtemp(path.join(os.tmpdir(),'tractor-cache-'));
+ const folder=path.join(root,'storyboard/production/tractor-stops-20260924');
+ await fs.mkdir(folder,{recursive:true});
+ await fs.writeFile(path.join(folder,'image.png'),'old image');
+ await fs.writeFile(path.join(folder,'clip.mp4'),Buffer.from(Array.from({length:256},(_,i)=>i)));
+ await fs.writeFile(path.join(root,'tractor-tour.js'),'old code');
+ const server=createReviewServer(root);
+ await new Promise(resolve=>server.listen(0,'127.0.0.1',resolve));
+ const base=`http://127.0.0.1:${server.address().port}`;
+ const media=base+'/storyboard/production/tractor-stops-20260924/';
+ try{
+  let r=await fetch(media+'image.png');assert.equal(r.status,200);
+  const etag=r.headers.get('etag');assert.match(etag,/^"[a-f0-9]{64}"$/);
+  assert.equal(await r.text(),'old image');
+  r=await fetch(media+'image.png',{headers:{'If-None-Match':etag}});
+  assert.equal(r.status,304);assert.equal((await r.arrayBuffer()).byteLength,0);
+  await fs.writeFile(path.join(folder,'image.png'),'new image');
+  r=await fetch(media+'image.png',{headers:{'If-None-Match':etag}});
+  assert.equal(r.status,200);assert.notEqual(r.headers.get('etag'),etag);
+  assert.equal(await r.text(),'new image');
+  await fs.writeFile(path.join(root,'tractor-tour.js'),'new code');
+  r=await fetch(base+'/tractor-tour.js',{headers:{'If-None-Match':etag}});
+  assert.equal(r.status,200);assert.equal(r.headers.get('cache-control'),'no-cache');
+  assert.equal(await r.text(),'new code');
+  r=await fetch(media+'clip.mp4',{headers:{Range:'bytes=5-9'}});
+  assert.equal(r.status,206);assert.equal(r.headers.get('content-range'),'bytes 5-9/256');
+  const videoTag=r.headers.get('etag');
+  assert.deepEqual([...new Uint8Array(await r.arrayBuffer())],[5,6,7,8,9]);
+  r=await fetch(media+'clip.mp4',{headers:{Range:'bytes=-3','If-Range':videoTag}});
+  assert.equal(r.status,206);assert.equal((await r.arrayBuffer()).byteLength,3);
+  r=await fetch(media+'clip.mp4',{headers:{Range:'bytes=5-9','If-Range':'"changed"'}});
+  assert.equal(r.status,200);assert.equal((await r.arrayBuffer()).byteLength,256);
+  r=await fetch(media+'clip.mp4',{headers:{Range:'bytes=300-400'}});
+  assert.equal(r.status,416);assert.equal(r.headers.get('content-range'),'bytes */256');
+  await r.arrayBuffer();
+  console.log(JSON.stringify({passed:true,checks:['first200','conditional304','same-size-media-change200','source-update200','range206','suffix-range','if-range-invalidation','range416']}));
+ }finally{server.closeAllConnections();await new Promise(resolve=>server.close(resolve));await fs.rm(root,{recursive:true,force:true});}
+})().catch(error=>{console.error(error);process.exitCode=1;});
