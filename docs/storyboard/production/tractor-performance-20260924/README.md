@@ -1,15 +1,18 @@
 # Tractor performance and continuous controls
 
-This pack records two successive changes. Read the current control and server
-reports alongside the first performance benchmark; their tests cover different
-runtime revisions.
+This pack records successive performance and control changes. Read the latest
+control mapping alongside the server report and first performance benchmark;
+their tests cover different runtime revisions.
 
 - [REPORT.md](REPORT.md): first performance pass, committed as `f32f683`.
   Renderer reuse, bounded texture caching, exact-frame and visual comparisons.
   Baseline/final screenshots and traces are preserved by
   `assets/tractor-performance-20260924.json` and its verified receipt.
-- [CONTROL-FLOW.md](CONTROL-FLOW.md): subsequent continuous, no-click input
+- [INVERTED-CONTROLS.md](INVERTED-CONTROLS.md): current mapping: one finger
+  looks around; two fingers orbit the tractor.
+- [CONTROL-FLOW.md](CONTROL-FLOW.md): earlier continuous, no-click input
   behavior, transition handoffs, and removal of unnecessary transition work.
+  Its original finger mapping is superseded by INVERTED-CONTROLS.md.
 - [SERVER-CACHE.md](SERVER-CACHE.md): subsequent local preview-server cache
   validation, unchanged-media reuse, and video range-request checks.
 

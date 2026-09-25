@@ -1,0 +1,84 @@
+{
+  "startedAt": "2026-09-25T04:50:00.570Z",
+  "sourceHashes": {
+    "tractor-tour.js": "363e91d4c2935364ce8bd5262a32f6b54a03d330251fd3df86ca7974e9e7d155",
+    "tractor-tour-gestures.js": "839fc741f69d43ae161387bd8970b0558e9ff817f4e56208a52e44f1cbe46b0d",
+    "tractor-tour.html": "7a02ab1a97136791d315d320c3f3f6c8a94fb2f0e099ffe91b5b201b990a8a9f",
+    "tractor-tour-cache.js": "de01ac15ff159e9e07120b77128b9632da1ea81b7afa4a2f8b5be62dd7141871",
+    "tractor-tour-video.js": "cbc11da6a62ce3f7bc86d50a8ce967718b65cf19e1154c58de11fd3992385e48",
+    "tractor-panorama-anchor.js": "16e06e3fca3bd032ffe13b3f0d0fc34a019296e54c377e29f70e8043250fb2ec"
+  },
+  "checks": [
+    {
+      "name": "unpressed one-finger pointer looks vertically and horizontally; jitter/warp ignored",
+      "pass": true,
+      "first": {
+        "stop": "stop-03",
+        "time": 3.5,
+        "camera": {
+          "yaw": -0.06232821136102864,
+          "pitch": -0.037833019365505996,
+          "fov": 79.34758860049769,
+          "width": 1372,
+          "height": 772
+        }
+      },
+      "yawDelta": -0.06457974130243335,
+      "pitchDelta": 0.06457974130243231
+    },
+    {
+      "name": "two-finger wheel orbits continuously through return; vertical fallback works",
+      "pass": true,
+      "before": 3.5,
+      "horizontal": 4.728738,
+      "vertical": 5.430876
+    },
+    {
+      "name": "left mouse drag looks through snap without another engagement",
+      "pass": true,
+      "yawDelta": -0.0717552681138138
+    },
+    {
+      "name": "right mouse drag looks through snap without another engagement",
+      "pass": true,
+      "yawDelta": -0.0717552681138138
+    },
+    {
+      "name": "trackpad pinch zoom remains look; UI/outside scroll untouched",
+      "pass": true
+    },
+    {
+      "name": "orbit cancellation clears queued one-finger look",
+      "pass": true
+    },
+    {
+      "name": "touch one looks; second contact waits; pinch keeps look without centroid orbit",
+      "pass": true,
+      "first": {
+        "stop": "stop-03",
+        "time": 3.5,
+        "camera": {
+          "yaw": -0.06232821136102864,
+          "pitch": -0.037833019365505996,
+          "fov": 79.34758860049769,
+          "width": 358,
+          "height": 201
+        }
+      },
+      "fovBefore": 79.34758860049769,
+      "fovAfter": 52.898392400331794
+    },
+    {
+      "name": "touch one→two orbit→one look during return without lifting all",
+      "pass": true,
+      "returnMode": "recentering"
+    },
+    {
+      "name": "two-touch vertical translation orbits; cancelled one-touch leaves no movement",
+      "pass": true
+    }
+  ],
+  "errors": [],
+  "pass": true,
+  "completedAt": "2026-09-25T04:50:07.481Z"
+}
