@@ -1,0 +1,856 @@
+{
+  "startedAt": "2026-09-25T00:37:30.079Z",
+  "cases": [
+    {
+      "version": "baseline",
+      "id": "stop-00",
+      "name": "baseline-stop-00-0",
+      "camera": {
+        "yaw": 1.2145031060881861,
+        "pitch": -0.16323119036556655,
+        "fov": 69.00205803132543,
+        "width": 1372,
+        "height": 772
+      },
+      "time": 0,
+      "decoded": 0
+    },
+    {
+      "version": "baseline",
+      "id": "stop-12",
+      "name": "baseline-stop-12-0",
+      "camera": {
+        "yaw": 1.1577097914359942,
+        "pitch": -0.16713768175927715,
+        "fov": 69.46927535254439,
+        "width": 1372,
+        "height": 772
+      },
+      "time": 7.125,
+      "decoded": 7.125
+    },
+    {
+      "version": "baseline",
+      "id": "stop-00",
+      "name": "baseline-stop-00-1",
+      "camera": {
+        "yaw": 1.2145031060881861,
+        "pitch": -0.16323119036556655,
+        "fov": 69.00205803132543,
+        "width": 1372,
+        "height": 772
+      },
+      "time": 0,
+      "decoded": 0
+    },
+    {
+      "version": "baseline",
+      "id": "stop-12",
+      "name": "baseline-stop-12-1",
+      "camera": {
+        "yaw": 1.1577097914359942,
+        "pitch": -0.16713768175927715,
+        "fov": 69.46927535254439,
+        "width": 1372,
+        "height": 772
+      },
+      "time": 7.125,
+      "decoded": 7.125
+    },
+    {
+      "version": "optimized",
+      "id": "stop-00",
+      "name": "optimized-stop-00-0",
+      "camera": {
+        "yaw": 1.2145031060881861,
+        "pitch": -0.16323119036556655,
+        "fov": 69.00205803132543,
+        "width": 1372,
+        "height": 772
+      },
+      "performance": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 3,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 3,
+          "bytes": 56623104,
+          "peakBytes": 56623104,
+          "panoramaUploads": 3,
+          "sourceUploads": 1,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00"
+          ]
+        },
+        "orbit": {
+          "uploads": 2,
+          "draws": 2
+        }
+      },
+      "time": 0,
+      "decoded": 0
+    },
+    {
+      "version": "optimized",
+      "id": "stop-12",
+      "name": "optimized-stop-12-0",
+      "camera": {
+        "yaw": 1.1577097914359942,
+        "pitch": -0.16713768175927715,
+        "fov": 69.46927535254439,
+        "width": 1372,
+        "height": 772
+      },
+      "performance": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 9,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 9,
+          "sourceUploads": 3,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00",
+            "stop-06",
+            "stop-12"
+          ]
+        },
+        "orbit": {
+          "uploads": 83,
+          "draws": 83
+        }
+      },
+      "time": 7.125,
+      "decoded": 7.125
+    },
+    {
+      "version": "optimized",
+      "id": "stop-00",
+      "name": "optimized-stop-00-1",
+      "camera": {
+        "yaw": 1.2145031060881861,
+        "pitch": -0.16323119036556655,
+        "fov": 69.00205803132543,
+        "width": 1372,
+        "height": 772
+      },
+      "performance": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 13,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 13,
+          "sourceUploads": 5,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-12",
+            "stop-06",
+            "stop-00"
+          ]
+        },
+        "orbit": {
+          "uploads": 167,
+          "draws": 167
+        }
+      },
+      "time": 0,
+      "decoded": 0
+    },
+    {
+      "version": "optimized",
+      "id": "stop-12",
+      "name": "optimized-stop-12-1",
+      "camera": {
+        "yaw": 1.1577097914359942,
+        "pitch": -0.16713768175927715,
+        "fov": 69.46927535254439,
+        "width": 1372,
+        "height": 772
+      },
+      "performance": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 15,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 15,
+          "sourceUploads": 6,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-06",
+            "stop-00",
+            "stop-12"
+          ]
+        },
+        "orbit": {
+          "uploads": 226,
+          "draws": 226
+        }
+      },
+      "time": 7.125,
+      "decoded": 7.125
+    }
+  ],
+  "transitions": [
+    {
+      "version": "baseline",
+      "id": "stop-00",
+      "elapsedMs": 257.90000000596046,
+      "maxFrameGapMs": 33.400000000000006,
+      "entryRequestBytes": 14636962,
+      "includingIdleRequestBytes": 14636962
+    },
+    {
+      "version": "baseline",
+      "id": "stop-06",
+      "elapsedMs": 1421.8999999985099,
+      "maxFrameGapMs": 33.29999999999973,
+      "entryRequestBytes": 14049743,
+      "includingIdleRequestBytes": 14049743
+    },
+    {
+      "version": "baseline",
+      "id": "stop-12",
+      "elapsedMs": 640.6000000014901,
+      "maxFrameGapMs": 50,
+      "entryRequestBytes": 13824045,
+      "includingIdleRequestBytes": 13824045
+    },
+    {
+      "version": "baseline",
+      "id": "stop-06",
+      "elapsedMs": 734.8000000044703,
+      "maxFrameGapMs": 50,
+      "entryRequestBytes": 0,
+      "includingIdleRequestBytes": 0
+    },
+    {
+      "version": "baseline",
+      "id": "stop-00",
+      "elapsedMs": 1325.4000000059605,
+      "maxFrameGapMs": 66.60000000000036,
+      "entryRequestBytes": 0,
+      "includingIdleRequestBytes": 0
+    },
+    {
+      "version": "baseline",
+      "id": "stop-12",
+      "elapsedMs": 1359.8999999985099,
+      "maxFrameGapMs": 66.69999999999891,
+      "entryRequestBytes": 904720,
+      "includingIdleRequestBytes": 904720
+    },
+    {
+      "version": "optimized",
+      "id": "stop-00",
+      "elapsedMs": 262.3999999985099,
+      "maxFrameGapMs": 33.400000000000006,
+      "entryRequestBytes": 12774261,
+      "includingIdleRequestBytes": 37302563,
+      "before": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 0,
+          "hits": 0
+        },
+        "panorama": null,
+        "orbit": {
+          "uploads": 2,
+          "draws": 2
+        }
+      },
+      "entry": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 1,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 1,
+          "bytes": 18874368,
+          "peakBytes": 18874368,
+          "panoramaUploads": 1,
+          "sourceUploads": 1,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00"
+          ]
+        },
+        "orbit": {
+          "uploads": 2,
+          "draws": 2
+        }
+      },
+      "afterIdle": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 3,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 3,
+          "bytes": 56623104,
+          "peakBytes": 56623104,
+          "panoramaUploads": 3,
+          "sourceUploads": 1,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00"
+          ]
+        },
+        "orbit": {
+          "uploads": 2,
+          "draws": 2
+        }
+      }
+    },
+    {
+      "version": "optimized",
+      "id": "stop-06",
+      "elapsedMs": 1407.5,
+      "maxFrameGapMs": 33.399999999999636,
+      "entryRequestBytes": 12762162,
+      "includingIdleRequestBytes": 37700355,
+      "before": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 3,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 3,
+          "bytes": 56623104,
+          "peakBytes": 56623104,
+          "panoramaUploads": 3,
+          "sourceUploads": 1,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00"
+          ]
+        },
+        "orbit": {
+          "uploads": 2,
+          "draws": 2
+        }
+      },
+      "entry": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 4,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 4,
+          "bytes": 75497472,
+          "peakBytes": 75497472,
+          "panoramaUploads": 4,
+          "sourceUploads": 2,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00",
+            "stop-06"
+          ]
+        },
+        "orbit": {
+          "uploads": 62,
+          "draws": 62
+        }
+      },
+      "afterIdle": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 6,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 6,
+          "sourceUploads": 2,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00",
+            "stop-06"
+          ]
+        },
+        "orbit": {
+          "uploads": 62,
+          "draws": 62
+        }
+      }
+    },
+    {
+      "version": "optimized",
+      "id": "stop-12",
+      "elapsedMs": 428.5,
+      "maxFrameGapMs": 33.30000000000018,
+      "entryRequestBytes": 12624275,
+      "includingIdleRequestBytes": 36947414,
+      "before": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 6,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 6,
+          "sourceUploads": 2,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00",
+            "stop-06"
+          ]
+        },
+        "orbit": {
+          "uploads": 62,
+          "draws": 62
+        }
+      },
+      "entry": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 7,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 7,
+          "sourceUploads": 3,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00",
+            "stop-06",
+            "stop-12"
+          ]
+        },
+        "orbit": {
+          "uploads": 83,
+          "draws": 83
+        }
+      },
+      "afterIdle": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 9,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 9,
+          "sourceUploads": 3,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00",
+            "stop-06",
+            "stop-12"
+          ]
+        },
+        "orbit": {
+          "uploads": 83,
+          "draws": 83
+        }
+      }
+    },
+    {
+      "version": "optimized",
+      "id": "stop-06",
+      "elapsedMs": 743.3999999985099,
+      "maxFrameGapMs": 16.799999999999272,
+      "entryRequestBytes": 0,
+      "includingIdleRequestBytes": 24938193,
+      "before": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 9,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 9,
+          "sourceUploads": 3,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00",
+            "stop-06",
+            "stop-12"
+          ]
+        },
+        "orbit": {
+          "uploads": 83,
+          "draws": 83
+        }
+      },
+      "entry": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 9,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 9,
+          "sourceUploads": 4,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00",
+            "stop-12",
+            "stop-06"
+          ]
+        },
+        "orbit": {
+          "uploads": 106,
+          "draws": 106
+        }
+      },
+      "afterIdle": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 11,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 11,
+          "sourceUploads": 4,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00",
+            "stop-12",
+            "stop-06"
+          ]
+        },
+        "orbit": {
+          "uploads": 106,
+          "draws": 106
+        }
+      }
+    },
+    {
+      "version": "optimized",
+      "id": "stop-00",
+      "elapsedMs": 1106.1000000014901,
+      "maxFrameGapMs": 49.899999999999636,
+      "entryRequestBytes": 0,
+      "includingIdleRequestBytes": 24528302,
+      "before": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 11,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 11,
+          "sourceUploads": 4,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-00",
+            "stop-12",
+            "stop-06"
+          ]
+        },
+        "orbit": {
+          "uploads": 106,
+          "draws": 106
+        }
+      },
+      "entry": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 11,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 11,
+          "sourceUploads": 5,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-12",
+            "stop-06",
+            "stop-00"
+          ]
+        },
+        "orbit": {
+          "uploads": 167,
+          "draws": 167
+        }
+      },
+      "afterIdle": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 13,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 13,
+          "sourceUploads": 5,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-12",
+            "stop-06",
+            "stop-00"
+          ]
+        },
+        "orbit": {
+          "uploads": 167,
+          "draws": 167
+        }
+      }
+    },
+    {
+      "version": "optimized",
+      "id": "stop-12",
+      "elapsedMs": 1365.8000000044703,
+      "maxFrameGapMs": 16.80000000000109,
+      "entryRequestBytes": 3861041,
+      "includingIdleRequestBytes": 28184180,
+      "before": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 13,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 13,
+          "sourceUploads": 5,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-12",
+            "stop-06",
+            "stop-00"
+          ]
+        },
+        "orbit": {
+          "uploads": 167,
+          "draws": 167
+        }
+      },
+      "entry": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 13,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 13,
+          "sourceUploads": 6,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-06",
+            "stop-00",
+            "stop-12"
+          ]
+        },
+        "orbit": {
+          "uploads": 226,
+          "draws": 226
+        }
+      },
+      "afterIdle": {
+        "images": {
+          "decodedImages": 0,
+          "pendingImages": 0,
+          "decodingImages": 0,
+          "decodes": 15,
+          "hits": 0
+        },
+        "panorama": {
+          "cachedPanoramas": 5,
+          "bytes": 94371840,
+          "peakBytes": 94371840,
+          "panoramaUploads": 15,
+          "sourceUploads": 6,
+          "maxPanoramas": 5,
+          "maxBytes": 167772160,
+          "recentVisits": [
+            "stop-06",
+            "stop-00",
+            "stop-12"
+          ]
+        },
+        "orbit": {
+          "uploads": 226,
+          "draws": 226
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "wheelBurst": {
+    "events": 100,
+    "draws": 1,
+    "yawDelta": 0.3000000000000118,
+    "pass": true
+  },
+  "comparisons": [
+    {
+      "kind": "before-after",
+      "before": "baseline-stop-00-0",
+      "after": "optimized-stop-00-0",
+      "changedPixels": 0,
+      "maxChannelDelta": 0,
+      "pass": true,
+      "exactMatch": true,
+      "withinSingleLevelNoise": true
+    },
+    {
+      "kind": "before-after",
+      "before": "baseline-stop-12-0",
+      "after": "optimized-stop-12-0",
+      "changedPixels": 8,
+      "maxChannelDelta": 1,
+      "pass": false,
+      "exactMatch": false,
+      "withinSingleLevelNoise": true
+    },
+    {
+      "kind": "before-after",
+      "before": "baseline-stop-00-1",
+      "after": "optimized-stop-00-1",
+      "changedPixels": 12,
+      "maxChannelDelta": 1,
+      "pass": false,
+      "exactMatch": false,
+      "withinSingleLevelNoise": true
+    },
+    {
+      "kind": "before-after",
+      "before": "baseline-stop-12-1",
+      "after": "optimized-stop-12-1",
+      "changedPixels": 8,
+      "maxChannelDelta": 1,
+      "pass": false,
+      "exactMatch": false,
+      "withinSingleLevelNoise": true
+    },
+    {
+      "kind": "baseline-repeat-control",
+      "before": "baseline-stop-00-0",
+      "after": "baseline-stop-00-1",
+      "changedPixels": 0,
+      "maxChannelDelta": 0,
+      "pass": true,
+      "exactMatch": true,
+      "withinSingleLevelNoise": true
+    },
+    {
+      "kind": "baseline-repeat-control",
+      "before": "baseline-stop-12-0",
+      "after": "baseline-stop-12-1",
+      "changedPixels": 0,
+      "maxChannelDelta": 0,
+      "pass": true,
+      "exactMatch": true,
+      "withinSingleLevelNoise": true
+    }
+  ],
+  "pass": true,
+  "completedAt": "2026-09-25T00:38:04.881Z"
+}

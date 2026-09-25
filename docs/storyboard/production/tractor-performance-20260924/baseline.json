@@ -1,0 +1,2132 @@
+{
+  "label": "baseline",
+  "startedAt": "2026-09-25T00:24:29.888Z",
+  "url": "http://127.0.0.1:18792/tractor-tour.html?sourceLock=1",
+  "sourceHashes": {
+    "tractor-tour.js": "1873775d9ef80ef680bcd6ea606808e8793da2ce426c6bea62e465861101d5fc",
+    "tractor-tour-video.js": "f81ef594b4f6c8484809ddb3c2b5e0f05404ff131cda7e18daf6ed83722944c3",
+    "tractor-panorama-anchor.js": "d96f0abff39f716885047e20002accab86558751bc1d75eab8cee7e08193202e"
+  },
+  "runs": [
+    {
+      "reducedMotion": "no-preference",
+      "transitions": [
+        {
+          "id": "stop-00",
+          "cache": "first entry",
+          "from": "orbit",
+          "elapsedMs": 283.8,
+          "frameCount": 15,
+          "frameGapP95Ms": 50.1,
+          "frameGapMaxMs": 50.1,
+          "framesOver50ms": 1,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 57,
+          "operations": {
+            "decode:image": {
+              "count": 2,
+              "totalMs": 86.9,
+              "maxMs": 62.6
+            },
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 55.9,
+              "maxMs": 41.1
+            },
+            "texImage2D:orbit-canvas": {
+              "count": 1,
+              "totalMs": 0.1,
+              "maxMs": 0.1
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 553.7000000029802,
+              "mode": "snapping",
+              "stop": "stop-00",
+              "snap": {
+                "from": 0,
+                "target": 0,
+                "delta": 0,
+                "duration": 220
+              }
+            },
+            {
+              "type": "mode",
+              "t": 818.3000000044703,
+              "mode": "look",
+              "stop": "stop-00",
+              "snap": {
+                "from": 0,
+                "target": 0,
+                "delta": 0,
+                "duration": 220
+              }
+            }
+          ],
+          "decodes": [
+            {
+              "type": "decode",
+              "t": 571.5,
+              "start": 547.2000000029802,
+              "duration": 24.299999997019768,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/frames/stop-00/original.png",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "type": "decode",
+              "t": 609.3000000044703,
+              "start": 546.7000000029802,
+              "duration": 62.600000001490116,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/stops/stop-00/panorama-assembled-v1.png",
+              "width": 3072,
+              "height": 1536
+            }
+          ],
+          "seeks": 1,
+          "requestCount": 2,
+          "requestBytes": 14636962,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 0,
+            "displayedFrame": 1,
+            "mode": "look",
+            "stop": "stop-00",
+            "time": 0,
+            "progress": 0,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0,
+              "target": 0,
+              "delta": 0,
+              "duration": 220
+            },
+            "wheelQuietUntil": 924.6000000014901,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": 0.014503106088186227,
+              "pitch": -0.01323119036556654,
+              "fov": 69.00205803132543,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 1,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 1000.4,
+            "frameCount": 60,
+            "frameGapP95Ms": 16.8,
+            "frameGapMaxMs": 16.8,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 13.3,
+                "maxMs": 0.4
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 1,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 0.4,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        },
+        {
+          "id": "stop-06",
+          "cache": "first entry",
+          "from": "look",
+          "elapsedMs": 1310.6,
+          "frameCount": 78,
+          "frameGapP95Ms": 16.7,
+          "frameGapMaxMs": 33.2,
+          "framesOver50ms": 0,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 53,
+          "operations": {
+            "texImage2D:orbit-canvas": {
+              "count": 76,
+              "totalMs": 6.4,
+              "maxMs": 0.3
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 76,
+              "totalMs": 0.4,
+              "maxMs": 0.1
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 14,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "decode:image": {
+              "count": 2,
+              "totalMs": 60.1,
+              "maxMs": 48.2
+            },
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 52.1,
+              "maxMs": 39.1
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 1856.6000000014901,
+              "mode": "recentering",
+              "stop": "stop-00",
+              "snap": {
+                "from": 0,
+                "target": 0,
+                "delta": 0,
+                "duration": 220
+              }
+            },
+            {
+              "type": "mode",
+              "t": 2054.39999999851,
+              "mode": "orbit",
+              "stop": "stop-00",
+              "snap": null
+            },
+            {
+              "type": "mode",
+              "t": 2068.5,
+              "mode": "snapping",
+              "stop": "stop-06",
+              "snap": {
+                "from": 0,
+                "target": 0.43598614710072947,
+                "delta": 0.4359861471007296,
+                "duration": 1046.366753041751
+              }
+            }
+          ],
+          "decodes": [
+            {
+              "type": "decode",
+              "t": 2066.7000000029802,
+              "start": 2054.8000000044703,
+              "duration": 11.899999998509884,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/frames/stop-06/original.png",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "type": "decode",
+              "t": 2102.89999999851,
+              "start": 2054.7000000029802,
+              "duration": 48.19999999552965,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/stops/stop-06/panorama-assembled-v1.png",
+              "width": 3072,
+              "height": 1536
+            }
+          ],
+          "seeks": 62,
+          "requestCount": 2,
+          "requestBytes": 14049743,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 5.25,
+            "displayedFrame": 63,
+            "mode": "look",
+            "stop": "stop-06",
+            "time": 5.25,
+            "progress": 0.43598614710072947,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0,
+              "target": 0.43598614710072947,
+              "delta": 0.4359861471007296,
+              "duration": 1046.366753041751
+            },
+            "wheelQuietUntil": 3276.60000000149,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": 0.0010066061316309017,
+              "pitch": -0.0003660993312885387,
+              "fov": 64.14471872213606,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 75,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 994.5,
+            "frameCount": 60,
+            "frameGapP95Ms": 16.8,
+            "frameGapMaxMs": 16.8,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 14.2,
+                "maxMs": 0.4
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 0.6,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 0.4,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        },
+        {
+          "id": "stop-12",
+          "cache": "first entry",
+          "from": "look",
+          "elapsedMs": 642.1,
+          "frameCount": 36,
+          "frameGapP95Ms": 16.8,
+          "frameGapMaxMs": 49.9,
+          "framesOver50ms": 0,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 55,
+          "operations": {
+            "texImage2D:orbit-canvas": {
+              "count": 34,
+              "totalMs": 3.8,
+              "maxMs": 0.4
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 34,
+              "totalMs": 0.2,
+              "maxMs": 0.1
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 14,
+              "totalMs": 0.1,
+              "maxMs": 0.1
+            },
+            "decode:image": {
+              "count": 2,
+              "totalMs": 102.2,
+              "maxMs": 73.8
+            },
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 54.4,
+              "maxMs": 41.5
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 4239.89999999851,
+              "mode": "recentering",
+              "stop": "stop-06",
+              "snap": {
+                "from": 0,
+                "target": 0.43598614710072947,
+                "delta": 0.4359861471007296,
+                "duration": 1046.366753041751
+              }
+            },
+            {
+              "type": "mode",
+              "t": 4438.30000000447,
+              "mode": "orbit",
+              "stop": "stop-06",
+              "snap": null
+            },
+            {
+              "type": "mode",
+              "t": 4449.80000000447,
+              "mode": "snapping",
+              "stop": "stop-12",
+              "snap": {
+                "from": 0.43598614710072947,
+                "target": 0.59169548535099,
+                "delta": 0.15570933825026056,
+                "duration": 373.7024118006253
+              }
+            }
+          ],
+          "decodes": [
+            {
+              "type": "decode",
+              "t": 4467.89999999851,
+              "start": 4439.5,
+              "duration": 28.399999998509884,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/frames/stop-12/original.png",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "type": "decode",
+              "t": 4513,
+              "start": 4439.20000000298,
+              "duration": 73.79999999701977,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/stops/stop-12/panorama-assembled-v1.png",
+              "width": 3072,
+              "height": 1536
+            }
+          ],
+          "seeks": 20,
+          "requestCount": 2,
+          "requestBytes": 13824045,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 7.125,
+            "displayedFrame": 83,
+            "mode": "look",
+            "stop": "stop-12",
+            "time": 7.125,
+            "progress": 0.59169548535099,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0.43598614710072947,
+              "target": 0.59169548535099,
+              "delta": 0.15570933825026056,
+              "duration": 373.7024118006253
+            },
+            "wheelQuietUntil": 4976.5,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": -0.04229020856400572,
+              "pitch": -0.01713768175927715,
+              "fov": 69.46927535254439,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 149,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 998.7,
+            "frameCount": 60,
+            "frameGapP95Ms": 16.7,
+            "frameGapMaxMs": 16.8,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 13.8,
+                "maxMs": 0.4
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 0.7,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 0.4,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        },
+        {
+          "id": "stop-00",
+          "cache": "repeat entry",
+          "from": "look",
+          "elapsedMs": 1228.6,
+          "frameCount": 70,
+          "frameGapP95Ms": 16.8,
+          "frameGapMaxMs": 66.7,
+          "framesOver50ms": 1,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 82,
+          "operations": {
+            "texImage2D:orbit-canvas": {
+              "count": 69,
+              "totalMs": 5.1,
+              "maxMs": 0.3
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 69,
+              "totalMs": 0.5,
+              "maxMs": 0.1
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 14,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 76.7,
+              "maxMs": 60.3
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 6184.20000000298,
+              "mode": "recentering",
+              "stop": "stop-12",
+              "snap": {
+                "from": 0.43598614710072947,
+                "target": 0.59169548535099,
+                "delta": 0.15570933825026056,
+                "duration": 373.7024118006253
+              }
+            },
+            {
+              "type": "mode",
+              "t": 6385.30000000447,
+              "mode": "orbit",
+              "stop": "stop-12",
+              "snap": null
+            },
+            {
+              "type": "mode",
+              "t": 6467.39999999851,
+              "mode": "snapping",
+              "stop": "stop-00",
+              "snap": {
+                "from": 0.59169548535099,
+                "target": 0,
+                "delta": 0.40830451464900996,
+                "duration": 979.930835157624
+              }
+            }
+          ],
+          "decodes": [],
+          "seeks": 55,
+          "requestCount": 1,
+          "requestBytes": 26375,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 0,
+            "displayedFrame": 138,
+            "mode": "look",
+            "stop": "stop-00",
+            "time": 0,
+            "progress": 0,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0.59169548535099,
+              "target": 0,
+              "delta": 0.40830451464900996,
+              "duration": 979.930835157624
+            },
+            "wheelQuietUntil": 7527.20000000298,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": 0.014503106088186227,
+              "pitch": -0.01323119036556654,
+              "fov": 69.00205803132543,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 223,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 1001.6,
+            "frameCount": 60,
+            "frameGapP95Ms": 16.8,
+            "frameGapMaxMs": 16.8,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 12.7,
+                "maxMs": 0.3
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 0.4,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 1,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        },
+        {
+          "id": "stop-06",
+          "cache": "repeat entry",
+          "from": "look",
+          "elapsedMs": 1302.3,
+          "frameCount": 74,
+          "frameGapP95Ms": 16.8,
+          "frameGapMaxMs": 83.4,
+          "framesOver50ms": 1,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 86,
+          "operations": {
+            "texImage2D:orbit-canvas": {
+              "count": 73,
+              "totalMs": 6.8,
+              "maxMs": 0.3
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 73,
+              "totalMs": 0.2,
+              "maxMs": 0.1
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 14,
+              "totalMs": 0.3,
+              "maxMs": 0.1
+            },
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 80.2,
+              "maxMs": 65
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 8539.89999999851,
+              "mode": "recentering",
+              "stop": "stop-00",
+              "snap": {
+                "from": 0.59169548535099,
+                "target": 0,
+                "delta": 0.40830451464900996,
+                "duration": 979.930835157624
+              }
+            },
+            {
+              "type": "mode",
+              "t": 8735.39999999851,
+              "mode": "orbit",
+              "stop": "stop-00",
+              "snap": null
+            },
+            {
+              "type": "mode",
+              "t": 8821.60000000149,
+              "mode": "snapping",
+              "stop": "stop-06",
+              "snap": {
+                "from": 0,
+                "target": 0.43598614710072947,
+                "delta": 0.4359861471007296,
+                "duration": 1046.366753041751
+              }
+            }
+          ],
+          "decodes": [],
+          "seeks": 59,
+          "requestCount": 0,
+          "requestBytes": 0,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 5.25,
+            "displayedFrame": 197,
+            "mode": "look",
+            "stop": "stop-06",
+            "time": 5.25,
+            "progress": 0.43598614710072947,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0,
+              "target": 0.43598614710072947,
+              "delta": 0.4359861471007296,
+              "duration": 1046.366753041751
+            },
+            "wheelQuietUntil": 9939.70000000298,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": 0.0010066061316309017,
+              "pitch": -0.0003660993312885387,
+              "fov": 64.14471872213606,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 297,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 996.8,
+            "frameCount": 60,
+            "frameGapP95Ms": 16.7,
+            "frameGapMaxMs": 16.7,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 13.4,
+                "maxMs": 0.4
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 0.3,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 0.4,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        },
+        {
+          "id": "stop-12",
+          "cache": "repeat entry",
+          "from": "look",
+          "elapsedMs": 629.3,
+          "frameCount": 34,
+          "frameGapP95Ms": 16.8,
+          "frameGapMaxMs": 83.3,
+          "framesOver50ms": 1,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 85,
+          "operations": {
+            "texImage2D:orbit-canvas": {
+              "count": 33,
+              "totalMs": 2.5,
+              "maxMs": 0.2
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 33,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 14,
+              "totalMs": 0.2,
+              "maxMs": 0.1
+            },
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 78.5,
+              "maxMs": 63.8
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 10956.20000000298,
+              "mode": "recentering",
+              "stop": "stop-06",
+              "snap": {
+                "from": 0,
+                "target": 0.43598614710072947,
+                "delta": 0.4359861471007296,
+                "duration": 1046.366753041751
+              }
+            },
+            {
+              "type": "mode",
+              "t": 11156.30000000447,
+              "mode": "orbit",
+              "stop": "stop-06",
+              "snap": null
+            },
+            {
+              "type": "mode",
+              "t": 11241.5,
+              "mode": "snapping",
+              "stop": "stop-12",
+              "snap": {
+                "from": 0.43598614710072947,
+                "target": 0.59169548535099,
+                "delta": 0.15570933825026056,
+                "duration": 373.7024118006253
+              }
+            }
+          ],
+          "decodes": [],
+          "seeks": 19,
+          "requestCount": 0,
+          "requestBytes": 0,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 7.125,
+            "displayedFrame": 216,
+            "mode": "look",
+            "stop": "stop-12",
+            "time": 7.125,
+            "progress": 0.59169548535099,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0.43598614710072947,
+              "target": 0.59169548535099,
+              "delta": 0.15570933825026056,
+              "duration": 373.7024118006253
+            },
+            "wheelQuietUntil": 11690.70000000298,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": -0.04229020856400572,
+              "pitch": -0.01713768175927715,
+              "fov": 69.46927535254439,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 371,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 991.2,
+            "frameCount": 60,
+            "frameGapP95Ms": 16.8,
+            "frameGapMaxMs": 16.8,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 12.8,
+                "maxMs": 0.4
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 0.5,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 0.5,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        }
+      ],
+      "webgl": {
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+        "dpr": 1
+      }
+    },
+    {
+      "reducedMotion": "reduce",
+      "transitions": [
+        {
+          "id": "stop-00",
+          "cache": "first entry",
+          "from": "orbit",
+          "elapsedMs": 130.9,
+          "frameCount": 6,
+          "frameGapP95Ms": 50,
+          "frameGapMaxMs": 50,
+          "framesOver50ms": 0,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 58,
+          "operations": {
+            "decode:image": {
+              "count": 2,
+              "totalMs": 88.6,
+              "maxMs": 63.5
+            },
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 51.5,
+              "maxMs": 37.2
+            },
+            "texImage2D:orbit-canvas": {
+              "count": 1,
+              "totalMs": 0.1,
+              "maxMs": 0.1
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 527.5,
+              "mode": "snapping",
+              "stop": "stop-00",
+              "snap": {
+                "from": 0,
+                "target": 0,
+                "delta": 0,
+                "duration": 0
+              }
+            },
+            {
+              "type": "mode",
+              "t": 648.7999999970198,
+              "mode": "look",
+              "stop": "stop-00",
+              "snap": {
+                "from": 0,
+                "target": 0,
+                "delta": 0,
+                "duration": 0
+              }
+            }
+          ],
+          "decodes": [
+            {
+              "type": "decode",
+              "t": 552.3999999985099,
+              "start": 527.2999999970198,
+              "duration": 25.100000001490116,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/frames/stop-00/original.png",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "type": "decode",
+              "t": 590.2999999970198,
+              "start": 526.7999999970198,
+              "duration": 63.5,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/stops/stop-00/panorama-assembled-v1.png",
+              "width": 3072,
+              "height": 1536
+            }
+          ],
+          "seeks": 1,
+          "requestCount": 2,
+          "requestBytes": 14636962,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 0,
+            "displayedFrame": 1,
+            "mode": "look",
+            "stop": "stop-00",
+            "time": 0,
+            "progress": 0,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0,
+              "target": 0,
+              "delta": 0,
+              "duration": 0
+            },
+            "wheelQuietUntil": 763.5,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": 0.014503106088186227,
+              "pitch": -0.01323119036556654,
+              "fov": 69.00205803132543,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 1,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 990.3,
+            "frameCount": 60,
+            "frameGapP95Ms": 16.7,
+            "frameGapMaxMs": 16.8,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 13.2,
+                "maxMs": 0.4
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 0.9,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 0.6,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        },
+        {
+          "id": "stop-06",
+          "cache": "first entry",
+          "from": "look",
+          "elapsedMs": 116.2,
+          "frameCount": 6,
+          "frameGapP95Ms": 33.4,
+          "frameGapMaxMs": 33.4,
+          "framesOver50ms": 0,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 51,
+          "operations": {
+            "decode:image": {
+              "count": 2,
+              "totalMs": 78.3,
+              "maxMs": 59.2
+            },
+            "texImage2D:orbit-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 49.7,
+              "maxMs": 37
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 1673.3999999985099,
+              "mode": "snapping",
+              "stop": "stop-06",
+              "snap": {
+                "from": 0,
+                "target": 0.43598614710072947,
+                "delta": 0.4359861471007296,
+                "duration": 0
+              }
+            },
+            {
+              "type": "mode",
+              "t": 1779.6000000014901,
+              "mode": "look",
+              "stop": "stop-06",
+              "snap": {
+                "from": 0,
+                "target": 0.43598614710072947,
+                "delta": 0.4359861471007296,
+                "duration": 0
+              }
+            }
+          ],
+          "decodes": [
+            {
+              "type": "decode",
+              "t": 1688.2999999970198,
+              "start": 1669.2000000029802,
+              "duration": 19.099999994039536,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/frames/stop-06/original.png",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "type": "decode",
+              "t": 1728.2000000029802,
+              "start": 1669,
+              "duration": 59.20000000298023,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/stops/stop-06/panorama-assembled-v1.png",
+              "width": 3072,
+              "height": 1536
+            }
+          ],
+          "seeks": 1,
+          "requestCount": 2,
+          "requestBytes": 14049743,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 5.25,
+            "displayedFrame": 2,
+            "mode": "look",
+            "stop": "stop-06",
+            "time": 5.25,
+            "progress": 0.43598614710072947,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0,
+              "target": 0.43598614710072947,
+              "delta": 0.4359861471007296,
+              "duration": 0
+            },
+            "wheelQuietUntil": 1899.3999999985099,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": 0.0010066061316309017,
+              "pitch": -0.0003660993312885387,
+              "fov": 64.14471872213606,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 62,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 991.1,
+            "frameCount": 59,
+            "frameGapP95Ms": 16.8,
+            "frameGapMaxMs": 16.8,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 13.2,
+                "maxMs": 0.4
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 0.9,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 0.6,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        },
+        {
+          "id": "stop-12",
+          "cache": "first entry",
+          "from": "look",
+          "elapsedMs": 109.2,
+          "frameCount": 5,
+          "frameGapP95Ms": 33.3,
+          "frameGapMaxMs": 33.3,
+          "framesOver50ms": 0,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 50,
+          "operations": {
+            "decode:image": {
+              "count": 2,
+              "totalMs": 73.5,
+              "maxMs": 54.3
+            },
+            "texImage2D:orbit-canvas": {
+              "count": 2,
+              "totalMs": 0.2,
+              "maxMs": 0.1
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 48.4,
+              "maxMs": 36.1
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 2823.10000000149,
+              "mode": "snapping",
+              "stop": "stop-12",
+              "snap": {
+                "from": 0.43598614710072947,
+                "target": 0.59169548535099,
+                "delta": 0.15570933825026056,
+                "duration": 0
+              }
+            },
+            {
+              "type": "mode",
+              "t": 2916.89999999851,
+              "mode": "look",
+              "stop": "stop-12",
+              "snap": {
+                "from": 0.43598614710072947,
+                "target": 0.59169548535099,
+                "delta": 0.15570933825026056,
+                "duration": 0
+              }
+            }
+          ],
+          "decodes": [
+            {
+              "type": "decode",
+              "t": 2831.7999999970198,
+              "start": 2812.60000000149,
+              "duration": 19.19999999552965,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/frames/stop-12/original.png",
+              "width": 1280,
+              "height": 720
+            },
+            {
+              "type": "decode",
+              "t": 2866.89999999851,
+              "start": 2812.60000000149,
+              "duration": 54.29999999701977,
+              "src": "http://127.0.0.1:18792/storyboard/production/tractor-stops-20260924/stops/stop-12/panorama-assembled-v1.png",
+              "width": 3072,
+              "height": 1536
+            }
+          ],
+          "seeks": 1,
+          "requestCount": 2,
+          "requestBytes": 13824045,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 7.125,
+            "displayedFrame": 3,
+            "mode": "look",
+            "stop": "stop-12",
+            "time": 7.125,
+            "progress": 0.59169548535099,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0.43598614710072947,
+              "target": 0.59169548535099,
+              "delta": 0.15570933825026056,
+              "duration": 0
+            },
+            "wheelQuietUntil": 3036.7999999970198,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": -0.04229020856400572,
+              "pitch": -0.01713768175927715,
+              "fov": 69.46927535254439,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 123,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 997.4,
+            "frameCount": 60,
+            "frameGapP95Ms": 16.8,
+            "frameGapMaxMs": 16.8,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 12.6,
+                "maxMs": 0.4
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 0.8,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 1,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        },
+        {
+          "id": "stop-00",
+          "cache": "repeat entry",
+          "from": "look",
+          "elapsedMs": 76.9,
+          "frameCount": 3,
+          "frameGapP95Ms": 50,
+          "frameGapMaxMs": 50,
+          "framesOver50ms": 0,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 61,
+          "operations": {
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 58.9,
+              "maxMs": 44
+            },
+            "texImage2D:orbit-canvas": {
+              "count": 2,
+              "totalMs": 0.1,
+              "maxMs": 0.1
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 4027.7000000029802,
+              "mode": "snapping",
+              "stop": "stop-00",
+              "snap": {
+                "from": 0.59169548535099,
+                "target": 0,
+                "delta": 0.40830451464900996,
+                "duration": 0
+              }
+            }
+          ],
+          "decodes": [],
+          "seeks": 1,
+          "requestCount": 0,
+          "requestBytes": 0,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 0,
+            "displayedFrame": 4,
+            "mode": "look",
+            "stop": "stop-00",
+            "time": 0,
+            "progress": 0,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0.59169548535099,
+              "target": 0,
+              "delta": 0.40830451464900996,
+              "duration": 0
+            },
+            "wheelQuietUntil": 4159.79999999702,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": 0.014503106088186227,
+              "pitch": -0.01323119036556654,
+              "fov": 69.00205803132543,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 184,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 1002.7,
+            "frameCount": 60,
+            "frameGapP95Ms": 16.8,
+            "frameGapMaxMs": 16.8,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 12.7,
+                "maxMs": 0.3
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 0.7,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 0.3,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        },
+        {
+          "id": "stop-06",
+          "cache": "repeat entry",
+          "from": "look",
+          "elapsedMs": 69.7,
+          "frameCount": 2,
+          "frameGapP95Ms": 50,
+          "frameGapMaxMs": 50,
+          "framesOver50ms": 0,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 59,
+          "operations": {
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 56.7,
+              "maxMs": 43.3
+            },
+            "texImage2D:orbit-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 5164,
+              "mode": "snapping",
+              "stop": "stop-06",
+              "snap": {
+                "from": 0,
+                "target": 0.43598614710072947,
+                "delta": 0.4359861471007296,
+                "duration": 0
+              }
+            }
+          ],
+          "decodes": [],
+          "seeks": 1,
+          "requestCount": 0,
+          "requestBytes": 0,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 5.25,
+            "displayedFrame": 5,
+            "mode": "look",
+            "stop": "stop-06",
+            "time": 5.25,
+            "progress": 0.43598614710072947,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0,
+              "target": 0.43598614710072947,
+              "delta": 0.4359861471007296,
+              "duration": 0
+            },
+            "wheelQuietUntil": 5291.5,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": 0.0010066061316309017,
+              "pitch": -0.0003660993312885387,
+              "fov": 64.14471872213606,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 245,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 995.4,
+            "frameCount": 60,
+            "frameGapP95Ms": 16.8,
+            "frameGapMaxMs": 16.8,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 9.3,
+                "maxMs": 0.4
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 0.8,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 0.7,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        },
+        {
+          "id": "stop-12",
+          "cache": "repeat entry",
+          "from": "look",
+          "elapsedMs": 78.5,
+          "frameCount": 3,
+          "frameGapP95Ms": 50,
+          "frameGapMaxMs": 50,
+          "framesOver50ms": 0,
+          "longtaskCount": 1,
+          "longtaskTotalMs": 51,
+          "operations": {
+            "compileShader:panorama-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "linkProgram:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "texImage2D:panorama-canvas": {
+              "count": 3,
+              "totalMs": 49.3,
+              "maxMs": 37
+            },
+            "texImage2D:orbit-canvas": {
+              "count": 2,
+              "totalMs": 0.2,
+              "maxMs": 0.1
+            },
+            "drawArrays:orbit-canvas": {
+              "count": 2,
+              "totalMs": 0,
+              "maxMs": 0
+            },
+            "drawArrays:panorama-canvas": {
+              "count": 1,
+              "totalMs": 0,
+              "maxMs": 0
+            }
+          },
+          "modes": [
+            {
+              "type": "mode",
+              "t": 6269.39999999851,
+              "mode": "snapping",
+              "stop": "stop-12",
+              "snap": {
+                "from": 0.43598614710072947,
+                "target": 0.59169548535099,
+                "delta": 0.15570933825026056,
+                "duration": 0
+              }
+            }
+          ],
+          "decodes": [],
+          "seeks": 1,
+          "requestCount": 0,
+          "requestBytes": 0,
+          "entry": {
+            "ready": true,
+            "sourceLock": true,
+            "displayedMediaTime": 7.125,
+            "displayedFrame": 6,
+            "mode": "look",
+            "stop": "stop-12",
+            "time": 7.125,
+            "progress": 0.59169548535099,
+            "seeking": false,
+            "queuedSeek": null,
+            "snap": {
+              "from": 0.43598614710072947,
+              "target": 0.59169548535099,
+              "delta": 0.15570933825026056,
+              "duration": 0
+            },
+            "wheelQuietUntil": 6413.89999999851,
+            "bridgeTime": 0,
+            "pendingOrbit": null,
+            "available": [
+              "stop-00",
+              "stop-01",
+              "stop-02",
+              "stop-03",
+              "stop-04",
+              "stop-05",
+              "stop-06",
+              "stop-07",
+              "stop-08",
+              "stop-09",
+              "stop-10",
+              "stop-11",
+              "stop-12",
+              "stop-13",
+              "stop-14",
+              "stop-15",
+              "stop-16",
+              "stop-17",
+              "stop-18",
+              "stop-19",
+              "stop-20",
+              "stop-21",
+              "stop-22",
+              "stop-23"
+            ],
+            "camera": {
+              "yaw": -0.04229020856400572,
+              "pitch": -0.01713768175927715,
+              "fov": 69.46927535254439,
+              "width": 1372,
+              "height": 772
+            },
+            "draws": 306,
+            "gestures": {
+              "kind": "idle",
+              "pointers": 0,
+              "accepted": false
+            }
+          },
+          "pan": {
+            "elapsedMs": 1007.6,
+            "frameCount": 60,
+            "frameGapP95Ms": 16.8,
+            "frameGapMaxMs": 16.8,
+            "framesOver50ms": 0,
+            "longtaskCount": 0,
+            "longtaskTotalMs": 0,
+            "operations": {
+              "texImage2D:orbit-canvas": {
+                "count": 60,
+                "totalMs": 12.2,
+                "maxMs": 0.3
+              },
+              "drawArrays:orbit-canvas": {
+                "count": 60,
+                "totalMs": 1.1,
+                "maxMs": 0.1
+              },
+              "drawArrays:panorama-canvas": {
+                "count": 60,
+                "totalMs": 0.1,
+                "maxMs": 0.1
+              }
+            },
+            "modes": [],
+            "decodes": [],
+            "seeks": 0
+          }
+        }
+      ],
+      "webgl": {
+        "renderer": "ANGLE (Apple, ANGLE Metal Renderer: Apple M4, Unspecified Version)",
+        "dpr": 1
+      }
+    }
+  ],
+  "errors": [],
+  "browserVersion": "153.0.8010.54",
+  "completedAt": "2026-09-25T00:24:50.774Z"
+}
