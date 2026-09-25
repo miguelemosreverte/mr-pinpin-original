@@ -8,6 +8,8 @@ their tests cover different runtime revisions.
   Renderer reuse, bounded texture caching, exact-frame and visual comparisons.
   Baseline/final screenshots and traces are preserved by
   `assets/tractor-performance-20260924.json` and its verified receipt.
+- [LOOPING-CONTROLS.md](LOOPING-CONTROLS.md): unlimited desktop mouse look
+  using pointer lock, release behavior, and repeated mobile drags.
 - [INVERTED-CONTROLS.md](INVERTED-CONTROLS.md): current mapping: one finger
   looks around; two fingers orbit the tractor.
 - [CONTROL-FLOW.md](CONTROL-FLOW.md): earlier continuous, no-click input

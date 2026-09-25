@@ -1,0 +1,44 @@
+{
+  "startedAt": "2026-09-25T04:59:15.691Z",
+  "sourceHashes": {
+    "tractor-tour.js": "bde521514e48fc83490f19158ad33e0a9486d813cffabbeb7f9b918ed3771a43",
+    "tractor-tour-gestures.js": "d74ed35f63f07800a6f7b22584b2d9d22b078c68c6b2c4094c962914300d1dc5",
+    "tractor-tour.html": "48ce5ca64490b790e2d75674e84cbb3145185c2747915aa70d26915d3a354f73",
+    "tractor-tour.css": "32bcee71acedf042cb8c119979b338545caf82cf8214f227b2e55944ffed31f8",
+    "tractor-tour-cache.js": "de01ac15ff159e9e07120b77128b9632da1ea81b7afa4a2f8b5be62dd7141871",
+    "tractor-tour-video.js": "cbc11da6a62ce3f7bc86d50a8ce967718b65cf19e1154c58de11fd3992385e48",
+    "tractor-panorama-anchor.js": "16e06e3fca3bd032ffe13b3f0d0fc34a019296e54c377e29f70e8043250fb2ec"
+  },
+  "checks": [
+    {
+      "name": "unsupported capture retains ordinary drag fallback",
+      "pass": true,
+      "attempts": 0
+    },
+    {
+      "name": "denied capture retains ordinary drag fallback",
+      "pass": true,
+      "attempts": 1
+    },
+    {
+      "name": "mobile repeated lift-and-drag exceeds360 with wrapped yaw and no capture request",
+      "pass": true,
+      "drags": 12,
+      "totalYawRadians": -8.627915318450038,
+      "finalWrappedYaw": -2.4201010173687454
+    },
+    {
+      "name": "mobile two-finger orbit then remaining one-finger look stays continuous",
+      "pass": true,
+      "returnMode": "recentering"
+    }
+  ],
+  "errors": [],
+  "browserVersion": "153.0.8010.54",
+  "headless": true,
+  "actualCaptureVerified": false,
+  "actualCaptureSkipped": "Browserenvironment returnedWrongDocumentError on actualtrustedcapture; onlyfallback/mobilechecks run.",
+  "fallbackAndMobilePass": true,
+  "pass": false,
+  "completedAt": "2026-09-25T04:59:20.986Z"
+}

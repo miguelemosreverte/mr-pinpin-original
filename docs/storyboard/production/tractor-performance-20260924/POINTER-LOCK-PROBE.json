@@ -1,0 +1,716 @@
+{
+  "miniHeadless": {
+    "startedAt": "2026-09-25T04:58:33.016Z",
+    "headless": true,
+    "viewport": {
+      "width": 640,
+      "height": 480
+    },
+    "experiments": [
+      {
+        "label": "inside",
+        "input": {
+          "type": "mouseMoved",
+          "x": 100,
+          "y": 180
+        },
+        "locked": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "target": "stage",
+            "locked": null,
+            "clientX": 100,
+            "clientY": 180,
+            "movementX": 40,
+            "movementY": 150,
+            "trusted": true
+          },
+          {
+            "type": "mousemove",
+            "target": "stage",
+            "locked": null,
+            "clientX": 100,
+            "clientY": 180,
+            "movementX": 40,
+            "movementY": 150,
+            "trusted": true
+          }
+        ],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "beyond-right",
+        "input": {
+          "type": "mouseMoved",
+          "x": 900,
+          "y": 180
+        },
+        "locked": null,
+        "events": [],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "farther-right",
+        "input": {
+          "type": "mouseMoved",
+          "x": 1300,
+          "y": 180
+        },
+        "locked": null,
+        "events": [],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "beyond-left",
+        "input": {
+          "type": "mouseMoved",
+          "x": -500,
+          "y": 180
+        },
+        "locked": null,
+        "events": [],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "explicit-relative",
+        "input": {
+          "type": "mouseMoved",
+          "x": 100,
+          "y": 180,
+          "deltaX": 350,
+          "deltaY": -25
+        },
+        "locked": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "target": "stage",
+            "locked": null,
+            "clientX": 100,
+            "clientY": 180,
+            "movementX": 600,
+            "movementY": 0,
+            "trusted": true
+          },
+          {
+            "type": "mousemove",
+            "target": "stage",
+            "locked": null,
+            "clientX": 100,
+            "clientY": 180,
+            "movementX": 600,
+            "movementY": 0,
+            "trusted": true
+          }
+        ],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "wheel-toolbar-position",
+        "input": {
+          "type": "mouseWheel",
+          "x": 50,
+          "y": 30,
+          "deltaX": 9,
+          "deltaY": 23
+        },
+        "locked": null,
+        "events": [
+          {
+            "type": "wheel",
+            "target": "lock",
+            "locked": null,
+            "clientX": 50,
+            "clientY": 30,
+            "movementX": 0,
+            "movementY": 0,
+            "deltaX": 9,
+            "deltaY": 23,
+            "trusted": true
+          }
+        ],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "wheel-outside-viewport",
+        "input": {
+          "type": "mouseWheel",
+          "x": 950,
+          "y": 550,
+          "deltaX": 7,
+          "deltaY": 19
+        },
+        "locked": null,
+        "events": [],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      }
+    ],
+    "initial": {
+      "hasFocus": true,
+      "visibility": "visible",
+      "stageConnected": true,
+      "locked": null,
+      "events": [
+        {
+          "type": "pointermove",
+          "target": "lock",
+          "locked": null,
+          "clientX": 60.2400016784668,
+          "clientY": 30.5,
+          "movementX": 0,
+          "movementY": 0,
+          "trusted": true
+        },
+        {
+          "type": "mousemove",
+          "target": "lock",
+          "locked": null,
+          "clientX": 60,
+          "clientY": 30,
+          "movementX": 0,
+          "movementY": 0,
+          "trusted": true
+        },
+        {
+          "type": "lock-click",
+          "trusted": true,
+          "active": true,
+          "secure": true,
+          "focused": true
+        },
+        {
+          "type": "pointerlockerror",
+          "target": "#document",
+          "locked": null,
+          "trusted": true
+        }
+      ],
+      "errors": [
+        "WrongDocumentError: The root document of this element is not valid for pointer lock."
+      ]
+    },
+    "escape": {
+      "locked": null,
+      "events": []
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/153.0.0.0 Safari/537.36",
+    "completedAt": "2026-09-25T04:58:33.848Z"
+  },
+  "miniPersistentHeaded": {
+    "startedAt": "2026-09-25T04:59:15.383Z",
+    "headless": false,
+    "persistent": true,
+    "profile": "/Volumes/TB4/mac-mini-storage/shared/pinpin-tractor-stops-20260924/pointer-lock-profile-Oc4ka7",
+    "viewport": {
+      "width": 640,
+      "height": 480
+    },
+    "experiments": [
+      {
+        "label": "inside",
+        "input": {
+          "type": "mouseMoved",
+          "x": 100,
+          "y": 180
+        },
+        "locked": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "target": "stage",
+            "locked": null,
+            "clientX": 100,
+            "clientY": 180,
+            "movementX": 40,
+            "movementY": 150,
+            "trusted": true
+          },
+          {
+            "type": "mousemove",
+            "target": "stage",
+            "locked": null,
+            "clientX": 100,
+            "clientY": 180,
+            "movementX": 40,
+            "movementY": 150,
+            "trusted": true
+          }
+        ],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "beyond-right",
+        "input": {
+          "type": "mouseMoved",
+          "x": 900,
+          "y": 180
+        },
+        "locked": null,
+        "events": [],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "farther-right",
+        "input": {
+          "type": "mouseMoved",
+          "x": 1300,
+          "y": 180
+        },
+        "locked": null,
+        "events": [],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "beyond-left",
+        "input": {
+          "type": "mouseMoved",
+          "x": -500,
+          "y": 180
+        },
+        "locked": null,
+        "events": [],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "explicit-relative",
+        "input": {
+          "type": "mouseMoved",
+          "x": 100,
+          "y": 180,
+          "deltaX": 350,
+          "deltaY": -25
+        },
+        "locked": null,
+        "events": [
+          {
+            "type": "pointermove",
+            "target": "stage",
+            "locked": null,
+            "clientX": 100,
+            "clientY": 180,
+            "movementX": 600,
+            "movementY": 0,
+            "trusted": true
+          },
+          {
+            "type": "mousemove",
+            "target": "stage",
+            "locked": null,
+            "clientX": 100,
+            "clientY": 180,
+            "movementX": 600,
+            "movementY": 0,
+            "trusted": true
+          }
+        ],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "wheel-toolbar-position",
+        "input": {
+          "type": "mouseWheel",
+          "x": 50,
+          "y": 30,
+          "deltaX": 9,
+          "deltaY": 23
+        },
+        "locked": null,
+        "events": [
+          {
+            "type": "wheel",
+            "target": "lock",
+            "locked": null,
+            "clientX": 50,
+            "clientY": 30,
+            "movementX": 0,
+            "movementY": 0,
+            "deltaX": 9,
+            "deltaY": 23,
+            "trusted": true
+          }
+        ],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      },
+      {
+        "label": "wheel-outside-viewport",
+        "input": {
+          "type": "mouseWheel",
+          "x": 950,
+          "y": 550,
+          "deltaX": 7,
+          "deltaY": 19
+        },
+        "locked": null,
+        "events": [],
+        "errors": [
+          "WrongDocumentError: The root document of this element is not valid for pointer lock."
+        ]
+      }
+    ],
+    "initial": {
+      "hasFocus": true,
+      "visibility": "visible",
+      "stageConnected": true,
+      "locked": null,
+      "events": [
+        {
+          "type": "pointermove",
+          "target": "lock",
+          "locked": null,
+          "clientX": 60.2400016784668,
+          "clientY": 30.5,
+          "movementX": 0,
+          "movementY": 0,
+          "trusted": true
+        },
+        {
+          "type": "mousemove",
+          "target": "lock",
+          "locked": null,
+          "clientX": 60,
+          "clientY": 30,
+          "movementX": 0,
+          "movementY": 0,
+          "trusted": true
+        },
+        {
+          "type": "lock-click",
+          "trusted": true,
+          "active": true,
+          "secure": true,
+          "focused": true
+        },
+        {
+          "type": "pointerlockerror",
+          "target": "#document",
+          "locked": null,
+          "trusted": true
+        }
+      ],
+      "errors": [
+        "WrongDocumentError: The root document of this element is not valid for pointer lock."
+      ]
+    },
+    "escape": {
+      "locked": null,
+      "events": []
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+    "completedAt": "2026-09-25T04:59:16.276Z"
+  },
+  "airPersistentHeaded": {
+    "startedAt": "2026-09-25T05:00:06.204Z",
+    "headless": false,
+    "machine": "Air",
+    "persistent": true,
+    "profile": "/tmp/tractor-pointer-lock-air-mP9Kzd",
+    "viewport": {
+      "width": 640,
+      "height": 480
+    },
+    "experiments": [
+      {
+        "label": "inside",
+        "input": {
+          "type": "mouseMoved",
+          "x": 100,
+          "y": 180
+        },
+        "locked": "stage",
+        "events": [
+          {
+            "type": "pointermove",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60.22999954223633,
+            "clientY": 30.75,
+            "movementX": 122,
+            "movementY": 370,
+            "trusted": true
+          },
+          {
+            "type": "mousemove",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60,
+            "clientY": 30,
+            "movementX": 122,
+            "movementY": 370,
+            "trusted": true
+          }
+        ],
+        "errors": []
+      },
+      {
+        "label": "beyond-right",
+        "input": {
+          "type": "mouseMoved",
+          "x": 900,
+          "y": 180
+        },
+        "locked": "stage",
+        "events": [
+          {
+            "type": "pointermove",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60.22999954223633,
+            "clientY": 30.75,
+            "movementX": 800,
+            "movementY": 0,
+            "trusted": true
+          },
+          {
+            "type": "mousemove",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60,
+            "clientY": 30,
+            "movementX": 800,
+            "movementY": 0,
+            "trusted": true
+          }
+        ],
+        "errors": []
+      },
+      {
+        "label": "farther-right",
+        "input": {
+          "type": "mouseMoved",
+          "x": 1300,
+          "y": 180
+        },
+        "locked": "stage",
+        "events": [
+          {
+            "type": "pointermove",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60.22999954223633,
+            "clientY": 30.75,
+            "movementX": 400,
+            "movementY": 0,
+            "trusted": true
+          },
+          {
+            "type": "mousemove",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60,
+            "clientY": 30,
+            "movementX": 400,
+            "movementY": 0,
+            "trusted": true
+          }
+        ],
+        "errors": []
+      },
+      {
+        "label": "beyond-left",
+        "input": {
+          "type": "mouseMoved",
+          "x": -500,
+          "y": 180
+        },
+        "locked": "stage",
+        "events": [
+          {
+            "type": "pointermove",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60.22999954223633,
+            "clientY": 30.75,
+            "movementX": -1800,
+            "movementY": 0,
+            "trusted": true
+          },
+          {
+            "type": "mousemove",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60,
+            "clientY": 30,
+            "movementX": -1800,
+            "movementY": 0,
+            "trusted": true
+          }
+        ],
+        "errors": []
+      },
+      {
+        "label": "explicit-relative",
+        "input": {
+          "type": "mouseMoved",
+          "x": 100,
+          "y": 180,
+          "deltaX": 350,
+          "deltaY": -25
+        },
+        "locked": "stage",
+        "events": [
+          {
+            "type": "pointermove",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60.22999954223633,
+            "clientY": 30.75,
+            "movementX": 600,
+            "movementY": 0,
+            "trusted": true
+          },
+          {
+            "type": "mousemove",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60,
+            "clientY": 30,
+            "movementX": 600,
+            "movementY": 0,
+            "trusted": true
+          }
+        ],
+        "errors": []
+      },
+      {
+        "label": "wheel-toolbar-position",
+        "input": {
+          "type": "mouseWheel",
+          "x": 50,
+          "y": 30,
+          "deltaX": 9,
+          "deltaY": 23
+        },
+        "locked": "stage",
+        "events": [
+          {
+            "type": "wheel",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60,
+            "clientY": 30,
+            "movementX": 0,
+            "movementY": 0,
+            "deltaX": 18,
+            "deltaY": 46,
+            "trusted": true
+          }
+        ],
+        "errors": []
+      },
+      {
+        "label": "wheel-outside-viewport",
+        "input": {
+          "type": "mouseWheel",
+          "x": 950,
+          "y": 550,
+          "deltaX": 7,
+          "deltaY": 19
+        },
+        "locked": "stage",
+        "events": [
+          {
+            "type": "wheel",
+            "target": "stage",
+            "locked": "stage",
+            "clientX": 60,
+            "clientY": 30,
+            "movementX": 0,
+            "movementY": 0,
+            "deltaX": 14,
+            "deltaY": 38,
+            "trusted": true
+          }
+        ],
+        "errors": []
+      }
+    ],
+    "initial": {
+      "hasFocus": true,
+      "visibility": "visible",
+      "stageConnected": true,
+      "locked": "stage",
+      "events": [
+        {
+          "type": "pointermove",
+          "target": "lock",
+          "locked": null,
+          "clientX": 60.22999954223633,
+          "clientY": 30.75,
+          "movementX": 0,
+          "movementY": 0,
+          "trusted": true
+        },
+        {
+          "type": "mousemove",
+          "target": "lock",
+          "locked": null,
+          "clientX": 60,
+          "clientY": 30,
+          "movementX": 0,
+          "movementY": 0,
+          "trusted": true
+        },
+        {
+          "type": "lock-click",
+          "trusted": true,
+          "active": true,
+          "secure": true,
+          "focused": true
+        },
+        {
+          "type": "pointerlockchange",
+          "target": "#document",
+          "locked": "stage",
+          "trusted": true
+        }
+      ],
+      "errors": []
+    },
+    "escape": {
+      "locked": "stage",
+      "events": [
+        {
+          "type": "wheel",
+          "target": "stage",
+          "locked": "stage",
+          "clientX": 60,
+          "clientY": 30,
+          "movementX": 0,
+          "movementY": 0,
+          "deltaX": 14,
+          "deltaY": 38,
+          "trusted": true
+        }
+      ]
+    },
+    "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/153.0.0.0 Safari/537.36",
+    "completedAt": "2026-09-25T05:00:07.237Z"
+  }
+}

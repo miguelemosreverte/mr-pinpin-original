@@ -5,3 +5,5 @@
 .stage #bridge-video{opacity:0;z-index:2}.stage canvas{z-index:3;transition:none}.stage[data-mode=recentering] canvas{opacity:1}.stage[data-mode=bridge-in] #bridge-video,.stage[data-mode=bridge-out] #bridge-video{opacity:1}.stage[data-mode=bridge-in],.stage[data-mode=bridge-out],.stage[data-mode=recentering]{cursor:progress}
 
 .stage #orbit-canvas{opacity:0;z-index:1}.stage[data-source-lock=true] #orbit-canvas{opacity:1}
+
+.stage[data-mouse-captured=true]{cursor:none}#capture[hidden],#capture-help[hidden]{display:none}@media(pointer:coarse){#capture,#capture-help{display:none}}
